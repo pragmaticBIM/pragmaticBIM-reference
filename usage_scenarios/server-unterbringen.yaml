@@ -1,0 +1,51 @@
+id: pragmaticbim:usage-scenario/server-unterbringen
+code: US-WR-07
+sort_order: 8
+name:
+  de: Server unterbringen
+  fr: Héberger les serveurs
+  it: Ospitare i server
+  en: Housing servers
+description:
+  de: Das Unternehmen betreibt eigene Server und Netzwerktechnik. Der Standort der IT entscheidet über
+    Technikfläche, Kühlung und Ausfallsicherheit.
+  fr: L'entreprise exploite ses propres serveurs et équipements réseau. L'emplacement de l'informatique
+    détermine la surface technique, le refroidissement et la disponibilité.
+  it: L'azienda gestisce server e apparecchiature di rete propri. L'ubicazione dell'IT determina superficie
+    tecnica, raffreddamento e disponibilità.
+  en: The organisation runs its own servers and network equipment. The location of IT determines plant
+    area, cooling, and availability.
+uses:
+- pragmaticbim:use/arbeit
+tags:
+- it
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/server-unterbringen-central
+  sort_order: 1
+  name:
+    de: Zentraler Serverraum
+    fr: Salle des serveurs centrale
+    it: Sala server centrale
+    en: Central server room
+  adds:
+  - pragmaticbim:room-type/serverraum
+- id: pragmaticbim:scenario-option/server-unterbringen-per-floor
+  sort_order: 2
+  name:
+    de: Kommunikationsraum pro Geschoss
+    fr: Local de communication par étage
+    it: Locale comunicazioni per piano
+    en: Communications room per floor
+  adds:
+  - pragmaticbim:room-type/kommunikationsraum
+- id: pragmaticbim:scenario-option/server-unterbringen-external
+  sort_order: 3
+  name:
+    de: Externes Rechenzentrum oder Cloud
+    fr: Centre de données externe ou cloud
+    it: Centro dati esterno o cloud
+    en: External data centre or cloud
+  exclusive: true

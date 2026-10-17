@@ -1,27 +1,81 @@
 id: pragmaticbim:usage-scenario/abfall-entsorgen
 code: US-WH-04
-sort_order: 4
+sort_order: 13
 name:
   de: Abfall entsorgen
   fr: Évacuation des déchets
   it: Conferimento dei rifiuti
   en: Taking out waste
 description:
-  de: Bewohnende verlassen die Wohnung, gehen über das Treppenhaus und geben den Abfall im Abfallraum ab.
-  fr: Les occupants quittent le logement, empruntent la cage d'escalier et déposent les déchets au local déchets.
-  it: Chi abita esce dall'alloggio, percorre il vano scale e conferisce i rifiuti nel locale rifiuti.
-  en: Occupants leave the dwelling, use the stairwell, and drop waste in the waste room.
-scenario_group: Wohnen
+  de: Bewohnende bringen ihren Abfall regelmässig weg. Der Sammelort entscheidet über
+    die Weglänge.
+  fr: Les habitants sortent régulièrement leurs déchets. Le point de collecte décide
+    du trajet.
+  it: Gli abitanti portano via regolarmente i rifiuti. Il punto di raccolta decide
+    il percorso.
+  en: Residents take out their waste regularly. The collection point decides the walking
+    distance.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- haushalt
 status: active
 jurisdiction:
-- ch
-required_room_types:
-- pragmaticbim:room-type/wohnungseingang
-- pragmaticbim:room-type/treppenhaus
-- pragmaticbim:room-type/abfallraum
-room_relationships:
-- from_room_type: pragmaticbim:room-type/wohnungseingang
-  to_room_type: pragmaticbim:room-type/treppenhaus
-- from_room_type: pragmaticbim:room-type/treppenhaus
-  to_room_type: pragmaticbim:room-type/abfallraum
-  max_distance: 30
+- general
+options:
+- id: pragmaticbim:scenario-option/abfall-entsorgen
+  sort_order: 1
+  name:
+    de: Eigener Raum
+    fr: Local dédié
+    it: Locale dedicato
+    en: Dedicated room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/abfallraum
+    max_distance: 30
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/abfallraum
+- id: pragmaticbim:scenario-option/abfall-entsorgen-abfallschacht
+  sort_order: 2
+  name:
+    de: Abfallschacht
+    fr: Gaine vide-ordures
+    it: Condotto rifiuti
+    en: Waste chute
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/abfallschacht
+    max_distance: 30
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/abfallschacht
+- id: pragmaticbim:scenario-option/abfall-entsorgen-abfallsammelplatz-aussen
+  sort_order: 3
+  name:
+    de: Abfallsammelplatz Aussen
+    fr: Aire extérieure de collecte des déchets
+    it: Area esterna di raccolta rifiuti
+    en: Exterior waste collection area
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/abfallsammelplatz-aussen
+    max_distance: 30
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/abfallsammelplatz-aussen
+- id: pragmaticbim:scenario-option/abfall-entsorgen-unterflurcontainer
+  sort_order: 4
+  name:
+    de: Unterflurcontainer
+    fr: Conteneur enterré
+    it: Contenitore interrato
+    en: Underground waste container
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/unterflurcontainer
+    max_distance: 30
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/unterflurcontainer

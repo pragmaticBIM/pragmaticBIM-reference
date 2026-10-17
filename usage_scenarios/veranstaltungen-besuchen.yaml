@@ -1,0 +1,56 @@
+id: pragmaticbim:usage-scenario/veranstaltungen-besuchen
+code: US-VS-01
+sort_order: 2
+name:
+  de: Veranstaltungen besuchen
+  fr: Assister à des manifestations
+  it: Assistere a eventi
+  en: Attending events
+description:
+  de: Publikum besucht Konzerte, Vorträge oder Versammlungen. Das Saalkonzept entscheidet über Sitzordnung,
+    Flexibilität und Raumhöhe.
+  fr: Le public assiste à des concerts, conférences ou assemblées. Le concept de salle détermine la disposition
+    des sièges, la flexibilité et la hauteur.
+  it: Il pubblico assiste a concerti, conferenze o assemblee. Il concetto di sala determina disposizione
+    dei posti, flessibilità e altezza.
+  en: Audiences attend concerts, lectures, or assemblies. The hall concept determines seating, flexibility,
+    and room height.
+uses:
+- pragmaticbim:use/versammlung
+tags:
+- veranstaltung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/veranstaltungen-besuchen-flexible
+  sort_order: 1
+  name:
+    de: Saal mit flexibler Bestuhlung
+    fr: Salle à sièges mobiles
+    it: Sala con sedute mobili
+    en: Hall with loose seating
+  adds:
+  - pragmaticbim:room-type/aula
+- id: pragmaticbim:scenario-option/veranstaltungen-besuchen-fixed
+  sort_order: 2
+  name:
+    de: Saal mit festem Gestühl
+    fr: Salle à sièges fixes
+    it: Sala con sedute fisse
+    en: Hall with fixed seating
+  adds:
+  - pragmaticbim:room-type/hoersaal
+- id: pragmaticbim:scenario-option/veranstaltungen-besuchen-stage
+  sort_order: 3
+  name:
+    de: Saal mit Bühne
+    fr: Salle avec scène
+    it: Sala con palco
+    en: Hall with stage
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/buehne
+    to_room_type: pragmaticbim:room-type/aula
+  adds:
+  - pragmaticbim:room-type/aula
+  - pragmaticbim:room-type/buehne

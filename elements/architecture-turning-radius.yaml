@@ -8,82 +8,54 @@ name:
   it: Raggio di manovra
   en: Turning radius
 definition:
-  de: 'Weist nach, dass Fahrzeuge die vorgesehenen Zufahrten und Manöverflächen sicher nutzen können.
-
+  de: |-
+    Weist nach, dass Fahrzeuge die vorgesehenen Zufahrten und Manöverflächen sicher nutzen können.
 
     **Beschreibung**
-
     - Volumen, das den erforderlichen Wenderadius bzw. die benötigte Manöverfläche abbildet.
-
     - Dient dem Nachweis gegenüber dem Verkehrsgutachten, nicht der Ausführungsdetailierung der Fahrbahn.
 
-
     **Modellierungshinweis**
-
     - Als vereinfachten Proxy-Körper modellieren; Abmessungen gemäss Verkehrsgutachten.
-
     - Dem zugehörigen Geschoss bzw. Aussenbereich zuweisen; ObjectType = Wenderadius.
-
     - Bei Einfahrten und Wendemöglichkeiten mit Gefälle unter Gebäuden die Höhen mit den wirklichen Abmessungen des LKW simulieren.
-
-    - Keine Fahrzeuge, Markierungen oder Ausbau innerhalb des Volumens modellieren.'
-  fr: 'Démontre que les véhicules peuvent utiliser en sécurité les accès et les aires de manœuvre prévus.
-
+    - Keine Fahrzeuge, Markierungen oder Ausbau innerhalb des Volumens modellieren.
+  fr: |-
+    Démontre que les véhicules peuvent utiliser en sécurité les accès et les aires de manœuvre prévus.
 
     **Description**
-
     - Volume représentant le rayon de braquage ou la surface de manœuvre requis.
-
-    - Sert à la preuve par rapport à l''étude de trafic, pas au détail d''exécution de la chaussée.
-
+    - Sert à la preuve par rapport à l'étude de trafic, pas au détail d'exécution de la chaussée.
 
     **Directives de modélisation**
-
-    - Modéliser comme corps proxy simplifié ; dimensions selon l''étude de trafic.
-
-    - Rattacher à l''étage ou à l''espace extérieur concerné ; ObjectType = Rayon de braquage.
-
+    - Modéliser comme corps proxy simplifié ; dimensions selon l'étude de trafic.
+    - Rattacher à l'étage ou à l'espace extérieur concerné ; ObjectType = Rayon de braquage.
     - Pour les accès et possibilités de demi-tour en pente sous des bâtiments, simuler en particulier les hauteurs avec les dimensions réelles du poids lourd.
-
-    - Ne pas modéliser véhicules, marquages ou finitions à l''intérieur du volume.'
-  it: 'Dimostra che i veicoli possono utilizzare in sicurezza gli accessi e le aree di manovra previsti.
-
+    - Ne pas modéliser véhicules, marquages ou finitions à l'intérieur du volume.
+  it: |-
+    Dimostra che i veicoli possono utilizzare in sicurezza gli accessi e le aree di manovra previsti.
 
     **Descrizione**
-
     - Volume che rappresenta il raggio di manovra o la superficie di manovra richiesta.
-
     - Serve alla prova rispetto allo studio del traffico, non al dettaglio esecutivo della carreggiata.
 
-
     **Direttive di modellazione**
-
     - Modellare come corpo proxy semplificato; dimensioni secondo lo studio del traffico.
-
-    - Assegnare al piano o all''area esterna corrispondente; ObjectType = Raggio di manovra.
-
+    - Assegnare al piano o all'area esterna corrispondente; ObjectType = Raggio di manovra.
     - Per accessi e possibilità di manovra in pendenza sotto edifici, simulare in particolare le altezze con le dimensioni reali del veicolo pesante.
-
-    - Non modellare veicoli, segnaletica o finiture all''interno del volume.'
-  en: 'Demonstrates that vehicles can safely use the planned access routes and manoeuvring areas.
-
+    - Non modellare veicoli, segnaletica o finiture all'interno del volume.
+  en: |-
+    Demonstrates that vehicles can safely use the planned access routes and manoeuvring areas.
 
     **Description**
-
     - Volume representing the required turning radius or manoeuvring area.
-
     - Used for verification against the traffic study, not for detailing the carriageway.
 
-
     **Modelling guidelines**
-
     - Model as a simplified proxy body; dimensions according to the traffic study.
-
     - Assign to the matching storey or exterior area; ObjectType = Turning radius.
-
     - For ramped entrances and turning areas under buildings, simulate heights in particular with the real truck dimensions.
-
-    - Do not model vehicles, markings, or finishes inside the volume.'
+    - Do not model vehicles, markings, or finishes inside the volume.
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/infrastructure
@@ -108,18 +80,8 @@ attributes:
     it: Denominazione del raggio di manovra.
     en: Turning radius designation.
   datatype: IfcLabel
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-traffic-study
   is_applicability: false
@@ -128,43 +90,30 @@ attributes:
 - name: PredefinedType
   pset: null
   definition:
-    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
-
+    de: |-
+      Kennzeichnet den Proxy als benutzerdefinierten Typ.
 
       **Zulässige Werte**
-
-      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
-    fr: 'Identifie le proxy comme type défini par l''utilisateur.
-
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art
+    fr: |-
+      Identifie le proxy comme type défini par l'utilisateur.
 
       **Valeurs admises**
-
-      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType précise la nature'
-    it: 'Identifica il proxy come tipo definito dall''utente.
-
+      - `USERDEFINED` — type défini par l'utilisateur ; ObjectType précise la nature
+    it: |-
+      Identifica il proxy come tipo definito dall'utente.
 
       **Valori ammessi**
-
-      - `USERDEFINED` — tipo definito dall''utente ; ObjectType precisa la natura'
-    en: 'Marks the proxy as a user-defined type.
-
+      - `USERDEFINED` — tipo definito dall'utente ; ObjectType precisa la natura
+    en: |-
+      Marks the proxy as a user-defined type.
 
       **Allowed values**
-
-      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-traffic-study
   is_applicability: true
@@ -173,44 +122,30 @@ attributes:
 - name: ObjectType
   pset: null
   definition:
-    de: 'Art des Proxy-Elements.
-
+    de: |-
+      Art des Proxy-Elements.
 
       **Zulässige Werte**
-
-      - `Wenderadius` — Wenderadius'
-    fr: 'Nature de l''élément proxy.
-
+      - `Wenderadius` — Wenderadius
+    fr: |-
+      Nature de l'élément proxy.
 
       **Valeurs admises**
-
-      - `Wenderadius` — rayon de braquage'
-    it: 'Tipo dell''elemento proxy.
-
+      - `Wenderadius` — rayon de braquage
+    it: |-
+      Tipo dell'elemento proxy.
 
       **Valori ammessi**
-
-      - `Wenderadius` — raggio di manovra'
-    en: 'Kind of proxy element.
-
+      - `Wenderadius` — raggio di manovra
+    en: |-
+      Kind of proxy element.
 
       **Allowed values**
-
-      - `Wenderadius` — turning radius'
+      - `Wenderadius` — turning radius
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/objecttype-turning-radius
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-traffic-study
   is_applicability: true

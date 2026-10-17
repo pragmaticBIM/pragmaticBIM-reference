@@ -1,0 +1,51 @@
+id: pragmaticbim:usage-scenario/qualitaet-pruefen
+code: US-PR-02
+sort_order: 3
+name:
+  de: Qualität prüfen
+  fr: Contrôler la qualité
+  it: Controllare la qualità
+  en: Checking quality
+description:
+  de: Teile und Produkte werden vor der Auslieferung geprüft. Die Prüfumgebung entscheidet über Raumklima,
+    Erschütterungsschutz und Nähe zur Fertigung.
+  fr: Les pièces et produits sont contrôlés avant livraison. L'environnement de contrôle détermine le
+    climat intérieur, la protection contre les vibrations et la proximité de la fabrication.
+  it: Pezzi e prodotti vengono controllati prima della consegna. L'ambiente di prova determina clima interno,
+    protezione dalle vibrazioni e vicinanza alla produzione.
+  en: Parts and products are checked before delivery. The test environment determines indoor climate,
+    vibration protection, and proximity to production.
+uses:
+- pragmaticbim:use/produktion
+tags:
+- qualitaet
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/qualitaet-pruefen-qc-room
+  sort_order: 1
+  name:
+    de: Prüfraum neben der Fertigung
+    fr: Local de contrôle près de la fabrication
+    it: Locale di controllo vicino alla produzione
+    en: Inspection room next to production
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/produktionshalle
+    to_room_type: pragmaticbim:room-type/qualitaetskontrollraum
+  adds:
+  - pragmaticbim:room-type/produktionshalle
+  - pragmaticbim:room-type/qualitaetskontrollraum
+- id: pragmaticbim:scenario-option/qualitaet-pruefen-clean-room
+  sort_order: 2
+  name:
+    de: Reinraumfertigung
+    fr: Fabrication en salle blanche
+    it: Produzione in camera bianca
+    en: Clean-room production
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/schleuse
+    to_room_type: pragmaticbim:room-type/reinraum
+  adds:
+  - pragmaticbim:room-type/schleuse
+  - pragmaticbim:room-type/reinraum

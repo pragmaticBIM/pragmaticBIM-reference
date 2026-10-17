@@ -8,66 +8,46 @@ name:
   it: Humus
   en: Humus
 definition:
-  de: 'Macht Humusmengen für die Kosten früh prüfbar, damit Abtrag, Neueinbau und Überschuss nicht erst bei der Vergabe auftauchen.
-
+  de: |-
+    Macht Humusmengen für die Kosten früh prüfbar, damit Abtrag, Neueinbau und Überschuss nicht erst bei der Vergabe auftauchen.
 
     **Beschreibung**
-
     - Humusschicht im Planungsperimeter, getrennt nach Bestand, Abtrag und Neueinbau.
-
     - Dient der Kostenbilanz. Das Zwischenlager ist ein Baustelleneinrichtungsobjekt.
 
-
     **Modellierungshinweis**
-
     - Als eine Schicht modellieren; nach Lage trennen.
-
-    - Kein Haufwerk, kein Wegunterbau und keine Baugrube modellieren.'
-  fr: 'Rend les quantités d''humus vérifiables tôt pour les coûts, afin que déblai, remise en place et excédent n''apparaissent pas seulement lors de l''adjudication.
-
+    - Kein Haufwerk, kein Wegunterbau und keine Baugrube modellieren.
+  fr: |-
+    Rend les quantités d'humus vérifiables tôt pour les coûts, afin que déblai, remise en place et excédent n'apparaissent pas seulement lors de l'adjudication.
 
     **Description**
-
-    - Couche d''humus dans le périmètre de planification, séparée en existant, déblai et remise en place.
-
-    - Sert au bilan des coûts. Le dépôt intermédiaire est un objet d''installation de chantier.
-
+    - Couche d'humus dans le périmètre de planification, séparée en existant, déblai et remise en place.
+    - Sert au bilan des coûts. Le dépôt intermédiaire est un objet d'installation de chantier.
 
     **Directives de modélisation**
-
     - Modéliser comme une seule couche ; séparer selon la situation.
-
-    - Ne pas modéliser de tas, de fondation de chemin ni de fouille.'
-  it: 'Rende verificabili presto le quantità di humus per i costi, così che scavo, ripristino ed eccedenza non emergano solo in fase di gara.
-
+    - Ne pas modéliser de tas, de fondation de chemin ni de fouille.
+  it: |-
+    Rende verificabili presto le quantità di humus per i costi, così che scavo, ripristino ed eccedenza non emergano solo in fase di gara.
 
     **Descrizione**
-
     - Strato di humus nel perimetro di pianificazione, distinto in esistente, scavo e ripristino.
-
     - Serve al bilancio dei costi. Il deposito intermedio è un oggetto di installazione di cantiere.
 
-
     **Direttive di modellazione**
-
     - Modellare come uno strato unico; separare secondo la situazione.
-
-    - Non modellare cumuli, fondazione di percorsi né scavo di cantiere.'
-  en: 'Makes humus quantities verifiable early for cost, so that stripping, reinstatement, and surplus do not appear only at tender.
-
+    - Non modellare cumuli, fondazione di percorsi né scavo di cantiere.
+  en: |-
+    Makes humus quantities verifiable early for cost, so that stripping, reinstatement, and surplus do not appear only at tender.
 
     **Description**
-
     - Humus layer in the planning perimeter, split into existing, stripping, and reinstatement.
-
     - Used for the cost balance. The intermediate stockpile is a site-setup object.
 
-
     **Modelling guidelines**
-
     - Model as one layer; split by situation.
-
-    - Do not model a heap, path subbase, or building excavation.'
+    - Do not model a heap, path subbase, or building excavation.
 needed_in_domain:
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcBuildingElementProxy
@@ -78,14 +58,10 @@ picture_print_link: landscape-humus-print.tif
 attachment_link: landscape-humus.ifc
 model_link: landscape-humus.ifc
 applicability:
-  de: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Humus) OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Humus) OR (entity_ifc2x3=IfcBuildingElementProxy
-    AND ObjectType=Humus)
-  fr: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Terre végétale") OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Terre végétale")
-    OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Terre végétale")
-  it: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Terra vegetale") OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Terra vegetale")
-    OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Terra vegetale")
-  en: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Topsoil) OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Topsoil) OR (entity_ifc2x3=IfcBuildingElementProxy
-    AND ObjectType=Topsoil)
+  de: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Humus) OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Humus) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Humus)
+  fr: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Terre végétale") OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Terre végétale") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Terre végétale")
+  it: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Terra vegetale") OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Terra vegetale") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Terra vegetale")
+  en: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Topsoil) OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Topsoil) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Topsoil)
 attributes:
 - name: Name
   pset: null
@@ -95,18 +71,8 @@ attributes:
     it: Designazione dello strato di humus.
     en: Designation of the humus layer.
   datatype: IfcLabel
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-humus-handling
   is_applicability: false
@@ -115,43 +81,30 @@ attributes:
 - name: PredefinedType
   pset: null
   definition:
-    de: 'Kennzeichnet das Element als Humusschicht.
-
+    de: |-
+      Kennzeichnet das Element als Humusschicht.
 
       **Zulässige Werte**
-
-      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType = Humus'
-    fr: 'Identifie l''élément comme couche d''humus.
-
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType = Humus
+    fr: |-
+      Identifie l'élément comme couche d'humus.
 
       **Valeurs admises**
-
-      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType = Terre végétale'
-    it: 'Identifica l''elemento come strato di humus.
-
+      - `USERDEFINED` — type défini par l'utilisateur ; ObjectType = Terre végétale
+    it: |-
+      Identifica l'elemento come strato di humus.
 
       **Valori ammessi**
-
-      - `USERDEFINED` — tipo definito dall''utente ; ObjectType = Terra vegetale'
-    en: 'Marks the element as a humus layer.
-
+      - `USERDEFINED` — tipo definito dall'utente ; ObjectType = Terra vegetale
+    en: |-
+      Marks the element as a humus layer.
 
       **Allowed values**
-
-      - `USERDEFINED` — user-defined type; ObjectType = Topsoil'
+      - `USERDEFINED` — user-defined type; ObjectType = Topsoil
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-geographic-element-humus
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-humus-handling
   is_applicability: true
@@ -160,44 +113,30 @@ attributes:
 - name: ObjectType
   pset: null
   definition:
-    de: 'Art des Elements als Humusschicht.
-
+    de: |-
+      Art des Elements als Humusschicht.
 
       **Zulässige Werte**
-
-      - `Humus` — Humusschicht'
-    fr: 'Nature de l''élément comme couche d''humus.
-
+      - `Humus` — Humusschicht
+    fr: |-
+      Nature de l'élément comme couche d'humus.
 
       **Valeurs admises**
-
-      - `Terre végétale` — couche d''humus'
-    it: 'Tipo dell''elemento come strato di humus.
-
+      - `Terre végétale` — couche d'humus
+    it: |-
+      Tipo dell'elemento come strato di humus.
 
       **Valori ammessi**
-
-      - `Terra vegetale` — strato di humus'
-    en: 'Kind of element as a humus layer.
-
+      - `Terra vegetale` — strato di humus
+    en: |-
+      Kind of element as a humus layer.
 
       **Allowed values**
-
-      - `Topsoil` — humus layer'
+      - `Topsoil` — humus layer
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/objecttype-humus
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-humus-handling
   is_applicability: true
@@ -206,68 +145,42 @@ attributes:
 - name: ElementStatus
   pset: ePset_ElementStatus
   definition:
-    de: 'Lage der Humusschicht. Das Zwischenlager ist kein Status dieser Schicht.
-
+    de: |-
+      Lage der Humusschicht. Das Zwischenlager ist kein Status dieser Schicht.
 
       **Zulässige Werte**
-
       - `EXISTING` — Bestand
-
       - `DEMOLISH` — Abtrag
-
       - `NEW` — Neueinbau
-
-      - `TEMPORARY` — Temporär'
-    fr: 'Situation de la couche d''humus. Le dépôt intermédiaire n''est pas un statut de cette couche.
-
+      - `TEMPORARY` — Temporär
+    fr: |-
+      Situation de la couche d'humus. Le dépôt intermédiaire n'est pas un statut de cette couche.
 
       **Valeurs admises**
-
       - `EXISTING` — existant
-
       - `DEMOLISH` — déblai
-
       - `NEW` — remise en place
-
-      - `TEMPORARY` — temporaire'
-    it: 'Situazione dello strato di humus. Il deposito intermedio non è uno stato di questo strato.
-
+      - `TEMPORARY` — temporaire
+    it: |-
+      Situazione dello strato di humus. Il deposito intermedio non è uno stato di questo strato.
 
       **Valori ammessi**
-
       - `EXISTING` — esistente
-
       - `DEMOLISH` — scavo
-
       - `NEW` — ripristino
-
-      - `TEMPORARY` — temporaneo'
-    en: 'Situation of the humus layer. The intermediate stockpile is not a status of this layer.
-
+      - `TEMPORARY` — temporaneo
+    en: |-
+      Situation of the humus layer. The intermediate stockpile is not a status of this layer.
 
       **Allowed values**
-
       - `EXISTING` — existing
-
       - `DEMOLISH` — stripping
-
       - `NEW` — reinstatement
-
-      - `TEMPORARY` — temporary'
+      - `TEMPORARY` — temporary
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-humus-handling
   is_applicability: false
@@ -282,18 +195,8 @@ attributes:
     en: Net area of the modelled humus layer.
   datatype: IfcAreaMeasure
   unit: m²
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-humus-handling
   is_applicability: false
@@ -308,18 +211,8 @@ attributes:
     en: Net volume of the modelled humus layer.
   datatype: IfcVolumeMeasure
   unit: m³
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-humus-handling
   is_applicability: false

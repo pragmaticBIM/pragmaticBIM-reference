@@ -1,0 +1,71 @@
+id: pragmaticbim:room-type/wartungsdach
+code: RT-OU-01
+sort_order: 122
+name:
+  de: Wartungsdach
+  fr: Toiture d'entretien
+  it: Copertura di manutenzione
+  en: Maintenance Roof
+definition:
+  de: Begehbares Flachdach nur für Betrieb, Wartung und Inspektion.
+  fr: Toiture plate praticable, réservée à l'exploitation, à l'entretien et à l'inspection.
+  it: Copertura piana praticabile, riservata all'esercizio, alla manutenzione e all'ispezione.
+  en: Walkable flat-roof area accessible only for facility management and inspection.
+room_type_kind: room
+room_name: RN-11-10-06
+activity: O-TEC
+default_scope: building
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/wartungsdach-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Wartungsdach
+      fr: Toiture d'entretien
+      it: Copertura di manutenzione
+      en: Maintenance Roof
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: AFF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Workshop
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 5.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Eingeschränkt
+      fr: Restreint
+      it: Ristretto
+      en: Restricted
+  status: active

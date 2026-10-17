@@ -86,7 +86,7 @@ levels:
   - pragmaticbim:workflow/des-floor-area-from-model
   - pragmaticbim:workflow/des-urban-design-mass-study
   - pragmaticbim:workflow/des-apartment-schedule
-  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  - pragmaticbim:workflow/des-element-based-cost-early
   - pragmaticbim:workflow/qas-component-cost-plausibility
   - pragmaticbim:workflow/des-ebkp-h-classification
   - pragmaticbim:workflow/des-humus-handling
@@ -102,10 +102,10 @@ levels:
     it: Alto
     en: High
   description:
-    de: Design-Build-Beschaffung mit verbindlichem Angebot, modellbasierte Ausschreibungsgrundlagen für Beton-, Mauerwerks-, Bodenbelags-, Platten-, Maler-, Tür-, Fenster-, Trockenbau-, Brandschott- und Stahlbauarbeiten, Visualisierung der Vergabe- und Kostenschnittstellen (Grundausbau/Mieterausbau) sowie modellbasiertes Schlussausmass für Unternehmerabrechnungen.
-    fr: Acquisition en conception-réalisation avec offre ferme, bases d'appel d'offres issues de la maquette pour les travaux de béton, maçonnerie, revêtements de sol, carrelages, peinture, portes, fenêtres, construction à sec, obturations coupe-feu et construction métallique, visualisation des interfaces d'adjudication et de coûts (aménagement de base/aménagement locataire), ainsi que métré définitif basé sur la maquette pour les décomptes d'entreprise.
-    it: Acquisizione di progettazione e costruzione con offerta vincolante, basi di gara dal modello per lavori in calcestruzzo, muratura, pavimentazioni, piastrelle, pittura, porte, finestre, costruzioni a secco, sigillature antincendio e carpenteria metallica, visualizzazione delle interfacce di aggiudicazione e di costo (allestimento di base/allestimento locatario), nonché misurazione finale basata sul modello per i consuntivi delle imprese.
-    en: Design-build procurement with a binding offer, model-based tender bases for concrete, masonry, flooring, tiling, painting, door, window, drywall, firestop and steelwork packages, visualization of award and cost interfaces (base building/tenant fit-out), and model-based final quantities for contractor accounts.
+    de: Detaillierte elementbasierte Kostenberechnung, Ausschreibung mit durchgängigem Bauteilbezug und Nachkalkulation der Einheitspreise, Design-Build-Beschaffung mit verbindlichem Angebot, modellbasierte Ausschreibungsgrundlagen für Beton-, Mauerwerks-, Bodenbelags-, Platten-, Maler-, Tür-, Fenster-, Trockenbau-, Brandschott- und Stahlbauarbeiten, Visualisierung der Vergabe- und Kostenschnittstellen (Grundausbau/Mieterausbau) sowie modellbasiertes Schlussausmass für Unternehmerabrechnungen.
+    fr: Calcul détaillé des coûts par éléments, appel d'offres avec référence continue aux éléments et après-calcul des prix unitaires, acquisition en conception-réalisation avec offre ferme, bases d'appel d'offres issues de la maquette pour les travaux de béton, maçonnerie, revêtements de sol, carrelages, peinture, portes, fenêtres, construction à sec, obturations coupe-feu et construction métallique, visualisation des interfaces d'adjudication et de coûts (aménagement de base/aménagement locataire), ainsi que métré définitif basé sur la maquette pour les décomptes d'entreprise.
+    it: Calcolo dettagliato dei costi per componenti, gara con riferimento continuo ai componenti e consuntivo dei prezzi unitari, acquisizione di progettazione e costruzione con offerta vincolante, basi di gara dal modello per lavori in calcestruzzo, muratura, pavimentazioni, piastrelle, pittura, porte, finestre, costruzioni a secco, sigillature antincendio e carpenteria metallica, visualizzazione delle interfacce di aggiudicazione e di costo (allestimento di base/allestimento locatario), nonché misurazione finale basata sul modello per i consuntivi delle imprese.
+    en: Detailed element-based cost calculation, tendering with continuous component references, and post-calculation of unit rates, design-build procurement with a binding offer, model-based tender bases for concrete, masonry, flooring, tiling, painting, door, window, drywall, firestop and steelwork packages, visualization of award and cost interfaces (base building/tenant fit-out), and model-based final quantities for contractor accounts.
   status: active
   activated_workflows:
   - pragmaticbim:workflow/des-sia416-area-verification
@@ -113,7 +113,7 @@ levels:
   - pragmaticbim:workflow/des-floor-area-from-model
   - pragmaticbim:workflow/des-urban-design-mass-study
   - pragmaticbim:workflow/des-apartment-schedule
-  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  - pragmaticbim:workflow/des-element-based-cost-early
   - pragmaticbim:workflow/qas-component-cost-plausibility
   - pragmaticbim:workflow/des-ebkp-h-classification
   - pragmaticbim:workflow/des-humus-handling
@@ -131,9 +131,10 @@ levels:
   - pragmaticbim:workflow/bes-window-tender-basis
   - pragmaticbim:workflow/bes-firestop-tender-basis
   - pragmaticbim:workflow/bes-steelwork-tender-basis
-  - pragmaticbim:workflow/bes-model-based-tendering
+  - pragmaticbim:workflow/des-element-based-cost-late
+  - pragmaticbim:workflow/bes-element-based-tendering
   - pragmaticbim:workflow/bes-award-interface-visualization
   - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
-  - pragmaticbim:workflow/bes-element-unit-price-backfeed
+  - pragmaticbim:workflow/bes-element-cost-post-calculation
   - pragmaticbim:workflow/con-final-measurement-from-model
   comment: Full set at level hoch (sort_order 3); includes lower levels.

@@ -1,0 +1,55 @@
+id: pragmaticbim:usage-scenario/fahrzeuge-und-geraete-warten
+code: US-LO-04
+sort_order: 5
+name:
+  de: Fahrzeuge und Geräte warten
+  fr: Entretenir véhicules et engins
+  it: Manutenere veicoli e attrezzature
+  en: Maintaining vehicles and equipment
+description:
+  de: Stapler und Lieferfahrzeuge werden geladen, gewartet und repariert. Eigene Wartungsflächen entscheiden
+    über Ausfallzeiten und Werkstattbedarf.
+  fr: Les chariots élévateurs et véhicules de livraison sont rechargés, entretenus et réparés. Des surfaces
+    d'entretien propres déterminent les temps d'arrêt et le besoin d'atelier.
+  it: Carrelli elevatori e veicoli di consegna vengono ricaricati, manutenuti e riparati. Superfici di
+    manutenzione proprie determinano tempi di fermo e fabbisogno di officina.
+  en: Forklifts and delivery vehicles are charged, serviced, and repaired. Dedicated maintenance areas
+    determine downtime and workshop needs.
+uses:
+- pragmaticbim:use/logistik
+tags:
+- betrieb
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/fahrzeuge-und-geraete-warten-bay
+  sort_order: 1
+  name:
+    de: Wartungsbucht
+    fr: Baie d'entretien
+    it: Baia di manutenzione
+    en: Maintenance bay
+  adds:
+  - pragmaticbim:room-type/wartungsbucht
+- id: pragmaticbim:scenario-option/fahrzeuge-und-geraete-warten-bay-workshop
+  sort_order: 2
+  name:
+    de: Wartungsbucht mit Werkstatt
+    fr: Baie d'entretien avec atelier
+    it: Baia di manutenzione con officina
+    en: Maintenance bay with workshop
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wartungsbucht
+    to_room_type: pragmaticbim:room-type/werkstatt
+  adds:
+  - pragmaticbim:room-type/wartungsbucht
+  - pragmaticbim:room-type/werkstatt
+- id: pragmaticbim:scenario-option/fahrzeuge-und-geraete-warten-external
+  sort_order: 3
+  name:
+    de: Externer Service
+    fr: Service externe
+    it: Servizio esterno
+    en: External service
+  exclusive: true

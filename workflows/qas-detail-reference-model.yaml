@@ -7,122 +7,78 @@ name:
   it: Localizzare i dettagli standard nel modello e verificare le lacune
   en: Locate standard details in the model and check for gaps
 description:
-  de: 'Im 3D-Modell verorten, wo welches Standarddetail gilt, und prüfen, ob alles detailliert ist, bevor Lücken erst in der Ausführung auffallen.
-
+  de: |-
+    Im 3D-Modell verorten, wo welches Standarddetail gilt, und prüfen, ob alles detailliert ist, bevor Lücken erst in der Ausführung auffallen.
 
     **Ausgangslage**
-
     - In 2D-Plänen werden Detailverweise in Schnitten geführt; im Modell fehlt oft die räumliche Zuordnung der Standarddetails.
-
     - Ohne modellbasierte Gültigkeitszonen sind Planungslücken und fehlende Detailzuordnungen schwer zu erkennen.
 
-
     **Ziel & Nutzen**
-
     - Standarddetails räumlich im Modell verorten und deren Gültigkeitsbereich als Volumen abbilden.
-
     - Planungslücken, Überlappungen und fehlende Detailzuordnungen früh sichtbar machen.
 
-
     **Ablauf**
-
     1. Standarddetailkatalog und Detailnummern festlegen.
-
     2. Detailverweise als Volumenkörper platzieren und den Standarddetails zuordnen.
-
     3. Modell prüfen und fehlende oder widersprüchliche Zuordnungen bereinigen.
 
-
     **Lieferergebnis**
-
-    - Modell mit räumlichen Gültigkeitsbereichen, eindeutiger Zuordnung und geprüfter Vollständigkeit der Detaillierung.'
-  fr: 'Localiser dans la maquette 3D où chaque détail type s''applique et vérifier que tout est détaillé, avant que les lacunes n''apparaissent qu''à l''exécution.
-
+    - Modell mit räumlichen Gültigkeitsbereichen, eindeutiger Zuordnung und geprüfter Vollständigkeit der Detaillierung.
+  fr: |-
+    Localiser dans la maquette 3D où chaque détail type s'applique et vérifier que tout est détaillé, avant que les lacunes n'apparaissent qu'à l'exécution.
 
     **Situation de départ**
-
-    - En 2D, les renvois de détail figurent dans les coupes ; dans le modèle, l''affectation spatiale des détails types manque souvent.
-
+    - En 2D, les renvois de détail figurent dans les coupes ; dans le modèle, l'affectation spatiale des détails types manque souvent.
     - Sans zones de validité modélisées, les lacunes de planification et les affectations manquantes restent difficiles à repérer.
 
-
     **Objectif et bénéfice**
-
     - Localiser les détails types dans le modèle et représenter leur zone de validité par un volume.
-
     - Rendre visibles tôt les lacunes, chevauchements et affectations manquantes.
 
-
     **Déroulement**
-
     1. Définir le catalogue de détails types et les numéros de détail.
-
     2. Placer les renvois de détail comme volumes et les affecter aux détails types.
-
     3. Contrôler le modèle et corriger les affectations manquantes ou contradictoires.
 
-
     **Livrable**
-
-    - Maquette avec zones de validité spatiales, attribution univoque et contrôle de l''exhaustivité du détaillage.'
-  it: 'Localizzare nel modello 3D dove vale ciascun dettaglio standard e verificare che tutto sia dettagliato, prima che le lacune emergano solo in esecuzione.
-
+    - Maquette avec zones de validité spatiales, attribution univoque et contrôle de l'exhaustivité du détaillage.
+  it: |-
+    Localizzare nel modello 3D dove vale ciascun dettaglio standard e verificare che tutto sia dettagliato, prima che le lacune emergano solo in esecuzione.
 
     **Situazione di partenza**
-
-    - Nei plani 2D i riferimenti al dettaglio sono indicati nelle sezioni; nel modello manca spesso l''assegnazione spaziale dei dettagli standard.
-
+    - Nei plani 2D i riferimenti al dettaglio sono indicati nelle sezioni; nel modello manca spesso l'assegnazione spaziale dei dettagli standard.
     - Senza zone di validità modellate, lacune di pianificazione e assegnazioni mancanti sono difficili da individuare.
 
-
     **Obiettivo e beneficio**
-
-    - Localizzare i dettagli standard nel modello e rappresentarne l''ambito di validità come volume.
-
+    - Localizzare i dettagli standard nel modello e rappresentarne l'ambito di validità come volume.
     - Rendere visibili in anticipo lacune, sovrapposizioni e assegnazioni mancanti.
 
-
     **Svolgimento**
-
     1. Definire il catalogo dei dettagli standard e i numeri di dettaglio.
-
     2. Posizionare i riferimenti al dettaglio come volumi e associarli ai dettagli standard.
-
     3. Verificare il modello e correggere assegnazioni mancanti o contraddittorie.
 
-
     **Risultato della fornitura**
-
-    - Modello con ambiti di validità spaziali, assegnazione univoca e verifica della completezza del dettaglio.'
-  en: 'Locate in the 3D model where each standard detail applies and check that everything is detailed, before gaps only show up during execution.
-
+    - Modello con ambiti di validità spaziali, assegnazione univoca e verifica della completezza del dettaglio.
+  en: |-
+    Locate in the 3D model where each standard detail applies and check that everything is detailed, before gaps only show up during execution.
 
     **Starting point**
-
     - In 2D plans, detail references are shown in sections; the model often lacks the spatial assignment of standard details.
-
     - Without modelled validity zones, planning gaps and missing detail assignments are hard to detect.
 
-
     **Goal & benefit**
-
     - Locate standard details in the model and represent their validity area as a volume.
-
     - Make gaps, overlaps, and missing assignments visible early.
 
-
     **Process**
-
     1. Define the standard detail catalogue and detail numbers.
-
     2. Place detail references as volumes and assign them to standard details.
-
     3. Check the model and resolve missing or conflicting assignments.
 
-
     **Deliverable**
-
-    - Model with spatial validity areas, unambiguous assignment, and a documented check that detailing is complete.'
+    - Model with spatial validity areas, unambiguous assignment, and a documented check that detailing is complete.
 workflow_group: fachpruefung
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null

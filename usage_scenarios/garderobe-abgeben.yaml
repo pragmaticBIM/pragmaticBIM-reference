@@ -1,0 +1,65 @@
+id: pragmaticbim:usage-scenario/garderobe-abgeben
+code: US-VS-04
+sort_order: 5
+name:
+  de: Garderobe abgeben
+  fr: Déposer ses affaires au vestiaire
+  it: Lasciare il guardaroba
+  en: Checking coats
+description:
+  de: Besuchende legen Mäntel und Taschen vor der Veranstaltung ab. Die Art der Aufbewahrung entscheidet
+    über Sicherheit, Personal und Warteschlangen im Foyer.
+  fr: Les visiteurs déposent manteaux et sacs avant la manifestation. Le mode de dépôt détermine la sécurité,
+    le personnel et les files d'attente au foyer.
+  it: I visitatori depositano cappotti e borse prima dell'evento. Il tipo di deposito determina sicurezza,
+    personale e code nel foyer.
+  en: Visitors leave coats and bags before the event. The type of storage determines security, staffing,
+    and queues in the foyer.
+uses:
+- pragmaticbim:use/versammlung
+tags:
+- ankommen
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/garderobe-abgeben-staffed
+  sort_order: 1
+  name:
+    de: Bediente Garderobe
+    fr: Vestiaire avec service
+    it: Guardaroba servito
+    en: Staffed cloakroom
+  quantity:
+    id: pragmaticbim:quantity/garderobe-abgeben-staffed
+    sort_order: 1
+    name:
+      de: Anzahl Garderobenplätze
+      fr: Nombre de places de vestiaire
+      it: Numero di posti guardaroba
+      en: Number of cloakroom places
+    status: active
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/garderobe
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/garderobe
+- id: pragmaticbim:scenario-option/garderobe-abgeben-lockers
+  sort_order: 2
+  name:
+    de: Schliessfächer
+    fr: Casiers
+    it: Armadietti
+    en: Lockers
+  quantity:
+    id: pragmaticbim:quantity/garderobe-abgeben-lockers
+    sort_order: 1
+    name:
+      de: Anzahl Schliessfächer
+      fr: Nombre de casiers
+      it: Numero di armadietti
+      en: Number of lockers
+    status: active
+  adds:
+  - pragmaticbim:room-type/schliessfachraum

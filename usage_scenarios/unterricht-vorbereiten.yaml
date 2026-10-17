@@ -1,0 +1,52 @@
+id: pragmaticbim:usage-scenario/unterricht-vorbereiten
+code: US-BI-06
+sort_order: 7
+name:
+  de: Unterricht vorbereiten
+  fr: Préparer les cours
+  it: Preparare le lezioni
+  en: Preparing lessons
+description:
+  de: Lehrpersonen bereiten Unterricht vor, korrigieren und sprechen sich zwischen den Lektionen ab. Der
+    Arbeitsort entscheidet über Ruhe, Austausch im Kollegium und Flächenbedarf.
+  fr: Les enseignants préparent les cours, corrigent et se concertent entre les leçons. Le lieu de travail
+    détermine le calme, les échanges entre collègues et la surface nécessaire.
+  it: I docenti preparano le lezioni, correggono e si coordinano tra una lezione e l'altra. Il luogo di
+    lavoro determina tranquillità, scambio tra colleghi e fabbisogno di superficie.
+  en: Teachers prepare lessons, mark work, and coordinate between classes. The workplace determines quiet,
+    exchange among staff, and area demand.
+uses:
+- pragmaticbim:use/bildung
+tags:
+- lehrpersonen
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/unterricht-vorbereiten-common
+  sort_order: 1
+  name:
+    de: Gemeinschaftsbereich
+    fr: Espace commun
+    it: Area comune
+    en: Common area
+  adds:
+  - pragmaticbim:room-type/pausenraum
+- id: pragmaticbim:scenario-option/unterricht-vorbereiten-offices
+  sort_order: 2
+  name:
+    de: Einzelbüros
+    fr: Bureaux individuels
+    it: Uffici individuali
+    en: Individual offices
+  adds:
+  - pragmaticbim:room-type/buero
+- id: pragmaticbim:scenario-option/unterricht-vorbereiten-shared
+  sort_order: 3
+  name:
+    de: Shared Office
+    fr: Bureau partagé
+    it: Ufficio condiviso
+    en: Shared office
+  adds:
+  - pragmaticbim:room-type/gemeinschaftsbuero

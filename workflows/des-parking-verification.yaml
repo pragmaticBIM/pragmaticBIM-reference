@@ -7,127 +7,86 @@ name:
   it: Giustificare i posti auto
   en: Verify parking spaces
 description:
-  de: 'Parkplätze im Modell abbilden und auswerten, damit der Parkplatznachweis laufend mit Planung und Verkehrsgutachten abgeglichen werden kann.
-
+  de: |-
+    Parkplätze im Modell abbilden und auswerten, damit der Parkplatznachweis laufend mit Planung und Verkehrsgutachten abgeglichen werden kann.
 
     **Ausgangslage**
-
     - Parkplatznachweise und Kennwerte brauchen eine nachvollziehbare Zählung und Flächenangabe.
-
     - Manuelle Listen oder 2D-Auszüge sind fehleranfällig und veralten schnell. Dies ist ein Genehmigungsrisiko.
 
-
     **Ziel & Nutzen**
-
     - Jederzeit prüfen können, ob die Mindestanzahl eingehalten ist.
 
-
     **Ablauf**
-
     1. Ab Bauprojekt jeden Parkplatz als eigenen Raum mit Nummer und Fläche modellieren.
-
     2. Prüfregel erstellen, um einen Soll-Ist-Abgleich machen zu können.
-
     3. Nachweis und Kennwerte aus dem Auszug ableiten.
 
-
     **Lieferergebnis**
-
     - Architekturmodell mit eindeutig identifizierbaren und auswertbaren Parkplätzen
+    - Parkplatznachweis mit nachvollziehbarem Soll-Ist-Vergleich
 
-    - Parkplatznachweis mit nachvollziehbarem Soll-Ist-Vergleich'
-  fr: 'Représenter et évaluer les places de stationnement dans la maquette, afin de tenir le justificatif aligné en continu avec le projet et l''étude de trafic.
-
+  fr: |-
+    Représenter et évaluer les places de stationnement dans la maquette, afin de tenir le justificatif aligné en continu avec le projet et l'étude de trafic.
 
     **Situation de départ**
-
     - Les justificatifs de places et les indicateurs exigent un dénombrement et des surfaces traçables.
-
-    - Les listes manuelles ou les extraits 2D sont sources d''erreurs et deviennent vite obsolètes. C''est un risque pour l''autorisation.
-
+    - Les listes manuelles ou les extraits 2D sont sources d'erreurs et deviennent vite obsolètes. C'est un risque pour l'autorisation.
 
     **Objectif et bénéfice**
-
     - Pouvoir vérifier à tout moment si le nombre minimal de places est respecté.
 
-
     **Déroulement**
-
     1. Dès le projet de construction, modéliser chaque place comme local distinct avec numéro et surface.
-
-    2. Établir une règle de contrôle pour comparer l''exigence et le projet.
-
-    3. Déduire le justificatif et les indicateurs de l''extrait.
-
+    2. Établir une règle de contrôle pour comparer l'exigence et le projet.
+    3. Déduire le justificatif et les indicateurs de l'extrait.
 
     **Livrable**
-
-    - Maquette d''architecture avec des places clairement identifiables et évaluables
-
-    - Justificatif de stationnement avec une comparaison traçable entre l''exigence et le projet'
-  it: 'Rappresentare e valutare i posti auto nel modello, così da tenere la verifica allineata in continuo con il progetto e lo studio del traffico.
-
+    - Maquette d'architecture avec des places clairement identifiables et évaluables
+    - Justificatif de stationnement avec une comparaison traçable entre l'exigence et le projet
+  it: |-
+    Rappresentare e valutare i posti auto nel modello, così da tenere la verifica allineata in continuo con il progetto e lo studio del traffico.
 
     **Situazione di partenza**
-
     - Le verifiche dei posti e gli indicatori richiedono un conteggio e superfici tracciabili.
-
-    - Elenchi manuali o estratti 2D sono soggetti a errori e diventano presto obsoleti. Si tratta di un rischio per l''autorizzazione.
-
+    - Elenchi manuali o estratti 2D sono soggetti a errori e diventano presto obsoleti. Si tratta di un rischio per l'autorizzazione.
 
     **Obiettivo e beneficio**
-
     - Poter verificare in ogni momento se il numero minimo di posti è rispettato.
 
-
     **Svolgimento**
-
     1. Dal progetto di costruzione, modellare ogni posto come locale distinto con numero e superficie.
-
     2. Definire una regola di controllo per confrontare il requisito con il progetto.
-
-    3. Ricavare la verifica e gli indicatori dall''estratto.
-
+    3. Ricavare la verifica e gli indicatori dall'estratto.
 
     **Risultato della fornitura**
-
     - Modello di architettura con posti auto identificabili in modo univoco e valutabili
-
-    - Verifica dei parcheggi con un confronto tracciabile tra requisito e progetto'
-  en: 'Represent and evaluate parking spaces in the model so that parking verification can be kept aligned with the design and traffic study.
-
+    - Verifica dei parcheggi con un confronto tracciabile tra requisito e progetto
+  en: |-
+    Represent and evaluate parking spaces in the model so that parking verification can be kept aligned with the design and traffic study.
 
     **Starting point**
-
     - Parking verification and metrics require traceable counts and area information.
-
     - Manual lists or 2D extracts are error-prone and quickly become outdated. This is a permit risk.
 
-
     **Goal & benefit**
-
     - Check at any time whether the minimum number of parking spaces is met.
 
-
     **Process**
-
     1. From the building-design phase onward, model each parking space as a separate space with a number and area.
-
     2. Create a checking rule to compare the requirement with the design.
-
     3. Derive the verification and metrics from the extract.
 
-
     **Deliverable**
-
     - Architecture model with parking spaces that are unambiguously identifiable and ready to evaluate
-
-    - Parking verification with a traceable comparison of the requirement and design'
-workflow_group: konzept
+    - Parking verification with a traceable comparison of the requirement and design
+workflow_group: konzept-bewilligung
 parent_workflow: pragmaticbim:workflow/des
-picture_link: null
+picture_link:
 status: active
 service_kind: basic
+uses:
+  - pragmaticbim:use/parkierung
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/infrastructure

@@ -1,0 +1,112 @@
+id: pragmaticbim:room-type/gewerbekueche
+code: RT-CO-11
+sort_order: 83
+name:
+  de: Gewerbeküche
+  fr: Cuisine professionnelle
+  it: Cucina professionale
+  en: Commercial Kitchen
+definition:
+  de: Küche für die gewerbliche Zubereitung von Speisen.
+  fr: Cuisine destinée à la préparation professionnelle de repas.
+  it: Cucina per la preparazione professionale di pasti.
+  en: Kitchen for commercial food preparation.
+room_type_kind: room
+room_name: RN-07-10-05
+activity: M-COM
+default_scope: building
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/gewerbekueche-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-interior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-interior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: false
+  - element: pragmaticbim:element/spaces-interior
+    name: LongName
+    value:
+      de: Gewerbeküche
+      fr: Cuisine professionnelle
+      it: Cucina professionale
+      en: Commercial Kitchen
+  - element: pragmaticbim:element/spaces-interior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: HNF
+  - element: pragmaticbim:element/spaces-interior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Plattenbelag
+  - element: pragmaticbim:element/spaces-interior
+    name: WallCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Plattenbelag
+  - element: pragmaticbim:element/spaces-interior
+    name: CeilingCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Gipskarton-Decke
+      fr: Gypsum board ceiling
+      it: Gypsum board ceiling
+      en: Gypsum board ceiling
+  - element: pragmaticbim:element/spaces-interior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Workshop
+  - element: pragmaticbim:element/spaces-interior
+    name: InteriorOrExteriorSpace
+    value: INTERNAL
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 5.0
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-interior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Eingeschränkt
+      fr: Restreint
+      it: Ristretto
+      en: Restricted
+  - element: pragmaticbim:element/spaces-interior
+    name: WinterTemperatureMin
+    pset: ePset_SpaceRequirement
+    value: 18
+  - element: pragmaticbim:element/spaces-interior
+    name: WinterTemperatureMax
+    pset: ePset_SpaceRequirement
+    value: 24
+  - element: pragmaticbim:element/spaces-interior
+    name: SummerTemperatureMin
+    pset: ePset_SpaceRequirement
+    value: 20
+  - element: pragmaticbim:element/spaces-interior
+    name: SummerTemperatureMax
+    pset: ePset_SpaceRequirement
+    value: 28
+  - element: pragmaticbim:element/spaces-interior
+    name: RequiredIlluminance
+    pset: ePset_SpaceRequirement
+    value: 500
+  - element: pragmaticbim:element/spaces-interior
+    name: PeakOccupancy
+    pset: ePset_SpaceRequirement
+    value: 8
+  - element: pragmaticbim:element/spaces-interior
+    name: DailyOperatingHours
+    pset: ePset_SpaceRequirement
+    value: 10
+  - element: pragmaticbim:element/spaces-interior
+    name: OutdoorAirFlowRate
+    pset: ePset_SpaceRequirement
+    value: 240
+  status: active

@@ -1,0 +1,92 @@
+id: pragmaticbim:project-goal/lagerart
+sort_order: 1101
+group: rahmenbedingungen
+code: PG-26
+name:
+  de: Lagerart
+  fr: Type d'entrepôt
+  it: Tipo di deposito
+  en: Storage type
+tag:
+  de: Lager
+  fr: Entrepôt
+  it: Deposito
+  en: Storage
+description:
+  de: |-
+    Die Lagerart und die Zahl der Palettenstellplätze bestimmen Hallenhöhe, Regale, Rampen und Fördertechnik.
+
+    Ohne diese Festlegung bleiben Hallenhöhe, Regale und Rampen offen. Die Lagerfläche lässt sich dann nicht auf Paletten, Kommissionierung oder Kühlkette auslegen.
+  fr: |-
+    Le type d'entrepôt et le nombre d'emplacements de palettes déterminent la hauteur de la halle, les rayonnages, les quais et la manutention.
+
+    Sans cette décision, hauteur de halle, rayonnages et quais restent ouverts. La surface de stockage ne peut alors pas être dimensionnée pour les palettes, la préparation de commandes ou la chaîne du froid.
+  it: |-
+    Il tipo di deposito e il numero di posti pallet determinano altezza del capannone, scaffalature, rampe e sistemi di movimentazione.
+
+    Senza questa decisione altezza del capannone, scaffalature e rampe restano aperti. La superficie di deposito non può allora essere dimensionata per pallet, commissionamento o catena del freddo.
+  en: |-
+    The storage type and the number of pallet places determine hall height, racking, docks, and conveyor systems.
+
+    Without this decision hall height, racking, and docks stay open. The storage area then cannot be sized for pallets, order picking, or a cold chain.
+status: active
+uses:
+- pragmaticbim:use/logistik
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/lagerart-hochregal
+  code: LGA-01
+  sort_order: 1
+  name:
+    de: Hochregallager
+    fr: Entrepôt à hauts rayonnages
+    it: Magazzino a scaffalature alte
+    en: High-bay warehouse
+  description:
+    de: Hohe Regale, oft automatisch bedient.
+    fr: Rayonnages hauts, souvent automatisés.
+    it: Scaffalature alte, spesso automatizzate.
+    en: Tall racking, often automated.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/lagerart-kommissionierung
+  code: LGA-02
+  sort_order: 2
+  name:
+    de: Kommissionierlager
+    fr: Entrepôt de préparation
+    it: Magazzino di picking
+    en: Order-picking warehouse
+  description:
+    de: Waren werden für Bestellungen zusammengestellt.
+    fr: Les marchandises sont préparées pour les commandes.
+    it: Le merci vengono preparate per gli ordini.
+    en: Goods are picked for orders.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/lagerart-kuehllager
+  code: LGA-03
+  sort_order: 3
+  name:
+    de: Kühllager
+    fr: Entrepôt frigorifique
+    it: Magazzino refrigerato
+    en: Cold store
+  description:
+    de: Gekühlte oder tiefgekühlte Lagerung mit Kühlkette.
+    fr: Stockage réfrigéré ou surgelé avec chaîne du froid.
+    it: Deposito refrigerato o surgelato con catena del freddo.
+    en: Chilled or frozen storage with a cold chain.
+  status: active
+  comment: ''
+quantities:
+- id: pragmaticbim:quantity/lagerart-umschlag
+  code: LGA-Q02
+  sort_order: 1
+  name:
+    de: Umschlag pro Tag
+    fr: Transbordement par jour
+    it: Movimentazione al giorno
+    en: Throughput per day
+  status: active

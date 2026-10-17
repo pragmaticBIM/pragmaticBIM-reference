@@ -7,138 +7,95 @@ name:
   it: Giustificare le superfici secondo SIA D0165
   en: Verify areas to SIA D0165
 description:
-  de: 'Den Flächennachweis nach SIA D0165 aus dem Raummodell ableiten, damit Flächenklassen und Nutzungen nachvollziehbar ausgewertet und geprüft werden können.
-
+  de: |-
+    Den Flächennachweis nach SIA D0165 aus dem Raummodell ableiten, damit Flächenklassen und Nutzungen nachvollziehbar ausgewertet und geprüft werden können.
 
     **Ausgangslage**
-
     - Detaillierte Flächennachweise nach SIA D0165 (z. B. `HNF-1` … `HNF-6`, `NNF-7`, `FF-8`, `VF-9`, `BUF-10`) brauchen eine nachvollziehbare Zuordnung je Raum.
-
     - Manuelle Listen oder parallele Klassifikationsattribute ausserhalb des Modells sind fehleranfällig.
 
-
     **Ziel & Nutzen**
-
     - Innen- und Aussenräume mit Reference (D0165-Klasse) und LongName (Raumnutzung) führen.
-
     - Wird die Fläche nach SIA D0165 klassifiziert, muss keine zusätzliche SIA-416-Klassifikation geführt werden. Diese kann eindeutig aus der detaillierteren D0165-Klasse abgeleitet werden.
 
-
     **Ablauf**
-
     1. Innen- und Aussenräume als Volumen mit LongName und Reference (D0165-Code) bereitstellen.
-
     2. Nettoflächen je Raum aus dem Modell auswerten.
-
     3. Flächen nach D0165 über Reference aggregieren und bei Bedarf die übergeordnete SIA-416-Klasse daraus ableiten.
 
-
     **Lieferergebnis**
-
     - Raummodell mit den erforderlichen Nutzungs-, Flächen- und D0165-Informationen
+    - Flächennachweis nach SIA D0165 mit zum Raummodell rückverfolgbaren Zuordnungen
 
-    - Flächennachweis nach SIA D0165 mit zum Raummodell rückverfolgbaren Zuordnungen'
-  fr: 'Justificatif de surfaces selon SIA D0165 à partir du modèle spatial – classe de surface via Reference, usage via LongName.
-
+  fr: |-
+    Justificatif de surfaces selon SIA D0165 à partir du modèle spatial – classe de surface via Reference, usage via LongName.
 
     **Situation de départ**
-
     - Les justificatifs détaillés SIA D0165 (p. ex. `HNF-1` … `HNF-6`, `NNF-7`, `FF-8`, `VF-9`, `BUF-10`) exigent une affectation traçable par local.
-
-    - Les listes manuelles ou attributs de classification hors modèle sont sources d''erreurs.
-
+    - Les listes manuelles ou attributs de classification hors modèle sont sources d'erreurs.
 
     **Objectif et bénéfice**
-
     - Saisir les espaces intérieurs et extérieurs avec Reference (classe D0165) et LongName (usage du local).
-
-    - Lorsqu''une surface est classée selon SIA D0165, il n''est pas nécessaire de gérer en plus une classification SIA 416. Celle-ci peut être déduite sans ambiguïté de la classe D0165 plus détaillée.
-
+    - Lorsqu'une surface est classée selon SIA D0165, il n'est pas nécessaire de gérer en plus une classification SIA 416. Celle-ci peut être déduite sans ambiguïté de la classe D0165 plus détaillée.
 
     **Déroulement**
-
     1. Fournir espaces intérieurs et extérieurs comme volumes avec LongName et Reference (code D0165).
-
     2. Évaluer les surfaces nettes par local à partir du modèle.
-
     3. Agréger les surfaces selon D0165 via Reference et, si nécessaire, en déduire la classe SIA 416 supérieure.
 
-
     **Livrable**
-
-    - Maquette des locaux avec les informations requises sur l''affectation, les surfaces et le classement D0165
-
-    - Justificatif des surfaces selon SIA D0165 avec affectations traçables jusqu''à la maquette'
-  it: 'Verifica delle superfici secondo SIA D0165 dal modello spaziale – classe di superficie tramite Reference, uso tramite LongName.
-
+    - Maquette des locaux avec les informations requises sur l'affectation, les surfaces et le classement D0165
+    - Justificatif des surfaces selon SIA D0165 avec affectations traçables jusqu'à la maquette
+  it: |-
+    Verifica delle superfici secondo SIA D0165 dal modello spaziale – classe di superficie tramite Reference, uso tramite LongName.
 
     **Situazione di partenza**
-
-    - Le verifiche dettagliate SIA D0165 (p. es. `HNF-1` … `HNF-6`, `NNF-7`, `FF-8`, `VF-9`, `BUF-10`) richiedono un''assegnazione tracciabile per locale.
-
+    - Le verifiche dettagliate SIA D0165 (p. es. `HNF-1` … `HNF-6`, `NNF-7`, `FF-8`, `VF-9`, `BUF-10`) richiedono un'assegnazione tracciabile per locale.
     - Elenchi manuali o attributi di classificazione fuori dal modello sono soggetti a errori.
 
-
     **Obiettivo e beneficio**
-
     - Gestire spazi interni ed esterni con Reference (classe D0165) e LongName (uso del locale).
-
     - Quando una superficie è classificata secondo SIA D0165, non è necessario gestire anche una classificazione SIA 416. Questa può essere derivata in modo univoco dalla classe D0165 più dettagliata.
 
-
     **Svolgimento**
-
     1. Fornire spazi interni ed esterni come volumi con LongName e Reference (codice D0165).
-
     2. Valutare le superfici nette per locale dal modello.
-
     3. Aggregare le superfici secondo D0165 tramite Reference e, se necessario, derivarne la classe SIA 416 sovraordinata.
 
-
     **Risultato della fornitura**
-
     - Modello dei locali con le informazioni necessarie su uso, superfici e classificazione D0165
-
-    - Verifica delle superfici secondo SIA D0165 con assegnazioni tracciabili fino al modello'
-  en: 'Derive the SIA D0165 area verification from the space model so that area classes and uses can be evaluated and checked traceably.
-
+    - Verifica delle superfici secondo SIA D0165 con assegnazioni tracciabili fino al modello
+  en: |-
+    Derive the SIA D0165 area verification from the space model so that area classes and uses can be evaluated and checked traceably.
 
     **Starting point**
-
     - Detailed SIA D0165 area verification (e.g. `HNF-1` … `HNF-6`, `NNF-7`, `FF-8`, `VF-9`, `BUF-10`) needs a traceable assignment per space.
-
     - Manual lists or classification attributes outside the model are error-prone.
 
-
     **Goal & benefit**
-
     - Carry interior and exterior spaces with Reference (D0165 class) and LongName (room use).
-
     - When an area is classified to SIA D0165, no additional SIA 416 classification needs to be maintained. It can be derived unambiguously from the more detailed D0165 class.
 
-
     **Process**
-
     1. Provide interior and exterior spaces as volumes with LongName and Reference (D0165 code).
-
     2. Evaluate net areas per space from the model.
-
     3. Aggregate areas to D0165 via Reference and derive the parent SIA 416 class when required.
 
-
     **Deliverable**
-
     - Space model with the required use, area and D0165 classification information
-
-    - SIA D0165 area statement with assignments traceable to the space model'
-workflow_group: konzept
+    - SIA D0165 area statement with assignments traceable to the space model
+workflow_group: kosten-mengen
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
 service_kind: basic
 countries:
-- CH
+  - CH
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: 'Reference carries the D0165 area class (shortcuts e.g. d0165:HNF-1…HNF-6, d0165:NNF-7, d0165:FF-8, d0165:VF-9, d0165:BUF-10, d0165:AVF, d0165:UUF). LongName remains the Building Space Name Classification
-  room use. Mapping: https://schema.pragmaticbim.ch/classification/mapping-d0165-to-room-activity.html, https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html'
+comment: >-
+  Reference carries the D0165 area class (shortcuts e.g. d0165:HNF-1…HNF-6,
+  d0165:NNF-7, d0165:FF-8, d0165:VF-9, d0165:BUF-10, d0165:AVF, d0165:UUF).
+  LongName remains the Building Space Name Classification room use.
+  Mapping: https://schema.pragmaticbim.ch/classification/mapping-d0165-to-room-activity.html,
+  https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html

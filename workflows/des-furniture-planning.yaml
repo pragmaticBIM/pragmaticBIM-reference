@@ -7,112 +7,76 @@ name:
   it: Pianificare l'arredo e acquisire i mobili
   en: Plan the furnishing and procure the furniture
 description:
-  de: 'Möblierung im Modell abbilden, damit Varianten, Möbellisten und räumliche Anforderungen frühzeitig abgestimmt und für die Beschaffung zuverlässig weiterverwendet werden können.
-
+  de: |-
+    Möblierung im Modell abbilden, damit Varianten, Möbellisten und räumliche Anforderungen frühzeitig abgestimmt und für die Beschaffung zuverlässig weiterverwendet werden können.
 
     **Ausgangslage**
-
     - Nach der Layoutentscheidung fehlen oft strukturierte Möbelangaben für Listen, Varianten und Koordination.
-
     - Möblierung wird oft nicht ausreichend geplant, was beim Bezug zu unzufriedenen Nutzern führen kann.
 
-
     **Ziel & Nutzen**
-
     - Möblierungsgrundlagen für Ausschreibungen, Variantenvergleich und Abstimmung aus dem Modell ableiten.
 
-
     **Ablauf**
-
     1. Möblierung planen.
-
     2. Möbellisten und Planungsgrundlagen aus dem Modell ableiten und abstimmen.
 
-
     **Lieferergebnis**
+    - Architekturmodell mit den erforderlichen Raum- und Möblierungsinformationen
 
-    - Architekturmodell mit den erforderlichen Raum- und Möblierungsinformationen'
-  fr: 'Représenter le mobilier dans la maquette, afin de coordonner tôt les variantes, les listes de mobilier et les exigences spatiales et de les réutiliser de façon fiable pour l''acquisition.
-
+  fr: |-
+    Représenter le mobilier dans la maquette, afin de coordonner tôt les variantes, les listes de mobilier et les exigences spatiales et de les réutiliser de façon fiable pour l'acquisition.
 
     **Situation de départ**
-
-    - Après la décision d''aménagement, les données structurées sur le mobilier manquent souvent pour les listes, les variantes et la coordination.
-
-    - L''ameublement est souvent insuffisamment étudié, ce qui peut mécontenter les utilisateurs à l''emménagement.
-
+    - Après la décision d'aménagement, les données structurées sur le mobilier manquent souvent pour les listes, les variantes et la coordination.
+    - L'ameublement est souvent insuffisamment étudié, ce qui peut mécontenter les utilisateurs à l'emménagement.
 
     **Objectif et bénéfice**
-
-    - Déduire de la maquette les bases d''ameublement pour l''appel d''offres, la comparaison des variantes et la coordination.
-
+    - Déduire de la maquette les bases d'ameublement pour l'appel d'offres, la comparaison des variantes et la coordination.
 
     **Déroulement**
-
-    1. Planifier l''ameublement.
-
+    1. Planifier l'ameublement.
     2. Déduire de la maquette les listes de mobilier et les bases de planification, puis les coordonner.
 
-
     **Livrable**
-
-    - Maquette d''architecture avec les informations nécessaires sur les locaux et le mobilier'
-  it: 'Rappresentare gli arredi nel modello, così da coordinare per tempo varianti, elenchi del mobilio e requisiti spaziali e riutilizzarli in modo affidabile per l''acquisizione.
-
+    - Maquette d'architecture avec les informations nécessaires sur les locaux et le mobilier
+  it: |-
+    Rappresentare gli arredi nel modello, così da coordinare per tempo varianti, elenchi del mobilio e requisiti spaziali e riutilizzarli in modo affidabile per l'acquisizione.
 
     **Situazione di partenza**
-
     - Dopo la decisione sulla disposizione dei locali mancano spesso dati strutturati sugli arredi per elenchi, varianti e coordinamento.
-
-    - L''arredo è spesso progettato in modo insufficiente e può lasciare insoddisfatti gli utenti al momento dell''occupazione.
-
+    - L'arredo è spesso progettato in modo insufficiente e può lasciare insoddisfatti gli utenti al momento dell'occupazione.
 
     **Obiettivo e beneficio**
-
     - Ricavare dal modello le basi di arredo per la gara, il confronto delle varianti e il coordinamento.
 
-
     **Svolgimento**
-
-    1. Pianificare l''arredo.
-
+    1. Pianificare l'arredo.
     2. Ricavare dal modello gli elenchi del mobilio e le basi di pianificazione e coordinarli.
 
-
     **Risultato della fornitura**
-
-    - Modello di architettura con le informazioni necessarie sui locali e sull''arredo'
-  en: 'Represent furniture in the model so that options, furniture schedules, and spatial requirements can be coordinated early and reused reliably for procurement.
-
+    - Modello di architettura con le informazioni necessarie sui locali e sull'arredo
+  en: |-
+    Represent furniture in the model so that options, furniture schedules, and spatial requirements can be coordinated early and reused reliably for procurement.
 
     **Starting point**
-
     - After layout decisions, structured furniture information is often missing for schedules, options, and coordination.
-
     - Furniture is often planned inadequately, which can lead to dissatisfied users when the building is occupied.
 
-
     **Goal & benefit**
-
     - Derive the furniture-design basis for tendering, option comparison, and coordination from the model.
 
-
     **Process**
-
     1. Design the furniture layout.
-
     2. Derive and coordinate furniture schedules and the design basis from the model.
 
-
     **Deliverable**
-
-    - Architecture model with the required space and furniture information'
-workflow_group: ausschreibung
+    - Architecture model with the required space and furniture information
+workflow_group: unternehmen
 parent_workflow: pragmaticbim:workflow/bes
-picture_link: null
+picture_link:
 status: active
 service_kind: special
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Formal furniture planning on proper interior spaces. Distinct from qas-special-room-user-coordination (informal sketches) and qas-furnishability-verification (fit/clash proof). Requires clean space
-  assignment.
+comment: Formal furniture planning on proper interior spaces. Distinct from qas-special-room-user-coordination (informal sketches) and qas-furnishability-verification (fit/clash proof). Requires clean space assignment.

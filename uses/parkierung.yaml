@@ -1,0 +1,28 @@
+id: pragmaticbim:use/parkierung
+code: USE-PK
+sort_order: 15
+name:
+  de: Parkierung
+  fr: Stationnement
+  it: Parcheggio
+  en: Parking
+definition:
+  de: 'Abstellen von Fahrzeugen, etwa in Parkhäusern, Einstellhallen und auf Parkplätzen. Bezugsgrösse:
+    Anzahl Parkplätze.'
+  fr: 'Stationnement de véhicules, par exemple dans des parkings, garages et sur des places de parc. Grandeur
+    de référence : nombre de places de stationnement.'
+  it: 'Parcheggio di veicoli, ad esempio in autosili, autorimesse e su posteggi. Grandezza di riferimento:
+    numero di posteggi.'
+  en: 'Parking of vehicles, for example in multi-storey car parks, garages and parking spaces. Reference
+    quantity: number of parking spaces.'
+reference_quantity:
+  id: pragmaticbim:quantity/parkierung-parkplaetze
+  code: USE-PK-Q
+  sort_order: 1
+  name:
+    de: Anzahl Parkplätze
+    fr: Nombre de places de stationnement
+    it: Numero di posteggi
+    en: Number of parking spaces
+  status: active
+status: active

@@ -8,74 +8,50 @@ name:
   it: Fondazione dettagliata
   en: Footing detailed
 definition:
-  de: 'Schafft eine verlässliche Grundlage für die Abstimmung von Lastabtragung, Baugrube und Werkleitungen.
-
+  de: |-
+    Schafft eine verlässliche Grundlage für die Abstimmung von Lastabtragung, Baugrube und Werkleitungen.
 
     **Beschreibung**
-
     - Ausführungsgenaue Geometrie gemäss Tragwerksplanung.
-
     - Massgebendes Fachmodell für Ausführungsplanung, Mengenermittlung und Koordination.
 
-
     **Modellierungshinweis**
-
     - So modellieren, wie gebaut wird; an Bauteilgrenzen, bei Stärkenänderungen und am Übergang zwischen innen und aussen teilen.
-
     - Zuordnung zu Gründung und Tragwerksteil einhalten.
-
-    - Geeignetes Material im Autorensystem verwenden und exportieren.'
-  fr: 'Fournit une base fiable pour coordonner la descente de charges, la fouille et les conduites de réseaux.
-
+    - Geeignetes Material im Autorensystem verwenden und exportieren.
+  fr: |-
+    Fournit une base fiable pour coordonner la descente de charges, la fouille et les conduites de réseaux.
 
     **Description**
-
-    - Géométrie d''exécution selon le plan structurel.
-
-    - Maquette fédérée de référence pour l''exécution, les quantités et la coordination.
-
+    - Géométrie d'exécution selon le plan structurel.
+    - Maquette fédérée de référence pour l'exécution, les quantités et la coordination.
 
     **Directives de modélisation**
-
-    - Modéliser tel qu''il sera construit ; diviser aux limites de composants.
-
-    - Respecter l''attribution à la fondation et à la partie porteuse.
-
-    - Utiliser et exporter le matériau approprié depuis le logiciel auteur.'
-  it: 'Fornisce una base affidabile per coordinare la trasmissione dei carichi, lo scavo e le condotte di servizio.
-
+    - Modéliser tel qu'il sera construit ; diviser aux limites de composants.
+    - Respecter l'attribution à la fondation et à la partie porteuse.
+    - Utiliser et exporter le matériau approprié depuis le logiciel auteur.
+  it: |-
+    Fornisce una base affidabile per coordinare la trasmissione dei carichi, lo scavo e le condotte di servizio.
 
     **Descrizione**
-
     - Geometria esecutiva secondo la pianificazione strutturale.
-
     - Modello federato di riferimento per esecuzione, quantità e coordinamento.
 
-
     **Direttive di modellazione**
-
     - Modellare come sarà costruito; suddividere ai confini dei componenti.
-
-    - Rispettare l''assegnazione a fondazione e parte strutturale.
-
-    - Usare ed esportare il materiale appropriato dal software di modellazione.'
-  en: 'Provides a reliable basis for coordinating load transfer, excavation, and utility lines.
-
+    - Rispettare l'assegnazione a fondazione e parte strutturale.
+    - Usare ed esportare il materiale appropriato dal software di modellazione.
+  en: |-
+    Provides a reliable basis for coordinating load transfer, excavation, and utility lines.
 
     **Description**
-
     - Execution-accurate geometry according to the structural design.
-
     - Authoritative federated model for execution planning, quantities, and coordination.
 
-
     **Modelling guidelines**
-
     - Model as it will be built; split at component boundaries.
-
     - Maintain assignment to foundation and structural part.
-
-    - Use and export the appropriate material from the authoring system.'
+    - Use and export the appropriate material from the authoring system.
 needed_in_domain:
 - pragmaticbim:domain/structural
 entity_ifc2x3: IfcFooting
@@ -93,14 +69,8 @@ attributes:
     it: Denominazione della fondazione secondo il piano strutturale.
     en: Footing designation according to the structural plan.
   datatype: IfcLabel
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-arch-structural-coordination
   - pragmaticbim:workflow/bes-concrete-tender-from-model
@@ -110,55 +80,38 @@ attributes:
 - name: PredefinedType
   pset: null
   definition:
-    de: 'Art des Fundaments.
-
+    de: |-
+      Art des Fundaments.
 
       **Zulässige Werte**
-
       - `STRIP_FOOTING` — Streifenfundament
-
       - `PAD_FOOTING` — Punktfundament
-
-      - `PILE_CAP` — Pfahlkopf'
-    fr: 'Type de fondation.
-
+      - `PILE_CAP` — Pfahlkopf
+    fr: |-
+      Type de fondation.
 
       **Valeurs admises**
-
       - `STRIP_FOOTING` — semelle filante
-
       - `PAD_FOOTING` — semelle isolée
-
-      - `PILE_CAP` — tête de pieu'
-    it: 'Tipo di fondazione.
-
+      - `PILE_CAP` — tête de pieu
+    it: |-
+      Tipo di fondazione.
 
       **Valori ammessi**
-
       - `STRIP_FOOTING` — fondazione a nastro
-
       - `PAD_FOOTING` — fondazione isolata
-
-      - `PILE_CAP` — testa di palo'
-    en: 'Kind of footing.
-
+      - `PILE_CAP` — testa di palo
+    en: |-
+      Kind of footing.
 
       **Allowed values**
-
       - `STRIP_FOOTING` — strip footing
-
       - `PAD_FOOTING` — pad footing
-
-      - `PILE_CAP` — pile cap'
+      - `PILE_CAP` — pile cap
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-footing
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-concrete-tender-from-model
   is_applicability: false
@@ -167,72 +120,42 @@ attributes:
 - name: Status
   pset: Pset_FootingCommon
   definition:
-    de: 'Bauteilstatus für Koordination im Bestand.
-
+    de: |-
+      Bauteilstatus für Koordination im Bestand.
 
       **Zulässige Werte**
-
       - `NEW` — Neubau
-
       - `EXISTING` — Bestand
-
       - `DEMOLISH` — Abbruch
-
-      - `TEMPORARY` — Temporär'
-    fr: 'Statut de l''élément pour la coordination dans l''existant.
-
+      - `TEMPORARY` — Temporär
+    fr: |-
+      Statut de l'élément pour la coordination dans l'existant.
 
       **Valeurs admises**
-
       - `NEW` — neuf
-
       - `EXISTING` — existant
-
       - `DEMOLISH` — à démolir
-
-      - `TEMPORARY` — temporaire'
-    it: 'Stato dell''elemento per il coordinamento sull''esistente.
-
+      - `TEMPORARY` — temporaire
+    it: |-
+      Stato dell'elemento per il coordinamento sull'esistente.
 
       **Valori ammessi**
-
       - `NEW` — nuovo
-
       - `EXISTING` — esistente
-
       - `DEMOLISH` — da demolire
-
-      - `TEMPORARY` — temporaneo'
-    en: 'Component status for coordinating work in existing buildings.
-
+      - `TEMPORARY` — temporaneo
+    en: |-
+      Component status for coordinating work in existing buildings.
 
       **Allowed values**
-
       - `NEW` — new build
-
       - `EXISTING` — existing
-
       - `DEMOLISH` — demolition
-
-      - `TEMPORARY` — temporary'
+      - `TEMPORARY` — temporary
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-structure-model-procurement
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
@@ -248,13 +171,8 @@ attributes:
     en: Reinforcement content of the concrete component in kg/m³ according to the structural design.
   datatype: IfcLabel
   unit: kg/m³
-  needed_in_phases:
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-concrete-tender-from-model
   is_applicability: false
@@ -269,13 +187,8 @@ attributes:
     en: Surface requirement and side reference of the concrete component for NPK tendering.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/concrete-surface-tender
-  needed_in_phases:
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-concrete-tender-from-model
   is_applicability: false
@@ -284,127 +197,74 @@ attributes:
 - name: Betonqualität
   pset: 211.5_Beton_und_Stahlbetonarbeiten
   definition:
-    de: 'Betonsorte gemäss SN EN 206 für die NPK-Ausschreibung.
-
+    de: |-
+      Betonsorte gemäss SN EN 206 für die NPK-Ausschreibung.
 
       **Zulässige Werte**
-
       - `0` — Sorte 0
-
       - `A` — NPK A (Hochbau)
-
       - `B` — NPK B (Hochbau)
-
       - `C` — NPK C (Hochbau)
-
       - `D` — NPK D (Tiefbau)
-
       - `E` — NPK E (Tiefbau)
-
       - `F` — NPK F (Tiefbau)
-
       - `G` — NPK G (Tiefbau)
-
       - `P1` — Pfahlbeton im Trockenen (NPK H)
-
       - `P2` — Pfahlbeton unter Wasser (NPK I)
-
       - `P3` — Schlitzwandbeton im Trockenen (NPK K)
-
-      - `P4` — Schlitzwandbeton unter Wasser (NPK L)'
-    fr: 'Sorte de béton selon SN EN 206 pour l''appel d''offres NPK.
-
+      - `P4` — Schlitzwandbeton unter Wasser (NPK L)
+    fr: |-
+      Sorte de béton selon SN EN 206 pour l'appel d'offres NPK.
 
       **Valeurs admises**
-
       - `0` — sorte 0
-
       - `A` — NPK A (construction verticale)
-
       - `B` — NPK B (construction verticale)
-
       - `C` — NPK C (construction verticale)
-
       - `D` — NPK D (génie civil)
-
       - `E` — NPK E (génie civil)
-
       - `F` — NPK F (génie civil)
-
       - `G` — NPK G (génie civil)
-
       - `P1` — béton de pieux à sec (NPK H)
-
-      - `P2` — béton de pieux sous l''eau (NPK I)
-
+      - `P2` — béton de pieux sous l'eau (NPK I)
       - `P3` — béton de paroi moulée à sec (NPK K)
-
-      - `P4` — béton de paroi moulée sous l''eau (NPK L)'
-    it: 'Sorta di calcestruzzo secondo SN EN 206 per la gara NPK.
-
+      - `P4` — béton de paroi moulée sous l'eau (NPK L)
+    it: |-
+      Sorta di calcestruzzo secondo SN EN 206 per la gara NPK.
 
       **Valori ammessi**
-
       - `0` — sorta 0
-
       - `A` — NPK A (edilizia)
-
       - `B` — NPK B (edilizia)
-
       - `C` — NPK C (edilizia)
-
       - `D` — NPK D (opere civili)
-
       - `E` — NPK E (opere civili)
-
       - `F` — NPK F (opere civili)
-
       - `G` — NPK G (opere civili)
-
       - `P1` — calcestruzzo per pali a secco (NPK H)
-
-      - `P2` — calcestruzzo per pali sott''acqua (NPK I)
-
+      - `P2` — calcestruzzo per pali sott'acqua (NPK I)
       - `P3` — calcestruzzo per diaframma a secco (NPK K)
-
-      - `P4` — calcestruzzo per diaframma sott''acqua (NPK L)'
-    en: 'Concrete grade according to SN EN 206 for NPK tendering.
-
+      - `P4` — calcestruzzo per diaframma sott'acqua (NPK L)
+    en: |-
+      Concrete grade according to SN EN 206 for NPK tendering.
 
       **Allowed values**
-
       - `0` — grade 0
-
       - `A` — NPK A (building)
-
       - `B` — NPK B (building)
-
       - `C` — NPK C (building)
-
       - `D` — NPK D (civil engineering)
-
       - `E` — NPK E (civil engineering)
-
       - `F` — NPK F (civil engineering)
-
       - `G` — NPK G (civil engineering)
-
       - `P1` — dry pile concrete (NPK H)
-
       - `P2` — underwater pile concrete (NPK I)
-
       - `P3` — dry diaphragm wall concrete (NPK K)
-
-      - `P4` — underwater diaphragm wall concrete (NPK L)'
+      - `P4` — underwater diaphragm wall concrete (NPK L)
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/concrete-quality-npk
-  needed_in_phases:
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-concrete-tender-from-model
   is_applicability: false
@@ -413,91 +273,54 @@ attributes:
 - name: ElementStatus
   pset: ePset_ElementStatus
   definition:
-    de: 'Bauteilstatus für Koordination im Bestand.
-
+    de: |-
+      Bauteilstatus für Koordination im Bestand.
 
       **Zulässige Werte**
-
       - `NEW` — Neubau
-
       - `EXISTING` — Bestand
-
       - `DEMOLISH` — Abbruch
-
       - `TEMPORARY` — Temporär
 
-
       **Hinweis**
-
-      - IFC2x3-Ersatz für Status.'
-    fr: 'Statut de l''élément pour la coordination dans l''existant.
-
+      - IFC2x3-Ersatz für Status.
+    fr: |-
+      Statut de l'élément pour la coordination dans l'existant.
 
       **Valeurs admises**
-
       - `NEW` — neuf
-
       - `EXISTING` — existant
-
       - `DEMOLISH` — à démolir
-
       - `TEMPORARY` — temporaire
 
-
       **Remarque**
-
-      - Substitut IFC2x3 de Status.'
-    it: 'Stato dell''elemento per il coordinamento sull''esistente.
-
+      - Substitut IFC2x3 de Status.
+    it: |-
+      Stato dell'elemento per il coordinamento sull'esistente.
 
       **Valori ammessi**
-
       - `NEW` — nuovo
-
       - `EXISTING` — esistente
-
       - `DEMOLISH` — da demolire
-
       - `TEMPORARY` — temporaneo
 
-
       **Nota**
-
-      - Sostituto IFC2x3 di Status.'
-    en: 'Component status for coordinating work in existing buildings.
-
+      - Sostituto IFC2x3 di Status.
+    en: |-
+      Component status for coordinating work in existing buildings.
 
       **Allowed values**
-
       - `NEW` — new build
-
       - `EXISTING` — existing
-
       - `DEMOLISH` — demolition
-
       - `TEMPORARY` — temporary
 
-
       **Note**
-
-      - IFC2x3 substitute for Status.'
+      - IFC2x3 substitute for Status.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-structure-model-procurement
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
@@ -512,15 +335,8 @@ attributes:
     it: GTIN (Global Trade Item Number) del tipo di prodotto; secondo la struttura GS1, 8, 12, 13 o 14 cifre.
     en: GTIN (Global Trade Item Number) of the product type; 8, 12, 13, or 14 digits depending on the GS1 structure.
   datatype: IfcIdentifier
-  needed_in_phases:
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/hov-product-pass-gtin
   - pragmaticbim:workflow/hov-product-pass-serial-number
@@ -535,15 +351,8 @@ attributes:
     it: Numero di serie assegnato dal fabbricante a un singolo prodotto; insieme al GTIN costituisce la chiave del passaporto di prodotto specifico dell’oggetto.
     en: Serial number the manufacturer assigns to an individual product; with the GTIN it identifies the product passport for that specific item.
   datatype: IfcIdentifier
-  needed_in_phases:
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/hov-product-pass-serial-number
   is_applicability: false
@@ -558,13 +367,8 @@ attributes:
     en: Gross volume of the modelled footing.
   datatype: IfcVolumeMeasure
   unit: m³
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-full-life-cycle-calculation
   - pragmaticbim:workflow/bes-concrete-tender-from-model

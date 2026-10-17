@@ -1,32 +1,67 @@
 id: pragmaticbim:usage-scenario/ankommen
 code: US-WH-18
-sort_order: 18
+sort_order: 1
 name:
   de: Ankommen
   fr: Arriver
   it: Arrivare
   en: Arriving home
 description:
-  de: Bewohnende kommen von der Strasse in die Eingangshalle, treten in die Wohnung und legen im Entree ab, bevor der Gang die Wohnung erschliesst.
-  fr: Les occupants arrivent de la rue dans le hall d'entrée, entrent dans le logement et déposent leurs affaires dans l'entrée, avant que le couloir desserve le logement.
-  it: Chi abita arriva dalla strada nell'atrio, entra nell'alloggio e depone nell'entrata, prima che il corridoio distribuisca l'alloggio.
-  en: Occupants arrive from the street into the lobby, enter the dwelling, and drop belongings in the entrance hall before the hallway serves the rooms.
-scenario_group: Wohnen
+  de: Bewohnende und Besuch melden sich am Gebäudeeingang an. Die Art des Empfangs
+    entscheidet über persönlichen Kontakt, Sichtverbindung und Zutrittskontrolle.
+  fr: Les habitants et les visiteurs s'annoncent à l'entrée du bâtiment. Le type
+    d'accueil détermine le contact personnel, le contrôle visuel et le contrôle d'accès.
+  it: Abitanti e visitatori si annunciano all'ingresso dell'edificio. Il tipo di
+    accoglienza determina contatto personale, controllo visivo e controllo degli accessi.
+  en: Residents and visitors announce themselves at the building entrance. The reception
+    method determines personal contact, visual confirmation, and access control.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- ankommen
 status: active
 jurisdiction:
-- ch
-required_room_types:
-- pragmaticbim:room-type/strasse
-- pragmaticbim:room-type/eingangshalle
-- pragmaticbim:room-type/wohnungseingang
-- pragmaticbim:room-type/entree
-- pragmaticbim:room-type/gang
-room_relationships:
-- from_room_type: pragmaticbim:room-type/strasse
-  to_room_type: pragmaticbim:room-type/eingangshalle
-- from_room_type: pragmaticbim:room-type/eingangshalle
-  to_room_type: pragmaticbim:room-type/wohnungseingang
-- from_room_type: pragmaticbim:room-type/wohnungseingang
-  to_room_type: pragmaticbim:room-type/entree
-- from_room_type: pragmaticbim:room-type/entree
-  to_room_type: pragmaticbim:room-type/gang
+- general
+options:
+- id: pragmaticbim:scenario-option/ankommen-doorbell
+  sort_order: 1
+  name:
+    de: Klingel
+    fr: Sonnette
+    it: Campanello
+    en: Doorbell
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/strasse
+    to_room_type: pragmaticbim:room-type/eingangshalle
+  adds:
+  - pragmaticbim:room-type/strasse
+  - pragmaticbim:room-type/eingangshalle
+- id: pragmaticbim:scenario-option/ankommen-concierge
+  sort_order: 2
+  name:
+    de: Concierge
+    fr: Conciergerie
+    it: Portineria
+    en: Concierge
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/strasse
+    to_room_type: pragmaticbim:room-type/empfang
+  - from_room_type: pragmaticbim:room-type/empfang
+    to_room_type: pragmaticbim:room-type/eingangshalle
+  adds:
+  - pragmaticbim:room-type/strasse
+  - pragmaticbim:room-type/empfang
+  - pragmaticbim:room-type/eingangshalle
+- id: pragmaticbim:scenario-option/ankommen-video
+  sort_order: 3
+  name:
+    de: Video-Gegensprechanlage
+    fr: Vidéophone
+    it: Videocitofono
+    en: Video intercom
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/strasse
+    to_room_type: pragmaticbim:room-type/eingangshalle
+  adds:
+  - pragmaticbim:room-type/strasse
+  - pragmaticbim:room-type/eingangshalle

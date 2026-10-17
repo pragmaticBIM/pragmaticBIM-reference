@@ -1,0 +1,112 @@
+id: pragmaticbim:room-type/wohneinheit
+code: RT-WH-30
+sort_order: 30
+name:
+  de: Wohneinheit
+  fr: Logement
+  it: Alloggio
+  en: Apartment Unit
+definition:
+  de: Generische Wohneinheit ohne weitere Unterteilung.
+  fr: Logement générique sans subdivision supplémentaire.
+  it: Unità abitativa generica senza ulteriore suddivisione.
+  en: Generic residential unit space when not subdivided further.
+room_type_kind: room
+room_name: RN-01-30-03
+activity: M-RES
+default_scope: dwelling
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/wohneinheit-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-interior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-interior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: false
+  - element: pragmaticbim:element/spaces-interior
+    name: LongName
+    value:
+      de: Wohneinheit
+      fr: Logement
+      it: Alloggio
+      en: Apartment Unit
+  - element: pragmaticbim:element/spaces-interior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: HNF
+  - element: pragmaticbim:element/spaces-interior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Parkett
+  - element: pragmaticbim:element/spaces-interior
+    name: WallCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Anstrich
+  - element: pragmaticbim:element/spaces-interior
+    name: CeilingCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Gipskarton-Decke
+      fr: Gypsum board ceiling
+      it: Gypsum board ceiling
+      en: Gypsum board ceiling
+  - element: pragmaticbim:element/spaces-interior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-interior
+    name: InteriorOrExteriorSpace
+    value: INTERNAL
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-interior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  - element: pragmaticbim:element/spaces-interior
+    name: WinterTemperatureMin
+    pset: ePset_SpaceRequirement
+    value: 20
+  - element: pragmaticbim:element/spaces-interior
+    name: WinterTemperatureMax
+    pset: ePset_SpaceRequirement
+    value: 24
+  - element: pragmaticbim:element/spaces-interior
+    name: SummerTemperatureMin
+    pset: ePset_SpaceRequirement
+    value: 22
+  - element: pragmaticbim:element/spaces-interior
+    name: SummerTemperatureMax
+    pset: ePset_SpaceRequirement
+    value: 26
+  - element: pragmaticbim:element/spaces-interior
+    name: RequiredIlluminance
+    pset: ePset_SpaceRequirement
+    value: 200
+  - element: pragmaticbim:element/spaces-interior
+    name: PeakOccupancy
+    pset: ePset_SpaceRequirement
+    value: 4
+  - element: pragmaticbim:element/spaces-interior
+    name: DailyOperatingHours
+    pset: ePset_SpaceRequirement
+    value: 8
+  - element: pragmaticbim:element/spaces-interior
+    name: OutdoorAirFlowRate
+    pset: ePset_SpaceRequirement
+    value: 120
+  status: active

@@ -1,6 +1,8 @@
-# Swiss Starter Elementplan
+# pragmaticBIM Reference
 
-Public Swiss master template for [pragmaticBIM Elementplan](https://pragmaticbim.ch).
+The public data of the [pragmaticBIM](https://pragmaticbim.ch) Reference: what a building has to do, what a project has to know, and which data designers deliver, from use through to the verifiable order.
+
+This repository is the single source of truth. Edit it directly: there is no upstream copy and no sync step.
 
 ## Problem
 
@@ -8,23 +10,52 @@ BIM requirements usually arrive as wishlists: long Excel sheets and 300-page man
 
 ## Solution
 
-This repository is a **starting Elementplan** you can read, fork, or copy into a [pragmaticBIM](https://pragmaticbim.ch) project. Requirements are treated like code: goal levels activate workflows, elements carry IFC entities, attributes, and allowed values, and the same source becomes contract Excel, PDF reports, and machine-readable IDS.
+Requirements are treated like code. Project goals activate workflows, workflows name the elements and attributes they need, and the same source becomes contract Excel, PDF reports, and machine-readable IDS.
 
 Configure intensity per project goal instead of ticking a use-case checklist. Only order data with a clear benefit. See the [visual tour](https://pragmaticbim.ch/en/how-to/elementplan-visual-tour) for how owners and BIM managers use the same artifact end to end.
 
-Open it in the [Elementplan editor](https://elementplan.pragmaticbim.ch).
+Open it in the [web application](https://elementplan.pragmaticbim.ch), or read, fork, or copy it into your own project.
 
-## What is in this template
+## What is in this repository
 
-- **7 project goals** — cost/budget sensitivity, fit-out standard, sustainability, quality assurance, operations and handover focus, schedule criticality, and how the project deals with existing structures
-- **40+ workflows** — mapped to those goals, following the [abstract use case classification](https://schema.pragmaticbim.ch/classification/usecase.html) (ordering, design, construction, handover, operation, quality assurance)
-- **~80 elements** — architecture, structure, and MEP, each with IFC entity, attributes, property sets, allowed values, and SIA phases
-- **No Teilmodelle** — model split is project-specific in the Information Delivery Plan
+| Folder | Role |
+| --- | --- |
+| `project_goals/` | Project goals and boundary conditions (kickoff configurator) |
+| `workflows/` | Use-case classification and project workflows |
+| `domains/` | Deliverable disciplines |
+| `elements/` | IFC entities, attributes, property sets, and phases |
+| `values/` | Allowed-value sets |
+| `phases/` | Phase catalogues (SIA, HOAI, RIBA, …) and SIA mappings |
+| `models/` | Standard partial models (linked to a domain) |
+| `documents/` | Standard documents (plans, schematics, contracts) |
+| `uses/` | Building uses |
+| `usage_scenarios/` | Usage scenarios and their options |
+| `room_types/` | Functional rooms and container types composed with `contains` |
+| `catalog/` / `generators/` / `render/` / `runner.py` | IFC and isometric PNG sample generation ([generators/README.md](generators/README.md)) |
+| `media/` | Published catalogue images and IFC attachments |
+| `tests/` | Consistency checks for the data |
 
-Several workflows lean on [abstractBIM](https://www.abstractbim.com/), which derives walls, slabs, and quantities from correctly modelled spaces and openings.
+Workflows follow the [abstract use case classification](https://schema.pragmaticbim.ch/classification/usecase.html). Several lean on [abstractBIM](https://www.abstractbim.com/), which derives walls, slabs, and quantities from correctly modelled spaces and openings.
 
-This is a starting point, not a Swiss standard. It does not replace KBOB or federal authority templates. If you find a mistake, open an issue.
+This is a starting point, not a Swiss standard. It does not replace KBOB or federal authority templates.
+
+## Contributing
+
+Found a mistake or missing requirement? Open an issue or a pull request. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Checks
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt pytest
+python -m pytest
+```
 
 ## Schema
 
 Entities follow the [pragmaticBIM Elementplan schema](https://github.com/pragmaticBIM/elementplan-data-schema). IDs use the `pragmaticbim:` prefix.
+
+## License
+
+[PragmaticBIM Standard License](LICENSE): use, copy, share, and adapt in projects, including commercial work, with attribution. Selling the Reference itself as a product is not allowed.

@@ -1,0 +1,52 @@
+id: pragmaticbim:usage-scenario/praktisch-lernen
+code: US-BI-03
+sort_order: 4
+name:
+  de: Praktisch lernen
+  fr: Apprendre par la pratique
+  it: Apprendere con la pratica
+  en: Practical learning
+description:
+  de: Lernende führen Versuche, gestalterische oder handwerkliche Arbeiten aus. Die Tätigkeit entscheidet
+    über Ausstattung, Sicherheit und Flächenbedarf.
+  fr: Les apprenants réalisent des expériences ou des travaux créatifs et manuels. L'activité détermine
+    l'équipement, la sécurité et la surface nécessaire.
+  it: I discenti svolgono esperimenti o lavori creativi e manuali. L'attività determina attrezzature,
+    sicurezza e fabbisogno di superficie.
+  en: Learners carry out experiments or creative and manual work. The activity determines equipment, safety,
+    and area demand.
+uses:
+- pragmaticbim:use/bildung
+tags:
+- praxis
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/praktisch-lernen-laboratory
+  sort_order: 1
+  name:
+    de: Naturwissenschaftslabor
+    fr: Laboratoire scientifique
+    it: Laboratorio scientifico
+    en: Science laboratory
+  adds:
+  - pragmaticbim:room-type/naturwissenschaftslabor
+- id: pragmaticbim:scenario-option/praktisch-lernen-workshop
+  sort_order: 2
+  name:
+    de: Ausbildungswerkstatt
+    fr: Atelier de formation
+    it: Officina didattica
+    en: Training workshop
+  adds:
+  - pragmaticbim:room-type/ausbildungswerkstatt
+- id: pragmaticbim:scenario-option/praktisch-lernen-computer-room
+  sort_order: 3
+  name:
+    de: Computerraum
+    fr: Salle informatique
+    it: Aula informatica
+    en: Computer room
+  adds:
+  - pragmaticbim:room-type/computerraum

@@ -1,0 +1,53 @@
+id: pragmaticbim:usage-scenario/bioabfall-entsorgen-wohnen
+code: US-WH-21
+sort_order: 19
+name:
+  de: Bioabfall entsorgen
+  fr: Évacuer les biodéchets
+  it: Conferire i rifiuti organici
+  en: Disposing of organic waste
+description:
+  de: Bewohnende bringen Speise- und Grünabfälle regelmässig getrennt vom übrigen Abfall weg. Der
+    Sammelort entscheidet über Geruch, Kühlung und den Abholrhythmus.
+  fr: Les habitants évacuent régulièrement les déchets alimentaires et verts, séparément des autres
+    déchets. Le point de collecte détermine les odeurs, le refroidissement et le rythme
+    d'enlèvement.
+  it: Gli abitanti conferiscono regolarmente scarti alimentari e verdi, separati dagli altri rifiuti.
+    Il punto di raccolta determina odori, raffreddamento e ritmo di ritiro.
+  en: Residents regularly take food and green waste away, separately from other waste. The collection
+    point determines odour, cooling, and how often it is collected.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- entsorgung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/bioabfall-entsorgen-wohnen-im-abfallraum
+  sort_order: 1
+  name:
+    de: Im Abfallraum
+    fr: Dans le local déchets
+    it: Nel locale rifiuti
+    en: In the waste room
+  adds:
+  - pragmaticbim:room-type/abfallraum
+- id: pragmaticbim:scenario-option/bioabfall-entsorgen-wohnen-aussen
+  sort_order: 2
+  name:
+    de: Aussen bereitstellen
+    fr: Présenter à l'extérieur
+    it: Conferire all'esterno
+    en: Set out outdoors
+  adds:
+  - pragmaticbim:room-type/abfallsammelplatz-aussen
+- id: pragmaticbim:scenario-option/bioabfall-entsorgen-wohnen-kompost
+  sort_order: 3
+  name:
+    de: Gemeinsamer Kompost
+    fr: Compost commun
+    it: Compostaggio comune
+    en: Shared compost
+  adds:
+  - pragmaticbim:room-type/gemeinschaftskompost

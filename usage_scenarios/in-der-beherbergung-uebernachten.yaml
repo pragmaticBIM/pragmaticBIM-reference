@@ -1,0 +1,47 @@
+id: pragmaticbim:usage-scenario/in-der-beherbergung-uebernachten
+code: US-BH-02
+sort_order: 3
+name:
+  de: Übernachten
+  fr: Passer la nuit
+  it: Pernottare
+  en: Staying overnight
+description:
+  de: Gäste schlafen und halten sich vorübergehend in der Unterkunft auf. Das Zimmerkonzept entscheidet
+    über Privatheit, Ausstattung und Fläche.
+  fr: Les hôtes dorment et séjournent temporairement dans l'hébergement. Le concept de chambre détermine
+    l'intimité, l'équipement et la surface.
+  it: Gli ospiti dormono e soggiornano temporaneamente nell'alloggio. Il concetto di camera determina
+    riservatezza, dotazioni e superficie.
+  en: Guests sleep and stay temporarily in the accommodation. The room concept determines privacy, equipment,
+    and area.
+uses:
+- pragmaticbim:use/beherbergung
+tags:
+- aufenthalt
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/in-der-beherbergung-uebernachten-room
+  sort_order: 1
+  name:
+    de: Hotelzimmer
+    fr: Chambre d'hôtel
+    it: Camera d'albergo
+    en: Hotel room
+  adds:
+  - pragmaticbim:room-type/hotelzimmer
+- id: pragmaticbim:scenario-option/in-der-beherbergung-uebernachten-living
+  sort_order: 2
+  name:
+    de: Hotelzimmer mit Wohnraum
+    fr: Chambre d'hôtel avec séjour
+    it: Camera d'albergo con soggiorno
+    en: Hotel room with living room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/hotelzimmer
+    to_room_type: pragmaticbim:room-type/wohnzimmer
+  adds:
+  - pragmaticbim:room-type/hotelzimmer
+  - pragmaticbim:room-type/wohnzimmer

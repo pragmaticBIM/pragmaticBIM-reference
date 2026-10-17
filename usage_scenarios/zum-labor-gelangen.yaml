@@ -1,0 +1,74 @@
+id: pragmaticbim:usage-scenario/zum-labor-gelangen
+code: US-LA-06
+sort_order: 1
+name:
+  de: Zum Labor gelangen
+  fr: Accéder au laboratoire
+  it: Raggiungere il laboratorio
+  en: Reaching the laboratory
+description:
+  de: Forschende, Proben und Material gelangen auf die Laborgeschosse. Die Erschliessung entscheidet über
+    Zutrittskontrolle, Gefahrstofftransport und die Trennung von Personen- und Materialwegen.
+  fr: Chercheurs, échantillons et matériel rejoignent les étages de laboratoire. La desserte détermine
+    le contrôle d'accès, le transport de matières dangereuses et la séparation des parcours personnes
+    et matériel.
+  it: Ricercatori, campioni e materiale raggiungono i piani di laboratorio. L'accesso determina controllo
+    degli accessi, trasporto di sostanze pericolose e separazione dei percorsi persone e materiali.
+  en: Researchers, samples, and supplies reach the laboratory floors. The access arrangement determines
+    access control, hazardous goods transport, and separation of people and material routes.
+uses:
+- pragmaticbim:use/labor
+tags:
+- erschliessung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/zum-labor-gelangen-stair
+  sort_order: 1
+  name:
+    de: Treppenhaus
+    fr: Cage d'escalier
+    it: Vano scale
+    en: Stairwell
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+- id: pragmaticbim:scenario-option/zum-labor-gelangen-stair-elevator
+  sort_order: 2
+  name:
+    de: Treppenhaus und Aufzug
+    fr: Cage d'escalier et ascenseur
+    it: Vano scale e ascensore
+    en: Stairwell and elevator
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+- id: pragmaticbim:scenario-option/zum-labor-gelangen-service-lift
+  sort_order: 3
+  name:
+    de: Treppenhaus, Aufzug und Warenaufzug
+    fr: Cage d'escalier, ascenseur et monte-charge
+    it: Vano scale, ascensore e montacarichi
+    en: Stairwell, elevator, and service lift
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  - from_room_type: pragmaticbim:room-type/treppenhaus
+    to_room_type: pragmaticbim:room-type/warenaufzug
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+  - pragmaticbim:room-type/warenaufzug

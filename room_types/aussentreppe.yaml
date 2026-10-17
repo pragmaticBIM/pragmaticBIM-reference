@@ -1,0 +1,71 @@
+id: pragmaticbim:room-type/aussentreppe
+code: RT-OU-08
+sort_order: 129
+name:
+  de: Aussentreppe
+  fr: Escalier extérieur
+  it: Scala esterna
+  en: Exterior Stair
+definition:
+  de: Aussenliegende Treppe zur vertikalen Erschliessung.
+  fr: Escalier extérieur pour la desserte verticale.
+  it: Scala esterna per l'accesso verticale.
+  en: Open or external stair for outdoor vertical circulation.
+room_type_kind: room
+room_name: RN-11-40-01
+activity: O-CIR-PED
+default_scope: site
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/aussentreppe-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Aussentreppe
+      fr: Escalier extérieur
+      it: Scala esterna
+      en: Exterior Stair
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: AVF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 3.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  status: active

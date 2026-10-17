@@ -7,136 +7,89 @@ name:
   it: Elaborare la matrice di comando antincendio
   en: Develop the fire cause-and-effect matrix
 description:
-  de: 'Brandfallsteuermatrix für Melder, Klappen, Antriebe und Löscheinrichtungen vor der Ausführung formal absegnen.
-
+  de: |-
+    Brandfallsteuermatrix für Melder, Klappen, Antriebe und Löscheinrichtungen vor der Ausführung formal absegnen.
 
     **Ausgangslage**
-
     - Steuerungslogik im Brandfall steht oft nur in Tabellen ohne Bezug zu den TGA-Geräten im Modell.
-
     - Ohne formale Freigabe der Matrix fehlt der Ausführung die verbindliche Sicherheits-Logik.
 
-
     **Ziel & Nutzen**
-
     - Matrix für Melder, Klappen, Antriebe und Löscheinrichtungen verbindlich führen.
-
     - Sicherheits-Logik vor der Ausführung absegnen, getrennt vom Brandschutzkonzept der Architektur.
 
-
     **Ablauf**
-
     1. TGA-Modell mit Meldern, Klappen, Antrieben und Löscheinrichtungen bereitstellen.
-
     2. Brandfallsteuermatrix erarbeiten und mit Brandschutzplanung und TGA abstimmen.
-
     3. Matrix formal freigeben als Grundlage für die Ausführung.
 
-
     **Lieferergebnis**
-
     - Freigegebene Brandfallsteuermatrix mit der erforderlichen Steuerungslogik
+    - Koordiniertes TGA-Modell mit eindeutig zugeordneten brandschutzrelevanten Geräten
 
-    - Koordiniertes TGA-Modell mit eindeutig zugeordneten brandschutzrelevanten Geräten'
-  fr: 'Approuver formellement avant l''exécution la matrice de commande incendie pour détecteurs, clapets, actionneurs et installations d''extinction.
-
+  fr: |-
+    Approuver formellement avant l'exécution la matrice de commande incendie pour détecteurs, clapets, actionneurs et installations d'extinction.
 
     **Situation de départ**
-
-    - La logique de commande en cas d''incendie figure souvent seulement dans des tableaux sans lien avec les appareils CVC du modèle.
-
-    - Sans approbation formelle, l''exécution n''a pas de logique de sécurité contraignante.
-
+    - La logique de commande en cas d'incendie figure souvent seulement dans des tableaux sans lien avec les appareils CVC du modèle.
+    - Sans approbation formelle, l'exécution n'a pas de logique de sécurité contraignante.
 
     **Objectif et bénéfice**
-
     - Tenir de façon contraignante la matrice pour détecteurs, clapets, actionneurs et extinction.
-
-    - Approuver la logique de sécurité avant l''exécution, distincte du concept incendie d''architecture.
-
+    - Approuver la logique de sécurité avant l'exécution, distincte du concept incendie d'architecture.
 
     **Déroulement**
-
     1. Fournir la maquette CVC avec détecteurs, clapets, actionneurs et extinction.
-
-    2. Élaborer la matrice de commande incendie et l''aligner avec planification incendie et CVC.
-
-    3. Approuver formellement la matrice comme base pour l''exécution.
-
+    2. Élaborer la matrice de commande incendie et l'aligner avec planification incendie et CVC.
+    3. Approuver formellement la matrice comme base pour l'exécution.
 
     **Livrable**
-
     - Matrice de commande incendie approuvée avec la logique de commande requise
-
-    - Maquette CVC coordonnée avec les appareils concernés affectés sans équivoque'
-  it: 'Approvare formalmente prima dell''esecuzione la matrice di comando antincendio per rivelatori, serrande, attuatori e impianti di spegnimento.
-
+    - Maquette CVC coordonnée avec les appareils concernés affectés sans équivoque
+  it: |-
+    Approvare formalmente prima dell'esecuzione la matrice di comando antincendio per rivelatori, serrande, attuatori e impianti di spegnimento.
 
     **Situazione di partenza**
-
-    - La logica di comando in caso d''incendio è spesso solo in tabelle senza collegamento agli apparecchi impianti del modello.
-
-    - Senza approvazione formale, l''esecuzione non ha una logica di sicurezza vincolante.
-
+    - La logica di comando in caso d'incendio è spesso solo in tabelle senza collegamento agli apparecchi impianti del modello.
+    - Senza approvazione formale, l'esecuzione non ha una logica di sicurezza vincolante.
 
     **Obiettivo e beneficio**
-
     - Tenere in modo vincolante la matrice per rivelatori, serrande, attuatori e spegnimento.
-
-    - Approvare la logica di sicurezza prima dell''esecuzione, distinta dal concetto antincendio di architettura.
-
+    - Approvare la logica di sicurezza prima dell'esecuzione, distinta dal concetto antincendio di architettura.
 
     **Svolgimento**
-
     1. Fornire il modello impianti con rivelatori, serrande, attuatori e spegnimento.
-
     2. Elaborare la matrice di comando antincendio e allinearla con pianificazione antincendio e impianti.
-
-    3. Approvare formalmente la matrice come base per l''esecuzione.
-
+    3. Approvare formalmente la matrice come base per l'esecuzione.
 
     **Risultato della fornitura**
-
     - Matrice di comando antincendio approvata con la logica di comando necessaria
-
-    - Modello impianti coordinato con gli apparecchi interessati assegnati in modo univoco'
-  en: 'Formally approve the fire cause-and-effect matrix for detectors, dampers, actuators, and suppression equipment before construction.
-
+    - Modello impianti coordinato con gli apparecchi interessati assegnati in modo univoco
+  en: |-
+    Formally approve the fire cause-and-effect matrix for detectors, dampers, actuators, and suppression equipment before construction.
 
     **Starting point**
-
     - Fire cause-and-effect logic often exists only in tables without a link to MEP devices in the model.
-
     - Without formal matrix approval, execution lacks binding safety logic.
 
-
     **Goal & benefit**
-
     - Maintain the matrix for detectors, dampers, actuators, and suppression bindingly.
-
     - Approve safety logic before construction, separate from the architecture fire concept.
 
-
     **Process**
-
     1. Provide the MEP model with detectors, dampers, actuators, and suppression equipment.
-
     2. Develop the fire cause-and-effect matrix and align it with fire planning and MEP.
-
     3. Formally approve the matrix as the basis for execution.
 
-
     **Deliverable**
-
     - Approved fire cause-and-effect matrix with the required control logic
-
-    - Coordinated MEP model with the relevant devices unambiguously assigned'
+    - Coordinated MEP model with the relevant devices unambiguously assigned
 workflow_group: arbeitsvorbereitung
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
 countries:
-- CH
+  - CH
 needed_in_domain:
 - pragmaticbim:domain/mep
 comment: Produces BSM. Distinct from DES-FIRE-CONCEPT (architecture fire concept vs MEP safety matrix).

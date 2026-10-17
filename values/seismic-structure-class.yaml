@@ -1,0 +1,32 @@
+id: pragmaticbim:value/seismic-structure-class
+code: BWK
+name:
+  de: Bauwerksklasse Erdbeben
+  fr: Classe d'ouvrage séisme
+  it: Classe d'opera sisma
+  en: Seismic structure class
+description:
+  de: Bauwerksklassen nach SIA 261 für die Erdbebenbemessung.
+  fr: Classes d'ouvrage selon SIA 261 pour le dimensionnement parasismique.
+  it: Classi d'opera secondo SIA 261 per il dimensionamento sismico.
+  en: Structure classes under SIA 261 for seismic design.
+year: 2020
+norm_reference: SIA 261
+status: active
+values:
+  de:
+    - I
+    - II
+    - III
+  fr:
+    - I
+    - II
+    - III
+  it:
+    - I
+    - II
+    - III
+  en:
+    - I
+    - II
+    - III

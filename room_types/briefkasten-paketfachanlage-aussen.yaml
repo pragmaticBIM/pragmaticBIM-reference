@@ -1,0 +1,72 @@
+id: pragmaticbim:room-type/briefkasten-paketfachanlage-aussen
+code: RT-WH-44
+sort_order: 140
+name:
+  de: Briefkasten- und Paketfachanlage Aussen
+  fr: Installation extérieure de boîtes aux lettres et casiers à colis
+  it: Impianto esterno di cassette postali e armadietti per pacchi
+  en: Exterior Mailbox and Parcel Locker Area
+definition:
+  de: Aussenfläche für Briefkästen und Paketfächer.
+  fr: Aire extérieure réservée aux boîtes aux lettres et aux casiers à colis.
+  it: Area esterna destinata a cassette postali e armadietti per pacchi.
+  en: Outdoor area allocated to mailboxes and parcel lockers.
+room_type_kind: room
+room_name: RN-11-60-01
+activity: O-TEC
+default_scope: site
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/briefkasten-paketfachanlage-aussen-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Briefkasten- und Paketfachanlage Aussen
+      fr: Installation extérieure de boîtes aux lettres et casiers à colis
+      it: Impianto esterno di cassette postali e armadietti per pacchi
+      en: Exterior Mailbox and Parcel Locker Area
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: AFF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Workshop
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Öffentlich
+      fr: Public
+      it: Pubblico
+      en: Public
+  status: active

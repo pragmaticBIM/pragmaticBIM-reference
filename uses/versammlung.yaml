@@ -1,0 +1,30 @@
+id: pragmaticbim:use/versammlung
+code: USE-VS
+sort_order: 7
+name:
+  de: Versammlung und Kultur
+  fr: Rassemblement et culture
+  it: Riunione e cultura
+  en: Assembly and culture
+definition:
+  de: 'Versammlung von Publikum für Veranstaltungen, Kultur und Kultus. Bezugsgrösse: Anzahl Besucherplätze.'
+  fr: 'Rassemblement de public pour des manifestations, la culture et le culte. Grandeur de référence
+    : nombre de places pour le public.'
+  it: 'Riunione di pubblico per manifestazioni, cultura e culto. Grandezza di riferimento: numero di posti
+    per il pubblico.'
+  en: 'Gathering of audiences for events, culture and worship. Reference quantity: number of audience
+    places.'
+reference_quantity:
+  id: pragmaticbim:quantity/versammlung-besucherplaetze
+  code: USE-VS-Q
+  sort_order: 1
+  name:
+    de: Anzahl Besucherplätze
+    fr: Nombre de places pour le public
+    it: Numero di posti per il pubblico
+    en: Number of audience places
+  status: active
+typical_levels:
+- pragmaticbim:project-goal-level/seismic-bwk-2
+- pragmaticbim:project-goal-level/accessibility-wheelchair
+status: active

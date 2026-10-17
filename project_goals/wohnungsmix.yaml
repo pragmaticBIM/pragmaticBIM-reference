@@ -1,0 +1,93 @@
+id: pragmaticbim:project-goal/wohnungsmix
+sort_order: 1011
+group: rahmenbedingungen
+code: PG-13
+name:
+  de: Wohnungsmix
+  fr: Répartition des logements
+  it: Composizione degli alloggi
+  en: Dwelling mix
+tag:
+  de: Mix
+  fr: Mix
+  it: Mix
+  en: Mix
+description:
+  de: |-
+    Die angebotenen Zimmerzahlen entscheiden, welche Haushaltsgrössen das Gebäude aufnehmen kann. Die Anzahl je Wohnungstyp folgt im Raumprogramm.
+
+    Ohne diese Festlegung bleibt offen, für wen gebaut wird. Wohnungsgrössen und die daraus folgenden Nebenräume lassen sich im Raumprogramm nicht verlässlich festlegen.
+  fr: |-
+    Les nombres de pièces proposés décident quelles tailles de ménage le bâtiment peut accueillir. Le nombre par type de logement suit dans le programme des locaux.
+
+    Sans cette décision, il reste ouvert pour qui l'on construit. Les tailles de logement et les locaux annexes qui en découlent ne se fixent pas de façon fiable dans le programme des locaux.
+  it: |-
+    I numeri di locali offerti decidono quali grandezze di nucleo domestico l'edificio può accogliere. Il numero per tipo di alloggio segue nel programma dei locali.
+
+    Senza questa decisione resta aperto per chi si costruisce. Le dimensioni degli alloggi e i locali accessori che ne derivano non si fissano in modo affidabile nel programma dei locali.
+  en: |-
+    The room counts on offer decide which household sizes the building can house. The number per dwelling type follows in the room programme.
+
+    Without this decision it stays open who the building is for. Dwelling sizes and the ancillary rooms that follow from them cannot be set reliably in the room programme.
+status: active
+uses:
+- pragmaticbim:use/wohnen
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/wohnungsmix-kleinwohnungen
+  code: MIX-01
+  sort_order: 1
+  name:
+    de: Kleinwohnungen
+    fr: Petits logements
+    it: Piccoli alloggi
+    en: Small dwellings
+  description:
+    de: Wohnungen für Einzelpersonen und Paare.
+    fr: Logements pour personnes seules et couples.
+    it: Alloggi per persone sole e coppie.
+    en: Dwellings for single people and couples.
+  status: active
+  comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/wohnung-1-5
+  - pragmaticbim:room-type/wohnung-2-5
+- id: pragmaticbim:project-goal-level/wohnungsmix-gemischt
+  code: MIX-02
+  sort_order: 2
+  name:
+    de: Gemischt
+    fr: Mixte
+    it: Misto
+    en: Mixed
+  description:
+    de: Mischung aus kleinen, mittleren und grossen Wohnungen.
+    fr: Mélange de petits, moyens et grands logements.
+    it: Combinazione di alloggi piccoli, medi e grandi.
+    en: A mix of small, medium, and large dwellings.
+  status: active
+  comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/wohnung-2-5
+  - pragmaticbim:room-type/wohnung-3-5
+  - pragmaticbim:room-type/wohnung-4-5
+- id: pragmaticbim:project-goal-level/wohnungsmix-familien
+  code: MIX-03
+  sort_order: 3
+  name:
+    de: Familien
+    fr: Familles
+    it: Famiglie
+    en: Families
+  description:
+    de: Grössere Wohnungen für Familien.
+    fr: Logements plus grands pour les familles.
+    it: Alloggi più grandi per le famiglie.
+    en: Larger dwellings for families.
+  status: active
+  comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/wohnung-3-5
+  - pragmaticbim:room-type/wohnung-4-5
+  - pragmaticbim:room-type/wohnung-5-5

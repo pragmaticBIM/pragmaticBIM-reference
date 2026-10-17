@@ -8,76 +8,54 @@ name:
   it: Isolamento a pendenza / stratigrafia di copertura
   en: Tapered insulation / roof build-up
 definition:
-  de: 'Zeigt früh, wie viel Aufbauhöhe das Gefälle auf Dach und Balkon braucht. Damit steht die Gebäudehöhe für die Bewilligung fest, und die Leitungen im Fundament lassen sich an die Abläufe anschliessen.
-
+  de: |-
+    Zeigt früh, wie viel Aufbauhöhe das Gefälle auf Dach und Balkon braucht. Damit steht die Gebäudehöhe für die Bewilligung fest, und die Leitungen im Fundament lassen sich an die Abläufe anschliessen.
 
     **Beschreibung**
-
     - Dämmschicht im Dach- oder Balkonaufbau, die das Gefälle zur Entwässerung bildet.
-
     - Dient der Koordination von Gefälle, Ablaufpositionen und Anschluss an Fallleitungen.
 
-
     **Modellierungshinweis**
-
     - Als eigene Schicht auf Flachdach und Balkon modellieren; Gefälle erfassen.
-
     - Entwässerungspunkte aus dem Gefälleverlauf ableiten; Balkon nicht vergessen.
-
-    - Keine Ausführungsdetails wie Gullytypen oder Einzeldämmplatten modellieren.'
-  fr: 'Montre tôt quelle hauteur de complexe la pente de toiture et de balcon exige. La hauteur du bâtiment est ainsi fixée pour l''autorisation, et les conduites dans les fondations peuvent être raccordées
-    aux évacuations.
-
+    - Je Dach Notüberläufe in Abstimmung mit der Sanitärplanung vorsehen; Balkon und Terrasse mit Brüstung nicht vergessen.
+    - Keine Ausführungsdetails wie Gullytypen oder Einzeldämmplatten modellieren.
+  fr: |-
+    Montre tôt quelle hauteur de complexe la pente de toiture et de balcon exige. La hauteur du bâtiment est ainsi fixée pour l'autorisation, et les conduites dans les fondations peuvent être raccordées aux évacuations.
 
     **Description**
-
-    - Couche isolante dans le complexe de toiture ou de balcon qui forme la pente d''évacuation.
-
+    - Couche isolante dans le complexe de toiture ou de balcon qui forme la pente d'évacuation.
     - Sert à coordonner pente, positions de collecte et raccord aux descentes.
 
-
     **Directives de modélisation**
-
     - Modéliser comme couche distincte sur toiture plate et balcon ; saisir la pente.
-
-    - Déduire les points d''évacuation du tracé de pente ; ne pas oublier le balcon.
-
-    - Ne pas modéliser les détails d''exécution comme types de siphons ou panneaux isolants individuels.'
-  it: 'Mostra tempestivamente quanta altezza di stratigrafia richiede la pendenza di copertura e balcone. L''altezza dell''edificio resta così definita per l''autorizzazione, e le condotte nelle fondazioni
-    si possono collegare agli scarichi.
-
+    - Déduire les points d'évacuation du tracé de pente ; ne pas oublier le balcon.
+    - Prévoir des trop-pleins de secours pour chaque toiture en coordination avec la planification sanitaire ; ne pas oublier les balcons et terrasses avec parapet.
+    - Ne pas modéliser les détails d'exécution comme types de siphons ou panneaux isolants individuels.
+  it: |-
+    Mostra tempestivamente quanta altezza di stratigrafia richiede la pendenza di copertura e balcone. L'altezza dell'edificio resta così definita per l'autorizzazione, e le condotte nelle fondazioni si possono collegare agli scarichi.
 
     **Descrizione**
-
     - Strato isolante nella stratigrafia di copertura o balcone che forma la pendenza di drenaggio.
-
     - Serve a coordinare pendenza, posizioni di scarico e collegamento ai pluviali.
 
-
     **Direttive di modellazione**
-
     - Modellare come strato autonomo su tetto piano e balcone; registrare la pendenza.
-
     - Ricavare i punti di scarico dal tracciato di pendenza; non dimenticare il balcone.
-
-    - Non modellare dettagli esecutivi come tipi di scarico o pannelli isolanti singoli.'
-  en: 'Shows early how much build-up height the roof and balcony fall requires. The building height is then fixed for the permit, and pipes in the foundation can be connected to the outlets.
-
+    - Prevedere scarichi di emergenza per ogni tetto in coordinamento con la progettazione sanitaria; non dimenticare balconi e terrazze con parapetto.
+    - Non modellare dettagli esecutivi come tipi di scarico o pannelli isolanti singoli.
+  en: |-
+    Shows early how much build-up height the roof and balcony fall requires. The building height is then fixed for the permit, and pipes in the foundation can be connected to the outlets.
 
     **Description**
-
     - Insulation layer in the roof or balcony build-up that forms the fall for drainage.
-
     - Used to coordinate falls, outlet positions, and connection to downpipes.
 
-
     **Modelling guidelines**
-
     - Model as a separate layer on flat roof and balcony; capture falls.
-
     - Derive drainage points from the fall layout; do not forget the balcony.
-
-    - Do not model execution details such as gully types or individual insulation boards.'
+    - Provide emergency overflows for each roof in coordination with the sanitary designer; do not forget balconies and terraces with parapets.
+    - Do not model execution details such as gully types or individual insulation boards.
 needed_in_domain:
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcCovering
@@ -92,45 +70,30 @@ attributes:
 - name: PredefinedType
   pset: null
   definition:
-    de: 'Kennzeichnet die Gefälledämmung.
-
+    de: |-
+      Kennzeichnet die Gefälledämmung.
 
       **Zulässige Werte**
-
-      - `ROOFING` — Gefälledämmung auf Flachdach und Balkon'
-    fr: 'Identifie l''isolation à pente.
-
+      - `ROOFING` — Gefälledämmung auf Flachdach und Balkon
+    fr: |-
+      Identifie l'isolation à pente.
 
       **Valeurs admises**
-
-      - `ROOFING` — isolation à pente sur toiture plate et balcon'
-    it: 'Identifica l''isolamento a pendenza.
-
+      - `ROOFING` — isolation à pente sur toiture plate et balcon
+    it: |-
+      Identifica l'isolamento a pendenza.
 
       **Valori ammessi**
-
-      - `ROOFING` — isolamento a pendenza su tetto piano e balcone'
-    en: 'Marks the tapered insulation.
-
+      - `ROOFING` — isolamento a pendenza su tetto piano e balcone
+    en: |-
+      Marks the tapered insulation.
 
       **Allowed values**
-
-      - `ROOFING` — tapered insulation on flat roof and balcony'
+      - `ROOFING` — tapered insulation on flat roof and balcony
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-covering-roofing
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-design-build-procurement
   - pragmaticbim:workflow/des-basic-piping-planning
@@ -148,20 +111,8 @@ attributes:
     it: Denominazione della zona di isolamento a pendenza secondo il piano di coordinamento (es. tetto piano nord, balcone 2° piano).
     en: Tapered insulation zone designation according to the coordination plan (e.g. flat roof north, balcony 2nd floor).
   datatype: IfcIdentifier
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-basic-piping-planning
   is_applicability: false
@@ -170,46 +121,30 @@ attributes:
 - name: IsExternal
   pset: Pset_CoveringCommon
   definition:
-    de: 'Kennzeichnet eine aussenliegende Gefälledämmung.
-
+    de: |-
+      Kennzeichnet eine aussenliegende Gefälledämmung.
 
       **Zulässige Werte**
-
-      - `TRUE` — Gefälledämmung auf Flachdach oder Balkon'
-    fr: 'Identifie une isolation à pente extérieure.
-
+      - `TRUE` — Gefälledämmung auf Flachdach oder Balkon
+    fr: |-
+      Identifie une isolation à pente extérieure.
 
       **Valeurs admises**
-
-      - `TRUE` — isolation à pente sur toiture plate ou balcon'
-    it: 'Identifica un isolamento a pendenza esterno.
-
+      - `TRUE` — isolation à pente sur toiture plate ou balcon
+    it: |-
+      Identifica un isolamento a pendenza esterno.
 
       **Valori ammessi**
-
-      - `TRUE` — isolamento a pendenza su tetto piano o balcone'
-    en: 'Marks exterior tapered insulation.
-
+      - `TRUE` — isolamento a pendenza su tetto piano o balcone
+    en: |-
+      Marks exterior tapered insulation.
 
       **Allowed values**
-
-      - `TRUE` — tapered insulation on flat roof or balcony'
+      - `TRUE` — tapered insulation on flat roof or balcony
   datatype: IfcBoolean
   allowed_values: pragmaticbim:value/boolean-true
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-basic-piping-planning
   is_applicability: true
@@ -218,72 +153,42 @@ attributes:
 - name: Status
   pset: Pset_CoveringCommon
   definition:
-    de: 'Bauteilstatus für Koordination im Bestand.
-
+    de: |-
+      Bauteilstatus für Koordination im Bestand.
 
       **Zulässige Werte**
-
       - `NEW` — Neubau
-
       - `EXISTING` — Bestand
-
       - `DEMOLISH` — Abbruch
-
-      - `TEMPORARY` — Temporär'
-    fr: 'Statut de l''élément pour la coordination dans l''existant.
-
+      - `TEMPORARY` — Temporär
+    fr: |-
+      Statut de l'élément pour la coordination dans l'existant.
 
       **Valeurs admises**
-
       - `NEW` — neuf
-
       - `EXISTING` — existant
-
       - `DEMOLISH` — à démolir
-
-      - `TEMPORARY` — temporaire'
-    it: 'Stato dell''elemento per il coordinamento sull''esistente.
-
+      - `TEMPORARY` — temporaire
+    it: |-
+      Stato dell'elemento per il coordinamento sull'esistente.
 
       **Valori ammessi**
-
       - `NEW` — nuovo
-
       - `EXISTING` — esistente
-
       - `DEMOLISH` — da demolire
-
-      - `TEMPORARY` — temporaneo'
-    en: 'Component status for coordinating work in existing buildings.
-
+      - `TEMPORARY` — temporaneo
+    en: |-
+      Component status for coordinating work in existing buildings.
 
       **Allowed values**
-
       - `NEW` — new build
-
       - `EXISTING` — existing
-
       - `DEMOLISH` — demolition
-
-      - `TEMPORARY` — temporary'
+      - `TEMPORARY` — temporary
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-basic-piping-planning
   - pragmaticbim:workflow/bes-existing-structure-model-procurement
@@ -294,91 +199,54 @@ attributes:
 - name: ElementStatus
   pset: ePset_ElementStatus
   definition:
-    de: 'Bauteilstatus für Koordination im Bestand.
-
+    de: |-
+      Bauteilstatus für Koordination im Bestand.
 
       **Zulässige Werte**
-
       - `NEW` — Neubau
-
       - `EXISTING` — Bestand
-
       - `DEMOLISH` — Abbruch
-
       - `TEMPORARY` — Temporär
 
-
       **Hinweis**
-
-      - IFC2x3-Ersatz für Status.'
-    fr: 'Statut de l''élément pour la coordination dans l''existant.
-
+      - IFC2x3-Ersatz für Status.
+    fr: |-
+      Statut de l'élément pour la coordination dans l'existant.
 
       **Valeurs admises**
-
       - `NEW` — neuf
-
       - `EXISTING` — existant
-
       - `DEMOLISH` — à démolir
-
       - `TEMPORARY` — temporaire
 
-
       **Remarque**
-
-      - Substitut IFC2x3 de Status.'
-    it: 'Stato dell''elemento per il coordinamento sull''esistente.
-
+      - Substitut IFC2x3 de Status.
+    it: |-
+      Stato dell'elemento per il coordinamento sull'esistente.
 
       **Valori ammessi**
-
       - `NEW` — nuovo
-
       - `EXISTING` — esistente
-
       - `DEMOLISH` — da demolire
-
       - `TEMPORARY` — temporaneo
 
-
       **Nota**
-
-      - Sostituto IFC2x3 di Status.'
-    en: 'Component status for coordinating work in existing buildings.
-
+      - Sostituto IFC2x3 di Status.
+    en: |-
+      Component status for coordinating work in existing buildings.
 
       **Allowed values**
-
       - `NEW` — new build
-
       - `EXISTING` — existing
-
       - `DEMOLISH` — demolition
-
       - `TEMPORARY` — temporary
 
-
       **Note**
-
-      - IFC2x3 substitute for Status.'
+      - IFC2x3 substitute for Status.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-basic-piping-planning
   - pragmaticbim:workflow/bes-existing-structure-model-procurement
@@ -389,48 +257,33 @@ attributes:
 - name: CostInterface
   pset: ePset_Cost
   definition:
-    de: 'Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
-
+    de: |-
+      Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
 
       **Zulässige Werte**
-
       - `GAB` — Grundausbau (Bauherr / Vermieter)
-
-      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_MieterA`'
-    fr: 'Interface de coûts de l''élément – aménagement de base ou aménagement locataire.
-
+      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_MieterA`
+    fr: |-
+      Interface de coûts de l'élément – aménagement de base ou aménagement locataire.
 
       **Valeurs admises**
-
-      - `GAB` — aménagement de base (maître d''ouvrage / bailleur)
-
-      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_MieterA`'
-    it: 'Interfaccia di costo del componente – allestimento di base o allestimento locatario.
-
+      - `GAB` — aménagement de base (maître d'ouvrage / bailleur)
+      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_MieterA`
+    it: |-
+      Interfaccia di costo del componente – allestimento di base o allestimento locatario.
 
       **Valori ammessi**
-
       - `GAB` — allestimento di base (committente / locatore)
-
-      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`'
-    en: 'Cost interface of the component – base building or tenant fit-out.
-
+      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`
+    en: |-
+      Cost interface of the component – base building or tenant fit-out.
 
       **Allowed values**
-
       - `GAB` — base building (client / landlord)
-
-      - `MAB_{TenantName}` — tenant fit-out, e.g. `MAB_TenantA`'
+      - `MAB_{TenantName}` — tenant fit-out, e.g. `MAB_TenantA`
   datatype: IfcLabel
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
   is_applicability: false
@@ -439,25 +292,17 @@ attributes:
 - name: FundingApplication
   pset: ePset_Cost
   definition:
-    de: Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
-    fr: Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune
-      demande.
-    it: Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
-    en: Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs
-      to no application.
+    de: |-
+      Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
+    fr: |-
+      Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune demande.
+    it: |-
+      Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
+    en: |-
+      Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs to no application.
   datatype: IfcLabel
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-funding-verification
   is_applicability: false
@@ -466,41 +311,30 @@ attributes:
 - name: AwardInterface
   pset: ePset_Cost
   definition:
-    de: 'Vergabepaket des Bauteils – damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
-
+    de: |-
+      Vergabepaket des Bauteils – damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
 
       **Zulässige Werte**
-
-      - Siehe Werteliste Vergabepaket. Das vorliegende Schweizer Datenpaket verwendet dreistellige BKP-Codes, z. B. `211`, `221`, `244`.'
-    fr: 'Lot d’adjudication de l’élément – il permet de rendre visibles les interfaces entre les lots confiés aux entreprises.
-
+      - Siehe Werteliste Vergabepaket. Das vorliegende Schweizer Datenpaket verwendet dreistellige BKP-Codes, z. B. `211`, `221`, `244`.
+    fr: |-
+      Lot d’adjudication de l’élément – il permet de rendre visibles les interfaces entre les lots confiés aux entreprises.
 
       **Valeurs admises**
-
-      - Voir la liste de valeurs Lot d’adjudication. Le présent paquet de données suisse utilise des codes BKP à trois chiffres, p. ex. `211`, `221`, `244`.'
-    it: 'Lotto d’appalto del componente – rende visibili le interfacce tra i lotti assegnati alle imprese.
-
+      - Voir la liste de valeurs Lot d’adjudication. Le présent paquet de données suisse utilise des codes BKP à trois chiffres, p. ex. `211`, `221`, `244`.
+    it: |-
+      Lotto d’appalto del componente – rende visibili le interfacce tra i lotti assegnati alle imprese.
 
       **Valori ammessi**
-
-      - Vedere l’elenco di valori Lotto d’appalto. Il presente pacchetto di dati svizzero utilizza codici BKP a tre cifre, ad es. `211`, `221`, `244`.'
-    en: 'Procurement package of the component, so interfaces between contractor packages become visible.
-
+      - Vedere l’elenco di valori Lotto d’appalto. Il presente pacchetto di dati svizzero utilizza codici BKP a tre cifre, ad es. `211`, `221`, `244`.
+    en: |-
+      Procurement package of the component, so interfaces between contractor packages become visible.
 
       **Allowed values**
-
-      - See the Procurement package value list. This Swiss data package uses three-digit BKP codes, e.g. `211`, `221`, `244`.'
+      - See the Procurement package value list. This Swiss data package uses three-digit BKP codes, e.g. `211`, `221`, `244`.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-award-package
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-award-interface-visualization
   is_applicability: false
@@ -509,41 +343,30 @@ attributes:
 - name: PlanningInterface
   pset: ePset_Cost
   definition:
-    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller – damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
-
+    de: |-
+      Planungsschnittstelle des Bauteils nach BKP-3-Steller – damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
 
       **Zulässige Werte**
-
-      - Siehe Werteliste BKP-Planungspaket – z. B. `091`, `092`, `094`.'
-    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres – pour rendre visibles les responsabilités entre disciplines de planification.
-
+      - Siehe Werteliste BKP-Planungspaket – z. B. `091`, `092`, `094`.
+    fr: |-
+      Interface de planification de l'élément selon le BKP à trois chiffres – pour rendre visibles les responsabilités entre disciplines de planification.
 
       **Valeurs admises**
-
-      - Voir la liste de valeurs Lot de planification BKP – p. ex. `091`, `092`, `094`.'
-    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre – per rendere visibili le responsabilità tra discipline di pianificazione.
-
+      - Voir la liste de valeurs Lot de planification BKP – p. ex. `091`, `092`, `094`.
+    it: |-
+      Interfaccia di pianificazione del componente secondo il BKP a tre cifre – per rendere visibili le responsabilità tra discipline di pianificazione.
 
       **Valori ammessi**
-
-      - Vedere l''elenco valori Lotto di pianificazione BKP – es. `091`, `092`, `094`.'
-    en: 'Planning interface of the component as a three-digit BKP code, so responsibilities between design disciplines become visible.
-
+      - Vedere l'elenco valori Lotto di pianificazione BKP – es. `091`, `092`, `094`.
+    en: |-
+      Planning interface of the component as a three-digit BKP code, so responsibilities between design disciplines become visible.
 
       **Allowed values**
-
-      - See the BKP planning package value list, e.g. `091`, `092`, `094`.'
+      - See the BKP planning package value list, e.g. `091`, `092`, `094`.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-planning-package
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-planning-interface-visualization
   is_applicability: false
@@ -558,39 +381,25 @@ attributes:
     en: Project- or office-specific unit price per unit of the reference quantity, used to check component costs for plausibility.
   datatype: IfcMonetaryMeasure
   unit: CHF/m²
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-component-cost-plausibility
+    - pragmaticbim:workflow/qas-component-cost-plausibility
   is_applicability: false
   status: active
   sort_order: 10
 - name: ReferenceQuantity
   pset: ePset_Cost
   definition:
-    de: 'Verbindliche Referenzmenge für den Einheitspreis: `Qto_CoveringBaseQuantities.NetArea`.'
-    fr: 'Quantité de référence faisant foi pour le prix unitaire : `Qto_CoveringBaseQuantities.NetArea`.'
-    it: 'Quantità di riferimento vincolante per il prezzo unitario: `Qto_CoveringBaseQuantities.NetArea`.'
-    en: 'Authoritative reference quantity used with UnitPrice: `Qto_CoveringBaseQuantities.NetArea`.'
+    de: "Verbindliche Referenzmenge für den Einheitspreis: `Qto_CoveringBaseQuantities.NetArea`."
+    fr: "Quantité de référence faisant foi pour le prix unitaire : `Qto_CoveringBaseQuantities.NetArea`."
+    it: "Quantità di riferimento vincolante per il prezzo unitario: `Qto_CoveringBaseQuantities.NetArea`."
+    en: "Authoritative reference quantity used with UnitPrice: `Qto_CoveringBaseQuantities.NetArea`."
   datatype: IfcLabel
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-component-cost-plausibility
+    - pragmaticbim:workflow/qas-component-cost-plausibility
   is_applicability: false
   status: active
   sort_order: 11
@@ -602,15 +411,8 @@ attributes:
     it: GTIN (Global Trade Item Number) del tipo di prodotto; secondo la struttura GS1, 8, 12, 13 o 14 cifre.
     en: GTIN (Global Trade Item Number) of the product type; 8, 12, 13, or 14 digits depending on the GS1 structure.
   datatype: IfcIdentifier
-  needed_in_phases:
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/hov-product-pass-gtin
   - pragmaticbim:workflow/hov-product-pass-serial-number
@@ -625,15 +427,8 @@ attributes:
     it: Numero di serie assegnato dal fabbricante a un singolo prodotto; insieme al GTIN costituisce la chiave del passaporto di prodotto specifico dell’oggetto.
     en: Serial number the manufacturer assigns to an individual product; with the GTIN it identifies the product passport for that specific item.
   datatype: IfcIdentifier
-  needed_in_phases:
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/hov-product-pass-serial-number
   is_applicability: false
@@ -648,20 +443,8 @@ attributes:
     en: Net area of the modelled tapered insulation.
   datatype: IfcAreaMeasure
   unit: m²
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-component-cost-plausibility
   - pragmaticbim:workflow/des-basic-piping-planning

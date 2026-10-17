@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Detailverweis
+    - Detailverweis
   fr:
-  - Renvoi de détail
+    - Renvoi de détail
   it:
-  - Riferimento al dettaglio
+    - Riferimento al dettaglio
   en:
-  - Detail reference
+    - Detail reference

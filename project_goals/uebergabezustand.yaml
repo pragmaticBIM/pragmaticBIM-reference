@@ -1,0 +1,97 @@
+id: pragmaticbim:project-goal/uebergabezustand
+sort_order: 1902
+group: rahmenbedingungen
+code: PG-18
+name:
+  de: Ausbaustand bei Übergabe
+  fr: État d'aménagement à la remise
+  it: Stato di finitura alla consegna
+  en: Fit-out state at handover
+tag:
+  de: Übergabe
+  fr: Remise
+  it: Consegna
+  en: Handover
+description:
+  de: |-
+    Der Ausbaustand bei Übergabe legt fest, wo der Grundausbau endet und der Mieterausbau beginnt. Davon hängen Kostenschnittstellen und die Gebäudetechnik je Mieteinheit ab.
+
+    Ohne diese Festlegung bleibt offen, wer den Ausbau fertigstellt. Kostenschnittstelle und Gebäudetechnik je Mieteinheit werden dann zu spät oder doppelt bestellt.
+  fr: |-
+    L'état d'aménagement à la remise fixe où s'arrête l'aménagement de base et où commence l'aménagement locataire. Les interfaces de coûts et les installations techniques par unité locative en dépendent.
+
+    Sans cette décision, il reste ouvert qui termine l'aménagement. L'interface de coûts et les installations techniques par unité locative sont alors commandées trop tard, ou deux fois.
+  it: |-
+    Lo stato di finitura alla consegna stabilisce dove finisce la finitura di base e dove inizia quella dell'inquilino. Ne dipendono le interfacce dei costi e l'impiantistica per unità locativa.
+
+    Senza questa decisione resta aperto chi completa la finitura. L'interfaccia dei costi e l'impiantistica per unità locativa vengono allora commissionate troppo tardi, o due volte.
+  en: |-
+    The fit-out state at handover sets where the base build ends and the tenant fit-out begins. Cost interfaces and building services per tenant unit depend on it.
+
+    Without this decision it stays open who finishes the fit-out. The cost interface and the building services per tenant unit are then ordered too late, or twice.
+status: active
+uses:
+- pragmaticbim:use/verkauf
+- pragmaticbim:use/gastronomie
+- pragmaticbim:use/beherbergung
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/uebergabezustand-anschluesse
+  code: AUS-01
+  sort_order: 1
+  name:
+    de: Nur Anschlüsse
+    fr: Raccordements seuls
+    it: Solo allacciamenti
+    en: Connections only
+  description:
+    de: Rohbau mit Anschlüssen für Wasser, Abwasser, Strom und Lüftung an der Grenze der Mieteinheit.
+    fr: Gros œuvre avec raccordements pour eau, eaux usées, électricité et ventilation en limite de l'unité
+      locative.
+    it: Rustico con allacciamenti per acqua, acque reflue, elettricità e ventilazione al limite dell'unità
+      locativa.
+    en: Shell with connections for water, wastewater, power, and ventilation at the boundary of the tenant
+      unit.
+  status: active
+  comment: ''
+  activated_workflows:
+  - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
+- id: pragmaticbim:project-goal-level/uebergabezustand-whiteroom
+  code: AUS-02
+  sort_order: 2
+  name:
+    de: Whiteroom
+    fr: Whiteroom
+    it: Whiteroom
+    en: White room
+  description:
+    de: Böden, Wände und Decken fertig, Grundbeleuchtung und Steckdosen vorhanden. Die Einrichtung folgt
+      durch die Mieterschaft.
+    fr: Sols, murs et plafonds finis, éclairage de base et prises en place. L'agencement est réalisé par
+      le locataire.
+    it: Pavimenti, pareti e soffitti finiti, illuminazione di base e prese presenti. L'arredo è a carico
+      dell'inquilino.
+    en: Floors, walls, and ceilings finished, with basic lighting and sockets. The tenant fits out the
+      interior.
+  status: active
+  comment: ''
+  activated_workflows:
+  - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
+- id: pragmaticbim:project-goal-level/uebergabezustand-medien
+  code: AUS-03
+  sort_order: 3
+  name:
+    de: Ausgebaut inkl. Medien
+    fr: Aménagé avec fluides
+    it: Finito con fluidi
+    en: Fitted out with media
+  description:
+    de: Fertig ausgebaut, mit Medien wie Wasser, Gas, Lüftung und Daten bis zu den Geräten.
+    fr: Entièrement aménagé, avec les fluides tels qu'eau, gaz, ventilation et données jusqu'aux appareils.
+    it: Completamente finito, con fluidi come acqua, gas, ventilazione e dati fino agli apparecchi.
+    en: Fully fitted out, with media such as water, gas, ventilation, and data up to the appliances.
+  status: active
+  comment: ''
+  activated_workflows:
+  - pragmaticbim:workflow/des-mep-usage-agreement-visualization

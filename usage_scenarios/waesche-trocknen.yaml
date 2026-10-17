@@ -1,0 +1,80 @@
+id: pragmaticbim:usage-scenario/waesche-trocknen
+code: US-WH-19
+sort_order: 11
+name:
+  de: Wäsche trocknen
+  fr: Sécher le linge
+  it: Asciugare il bucato
+  en: Drying laundry
+description:
+  de: Haushalte trocknen regelmässig Wäsche. Der Ort entscheidet, wo Feuchtigkeit
+    und Geräte liegen, in der Wohnung oder gemeinsam im Gebäude.
+  fr: Les ménages sèchent régulièrement le linge. Le lieu décide où se trouvent humidité
+    et appareils, dans le logement ou en commun dans le bâtiment.
+  it: Le economie domestiche asciugano regolarmente il bucato. Il luogo decide dove
+    stanno umidità e apparecchi, nell'alloggio o in comune nell'edificio.
+  en: Households dry laundry regularly. The place decides where moisture and equipment
+    sit, in the dwelling or shared in the building.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- haushalt
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/waesche-trocknen-in-dwelling
+  sort_order: 1
+  name:
+    de: Waschküche
+    fr: Buanderie
+    it: Lavanderia
+    en: Laundry room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gang
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/waschkueche
+  target: pragmaticbim:room-type/wohnung
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/waschkueche
+- id: pragmaticbim:scenario-option/waesche-trocknen-communal
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-elevated
+  sort_order: 2
+  name:
+    de: Trocknungsraum
+    fr: Local de séchage
+    it: Locale di asciugatura
+    en: Drying room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/trocknungsraum
+    max_distance: 30
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/trocknungsraum
+- id: pragmaticbim:scenario-option/waesche-trocknen-balcony
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-standard
+  sort_order: 3
+  name:
+    de: Balkon
+    fr: Balcon
+    it: Balcone
+    en: Balcony
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gang
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/wohnzimmer
+  - from_room_type: pragmaticbim:room-type/wohnzimmer
+    to_room_type: pragmaticbim:room-type/balkon
+  target: pragmaticbim:room-type/wohnung
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/wohnzimmer
+  - pragmaticbim:room-type/balkon

@@ -7,123 +7,79 @@ name:
   it: Definire le zone di esclusione
   en: Define exclusion zones
 description:
-  de: 'Verbindliche Sperrzonen der Tragwerksplanung als Planungsgrenzen führen, damit Architektur und Gebäudetechnik diese Bereiche freihalten.
-
+  de: |-
+    Verbindliche Sperrzonen der Tragwerksplanung als Planungsgrenzen führen, damit Architektur und Gebäudetechnik diese Bereiche freihalten.
 
     **Ausgangslage**
-
     - Tragende Bereiche wie Stützenachsen, Trägerzonen und Aussparungsreserven werden oft erst spät als Konflikte sichtbar.
-
     - Ohne verbindliche Sperrzonen planen Architektur und Gebäudetechnik in Volumen, die das Tragwerk benötigt.
 
-
     **Ziel & Nutzen**
-
     - Benötigte Tragwerksbereiche früh als No-go-Zonen festlegen.
-
     - Kollisionen mit Architektur und Gebäudetechnik gegen diese Grenzen prüfen.
 
-
     **Ablauf**
-
     1. Sperrzonen gemäss Tragwerkskonzept als vereinfachte Volumen bereitstellen.
-
     2. Architektur und weitere Disziplinen gegen die Sperrzonen prüfen.
-
     3. Abweichungen dokumentieren und die geprüften Zonen nachführen.
 
-
     **Lieferergebnis**
-
-    - Sperrzonenmodell der Tragwerksplanung mit verbindlichen Planungsgrenzen.'
-  fr: 'Tenir les zones d''exclusion contraignantes de la structure comme limites de planification, afin que l''architecture et les techniques du bâtiment les laissent libres.
-
+    - Sperrzonenmodell der Tragwerksplanung mit verbindlichen Planungsgrenzen.
+  fr: |-
+    Tenir les zones d'exclusion contraignantes de la structure comme limites de planification, afin que l'architecture et les techniques du bâtiment les laissent libres.
 
     **Situation de départ**
-
-    - Les volumes porteurs tels qu''axes de poteaux, zones de poutres et réserves de réservation n''apparaissent souvent comme conflits que tardivement.
-
-    - Sans zones d''exclusion contraignantes, l''architecture et les techniques du bâtiment planifient dans des volumes dont la structure a besoin.
-
+    - Les volumes porteurs tels qu'axes de poteaux, zones de poutres et réserves de réservation n'apparaissent souvent comme conflits que tardivement.
+    - Sans zones d'exclusion contraignantes, l'architecture et les techniques du bâtiment planifient dans des volumes dont la structure a besoin.
 
     **Objectif et bénéfice**
-
     - Fixer tôt les volumes nécessaires à la structure comme zones interdites.
-
-    - Contrôler les collisions avec l''architecture et les techniques du bâtiment par rapport à ces limites.
-
+    - Contrôler les collisions avec l'architecture et les techniques du bâtiment par rapport à ces limites.
 
     **Déroulement**
-
-    1. Fournir les zones d''exclusion selon le concept porteur comme volumes simplifiés.
-
-    2. Contrôler l''architecture et les autres disciplines par rapport aux zones d''exclusion.
-
+    1. Fournir les zones d'exclusion selon le concept porteur comme volumes simplifiés.
+    2. Contrôler l'architecture et les autres disciplines par rapport aux zones d'exclusion.
     3. Documenter les écarts et tenir à jour les zones contrôlées.
 
-
     **Livrable**
-
-    - Maquette des zones d''exclusion de l''ingénieur structure avec limites de planification contraignantes.'
-  it: 'Tenere le zone di esclusione vincolanti della struttura come limiti di pianificazione, affinché architettura e impianti le lascino libere.
-
+    - Maquette des zones d'exclusion de l'ingénieur structure avec limites de planification contraignantes.
+  it: |-
+    Tenere le zone di esclusione vincolanti della struttura come limiti di pianificazione, affinché architettura e impianti le lascino libere.
 
     **Situazione di partenza**
-
     - I volumi portanti come assi di colonna, zone di trave e riserve di foro emergono spesso come interferenze solo tardi.
-
     - Senza zone di esclusione vincolanti, architettura e impianti pianificano in volumi di cui la struttura ha bisogno.
 
-
     **Obiettivo e beneficio**
-
     - Fissare presto i volumi necessari alla struttura come zone vietate.
-
     - Verificare le interferenze con architettura e impianti rispetto a questi limiti.
 
-
     **Svolgimento**
-
     1. Fornire le zone di esclusione secondo il concept strutturale come volumi semplificati.
-
-    2. Verificare l''architettura e le altre discipline rispetto alle zone di esclusione.
-
+    2. Verificare l'architettura e le altre discipline rispetto alle zone di esclusione.
     3. Documentare gli scostamenti e tenere aggiornate le zone verificate.
 
-
     **Risultato della fornitura**
-
-    - Modello delle zone di esclusione dell''ingegnere strutturista con limiti vincolanti di pianificazione.'
-  en: 'Keep the structural engineer''s binding exclusion zones as planning boundaries so that architecture and building services leave those volumes clear.
-
+    - Modello delle zone di esclusione dell'ingegnere strutturista con limiti vincolanti di pianificazione.
+  en: |-
+    Keep the structural engineer's binding exclusion zones as planning boundaries so that architecture and building services leave those volumes clear.
 
     **Starting point**
-
     - Load-bearing volumes such as column axes, beam zones, and opening reserves often show up as clashes only late.
-
     - Without binding exclusion zones, architecture and building services plan inside volumes the structure needs.
 
-
     **Goal & benefit**
-
     - Fix required structural volumes early as no-go zones.
-
     - Check clashes with architecture and building services against these boundaries.
 
-
     **Process**
-
     1. Provide exclusion zones as set out in the structural concept as simplified volumes.
-
     2. Check architecture and other disciplines against the exclusion zones.
-
     3. Document deviations and keep the checked zones current.
 
-
     **Deliverable**
-
-    - Structural exclusion zone model with binding planning boundaries.'
-workflow_group: null
+    - Structural exclusion zone model with binding planning boundaries.
+workflow_group: fachplanung-koordination
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active

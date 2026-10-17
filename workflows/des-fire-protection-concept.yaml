@@ -7,155 +7,95 @@ name:
   it: Elaborare il modello dei requisiti antincendio
   en: Create the fire protection requirements model
 description:
-  de: 'Das freigegebene Brandschutzkonzept in ein regelbasiertes Anforderungsmodell übersetzen, damit Anforderungen eindeutig zugeordnet und bei Planungsänderungen laufend geprüft werden können.
-
+  de: |-
+    Das freigegebene Brandschutzkonzept als Anforderungsmodell statt als Brandschutzplan führen, damit Anforderungen den Bauteilen eindeutig zugeordnet und bei Planungsänderungen geprüft werden können.
 
     **Ausgangslage**
-
-    - Schutzziele, Brandabschnitte und erforderliche Feuerwiderstandsklassen stehen oft in lose abgestimmten Berichten und separaten Plänen; auf der Baustelle müssen mehrere Dokumente als Referenz herangezogen
-    werden.
-
-    - In BIM-Projekten überträgt die Architektur die Anforderungen häufig manuell auf die Bauteile. Dies verursacht Mehraufwand und unterschiedliche Auslegungen, während die Brandschutzplanung meist nur
-    bei Phasenabschlüssen oder auf Zuruf prüft.
-
+    - Brandschutzanforderungen werden üblicherweise in einem Brandschutzplan gezeichnet. Die Architektur überträgt sie danach auf die Bauteile.
+    - Plan und Modell laufen bei Grundrissänderungen auseinander. Die Zuordnung muss neu gezeichnet oder nachgetragen werden, und die Brandschutzplanung prüft meist erst bei Phasenabschlüssen oder auf Zuruf.
 
     **Ziel & Nutzen**
-
-    - Die Brandschutzplanung übersetzt das freigegebene Konzept in nachvollziehbare Regeln und ein verbindliches fachliches Sollmodell.
-
-    - Anforderungen anhand von Räumen, Brandabschnitten und räumlichen Beziehungen eindeutig den betroffenen Bauteilen zuordnen.
-
-    - Auswirkungen von Planungsänderungen durch den automatisierten Vergleich mit dem Architekturmodell früh erkennen.
-
+    - Die Brandschutzplanung übersetzt das freigegebene Konzept in ein räumlich zugeordnetes Anforderungsmodell und führt dieses anstelle des Brandschutzplans als Prüfreferenz.
+    - Den Feuerwiderstand anhand der angrenzenden Räume eindeutig den betroffenen Bauteilen zuordnen.
+    - Auswirkungen von Planungsänderungen durch den Vergleich mit dem Architekturmodell früh erkennen.
 
     **Ablauf**
-
     1. Architekturmodell mit eindeutig begrenzten Räumen sowie das freigegebene Brandschutzkonzept bereitstellen.
+    2. Brandabschnitte den Räumen zuordnen und den Feuerwiderstand jeder Wand manuell aus den beiden angrenzenden Räumen bestimmen; Türen, Decken und weitere massgebende Bauteile entsprechend ergänzen.
+    3. Anforderungsmodell mit dem aktuellen Planstand abstimmen, anstelle des Brandschutzplans freigeben und bei fachlichen Änderungen nachführen.
 
-    2. Schutzziele, Brandabschnitte und Feuerwiderstandsanforderungen in Regeln übersetzen und im Brandschutz-Anforderungsmodell räumlich zuordnen.
-
-    3. Anforderungsmodell mit dem aktuellen Planstand abstimmen, als Prüfreferenz freigeben und bei fachlichen Änderungen nachführen.
-
+    **Hinweis:** Beim Arbeiten mit abstractBIM werden die Wände automatisch aus den Räumen generiert. Jede Wand hat eine 1:2-Raumbeziehung. Diese kann genutzt werden, um Brandschutzanforderungen regelbasiert anzureichern.
 
     **Lieferergebnis**
-
-    - Freigegebenes Brandschutz-Anforderungsmodell mit nachvollziehbaren Regeln, räumlich zugeordneten Sollanforderungen und Bezug zum Planstand
-
-    - Räume mit eindeutiger Brandabschnittszuordnung gemäss Brandschutzkonzept'
-  fr: 'Traduire le concept de protection incendie approuvé en un modèle d''exigences fondé sur des règles, afin d''attribuer clairement les exigences et de les contrôler en continu lors des modifications
-    du projet.
-
+    - Freigegebenes Brandschutz-Anforderungsmodell mit räumlich zugeordneten Sollanforderungen anstelle eines Brandschutzplans
+    - Räume mit eindeutiger Brandabschnittszuordnung gemäss Brandschutzkonzept
+  fr: |-
+    Traduire le concept de protection incendie approuvé en un modèle d'exigences fondé sur des règles, afin d'attribuer clairement les exigences et de les contrôler en continu lors des modifications du projet.
 
     **Situation de départ**
-
-    - Les objectifs de protection, les compartiments coupe-feu et les classes de résistance au feu requises figurent souvent dans des rapports peu coordonnés et des plans séparés ; plusieurs documents doivent
-    servir de référence sur le chantier.
-
-    - Dans les projets BIM, l''architecture reporte souvent manuellement les exigences sur les éléments. Il en résulte un travail supplémentaire et des interprétations divergentes, tandis que le spécialiste
-    incendie ne contrôle généralement qu''en fin de phase ou sur demande.
-
+    - Les objectifs de protection, les compartiments coupe-feu et les classes de résistance au feu requises figurent souvent dans des rapports peu coordonnés et des plans séparés ; plusieurs documents doivent servir de référence sur le chantier.
+    - Dans les projets BIM, l'architecture reporte souvent manuellement les exigences sur les éléments. Il en résulte un travail supplémentaire et des interprétations divergentes, tandis que le spécialiste incendie ne contrôle généralement qu'en fin de phase ou sur demande.
 
     **Objectif et bénéfice**
-
     - Le spécialiste incendie traduit le concept approuvé en règles traçables et en un modèle de référence contraignant.
-
     - Attribuer clairement les exigences aux éléments concernés à partir des locaux, des compartiments coupe-feu et des relations spatiales.
-
-    - Détecter rapidement les effets des modifications du projet grâce à la comparaison automatisée avec la maquette d''architecture.
-
+    - Détecter rapidement les effets des modifications du projet grâce à la comparaison automatisée avec la maquette d'architecture.
 
     **Déroulement**
-
-    1. Fournir la maquette d''architecture avec des locaux clairement délimités ainsi que le concept de protection incendie approuvé.
-
-    2. Traduire les objectifs de protection, les compartiments coupe-feu et les exigences de résistance au feu en règles, puis les attribuer spatialement dans le modèle d''exigences.
-
-    3. Coordonner le modèle d''exigences avec l''état actuel du projet, l''approuver comme référence de contrôle et le mettre à jour lors de modifications spécialisées.
-
+    1. Fournir la maquette d'architecture avec des locaux clairement délimités ainsi que le concept de protection incendie approuvé.
+    2. Traduire les objectifs de protection, les compartiments coupe-feu et les exigences de résistance au feu en règles, puis les attribuer spatialement dans le modèle d'exigences.
+    3. Coordonner le modèle d'exigences avec l'état actuel du projet, l'approuver comme référence de contrôle et le mettre à jour lors de modifications spécialisées.
 
     **Livrable**
-
-    - Modèle d''exigences de protection incendie approuvé, comprenant des règles traçables, des exigences de référence attribuées spatialement et la référence à l''état du projet
-
-    - Locaux avec attribution univoque au compartiment coupe-feu selon le concept de protection incendie'
-  it: 'Tradurre il concetto antincendio approvato in un modello dei requisiti basato su regole, affinché i requisiti siano attribuiti in modo univoco e possano essere verificati continuamente in caso di
-    modifiche del progetto.
-
+    - Modèle d'exigences de protection incendie approuvé, comprenant des règles traçables, des exigences de référence attribuées spatialement et la référence à l'état du projet
+    - Locaux avec attribution univoque au compartiment coupe-feu selon le concept de protection incendie
+  it: |-
+    Tradurre il concetto antincendio approvato in un modello dei requisiti basato su regole, affinché i requisiti siano attribuiti in modo univoco e possano essere verificati continuamente in caso di modifiche del progetto.
 
     **Situazione di partenza**
-
-    - Gli obiettivi di protezione, i compartimenti antincendio e le classi di resistenza al fuoco richieste figurano spesso in rapporti poco coordinati e in piani separati; in cantiere occorre consultare
-    più documenti di riferimento.
-
-    - Nei progetti BIM l''architettura trasferisce spesso manualmente i requisiti sugli elementi. Ne derivano un maggiore onere e interpretazioni divergenti, mentre lo specialista antincendio verifica generalmente
-    solo alla fine delle fasi o su richiesta.
-
+    - Gli obiettivi di protezione, i compartimenti antincendio e le classi di resistenza al fuoco richieste figurano spesso in rapporti poco coordinati e in piani separati; in cantiere occorre consultare più documenti di riferimento.
+    - Nei progetti BIM l'architettura trasferisce spesso manualmente i requisiti sugli elementi. Ne derivano un maggiore onere e interpretazioni divergenti, mentre lo specialista antincendio verifica generalmente solo alla fine delle fasi o su richiesta.
 
     **Obiettivo e beneficio**
-
     - Lo specialista antincendio traduce il concetto approvato in regole tracciabili e in un modello di riferimento vincolante.
-
     - Attribuire in modo univoco i requisiti agli elementi interessati in base ai locali, ai compartimenti antincendio e alle relazioni spaziali.
-
     - Individuare tempestivamente gli effetti delle modifiche del progetto mediante il confronto automatizzato con il modello di architettura.
 
-
     **Svolgimento**
-
     1. Fornire il modello di architettura con locali chiaramente delimitati e il concetto antincendio approvato.
-
     2. Tradurre in regole gli obiettivi di protezione, i compartimenti antincendio e i requisiti di resistenza al fuoco, quindi attribuirli spazialmente nel modello dei requisiti.
-
     3. Coordinare il modello dei requisiti con lo stato attuale del progetto, approvarlo come riferimento di controllo e aggiornarlo in caso di modifiche specialistiche.
 
-
     **Risultato della fornitura**
-
     - Modello dei requisiti antincendio approvato con regole tracciabili, requisiti di riferimento attribuiti spazialmente e riferimento allo stato del progetto
-
-    - Locali con assegnazione univoca al compartimento antincendio secondo il concetto antincendio'
-  en: 'Translate the approved fire protection concept into a rule-based requirements model so requirements can be assigned unambiguously and continuously checked as the design changes.
-
+    - Locali con assegnazione univoca al compartimento antincendio secondo il concetto antincendio
+  en: |-
+    Translate the approved fire protection concept into a rule-based requirements model so requirements can be assigned unambiguously and continuously checked as the design changes.
 
     **Starting point**
-
     - Protection goals, fire compartments, and required fire-resistance classes often appear in loosely coordinated reports and separate drawings; several reference documents must be consulted on site.
-
-    - On BIM projects, architects often transfer requirements to components manually. This creates additional effort and divergent interpretations, while the fire protection specialist usually checks only
-    at phase completion or on request.
-
+    - On BIM projects, architects often transfer requirements to components manually. This creates additional effort and divergent interpretations, while the fire protection specialist usually checks only at phase completion or on request.
 
     **Goal & benefit**
-
     - The fire protection specialist translates the approved concept into traceable rules and a binding discipline requirements model.
-
     - Assign requirements unambiguously to the affected components based on spaces, fire compartments, and spatial relationships.
-
     - Detect the effects of design changes early through automated comparison with the architecture model.
 
-
     **Process**
-
     1. Provide the architecture model with clearly bounded spaces and the approved fire protection concept.
-
     2. Translate protection goals, fire compartments, and fire-resistance requirements into rules and assign them spatially in the fire protection requirements model.
-
     3. Coordinate the requirements model with the current design status, approve it as the check reference, and update it when discipline requirements change.
 
-
     **Deliverable**
-
     - Approved fire protection requirements model with traceable rules, spatially assigned target requirements, and a reference to the design status
-
-    - Spaces with an unambiguous fire-compartment assignment as set out in the fire protection concept'
-workflow_group: konzept
+    - Spaces with an unambiguous fire-compartment assignment as set out in the fire protection concept
+workflow_group: konzept-bewilligung
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
 service_kind: special
 countries:
-- CH
+  - CH
 needed_in_domain:
 - pragmaticbim:domain/fire-protection
-comment: Produces the fire protection requirements model from the approved BSK; the BSK and BSP remain the authoritative specialist documents. Spatial rules use rooms, FireCompartmentReference, and adjacency
-  to assign requirements. QAS-FIRE compares the architecture model against this requirements model.
+comment: Produces the fire protection requirements model from the approved BSK in place of a BSP. The manual process assigns compartments to rooms and derives wall fire resistance from the two adjacent rooms. With abstractBIM, walls are generated from rooms; each wall has a 1:2 space relationship used to enrich requirements by rule. The BSK remains the authoritative specialist document. QAS-FIRE compares the architecture model against this requirements model.

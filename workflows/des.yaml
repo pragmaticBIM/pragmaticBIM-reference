@@ -7,23 +7,18 @@ name:
   it: Progettazione
   en: Design
 description:
-  de: 'Wer an BIM denkt, verbindet damit häufig Planungsanwendungsfälle – insbesondere die räumliche Koordination. Wie die Anwendungsfälle zeigen, bietet BIM jedoch weit mehr.
+  de: |-
+    Wer an BIM denkt, verbindet damit häufig Planungsanwendungsfälle – insbesondere die räumliche Koordination. Wie die Anwendungsfälle zeigen, bietet BIM jedoch weit mehr.
 
-
-    In meinen Kursen sagen Planende regelmässig: «Wir haben Modelle, aber die Unternehmer wissen damit ohnehin nichts anzufangen.» Die Unternehmer sagen das Gegenteil: «Wir sind bereit, bekommen aber nichts
-    Brauchbares.» Die Wahrheit liegt wahrscheinlich dazwischen. Deutlich wird vor allem, dass die Beteiligten nicht miteinander sprechen.'
+    In meinen Kursen sagen Planende regelmässig: «Wir haben Modelle, aber die Unternehmer wissen damit ohnehin nichts anzufangen.» Die Unternehmer sagen das Gegenteil: «Wir sind bereit, bekommen aber nichts Brauchbares.» Die Wahrheit liegt wahrscheinlich dazwischen. Deutlich wird vor allem, dass die Beteiligten nicht miteinander sprechen.
   fr: 'Études et développement du projet du bâtiment et de ses installations. Exemples: avant-projet, projet d''exécution, maquettes de coordination.'
   it: 'Progettazione e sviluppo dell''edificio e dei suoi impianti. Esempi: studio di fattibilità, progetto esecutivo, modelli di coordinamento.'
-  en: 'When people think of BIM, they often associate it with design use cases – especially spatial coordination. As these use cases show, however, BIM offers much more.
-
-
-    In my courses, designers regularly say: “We have models, but contractors cannot do anything with them anyway.” Contractors say the opposite: “We are ready, but we receive nothing usable.” The truth
-    probably lies somewhere in between. Above all, it is clear that the participants are not talking to each other.'
+  en: "When people think of BIM, they often associate it with design use cases – especially spatial coordination. As these use cases show, however, BIM offers much more.\n\nIn my courses, designers regularly say: “We have models, but contractors cannot do anything with them anyway.” Contractors say the opposite: “We are ready, but we receive nothing usable.” The truth probably lies somewhere in between. Above all, it is clear that the participants are not talking to each other."
 workflow_group: null
 parent_workflow: null
 picture_link: null
 status: active
 needed_in_domain:
-- pragmaticbim:domain/architecture
-- pragmaticbim:domain/mep
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
 comment: 'Abstract use case classification: https://schema.pragmaticbim.ch/classification/usecase.html'

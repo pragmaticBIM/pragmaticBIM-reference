@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/selbststaendig-lernen
+code: US-BI-02
+sort_order: 3
+name:
+  de: Selbständig lernen
+  fr: Apprendre de manière autonome
+  it: Studiare autonomamente
+  en: Independent learning
+description:
+  de: Lernende arbeiten allein oder in kleinen Gruppen ausserhalb des Unterrichts. Der Ort entscheidet
+    über Ruhe, Aufsicht und Zugänglichkeit.
+  fr: Les apprenants travaillent seuls ou en petits groupes hors des cours. Le lieu détermine le calme,
+    la surveillance et l'accessibilité.
+  it: I discenti lavorano da soli o in piccoli gruppi fuori dalle lezioni. Il luogo determina tranquillità,
+    sorveglianza e accessibilità.
+  en: Learners work alone or in small groups outside lessons. The location determines quiet, supervision,
+    and accessibility.
+uses:
+- pragmaticbim:use/bildung
+tags:
+- lernen
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/selbststaendig-lernen-learning-room
+  sort_order: 1
+  name:
+    de: Lernraum
+    fr: Salle d'étude
+    it: Aula studio
+    en: Learning room
+  adds:
+  - pragmaticbim:room-type/lernraum
+- id: pragmaticbim:scenario-option/selbststaendig-lernen-library
+  sort_order: 2
+  name:
+    de: Bibliothek
+    fr: Bibliothèque
+    it: Biblioteca
+    en: Library
+  adds:
+  - pragmaticbim:room-type/bibliotheksraum

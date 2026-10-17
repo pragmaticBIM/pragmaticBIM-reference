@@ -1,0 +1,82 @@
+id: pragmaticbim:project-goal/bestuhlung
+sort_order: 1072
+group: rahmenbedingungen
+code: PG-23
+name:
+  de: Bestuhlung
+  fr: Disposition des sièges
+  it: Disposizione dei posti
+  en: Seating
+tag:
+  de: Bestuhlung
+  fr: Sièges
+  it: Posti
+  en: Seating
+description:
+  de: |-
+    Die Bestuhlung entscheidet über Saalform, Stuhllager, Fluchtwegbreiten und wie schnell der Saal umgebaut wird.
+
+    Ohne diese Festlegung bleiben Saalform, Stuhllager und Fluchtwegbreiten offen. Der Umbau zwischen Veranstaltungen lässt sich dann nicht bestellen.
+  fr: |-
+    La disposition des sièges détermine la forme de la salle, le stockage des chaises, la largeur des voies d'évacuation et la rapidité de transformation de la salle.
+
+    Sans cette décision, la forme de la salle, le stockage des chaises et la largeur des voies d'évacuation restent ouverts. La transformation entre les manifestations ne peut alors pas être commandée.
+  it: |-
+    La disposizione dei posti determina forma della sala, deposito sedie, larghezza delle vie di fuga e rapidità di riallestimento.
+
+    Senza questa decisione forma della sala, deposito sedie e larghezza delle vie di fuga restano aperti. Il riallestimento tra gli eventi non può allora essere commissionato.
+  en: |-
+    The seating decides hall shape, chair storage, escape route widths, and how quickly the hall is reset.
+
+    Without this decision hall shape, chair storage, and escape route widths stay open. Changing the hall between events then cannot be ordered.
+status: active
+uses:
+- pragmaticbim:use/versammlung
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/bestuhlung-fest
+  code: BST-01
+  sort_order: 1
+  name:
+    de: Feste Bestuhlung
+    fr: Sièges fixes
+    it: Posti fissi
+    en: Fixed seating
+  description:
+    de: Fest montierte Sitzreihen, oft ansteigend.
+    fr: Rangées de sièges fixes, souvent en gradins.
+    it: File di posti fissi, spesso a gradinata.
+    en: Fixed rows of seats, often raked.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/bestuhlung-variabel
+  code: BST-02
+  sort_order: 2
+  name:
+    de: Variable Bestuhlung
+    fr: Sièges mobiles
+    it: Posti mobili
+    en: Flexible seating
+  description:
+    de: Mobile Stühle und Tische für Reihen-, Bankett- oder Seminarbestuhlung.
+    fr: Chaises et tables mobiles pour une disposition en rangées, banquet ou séminaire.
+    it: Sedie e tavoli mobili per disposizione a file, banchetto o seminario.
+    en: Movable chairs and tables for row, banquet, or seminar layouts.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/bestuhlung-stehplaetze
+  code: BST-03
+  sort_order: 3
+  name:
+    de: Stehplätze
+    fr: Places debout
+    it: Posti in piedi
+    en: Standing room
+  description:
+    de: Ohne Bestuhlung, etwa für Konzerte und Empfänge.
+    fr: Sans sièges, par exemple pour concerts et réceptions.
+    it: Senza posti a sedere, ad esempio per concerti e ricevimenti.
+    en: No seating, such as for concerts and receptions.
+  status: active
+  comment: ''

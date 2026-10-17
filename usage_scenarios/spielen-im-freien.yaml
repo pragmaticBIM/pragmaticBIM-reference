@@ -1,0 +1,66 @@
+id: pragmaticbim:usage-scenario/spielen-im-freien
+code: US-WH-17
+sort_order: 17
+name:
+  de: Spielen im Freien
+  fr: Jouer dehors
+  it: Giocare all'aperto
+  en: Outdoor play
+description:
+  de: Kinder spielen draussen in der Nähe der Wohnung. Die Wahl entscheidet, ob das
+    Grundstück dafür eine Spielfläche bietet.
+  fr: Les enfants jouent dehors près du logement. Le choix décide si la parcelle offre
+    une aire de jeux.
+  it: I bambini giocano all'aperto vicino all'alloggio. La scelta decide se il fondo
+    offre un'area giochi.
+  en: Children play outdoors near home. The choice decides whether the site offers
+    a play area.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- aussenraum
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/spielen-im-freien-playground
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-elevated
+  sort_order: 1
+  name:
+    de: Spielplatz und Garten
+    fr: Place de jeux et jardin
+    it: Parco giochi e giardino
+    en: Playground and garden
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gartenflaeche
+  - from_room_type: pragmaticbim:room-type/gartenflaeche
+    to_room_type: pragmaticbim:room-type/spielplatz
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gartenflaeche
+  - pragmaticbim:room-type/spielplatz
+- id: pragmaticbim:scenario-option/spielen-im-freien-none
+  sort_order: 3
+  name:
+    de: Keine Spielfläche auf dem Grundstück
+    fr: Aucune aire de jeu sur la parcelle
+    it: Nessuna area di gioco sul fondo
+    en: No play area on the site
+  exclusive: true
+- id: pragmaticbim:scenario-option/spielen-im-freien-garden
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-standard
+  sort_order: 2
+  name:
+    de: Nur Garten
+    fr: Jardin seulement
+    it: Solo giardino
+    en: Garden only
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gartenflaeche
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gartenflaeche

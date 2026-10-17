@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/pausen-verbringen
+code: US-WR-05
+sort_order: 6
+name:
+  de: Pausen verbringen
+  fr: Passer les pauses
+  it: Trascorrere le pause
+  en: Taking breaks
+description:
+  de: Mitarbeitende machen während des Arbeitstags Pausen und verpflegen sich. Das Angebot entscheidet
+    über Begegnung, Wege und zusätzliche Fläche.
+  fr: Le personnel fait des pauses et se restaure pendant la journée. L'offre détermine les rencontres,
+    les trajets et la surface supplémentaire.
+  it: Il personale fa pause e si ristora durante la giornata. L'offerta determina incontri, percorsi e
+    superficie aggiuntiva.
+  en: Staff take breaks and eat during the working day. The provision determines social contact, travel,
+    and additional area.
+uses:
+- pragmaticbim:use/arbeit
+tags:
+- pause
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/pausen-verbringen-break-room
+  sort_order: 1
+  name:
+    de: Pausenraum
+    fr: Salle de pause
+    it: Locale pausa
+    en: Break room
+  adds:
+  - pragmaticbim:room-type/pausenraum
+- id: pragmaticbim:scenario-option/pausen-verbringen-cafeteria
+  sort_order: 2
+  name:
+    de: Cafeteria
+    fr: Cafétéria
+    it: Caffetteria
+    en: Cafeteria
+  adds:
+  - pragmaticbim:room-type/cafeteria

@@ -15,26 +15,26 @@ norm_reference: Madaster-/DGBC-Demontierbarkeitsmethode
 status: active
 values:
   de:
-  - DryConnection
-  - AddedConnection
-  - DirectConnection
-  - SoftChemicalConnection
-  - HardChemicalConnection
+    - DryConnection
+    - AddedConnection
+    - DirectConnection
+    - SoftChemicalConnection
+    - HardChemicalConnection
   fr:
-  - DryConnection
-  - AddedConnection
-  - DirectConnection
-  - SoftChemicalConnection
-  - HardChemicalConnection
+    - DryConnection
+    - AddedConnection
+    - DirectConnection
+    - SoftChemicalConnection
+    - HardChemicalConnection
   it:
-  - DryConnection
-  - AddedConnection
-  - DirectConnection
-  - SoftChemicalConnection
-  - HardChemicalConnection
+    - DryConnection
+    - AddedConnection
+    - DirectConnection
+    - SoftChemicalConnection
+    - HardChemicalConnection
   en:
-  - DryConnection
-  - AddedConnection
-  - DirectConnection
-  - SoftChemicalConnection
-  - HardChemicalConnection
+    - DryConnection
+    - AddedConnection
+    - DirectConnection
+    - SoftChemicalConnection
+    - HardChemicalConnection

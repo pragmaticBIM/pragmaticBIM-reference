@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/in-der-halle-trainieren
+code: US-SP-01
+sort_order: 2
+name:
+  de: In der Halle trainieren
+  fr: S'entraîner en salle
+  it: Allenarsi in palestra
+  en: Training indoors
+description:
+  de: Vereine, Schulen und Einzelne trainieren Ballsport, Turnen oder Fitness. Die Halle entscheidet über
+    Sportarten, Unterteilbarkeit und Belegung.
+  fr: Clubs, écoles et particuliers pratiquent les sports de balle, la gymnastique ou le fitness. La salle
+    détermine les disciplines, la possibilité de division et l'occupation.
+  it: Società, scuole e singoli praticano sport con la palla, ginnastica o fitness. La palestra determina
+    discipline, suddivisibilità e occupazione.
+  en: Clubs, schools, and individuals train ball sports, gymnastics, or fitness. The hall determines the
+    sports, divisibility, and booking.
+uses:
+- pragmaticbim:use/sport
+tags:
+- training
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/in-der-halle-trainieren-sports-hall
+  sort_order: 1
+  name:
+    de: Sporthalle
+    fr: Salle de sport
+    it: Palestra
+    en: Sports hall
+  adds:
+  - pragmaticbim:room-type/sporthalle
+- id: pragmaticbim:scenario-option/in-der-halle-trainieren-multipurpose
+  sort_order: 2
+  name:
+    de: Mehrzwecksaal
+    fr: Salle polyvalente
+    it: Sala polivalente
+    en: Multipurpose hall
+  adds:
+  - pragmaticbim:room-type/aula

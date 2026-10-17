@@ -768,7 +768,7 @@ def _add_exterior_space_vignette(
         storey=storey,
         body_context=body_context,
         name=str(attrs.get("name") or f"{exterior_name}-INT"),
-        long_name=attrs.get("long_name") or "Buero",
+        long_name=attrs.get("long_name") or "Büro",
         predefined_type=str(attrs.get("predefined_type") or "INTERNAL"),
         polyline=interior_poly,
         height=int_h,

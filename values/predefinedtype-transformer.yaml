@@ -15,26 +15,26 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - VOLTAGE
-  - CURRENT
-  - FREQUENCY
-  - INVERTER
-  - RECTIFIER
+    - VOLTAGE
+    - CURRENT
+    - FREQUENCY
+    - INVERTER
+    - RECTIFIER
   fr:
-  - VOLTAGE
-  - CURRENT
-  - FREQUENCY
-  - INVERTER
-  - RECTIFIER
+    - VOLTAGE
+    - CURRENT
+    - FREQUENCY
+    - INVERTER
+    - RECTIFIER
   it:
-  - VOLTAGE
-  - CURRENT
-  - FREQUENCY
-  - INVERTER
-  - RECTIFIER
+    - VOLTAGE
+    - CURRENT
+    - FREQUENCY
+    - INVERTER
+    - RECTIFIER
   en:
-  - VOLTAGE
-  - CURRENT
-  - FREQUENCY
-  - INVERTER
-  - RECTIFIER
+    - VOLTAGE
+    - CURRENT
+    - FREQUENCY
+    - INVERTER
+    - RECTIFIER

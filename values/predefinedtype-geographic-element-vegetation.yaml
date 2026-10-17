@@ -15,14 +15,14 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - VEGETATION
-  - USERDEFINED
+    - VEGETATION
+    - USERDEFINED
   fr:
-  - VEGETATION
-  - USERDEFINED
+    - VEGETATION
+    - USERDEFINED
   it:
-  - VEGETATION
-  - USERDEFINED
+    - VEGETATION
+    - USERDEFINED
   en:
-  - VEGETATION
-  - USERDEFINED
+    - VEGETATION
+    - USERDEFINED

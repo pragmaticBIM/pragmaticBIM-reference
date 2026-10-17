@@ -8,76 +8,50 @@ name:
   it: Controparete (spazio utile)
   en: Wall lining (usable space)
 definition:
-  de: 'Macht den Platz- und Flächenverlust früh prüfbar, damit insbesondere Nassräume ausreichend gross geplant werden.
-
+  de: |-
+    Macht den Platz- und Flächenverlust früh prüfbar, damit insbesondere Nassräume ausreichend gross geplant werden.
 
     **Beschreibung**
-
     - Lichter nutzbarer Raum innerhalb bzw. infolge einer Vorsatzschale (z. B. Installationsvorsatzschale im Bad).
-
-    - Bildet den Platzbedarf der Vorsatzschale ab. Bleibt dieser unberücksichtigt, werden insbesondere Nasszellen häufig zu klein geplant; die erforderliche Korrektur verursacht späte und mitunter weitreichende
-    Planungsänderungen.
-
+    - Bildet den Platzbedarf der Vorsatzschale ab. Bleibt dieser unberücksichtigt, werden insbesondere Nasszellen häufig zu klein geplant; die erforderliche Korrektur verursacht späte und mitunter weitreichende Planungsänderungen.
 
     **Modellierungshinweis**
-
     - Als Raumvolumen modellieren; Geometrie bis zu den inneren, lichten Begrenzungen – Konstruktion (Platten, Profile, Bekleidung) nicht mitmodellieren.
-
     - Dem zugehörigen Geschoss zuweisen; ObjectType = Vorsatzschale.
-
-    - Keine Überlappung mit dem nutzbaren Innenraum des angrenzenden Raums; NetFloorArea für die Flächenauswirkung auswerten.'
-  fr: 'Permet de vérifier tôt la perte d''espace et de surface afin de dimensionner suffisamment les locaux, notamment les locaux sanitaires.
-
+    - Keine Überlappung mit dem nutzbaren Innenraum des angrenzenden Raums; NetFloorArea für die Flächenauswirkung auswerten.
+  fr: |-
+    Permet de vérifier tôt la perte d'espace et de surface afin de dimensionner suffisamment les locaux, notamment les locaux sanitaires.
 
     **Description**
-
-    - Espace utile libre à l''intérieur ou du fait d''une contre-cloison (p. ex. contre-cloison technique dans une salle d''eau).
-
-    - Représente l''emprise de la contre-cloison. Si celle-ci n''est pas prise en compte, les locaux sanitaires sont souvent sous-dimensionnés et leur correction entraîne tardivement des modifications de
-    projet parfois importantes.
-
+    - Espace utile libre à l'intérieur ou du fait d'une contre-cloison (p. ex. contre-cloison technique dans une salle d'eau).
+    - Représente l'emprise de la contre-cloison. Si celle-ci n'est pas prise en compte, les locaux sanitaires sont souvent sous-dimensionnés et leur correction entraîne tardivement des modifications de projet parfois importantes.
 
     **Directives de modélisation**
-
-    - Modéliser comme volume de local ; géométrie jusqu''aux limites intérieures libres – ne pas inclure la construction (plaques, profilés, revêtement).
-
-    - Rattacher à l''étage concerné ; ObjectType = Vorsatzschale.
-
-    - Pas de chevauchement avec le local intérieur utilisable adjacent ; évaluer NetFloorArea pour l''impact sur les surfaces.'
-  it: 'Permette di verificare tempestivamente la perdita di spazio e superficie per dimensionare adeguatamente soprattutto i locali sanitari.
-
+    - Modéliser comme volume de local ; géométrie jusqu'aux limites intérieures libres – ne pas inclure la construction (plaques, profilés, revêtement).
+    - Rattacher à l'étage concerné ; ObjectType = Vorsatzschale.
+    - Pas de chevauchement avec le local intérieur utilisable adjacent ; évaluer NetFloorArea pour l'impact sur les surfaces.
+  it: |-
+    Permette di verificare tempestivamente la perdita di spazio e superficie per dimensionare adeguatamente soprattutto i locali sanitari.
 
     **Descrizione**
-
-    - Spazio utile libero all''interno o a causa di una controparete (p. es. controparete impianti in bagno).
-
-    - Rappresenta l''ingombro della controparete. Se non viene considerato, i locali sanitari sono spesso sottodimensionati e la correzione richiede modifiche tardive e talvolta sostanziali al progetto.
-
+    - Spazio utile libero all'interno o a causa di una controparete (p. es. controparete impianti in bagno).
+    - Rappresenta l'ingombro della controparete. Se non viene considerato, i locali sanitari sono spesso sottodimensionati e la correzione richiede modifiche tardive e talvolta sostanziali al progetto.
 
     **Direttive di modellazione**
-
     - Modellare come volume di locale; geometria fino ai limiti interni liberi – non includere la costruzione (lastre, profili, rivestimento).
-
     - Assegnare al piano corrispondente; ObjectType = Vorsatzschale.
-
-    - Nessuna sovrapposizione con il locale interno utilizzabile adiacente; valutare NetFloorArea per l''impatto sulle superfici.'
-  en: 'Makes space and floor-area loss verifiable early so that rooms, especially sanitary spaces, can be sized adequately.
-
+    - Nessuna sovrapposizione con il locale interno utilizzabile adiacente; valutare NetFloorArea per l'impatto sulle superfici.
+  en: |-
+    Makes space and floor-area loss verifiable early so that rooms, especially sanitary spaces, can be sized adequately.
 
     **Description**
-
     - Clear usable space within or resulting from a wall lining (e.g. a service wall lining in a bathroom).
-
     - Represents the space required by the wall lining. If this is overlooked, sanitary rooms are often undersized, requiring late and sometimes far-reaching design changes.
 
-
     **Modelling guidelines**
-
     - Model as a space volume; geometry to the inner clear boundaries – do not include construction (boards, profiles, cladding).
-
     - Assign to the matching storey; ObjectType = Wall lining.
-
-    - No overlap with the usable interior space of the adjacent room; evaluate NetFloorArea for floor-area impact.'
+    - No overlap with the usable interior space of the adjacent room; evaluate NetFloorArea for floor-area impact.
 needed_in_domain:
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcSpace
@@ -101,20 +75,8 @@ attributes:
     it: Denominazione o numero facoltativo dello spazio controparete secondo il progetto.
     en: Optional designation or number of the wall-lining space according to the project.
   datatype: IfcIdentifier
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-facing-shell-area-verification
   is_applicability: false
@@ -123,45 +85,30 @@ attributes:
 - name: PredefinedType
   pset: null
   definition:
-    de: 'Kennzeichnet den Raum als benutzerdefinierten Typ; ObjectType präzisiert die Art.
-
+    de: |-
+      Kennzeichnet den Raum als benutzerdefinierten Typ; ObjectType präzisiert die Art.
 
       **Zulässige Werte**
-
-      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType = Vorsatzschale'
-    fr: 'Identifie l''espace comme type défini par l''utilisateur ; ObjectType précise la nature.
-
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType = Vorsatzschale
+    fr: |-
+      Identifie l'espace comme type défini par l'utilisateur ; ObjectType précise la nature.
 
       **Valeurs admises**
-
-      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType = Vorsatzschale'
-    it: 'Identifica lo spazio come tipo definito dall''utente ; ObjectType precisa la natura.
-
+      - `USERDEFINED` — type défini par l'utilisateur ; ObjectType = Vorsatzschale
+    it: |-
+      Identifica lo spazio come tipo definito dall'utente ; ObjectType precisa la natura.
 
       **Valori ammessi**
-
-      - `USERDEFINED` — tipo definito dall''utente ; ObjectType = Vorsatzschale'
-    en: 'Marks the space as a user-defined type; ObjectType specifies the kind.
-
+      - `USERDEFINED` — tipo definito dall'utente ; ObjectType = Vorsatzschale
+    en: |-
+      Marks the space as a user-defined type; ObjectType specifies the kind.
 
       **Allowed values**
-
-      - `USERDEFINED` — user-defined type; ObjectType = Wall lining'
+      - `USERDEFINED` — user-defined type; ObjectType = Wall lining
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-space-userdefined
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-facing-shell-area-verification
   is_applicability: true
@@ -170,46 +117,30 @@ attributes:
 - name: ObjectType
   pset: null
   definition:
-    de: 'Art des benutzerdefinierten Raums.
-
+    de: |-
+      Art des benutzerdefinierten Raums.
 
       **Zulässige Werte**
-
-      - `Vorsatzschale` — nutzbarer Raum einer Vorsatzschale ohne Konstruktion'
-    fr: 'Nature de l''espace défini par l''utilisateur.
-
+      - `Vorsatzschale` — nutzbarer Raum einer Vorsatzschale ohne Konstruktion
+    fr: |-
+      Nature de l'espace défini par l'utilisateur.
 
       **Valeurs admises**
-
-      - `Vorsatzschale` — espace utile d''une contre-cloison hors construction'
-    it: 'Tipo dello spazio definito dall''utente.
-
+      - `Vorsatzschale` — espace utile d'une contre-cloison hors construction
+    it: |-
+      Tipo dello spazio definito dall'utente.
 
       **Valori ammessi**
-
-      - `Vorsatzschale` — spazio utile di una controparete senza costruzione'
-    en: 'Kind of user-defined space.
-
+      - `Vorsatzschale` — spazio utile di una controparete senza costruzione
+    en: |-
+      Kind of user-defined space.
 
       **Allowed values**
-
-      - `Wall lining` — usable space occupied by a wall lining, excluding its construction'
+      - `Wall lining` — usable space occupied by a wall lining, excluding its construction
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/objecttype-vorsatzschale
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-facing-shell-area-verification
   is_applicability: true
@@ -224,19 +155,8 @@ attributes:
     en: Net floor area of the modelled usable wall-lining space.
   datatype: IfcAreaMeasure
   unit: m²
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-facing-shell-area-verification
   is_applicability: false

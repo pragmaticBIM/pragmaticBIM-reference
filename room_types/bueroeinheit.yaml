@@ -1,0 +1,48 @@
+id: pragmaticbim:room-type/bueroeinheit
+legacy_ids:
+- pragmaticbim:unit-type/bueroeinheit
+code: UT-WR-01
+sort_order: 7
+name:
+  de: Büroeinheit
+  fr: Suite de bureaux
+  it: Suite di uffici
+  en: Office suite
+definition:
+  de: Bruttovolumen einer vermietbaren Büroeinheit.
+  fr: Volume brut d'une suite de bureaux à louer.
+  it: Volume lordo di una suite di uffici in locazione.
+  en: Gross volume of a lettable office suite.
+room_type_kind: container
+uses:
+- pragmaticbim:use/arbeit
+contains:
+- room_type: pragmaticbim:room-type/empfang
+- room_type: pragmaticbim:room-type/buero
+- room_type: pragmaticbim:room-type/grossraumbuero
+- room_type: pragmaticbim:room-type/besprechungsraum
+- room_type: pragmaticbim:room-type/pausenraum
+- room_type: pragmaticbim:room-type/allgemeines-wc
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/bueroeinheit-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Büroeinheit
+      fr: Suite de bureaux
+      it: Suite di uffici
+      en: Office suite
+  status: active

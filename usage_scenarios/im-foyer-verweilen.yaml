@@ -1,0 +1,60 @@
+id: pragmaticbim:usage-scenario/im-foyer-verweilen
+code: US-VS-03
+sort_order: 4
+name:
+  de: Im Foyer verweilen
+  fr: Séjourner au foyer
+  it: Sostare nel foyer
+  en: Spending time in the foyer
+description:
+  de: Publikum trifft sich vor Beginn und in der Pause. Das Foyerangebot entscheidet über Aufenthaltsqualität,
+    Verpflegung und Fläche.
+  fr: Le public se retrouve avant le début et pendant l'entracte. L'offre du foyer détermine la qualité
+    de séjour, la restauration et la surface.
+  it: Il pubblico si incontra prima dell'inizio e durante l'intervallo. L'offerta del foyer determina
+    qualità di sosta, ristorazione e superficie.
+  en: Audiences gather before the start and during the interval. The foyer offer determines dwell quality,
+    catering, and area.
+uses:
+- pragmaticbim:use/versammlung
+tags:
+- pause
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/im-foyer-verweilen-foyer
+  sort_order: 1
+  name:
+    de: Foyer
+    fr: Foyer
+    it: Foyer
+    en: Foyer
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+- id: pragmaticbim:scenario-option/im-foyer-verweilen-foyer-bar
+  sort_order: 2
+  name:
+    de: Foyer mit Bar
+    fr: Foyer avec bar
+    it: Foyer con bar
+    en: Foyer with bar
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/bar
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/bar
+- id: pragmaticbim:scenario-option/im-foyer-verweilen-foyer-cafeteria
+  sort_order: 3
+  name:
+    de: Foyer mit Cafeteria
+    fr: Foyer avec cafétéria
+    it: Foyer con caffetteria
+    en: Foyer with cafeteria
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/cafeteria
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/cafeteria

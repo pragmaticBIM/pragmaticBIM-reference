@@ -1,0 +1,69 @@
+id: pragmaticbim:usage-scenario/waren-annehmen
+code: US-LO-01
+sort_order: 2
+name:
+  de: Waren annehmen
+  fr: Réceptionner les marchandises
+  it: Ricevere le merci
+  en: Receiving goods
+description:
+  de: Lastwagen liefern Waren in festen Zeitfenstern an. Die Zahl der Tore und die Annahmefläche entscheiden
+    über Wartezeiten und Hofverkehr.
+  fr: Les camions livrent les marchandises dans des créneaux fixes. Le nombre de portes et la surface
+    de réception déterminent les temps d'attente et le trafic dans la cour.
+  it: I camion consegnano le merci in fasce orarie fisse. Il numero di portoni e la superficie di ricezione
+    determinano tempi di attesa e traffico nel piazzale.
+  en: Trucks deliver goods in fixed time slots. The number of doors and the receiving area determine waiting
+    times and yard traffic.
+uses:
+- pragmaticbim:use/logistik
+tags:
+- wareneingang
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/waren-annehmen-receiving
+  sort_order: 1
+  name:
+    de: Rampe mit Annahmelager
+    fr: Quai avec stock de réception
+    it: Rampa con deposito di ricezione
+    en: Dock with receiving store
+  quantity:
+    id: pragmaticbim:quantity/waren-annehmen-receiving
+    sort_order: 1
+    name:
+      de: Anzahl Andockplätze
+      fr: Nombre de quais de chargement
+      it: Numero di baie di carico
+      en: Number of loading bays
+    status: active
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/laderampe
+    to_room_type: pragmaticbim:room-type/annahmelager
+  adds:
+  - pragmaticbim:room-type/laderampe
+  - pragmaticbim:room-type/annahmelager
+- id: pragmaticbim:scenario-option/waren-annehmen-direct
+  sort_order: 2
+  name:
+    de: Rampe direkt ins Lager
+    fr: Quai directement vers l'entrepôt
+    it: Rampa diretta al magazzino
+    en: Dock straight into the warehouse
+  quantity:
+    id: pragmaticbim:quantity/waren-annehmen-direct
+    sort_order: 1
+    name:
+      de: Anzahl Andockplätze
+      fr: Nombre de quais de chargement
+      it: Numero di baie di carico
+      en: Number of loading bays
+    status: active
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/laderampe
+    to_room_type: pragmaticbim:room-type/lagerhalle
+  adds:
+  - pragmaticbim:room-type/laderampe
+  - pragmaticbim:room-type/lagerhalle

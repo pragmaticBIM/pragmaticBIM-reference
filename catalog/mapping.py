@@ -71,6 +71,8 @@ from catalog.schema import (
     ROOF_PITCHED_ELEMENT_SLUG,
     ROOFING_DEFAULTS,
     ROOFING_ELEMENT_SLUG,
+    ROOF_OVERFLOW_DEFAULTS,
+    ROOF_OVERFLOW_ELEMENT_SLUG,
     RAILING_DEFAULTS,
     RAILING_ELEMENT_SLUG,
     SHADING_DEVICE_DEFAULTS,
@@ -79,6 +81,8 @@ from catalog.schema import (
     LUFTRAUM_ELEMENT_SLUG,
     OPENING_DEFAULTS,
     OPENING_ELEMENT_SLUG,
+    FIRE_ACOUSTIC_SEAL_DEFAULTS,
+    FIRE_ACOUSTIC_SEAL_ELEMENT_SLUG,
     PARKING_ELEMENT_SLUG,
     ELEVATOR_ELEMENT_SLUG,
     VORSATZSCHALE_ELEMENT_SLUG,
@@ -344,6 +348,7 @@ from generators.roofing import (
     DEFAULT_SLAB_DEPTH as ROOFING_SLAB_DEPTH,
     DEFAULT_SLAB_THICKNESS as ROOFING_SLAB_THICKNESS,
     DEFAULT_SLAB_WIDTH as ROOFING_SLAB_WIDTH,
+    generate_roof_overflow,
     generate_roofing,
 )
 from generators.gross_volume import generate_gross_volumes
@@ -355,6 +360,7 @@ from generators.luftraum import (
     generate_luftraum,
 )
 from generators.opening import generate_opening
+from generators.fire_acoustic_seal import generate_fire_acoustic_seal
 from generators.parking import (
     DEFAULT_BAY_COUNT,
     DEFAULT_BAY_DEPTH,
@@ -432,6 +438,7 @@ ELEMENT_GENERATORS: dict[str, Callable[[dict[str, Any]], tuple]] = {
     "ARC-SLAB-BALCONY": generate_spatial_structure,
     "IfcOpeningElement": generate_opening,
     "ARC-OPENING-VOID": generate_opening,
+    "ARC-FIRE-ACOUSTIC-SEAL": generate_fire_acoustic_seal,
     "IfcFooting": generate_footing,
     "ARC-FOOTING": generate_footing,
     "IfcColumn": generate_footing,
@@ -464,6 +471,7 @@ ELEMENT_GENERATORS: dict[str, Callable[[dict[str, Any]], tuple]] = {
     "IfcRoof": generate_pitched_roof,
     "ARC-ROOF-PITCH": generate_pitched_roof,
     "ARC-ROOF-DRAIN": generate_roofing,
+    "ARC-ROOF-OVERFLOW": generate_roof_overflow,
     "IfcWall": generate_exterior_fabric,
     "ARC-WALL-EXT": generate_exterior_fabric,
     "ARC-WALL-CLAD-EXT": generate_exterior_fabric,
@@ -515,6 +523,7 @@ SLAB_TYPES = frozenset(
     }
 )
 OPENING_TYPES = frozenset({"IfcOpeningElement", "ARC-OPENING-VOID"})
+FIRE_ACOUSTIC_SEAL_TYPES = frozenset({"ARC-FIRE-ACOUSTIC-SEAL"})
 FOOTING_TYPES = frozenset({"IfcFooting", "ARC-FOOTING"})
 COLUMN_TYPES = frozenset({"IfcColumn", "ARC-COLUMN"})
 MAINTENANCE_SPACE_TYPES = frozenset({"ARC-MAINT-SPACE"})
@@ -538,6 +547,7 @@ COORDINATION_ZONE_TYPES = frozenset({"ARC-COORD-ZONE"})
 BEAM_TYPES = frozenset({"IfcBeam", "ARC-BEAM"})
 ROOF_PITCHED_TYPES = frozenset({"IfcRoof", "ARC-ROOF-PITCH"})
 ROOFING_TYPES = frozenset({"ARC-ROOF-DRAIN"})
+ROOF_OVERFLOW_TYPES = frozenset({"ARC-ROOF-OVERFLOW"})
 EXTERIOR_WALL_TYPES = frozenset({"IfcWall", "ARC-WALL-EXT"})
 EXTERIOR_CLADDING_TYPES = frozenset({"ARC-WALL-CLAD-EXT"})
 INTERIOR_WALL_TYPES = frozenset({"ARC-WALL-INT"})
@@ -1238,6 +1248,10 @@ def is_roof_pitched_entry(entry: dict[str, Any]) -> bool:
 
 def is_roofing_entry(entry: dict[str, Any]) -> bool:
     return entry.get("element_type") in ROOFING_TYPES
+
+
+def is_roof_overflow_entry(entry: dict[str, Any]) -> bool:
+    return entry.get("element_type") in ROOF_OVERFLOW_TYPES
 
 
 def is_exterior_fabric_entry(entry: dict[str, Any]) -> bool:
@@ -2060,7 +2074,8 @@ def map_building_law_parcel_params(entry: dict[str, Any]) -> dict[str, Any]:
 def map_surrounding_building_params(entry: dict[str, Any]) -> dict[str, Any]:
     """Convert an Umgebungsbau catalog entry into generator params.
 
-    Vignette: opaque project mass with three neighbour gross volumes.
+    Vignette: opaque project mass with three neighbour gross volumes
+    (N002 and N003 gabled).
     """
     if not is_surrounding_building_entry(entry):
         raise ValueError(
@@ -2427,8 +2442,8 @@ def map_railing_params(entry: dict[str, Any]) -> dict[str, Any]:
 def map_shading_device_params(entry: dict[str, Any]) -> dict[str, Any]:
     """Convert a shading-device entry into ``generate_shading`` params.
 
-    Reuses the exterior-window vignette (no balcony) and places vertical
-    lamellas on a 1 m cantilever above the opening.
+    Reuses the exterior-window vignette (no balcony) and places lamellas
+    parallel to the wall above the opening, with a beam along each side.
     """
     if entry.get("element_type") not in SHADING_DEVICE_TYPES:
         raise ValueError(
@@ -3001,6 +3016,57 @@ def map_roofing_params(entry: dict[str, Any]) -> dict[str, Any]:
     return params
 
 
+def map_roof_overflow_params(entry: dict[str, Any]) -> dict[str, Any]:
+    """Convert a Notüberlauf entry into the shared flat-roof vignette params."""
+    if not is_roof_overflow_entry(entry):
+        raise ValueError(
+            "unsupported element_type for roof-overflow mapping: "
+            f"{entry.get('element_type')!r}"
+        )
+
+    overflow_width = float(entry.get("overflow_width", 0.70))
+    overflow_height = float(entry.get("overflow_height", 0.16))
+    overflow_depth = float(entry.get("overflow_depth", 0.55))
+    resolved = build_element_attributes_from_yaml(
+        entry=entry,
+        element_slug=ROOF_OVERFLOW_ELEMENT_SLUG,
+        defaults=ROOF_OVERFLOW_DEFAULTS,
+        geometry={
+            "width": overflow_width,
+            "height": overflow_height,
+            "depth": overflow_depth,
+        },
+    )
+
+    params: dict[str, Any] = {
+        "project_name": entry.get("project_name") or entry.get("id") or "Notueberlauf",
+        "overflow_attrs": resolved,
+        "slab_width": float(entry.get("slab_width", ROOFING_SLAB_WIDTH)),
+        "slab_depth": float(entry.get("slab_depth", ROOFING_SLAB_DEPTH)),
+        "slab_thickness": float(
+            entry.get("slab_thickness", ROOFING_SLAB_THICKNESS)
+        ),
+        "parapet_height": float(entry.get("parapet_height", DEFAULT_PARAPET_HEIGHT)),
+        "parapet_thickness": float(
+            entry.get("parapet_thickness", DEFAULT_PARAPET_THICKNESS)
+        ),
+        "roofing_thickness_start": float(
+            entry.get("roofing_thickness_start", DEFAULT_ROOFING_THICK_START)
+        ),
+        "roofing_thickness_end": float(
+            entry.get("roofing_thickness_end", DEFAULT_ROOFING_THICK_END)
+        ),
+        "roofing_edge_inset": float(
+            entry.get("roofing_edge_inset", DEFAULT_ROOFING_EDGE_INSET)
+        ),
+        "overflow_width": overflow_width,
+        "overflow_height": overflow_height,
+        "overflow_depth": overflow_depth,
+        "overflow_bottom": float(entry.get("overflow_bottom", 0.18)),
+    }
+    return params
+
+
 def map_opening_params(entry: dict[str, Any]) -> dict[str, Any]:
     """Convert an opening catalog entry into ``generate_opening`` params.
 
@@ -3076,6 +3142,46 @@ def map_opening_params(entry: dict[str, Any]) -> dict[str, Any]:
             else {}
         ),
     }
+
+
+def map_fire_acoustic_seal_params(entry: dict[str, Any]) -> dict[str, Any]:
+    """Convert a fire/acoustic seal entry into the opening-based vignette."""
+    if entry.get("element_type") not in FIRE_ACOUSTIC_SEAL_TYPES:
+        raise ValueError(
+            "unsupported element_type for fire/acoustic seal mapping: "
+            f"{entry.get('element_type')!r}"
+        )
+
+    opening_entry = {
+        **entry,
+        "element_type": "ARC-OPENING-VOID",
+        "name": entry.get("opening_name") or "D-01",
+    }
+    params = map_opening_params(opening_entry)
+    clear_width = float(params["clear_width"])
+    clear_height = float(params["clear_height"])
+    resolved = build_element_attributes_from_yaml(
+        entry=entry,
+        element_slug=FIRE_ACOUSTIC_SEAL_ELEMENT_SLUG,
+        defaults=FIRE_ACOUSTIC_SEAL_DEFAULTS,
+        geometry={"area": clear_width * clear_height},
+    )
+    quantities = resolved.get("quantities") or {}
+    quantities.setdefault("Qto_BuildingElementProxyBaseQuantities", {})[
+        "Area"
+    ] = clear_width * clear_height
+    params.update(
+        {
+            "name": resolved.get("Name") or FIRE_ACOUSTIC_SEAL_DEFAULTS["Name"],
+            "opening_name": resolved.get("OpeningReference") or "D-01",
+            "object_type": resolved.get("ObjectType")
+            or FIRE_ACOUSTIC_SEAL_DEFAULTS["ObjectType"],
+            "properties": resolved.get("properties") or {},
+            "property_datatypes": resolved.get("property_datatypes") or {},
+            "quantities": quantities,
+        }
+    )
+    return params
 
 
 def is_reference_point_entry(entry: dict[str, Any]) -> bool:
@@ -3486,6 +3592,8 @@ def map_entry_params(entry: dict[str, Any]) -> dict[str, Any]:
         return map_slab_params(entry)
     if element_type in OPENING_TYPES:
         return map_opening_params(entry)
+    if element_type in FIRE_ACOUSTIC_SEAL_TYPES:
+        return map_fire_acoustic_seal_params(entry)
     if element_type in FOOTING_TYPES:
         return map_footing_params(entry)
     if element_type in COLUMN_TYPES:
@@ -3532,6 +3640,8 @@ def map_entry_params(entry: dict[str, Any]) -> dict[str, Any]:
         return map_roof_pitched_params(entry)
     if element_type in ROOFING_TYPES:
         return map_roofing_params(entry)
+    if element_type in ROOF_OVERFLOW_TYPES:
+        return map_roof_overflow_params(entry)
     if element_type in EXTERIOR_FABRIC_TYPES:
         return map_exterior_fabric_params(entry)
     if element_type in INTERIOR_FABRIC_TYPES:

@@ -15,10 +15,10 @@ norm_reference: IFC2X3
 status: active
 values:
   de:
-  - EXTERNAL
+    - EXTERNAL
   fr:
-  - EXTERNAL
+    - EXTERNAL
   it:
-  - EXTERNAL
+    - EXTERNAL
   en:
-  - EXTERNAL
+    - EXTERNAL

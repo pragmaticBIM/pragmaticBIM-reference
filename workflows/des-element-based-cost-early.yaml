@@ -1,0 +1,115 @@
+id: pragmaticbim:workflow/des-element-based-cost-early
+code: DES-ELEMENT-COST-EARLY
+sort_order: 42
+name:
+  de: Elementbasierte Kostenberechnung in frühen Projektphasen
+  fr: Calculer les coûts par élément dans les phases initiales du projet
+  it: Calcolare i costi per componente nelle fasi iniziali del progetto
+  en: Calculate element-based costs in early project phases
+description:
+  de: |-
+    Bauteilmengen und frühe Einheitspreise zu einer nachvollziehbaren Kostenprognose verbinden, solange Konstruktionen und Aufbauten noch nicht abschliessend festgelegt sind.
+
+    **Ausgangslage**
+    - Frühe Kostenschätzungen stützen sich häufig auf Geschossflächen- oder Volumenkennwerte und zeigen nicht, welche Bauteile die Kosten bestimmen.
+    - Produktklassen, Mengen und Kostenansätze liegen oft in getrennten Listen; Varianten und Änderungen lassen sich dadurch nur mit manueller Nacharbeit vergleichen.
+
+    **Ziel & Nutzen**
+    - Kosten früh aus Bauteilmengen statt allein aus Gebäudekennwerten ermitteln.
+    - Varianten auf einer einheitlichen Elementegliederung vergleichen und Annahmen, Reserven sowie Kostensicherheit offen ausweisen.
+    - Dieselbe Mengen- und Produktklassengrundlage später für detaillierte Kostenberechnung und Ökobilanz weiterverwenden.
+
+    **Ablauf**
+    1. Kostenrelevante Bauteile mit Produktklasse, Referenzmenge und nachvollziehbaren Modellmengen bereitstellen; unbekannte Produktklassen als begründete Annahmen kennzeichnen.
+    2. Einheitspreise je Produktklasse aus der freigegebenen Kostendatenbank zuordnen und die Bauteilkosten aus Referenzmenge × Einheitspreis berechnen.
+    3. Kosten nach Elementen auswerten, mit Gebäudekennwerten plausibilisieren und Annahmen, Kostenstand, Reserven sowie Aussagesicherheit dokumentieren.
+
+    **Lieferergebnis**
+    - Elementbasierter Kostenvoranschlag mit Mengen, Einheitspreisen, Kostenstand und Gesamtkosten
+    - Dokumentierte Annahmen, Reserven und Aussagesicherheit je Produktklasse
+
+    **Hinweis:** Mit abstractBIM lassen sich die Bauteile aus den Raumbeziehungen berechnen und als Mengengrundlage für diese Kostenberechnung verwenden.
+  fr: |-
+    Relier les quantités d'éléments et les prix unitaires initiaux pour établir une prévision des coûts traçable, tant que les constructions et compositions ne sont pas définitivement arrêtées.
+
+    **Situation de départ**
+    - Les premières estimations reposent souvent sur des indicateurs de surface ou de volume de plancher et ne montrent pas quels éléments déterminent les coûts.
+    - Classes de produits, quantités et coûts unitaires figurent souvent dans des listes séparées ; comparer les variantes et les modifications exige alors des reprises manuelles.
+
+    **Objectif et bénéfice**
+    - Calculer tôt les coûts à partir des quantités d'éléments plutôt que des seuls indicateurs du bâtiment.
+    - Comparer les variantes selon une structure uniforme par éléments et présenter clairement les hypothèses, réserves et fiabilité des coûts.
+    - Réutiliser la même base de quantités et de classes de produits pour le calcul détaillé des coûts et l'écobilan.
+
+    **Déroulement**
+    1. Fournir les éléments déterminants avec classe de produit, quantité de référence et quantités traçables issues de la maquette ; signaler comme hypothèses fondées les classes de produits encore inconnues.
+    2. Affecter les prix unitaires par classe de produit issus de la base de données des coûts approuvée et calculer les coûts d'éléments par quantité de référence × prix unitaire.
+    3. Évaluer les coûts par éléments, en contrôler la plausibilité au moyen des indicateurs du bâtiment et documenter hypothèses, état des prix, réserves et fiabilité.
+
+    **Livrable**
+    - Devis estimatif par éléments avec quantités, prix unitaires, état des prix et coût total
+    - Hypothèses, réserves et fiabilité documentées par classe de produit
+
+    **Remarque :** abstractBIM permet de calculer les éléments à partir des relations entre locaux et de les utiliser comme base quantitative pour ce calcul des coûts.
+  it: |-
+    Collegare quantità dei componenti e prezzi unitari iniziali per ottenere una previsione dei costi tracciabile, finché costruzioni e stratigrafie non sono definite in modo definitivo.
+
+    **Situazione di partenza**
+    - Le prime stime si basano spesso su indici di superficie o volume di piano e non mostrano quali componenti determinano i costi.
+    - Classi di prodotto, quantità e costi unitari sono spesso contenuti in elenchi separati; il confronto di varianti e modifiche richiede quindi riprese manuali.
+
+    **Obiettivo e beneficio**
+    - Calcolare tempestivamente i costi dalle quantità dei componenti invece che dai soli indici dell'edificio.
+    - Confrontare le varianti secondo una struttura uniforme per componenti ed esporre chiaramente ipotesi, riserve e affidabilità dei costi.
+    - Riutilizzare la stessa base di quantità e classi di prodotto per il calcolo dettagliato dei costi e l'ecobilancio.
+
+    **Svolgimento**
+    1. Fornire i componenti rilevanti con classe di prodotto, quantità di riferimento e quantità tracciabili dal modello; contrassegnare le classi di prodotto non ancora note come ipotesi motivate.
+    2. Assegnare i prezzi unitari per classe di prodotto dalla banca dati dei costi approvata e calcolare i costi dei componenti come quantità di riferimento × prezzo unitario.
+    3. Valutare i costi per componenti, verificarne la plausibilità con gli indici dell'edificio e documentare ipotesi, base prezzi, riserve e affidabilità.
+
+    **Risultato della fornitura**
+    - Preventivo per componenti con quantità, prezzi unitari, base prezzi e costo totale
+    - Ipotesi, riserve e affidabilità documentate per classe di prodotto
+
+    **Nota:** abstractBIM consente di calcolare i componenti dalle relazioni tra i locali e di utilizzarli come base quantitativa per questo calcolo dei costi.
+  en: |-
+    Combine component quantities and early unit rates into a traceable cost forecast while constructions and build-ups are not yet fully defined.
+
+    **Starting point**
+    - Early estimates often rely on floor-area or volume benchmarks and do not show which components drive the costs.
+    - Product classes, quantities, and cost rates often sit in separate lists, so comparing options and changes requires manual rework.
+
+    **Goal & benefit**
+    - Calculate costs early from component quantities instead of relying on building benchmarks alone.
+    - Compare options on a consistent element breakdown and state assumptions, contingencies, and cost confidence openly.
+    - Reuse the same quantity and product-class basis for detailed cost calculation and life-cycle assessment.
+
+    **Process**
+    1. Provide cost-relevant components with product class, reference quantity, and traceable model quantities; mark unknown product classes as reasoned assumptions.
+    2. Assign unit rates per product class from the approved cost database and calculate component costs as reference quantity × unit rate.
+    3. Evaluate costs by element, check them against building benchmarks, and document assumptions, price basis, contingencies, and confidence.
+
+    **Deliverable**
+    - Element-based cost estimate with quantities, unit rates, price basis, and total cost
+    - Documented assumptions, contingencies, and confidence per product class
+
+    **Note:** abstractBIM can calculate components from the relationships between spaces and use them as the quantity basis for this cost calculation.
+workflow_group: kosten-mengen
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+countries:
+  - CH
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+comment: >-
+  Early stage, typically phase 31. Cost key:
+  ePset_Cost.ProductClass + ePset_Cost.ReferenceQuantity; project rate:
+  ePset_Cost.UnitPrice. Component cost is the referenced model quantity times
+  the unit rate. Rates and total costs remain in the cost calculation; the
+  model carries the shared keys and project rate. ProductClass may be a
+  reasoned assumption. abstractBIM can optionally calculate components from
+  space relationships and provide that quantity model; it is a tool, not a
+  separate workflow. Downstream: DES-ELEMENT-COST-LATE, QAS-COST-PLAUS, DES-LCA.

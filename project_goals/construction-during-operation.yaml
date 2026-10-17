@@ -1,0 +1,86 @@
+id: pragmaticbim:project-goal/construction-during-operation
+sort_order: 140
+group: rahmenbedingungen
+code: PG-41
+name:
+  de: Bauen unter Betrieb
+  fr: Construire en exploitation
+  it: Costruire in esercizio
+  en: Construction during operation
+tag:
+  de: Betrieb
+  fr: Exploitation
+  it: Esercizio
+  en: Operation
+description:
+  de: |-
+    Festgelegt wird, ob das Gebäude während der Bauarbeiten genutzt wird. Die Festlegung bestimmt Etappierung, Provisorien und Baulogistik. Bei der Erneuerung von Schulen, Spitälern und Bürobauten ist sie entscheidend.
+
+    Ohne diese Festlegung wird das Projekt für eine leere Baustelle geplant. Etappen, Ersatzflächen und getrennte Wege für Betrieb und Baustelle kommen dann erst bei der Ausführung dazu.
+  fr: |-
+    Cette condition-cadre détermine si le bâtiment est utilisé pendant les travaux. Elle détermine l'étapage, les installations provisoires et la logistique de chantier. Elle est décisive pour la rénovation d'écoles, d'hôpitaux et d'immeubles de bureaux.
+
+    Sans cette définition, le projet est planifié pour un chantier vide. Étapes, surfaces de remplacement et cheminements séparés pour l'exploitation et le chantier ne s'ajoutent alors qu'à la réalisation.
+  it: |-
+    Questa condizione quadro stabilisce se l'edificio viene utilizzato durante i lavori. Determina tappe, provvisori e logistica di cantiere. È decisiva per il rinnovo di scuole, ospedali ed edifici per uffici.
+
+    Senza questa definizione, il progetto viene pianificato per un cantiere vuoto. Tappe, superfici sostitutive e percorsi separati per esercizio e cantiere si aggiungono allora solo in fase di esecuzione.
+  en: |-
+    This framework condition sets whether the building stays in use during construction. It drives phasing, temporary measures, and site logistics. It is decisive when renovating schools, hospitals, and offices.
+
+    Without it, the project is planned for an empty site. Phases, decant space, and separate routes for operation and construction are then added only during construction.
+status: active
+is_boundary_condition: true
+comment: 'Kumulativ. Kein Einfluss auf Raumtypen; Provisorien und Etappierung sind die Wirkung, nicht neue Räume. Vor allem bei Umbauten relevant (PG-06 Arbeiten im Bestand).'
+levels:
+- id: pragmaticbim:project-goal-level/construction-during-operation-empty
+  code: BUB-01
+  sort_order: 1
+  name:
+    de: Leeres Gebäude
+    fr: Bâtiment vide
+    it: Edificio vuoto
+    en: Building empty
+  description:
+    de: Das Gebäude oder der Bauplatz ist während der Bauarbeiten nicht genutzt. Die Baulogistik folgt allein dem Bauablauf.
+    fr: Le bâtiment ou le terrain n'est pas utilisé pendant les travaux. La logistique de chantier suit uniquement le déroulement des travaux.
+    it: L'edificio o il fondo non è utilizzato durante i lavori. La logistica di cantiere segue solo lo svolgimento dei lavori.
+    en: The building or site is not in use during construction. Site logistics follow the construction sequence alone.
+  status: active
+  activated_workflows: []
+  comment: ''
+- id: pragmaticbim:project-goal-level/construction-during-operation-partial
+  code: BUB-02
+  sort_order: 2
+  name:
+    de: Teilbetrieb mit Etappen
+    fr: Exploitation partielle par étapes
+    it: Esercizio parziale a tappe
+    en: Partly in use with phasing
+  description:
+    de: Teile des Gebäudes bleiben in Betrieb, während andere Etappen umgebaut werden. Etappen, Ersatzflächen und Baustellenzugänge werden im Modell geplant und geprüft.
+    fr: Certaines parties du bâtiment restent en exploitation pendant que d'autres étapes sont transformées. Étapes, surfaces de remplacement et accès au chantier sont planifiés et contrôlés dans la maquette.
+    it: Parti dell'edificio restano in esercizio mentre altre tappe vengono trasformate. Tappe, superfici sostitutive e accessi al cantiere vengono pianificati e verificati nel modello.
+    en: Parts of the building stay in operation while other phases are refurbished. Phases, decant space, and site access are planned and checked in the model.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-construction-site-logistics
+  comment: ''
+- id: pragmaticbim:project-goal-level/construction-during-operation-full
+  code: BUB-03
+  sort_order: 3
+  name:
+    de: Vollbetrieb
+    fr: Exploitation complète
+    it: Esercizio completo
+    en: Fully in use
+  description:
+    de: Der Betrieb läuft während der gesamten Bauzeit uneingeschränkt weiter. Lärm, Staub, Fluchtwege und Anlieferung werden je Etappe mit dem Betrieb abgestimmt.
+    fr: L'exploitation se poursuit sans restriction pendant toute la durée des travaux. Bruit, poussière, voies d'évacuation et livraisons sont coordonnés avec l'exploitation pour chaque étape.
+    it: L'esercizio prosegue senza restrizioni per tutta la durata dei lavori. Rumore, polvere, vie di fuga e forniture vengono coordinati con l'esercizio per ogni tappa.
+    en: Operation continues without restriction for the whole construction period. Noise, dust, escape routes, and deliveries are agreed with operations for each phase.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-construction-site-logistics
+  - pragmaticbim:workflow/con-logistics-fit-out
+  comment: ''

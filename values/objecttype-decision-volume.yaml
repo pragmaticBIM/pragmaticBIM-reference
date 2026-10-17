@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Entscheidungskörper
+    - Entscheidungskörper
   fr:
-  - Volume de décision
+    - Volume de décision
   it:
-  - Volume decisionale
+    - Volume decisionale
   en:
-  - Decision volume
+    - Decision volume

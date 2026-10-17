@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Sperrzone
+    - Sperrzone
   fr:
-  - Zone d'exclusion
+    - Zone d'exclusion
   it:
-  - Zona di esclusione
+    - Zona di esclusione
   en:
-  - Exclusion zone
+    - Exclusion zone

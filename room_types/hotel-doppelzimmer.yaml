@@ -1,0 +1,44 @@
+id: pragmaticbim:room-type/hotel-doppelzimmer
+legacy_ids:
+- pragmaticbim:unit-type/hotelzimmer
+code: UT-BH-02
+sort_order: 9
+name:
+  de: Doppelzimmer
+  fr: Chambre double
+  it: Camera doppia
+  en: Double room
+definition:
+  de: Bruttovolumen eines Hotelzimmers für zwei Personen, mit eigenem Bad.
+  fr: Volume brut d'une chambre d'hôtel pour deux personnes, avec salle de bain privée.
+  it: Volume lordo di una camera d'albergo per due persone, con bagno privato.
+  en: Gross volume of a hotel room for two people, with a private bathroom.
+room_type_kind: container
+uses:
+- pragmaticbim:use/beherbergung
+contains:
+- room_type: pragmaticbim:room-type/hotelzimmer
+- room_type: pragmaticbim:room-type/badezimmer
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/hotel-doppelzimmer-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Doppelzimmer
+      fr: Chambre double
+      it: Camera doppia
+      en: Double room
+  status: active

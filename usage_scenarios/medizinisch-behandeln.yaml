@@ -1,0 +1,52 @@
+id: pragmaticbim:usage-scenario/medizinisch-behandeln
+code: US-HE-03
+sort_order: 4
+name:
+  de: Behandeln
+  fr: Traiter
+  it: Trattare
+  en: Providing treatment
+description:
+  de: Patientinnen und Patienten erhalten medizinische Eingriffe unterschiedlicher Komplexität. Der Eingriff
+    entscheidet über Raumtyp, Unterstützung und Sicherheitszonen.
+  fr: Les patients reçoivent des interventions de complexité variable. L'intervention détermine le type
+    de salle, le soutien et les zones de sécurité.
+  it: I pazienti ricevono interventi di diversa complessità. L'intervento determina tipo di locale, supporto
+    e zone di sicurezza.
+  en: Patients receive procedures of varying complexity. The procedure determines room type, support,
+    and safety zones.
+uses:
+- pragmaticbim:use/gesundheit
+tags:
+- behandlung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/medizinisch-behandeln-treatment
+  sort_order: 1
+  name:
+    de: Behandlungsraum
+    fr: Salle de traitement
+    it: Locale di trattamento
+    en: Treatment room
+  adds:
+  - pragmaticbim:room-type/behandlungsraum
+- id: pragmaticbim:scenario-option/medizinisch-behandeln-procedure
+  sort_order: 2
+  name:
+    de: Eingriffsraum
+    fr: Salle d'intervention
+    it: Sala interventi
+    en: Procedure room
+  adds:
+  - pragmaticbim:room-type/eingriffsraum
+- id: pragmaticbim:scenario-option/medizinisch-behandeln-operating
+  sort_order: 3
+  name:
+    de: Operationssaal
+    fr: Salle d'opération
+    it: Sala operatoria
+    en: Operating theatre
+  adds:
+  - pragmaticbim:room-type/operationssaal

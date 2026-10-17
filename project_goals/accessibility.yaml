@@ -1,0 +1,87 @@
+id: pragmaticbim:project-goal/accessibility
+sort_order: 40
+group: rahmenbedingungen
+code: PG-39
+name:
+  de: Hindernisfreiheit
+  fr: Accessibilité
+  it: Accessibilità
+  en: Accessibility
+tag:
+  de: Hindernisfreiheit
+  fr: Accessibilité
+  it: Accessibilità
+  en: Accessibility
+description:
+  de: |-
+    Festgelegt wird, wie weit das Gebäude über das gesetzliche Minimum nach SIA 500 hinaus hindernisfrei ist: anpassbar oder durchgehend rollstuhlgerecht. Die Festlegung bestimmt Türen, Räume und Erschliessung.
+  fr: |-
+    Cette condition-cadre détermine dans quelle mesure le bâtiment est accessible au-delà du minimum légal selon SIA 500 : adaptable ou entièrement accessible en fauteuil roulant. Elle détermine les portes, les locaux et la desserte.
+  it: |-
+    Questa condizione quadro stabilisce quanto l'edificio è accessibile oltre il minimo legale secondo SIA 500: adattabile o interamente accessibile in sedia a rotelle. Determina porte, locali e distribuzione.
+  en: |-
+    This framework condition sets how far the building is accessible beyond the legal minimum under SIA 500: adaptable or wheelchair-accessible throughout. It drives doors, spaces, and circulation.
+status: active
+is_boundary_condition: true
+comment: 'Kumulativ. Einfluss auf Raumtypen und Nutzungsszenarien: barrierefreies-wc, rampe, Varianten der toiletten-benutzen-* Szenarien und Türbreiten. Varianten über project_goal_levels verknüpfen ist offen. qas-accessibility-sia500-verification bleibt zusätzlich unter PG-09 Bewilligungssicherheit.'
+levels:
+- id: pragmaticbim:project-goal-level/accessibility-minimum
+  code: HIN-01
+  sort_order: 1
+  name:
+    de: Minimum nach SIA 500
+    fr: Minimum selon SIA 500
+    it: Minimo secondo SIA 500
+    en: Minimum under SIA 500
+  description:
+    de: Öffentlich zugängliche Bereiche und die Erschliessung erfüllen die Grundanforderungen nach SIA 500 und kantonalem Recht.
+    fr: Les zones accessibles au public et la desserte respectent les exigences de base selon SIA 500 et le droit cantonal.
+    it: Le aree accessibili al pubblico e la distribuzione rispettano i requisiti di base secondo SIA 500 e il diritto cantonale.
+    en: Publicly accessible areas and circulation meet the basic requirements under SIA 500 and cantonal law.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-accessibility-sia500-verification
+  comment: ''
+- id: pragmaticbim:project-goal-level/accessibility-adaptable
+  code: HIN-02
+  sort_order: 2
+  name:
+    de: Anpassbar
+    fr: Adaptable
+    it: Adattabile
+    en: Adaptable
+  description:
+    de: Wohnungen und Arbeitsplätze lassen sich ohne bauliche Eingriffe in Tragwerk und Leitungen rollstuhlgerecht anpassen. Türbreiten und Bewegungsflächen sind von Anfang an dafür ausgelegt.
+    fr: Logements et postes de travail peuvent être adaptés pour les fauteuils roulants sans intervention sur la structure ni les conduites. Largeurs de portes et surfaces de manœuvre sont dimensionnées en conséquence dès le départ.
+    it: Alloggi e posti di lavoro si possono adattare alla sedia a rotelle senza interventi su struttura e condotte. Larghezze delle porte e superfici di manovra sono dimensionate di conseguenza fin dall'inizio.
+    en: Dwellings and workplaces can be adapted for wheelchair use without work on the structure or services. Door widths and manoeuvring areas are designed for it from the start.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-accessibility-sia500-verification
+  - pragmaticbim:workflow/des-door-planning
+  comment: ''
+- id: pragmaticbim:project-goal-level/accessibility-wheelchair
+  code: HIN-03
+  sort_order: 3
+  name:
+    de: Durchgehend rollstuhlgerecht
+    fr: Entièrement accessible en fauteuil roulant
+    it: Interamente accessibile in sedia a rotelle
+    en: Wheelchair-accessible throughout
+  description:
+    de: Alle Räume sind ohne Anpassung mit dem Rollstuhl nutzbar. Sanitärräume, Küchen und Ausstattung werden rollstuhlgerecht geplant und mit den Nutzenden abgestimmt.
+    fr: Tous les locaux sont utilisables en fauteuil roulant sans adaptation. Locaux sanitaires, cuisines et équipements sont planifiés pour les fauteuils roulants et coordonnés avec les utilisateurs.
+    it: Tutti i locali sono utilizzabili in sedia a rotelle senza adattamenti. Locali sanitari, cucine e arredi vengono progettati per la sedia a rotelle e coordinati con gli utenti.
+    en: All spaces can be used in a wheelchair without adaptation. Sanitary rooms, kitchens, and fittings are designed for wheelchair use and agreed with users.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-accessibility-sia500-verification
+  - pragmaticbim:workflow/des-door-planning
+  - pragmaticbim:workflow/des-sanitary-fixture-coordination
+  - pragmaticbim:workflow/qas-furnishability-verification
+  performance_targets:
+  - element: pragmaticbim:element/spaces-interior
+    name: HandicapAccessible
+    pset: Pset_SpaceCommon
+    value: true
+  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'

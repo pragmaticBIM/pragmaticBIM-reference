@@ -15,34 +15,34 @@ norm_reference: ePset_HazardousMaterial
 status: active
 values:
   de:
-  - Asbestos
-  - PCB
-  - PAH
-  - PCP
-  - Lead
-  - None
-  - Unknown
+    - Asbestos
+    - PCB
+    - PAH
+    - PCP
+    - Lead
+    - None
+    - Unknown
   fr:
-  - Asbestos
-  - PCB
-  - PAH
-  - PCP
-  - Lead
-  - None
-  - Unknown
+    - Asbestos
+    - PCB
+    - PAH
+    - PCP
+    - Lead
+    - None
+    - Unknown
   it:
-  - Asbestos
-  - PCB
-  - PAH
-  - PCP
-  - Lead
-  - None
-  - Unknown
+    - Asbestos
+    - PCB
+    - PAH
+    - PCP
+    - Lead
+    - None
+    - Unknown
   en:
-  - Asbestos
-  - PCB
-  - PAH
-  - PCP
-  - Lead
-  - None
-  - Unknown
+    - Asbestos
+    - PCB
+    - PAH
+    - PCP
+    - Lead
+    - None
+    - Unknown

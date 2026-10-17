@@ -1,0 +1,65 @@
+id: pragmaticbim:usage-scenario/kochen-und-essen
+code: US-WH-01
+sort_order: 6
+name:
+  de: Kochen und Essen
+  fr: Cuisiner et manger
+  it: Cucinare e mangiare
+  en: Cooking and eating
+description:
+  de: Bewohnende kochen und essen täglich zusammen. Ein eigener Raum oder ein Teil
+    des Wohnzimmers ändert Zimmerzahl, Fläche und wie stark das Kochen den Wohnraum
+    prägt.
+  fr: Les habitants cuisinent et mangent ensemble chaque jour. Une pièce à part ou
+    une partie du séjour change le nombre de pièces, la surface et la place de la
+    cuisine dans le logement.
+  it: Gli abitanti cucinano e mangiano insieme ogni giorno. Un locale proprio o una
+    parte del soggiorno cambia il numero di locali, la superficie e quanto la cucina
+    segna lo spazio abitativo.
+  en: Residents cook and eat together every day. A room of its own or part of the
+    living room changes the room count, the area, and how far cooking shapes the living
+    space.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- wohnalltag
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/kochen-und-essen-closed
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-premium
+  sort_order: 1
+  name:
+    de: Küche mit Esszimmer
+    fr: Cuisine avec salle à manger
+    it: Cucina con sala da pranzo
+    en: Kitchen with dining room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/kueche
+  - from_room_type: pragmaticbim:room-type/kueche
+    to_room_type: pragmaticbim:room-type/esszimmer
+  target: pragmaticbim:room-type/wohnung
+  adds:
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/kueche
+  - pragmaticbim:room-type/esszimmer
+- id: pragmaticbim:scenario-option/kochen-und-essen-open
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-standard
+  - pragmaticbim:project-goal-level/fit-out-elevated
+  sort_order: 2
+  name:
+    de: Küche am Wohnzimmer
+    fr: Cuisine ouverte sur le séjour
+    it: Cucina aperta sul soggiorno
+    en: Kitchen off the living room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnzimmer
+    to_room_type: pragmaticbim:room-type/kueche
+  target: pragmaticbim:room-type/wohnung
+  adds:
+  - pragmaticbim:room-type/wohnzimmer
+  - pragmaticbim:room-type/kueche

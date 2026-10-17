@@ -1,0 +1,104 @@
+id: pragmaticbim:project-goal/seismic-design
+sort_order: 100
+group: rahmenbedingungen
+code: PG-33
+name:
+  de: Erdbeben
+  fr: Séisme
+  it: Sisma
+  en: Earthquake
+tag:
+  de: Erdbeben
+  fr: Séisme
+  it: Sisma
+  en: Earthquake
+description:
+  de: |-
+    Festgelegt wird die Bauwerksklasse nach SIA 261 und, bei einem Umbau, wie weit das bestehende Tragwerk nach SIA 269/8 ertüchtigt wird. Die Festlegung ist vor allem dann zu treffen, wenn die Bauherrschaft sie einbringt oder über den Ertüchtigungsgrad entscheidet. Sie bestimmt tragende Wände und Decken.
+
+    Ohne diese Festlegung werden aussteifende Wände zu spät gesetzt oder nachträglich verstärkt. Grundrisse, die darauf aufbauen, müssen dann umgeplant werden.
+  fr: |-
+    Cette condition-cadre fixe la classe d'ouvrage selon SIA 261 et, pour une transformation, le degré de renforcement de la structure existante selon SIA 269/8. Elle s'impose surtout lorsque le maître d'ouvrage l'introduit ou décide du degré de renforcement. Elle détermine les murs porteurs et les dalles.
+
+    Sans cette définition, les murs de contreventement sont placés trop tard ou renforcés après coup. Les plans d'étage qui en dépendent doivent alors être remaniés.
+  it: |-
+    Questa condizione quadro stabilisce la classe d'opera secondo SIA 261 e, in caso di trasformazione, il grado di adeguamento della struttura esistente secondo SIA 269/8. Va definita soprattutto quando il committente la introduce o decide il grado di adeguamento. Determina pareti portanti e solette.
+
+    Senza questa definizione, le pareti di controventamento vengono posizionate troppo tardi o rinforzate a posteriori. Le planimetrie che ne dipendono devono allora essere riprogettate.
+  en: |-
+    This framework condition sets the structure class under SIA 261 and, in a renovation, how far the existing structure is upgraded under SIA 269/8. It matters mainly when the client raises it or decides the degree of upgrading. It drives load-bearing walls and slabs.
+
+    Without it, bracing walls are placed too late or strengthened afterwards. Floor plans that depend on them then have to be redesigned.
+status: active
+is_boundary_condition: true
+comment: 'Kumulativ. Kein Einfluss auf Anwendungsfälle der Nutzung oder Raumtypen; wirkt auf das Gebäude (StructuralProperty seismic_structure_class). Die Stufen setzen SeismicStructureClassRequired am Gebäude als Sollwert; tragende Wände und Decken werden in der Tragwerksplanung danach bemessen.'
+levels:
+- id: pragmaticbim:project-goal-level/seismic-bwk-1
+  code: ERD-01
+  sort_order: 1
+  name:
+    de: Bauwerksklasse I
+    fr: Classe d'ouvrage I
+    it: Classe d'opera I
+    en: Structure class I
+  description:
+    de: Übliche Bauwerke wie Wohn-, Büro- und Gewerbebauten. Die Erdbebensicherheit wird im Rahmen der Tragwerksplanung nachgewiesen.
+    fr: Ouvrages courants tels que logements, bureaux et bâtiments artisanaux. La sécurité parasismique est justifiée dans le cadre de l'étude de la structure porteuse.
+    it: Opere usuali come edifici residenziali, uffici ed edifici artigianali. La sicurezza sismica viene verificata nell'ambito della progettazione strutturale.
+    en: Ordinary structures such as housing, offices, and commercial buildings. Earthquake safety is verified as part of the structural design.
+  status: active
+  activated_workflows: []
+  performance_targets:
+  - element: pragmaticbim:element/building
+    name: SeismicStructureClassRequired
+    pset: ePset_BuildingRequirement
+    value: 'I'
+  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
+- id: pragmaticbim:project-goal-level/seismic-bwk-2
+  code: ERD-02
+  sort_order: 2
+  name:
+    de: Bauwerksklasse II
+    fr: Classe d'ouvrage II
+    it: Classe d'opera II
+    en: Structure class II
+  description:
+    de: Bauwerke mit grosser Personenbelegung oder wichtiger Infrastruktur, etwa Schulen, Spitäler ohne Akutversorgung und Einkaufszentren. Aussteifende Wände werden früh mit dem Tragwerk abgestimmt.
+    fr: Ouvrages à forte occupation ou à infrastructure importante, par exemple écoles, hôpitaux sans soins aigus et centres commerciaux. Les murs de contreventement sont coordonnés tôt avec la structure porteuse.
+    it: Opere con grande affollamento o infrastruttura importante, ad esempio scuole, ospedali senza cure acute e centri commerciali. Le pareti di controventamento vengono coordinate presto con la struttura portante.
+    en: Structures with high occupancy or important infrastructure, such as schools, hospitals without acute care, and shopping centres. Bracing walls are coordinated with the structure early.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  - pragmaticbim:workflow/qas-element-type-performance-verification
+  - pragmaticbim:workflow/bes-mep-seismic-bracing-coordination
+  performance_targets:
+  - element: pragmaticbim:element/building
+    name: SeismicStructureClassRequired
+    pset: ePset_BuildingRequirement
+    value: 'II'
+  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
+- id: pragmaticbim:project-goal-level/seismic-bwk-3
+  code: ERD-03
+  sort_order: 3
+  name:
+    de: Bauwerksklasse III
+    fr: Classe d'ouvrage III
+    it: Classe d'opera III
+    en: Structure class III
+  description:
+    de: Lebenswichtige Bauwerke, die nach einem Erdbeben in Betrieb bleiben müssen, etwa Akutspitäler, Feuerwehr und Einsatzzentralen. Tragwerk und Ausbau werden für den Betrieb nach dem Ereignis ausgelegt.
+    fr: Ouvrages vitaux qui doivent rester en service après un séisme, par exemple hôpitaux de soins aigus, pompiers et centrales d'intervention. La structure et l'aménagement sont dimensionnés pour l'exploitation après l'événement.
+    it: Opere vitali che devono restare in esercizio dopo un sisma, ad esempio ospedali per cure acute, pompieri e centrali operative. Struttura e finiture vengono dimensionate per l'esercizio dopo l'evento.
+    en: Vital structures that must stay in operation after an earthquake, such as acute hospitals, fire stations, and emergency control centres. Structure and fit-out are designed for operation after the event.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  - pragmaticbim:workflow/qas-element-type-performance-verification
+  - pragmaticbim:workflow/bes-mep-seismic-bracing-coordination
+  performance_targets:
+  - element: pragmaticbim:element/building
+    name: SeismicStructureClassRequired
+    pset: ePset_BuildingRequirement
+    value: 'III'
+  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'

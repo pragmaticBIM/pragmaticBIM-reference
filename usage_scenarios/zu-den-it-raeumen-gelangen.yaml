@@ -1,0 +1,73 @@
+id: pragmaticbim:usage-scenario/zu-den-it-raeumen-gelangen
+code: US-RZ-06
+sort_order: 1
+name:
+  de: Zu den IT-Räumen gelangen
+  fr: Accéder aux salles informatiques
+  it: Raggiungere le sale IT
+  en: Reaching the IT rooms
+description:
+  de: Personal und Hardware gelangen kontrolliert zu den IT-Räumen. Die Erschliessung entscheidet über
+    Zutrittskontrolle, Transportlasten und Sicherheitszonen.
+  fr: Le personnel et le matériel accèdent de manière contrôlée aux salles informatiques. La desserte
+    détermine le contrôle d'accès, les charges de transport et les zones de sécurité.
+  it: Personale e hardware raggiungono le sale IT in modo controllato. L'accesso determina controllo degli
+    accessi, carichi di trasporto e zone di sicurezza.
+  en: Staff and hardware reach the IT rooms under control. The access arrangement determines access control,
+    transport loads, and security zones.
+uses:
+- pragmaticbim:use/rechenzentrum
+tags:
+- erschliessung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/zu-den-it-raeumen-gelangen-stair
+  sort_order: 1
+  name:
+    de: Treppenhaus
+    fr: Cage d'escalier
+    it: Vano scale
+    en: Stairwell
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+- id: pragmaticbim:scenario-option/zu-den-it-raeumen-gelangen-stair-elevator
+  sort_order: 2
+  name:
+    de: Treppenhaus und Aufzug
+    fr: Cage d'escalier et ascenseur
+    it: Vano scale e ascensore
+    en: Stairwell and elevator
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+- id: pragmaticbim:scenario-option/zu-den-it-raeumen-gelangen-service-lift
+  sort_order: 3
+  name:
+    de: Treppenhaus, Aufzug und Warenaufzug
+    fr: Cage d'escalier, ascenseur et monte-charge
+    it: Vano scale, ascensore e montacarichi
+    en: Stairwell, elevator, and service lift
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  - from_room_type: pragmaticbim:room-type/treppenhaus
+    to_room_type: pragmaticbim:room-type/warenaufzug
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+  - pragmaticbim:room-type/warenaufzug

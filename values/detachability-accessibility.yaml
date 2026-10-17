@@ -15,26 +15,26 @@ norm_reference: Madaster-/DGBC-Demontierbarkeitsmethode
 status: active
 values:
   de:
-  - Accessible
-  - PartialNoDamage
-  - PartialWithRepairableDamage
-  - PartialWithDamage
-  - NotAccessible
+    - Accessible
+    - PartialNoDamage
+    - PartialWithRepairableDamage
+    - PartialWithDamage
+    - NotAccessible
   fr:
-  - Accessible
-  - PartialNoDamage
-  - PartialWithRepairableDamage
-  - PartialWithDamage
-  - NotAccessible
+    - Accessible
+    - PartialNoDamage
+    - PartialWithRepairableDamage
+    - PartialWithDamage
+    - NotAccessible
   it:
-  - Accessible
-  - PartialNoDamage
-  - PartialWithRepairableDamage
-  - PartialWithDamage
-  - NotAccessible
+    - Accessible
+    - PartialNoDamage
+    - PartialWithRepairableDamage
+    - PartialWithDamage
+    - NotAccessible
   en:
-  - Accessible
-  - PartialNoDamage
-  - PartialWithRepairableDamage
-  - PartialWithDamage
-  - NotAccessible
+    - Accessible
+    - PartialNoDamage
+    - PartialWithRepairableDamage
+    - PartialWithDamage
+    - NotAccessible

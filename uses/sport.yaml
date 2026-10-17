@@ -1,0 +1,28 @@
+id: pragmaticbim:use/sport
+code: USE-SP
+sort_order: 11
+name:
+  de: Sport
+  fr: Sport
+  it: Sport
+  en: Sport
+definition:
+  de: 'Sport von Einzelnen und Teams, etwa in Hallen, Bädern und auf Anlagen. Bezugsgrösse: Anzahl Spielfelder
+    bzw. Halleneinheiten.'
+  fr: 'Pratique sportive individuelle et en équipe, par exemple en salles, piscines et installations.
+    Grandeur de référence : nombre de terrains ou d''unités de salle.'
+  it: 'Pratica sportiva individuale e di squadra, ad esempio in palestre, piscine e impianti. Grandezza
+    di riferimento: numero di campi o unità di palestra.'
+  en: 'Individual and team sports, for example in halls, pools and facilities. Reference quantity: number
+    of courts or hall units.'
+reference_quantity:
+  id: pragmaticbim:quantity/sport-halleneinheiten
+  code: USE-SP-Q
+  sort_order: 1
+  name:
+    de: Anzahl Spielfelder bzw. Halleneinheiten
+    fr: Nombre de terrains ou d'unités de salle
+    it: Numero di campi o unità di palestra
+    en: Number of courts or hall units
+  status: active
+status: active

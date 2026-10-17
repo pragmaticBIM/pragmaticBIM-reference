@@ -1,0 +1,67 @@
+id: pragmaticbim:project-goal/sortiment
+sort_order: 1041
+group: rahmenbedingungen
+code: PG-21
+name:
+  de: Sortiment
+  fr: Assortiment
+  it: Assortimento
+  en: Product range
+tag:
+  de: Sortiment
+  fr: Assortiment
+  it: Assortimento
+  en: Range
+description:
+  de: |-
+    Das Sortiment und die Verkaufsfläche bestimmen Kühlung, Anlieferung, Lager und Hygieneanforderungen.
+
+    Ohne diese Festlegung bleiben Kühlung, Anlieferung und Hygiene offen. Die Verkaufsfläche wird dann für Waren gebaut, die sie nicht aufnehmen kann.
+  fr: |-
+    L'assortiment et la surface de vente déterminent la réfrigération, la livraison, le stockage et les exigences d'hygiène.
+
+    Sans cette décision, réfrigération, livraison et hygiène restent ouvertes. La surface de vente est alors construite pour des marchandises qu'elle ne peut pas accueillir.
+  it: |-
+    L'assortimento e la superficie di vendita determinano refrigerazione, fornitura, deposito e requisiti igienici.
+
+    Senza questa decisione refrigerazione, fornitura e igiene restano aperti. La superficie di vendita viene allora costruita per merci che non può accogliere.
+  en: |-
+    The product range and the sales area determine refrigeration, deliveries, storage, and hygiene requirements.
+
+    Without this decision refrigeration, deliveries, and hygiene stay open. The sales area is then built for goods it cannot hold.
+status: active
+uses:
+- pragmaticbim:use/verkauf
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/sortiment-food
+  code: SOR-01
+  sort_order: 1
+  name:
+    de: Food
+    fr: Alimentaire
+    it: Alimentare
+    en: Food
+  description:
+    de: Lebensmittel mit Kühl- und Tiefkühlbereichen.
+    fr: Denrées alimentaires avec zones réfrigérées et surgelées.
+    it: Alimenti con zone refrigerate e surgelate.
+    en: Groceries with chilled and frozen areas.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/sortiment-non-food
+  code: SOR-02
+  sort_order: 2
+  name:
+    de: Non-Food
+    fr: Non alimentaire
+    it: Non alimentare
+    en: Non-food
+  description:
+    de: Waren ohne Kühlung, etwa Kleider, Elektronik oder Haushalt.
+    fr: Marchandises sans réfrigération, par exemple vêtements, électronique ou ménage.
+    it: Merci senza refrigerazione, ad esempio abbigliamento, elettronica o casalinghi.
+    en: Goods without refrigeration, such as clothing, electronics, or household items.
+  status: active
+  comment: ''

@@ -1,27 +1,83 @@
 id: pragmaticbim:usage-scenario/velo-abstellen
 code: US-WH-12
-sort_order: 12
+sort_order: 3
 name:
   de: Velo abstellen
   fr: Ranger le vélo
   it: Depositare la bici
   en: Parking the bicycle
 description:
-  de: Bewohnende verlassen die Wohnung, gehen über das Treppenhaus und stellen das Velo im Innenbereich ab.
-  fr: Les occupants quittent le logement, empruntent la cage d'escalier et rangent le vélo à l'intérieur du bâtiment.
-  it: Chi abita esce dall'alloggio, percorre il vano scale e deposita la bici all'interno dell'edificio.
-  en: Occupants leave the dwelling, use the stairwell, and park the bicycle inside the building.
-scenario_group: Wohnen
+  de: Bewohnende stellen ihr Velo täglich ab. Der Ort entscheidet, ob Velos geschützt innen oder aussen
+    stehen und wie weit der Weg zur Wohnung ist.
+  fr: Les habitants rangent leur vélo chaque jour. L'emplacement décide si les vélos sont à l'abri à l'intérieur
+    ou dehors, et de la distance jusqu'au logement.
+  it: Gli abitanti depositano la bici ogni giorno. Il posto decide se le biciclette stanno al riparo all'interno
+    o all'esterno e quanto dista l'alloggio.
+  en: Residents park their bicycles every day. The place decides whether bicycles stand sheltered indoors
+    or outdoors, and how far the dwelling is.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- ankommen
 status: active
 jurisdiction:
-- ch
-required_room_types:
-- pragmaticbim:room-type/wohnungseingang
-- pragmaticbim:room-type/treppenhaus
-- pragmaticbim:room-type/parkplatz-velo-innen
-room_relationships:
-- from_room_type: pragmaticbim:room-type/wohnungseingang
-  to_room_type: pragmaticbim:room-type/treppenhaus
-- from_room_type: pragmaticbim:room-type/treppenhaus
-  to_room_type: pragmaticbim:room-type/parkplatz-velo-innen
-  max_distance: 30
+- general
+options:
+- id: pragmaticbim:scenario-option/velo-abstellen-interior
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-elevated
+  sort_order: 1
+  name:
+    de: Innen
+    fr: Intérieur
+    it: Interno
+    en: Indoor
+  quantity:
+    id: pragmaticbim:quantity/velo-abstellen-interior
+    sort_order: 1
+    name:
+      de: Anzahl Veloabstellplätze
+      fr: Nombre de places pour vélos
+      it: Numero di posteggi per biciclette
+      en: Number of bicycle spaces
+    status: active
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/parkplatz-velo-innen
+    max_distance: 30
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/parkplatz-velo-innen
+- id: pragmaticbim:scenario-option/velo-abstellen-exterior
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-standard
+  sort_order: 2
+  name:
+    de: Aussen
+    fr: Extérieur
+    it: Esterno
+    en: Outdoor
+  quantity:
+    id: pragmaticbim:quantity/velo-abstellen-exterior
+    sort_order: 1
+    name:
+      de: Anzahl Veloabstellplätze
+      fr: Nombre de places pour vélos
+      it: Numero di posteggi per biciclette
+      en: Number of bicycle spaces
+    status: active
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/parkplatz-velo-aussen
+    max_distance: 30
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/parkplatz-velo-aussen
+- id: pragmaticbim:scenario-option/velo-abstellen-none
+  sort_order: 3
+  name:
+    de: Kein besonderer Veloabstellplatz
+    fr: Aucun stationnement vélo particulier
+    it: Nessun parcheggio bici dedicato
+    en: No dedicated bicycle parking
+  exclusive: true

@@ -8,74 +8,50 @@ name:
   it: Geometria di superficie
   en: Surface geometry
 definition:
-  de: 'Stellt Bestand und projektiertes Gelände bereit, damit Anschlüsse ans Gebäude und Erdmassen abgestimmt geplant werden können.
-
+  de: |-
+    Stellt Bestand und projektiertes Gelände bereit, damit Anschlüsse ans Gebäude und Erdmassen abgestimmt geplant werden können.
 
     **Beschreibung**
-
     - Geländeform mit Lage und Höhe im Bezugsrahmen LV95, als Bestand oder als Projekt.
-
     - Grundlage für den Abgleich mit der Punktwolke und für die Prüfung der Gebäudeanschlüsse.
 
-
     **Modellierungshinweis**
-
     - Bestandsfläche gemäss Geometerlieferung, projektierte Fläche gemäss Landschaftsplanung; dem Planungsperimeter zuweisen.
-
     - Beide als getrennte Oberflächen führen. Den Humusabtrag nicht auf der Fläche abbilden.
-
-    - Lage und Höhe in LV95; Bestand mit der Punktwolke abstimmen.'
-  fr: 'Fournit le terrain existant et le terrain projeté afin de planifier de manière coordonnée les raccordements au bâtiment et les mouvements de terre.
-
+    - Lage und Höhe in LV95; Bestand mit der Punktwolke abstimmen.
+  fr: |-
+    Fournit le terrain existant et le terrain projeté afin de planifier de manière coordonnée les raccordements au bâtiment et les mouvements de terre.
 
     **Description**
-
     - Forme du terrain avec position et altitude dans le référentiel LV95, en existant ou en projet.
-
     - Base pour le calage sur le nuage de points et le contrôle des raccordements au bâtiment.
 
-
     **Directives de modélisation**
-
-    - Surface existante selon la livraison du géomètre, surface projetée selon l''aménagement paysager ; rattacher au périmètre de planification.
-
-    - Tenir les deux comme surfaces distinctes. Ne pas représenter le déblai d''humus sur la surface.
-
-    - Position et altitude en LV95 ; caler l''existant sur le nuage de points.'
-  it: 'Fornisce il terreno esistente e quello di progetto per pianificare in modo coordinato i raccordi con l''edificio e i movimenti di terra.
-
+    - Surface existante selon la livraison du géomètre, surface projetée selon l'aménagement paysager ; rattacher au périmètre de planification.
+    - Tenir les deux comme surfaces distinctes. Ne pas représenter le déblai d'humus sur la surface.
+    - Position et altitude en LV95 ; caler l'existant sur le nuage de points.
+  it: |-
+    Fornisce il terreno esistente e quello di progetto per pianificare in modo coordinato i raccordi con l'edificio e i movimenti di terra.
 
     **Descrizione**
-
     - Forma del terreno con posizione e quota nel sistema di riferimento LV95, come esistente o come progetto.
-
-    - Base per l''allineamento alla nuvola di punti e per la verifica dei raccordi con l''edificio.
-
+    - Base per l'allineamento alla nuvola di punti e per la verifica dei raccordi con l'edificio.
 
     **Direttive di modellazione**
-
     - Superficie esistente secondo la consegna del geometra, superficie di progetto secondo la progettazione del paesaggio; assegnare al perimetro di pianificazione.
-
-    - Tenere entrambe come superfici distinte. Non rappresentare lo scavo dell''humus sulla superficie.
-
-    - Posizione e quota in LV95; allineare l''esistente alla nuvola di punti.'
-  en: 'Provides existing and designed terrain so that connections to the building and earth quantities can be planned in coordination.
-
+    - Tenere entrambe come superfici distinte. Non rappresentare lo scavo dell'humus sulla superficie.
+    - Posizione e quota in LV95; allineare l'esistente alla nuvola di punti.
+  en: |-
+    Provides existing and designed terrain so that connections to the building and earth quantities can be planned in coordination.
 
     **Description**
-
     - Terrain form with position and height in the LV95 reference frame, as existing or as design.
-
     - Basis for point-cloud alignment and for checking connections to the building.
 
-
     **Modelling guidelines**
-
     - Existing surface according to the surveyor delivery, designed surface according to landscape design; assign to the planning perimeter.
-
     - Keep both as separate surfaces. Do not show humus stripping on the surface.
-
-    - Position and height in LV95; align the existing surface with the point cloud.'
+    - Position and height in LV95; align the existing surface with the point cloud.
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/surveyor
@@ -95,23 +71,8 @@ attributes:
     it: Designazione della superficie del terreno secondo il rilievo o il progetto.
     en: Terrain surface designation according to the survey or project.
   datatype: IfcLabel
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-survey-existing-model-procurement
   - pragmaticbim:workflow/des-facade-planning
@@ -122,48 +83,30 @@ attributes:
 - name: PredefinedType
   pset: null
   definition:
-    de: 'Kennzeichnet das Element als Geländeoberfläche.
-
+    de: |-
+      Kennzeichnet das Element als Geländeoberfläche.
 
       **Zulässige Werte**
-
-      - `TERRAIN` — Gelände / Terrain'
-    fr: 'Identifie l''élément comme surface de terrain.
-
+      - `TERRAIN` — Gelände / Terrain
+    fr: |-
+      Identifie l'élément comme surface de terrain.
 
       **Valeurs admises**
-
-      - `TERRAIN` — terrain'
-    it: 'Identifica l''elemento come superficie del terreno.
-
+      - `TERRAIN` — terrain
+    it: |-
+      Identifica l'elemento come superficie del terreno.
 
       **Valori ammessi**
-
-      - `TERRAIN` — terreno'
-    en: 'Marks the element as a terrain surface.
-
+      - `TERRAIN` — terreno
+    en: |-
+      Marks the element as a terrain surface.
 
       **Allowed values**
-
-      - `TERRAIN` — terrain'
+      - `TERRAIN` — terrain
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-geographic-element-terrain
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-survey-existing-model-procurement
   - pragmaticbim:workflow/des-facade-planning
@@ -174,73 +117,42 @@ attributes:
 - name: ElementStatus
   pset: ePset_ElementStatus
   definition:
-    de: 'Status der Geländeoberfläche zur Trennung von Bestand und projektiertem Terrain. Der Humusabtrag gehört nicht hierher.
-
+    de: |-
+      Status der Geländeoberfläche zur Trennung von Bestand und projektiertem Terrain. Der Humusabtrag gehört nicht hierher.
 
       **Zulässige Werte**
-
       - `NEW` — projektiertes Terrain
-
       - `EXISTING` — Bestand
-
       - `DEMOLISH` — entfallende Fläche
-
-      - `TEMPORARY` — temporäres Terrain'
-    fr: 'Statut de la surface de terrain pour distinguer l''existant et le terrain projeté. Le déblai d''humus n''y figure pas.
-
+      - `TEMPORARY` — temporäres Terrain
+    fr: |-
+      Statut de la surface de terrain pour distinguer l'existant et le terrain projeté. Le déblai d'humus n'y figure pas.
 
       **Valeurs admises**
-
       - `NEW` — terrain projeté
-
       - `EXISTING` — existant
-
       - `DEMOLISH` — surface supprimée
-
-      - `TEMPORARY` — terrain provisoire'
-    it: 'Stato della superficie del terreno per distinguere l''esistente e il terreno di progetto. Lo scavo dell''humus non vi rientra.
-
+      - `TEMPORARY` — terrain provisoire
+    it: |-
+      Stato della superficie del terreno per distinguere l'esistente e il terreno di progetto. Lo scavo dell'humus non vi rientra.
 
       **Valori ammessi**
-
       - `NEW` — terreno di progetto
-
       - `EXISTING` — esistente
-
       - `DEMOLISH` — superficie eliminata
-
-      - `TEMPORARY` — terreno provvisorio'
-    en: 'Terrain-surface status distinguishing existing and designed terrain. Humus stripping does not belong here.
-
+      - `TEMPORARY` — terreno provvisorio
+    en: |-
+      Terrain-surface status distinguishing existing and designed terrain. Humus stripping does not belong here.
 
       **Allowed values**
-
       - `NEW` — designed terrain
-
       - `EXISTING` — existing
-
       - `DEMOLISH` — surface to remove
-
-      - `TEMPORARY` — temporary terrain'
+      - `TEMPORARY` — temporary terrain
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-survey-existing-model-procurement
   - pragmaticbim:workflow/des-facade-planning

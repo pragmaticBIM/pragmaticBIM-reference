@@ -1,0 +1,54 @@
+id: pragmaticbim:usage-scenario/zum-unterricht-gelangen
+code: US-BI-07
+sort_order: 1
+name:
+  de: Zum Unterricht gelangen
+  fr: Se rendre en cours
+  it: Raggiungere le lezioni
+  en: Getting to class
+description:
+  de: Lernende und Lehrpersonen wechseln zu Beginn und Ende der Pausen gleichzeitig die Räume. Die Erschliessung
+    entscheidet über Gedränge, Hindernisfreiheit und Fluchtwege.
+  fr: Élèves et enseignants changent de salle en même temps au début et à la fin des pauses. La desserte
+    détermine l'affluence, l'accès sans obstacle et les voies d'évacuation.
+  it: Allievi e docenti cambiano aula contemporaneamente all'inizio e alla fine delle pause. L'accesso
+    determina affollamento, assenza di ostacoli e vie di fuga.
+  en: Learners and teachers change rooms at the same time at the start and end of breaks. The access arrangement
+    determines crowding, step-free access, and escape routes.
+uses:
+- pragmaticbim:use/bildung
+tags:
+- erschliessung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/zum-unterricht-gelangen-stair
+  sort_order: 1
+  name:
+    de: Treppenhaus
+    fr: Cage d'escalier
+    it: Vano scale
+    en: Stairwell
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+- id: pragmaticbim:scenario-option/zum-unterricht-gelangen-stair-elevator
+  sort_order: 2
+  name:
+    de: Treppenhaus und Aufzug
+    fr: Cage d'escalier et ascenseur
+    it: Vano scale e ascensore
+    en: Stairwell and elevator
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone

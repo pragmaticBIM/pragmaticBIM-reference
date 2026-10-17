@@ -1,0 +1,52 @@
+id: pragmaticbim:usage-scenario/unterrichten-und-lernen
+code: US-BI-01
+sort_order: 2
+name:
+  de: Unterrichten und lernen
+  fr: Enseigner et apprendre
+  it: Insegnare e apprendere
+  en: Teaching and learning
+description:
+  de: Lernende und Lehrende arbeiten regelmässig in Gruppen. Die Unterrichtsform entscheidet über Raumgrösse,
+    Möblierung und Veränderbarkeit.
+  fr: Les apprenants et les enseignants travaillent régulièrement en groupe. La forme d'enseignement détermine
+    la taille, le mobilier et la flexibilité des locaux.
+  it: Discenti e docenti lavorano regolarmente in gruppo. La forma didattica determina dimensioni, arredi
+    e flessibilità dei locali.
+  en: Learners and teachers regularly work in groups. The teaching format determines room size, furniture,
+    and adaptability.
+uses:
+- pragmaticbim:use/bildung
+tags:
+- lernen
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/unterrichten-und-lernen-classroom
+  sort_order: 1
+  name:
+    de: Klassenzimmer
+    fr: Salle de classe
+    it: Aula scolastica
+    en: Classroom
+  adds:
+  - pragmaticbim:room-type/klassenzimmer
+- id: pragmaticbim:scenario-option/unterrichten-und-lernen-seminar
+  sort_order: 2
+  name:
+    de: Seminarraum
+    fr: Salle de séminaire
+    it: Aula seminari
+    en: Seminar room
+  adds:
+  - pragmaticbim:room-type/seminarraum
+- id: pragmaticbim:scenario-option/unterrichten-und-lernen-lecture-hall
+  sort_order: 3
+  name:
+    de: Hörsaal
+    fr: Auditoire
+    it: Aula magna
+    en: Lecture hall
+  adds:
+  - pragmaticbim:room-type/hoersaal

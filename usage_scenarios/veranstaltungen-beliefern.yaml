@@ -1,0 +1,51 @@
+id: pragmaticbim:usage-scenario/veranstaltungen-beliefern
+code: US-VS-07
+sort_order: 8
+name:
+  de: Veranstaltungen beliefern
+  fr: Approvisionner les manifestations
+  it: Rifornire gli eventi
+  en: Supplying events
+description:
+  de: Technik, Bühnenbau und Catering werden vor jeder Veranstaltung angeliefert und danach abgeholt.
+    Die Anlieferung entscheidet über Aufbauzeiten, Wege hinter der Bühne und Hofflächen.
+  fr: Technique, décors et traiteur sont livrés avant chaque manifestation et repris ensuite. La livraison
+    détermine les temps de montage, les chemins en coulisse et les surfaces de cour.
+  it: Tecnica, scenografie e catering vengono consegnati prima di ogni evento e ritirati dopo. La consegna
+    determina tempi di montaggio, percorsi dietro le quinte e superfici del piazzale.
+  en: Technical equipment, set construction, and catering are delivered before each event and collected
+    afterwards. Delivery determines set-up time, backstage routes, and yard area.
+uses:
+- pragmaticbim:use/versammlung
+tags:
+- logistik
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/veranstaltungen-beliefern-to-stage
+  sort_order: 1
+  name:
+    de: Laderampe zur Bühne
+    fr: Quai vers la scène
+    it: Rampa verso il palco
+    en: Loading dock to the stage
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/laderampe
+    to_room_type: pragmaticbim:room-type/buehne
+  adds:
+  - pragmaticbim:room-type/laderampe
+  - pragmaticbim:room-type/buehne
+- id: pragmaticbim:scenario-option/veranstaltungen-beliefern-to-store
+  sort_order: 2
+  name:
+    de: Laderampe mit Lager
+    fr: Quai avec stock
+    it: Rampa con deposito
+    en: Loading dock with store
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/laderampe
+    to_room_type: pragmaticbim:room-type/allgemeiner-lagerraum
+  adds:
+  - pragmaticbim:room-type/laderampe
+  - pragmaticbim:room-type/allgemeiner-lagerraum

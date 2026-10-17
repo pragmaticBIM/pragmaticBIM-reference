@@ -1,0 +1,67 @@
+id: pragmaticbim:usage-scenario/zum-perron-gelangen
+code: US-VE-06
+sort_order: 1
+name:
+  de: Zum Perron gelangen
+  fr: Accéder au quai
+  it: Raggiungere il marciapiede
+  en: Reaching the platform
+description:
+  de: Reisende gelangen mit Gepäck, Kinderwagen oder Rollstuhl von der Halle zum Perron. Die Erschliessung
+    entscheidet über Umsteigezeit, Hindernisfreiheit und Personenfluss.
+  fr: Les voyageurs vont du hall au quai avec bagages, poussette ou fauteuil roulant. La desserte détermine
+    le temps de correspondance, l'accès sans obstacle et les flux de personnes.
+  it: I viaggiatori vanno dall'atrio al marciapiede con bagagli, passeggino o sedia a rotelle. L'accesso
+    determina tempi di coincidenza, assenza di ostacoli e flussi di persone.
+  en: Passengers travel from the hall to the platform with luggage, pushchairs, or wheelchairs. The access
+    arrangement determines transfer time, step-free access, and passenger flow.
+uses:
+- pragmaticbim:use/verkehr
+tags:
+- erschliessung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/zum-perron-gelangen-stair
+  sort_order: 1
+  name:
+    de: Treppenhaus
+    fr: Cage d'escalier
+    it: Vano scale
+    en: Stairwell
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+- id: pragmaticbim:scenario-option/zum-perron-gelangen-stair-elevator
+  sort_order: 2
+  name:
+    de: Treppenhaus und Aufzug
+    fr: Cage d'escalier et ascenseur
+    it: Vano scale e ascensore
+    en: Stairwell and elevator
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+- id: pragmaticbim:scenario-option/zum-perron-gelangen-ramp
+  sort_order: 3
+  name:
+    de: Rampe zum Perron
+    fr: Rampe vers le quai
+    it: Rampa verso il marciapiede
+    en: Ramp to the platform
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/rampe
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/rampe

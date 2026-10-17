@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/gefahrstoffe-handhaben
+code: US-LA-03
+sort_order: 4
+name:
+  de: Gefahrstoffe handhaben
+  fr: Manipuler des matières dangereuses
+  it: Gestire sostanze pericolose
+  en: Handling hazardous substances
+description:
+  de: Chemikalien und Gefahrstoffe werden angeliefert, gelagert und entsorgt. Getrennte Lager entscheiden
+    über Brandabschnitte, Lüftung und Wege durch das Gebäude.
+  fr: Les produits chimiques et matières dangereuses sont livrés, stockés et éliminés. Des stocks séparés
+    déterminent les compartiments coupe-feu, la ventilation et les chemins dans le bâtiment.
+  it: Prodotti chimici e sostanze pericolose vengono consegnati, stoccati e smaltiti. Depositi separati
+    determinano compartimenti antincendio, ventilazione e percorsi nell'edificio.
+  en: Chemicals and hazardous substances are delivered, stored, and disposed of. Separate stores determine
+    fire compartments, ventilation, and routes through the building.
+uses:
+- pragmaticbim:use/labor
+tags:
+- sicherheit
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/gefahrstoffe-handhaben-chemicals
+  sort_order: 1
+  name:
+    de: Chemikalienlager
+    fr: Stock de produits chimiques
+    it: Deposito prodotti chimici
+    en: Chemical store
+  adds:
+  - pragmaticbim:room-type/chemikalienlager
+- id: pragmaticbim:scenario-option/gefahrstoffe-handhaben-hazardous
+  sort_order: 2
+  name:
+    de: Gefahrstofflager
+    fr: Entrepôt de matières dangereuses
+    it: Deposito sostanze pericolose
+    en: Hazardous goods store
+  adds:
+  - pragmaticbim:room-type/gefahrstofflager

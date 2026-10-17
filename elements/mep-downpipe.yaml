@@ -8,82 +8,54 @@ name:
   it: Pluviale
   en: Downpipe
 definition:
-  de: 'Sichert die Dach- und Balkonentwässerung, indem Leitungsweg, Anschlüsse und Deckendurchdringungen abgestimmt werden.
-
+  de: |-
+    Sichert die Dach- und Balkonentwässerung, indem Leitungsweg, Anschlüsse und Deckendurchdringungen abgestimmt werden.
 
     **Beschreibung**
-
     - Vertikale Entwässerungsleitung von Flachdach und Balkonen.
-
     - Dient der Koordination in Steigzonen und an Durchführungen.
 
-
     **Modellierungshinweis**
-
     - Von Entwässerungspunkten auf Dach und Balkon bis zur Abwassersammelleitung führen.
-
     - Reference auf `FL` setzen. Ab dem Bauprojekt verwenden.
-
     - Balkon-Fallleitungen gesondert modellieren und zuordnen.
-
-    - Keine Armaturen, Schächte oder Anschlussdetails modellieren.'
-  fr: 'Permet d’évacuer les toitures et les balcons en coordonnant le tracé, les raccordements et les traversées de dalle.
-
+    - Keine Armaturen, Schächte oder Anschlussdetails modellieren.
+  fr: |-
+    Permet d’évacuer les toitures et les balcons en coordonnant le tracé, les raccordements et les traversées de dalle.
 
     **Description**
-
     - Canalisation verticale d’évacuation depuis la toiture plate et les balcons.
-
     - Sert à coordonner les gaines techniques et les traversées.
 
-
     **Directives de modélisation**
-
     - La tracer depuis les points d’évacuation en toiture et sur les balcons jusqu’au collecteur.
-
     - Renseigner Reference avec `FL`. L’employer dès le projet de construction.
-
     - Modéliser à part les descentes de balcon et les attribuer.
-
-    - Ne pas modéliser les accessoires, les regards ni les détails de raccordement.'
-  it: 'Garantisce lo smaltimento delle acque di tetti e balconi coordinando il tracciato, gli allacciamenti e gli attraversamenti delle solette.
-
+    - Ne pas modéliser les accessoires, les regards ni les détails de raccordement.
+  it: |-
+    Garantisce lo smaltimento delle acque di tetti e balconi coordinando il tracciato, gli allacciamenti e gli attraversamenti delle solette.
 
     **Descrizione**
-
     - Condotta verticale di drenaggio da tetto piano e balconi.
-
     - Serve al coordinamento in vani e agli attraversamenti.
 
-
     **Direttive di modellazione**
-
     - Condurre dai punti di scarico su tetto e balcone fino al collettore di acque reflue.
-
     - Impostare Reference su `FL`. Usare dal progetto di costruzione.
-
     - Modellare separatamente i pluviali dei balconi e identificarli.
-
-    - Non modellare armature, pozzetti o dettagli di collegamento.'
-  en: 'Secures roof and balcony drainage by coordinating routes, connections, and slab penetrations.
-
+    - Non modellare armature, pozzetti o dettagli di collegamento.
+  en: |-
+    Secures roof and balcony drainage by coordinating routes, connections, and slab penetrations.
 
     **Description**
-
     - Vertical drainage pipe from flat roof and balconies.
-
     - Used for coordination in risers and at penetrations.
 
-
     **Modelling guidelines**
-
     - Route from drainage points on roof and balcony to the wastewater collector.
-
     - Set Reference to `FL`. Use from the construction project onward.
-
     - Model balcony downpipes separately and identify them.
-
-    - Do not model fittings, manholes, or connection details.'
+    - Do not model fittings, manholes, or connection details.
 needed_in_domain:
 - pragmaticbim:domain/mep
 entity_ifc2x3: IfcFlowSegment
@@ -101,19 +73,8 @@ attributes:
     it: Denominazione del pluviale secondo il piano di coordinamento (es. FL-Tetto-Nord, FL-Balcone-2P).
     en: Downpipe designation according to the coordination plan (e.g. FL-Roof-North, FL-Balcony-2F).
   datatype: IfcLabel
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-basic-piping-planning
   is_applicability: false
@@ -122,45 +83,30 @@ attributes:
 - name: Reference
   pset: Pset_PipeSegmentTypeCommon
   definition:
-    de: 'Medium der Fallleitung.
-
+    de: |-
+      Medium der Fallleitung.
 
       **Zulässige Werte**
-
-      - `FL` — Fallleitung (Regenfallleitung)'
-    fr: 'Fluide de la descente.
-
+      - `FL` — Fallleitung (Regenfallleitung)
+    fr: |-
+      Fluide de la descente.
 
       **Valeurs admises**
-
-      - `FL` — descente d’eaux pluviales'
-    it: 'Fluido del pluviale.
-
+      - `FL` — descente d’eaux pluviales
+    it: |-
+      Fluido del pluviale.
 
       **Valori ammessi**
-
-      - `FL` — pluviale (discendente)'
-    en: 'Medium of the downpipe.
-
+      - `FL` — pluviale (discendente)
+    en: |-
+      Medium of the downpipe.
 
       **Allowed values**
-
-      - `FL` — downpipe (rainwater)'
+      - `FL` — downpipe (rainwater)
   datatype: IfcIdentifier
   allowed_values: pragmaticbim:value/pipe-reference-downpipe
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-basic-piping-planning
   is_applicability: true
@@ -169,52 +115,34 @@ attributes:
 - name: PredefinedType
   pset: null
   definition:
-    de: 'Art der Rohrleitung.
-
+    de: |-
+      Art der Rohrleitung.
 
       **Zulässige Werte**
-
       - `RIGIDSEGMENT` — starres Segment
-
-      - `FLEXIBLESEGMENT` — flexibles Segment'
-    fr: 'Type de canalisation.
-
+      - `FLEXIBLESEGMENT` — flexibles Segment
+    fr: |-
+      Type de canalisation.
 
       **Valeurs admises**
-
       - `RIGIDSEGMENT` — segment rigide
-
-      - `FLEXIBLESEGMENT` — segment flexible'
-    it: 'Tipo di condotta.
-
+      - `FLEXIBLESEGMENT` — segment flexible
+    it: |-
+      Tipo di condotta.
 
       **Valori ammessi**
-
       - `RIGIDSEGMENT` — segmento rigido
-
-      - `FLEXIBLESEGMENT` — segmento flessibile'
-    en: 'Kind of pipe segment.
-
+      - `FLEXIBLESEGMENT` — segmento flessibile
+    en: |-
+      Kind of pipe segment.
 
       **Allowed values**
-
       - `RIGIDSEGMENT` — rigid segment
-
-      - `FLEXIBLESEGMENT` — flexible segment'
+      - `FLEXIBLESEGMENT` — flexible segment
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-pipe-segment
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-basic-piping-planning
   is_applicability: false
@@ -223,68 +151,42 @@ attributes:
 - name: Status
   pset: Pset_PipeSegmentTypeCommon
   definition:
-    de: 'Bauteilstatus für Koordination im Bestand.
-
+    de: |-
+      Bauteilstatus für Koordination im Bestand.
 
       **Zulässige Werte**
-
       - `NEW` — Neubau
-
       - `EXISTING` — Bestand
-
       - `DEMOLISH` — Abbruch
-
-      - `TEMPORARY` — Temporär'
-    fr: 'Statut de l''élément pour la coordination dans l''existant.
-
+      - `TEMPORARY` — Temporär
+    fr: |-
+      Statut de l'élément pour la coordination dans l'existant.
 
       **Valeurs admises**
-
       - `NEW` — neuf
-
       - `EXISTING` — existant
-
       - `DEMOLISH` — à démolir
-
-      - `TEMPORARY` — temporaire'
-    it: 'Stato dell''elemento per il coordinamento sull''esistente.
-
+      - `TEMPORARY` — temporaire
+    it: |-
+      Stato dell'elemento per il coordinamento sull'esistente.
 
       **Valori ammessi**
-
       - `NEW` — nuovo
-
       - `EXISTING` — esistente
-
       - `DEMOLISH` — da demolire
-
-      - `TEMPORARY` — temporaneo'
-    en: 'Component status for coordinating work in existing buildings.
-
+      - `TEMPORARY` — temporaneo
+    en: |-
+      Component status for coordinating work in existing buildings.
 
       **Allowed values**
-
       - `NEW` — new build
-
       - `EXISTING` — existing
-
       - `DEMOLISH` — demolition
-
-      - `TEMPORARY` — temporary'
+      - `TEMPORARY` — temporary
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
@@ -293,48 +195,33 @@ attributes:
 - name: CostInterface
   pset: ePset_Cost
   definition:
-    de: 'Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
-
+    de: |-
+      Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
 
       **Zulässige Werte**
-
       - `GAB` — Grundausbau (Bauherr / Vermieter)
-
-      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_MieterA`'
-    fr: 'Interface de coûts de l''élément – aménagement de base ou aménagement locataire.
-
+      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_MieterA`
+    fr: |-
+      Interface de coûts de l'élément – aménagement de base ou aménagement locataire.
 
       **Valeurs admises**
-
-      - `GAB` — aménagement de base (maître d''ouvrage / bailleur)
-
-      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_MieterA`'
-    it: 'Interfaccia di costo del componente – allestimento di base o allestimento locatario.
-
+      - `GAB` — aménagement de base (maître d'ouvrage / bailleur)
+      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_MieterA`
+    it: |-
+      Interfaccia di costo del componente – allestimento di base o allestimento locatario.
 
       **Valori ammessi**
-
       - `GAB` — allestimento di base (committente / locatore)
-
-      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`'
-    en: 'Cost interface of the component – base building or tenant fit-out.
-
+      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`
+    en: |-
+      Cost interface of the component – base building or tenant fit-out.
 
       **Allowed values**
-
       - `GAB` — base building (client / landlord)
-
-      - `MAB_{TenantName}` — tenant fit-out, e.g. `MAB_TenantA`'
+      - `MAB_{TenantName}` — tenant fit-out, e.g. `MAB_TenantA`
   datatype: IfcLabel
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
   is_applicability: false
@@ -343,24 +230,17 @@ attributes:
 - name: FundingApplication
   pset: ePset_Cost
   definition:
-    de: Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
-    fr: Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune
-      demande.
-    it: Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
-    en: Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs
-      to no application.
+    de: |-
+      Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
+    fr: |-
+      Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune demande.
+    it: |-
+      Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
+    en: |-
+      Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs to no application.
   datatype: IfcLabel
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-funding-verification
   is_applicability: false
@@ -369,41 +249,30 @@ attributes:
 - name: AwardInterface
   pset: ePset_Cost
   definition:
-    de: 'Vergabepaket des Bauteils – damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
-
+    de: |-
+      Vergabepaket des Bauteils – damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
 
       **Zulässige Werte**
-
-      - Siehe Werteliste Vergabepaket. Das vorliegende Schweizer Datenpaket verwendet dreistellige BKP-Codes, z. B. `211`, `221`, `244`.'
-    fr: 'Lot d’adjudication de l’élément – il permet de rendre visibles les interfaces entre les lots confiés aux entreprises.
-
+      - Siehe Werteliste Vergabepaket. Das vorliegende Schweizer Datenpaket verwendet dreistellige BKP-Codes, z. B. `211`, `221`, `244`.
+    fr: |-
+      Lot d’adjudication de l’élément – il permet de rendre visibles les interfaces entre les lots confiés aux entreprises.
 
       **Valeurs admises**
-
-      - Voir la liste de valeurs Lot d’adjudication. Le présent paquet de données suisse utilise des codes BKP à trois chiffres, p. ex. `211`, `221`, `244`.'
-    it: 'Lotto d’appalto del componente – rende visibili le interfacce tra i lotti assegnati alle imprese.
-
+      - Voir la liste de valeurs Lot d’adjudication. Le présent paquet de données suisse utilise des codes BKP à trois chiffres, p. ex. `211`, `221`, `244`.
+    it: |-
+      Lotto d’appalto del componente – rende visibili le interfacce tra i lotti assegnati alle imprese.
 
       **Valori ammessi**
-
-      - Vedere l’elenco di valori Lotto d’appalto. Il presente pacchetto di dati svizzero utilizza codici BKP a tre cifre, ad es. `211`, `221`, `244`.'
-    en: 'Procurement package of the component, so interfaces between contractor packages become visible.
-
+      - Vedere l’elenco di valori Lotto d’appalto. Il presente pacchetto di dati svizzero utilizza codici BKP a tre cifre, ad es. `211`, `221`, `244`.
+    en: |-
+      Procurement package of the component, so interfaces between contractor packages become visible.
 
       **Allowed values**
-
-      - See the Procurement package value list. This Swiss data package uses three-digit BKP codes, e.g. `211`, `221`, `244`.'
+      - See the Procurement package value list. This Swiss data package uses three-digit BKP codes, e.g. `211`, `221`, `244`.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-award-package
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-award-interface-visualization
   is_applicability: false
@@ -412,41 +281,30 @@ attributes:
 - name: PlanningInterface
   pset: ePset_Cost
   definition:
-    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller – damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
-
+    de: |-
+      Planungsschnittstelle des Bauteils nach BKP-3-Steller – damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
 
       **Zulässige Werte**
-
-      - Siehe Werteliste BKP-Planungspaket – z. B. `091`, `092`, `094`.'
-    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres – pour rendre visibles les responsabilités entre disciplines de planification.
-
+      - Siehe Werteliste BKP-Planungspaket – z. B. `091`, `092`, `094`.
+    fr: |-
+      Interface de planification de l'élément selon le BKP à trois chiffres – pour rendre visibles les responsabilités entre disciplines de planification.
 
       **Valeurs admises**
-
-      - Voir la liste de valeurs Lot de planification BKP – p. ex. `091`, `092`, `094`.'
-    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre – per rendere visibili le responsabilità tra discipline di pianificazione.
-
+      - Voir la liste de valeurs Lot de planification BKP – p. ex. `091`, `092`, `094`.
+    it: |-
+      Interfaccia di pianificazione del componente secondo il BKP a tre cifre – per rendere visibili le responsabilità tra discipline di pianificazione.
 
       **Valori ammessi**
-
-      - Vedere l''elenco valori Lotto di pianificazione BKP – es. `091`, `092`, `094`.'
-    en: 'Planning interface of the component as a three-digit BKP code, so responsibilities between design disciplines become visible.
-
+      - Vedere l'elenco valori Lotto di pianificazione BKP – es. `091`, `092`, `094`.
+    en: |-
+      Planning interface of the component as a three-digit BKP code, so responsibilities between design disciplines become visible.
 
       **Allowed values**
-
-      - See the BKP planning package value list, e.g. `091`, `092`, `094`.'
+      - See the BKP planning package value list, e.g. `091`, `092`, `094`.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-planning-package
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-planning-interface-visualization
   is_applicability: false
@@ -455,49 +313,34 @@ attributes:
 - name: BelowTerrain
   pset: ePset_Cost
   definition:
-    de: 'Kennzeichnet, ob das Bauteil unter Terrain liegt.
-
+    de: |-
+      Kennzeichnet, ob das Bauteil unter Terrain liegt.
 
       **Zulässige Werte**
-
       - `TRUE` — unter Terrain
-
-      - `FALSE` — über Terrain'
-    fr: 'Indique si l''élément se trouve sous le niveau du terrain.
-
+      - `FALSE` — über Terrain
+    fr: |-
+      Indique si l'élément se trouve sous le niveau du terrain.
 
       **Valeurs admises**
-
       - `TRUE` — sous le niveau du terrain
-
-      - `FALSE` — au-dessus du niveau du terrain'
-    it: 'Indica se il componente si trova sotto il livello del terreno.
-
+      - `FALSE` — au-dessus du niveau du terrain
+    it: |-
+      Indica se il componente si trova sotto il livello del terreno.
 
       **Valori ammessi**
-
       - `TRUE` — sotto il livello del terreno
-
-      - `FALSE` — sopra il livello del terreno'
-    en: 'Marks whether the component sits below ground level.
-
+      - `FALSE` — sopra il livello del terreno
+    en: |-
+      Marks whether the component sits below ground level.
 
       **Allowed values**
-
       - `TRUE` — below ground
-
-      - `FALSE` — above ground'
+      - `FALSE` — above ground
   datatype: IfcBoolean
   allowed_values: pragmaticbim:value/boolean
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-ebkp-h-classification
   is_applicability: false
@@ -506,41 +349,30 @@ attributes:
 - name: eBKP
   pset: ePset_Cost
   definition:
-    de: 'eBKP-H-Klassifizierung nach SN 506 511 – ableitbar aus Elementtyp, Medium und BelowTerrain.
-
+    de: |-
+      eBKP-H-Klassifizierung nach SN 506 511 – ableitbar aus Elementtyp, Medium und BelowTerrain.
 
       **Zulässige Werte**
-
-      - `D09.01` — Abwasserentsorgung'
-    fr: 'Classification eBKP-H selon SN 506 511 – déductible à partir du type d''élément, du fluide et de BelowTerrain.
-
+      - `D09.01` — Abwasserentsorgung
+    fr: |-
+      Classification eBKP-H selon SN 506 511 – déductible à partir du type d'élément, du fluide et de BelowTerrain.
 
       **Valeurs admises**
-
-      - `D09.01` — évacuation des eaux usées'
-    it: 'Classificazione eBKP-H secondo SN 506 511 – ricavabile da tipo di elemento, fluido e BelowTerrain.
-
+      - `D09.01` — évacuation des eaux usées
+    it: |-
+      Classificazione eBKP-H secondo SN 506 511 – ricavabile da tipo di elemento, fluido e BelowTerrain.
 
       **Valori ammessi**
-
-      - `D09.01` — smaltimento acque reflue'
-    en: 'eBKP-H classification according to SN 506 511 – derivable from element type, medium, and BelowTerrain.
-
+      - `D09.01` — smaltimento acque reflue
+    en: |-
+      eBKP-H classification according to SN 506 511 – derivable from element type, medium, and BelowTerrain.
 
       **Allowed values**
-
-      - `D09.01` — wastewater disposal'
+      - `D09.01` — wastewater disposal
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/ebkp-h-mep-downpipe
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-ebkp-h-classification
   is_applicability: false
@@ -554,15 +386,8 @@ attributes:
     it: GTIN (Global Trade Item Number) del tipo di prodotto; secondo la struttura GS1, 8, 12, 13 o 14 cifre.
     en: GTIN (Global Trade Item Number) of the product type; 8, 12, 13, or 14 digits depending on the GS1 structure.
   datatype: IfcIdentifier
-  needed_in_phases:
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/hov-product-pass-gtin
   - pragmaticbim:workflow/hov-product-pass-serial-number
@@ -577,15 +402,8 @@ attributes:
     it: Numero di serie assegnato dal fabbricante a un singolo prodotto; insieme al GTIN costituisce la chiave del passaporto di prodotto specifico dell’oggetto.
     en: Serial number the manufacturer assigns to an individual product; with the GTIN it identifies the product passport for that specific item.
   datatype: IfcIdentifier
-  needed_in_phases:
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/hov-product-pass-serial-number
   is_applicability: false
@@ -600,18 +418,8 @@ attributes:
     en: Cross-sectional area of the modelled downpipe.
   datatype: IfcAreaMeasure
   unit: m²
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-basic-piping-planning
   is_applicability: false

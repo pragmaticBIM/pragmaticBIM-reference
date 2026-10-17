@@ -15,14 +15,14 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - PLATE
-  - SHELLANDTUBE
+    - PLATE
+    - SHELLANDTUBE
   fr:
-  - PLATE
-  - SHELLANDTUBE
+    - PLATE
+    - SHELLANDTUBE
   it:
-  - PLATE
-  - SHELLANDTUBE
+    - PLATE
+    - SHELLANDTUBE
   en:
-  - PLATE
-  - SHELLANDTUBE
+    - PLATE
+    - SHELLANDTUBE

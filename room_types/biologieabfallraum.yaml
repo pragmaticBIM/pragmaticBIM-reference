@@ -1,0 +1,94 @@
+id: pragmaticbim:room-type/biologieabfallraum
+code: RT-LA-02
+sort_order: 153
+name:
+  de: Biologieabfallraum
+  fr: Local à déchets biologiques
+  it: Locale rifiuti biologici
+  en: Biological Waste Room
+definition:
+  de: Raum für das Sammeln und Bereitstellen von biologischem Laborabfall, getrennt vom übrigen Abfall.
+  fr: Local pour collecter et présenter les déchets biologiques de laboratoire, séparés des autres déchets.
+  it: Locale per raccogliere e conferire i rifiuti biologici di laboratorio, separati dagli altri rifiuti.
+  en: Room for collecting and setting out biological laboratory waste, separate from other waste.
+room_type_kind: room
+room_name: RN-09-30-05
+activity: S-TEC
+default_scope: building
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/biologieabfallraum-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-interior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-interior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: false
+  - element: pragmaticbim:element/spaces-interior
+    name: LongName
+    value:
+      de: Biologieabfallraum
+      fr: Local à déchets biologiques
+      it: Locale rifiuti biologici
+      en: Biological Waste Room
+  - element: pragmaticbim:element/spaces-interior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: FF
+  - element: pragmaticbim:element/spaces-interior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Beton
+  - element: pragmaticbim:element/spaces-interior
+    name: WallCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Beton roh
+  - element: pragmaticbim:element/spaces-interior
+    name: CeilingCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Sonstige / unbekannte Deckenbekleidung
+      fr: Other / unknown ceiling covering
+      it: Other / unknown ceiling covering
+      en: Other / unknown ceiling covering
+  - element: pragmaticbim:element/spaces-interior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Workshop
+  - element: pragmaticbim:element/spaces-interior
+    name: InteriorOrExteriorSpace
+    value: INTERNAL
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 5.0
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-interior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Hochgesichert
+      fr: Haute sécurité
+      it: Alta sicurezza
+      en: High security
+  - element: pragmaticbim:element/spaces-interior
+    name: PeakOccupancy
+    pset: ePset_SpaceRequirement
+    value: 2
+  - element: pragmaticbim:element/spaces-interior
+    name: DailyOperatingHours
+    pset: ePset_SpaceRequirement
+    value: 1
+  - element: pragmaticbim:element/spaces-interior
+    name: OutdoorAirFlowRate
+    pset: ePset_SpaceRequirement
+    value: 60
+  status: active
+  restrictions:
+    min_area: 6

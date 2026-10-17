@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/parkplatz-velo-aussen
+code: RT-WH-35
+sort_order: 35
+name:
+  de: Parkplatz Velo Aussen
+  fr: Place vélo extérieure
+  it: Posto bici esterno
+  en: Exterior Bicycle Parking
+definition:
+  de: Aussenparkplatz für Velos.
+  fr: Place de stationnement extérieure pour vélos.
+  it: Posto bici esterno.
+  en: Exterior parking space for bicycles.
+room_type_kind: room
+room_name: RN-13-20-03
+activity: S-PRK-EXT
+default_scope: site
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/parkplatz-velo-aussen-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-parking
+    name: PredefinedType
+    value: PARKING
+  - element: pragmaticbim:element/spaces-parking
+    name: ParkingUse
+    pset: Pset_SpaceParking
+    value: BICYCLE
+  status: active

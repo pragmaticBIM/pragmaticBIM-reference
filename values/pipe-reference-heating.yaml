@@ -1,0 +1,32 @@
+id: pragmaticbim:value/pipe-reference-heating
+code: PIPE-REF-HZ
+name:
+  de: Referenz Heizung
+  fr: Référence chauffage
+  it: Riferimento riscaldamento
+  en: Heating reference
+description:
+  de: Referenzkennung für Heizungsleitungen in der Koordination.
+  fr: Code de référence pour les canalisations de chauffage en coordination.
+  it: Codice di riferimento per condotte di riscaldamento nel coordinamento.
+  en: Reference code for heating piping in coordination.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - HZ
+    - VL-H
+    - RL-H
+  fr:
+    - HZ
+    - VL-H
+    - RL-H
+  it:
+    - HZ
+    - VL-H
+    - RL-H
+  en:
+    - HZ
+    - VL-H
+    - RL-H

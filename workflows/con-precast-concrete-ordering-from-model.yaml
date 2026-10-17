@@ -7,134 +7,88 @@ name:
   it: Ordine di elementi prefabbricati in calcestruzzo dal modello
   en: Precast concrete parts ordering from model
 description:
-  de: 'Betonfertigteile aus dem Tragwerksmodell für Bestellung und Lieferplanung bereitstellen.
-
+  de: |-
+    Betonfertigteile aus dem Tragwerksmodell für Bestellung und Lieferplanung bereitstellen.
 
     **Ausgangslage**
-
     - Fertigteilnummern fehlen im Modell oder sind nicht eindeutig; Bestellung und Baustellenlogistik basieren auf manuellen Listen.
-
     - Ohne abgestimmte Zuordnung im Tragwerksmodell entstehen Fehlbestellungen und Verzögerungen in der Lieferkette.
 
-
     **Ziel & Nutzen**
-
     - Jedes Betonfertigteil im Tragwerksmodell mit eindeutiger Fertigteilnummer versehen.
-
     - Bestellung und Lieferplanung direkt aus dem Modell ableiten.
 
-
     **Ablauf**
-
     1. Tragwerksmodell mit ausführungsgenauen Betonfertigteilen bereitstellen.
-
     2. Fertigteilnummer je Bauteil im Attribut Name erfassen.
-
     3. Modell für Bestellung und Lieferplanung exportieren.
 
-
     **Lieferergebnis**
-
     - Tragwerksmodell mit ausführungsgenauen Betonfertigteilen und eindeutiger Fertigteilnummer.
-
-    - Bestell- und Lieferliste mit prüfbaren Mengen und Lieferetappen.'
-  fr: 'Préparer les éléments préfabriqués en béton à partir du modèle structurel pour la commande et la planification des livraisons.
-
+    - Bestell- und Lieferliste mit prüfbaren Mengen und Lieferetappen.
+  fr: |-
+    Préparer les éléments préfabriqués en béton à partir du modèle structurel pour la commande et la planification des livraisons.
 
     **Situation de départ**
-
     - Les numéros de pièces préfabriquées manquent dans le modèle ou ne sont pas uniques ; commande et logistique de chantier reposent sur des listes manuelles.
-
-    - Sans attribution convenue dans le modèle structurel, des erreurs de commande et des retards dans la chaîne d''approvisionnement surviennent.
-
+    - Sans attribution convenue dans le modèle structurel, des erreurs de commande et des retards dans la chaîne d'approvisionnement surviennent.
 
     **Objectif et bénéfice**
-
     - Attribuer un numéro de pièce préfabriquée unique à chaque élément en béton dans le modèle structurel.
-
     - Déduire la commande et la planification des livraisons directement du modèle.
 
-
     **Déroulement**
-
-    1. Fournir le modèle structurel avec des éléments préfabriqués en béton conformes à l''exécution.
-
-    2. Saisir le numéro de pièce préfabriquée par élément dans l''attribut Name.
-
+    1. Fournir le modèle structurel avec des éléments préfabriqués en béton conformes à l'exécution.
+    2. Saisir le numéro de pièce préfabriquée par élément dans l'attribut Name.
     3. Exporter le modèle pour la commande et la planification des livraisons.
 
-
     **Livrable**
-
-    - Maquette structure avec éléments préfabriqués conformes à l''exécution et numérotés de manière univoque.
-
-    - Liste de commande et de livraison avec quantités et étapes vérifiables.'
-  it: 'Preparare gli elementi prefabbricati in calcestruzzo dal modello strutturale per l''ordine e la pianificazione delle consegne.
-
+    - Maquette structure avec éléments préfabriqués conformes à l'exécution et numérotés de manière univoque.
+    - Liste de commande et de livraison avec quantités et étapes vérifiables.
+  it: |-
+    Preparare gli elementi prefabbricati in calcestruzzo dal modello strutturale per l'ordine e la pianificazione delle consegne.
 
     **Situazione di partenza**
-
     - I numeri di pezzo prefabbricato mancano nel modello o non sono univoci; ordine e logistica di cantiere si basano su liste manuali.
-
-    - Senza assegnazione concordata nel modello strutturale si verificano errori d''ordine e ritardi nella catena di approvvigionamento.
-
+    - Senza assegnazione concordata nel modello strutturale si verificano errori d'ordine e ritardi nella catena di approvvigionamento.
 
     **Obiettivo e beneficio**
-
     - Dotare ogni elemento prefabbricato in calcestruzzo nel modello strutturale di un numero di pezzo univoco.
-
     - Ricavare ordine e pianificazione delle consegne direttamente dal modello.
 
-
     **Svolgimento**
-
     1. Fornire il modello strutturale con elementi prefabbricati in calcestruzzo esecutivi.
-
-    2. Registrare il numero di pezzo prefabbricato per componente nell''attributo Name.
-
+    2. Registrare il numero di pezzo prefabbricato per componente nell'attributo Name.
     3. Esportare il modello per ordine e pianificazione delle consegne.
 
-
     **Risultato della fornitura**
-
     - Modello strutturale con elementi prefabbricati esecutivi e numerati in modo univoco.
-
-    - Elenco per ordine e consegna con quantità e tappe verificabili.'
-  en: 'Provide precast concrete parts from the structural model for ordering and delivery planning.
-
+    - Elenco per ordine e consegna con quantità e tappe verificabili.
+  en: |-
+    Provide precast concrete parts from the structural model for ordering and delivery planning.
 
     **Starting point**
-
     - Prefabricated part numbers are missing from the model or are not unique; ordering and site logistics rely on manual lists.
-
     - Without agreed assignment in the structural model, ordering errors and supply chain delays occur.
 
-
     **Goal & benefit**
-
     - Assign a unique prefabricated part number to each precast concrete component in the structural model.
-
     - Derive ordering and delivery planning directly from the model.
 
-
     **Process**
-
     1. Provide the structural model with execution-accurate precast concrete parts.
-
     2. Capture the prefabricated part number per component in the Name attribute.
-
     3. Export the model for ordering and delivery planning.
 
-
     **Deliverable**
-
     - Structural model with execution-accurate precast concrete parts and unique part numbers.
-
-    - Order and delivery list with verifiable quantities and delivery stages.'
-workflow_group: null
+    - Order and delivery list with verifiable quantities and delivery stages.
+workflow_group: produktion-montage
 parent_workflow: pragmaticbim:workflow/con
 picture_link: null
 status: active
 needed_in_domain:
 - pragmaticbim:domain/structural
-comment: Construction phases SIA 51–53. For this workflow, Name carries the Fertigteilnummer (prefabricated part number), distinct from general structural designation in tender workflows.
+comment: >-
+  Construction phases SIA 51–53. For this workflow, Name carries the Fertigteilnummer
+  (prefabricated part number), distinct from general structural designation in tender workflows.

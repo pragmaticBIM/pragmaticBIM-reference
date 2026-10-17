@@ -1,0 +1,72 @@
+id: pragmaticbim:room-type/technikaufstellflaeche
+code: RT-OU-02
+sort_order: 123
+name:
+  de: Technikaufstellfläche
+  fr: Aire technique
+  it: Area tecnica
+  en: Technical Plant Pad
+definition:
+  de: Flachdach- oder Aussenfläche für die Aufstellung haustechnischer Anlagen und
+    Geräte.
+  fr: Surface de toiture plate ou extérieure réservée aux installations techniques.
+  it: Superficie di tetto piano o esterna riservata agli impianti tecnici.
+  en: Flat-roof or outdoor pad reserved for building-services equipment and plant.
+room_type_kind: room
+room_name: RN-11-10-07
+activity: O-TEC
+default_scope: building
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/technikaufstellflaeche-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Technikaufstellfläche
+      fr: Aire technique
+      it: Area tecnica
+      en: Technical Plant Pad
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: AFF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Workshop
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 5.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Eingeschränkt
+      fr: Restreint
+      it: Ristretto
+      en: Restricted
+  status: active

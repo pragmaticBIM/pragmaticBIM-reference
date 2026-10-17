@@ -1,0 +1,60 @@
+---
+description: Construction-focused structure for element YAML definitions
+globs: elements/*.yaml
+alwaysApply: false
+---
+
+# Element definitions (Elementplan)
+
+Write element `definition` fields for planners and modellers in construction language.
+
+## Template
+
+```yaml
+definition:
+  de: |-
+    {Why this element is needed in the planning process}
+
+    **Beschreibung**
+    - {What it is on site / in the project}
+    - {Role in the spatial or building structure}
+
+    **Modellierungshinweis**
+    - {Modelling rule}
+```
+
+Begin every language block with a one-line hook *before* `**Beschreibung**` that states why the element is needed in the planning process. Name a concrete outcome; do not merely define the element, repeat `name`, or duplicate the description bullets.
+
+Section headers by language:
+
+| de | fr | it | en |
+|----|----|----|-----|
+| Beschreibung | Description | Descrizione | Description |
+| Modellierungshinweis | Directives de modélisation | Direttive di modellazione | Modelling guidelines |
+
+## Rules
+
+1. **Beschreibung** = what it is in construction terms; **Modellierungshinweis** = how to model it. Do not restate the element name as a bullet.
+2. No `Ifc*` tokens in `definition` — entity mapping lives in `entity_ifc*` and `applicability`.
+3. No tool or vendor names (abstractBIM, etc.) in element definitions.
+4. Modellierungshinweis: concrete, testable rules (geometry, assignment, naming).
+5. Container elements (Project, Site, Building, Storey): ≤2 Beschreibung bullets, ≤3 Modellierungshinweis bullets.
+6. All four languages: same structure, translated headers and content.
+7. **Write from German, not from English word order.** Default language is `de`. FR/IT must sound like Swiss construction language, not like a calque of EN.
+8. Every language block begins with the same why-focused hook in native translation.
+
+## Tone / calques (do not use)
+
+| Concept | de | fr (native) | it (native) | avoid |
+|---|---|---|---|---|
+| keep in model | im Modell führen | saisir / tenir dans la maquette | gestire / tenere nel modello | FR *Porter* |
+| MEP medium | Medium | fluide | fluido | FR *médium*, IT *mezzo* (unless “by means of”) |
+| component | Bauteil | élément | componente | |
+| MEP | TGA | CVC / techniques du bâtiment | impianti | TGA in FR/IT; FR *GT*; FR *génie civil* for Gebäudetechnik |
+| early phase | frühe Phase | phase initiale | fase iniziale | *phases précoces* / *fasi precoci* |
+| multi-layer | Mehrschichtbauteil | composant multicouche | componente multistrato | IT *multic strato* |
+| ceiling plan | Deckenspiegel | plan de plafond | piano del soffitto | FR *miroir de plafond* |
+| below terrain | unter Terrain | sous le niveau du terrain | sotto il livello del terreno | |
+| tenant placeholder | `{Mietername}` | `{nom du locataire}` | `{nome locatario}` | German token in FR/IT |
+
+Do not translate IFC/property tokens. No `Ifc*` tokens in element `definition` bodies.

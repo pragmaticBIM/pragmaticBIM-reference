@@ -11,20 +11,186 @@ definition:
   fr: Espace extérieur ouvert attenant au logement.
   it: Spazio esterno aperto attiguo all'alloggio.
   en: Open exterior space attached to the dwelling.
-attribute_presets:
-- element: pragmaticbim:element/spaces-exterior
-  name: PredefinedType
-  value: SPACE
-- element: pragmaticbim:element/spaces-exterior
-  name: IsExternal
-  value: true
-- element: pragmaticbim:element/spaces-exterior
-  name: LongName
-  value:
-    de: Balkon
-    fr: Balcon
-    it: Balcone
-    en: Balcony
-restrictions:
-  min_area: 4
+room_type_kind: room
+room_name: RN-11-10-01
+activity: O
+default_scope: dwelling
 status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/balkon-default
+  sort_order: 1
+  name:
+    de: Klein
+    fr: Petit
+    it: Piccolo
+    en: Small
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Balkon
+      fr: Balcon
+      it: Balcone
+      en: Balcony
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: ANF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  status: active
+  restrictions:
+    min_area: 4
+- id: pragmaticbim:room-type-configuration/balkon-medium
+  sort_order: 2
+  name:
+    de: Mittel
+    fr: Moyen
+    it: Medio
+    en: Medium
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Balkon
+      fr: Balcon
+      it: Balcone
+      en: Balcony
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: ANF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  status: active
+  restrictions:
+    min_area: 8
+- id: pragmaticbim:room-type-configuration/balkon-large
+  sort_order: 3
+  name:
+    de: Gross
+    fr: Grand
+    it: Grande
+    en: Large
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Balkon
+      fr: Balcon
+      it: Balcone
+      en: Balcony
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: ANF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  status: active
+  restrictions:
+    min_area: 12

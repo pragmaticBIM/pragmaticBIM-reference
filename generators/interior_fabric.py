@@ -8,14 +8,23 @@ in the partition (with envelope walls when openings are present).
 
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, Sequence
 
 import ifcopenshell
 import ifcopenshell.util.element as element_util
+from ifcopenshell.api.geometry import assign_representation, edit_object_placement
+from ifcopenshell.api.root import create_entity
+from ifcopenshell.api.spatial import assign_container
 
 from generators.base import assign_pset, assign_qto, get_body_context
 from generators.covering import add_vertical_covering
-from generators.parts import add_extruded_product, rect_polyline
+from generators.parts import (
+    _closed_polyline_2d,
+    add_extruded_product,
+    create_body_representation,
+    rect_polyline,
+    translation_matrix,
+)
 from generators.wall import add_wall
 
 # Tile splashback (Fliesenschild) on the camera-facing partition face.
@@ -46,6 +55,12 @@ REINF_HEIGHT = 2.15
 REINF_SILL = 0.0
 REINF_END_INSET = 0.90
 REINF_THICKNESS = 0.04
+
+# Access hatch in the neighbour-room suspended ceiling (metres).
+HATCH_CLEAR = 0.90
+HATCH_INSET = 0.06
+# Panel sits below the ceiling face so the cut reads as an opening.
+HATCH_RECESS = 0.025
 
 
 def _find_partition_wall(ifc_file: ifcopenshell.file) -> ifcopenshell.entity_instance:
@@ -306,6 +321,140 @@ def _add_drywall_reinforcement(
     return panel
 
 
+def _profile_bounds_xy(
+    product: ifcopenshell.entity_instance,
+) -> tuple[float, float, float, float]:
+    """World XY bounds of a horizontal extruded Body (placement is Z-only)."""
+    for rep in product.Representation.Representations:
+        for item in rep.Items:
+            if not item.is_a("IfcExtrudedAreaSolid"):
+                continue
+            profile = item.SweptArea
+            if not profile.is_a("IfcArbitraryClosedProfileDef"):
+                continue
+            pts = profile.OuterCurve.Points
+            xs = [float(p.Coordinates[0]) for p in pts]
+            ys = [float(p.Coordinates[1]) for p in pts]
+            return min(xs), min(ys), max(xs), max(ys)
+    raise ValueError(f"{product.Name} has no horizontal extruded profile")
+
+
+def _extruded_slab_with_hole(
+    ifc_file: ifcopenshell.file,
+    *,
+    outer: Sequence[Sequence[float]],
+    hole: Sequence[Sequence[float]],
+    depth: float,
+) -> ifcopenshell.entity_instance:
+    """Horizontal slab whose profile has one rectangular void."""
+    profile = ifc_file.create_entity(
+        "IfcArbitraryProfileDefWithVoids",
+        ProfileType="AREA",
+        ProfileName=None,
+        OuterCurve=_closed_polyline_2d(ifc_file, outer),
+        InnerCurves=[_closed_polyline_2d(ifc_file, hole)],
+    )
+    return ifc_file.create_entity(
+        "IfcExtrudedAreaSolid",
+        SweptArea=profile,
+        Position=ifc_file.create_entity(
+            "IfcAxis2Placement3D",
+            Location=ifc_file.create_entity(
+                "IfcCartesianPoint", Coordinates=(0.0, 0.0, 0.0)
+            ),
+        ),
+        ExtrudedDirection=ifc_file.create_entity(
+            "IfcDirection", DirectionRatios=(0.0, 0.0, 1.0)
+        ),
+        Depth=float(depth),
+    )
+
+
+def _add_suspended_ceiling_with_hatch(
+    ifc_file: ifcopenshell.file,
+    *,
+    finish_ceiling_height: float,
+) -> ifcopenshell.entity_instance:
+    """Suspended ceiling over the primary room, with a recessed access hatch.
+
+    The neighbour room stays open so the partition door and the wall engraving
+    remain visible. The hatch is an ``IfcDoor`` ``TRAPDOOR`` in a rectangular cut.
+    """
+    from generators.space import CEILING_COVERING_THICKNESS
+
+    floors = [
+        covering
+        for covering in ifc_file.by_type("IfcCovering")
+        if (covering.Name or "").endswith("-FloorCovering")
+        and "-N-" not in (covering.Name or "")
+    ]
+    if not floors:
+        raise ValueError("no primary floor covering in interior vignette")
+    floor = floors[0]
+    storey = element_util.get_container(floor)
+    if storey is None:
+        raise ValueError("primary floor covering has no storey container")
+
+    x0, y0, x1, y1 = _profile_bounds_xy(floor)
+    half = HATCH_CLEAR * 0.5
+    cx = 0.5 * (x0 + x1)
+    cy = 0.5 * (y0 + y1)
+    hx0, hy0, hx1, hy1 = cx - half, cy - half, cx + half, cy + half
+    if min(hx0 - x0, hy0 - y0, x1 - hx1, y1 - hy1) <= HATCH_INSET:
+        raise ValueError("revision opening does not fit in the suspended ceiling")
+
+    body_context = get_body_context(ifc_file)
+    covering = create_entity(
+        ifc_file,
+        ifc_class="IfcCovering",
+        name="AD-01",
+        predefined_type="CEILING",
+    )
+    assign_container(ifc_file, relating_structure=storey, products=[covering])
+    edit_object_placement(
+        ifc_file,
+        product=covering,
+        matrix=translation_matrix(z=finish_ceiling_height),
+    )
+    # Inner loop is clockwise, opposite the counter-clockwise outer rectangle.
+    solid = _extruded_slab_with_hole(
+        ifc_file,
+        outer=rect_polyline(x0, y0, x1, y1),
+        hole=[
+            (hx0, hy0),
+            (hx0, hy1),
+            (hx1, hy1),
+            (hx1, hy0),
+        ],
+        depth=CEILING_COVERING_THICKNESS,
+    )
+    assign_representation(
+        ifc_file,
+        product=covering,
+        representation=create_body_representation(ifc_file, body_context, solid),
+    )
+
+    panel = add_extruded_product(
+        ifc_file,
+        ifc_class="IfcDoor",
+        name="RO-01",
+        body_context=body_context,
+        storey=storey,
+        polyline=rect_polyline(
+            hx0 + HATCH_INSET,
+            hy0 + HATCH_INSET,
+            hx1 - HATCH_INSET,
+            hy1 - HATCH_INSET,
+        ),
+        thickness=CEILING_COVERING_THICKNESS - HATCH_RECESS,
+        z_bottom=finish_ceiling_height,
+        predefined_type="TRAPDOOR",
+    )
+    panel.OverallWidth = HATCH_CLEAR
+    panel.OverallHeight = HATCH_CLEAR
+    return panel
+
+
 def _apply_product_attrs(
     ifc_file: ifcopenshell.file,
     primary: ifcopenshell.entity_instance,
@@ -352,6 +501,8 @@ def generate_interior_fabric(
     ``accent`` is ``wall``, ``cladding``, ``reinforcement``, ``door``, or ``window``.
     Geometry matches the Innenräume vignette with an open top so the partition
     reads clearly; attributes come from the element YAML.
+    The door accent also adds a suspended ceiling over the primary room with
+    a ``TRAPDOOR`` in it, and returns both doors so both stay accented.
     The reinforcement accent returns the host wall as a third value so the
     preview can draw it dotted and see-through.
     """
@@ -376,7 +527,13 @@ def generate_interior_fabric(
     ifc_file, handle = generate_space(space_params)
 
     if accent == "door":
-        primary = _find_interior_door(ifc_file)
+        door = _find_interior_door(ifc_file)
+        _apply_product_attrs(ifc_file, door, params)
+        hatch = _add_suspended_ceiling_with_hatch(
+            ifc_file,
+            finish_ceiling_height=float(space_params.get("finish_ceiling_height", 2.6)),
+        )
+        return ifc_file, [door, hatch]
     elif accent == "window":
         primary = _find_interior_window(ifc_file)
     else:

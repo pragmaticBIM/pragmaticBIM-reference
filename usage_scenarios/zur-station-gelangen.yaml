@@ -1,0 +1,98 @@
+id: pragmaticbim:usage-scenario/zur-station-gelangen
+code: US-HE-08
+sort_order: 1
+name:
+  de: Zur Station gelangen
+  fr: Accéder à l'unité de soins
+  it: Raggiungere il reparto
+  en: Reaching the ward
+description:
+  de: Patientinnen und Patienten werden liegend zwischen Station, Diagnostik und Operation transportiert,
+    Besuchende und Material nutzen dieselben Geschosse. Die Erschliessung entscheidet über Bettentransport,
+    Hygiene und die Trennung der Wege.
+  fr: Les patients sont transportés alités entre l'unité, le diagnostic et le bloc, visiteurs et matériel
+    utilisent les mêmes étages. La desserte détermine le transport des lits, l'hygiène et la séparation
+    des parcours.
+  it: I pazienti vengono trasportati a letto tra reparto, diagnostica e sala operatoria, visitatori e
+    materiale usano gli stessi piani. L'accesso determina trasporto dei letti, igiene e separazione dei
+    percorsi.
+  en: Patients are moved in beds between ward, diagnostics, and surgery while visitors and supplies use
+    the same floors. The access arrangement determines bed transport, hygiene, and separation of routes.
+uses:
+- pragmaticbim:use/gesundheit
+tags:
+- erschliessung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/zur-station-gelangen-stair
+  sort_order: 1
+  name:
+    de: Treppenhaus
+    fr: Cage d'escalier
+    it: Vano scale
+    en: Stairwell
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+- id: pragmaticbim:scenario-option/zur-station-gelangen-stair-elevator
+  sort_order: 2
+  name:
+    de: Treppenhaus und Aufzug
+    fr: Cage d'escalier et ascenseur
+    it: Vano scale e ascensore
+    en: Stairwell and elevator
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+- id: pragmaticbim:scenario-option/zur-station-gelangen-bed-lift
+  sort_order: 3
+  name:
+    de: Treppenhaus, Aufzug und Bettenaufzug
+    fr: Cage d'escalier, ascenseur et ascenseur pour lits
+    it: Vano scale, ascensore e montalettighe
+    en: Stairwell, elevator, and bed lift
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  - from_room_type: pragmaticbim:room-type/treppenhaus
+    to_room_type: pragmaticbim:room-type/bettenaufzug
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+  - pragmaticbim:room-type/bettenaufzug
+- id: pragmaticbim:scenario-option/zur-station-gelangen-bed-service-lift
+  sort_order: 4
+  name:
+    de: Bettenaufzug und separater Warenaufzug
+    fr: Ascenseur pour lits et monte-charge séparé
+    it: Montalettighe e montacarichi separato
+    en: Bed lift and separate service lift
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  - from_room_type: pragmaticbim:room-type/treppenhaus
+    to_room_type: pragmaticbim:room-type/bettenaufzug
+  - from_room_type: pragmaticbim:room-type/treppenhaus
+    to_room_type: pragmaticbim:room-type/warenaufzug
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+  - pragmaticbim:room-type/bettenaufzug
+  - pragmaticbim:room-type/warenaufzug

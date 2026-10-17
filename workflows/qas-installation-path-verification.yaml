@@ -7,122 +7,78 @@ name:
   it: Giustificare i percorsi di trasporto
   en: Verify installation access paths
 description:
-  de: 'Freizuhaltende Einbringwege im Modell führen und Einbringbarkeit nachweisen – bevor grosse Geräte oder Bauteile zu um- und Rückbauten führen.
-
+  de: |-
+    Freizuhaltende Einbringwege im Modell führen und Einbringbarkeit nachweisen – bevor grosse Geräte oder Bauteile zu um- und Rückbauten führen.
     **Ausgangslage**
-
     - Fehlen freigehaltene Wege, folgen Kollisionen mit Bauwerk oder TGA und teure Umbauten, Sondertransporte oder nicht einbringbare Anlagen.
-
     - Dies kann zu teuren Umbauten und Einschränkungen im Betrieb führen.
 
-
     **Ziel & Nutzen**
-
     - Freizuhaltende Einbringwege als Proxy-Volumen im Modell führen.
-
     - Im Gesamtmodell gegen Bauwerk und TGA auf Kollisionen prüfen und den Nachweis dokumentieren.
 
-
     **Ablauf**
-
     1. Freizuhaltende Einbringwege als Proxy-Volumen modellieren.
-
     2. Einbringwege im Gesamtmodell gegen Bauwerk und Gebäudetechnik auf Kollisionen prüfen.
-
     3. Kollisionsnachweis dokumentieren und Massnahmen bei Einschränkung ergreifen.
 
-
     **Lieferergebnis**
-
-    - Koordinationsmodell mit den erforderlichen Lage- und Grösseninformationen zu freizuhaltenden Einbringwegen.'
-  fr: 'Saisir les voies d''apport à maintenir libres dans le modèle et prouver l''absence de collisions – avant que grands appareils ou éléments ne deviennent intransportables.
-
+    - Koordinationsmodell mit den erforderlichen Lage- und Grösseninformationen zu freizuhaltenden Einbringwegen.
+  fr: |-
+    Saisir les voies d'apport à maintenir libres dans le modèle et prouver l'absence de collisions – avant que grands appareils ou éléments ne deviennent intransportables.
 
     **Situation de départ**
-
     - Sans voies réservées, suivent collisions avec le bâtiment ou les CVC et transformations coûteuses, transports spéciaux ou installations non apportables.
-
-    - Cela peut entraîner des transformations coûteuses et des restrictions d''exploitation.
-
+    - Cela peut entraîner des transformations coûteuses et des restrictions d'exploitation.
 
     **Objectif et bénéfice**
-
-    - Saisir les voies d''apport à maintenir libres comme volumes proxy dans le modèle.
-
+    - Saisir les voies d'apport à maintenir libres comme volumes proxy dans le modèle.
     - Vérifier les collisions en maquette fédérée contre bâtiment et techniques et documenter la preuve.
 
-
     **Déroulement**
-
-    1. Modéliser les voies d''apport à maintenir libres comme volumes proxy.
-
-    2. Vérifier les collisions des voies d''apport en maquette fédérée contre bâtiment et techniques du bâtiment.
-
+    1. Modéliser les voies d'apport à maintenir libres comme volumes proxy.
+    2. Vérifier les collisions des voies d'apport en maquette fédérée contre bâtiment et techniques du bâtiment.
     3. Documenter la preuve de collision et prendre des mesures en cas de restriction.
 
-
     **Livrable**
-
-    - Maquette de coordination avec les informations de position et de dimension requises sur les voies d''apport à maintenir libres.'
-  it: 'Gestire nel modello i percorsi di trasporto da mantenere liberi e dimostrare l''assenza di collisioni – prima che grandi apparecchi o componenti non siano più trasportabili.
-
+    - Maquette de coordination avec les informations de position et de dimension requises sur les voies d'apport à maintenir libres.
+  it: |-
+    Gestire nel modello i percorsi di trasporto da mantenere liberi e dimostrare l'assenza di collisioni – prima che grandi apparecchi o componenti non siano più trasportabili.
 
     **Situazione di partenza**
-
     - Senza percorsi riservati seguono collisioni con edificio o impianti e trasformazioni costose, trasporti speciali o impianti non trasportabili.
-
-    - Ciò può portare a trasformazioni costose e a limitazioni nell''esercizio.
-
+    - Ciò può portare a trasformazioni costose e a limitazioni nell'esercizio.
 
     **Obiettivo e beneficio**
-
     - Gestire i percorsi di trasporto da mantenere liberi come volumi proxy nel modello.
-
     - Verificare collisioni nel modello federato contro edificio e impianti e documentare la prova.
 
-
     **Svolgimento**
-
     1. Modellare i percorsi di trasporto da mantenere liberi come volumi proxy.
-
     2. Verificare collisioni dei percorsi nel modello federato contro edificio e impianti.
-
     3. Documentare la prova di collisione e adottare misure in caso di limitazione.
 
-
     **Risultato della fornitura**
-
-    - Modello di coordinamento con le informazioni necessarie su posizione e dimensioni dei percorsi di trasporto da mantenere liberi.'
-  en: 'Carry the installation access paths to be kept clear in the model and prove that equipment can be brought in – before large plant or components force alterations and deconstruction.
-
+    - Modello di coordinamento con le informazioni necessarie su posizione e dimensioni dei percorsi di trasporto da mantenere liberi.
+  en: |-
+    Carry the installation access paths to be kept clear in the model and prove that equipment can be brought in – before large plant or components force alterations and deconstruction.
 
     **Starting point**
-
     - Without reserved paths, clashes with building or MEP follow – and costly rebuilds, special transports, or equipment that cannot be delivered.
-
     - This can lead to costly rebuilds and restrictions in operation.
 
-
     **Goal & benefit**
-
     - Maintain clear installation access paths as proxy volumes in the model.
-
     - Check clashes against building and MEP in the federated model and document the verification.
 
-
     **Process**
-
     1. Model clear installation access paths as proxy volumes.
-
     2. Check access paths for clashes against building and building services in the federated model.
-
     3. Document the clash verification and take measures if access is restricted.
 
-
     **Deliverable**
-
-    - Coordination model with the required location and size information for clear installation access paths.'
-workflow_group: entwurf
+    - Coordination model with the required location and size information for clear installation access paths.
+workflow_group: koordination
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active

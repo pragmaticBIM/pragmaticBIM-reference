@@ -1,0 +1,25 @@
+id: pragmaticbim:use/logistik
+code: USE-LO
+sort_order: 10
+name:
+  de: Lager und Logistik
+  fr: Entrepôt et logistique
+  it: Deposito e logistica
+  en: Warehousing and logistics
+definition:
+  de: 'Lagerung, Umschlag und Verteilung von Gütern. Bezugsgrösse: Anzahl Palettenstellplätze.'
+  fr: 'Stockage, transbordement et distribution de biens. Grandeur de référence : nombre d''emplacements
+    de palettes.'
+  it: 'Stoccaggio, trasbordo e distribuzione di beni. Grandezza di riferimento: numero di posti pallet.'
+  en: 'Storage, handling and distribution of goods. Reference quantity: number of pallet places.'
+reference_quantity:
+  id: pragmaticbim:quantity/logistik-palettenstellplaetze
+  code: USE-LO-Q
+  sort_order: 1
+  name:
+    de: Anzahl Palettenstellplätze
+    fr: Nombre d'emplacements de palettes
+    it: Numero di posti pallet
+    en: Number of pallet places
+  status: active
+status: active

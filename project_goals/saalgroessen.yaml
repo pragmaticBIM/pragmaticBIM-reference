@@ -1,0 +1,82 @@
+id: pragmaticbim:project-goal/saalgroessen
+sort_order: 1071
+group: rahmenbedingungen
+code: PG-20
+name:
+  de: Saalgrössen
+  fr: Tailles de salle
+  it: Dimensioni delle sale
+  en: Hall sizes
+tag:
+  de: Saal
+  fr: Salle
+  it: Sala
+  en: Hall
+description:
+  de: |-
+    Die Saalgrössen und die Zahl der Besucherplätze bestimmen Foyer, Fluchtwege, Toiletten und Garderobe.
+
+    Ohne diese Festlegung bleiben Foyer, Toiletten und Garderobe unbestimmt. Parallelveranstaltungen und die Teilung des Saals lassen sich dann nicht bestellen.
+  fr: |-
+    Les tailles de salle et le nombre de places pour le public déterminent le foyer, les voies d'évacuation, les toilettes et le vestiaire.
+
+    Sans cette décision, foyer, toilettes et vestiaire restent indéterminés. Les manifestations en parallèle et la division de la salle ne peuvent alors pas être commandées.
+  it: |-
+    Le dimensioni delle sale e il numero di posti per il pubblico determinano foyer, vie di fuga, servizi igienici e guardaroba.
+
+    Senza questa decisione foyer, servizi igienici e guardaroba restano indeterminati. Eventi in parallelo e suddivisione della sala non possono allora essere commissionati.
+  en: |-
+    Hall sizes and the number of audience places determine foyer, escape routes, toilets, and cloakroom.
+
+    Without this decision foyer, toilets, and cloakroom stay undefined. Parallel events and splitting the hall then cannot be ordered.
+status: active
+uses:
+- pragmaticbim:use/versammlung
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/saalgroessen-ein-saal
+  code: SAL-01
+  sort_order: 1
+  name:
+    de: Ein Saal
+    fr: Une salle
+    it: Una sala
+    en: One hall
+  description:
+    de: Ein Hauptsaal für alle Veranstaltungen.
+    fr: Une salle principale pour toutes les manifestations.
+    it: Una sala principale per tutti gli eventi.
+    en: One main hall for all events.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/saalgroessen-teilbar
+  code: SAL-02
+  sort_order: 2
+  name:
+    de: Teilbarer Saal
+    fr: Salle divisible
+    it: Sala divisibile
+    en: Divisible hall
+  description:
+    de: Ein Saal, der sich mit mobilen Wänden in kleinere Säle teilen lässt.
+    fr: Une salle divisible en salles plus petites par des parois mobiles.
+    it: Una sala divisibile in sale più piccole con pareti mobili.
+    en: One hall that mobile walls divide into smaller halls.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/saalgroessen-mehrere-saele
+  code: SAL-03
+  sort_order: 3
+  name:
+    de: Mehrere Säle
+    fr: Plusieurs salles
+    it: Più sale
+    en: Several halls
+  description:
+    de: Säle unterschiedlicher Grösse für parallele Veranstaltungen.
+    fr: Salles de tailles différentes pour des manifestations parallèles.
+    it: Sale di dimensioni diverse per eventi paralleli.
+    en: Halls of different sizes for parallel events.
+  status: active
+  comment: ''

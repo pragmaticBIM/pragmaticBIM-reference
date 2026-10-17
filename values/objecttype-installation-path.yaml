@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Einbringweg
+    - Einbringweg
   fr:
-  - Voie d'apport
+    - Voie d'apport
   it:
-  - Percorso di trasporto
+    - Percorso di trasporto
   en:
-  - Installation path
+    - Installation path

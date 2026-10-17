@@ -15,14 +15,14 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - ACTIVE
-  - PASSIVE
+    - ACTIVE
+    - PASSIVE
   fr:
-  - ACTIVE
-  - PASSIVE
+    - ACTIVE
+    - PASSIVE
   it:
-  - ACTIVE
-  - PASSIVE
+    - ACTIVE
+    - PASSIVE
   en:
-  - ACTIVE
-  - PASSIVE
+    - ACTIVE
+    - PASSIVE

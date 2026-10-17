@@ -1,0 +1,30 @@
+id: pragmaticbim:use/gesundheit
+code: USE-HE
+sort_order: 8
+name:
+  de: Gesundheit
+  fr: Santé
+  it: Salute
+  en: Healthcare
+definition:
+  de: 'Untersuchung, Behandlung und Pflege von Patientinnen und Patienten. Bezugsgrösse: Anzahl Betten.'
+  fr: 'Examen, traitement et soins des patients. Grandeur de référence : nombre de lits.'
+  it: 'Esame, cura e assistenza dei pazienti. Grandezza di riferimento: numero di letti.'
+  en: 'Examination, treatment and care of patients. Reference quantity: number of beds.'
+reference_quantity:
+  id: pragmaticbim:quantity/gesundheit-betten
+  code: USE-HE-Q
+  sort_order: 1
+  name:
+    de: Anzahl Betten
+    fr: Nombre de lits
+    it: Numero di letti
+    en: Number of beds
+  status: active
+typical_levels:
+- pragmaticbim:project-goal-level/accessibility-wheelchair
+- pragmaticbim:project-goal-level/indoor-climate-humidity
+- pragmaticbim:project-goal-level/sound-insulation-special
+- pragmaticbim:project-goal-level/seismic-bwk-2
+- pragmaticbim:project-goal-level/construction-during-operation-full
+status: active

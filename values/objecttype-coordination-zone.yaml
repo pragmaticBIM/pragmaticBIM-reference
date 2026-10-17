@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Koordinationszone
+    - Koordinationszone
   fr:
-  - Zone de coordination
+    - Zone de coordination
   it:
-  - Zona di coordinamento
+    - Zona di coordinamento
   en:
-  - Coordination zone
+    - Coordination zone

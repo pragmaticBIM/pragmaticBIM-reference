@@ -7,136 +7,93 @@ name:
   it: Pianificare il layout con planimetrie schematiche
   en: Plan the layout with schematic floor plans
 description:
-  de: 'Raumlayout nur über Räume modellieren und schematische Grundrisse ableiten – Wandänderungen mit wenigen Klicks.
-
+  de: |-
+    Raumlayout nur über Räume modellieren und schematische Grundrisse ableiten – Wandänderungen mit wenigen Klicks.
 
     **Ausgangslage**
-
     - Layoutentscheide zu Zuschnitt, Erschliessung und Belichtung brauchen lesbare Grundrisse; eine vollständige Wandmodellierung ist in dieser Phase zu aufwendig.
-
     - Werden Wände und Räume parallel geführt, kostet jede Layoutänderung mehrere Schritte: zwei Wandkanten plus den Raum dazwischen.
 
-
     **Ziel & Nutzen**
-
     - Nur Raumvolumen modellieren; die Fugen zwischen den Räumen lesen sich im Grundriss als Wände.
-
     - Layoutänderungen an einer Raumkante führen – weniger Klicks, Pläne und Modell bleiben gleich.
 
-
     **Ablauf**
-
     1. Innenräume geschossweise als Volumen mit Nutzung und Abmessungen bereitstellen; optional Aussenräume und symbolische Türen.
-
     2. Unter die Räume eine durchgehende dunkle Geschossfläche legen.
-
     3. Schematische Grundrisse von oben ableiten und das Layout mit den Beteiligten prüfen.
 
-
     **Lieferergebnis**
-
     - Raummodell der relevanten Geschosse ohne Wandmodellierung
+    - Schematische Grundrisse, in denen Zuschnitt, Erschliessung und Wandstärke als Fuge lesbar sind
 
-    - Schematische Grundrisse, in denen Zuschnitt, Erschliessung und Wandstärke als Fuge lesbar sind'
-  fr: 'Modéliser l''agencement uniquement par les locaux et en obtenir des plans d''étages schématiques – modifier les murs en quelques clics.
-
+  fr: |-
+    Modéliser l'agencement uniquement par les locaux et en obtenir des plans d'étages schématiques – modifier les murs en quelques clics.
 
     **Situation de départ**
-
-    - Les décisions d''agencement sur le découpage, la desserte et l''éclairage exigent des plans lisibles ; une modélisation complète des murs est trop lourde à ce stade.
-
-    - Si murs et locaux sont tenus en parallèle, chaque modification d''agencement demande plusieurs étapes : deux arêtes de mur plus le local entre les deux.
-
+    - Les décisions d'agencement sur le découpage, la desserte et l'éclairage exigent des plans lisibles ; une modélisation complète des murs est trop lourde à ce stade.
+    - Si murs et locaux sont tenus en parallèle, chaque modification d'agencement demande plusieurs étapes : deux arêtes de mur plus le local entre les deux.
 
     **Objectif et bénéfice**
-
     - Modéliser uniquement les volumes de locaux ; les joints entre locaux se lisent comme des murs sur le plan.
-
-    - Effectuer les modifications d''agencement sur une arête de local – moins de clics, plans et maquette restent concordants.
-
+    - Effectuer les modifications d'agencement sur une arête de local – moins de clics, plans et maquette restent concordants.
 
     **Déroulement**
-
     1. Fournir les locaux intérieurs étage par étage comme volumes avec usage et dimensions ; éventuellement des espaces extérieurs et des portes symboliques.
-
-    2. Placer sous les locaux une surface d''étage continue et sombre.
-
-    3. Obtenir les plans d''étages schématiques en vue de dessus et vérifier l''agencement avec les parties prenantes.
-
+    2. Placer sous les locaux une surface d'étage continue et sombre.
+    3. Obtenir les plans d'étages schématiques en vue de dessus et vérifier l'agencement avec les parties prenantes.
 
     **Livrable**
-
     - Maquette des locaux des étages pertinents, sans modélisation des murs
+    - Plans d'étages schématiques où découpage, desserte et épaisseur de mur sont lisibles comme joint
 
-    - Plans d''étages schématiques où découpage, desserte et épaisseur de mur sont lisibles comme joint'
-  it: 'Modellare il layout solo tramite i locali e ricavarne planimetrie schematiche – modificare i muri con pochi clic.
-
+  it: |-
+    Modellare il layout solo tramite i locali e ricavarne planimetrie schematiche – modificare i muri con pochi clic.
 
     **Situazione di partenza**
-
     - Le decisioni di layout su suddivisione, distribuzione e illuminazione richiedono planimetrie leggibili; una modellazione completa delle pareti è troppo onerosa in questa fase.
-
     - Se pareti e locali sono gestiti in parallelo, ogni modifica di layout richiede più passaggi: due spigoli di parete più il locale in mezzo.
 
-
     **Obiettivo e beneficio**
-
     - Modellare solo i volumi di locale; i giunti tra i locali si leggono come pareti in planimetria.
-
     - Eseguire le modifiche di layout su uno spigolo di locale – meno clic, disegni e modello restano concordanti.
 
-
     **Svolgimento**
-
     1. Fornire i locali interni piano per piano come volumi con uso e dimensioni; eventualmente spazi esterni e porte simboliche.
-
     2. Posare sotto i locali una superficie di piano continua e scura.
-
-    3. Ricavare le planimetrie schematiche in vista dall''alto e verificare il layout con le parti interessate.
-
+    3. Ricavare le planimetrie schematiche in vista dall'alto e verificare il layout con le parti interessate.
 
     **Risultato della fornitura**
-
     - Modello dei locali dei piani pertinenti, senza modellazione delle pareti
+    - Planimetrie schematiche in cui suddivisione, distribuzione e spessore di parete sono leggibili come giunto
 
-    - Planimetrie schematiche in cui suddivisione, distribuzione e spessore di parete sono leggibili come giunto'
-  en: 'Model the layout with spaces only and derive schematic floor plans – change walls with few clicks.
-
+  en: |-
+    Model the layout with spaces only and derive schematic floor plans – change walls with few clicks.
 
     **Starting point**
-
     - Layout decisions on subdivision, circulation, and daylight need readable floor plans; full wall modelling is too demanding at this stage.
-
     - If walls and spaces are maintained in parallel, every layout change takes several steps: two wall edges plus the space between them.
 
-
     **Goal & benefit**
-
     - Model only space volumes; the gaps between spaces read as walls in plan.
-
     - Make layout changes on one space edge – fewer clicks, drawings and model stay aligned.
 
-
     **Process**
-
     1. Provide interior spaces storey by storey as volumes with use and dimensions; optionally exterior spaces and symbolic doors.
-
     2. Place a continuous dark storey surface under the spaces.
-
     3. Derive schematic floor plans from above and check the layout with the stakeholders.
 
-
     **Deliverable**
-
     - Space model of the relevant storeys without wall modelling
-
-    - Schematic floor plans in which subdivision, circulation, and wall thickness are readable as a gap'
-workflow_group: konzept
+    - Schematic floor plans in which subdivision, circulation, and wall thickness are readable as a gap
+workflow_group: konzept-bewilligung
 parent_workflow: pragmaticbim:workflow/des
-picture_link: null
+picture_link:
 status: active
 service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Spaces only – no walls or fit-out. Dark storey surface is a view method, not an IFC element. Doors optional with PredefinedType only. Detailed door attributes (OverallWidth, OverallHeight, OperationType)
-  – see des-door-planning. Deliverable is document floor-plans-schematic (GRS). Distinct from des-drawing-derivation (GRD/SCT/ANS/DET completeness check vs architecture model).
+comment: >-
+  Spaces only – no walls or fit-out. Dark storey surface is a view method, not an IFC element.
+  Doors optional with PredefinedType only. Detailed door attributes (OverallWidth, OverallHeight, OperationType) – see des-door-planning.
+  Deliverable is document floor-plans-schematic (GRS). Distinct from des-drawing-derivation (GRD/SCT/ANS/DET completeness check vs architecture model).

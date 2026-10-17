@@ -15,6 +15,7 @@ from generators.parts import (
     add_extruded_product,
     axis_placement_matrix,
     create_body_representation,
+    create_extruded_area_solid,
     create_tapered_extruded_solid,
     rect_polyline,
 )
@@ -348,3 +349,136 @@ def generate_roofing(
 
     # Accent tapered roof plate + Attika-top insulation; cladding stays white for brand.
     return ifc_file, [roofing, attika_top]
+
+
+def _cut_local_box(
+    ifc_file: ifcopenshell.file,
+    product: ifcopenshell.entity_instance,
+    box: tuple[float, float, float, float, float, float],
+) -> None:
+    """Subtract an axis-aligned box in the product's local frame."""
+    x0, y0, z0, x1, y1, z1 = box
+    if min(x1 - x0, y1 - y0, z1 - z0) <= 1e-9:
+        return
+    representation = product.Representation.Representations[0]
+    first = representation.Items[0]
+    cutter = create_extruded_area_solid(
+        ifc_file,
+        [(x0, y0), (x1, y0), (x1, y1), (x0, y1)],
+        z1 - z0,
+        origin=(0.0, 0.0, z0),
+    )
+    representation.Items = [
+        ifc_file.create_entity(
+            "IfcBooleanResult",
+            Operator="DIFFERENCE",
+            FirstOperand=first,
+            SecondOperand=cutter,
+        )
+    ]
+    representation.RepresentationType = "CSG"
+
+
+def generate_roof_overflow(
+    params: dict[str, Any] | None = None,
+) -> tuple[ifcopenshell.file, ifcopenshell.entity_instance]:
+    """Reuse the flat-roof vignette and accent a rectangular Attika overflow.
+
+    The proxy keeps only the part outside the facade. Attika and cladding are
+    cut on that same footprint, so the spout and the wall do not overlap.
+    """
+    params = dict(params or {})
+    overflow_attrs = dict(params.get("overflow_attrs") or {})
+
+    overflow_width = float(params.get("overflow_width", 0.70))
+    overflow_height = float(params.get("overflow_height", 0.16))
+    overflow_depth = float(params.get("overflow_depth", 0.55))
+    overflow_bottom = float(params.get("overflow_bottom", 0.18))
+    slab_width = float(params.get("slab_width", DEFAULT_SLAB_WIDTH))
+    slab_depth = float(params.get("slab_depth", DEFAULT_SLAB_DEPTH))
+    slab_thickness = float(params.get("slab_thickness", DEFAULT_SLAB_THICKNESS))
+    parapet_height = float(params.get("parapet_height", DEFAULT_PARAPET_HEIGHT))
+    parapet_thickness = float(params.get("parapet_thickness", DEFAULT_PARAPET_THICKNESS))
+    cladding_thickness = float(
+        params.get("cladding_thickness", DEFAULT_CLADDING_THICKNESS)
+    )
+    cladding_gap = float(params.get("cladding_gap", DEFAULT_CLADDING_GAP))
+
+    if min(overflow_width, overflow_height, overflow_depth) <= 0:
+        raise ValueError("all roof-overflow dimensions must be positive")
+    if overflow_width >= slab_width:
+        raise ValueError("roof overflow must be narrower than the Attika")
+    if overflow_bottom < 0 or overflow_bottom + overflow_height >= parapet_height:
+        raise ValueError("roof overflow must fit vertically inside the Attika")
+
+    x0 = (slab_width - overflow_width) * 0.5
+    y0 = slab_depth - overflow_depth * 0.5
+    z0 = slab_thickness + overflow_bottom
+    y1 = y0 + overflow_depth
+    clad_outer_y = slab_depth + cladding_gap + cladding_thickness
+    # Drop the part buried in Attika / facade; keep the exterior spout.
+    spout_y0 = max(y0, clad_outer_y)
+    if y1 - spout_y0 <= 1e-6:
+        raise ValueError("roof overflow must protrude past the facade")
+
+    context_params = dict(params)
+    context_params.pop("overflow_attrs", None)
+    context_params["name"] = "Gefälledämmung"
+    context_params["predefined_type"] = "ROOFING"
+    context_params["properties"] = {}
+    context_params["property_datatypes"] = {}
+    context_params["quantities"] = {}
+    ifc_file, _context_products = generate_roofing(context_params)
+
+    # Passage through Attika and facade. Poke slightly past each face so the
+    # boolean clears the solid; the spout itself starts on the outer face.
+    overshoot = 0.01
+    wall = ifc_file.by_type("IfcWall")[0]
+    _cut_local_box(
+        ifc_file,
+        wall,
+        (
+            x0,
+            -overshoot,
+            overflow_bottom,
+            x0 + overflow_width,
+            parapet_thickness + overshoot,
+            overflow_bottom + overflow_height,
+        ),
+    )
+    cladding = next(
+        covering
+        for covering in ifc_file.by_type("IfcCovering")
+        if covering.Name == "Fassadenbekleidung"
+    )
+    _cut_local_box(
+        ifc_file,
+        cladding,
+        (
+            x0,
+            -overshoot,
+            z0,
+            x0 + overflow_width,
+            cladding_thickness + overshoot,
+            z0 + overflow_height,
+        ),
+    )
+
+    storey = ifc_file.by_type("IfcBuildingStorey")[0]
+    body_context = get_body_context(ifc_file)
+    if body_context is None:
+        raise RuntimeError("roof-overflow vignette has no Body context")
+
+    overflow = add_extruded_product(
+        ifc_file,
+        ifc_class="IfcBuildingElementProxy",
+        name=str(overflow_attrs.get("Name") or "NÜ-01"),
+        body_context=body_context,
+        storey=storey,
+        polyline=rect_polyline(x0, spout_y0, x0 + overflow_width, y1),
+        thickness=overflow_height,
+        z_bottom=z0,
+        predefined_type=str(overflow_attrs.get("PredefinedType") or "USERDEFINED"),
+    )
+    _apply_resolved_attributes(ifc_file, overflow, overflow_attrs)
+    return ifc_file, overflow

@@ -15,14 +15,14 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - WATER
-  - STEAM
+    - WATER
+    - STEAM
   fr:
-  - WATER
-  - STEAM
+    - WATER
+    - STEAM
   it:
-  - WATER
-  - STEAM
+    - WATER
+    - STEAM
   en:
-  - WATER
-  - STEAM
+    - WATER
+    - STEAM

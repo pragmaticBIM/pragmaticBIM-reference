@@ -15,30 +15,30 @@ norm_reference: null
 status: active
 values:
   de:
-  - Einreihig
-  - Zweireihig
-  - Stellplatte
-  - Stellplatte mit Wasserstein
-  - Randstein
-  - Schalenstein
+    - Einreihig
+    - Zweireihig
+    - Stellplatte
+    - Stellplatte mit Wasserstein
+    - Randstein
+    - Schalenstein
   fr:
-  - Einreihig
-  - Zweireihig
-  - Stellplatte
-  - Stellplatte mit Wasserstein
-  - Randstein
-  - Schalenstein
+    - Einreihig
+    - Zweireihig
+    - Stellplatte
+    - Stellplatte mit Wasserstein
+    - Randstein
+    - Schalenstein
   it:
-  - Einreihig
-  - Zweireihig
-  - Stellplatte
-  - Stellplatte mit Wasserstein
-  - Randstein
-  - Schalenstein
+    - Einreihig
+    - Zweireihig
+    - Stellplatte
+    - Stellplatte mit Wasserstein
+    - Randstein
+    - Schalenstein
   en:
-  - Einreihig
-  - Zweireihig
-  - Stellplatte
-  - Stellplatte mit Wasserstein
-  - Randstein
-  - Schalenstein
+    - Einreihig
+    - Zweireihig
+    - Stellplatte
+    - Stellplatte mit Wasserstein
+    - Randstein
+    - Schalenstein

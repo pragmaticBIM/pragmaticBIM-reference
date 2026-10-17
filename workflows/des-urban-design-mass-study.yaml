@@ -7,131 +7,84 @@ name:
   it: Elaborare lo studio di massa urbanistica
   en: Create the urban design mass study
 description:
-  de: 'Geschossweise Bruttovolumen modellieren und auswerten, damit städtebauliche Varianten und Kennzahlen direkt verglichen werden können.
-
+  de: |-
+    Geschossweise Bruttovolumen modellieren und auswerten, damit städtebauliche Varianten und Kennzahlen direkt verglichen werden können.
 
     **Ausgangslage**
-
     - Massenstudien und Zonenkonformität verlangen Bruttoflächen und -volumen je Geschoss.
-
     - Manuelle Flächen- und Volumenlisten aus Volumenmodellen sind fehleranfällig und verlangsamen Variantenvergleiche.
 
-
     **Ziel & Nutzen**
-
     - Bruttovolumen früh und geschossweise im Modell führen.
-
     - Fläche, Volumen und Höhe je Einheit oder Nutzungsanteil direkt aus dem Modell ableiten.
 
-
     **Ablauf**
-
     1. Bruttovolumen je Geschoss gemäss Modellierungshinweis bereitstellen.
-
     2. Optional nach Wohnungen, Einheiten oder Allgemeinflächen trennen und in LongName gemäss Programm benennen.
-
     3. Geschossweise Flächen, Volumen und Höhen auswerten und Varianten vergleichen.
 
-
     **Lieferergebnis**
-
     - Massenmodell mit prüfbaren Bruttovolumen je Geschoss und Nutzungsanteil gemäss Modellierungshinweis
+    - Mengenauswertung je Geschoss und Nutzungsanteil für den Variantenvergleich
 
-    - Mengenauswertung je Geschoss und Nutzungsanteil für den Variantenvergleich'
-  fr: 'Modéliser les volumes bruts par étage et en extraire les quantités pour l''étude de masse urbanistique.
-
+  fr: |-
+    Modéliser les volumes bruts par étage et en extraire les quantités pour l'étude de masse urbanistique.
 
     **Situation de départ**
-
     - Les études de masse et la conformité aux zones exigent des surfaces et volumes bruts par étage.
-
-    - Les tableaux manuels de surfaces et volumes à partir de modèles volumiques sont sources d''erreurs et ralentissent la comparaison de variantes.
-
+    - Les tableaux manuels de surfaces et volumes à partir de modèles volumiques sont sources d'erreurs et ralentissent la comparaison de variantes.
 
     **Objectif et bénéfice**
-
     - Maintenir les volumes bruts tôt dans le modèle, étage par étage.
-
     - Déduire directement surface, volume et hauteur par unité ou part de programme.
 
-
     **Déroulement**
-
     1. Fournir les volumes bruts par étage selon la directive de modélisation.
-
     2. Séparer facultativement par logements, unités ou espaces communs et nommer LongName selon le programme.
-
     3. Évaluer surfaces, volumes et hauteurs par étage et comparer les variantes.
 
-
     **Livrable**
-
     - Maquette de masse avec volumes bruts vérifiables par étage et part de programme selon la directive de modélisation
-
-    - Métré par étage et part de programme pour comparer les variantes'
-  it: 'Modellare i volumi lordi per piano ed estrarre le quantità per lo studio di massa urbanistica.
-
+    - Métré par étage et part de programme pour comparer les variantes
+  it: |-
+    Modellare i volumi lordi per piano ed estrarre le quantità per lo studio di massa urbanistica.
 
     **Situazione di partenza**
-
     - Studi di massa e conformità urbanistica richiedono superfici e volumi lordi per piano.
-
     - Elenchi manuali di superfici e volumi da modelli volumetrici sono error-prone e rallentano il confronto delle varianti.
 
-
     **Obiettivo e beneficio**
-
     - Gestire i volumi lordi in fase iniziale, piano per piano.
-
     - Ricavare direttamente superficie, volume e altezza per unità o quota di programma.
 
-
     **Svolgimento**
-
     1. Fornire volumi lordi per piano secondo la direttiva di modellazione.
-
     2. Separare facoltativamente per alloggi, unità o spazi comuni e denominare LongName secondo il programma.
-
     3. Valutare superfici, volumi e altezze per piano e confrontare le varianti.
 
-
     **Risultato della fornitura**
-
     - Modello delle masse con volumi lordi verificabili per piano e quota di programma secondo la direttiva di modellazione
-
-    - Computo delle quantità per piano e quota di programma per confrontare le varianti'
-  en: 'Model and evaluate gross volumes by storey so that urban design options and metrics can be compared directly.
-
+    - Computo delle quantità per piano e quota di programma per confrontare le varianti
+  en: |-
+    Model and evaluate gross volumes by storey so that urban design options and metrics can be compared directly.
 
     **Starting point**
-
     - Mass studies and zoning compliance require gross areas and volumes per storey.
-
     - Manual area and volume tables from volume models are error-prone and slow option comparison.
 
-
     **Goal & benefit**
-
     - Maintain gross volumes early in the model, storey by storey.
-
     - Derive area, volume, and height per unit or programme share directly from the model.
 
-
     **Process**
-
     1. Provide gross volumes per storey as set out in the modelling guideline.
-
     2. Optionally separate by flats, units, or public space and set LongName from the brief.
-
     3. Evaluate areas, volumes, and heights per storey and compare options.
 
-
     **Deliverable**
-
     - Massing model with verifiable gross volumes by storey and programme share, following the modelling guideline
-
-    - Quantity take-off by storey and programme share for comparing options'
-workflow_group: konzept
+    - Quantity take-off by storey and programme share for comparing options
+workflow_group: kosten-mengen
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active

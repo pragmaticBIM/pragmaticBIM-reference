@@ -1,0 +1,47 @@
+id: pragmaticbim:usage-scenario/hardware-anliefern
+code: US-RZ-05
+sort_order: 7
+name:
+  de: Hardware anliefern
+  fr: Livrer le matériel informatique
+  it: Consegnare l'hardware
+  en: Delivering hardware
+description:
+  de: Server und Ersatzteile werden angeliefert, ausgepackt und eingebaut. Die Anlieferung entscheidet
+    über Transportwege, Torgrössen und Sicherheitszonen.
+  fr: Serveurs et pièces de rechange sont livrés, déballés et installés. La livraison détermine les chemins
+    de transport, la taille des portes et les zones de sécurité.
+  it: Server e pezzi di ricambio vengono consegnati, disimballati e installati. La consegna determina
+    percorsi di trasporto, dimensioni dei portoni e zone di sicurezza.
+  en: Servers and spare parts are delivered, unpacked, and installed. Delivery determines transport routes,
+    door sizes, and security zones.
+uses:
+- pragmaticbim:use/rechenzentrum
+tags:
+- logistik
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/hardware-anliefern-dock
+  sort_order: 1
+  name:
+    de: Rampe mit Materialraum
+    fr: Quai avec local de matériel
+    it: Rampa con locale materiale
+    en: Dock with supply room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/laderampe
+    to_room_type: pragmaticbim:room-type/materialraum
+  adds:
+  - pragmaticbim:room-type/laderampe
+  - pragmaticbim:room-type/materialraum
+- id: pragmaticbim:scenario-option/hardware-anliefern-supply-room
+  sort_order: 2
+  name:
+    de: Materialraum
+    fr: Local de matériel
+    it: Locale materiale
+    en: Supply room
+  adds:
+  - pragmaticbim:room-type/materialraum

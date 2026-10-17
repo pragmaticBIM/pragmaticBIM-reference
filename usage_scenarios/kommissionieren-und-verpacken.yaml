@@ -1,0 +1,51 @@
+id: pragmaticbim:usage-scenario/kommissionieren-und-verpacken
+code: US-LO-03
+sort_order: 4
+name:
+  de: Kommissionieren und verpacken
+  fr: Préparer et emballer les commandes
+  it: Preparare e imballare gli ordini
+  en: Picking and packing
+description:
+  de: Bestellungen werden zusammengestellt und versandfertig gemacht. Die Kommissionierung entscheidet
+    über Wege, Arbeitsplätze und Pufferflächen.
+  fr: Les commandes sont préparées et conditionnées pour l'expédition. La préparation détermine les chemins,
+    les postes de travail et les surfaces tampons.
+  it: Gli ordini vengono preparati e resi pronti per la spedizione. La preparazione determina percorsi,
+    postazioni e superfici di transito.
+  en: Orders are picked and made ready for shipping. Picking determines routes, workstations, and buffer
+    areas.
+uses:
+- pragmaticbim:use/logistik
+tags:
+- versand
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/kommissionieren-und-verpacken-in-warehouse
+  sort_order: 1
+  name:
+    de: Verpackung in der Lagerhalle
+    fr: Emballage dans l'entrepôt
+    it: Imballaggio nel magazzino
+    en: Packing in the warehouse
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/lagerhalle
+    to_room_type: pragmaticbim:room-type/verpackungsbereich
+  adds:
+  - pragmaticbim:room-type/lagerhalle
+  - pragmaticbim:room-type/verpackungsbereich
+- id: pragmaticbim:scenario-option/kommissionieren-und-verpacken-with-qc
+  sort_order: 2
+  name:
+    de: Verpackung mit Warenkontrolle
+    fr: Emballage avec contrôle des marchandises
+    it: Imballaggio con controllo merci
+    en: Packing with goods inspection
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/qualitaetskontrollraum
+    to_room_type: pragmaticbim:room-type/verpackungsbereich
+  adds:
+  - pragmaticbim:room-type/verpackungsbereich
+  - pragmaticbim:room-type/qualitaetskontrollraum

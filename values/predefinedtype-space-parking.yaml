@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - PARKING
+    - PARKING
   fr:
-  - PARKING
+    - PARKING
   it:
-  - PARKING
+    - PARKING
   en:
-  - PARKING
+    - PARKING

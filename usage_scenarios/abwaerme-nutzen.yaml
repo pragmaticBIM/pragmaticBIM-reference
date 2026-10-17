@@ -1,0 +1,46 @@
+id: pragmaticbim:usage-scenario/abwaerme-nutzen
+code: US-RZ-09
+sort_order: 5
+name:
+  de: Abwärme nutzen
+  fr: Valoriser les rejets thermiques
+  it: Recuperare il calore di scarto
+  en: Using waste heat
+description:
+  de: Die Server geben Wärme ab, die sonst über die Rückkühlung verloren geht. Die Nutzung dieser Abwärme
+    entscheidet über Heizungsraum, Anschluss und den Wärmebedarf des Gebäudes.
+  fr: Les serveurs dégagent de la chaleur qui, sinon, se perd au refroidissement. La valorisation de ces
+    rejets thermiques détermine la chaufferie, le raccordement et les besoins de chaleur du bâtiment.
+  it: I server producono calore che altrimenti si perde nel raffreddamento. Il recupero di questo calore
+    determina la centrale termica, l'allacciamento e il fabbisogno termico dell'edificio.
+  en: Servers give off heat that would otherwise be lost at the heat rejection. Using that waste heat
+    determines the boiler room, the connection, and the building's heat demand.
+uses:
+- pragmaticbim:use/rechenzentrum
+tags:
+- energie
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/abwaerme-nutzen-building
+  sort_order: 1
+  name:
+    de: Gebäudeheizung
+    fr: Chauffage du bâtiment
+    it: Riscaldamento dell'edificio
+    en: Building heating
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/kaelteraum
+    to_room_type: pragmaticbim:room-type/heizungsraum
+  adds:
+  - pragmaticbim:room-type/kaelteraum
+  - pragmaticbim:room-type/heizungsraum
+- id: pragmaticbim:scenario-option/abwaerme-nutzen-district
+  sort_order: 2
+  name:
+    de: Fernwärme
+    fr: Chauffage à distance
+    it: Teleriscaldamento
+    en: District heating
+  exclusive: true

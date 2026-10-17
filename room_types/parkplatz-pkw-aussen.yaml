@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/parkplatz-pkw-aussen
+code: RT-WH-34
+sort_order: 34
+name:
+  de: Parkplatz PKW Aussen
+  fr: Place voiture extérieure
+  it: Posto auto esterno
+  en: Exterior Car Parking
+definition:
+  de: Aussenparkplatz für Personenwagen.
+  fr: Place de stationnement extérieure pour voitures.
+  it: Posto auto esterno per autovetture.
+  en: Exterior parking space for passenger cars.
+room_type_kind: room
+room_name: RN-13-20-01
+activity: S-PRK-EXT
+default_scope: site
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/parkplatz-pkw-aussen-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-parking
+    name: PredefinedType
+    value: PARKING
+  - element: pragmaticbim:element/spaces-parking
+    name: ParkingUse
+    pset: Pset_SpaceParking
+    value: CAR
+  status: active

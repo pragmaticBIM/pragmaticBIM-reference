@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Baurechtliche Parzelle
+    - Baurechtliche Parzelle
   fr:
-  - Parcelle au sens du droit de la construction
+    - Parcelle au sens du droit de la construction
   it:
-  - Particella edilizia
+    - Particella edilizia
   en:
-  - Building-law parcel
+    - Building-law parcel

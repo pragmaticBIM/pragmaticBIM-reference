@@ -90,10 +90,10 @@ levels:
     it: Alto
     en: High
   description:
-    de: Fachanforderungsmodelle und Nachweise zu Brand-, Schall- und Wärmeschutz, zusammengeführte Wandanforderungen, Absturzsicherungen, Vorsatzschalen, Standarddetails, Werk- und Montageplanung, Geländeanschlüsse, Benchmarking, wöchentlicher Abgleich des Baufortschritts mit dem Terminplan sowie räumlich eindeutiges Mängelmanagement.
-    fr: Modèles d'exigences spécialisées et justificatifs de protection incendie, acoustique et thermique, exigences regroupées relatives aux murs, sécurités antichute, contre-cloisons, détails standard, plans d'atelier et de montage, raccordements au terrain, benchmarking, comparaison hebdomadaire de l'avancement avec le calendrier et gestion des défauts avec attribution spatiale univoque.
-    it: Modelli dei requisiti specialistici e verifiche di protezione antincendio, acustica e termica, requisiti integrati delle pareti, sicurezze anticaduta, contropareti, dettagli standard, piani d'officina e di montaggio, raccordi al terreno, benchmarking, confronto settimanale dell'avanzamento con il cronoprogramma e gestione dei difetti con attribuzione spaziale univoca.
-    en: Discipline requirements models and evidence for fire, sound, and thermal protection, combined wall requirements, fall protection, facing shells, standard details, shop and installation design, terrain connections, benchmarking, weekly comparison of construction progress with the schedule, and spatially unambiguous defect management.
+    de: Fachanforderungsmodelle und Nachweise zu Brand-, Schall- und Wärmeschutz, zusammengeführte Wandanforderungen, Prüfung der Bauteiltypen gegen Leistungsanforderungen, Absturzsicherungen, Vorsatzschalen, Standarddetails, Werk- und Montageplanung, Installationsaufhängungen als eigenes Gewerk, Geländeanschlüsse, Benchmarking, wöchentlicher Abgleich des Baufortschritts mit dem Terminplan sowie räumlich eindeutiges Mängelmanagement.
+    fr: Modèles d'exigences spécialisées et justificatifs de protection incendie, acoustique et thermique, exigences regroupées relatives aux murs, contrôle des types d'éléments par rapport aux exigences de performance, sécurités antichute, contre-cloisons, détails standard, plans d'atelier et de montage, suspensions d'installations comme corps de métier distinct, raccordements au terrain, benchmarking, comparaison hebdomadaire de l'avancement avec le calendrier et gestion des défauts avec attribution spatiale univoque.
+    it: Modelli dei requisiti specialistici e verifiche di protezione antincendio, acustica e termica, requisiti integrati delle pareti, verifica dei tipi di elementi rispetto ai requisiti prestazionali, sicurezze anticaduta, contropareti, dettagli standard, piani d'officina e di montaggio, sospensioni degli impianti come impianto separato, raccordi al terreno, benchmarking, confronto settimanale dell'avanzamento con il cronoprogramma e gestione dei difetti con attribuzione spaziale univoca.
+    en: Discipline requirements models and evidence for fire, sound, and thermal protection, combined wall requirements, a check of component types against performance requirements, fall protection, facing shells, standard details, shop and installation design, installation suspensions as a separate trade, terrain connections, benchmarking, weekly comparison of construction progress with the schedule, and spatially unambiguous defect management.
   status: active
   activated_workflows:
   - pragmaticbim:workflow/qas-facing-shell-area-verification
@@ -101,9 +101,11 @@ levels:
   - pragmaticbim:workflow/qas-fire-protection
   - pragmaticbim:workflow/qas-acoustic-building-physics
   - pragmaticbim:workflow/des-wall-requirements-from-space-use
+  - pragmaticbim:workflow/qas-element-type-performance-verification
   - pragmaticbim:workflow/qas-project-benchmark
   - pragmaticbim:workflow/qas-detail-reference-model
   - pragmaticbim:workflow/qas-contractor-design-verification
+  - pragmaticbim:workflow/bes-mep-seismic-bracing-coordination
   - pragmaticbim:workflow/des-terrain-design
   - pragmaticbim:workflow/con-construction-progress-documentation
   - pragmaticbim:workflow/con-defect-management

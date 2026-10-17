@@ -2,140 +2,97 @@ id: pragmaticbim:workflow/con-logistics-fit-out
 code: CON-ROOM-LABEL
 sort_order: 21
 name:
-  de: Räume auf der Baustelle kennzeichnen
-  fr: Marquer les locaux sur le chantier
-  it: Contrassegnare i locali in cantiere
-  en: Label rooms on the construction site
+  de: Ausbau raumweise mit Checkliste steuern
+  fr: Piloter l'aménagement local par local avec une liste de contrôle
+  it: Gestire la finitura locale per locale con una lista di controllo
+  en: Manage fit-out room by room with a checklist
 description:
-  de: 'Räume auf der Baustelle einheitlich aus dem Modell kennzeichnen, damit Orientierung, Lieferungen und Mängelmeldungen dieselbe Raumreferenz verwenden.
-
+  de: |-
+    Ausbauschritte je Raum in einer gemeinsamen Checkliste führen, damit die Gewerke im Takt arbeiten und der Stand jedes Raums vor Ort sichtbar ist.
 
     **Ausgangslage**
-
-    - Auf der Baustelle ist die räumliche Orientierung oft schwierig; Lieferungen und Mängelmeldungen fehlen ohne eindeutige Raumreferenz.
-
-    - Papierlisten und mündliche Angaben veralten schnell und führen zu Fehlzuordnungen.
-
+    - Gewerke behindern sich im Ausbau, weil Vorleistungen fehlen oder unklar ist, welcher Raum freigegeben ist.
+    - Terminpläne nach Geschoss zeigen den Stand einzelner Räume nicht; Nacharbeiten fallen erst bei der Abnahme auf.
 
     **Ziel & Nutzen**
-
-    - Einheitliche Raumkennzeichnung vor Ort (z. B. am Fenster) aus dem Modell ableiten.
-
-    - QR-Scan für Orientierung sowie für Logistik- und Mängelerfassung an derselben, prüfbaren Raumreferenz.
-
+    - Raumweise Checkliste mit Ausbauschritten, Reihenfolge und Freigabe je Gewerk aus der Raumliste des Modells ableiten.
+    - Der Raum-QR-Code öffnet die Checkliste des Raums; Fertigmeldungen und Behinderungen sind sofort dem richtigen Raum zugeordnet.
 
     **Ablauf**
-
-    1. Innenräume mit stabiler Planungsraumnummer (Name) und Raumnutzung (LongName) im Modell führen.
-
-    2. Raumliste aus dem Modell ableiten und QR-Etiketten mit Raumname und Raumnummer drucken.
-
-    3. Etiketten raumweise anbringen (z. B. am Fenster).
-
+    1. Innenräume mit stabiler Planungsraumnummer (Name) und Raumnutzung (LongName) im Modell führen und die Raumliste ableiten.
+    2. Ausbauschritte, Reihenfolge und Freigabekriterien je Raumtyp mit den Gewerken abstimmen und je Raum eine Checkliste anlegen.
+    3. Raum-QR-Etiketten anbringen und Fertigmeldungen, Freigaben und Behinderungen vor Ort nachführen.
 
     **Lieferergebnis**
-
-    - Raumdaten aus dem Architekturmodell mit eindeutiger Kennzeichnung und abgestimmter Ausbau-Checkliste.
-
-    - QR-Etiketten je Raum mit dem Modell entsprechender Kennzeichnung.'
-  fr: 'Imprimer un QR de local avec désignation et numéro et le poser dans chaque local – pour l''orientation, la logistique et la gestion des défauts en aménagement.
-
+    - Abgestimmte raumweise Ausbau-Checkliste mit Schritten, Reihenfolge und Freigabekriterien.
+    - QR-Etiketten je Raum mit modellkonformer Kennzeichnung und Link zur Checkliste.
+  fr: |-
+    Tenir les étapes d'aménagement de chaque local dans une liste de contrôle commune, afin que les corps de métier travaillent en cadence et que l'état de chaque local soit visible sur place.
 
     **Situation de départ**
-
-    - Sur chantier, l''orientation spatiale est souvent difficile ; livraisons et signalements de défauts manquent sans référence de local claire.
-
-    - Listes papier et indications orales vieillissent vite et provoquent des affectations erronées.
-
+    - Les corps de métier se gênent pendant l'aménagement, car des travaux préalables manquent ou l'on ignore quel local est libéré.
+    - Les plannings par étage ne montrent pas l'état de chaque local ; les reprises n'apparaissent qu'à la réception.
 
     **Objectif et bénéfice**
-
-    - Déduire du modèle un marquage de local uniforme sur place (p. ex. à la fenêtre).
-
-    - Scan QR pour l''orientation ainsi que pour la saisie logistique et des défauts sur la même référence de local vérifiable.
-
+    - Déduire de la liste des locaux de la maquette une liste de contrôle par local avec étapes d'aménagement, ordre et libération par corps de métier.
+    - Le code QR du local ouvre sa liste de contrôle ; avis d'achèvement et empêchements sont aussitôt affectés au bon local.
 
     **Déroulement**
-
-    1. Saisir dans le modèle les locaux intérieurs avec numéro technique stable (Name) et usage du local (LongName).
-
-    2. Extraire la liste des locaux du modèle et imprimer des étiquettes QR avec désignation et numéro.
-
-    3. Poser les étiquettes local par local (p. ex. à la fenêtre).
-
+    1. Saisir dans la maquette les locaux intérieurs avec numéro de local stable (Name) et usage du local (LongName), puis extraire la liste des locaux.
+    2. Convenir avec les corps de métier des étapes d'aménagement, de l'ordre et des critères de libération par type de local, puis créer une liste de contrôle par local.
+    3. Poser les étiquettes QR et tenir à jour sur place les avis d'achèvement, les libérations et les empêchements.
 
     **Livrable**
-
-    - Données des locaux issues de la maquette architecture avec identification claire et liste de contrôle coordonnée.
-
-    - Étiquettes QR par local avec identification conforme à la maquette.'
-  it: 'Stampare un QR locale con denominazione e numero e affiggerlo in ogni locale – per orientamento, logistica e gestione dei difetti in finitura.
-
+    - Liste de contrôle d'aménagement par local, coordonnée, avec étapes, ordre et critères de libération.
+    - Étiquettes QR par local avec identification conforme à la maquette et lien vers la liste de contrôle.
+  it: |-
+    Gestire le fasi di finitura di ogni locale in una lista di controllo comune, affinché le imprese lavorino in cadenza e lo stato di ogni locale sia visibile in cantiere.
 
     **Situazione di partenza**
-
-    - In cantiere l''orientamento spaziale è spesso difficile; consegne e segnalazioni di difetti mancano senza un riferimento di locale chiaro.
-
-    - Elenchi cartacei e indicazioni orali invecchiano in fretta e portano ad assegnazioni errate.
-
+    - Le imprese si ostacolano durante la finitura, perché mancano lavori preliminari o non è chiaro quale locale sia liberato.
+    - I programmi lavori per piano non mostrano lo stato dei singoli locali; i rifacimenti emergono solo al collaudo.
 
     **Obiettivo e beneficio**
-
-    - Ricavare dal modello una marcatura uniforme del locale in loco (es. sulla finestra).
-
-    - Scansione QR per l''orientamento e per la rilevazione logistica e dei difetti sulla stessa referenza di locale verificabile.
-
+    - Ricavare dall'elenco locali del modello una lista di controllo per locale con fasi di finitura, sequenza e liberazione per impresa.
+    - Il codice QR del locale apre la sua lista di controllo; avvisi di completamento e impedimenti sono subito assegnati al locale giusto.
 
     **Svolgimento**
-
-    1. Gestire nel modello i locali interni con numero tecnico stabile (Name) e uso del locale (LongName).
-
-    2. Estrarre l''elenco locali dal modello e stampare etichette QR con denominazione e numero.
-
-    3. Affiggere le etichette locale per locale (es. sulla finestra).
-
+    1. Gestire nel modello i locali interni con numero di locale stabile (Name) e uso del locale (LongName) e ricavare l'elenco locali.
+    2. Concordare con le imprese fasi di finitura, sequenza e criteri di liberazione per tipo di locale e creare una lista di controllo per ogni locale.
+    3. Affiggere le etichette QR e aggiornare in cantiere avvisi di completamento, liberazioni e impedimenti.
 
     **Risultato della fornitura**
-
-    - Dati dei locali dal modello di architettura con identificazione univoca e lista di controllo coordinata.
-
-    - Etichette QR per ogni locale con identificazione corrispondente al modello.'
-  en: 'Label rooms consistently on site from the model so that orientation, deliveries, and defect reports use the same room reference.
-
+    - Lista di controllo della finitura per locale, concordata, con fasi, sequenza e criteri di liberazione.
+    - Etichette QR per ogni locale con identificazione conforme al modello e link alla lista di controllo.
+  en: |-
+    Keep the fit-out steps for each room in a shared checklist so that trades work to a takt and the status of every room is visible on site.
 
     **Starting point**
-
-    - On site, spatial orientation is often difficult; deliveries and defect reports lack a clear room reference.
-
-    - Paper lists and verbal notes go stale quickly and cause misassignment.
-
+    - Trades get in each other's way during fit-out because preceding work is missing or it is unclear which room has been released.
+    - Programmes by storey do not show the status of individual rooms; rework only surfaces at handover.
 
     **Goal & benefit**
-
-    - Derive uniform on-site room labelling (e.g. on the window) from the model.
-
-    - QR scan for orientation and for logistics and defect capture on the same verifiable room reference.
-
+    - Derive a room-by-room checklist with fit-out steps, sequence, and release per trade from the room list of the model.
+    - The room QR code opens the room's checklist; completion notices and obstructions are assigned to the right room at once.
 
     **Process**
-
-    1. Maintain interior spaces in the model with stable planning room number (Name) and room use (LongName).
-
-    2. Extract the room list from the model and print QR labels with room name and number.
-
-    3. Affix labels room by room (e.g. on the window).
-
+    1. Maintain interior spaces in the model with stable planning room number (Name) and room use (LongName) and extract the room list.
+    2. Agree fit-out steps, sequence, and release criteria per room type with the trades and set up a checklist for each room.
+    3. Affix room QR labels and update completion notices, releases, and obstructions on site.
 
     **Deliverable**
-
-    - Space data from the architecture model with clear identification and a coordinated fit-out checklist.
-
-    - QR labels for each space with identification matching the model.'
-workflow_group: null
+    - Coordinated room-by-room fit-out checklist with steps, sequence, and release criteria.
+    - QR labels for each room with identification matching the model and a link to the checklist.
+workflow_group: fortschritt-logistik
 parent_workflow: pragmaticbim:workflow/con
-picture_link: null
+picture_link:
 status: active
 service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Construction-phase (typically SIA 51–53). QR encodes planning Name + LongName. Do not use SignageRoomNumber for this use case – that belongs to opr-signage-room-number.
+comment: >-
+  Construction-phase (typically SIA 51–53). Lean fit-out checklist per room.
+  QR encodes planning Name + LongName. The room labels are shared with
+  CON-DEFECT-MGMT; this workflow uses them for fit-out status and releases,
+  not for defects. Do not use SignageRoomNumber for this use case – that
+  belongs to opr-signage-room-number.

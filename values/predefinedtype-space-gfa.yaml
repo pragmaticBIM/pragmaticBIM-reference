@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - GFA
+    - GFA
   fr:
-  - GFA
+    - GFA
   it:
-  - GFA
+    - GFA
   en:
-  - GFA
+    - GFA

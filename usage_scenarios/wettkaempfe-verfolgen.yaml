@@ -1,0 +1,46 @@
+id: pragmaticbim:usage-scenario/wettkaempfe-verfolgen
+code: US-SP-05
+sort_order: 6
+name:
+  de: Wettkämpfe verfolgen
+  fr: Suivre les compétitions
+  it: Seguire le gare
+  en: Watching competitions
+description:
+  de: Zuschauende verfolgen Spiele und Wettkämpfe vor Ort. Eine Tribüne entscheidet über Zuschauerzahl,
+    Fluchtwege und Hallenvolumen.
+  fr: Les spectateurs suivent les matchs et compétitions sur place. Une tribune détermine le nombre de
+    spectateurs, les voies d'évacuation et le volume de la salle.
+  it: Gli spettatori seguono partite e gare sul posto. Una tribuna determina numero di spettatori, vie
+    di fuga e volume della palestra.
+  en: Spectators watch games and competitions on site. A stand determines spectator numbers, escape routes,
+    and hall volume.
+uses:
+- pragmaticbim:use/sport
+tags:
+- publikum
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/wettkaempfe-verfolgen-stand
+  sort_order: 1
+  name:
+    de: Tribüne an der Halle
+    fr: Tribune dans la salle
+    it: Tribuna nella palestra
+    en: Stand in the hall
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/tribuene
+    to_room_type: pragmaticbim:room-type/sporthalle
+  adds:
+  - pragmaticbim:room-type/tribuene
+  - pragmaticbim:room-type/sporthalle
+- id: pragmaticbim:scenario-option/wettkaempfe-verfolgen-none
+  sort_order: 2
+  name:
+    de: Keine Zuschauerplätze
+    fr: Pas de places pour spectateurs
+    it: Nessun posto per spettatori
+    en: No spectator seating
+  exclusive: true

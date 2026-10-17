@@ -1,0 +1,65 @@
+id: pragmaticbim:usage-scenario/umziehen-und-duschen
+code: US-SP-03
+sort_order: 4
+name:
+  de: Umziehen und duschen
+  fr: Se changer et se doucher
+  it: Cambiarsi e fare la doccia
+  en: Changing and showering
+description:
+  de: Sporttreibende ziehen sich vor und nach dem Training um. Getrennte Garderoben entscheiden über Belegung,
+    Geschlechtertrennung und Hygiene.
+  fr: Les sportifs se changent avant et après l'entraînement. Des vestiaires séparés déterminent l'occupation,
+    la séparation des sexes et l'hygiène.
+  it: Gli sportivi si cambiano prima e dopo l'allenamento. Spogliatoi separati determinano occupazione,
+    separazione per sesso e igiene.
+  en: Athletes change before and after training. Separate changing rooms determine booking, gender separation,
+    and hygiene.
+uses:
+- pragmaticbim:use/sport
+tags:
+- garderobe
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/umziehen-und-duschen-changing
+  sort_order: 1
+  name:
+    de: Umkleide
+    fr: Vestiaire
+    it: Spogliatoio
+    en: Changing room
+  quantity:
+    id: pragmaticbim:quantity/umziehen-und-duschen-changing
+    sort_order: 1
+    name:
+      de: Anzahl Garderobenplätze
+      fr: Nombre de places de vestiaire
+      it: Numero di posti guardaroba
+      en: Number of cloakroom places
+    status: active
+  adds:
+  - pragmaticbim:room-type/umkleideraum
+- id: pragmaticbim:scenario-option/umziehen-und-duschen-changing-shower
+  sort_order: 2
+  name:
+    de: Umkleide mit Duschen
+    fr: Vestiaire avec douches
+    it: Spogliatoio con docce
+    en: Changing room with showers
+  quantity:
+    id: pragmaticbim:quantity/umziehen-und-duschen-changing-shower
+    sort_order: 1
+    name:
+      de: Anzahl Garderobenplätze
+      fr: Nombre de places de vestiaire
+      it: Numero di posti guardaroba
+      en: Number of cloakroom places
+    status: active
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/umkleideraum
+    to_room_type: pragmaticbim:room-type/duschraum
+  adds:
+  - pragmaticbim:room-type/umkleideraum
+  - pragmaticbim:room-type/duschraum

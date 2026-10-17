@@ -1,0 +1,51 @@
+id: pragmaticbim:usage-scenario/diagnostik-durchfuehren
+code: US-HE-04
+sort_order: 5
+name:
+  de: Diagnostik durchführen
+  fr: Réaliser le diagnostic
+  it: Eseguire la diagnostica
+  en: Performing diagnostics
+description:
+  de: Fachpersonen gewinnen diagnostische Bilder oder analysieren Proben. Das Verfahren entscheidet über
+    Spezialräume, Wege und technische Ausstattung.
+  fr: Les professionnels produisent des images diagnostiques ou analysent des échantillons. La méthode
+    détermine les locaux spécialisés, les trajets et l'équipement.
+  it: I professionisti producono immagini diagnostiche o analizzano campioni. Il metodo determina locali
+    specializzati, percorsi e attrezzature.
+  en: Professionals produce diagnostic images or analyse samples. The method determines specialist rooms,
+    travel, and technical equipment.
+uses:
+- pragmaticbim:use/gesundheit
+tags:
+- diagnostik
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/diagnostik-durchfuehren-imaging
+  sort_order: 1
+  name:
+    de: Bildgebung
+    fr: Imagerie
+    it: Diagnostica per immagini
+    en: Imaging
+  adds:
+  - pragmaticbim:room-type/bildgebungsraum
+- id: pragmaticbim:scenario-option/diagnostik-durchfuehren-laboratory
+  sort_order: 2
+  name:
+    de: Medizinisches Labor
+    fr: Laboratoire médical
+    it: Laboratorio medico
+    en: Medical laboratory
+  adds:
+  - pragmaticbim:room-type/medizinisches-labor
+- id: pragmaticbim:scenario-option/diagnostik-durchfuehren-external
+  sort_order: 3
+  name:
+    de: Externe Diagnostik
+    fr: Diagnostic externe
+    it: Diagnostica esterna
+    en: External diagnostics
+  exclusive: true

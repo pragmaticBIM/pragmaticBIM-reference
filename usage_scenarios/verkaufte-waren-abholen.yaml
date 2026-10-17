@@ -1,0 +1,55 @@
+id: pragmaticbim:usage-scenario/verkaufte-waren-abholen
+code: US-VK-05
+sort_order: 6
+name:
+  de: Verkaufte Waren abholen
+  fr: Retirer les marchandises achetées
+  it: Ritirare la merce acquistata
+  en: Collecting purchased goods
+description:
+  de: Kundschaft holt online bestellte oder grosse gekaufte Waren ab. Die Ausgabe entscheidet über Wartezeit,
+    Nähe zum Lager und Zufahrt mit dem Auto.
+  fr: La clientèle retire des marchandises commandées en ligne ou des achats volumineux. Le retrait détermine
+    le temps d'attente, la proximité du stock et l'accès en voiture.
+  it: La clientela ritira merci ordinate online o acquisti voluminosi. Il ritiro determina tempi di attesa,
+    vicinanza al magazzino e accesso in auto.
+  en: Customers collect goods ordered online or bulky purchases. Collection determines waiting time, proximity
+    to stock, and car access.
+uses:
+- pragmaticbim:use/verkauf
+tags:
+- abholung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/verkaufte-waren-abholen-pickup-point
+  sort_order: 1
+  name:
+    de: Abholstation
+    fr: Point de retrait
+    it: Punto di ritiro
+    en: Pickup point
+  adds:
+  - pragmaticbim:room-type/abholstation
+- id: pragmaticbim:scenario-option/verkaufte-waren-abholen-from-store
+  sort_order: 2
+  name:
+    de: Abholstation am Lager
+    fr: Point de retrait au stock
+    it: Punto di ritiro al magazzino
+    en: Pickup point at the store room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/allgemeiner-lagerraum
+    to_room_type: pragmaticbim:room-type/abholstation
+  adds:
+  - pragmaticbim:room-type/allgemeiner-lagerraum
+  - pragmaticbim:room-type/abholstation
+- id: pragmaticbim:scenario-option/verkaufte-waren-abholen-checkout
+  sort_order: 3
+  name:
+    de: Ausgabe an der Kasse
+    fr: Remise à la caisse
+    it: Consegna alla cassa
+    en: Handed out at the checkout
+  exclusive: true

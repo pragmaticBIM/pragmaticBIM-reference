@@ -1,0 +1,84 @@
+id: pragmaticbim:room-type/technikhohlraum
+code: RT-VO-04
+sort_order: 118
+name:
+  de: Technikhohlraum
+  fr: Vide technique
+  it: Vuoto tecnico
+  en: Mechanical Void
+definition:
+  de: Nicht begehbarer Technikhohlraum.
+  fr: Vide technique non accessible.
+  it: Intercapedine tecnica non accessibile.
+  en: Non-accessible mechanical void.
+room_type_kind: room
+room_name: RN-12-20-02
+activity: S-VOI-PLN
+default_scope: building
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/technikhohlraum-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-interior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-interior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: false
+  - element: pragmaticbim:element/spaces-interior
+    name: LongName
+    value:
+      de: Technikhohlraum
+      fr: Vide technique
+      it: Vuoto tecnico
+      en: Mechanical Void
+  - element: pragmaticbim:element/spaces-interior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: FF
+  - element: pragmaticbim:element/spaces-interior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: nicht definiert
+  - element: pragmaticbim:element/spaces-interior
+    name: WallCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: nicht definiert
+  - element: pragmaticbim:element/spaces-interior
+    name: CeilingCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Sonstige / unbekannte Deckenbekleidung
+      fr: Other / unknown ceiling covering
+      it: Other / unknown ceiling covering
+      en: Other / unknown ceiling covering
+  - element: pragmaticbim:element/spaces-interior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Workshop
+  - element: pragmaticbim:element/spaces-interior
+    name: InteriorOrExteriorSpace
+    value: INTERNAL
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 5.0
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-interior
+    name: PeakOccupancy
+    pset: ePset_SpaceRequirement
+    value: 0
+  - element: pragmaticbim:element/spaces-interior
+    name: DailyOperatingHours
+    pset: ePset_SpaceRequirement
+    value: 0
+  - element: pragmaticbim:element/spaces-interior
+    name: OutdoorAirFlowRate
+    pset: ePset_SpaceRequirement
+    value: 0
+  status: active

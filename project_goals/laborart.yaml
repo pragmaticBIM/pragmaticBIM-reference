@@ -1,0 +1,67 @@
+id: pragmaticbim:project-goal/laborart
+sort_order: 1121
+group: rahmenbedingungen
+code: PG-29
+name:
+  de: Laborart
+  fr: Type de laboratoire
+  it: Tipo di laboratorio
+  en: Laboratory type
+tag:
+  de: Labor
+  fr: Laboratoire
+  it: Laboratorio
+  en: Lab
+description:
+  de: |-
+    Nass- und Trockenlabore unterscheiden sich in Wasser- und Abwasseranschlüssen, Lüftung und Oberflächen.
+
+    Ohne diese Festlegung bleiben Anschlüsse, Lüftung und Oberflächen offen. Ein Nasslabor wird dann wie ein Trockenlabor bestellt, oder umgekehrt.
+  fr: |-
+    Les laboratoires humides et secs diffèrent par les raccordements d'eau et d'eaux usées, la ventilation et les surfaces.
+
+    Sans cette décision, raccordements, ventilation et surfaces restent ouverts. Un laboratoire humide est alors commandé comme un laboratoire sec, ou l'inverse.
+  it: |-
+    I laboratori umidi e secchi differiscono per allacciamenti d'acqua e acque reflue, ventilazione e superfici.
+
+    Senza questa decisione allacciamenti, ventilazione e superfici restano aperti. Un laboratorio umido viene allora commissionato come uno secco, o il contrario.
+  en: |-
+    Wet and dry labs differ in water and drainage connections, ventilation, and surfaces.
+
+    Without this decision connections, ventilation, and surfaces stay open. A wet lab is then ordered like a dry lab, or the other way round.
+status: active
+uses:
+- pragmaticbim:use/labor
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/laborart-nasslabor
+  code: LBA-01
+  sort_order: 1
+  name:
+    de: Nasslabor
+    fr: Laboratoire humide
+    it: Laboratorio umido
+    en: Wet lab
+  description:
+    de: Arbeit mit Flüssigkeiten und Chemikalien an Spülen und Abzügen.
+    fr: Travail avec des liquides et des produits chimiques aux éviers et sous les hottes.
+    it: Lavoro con liquidi e sostanze chimiche a lavelli e cappe.
+    en: Work with liquids and chemicals at sinks and fume hoods.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/laborart-trockenlabor
+  code: LBA-02
+  sort_order: 2
+  name:
+    de: Trockenlabor
+    fr: Laboratoire sec
+    it: Laboratorio secco
+    en: Dry lab
+  description:
+    de: Arbeit an Geräten, Messplätzen und Rechnern.
+    fr: Travail sur des appareils, postes de mesure et ordinateurs.
+    it: Lavoro su apparecchi, postazioni di misura e computer.
+    en: Work at instruments, measuring stations, and computers.
+  status: active
+  comment: ''

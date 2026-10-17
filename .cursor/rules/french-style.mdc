@@ -1,0 +1,100 @@
+---
+description: French spelling, terminology, and register for fr fields and the French book locale
+globs: "{elements,workflows,values,documents,models,project_goals,phases,domains}/*.yaml,book/locales/fr/**"
+alwaysApply: false
+---
+
+# French style (Elementplan)
+
+French is a translation target, not the source. Write from the German meaning,
+never from German or English word order. A sentence that a Suisse romande
+project manager would not say out loud is wrong, even when every word is a
+correct dictionary match.
+
+## Spelling and register
+
+Swiss French (Suisse romande) construction and planning language.
+
+| Use | Not | Note |
+|---|---|---|
+| numérisation, organisation, visualisation | digitalisation (FR-FR default OK too for digitalization of orgs; prefer *numérisation* for project digitalization) | *-isation* endings |
+| maître d’ouvrage | propriétaire (as default for Bauherr) | |
+| étage | storey calque | *étage* for Geschoss; *dalle* for slab |
+| programme des locaux | programme spatial / space program | Raumprogramm |
+| cas d’application | cas d’usage | Anwendungsfall in Swiss planning |
+| élément | composant (as default for Bauteil) | *composant* only when clearly a component part |
+| guillemets « » | “ ” for French body quotes | match DE « » style |
+
+## Terminology
+
+| German | French | Never |
+|---|---|---|
+| Bauherr, Bauherrschaft, Auftraggeber | maître d’ouvrage | propriétaire (default), client (unless idiomatic) |
+| Planer, Fachplaner | planificateur, concepteur | planner |
+| Bestand, Bestandsbau | bâtiment existant, existant | stock |
+| Fachbereich, Fachdisziplin | discipline | domaine alone when ambiguous |
+| Gewerk, Unternehmerlos | corps de métier, lot d’entrepreneur | |
+| Vergabepaket | lot d’adjudication | |
+| Geschoss | étage | floor (ambiguous) |
+| Raumprogramm | programme des locaux | |
+| Nutzungsvereinbarung | convention d’utilisation | |
+| Bauteil | élément | composant (default) |
+| Anwendungsfall | cas d’application | cas d’usage |
+| Werteliste | liste de valeurs | |
+| Abnahme | réception, remise | |
+| Rückbau | déconstruction | |
+| Webanwendung | application web | logiciel, webapp, software |
+
+`Elementplan`, `pragmaticBIM`, `abstractBIM`, `Madaster` and IFC identifiers
+stay untranslated. `pragmaticBIM-Referenz` is *Référence pragmaticBIM*, short
+*la Référence* (capitalized, feminine). See `.cursor/rules/naming.mdc` for which subject does what.
+
+## Calques (do not use)
+
+| Concept | de | fr (native) | avoid |
+|---|---|---|---|
+| keep in model | im Modell führen | saisir / tenir dans la maquette | *Porter* |
+| derive | ableiten | déduire / calculer / obtenir | *dériver* |
+| MEP medium | Medium | fluide | *médium* |
+| early phase | frühe Phase | phase initiale | *phases précoces* |
+| ceiling plan | Deckenspiegel | plan de plafond | *miroir de plafond* |
+| below terrain | unter Terrain | sous le niveau du terrain | *sous terrain* |
+| cost bearer | Kostenträger | imputation | *support de coûts* |
+
+## Register
+
+1. Write what happens, not what is theoretically possible.
+2. Prefer a verb over a noun chain.
+3. Keep the German sentence count; book layout depends on length.
+4. Section headers translate one-to-one; structure does not move.
+
+## Dashes and numbers (Swiss)
+
+Use dashes sparingly. Parenthetical aside: spaced en dash ` – `. Token or
+definition gloss: em dash `` `NEW` — new `` / `**Concept** — …`. Compounds:
+hyphen `-` (`bois-béton`). Numbers: thousands with apostrophe (`1'000`),
+decimal point (`3.14`), space before percent (`80 %`, `± 25 %`).
+
+| de | fr |
+|---|---|
+| Beschreibung | Description |
+| Modellierungshinweis | Directives de modélisation |
+| Zulässige Werte | Valeurs admises |
+| Hinweis | Remarque |
+| Beispiel | Exemple |
+
+IFC entities, property set names, enum tokens in backticks, FEEL expressions,
+and `pragmaticbim:` identifiers are never translated.
+
+```yaml
+# ❌ BAD — calque of German führen / English identify-if
+fr: |-
+  Identifie si le composant se trouve sous terrain, afin que le propriétaire
+  puisse optimiser le stock existant ainsi que le programme spatial.
+
+# ✅ GOOD
+fr: |-
+  Indique si l’élément se trouve sous le niveau du terrain, afin que le
+  maître d’ouvrage puisse optimiser le bâtiment existant et le programme
+  des locaux.
+```

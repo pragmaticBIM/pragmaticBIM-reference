@@ -1,0 +1,73 @@
+id: pragmaticbim:room-type/innenhof
+code: RT-WH-32
+sort_order: 32
+name:
+  de: Innenhof
+  fr: Cour intérieure
+  it: Corte interna
+  en: Patio
+definition:
+  de: Innenhof oder Patio.
+  fr: Cour intérieure ou patio.
+  it: Corte interna o patio.
+  en: Enclosed or semi-enclosed outdoor sitting area.
+room_type_kind: room
+room_name: RN-11-10-03
+activity: O
+default_scope: dwelling
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/innenhof-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Innenhof
+      fr: Cour intérieure
+      it: Corte interna
+      en: Patio
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: ANF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Pflaster mit Fugen
+      fr: Paving with joints
+      it: Paving with joints
+      en: Paving with joints
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  status: active
+  restrictions:
+    min_area: 10

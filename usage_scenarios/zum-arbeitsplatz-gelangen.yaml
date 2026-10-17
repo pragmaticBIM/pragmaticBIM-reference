@@ -1,0 +1,54 @@
+id: pragmaticbim:usage-scenario/zum-arbeitsplatz-gelangen
+code: US-WR-08
+sort_order: 1
+name:
+  de: Zum Arbeitsplatz gelangen
+  fr: Accéder au poste de travail
+  it: Raggiungere il posto di lavoro
+  en: Reaching the workplace
+description:
+  de: Mitarbeitende und Besuchende gelangen vom Eingang zu den Arbeitsplätzen auf allen Geschossen. Die
+    Erschliessung entscheidet über Wege, Hindernisfreiheit und Flächenbedarf.
+  fr: Le personnel et les visiteurs vont de l'entrée aux postes de travail à tous les étages. La desserte
+    détermine les parcours, l'accès sans obstacle et la surface nécessaire.
+  it: Personale e visitatori vanno dall'ingresso alle postazioni su tutti i piani. L'accesso determina
+    percorsi, assenza di ostacoli e fabbisogno di superficie.
+  en: Staff and visitors travel from the entrance to workplaces on every floor. The access arrangement
+    determines routes, step-free access, and area demand.
+uses:
+- pragmaticbim:use/arbeit
+tags:
+- erschliessung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/zum-arbeitsplatz-gelangen-stair
+  sort_order: 1
+  name:
+    de: Treppenhaus
+    fr: Cage d'escalier
+    it: Vano scale
+    en: Stairwell
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+- id: pragmaticbim:scenario-option/zum-arbeitsplatz-gelangen-stair-elevator
+  sort_order: 2
+  name:
+    de: Treppenhaus und Aufzug
+    fr: Cage d'escalier et ascenseur
+    it: Vano scale e ascensore
+    en: Stairwell and elevator
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone

@@ -1,0 +1,44 @@
+id: pragmaticbim:room-type/hotel-einzelzimmer
+legacy_ids:
+- pragmaticbim:unit-type/hotel-einzelzimmer
+code: UT-BH-01
+sort_order: 8
+name:
+  de: Einzelzimmer
+  fr: Chambre simple
+  it: Camera singola
+  en: Single room
+definition:
+  de: Bruttovolumen eines Hotelzimmers für eine Person, mit eigenem Bad.
+  fr: Volume brut d'une chambre d'hôtel pour une personne, avec salle de bain privée.
+  it: Volume lordo di una camera d'albergo per una persona, con bagno privato.
+  en: Gross volume of a hotel room for one person, with a private bathroom.
+room_type_kind: container
+uses:
+- pragmaticbim:use/beherbergung
+contains:
+- room_type: pragmaticbim:room-type/hotelzimmer
+- room_type: pragmaticbim:room-type/badezimmer
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/hotel-einzelzimmer-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Einzelzimmer
+      fr: Chambre simple
+      it: Camera singola
+      en: Single room
+  status: active

@@ -15,14 +15,14 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - 'TRUE'
-  - 'FALSE'
+    - 'TRUE'
+    - 'FALSE'
   fr:
-  - 'TRUE'
-  - 'FALSE'
+    - 'TRUE'
+    - 'FALSE'
   it:
-  - 'TRUE'
-  - 'FALSE'
+    - 'TRUE'
+    - 'FALSE'
   en:
-  - 'TRUE'
-  - 'FALSE'
+    - 'TRUE'
+    - 'FALSE'

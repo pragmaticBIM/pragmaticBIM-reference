@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Rahmenbedingung
+    - Rahmenbedingung
   fr:
-  - Condition-cadre
+    - Condition-cadre
   it:
-  - Condizione quadro
+    - Condizione quadro
   en:
-  - Planning constraint
+    - Planning constraint

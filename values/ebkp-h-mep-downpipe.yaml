@@ -15,10 +15,10 @@ norm_reference: SN 506 511
 status: active
 values:
   de:
-  - D09.01
+    - 'D09.01'
   fr:
-  - D09.01
+    - 'D09.01'
   it:
-  - D09.01
+    - 'D09.01'
   en:
-  - D09.01
+    - 'D09.01'

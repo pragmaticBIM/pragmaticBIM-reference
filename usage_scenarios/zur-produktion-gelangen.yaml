@@ -1,0 +1,73 @@
+id: pragmaticbim:usage-scenario/zur-produktion-gelangen
+code: US-PR-06
+sort_order: 1
+name:
+  de: Zur Produktion gelangen
+  fr: Accéder à la production
+  it: Raggiungere la produzione
+  en: Reaching production
+description:
+  de: Mitarbeitende und Material gelangen auf die Produktionsgeschosse. Die Erschliessung entscheidet
+    über Lasten, Materialfluss und die Trennung von Personen- und Warenwegen.
+  fr: Le personnel et les matériaux rejoignent les étages de production. La desserte détermine les charges,
+    le flux de matières et la séparation des parcours personnes et marchandises.
+  it: Personale e materiali raggiungono i piani produttivi. L'accesso determina carichi, flusso dei materiali
+    e separazione dei percorsi persone e merci.
+  en: Staff and materials reach the production floors. The access arrangement determines loads, material
+    flow, and separation of people and goods routes.
+uses:
+- pragmaticbim:use/produktion
+tags:
+- erschliessung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/zur-produktion-gelangen-stair
+  sort_order: 1
+  name:
+    de: Treppenhaus
+    fr: Cage d'escalier
+    it: Vano scale
+    en: Stairwell
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+- id: pragmaticbim:scenario-option/zur-produktion-gelangen-stair-elevator
+  sort_order: 2
+  name:
+    de: Treppenhaus und Aufzug
+    fr: Cage d'escalier et ascenseur
+    it: Vano scale e ascensore
+    en: Stairwell and elevator
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+- id: pragmaticbim:scenario-option/zur-produktion-gelangen-service-lift
+  sort_order: 3
+  name:
+    de: Treppenhaus, Aufzug und Warenaufzug
+    fr: Cage d'escalier, ascenseur et monte-charge
+    it: Vano scale, ascensore e montacarichi
+    en: Stairwell, elevator, and service lift
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  - from_room_type: pragmaticbim:room-type/treppenhaus
+    to_room_type: pragmaticbim:room-type/warenaufzug
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+  - pragmaticbim:room-type/warenaufzug

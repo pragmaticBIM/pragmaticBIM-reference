@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Baum
+    - Baum
   fr:
-  - Arbre
+    - Arbre
   it:
-  - Albero
+    - Albero
   en:
-  - Tree
+    - Tree

@@ -1,0 +1,46 @@
+id: pragmaticbim:usage-scenario/gepaeck-deponieren
+code: US-VE-05
+sort_order: 6
+name:
+  de: Gepäck deponieren
+  fr: Déposer ses bagages
+  it: Depositare i bagagli
+  en: Leaving luggage
+description:
+  de: Reisende lassen Gepäck für einige Stunden zurück. Das Aufbewahrungsangebot entscheidet über Sicherheit,
+    Fläche und Personalbedarf.
+  fr: Les voyageurs laissent leurs bagages pour quelques heures. L'offre de consigne détermine la sécurité,
+    la surface et les besoins en personnel.
+  it: I viaggiatori lasciano i bagagli per alcune ore. L'offerta di deposito determina sicurezza, superficie
+    e fabbisogno di personale.
+  en: Passengers leave luggage for a few hours. The storage offer determines security, area, and staffing.
+uses:
+- pragmaticbim:use/verkehr
+tags:
+- gepaeck
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/gepaeck-deponieren-lockers
+  sort_order: 1
+  name:
+    de: Schliessfächer
+    fr: Casiers
+    it: Armadietti
+    en: Lockers
+  adds:
+  - pragmaticbim:room-type/schliessfachraum
+- id: pragmaticbim:scenario-option/gepaeck-deponieren-staffed
+  sort_order: 2
+  name:
+    de: Bediente Gepäckaufbewahrung
+    fr: Consigne avec personnel
+    it: Deposito bagagli presidiato
+    en: Staffed left-luggage office
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/schalterhalle
+    to_room_type: pragmaticbim:room-type/allgemeiner-lagerraum
+  adds:
+  - pragmaticbim:room-type/schalterhalle
+  - pragmaticbim:room-type/allgemeiner-lagerraum

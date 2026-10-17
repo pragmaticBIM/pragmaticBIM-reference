@@ -7,140 +7,113 @@ name:
   it: Calcolare l'ecobilancio
   en: Calculate the life-cycle assessment
 description:
-  de: 'Bauteilmengen, Materialien und Produktklasse so führen, dass Ökobilanz und graue Energie über KBOB ohne parallele Mengenermittlung möglich werden.
-
+  de: |-
+    Bauteilmengen, Materialien und Produktklasse so führen, dass Ökobilanz und graue Energie über KBOB ohne parallele Mengenermittlung möglich werden: früh über die Produktklasse, später präzisiert über den berechneten Typ.
 
     **Ausgangslage**
-
     - Lebenszyklusbewertungen brauchen belastbare Mengen und Materialangaben; diese werden oft separat manuell ermittelt.
-
-    - Manuelle Nachpflege für SNBS, KBOB oder LCA-Tools ist fehleranfällig und verzögert Entscheide – der Produkt-zu-KBOB-Bezug fehlt oft im Modell.
-
+    - Manuelle Nachpflege für SNBS, KBOB oder LCA-Tools ist fehleranfällig und verzögert Entscheide.
 
     **Ziel & Nutzen**
-
     - Frühere, wiederholbare Lebenszyklus- und Graue-Energie-Berechnungen statt später Einmalaufwände.
-
     - KBOB-Kennwerte über die Produktklasse am Bauteil auflösen statt Materialien von Hand nachzuschlüsseln.
-
+    - Die Ökobilanz auf derselben Gliederung wie die Kostenberechnung führen, damit jede Änderung in beide einfliesst.
 
     **Ablauf**
-
-    1. Massgebende Bauteile mit Geometrie, Materialangabe und Produktklasse im Modell führen.
-
-    2. Mengen ausziehen und KBOB-Codes (inkl. verwandter Codes) über die Produktklasse aus dem Produktkatalog auflösen.
-
-    3. Daten in die LCA-/KBOB-Werkzeuge übernehmen und Varianten (graue Energie, GWP) vergleichen.
-
+    1. Massgebende Bauteile mit Geometrie, Materialangabe und Produktklasse im Modell führen, im Vorprojekt als begründete Annahme.
+    2. Mengen ausziehen und KBOB-Codes über die Produktklasse aus dem Produktkatalog auflösen. Ab Bauprojekt Kennwerte je Produktklasse und berechnetem Typ verwenden, also mit Schichtaufbau und Dicke.
+    3. Daten in die LCA-/KBOB-Werkzeuge übernehmen, Varianten vergleichen und graue Energie und Treibhausgase gegen den Zielwert prüfen.
 
     **Lieferergebnis**
+    - Architektur- und Tragwerksmodell mit Material-, Mengen- und Produktklasseninformationen, ab Bauprojekt mit berechneten Typen
+    - Zum Modell rückverfolgbarer Datensatz für Ökobilanz, graue Energie und Variantenvergleich
 
-    - Architektur- und Tragwerksmodell mit Material-, Mengen- und Produktklasseninformationen
-
-    - Zum Modell rückverfolgbarer Datensatz für Ökobilanz, graue Energie und Variantenvergleich'
-  fr: 'Tenir quantités, matériaux et classe de produit dans le modèle pour permettre ACV et énergie grise via KBOB sans métrés parallèles.
-
+    **Hinweis:** Die Produktklassen und berechneten Bauteiltypen der Kostenberechnung für diese Ökobilanz weiterverwenden.
+  fr: |-
+    Tenir quantités, matériaux et classe de produit dans le modèle pour permettre ACV et énergie grise via KBOB sans métrés parallèles : d'abord par la classe de produit, puis plus précisément par le type calculé.
 
     **Situation de départ**
-
     - Les évaluations du cycle de vie exigent des quantités et matériaux fiables ; ils sont souvent établis manuellement à part.
-
-    - La reprise manuelle pour SNBS, KBOB ou outils ACV est source d''erreurs et retarde les décisions – le lien produit→KBOB manque souvent dans la maquette.
-
+    - La reprise manuelle pour SNBS, KBOB ou outils ACV est source d'erreurs et retarde les décisions.
 
     **Objectif et bénéfice**
-
-    - Calculs de cycle de vie et d''énergie grise plus précoces et reproductibles plutôt que des reprises tardives.
-
-    - Résoudre les indicateurs KBOB via la classe de produit sur l''élément au lieu de reclasser les matériaux à la main.
-
+    - Calculs de cycle de vie et d'énergie grise plus précoces et reproductibles plutôt que des reprises tardives.
+    - Résoudre les indicateurs KBOB via la classe de produit sur l'élément au lieu de reclasser les matériaux à la main.
+    - Établir l'écobilan selon la même structure que le calcul des coûts, afin que chaque modification se répercute sur les deux.
 
     **Déroulement**
-
-    1. Tenir les éléments déterminants avec géométrie, matériau et classe de produit dans la maquette.
-
-    2. Extraire les quantités et résoudre les codes KBOB (y compris codes liés) via la classe de produit du catalogue produits.
-
-    3. Transférer les données dans les outils ACV/KBOB et comparer les variantes (énergie grise, GWP).
-
+    1. Tenir les éléments déterminants avec géométrie, matériau et classe de produit dans la maquette, en avant-projet sous forme d'hypothèse fondée.
+    2. Extraire les quantités et résoudre les codes KBOB via la classe de produit du catalogue produits. Dès le projet de construction, utiliser les indicateurs par classe de produit et type calculé, donc avec composition des couches et épaisseur.
+    3. Transférer les données dans les outils ACV/KBOB, comparer les variantes et vérifier l'énergie grise et les gaz à effet de serre par rapport à la valeur cible.
 
     **Livrable**
+    - Maquettes architecture et structure avec informations matériaux, quantités et classe de produit, dès le projet de construction avec les types calculés
+    - Jeu de données traçable jusqu'aux maquettes pour ACV, énergie grise et comparaison de variantes
 
-    - Maquettes architecture et structure avec informations matériaux, quantités et classe de produit
-
-    - Jeu de données traçable jusqu''aux maquettes pour ACV, énergie grise et comparaison de variantes'
-  it: 'Gestire quantità, materiali e classe di prodotto nel modello per consentire LCA ed energia grigia via KBOB senza computi paralleli.
-
+    **Remarque :** Réutiliser pour cet écobilan les classes de produits et les types d'éléments calculés du calcul des coûts.
+  it: |-
+    Gestire quantità, materiali e classe di prodotto nel modello per consentire LCA ed energia grigia via KBOB senza computi paralleli: dapprima tramite la classe di prodotto, poi in modo più preciso tramite il tipo calcolato.
 
     **Situazione di partenza**
-
     - Le valutazioni del ciclo di vita richiedono quantità e materiali affidabili; spesso vengono rilevati manualmente a parte.
-
-    - Il ripristino manuale per SNBS, KBOB o strumenti LCA è soggetto a errori e ritarda le decisioni – il collegamento prodotto→KBOB spesso manca nel modello.
-
+    - Il ripristino manuale per SNBS, KBOB o strumenti LCA è soggetto a errori e ritarda le decisioni.
 
     **Obiettivo e beneficio**
-
     - Calcoli di ciclo di vita ed energia grigia più precoci e ripetibili invece di riprese tardive.
-
     - Risolvere gli indicatori KBOB tramite la classe di prodotto sul componente invece di riclassificare i materiali a mano.
-
+    - Gestire l'ecobilancio secondo la stessa struttura del calcolo dei costi, affinché ogni modifica confluisca in entrambi.
 
     **Svolgimento**
-
-    1. Gestire i componenti rilevanti con geometria, materiale e classe di prodotto nel modello.
-
-    2. Estrarre le quantità e risolvere i codici KBOB (inclusi i codici correlati) tramite la classe di prodotto del catalogo prodotti.
-
-    3. Trasferire i dati negli strumenti LCA/KBOB e confrontare le varianti (energia grigia, GWP).
-
+    1. Gestire i componenti rilevanti con geometria, materiale e classe di prodotto nel modello, nell'avamprogetto come ipotesi motivata.
+    2. Estrarre le quantità e risolvere i codici KBOB tramite la classe di prodotto del catalogo prodotti. Dal progetto di costruzione usare indici per classe di prodotto e tipo calcolato, cioè con stratigrafia e spessore.
+    3. Trasferire i dati negli strumenti LCA/KBOB, confrontare le varianti e verificare energia grigia e gas serra rispetto al valore obiettivo.
 
     **Risultato della fornitura**
+    - Modelli di architettura e struttura con informazioni su materiali, quantità e classe di prodotto, dal progetto di costruzione con i tipi calcolati
+    - Set di dati tracciabile fino ai modelli per LCA, energia grigia e confronto delle varianti
 
-    - Modelli di architettura e struttura con informazioni su materiali, quantità e classe di prodotto
-
-    - Set di dati tracciabile fino ai modelli per LCA, energia grigia e confronto delle varianti'
-  en: 'Carry component quantities, materials, and product class so LCA and grey energy via KBOB are possible without parallel quantity lists.
-
+    **Nota:** Riutilizzare per questo ecobilancio le classi di prodotto e i tipi di componente calcolati del calcolo dei costi.
+  en: |-
+    Carry component quantities, materials, and product class so LCA and grey energy via KBOB are possible without parallel quantity lists: early via the product class, later refined by the calculated type.
 
     **Starting point**
-
     - Life-cycle assessments need reliable quantities and material data; these are often taken off manually in parallel.
-
-    - Manual rework for SNBS, KBOB, or LCA tools is error-prone and delays decisions – the product→KBOB link is often missing in the model.
-
+    - Manual rework for SNBS, KBOB, or LCA tools is error-prone and delays decisions.
 
     **Goal & benefit**
-
     - Earlier, repeatable life-cycle and grey-energy calculations instead of late one-off rework.
-
     - Resolve KBOB indicators via the product class on the component instead of re-keying materials by hand.
-
+    - Run the LCA on the same breakdown as the cost calculation, so every change feeds into both.
 
     **Process**
-
-    1. Carry governing components with geometry, material, and product class in the model.
-
-    2. Extract quantities and resolve KBOB codes (including related codes) via the product class from the product catalogue.
-
-    3. Transfer the data into LCA/KBOB tools and compare variants (grey energy, GWP).
-
+    1. Carry governing components with geometry, material, and product class in the model, as a reasoned assumption in preliminary design.
+    2. Extract quantities and resolve KBOB codes via the product class from the product catalogue. From the construction project onwards, use indicators per product class and calculated type, that is with layer build-up and thickness.
+    3. Transfer the data into LCA/KBOB tools, compare variants, and check grey energy and greenhouse gas emissions against the target value.
 
     **Deliverable**
+    - Architecture and structural models with material, quantity, and product-class information, with calculated types from the construction project onwards
+    - Dataset traceable to the models for LCA, grey energy, and option comparison
 
-    - Architecture and structural models with material, quantity, and product-class information
-
-    - Dataset traceable to the models for LCA, grey energy, and option comparison'
-workflow_group: konzept
+    **Note:** Reuse the product classes and calculated component types from the cost calculation for this life-cycle assessment.
+workflow_group: nachhaltigkeit-energie
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
 service_kind: special
 countries:
-- CH
+  - CH
 needed_in_domain:
-- pragmaticbim:domain/architecture
-- pragmaticbim:domain/structural
-comment: 'Environmental LCA (Ökobilanz), not lifecycle costing. Material attribute and ePset_Cost.ProductClass required on governing building elements. Resolve KBOB / kbob_related from the product catalogue
-  bridge (book product- classifications.yaml / schema.pragmaticbim.ch), not as a separate IFC attribute. Distinct from DES-MATERIAL-PASS: ePset_Circularity.MaterialOrProductId is a Madaster/baubook ID space,
-  not schema ProductClass. ProductClass assignment upstream: BES-PRODUCT-TENDER.'
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/structural
+comment: >-
+  Environmental LCA (Ökobilanz), not lifecycle costing. Material attribute and
+  ePset_Cost.ProductClass required on governing building elements. Resolve
+  KBOB / kbob_related from the product catalogue bridge (book product-
+  classifications.yaml / schema.pragmaticbim.ch), not as a separate IFC attribute.
+  Distinct from DES-MATERIAL-PASS: ePset_Circularity.MaterialOrProductId is a
+  Madaster/baubook ID space, not schema ProductClass. ProductClass assignment
+  upstream: DES-ELEMENT-COST-EARLY for ProductClass and
+  DES-ELEMENT-COST-LATE for CalculatedType. Two stages: ProductClass alone in
+  early phases (Vorprojekt as reasoned assumption); from Bauprojekt (32) also
+  ePset_Cost.CalculatedType for layer build-up and thickness, on the elements
+  that carry GlobalWarmingPotentialMax.

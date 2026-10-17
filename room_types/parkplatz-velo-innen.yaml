@@ -11,18 +11,20 @@ definition:
   fr: Place pour vélos à l'intérieur du bâtiment.
   it: Posto bici all'interno dell'edificio.
   en: Bicycle parking space inside the building.
-attribute_presets:
-- element: pragmaticbim:element/spaces-interior
-  name: PredefinedType
-  value: SPACE
-- element: pragmaticbim:element/spaces-interior
-  name: IsExternal
-  value: false
-- element: pragmaticbim:element/spaces-interior
-  name: LongName
-  value:
-    de: Parkplatz Velo Innen
-    fr: Place vélo intérieure
-    it: Posto bici interno
-    en: Interior Bicycle Parking
+room_type_kind: room
+room_name: RN-13-10-03
+activity: S-PRK-INT
+default_scope: building
 status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/parkplatz-velo-innen-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-parking
+    name: PredefinedType
+    value: PARKING
+  - element: pragmaticbim:element/spaces-parking
+    name: ParkingUse
+    pset: Pset_SpaceParking
+    value: BICYCLE
+  status: active

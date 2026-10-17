@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/konzentriert-arbeiten
+code: US-WR-01
+sort_order: 2
+name:
+  de: Konzentriert arbeiten
+  fr: Travailler avec concentration
+  it: Lavorare con concentrazione
+  en: Focused work
+description:
+  de: Mitarbeitende bearbeiten Aufgaben mit hohem Konzentrationsbedarf. Das Arbeitsplatzkonzept entscheidet
+    über Ruhe, Privatheit und Flächenbedarf.
+  fr: Le personnel accomplit des tâches exigeant une forte concentration. Le concept de poste de travail
+    détermine le calme, l'intimité et la surface nécessaire.
+  it: Il personale svolge compiti che richiedono elevata concentrazione. Il concetto di postazione determina
+    tranquillità, riservatezza e fabbisogno di superficie.
+  en: Staff perform tasks that require sustained concentration. The workplace concept determines quiet,
+    privacy, and area demand.
+uses:
+- pragmaticbim:use/arbeit
+tags:
+- arbeiten
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/konzentriert-arbeiten-office
+  sort_order: 1
+  name:
+    de: Einzel- oder Gruppenbüro
+    fr: Bureau individuel ou collectif
+    it: Ufficio individuale o condiviso
+    en: Cellular office
+  adds:
+  - pragmaticbim:room-type/buero
+- id: pragmaticbim:scenario-option/konzentriert-arbeiten-open-plan
+  sort_order: 2
+  name:
+    de: Grossraumbüro
+    fr: Bureau paysager
+    it: Ufficio open space
+    en: Open-plan office
+  adds:
+  - pragmaticbim:room-type/grossraumbuero

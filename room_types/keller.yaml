@@ -1,0 +1,44 @@
+id: pragmaticbim:room-type/keller
+legacy_ids:
+- pragmaticbim:unit-type/keller
+code: UT-KL-01
+sort_order: 13
+name:
+  de: Keller
+  fr: Sous-sol
+  it: Interrato
+  en: Basement
+definition:
+  de: Bruttovolumen des Kellers.
+  fr: Volume brut du sous-sol.
+  it: Volume lordo dell'interrato.
+  en: Gross volume of the basement.
+room_type_kind: container
+uses:
+- pragmaticbim:use/keller
+contains:
+- room_type: pragmaticbim:room-type/kellerabteil
+- room_type: pragmaticbim:room-type/flur
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/keller-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Keller
+      fr: Sous-sol
+      it: Interrato
+      en: Basement
+  status: active

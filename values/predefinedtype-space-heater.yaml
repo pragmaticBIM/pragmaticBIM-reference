@@ -15,14 +15,14 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - RADIATOR
-  - CONVECTOR
+    - RADIATOR
+    - CONVECTOR
   fr:
-  - RADIATOR
-  - CONVECTOR
+    - RADIATOR
+    - CONVECTOR
   it:
-  - RADIATOR
-  - CONVECTOR
+    - RADIATOR
+    - CONVECTOR
   en:
-  - RADIATOR
-  - CONVECTOR
+    - RADIATOR
+    - CONVECTOR

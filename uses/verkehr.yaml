@@ -1,0 +1,31 @@
+id: pragmaticbim:use/verkehr
+code: USE-VE
+sort_order: 14
+name:
+  de: Personenverkehr
+  fr: Transport de voyageurs
+  it: Trasporto passeggeri
+  en: Passenger transport
+definition:
+  de: 'Abfertigung und Aufenthalt von Reisenden, etwa in Bahnhofshallen, Terminals und Wartebereichen.
+    Bezugsgrösse: Reisende pro Spitzenstunde.'
+  fr: 'Prise en charge et séjour de voyageurs, p. ex. dans les halls de gare, terminaux et zones d''attente.
+    Grandeur de référence : voyageurs par heure de pointe.'
+  it: 'Accoglienza e permanenza di viaggiatori, ad es. in atri di stazione, terminal e zone d''attesa.
+    Grandezza di riferimento: viaggiatori per ora di punta.'
+  en: 'Handling of travellers and their waiting time, for example in station halls, terminals and waiting
+    areas. Reference quantity: passengers per peak hour.'
+reference_quantity:
+  id: pragmaticbim:quantity/verkehr-reisende
+  code: USE-VE-Q
+  sort_order: 1
+  name:
+    de: Reisende pro Spitzenstunde
+    fr: Voyageurs par heure de pointe
+    it: Viaggiatori per ora di punta
+    en: Passengers per peak hour
+  status: active
+typical_levels:
+- pragmaticbim:project-goal-level/accessibility-wheelchair
+- pragmaticbim:project-goal-level/seismic-bwk-2
+status: active

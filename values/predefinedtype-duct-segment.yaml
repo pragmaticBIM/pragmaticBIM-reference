@@ -1,0 +1,28 @@
+id: pragmaticbim:value/predefinedtype-duct-segment
+code: DUCT-SEG
+name:
+  de: Lüftungskanal
+  fr: Conduit de ventilation
+  it: Canale di ventilazione
+  en: Ventilation duct
+description:
+  de: PredefinedType für IfcDuctSegment in der Techniklagenkoordination.
+  fr: PredefinedType pour IfcDuctSegment dans la coordination des réseaux techniques.
+  it: PredefinedType per IfcDuctSegment nel coordinamento degli impianti.
+  en: PredefinedType for IfcDuctSegment in services coordination.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - RIGIDSEGMENT
+    - FLEXIBLESEGMENT
+  fr:
+    - RIGIDSEGMENT
+    - FLEXIBLESEGMENT
+  it:
+    - RIGIDSEGMENT
+    - FLEXIBLESEGMENT
+  en:
+    - RIGIDSEGMENT
+    - FLEXIBLESEGMENT

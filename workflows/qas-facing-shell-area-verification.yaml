@@ -7,118 +7,75 @@ name:
   it: Giustificare il fabbisogno di superficie delle contropareti
   en: Verify the area requirement of facing shells
 description:
-  de: 'Den Platzbedarf von Vorsatzschalen im Modell berücksichtigen und ihre Flächenauswirkung nachweisen – bevor Nasszellen zu klein werden, Umplanungen auslösen oder die Vermietbarkeit beeinträchtigt
-    wird.
-
+  de: |-
+    Den Platzbedarf von Vorsatzschalen im Modell berücksichtigen und ihre Flächenauswirkung nachweisen – bevor Nasszellen zu klein werden, Umplanungen auslösen oder die Vermietbarkeit beeinträchtigt wird.
 
     **Ausgangslage**
-
     - Vorsatzschalen (z. B. Installationsvorsatzschalen) beanspruchen Fläche und lichten Raum.
-
     - In frühen Projektphasen wird oft mit Plangrafikoptimierten Vorsatzschalen geplant.
 
-
     **Ziel & Nutzen**
-
     - Nachweis in frühen Projektphasen, um zu vermeiden, dass zu kleine Nasszellen zu umplanungsaufwand führen, bzw die Vermietbarkeit gefährden.
 
-
     **Ablauf**
-
     1. Nutzbaren Raum je Vorsatzschale als Raumvolumen bis zu den lichten Innenflächen modellieren.
-
     2. Nettofläche der Vorsatzschalen-Räume und der angrenzenden Nutzräume aus dem Modell auswerten.
-
     3. Flächenauswirkung und ausreichenden Restnutzraum dokumentieren.
 
-
     **Lieferergebnis**
-
-    - Architekturmodell mit lichten Vorsatzschalenvolumen und den erforderlichen Flächeninformationen zum verbleibenden Nutzraum.'
-  fr: 'Tenir compte dans la maquette de l''espace requis par les contre-cloisons et justifier leur effet sur les surfaces – avant que les locaux humides ne deviennent trop petits, n''entraînent des reprises
-    d''études ou ne nuisent à la louabilité.
-
+    - Architekturmodell mit lichten Vorsatzschalenvolumen und den erforderlichen Flächeninformationen zum verbleibenden Nutzraum.
+  fr: |-
+    Tenir compte dans la maquette de l'espace requis par les contre-cloisons et justifier leur effet sur les surfaces – avant que les locaux humides ne deviennent trop petits, n'entraînent des reprises d'études ou ne nuisent à la louabilité.
 
     **Situation de départ**
-
-    - Les contre-cloisons, par exemple les contre-cloisons techniques, occupent de la surface et de l''espace libre.
-
+    - Les contre-cloisons, par exemple les contre-cloisons techniques, occupent de la surface et de l'espace libre.
     - Dans les phases initiales, les contre-cloisons sont souvent étudiées de manière à optimiser le graphisme des plans.
 
-
     **Objectif et bénéfice**
-
-    - Justifier dès les phases initiales, afin d''éviter que des locaux humides trop petits n''entraînent des reprises d''études ou ne mettent en péril la louabilité.
-
+    - Justifier dès les phases initiales, afin d'éviter que des locaux humides trop petits n'entraînent des reprises d'études ou ne mettent en péril la louabilité.
 
     **Déroulement**
-
-    1. Modéliser l''espace utile de chaque contre-cloison comme volume jusqu''aux faces intérieures libres.
-
+    1. Modéliser l'espace utile de chaque contre-cloison comme volume jusqu'aux faces intérieures libres.
     2. Évaluer la surface nette des espaces de contre-cloison et des locaux utiles adjacents à partir du modèle.
-
-    3. Documenter l''impact surfacique et le local utile restant suffisant.
-
+    3. Documenter l'impact surfacique et le local utile restant suffisant.
 
     **Livrable**
-
-    - Maquette d''architecture avec volumes libres des contre-cloisons et informations surfaciques requises sur l''espace utile restant.'
-  it: 'Tenere conto nel modello dello spazio richiesto dalle contropareti e dimostrare il loro effetto sulle superfici – prima che i locali umidi diventino troppo piccoli, provochino riprogettazioni o pregiudichino
-    l''affittabilità.
-
+    - Maquette d'architecture avec volumes libres des contre-cloisons et informations surfaciques requises sur l'espace utile restant.
+  it: |-
+    Tenere conto nel modello dello spazio richiesto dalle contropareti e dimostrare il loro effetto sulle superfici – prima che i locali umidi diventino troppo piccoli, provochino riprogettazioni o pregiudichino l'affittabilità.
 
     **Situazione di partenza**
-
     - Le contropareti, per esempio le contropareti impiantistiche, occupano superficie e spazio libero.
-
     - Nelle fasi iniziali le contropareti sono spesso progettate per ottimizzare la grafica dei disegni.
 
-
     **Obiettivo e beneficio**
-
-    - Fornire la verifica nelle fasi iniziali, per evitare che locali umidi troppo piccoli comportino riprogettazioni o mettano a rischio l''affittabilità.
-
+    - Fornire la verifica nelle fasi iniziali, per evitare che locali umidi troppo piccoli comportino riprogettazioni o mettano a rischio l'affittabilità.
 
     **Svolgimento**
-
     1. Modellare lo spazio utile di ogni controparete come volume fino alle facce interne libere.
-
     2. Valutare la superficie netta degli spazi controparete e dei locali utili adiacenti dal modello.
-
-    3. Documentare l''impatto superficiale e il locale utile residuo sufficiente.
-
+    3. Documentare l'impatto superficiale e il locale utile residuo sufficiente.
 
     **Risultato della fornitura**
-
-    - Modello di architettura con volumi liberi delle contropareti e informazioni necessarie sulle superfici utili residue.'
-  en: 'Account for the space required by service linings in the model and verify their impact on floor area – before wet rooms become too small, trigger redesign, or impair lettability.
-
+    - Modello di architettura con volumi liberi delle contropareti e informazioni necessarie sulle superfici utili residue.
+  en: |-
+    Account for the space required by service linings in the model and verify their impact on floor area – before wet rooms become too small, trigger redesign, or impair lettability.
 
     **Starting point**
-
     - Service linings, such as plumbing linings, consume floor area and clear space.
-
     - In early project phases, service linings are often designed to optimize drawing graphics rather than actual space requirements.
 
-
     **Goal & benefit**
-
     - Provide verification in early project phases to prevent undersized wet rooms from causing redesign or jeopardising lettability.
 
-
     **Process**
-
     1. Model the usable space for each service lining as a space volume extending to the clear internal faces.
-
     2. Evaluate the net area of the service-lining spaces and adjacent usable spaces from the model.
-
     3. Document the impact on floor area and the adequacy of the remaining usable space.
 
-
     **Deliverable**
-
-    - Architecture model with clear service-lining volumes and the required area information for the remaining usable space.'
-workflow_group: entwurf
+    - Architecture model with clear service-lining volumes and the required area information for the remaining usable space.
+workflow_group: koordination
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active

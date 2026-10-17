@@ -1,30 +1,89 @@
 id: pragmaticbim:usage-scenario/parkieren
 code: US-WH-13
-sort_order: 13
+sort_order: 2
 name:
   de: Parkieren
   fr: Stationner
   it: Parcheggiare
   en: Parking the car
 description:
-  de: Bewohnende kommen von der Strasse auf den Innenparkplatz, erreichen die Aufzugszone und von dort die Eingangshalle.
-  fr: Les occupants arrivent de la rue à la place intérieure, rejoignent le palier d'ascenseur, puis le hall d'entrée.
-  it: Chi abita arriva dalla strada al posto auto interno, raggiunge la zona ascensore e da lì l'atrio.
-  en: Occupants arrive from the street at the interior parking space, reach the elevator lobby, and from there the lobby.
-scenario_group: Wohnen
+  de: Bewohnende kommen mit dem Auto an. Der Parkplatz entscheidet über den Weg vom Auto zur Wohnung und
+    ob das Grundstück Parkfläche braucht.
+  fr: Les habitants arrivent en voiture. La place de stationnement décide du chemin entre la voiture et
+    le logement et si la parcelle doit accueillir du stationnement.
+  it: Gli abitanti arrivano in auto. Il posteggio decide il percorso dall'auto all'alloggio e se il fondo
+    deve offrire superfici di parcheggio.
+  en: Residents arrive by car. The parking place decides the route from the car to the dwelling and whether
+    the site needs parking space.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- ankommen
 status: active
 jurisdiction:
-- ch
-required_room_types:
-- pragmaticbim:room-type/strasse
-- pragmaticbim:room-type/parkplatz-pkw-innen
-- pragmaticbim:room-type/aufzugszone
-- pragmaticbim:room-type/eingangshalle
-room_relationships:
-- from_room_type: pragmaticbim:room-type/strasse
-  to_room_type: pragmaticbim:room-type/parkplatz-pkw-innen
-- from_room_type: pragmaticbim:room-type/parkplatz-pkw-innen
-  to_room_type: pragmaticbim:room-type/aufzugszone
-  max_distance: 40
-- from_room_type: pragmaticbim:room-type/aufzugszone
-  to_room_type: pragmaticbim:room-type/eingangshalle
+- general
+options:
+- id: pragmaticbim:scenario-option/parkieren-interior
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-elevated
+  sort_order: 1
+  name:
+    de: Innen
+    fr: Intérieur
+    it: Interno
+    en: Indoor
+  quantity:
+    id: pragmaticbim:quantity/parkieren-interior
+    sort_order: 1
+    name:
+      de: Anzahl Parkplätze
+      fr: Nombre de places de stationnement
+      it: Numero di posteggi
+      en: Number of parking spaces
+    status: active
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/strasse
+    to_room_type: pragmaticbim:room-type/parkplatz-pkw-innen
+  - from_room_type: pragmaticbim:room-type/parkplatz-pkw-innen
+    to_room_type: pragmaticbim:room-type/wohnungseingang
+    max_distance: 40
+  adds:
+  - pragmaticbim:room-type/strasse
+  - pragmaticbim:room-type/parkplatz-pkw-innen
+  - pragmaticbim:room-type/wohnungseingang
+- id: pragmaticbim:scenario-option/parkieren-exterior
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-standard
+  sort_order: 2
+  name:
+    de: Aussen
+    fr: Extérieur
+    it: Esterno
+    en: Outdoor
+  quantity:
+    id: pragmaticbim:quantity/parkieren-exterior
+    sort_order: 1
+    name:
+      de: Anzahl Parkplätze
+      fr: Nombre de places de stationnement
+      it: Numero di posteggi
+      en: Number of parking spaces
+    status: active
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/strasse
+    to_room_type: pragmaticbim:room-type/parkplatz-pkw-aussen
+  - from_room_type: pragmaticbim:room-type/parkplatz-pkw-aussen
+    to_room_type: pragmaticbim:room-type/wohnungseingang
+    max_distance: 40
+  adds:
+  - pragmaticbim:room-type/strasse
+  - pragmaticbim:room-type/parkplatz-pkw-aussen
+  - pragmaticbim:room-type/wohnungseingang
+- id: pragmaticbim:scenario-option/parkieren-external
+  sort_order: 3
+  name:
+    de: Kein Parkplatz, extern gekauft
+    fr: Sans place, achat externe
+    it: Senza posto auto, acquisto esterno
+    en: No parking space, bought externally
+  exclusive: true

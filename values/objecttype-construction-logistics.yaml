@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Baustelleneinricht
+    - Baustelleneinricht
   fr:
-  - Installation de chantier
+    - Installation de chantier
   it:
-  - Installazione di cantiere
+    - Installazione di cantiere
   en:
-  - Site setup
+    - Site setup

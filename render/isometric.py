@@ -22,6 +22,13 @@ from render.print_raster import PRINT_DPI, PRINT_RESOLUTION, save_print_tiff
 DEFAULT_RESOLUTION = (1024, 1024)
 # Long lens. Orthographic cover tiles match this framing at the look-at plane.
 _YFOV = np.pi / 5.0
+# Letter-run as a fraction of the final image width, after the content crop.
+_BRAND_WIDTH_FRAC = 0.22
+# Glyph height / width on a camera-facing wall. Horizontal hosts compensate
+# from this so foreshortening does not change the apparent letter shape.
+_BRAND_GLYPH_Y_SCALE = 0.70
+# Matches ``_fit_content_square`` margin so the stamp survives that rescale.
+_FIT_MARGIN_FRAC = 0.06
 # 1200² @ 600 DPI (~4.6 cm linework). Catalog cards stay 1024² RGB PNG.
 _BG_COLOR = [0.93, 0.93, 0.93, 1.0]
 _WATERMARK_TEXT = "pragmaticBIM.ch"
@@ -218,6 +225,168 @@ def _view_radius_distance(bounds: np.ndarray, padding: float) -> tuple[float, fl
     if radius < 1e-6:
         radius = 1.0
     return radius, radius * float(padding) * 2.5
+
+
+def _view_forward(camera_direction: Sequence[float] | None) -> np.ndarray:
+    """Unit direction from the eye toward the look-at point."""
+    direction = np.array(
+        list(camera_direction) if camera_direction is not None else [1.0, 1.0, 1.0],
+        dtype=np.float64,
+    )
+    norm = float(np.linalg.norm(direction))
+    if norm < 1e-8:
+        direction = np.array([1.0, 1.0, 1.0], dtype=np.float64)
+        norm = float(np.linalg.norm(direction))
+    return -direction / norm
+
+
+def _projected_factor(forward: np.ndarray, axis: np.ndarray) -> float:
+    """Length of a unit ``axis`` after projection onto the camera plane."""
+    axis = np.asarray(axis, dtype=np.float64)
+    axis = axis / max(float(np.linalg.norm(axis)), 1e-8)
+    return float(np.sqrt(max(1.0 - float(forward @ axis) ** 2, 1e-8)))
+
+
+def _facing_wall_baseline(forward: np.ndarray) -> np.ndarray:
+    """Horizontal letter-run of a wall facing the camera."""
+    horizontal = np.array([forward[0], forward[1], 0.0], dtype=np.float64)
+    if float(np.linalg.norm(horizontal)) < 1e-8:
+        horizontal = np.array([1.0, 0.0, 0.0], dtype=np.float64)
+    horizontal = horizontal / np.linalg.norm(horizontal)
+    baseline = np.cross(np.array([0.0, 0.0, 1.0]), horizontal)
+    return baseline / max(float(np.linalg.norm(baseline)), 1e-8)
+
+
+def _apparent_run_length(
+    stamp_width: float,
+    forward: np.ndarray,
+    axis: np.ndarray,
+) -> float:
+    """World length whose projection matches ``stamp_width`` along camera-right."""
+    return float(stamp_width) / max(_projected_factor(forward, axis), 0.35)
+
+
+def _horizontal_glyph_y_scale(
+    forward: np.ndarray,
+    x_axis: np.ndarray,
+    y_axis: np.ndarray,
+) -> float:
+    """Letter height that matches a camera-facing wall after foreshortening."""
+    reference_run = _projected_factor(forward, _facing_wall_baseline(forward))
+    reference_height = _projected_factor(forward, np.array([0.0, 0.0, 1.0]))
+    run = _projected_factor(forward, x_axis)
+    height = _projected_factor(forward, y_axis)
+    return _BRAND_GLYPH_Y_SCALE * (reference_height / reference_run) * (run / height)
+
+
+def _projected_fit_side_px(
+    bounds: np.ndarray,
+    pose: np.ndarray,
+    *,
+    width_px: int,
+    height_px: int,
+    orthographic: bool,
+    distance: float,
+) -> float:
+    """Pixel side of the square ``_fit_content_square`` would rebuild from the AABB."""
+    eye = pose[:3, 3]
+    right = pose[:3, 0]
+    up = pose[:3, 1]
+    forward = -pose[:3, 2]
+    tan_half = float(np.tan(_YFOV * 0.5))
+    ymag = float(distance) * tan_half
+    aspect = float(width_px) / max(float(height_px), 1.0)
+    pixels: list[tuple[float, float]] = []
+    for x in (float(bounds[0][0]), float(bounds[1][0])):
+        for y in (float(bounds[0][1]), float(bounds[1][1])):
+            for z in (float(bounds[0][2]), float(bounds[1][2])):
+                rel = np.array([x, y, z], dtype=np.float64) - eye
+                if orthographic:
+                    ndc_x = float(right @ rel) / ymag
+                    ndc_y = float(up @ rel) / ymag
+                else:
+                    depth = max(float(forward @ rel), 1e-4)
+                    ndc_x = float(right @ rel) / depth / (tan_half * aspect)
+                    ndc_y = float(up @ rel) / depth / tan_half
+                pixels.append(
+                    (
+                        (ndc_x * 0.5 + 0.5) * width_px,
+                        (0.5 - ndc_y * 0.5) * height_px,
+                    )
+                )
+    arr = np.clip(
+        np.asarray(pixels, dtype=np.float64),
+        [0.0, 0.0],
+        [float(width_px) - 1.0, float(height_px) - 1.0],
+    )
+    span = arr.max(axis=0) - arr.min(axis=0)
+    content = max(float(span.max()), 1.0)
+    pad = max(1.0, round(content * _FIT_MARGIN_FRAC))
+    return float(span.max()) + 2.0 * pad
+
+
+def _brand_stamp_width_m(
+    bounds: np.ndarray,
+    *,
+    width_px: int,
+    height_px: int,
+    camera_padding: float,
+    camera_direction: Sequence[float] | None = None,
+    orthographic: bool = False,
+    fit_content: bool = True,
+) -> float:
+    """World letter-run that lands near ``_BRAND_WIDTH_FRAC`` of the final image.
+
+    Measured along camera-right at the look-at plane. ``fit_content`` shrinks
+    the estimate by the enlargement ``_fit_content_square`` will apply.
+    """
+    _radius, distance = _view_radius_distance(bounds, camera_padding)
+    world_height = 2.0 * distance * float(np.tan(_YFOV * 0.5))
+    aspect = float(width_px) / max(float(height_px), 1.0)
+    world_width = world_height * aspect
+    if fit_content:
+        pose = _isometric_camera_pose(
+            bounds,
+            padding=camera_padding,
+            direction=camera_direction,
+        )
+        side_px = _projected_fit_side_px(
+            bounds,
+            pose,
+            width_px=width_px,
+            height_px=height_px,
+            orthographic=orthographic,
+            distance=distance,
+        )
+    else:
+        side_px = float(width_px)
+    return _BRAND_WIDTH_FRAC * world_width * (side_px / max(float(width_px), 1.0))
+
+
+def _framing_bounds(
+    product_meshes: Sequence[tuple[str, str, trimesh.Trimesh]],
+    *,
+    camera_focus_guids: Collection[str] | None = None,
+    camera_bounds: np.ndarray | None = None,
+) -> np.ndarray:
+    """World AABB used for the camera and the shared brand size."""
+    if camera_bounds is not None:
+        return np.asarray(camera_bounds, dtype=np.float64)
+    focus = set(camera_focus_guids or ())
+    chosen = [
+        mesh.bounds
+        for guid, _ifc_class, mesh in product_meshes
+        if not focus or guid in focus
+    ]
+    if not chosen:
+        chosen = [mesh.bounds for _guid, _ifc_class, mesh in product_meshes]
+    return np.array(
+        [
+            np.min([item[0] for item in chosen], axis=0),
+            np.max([item[1] for item in chosen], axis=0),
+        ],
+        dtype=np.float64,
+    )
 
 
 def _stroke_world_half_width(
@@ -803,7 +972,6 @@ def _brand_cutter_horizontal(
     camera_direction: Sequence[float] | None = None,
     far_corner: bool = False,
     side_corner: bool = False,
-    scale: float = 1.0,
     stamp_width: float | None = None,
 ) -> trimesh.Trimesh | None:
     """Letter cutter into a horizontal top face (corner, parallel to an edge).
@@ -812,29 +980,31 @@ def _brand_cutter_horizontal(
     (back) corner — useful when the near corner is occupied (e.g. footing pad).
     ``side_corner`` picks a laterally offset tip (max |cross| with the camera XY)
     so a centred subject (e.g. tree crown) does not hide the brand behind it.
-    ``stamp_width`` (metres) sets an absolute letter-run length when given;
-    otherwise ``scale`` multiplies the procedural size from the host AABB.
+    ``stamp_width`` (metres) is the letter-run along camera-right. The cutter
+    lengthens it so the foreshortened baseline still spans that length, and
+    stretches letter height to match a camera-facing wall.
     """
-    scale = max(float(scale), 0.25)
     surf_ext = surface_bounds[1] - surface_bounds[0]
     surf_xy_min = float(max(min(surf_ext[0], surf_ext[1]), 1e-3))
     max_fit = 0.94 * float(min(surf_ext[0], surf_ext[1]))
-    if stamp_width is not None:
-        stamp_w = min(max(float(stamp_width), 0.25), max_fit)
-        # Absolute width: keep default letter aspect (do not inflate via scale).
-        size_factor = 1.0
-    else:
-        stamp_w = min(0.55 * surf_xy_min, 0.65 * float(max(surf_ext[0], 1e-3))) * scale
-        stamp_w = min(stamp_w, max_fit)
-        size_factor = scale
+    forward = _view_forward(camera_direction)
+    prefer_x = float(surf_ext[0]) >= max(0.9, 0.35 * float(surf_ext[1]))
+    run_axis = np.array([1.0, 0.0, 0.0] if prefer_x else [0.0, 1.0, 0.0])
+    letter_up = np.cross(np.array([0.0, 0.0, 1.0]), run_axis)
+    eye_offset = -forward
+    cam_xy = eye_offset[:2]
+    if float(np.linalg.norm(cam_xy)) < 1e-8:
+        cam_xy = np.array([1.0, 1.0], dtype=np.float64)
+    if float(letter_up[:2] @ (-cam_xy)) < 0.0:
+        letter_up = -letter_up
+    if stamp_width is None:
+        stamp_width = min(0.55 * surf_xy_min, 0.65 * float(max(surf_ext[0], 1e-3)))
+    stamp_w = min(_apparent_run_length(float(stamp_width), forward, run_axis), max_fit)
+    stamp_w = max(stamp_w, 0.05)
     cut_depth = max(0.025, 0.08 * float(max(surf_ext[2], 0.05)))
     extrude_h = cut_depth + 0.01
-    # Larger size also pulls the brand toward the chosen edge
-    edge_margin = max(0.03, max(0.06 * surf_xy_min, 0.10) / size_factor)
-    # Taller letters when scaled (default 0.70 keeps other cards unchanged).
-    # Cap allows high-scale horizontal stamps (slab cards) to counteract
-    # isometric foreshortening of letter height on flat tops.
-    y_scale = min(3.5, 0.70 * max(size_factor, 1.0))
+    edge_margin = max(0.03, max(0.06 * surf_xy_min, 0.10))
+    y_scale = _horizontal_glyph_y_scale(forward, run_axis, letter_up)
 
     mesh = _extrude_brand_glyphs(stamp_w, extrude_h, y_scale=y_scale)
     if mesh is None:
@@ -1013,7 +1183,6 @@ def _brand_cutter_vertical(
     wall_top: bool = False,
     rotate_90: bool = False,
     center_along_wall: bool = False,
-    scale: float = 1.0,
     stamp_width: float | None = None,
 ) -> trimesh.Trimesh | None:
     """Letter cutter into a vertical white face (corner, upright).
@@ -1021,10 +1190,12 @@ def _brand_cutter_vertical(
     Default: bottom corner. ``wall_top`` places at the top corner instead.
     ``rotate_90`` turns the letter-run upright on the wall face.
     ``center_along_wall`` places mid-face along the wall length (avoids the tip).
-    ``stamp_width`` (metres) sets an absolute letter-run length when given;
-    otherwise ``scale`` multiplies the procedural size from the face width.
+    ``stamp_width`` (metres) is the letter-run along camera-right. Glyph
+    proportion stays ``_BRAND_GLYPH_Y_SCALE``.
     """
     extents = surface_bounds[1] - surface_bounds[0]
+    outward = np.asarray(outward, dtype=np.float64)
+    outward = outward / max(float(np.linalg.norm(outward)), 1e-8)
     if abs(outward[0]) > 0.5:
         face_width = float(extents[1])
         wall_thickness = float(extents[0])
@@ -1032,19 +1203,21 @@ def _brand_cutter_vertical(
         face_width = float(extents[0])
         wall_thickness = float(extents[1])
     face_height = float(extents[2])
-    scale = max(float(scale), 0.25)
     run_limit = face_height if rotate_90 else face_width
     max_fit = 0.90 * run_limit
-    if stamp_width is not None:
-        stamp_w = min(max(float(stamp_width), 0.25), max_fit)
-        size_factor = 1.0
-    else:
-        stamp_w = min(0.55 * run_limit, 0.70 * run_limit) * scale
-        stamp_w = min(stamp_w, max_fit)
-        size_factor = scale
+    forward = _view_forward(camera_direction)
+    run_axis = np.cross(np.array([0.0, 0.0, 1.0]), outward)
+    if float(np.linalg.norm(run_axis)) < 1e-8:
+        run_axis = np.array([1.0, 0.0, 0.0], dtype=np.float64)
+    if rotate_90:
+        run_axis = np.array([0.0, 0.0, 1.0], dtype=np.float64)
+    if stamp_width is None:
+        stamp_width = 0.55 * run_limit
+    stamp_w = min(_apparent_run_length(float(stamp_width), forward, run_axis), max_fit)
+    stamp_w = max(stamp_w, 0.05)
     cut_depth = max(0.02, min(0.45 * wall_thickness, 0.08))
     extrude_h = cut_depth + 0.01
-    edge_margin = max(0.06 * min(face_width, face_height) / size_factor, 0.08)
+    edge_margin = max(0.06 * min(face_width, face_height), 0.08)
 
     mesh = _extrude_brand_glyphs(stamp_w, extrude_h)
     if mesh is None:
@@ -1176,7 +1349,6 @@ def _engrave_brand_into_meshes(
     center_along_wall: bool = False,
     wall_name: str | None = None,
     wall_name_by_guid: dict[str, str] | None = None,
-    scale: float = 1.0,
     stamp_width: float | None = None,
 ) -> None:
     """Boolean-subtract brand letters (render-only).
@@ -1193,8 +1365,7 @@ def _engrave_brand_into_meshes(
     ``wall_top`` places the vertical brand at the top of the wall face.
     ``rotate_90`` turns lettering by 90 degrees within the wall face.
     ``center_along_wall`` places mid-face along the wall length.
-    ``scale`` multiplies procedural stamp size; ``stamp_width`` (metres) overrides
-    with an absolute letter-run length (per-picture fixed size).
+    ``stamp_width`` (metres) is the shared letter-run along camera-right.
     """
     primary_bounds = _primary_bounds(product_meshes, primary)
     if not prefer_wall:
@@ -1209,7 +1380,6 @@ def _engrave_brand_into_meshes(
                 camera_direction=camera_direction,
                 far_corner=far_corner,
                 side_corner=side_corner,
-                scale=scale,
                 stamp_width=stamp_width,
             )
             if cutter is not None and _apply_boolean_engrave(product_meshes, idx, cutter):
@@ -1240,7 +1410,6 @@ def _engrave_brand_into_meshes(
         wall_top=wall_top,
         rotate_90=rotate_90,
         center_along_wall=center_along_wall,
-        scale=scale,
         stamp_width=stamp_width,
     )
     if cutter is None:
@@ -1360,8 +1529,6 @@ def render_isometric(
     engrave_rotate_90: bool = False,
     engrave_center_along_wall: bool = False,
     engrave_wall_name: str | None = None,
-    engrave_scale: float = 1.0,
-    engrave_stamp_width: float | None = None,
     camera_bounds: np.ndarray | None = None,
     fit_content: bool = True,
 ) -> Path:
@@ -1389,14 +1556,15 @@ def render_isometric(
     ``engrave`` / ``watermark`` control the 3D brand carve and corner label
     (disable both for clean print assets).
     ``dpi`` optional PNG metadata; TIFF print masters use ``PRINT_DPI``.
-    Engraving placement/size should come from ``render.engrave_specs`` (per picture).
+    Engraving placement comes from ``render.engrave_specs`` (per picture).
+    Engraving size is shared: one letter-run from the camera frame.
     ``engrave_prefer_lowest`` / ``engrave_far_corner`` / ``engrave_side_corner`` /
     ``engrave_prefer_wall`` / ``engrave_longest_wall`` / ``engrave_wall_name``
     select the wall host; ``engrave_wall_top`` selects its corner,
     ``engrave_rotate_90`` turns lettering, and ``engrave_center_along_wall``
     places mid-face along the wall length.
-    ``engrave_scale`` multiplies procedural stamp size; ``engrave_stamp_width``
-    (metres) sets a fixed letter-run length for that picture.
+    The letter-run is one camera-frame size (``_BRAND_WIDTH_FRAC`` of the image),
+    not a fraction of the host face.
     ``camera_bounds`` optional world AABB ``(2, 3)`` used for the camera pose,
     orthographic magnification, and stroke width instead of the mesh bounds.
     ``fit_content`` when False, skips the crop-and-rescale pass so a shared
@@ -1431,8 +1599,24 @@ def render_isometric(
         if not primary and product_meshes:
             primary.add(product_meshes[0][0])
 
+    width, height = int(resolution[0]), int(resolution[1])
     # Render-only: carve brand into top horizontal surface, else white vertical wall.
+    # Size it from the same frame the camera will use, before the boolean changes bounds.
     if engrave:
+        framing = _framing_bounds(
+            product_meshes,
+            camera_focus_guids=camera_focus_guids,
+            camera_bounds=camera_bounds,
+        )
+        stamp_width = _brand_stamp_width_m(
+            framing,
+            width_px=width,
+            height_px=height,
+            camera_padding=float(camera_padding),
+            camera_direction=camera_direction,
+            orthographic=orthographic,
+            fit_content=fit_content,
+        )
         wall_name_by_guid = {
             w.GlobalId: str(w.Name or "")
             for w in ifc_file.by_type("IfcWall")
@@ -1451,11 +1635,9 @@ def render_isometric(
             center_along_wall=engrave_center_along_wall,
             wall_name=engrave_wall_name,
             wall_name_by_guid=wall_name_by_guid,
-            scale=engrave_scale,
-            stamp_width=engrave_stamp_width,
+            stamp_width=stamp_width,
         )
 
-    width, height = int(resolution[0]), int(resolution[1])
     all_bounds: list[np.ndarray] = []
     focus = set(camera_focus_guids or ())
     focus_bounds: list[np.ndarray] = []

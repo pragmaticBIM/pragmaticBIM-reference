@@ -1,0 +1,62 @@
+id: pragmaticbim:usage-scenario/abfall-entsorgen-gesundheit
+code: US-HE-10
+sort_order: 10
+name:
+  de: Abfall entsorgen
+  fr: Évacuer les déchets
+  it: Conferire i rifiuti
+  en: Disposing of waste
+description:
+  de: Personal und Patientinnen und Patienten bringen während des Aufenthalts Abfall weg. Die
+    getrennten Arten entscheiden über Fläche, Lüftung und Wege zur Sammelstelle.
+  fr: Le personnel et les patients évacuent les déchets pendant le séjour. Les fractions séparées
+    déterminent la surface, la ventilation et les chemins vers le point de collecte.
+  it: Il personale e i pazienti conferiscono i rifiuti durante la permanenza. Le frazioni separate
+    determinano superficie, ventilazione e percorsi verso il punto di raccolta.
+  en: Staff and patients take waste away during the stay. The separated fractions determine area,
+    ventilation, and routes to the collection point.
+uses:
+- pragmaticbim:use/gesundheit
+tags:
+- entsorgung
+status: active
+jurisdiction:
+- general
+allows_multiple: true
+options:
+- id: pragmaticbim:scenario-option/abfall-entsorgen-gesundheit-kehricht
+  sort_order: 1
+  name:
+    de: Kehricht
+    fr: Déchets résiduels
+    it: Rifiuti residui
+    en: Residual waste
+  adds:
+  - pragmaticbim:room-type/abfallraum
+- id: pragmaticbim:scenario-option/abfall-entsorgen-gesundheit-papier
+  sort_order: 2
+  name:
+    de: Papier und Karton
+    fr: Papier et carton
+    it: Carta e cartone
+    en: Paper and cardboard
+  adds:
+  - pragmaticbim:room-type/abfallraum
+- id: pragmaticbim:scenario-option/abfall-entsorgen-gesundheit-glas
+  sort_order: 3
+  name:
+    de: Glas
+    fr: Verre
+    it: Vetro
+    en: Glass
+  adds:
+  - pragmaticbim:room-type/abfallraum
+- id: pragmaticbim:scenario-option/abfall-entsorgen-gesundheit-pet
+  sort_order: 4
+  name:
+    de: PET und Kunststoff
+    fr: PET et plastique
+    it: PET e plastica
+    en: PET and plastic
+  adds:
+  - pragmaticbim:room-type/abfallraum

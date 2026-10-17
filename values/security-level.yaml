@@ -15,22 +15,22 @@ norm_reference: project-specific
 status: active
 values:
   de:
-  - Öffentlich
-  - Intern
-  - Eingeschränkt
-  - Hochgesichert
+    - Öffentlich
+    - Intern
+    - Eingeschränkt
+    - Hochgesichert
   fr:
-  - Public
-  - Interne
-  - Restreint
-  - Haute sécurité
+    - Public
+    - Interne
+    - Restreint
+    - Haute sécurité
   it:
-  - Pubblico
-  - Interno
-  - Ristretto
-  - Alta sicurezza
+    - Pubblico
+    - Interno
+    - Ristretto
+    - Alta sicurezza
   en:
-  - Public
-  - Internal
-  - Restricted
-  - High security
+    - Public
+    - Internal
+    - Restricted
+    - High security

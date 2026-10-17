@@ -1,0 +1,72 @@
+id: pragmaticbim:room-type/abfallsammelplatz-aussen
+code: RT-WH-40
+sort_order: 136
+name:
+  de: Abfallsammelplatz Aussen
+  fr: Aire extérieure de collecte des déchets
+  it: Area esterna di raccolta rifiuti
+  en: Exterior Waste Collection Area
+definition:
+  de: Aussenfläche für das Sammeln und Bereitstellen von Siedlungsabfall in Säcken.
+  fr: Aire extérieure destinée à collecter et présenter les déchets ménagers en sacs.
+  it: Area esterna per raccogliere e conferire i rifiuti domestici in sacchi.
+  en: Outdoor area for collecting and presenting bagged household waste.
+room_type_kind: room
+room_name: RN-11-50-01
+activity: O-TEC
+default_scope: site
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/abfallsammelplatz-aussen-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Abfallsammelplatz Aussen
+      fr: Aire extérieure de collecte des déchets
+      it: Area esterna di raccolta rifiuti
+      en: Exterior Waste Collection Area
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: AFF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Workshop
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 5.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Öffentlich
+      fr: Public
+      it: Pubblico
+      en: Public
+  status: active

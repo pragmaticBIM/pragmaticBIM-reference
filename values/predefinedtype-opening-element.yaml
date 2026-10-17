@@ -15,14 +15,14 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - OPENING
-  - RECESS
+    - OPENING
+    - RECESS
   fr:
-  - OPENING
-  - RECESS
+    - OPENING
+    - RECESS
   it:
-  - OPENING
-  - RECESS
+    - OPENING
+    - RECESS
   en:
-  - OPENING
-  - RECESS
+    - OPENING
+    - RECESS

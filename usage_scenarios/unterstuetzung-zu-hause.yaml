@@ -1,0 +1,84 @@
+id: pragmaticbim:usage-scenario/unterstuetzung-zu-hause
+code: US-WH-06
+sort_order: 9
+name:
+  de: Unterstützung zu Hause
+  fr: Soutien à domicile
+  it: Sostegno a domicilio
+  en: Support at home
+description:
+  de: Bewohnende mit Unterstützungsbedarf leben selbständig und erhalten Besuch der
+    ambulanten Pflege. Der hindernisfreie Weg entscheidet, ob alle die Wohnung und die nötigen
+    Räume erreichen.
+  fr: Les personnes ayant besoin de soutien vivent de façon autonome et reçoivent
+    des soins à domicile. Un chemin sans obstacle décide si tous atteignent le logement
+    et les pièces nécessaires.
+  it: Chi ha bisogno di sostegno vive in modo autonomo e riceve le cure a domicilio.
+    Un percorso senza ostacoli decide se tutti raggiungono l'alloggio e i locali necessari.
+  en: Residents who need support live on their own and receive home-care visits. A
+    step-free route decides whether both reach the dwelling and the rooms they need.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- wohnalltag
+status: active
+jurisdiction:
+- general
+allows_multiple: true
+options:
+- id: pragmaticbim:scenario-option/unterstuetzung-zu-hause-daily
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/permit-medium
+  sort_order: 1
+  name:
+    de: Wohnalltag mit Unterstützung
+    fr: Vie quotidienne avec accompagnement
+    it: Vita quotidiana con assistenza
+    en: Supported daily living
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gang
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/wohnzimmer
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/badezimmer
+    max_distance: 8
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/wohnzimmer
+  - pragmaticbim:room-type/badezimmer
+  excludes:
+  - pragmaticbim:scenario-option/zur-einheit-gelangen-stair
+- id: pragmaticbim:scenario-option/unterstuetzung-zu-hause-home-care
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/permit-medium
+  sort_order: 2
+  name:
+    de: Besuch der ambulanten Pflege
+    fr: Visite de soins à domicile
+    it: Visita di cure a domicilio
+    en: Home-care visit
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gang
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/schlafzimmer
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/badezimmer
+    max_distance: 8
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/schlafzimmer
+  - pragmaticbim:room-type/badezimmer
+  excludes:
+  - pragmaticbim:scenario-option/zur-einheit-gelangen-stair
+- id: pragmaticbim:scenario-option/unterstuetzung-zu-hause-none
+  sort_order: 3
+  name:
+    de: Keine besondere Unterstützung
+    fr: Aucun soutien particulier
+    it: Nessun sostegno particolare
+    en: No dedicated support provision
+  exclusive: true

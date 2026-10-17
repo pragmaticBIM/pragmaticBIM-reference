@@ -1,0 +1,32 @@
+id: pragmaticbim:value/pipe-reference-wastewater
+code: PIPE-REF-WW
+name:
+  de: Referenz Abwasser
+  fr: Référence eaux usées
+  it: Riferimento acque reflue
+  en: Wastewater reference
+description:
+  de: Referenzkennung für Abwasser- und Entwässerungsleitungen in der Koordination.
+  fr: Code de référence pour les canalisations d'eaux usées et de drainage en coordination.
+  it: Codice di riferimento per condotte di acque reflue e drenaggio nel coordinamento.
+  en: Reference code for wastewater and drainage piping in coordination.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - AW
+    - WW
+    - ENT
+  fr:
+    - AW
+    - WW
+    - ENT
+  it:
+    - AW
+    - WW
+    - ENT
+  en:
+    - AW
+    - WW
+    - ENT

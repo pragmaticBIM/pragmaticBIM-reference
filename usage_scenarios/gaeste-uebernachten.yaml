@@ -1,29 +1,73 @@
 id: pragmaticbim:usage-scenario/gaeste-uebernachten
 code: US-WH-03
-sort_order: 3
+sort_order: 8
 name:
   de: Gäste übernachten
   fr: Hôtes qui restent la nuit
   it: Ospiti che pernottano
   en: Overnight guests
 description:
-  de: Gäste betreten die Wohnung, erreichen über den Gang das Gästezimmer und von dort das Bad.
-  fr: Les hôtes entrent dans le logement, rejoignent la chambre d'amis par le couloir, puis la salle de bain.
-  it: Gli ospiti entrano nell'alloggio, raggiungono la camera ospiti dal corridoio e da lì il bagno.
-  en: Guests enter the dwelling, reach the guest room from the hallway, and from there the bathroom.
-scenario_group: Wohnen
+  de: Besuch übernachtet gelegentlich. Ein eigener Schlafplatz entscheidet, ob Gäste
+    getrennt vom Haushalt schlafen.
+  fr: Des visiteurs passent parfois la nuit. Un couchage à part décide si les hôtes
+    dorment à l'écart du ménage.
+  it: Ogni tanto gli ospiti pernottano. Un posto letto proprio decide se dormono separati
+    dal nucleo domestico.
+  en: Visitors stay overnight now and then. A bed of their own decides whether guests
+    sleep apart from the household.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- wohnalltag
 status: active
 jurisdiction:
-- ch
-required_room_types:
-- pragmaticbim:room-type/wohnungseingang
-- pragmaticbim:room-type/gang
-- pragmaticbim:room-type/gaestezimmer
-- pragmaticbim:room-type/badezimmer
-room_relationships:
-- from_room_type: pragmaticbim:room-type/wohnungseingang
-  to_room_type: pragmaticbim:room-type/gang
-- from_room_type: pragmaticbim:room-type/gang
-  to_room_type: pragmaticbim:room-type/gaestezimmer
-- from_room_type: pragmaticbim:room-type/gaestezimmer
-  to_room_type: pragmaticbim:room-type/badezimmer
+- general
+options:
+- id: pragmaticbim:scenario-option/gaeste-uebernachten-guest-room
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-elevated
+  sort_order: 1
+  name:
+    de: Gästezimmer
+    fr: Chambre d'amis
+    it: Camera ospiti
+    en: Guest room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gang
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/gaestezimmer
+  - from_room_type: pragmaticbim:room-type/gaestezimmer
+    to_room_type: pragmaticbim:room-type/badezimmer
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/badezimmer
+  - pragmaticbim:room-type/gaestezimmer
+- id: pragmaticbim:scenario-option/gaeste-uebernachten-living-room
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-standard
+  sort_order: 2
+  name:
+    de: Wohnzimmer
+    fr: Séjour
+    it: Soggiorno
+    en: Living room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gang
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/wohnzimmer
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/badezimmer
+  - pragmaticbim:room-type/wohnzimmer
+- id: pragmaticbim:scenario-option/gaeste-uebernachten-none
+  sort_order: 3
+  name:
+    de: Kein eigener Schlafplatz
+    fr: Aucun couchage dédié
+    it: Nessun posto letto dedicato
+    en: No dedicated sleeping place
+  exclusive: true

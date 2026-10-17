@@ -1,0 +1,122 @@
+id: pragmaticbim:project-goal/schulstufen
+sort_order: 1031
+group: rahmenbedingungen
+code: PG-17
+name:
+  de: Schulstufen
+  fr: Degrés scolaires
+  it: Livelli scolastici
+  en: School levels
+tag:
+  de: Stufe
+  fr: Degré
+  it: Livello
+  en: Level
+description:
+  de: |-
+    Die Schulstufe und die Zahl der Lernenden bestimmen Klassenzimmer, Spezialräume, Pausenflächen und Fluchtwege.
+
+    Ohne diese Festlegung bleiben Klassenzimmer, Fachräume und Pausenflächen offen. Die Schule wird dann für eine Stufe gebaut, die sie nicht aufnimmt.
+  fr: |-
+    Le degré scolaire et le nombre d'apprenants déterminent les salles de classe, les salles spéciales, les surfaces de récréation et les voies d'évacuation.
+
+    Sans cette décision, salles de classe, salles spéciales et surfaces de récréation restent ouvertes. L'école est alors construite pour un degré qu'elle n'accueille pas.
+  it: |-
+    Il livello scolastico e il numero di discenti determinano aule, locali speciali, superfici di ricreazione e vie di fuga.
+
+    Senza questa decisione aule, locali speciali e superfici di ricreazione restano aperti. La scuola viene allora costruita per un livello che non accoglie.
+  en: |-
+    The school level and the number of learners determine classrooms, specialist rooms, break areas, and escape routes.
+
+    Without this decision classrooms, specialist rooms, and break areas stay open. The school is then built for a level it does not take.
+status: active
+uses:
+- pragmaticbim:use/bildung
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/schulstufen-kindergarten
+  code: STU-01
+  sort_order: 1
+  name:
+    de: Kindergarten
+    fr: École enfantine
+    it: Scuola dell'infanzia
+    en: Kindergarten
+  description:
+    de: Spiel- und Lernräume für vier- bis sechsjährige Kinder.
+    fr: Espaces de jeu et d'apprentissage pour enfants de quatre à six ans.
+    it: Spazi di gioco e apprendimento per bambini da quattro a sei anni.
+    en: Play and learning spaces for children aged four to six.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/schulstufen-primarstufe
+  code: STU-02
+  sort_order: 2
+  name:
+    de: Primarstufe
+    fr: Degré primaire
+    it: Scuola elementare
+    en: Primary level
+  description:
+    de: Klassenzimmer mit Gruppenräumen für die Primarschule.
+    fr: Salles de classe avec salles de groupe pour l'école primaire.
+    it: Aule con locali di gruppo per la scuola elementare.
+    en: Classrooms with group rooms for primary school.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/schulstufen-sekundarstufe-1
+  code: STU-03
+  sort_order: 3
+  name:
+    de: Sekundarstufe I
+    fr: Degré secondaire I
+    it: Scuola media
+    en: Lower secondary level
+  description:
+    de: Klassenzimmer und Fachräume für die Oberstufe.
+    fr: Salles de classe et salles spéciales pour le secondaire I.
+    it: Aule e aule speciali per la scuola media.
+    en: Classrooms and subject rooms for lower secondary school.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/schulstufen-sekundarstufe-2
+  code: STU-04
+  sort_order: 4
+  name:
+    de: Sekundarstufe II
+    fr: Degré secondaire II
+    it: Livello secondario II
+    en: Upper secondary level
+  description:
+    de: Gymnasium und Berufsfachschule mit Fachräumen und Werkstätten.
+    fr: Gymnase et école professionnelle avec salles spéciales et ateliers.
+    it: Liceo e scuola professionale con aule speciali e laboratori.
+    en: Grammar school and vocational school with subject rooms and workshops.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/schulstufen-tertiaerstufe
+  code: STU-05
+  sort_order: 5
+  name:
+    de: Tertiärstufe
+    fr: Degré tertiaire
+    it: Livello terziario
+    en: Tertiary level
+  description:
+    de: Hochschule mit Hörsälen, Seminarräumen und Lernlandschaften.
+    fr: Haute école avec auditoires, salles de séminaire et espaces d'apprentissage.
+    it: Scuola universitaria con aule magne, aule seminariali e spazi di studio.
+    en: University with lecture halls, seminar rooms, and learning landscapes.
+  status: active
+  comment: ''
+quantities:
+- id: pragmaticbim:quantity/schulstufen-klassen
+  code: STU-Q02
+  sort_order: 1
+  name:
+    de: Anzahl Klassen
+    fr: Nombre de classes
+    it: Numero di classi
+    en: Number of classes
+  status: active

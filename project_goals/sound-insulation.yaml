@@ -1,0 +1,140 @@
+id: pragmaticbim:project-goal/sound-insulation
+sort_order: 90
+group: rahmenbedingungen
+code: PG-38
+name:
+  de: Schallschutz
+  fr: Isolation acoustique
+  it: Isolamento acustico
+  en: Sound insulation
+tag:
+  de: Schallschutz
+  fr: Acoustique
+  it: Acustica
+  en: Acoustics
+description:
+  de: |-
+    Festgelegt wird, ob die Mindestanforderungen nach SIA 181 gelten oder erhöhte beziehungsweise besondere Anforderungen. Die Festlegung bestimmt Trennwände, Decken und Türen zwischen Wohnungen oder Nutzungseinheiten.
+
+    Ohne diese Festlegung werden Trennbauteile auf das Minimum ausgelegt und erst bei der Vermietung oder im Betrieb beanstandet. Dickere Wände und Decken lassen sich dann nicht mehr einbauen.
+  fr: |-
+    Cette condition-cadre détermine si les exigences minimales selon SIA 181 s'appliquent ou des exigences accrues ou particulières. Elle détermine les cloisons, les dalles et les portes entre logements ou unités d'utilisation.
+
+    Sans cette définition, les éléments de séparation sont dimensionnés au minimum et ne sont contestés qu'à la location ou en exploitation. Des murs et des dalles plus épais ne peuvent alors plus être réalisés.
+  it: |-
+    Questa condizione quadro stabilisce se valgono i requisiti minimi secondo SIA 181 o requisiti elevati o particolari. Determina pareti divisorie, solette e porte tra alloggi o unità d'uso.
+
+    Senza questa definizione, gli elementi di separazione vengono dimensionati al minimo e contestati solo alla locazione o in esercizio. Pareti e solette più spesse non si possono allora più realizzare.
+  en: |-
+    This framework condition sets whether the minimum requirements under SIA 181 apply, or increased or special requirements. It drives partitions, slabs, and doors between dwellings or units.
+
+    Without it, separating components are designed to the minimum and challenged only at letting or in operation. Thicker walls and slabs can then no longer be built.
+status: active
+is_boundary_condition: true
+comment: 'Kumulativ. Kein Einfluss auf Anwendungsfälle der Nutzung oder Raumtypen; wirkt auf Trennwände, Decken und Türen zwischen Einheiten (AcousticProperty airborne_sound_rating_db, impact_sound_rating_db). Die Stufen setzen AirborneSoundInsulationMin und ImpactSoundLevelMax als Sollwert; SLS-03 aktiviert sie ohne Wert.'
+levels:
+- id: pragmaticbim:project-goal-level/sound-insulation-minimum
+  code: SLS-01
+  sort_order: 1
+  name:
+    de: Mindestanforderungen SIA 181
+    fr: Exigences minimales SIA 181
+    it: Requisiti minimi SIA 181
+    en: SIA 181 minimum requirements
+  description:
+    de: Luft- und Trittschalldämmung erfüllen die Mindestanforderungen nach SIA 181 für die jeweilige Lärmempfindlichkeit.
+    fr: L'isolation aux bruits aériens et aux bruits de choc respecte les exigences minimales selon SIA 181 pour la sensibilité au bruit concernée.
+    it: L'isolamento dai rumori aerei e da calpestio rispetta i requisiti minimi secondo SIA 181 per la relativa sensibilità al rumore.
+    en: Airborne and impact sound insulation meet the SIA 181 minimum requirements for the relevant noise sensitivity.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-building-physics-concept
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  performance_targets:
+  - element: pragmaticbim:element/architecture-wall-interior
+    name: AirborneSoundInsulationMin
+    pset: ePset_WallRequirement
+    value: 52
+  - element: pragmaticbim:element/architecture-wall-interior-loadbearing
+    name: AirborneSoundInsulationMin
+    pset: ePset_WallRequirement
+    value: 52
+  - element: pragmaticbim:element/architecture-slab-floor
+    name: AirborneSoundInsulationMin
+    pset: ePset_SlabRequirement
+    value: 52
+  - element: pragmaticbim:element/architecture-slab-floor
+    name: ImpactSoundLevelMax
+    pset: ePset_SlabRequirement
+    value: 53
+  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
+- id: pragmaticbim:project-goal-level/sound-insulation-increased
+  code: SLS-02
+  sort_order: 2
+  name:
+    de: Erhöhte Anforderungen SIA 181
+    fr: Exigences accrues SIA 181
+    it: Requisiti elevati SIA 181
+    en: SIA 181 increased requirements
+  description:
+    de: Die erhöhten Anforderungen nach SIA 181 gelten, wie im Stockwerkeigentum üblich. Jede Wand und Decke zwischen Einheiten erhält ein Anforderungsprofil.
+    fr: Les exigences accrues selon SIA 181 s'appliquent, comme d'usage en propriété par étages. Chaque mur et chaque dalle entre unités reçoit un profil d'exigences.
+    it: Valgono i requisiti elevati secondo SIA 181, come d'uso nella proprietà per piani. Ogni parete e soletta tra unità riceve un profilo dei requisiti.
+    en: The increased SIA 181 requirements apply, as is usual for condominiums. Every wall and slab between units gets a requirement profile.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-building-physics-concept
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  - pragmaticbim:workflow/des-wall-requirements-from-space-use
+  - pragmaticbim:workflow/qas-element-type-performance-verification
+  performance_targets:
+  - element: pragmaticbim:element/architecture-wall-interior
+    name: AirborneSoundInsulationMin
+    pset: ePset_WallRequirement
+    value: 55
+  - element: pragmaticbim:element/architecture-wall-interior-loadbearing
+    name: AirborneSoundInsulationMin
+    pset: ePset_WallRequirement
+    value: 55
+  - element: pragmaticbim:element/architecture-slab-floor
+    name: AirborneSoundInsulationMin
+    pset: ePset_SlabRequirement
+    value: 55
+  - element: pragmaticbim:element/architecture-slab-floor
+    name: ImpactSoundLevelMax
+    pset: ePset_SlabRequirement
+    value: 50
+  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
+- id: pragmaticbim:project-goal-level/sound-insulation-special
+  code: SLS-03
+  sort_order: 3
+  name:
+    de: Besondere Anforderungen
+    fr: Exigences particulières
+    it: Requisiti particolari
+    en: Special requirements
+  description:
+    de: Einzelne Räume brauchen mehr als die erhöhten Anforderungen, etwa Hotelzimmer, Behandlungsräume oder Studios. Die Werte legt die Bauakustik je Raumpaar fest.
+    fr: Certains locaux exigent davantage que les exigences accrues, par exemple chambres d'hôtel, salles de traitement ou studios. L'acousticien fixe les valeurs pour chaque paire de locaux.
+    it: Singoli locali richiedono più dei requisiti elevati, ad esempio camere d'albergo, sale di trattamento o studi. L'acustica edilizia fissa i valori per ogni coppia di locali.
+    en: Individual spaces need more than the increased requirements, such as hotel rooms, treatment rooms, or studios. The acoustic consultant sets the values for each pair of spaces.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-building-physics-concept
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  - pragmaticbim:workflow/des-wall-requirements-from-space-use
+  - pragmaticbim:workflow/qas-element-type-performance-verification
+  performance_targets:
+  - element: pragmaticbim:element/architecture-wall-interior
+    name: AirborneSoundInsulationMin
+    pset: ePset_WallRequirement
+  - element: pragmaticbim:element/architecture-wall-interior-loadbearing
+    name: AirborneSoundInsulationMin
+    pset: ePset_WallRequirement
+  - element: pragmaticbim:element/architecture-slab-floor
+    name: AirborneSoundInsulationMin
+    pset: ePset_SlabRequirement
+  - element: pragmaticbim:element/architecture-slab-floor
+    name: ImpactSoundLevelMax
+    pset: ePset_SlabRequirement
+  comment: ''

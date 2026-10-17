@@ -1,0 +1,73 @@
+id: pragmaticbim:room-type/dachterrasse
+code: RT-WH-33
+sort_order: 33
+name:
+  de: Dachterrasse
+  fr: Terrasse de toit
+  it: Terrazza sul tetto
+  en: Roof Terrace
+definition:
+  de: Begehbares und nutzbares Flachdach als Aussenfläche.
+  fr: Toiture plate accessible et utilisable comme surface extérieure.
+  it: Tetto piano praticabile e utilizzabile come superficie esterna.
+  en: Occupiable flat-roof area intended for outdoor use.
+room_type_kind: room
+room_name: RN-11-10-05
+activity: O
+default_scope: dwelling
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/dachterrasse-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Dachterrasse
+      fr: Terrasse de toit
+      it: Terrazza sul tetto
+      en: Roof Terrace
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: ANF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  status: active
+  restrictions:
+    min_area: 15

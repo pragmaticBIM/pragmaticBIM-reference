@@ -1,0 +1,41 @@
+id: pragmaticbim:usage-scenario/speisen-zubereiten
+code: US-GA-02
+sort_order: 3
+name:
+  de: Speisen zubereiten
+  fr: Préparer les repas
+  it: Preparare i pasti
+  en: Preparing food
+description:
+  de: Mitarbeitende bereiten Speisen für Gäste zu. Der Produktionsumfang entscheidet über Küchenfläche,
+    Ausstattung und Warenfluss.
+  fr: Le personnel prépare des repas pour les clients. L'ampleur de la production détermine la surface
+    de cuisine, l'équipement et le flux des marchandises.
+  it: Il personale prepara pasti per gli ospiti. L'entità della produzione determina superficie di cucina,
+    attrezzature e flusso delle merci.
+  en: Staff prepare food for guests. Production scale determines kitchen area, equipment, and goods flow.
+uses:
+- pragmaticbim:use/gastronomie
+tags:
+- produktion
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/speisen-zubereiten-commercial-kitchen
+  sort_order: 1
+  name:
+    de: Gewerbeküche
+    fr: Cuisine professionnelle
+    it: Cucina professionale
+    en: Commercial kitchen
+  adds:
+  - pragmaticbim:room-type/gewerbekueche
+- id: pragmaticbim:scenario-option/speisen-zubereiten-external
+  sort_order: 2
+  name:
+    de: Externe Zubereitung
+    fr: Préparation externe
+    it: Preparazione esterna
+    en: External preparation
+  exclusive: true

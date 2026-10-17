@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/waren-ausliefern
+code: US-LO-05
+sort_order: 6
+name:
+  de: Waren ausliefern
+  fr: Livrer les marchandises
+  it: Spedire le merci
+  en: Dispatching goods
+description:
+  de: Lastwagen holen kommissionierte Ware ab und stehen bis zur Abfahrt bereit. Die Abstellplätze entscheiden
+    über Hoffläche, Witterungsschutz und Lärm.
+  fr: Les camions enlèvent les commandes préparées et attendent le départ. Les places de stationnement
+    déterminent la surface de cour, la protection contre les intempéries et le bruit.
+  it: I camion ritirano la merce preparata e attendono la partenza. I posteggi determinano superficie
+    del piazzale, protezione dalle intemperie e rumore.
+  en: Trucks collect picked goods and wait until departure. Truck bays determine yard area, weather protection,
+    and noise.
+uses:
+- pragmaticbim:use/logistik
+tags:
+- warenausgang
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/waren-ausliefern-indoor
+  sort_order: 1
+  name:
+    de: Lkw-Abstellplatz innen
+    fr: Place camion intérieure
+    it: Posto camion interno
+    en: Indoor truck bay
+  adds:
+  - pragmaticbim:room-type/parkplatz-lkw-innen
+- id: pragmaticbim:scenario-option/waren-ausliefern-outdoor
+  sort_order: 2
+  name:
+    de: Lkw-Abstellplatz aussen
+    fr: Place camion extérieure
+    it: Posto camion esterno
+    en: Outdoor truck bay
+  adds:
+  - pragmaticbim:room-type/parkplatz-lkw-aussen

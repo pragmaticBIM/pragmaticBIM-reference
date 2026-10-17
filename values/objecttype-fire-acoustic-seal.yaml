@@ -1,0 +1,28 @@
+id: pragmaticbim:value/objecttype-fire-acoustic-seal
+code: OBJ-FIRE-ACOUSTIC-SEAL
+name:
+  de: ObjectType Brand- und Schallschutzschott
+  fr: ObjectType obturation coupe-feu et acoustique
+  it: ObjectType sigillatura tagliafuoco e acustica
+  en: ObjectType firestop and acoustic seal
+description:
+  de: ObjectType für ein separat von der Aussparung modelliertes Brand- oder Schallschutzschott.
+  fr: ObjectType pour une obturation coupe-feu ou acoustique modélisée séparément du percement.
+  it: ObjectType per una sigillatura tagliafuoco o acustica modellata separatamente dal foro.
+  en: ObjectType for a firestop or acoustic seal modelled separately from the opening.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - Brandschott
+    - Schallschutzschott
+  fr:
+    - Obturation coupe-feu
+    - Obturation acoustique
+  it:
+    - Sigillatura tagliafuoco
+    - Sigillatura acustica
+  en:
+    - Firestop
+    - Acoustic seal

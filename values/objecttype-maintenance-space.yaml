@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Wartungsraum
+    - Wartungsraum
   fr:
-  - Local de maintenance
+    - Local de maintenance
   it:
-  - Locale di manutenzione
+    - Locale di manutenzione
   en:
-  - Maintenance space
+    - Maintenance space

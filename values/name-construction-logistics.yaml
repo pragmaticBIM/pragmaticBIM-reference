@@ -15,134 +15,134 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Kran
-  - Kranfundament
-  - Schwenkbereich
-  - Kranstellfläche
-  - Container
-  - Reifenwaschanlage
-  - Zaun
-  - Tor
-  - Schutzdach
-  - Lärmschutzwand
-  - Lagerfläche
-  - Humuszwischenlager
-  - Umschlagplatz
-  - Magazin
-  - Gefahrstofflager
-  - Baubüro
-  - Sanitäranlage
-  - Aufenthaltsraum
-  - Baustrasse
-  - Rampe
-  - Parkplatz
-  - Wendefläche
-  - Muldenplatz
-  - Silo
-  - Betonmischanlage
-  - Betonpumpe
-  - Schuttrutsche
-  - Absetzbecken
-  - Bauaufzug
-  - Gerüst
-  - Baustromverteiler
-  - Bauwasseranschluss
+    - Kran
+    - Kranfundament
+    - Schwenkbereich
+    - Kranstellfläche
+    - Container
+    - Reifenwaschanlage
+    - Zaun
+    - Tor
+    - Schutzdach
+    - Lärmschutzwand
+    - Lagerfläche
+    - Humuszwischenlager
+    - Umschlagplatz
+    - Magazin
+    - Gefahrstofflager
+    - Baubüro
+    - Sanitäranlage
+    - Aufenthaltsraum
+    - Baustrasse
+    - Rampe
+    - Parkplatz
+    - Wendefläche
+    - Muldenplatz
+    - Silo
+    - Betonmischanlage
+    - Betonpumpe
+    - Schuttrutsche
+    - Absetzbecken
+    - Bauaufzug
+    - Gerüst
+    - Baustromverteiler
+    - Bauwasseranschluss
   fr:
-  - Grue
-  - Fondation de grue
-  - Zone de rotation
-  - Aire de stationnement de grue
-  - Container
-  - Lave-roues
-  - Clôture
-  - Portail
-  - Toit de protection
-  - Paroi antibruit
-  - Surface de stockage
-  - Dépôt intermédiaire d'humus
-  - Aire de transbordement
-  - Magasin
-  - Dépôt de matières dangereuses
-  - Bureau de chantier
-  - Installation sanitaire
-  - Local de séjour
-  - Route de chantier
-  - Rampe
-  - Parking
-  - Aire de retournement
-  - Aire à bennes
-  - Silo
-  - Centrale à béton
-  - Pompe à béton
-  - Goulotte à gravats
-  - Bassin de décantation
-  - Ascenseur de chantier
-  - Échafaudage
-  - Tableau électrique de chantier
-  - Raccordement d'eau de chantier
+    - Grue
+    - Fondation de grue
+    - Zone de rotation
+    - Aire de stationnement de grue
+    - Container
+    - Lave-roues
+    - Clôture
+    - Portail
+    - Toit de protection
+    - Paroi antibruit
+    - Surface de stockage
+    - Dépôt intermédiaire d'humus
+    - Aire de transbordement
+    - Magasin
+    - Dépôt de matières dangereuses
+    - Bureau de chantier
+    - Installation sanitaire
+    - Local de séjour
+    - Route de chantier
+    - Rampe
+    - Parking
+    - Aire de retournement
+    - Aire à bennes
+    - Silo
+    - Centrale à béton
+    - Pompe à béton
+    - Goulotte à gravats
+    - Bassin de décantation
+    - Ascenseur de chantier
+    - Échafaudage
+    - Tableau électrique de chantier
+    - Raccordement d'eau de chantier
   it:
-  - Gru
-  - Fondazione gru
-  - Zona di rotazione
-  - Piazzola gru
-  - Container
-  - Lavaruote
-  - Recinzione
-  - Cancello
-  - Tettoia di protezione
-  - Parete antirumore
-  - Area di stoccaggio
-  - Deposito intermedio di humus
-  - Area di trasbordo
-  - Magazzino
-  - Deposito di sostanze pericolose
-  - Ufficio di cantiere
-  - Impianto sanitario
-  - Locale di soggiorno
-  - Strada di cantiere
-  - Rampa
-  - Parcheggio
-  - Area di inversione
-  - Area cassoni
-  - Silo
-  - Impianto di betonaggio
-  - Pompa per calcestruzzo
-  - Scivolo per macerie
-  - Vasca di decantazione
-  - Ascensore di cantiere
-  - Ponteggio
-  - Quadro elettrico di cantiere
-  - Allacciamento idrico di cantiere
+    - Gru
+    - Fondazione gru
+    - Zona di rotazione
+    - Piazzola gru
+    - Container
+    - Lavaruote
+    - Recinzione
+    - Cancello
+    - Tettoia di protezione
+    - Parete antirumore
+    - Area di stoccaggio
+    - Deposito intermedio di humus
+    - Area di trasbordo
+    - Magazzino
+    - Deposito di sostanze pericolose
+    - Ufficio di cantiere
+    - Impianto sanitario
+    - Locale di soggiorno
+    - Strada di cantiere
+    - Rampa
+    - Parcheggio
+    - Area di inversione
+    - Area cassoni
+    - Silo
+    - Impianto di betonaggio
+    - Pompa per calcestruzzo
+    - Scivolo per macerie
+    - Vasca di decantazione
+    - Ascensore di cantiere
+    - Ponteggio
+    - Quadro elettrico di cantiere
+    - Allacciamento idrico di cantiere
   en:
-  - Crane
-  - Crane foundation
-  - Slew area
-  - Crane setup area
-  - Container
-  - Wheel wash
-  - Fence
-  - Gate
-  - Protection canopy
-  - Noise barrier
-  - Storage area
-  - Topsoil stockpile
-  - Handling area
-  - Store
-  - Hazardous materials store
-  - Site office
-  - Sanitary facility
-  - Break room
-  - Construction road
-  - Ramp
-  - Parking
-  - Turning area
-  - Skip area
-  - Silo
-  - Concrete batching plant
-  - Concrete pump
-  - Rubble chute
-  - Settling basin
-  - Site hoist
-  - Scaffold
-  - Site power distribution board
-  - Site water connection
+    - Crane
+    - Crane foundation
+    - Slew area
+    - Crane setup area
+    - Container
+    - Wheel wash
+    - Fence
+    - Gate
+    - Protection canopy
+    - Noise barrier
+    - Storage area
+    - Topsoil stockpile
+    - Handling area
+    - Store
+    - Hazardous materials store
+    - Site office
+    - Sanitary facility
+    - Break room
+    - Construction road
+    - Ramp
+    - Parking
+    - Turning area
+    - Skip area
+    - Silo
+    - Concrete batching plant
+    - Concrete pump
+    - Rubble chute
+    - Settling basin
+    - Site hoist
+    - Scaffold
+    - Site power distribution board
+    - Site water connection

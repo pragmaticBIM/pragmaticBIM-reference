@@ -1,0 +1,92 @@
+id: pragmaticbim:room-type/schacht
+code: RT-VO-01
+sort_order: 115
+name:
+  de: Schacht
+  fr: Gaine
+  it: Cavedio
+  en: Shaft
+definition:
+  de: Vertikaler Technik- oder Erschliessungsschacht.
+  fr: Gaine verticale technique ou de circulation.
+  it: Cavedio verticale tecnico o di circolazione.
+  en: Vertical service or circulation shaft.
+room_type_kind: room
+room_name: RN-12-10-01
+activity: S-TEC
+default_scope: building
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/schacht-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-interior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-interior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: false
+  - element: pragmaticbim:element/spaces-interior
+    name: LongName
+    value:
+      de: Schacht
+      fr: Gaine
+      it: Cavedio
+      en: Shaft
+  - element: pragmaticbim:element/spaces-interior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: FF
+  - element: pragmaticbim:element/spaces-interior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Beton
+  - element: pragmaticbim:element/spaces-interior
+    name: WallCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Beton roh
+  - element: pragmaticbim:element/spaces-interior
+    name: CeilingCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Sonstige / unbekannte Deckenbekleidung
+      fr: Other / unknown ceiling covering
+      it: Other / unknown ceiling covering
+      en: Other / unknown ceiling covering
+  - element: pragmaticbim:element/spaces-interior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Workshop
+  - element: pragmaticbim:element/spaces-interior
+    name: InteriorOrExteriorSpace
+    value: INTERNAL
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 5.0
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-interior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Eingeschränkt
+      fr: Restreint
+      it: Ristretto
+      en: Restricted
+  - element: pragmaticbim:element/spaces-interior
+    name: PeakOccupancy
+    pset: ePset_SpaceRequirement
+    value: 1
+  - element: pragmaticbim:element/spaces-interior
+    name: DailyOperatingHours
+    pset: ePset_SpaceRequirement
+    value: 1
+  - element: pragmaticbim:element/spaces-interior
+    name: OutdoorAirFlowRate
+    pset: ePset_SpaceRequirement
+    value: 30
+  status: active

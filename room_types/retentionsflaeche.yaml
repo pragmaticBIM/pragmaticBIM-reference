@@ -1,0 +1,73 @@
+id: pragmaticbim:room-type/retentionsflaeche
+code: RT-OU-05
+sort_order: 126
+name:
+  de: Retentionsfläche
+  fr: Aire de rétention
+  it: Area di ritenzione
+  en: Retention Area
+definition:
+  de: Mehrzweckfläche mit temporärer, geplanter Wasserrückhaltung bei Starkregen.
+  fr: Surface polyvalente avec une rétention d'eau temporaire et planifiée en cas
+    de fortes pluies.
+  it: Superficie polivalente con ritenzione idrica temporanea e pianificata in caso
+    di forti piogge.
+  en: Multi-purpose area with temporary, planned water retention during heavy rainfall.
+room_type_kind: room
+room_name: RN-11-20-04
+activity: O-GRN-REC
+default_scope: site
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/retentionsflaeche-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Retentionsfläche
+      fr: Aire de rétention
+      it: Area di ritenzione
+      en: Retention Area
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: BUF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Durchlässig
+      fr: Permeable
+      it: Permeable
+      en: Permeable
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  status: active

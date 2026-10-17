@@ -1,0 +1,111 @@
+id: pragmaticbim:project-goal/umbauhaeufigkeit
+sort_order: 1901
+group: rahmenbedingungen
+code: PG-15
+name:
+  de: Umbauhäufigkeit
+  fr: Fréquence des transformations
+  it: Frequenza delle trasformazioni
+  en: Refit frequency
+tag:
+  de: Umbau
+  fr: Transformation
+  it: Trasformazione
+  en: Refit
+description:
+  de: |-
+    Wie oft Räume, Geräte und Installationen umgebaut werden, entscheidet, wie aktuell die Bestandsdaten im Betrieb sein müssen. Je häufiger umgebaut wird, desto mehr Anwendungsfälle der Bewirtschaftung sind vorgewählt.
+
+    Ohne diese Festlegung bleibt offen, wie aktuell die Bestandsdaten im Betrieb sein müssen.
+  fr: |-
+    La fréquence à laquelle les locaux, appareils et installations sont transformés détermine l'actualité requise des données d'état en exploitation. Plus les transformations sont fréquentes, plus de cas d'utilisation de la gestion immobilière sont présélectionnés.
+
+    Sans cette décision, il reste ouvert à quel point les données d'état doivent être à jour en exploitation.
+  it: |-
+    La frequenza con cui locali, apparecchi e impianti vengono trasformati determina quanto aggiornati devono essere i dati dell'esistente in esercizio. Più frequenti sono le trasformazioni, più casi d'uso della gestione immobiliare sono preselezionati.
+
+    Senza questa decisione resta aperto quanto aggiornati devono essere i dati dell'esistente in esercizio.
+  en: |-
+    How often spaces, equipment, and installations are refitted decides how current the as-built data must be in operation. The more often the building is refitted, the more facility management use cases are preselected.
+
+    Without this decision it stays open how current the as-built data must be in operation.
+status: active
+uses:
+- pragmaticbim:use/gesundheit
+- pragmaticbim:use/produktion
+- pragmaticbim:use/labor
+- pragmaticbim:use/rechenzentrum
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/umbauhaeufigkeit-selten
+  code: UMB-01
+  sort_order: 1
+  name:
+    de: Selten
+    fr: Rarement
+    it: Raramente
+    en: Rarely
+  description:
+    de: Raumaufteilung und Installationen bleiben über Jahrzehnte weitgehend gleich. Listen genügen für
+      den Betrieb.
+    fr: La répartition des locaux et les installations restent largement inchangées pendant des décennies.
+      Des listes suffisent pour l'exploitation.
+    it: La suddivisione dei locali e gli impianti restano in gran parte invariati per decenni. Gli elenchi
+      bastano per l'esercizio.
+    en: Layout and installations stay largely the same for decades. Lists are enough for operation.
+  status: active
+  comment: ''
+  activated_workflows:
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/opr-signage-room-number
+  - pragmaticbim:workflow/opr-firestop-maintenance
+- id: pragmaticbim:project-goal-level/umbauhaeufigkeit-periodisch
+  code: UMB-02
+  sort_order: 2
+  name:
+    de: Periodisch
+    fr: Périodiquement
+    it: Periodicamente
+    en: Periodically
+  description:
+    de: Grössere Umbauten alle paar Jahre. Das Modell wird bei jedem Umbau nachgeführt.
+    fr: Transformations importantes tous les quelques ans. La maquette est mise à jour à chaque transformation.
+    it: Trasformazioni importanti ogni pochi anni. Il modello viene aggiornato a ogni trasformazione.
+    en: Major refits every few years. The model is updated with each refit.
+  status: active
+  comment: ''
+  activated_workflows:
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/opr-signage-room-number
+  - pragmaticbim:workflow/opr-firestop-maintenance
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  - pragmaticbim:workflow/opr-facility-management-architecture-model
+  - pragmaticbim:workflow/hov-native-model-handover
+- id: pragmaticbim:project-goal-level/umbauhaeufigkeit-laufend
+  code: UMB-03
+  sort_order: 3
+  name:
+    de: Laufend
+    fr: En continu
+    it: Continuamente
+    en: Continuously
+  description:
+    de: Räume, Geräte und Installationen werden laufend angepasst. Modell und Punktwolke halten den Bestand
+      aktuell.
+    fr: Les locaux, appareils et installations sont adaptés en continu. La maquette et le nuage de points
+      maintiennent l'état existant à jour.
+    it: Locali, apparecchi e impianti vengono adattati di continuo. Modello e nuvola di punti mantengono
+      aggiornato l'esistente.
+    en: Spaces, equipment, and installations change continuously. Model and point cloud keep the as-built
+      state current.
+  status: active
+  comment: ''
+  activated_workflows:
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/opr-signage-room-number
+  - pragmaticbim:workflow/opr-firestop-maintenance
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  - pragmaticbim:workflow/opr-facility-management-architecture-model
+  - pragmaticbim:workflow/hov-native-model-handover
+  - pragmaticbim:workflow/opr-facility-management-point-cloud

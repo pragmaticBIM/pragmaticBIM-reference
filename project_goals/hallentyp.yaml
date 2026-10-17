@@ -1,0 +1,102 @@
+id: pragmaticbim:project-goal/hallentyp
+sort_order: 1111
+group: rahmenbedingungen
+code: PG-27
+name:
+  de: Hallentyp
+  fr: Type de salle
+  it: Tipo di palestra
+  en: Hall type
+tag:
+  de: Halle
+  fr: Salle
+  it: Palestra
+  en: Hall
+description:
+  de: |-
+    Der Hallentyp und die Zahl der Spielfelder, Wasserflächen und Zuschauerplätze bestimmen Spannweiten, Garderoben und Fluchtwege.
+
+    Ohne diese Festlegung bleiben Spannweite, Teilbarkeit und Zuschauerplätze offen. Garderoben und Fluchtwege lassen sich dann nicht aus dem Sportbetrieb ableiten.
+  fr: |-
+    Le type de salle et le nombre de terrains, de surfaces d'eau et de places pour les spectateurs déterminent les portées, les vestiaires et les voies d'évacuation.
+
+    Sans cette décision, portée, divisibilité et places pour les spectateurs restent ouvertes. Vestiaires et voies d'évacuation ne se déduisent alors pas de l'exploitation sportive.
+  it: |-
+    Il tipo di palestra e il numero di campi, superfici d'acqua e posti per gli spettatori determinano campate, spogliatoi e vie di fuga.
+
+    Senza questa decisione campata, divisibilità e posti per gli spettatori restano aperti. Spogliatoi e vie di fuga non si ricavano allora dall'uso sportivo.
+  en: |-
+    The hall type and the number of courts, water areas, and spectator places determine spans, changing rooms, and escape routes.
+
+    Without this decision span, divisibility, and spectator places stay open. Changing rooms and escape routes then cannot be derived from how the hall is used for sport.
+status: active
+uses:
+- pragmaticbim:use/sport
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/hallentyp-einfachhalle
+  code: HAT-01
+  sort_order: 1
+  name:
+    de: Einfachhalle
+    fr: Salle simple
+    it: Palestra singola
+    en: Single hall
+  description:
+    de: Eine Halleneinheit für Schul- und Vereinssport.
+    fr: Une unité de salle pour le sport scolaire et associatif.
+    it: Un'unità di palestra per lo sport scolastico e associativo.
+    en: One hall unit for school and club sport.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/hallentyp-doppelhalle
+  code: HAT-02
+  sort_order: 2
+  name:
+    de: Doppelhalle
+    fr: Salle double
+    it: Palestra doppia
+    en: Double hall
+  description:
+    de: Zwei Halleneinheiten, mit Trennvorhang teilbar.
+    fr: Deux unités de salle, divisibles par un rideau.
+    it: Due unità di palestra, divisibili con una tenda.
+    en: Two hall units, divisible by a curtain.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/hallentyp-dreifachhalle
+  code: HAT-03
+  sort_order: 3
+  name:
+    de: Dreifachhalle
+    fr: Salle triple
+    it: Palestra tripla
+    en: Triple hall
+  description:
+    de: Drei Halleneinheiten, auch für Wettkämpfe mit Publikum.
+    fr: Trois unités de salle, aussi pour des compétitions avec public.
+    it: Tre unità di palestra, anche per gare con pubblico.
+    en: Three hall units, also for competitions with spectators.
+  status: active
+  comment: ''
+quantities:
+- id: pragmaticbim:quantity/hallentyp-wasserflaeche
+  code: HAT-Q02
+  sort_order: 1
+  name:
+    de: Wasserfläche
+    fr: Surface d'eau
+    it: Superficie d'acqua
+    en: Water area
+  unit: m²
+  status: active
+- id: pragmaticbim:quantity/hallentyp-zuschauerplaetze
+  code: HAT-Q03
+  sort_order: 2
+  name:
+    de: Anzahl Zuschauerplätze
+    fr: Nombre de places pour les spectateurs
+    it: Numero di posti per gli spettatori
+    en: Number of spectator places
+  status: active

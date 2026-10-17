@@ -1,0 +1,65 @@
+id: pragmaticbim:usage-scenario/server-betreiben
+code: US-RZ-01
+sort_order: 2
+name:
+  de: Server betreiben
+  fr: Exploiter des serveurs
+  it: Gestire i server
+  en: Operating servers
+description:
+  de: IT-Systeme laufen rund um die Uhr. Die Anordnung der IT-Räume entscheidet über Ausfallsicherheit,
+    Lasten und Erweiterbarkeit.
+  fr: Les systèmes informatiques fonctionnent jour et nuit. La disposition des locaux informatiques détermine
+    la disponibilité, les charges et les possibilités d'extension.
+  it: I sistemi IT funzionano 24 ore su 24. La disposizione dei locali IT determina disponibilità, carichi
+    ed espandibilità.
+  en: IT systems run around the clock. The arrangement of IT rooms determines availability, loads, and
+    expandability.
+uses:
+- pragmaticbim:use/rechenzentrum
+tags:
+- it
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/server-betreiben-server
+  sort_order: 1
+  name:
+    de: Serverraum
+    fr: Salle des serveurs
+    it: Sala server
+    en: Server room
+  quantity:
+    id: pragmaticbim:quantity/server-betreiben-server
+    sort_order: 1
+    name:
+      de: Anzahl Racks
+      fr: Nombre de baies
+      it: Numero di rack
+      en: Number of racks
+    status: active
+  adds:
+  - pragmaticbim:room-type/serverraum
+- id: pragmaticbim:scenario-option/server-betreiben-server-comms
+  sort_order: 2
+  name:
+    de: Serverraum mit Kommunikationsraum
+    fr: Salle des serveurs avec local de communication
+    it: Sala server con locale comunicazioni
+    en: Server room with communications room
+  quantity:
+    id: pragmaticbim:quantity/server-betreiben-server-comms
+    sort_order: 1
+    name:
+      de: Anzahl Racks
+      fr: Nombre de baies
+      it: Numero di rack
+      en: Number of racks
+    status: active
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/kommunikationsraum
+    to_room_type: pragmaticbim:room-type/serverraum
+  adds:
+  - pragmaticbim:room-type/kommunikationsraum
+  - pragmaticbim:room-type/serverraum

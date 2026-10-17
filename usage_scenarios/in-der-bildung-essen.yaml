@@ -1,0 +1,42 @@
+id: pragmaticbim:usage-scenario/in-der-bildung-essen
+code: US-BI-05
+sort_order: 6
+name:
+  de: Essen und trinken
+  fr: Manger et boire
+  it: Mangiare e bere
+  en: Eating and drinking
+description:
+  de: Lernende und Mitarbeitende verpflegen sich während des Bildungstags. Das Angebot entscheidet über
+    Wege, Aufenthaltsdauer und zusätzliche Fläche.
+  fr: Les apprenants et le personnel se restaurent pendant la journée. L'offre détermine les trajets,
+    la durée de séjour et la surface supplémentaire.
+  it: Discenti e personale si ristorano durante la giornata. L'offerta determina percorsi, durata della
+    permanenza e superficie aggiuntiva.
+  en: Learners and staff eat during the education day. The provision determines travel, dwell time, and
+    additional area.
+uses:
+- pragmaticbim:use/bildung
+tags:
+- verpflegung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/in-der-bildung-essen-cafeteria
+  sort_order: 1
+  name:
+    de: Cafeteria
+    fr: Cafétéria
+    it: Caffetteria
+    en: Cafeteria
+  adds:
+  - pragmaticbim:room-type/cafeteria
+- id: pragmaticbim:scenario-option/in-der-bildung-essen-external
+  sort_order: 2
+  name:
+    de: Externes Angebot
+    fr: Offre externe
+    it: Offerta esterna
+    en: External provision
+  exclusive: true

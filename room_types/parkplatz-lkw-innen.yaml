@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/parkplatz-lkw-innen
+code: RT-PK-01
+sort_order: 120
+name:
+  de: Parkplatz LKW Innen
+  fr: Place camion intérieure
+  it: Posto camion interno
+  en: Interior Truck Parking
+definition:
+  de: Innenparkplatz für Lastwagen.
+  fr: Place intérieure pour les camions.
+  it: Posto interno per autocarri.
+  en: Interior parking space for trucks.
+room_type_kind: room
+room_name: RN-13-10-02
+activity: S-PRK-INT
+default_scope: building
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/parkplatz-lkw-innen-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-parking
+    name: PredefinedType
+    value: PARKING
+  - element: pragmaticbim:element/spaces-parking
+    name: ParkingUse
+    pset: Pset_SpaceParking
+    value: TRUCK
+  status: active

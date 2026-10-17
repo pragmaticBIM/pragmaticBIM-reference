@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Einbaumöbel
+    - Einbaumöbel
   fr:
-  - Mobilier intégré
+    - Mobilier intégré
   it:
-  - Arredo fisso
+    - Arredo fisso
   en:
-  - Built-in furniture
+    - Built-in furniture

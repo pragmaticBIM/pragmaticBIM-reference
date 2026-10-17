@@ -1,0 +1,69 @@
+id: pragmaticbim:usage-scenario/material-anliefern
+code: US-PR-03
+sort_order: 4
+name:
+  de: Material anliefern
+  fr: Livrer les matériaux
+  it: Consegnare i materiali
+  en: Delivering materials
+description:
+  de: Rohmaterial und Halbfabrikate kommen per Lastwagen an. Die Anlieferung entscheidet über Hofflächen,
+    Lagerbestand und Wege zur Fertigung.
+  fr: Les matières premières et produits semi-finis arrivent par camion. La livraison détermine les surfaces
+    de cour, les stocks et les chemins vers la fabrication.
+  it: Materie prime e semilavorati arrivano su camion. La consegna determina superfici di piazzale, scorte
+    e percorsi verso la produzione.
+  en: Raw materials and semi-finished goods arrive by truck. Delivery determines yard area, stock levels,
+    and routes to production.
+uses:
+- pragmaticbim:use/produktion
+tags:
+- logistik
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/material-anliefern-dock-store
+  sort_order: 1
+  name:
+    de: Laderampe und Annahmelager
+    fr: Quai et stock de réception
+    it: Rampa e deposito di ricezione
+    en: Loading dock and receiving store
+  quantity:
+    id: pragmaticbim:quantity/material-anliefern-dock-store
+    sort_order: 1
+    name:
+      de: Anzahl Andockplätze
+      fr: Nombre de quais de chargement
+      it: Numero di baie di carico
+      en: Number of loading bays
+    status: active
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/laderampe
+    to_room_type: pragmaticbim:room-type/annahmelager
+  adds:
+  - pragmaticbim:room-type/laderampe
+  - pragmaticbim:room-type/annahmelager
+- id: pragmaticbim:scenario-option/material-anliefern-hazardous
+  sort_order: 2
+  name:
+    de: Anlieferung von Gefahrstoffen
+    fr: Livraison de matières dangereuses
+    it: Consegna di sostanze pericolose
+    en: Hazardous goods delivery
+  quantity:
+    id: pragmaticbim:quantity/material-anliefern-hazardous
+    sort_order: 1
+    name:
+      de: Anzahl Andockplätze
+      fr: Nombre de quais de chargement
+      it: Numero di baie di carico
+      en: Number of loading bays
+    status: active
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/laderampe
+    to_room_type: pragmaticbim:room-type/gefahrstofflager
+  adds:
+  - pragmaticbim:room-type/laderampe
+  - pragmaticbim:room-type/gefahrstofflager

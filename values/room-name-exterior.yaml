@@ -21,16 +21,21 @@ values:
   - Fluchtbalkon
   - Dachterrasse
   - Wartungsdach
-  - Technikaufstellflaeche
-  - Gruendach
-  - Gartenflaeche
+  - Technikaufstellfläche
+  - Gründach
+  - Loggia
+  - Gartenfläche
   - Spielplatz
-  - Beckenflaeche
-  - Retentionsflaeche
-  - Ueberdachter Fussweg
+  - Beckenfläche
+  - Retentionsfläche
+  - Überdachter Fussweg
   - Portikus
   - Aussentreppe
   - Strasse
+  - Abfallsammelplatz Aussen
+  - Unterflurcontainer
+  - Gemeinsamer Kompost
+  - Briefkasten- und Paketfachanlage Aussen
   - Parkplatz PKW Aussen
   - Parkplatz LKW Aussen
   - Parkplatz Velo Aussen
@@ -44,6 +49,7 @@ values:
   - Toiture d'entretien
   - Aire technique
   - Toiture végétalisée
+  - Loggia
   - Jardin
   - Place de jeux
   - Aire de bassin
@@ -52,6 +58,10 @@ values:
   - Portique
   - Escalier extérieur
   - Rue
+  - Aire extérieure de collecte des déchets
+  - Conteneur enterré
+  - Compost commun
+  - Installation extérieure de boîtes aux lettres et casiers à colis
   - Place voiture extérieure
   - Place camion extérieure
   - Place vélo extérieure
@@ -65,6 +75,7 @@ values:
   - Copertura di manutenzione
   - Area tecnica
   - Tetto verde
+  - Loggia
   - Giardino
   - Parco giochi
   - Area vasca
@@ -73,6 +84,10 @@ values:
   - Portico
   - Scala esterna
   - Strada
+  - Area esterna di raccolta rifiuti
+  - Contenitore interrato
+  - Compostaggio comune
+  - Impianto esterno di cassette postali e armadietti per pacchi
   - Posto auto esterno
   - Posto camion esterno
   - Posto bici esterno
@@ -86,6 +101,7 @@ values:
   - Maintenance Roof
   - Technical Plant Pad
   - Green Roof
+  - Loggia
   - Garden Area
   - Playground
   - Pool Area
@@ -94,6 +110,10 @@ values:
   - Portico
   - Exterior Stair
   - Street
+  - Exterior Waste Collection Area
+  - Underground Waste Container
+  - Shared Compost
+  - Exterior Mailbox and Parcel Locker Area
   - Exterior Car Parking
   - Exterior Truck Parking
   - Exterior Bicycle Parking

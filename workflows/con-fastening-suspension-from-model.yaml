@@ -7,128 +7,86 @@ name:
   it: Fissaggi e sospensioni dal modello
   en: Fastening and suspension from model
 description:
-  de: 'Befestigungen und Aufhängungen auf Grundlage der koordinierten Tragwerks- und TGA-Modelle planen, damit sie nicht erst auf der Baustelle improvisiert werden müssen.
-
+  de: |-
+    Befestigungen und Aufhängungen auf Grundlage der koordinierten Tragwerks- und TGA-Modelle planen, damit sie nicht erst auf der Baustelle improvisiert werden müssen.
 
     **Ausgangslage**
-
     - Aufhängungen und Befestigungen werden oft erst auf der Baustelle improvisiert; Material und Positionen fehlen in der Vorplanung.
-
     - Ohne abgestimmte Modelllieferung ist unklar, welche Geometrie und Daten der Unternehmer für die Befestigungsplanung braucht.
 
-
     **Ziel & Nutzen**
-
     - Koordiniertes Tragwerks- und TGA-Modell etappenweise als Basis für die Befestigungs- und Aufhängungsplanung liefern.
-
     - Detailplanung, Produktwahl und Stücklisten liegen beim Unternehmer bzw. Lieferanten.
 
-
     **Ablauf**
-
     1. Koordiniertes Tragwerks- und TGA-Modell pro Etappe gemäss Absprache mit dem Unternehmer bereitstellen.
-
     2. Gemeinsamen Modellbezug und den für die Befestigungsplanung benötigten Lieferumfang mit dem Unternehmer festlegen.
-
     3. Modell für Planung, Stücklisten und ggf. Absteckung der Befestigungspunkte nutzen.
 
-
     **Lieferergebnis**
-
-    - Koordiniertes Tragwerks- und TGA-Modell mit gemeinsamem Bezug und den vereinbarten Grundlagen für die Befestigungsplanung.'
-  fr: 'Planification des fixations et suspensions à partir du modèle selon les exigences de l''entreprise.
-
+    - Koordiniertes Tragwerks- und TGA-Modell mit gemeinsamem Bezug und den vereinbarten Grundlagen für die Befestigungsplanung.
+  fr: |-
+    Planification des fixations et suspensions à partir du modèle selon les exigences de l'entreprise.
 
     **Situation de départ**
-
     - Fixations et suspensions sont souvent improvisées sur chantier ; matériaux et positions manquent en amont.
-
-    - Sans livraison de modèle convenue, il n''est pas clair quelle géométrie et quelles données l''entreprise nécessite pour la planification des fixations.
-
+    - Sans livraison de modèle convenue, il n'est pas clair quelle géométrie et quelles données l'entreprise nécessite pour la planification des fixations.
 
     **Objectif et bénéfice**
-
     - Livrer par étape le modèle structure et CVC coordonné comme base pour la planification des fixations et suspensions.
-
-    - La conception détaillée, le choix des produits et les listes de matériel restent chez l''entreprise ou le fournisseur.
-
+    - La conception détaillée, le choix des produits et les listes de matériel restent chez l'entreprise ou le fournisseur.
 
     **Déroulement**
-
-    1. Fournir le modèle structure et CVC coordonné par étape selon accord avec l''entreprise.
-
-    2. Fixer avec l''entreprise le référentiel modèle commun et le périmètre de livraison nécessaire à la planification des fixations.
-
-    3. Utiliser le modèle pour la planification, les listes de matériel et éventuellement l''implantation des points de fixation.
-
+    1. Fournir le modèle structure et CVC coordonné par étape selon accord avec l'entreprise.
+    2. Fixer avec l'entreprise le référentiel modèle commun et le périmètre de livraison nécessaire à la planification des fixations.
+    3. Utiliser le modèle pour la planification, les listes de matériel et éventuellement l'implantation des points de fixation.
 
     **Livrable**
-
-    - Maquettes structure et CVC coordonnées avec référentiel commun et données convenues pour la planification des fixations.'
-  it: 'Pianificazione di fissaggi e sospensioni dal modello secondo i requisiti dell''impresa.
-
+    - Maquettes structure et CVC coordonnées avec référentiel commun et données convenues pour la planification des fixations.
+  it: |-
+    Pianificazione di fissaggi e sospensioni dal modello secondo i requisiti dell'impresa.
 
     **Situazione di partenza**
-
     - Fissaggi e sospensioni sono spesso improvvisati in cantiere; materiali e posizioni mancano nella pianificazione anticipata.
-
-    - Senza consegna di modello concordata non è chiaro quale geometria e quali dati servono all''impresa per la pianificazione dei fissaggi.
-
+    - Senza consegna di modello concordata non è chiaro quale geometria e quali dati servono all'impresa per la pianificazione dei fissaggi.
 
     **Obiettivo e beneficio**
-
     - Consegnare per tappa il modello strutturale e MEP coordinato come base per la pianificazione di fissaggi e sospensioni.
-
-    - Progettazione di dettaglio, scelta dei prodotti ed elenchi materiali restano all''impresa o al fornitore.
-
+    - Progettazione di dettaglio, scelta dei prodotti ed elenchi materiali restano all'impresa o al fornitore.
 
     **Svolgimento**
-
-    1. Fornire il modello strutturale e MEP coordinato per tappa secondo accordo con l''impresa.
-
-    2. Concordare con l''impresa il riferimento modello comune e il perimetro di consegna necessario alla pianificazione dei fissaggi.
-
+    1. Fornire il modello strutturale e MEP coordinato per tappa secondo accordo con l'impresa.
+    2. Concordare con l'impresa il riferimento modello comune e il perimetro di consegna necessario alla pianificazione dei fissaggi.
     3. Utilizzare il modello per pianificazione, elenchi materiali ed eventualmente tracciamento dei punti di fissaggio.
 
-
     **Risultato della fornitura**
-
-    - Modelli strutturale e degli impianti coordinati con riferimento comune e dati concordati per la pianificazione dei fissaggi.'
-  en: 'Plan fastenings and suspensions on the basis of the coordinated structural and MEP models so that they do not have to be improvised on site.
-
+    - Modelli strutturale e degli impianti coordinati con riferimento comune e dati concordati per la pianificazione dei fissaggi.
+  en: |-
+    Plan fastenings and suspensions on the basis of the coordinated structural and MEP models so that they do not have to be improvised on site.
 
     **Starting point**
-
     - Fastenings and suspensions are often improvised on site; materials and positions are missing from early planning.
-
     - Without an agreed model delivery it is unclear which geometry and data the contractor needs for fastening planning.
 
-
     **Goal & benefit**
-
     - Deliver the coordinated structural and MEP model stage by stage as the basis for fastening and suspension planning.
-
     - Detailed design, product selection, and bills of materials remain with the contractor or supplier.
 
-
     **Process**
-
     1. Provide the coordinated structural and MEP model per stage as agreed with the contractor.
-
     2. Agree with the contractor the common model reference and the delivery scope needed for fastening planning.
-
     3. Use the model for planning, bills of materials, and where applicable layout of fastening points.
 
-
     **Deliverable**
-
-    - Coordinated structural and MEP models with a common reference and the agreed basis for fastening planning.'
-workflow_group: null
+    - Coordinated structural and MEP models with a common reference and the agreed basis for fastening planning.
+workflow_group: produktion-montage
 parent_workflow: pragmaticbim:workflow/con
 picture_link: null
 status: active
 needed_in_domain:
 - pragmaticbim:domain/structural
 - pragmaticbim:domain/mep
-comment: Construction phases SIA 51–53. Product-level MEP supports (channels, anchors, hangers) are contractor/supplier-owned aspect models (Hilti-style); no new Elementplan elements. Delivery scope beyond
-  coordinated geometry is agreed with the contractor.
+comment: >-
+  Construction phases SIA 51–53. Product-level MEP supports (channels, anchors, hangers)
+  are contractor/supplier-owned aspect models (Hilti-style); no new Elementplan elements.
+  Delivery scope beyond coordinated geometry is agreed with the contractor.

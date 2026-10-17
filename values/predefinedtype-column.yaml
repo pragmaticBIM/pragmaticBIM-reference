@@ -15,14 +15,14 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - COLUMN
-  - PILASTER
+    - COLUMN
+    - PILASTER
   fr:
-  - COLUMN
-  - PILASTER
+    - COLUMN
+    - PILASTER
   it:
-  - COLUMN
-  - PILASTER
+    - COLUMN
+    - PILASTER
   en:
-  - COLUMN
-  - PILASTER
+    - COLUMN
+    - PILASTER

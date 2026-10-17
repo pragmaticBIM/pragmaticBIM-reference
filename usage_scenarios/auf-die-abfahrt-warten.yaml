@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/auf-die-abfahrt-warten
+code: US-VE-03
+sort_order: 4
+name:
+  de: Auf die Abfahrt warten
+  fr: Attendre le départ
+  it: Attendere la partenza
+  en: Waiting for departure
+description:
+  de: Reisende warten vor der Abfahrt, teils mit Gepäck oder Kindern. Geschützte Wartebereiche entscheiden
+    über Komfort, Wetterschutz und Fläche.
+  fr: Les voyageurs attendent avant le départ, parfois avec des bagages ou des enfants. Des zones d'attente
+    abritées déterminent le confort, la protection contre les intempéries et la surface.
+  it: I viaggiatori attendono prima della partenza, talvolta con bagagli o bambini. Zone di attesa riparate
+    determinano comfort, protezione dalle intemperie e superficie.
+  en: Passengers wait before departure, sometimes with luggage or children. Sheltered waiting areas determine
+    comfort, weather protection, and area.
+uses:
+- pragmaticbim:use/verkehr
+tags:
+- warten
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/auf-die-abfahrt-warten-waiting-room
+  sort_order: 1
+  name:
+    de: Wartesaal
+    fr: Salle d'attente
+    it: Sala d'attesa
+    en: Waiting room
+  adds:
+  - pragmaticbim:room-type/wartezimmer
+- id: pragmaticbim:scenario-option/auf-die-abfahrt-warten-hall
+  sort_order: 2
+  name:
+    de: Warten in der Halle
+    fr: Attente dans le hall
+    it: Attesa nell'atrio
+    en: Waiting in the hall
+  adds:
+  - pragmaticbim:room-type/eingangshalle

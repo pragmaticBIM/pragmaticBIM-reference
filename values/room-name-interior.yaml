@@ -19,22 +19,27 @@ values:
   - Wohnzimmer
   - Esszimmer
   - Arbeitszimmer
-  - Gaestezimmer
-  - Kueche
+  - Gästezimmer
+  - Wintergarten
+  - Küche
   - Badezimmer
-  - Waschkueche
+  - Waschküche
   - Hauswirtschaftsraum
   - Gang
   - Wohnungseingang
   - Abstellraum Wohnen
   - Kellerabteil
   - Entree
+  - Gemeinschaftswaschküche
+  - Trocknungsraum
   - Wohneinheit
-  - Buero
-  - Grossraumbuero
+  - Büro
+  - Grossraumbüro
   - Besprechungsraum
   - Konferenzraum
   - Pausenraum
+  - Gemeinschaftsbüro
+  - Kopierraum
   - Empfang
   - Flur
   - Eingangshalle
@@ -43,6 +48,10 @@ values:
   - Treppenhaus
   - Aufzugszone
   - Rampe
+  - Warenaufzug
+  - Bettenaufzug
+  - Perron
+  - Schalterhalle
   - Herren-WC
   - Damen-WC
   - Barrierefreies WC
@@ -61,7 +70,7 @@ values:
   - Wartezimmer
   - Pflegestationszimmer
   - Klassenzimmer
-  - Hoersaal
+  - Hörsaal
   - Seminarraum
   - Computerraum
   - Bibliotheksraum
@@ -74,12 +83,19 @@ values:
   - Restaurant
   - Bar
   - Food-Court
+  - Gewerbeküche
+  - Spülküche
   - Verkaufsraum
-  - Verkaufsflaeche
+  - Verkaufsfläche
   - Kiosk
   - Kundenbetreuungsbereich
   - Ausstellungsraum
+  - Abholstation
   - Hotelzimmer
+  - Bühne
+  - Tribüne
+  - Garderobe
+  - Sporthalle
   - Werkstatt
   - Produktionshalle
   - Montagebereich
@@ -87,33 +103,41 @@ values:
   - Reinraum
   - Lagerhalle
   - Laderampe
-  - Qualitaetskontrollraum
+  - Qualitätskontrollraum
   - Wartungsbucht
-  - Ueberdachter Hof
+  - Überdachter Hof
   - HLK-Zentralraum
   - Pumpenraum
   - Heizungsraum
-  - Kaelteraum
+  - Kälteraum
   - Sprinklerraum
   - Elektroraum
   - Serverraum
   - Generatorraum
   - Transformatorenraum
   - Kommunikationsraum
-  - Zaehlerraum
+  - Leitstand
+  - Zählerraum
   - Abfallraum
+  - Abfallschacht
+  - Chemieabfallraum
+  - Biologieabfallraum
+  - Radioaktivabfallraum
   - Allgemeiner Lagerraum
   - Materialraum
-  - Geraetelager
+  - Gerätelager
   - Annahmelager
   - Hauswarteschrank
+  - Kinderwagenraum
+  - Gartenhaus
   - Archivraum
   - Postraum
-  - Kuehlraum
+  - Kühlraum
   - Laborlager
   - Chemikalienlager
   - Gefahrstofflager
   - Probenlager
+  - Paketraum
   - Schacht
   - Steigzone
   - Installationszwischenraum
@@ -129,6 +153,7 @@ values:
   - Salle à manger
   - Bureau à domicile
   - Chambre d'amis
+  - Jardin d'hiver
   - Cuisine
   - Salle de bain
   - Buanderie
@@ -138,12 +163,16 @@ values:
   - Débarras du logement
   - Compartiment de cave
   - Entrée
+  - Buanderie commune
+  - Local de séchage
   - Logement
   - Bureau
   - Bureau paysager
   - Salle de réunion
   - Salle de conférence
   - Salle de pause
+  - Bureau communautaire
+  - Local de reprographie
   - Réception
   - Couloir commun
   - Hall d'entrée
@@ -152,6 +181,10 @@ values:
   - Cage d'escalier
   - Palier d'ascenseur
   - Rampe
+  - Monte-charge
+  - Ascenseur pour lits
+  - Quai
+  - Hall des guichets
   - WC hommes
   - WC femmes
   - WC sans obstacle
@@ -183,12 +216,19 @@ values:
   - Restaurant
   - Bar
   - Aire de restauration
+  - Cuisine professionnelle
+  - Laverie
   - Local de vente
   - Surface de vente
   - Kiosque
   - Accueil clientèle
   - Salle d'exposition
+  - Point de retrait
   - Chambre d'hôtel
+  - Scène
+  - Tribune
+  - Vestiaire
+  - Salle de sport
   - Atelier
   - Halle de production
   - Zone de montage
@@ -209,13 +249,20 @@ values:
   - Local du groupe électrogène
   - Local transformateur
   - Local de communication
+  - Salle de contrôle
   - Local des compteurs
   - Local déchets
+  - Gaine vide-ordures
+  - Local à déchets chimiques
+  - Local à déchets biologiques
+  - Local à déchets radioactifs
   - Dépôt général
   - Local à matériel
   - Dépôt d'appareils
   - Dépôt de réception
   - Placard de conciergerie
+  - Local à poussettes
+  - Abri de jardin
   - Archives
   - Local courrier
   - Chambre froide
@@ -223,6 +270,7 @@ values:
   - Dépôt de produits chimiques
   - Dépôt de matières dangereuses
   - Dépôt d'échantillons
+  - Local à colis
   - Gaine
   - Zone de colonnes
   - Vide d'installations
@@ -238,6 +286,7 @@ values:
   - Sala da pranzo
   - Studio
   - Camera ospiti
+  - Giardino d'inverno
   - Cucina
   - Bagno
   - Lavanderia
@@ -247,12 +296,16 @@ values:
   - Ripostiglio dell'alloggio
   - Comparto cantina
   - Entrata
+  - Lavanderia comune
+  - Locale di asciugatura
   - Alloggio
   - Ufficio
   - Ufficio open space
   - Sala riunioni
   - Sala conferenze
   - Sala pausa
+  - Ufficio comunitario
+  - Locale fotocopie
   - Ricezione
   - Corridoio comune
   - Atrio
@@ -261,6 +314,10 @@ values:
   - Vano scale
   - Zona ascensore
   - Rampa
+  - Montacarichi
+  - Montalettighe
+  - Marciapiede
+  - Atrio biglietteria
   - WC uomini
   - WC donne
   - WC privo di barriere
@@ -292,12 +349,19 @@ values:
   - Ristorante
   - Bar
   - Area ristorazione
+  - Cucina professionale
+  - Lavaggio stoviglie
   - Locale di vendita
   - Superficie di vendita
   - Chiosco
   - Area assistenza clienti
   - Sala espositiva
+  - Punto di ritiro
   - Camera d'albergo
+  - Palco
+  - Tribuna
+  - Guardaroba
+  - Palestra
   - Officina
   - Capannone di produzione
   - Zona di montaggio
@@ -318,13 +382,20 @@ values:
   - Locale gruppo elettrogeno
   - Locale trasformatore
   - Locale comunicazioni
+  - Sala di controllo
   - Locale contatori
   - Locale rifiuti
+  - Condotto rifiuti
+  - Locale rifiuti chimici
+  - Locale rifiuti biologici
+  - Locale rifiuti radioattivi
   - Deposito generale
   - Locale materiali
   - Deposito apparecchi
   - Deposito di ricezione
   - Armadio del custode
+  - Locale passeggini
+  - Casetta da giardino
   - Archivio
   - Locale posta
   - Cella frigorifera
@@ -332,6 +403,7 @@ values:
   - Deposito prodotti chimici
   - Deposito sostanze pericolose
   - Deposito campioni
+  - Locale pacchi
   - Cavedio
   - Zona montanti
   - Intercapedine impianti
@@ -347,6 +419,7 @@ values:
   - Dining Room
   - Home Study
   - Guest Room
+  - Winter Garden
   - Kitchen
   - Bathroom
   - Laundry Room
@@ -356,12 +429,16 @@ values:
   - Residential Closet
   - Cellar Compartment
   - Entrance Hall
+  - Communal Laundry
+  - Drying Room
   - Apartment Unit
   - Office
   - Open-Plan Office
   - Meeting Room
   - Conference Room
   - Break Room
+  - Community Office
+  - Copy Room
   - Reception
   - Corridor
   - Lobby
@@ -370,6 +447,10 @@ values:
   - Stairwell
   - Elevator Lobby
   - Ramp
+  - Service Lift
+  - Bed Lift
+  - Platform
+  - Ticket Hall
   - Male Toilet
   - Female Toilet
   - Accessible Toilet
@@ -401,12 +482,19 @@ values:
   - Restaurant
   - Bar
   - Food Court
+  - Commercial Kitchen
+  - Dishwashing Area
   - Retail Space
   - Sales Floor
   - Kiosk
   - Customer Service Area
   - Exhibition Space
+  - Pickup Point
   - Hotel Room
+  - Stage
+  - Spectator Stand
+  - Cloakroom
+  - Sports Hall
   - Workshop
   - Production Hall
   - Assembly Area
@@ -427,13 +515,20 @@ values:
   - Generator Room
   - Transformer Room
   - Communications Room
+  - Control Room
   - Meter Room
   - Waste Room
+  - Waste Chute
+  - Chemical Waste Room
+  - Biological Waste Room
+  - Radioactive Waste Room
   - General Storage
   - Supply Room
   - Equipment Storage
   - Unloading Storage
   - Janitor Closet
+  - Stroller Room
+  - Garden Shed
   - Archive Room
   - Mail Room
   - Cold Storage
@@ -441,6 +536,7 @@ values:
   - Chemical Storage
   - Hazardous Material Storage
   - Sample Storage
+  - Parcel Room
   - Shaft
   - Riser
   - Plenum

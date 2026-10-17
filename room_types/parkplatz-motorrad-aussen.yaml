@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/parkplatz-motorrad-aussen
+code: RT-PK-04
+sort_order: 131
+name:
+  de: Parkplatz Motorrad Aussen
+  fr: Place moto extérieure
+  it: Posto moto esterno
+  en: Exterior Motorcycle Parking
+definition:
+  de: Aussenparkplatz für Motorräder.
+  fr: Place extérieure pour les motos.
+  it: Posto esterno per motociclette.
+  en: Exterior parking space for motorcycles.
+room_type_kind: room
+room_name: RN-13-20-04
+activity: S-PRK-EXT
+default_scope: site
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/parkplatz-motorrad-aussen-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-parking
+    name: PredefinedType
+    value: PARKING
+  - element: pragmaticbim:element/spaces-parking
+    name: ParkingUse
+    pset: Pset_SpaceParking
+    value: MOTORCYCLE
+  status: active

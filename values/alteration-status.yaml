@@ -15,22 +15,22 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - PLANNED
-  - ACTIVE
-  - COMPLETED
-  - CANCELLED
+    - PLANNED
+    - ACTIVE
+    - COMPLETED
+    - CANCELLED
   fr:
-  - PLANNED
-  - ACTIVE
-  - COMPLETED
-  - CANCELLED
+    - PLANNED
+    - ACTIVE
+    - COMPLETED
+    - CANCELLED
   it:
-  - PLANNED
-  - ACTIVE
-  - COMPLETED
-  - CANCELLED
+    - PLANNED
+    - ACTIVE
+    - COMPLETED
+    - CANCELLED
   en:
-  - PLANNED
-  - ACTIVE
-  - COMPLETED
-  - CANCELLED
+    - PLANNED
+    - ACTIVE
+    - COMPLETED
+    - CANCELLED

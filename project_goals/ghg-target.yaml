@@ -1,0 +1,108 @@
+id: pragmaticbim:project-goal/ghg-target
+sort_order: 80
+group: rahmenbedingungen
+code: PG-35
+name:
+  de: Treibhausgasziel
+  fr: Objectif de gaz à effet de serre
+  it: Obiettivo di gas serra
+  en: Greenhouse gas target
+tag:
+  de: Treibhausgas
+  fr: Gaz à effet de serre
+  it: Gas serra
+  en: Greenhouse gas
+description:
+  de: |-
+    Festgelegt wird der Grenzwert für graue Energie und Treibhausgasemissionen aus der Erstellung, getrennt von der Betriebsenergie. Das Ziel bestimmt die Materialwahl aller Bauteiltypen.
+
+    Ohne diese Festlegung wird die Ökobilanz erst am fertigen Projekt berechnet. Ein überschrittener Grenzwert lässt sich dann nur noch mit teuren Materialwechseln korrigieren.
+  fr: |-
+    Cette condition-cadre fixe la valeur limite d'énergie grise et d'émissions de gaz à effet de serre liées à la construction, séparément de l'énergie d'exploitation. L'objectif détermine le choix des matériaux pour tous les types d'éléments.
+
+    Sans cette définition, l'écobilan n'est calculé que sur le projet achevé. Une valeur limite dépassée ne peut alors être corrigée que par des changements de matériaux coûteux.
+  it: |-
+    Questa condizione quadro stabilisce il valore limite di energia grigia e di emissioni di gas serra dovute alla costruzione, separatamente dall'energia d'esercizio. L'obiettivo determina la scelta dei materiali per tutti i tipi di elementi.
+
+    Senza questa definizione, il bilancio ecologico viene calcolato solo sul progetto concluso. Un valore limite superato si può allora correggere solo con costosi cambi di materiale.
+  en: |-
+    This framework condition sets the limit for grey energy and greenhouse gas emissions from construction, separate from operational energy. The target drives material choice for every component type.
+
+    Without it, the life-cycle assessment is calculated only on the finished design. An exceeded limit can then be corrected only by costly material changes.
+status: active
+is_boundary_condition: true
+comment: 'Kumulativ. Kein Einfluss auf Anwendungsfälle der Nutzung oder Raumtypen; wirkt auf die Materialwahl aller Bauteiltypen (EnvironmentalProperty gwp_embodied). THG-03 aktiviert GlobalWarmingPotentialMax ohne Wert; den Grenzwert setzt die Bauherrschaft. Der Richtwert SIA 390/1 gilt für das ganze Gebäude, nicht je Bauteil.'
+levels:
+- id: pragmaticbim:project-goal-level/ghg-target-none
+  code: THG-01
+  sort_order: 1
+  name:
+    de: Kein Zielwert
+    fr: Aucune valeur cible
+    it: Nessun valore obiettivo
+    en: No target
+  description:
+    de: Für graue Energie und Treibhausgasemissionen aus der Erstellung gilt kein Grenzwert.
+    fr: Aucune valeur limite ne s'applique à l'énergie grise et aux émissions de gaz à effet de serre liées à la construction.
+    it: Per l'energia grigia e le emissioni di gas serra dovute alla costruzione non vale alcun valore limite.
+    en: No limit applies to grey energy and greenhouse gas emissions from construction.
+  status: active
+  activated_workflows: []
+  comment: ''
+- id: pragmaticbim:project-goal-level/ghg-target-sia-390-1
+  code: THG-02
+  sort_order: 2
+  name:
+    de: Richtwert SIA 390/1
+    fr: Valeur indicative SIA 390/1
+    it: Valore indicativo SIA 390/1
+    en: SIA 390/1 guide value
+  description:
+    de: Die Treibhausgasemissionen der Erstellung halten den Richtwert des Klimapfads nach SIA 390/1 ein. Konstruktionsvolumen und Ökobilanz werden aus dem Modell berechnet.
+    fr: Les émissions de gaz à effet de serre de la construction respectent la valeur indicative de la voie climatique selon SIA 390/1. Le volume de construction et l'écobilan sont calculés à partir de la maquette.
+    it: Le emissioni di gas serra della costruzione rispettano il valore indicativo del percorso climatico secondo SIA 390/1. Volume di costruzione e bilancio ecologico vengono calcolati dal modello.
+    en: Greenhouse gas emissions from construction stay within the climate path guide value under SIA 390/1. Construction volume and life-cycle assessment are calculated from the model.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-construction-volume
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/qas-element-type-performance-verification
+  comment: ''
+- id: pragmaticbim:project-goal-level/ghg-target-tightened
+  code: THG-03
+  sort_order: 3
+  name:
+    de: Verschärfter Zielwert
+    fr: Valeur cible renforcée
+    it: Valore obiettivo inasprito
+    en: Tightened target
+  description:
+    de: Die Bauherrschaft setzt einen Grenzwert unter dem Richtwert. Jeder Bauteiltyp erhält einen Zielwert für graue Energie und Treibhausgase.
+    fr: Le maître d'ouvrage fixe une valeur limite inférieure à la valeur indicative. Chaque type d'élément reçoit une valeur cible pour l'énergie grise et les gaz à effet de serre.
+    it: Il committente fissa un valore limite inferiore al valore indicativo. Ogni tipo di elemento riceve un valore obiettivo per energia grigia e gas serra.
+    en: The client sets a limit below the guide value. Every component type gets a target for grey energy and greenhouse gases.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-construction-volume
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/qas-element-type-performance-verification
+  performance_targets:
+  - element: pragmaticbim:element/architecture-wall-exterior
+    name: GlobalWarmingPotentialMax
+    pset: ePset_WallRequirement
+  - element: pragmaticbim:element/architecture-wall-interior
+    name: GlobalWarmingPotentialMax
+    pset: ePset_WallRequirement
+  - element: pragmaticbim:element/architecture-wall-interior-loadbearing
+    name: GlobalWarmingPotentialMax
+    pset: ePset_WallRequirement
+  - element: pragmaticbim:element/architecture-slab-floor
+    name: GlobalWarmingPotentialMax
+    pset: ePset_SlabRequirement
+  - element: pragmaticbim:element/architecture-slab-flat-roof
+    name: GlobalWarmingPotentialMax
+    pset: ePset_SlabRequirement
+  - element: pragmaticbim:element/architecture-slab-base
+    name: GlobalWarmingPotentialMax
+    pset: ePset_SlabRequirement
+  comment: ''

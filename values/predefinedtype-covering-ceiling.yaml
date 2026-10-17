@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - CEILING
+    - CEILING
   fr:
-  - CEILING
+    - CEILING
   it:
-  - CEILING
+    - CEILING
   en:
-  - CEILING
+    - CEILING

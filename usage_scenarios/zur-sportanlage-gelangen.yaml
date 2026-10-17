@@ -1,0 +1,54 @@
+id: pragmaticbim:usage-scenario/zur-sportanlage-gelangen
+code: US-SP-06
+sort_order: 1
+name:
+  de: Zur Sportanlage gelangen
+  fr: Accéder à l'installation sportive
+  it: Raggiungere l'impianto sportivo
+  en: Reaching the sports facility
+description:
+  de: Sporttreibende und Zuschauende gelangen vom Eingang zu Garderoben, Halle und Tribüne. Die Erschliessung
+    entscheidet über Personenfluss, Hindernisfreiheit und die Trennung von Sport- und Zuschauerwegen.
+  fr: Sportifs et spectateurs vont de l'entrée aux vestiaires, à la salle et à la tribune. La desserte
+    détermine les flux, l'accès sans obstacle et la séparation des parcours sportifs et spectateurs.
+  it: Sportivi e spettatori vanno dall'ingresso a spogliatoi, palestra e tribuna. L'accesso determina
+    flussi, assenza di ostacoli e separazione dei percorsi sportivi e spettatori.
+  en: Athletes and spectators travel from the entrance to changing rooms, hall, and stand. The access
+    arrangement determines crowd flow, step-free access, and separation of athlete and spectator routes.
+uses:
+- pragmaticbim:use/sport
+tags:
+- erschliessung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/zur-sportanlage-gelangen-stair
+  sort_order: 1
+  name:
+    de: Treppenhaus
+    fr: Cage d'escalier
+    it: Vano scale
+    en: Stairwell
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+- id: pragmaticbim:scenario-option/zur-sportanlage-gelangen-stair-elevator
+  sort_order: 2
+  name:
+    de: Treppenhaus und Aufzug
+    fr: Cage d'escalier et ascenseur
+    it: Vano scale e ascensore
+    en: Stairwell and elevator
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone

@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/besuch-empfangen
+code: US-WR-04
+sort_order: 5
+name:
+  de: Besuch empfangen
+  fr: Accueillir des visiteurs
+  it: Accogliere visitatori
+  en: Receiving visitors
+description:
+  de: Externe Personen besuchen den Betrieb. Der Empfangsort entscheidet über Orientierung, Zutrittskontrolle
+    und den Weg zum Arbeitsplatz.
+  fr: Des personnes externes visitent l'entreprise. Le lieu d'accueil détermine l'orientation, le contrôle
+    d'accès et le chemin vers le poste de travail.
+  it: Persone esterne visitano l'azienda. Il luogo di accoglienza determina orientamento, controllo degli
+    accessi e percorso verso il posto di lavoro.
+  en: External visitors come to the workplace. The reception point determines wayfinding, access control,
+    and the route to work areas.
+uses:
+- pragmaticbim:use/arbeit
+tags:
+- ankommen
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/besuch-empfangen-reception
+  sort_order: 1
+  name:
+    de: Empfang
+    fr: Réception
+    it: Ricezione
+    en: Reception
+  adds:
+  - pragmaticbim:room-type/empfang
+- id: pragmaticbim:scenario-option/besuch-empfangen-direct
+  sort_order: 2
+  name:
+    de: Direkter Empfang im Büro
+    fr: Accueil direct au bureau
+    it: Accoglienza diretta in ufficio
+    en: Direct reception in the office
+  adds:
+  - pragmaticbim:room-type/buero

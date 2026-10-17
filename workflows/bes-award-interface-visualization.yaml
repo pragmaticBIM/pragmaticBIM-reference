@@ -7,137 +7,91 @@ name:
   it: Visualizzare le interfacce di aggiudicazione
   en: Visualize award interfaces
 description:
-  de: 'Vergabepakete je Bauteil im Modell führen und einfärben – vergessene Bauteile an den Unternehmerschnittstellen werden sichtbar.
-
+  de: |-
+    Vergabepakete je Bauteil im Modell führen und einfärben – vergessene Bauteile an den Unternehmerschnittstellen werden sichtbar.
 
     **Ausgangslage**
-
     - Fehler entstehen an den Schnittstellen zwischen Unternehmerlosen; Bauteile ohne Loszuordnung gehen in der Ausschreibung leicht verloren.
-
     - Listen und Leistungsverzeichnisse machen Lücken an den Vergabeschnittstellen schlecht sichtbar.
 
-
     **Ziel & Nutzen**
-
     - Jedes Architektur- und TGA-Bauteil einem Vergabepaket zuweisen.
-
     - Farbige Pläne machen fehlende Zuordnungen und Überschneidungen an den Schnittstellen sichtbar.
 
-
     **Ablauf**
-
     1. Architektur- und TGA-Bauteile im Fachmodell bereitstellen.
-
     2. AwardInterface gemäss der vereinbarten Vergabegliederung setzen, z. B. nach BKP.
-
     3. Visualisierung nach Vergabepaket ableiten und Lücken prüfen.
 
-
     **Lieferergebnis**
-
     - Architektur- und TGA-Fachmodelle mit eindeutiger Zuordnung der relevanten Bauteile zu den Vergabepaketen.
-
-    - Kolorierte Auswertung der Vergabepakete mit sichtbaren Zuordnungslücken und Überschneidungen.'
-  fr: 'Tenir les lots d''adjudication par élément dans la maquette et les colorier – les parties oubliées aux interfaces entre entreprises deviennent visibles.
-
+    - Kolorierte Auswertung der Vergabepakete mit sichtbaren Zuordnungslücken und Überschneidungen.
+  fr: |-
+    Tenir les lots d'adjudication par élément dans la maquette et les colorier – les parties oubliées aux interfaces entre entreprises deviennent visibles.
 
     **Situation de départ**
-
-    - Les erreurs surviennent aux interfaces entre lots d''entreprise ; les composants sans affectation de lot se perdent facilement dans l''appel d''offres.
-
-    - Listes et cahiers des charges ne permettent pas de voir clairement les lacunes aux interfaces d''adjudication.
-
+    - Les erreurs surviennent aux interfaces entre lots d'entreprise ; les composants sans affectation de lot se perdent facilement dans l'appel d'offres.
+    - Listes et cahiers des charges ne permettent pas de voir clairement les lacunes aux interfaces d'adjudication.
 
     **Objectif et bénéfice**
-
-    - Affecter chaque élément d''architecture et CVC à un lot d''adjudication.
-
+    - Affecter chaque élément d'architecture et CVC à un lot d'adjudication.
     - Les plans colorés rendent visibles les affectations manquantes et les chevauchements aux interfaces.
 
-
     **Déroulement**
-
-    1. Fournir les éléments d''architecture et CVC dans la maquette de discipline.
-
-    2. Définir AwardInterface selon la structure d''adjudication convenue, p. ex. BKP.
-
-    3. Déduire la visualisation par lot d''adjudication et vérifier les lacunes.
-
+    1. Fournir les éléments d'architecture et CVC dans la maquette de discipline.
+    2. Définir AwardInterface selon la structure d'adjudication convenue, p. ex. BKP.
+    3. Déduire la visualisation par lot d'adjudication et vérifier les lacunes.
 
     **Livrable**
-
-    - Maquettes architecture et CVC avec affectation claire des éléments pertinents aux lots d''adjudication.
-
-    - Évaluation coloriée des lots d''adjudication faisant apparaître les lacunes et les chevauchements.'
-  it: 'Gestire i lotti di aggiudicazione per componente nel modello e colorare i piani – le parti dimenticate alle interfacce tra imprese diventano visibili.
-
+    - Maquettes architecture et CVC avec affectation claire des éléments pertinents aux lots d'adjudication.
+    - Évaluation coloriée des lots d'adjudication faisant apparaître les lacunes et les chevauchements.
+  it: |-
+    Gestire i lotti di aggiudicazione per componente nel modello e colorare i piani – le parti dimenticate alle interfacce tra imprese diventano visibili.
 
     **Situazione di partenza**
-
-    - Gli errori nascono alle interfacce tra lotti d''impresa; i componenti senza assegnazione di lotto si perdono facilmente in gara.
-
+    - Gli errori nascono alle interfacce tra lotti d'impresa; i componenti senza assegnazione di lotto si perdono facilmente in gara.
     - Elenchi e capitolati rendono poco visibili le lacune alle interfacce di aggiudicazione.
 
-
     **Obiettivo e beneficio**
-
     - Assegnare ogni componente di architettura e impianti a un lotto di aggiudicazione.
-
     - Le planimetrie colorate rendono visibili assegnazioni mancanti e sovrapposizioni alle interfacce.
 
-
     **Svolgimento**
-
     1. Fornire i componenti di architettura e impianti nel modello di disciplina.
-
     2. Impostare AwardInterface secondo la struttura di aggiudicazione concordata, ad es. BKP.
-
     3. Ricavare la visualizzazione per lotto di aggiudicazione e verificare le lacune.
 
-
     **Risultato della fornitura**
-
     - Modelli di architettura e impianti con assegnazione chiara degli elementi rilevanti ai lotti di aggiudicazione.
-
-    - Valutazione colorata dei lotti di aggiudicazione con evidenza di lacune e sovrapposizioni.'
-  en: 'Carry procurement packages per component in the model and colour them – forgotten parts at contractor interfaces become visible.
-
+    - Valutazione colorata dei lotti di aggiudicazione con evidenza di lacune e sovrapposizioni.
+  en: |-
+    Carry procurement packages per component in the model and colour them – forgotten parts at contractor interfaces become visible.
 
     **Starting point**
-
     - Errors happen at the interfaces between contractor packages; components without a package assignment are easily lost in the tender.
-
     - Lists and specifications make gaps at award interfaces hard to see.
 
-
     **Goal & benefit**
-
     - Assign every architecture and MEP component to a procurement package.
-
     - Coloured plans make missing assignments and overlaps at the interfaces visible.
 
-
     **Process**
-
     1. Provide architecture and MEP components in the discipline model.
-
     2. Set AwardInterface to the agreed procurement breakdown, e.g. by BKP.
-
     3. Derive visualization by procurement package and check for gaps.
 
-
     **Deliverable**
-
     - Architecture and MEP models with relevant components clearly assigned to procurement packages.
-
-    - Coloured award-package evaluation showing assignment gaps and overlaps.'
-workflow_group: ausschreibung
+    - Coloured award-package evaluation showing assignment gaps and overlaps.
+workflow_group: unternehmen
 parent_workflow: pragmaticbim:workflow/bes
-picture_link: null
+picture_link:
 status: active
 service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep
-comment: 'Custom property AwardInterface in ePset_Cost (same pset as CostInterface). Allowed values: three-digit BKP contractor packages (CRB), excluding miscellaneous (Übriges). Typical phases 32–41 (design
-  through tender). Visualization to catch forgotten parts at award interfaces.'
+comment: >-
+  Custom property AwardInterface in ePset_Cost (same pset as CostInterface).
+  Allowed values: three-digit BKP contractor packages (CRB), excluding miscellaneous (Übriges).
+  Typical phases 32–41 (design through tender). Visualization to catch forgotten parts at award interfaces.

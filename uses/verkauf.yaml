@@ -1,0 +1,28 @@
+id: pragmaticbim:use/verkauf
+code: USE-VK
+sort_order: 4
+name:
+  de: Verkauf
+  fr: Vente
+  it: Vendita
+  en: Retail
+definition:
+  de: 'Verkauf von Waren an Kundinnen und Kunden. Bezugsgrösse: Verkaufsfläche (m²).'
+  fr: 'Vente de marchandises à la clientèle. Grandeur de référence : surface de vente (m²).'
+  it: 'Vendita di merci alla clientela. Grandezza di riferimento: superficie di vendita (m²).'
+  en: 'Sale of goods to customers. Reference quantity: sales area (m²).'
+reference_quantity:
+  id: pragmaticbim:quantity/verkauf-verkaufsflaeche
+  code: USE-VK-Q
+  sort_order: 1
+  name:
+    de: Verkaufsfläche
+    fr: Surface de vente
+    it: Superficie di vendita
+    en: Sales area
+  unit: m²
+  status: active
+typical_levels:
+- pragmaticbim:project-goal-level/indoor-climate-cooling
+- pragmaticbim:project-goal-level/flexibility-system-separation
+status: active

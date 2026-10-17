@@ -7,123 +7,79 @@ name:
   it: Coordinamento architettura - impianti nelle fasi di progetto avanzate
   en: Architecture - building services coordination in late design stages
 description:
-  de: 'Die Gebäudetechnik ab dem Bauprojekt ausführungsnah koordinieren, damit Kollisionen, Anschlüsse und Platzverhältnisse vor der Ausführung geprüft werden können.
-
+  de: |-
+    Die Gebäudetechnik ab dem Bauprojekt ausführungsnah koordinieren, damit Kollisionen, Anschlüsse und Platzverhältnisse vor der Ausführung geprüft werden können.
 
     **Ausgangslage**
-
     - Schematische Hauptverteilungen reichen für die Detailkoordination und Ausführungsnähe nicht.
-
     - Ohne typisierte Geräte und Terminals bleiben Kollisionen und Anschlüsse unklar.
 
-
     **Ziel & Nutzen**
-
     - Relevante TGA-Objekte als IFC-Entitäten mit PredefinedType im Modell führen.
-
     - Fachübergreifend prüfen, ohne FM-Stammdaten vorwegzunehmen.
 
-
     **Ablauf**
-
     1. Schematische Reserven durch typisierte IFC-Objekte der Gebäudetechnik ersetzen oder ergänzen.
-
     2. PredefinedType je Objekt setzen und Lage/Anschlüsse im Gesamtmodell prüfen.
-
     3. Status führen, wo Bestand und Neubau gemischt sind.
 
-
     **Lieferergebnis**
-
-    - TGA-Detailmodell mit den erforderlichen Funktions-, Lage-, Anschluss- und Statusinformationen.'
-  fr: 'Coordonner les techniques du bâtiment dès le projet de construction avec entités IFC et PredefinedType – plus seulement schématique.
-
+    - TGA-Detailmodell mit den erforderlichen Funktions-, Lage-, Anschluss- und Statusinformationen.
+  fr: |-
+    Coordonner les techniques du bâtiment dès le projet de construction avec entités IFC et PredefinedType – plus seulement schématique.
 
     **Situation de départ**
-
     - Les distributions schématiques ne suffisent pas pour la coordination détaillée.
-
     - Sans appareils et terminaux typés, collisions et raccordements restent flous.
 
-
     **Objectif et bénéfice**
-
     - Saisir les objets CVC pertinents comme entités IFC avec PredefinedType.
-
     - Vérifier entre disciplines sans anticiper les données FM.
 
-
     **Déroulement**
-
     1. Remplacer ou compléter les réserves schématiques par des objets IFC typés.
-
     2. Renseigner PredefinedType et vérifier position/raccordements en maquette fédérée.
-
     3. Saisir le statut lorsque existant et neuf se mêlent.
 
-
     **Livrable**
-
-    - Maquette détaillée CVC avec les informations requises sur la fonction, la position, les raccordements et l''état.'
-  it: 'Coordinare gli impianti dal progetto di costruzione con entità IFC e PredefinedType – non più solo schematico.
-
+    - Maquette détaillée CVC avec les informations requises sur la fonction, la position, les raccordements et l'état.
+  it: |-
+    Coordinare gli impianti dal progetto di costruzione con entità IFC e PredefinedType – non più solo schematico.
 
     **Situazione di partenza**
-
     - Le distribuzioni schematiche non bastano per il coordinamento di dettaglio.
-
     - Senza apparecchi e terminali tipizzati, collisioni e collegamenti restano poco chiari.
 
-
     **Obiettivo e beneficio**
-
     - Gestire gli oggetti impianti rilevanti come entità IFC con PredefinedType.
-
     - Verificare tra discipline senza anticipare i dati FM.
 
-
     **Svolgimento**
-
     1. Sostituire o integrare le riserve schematiche con oggetti IFC tipizzati.
-
     2. Impostare PredefinedType e verificare posizione/collegamenti nel modello federato.
-
     3. Gestire lo stato dove esistente e nuovo si mescolano.
 
-
     **Risultato della fornitura**
-
-    - Modello di dettaglio degli impianti con le informazioni necessarie su funzione, posizione, collegamenti e stato.'
-  en: 'Coordinate building services in construction-ready detail from the building-design phase onward so that clashes, connections, and spatial conditions can be checked before construction.
-
+    - Modello di dettaglio degli impianti con le informazioni necessarie su funzione, posizione, collegamenti e stato.
+  en: |-
+    Coordinate building services in construction-ready detail from the building-design phase onward so that clashes, connections, and spatial conditions can be checked before construction.
 
     **Starting point**
-
     - Schematic main distributions are not enough for detailed coordination.
-
     - Without typed equipment and terminals, clashes and connections stay unclear.
 
-
     **Goal & benefit**
-
     - Carry relevant MEP objects as IFC entities with PredefinedType.
-
     - Check across disciplines without assuming FM master data.
 
-
     **Process**
-
     1. Replace or complement schematic reserves with typed IFC MEP objects.
-
     2. Set PredefinedType per object and check location/connections in the federated model.
-
     3. Carry Status where existing and new work are mixed.
 
-
     **Deliverable**
-
-    - Detailed MEP model with the required function, location, connection, and status information.'
-workflow_group: entwurf
+    - Detailed MEP model with the required function, location, connection, and status information.
+workflow_group: koordination
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active

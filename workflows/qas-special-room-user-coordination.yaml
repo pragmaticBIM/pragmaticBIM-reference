@@ -7,138 +7,87 @@ name:
   it: Concertare i locali speciali con gli utenti
   en: Align special rooms with the users
 description:
-  de: 'Spezialräume grob im Modell skizzieren und mit den künftigen Nutzenden abstimmen, bevor im Gesamtmodell sauber modelliert wird. Ziel ist, Entscheide für Planungssicherheit herbeizuführen.
-
+  de: |-
+    Spezialräume grob im Modell skizzieren und mit den künftigen Nutzenden abstimmen, bevor im Gesamtmodell sauber modelliert wird. Ziel ist, Entscheide für Planungssicherheit herbeizuführen.
 
     **Ausgangslage**
-
     - Klassenzimmer, Labors, Patientenzimmer, OP-Säle und ähnliche Spezialräume brauchen frühe Abstimmung mit künftigen Nutzern.
-
     - Formale BIM-Modellierung ist in dieser Phase zu aufwändig und hemmt den Dialog.
-
     - Reine 2D-Pläne reichen oft nicht, um Raumwirkung, Anordnung und Ausstattung zu beurteilen.
 
-
     **Ziel & Nutzen**
-
     - Raumtypen und Varianten als grobe 3D-Skizze im Modell führen – quick and dirty.
-
     - Nutzer können Grösse, Zuschnitt und Ausstattung visuell oder immersiv prüfen und Entscheidungen treffen.
 
-
     **Ablauf**
-
     1. Typische Spezialräume als Muster modellieren.
-
     2. Einrichtung, Arbeitsplätze, Geräte sowie Steckdosen, Schalter und weitere Ausstattung im für die Entscheidung nötigen Detailgrad modellieren.
 
-
     **Lieferergebnis**
-
     - Grobes Architekturmodell der Spezialräume mit den erforderlichen Raum- und Nutzungsinformationen.
-
-    - Entscheidungsgerechte Ausstattung sowie Visualisierungen, Pläne oder für eine VR-Begehung aufbereitete Modellinformationen für die Nutzerfreigabe.'
-  fr: 'Esquisser rapidement les locaux spéciaux dans la maquette et les coordonner avec les futurs utilisateurs, avant de modéliser proprement dans la maquette globale. L''objectif est d''obtenir les décisions
-    qui sécurisent la planification.
-
+    - Entscheidungsgerechte Ausstattung sowie Visualisierungen, Pläne oder für eine VR-Begehung aufbereitete Modellinformationen für die Nutzerfreigabe.
+  fr: |-
+    Esquisser rapidement les locaux spéciaux dans la maquette et les coordonner avec les futurs utilisateurs, avant de modéliser proprement dans la maquette globale. L'objectif est d'obtenir les décisions qui sécurisent la planification.
 
     **Situation de départ**
-
     - Salles de classe, laboratoires, chambres de patient, blocs opératoires et locaux similaires exigent une coordination en phase initiale avec les futurs utilisateurs.
-
     - La modélisation BIM formelle est trop lourde à ce stade et freine le dialogue.
-
-    - Les plans 2D seuls suffisent rarement pour juger de l''effet spatial, de la disposition et de l''équipement.
-
+    - Les plans 2D seuls suffisent rarement pour juger de l'effet spatial, de la disposition et de l'équipement.
 
     **Objectif et bénéfice**
-
     - Saisir les types de locaux et les variantes comme esquisse 3D grossière dans le modèle – à gros traits.
-
-    - Permettre aux utilisateurs d''évaluer visuellement ou en immersion la taille, le découpage et l''équipement et de prendre des décisions.
-
+    - Permettre aux utilisateurs d'évaluer visuellement ou en immersion la taille, le découpage et l'équipement et de prendre des décisions.
 
     **Déroulement**
-
     1. Modéliser les locaux spéciaux typiques comme modèles.
-
     2. Modéliser mobilier, postes de travail, appareils ainsi que prises, interrupteurs et autre équipement au degré de détail nécessaire à la décision.
 
-
     **Livrable**
-
-    - Maquette d''architecture sommaire des locaux spéciaux avec les informations requises sur les locaux et leur usage.
-
-    - Équipement adapté à la décision ainsi que visualisations, plans ou informations de la maquette préparées pour une visite en réalité virtuelle en vue de la validation des utilisateurs.'
-  it: 'Schizzare rapidamente i locali speciali nel modello e coordinarli con i futuri utenti, prima di modellare in modo accurato nel modello complessivo. L''obiettivo è ottenere le decisioni che danno
-    sicurezza alla pianificazione.
-
+    - Maquette d'architecture sommaire des locaux spéciaux avec les informations requises sur les locaux et leur usage.
+    - Équipement adapté à la décision ainsi que visualisations, plans ou informations de la maquette préparées pour une visite en réalité virtuelle en vue de la validation des utilisateurs.
+  it: |-
+    Schizzare rapidamente i locali speciali nel modello e coordinarli con i futuri utenti, prima di modellare in modo accurato nel modello complessivo. L'obiettivo è ottenere le decisioni che danno sicurezza alla pianificazione.
 
     **Situazione di partenza**
-
     - Aule, laboratori, camere di paziente, sale operatorie e locali simili richiedono un coordinamento in fase iniziale con i futuri utenti.
-
     - La modellazione BIM formale è troppo onerosa in questa fase e frena il dialogo.
-
     - I soli planimetrie 2D spesso non bastano per valutare effetto spaziale, disposizione e dotazione.
 
-
     **Obiettivo e beneficio**
-
     - Gestire tipi di locale e varianti come schizzo 3D grossolano nel modello – in modo sommario.
-
     - Consentire agli utenti di verificare visivamente o in modo immersivo dimensioni, configurazione e dotazione e prendere decisioni.
 
-
     **Svolgimento**
-
     1. Modellare i locali speciali tipici come modelli.
-
     2. Modellare arredi, postazioni di lavoro, apparecchiature nonché prese, interruttori e altra dotazione nel grado di dettaglio necessario per la decisione.
 
-
     **Risultato della fornitura**
-
     - Modello di architettura sommario dei locali speciali con le informazioni necessarie sui locali e sul relativo uso.
-
-    - Dotazione adeguata alla decisione nonché visualizzazioni, planimetrie o informazioni del modello preparate per una visita in realtà virtuale ai fini dell''approvazione degli utenti.'
-  en: 'Sketch special rooms roughly in the model and coordinate them with future users before accurate modelling begins in the overall model. The aim is to obtain the decisions that give planning certainty.
-
+    - Dotazione adeguata alla decisione nonché visualizzazioni, planimetrie o informazioni del modello preparate per una visita in realtà virtuale ai fini dell'approvazione degli utenti.
+  en: |-
+    Sketch special rooms roughly in the model and coordinate them with future users before accurate modelling begins in the overall model. The aim is to obtain the decisions that give planning certainty.
 
     **Starting point**
-
     - Classrooms, labs, patient rooms, operating theatres, and similar special rooms need early coordination with future users.
-
     - Formal BIM modelling is too heavy at this stage and slows the dialogue.
-
     - 2D plans alone are often insufficient to judge spatial effect, layout, and equipment.
 
-
     **Goal & benefit**
-
     - Maintain room types and options as a rough 3D sketch in the model – quick and dirty.
-
     - Let users check size, layout, and equipment visually or immersively and make decisions.
 
-
     **Process**
-
     1. Model typical special rooms as templates.
-
     2. Model furniture, workstations, equipment, plus outlets, switches, and other fittings at the level of detail needed for the decision.
 
-
     **Deliverable**
-
     - Rough architecture model of the special rooms with the required room and use information.
-
-    - Decision-ready equipment plus visualizations, plans, or model information prepared for a VR walkthrough for user approval.'
-workflow_group: entwurf
+    - Decision-ready equipment plus visualizations, plans, or model information prepared for a VR walkthrough for user approval.
+workflow_group: koordination
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active
 service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Quick-and-dirty room type sketches for user meetings. Room volumes stay rough; equipment, outlets, switches etc. must be modelled at decision-relevant detail. Formal element modelling guidelines
-  do not apply to spaces; replace with proper interior spaces in later design workflows.
+comment: Quick-and-dirty room type sketches for user meetings. Room volumes stay rough; equipment, outlets, switches etc. must be modelled at decision-relevant detail. Formal element modelling guidelines do not apply to spaces; replace with proper interior spaces in later design workflows.

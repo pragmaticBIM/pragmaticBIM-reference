@@ -1,0 +1,77 @@
+id: pragmaticbim:room-type/loggia
+code: RT-WH-36
+sort_order: 36
+name:
+  de: Loggia
+  fr: Loggia
+  it: Loggia
+  en: Loggia
+definition:
+  de: Zurückgesetzter offener Aussenraum im Gebäudevolumen, im Unterschied zum auskragenden
+    Balkon.
+  fr: Espace extérieur ouvert en retrait dans le volume du bâtiment, distinct du balcon
+    en porte-à-faux.
+  it: Spazio esterno aperto arretrato nel volume dell'edificio, distinto dal balcone
+    a sbalzo.
+  en: Recessed open outdoor room inside the building volume, distinct from a projecting
+    balcony.
+room_type_kind: room
+room_name: RN-11-10-09
+activity: O
+default_scope: dwelling
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/loggia-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Loggia
+      fr: Loggia
+      it: Loggia
+      en: Loggia
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: ANF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  status: active
+  restrictions:
+    min_area: 6

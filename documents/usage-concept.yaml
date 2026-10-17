@@ -7,37 +7,37 @@ name:
   it: Concetto d'uso
   en: Usage concept
 definition:
-  de: Nutzungskonzept mit priorisierten User Stories, prüfbaren Akzeptanzkriterien und Betriebsannahmen. Verbindliche Grundlage für Testplanung, Raumprogramm sowie Abnahme von Planung und Bau.
-  fr: Concept d'utilisation avec récits utilisateurs priorisés, critères de réception vérifiables et hypothèses d'exploitation. Base contraignante pour l'étude test, le programme des locaux ainsi que la réception des études et de la réalisation.
-  it: Concetto d'uso con storie utente priorizzate, criteri di accettazione verificabili e ipotesi operative. Base vincolante per lo studio di fattibilità, il programma dei locali nonché il collaudo di progettazione e costruzione.
-  en: Usage concept with prioritized user stories, verifiable acceptance criteria, and operational assumptions. Binding basis for test planning, the room programme, and acceptance of design and construction.
+  de: Nutzungskonzept mit priorisierten Nutzungsszenarien, prüfbaren Akzeptanzkriterien und Betriebsannahmen. Verbindliche Grundlage für Testplanung, Raumprogramm sowie Abnahme von Planung und Bau.
+  fr: Concept d'utilisation avec scénarios d'utilisation priorisés, critères de réception vérifiables et hypothèses d'exploitation. Base contraignante pour l'étude test, le programme des locaux ainsi que la réception des études et de la réalisation.
+  it: Concetto d'uso con scenari d'uso priorizzati, criteri di accettazione verificabili e ipotesi operative. Base vincolante per lo studio di fattibilità, il programma dei locali nonché il collaudo di progettazione e costruzione.
+  en: Usage concept with prioritized usage scenarios, verifiable acceptance criteria, and operational assumptions. Binding basis for test planning, the room programme, and acceptance of design and construction.
 description:
   de: |-
     - Nutzerrollen bzw. Nutzergruppen
-    - User Stories in der Form «Als [Rolle] brauche ich [Fähigkeit], um [Ziel] zu erreichen»
-    - Prüfbare Akzeptanzkriterien je User Story
-    - Priorisierung der User Stories
+    - Nutzungsszenarien aus Sicht der Nutzenden, mit gewählter Variante und Menge
+    - Prüfbare Akzeptanzkriterien je Nutzungsszenario
+    - Priorisierung der Nutzungsszenarien
     - Betriebsabläufe und erforderliche Funktionsbeziehungen bzw. Trennungen
     - Version und Freigabestand
   fr: |-
     - Rôles ou groupes d'usagers
-    - Récits utilisateurs sous la forme « En tant que [rôle], j'ai besoin de [capacité] afin de [objectif] »
-    - Critères de réception vérifiables par récit utilisateur
-    - Priorisation des récits utilisateurs
+    - Scénarios d'utilisation du point de vue des usagers, avec la variante choisie et la quantité
+    - Critères de réception vérifiables par scénario d'utilisation
+    - Priorisation des scénarios d'utilisation
     - Processus d'exploitation et relations ou séparations fonctionnelles requises
     - Version et état de validation
   it: |-
     - Ruoli o gruppi di utenti
-    - Storie utente nella forma « Come [ruolo] ho bisogno di [capacità] per [obiettivo] »
-    - Criteri di accettazione verificabili per ogni storia utente
-    - Prioritizzazione delle storie utente
+    - Scenari d'uso dal punto di vista degli utenti, con la variante scelta e la quantità
+    - Criteri di accettazione verificabili per ogni scenario d'uso
+    - Prioritizzazione degli scenari d'uso
     - Processi operativi e relazioni o separazioni funzionali necessarie
     - Versione e stato di approvazione
   en: |-
     - User roles or user groups
-    - User stories in the form "As a [role], I need [capability] so that I can [goal]"
-    - Verifiable acceptance criteria per user story
-    - Prioritization of the user stories
+    - Usage scenarios from the users' point of view, with the chosen variant and quantity
+    - Verifiable acceptance criteria per usage scenario
+    - Prioritization of the usage scenarios
     - Operational processes and required functional relationships or separations
     - Version and approval status
 file_name:
@@ -51,6 +51,6 @@ scheduled_milestones:
   - "11:M"
   - "21:M"
 comment: >-
-  Form nach Software-Engineering: User Stories («Als X brauche ich Y, um Z zu
-  machen») mit Akzeptanzkriterien. Dient als Abnahmegrundlage für Planung und Bau,
+  Nutzungsszenarien entsprechen den User Stories aus dem Software-Engineering
+  («Als X brauche ich Y, um Z zu machen») mit Akzeptanzkriterien. Dient als Abnahmegrundlage für Planung und Bau,
   nicht als Raumliste – diese bleibt im Raumprogramm.

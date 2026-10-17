@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Bezugspunkt
+    - Bezugspunkt
   fr:
-  - Point de référence
+    - Point de référence
   it:
-  - Punto di riferimento
+    - Punto di riferimento
   en:
-  - Reference point
+    - Reference point

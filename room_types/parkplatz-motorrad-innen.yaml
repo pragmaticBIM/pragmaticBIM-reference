@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/parkplatz-motorrad-innen
+code: RT-PK-02
+sort_order: 121
+name:
+  de: Parkplatz Motorrad Innen
+  fr: Place moto intérieure
+  it: Posto moto interno
+  en: Interior Motorcycle Parking
+definition:
+  de: Innenparkplatz für Motorräder.
+  fr: Place intérieure pour les motos.
+  it: Posto interno per motociclette.
+  en: Interior parking space for motorcycles.
+room_type_kind: room
+room_name: RN-13-10-04
+activity: S-PRK-INT
+default_scope: building
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/parkplatz-motorrad-innen-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-parking
+    name: PredefinedType
+    value: PARKING
+  - element: pragmaticbim:element/spaces-parking
+    name: ParkingUse
+    pset: Pset_SpaceParking
+    value: MOTORCYCLE
+  status: active

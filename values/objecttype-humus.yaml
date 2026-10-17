@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Humus
+    - Humus
   fr:
-  - Terre végétale
+    - Terre végétale
   it:
-  - Terra vegetale
+    - Terra vegetale
   en:
-  - Topsoil
+    - Topsoil

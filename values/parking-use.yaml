@@ -15,30 +15,30 @@ norm_reference: IFC2x3 / IFC4 / IFC4.3, Pset_SpaceParking.ParkingUse
 status: active
 values:
   de:
-  - CAR
-  - BICYCLE
-  - MOTORCYCLE
-  - TRUCK
-  - BUS
-  - OTHER
+    - CAR
+    - BICYCLE
+    - MOTORCYCLE
+    - TRUCK
+    - BUS
+    - OTHER
   fr:
-  - CAR
-  - BICYCLE
-  - MOTORCYCLE
-  - TRUCK
-  - BUS
-  - OTHER
+    - CAR
+    - BICYCLE
+    - MOTORCYCLE
+    - TRUCK
+    - BUS
+    - OTHER
   it:
-  - CAR
-  - BICYCLE
-  - MOTORCYCLE
-  - TRUCK
-  - BUS
-  - OTHER
+    - CAR
+    - BICYCLE
+    - MOTORCYCLE
+    - TRUCK
+    - BUS
+    - OTHER
   en:
-  - CAR
-  - BICYCLE
-  - MOTORCYCLE
-  - TRUCK
-  - BUS
-  - OTHER
+    - CAR
+    - BICYCLE
+    - MOTORCYCLE
+    - TRUCK
+    - BUS
+    - OTHER

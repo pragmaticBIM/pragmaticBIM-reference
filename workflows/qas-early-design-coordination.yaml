@@ -7,139 +7,83 @@ name:
   it: Coordinare architettura e impianti nella fase iniziale
   en: Coordinate architecture and building services early
 description:
-  de: 'Konzept und Machbarkeit früh im Modell abstimmen – vergleichbar mit einem Strichkonzept, ohne Ausführungsdetail.
-
+  de: |-
+    Konzept und Machbarkeit früh im Modell abstimmen – vergleichbar mit einem Strichkonzept, ohne Ausführungsdetail.
 
     **Ausgangslage**
-
     - In Vorprojekt und Studium fehlen oft belastbare Angaben zum Technikplatzbedarf.
-
     - Späte Koordination führt zu teuren Planungsänderungen; reine 2D-Skizzen sind schwer gegen andere Disziplinen zu prüfen.
 
-
     **Ziel & Nutzen**
-
     - Konzepte als Volumen und Platzreserven im Modell führen und früh auf Kollisionen und Engpässe prüfen.
-
     - Machbarkeit von Technikzentralen und Leitungsführungen für alle Beteiligten nachvollziehbar machen.
 
-
     **Ablauf**
-
-    1. Konzept in einer Besprechung anhand von Handskizzen in Grundriss und Schnitt erarbeiten: Gesamtgrundrisse der wichtigsten Geschosse, Schnitt durch einen Steigschacht und Schnitt im Massstab 1:20
-    durch Korridor und horizontale Verteilung.
-
-    2. Technikmodelle mit Volumen statt Ausführungsdetail bereitstellen und den Technikplatzbedarf nachweisen. Fokus auf kritische Punkte wie Technikzentralen, Steigzonen und die horizontale Verteilung
-    im Mustergeschoss. Der Umfang ist projektspezifisch zu klären.
-
+    1. Konzept in einer Besprechung anhand von Handskizzen in Grundriss und Schnitt erarbeiten: Gesamtgrundrisse der wichtigsten Geschosse, Schnitt durch einen Steigschacht und Schnitt im Massstab 1:20 durch Korridor und horizontale Verteilung.
+    2. Technikmodelle mit Volumen statt Ausführungsdetail bereitstellen und den Technikplatzbedarf nachweisen. Fokus auf kritische Punkte wie Technikzentralen, Steigzonen und die horizontale Verteilung im Mustergeschoss. Der Umfang ist projektspezifisch zu klären.
     3. Fachübergreifend im Gesamtmodell auf Kollisionen, Mindesthöhen, Wartungsfreiräume und Reserven prüfen.
 
-
     **Lieferergebnis**
-
     - Architektur-Koordinationsmodell mit vereinfachter Raum- und Bauteilgeometrie ohne Ausführungsdetail.
-
-    - TGA-Koordinationsmodell mit den erforderlichen Platz-, Medien- und Grösseninformationen für die Machbarkeitsprüfung.'
-  fr: 'Accorder concept et faisabilité tôt dans le modèle – comparable à une esquisse, sans détail d''exécution.
-
+    - TGA-Koordinationsmodell mit den erforderlichen Platz-, Medien- und Grösseninformationen für die Machbarkeitsprüfung.
+  fr: |-
+    Accorder concept et faisabilité tôt dans le modèle – comparable à une esquisse, sans détail d'exécution.
 
     **Situation de départ**
-
     - En avant-projet et étude, les besoins en espace technique manquent souvent de données fiables.
-
     - Une coordination tardive entraîne des modifications coûteuses ; les croquis 2D seuls sont difficiles à vérifier entre disciplines.
 
-
     **Objectif et bénéfice**
-
-    - Saisir les concepts comme volumes et réserves d''espace dans le modèle et détecter tôt les collisions et les goulots.
-
+    - Saisir les concepts comme volumes et réserves d'espace dans le modèle et détecter tôt les collisions et les goulots.
     - Rendre la faisabilité des locaux techniques et des cheminements de réseaux compréhensibles pour toutes les parties.
 
-
     **Déroulement**
-
-    1. Élaborer le concept en séance à l''aide de croquis à main levée en plan et en coupe : plans d''ensemble des étages principaux, coupe par une gaine verticale et coupe au 1:20 du couloir avec distribution
-    horizontale.
-
-    2. Fournir les maquettes d''architecture et techniques en volumes plutôt qu''en détail d''exécution et modéliser le besoin d''espace technique (électricité, ventilation, sanitaire, chauffage, froid,
-    production) comme géométrie de coordination.
-
+    1. Élaborer le concept en séance à l'aide de croquis à main levée en plan et en coupe : plans d'ensemble des étages principaux, coupe par une gaine verticale et coupe au 1:20 du couloir avec distribution horizontale.
+    2. Fournir les maquettes d'architecture et techniques en volumes plutôt qu'en détail d'exécution et modéliser le besoin d'espace technique (électricité, ventilation, sanitaire, chauffage, froid, production) comme géométrie de coordination.
     3. Vérifier en modèle fédéré les collisions, hauteurs minimales, espaces de maintenance et réserves.
 
-
     **Livrable**
-
-    - Maquette de coordination d''architecture avec géométrie simplifiée des espaces et éléments, sans détail d''exécution.
-
-    - Maquette de coordination CVC avec les informations d''espace, de fluide et de dimension requises pour l''étude de faisabilité.'
-  it: 'Coordinare concept e fattibilità presto nel modello – comparabile a uno schizzo concettuale, senza dettaglio esecutivo.
-
+    - Maquette de coordination d'architecture avec géométrie simplifiée des espaces et éléments, sans détail d'exécution.
+    - Maquette de coordination CVC avec les informations d'espace, de fluide et de dimension requises pour l'étude de faisabilité.
+  it: |-
+    Coordinare concept e fattibilità presto nel modello – comparabile a uno schizzo concettuale, senza dettaglio esecutivo.
 
     **Situazione di partenza**
-
     - In predimensionamento e studio mancano spesso dati affidabili sullo spazio tecnico.
-
     - Un coordinamento tardivo causa modifiche costose; i soli schizzi 2D sono difficili da verificare tra discipline.
 
-
     **Obiettivo e beneficio**
-
     - Gestire i concept come volumi e riserve di spazio nel modello e rilevare presto collisioni e colli di bottiglia.
-
     - Rendere la fattibilità di centrali tecniche e percorsi impiantistici comprensibile per tutte le parti.
 
-
     **Svolgimento**
-
-    1. Elaborare il concept durante una riunione mediante schizzi a mano in pianta e sezione: piante d''insieme dei piani principali, sezione attraverso un cavedio verticale e sezione in scala 1:20 del
-    corridoio con distribuzione orizzontale.
-
-    2. Fornire i modelli di architettura e impianti come volumi anziché dettaglio esecutivo e modellare il fabbisogno di spazio tecnico (elettrico, ventilazione, sanitario, riscaldamento, freddo, produzione)
-    come geometria di coordinamento.
-
+    1. Elaborare il concept durante una riunione mediante schizzi a mano in pianta e sezione: piante d'insieme dei piani principali, sezione attraverso un cavedio verticale e sezione in scala 1:20 del corridoio con distribuzione orizzontale.
+    2. Fornire i modelli di architettura e impianti come volumi anziché dettaglio esecutivo e modellare il fabbisogno di spazio tecnico (elettrico, ventilazione, sanitario, riscaldamento, freddo, produzione) come geometria di coordinamento.
     3. Verificare nel modello federato collisioni, altezze minime, spazi di manutenzione e riserve.
 
-
     **Risultato della fornitura**
-
-    - Modello di coordinamento dell''architettura con geometria semplificata di spazi ed elementi, senza dettaglio esecutivo.
-
-    - Modello di coordinamento degli impianti con le informazioni di spazio, fluido e dimensione necessarie alla verifica di fattibilità.'
-  en: 'Align concept and feasibility early in the model – comparable to a sketch design, without execution detail.
-
+    - Modello di coordinamento dell'architettura con geometria semplificata di spazi ed elementi, senza dettaglio esecutivo.
+    - Modello di coordinamento degli impianti con le informazioni di spazio, fluido e dimensione necessarie alla verifica di fattibilità.
+  en: |-
+    Align concept and feasibility early in the model – comparable to a sketch design, without execution detail.
 
     **Starting point**
-
     - In preliminary design and study, reliable data on technical space requirements is often missing.
-
     - Late coordination leads to costly design changes; 2D sketches alone are hard to check across disciplines.
 
-
     **Goal & benefit**
-
     - Maintain concepts as volumes and space reserves in the model and check early for clashes and bottlenecks.
-
     - Make feasibility of plant rooms and service routes understandable for all parties.
 
-
     **Process**
-
-    1. Develop the concept collaboratively in a meeting using hand sketches in plan and section: overall plans of the principal storeys, a section through a vertical riser, and a 1:20 section through the
-    corridor and horizontal distribution.
-
-    2. Provide building-services models using volumes rather than construction detail and demonstrate the required technical space. Focus on critical points such as plant rooms, risers, and horizontal distribution
-    on the typical storey. Define the scope for the specific project.
-
+    1. Develop the concept collaboratively in a meeting using hand sketches in plan and section: overall plans of the principal storeys, a section through a vertical riser, and a 1:20 section through the corridor and horizontal distribution.
+    2. Provide building-services models using volumes rather than construction detail and demonstrate the required technical space. Focus on critical points such as plant rooms, risers, and horizontal distribution on the typical storey. Define the scope for the specific project.
     3. Check clashes, minimum heights, maintenance clearances, and reserves in the federated model.
 
-
     **Deliverable**
-
     - Architecture coordination model with simplified space and component geometry without execution detail.
-
-    - MEP coordination model with the space, medium, and size information required for feasibility checking.'
-workflow_group: entwurf
+    - MEP coordination model with the space, medium, and size information required for feasibility checking.
+workflow_group: koordination
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active
@@ -147,5 +91,4 @@ service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep
-comment: MEP–Architecture sketch coordination. Early phases use walls and floor slabs as coordination geometry plus schematic pipe/duct/tray/equipment-space with Reference medium. From interior spaces only
-  Height is required (structural clear height); FinishCeilingHeight / suspended ceilings are not required here – see des-ceiling-mirror-planning.
+comment: MEP–Architecture sketch coordination. Early phases use walls and floor slabs as coordination geometry plus schematic pipe/duct/tray/equipment-space with Reference medium. From interior spaces only Height is required (structural clear height); FinishCeilingHeight / suspended ceilings are not required here – see des-ceiling-mirror-planning.

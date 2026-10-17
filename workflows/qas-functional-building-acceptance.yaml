@@ -1,0 +1,109 @@
+id: pragmaticbim:workflow/qas-functional-building-acceptance
+code: QAS-FUNCTIONAL-ACCEPTANCE
+sort_order: 96
+name:
+  de: Funktionserfüllung des Gebäudes abnehmen
+  fr: Vérifier les fonctions du bâtiment lors de la réception
+  it: Verificare le funzioni dell'edificio al collaudo
+  en: Verify building functions at handover
+description:
+  de: |-
+    Die ausgeführte Lösung anhand der vereinbarten Nutzungsszenarien prüfen, damit die Gebäudeabnahme nicht nur sichtbare Mängel erfasst, sondern auch die bestellte Funktion bestätigt.
+
+    **Ausgangslage**
+    - Gebäudeabnahmen gleichen häufig einer unstrukturierten Begehung: Mängel werden nach Erfahrung und Bauchgefühl gesucht, während klare und wiederholbare Prüfkriterien fehlen.
+    - Ob Nutzende ihre vorgesehenen Tätigkeiten im Gebäude tatsächlich ausführen können, wird selten systematisch geprüft.
+    - Besonders bei Design-Build besteht das Risiko, dass eine formal vertragskonforme Lösung die bestellte Funktion trotzdem nicht erfüllt.
+
+    **Ziel & Nutzen**
+    - Unternehmerleistungen anhand der vereinbarten Nutzungsszenarien und Akzeptanzkriterien abnehmen.
+    - Für jede funktionale Anforderung nachvollziehbar festhalten, ob sie erfüllt, mit Einschränkungen erfüllt oder nicht erfüllt ist.
+    - Funktionale Abweichungen erkennen und von technischen Mängeln unterscheiden.
+
+    **Ablauf**
+    1. Nutzungsszenarien früh auswählen, mit Variante, Menge und prüfbaren Akzeptanzkriterien im Nutzungskonzept festhalten und während des Projekts kontrolliert fortführen.
+    2. Akzeptanzkriterien den betroffenen Unternehmerleistungen zuordnen sowie Prüfzeitpunkt, Prüfmethode, Nachweise und Verantwortlichkeiten vertraglich festlegen.
+    3. Nutzungsszenarien am ausgeführten Gebäude mit repräsentativen Nutzenden durchspielen, Ergebnisse und Abweichungen dokumentieren und offene Punkte bis zur Abnahme oder vereinbarten Ausnahme nachverfolgen.
+
+    **Lieferergebnis**
+    - Freigegebenes Nutzungskonzept mit versionierten Nutzungsszenarien und Akzeptanzkriterien
+    - Abnahmeplan mit Zuordnung zu Unternehmerleistungen, Prüfmethoden und Verantwortlichkeiten
+    - Abnahmeprotokoll mit Erfüllungsstatus, festgestellten Abweichungen und vereinbarten Massnahmen
+  fr: |-
+    Contrôler la solution réalisée à partir des scénarios d'utilisation convenus, afin que la réception du bâtiment ne relève pas uniquement les défauts visibles, mais confirme aussi les fonctions commandées.
+
+    **Situation de départ**
+    - La réception d'un bâtiment ressemble souvent à une visite peu structurée : les défauts sont recherchés selon l'expérience et l'intuition, sans critères de contrôle clairs et reproductibles.
+    - La possibilité pour les usagers d'accomplir effectivement les activités prévues dans le bâtiment fait rarement l'objet d'un contrôle systématique.
+    - En conception-réalisation notamment, une solution peut respecter formellement le contrat sans pour autant remplir les fonctions commandées.
+
+    **Objectif et bénéfice**
+    - Réceptionner les prestations des entreprises à partir des scénarios d'utilisation et des critères de réception convenus.
+    - Consigner de manière traçable, pour chaque exigence fonctionnelle, si elle est remplie, remplie avec des restrictions ou non remplie.
+    - Identifier les écarts fonctionnels et les distinguer des défauts techniques.
+
+    **Déroulement**
+    1. Choisir les scénarios d'utilisation dès le début, les consigner dans le concept d'utilisation avec la variante, la quantité et des critères de réception vérifiables, puis les tenir à jour de manière contrôlée durant le projet.
+    2. Attribuer les critères de réception aux prestations des entreprises concernées et définir contractuellement le moment du contrôle, la méthode, les justificatifs et les responsabilités.
+    3. Tester les scénarios d'utilisation dans le bâtiment réalisé avec des usagers représentatifs, documenter les résultats et les écarts, puis suivre les points ouverts jusqu'à leur réception ou à l'acceptation d'une dérogation.
+
+    **Livrable**
+    - Concept d'utilisation validé avec scénarios d'utilisation et critères de réception versionnés
+    - Plan de réception avec attribution aux prestations des entreprises, méthodes de contrôle et responsabilités
+    - Procès-verbal de réception indiquant l'état de conformité, les écarts constatés et les mesures convenues
+  it: |-
+    Verificare la soluzione realizzata in base agli scenari d'uso concordati, affinché il collaudo dell'edificio non rilevi soltanto i difetti visibili, ma confermi anche le funzioni ordinate.
+
+    **Situazione di partenza**
+    - Il collaudo di un edificio assomiglia spesso a un sopralluogo poco strutturato: i difetti vengono cercati in base all'esperienza e all'intuito, senza criteri di verifica chiari e ripetibili.
+    - Raramente si verifica in modo sistematico se gli utenti possono effettivamente svolgere nell'edificio le attività previste.
+    - In particolare nella progettazione e costruzione, una soluzione può risultare formalmente conforme al contratto senza soddisfare le funzioni ordinate.
+
+    **Obiettivo e beneficio**
+    - Collaudare le prestazioni delle imprese in base agli scenari d'uso e ai criteri di accettazione concordati.
+    - Registrare in modo tracciabile, per ogni requisito funzionale, se è soddisfatto, soddisfatto con limitazioni o non soddisfatto.
+    - Individuare gli scostamenti funzionali e distinguerli dai difetti tecnici.
+
+    **Svolgimento**
+    1. Scegliere tempestivamente gli scenari d'uso, registrarli nel concetto d'uso con variante, quantità e criteri di accettazione verificabili e aggiornarli in modo controllato durante il progetto.
+    2. Attribuire i criteri di accettazione alle prestazioni delle imprese interessate e definire contrattualmente il momento e il metodo di verifica, i giustificativi e le responsabilità.
+    3. Verificare gli scenari d'uso nell'edificio realizzato con utenti rappresentativi, documentare risultati e scostamenti e seguire i punti aperti fino al collaudo o all'accettazione di una deroga.
+
+    **Risultato della fornitura**
+    - Concetto d'uso approvato con scenari d'uso e criteri di accettazione versionati
+    - Piano di collaudo con attribuzione alle prestazioni delle imprese, metodi di verifica e responsabilità
+    - Verbale di collaudo con stato di conformità, scostamenti riscontrati e misure concordate
+  en: |-
+    Check the completed solution against the agreed usage scenarios so that building handover records not only visible defects but also confirms the functions the client ordered.
+
+    **Starting point**
+    - Building handovers are often unstructured walkthroughs: defects are sought through experience and intuition, while clear and repeatable acceptance criteria are missing.
+    - Whether users can actually carry out their intended activities in the building is rarely checked systematically.
+    - In design-build projects especially, a solution may formally comply with the contract without fulfilling the functions the client ordered.
+
+    **Goal & benefit**
+    - Accept contractor services against the agreed usage scenarios and acceptance criteria.
+    - Record traceably for each functional requirement whether it is met, met with restrictions, or unmet.
+    - Identify functional deviations and distinguish them from technical defects.
+
+    **Process**
+    1. Select usage scenarios early, record them in the usage concept with the variant, quantity, and verifiable acceptance criteria, and maintain them under change control throughout the project.
+    2. Assign the acceptance criteria to the affected contractor services and contractually define the test stage, method, evidence, and responsibilities.
+    3. Test the usage scenarios in the completed building with representative users, document results and deviations, and track open items until acceptance or an agreed exception.
+
+    **Deliverable**
+    - Approved usage concept with versioned usage scenarios and acceptance criteria
+    - Acceptance plan assigning contractor services, test methods, and responsibilities
+    - Handover record stating compliance status, identified deviations, and agreed actions
+workflow_group: fachpruefung
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+comment: >-
+  Uses pragmaticbim:document/usage-concept as the functional acceptance basis
+  and complements technical, statutory, and contractual acceptance. Particularly
+  relevant to pragmaticbim:workflow/bes-design-build-procurement, where the
+  contractor develops the solution against functional requirements.

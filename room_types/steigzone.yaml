@@ -1,0 +1,92 @@
+id: pragmaticbim:room-type/steigzone
+code: RT-VO-02
+sort_order: 116
+name:
+  de: Steigzone
+  fr: Zone de colonnes
+  it: Zona montanti
+  en: Riser
+definition:
+  de: Vertikale Gebäudetechnik-Steigzone.
+  fr: Zone verticale de colonnes pour les techniques du bâtiment.
+  it: Zona verticale di montanti per gli impianti tecnici.
+  en: Vertical building services riser.
+room_type_kind: room
+room_name: RN-12-10-02
+activity: S-TEC
+default_scope: building
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/steigzone-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-interior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-interior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: false
+  - element: pragmaticbim:element/spaces-interior
+    name: LongName
+    value:
+      de: Steigzone
+      fr: Zone de colonnes
+      it: Zona montanti
+      en: Riser
+  - element: pragmaticbim:element/spaces-interior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: FF
+  - element: pragmaticbim:element/spaces-interior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Beton
+  - element: pragmaticbim:element/spaces-interior
+    name: WallCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Beton roh
+  - element: pragmaticbim:element/spaces-interior
+    name: CeilingCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Sonstige / unbekannte Deckenbekleidung
+      fr: Other / unknown ceiling covering
+      it: Other / unknown ceiling covering
+      en: Other / unknown ceiling covering
+  - element: pragmaticbim:element/spaces-interior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Workshop
+  - element: pragmaticbim:element/spaces-interior
+    name: InteriorOrExteriorSpace
+    value: INTERNAL
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 5.0
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-interior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Eingeschränkt
+      fr: Restreint
+      it: Ristretto
+      en: Restricted
+  - element: pragmaticbim:element/spaces-interior
+    name: PeakOccupancy
+    pset: ePset_SpaceRequirement
+    value: 1
+  - element: pragmaticbim:element/spaces-interior
+    name: DailyOperatingHours
+    pset: ePset_SpaceRequirement
+    value: 1
+  - element: pragmaticbim:element/spaces-interior
+    name: OutdoorAirFlowRate
+    pset: ePset_SpaceRequirement
+    value: 30
+  status: active

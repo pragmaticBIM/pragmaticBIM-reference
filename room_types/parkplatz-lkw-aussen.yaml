@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/parkplatz-lkw-aussen
+code: RT-PK-03
+sort_order: 130
+name:
+  de: Parkplatz LKW Aussen
+  fr: Place camion extérieure
+  it: Posto camion esterno
+  en: Exterior Truck Parking
+definition:
+  de: Aussenparkplatz für Lastwagen.
+  fr: Place extérieure pour les camions.
+  it: Posto esterno per autocarri.
+  en: Exterior parking space for trucks.
+room_type_kind: room
+room_name: RN-13-20-02
+activity: S-PRK-EXT
+default_scope: site
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/parkplatz-lkw-aussen-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-parking
+    name: PredefinedType
+    value: PARKING
+  - element: pragmaticbim:element/spaces-parking
+    name: ParkingUse
+    pset: Pset_SpaceParking
+    value: TRUCK
+  status: active

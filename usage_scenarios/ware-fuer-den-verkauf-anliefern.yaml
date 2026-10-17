@@ -1,0 +1,60 @@
+id: pragmaticbim:usage-scenario/ware-fuer-den-verkauf-anliefern
+code: US-VK-03
+sort_order: 4
+name:
+  de: Ware für den Verkauf anliefern
+  fr: Livrer la marchandise pour la vente
+  it: Consegnare la merce per la vendita
+  en: Delivering stock for sale
+description:
+  de: Ware kommt täglich oder wöchentlich an und wird bis zum Verkauf zwischengelagert. Die Anlieferung
+    entscheidet über Lieferzeiten, Lagerfläche und die Trennung von Kundenwegen.
+  fr: La marchandise arrive chaque jour ou chaque semaine et est stockée jusqu'à la vente. La livraison
+    détermine les horaires, la surface de stockage et la séparation des parcours clients.
+  it: La merce arriva ogni giorno o ogni settimana e viene stoccata fino alla vendita. La consegna determina
+    orari, superficie di deposito e separazione dai percorsi dei clienti.
+  en: Stock arrives daily or weekly and is held until sale. Delivery determines delivery times, storage
+    area, and separation from customer routes.
+uses:
+- pragmaticbim:use/verkauf
+tags:
+- logistik
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/ware-fuer-den-verkauf-anliefern-dock
+  sort_order: 1
+  name:
+    de: Laderampe und Annahmelager
+    fr: Quai et stock de réception
+    it: Rampa e deposito di ricezione
+    en: Loading dock and receiving store
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/laderampe
+    to_room_type: pragmaticbim:room-type/annahmelager
+  adds:
+  - pragmaticbim:room-type/laderampe
+  - pragmaticbim:room-type/annahmelager
+- id: pragmaticbim:scenario-option/ware-fuer-den-verkauf-anliefern-back-store
+  sort_order: 2
+  name:
+    de: Lager hinter dem Verkauf
+    fr: Réserve derrière la vente
+    it: Magazzino retrostante
+    en: Back-of-house store
+  adds:
+  - pragmaticbim:room-type/allgemeiner-lagerraum
+- id: pragmaticbim:scenario-option/ware-fuer-den-verkauf-anliefern-cold
+  sort_order: 3
+  name:
+    de: Annahme und Kühllager
+    fr: Réception et chambre froide
+    it: Ricezione e cella frigorifera
+    en: Receiving and cold store
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/annahmelager
+    to_room_type: pragmaticbim:room-type/kuehlraum
+  adds:
+  - pragmaticbim:room-type/annahmelager
+  - pragmaticbim:room-type/kuehlraum

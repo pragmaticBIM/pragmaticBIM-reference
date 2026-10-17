@@ -15,26 +15,26 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - NONE
-  - JALOUSIE
-  - SHUTTER
-  - AWNING
-  - USERDEFINED
+    - NONE
+    - JALOUSIE
+    - SHUTTER
+    - AWNING
+    - USERDEFINED
   fr:
-  - NONE
-  - JALOUSIE
-  - SHUTTER
-  - AWNING
-  - USERDEFINED
+    - NONE
+    - JALOUSIE
+    - SHUTTER
+    - AWNING
+    - USERDEFINED
   it:
-  - NONE
-  - JALOUSIE
-  - SHUTTER
-  - AWNING
-  - USERDEFINED
+    - NONE
+    - JALOUSIE
+    - SHUTTER
+    - AWNING
+    - USERDEFINED
   en:
-  - NONE
-  - JALOUSIE
-  - SHUTTER
-  - AWNING
-  - USERDEFINED
+    - NONE
+    - JALOUSIE
+    - SHUTTER
+    - AWNING
+    - USERDEFINED

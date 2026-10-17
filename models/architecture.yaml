@@ -42,7 +42,9 @@ included_elements:
   - pragmaticbim:element/architecture-wall-interior
   - pragmaticbim:element/architecture-drywall-reinforcement
   - pragmaticbim:element/architecture-opening-void
+  - pragmaticbim:element/architecture-fire-acoustic-seal
   - pragmaticbim:element/architecture-roof-drainage
+  - pragmaticbim:element/architecture-roof-overflow
   - pragmaticbim:element/architecture-footing
   - pragmaticbim:element/architecture-slab-floor
   - pragmaticbim:element/architecture-slab-balcony

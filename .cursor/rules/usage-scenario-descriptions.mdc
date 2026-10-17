@@ -1,0 +1,46 @@
+---
+description: Need-first wording for usage scenario descriptions
+globs: usage_scenarios/*.yaml
+alwaysApply: false
+---
+
+# Usage scenario descriptions
+
+A scenario states a need. Its variants are the solutions. Write `description` so a planner sees the need first and then why the choice matters.
+
+## Terms
+
+- **Nutzungsszenario** (usage scenario): the need as the catalogue describes it. It applies to every project with that use. These YAML files hold scenarios.
+- **Variante** (variant): one possible solution of a scenario. In the book and in descriptions the word is Variante, not Option. The YAML key stays `options`, and ids stay `pragmaticbim:scenario-option/…`.
+- In the project a scenario is answered with a variant and a quantity, which makes it testable, e.g. «Die Bewohnenden stellen 40 Velos im Innern ab.» The quantity lives in the project, not in the catalogue.
+- **Nutzungskonzept** (use concept): the project document that bundles the chosen scenarios with their variants and quantities, and the boundary conditions. It covers what is often called Betriebskonzept.
+- Do not use «User Story» as a term. A scenario is comparable to a user story in software development; say so at most once as a comparison.
+- Do not use these terms interchangeably. A description never contains project quantities.
+
+## What the text does
+
+- First sentence: the need. Who does what, how often, under which condition. No room types.
+- Second sentence: the consequence of the choice for area, room count, privacy, access, distance, or operation.
+- Write `de` first. `fr`, `it`, and `en` carry the same meaning in their own planning language.
+
+## What the text does not do
+
+- Do not open with a room or a solution ("Ein Gästezimmer entscheidet …").
+- Do not retell the room sequence or list the variants.
+- Do not change variant names, tags, targets, or relationships from the description.
+
+```yaml
+# avoid
+de: Ein Gästezimmer entscheidet, ob Besuche getrennt vom Haushalt schlafen.
+
+# use
+de: Besuch übernachtet gelegentlich. Ein eigener Schlafplatz entscheidet, ob Gäste getrennt vom Haushalt schlafen.
+```
+
+## Boundaries
+
+- The use (e.g. `pragmaticbim:use/wohnen`) goes in `uses`, never in `tags`. Tags group scenarios within a use. Only main uses (`use_kind: main`) go there; support uses (Erschliessung, Keller, Technik, Parkierung, Allgemeinfläche) name massing volumes, not scenarios.
+- Boundary conditions (Wohnungsmix, Finanzierung) are project goals with `is_boundary_condition: true`, not scenarios.
+- Legal requirements (escape routes, lift obligation) are not scenarios.
+- Only access scenarios add access rooms (Treppenhaus, Aufzugszone, Aussentreppe, Warenaufzug, Bettenaufzug): Zur Einheit gelangen and one explicit scenario per main use, tagged `erschliessung` and listed first. State use-specific needs there as variants (e.g. a separate Warenaufzug in Beherbergung, a Bettenaufzug in Gesundheit) instead of deriving them. Other scenarios measure from `wohnungseingang` or `strasse`.
+- Sizes are room type configurations, not variants.

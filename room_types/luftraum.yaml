@@ -1,0 +1,33 @@
+id: pragmaticbim:room-type/luftraum
+code: RT-VO-05
+sort_order: 119
+name:
+  de: Luftraum
+  fr: Volume d'air
+  it: Volume d'aria
+  en: Air Space
+definition:
+  de: Nicht nutzbarer Luftraum im Modell.
+  fr: Volume d'air non utilisable dans la maquette.
+  it: Volume d'aria non utilizzabile nel modello.
+  en: Non-occupiable air volume in the model.
+room_type_kind: room
+room_name: RN-12-20-03
+activity: S-VOI-PLN
+default_scope: building
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/luftraum-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-luftraum
+    name: PredefinedType
+    value: USERDEFINED
+  - element: pragmaticbim:element/spaces-luftraum
+    name: ObjectType
+    value:
+      de: Luftraum
+      fr: Volume d'air
+      it: Volume d'aria
+      en: Air space
+  status: active

@@ -1,0 +1,49 @@
+id: pragmaticbim:usage-scenario/notstrom-labor
+code: US-LA-08
+sort_order: 9
+name:
+  de: Notstrom
+  fr: Alimentation de secours
+  it: Alimentazione di emergenza
+  en: Emergency power
+description:
+  de: Versuche, gekühlte Proben und Abzüge müssen bei einem Netzausfall weiterlaufen. Die Notstromversorgung
+    entscheidet über ein eigenes Aggregat, die Technikfläche und den Brandabschnitt.
+  fr: Essais, échantillons réfrigérés et sorbonnes doivent se poursuivre lors d'une coupure de réseau.
+    L'alimentation de secours détermine s'il faut un groupe propre, la surface technique et le compartiment
+    coupe-feu.
+  it: Prove, campioni refrigerati e cappe devono proseguire in caso di interruzione della rete. L'alimentazione
+    di emergenza determina se serve un gruppo proprio, la superficie tecnica e il compartimento antincendio.
+  en: Experiments, refrigerated samples, and fume cupboards have to keep running during a power cut. Emergency
+    power determines whether a dedicated generator is needed, and with it the plant area and the fire
+    compartment.
+uses:
+- pragmaticbim:use/labor
+tags:
+- energie
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/notstrom-labor-distribution
+  sort_order: 1
+  name:
+    de: Gebäude-Notstrom
+    fr: Secours du bâtiment
+    it: Emergenza dell'edificio
+    en: Building emergency supply
+  adds:
+  - pragmaticbim:room-type/elektroraum
+- id: pragmaticbim:scenario-option/notstrom-labor-generator
+  sort_order: 2
+  name:
+    de: Mit Notstromaggregat
+    fr: Avec groupe électrogène
+    it: Con gruppo elettrogeno
+    en: With backup generator
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/generatorraum
+    to_room_type: pragmaticbim:room-type/elektroraum
+  adds:
+  - pragmaticbim:room-type/generatorraum
+  - pragmaticbim:room-type/elektroraum

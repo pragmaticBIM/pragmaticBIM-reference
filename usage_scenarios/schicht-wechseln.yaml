@@ -1,0 +1,47 @@
+id: pragmaticbim:usage-scenario/schicht-wechseln
+code: US-PR-05
+sort_order: 6
+name:
+  de: Schicht wechseln
+  fr: Changer d'équipe
+  it: Cambiare turno
+  en: Changing shifts
+description:
+  de: Mitarbeitende ziehen vor und nach der Schicht Arbeitskleidung an und aus. Die Garderoben entscheiden
+    über Hygiene, Geschlechtertrennung und Wege zur Fertigung.
+  fr: Le personnel enfile et retire ses vêtements de travail avant et après l'équipe. Les vestiaires déterminent
+    l'hygiène, la séparation des sexes et les chemins vers la fabrication.
+  it: Il personale indossa e toglie gli indumenti da lavoro prima e dopo il turno. Gli spogliatoi determinano
+    igiene, separazione per sesso e percorsi verso la produzione.
+  en: Staff put on and take off work clothes before and after each shift. Changing rooms determine hygiene,
+    gender separation, and routes to production.
+uses:
+- pragmaticbim:use/produktion
+tags:
+- personal
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/schicht-wechseln-changing
+  sort_order: 1
+  name:
+    de: Umkleide
+    fr: Vestiaire
+    it: Spogliatoio
+    en: Changing room
+  adds:
+  - pragmaticbim:room-type/umkleideraum
+- id: pragmaticbim:scenario-option/schicht-wechseln-changing-shower
+  sort_order: 2
+  name:
+    de: Umkleide mit Duschen
+    fr: Vestiaire avec douches
+    it: Spogliatoio con docce
+    en: Changing room with showers
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/umkleideraum
+    to_room_type: pragmaticbim:room-type/duschraum
+  adds:
+  - pragmaticbim:room-type/umkleideraum
+  - pragmaticbim:room-type/duschraum

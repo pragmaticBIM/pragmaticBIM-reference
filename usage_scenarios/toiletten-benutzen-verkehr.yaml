@@ -1,0 +1,46 @@
+id: pragmaticbim:usage-scenario/toiletten-benutzen-verkehr
+code: US-VE-07
+sort_order: 7
+name:
+  de: Toiletten benutzen
+  fr: Utiliser les toilettes
+  it: Usare i servizi igienici
+  en: Using the toilets
+description:
+  de: Reisende brauchen während ihres Aufenthalts Toiletten, auch mit Rollstuhl. Die Aufteilung entscheidet
+    über Anzahl, Fläche und wie flexibel die Toiletten belegt werden.
+  fr: Les voyageurs ont besoin de toilettes pendant leur séjour, y compris en fauteuil roulant. La répartition
+    détermine le nombre, la surface et la flexibilité d'occupation.
+  it: I viaggiatori hanno bisogno di servizi igienici durante la permanenza, anche in sedia a rotelle.
+    La suddivisione determina numero, superficie e flessibilità d'uso.
+  en: Travellers need toilets during their stay, including wheelchair users. The split determines number,
+    area, and how flexibly the toilets can be used.
+uses:
+- pragmaticbim:use/verkehr
+tags:
+- sanitaer
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/toiletten-benutzen-verkehr-separate
+  sort_order: 1
+  name:
+    de: Damen-, Herren- und barrierefreies WC
+    fr: WC femmes, hommes et WC sans obstacles
+    it: WC donne, uomini e WC senza barriere
+    en: Women's, men's, and accessible toilets
+  adds:
+  - pragmaticbim:room-type/damen-wc
+  - pragmaticbim:room-type/herren-wc
+  - pragmaticbim:room-type/barrierefreies-wc
+- id: pragmaticbim:scenario-option/toiletten-benutzen-verkehr-all-gender
+  sort_order: 2
+  name:
+    de: Geschlechtsneutrale WCs mit barrierefreiem WC
+    fr: WC non genrés avec WC sans obstacles
+    it: WC neutri con WC senza barriere
+    en: All-gender toilets with accessible toilet
+  adds:
+  - pragmaticbim:room-type/allgemeines-wc
+  - pragmaticbim:room-type/barrierefreies-wc

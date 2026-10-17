@@ -1,0 +1,47 @@
+id: pragmaticbim:usage-scenario/einsteigen-und-aussteigen
+code: US-VE-01
+sort_order: 2
+name:
+  de: Einsteigen und aussteigen
+  fr: Monter et descendre
+  it: Salire e scendere
+  en: Boarding and alighting
+description:
+  de: Reisende steigen in kurzen Abständen in Züge, Trams oder Busse ein und aus. Die Anordnung der Perrons
+    entscheidet über Umsteigewege, Wartezonen und Personenfluss.
+  fr: Les voyageurs montent et descendent des trains, trams ou bus à intervalles courts. La disposition
+    des quais détermine les chemins de correspondance, les zones d'attente et les flux de personnes.
+  it: I viaggiatori salgono e scendono da treni, tram o autobus a brevi intervalli. La disposizione dei
+    marciapiedi determina percorsi di coincidenza, zone di attesa e flussi di persone.
+  en: Passengers board and alight trains, trams, or buses at short intervals. The platform layout determines
+    transfer routes, waiting zones, and passenger flow.
+uses:
+- pragmaticbim:use/verkehr
+tags:
+- reisen
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/einsteigen-und-aussteigen-platform
+  sort_order: 1
+  name:
+    de: Perron
+    fr: Quai
+    it: Marciapiede
+    en: Platform
+  adds:
+  - pragmaticbim:room-type/perron
+- id: pragmaticbim:scenario-option/einsteigen-und-aussteigen-platform-waiting
+  sort_order: 2
+  name:
+    de: Perron mit Warteraum
+    fr: Quai avec salle d'attente
+    it: Marciapiede con sala d'attesa
+    en: Platform with waiting room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wartezimmer
+    to_room_type: pragmaticbim:room-type/perron
+  adds:
+  - pragmaticbim:room-type/wartezimmer
+  - pragmaticbim:room-type/perron

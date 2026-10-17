@@ -1,0 +1,110 @@
+id: pragmaticbim:workflow/bes-element-based-tendering
+code: BES-ELEMENT-TENDER
+sort_order: 14
+name:
+  de: Ausschreibung aus Bauteiltypen und Mengen erstellen
+  fr: Établir l'appel d'offres à partir des types d'éléments et des quantités
+  it: Elaborare la gara da tipi di componente e quantità
+  en: Prepare the tender from component types and quantities
+description:
+  de: |-
+    Die typbasierte Kosten- und Mengengrundlage in eine nach Gewerken gegliederte Ausschreibung überführen, ohne den Bezug zu den Bauteilen zu verlieren.
+
+    **Ausgangslage**
+    - Kostenberechnungen sind nach Elementen aufgebaut, Leistungsverzeichnisse dagegen nach NPK, BKP oder Unternehmerlosen; eine direkte Übernahme der Gliederung ist deshalb nicht möglich.
+    - Werden Leistungen verschiedener Bauteile im LV zusammengefasst, gehen Typ- und Mengenbezüge verloren und die spätere Nachkalkulation wird aufwendig.
+
+    **Ziel & Nutzen**
+    - Unternehmen eine vollständige und kalkulierbare Grundlage mit nachvollziehbaren Mengen und Leistungen bereitstellen.
+    - Elementbasierte Kostenpositionen eindeutig auf Gewerke und LV-Positionen abbilden.
+    - Produktklasse und Bauteiltyp als Referenz für Prüfung und Nachkalkulation erhalten, ohne die Gewerkegliederung zu ersetzen.
+    - Die gewerkespezifisch aufbereiteten Unterlagen so strukturieren, dass Modell, Pläne und Listen nach der Vergabe mit Produktentscheiden und ausführungsrelevanten Details fortgeschrieben werden können.
+
+    **Ablauf**
+    1. Freigegebene Bauteiltypen, Leistungsmerkmale, Mengen und Vergabepakete aus der detaillierten Kostenberechnung und den Fachmodellen bereitstellen.
+    2. Leistungen den BKP-/NPK-Positionen oder funktionalen Leistungsbeschrieben zuordnen und die Beziehungen zu Produktklasse, Bauteiltyp und Referenzmenge dokumentieren.
+    3. Modell, Ausschreibungspläne und Leistungsverzeichnis gemeinsam prüfen und mit eindeutigen Referenzen zwischen Bauteilen, Mengen, Positionen und Vergabepaketen abgeben.
+
+    **Lieferergebnis**
+    - Nach Gewerken gegliedertes Leistungsverzeichnis mit nachvollziehbaren Modellmengen
+    - Dokumentierte Zuordnung zwischen Bauteiltypen, LV-Positionen und Vergabepaketen
+  fr: |-
+    Transposer la base des coûts et quantités par types dans un appel d'offres structuré par corps de métier, sans perdre le lien avec les éléments.
+
+    **Situation de départ**
+    - Les calculs de coûts sont structurés par éléments, tandis que les descriptifs suivent le CAN, le CFC ou les lots d'entrepreneur ; leur structure ne peut donc pas être reprise directement.
+    - Lorsque les prestations de plusieurs éléments sont regroupées dans le descriptif, les références aux types et aux quantités se perdent et l'après-calcul devient laborieux.
+
+    **Objectif et bénéfice**
+    - Fournir aux entreprises un dossier complet et calculable avec quantités et prestations traçables.
+    - Affecter sans ambiguïté les positions de coûts par éléments aux corps de métier et aux articles du descriptif.
+    - Conserver classe de produit et type d'élément comme références pour le contrôle et l'après-calcul, sans remplacer la structure par corps de métier.
+    - Structurer les documents préparés par corps de métier afin de pouvoir tenir à jour la maquette, les plans et les listes après l'adjudication avec les choix de produits et les détails nécessaires à l'exécution.
+
+    **Déroulement**
+    1. Fournir les types d'éléments approuvés, performances, quantités et lots d'adjudication issus du calcul détaillé des coûts et des maquettes de discipline.
+    2. Affecter les prestations aux articles CFC/CAN ou aux descriptifs fonctionnels et documenter leurs relations avec la classe de produit, le type d'élément et la quantité de référence.
+    3. Contrôler ensemble maquette, plans d'appel d'offres et descriptif, puis les remettre avec des références univoques entre éléments, quantités, articles et lots d'adjudication.
+
+    **Livrable**
+    - Descriptif structuré par corps de métier avec quantités traçables issues de la maquette
+    - Affectation documentée entre types d'éléments, articles du descriptif et lots d'adjudication
+  it: |-
+    Trasferire la base di costi e quantità per tipo in una gara strutturata per categorie di lavoro, senza perdere il riferimento ai componenti.
+
+    **Situazione di partenza**
+    - I calcoli dei costi sono strutturati per componenti, mentre i capitolati seguono CPN, CCC o lotti d'impresa; la loro struttura non può quindi essere ripresa direttamente.
+    - Quando le prestazioni di diversi componenti vengono raggruppate nel capitolato, si perdono i riferimenti a tipi e quantità e il consuntivo diventa oneroso.
+
+    **Obiettivo e beneficio**
+    - Fornire alle imprese una documentazione completa e calcolabile con quantità e prestazioni tracciabili.
+    - Assegnare in modo univoco le posizioni di costo per componenti alle categorie di lavoro e alle posizioni del capitolato.
+    - Conservare classe di prodotto e tipo di componente come riferimenti per verifica e consuntivo, senza sostituire la struttura per categorie di lavoro.
+    - Strutturare i documenti predisposti per categoria di lavoro in modo che modello, disegni ed elenchi possano essere aggiornati dopo l'aggiudicazione con le scelte dei prodotti e i dettagli necessari all'esecuzione.
+
+    **Svolgimento**
+    1. Fornire tipi di componente approvati, prestazioni, quantità e lotti di aggiudicazione dal calcolo dettagliato dei costi e dai modelli disciplinari.
+    2. Assegnare le prestazioni alle posizioni CCC/CPN o ai capitolati funzionali e documentare i rapporti con classe di prodotto, tipo di componente e quantità di riferimento.
+    3. Verificare congiuntamente modello, piani di gara e capitolato e consegnarli con riferimenti univoci tra componenti, quantità, posizioni e lotti di aggiudicazione.
+
+    **Risultato della fornitura**
+    - Capitolato strutturato per categorie di lavoro con quantità tracciabili dal modello
+    - Assegnazione documentata tra tipi di componente, posizioni del capitolato e lotti di aggiudicazione
+  en: |-
+    Translate the type-based cost and quantity basis into a trade-structured tender without losing its links to the components.
+
+    **Starting point**
+    - Cost calculations are structured by element, while specifications follow NPK, BKP, or contractor packages, so one breakdown cannot be copied directly into the other.
+    - When specifications combine work from different components, type and quantity references are lost and later post-calculation becomes laborious.
+
+    **Goal & benefit**
+    - Provide contractors with a complete, priceable basis containing traceable quantities and scope.
+    - Map element-based cost items unambiguously to trades and specification items.
+    - Retain product class and component type as references for checking and post-calculation without replacing the trade breakdown.
+    - Structure the trade-specific documents so that the model, drawings, and schedules can be developed after award with product decisions and the details needed for construction.
+
+    **Process**
+    1. Provide approved component types, performance attributes, quantities, and procurement packages from the detailed cost calculation and discipline models.
+    2. Assign the work to BKP/NPK items or functional specifications and document the relationships to product class, component type, and reference quantity.
+    3. Check the model, tender drawings, and specification together and issue them with unambiguous references between components, quantities, items, and procurement packages.
+
+    **Deliverable**
+    - Trade-structured specification with traceable model quantities
+    - Documented mapping between component types, specification items, and procurement packages
+workflow_group: unternehmen
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: basic
+countries:
+  - CH
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+comment: >-
+  Consumes ProductClass, CalculatedType, ReferenceQuantity, performance
+  attributes, and AwardInterface from DES-ELEMENT-COST-LATE and the discipline
+  models. The specification remains structured by trade/NPK/BKP; ProductClass
+  and CalculatedType are traceable references and do not replace that
+  breakdown. Mapping between component types and specification items may be
+  many-to-many. The model supplements rather than replaces the written tender
+  documents. Downstream: trade tender bases and BES-ELEMENT-COST-POSTCALC.

@@ -1,0 +1,53 @@
+id: pragmaticbim:room-type/wohnung-5-5
+legacy_ids:
+- pragmaticbim:unit-type/wohnung-5-5
+code: UT-WH-55
+sort_order: 6
+name:
+  de: 5.5-Zimmer-Wohnung
+  fr: Logement de 5,5 pièces
+  it: Alloggio di 5,5 locali
+  en: 5.5-room dwelling
+definition:
+  de: Bruttovolumen einer 5.5-Zimmer-Wohnung, mit drei Schlafzimmern und einem Esszimmer.
+  fr: Volume brut d'un logement de 5,5 pièces, avec trois chambres et une salle à
+    manger.
+  it: Volume lordo di un alloggio di 5,5 locali, con tre camere e una sala da pranzo.
+  en: Gross volume of a 5.5-room dwelling, with three bedrooms and one dining room.
+room_type_kind: container
+uses:
+- pragmaticbim:use/wohnen
+extends: pragmaticbim:room-type/wohnung
+contains:
+- room_type: pragmaticbim:room-type/wohnungseingang
+- room_type: pragmaticbim:room-type/gang
+- room_type: pragmaticbim:room-type/wohnzimmer
+- room_type: pragmaticbim:room-type/schlafzimmer
+- room_type: pragmaticbim:room-type/kueche
+- room_type: pragmaticbim:room-type/badezimmer
+- room_type: pragmaticbim:room-type/esszimmer
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/wohnung-5-5-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: 5.5-Zimmer-Wohnung
+      fr: Logement de 5,5 pièces
+      it: Alloggio di 5,5 locali
+      en: 5.5-room dwelling
+  status: active
+  restrictions:
+    min_area: 135

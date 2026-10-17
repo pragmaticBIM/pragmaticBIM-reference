@@ -15,7 +15,11 @@ from generators.parts import (
     axis_placement_matrix,
     create_body_representation,
     create_extruded_area_solid,
+    rect_polyline,
 )
+
+# Wide enough that the catalog isometric shows the joint, not a hairline.
+FLOOR_JOINT_WIDTH = 0.08
 
 
 def add_covering(
@@ -131,6 +135,54 @@ def _find_covering_by_type(
     return matches[0]
 
 
+def _split_floor_covering_at_joint(covering: ifcopenshell.entity_instance) -> None:
+    """Replace one floor plate with two plates and a gap so the joint reads."""
+    ifc_file = covering.file
+    for rep in covering.Representation.Representations:
+        if rep.RepresentationIdentifier != "Body":
+            continue
+        items = list(rep.Items or [])
+        if len(items) != 1 or not items[0].is_a("IfcExtrudedAreaSolid"):
+            continue
+        item = items[0]
+        profile = item.SweptArea
+        if not profile.is_a("IfcArbitraryClosedProfileDef"):
+            continue
+        pts = profile.OuterCurve.Points
+        xs = [float(p.Coordinates[0]) for p in pts]
+        ys = [float(p.Coordinates[1]) for p in pts]
+        x0, x1 = min(xs), max(xs)
+        y0, y1 = min(ys), max(ys)
+        depth = float(item.Depth)
+        gap = FLOOR_JOINT_WIDTH
+        if min(x1 - x0, y1 - y0) <= gap + 0.20:
+            continue
+        # Cut across the shorter plan direction so both parts stay broad.
+        if (x1 - x0) <= (y1 - y0):
+            mid = 0.5 * (x0 + x1)
+            parts = (
+                (x0, y0, mid - gap * 0.5, y1),
+                (mid + gap * 0.5, y0, x1, y1),
+            )
+        else:
+            mid = 0.5 * (y0 + y1)
+            parts = (
+                (x0, y0, x1, mid - gap * 0.5),
+                (x0, mid + gap * 0.5, x1, y1),
+            )
+        rep.Items = [
+            create_extruded_area_solid(ifc_file, rect_polyline(*part), depth)
+            for part in parts
+        ]
+
+
+def _split_interior_floor_coverings(ifc_file: ifcopenshell.file) -> None:
+    for covering in ifc_file.by_type("IfcCovering"):
+        if getattr(covering, "PredefinedType", None) != "FLOORING":
+            continue
+        _split_floor_covering_at_joint(covering)
+
+
 def generate_covering(
     params: dict[str, Any],
 ) -> tuple[ifcopenshell.file, ifcopenshell.entity_instance]:
@@ -174,6 +226,10 @@ def generate_covering(
             )
         space_params.setdefault("with_context", True)
         ifc_file, _space = generate_space(space_params)
+        # Interior Bodenaufbau only: two plates per room so the joint is visible.
+        # The exterior balcony covering stays one plate.
+        if not space_params.get("include_balcony_floor_covering"):
+            _split_interior_floor_coverings(ifc_file)
         prefer_name = "FloorCovering"
 
     covering = _find_covering_by_type(

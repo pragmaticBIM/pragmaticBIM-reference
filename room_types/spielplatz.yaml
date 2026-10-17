@@ -11,18 +11,61 @@ definition:
   fr: Aire de jeux en plein air.
   it: Area gioco all'aperto.
   en: Outdoor play area.
-attribute_presets:
-- element: pragmaticbim:element/spaces-exterior
-  name: PredefinedType
-  value: SPACE
-- element: pragmaticbim:element/spaces-exterior
-  name: IsExternal
-  value: true
-- element: pragmaticbim:element/spaces-exterior
-  name: LongName
-  value:
-    de: Spielplatz
-    fr: Place de jeux
-    it: Parco giochi
-    en: Playground
+room_type_kind: room
+room_name: RN-11-20-02
+activity: O-GRN-REC
+default_scope: building
 status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/spielplatz-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Spielplatz
+      fr: Place de jeux
+      it: Parco giochi
+      en: Playground
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: BUF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: wassergebundene Decke
+      fr: Water-bound surface
+      it: Water-bound surface
+      en: Water-bound surface
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Öffentlich
+      fr: Public
+      it: Pubblico
+      en: Public
+  status: active

@@ -1,0 +1,56 @@
+id: pragmaticbim:usage-scenario/experimente-durchfuehren
+code: US-LA-01
+sort_order: 2
+name:
+  de: Experimente durchführen
+  fr: Mener des expériences
+  it: Condurre esperimenti
+  en: Running experiments
+description:
+  de: Forschende führen Versuche, Messungen und Analysen durch. Der Labortyp entscheidet über Lüftung,
+    Medienversorgung und Sicherheitsstufe.
+  fr: Les chercheurs réalisent des essais, mesures et analyses. Le type de laboratoire détermine la ventilation,
+    l'alimentation en fluides et le niveau de sécurité.
+  it: I ricercatori eseguono prove, misurazioni e analisi. Il tipo di laboratorio determina ventilazione,
+    fornitura di fluidi e livello di sicurezza.
+  en: Researchers carry out tests, measurements, and analyses. The laboratory type determines ventilation,
+    media supply, and safety level.
+uses:
+- pragmaticbim:use/labor
+tags:
+- forschung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/experimente-durchfuehren-science
+  sort_order: 1
+  name:
+    de: Chemie- oder Physiklabor
+    fr: Laboratoire de chimie ou de physique
+    it: Laboratorio di chimica o fisica
+    en: Chemistry or physics lab
+  adds:
+  - pragmaticbim:room-type/naturwissenschaftslabor
+- id: pragmaticbim:scenario-option/experimente-durchfuehren-medical
+  sort_order: 2
+  name:
+    de: Medizinisches Labor
+    fr: Laboratoire médical
+    it: Laboratorio medico
+    en: Medical laboratory
+  adds:
+  - pragmaticbim:room-type/medizinisches-labor
+- id: pragmaticbim:scenario-option/experimente-durchfuehren-clean-room
+  sort_order: 3
+  name:
+    de: Reinraumlabor
+    fr: Laboratoire en salle blanche
+    it: Laboratorio in camera bianca
+    en: Clean-room laboratory
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/schleuse
+    to_room_type: pragmaticbim:room-type/reinraum
+  adds:
+  - pragmaticbim:room-type/schleuse
+  - pragmaticbim:room-type/reinraum

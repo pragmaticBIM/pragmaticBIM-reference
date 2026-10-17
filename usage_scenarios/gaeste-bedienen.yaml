@@ -1,0 +1,52 @@
+id: pragmaticbim:usage-scenario/gaeste-bedienen
+code: US-GA-01
+sort_order: 2
+name:
+  de: Gäste bedienen
+  fr: Servir les clients
+  it: Servire gli ospiti
+  en: Serving guests
+description:
+  de: Gäste bestellen und konsumieren Speisen und Getränke. Das Bedienkonzept entscheidet über Bewegung,
+    Aufenthaltsdauer und Gastraumfläche.
+  fr: Les clients commandent et consomment des mets et boissons. Le concept de service détermine les déplacements,
+    la durée de séjour et la surface d'accueil.
+  it: Gli ospiti ordinano e consumano cibi e bevande. Il concetto di servizio determina movimenti, permanenza
+    e superficie per gli ospiti.
+  en: Guests order and consume food and drink. The service concept determines movement, dwell time, and
+    dining area.
+uses:
+- pragmaticbim:use/gastronomie
+tags:
+- gaeste
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/gaeste-bedienen-table-service
+  sort_order: 1
+  name:
+    de: Bedientes Restaurant
+    fr: Restaurant avec service
+    it: Ristorante servito
+    en: Table service
+  adds:
+  - pragmaticbim:room-type/restaurant
+- id: pragmaticbim:scenario-option/gaeste-bedienen-self-service
+  sort_order: 2
+  name:
+    de: Selbstbedienung
+    fr: Libre-service
+    it: Self-service
+    en: Self-service
+  adds:
+  - pragmaticbim:room-type/cafeteria
+- id: pragmaticbim:scenario-option/gaeste-bedienen-counter
+  sort_order: 3
+  name:
+    de: Thekenverkauf
+    fr: Vente au comptoir
+    it: Vendita al banco
+    en: Counter service
+  adds:
+  - pragmaticbim:room-type/verkaufsraum

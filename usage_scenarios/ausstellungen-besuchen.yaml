@@ -1,0 +1,47 @@
+id: pragmaticbim:usage-scenario/ausstellungen-besuchen
+code: US-VS-02
+sort_order: 3
+name:
+  de: Ausstellungen besuchen
+  fr: Visiter des expositions
+  it: Visitare mostre
+  en: Visiting exhibitions
+description:
+  de: Besuchende betrachten Objekte oder Werke über längere Zeit. Das Ausstellungskonzept entscheidet
+    über Raumfolge, Licht und Sicherheit.
+  fr: Les visiteurs observent des objets ou des œuvres pendant un certain temps. Le concept d'exposition
+    détermine la séquence des salles, la lumière et la sécurité.
+  it: I visitatori osservano oggetti o opere a lungo. Il concetto espositivo determina sequenza degli
+    spazi, luce e sicurezza.
+  en: Visitors view objects or works over a longer time. The exhibition concept determines room sequence,
+    light, and security.
+uses:
+- pragmaticbim:use/versammlung
+tags:
+- ausstellung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/ausstellungen-besuchen-gallery
+  sort_order: 1
+  name:
+    de: Ausstellungsraum
+    fr: Salle d'exposition
+    it: Sala espositiva
+    en: Exhibition space
+  adds:
+  - pragmaticbim:room-type/ausstellungsraum
+- id: pragmaticbim:scenario-option/ausstellungen-besuchen-gallery-store
+  sort_order: 2
+  name:
+    de: Ausstellung mit Depot
+    fr: Exposition avec réserve
+    it: Mostra con deposito
+    en: Exhibition with store
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/archivraum
+    to_room_type: pragmaticbim:room-type/ausstellungsraum
+  adds:
+  - pragmaticbim:room-type/ausstellungsraum
+  - pragmaticbim:room-type/archivraum

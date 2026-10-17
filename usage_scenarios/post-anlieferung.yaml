@@ -1,29 +1,56 @@
 id: pragmaticbim:usage-scenario/post-anlieferung
 code: US-WH-05
-sort_order: 5
+sort_order: 14
 name:
-  de: Post anlieferung
-  fr: Livraison du courrier
-  it: Consegna della posta
-  en: Mail delivery
+  de: Post anliefern
+  fr: Distribuer le courrier
+  it: Consegnare la posta
+  en: Delivering mail
 description:
-  de: Die Zustellung kommt von der Strasse in die Eingangshalle, legt Sendungen im Postraum ab und erreicht von dort die Wohnungseingänge.
-  fr: La distribution arrive de la rue dans le hall d'entrée, dépose le courrier au local courrier, puis rejoint les entrées des logements.
-  it: La consegna arriva dalla strada nell'atrio, deposita la posta nel locale posta e da lì raggiunge gli ingressi degli alloggi.
-  en: Delivery arrives from the street into the lobby, leaves mail in the mail room, and from there reaches the dwelling entries.
-scenario_group: Wohnen
+  de: Post wird täglich zugestellt und abgeholt. Der Ort entscheidet, wo sie geschützt
+    liegt und wie weit der Weg von der Wohnung ist.
+  fr: Le courrier est distribué et relevé chaque jour. L'emplacement décide où il
+    est à l'abri et de la distance depuis le logement.
+  it: La posta viene consegnata e ritirata ogni giorno. Il posto decide dove resta
+    al riparo e quanto dista dall'alloggio.
+  en: Mail is delivered and collected daily. The place decides where it is kept safe
+    and how far it is from the dwelling.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- zustellung
 status: active
 jurisdiction:
-- ch
-required_room_types:
-- pragmaticbim:room-type/strasse
-- pragmaticbim:room-type/eingangshalle
-- pragmaticbim:room-type/postraum
-- pragmaticbim:room-type/wohnungseingang
-room_relationships:
-- from_room_type: pragmaticbim:room-type/strasse
-  to_room_type: pragmaticbim:room-type/eingangshalle
-- from_room_type: pragmaticbim:room-type/eingangshalle
-  to_room_type: pragmaticbim:room-type/postraum
-- from_room_type: pragmaticbim:room-type/postraum
-  to_room_type: pragmaticbim:room-type/wohnungseingang
+- general
+options:
+- id: pragmaticbim:scenario-option/post-anlieferung
+  sort_order: 1
+  name:
+    de: Postraum Innen
+    fr: Local courrier intérieur
+    it: Locale posta interno
+    en: Interior mail room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/strasse
+    to_room_type: pragmaticbim:room-type/postraum
+  - from_room_type: pragmaticbim:room-type/postraum
+    to_room_type: pragmaticbim:room-type/wohnungseingang
+  adds:
+  - pragmaticbim:room-type/strasse
+  - pragmaticbim:room-type/postraum
+  - pragmaticbim:room-type/wohnungseingang
+- id: pragmaticbim:scenario-option/post-anlieferung-exterior
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-standard
+  sort_order: 2
+  name:
+    de: Aussenbriefkästen und Paketfächer
+    fr: Boîtes aux lettres et casiers à colis extérieurs
+    it: Cassette postali e armadietti per pacchi esterni
+    en: Exterior mailboxes and parcel lockers
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/strasse
+    to_room_type: pragmaticbim:room-type/briefkasten-paketfachanlage-aussen
+  adds:
+  - pragmaticbim:room-type/strasse
+  - pragmaticbim:room-type/briefkasten-paketfachanlage-aussen

@@ -15,18 +15,18 @@ norm_reference: project-specific
 status: active
 values:
   de:
-  - HOCH
-  - MITTEL
-  - TIEF
+    - HOCH
+    - MITTEL
+    - TIEF
   fr:
-  - HOCH
-  - MITTEL
-  - TIEF
+    - HOCH
+    - MITTEL
+    - TIEF
   it:
-  - HOCH
-  - MITTEL
-  - TIEF
+    - HOCH
+    - MITTEL
+    - TIEF
   en:
-  - HOCH
-  - MITTEL
-  - TIEF
+    - HOCH
+    - MITTEL
+    - TIEF

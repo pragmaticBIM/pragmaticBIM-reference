@@ -1,0 +1,160 @@
+---
+description: Structure for attribute definitions and enum glossaries
+globs: elements/*.yaml
+alwaysApply: false
+---
+
+# Attribute definitions (Elementplan)
+
+Write attribute `definition` fields under `attributes[].definition`.
+
+## Templates by type
+
+### Simple (Name, Reference, Elevation)
+
+One sentence; plain language.
+
+### Enum / allowed_values
+
+```yaml
+definition:
+  de: |-
+    {What this attribute means}
+
+    **Zulässige Werte**
+    - `TOKEN` — translated label   # opaque code (IFC enum, BKP, …)
+    - `KlartextToken`              # already plain language in this locale – no gloss
+```
+
+Headers: Zulässige Werte (de) / Valeurs admises (fr) / Valori ammessi (it) / Allowed values (en).
+Gloss after the em dash only when the token is an opaque code; never when the
+token is already plain language in that language (see Rules).
+
+### Schema-backed value lists (room-name, product-class, …)
+
+Meaning only in the attribute. Provenance and version live on `values/<slug>.yaml`
+(`norm_reference`, description URL). Pinning is done by pointing `allowed_values`
+at a versioned catalogue ID (e.g. `…-v0.2.0`), not by writing version numbers in
+prose.
+
+**IFC stores the classification label (`prefLabel` / name), never the notation
+(code).** Codes stay in the published schema and in book appendix rows for
+bridging (BKP/KBOB). `values/*.yaml` and attribute prose use the name that goes
+into the model – same pattern as room names (`Schlafzimmer`, not `RN-…`).
+
+```yaml
+# ❌ BAD — notation in IFC / prose examples
+Blattnotation (z. B. `AOF-03-01`) … Elternklasse (`AOF-01` bis `AOF-04`)
+
+# ✅ GOOD — name in IFC / prose examples
+Blattbezeichnung (z. B. `Kies`) bei bekanntem Belag; sonst die Elternklasse
+(z. B. `Versiegelt`, `Teildurchlässig`, `Durchlässig`, …)
+```
+
+Link the catalogue name to the schema page URL taken from that value file’s
+`description` (same URL in all four languages):
+
+```yaml
+definition:
+  de: |-
+    {What this attribute means}
+
+    **Zulässige Werte**
+    - Siehe Werteliste [{catalogue name}](https://schema.pragmaticbim.ch/classification/{page}.html).
+allowed_values: pragmaticbim:value/{slug}
+```
+
+Do **not** put bare `schema.pragmaticbim.ch` URLs, `v0.2.0`, “latest”, or
+“continuously published” wording in attribute prose – only the markdown link on
+the catalogue name. The book converter prints the URL address after the name
+so print PDFs stay usable without clicking.
+### IFC2x3 substitute
+
+Same as enum, plus:
+
+```yaml
+    **Hinweis**
+    - IFC2x3-Ersatz für {IFC4+ attribute name in plain language}.
+```
+
+### Fixed boolean (allowed_values)
+
+State expected value in plain language; optional **Zulässige Werte** for `TRUE` / `FALSE`.
+
+### Quantity (Qto_* psets)
+
+Describe what is measured and the unit only. **Never** mention abstractBIM, workflows, or downstream tools.
+
+### Calculated / derived (e.g. CalculatedType)
+
+Short meaning + logic name + example. **Do not** put FEEL, Entscheidungstabelle, or book Anhang pointers on the attribute – those live in book Anhang D, Bauteiltypisierung. Attribute text must also work in the webapp, which has no Anhang.
+
+```yaml
+definition:
+  de: |-
+    Berechneter Typname für Kosten- und Mengengruppierung. Logik `{LogicName}`.
+    Beispiel: `{ExampleToken}`
+```
+
+For shared logics with a fixed prefix per element (e.g. `PlattenTypisierung`):
+
+```yaml
+    Berechneter Typname für Kosten- und Mengengruppierung. Logik `PlattenTypisierung` (Prefix `Decke`).
+    Beispiel: `Decke_Beton_250mm_REI90_53`
+```
+
+Headers/labels: Beispiel (de) / Exemple (fr) / Esempio (it) / Example (en).
+
+## Rules
+
+1. Lead with plain-language meaning, not datatype.
+2. IFC enum tokens stay exact in backticks; translate the label after em dash
+   (`` `NEW` — Neubau ``). The gloss is for opaque codes, not for tokens that are
+   already plain language in that locale.
+3. **No tautological gloss.** When the token is already German (or already FR/IT/EN
+   in that language block) and self-explanatory, list the token alone – do not
+   repeat or lightly paraphrase it after the em dash.
+
+   ```yaml
+   # ❌ BAD — token is already German
+   - `Intern` — intern
+   - `Hochgesichert` — hochgesichert
+   - `Öffentlich` — öffentlich zugänglich
+
+   # ✅ GOOD — opaque IFC/code token needs a gloss
+   - `NEW` — Neubau
+   - `USERDEFINED` — benutzerdefiniert
+
+   # ✅ GOOD — localized plain-language token, no gloss
+   - `Öffentlich`
+   - `Intern`
+   - `Eingeschränkt`
+   - `Hochgesichert`
+   ```
+
+   Same in FR/IT/EN: `` `Interne` — interne `` and `` `Restricted` — restricted ``
+   are wrong; list the token alone. Only add a gloss when it adds meaning the
+   token does not already carry (e.g. `` `GAB` — Grundausbau … ``).
+4. Do not translate tokens in `values/*.yaml` arrays.
+5. Quantity attributes: geometry/measurement only – no vendor or workflow references.
+6. All four languages: same structure; translate labels, not enum tokens.
+7. **Write from German, not from English word order.** FR/IT must sound native; do not calque EN.
+8. Schema version / provenance live on the value catalogue. In attribute text, only a
+   markdown link on the catalogue name is allowed (URL copied from that catalogue).
+9. **Schema-backed classifications: name in IFC, not code.** Opaque IFC enums and
+   project codes (BKP, eBKP-H) stay as codes; SKOS notations with a separate
+   human label do not.
+
+## Tone / calques (do not use)
+
+| Concept | de | fr (native) | it (native) | avoid |
+|---|---|---|---|---|
+| Marks whether | Kennzeichnet | Indique si | Indica se | FR *Identifie si*, IT *Identifica se* |
+| MEP medium | Medium | fluide | fluido | FR *médium*, IT *mezzo* |
+| derive / derivable | ableitbar | déductible / peut être déduit | ricavabile | FR *dérivable*, IT *derivabile* from EN |
+| below terrain | unter Terrain | sous le niveau du terrain | sotto il livello del terreno | FR *sous terrain* |
+| cost bearer | Kostenträger | imputation | imputazione | FR *support de coûts* |
+| fire R (Tragfähigkeit) | Tragfähigkeit | stabilité | capacità portante | FR *portance* |
+| tenant placeholder | `{Mietername}` | `{nom du locataire}` | `{nome locatario}` | German token in FR/IT |
+
+Do not translate IFC/property tokens or enum tokens in backticks.

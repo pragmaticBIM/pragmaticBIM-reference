@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Wenderadius
+    - Wenderadius
   fr:
-  - Rayon de braquage
+    - Rayon de braquage
   it:
-  - Raggio di manovra
+    - Raggio di manovra
   en:
-  - Turning radius
+    - Turning radius

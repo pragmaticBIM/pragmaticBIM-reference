@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/getraenke-ausgeben
+code: US-GA-03
+sort_order: 4
+name:
+  de: Getränke ausgeben
+  fr: Servir des boissons
+  it: Servire bevande
+  en: Serving drinks
+description:
+  de: Mitarbeitende bereiten Getränke zu und geben sie an Gäste aus. Der Ausgabeort entscheidet über Wege
+    und die Trennung von Produktion und Gastraum.
+  fr: Le personnel prépare et sert des boissons. Le point de service détermine les trajets et la séparation
+    entre production et espace clients.
+  it: Il personale prepara e serve bevande. Il punto di servizio determina i percorsi e la separazione
+    tra produzione e spazio ospiti.
+  en: Staff prepare and serve drinks. The service point determines travel and separation between production
+    and guest areas.
+uses:
+- pragmaticbim:use/gastronomie
+tags:
+- ausgabe
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/getraenke-ausgeben-bar
+  sort_order: 1
+  name:
+    de: Bar
+    fr: Bar
+    it: Bar
+    en: Bar
+  adds:
+  - pragmaticbim:room-type/bar
+- id: pragmaticbim:scenario-option/getraenke-ausgeben-dining-room
+  sort_order: 2
+  name:
+    de: Ausgabe im Gastraum
+    fr: Service dans la salle
+    it: Servizio nella sala
+    en: Service in the dining area
+  adds:
+  - pragmaticbim:room-type/restaurant

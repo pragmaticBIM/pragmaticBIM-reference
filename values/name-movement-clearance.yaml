@@ -15,18 +15,18 @@ norm_reference: SIA 500
 status: active
 values:
   de:
-  - Wendefläche
-  - Manövrierfläche
-  - Freifläche
+    - Wendefläche
+    - Manövrierfläche
+    - Freifläche
   fr:
-  - Aire de rotation
-  - Aire de manœuvre
-  - Aire libre
+    - Aire de rotation
+    - Aire de manœuvre
+    - Aire libre
   it:
-  - Area di rotazione
-  - Area di manovra
-  - Area libera
+    - Area di rotazione
+    - Area di manovra
+    - Area libera
   en:
-  - Turning area
-  - Manoeuvring area
-  - Clear area
+    - Turning area
+    - Manoeuvring area
+    - Clear area

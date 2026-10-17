@@ -7,131 +7,83 @@ name:
   it: Verificare le prescrizioni dello studio del traffico
   en: Check the requirements from the traffic study
 description:
-  de: 'Vorgaben aus dem Verkehrsgutachten am Modell laufend prüfen – Parkierung und Wenderadien bleiben mit dem Planungsstand abgestimmt.
-
+  de: |-
+    Vorgaben aus dem Verkehrsgutachten am Modell laufend prüfen – Parkierung und Wenderadien bleiben mit dem Planungsstand abgestimmt.
 
     **Ausgangslage**
-
     - Verkehrsgutachten setzen Anforderungen an Parkierung und Erschliessung; ohne Modellbezug veralten sie bei Planungsänderungen.
-
     - Fehlende Soll-Ist-Abgleiche und unklare Wenderadien führen zu Bewilligungs- und Ausführungskonflikten.
 
-
     **Ziel & Nutzen**
-
     - Parkplätze und Wenderadien am Modell mit den Gutachtenvorgaben abgleichen.
-
     - Abweichungen früh sichtbar machen und mit Prüfregeln nachweisen.
 
-
     **Ablauf**
-
     1. Parkplätze als eigene Räume führen und Soll-Ist mit den Gutachtenvorgaben abgleichen.
-
     2. Erforderliche Wenderadien als Proxy-Volumen modellieren.
-
     3. Prüfregeln erstellen und den Abgleich bei Planungsänderungen wiederholen.
 
-
     **Lieferergebnis**
-
     - Modell mit nachvollziehbarem Parkplatz-Soll-Ist und modellierten Wenderadien
-
-    - Dokumentierte Prüfregeln zum laufenden Abgleich mit dem Verkehrsgutachten'
-  fr: 'Contrôler en continu les prescriptions de l''étude de trafic dans le modèle – stationnement et rayons de braquage restent alignés avec l''état de planification.
-
+    - Dokumentierte Prüfregeln zum laufenden Abgleich mit dem Verkehrsgutachten
+  fr: |-
+    Contrôler en continu les prescriptions de l'étude de trafic dans le modèle – stationnement et rayons de braquage restent alignés avec l'état de planification.
 
     **Situation de départ**
-
     - Les études de trafic fixent des exigences de stationnement et de desserte ; sans lien au modèle, elles deviennent obsolètes lors des modifications de projet.
-
-    - L''absence de comparaison prescrit/réalisé et des rayons de braquage flous entraînent des conflits d''autorisation et d''exécution.
-
+    - L'absence de comparaison prescrit/réalisé et des rayons de braquage flous entraînent des conflits d'autorisation et d'exécution.
 
     **Objectif et bénéfice**
-
-    - Aligner places de stationnement et rayons de braquage dans le modèle avec les prescriptions de l''étude.
-
+    - Aligner places de stationnement et rayons de braquage dans le modèle avec les prescriptions de l'étude.
     - Rendre les écarts visibles tôt et les prouver avec des règles de contrôle.
 
-
     **Déroulement**
-
-    1. Saisir les places comme locaux distincts et comparer prescrit/réalisé avec les prescriptions de l''étude.
-
+    1. Saisir les places comme locaux distincts et comparer prescrit/réalisé avec les prescriptions de l'étude.
     2. Modéliser les rayons de braquage requis comme volumes proxy.
-
     3. Établir des règles de contrôle et répéter la comparaison lors des modifications de projet.
 
-
     **Livrable**
-
     - Maquette avec comparaison prescrit/réalisé traçable des places et rayons de braquage modélisés
-
-    - Règles de contrôle documentées pour l''alignement continu avec l''étude de trafic'
-  it: 'Verificare in continuo nel modello le prescrizioni dello studio del traffico – parcheggi e raggi di manovra restano allineati allo stato di pianificazione.
-
+    - Règles de contrôle documentées pour l'alignement continu avec l'étude de trafic
+  it: |-
+    Verificare in continuo nel modello le prescrizioni dello studio del traffico – parcheggi e raggi di manovra restano allineati allo stato di pianificazione.
 
     **Situazione di partenza**
-
     - Gli studi del traffico fissano requisiti su parcheggio e accesso; senza collegamento al modello diventano obsoleti al variare del progetto.
-
-    - L''assenza di confronti prescritto/realizzato e raggi di manovra poco chiari causano conflitti di autorizzazione e di esecuzione.
-
+    - L'assenza di confronti prescritto/realizzato e raggi di manovra poco chiari causano conflitti di autorizzazione e di esecuzione.
 
     **Obiettivo e beneficio**
-
     - Allineare posti auto e raggi di manovra nel modello alle prescrizioni dello studio.
-
     - Rendere visibili presto gli scostamenti e dimostrarli con regole di verifica.
 
-
     **Svolgimento**
-
     1. Gestire i posti auto come locali distinti e confrontare prescritto/realizzato con le prescrizioni dello studio.
-
     2. Modellare i raggi di manovra richiesti come volumi proxy.
-
     3. Creare regole di verifica e ripetere il confronto a ogni modifica di progetto.
 
-
     **Risultato della fornitura**
-
     - Modello con confronto prescritto/realizzato tracciabile dei posti auto e raggi di manovra modellati
-
-    - Regole di verifica documentate per l''allineamento continuo con lo studio del traffico'
-  en: 'Continuously check traffic study requirements against the model – parking and turning radii stay aligned with the planning status.
-
+    - Regole di verifica documentate per l'allineamento continuo con lo studio del traffico
+  en: |-
+    Continuously check traffic study requirements against the model – parking and turning radii stay aligned with the planning status.
 
     **Starting point**
-
     - Traffic studies set requirements for parking and access; without a model link they become outdated when the design changes.
-
     - Missing requirement-vs-design checks and unclear turning radii cause permit and execution conflicts.
 
-
     **Goal & benefit**
-
     - Align parking spaces and turning radii in the model with the study requirements.
-
     - Make deviations visible early and prove them with verification rules.
 
-
     **Process**
-
     1. Maintain parking bays as dedicated spaces and compare required vs designed against the study requirements.
-
     2. Model required turning radii as proxy volumes.
-
     3. Create verification rules and repeat the check when the design changes.
 
-
     **Deliverable**
-
     - Model with a traceable parking required-vs-designed check and modelled turning radii
-
-    - Documented verification rules for ongoing alignment with the traffic study'
-workflow_group: konzept
+    - Documented verification rules for ongoing alignment with the traffic study
+workflow_group: konzept-bewilligung
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active

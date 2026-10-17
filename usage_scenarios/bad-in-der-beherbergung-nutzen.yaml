@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/bad-in-der-beherbergung-nutzen
+code: US-BH-03
+sort_order: 4
+name:
+  de: Bad nutzen
+  fr: Utiliser la salle d'eau
+  it: Usare il bagno
+  en: Using bathroom facilities
+description:
+  de: Gäste waschen und pflegen sich während ihres Aufenthalts. Die Zuordnung entscheidet über Privatheit,
+    Wege und Zimmerfläche.
+  fr: Les hôtes se lavent et prennent soin d'eux pendant leur séjour. L'affectation détermine l'intimité,
+    les trajets et la surface des chambres.
+  it: Gli ospiti si lavano e si curano durante il soggiorno. L'assegnazione determina riservatezza, percorsi
+    e superficie delle camere.
+  en: Guests wash and care for themselves during their stay. Allocation determines privacy, travel, and
+    room area.
+uses:
+- pragmaticbim:use/beherbergung
+tags:
+- aufenthalt
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/bad-in-der-beherbergung-nutzen-private
+  sort_order: 1
+  name:
+    de: Privates Badezimmer
+    fr: Salle de bain privée
+    it: Bagno privato
+    en: Private bathroom
+  adds:
+  - pragmaticbim:room-type/badezimmer
+- id: pragmaticbim:scenario-option/bad-in-der-beherbergung-nutzen-shared
+  sort_order: 2
+  name:
+    de: Gemeinsamer Duschraum
+    fr: Douches communes
+    it: Docce comuni
+    en: Shared shower room
+  adds:
+  - pragmaticbim:room-type/duschraum

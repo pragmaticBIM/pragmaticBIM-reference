@@ -7,139 +7,91 @@ name:
   it: Visualizzare per locale la convenzione d'uso delle strutture
   en: Visualize the structural usage agreement room by room
 description:
-  de: 'Nutzungs- und Tragwerksanforderungen der Nutzungsvereinbarung raumweise im Modell führen und daraus lesbare Visualisierungen ableiten.
-
+  de: |-
+    Nutzungs- und Tragwerksanforderungen der Nutzungsvereinbarung raumweise im Modell führen und daraus lesbare Visualisierungen ableiten.
 
     **Ausgangslage**
-
     - Flächenlasten, Punktlasten und Schwingungsanforderungen werden oft nur in Tabellen oder kolorierten Plänen geführt.
-
     - Änderungen der Raumnutzung oder der Lastannahmen gehen in der Dokumentation verloren.
 
-
     **Ziel & Nutzen**
-
     - Soll-Werte der Nutzungsvereinbarung Tragwerk direkt an Innen- und Aussenräumen im Modell führen.
-
     - Kolorierte Pläne und Visualisierungen aus dem Modell erzeugen statt paralleler Listenpflege.
 
-
     **Ablauf**
-
     1. Innen- und Aussenräume als Volumen mit Nutzung bereitstellen.
-
     2. Je Raum Flächenlast Soll, Punktlast Soll und Schwingungsanforderungen erfassen.
-
     3. Visualisierungen und Pläne aus dem Modell ableiten.
 
-
     **Lieferergebnis**
-
     - Raummodell mit prüfbaren Nutzungs- und Tragwerksanforderungen je Raum
+    - Raumbezogene Visualisierungen gemäss Nutzungsvereinbarung Tragwerk und Projektbasis
 
-    - Raumbezogene Visualisierungen gemäss Nutzungsvereinbarung Tragwerk und Projektbasis'
-  fr: 'Saisir par local dans la maquette les exigences d''utilisation et les exigences structurelles de la convention d''utilisation et en déduire des visualisations lisibles.
-
+  fr: |-
+    Saisir par local dans la maquette les exigences d'utilisation et les exigences structurelles de la convention d'utilisation et en déduire des visualisations lisibles.
 
     **Situation de départ**
-
     - Charges surfaciques, charges ponctuelles et exigences vibratoires ne sont souvent tenues que dans des tableaux ou des plans colorés.
-
-    - Les changements d''usage des locaux ou des hypothèses de charge se perdent dans la documentation.
-
+    - Les changements d'usage des locaux ou des hypothèses de charge se perdent dans la documentation.
 
     **Objectif et bénéfice**
-
-    - Saisir les valeurs cibles de la convention d''utilisation de la structure directement sur les espaces intérieurs et extérieurs dans la maquette.
-
+    - Saisir les valeurs cibles de la convention d'utilisation de la structure directement sur les espaces intérieurs et extérieurs dans la maquette.
     - Produire plans colorés et visualisations à partir du modèle plutôt que de listes parallèles.
 
-
     **Déroulement**
-
     1. Fournir espaces intérieurs et extérieurs comme volumes avec usage.
-
     2. Saisir par local charge surfacique cible, charge ponctuelle cible et exigences vibratoires.
-
     3. Déduire les visualisations et les plans de la maquette.
 
-
     **Livrable**
-
-    - Maquette spatiale avec exigences d''utilisation et structurelles vérifiables par local
-
-    - Visualisations par local conformes à la convention d''utilisation de la structure et à la base du projet'
-  it: 'Gestire per locale nel modello i requisiti d''uso e strutturali della convenzione d''uso e ricavarne visualizzazioni leggibili.
-
+    - Maquette spatiale avec exigences d'utilisation et structurelles vérifiables par local
+    - Visualisations par local conformes à la convention d'utilisation de la structure et à la base du projet
+  it: |-
+    Gestire per locale nel modello i requisiti d'uso e strutturali della convenzione d'uso e ricavarne visualizzazioni leggibili.
 
     **Situazione di partenza**
-
     - Carichi areali, carichi puntuali e requisiti di vibrazione sono spesso tenuti solo in tabelle o planimetrie colorate.
-
-    - Le modifiche dell''uso dei locali o delle ipotesi di carico si perdono nella documentazione.
-
+    - Le modifiche dell'uso dei locali o delle ipotesi di carico si perdono nella documentazione.
 
     **Obiettivo e beneficio**
-
-    - Gestire i valori obiettivo della convenzione d''uso delle strutture direttamente sugli spazi interni ed esterni nel modello.
-
+    - Gestire i valori obiettivo della convenzione d'uso delle strutture direttamente sugli spazi interni ed esterni nel modello.
     - Produrre planimetrie colorate e visualizzazioni dal modello invece di elenchi paralleli.
 
-
     **Svolgimento**
-
     1. Fornire spazi interni ed esterni come volumi con uso.
-
     2. Registrare per locale carico areale obiettivo, carico puntuale obiettivo e requisiti di vibrazione.
-
     3. Ricavare visualizzazioni e planimetrie dal modello.
 
-
     **Risultato della fornitura**
-
-    - Modello spaziale con requisiti d''uso e strutturali verificabili per locale
-
-    - Visualizzazioni per locale conformi alla convenzione d''uso delle strutture e alla base del progetto'
-  en: 'Record usage and structural requirements from the usage agreement per space in the model and derive readable visualizations from them.
-
+    - Modello spaziale con requisiti d'uso e strutturali verificabili per locale
+    - Visualizzazioni per locale conformi alla convenzione d'uso delle strutture e alla base del progetto
+  en: |-
+    Record usage and structural requirements from the usage agreement per space in the model and derive readable visualizations from them.
 
     **Starting point**
-
     - Area loads, point loads, and vibration requirements are often kept only in tables or coloured plans.
-
     - Changes to room use or load assumptions are easily lost in documentation.
 
-
     **Goal & benefit**
-
     - Record design target values of the structural usage agreement directly on interior and exterior spaces in the model.
-
     - Produce coloured plans and visualizations from the model instead of parallel list maintenance.
 
-
     **Process**
-
     1. Provide interior and exterior spaces as volumes with use.
-
     2. Capture design area load, design point load, and vibration requirements per space.
-
     3. Derive visualizations and plans from the model.
 
-
     **Deliverable**
-
     - Space model with verifiable usage and structural requirements for each space
-
-    - Space-based visualizations aligned with the structural usage agreement and design basis'
-workflow_group: konzept
+    - Space-based visualizations aligned with the structural usage agreement and design basis
+workflow_group: fachplanung-koordination
 parent_workflow: pragmaticbim:workflow/des
-picture_link: null
+picture_link:
 status: active
 service_kind: special
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/structural
-comment: SIA 260 Nutzungsvereinbarung Tragwerk – agreed design loads and vibration criteria are held in ePset_SpaceRequirement for coloured plan/visualization output. Verified values are held separately
-  in ePset_Space and used by QAS-USAGE-AGREEMENT. The stable workflow id and code are retained for compatibility.
+comment: SIA 260 Nutzungsvereinbarung Tragwerk – agreed design loads and vibration criteria are held in ePset_SpaceRequirement for coloured plan/visualization output. Verified values are held separately in ePset_Space and used by QAS-USAGE-AGREEMENT. The stable workflow id and code are retained for compatibility.
 countries:
 - CH

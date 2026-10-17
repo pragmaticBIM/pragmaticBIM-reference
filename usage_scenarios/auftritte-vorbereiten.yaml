@@ -1,0 +1,60 @@
+id: pragmaticbim:usage-scenario/auftritte-vorbereiten
+code: US-VS-05
+sort_order: 6
+name:
+  de: Auftritte vorbereiten
+  fr: Préparer les représentations
+  it: Preparare le esibizioni
+  en: Preparing performances
+description:
+  de: Mitwirkende ziehen sich um, waschen sich, proben und warten auf ihren Auftritt, getrennt vom Publikum.
+    Die Hinterbühne entscheidet über Abläufe, Privatheit und Bühnenbetrieb.
+  fr: Les artistes se changent, se lavent, répètent et attendent leur passage, à l'écart du public. L'arrière-scène
+    détermine les déroulements, l'intimité et l'exploitation de la scène.
+  it: Gli artisti si cambiano, si lavano, provano e attendono la loro esibizione, separati dal pubblico.
+    Il retropalco determina flussi, riservatezza e gestione del palco.
+  en: Performers change, wash, rehearse, and wait for their appearance, apart from the audience. The backstage
+    determines workflows, privacy, and stage operation.
+uses:
+- pragmaticbim:use/versammlung
+tags:
+- betrieb
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/auftritte-vorbereiten-changing
+  sort_order: 1
+  name:
+    de: Bühne mit Umkleide und WC
+    fr: Scène avec vestiaire et WC
+    it: Palco con spogliatoio e WC
+    en: Stage with changing room and toilet
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/umkleideraum
+    to_room_type: pragmaticbim:room-type/buehne
+  - from_room_type: pragmaticbim:room-type/umkleideraum
+    to_room_type: pragmaticbim:room-type/allgemeines-wc
+  adds:
+  - pragmaticbim:room-type/umkleideraum
+  - pragmaticbim:room-type/allgemeines-wc
+  - pragmaticbim:room-type/buehne
+- id: pragmaticbim:scenario-option/auftritte-vorbereiten-changing-shower
+  sort_order: 2
+  name:
+    de: Bühne mit Umkleide, WC und Duschen
+    fr: Scène avec vestiaire, WC et douches
+    it: Palco con spogliatoio, WC e docce
+    en: Stage with changing room, toilet, and showers
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/umkleideraum
+    to_room_type: pragmaticbim:room-type/buehne
+  - from_room_type: pragmaticbim:room-type/umkleideraum
+    to_room_type: pragmaticbim:room-type/allgemeines-wc
+  - from_room_type: pragmaticbim:room-type/umkleideraum
+    to_room_type: pragmaticbim:room-type/duschraum
+  adds:
+  - pragmaticbim:room-type/umkleideraum
+  - pragmaticbim:room-type/allgemeines-wc
+  - pragmaticbim:room-type/duschraum
+  - pragmaticbim:room-type/buehne

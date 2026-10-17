@@ -1,0 +1,97 @@
+id: pragmaticbim:usage-scenario/abstellen
+code: US-WH-10
+sort_order: 12
+name:
+  de: Abstellen
+  fr: Ranger
+  it: Riporre
+  en: Storing household goods
+description:
+  de: Haushalte lagern Dinge, die sie selten brauchen. Der Ort entscheidet, was in
+    der Wohnung Platz braucht und was ausserhalb liegt.
+  fr: Les ménages rangent ce dont ils se servent rarement. L'emplacement décide de
+    ce qui prend place dans le logement et de ce qui reste dehors.
+  it: Le economie domestiche ripongono ciò che usano di rado. Il posto decide che
+    cosa occupa spazio nell'alloggio e che cosa resta fuori.
+  en: Households store things they rarely use. The place decides what takes space
+    in the dwelling and what is kept outside it.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- haushalt
+status: active
+jurisdiction:
+- general
+allows_multiple: true
+options:
+- id: pragmaticbim:scenario-option/abstellen-hallway
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-elevated
+  sort_order: 1
+  name:
+    de: Abstellraum am Gang
+    fr: Débarras du couloir
+    it: Ripostiglio del corridoio
+    en: Closet off the hallway
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gang
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/abstellraum-wohnen
+  target: pragmaticbim:room-type/wohnung
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/abstellraum-wohnen
+- id: pragmaticbim:scenario-option/abstellen-kitchen
+  sort_order: 2
+  name:
+    de: Abstellraum an der Küche
+    fr: Débarras de la cuisine
+    it: Ripostiglio della cucina
+    en: Closet off the kitchen
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gang
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/kueche
+  - from_room_type: pragmaticbim:room-type/kueche
+    to_room_type: pragmaticbim:room-type/abstellraum-wohnen
+  target: pragmaticbim:room-type/wohnung
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/kueche
+  - pragmaticbim:room-type/abstellraum-wohnen
+- id: pragmaticbim:scenario-option/abstellen-cellar
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-standard
+  sort_order: 3
+  name:
+    de: Kellerabteil
+    fr: Compartiment de cave
+    it: Comparto cantina
+    en: Cellar compartment
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/kellerabteil
+    max_distance: 40
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/kellerabteil
+- id: pragmaticbim:scenario-option/abstellen-garden-shed
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-premium
+  sort_order: 4
+  name:
+    de: Gartenhaus
+    fr: Abri de jardin
+    it: Casetta da giardino
+    en: Garden shed
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gartenhaus
+    max_distance: 40
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gartenhaus

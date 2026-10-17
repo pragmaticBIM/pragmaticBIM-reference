@@ -1,0 +1,72 @@
+id: pragmaticbim:room-type/gemeinschaftskompost
+code: RT-WH-45
+sort_order: 155
+name:
+  de: Gemeinsamer Kompost
+  fr: Compost commun
+  it: Compostaggio comune
+  en: Shared Compost
+definition:
+  de: Aussenfläche, auf der Bewohnende organische Abfälle gemeinsam kompostieren.
+  fr: Aire extérieure où les habitants compostent ensemble les déchets organiques.
+  it: Area esterna in cui gli abitanti compostano insieme i rifiuti organici.
+  en: Outdoor area where residents compost organic waste together.
+room_type_kind: room
+room_name: RN-11-50-03
+activity: O-TEC
+default_scope: site
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/gemeinschaftskompost-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Gemeinsamer Kompost
+      fr: Compost commun
+      it: Compostaggio comune
+      en: Shared Compost
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: AFF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Workshop
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 5.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Eingeschränkt
+      fr: Restreint
+      it: Ristretto
+      en: Restricted
+  status: active

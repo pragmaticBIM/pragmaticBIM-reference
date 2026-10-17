@@ -15,18 +15,18 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - UPS
-  - BATTERY
-  - CAPACITORBANK
+    - UPS
+    - BATTERY
+    - CAPACITORBANK
   fr:
-  - UPS
-  - BATTERY
-  - CAPACITORBANK
+    - UPS
+    - BATTERY
+    - CAPACITORBANK
   it:
-  - UPS
-  - BATTERY
-  - CAPACITORBANK
+    - UPS
+    - BATTERY
+    - CAPACITORBANK
   en:
-  - UPS
-  - BATTERY
-  - CAPACITORBANK
+    - UPS
+    - BATTERY
+    - CAPACITORBANK

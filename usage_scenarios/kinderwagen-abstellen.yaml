@@ -1,0 +1,82 @@
+id: pragmaticbim:usage-scenario/kinderwagen-abstellen
+code: US-WH-20
+sort_order: 4
+name:
+  de: Kinderwagen abstellen
+  fr: Ranger la poussette
+  it: Depositare il passeggino
+  en: Storing the stroller
+description:
+  de: Haushalte stellen Kinderwagen und Mobilitätshilfen täglich ab. Der Ort entscheidet, ob sie Wohnung
+    oder gemeinsame Wege blockieren.
+  fr: Les ménages rangent chaque jour poussettes et aides à la mobilité. L'emplacement décide s'ils encombrent
+    le logement ou les circulations communes.
+  it: Le economie domestiche depositano ogni giorno passeggini e ausili alla mobilità. Il posto decide
+    se ingombrano l'alloggio o i percorsi comuni.
+  en: Households park strollers and mobility aids every day. The place decides whether they block the
+    dwelling or shared circulation.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- ankommen
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/kinderwagen-abstellen
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-elevated
+  sort_order: 1
+  name:
+    de: Kinderwagenraum
+    fr: Local à poussettes
+    it: Locale passeggini
+    en: Stroller room
+  quantity:
+    id: pragmaticbim:quantity/kinderwagen-abstellen
+    sort_order: 1
+    name:
+      de: Anzahl Kinderwagenplätze
+      fr: Nombre de places pour poussettes
+      it: Numero di posti per passeggini
+      en: Number of pram spaces
+    status: active
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/strasse
+    to_room_type: pragmaticbim:room-type/kinderwagenraum
+  - from_room_type: pragmaticbim:room-type/kinderwagenraum
+    to_room_type: pragmaticbim:room-type/wohnungseingang
+  adds:
+  - pragmaticbim:room-type/strasse
+  - pragmaticbim:room-type/kinderwagenraum
+  - pragmaticbim:room-type/wohnungseingang
+- id: pragmaticbim:scenario-option/kinderwagen-abstellen-corridor
+  sort_order: 2
+  name:
+    de: Stellfläche im Flur
+    fr: Emplacement dans le couloir commun
+    it: Posto nel corridoio comune
+    en: Bay in the corridor
+  quantity:
+    id: pragmaticbim:quantity/kinderwagen-abstellen-corridor
+    sort_order: 1
+    name:
+      de: Anzahl Kinderwagenplätze
+      fr: Nombre de places pour poussettes
+      it: Numero di posti per passeggini
+      en: Number of pram spaces
+    status: active
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/flur
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/flur
+- id: pragmaticbim:scenario-option/kinderwagen-abstellen-none
+  sort_order: 3
+  name:
+    de: Kein besonderer Abstellplatz
+    fr: Aucun emplacement particulier
+    it: Nessun posto dedicato
+    en: No dedicated storage place
+  exclusive: true

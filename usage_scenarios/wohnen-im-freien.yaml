@@ -1,23 +1,119 @@
 id: pragmaticbim:usage-scenario/wohnen-im-freien
 code: US-WH-07
-sort_order: 7
+sort_order: 16
 name:
   de: Wohnen im Freien
   fr: Habiter dehors
   it: Abitare all'aperto
   en: Living outdoors
 description:
-  de: Bewohnende gehen vom Wohnzimmer direkt auf den Balkon.
-  fr: Les occupants passent du séjour directement au balcon.
-  it: Chi abita passa dal soggiorno direttamente al balcone.
-  en: Occupants go from the living room directly onto the balcony.
-scenario_group: Wohnen
+  de: Bewohnende halten sich draussen auf, ohne das Haus zu verlassen. Ein privater
+    Aussenraum am Wohnzimmer entscheidet über den direkten Ausgang ins Freie.
+  fr: Les habitants profitent du plein air sans quitter la maison. Un espace extérieur
+    privé attenant au séjour décide d'une sortie directe dehors.
+  it: Gli abitanti stanno all'aperto senza lasciare la casa. Uno spazio esterno privato
+    accanto al soggiorno decide l'uscita diretta all'aperto.
+  en: Residents spend time outdoors without leaving home. A private outdoor space
+    by the living room decides direct access to the outside.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- aussenraum
 status: active
 jurisdiction:
-- ch
-required_room_types:
-- pragmaticbim:room-type/wohnzimmer
-- pragmaticbim:room-type/balkon
-room_relationships:
-- from_room_type: pragmaticbim:room-type/wohnzimmer
-  to_room_type: pragmaticbim:room-type/balkon
+- general
+options:
+- id: pragmaticbim:scenario-option/wohnen-im-freien-balcony
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-standard
+  sort_order: 1
+  name:
+    de: Balkon
+    fr: Balcon
+    it: Balcone
+    en: Balcony
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnzimmer
+    to_room_type: pragmaticbim:room-type/balkon
+  adds:
+  - pragmaticbim:room-type/wohnzimmer
+  - pragmaticbim:room-type/balkon
+- id: pragmaticbim:scenario-option/wohnen-im-freien-loggia
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-elevated
+  sort_order: 2
+  name:
+    de: Loggia
+    fr: Loggia
+    it: Loggia
+    en: Loggia
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnzimmer
+    to_room_type: pragmaticbim:room-type/loggia
+  adds:
+  - pragmaticbim:room-type/wohnzimmer
+  - pragmaticbim:room-type/loggia
+- id: pragmaticbim:scenario-option/wohnen-im-freien-terrace
+  sort_order: 3
+  name:
+    de: Terrasse
+    fr: Terrasse
+    it: Terrazza
+    en: Terrace
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnzimmer
+    to_room_type: pragmaticbim:room-type/terrasse
+  adds:
+  - pragmaticbim:room-type/wohnzimmer
+  - pragmaticbim:room-type/terrasse
+- id: pragmaticbim:scenario-option/wohnen-im-freien-patio
+  sort_order: 4
+  name:
+    de: Innenhof
+    fr: Cour intérieure
+    it: Corte interna
+    en: Patio
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnzimmer
+    to_room_type: pragmaticbim:room-type/innenhof
+  adds:
+  - pragmaticbim:room-type/wohnzimmer
+  - pragmaticbim:room-type/innenhof
+- id: pragmaticbim:scenario-option/wohnen-im-freien-roof-terrace
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-premium
+  sort_order: 5
+  name:
+    de: Dachterrasse
+    fr: Terrasse de toit
+    it: Terrazza sul tetto
+    en: Roof terrace
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnzimmer
+    to_room_type: pragmaticbim:room-type/dachterrasse
+  adds:
+  - pragmaticbim:room-type/wohnzimmer
+  - pragmaticbim:room-type/dachterrasse
+- id: pragmaticbim:scenario-option/wohnen-im-freien-winter-garden
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-premium
+  sort_order: 6
+  name:
+    de: Wintergarten
+    fr: Jardin d'hiver
+    it: Giardino d'inverno
+    en: Winter garden
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnzimmer
+    to_room_type: pragmaticbim:room-type/wintergarten
+  adds:
+  - pragmaticbim:room-type/wohnzimmer
+  - pragmaticbim:room-type/wintergarten
+- id: pragmaticbim:scenario-option/wohnen-im-freien-none
+  sort_order: 7
+  name:
+    de: Kein privater Aussenraum
+    fr: Aucun espace extérieur privé
+    it: Nessuno spazio esterno privato
+    en: No private outdoor space
+  exclusive: true

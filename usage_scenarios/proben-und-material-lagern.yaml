@@ -1,0 +1,47 @@
+id: pragmaticbim:usage-scenario/proben-und-material-lagern
+code: US-LA-02
+sort_order: 3
+name:
+  de: Proben und Material lagern
+  fr: Stocker échantillons et matériel
+  it: Conservare campioni e materiale
+  en: Storing samples and supplies
+description:
+  de: Proben, Reagenzien und Verbrauchsmaterial werden bis zur Verwendung aufbewahrt. Die Lagerbedingungen
+    entscheiden über Temperatur, Zugriff und Nachverfolgbarkeit.
+  fr: Échantillons, réactifs et consommables sont conservés jusqu'à leur utilisation. Les conditions de
+    stockage déterminent la température, l'accès et la traçabilité.
+  it: Campioni, reagenti e materiale di consumo vengono conservati fino all'uso. Le condizioni di deposito
+    determinano temperatura, accesso e tracciabilità.
+  en: Samples, reagents, and consumables are kept until use. Storage conditions determine temperature,
+    access, and traceability.
+uses:
+- pragmaticbim:use/labor
+tags:
+- lagerung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/proben-und-material-lagern-lab-store
+  sort_order: 1
+  name:
+    de: Laborlager
+    fr: Stock de laboratoire
+    it: Deposito di laboratorio
+    en: Laboratory store
+  adds:
+  - pragmaticbim:room-type/laborlager
+- id: pragmaticbim:scenario-option/proben-und-material-lagern-sample-cold
+  sort_order: 2
+  name:
+    de: Probenlager mit Kühlraum
+    fr: Stock d'échantillons avec chambre froide
+    it: Deposito campioni con cella frigorifera
+    en: Sample store with cold room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/probenlager
+    to_room_type: pragmaticbim:room-type/kuehlraum
+  adds:
+  - pragmaticbim:room-type/probenlager
+  - pragmaticbim:room-type/kuehlraum

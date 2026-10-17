@@ -1,0 +1,52 @@
+id: pragmaticbim:room-type/wohnung-1-5
+legacy_ids:
+- pragmaticbim:unit-type/wohnung-1-5
+code: UT-WH-15
+sort_order: 2
+name:
+  de: 1.5-Zimmer-Wohnung
+  fr: Logement de 1,5 pièces
+  it: Alloggio di 1,5 locali
+  en: 1.5-room dwelling
+definition:
+  de: Bruttovolumen einer 1.5-Zimmer-Wohnung. Wohnzimmer und Küche, ohne separates
+    Schlafzimmer.
+  fr: Volume brut d'un logement de 1,5 pièces. Séjour et cuisine, sans chambre séparée.
+  it: Volume lordo di un alloggio di 1,5 locali. Soggiorno e cucina, senza camera
+    separata.
+  en: Gross volume of a 1.5-room dwelling. Living room and kitchen, with no separate
+    bedroom.
+room_type_kind: container
+uses:
+- pragmaticbim:use/wohnen
+extends: pragmaticbim:room-type/wohnung
+contains:
+- room_type: pragmaticbim:room-type/wohnungseingang
+- room_type: pragmaticbim:room-type/wohnzimmer
+- room_type: pragmaticbim:room-type/kueche
+- room_type: pragmaticbim:room-type/badezimmer
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/wohnung-1-5-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: 1.5-Zimmer-Wohnung
+      fr: Logement de 1,5 pièces
+      it: Alloggio di 1,5 locali
+      en: 1.5-room dwelling
+  status: active
+  restrictions:
+    min_area: 45

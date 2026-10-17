@@ -1,0 +1,40 @@
+id: pragmaticbim:value/predefinedtype-wall-exterior
+code: WALL-EXT-TYPE
+name:
+  de: PredefinedType Aussenwand
+  fr: PredefinedType mur extérieur
+  it: PredefinedType parete esterna
+  en: PredefinedType exterior wall
+description:
+  de: IfcWall PredefinedType für Aussenwände.
+  fr: PredefinedType IfcWall pour murs extérieurs.
+  it: PredefinedType IfcWall per pareti esterne.
+  en: IfcWall PredefinedType for exterior walls.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - STANDARD
+    - SOLIDWALL
+    - ELEMENTEDWALL
+    - PARAPET
+    - RETAININGWALL
+  fr:
+    - STANDARD
+    - SOLIDWALL
+    - ELEMENTEDWALL
+    - PARAPET
+    - RETAININGWALL
+  it:
+    - STANDARD
+    - SOLIDWALL
+    - ELEMENTEDWALL
+    - PARAPET
+    - RETAININGWALL
+  en:
+    - STANDARD
+    - SOLIDWALL
+    - ELEMENTEDWALL
+    - PARAPET
+    - RETAININGWALL

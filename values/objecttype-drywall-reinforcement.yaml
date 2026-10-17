@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Trockenbauverstärkung
+    - Trockenbauverstärkung
   fr:
-  - Renfort de cloison légère
+    - Renfort de cloison légère
   it:
-  - Rinforzo per parete a secco
+    - Rinforzo per parete a secco
   en:
-  - Drywall reinforcement
+    - Drywall reinforcement

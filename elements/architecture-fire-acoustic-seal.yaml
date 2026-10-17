@@ -1,0 +1,281 @@
+id: pragmaticbim:element/architecture-fire-acoustic-seal
+code: ARC-FIRE-ACOUSTIC-SEAL
+sort_order: 46
+status: active
+name:
+  de: Brandschott / Schallschutzschott
+  fr: Obturation coupe-feu / acoustique
+  it: Sigillatura tagliafuoco / acustica
+  en: Firestop / acoustic seal
+definition:
+  de: |-
+    Trennt die ausgeführte Abschottung von der Aussparung und macht Typ, Leistung und Menge für Ausschreibung, Ausführung und Betrieb prüfbar.
+
+    **Beschreibung**
+    - Bauliche Abschottung einer Leitungsdurchführung gegen die Ausbreitung von Feuer, Rauch oder Schall.
+    - Eigenständiges Bauteil innerhalb einer koordinierten Aussparung; die Aussparung bleibt als separates Öffnungselement erhalten.
+
+    **Modellierungshinweis**
+    - Als vereinfachten Proxy-Körper in der zugehörigen Aussparung modellieren; Abmessungen entsprechen der ausgefüllten Schottfläche.
+    - Mit eigener Reference eindeutig kennzeichnen und über OpeningReference genau einer Aussparung zuordnen.
+    - ObjectType = Brandschott oder Schallschutzschott setzen; kombinierte Anforderungen in einem Element führen und beide Leistungen angeben.
+  fr: |-
+    Sépare l'obturation exécutée du percement et rend son type, ses performances et sa quantité vérifiables pour l'appel d'offres, l'exécution et l'exploitation.
+
+    **Description**
+    - Obturation constructive d'une traversée de réseau contre la propagation du feu, de la fumée ou du bruit.
+    - Élément autonome situé dans un percement coordonné; le percement reste un élément d'ouverture distinct.
+
+    **Directives de modélisation**
+    - Modéliser un corps proxy simplifié dans le percement correspondant; ses dimensions représentent la surface obturée.
+    - L'identifier sans ambiguïté par sa propre Reference et l'attribuer à un seul percement au moyen de OpeningReference.
+    - Définir ObjectType = Obturation coupe-feu ou Obturation acoustique; saisir les exigences combinées dans un même élément et indiquer les deux performances.
+  it: |-
+    Separa la sigillatura eseguita dal foro e rende verificabili tipo, prestazioni e quantità per gara, esecuzione ed esercizio.
+
+    **Descrizione**
+    - Sigillatura costruttiva di un attraversamento impiantistico contro la propagazione di fuoco, fumo o rumore.
+    - Componente autonomo all'interno di un foro coordinato; il foro rimane un elemento di apertura separato.
+
+    **Direttive di modellazione**
+    - Modellare un corpo proxy semplificato nel foro corrispondente; le dimensioni rappresentano la superficie sigillata.
+    - Identificarlo in modo univoco con una propria Reference e assegnarlo a un solo foro mediante OpeningReference.
+    - Impostare ObjectType = Sigillatura tagliafuoco o Sigillatura acustica; gestire i requisiti combinati in un unico componente e indicare entrambe le prestazioni.
+  en: |-
+    Separates the installed seal from the opening and makes its type, performance, and quantity verifiable for tendering, construction, and operation.
+
+    **Description**
+    - Construction seal around a service penetration that resists the spread of fire, smoke, or sound.
+    - Standalone component within a coordinated opening; the opening remains a separate opening element.
+
+    **Modelling guidelines**
+    - Model as a simplified proxy body within the associated opening; its dimensions represent the sealed area.
+    - Identify it unambiguously with its own Reference and assign it to exactly one opening through OpeningReference.
+    - Set ObjectType = Firestop or Acoustic seal; carry combined requirements in one element and state both performance ratings.
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
+  - pragmaticbim:domain/fire-protection
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: architecture-fire-acoustic-seal.png
+attachment_link: architecture-fire-acoustic-seal.ifc
+picture_print_link: architecture-fire-acoustic-seal-print.tif
+model_link: architecture-fire-acoustic-seal.ifc
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND (ObjectType=Brandschott OR ObjectType=Schallschutzschott)) OR (entity_ifc2x3=IfcBuildingElementProxy AND (ObjectType=Brandschott OR ObjectType=Schallschutzschott))
+  fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND (ObjectType="Obturation coupe-feu" OR ObjectType="Obturation acoustique")) OR (entity_ifc2x3=IfcBuildingElementProxy AND (ObjectType="Obturation coupe-feu" OR ObjectType="Obturation acoustique"))
+  it: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND (ObjectType="Sigillatura tagliafuoco" OR ObjectType="Sigillatura acustica")) OR (entity_ifc2x3=IfcBuildingElementProxy AND (ObjectType="Sigillatura tagliafuoco" OR ObjectType="Sigillatura acustica"))
+  en: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND (ObjectType=Firestop OR ObjectType="Acoustic seal")) OR (entity_ifc2x3=IfcBuildingElementProxy AND (ObjectType=Firestop OR ObjectType="Acoustic seal"))
+attributes:
+  - name: Name
+    pset: null
+    definition:
+      de: Bezeichnung des Schotts zur Zuordnung in Modell, Liste und vor Ort.
+      fr: Désignation de l'obturation pour son attribution dans la maquette, la liste et sur place.
+      it: Denominazione della sigillatura per l'assegnazione nel modello, nell'elenco e in sito.
+      en: Seal designation for assignment in the model, schedule, and on site.
+    datatype: IfcLabel
+    needed_in_phases: ['41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-firestop-tender-basis
+      - pragmaticbim:workflow/opr-firestop-maintenance
+    is_applicability: false
+    status: active
+    sort_order: 1
+  - name: PredefinedType
+    pset: null
+    definition:
+      de: |-
+        Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+        **Zulässige Werte**
+        - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art
+      fr: |-
+        Identifie le proxy comme type défini par l'utilisateur.
+
+        **Valeurs admises**
+        - `USERDEFINED` — type défini par l'utilisateur; ObjectType précise la nature
+      it: |-
+        Identifica il proxy come tipo definito dall'utente.
+
+        **Valori ammessi**
+        - `USERDEFINED` — tipo definito dall'utente; ObjectType precisa il tipo
+      en: |-
+        Marks the proxy as a user-defined type.
+
+        **Allowed values**
+        - `USERDEFINED` — user-defined type; ObjectType specifies the kind
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+    needed_in_phases: ['41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-firestop-tender-basis
+      - pragmaticbim:workflow/opr-firestop-maintenance
+      - pragmaticbim:workflow/qas-fire-protection
+    is_applicability: true
+    status: active
+    sort_order: 2
+  - name: ObjectType
+    pset: null
+    definition:
+      de: |-
+        Art des Schotts.
+
+        **Zulässige Werte**
+        - `Brandschott`
+        - `Schallschutzschott`
+      fr: |-
+        Type d'obturation.
+
+        **Valeurs admises**
+        - `Obturation coupe-feu`
+        - `Obturation acoustique`
+      it: |-
+        Tipo di sigillatura.
+
+        **Valori ammessi**
+        - `Sigillatura tagliafuoco`
+        - `Sigillatura acustica`
+      en: |-
+        Kind of seal.
+
+        **Allowed values**
+        - `Firestop`
+        - `Acoustic seal`
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/objecttype-fire-acoustic-seal
+    needed_in_phases: ['41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-firestop-tender-basis
+      - pragmaticbim:workflow/opr-firestop-maintenance
+      - pragmaticbim:workflow/qas-fire-protection
+    is_applicability: true
+    status: active
+    sort_order: 3
+  - name: Reference
+    pset: Pset_BuildingElementProxyCommon
+    definition:
+      de: Eindeutige Referenz des Schotts für Ausschreibung, Abnahme und Betrieb.
+      fr: Référence univoque de l'obturation pour l'appel d'offres, la réception et l'exploitation.
+      it: Riferimento univoco della sigillatura per gara, collaudo ed esercizio.
+      en: Unambiguous seal reference for tendering, acceptance, and operation.
+    datatype: IfcIdentifier
+    needed_in_phases: ['41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-firestop-tender-basis
+      - pragmaticbim:workflow/opr-firestop-maintenance
+    is_applicability: false
+    status: active
+    sort_order: 4
+  - name: OpeningReference
+    pset: ePset_Seal
+    definition:
+      de: Reference der Aussparung, in der das Schott liegt.
+      fr: Reference du percement dans lequel se trouve l'obturation.
+      it: Reference del foro nel quale si trova la sigillatura.
+      en: Reference of the opening containing the seal.
+    datatype: IfcIdentifier
+    needed_in_phases: ['41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-firestop-tender-basis
+      - pragmaticbim:workflow/opr-firestop-maintenance
+    is_applicability: false
+    status: active
+    sort_order: 5
+  - name: FireRating
+    pset: ePset_FireStopping
+    definition:
+      de: |-
+        Feuerwiderstandsklasse des Brandschotts gemäss Brandschutzkonzept.
+
+        **Zulässige Werte**
+        - `EI 30` — Raumabschluss und Wärmedämmung 30 min
+        - `EI 60` — Raumabschluss und Wärmedämmung 60 min
+        - `EI 90` — Raumabschluss und Wärmedämmung 90 min
+      fr: |-
+        Classe de résistance au feu de l'obturation selon le concept de protection incendie.
+
+        **Valeurs admises**
+        - `EI 30` — étanchéité et isolation thermique 30 min
+        - `EI 60` — étanchéité et isolation thermique 60 min
+        - `EI 90` — étanchéité et isolation thermique 90 min
+      it: |-
+        Classe di resistenza al fuoco della sigillatura secondo il concetto di protezione antincendio.
+
+        **Valori ammessi**
+        - `EI 30` — tenuta e isolamento termico 30 min
+        - `EI 60` — tenuta e isolamento termico 60 min
+        - `EI 90` — tenuta e isolamento termico 90 min
+      en: |-
+        Fire resistance class of the firestop under the fire protection concept.
+
+        **Allowed values**
+        - `EI 30` — integrity and insulation 30 min
+        - `EI 60` — integrity and insulation 60 min
+        - `EI 90` — integrity and insulation 90 min
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/fire-rating-ei
+    needed_in_phases: ['41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-firestop-tender-basis
+      - pragmaticbim:workflow/opr-firestop-maintenance
+      - pragmaticbim:workflow/qas-fire-protection
+    is_applicability: false
+    status: active
+    sort_order: 6
+  - name: AcousticRating
+    pset: ePset_Seal
+    definition:
+      de: Bewertetes Schalldämm-Mass Rw [dB] des Schallschutzschotts.
+      fr: Indice d'affaiblissement acoustique pondéré Rw [dB] de l'obturation acoustique.
+      it: Potere fonoisolante ponderato Rw [dB] della sigillatura acustica.
+      en: Weighted sound reduction index Rw [dB] of the acoustic seal.
+    datatype: IfcLabel
+    needed_in_phases: ['41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-firestop-tender-basis
+    is_applicability: false
+    status: active
+    sort_order: 7
+  - name: FireStoppingType
+    pset: ePset_FireStopping
+    definition:
+      de: Vorgesehener Brandschotttyp als Grundlage für Ausschreibung, Ausführung und Wartung.
+      fr: Type d'obturation coupe-feu prévu, comme base pour l'appel d'offres, l'exécution et l'entretien.
+      it: Tipo di sigillatura tagliafuoco previsto, come base per gara, esecuzione e manutenzione.
+      en: Firestop type foreseen as the basis for tendering, installation, and maintenance.
+    datatype: IfcLabel
+    needed_in_phases: ['41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-firestop-tender-basis
+      - pragmaticbim:workflow/opr-firestop-maintenance
+    is_applicability: false
+    status: active
+    sort_order: 8
+  - name: Area
+    pset: Qto_BuildingElementProxyBaseQuantities
+    definition:
+      de: Fläche des modellierten Schotts.
+      fr: Surface de l'obturation modélisée.
+      it: Superficie della sigillatura modellata.
+      en: Area of the modelled seal.
+    datatype: IfcAreaMeasure
+    unit: m²
+    needed_in_phases: ['41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-firestop-tender-basis
+      - pragmaticbim:workflow/opr-firestop-maintenance
+    is_applicability: false
+    status: active
+    sort_order: 9

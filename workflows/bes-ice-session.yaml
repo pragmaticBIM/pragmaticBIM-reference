@@ -1,0 +1,102 @@
+id: pragmaticbim:workflow/bes-ice-session
+code: BES-ICE-SESSION
+sort_order: 25
+name:
+  de: ICE-Session bestellen
+  fr: Commander une séance ICE
+  it: Ordinare una sessione ICE
+  en: Order an ICE session
+description:
+  de: |-
+    Eine ICE-Session (Integrated Concurrent Engineering) als gezielte Arbeitsform bestellen, um die Latenz für Entscheide zu verkürzen. Sie ist keine Koordinationsbesprechung unter neuem Namen und lohnt sich nur bei extrem grossen oder extrem eiligen Projekten.
+
+    **Ausgangslage**
+    - Der Begriff «ICE-Session» ist zum aufgewerteten Namen für mehr oder weniger gut geführte Koordinationsbesprechungen geworden; die Wartezeit auf Entscheide bleibt lang, weil Fragen zwischen den Terminen liegen bleiben.
+    - Ohne bestellten Raum, Moderation und vorgegebene Anwesenheit der Planenden fehlen die Voraussetzungen, dass Fragen vor Ort gemeinsam gelöst werden.
+
+    **Ziel & Nutzen**
+    - Alle Beteiligten arbeiten gemeinsam in einem Raum: kurze Wege, sofortige Klärung von Fragen, Moderation und klare Regeln.
+    - Entscheide fallen am Tisch statt über mehrere Besprechungsrunden. Der Aufwand zahlt sich nur aus, wenn das Projekt extrem gross ist oder extrem schnell gehen muss; sonst genügen der Zweiwochenrhythmus und gezielte Besprechungen.
+
+    **Ablauf**
+    1. Prüfen, ob das Projekt extrem gross oder extrem eilig ist, dann Ziel, Zeitraum und Teilnehmende festlegen sowie Raum und IT-Infrastruktur beschaffen und einrichten.
+    2. Facilitator beschaffen, bestehend aus Senior und Junior, und Moderationsregeln vereinbaren.
+    3. In die Planerausschreibungen aufnehmen: Anwesenheit mit fixen Arbeitszeiten vorgeben und den Aufwand als eigene Position ausweisen.
+
+    **Lieferergebnis**
+    - Gebuchter und eingerichteter Raum mit funktionierender IT-Infrastruktur sowie beauftragter Facilitator.
+    - Ausschreibungspositionen mit Anwesenheitsvorgabe in den Planerausschreibungen.
+  fr: |-
+    Commander une séance ICE (Integrated Concurrent Engineering) comme forme de travail ciblée afin de raccourcir la latence des décisions. Elle n’est pas une séance de coordination rebaptisée et ne se justifie que pour des projets extrêmement grands ou extrêmement urgents.
+
+    **Situation de départ**
+    - Le terme « séance ICE » est devenu le nom valorisant de séances de coordination plus ou moins bien conduites ; l’attente des décisions reste longue parce que les questions restent en suspens entre les rendez-vous.
+    - Sans salle commandée, animation et présence imposée des concepteurs, les conditions pour régler les questions ensemble sur place font défaut.
+
+    **Objectif et bénéfice**
+    - Tous les acteurs travaillent ensemble dans une même salle : chemins courts, clarification immédiate des questions, animation et règles claires.
+    - Les décisions tombent à la table au lieu de passer par plusieurs tours de séances. L’effort ne se justifie que si le projet est extrêmement grand ou doit aller extrêmement vite ; sinon, le rythme de deux semaines et des séances ciblées suffisent.
+
+    **Déroulement**
+    1. Vérifier si le projet est extrêmement grand ou extrêmement urgent, puis fixer l’objectif, la période et les participants, et acquérir et installer la salle et l’infrastructure informatique.
+    2. Acquérir un facilitateur composé d’une personne senior et d’une personne junior, et convenir des règles d’animation.
+    3. Intégrer dans les appels d’offres des concepteurs : imposer la présence avec des horaires de travail fixes et chiffrer l’effort comme position distincte.
+
+    **Livrable**
+    - Salle réservée et équipée, avec une infrastructure informatique fonctionnelle, et facilitateur mandaté.
+    - Positions d’appel d’offres avec exigence de présence dans les appels d’offres des concepteurs.
+  it: |-
+    Ordinare una sessione ICE (Integrated Concurrent Engineering) come forma di lavoro mirata per ridurre la latenza delle decisioni. Non è una riunione di coordinamento con un nome nuovo e vale la pena solo per progetti estremamente grandi o estremamente urgenti.
+
+    **Situazione di partenza**
+    - Il termine «sessione ICE» è diventato il nome nobilitato di riunioni di coordinamento condotte più o meno bene; l'attesa delle decisioni resta lunga perché le domande restano aperte tra un appuntamento e l'altro.
+    - Senza sala ordinata, moderazione e presenza prescritta dei progettisti mancano le condizioni per risolvere le domande insieme sul posto.
+
+    **Obiettivo e beneficio**
+    - Tutti i partecipanti lavorano insieme in un'unica sala: percorsi brevi, chiarimento immediato delle domande, moderazione e regole chiare.
+    - Le decisioni vengono prese al tavolo anziché in più giri di riunioni. L'onere si giustifica solo se il progetto è estremamente grande o deve procedere estremamente in fretta; altrimenti bastano il ritmo di due settimane e riunioni mirate.
+
+    **Svolgimento**
+    1. Verificare se il progetto è estremamente grande o estremamente urgente, quindi stabilire obiettivo, periodo e partecipanti, e acquisire e allestire sala e infrastruttura informatica.
+    2. Acquisire un facilitatore composto da una persona senior e una junior e concordare le regole di moderazione.
+    3. Inserire nei bandi per i progettisti: prescrivere la presenza con orari di lavoro fissi e indicare l'onere come posizione separata.
+
+    **Risultato della fornitura**
+    - Sala prenotata e allestita con infrastruttura informatica funzionante e facilitatore incaricato.
+    - Posizioni di bando con prescrizione di presenza nei bandi per i progettisti.
+  en: |-
+    Order an ICE session (Integrated Concurrent Engineering) as a targeted way of working to cut the latency of decisions. It is not a coordination meeting under a new name and only pays off on extremely large or extremely urgent projects.
+
+    **Starting point**
+    - The term "ICE session" has become the upgraded name for more or less well-run coordination meetings; the wait for decisions stays long because questions sit unanswered between meetings.
+    - Without a booked room, facilitation, and prescribed attendance of the designers, the conditions for settling questions together on the spot are missing.
+
+    **Goal & benefit**
+    - Everyone involved works together in one room: short distances, immediate clarification of questions, facilitation, and clear rules.
+    - Decisions are made at the table instead of over several rounds of meetings. The effort only pays off if the project is extremely large or has to move extremely fast; otherwise the two-week rhythm and targeted meetings are enough.
+
+    **Process**
+    1. Check whether the project is extremely large or extremely urgent, then set the goal, period, and participants, and procure and set up the room and IT infrastructure.
+    2. Procure a facilitator made up of a senior and a junior, and agree the facilitation rules.
+    3. Include in the designer tenders: prescribe attendance with fixed working hours and show the effort as a separate item.
+
+    **Deliverable**
+    - Booked and equipped room with working IT infrastructure, and an appointed facilitator.
+    - Tender items with the attendance requirement in the designer tenders.
+workflow_group: planungsteam
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/structural
+  - pragmaticbim:domain/mep
+comment: >-
+  Complements the designer tender (pragmaticbim:workflow/bes-designer-procurement)
+  with attendance, working hours and facilitation; see the excursus on the ICE
+  session in the chapter on organisational foundations. Intentionally has no IFC
+  element or attribute links. IT setup to be covered by the room procurement:
+  reliable network and Wi-Fi, workstations with power and enough screens, access
+  to models and the project platform, projection or large screens for shared
+  views, printing.

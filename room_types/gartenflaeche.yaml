@@ -2,7 +2,7 @@ id: pragmaticbim:room-type/gartenflaeche
 code: RT-WH-25
 sort_order: 25
 name:
-  de: Gartenflaeche
+  de: Gartenfläche
   fr: Jardin
   it: Giardino
   en: Garden Area
@@ -11,18 +11,61 @@ definition:
   fr: Surface de jardin pour le séjour et l'entretien.
   it: Superficie a giardino per la sosta e la cura.
   en: Garden area for staying outdoors and for upkeep.
-attribute_presets:
-- element: pragmaticbim:element/spaces-exterior
-  name: PredefinedType
-  value: SPACE
-- element: pragmaticbim:element/spaces-exterior
-  name: IsExternal
-  value: true
-- element: pragmaticbim:element/spaces-exterior
-  name: LongName
-  value:
-    de: Gartenflaeche
-    fr: Jardin
-    it: Giardino
-    en: Garden Area
+room_type_kind: room
+room_name: RN-11-20-01
+activity: O-GRN-GDN
+default_scope: building
 status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/gartenflaeche-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Gartenfläche
+      fr: Jardin
+      it: Giardino
+      en: Garden Area
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: UUF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Durchlässig
+      fr: Permeable
+      it: Permeable
+      en: Permeable
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Öffentlich
+      fr: Public
+      it: Pubblico
+      en: Public
+  status: active

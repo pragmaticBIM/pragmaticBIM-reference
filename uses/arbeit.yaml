@@ -1,0 +1,29 @@
+id: pragmaticbim:use/arbeit
+code: USE-WR
+sort_order: 2
+name:
+  de: Arbeit
+  fr: Travail
+  it: Lavoro
+  en: Work
+definition:
+  de: 'Büro- und Verwaltungsarbeit von Mitarbeitenden. Bezugsgrösse: Anzahl Arbeitsplätze.'
+  fr: 'Travail de bureau et d''administration des collaboratrices et collaborateurs. Grandeur de référence
+    : nombre de postes de travail.'
+  it: 'Lavoro d''ufficio e amministrativo di collaboratrici e collaboratori. Grandezza di riferimento:
+    numero di postazioni.'
+  en: 'Office and administrative work by staff. Reference quantity: number of workstations.'
+reference_quantity:
+  id: pragmaticbim:quantity/arbeit-arbeitsplaetze
+  code: USE-WR-Q
+  sort_order: 1
+  name:
+    de: Anzahl Arbeitsplätze
+    fr: Nombre de postes de travail
+    it: Numero di postazioni
+    en: Number of workstations
+  status: active
+typical_levels:
+- pragmaticbim:project-goal-level/indoor-climate-cooling
+- pragmaticbim:project-goal-level/flexibility-system-separation
+status: active

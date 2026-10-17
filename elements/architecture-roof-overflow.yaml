@@ -1,0 +1,242 @@
+id: pragmaticbim:element/architecture-roof-overflow
+code: ARC-ROOF-OVERFLOW
+sort_order: 54
+status: active
+name:
+  de: Notüberlauf
+  fr: Trop-plein de secours
+  it: Scarico di emergenza
+  en: Emergency overflow
+definition:
+  de: |-
+    Zeigt früh, wo und auf welcher Höhe Wasser bei verstopften Abläufen das Dach verlässt, damit Attika, Fassade, Abdichtungshochzug und Lastannahme für das Tragwerk abgestimmt sind.
+
+    **Beschreibung**
+    - Öffnung oder Speier in Attika, Brüstung oder Fassade, über die Wasser abfliesst, wenn die Dachabläufe verstopft sind.
+    - Wird oft bewusst über oder nahe bei Eingängen angeordnet, damit ein Problem bei der Dachentwässerung sofort bemerkt wird.
+    - Dient der Abstimmung von Lage und Überlaufhöhe zwischen Architektur, Sanitärplanung und Tragwerk.
+
+    **Modellierungshinweis**
+    - Je Dach in Abstimmung mit der Sanitärplanung modellieren; die Bemessung erfolgt durch die Sanitärplanung.
+    - Lage und Überlaufhöhe modellieren, keine Produkt- oder Bemessungsdetails.
+  fr: |-
+    Indique tôt où et à quelle hauteur l’eau quitte la toiture lorsque les évacuations sont obstruées, afin de coordonner l’acrotère, la façade, le relevé d’étanchéité et les hypothèses de charge de la structure.
+
+    **Description**
+    - Ouverture ou gargouille dans l’acrotère, le parapet ou la façade par laquelle l’eau s’écoule lorsque les évacuations de toiture sont obstruées.
+    - Est souvent placée volontairement au-dessus ou à proximité des entrées afin qu’un problème d’évacuation de toiture soit immédiatement remarqué.
+    - Sert à coordonner la position et la hauteur de déversement entre l’architecture, la planification sanitaire et la structure.
+
+    **Directives de modélisation**
+    - Modéliser un trop-plein pour chaque toiture en coordination avec la planification sanitaire ; le dimensionnement relève de cette dernière.
+    - Modéliser la position et la hauteur de déversement, sans détails de produit ni de dimensionnement.
+  it: |-
+    Mostra tempestivamente dove e a quale quota l’acqua lascia il tetto quando gli scarichi sono ostruiti, affinché parapetto, facciata, risvolto dell’impermeabilizzazione e ipotesi di carico della struttura siano coordinati.
+
+    **Descrizione**
+    - Apertura o doccione nel parapetto, nella balaustra o nella facciata attraverso il quale defluisce l’acqua quando gli scarichi del tetto sono ostruiti.
+    - Viene spesso collocato intenzionalmente sopra o vicino agli ingressi, affinché un problema di drenaggio del tetto sia subito visibile.
+    - Serve a coordinare posizione e quota di sfioro tra architettura, progettazione sanitaria e struttura.
+
+    **Direttive di modellazione**
+    - Modellare uno scarico per ogni tetto in coordinamento con la progettazione sanitaria; il dimensionamento compete a quest’ultima.
+    - Modellare posizione e quota di sfioro, senza dettagli di prodotto o dimensionamento.
+  en: |-
+    Shows early where and at what level water leaves the roof when outlets are blocked, so the parapet, facade, waterproofing upstand, and structural load assumptions can be coordinated.
+
+    **Description**
+    - Opening or spout in a parapet or facade through which water drains when the roof outlets are blocked.
+    - Often deliberately positioned above or near entrances so a roof drainage problem is noticed immediately.
+    - Used to coordinate the position and overflow level between architecture, sanitary design, and structural design.
+
+    **Modelling guidelines**
+    - Model one for each roof in coordination with the sanitary designer; the sanitary designer is responsible for sizing.
+    - Model the position and overflow level, without product or sizing details.
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: architecture-roof-overflow.png
+picture_print_link: architecture-roof-overflow-print.tif
+attachment_link: architecture-roof-overflow.ifc
+model_link: architecture-roof-overflow.ifc
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Notüberlauf) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Notüberlauf)
+  fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Trop-plein de secours") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Trop-plein de secours")
+  it: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Scarico di emergenza") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Scarico di emergenza")
+  en: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Emergency overflow") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Emergency overflow")
+attributes:
+  - name: Name
+    pset: null
+    definition:
+      de: Eindeutige Bezeichnung des Notüberlaufs zur Zuordnung im Modell und im Entwässerungskonzept.
+      fr: Désignation univoque du trop-plein de secours pour son attribution dans la maquette et le concept d’évacuation.
+      it: Denominazione univoca dello scarico di emergenza per l’assegnazione nel modello e nel concetto di drenaggio.
+      en: Unambiguous emergency-overflow designation for assignment in the model and drainage concept.
+    datatype: IfcLabel
+    needed_in_phases: ['31', '32', '33', '41', '51']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    is_applicability: false
+    status: active
+    sort_order: 1
+  - name: PredefinedType
+    pset: null
+    definition:
+      de: |-
+        Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+        **Zulässige Werte**
+        - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art
+      fr: |-
+        Identifie le proxy comme type défini par l’utilisateur.
+
+        **Valeurs admises**
+        - `USERDEFINED` — type défini par l’utilisateur ; ObjectType précise la nature
+      it: |-
+        Identifica il proxy come tipo definito dall’utente.
+
+        **Valori ammessi**
+        - `USERDEFINED` — tipo definito dall’utente; ObjectType precisa il tipo
+      en: |-
+        Marks the proxy as a user-defined type.
+
+        **Allowed values**
+        - `USERDEFINED` — user-defined type; ObjectType specifies the kind
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+    needed_in_phases: ['31', '32', '33', '41', '51']
+    ifc_versions: [ifc4, ifc4x3]
+    is_applicability: true
+    status: active
+    sort_order: 2
+  - name: ObjectType
+    pset: null
+    definition:
+      de: |-
+        Art des Proxy-Elements.
+
+        **Zulässige Werte**
+        - `Notüberlauf`
+      fr: |-
+        Nature de l’élément proxy.
+
+        **Valeurs admises**
+        - `Trop-plein de secours`
+      it: |-
+        Tipo dell’elemento proxy.
+
+        **Valori ammessi**
+        - `Scarico di emergenza`
+      en: |-
+        Kind of proxy element.
+
+        **Allowed values**
+        - `Emergency overflow`
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/objecttype-roof-overflow
+    needed_in_phases: ['31', '32', '33', '41', '51']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    is_applicability: true
+    status: active
+    sort_order: 3
+  - name: Status
+    pset: Pset_BuildingElementProxyCommon
+    definition:
+      de: |-
+        Bauteilstatus für Koordination im Bestand.
+
+        **Zulässige Werte**
+        - `NEW` — Neubau
+        - `EXISTING` — Bestand
+        - `DEMOLISH` — Abbruch
+        - `TEMPORARY` — Temporär
+      fr: |-
+        Statut de l’élément pour la coordination dans l’existant.
+
+        **Valeurs admises**
+        - `NEW` — neuf
+        - `EXISTING` — existant
+        - `DEMOLISH` — à démolir
+        - `TEMPORARY` — temporaire
+      it: |-
+        Stato dell’elemento per il coordinamento sull’esistente.
+
+        **Valori ammessi**
+        - `NEW` — nuovo
+        - `EXISTING` — esistente
+        - `DEMOLISH` — da demolire
+        - `TEMPORARY` — temporaneo
+      en: |-
+        Component status for coordinating work in existing buildings.
+
+        **Allowed values**
+        - `NEW` — new build
+        - `EXISTING` — existing
+        - `DEMOLISH` — demolition
+        - `TEMPORARY` — temporary
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/element-status
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-basic-piping-planning
+    is_applicability: false
+    status: active
+    sort_order: 4
+  - name: ElementStatus
+    pset: ePset_ElementStatus
+    definition:
+      de: |-
+        Bauteilstatus für Koordination im Bestand.
+
+        **Zulässige Werte**
+        - `NEW` — Neubau
+        - `EXISTING` — Bestand
+        - `DEMOLISH` — Abbruch
+        - `TEMPORARY` — Temporär
+
+        **Hinweis**
+        - IFC2x3-Ersatz für Status.
+      fr: |-
+        Statut de l’élément pour la coordination dans l’existant.
+
+        **Valeurs admises**
+        - `NEW` — neuf
+        - `EXISTING` — existant
+        - `DEMOLISH` — à démolir
+        - `TEMPORARY` — temporaire
+
+        **Remarque**
+        - Substitut IFC2x3 de Status.
+      it: |-
+        Stato dell’elemento per il coordinamento sull’esistente.
+
+        **Valori ammessi**
+        - `NEW` — nuovo
+        - `EXISTING` — esistente
+        - `DEMOLISH` — da demolire
+        - `TEMPORARY` — temporaneo
+
+        **Nota**
+        - Sostituto IFC2x3 di Status.
+      en: |-
+        Component status for coordinating work in existing buildings.
+
+        **Allowed values**
+        - `NEW` — new build
+        - `EXISTING` — existing
+        - `DEMOLISH` — demolition
+        - `TEMPORARY` — temporary
+
+        **Note**
+        - IFC2x3 substitute for Status.
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/element-status
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-basic-piping-planning
+    is_applicability: false
+    status: active
+    sort_order: 5

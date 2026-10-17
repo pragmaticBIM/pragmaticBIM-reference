@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Umgebungsbau
+    - Umgebungsbau
   fr:
-  - Construction environnante
+    - Construction environnante
   it:
-  - Edificio circostante
+    - Edificio circostante
   en:
-  - Surrounding building
+    - Surrounding building

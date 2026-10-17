@@ -4,7 +4,7 @@ Python tools that build small IFC vignettes and isometric PNG previews for Eleme
 
 ## Setup
 
-From the repository root (this template, or the add-ons source repo):
+From the repository root:
 
 ```bash
 python -m venv .venv

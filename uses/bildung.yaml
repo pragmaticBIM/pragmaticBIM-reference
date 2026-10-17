@@ -1,0 +1,31 @@
+id: pragmaticbim:use/bildung
+code: USE-BI
+sort_order: 3
+name:
+  de: Bildung
+  fr: Formation
+  it: Formazione
+  en: Education
+definition:
+  de: 'Unterricht und Lernen von Schülerinnen, Schülern und Studierenden, etwa in Schulen und Hochschulen.
+    Bezugsgrösse: Anzahl Schülerinnen, Schüler bzw. Studierende.'
+  fr: 'Enseignement et apprentissage d''élèves et d''étudiants, par exemple dans les écoles et hautes
+    écoles. Grandeur de référence : nombre d''élèves ou d''étudiants.'
+  it: 'Insegnamento e apprendimento di allievi e studenti, ad esempio in scuole e scuole universitarie.
+    Grandezza di riferimento: numero di allievi o studenti.'
+  en: 'Teaching and learning of pupils and students, for example in schools and universities. Reference
+    quantity: number of pupils or students.'
+reference_quantity:
+  id: pragmaticbim:quantity/bildung-lernende
+  code: USE-BI-Q
+  sort_order: 1
+  name:
+    de: Anzahl Schülerinnen, Schüler bzw. Studierende
+    fr: Nombre d'élèves ou d'étudiants
+    it: Numero di allievi o studenti
+    en: Number of pupils or students
+  status: active
+typical_levels:
+- pragmaticbim:project-goal-level/seismic-bwk-2
+- pragmaticbim:project-goal-level/construction-during-operation-partial
+status: active

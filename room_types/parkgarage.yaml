@@ -1,0 +1,44 @@
+id: pragmaticbim:room-type/parkgarage
+legacy_ids:
+- pragmaticbim:unit-type/parkgarage
+code: UT-PK-01
+sort_order: 16
+name:
+  de: Parkgarage
+  fr: Parking couvert
+  it: Autosilo
+  en: Parking garage
+definition:
+  de: Bruttovolumen einer Parkgarage.
+  fr: Volume brut d'un parking couvert.
+  it: Volume lordo di un autosilo.
+  en: Gross volume of a parking garage.
+room_type_kind: container
+uses:
+- pragmaticbim:use/parkierung
+contains:
+- room_type: pragmaticbim:room-type/parkplatz-pkw-innen
+- room_type: pragmaticbim:room-type/rampe
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/parkgarage-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Parkgarage
+      fr: Parking couvert
+      it: Autosilo
+      en: Parking garage
+  status: active

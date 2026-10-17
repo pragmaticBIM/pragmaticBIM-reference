@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Vorsatzschale
+    - Vorsatzschale
   fr:
-  - Contre-cloison
+    - Contre-cloison
   it:
-  - Controparete
+    - Controparete
   en:
-  - Wall lining
+    - Wall lining

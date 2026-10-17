@@ -191,7 +191,7 @@ SAMPLE_CATALOG: list[dict] = [
         "attach_element": "architecture-window-exterior",
     },
     {
-        # Exterior window vignette; accent vertical lamellas, 1 m cantilever.
+        # Exterior window vignette; lamellas parallel to the wall above the window.
         "id": "shading-device-01",
         "element_type": "ARC-SHADING",
         "height": 1.0,
@@ -205,7 +205,8 @@ SAMPLE_CATALOG: list[dict] = [
         "attach_element": "architecture-shading-device",
     },
     {
-        # Two-room interior fabric with envelope; accent interior door in partition.
+        # Two-room interior fabric; accent the partition door and a hatch
+        # in the primary room's suspended ceiling.
         "id": "door-interior-01",
         "element_type": "ARC-DOOR-INT",
         "height": 2.8,
@@ -236,7 +237,8 @@ SAMPLE_CATALOG: list[dict] = [
         "attach_element": "architecture-ceiling-suspended",
     },
     {
-        # Same room vignette as space-office-01; PNG accents both floor build-ups.
+        # Same room vignette as space-office-01; PNG accents both floor build-ups,
+        # each split by a joint.
         "id": "floor-covering-01",
         "element_type": "ARC-FLOOR-COV",
         "height": 2.8,
@@ -265,6 +267,17 @@ SAMPLE_CATALOG: list[dict] = [
         "clear_width": 0.60,
         "clear_height": 0.40,
         "attach_element": "architecture-opening-void",
+    },
+    {
+        # Same penetration vignette; orange proxy fills the coordinated opening.
+        "id": "fire-acoustic-seal-01",
+        "element_type": "ARC-FIRE-ACOUSTIC-SEAL",
+        "height": 2.8,
+        "width": 4.0,
+        "depth": 5.0,
+        "clear_width": 0.60,
+        "clear_height": 0.40,
+        "attach_element": "architecture-fire-acoustic-seal",
     },
     {
         # Three LV95 Bezugspunkte near the geographic centre of Switzerland (Älggi-Alp).
@@ -409,13 +422,13 @@ SAMPLE_CATALOG: list[dict] = [
         "attach_element": "architecture-building-law-parcel",
     },
     {
-        # Opaque project mass + three neighbour gross volumes (N001–N003).
+        # Opaque project mass + three neighbour volumes. N002 and N003 are gabled.
         "id": "surrounding-building-01",
         "element_type": "ARC-UMG-NEIGHBOR",
         "neighbor_specs": [
             ("N001", 10.0, 7.0, 12.0, "HOCH"),
-            ("N002", 8.0, 6.0, 8.0, "MITTEL"),
-            ("N003", 7.0, 5.5, 6.0, "TIEF"),
+            ("N002", 8.0, 6.0, 8.0, "MITTEL", "GABLE"),
+            ("N003", 7.0, 5.5, 6.0, "TIEF", "GABLE"),
         ],
         "project_width": 8.0,
         "project_depth": 7.0,
@@ -524,6 +537,12 @@ SAMPLE_CATALOG: list[dict] = [
         "attach_element": "architecture-roof-drainage",
     },
     {
+        # Reuse flat-roof vignette; accent rectangular emergency overflow in Attika.
+        "id": "roof-overflow-01",
+        "element_type": "ARC-ROOF-OVERFLOW",
+        "attach_element": "architecture-roof-overflow",
+    },
+    {
         # Schematic tree: crown sphere + trunk + root sphere on ground.
         "id": "tree-01",
         "element_type": "LAN-TREE",
@@ -536,7 +555,7 @@ SAMPLE_CATALOG: list[dict] = [
         "attach_element": "landscape-humus",
     },
     {
-        # Shallow retention basin on terrain.
+        # Retention storage volume on terrain.
         "id": "retention-01",
         "element_type": "LAN-RETENTION",
         "attach_element": "landscape-retention",

@@ -1,0 +1,100 @@
+id: pragmaticbim:project-goal/zimmermix
+sort_order: 1061
+group: rahmenbedingungen
+code: PG-19
+name:
+  de: Zimmermix
+  fr: Répartition des chambres
+  it: Composizione delle camere
+  en: Room mix
+tag:
+  de: Mix
+  fr: Mix
+  it: Mix
+  en: Mix
+description:
+  de: |-
+    Der Zimmermix entscheidet, welche Gäste das Haus aufnehmen kann. Die Zahl der Zimmer und Betten bestimmt Geschossfläche, Bäder und den Aufwand für die Zimmerbewirtschaftung.
+
+    Ohne diese Festlegung bleibt offen, welche Gäste das Haus aufnimmt. Zimmerzahl, Bäder und der Aufwand für die Bewirtschaftung lassen sich dann nicht aus dem Betrieb ableiten.
+  fr: |-
+    La répartition des chambres décide quels hôtes l'établissement peut accueillir. Le nombre de chambres et de lits détermine la surface de plancher, les salles de bain et l'effort d'entretien des chambres.
+
+    Sans cette décision, il reste ouvert quels hôtes l'établissement accueille. Le nombre de chambres, les salles de bain et l'effort d'entretien ne se déduisent alors pas de l'exploitation.
+  it: |-
+    La composizione delle camere decide quali ospiti la struttura può accogliere. Il numero di camere e letti determina superficie di piano, bagni e onere di gestione delle camere.
+
+    Senza questa decisione resta aperto quali ospiti la struttura accoglie. Numero di camere, bagni e onere di gestione non si ricavano allora dall'esercizio.
+  en: |-
+    The room mix decides which guests the house can take in. The number of rooms and beds determines floor area, bathrooms, and housekeeping effort.
+
+    Without this decision it stays open which guests the house takes. The number of rooms, the bathrooms, and the housekeeping effort then cannot be derived from how the house operates.
+status: active
+uses:
+- pragmaticbim:use/beherbergung
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/zimmermix-business
+  code: ZMX-01
+  sort_order: 1
+  name:
+    de: Einzel- und Doppelzimmer
+    fr: Chambres simples et doubles
+    it: Camere singole e doppie
+    en: Single and double rooms
+  description:
+    de: Für Geschäftsreisende und kurze Aufenthalte.
+    fr: Pour les voyageurs d'affaires et les courts séjours.
+    it: Per viaggiatori d'affari e soggiorni brevi.
+    en: For business travellers and short stays.
+  status: active
+  comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/hotel-einzelzimmer
+  - pragmaticbim:room-type/hotel-doppelzimmer
+- id: pragmaticbim:project-goal-level/zimmermix-doppelzimmer
+  code: ZMX-02
+  sort_order: 2
+  name:
+    de: Doppelzimmer
+    fr: Chambres doubles
+    it: Camere doppie
+    en: Double rooms
+  description:
+    de: Für Paare und Feriengäste.
+    fr: Pour les couples et les vacanciers.
+    it: Per coppie e ospiti in vacanza.
+    en: For couples and holiday guests.
+  status: active
+  comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/hotel-doppelzimmer
+- id: pragmaticbim:project-goal-level/zimmermix-suiten
+  code: ZMX-03
+  sort_order: 3
+  name:
+    de: Doppelzimmer und Suiten
+    fr: Chambres doubles et suites
+    it: Camere doppie e suite
+    en: Double rooms and suites
+  description:
+    de: Für Familien und längere Aufenthalte.
+    fr: Pour les familles et les séjours prolongés.
+    it: Per famiglie e soggiorni prolungati.
+    en: For families and longer stays.
+  status: active
+  comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/hotel-doppelzimmer
+  - pragmaticbim:room-type/hotel-suite
+quantities:
+- id: pragmaticbim:quantity/zimmermix-betten
+  code: ZMX-Q02
+  sort_order: 1
+  name:
+    de: Anzahl Betten
+    fr: Nombre de lits
+    it: Numero di letti
+    en: Number of beds
+  status: active

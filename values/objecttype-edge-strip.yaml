@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Randstreifen
+    - Randstreifen
   fr:
-  - Bande de rive
+    - Bande de rive
   it:
-  - Fascia di bordo
+    - Fascia di bordo
   en:
-  - Edge strip
+    - Edge strip

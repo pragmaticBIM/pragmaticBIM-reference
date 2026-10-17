@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/billette-kaufen
+code: US-VE-02
+sort_order: 3
+name:
+  de: Billette kaufen
+  fr: Acheter des billets
+  it: Acquistare biglietti
+  en: Buying tickets
+description:
+  de: Reisende kaufen Billette und holen Auskünfte ein. Bediente Schalter entscheiden über Personal, Fläche
+    und Wartezonen.
+  fr: Les voyageurs achètent des billets et demandent des renseignements. Des guichets avec personnel
+    déterminent les effectifs, la surface et les zones d'attente.
+  it: I viaggiatori acquistano biglietti e chiedono informazioni. Sportelli presidiati determinano personale,
+    superficie e zone di attesa.
+  en: Passengers buy tickets and ask for information. Staffed counters determine staffing, area, and waiting
+    zones.
+uses:
+- pragmaticbim:use/verkehr
+tags:
+- service
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/billette-kaufen-ticket-hall
+  sort_order: 1
+  name:
+    de: Schalterhalle
+    fr: Hall des guichets
+    it: Atrio biglietteria
+    en: Ticket hall
+  adds:
+  - pragmaticbim:room-type/schalterhalle
+- id: pragmaticbim:scenario-option/billette-kaufen-kiosk
+  sort_order: 2
+  name:
+    de: Billettverkauf am Kiosk
+    fr: Vente de billets au kiosque
+    it: Vendita di biglietti al chiosco
+    en: Tickets at the kiosk
+  adds:
+  - pragmaticbim:room-type/kiosk

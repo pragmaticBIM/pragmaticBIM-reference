@@ -1,0 +1,51 @@
+id: pragmaticbim:usage-scenario/labor-betreten
+code: US-LA-04
+sort_order: 5
+name:
+  de: Labor betreten
+  fr: Entrer au laboratoire
+  it: Entrare in laboratorio
+  en: Entering the laboratory
+description:
+  de: Mitarbeitende wechseln die Kleidung und passieren Hygieneschranken vor dem Laborbereich. Die Zutrittsfolge
+    entscheidet über Kontaminationsschutz und Durchlaufzeit.
+  fr: Le personnel change de tenue et franchit des barrières d'hygiène avant la zone de laboratoire. La
+    séquence d'accès détermine la protection contre la contamination et le temps de passage.
+  it: Il personale cambia abbigliamento e supera barriere igieniche prima dell'area di laboratorio. La
+    sequenza di accesso determina protezione dalla contaminazione e tempi di passaggio.
+  en: Staff change clothes and pass hygiene barriers before the laboratory area. The access sequence determines
+    contamination protection and transit time.
+uses:
+- pragmaticbim:use/labor
+tags:
+- zugang
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/labor-betreten-changing
+  sort_order: 1
+  name:
+    de: Umkleide vor dem Labor
+    fr: Vestiaire avant le laboratoire
+    it: Spogliatoio prima del laboratorio
+    en: Changing room before the lab
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/umkleideraum
+    to_room_type: pragmaticbim:room-type/naturwissenschaftslabor
+  adds:
+  - pragmaticbim:room-type/umkleideraum
+  - pragmaticbim:room-type/naturwissenschaftslabor
+- id: pragmaticbim:scenario-option/labor-betreten-changing-airlock
+  sort_order: 2
+  name:
+    de: Umkleide und Schleuse
+    fr: Vestiaire et sas
+    it: Spogliatoio e chiusa
+    en: Changing room and airlock
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/umkleideraum
+    to_room_type: pragmaticbim:room-type/schleuse
+  adds:
+  - pragmaticbim:room-type/umkleideraum
+  - pragmaticbim:room-type/schleuse

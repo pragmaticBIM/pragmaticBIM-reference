@@ -8,94 +8,58 @@ name:
   it: Volumi lordi
   en: Gross volumes
 definition:
-  de: 'Liefert eine konsistente Grundlage für Massenstudien, Flächen- und Volumenauswertungen sowie städtebauliche Entscheide.
-
+  de: |-
+    Liefert eine konsistente Grundlage für Massenstudien, Flächen- und Volumenauswertungen sowie städtebauliche Entscheide.
 
     **Beschreibung**
-
     - Bruttoraumvolumen je Geschoss als durchgängig modellierte Volumen bis zur Aussenkante Fassade.
-
-    - Die Norm sieht vor, dass das Bruttovolumen bis zur Aussenkante der Dämmschicht und nicht zur Aussenkante einer hinterlüfteten Fassade geht; da es oft um städtebauliche Fluchten und Abstandsflächen
-    geht, empfehlen wir die Abweichung von der Norm.
-
+    - Die Norm sieht vor, dass das Bruttovolumen bis zur Aussenkante der Dämmschicht und nicht zur Aussenkante einer hinterlüfteten Fassade geht; da es oft um städtebauliche Fluchten und Abstandsflächen geht, empfehlen wir die Abweichung von der Norm.
     - Nutzungseinheiten wie Wohnungen, Einheiten oder Allgemeinflächen werden über LongName gemäss Programm bezeichnet.
 
-
     **Modellierungshinweis**
-
     - Mit dem Raumwerkzeug als Volumen modellieren, geschossweise; horizontal bis zur Aussenkante Fassade; PredefinedType = `GFA`, in IFC2x3 ObjectType = `Bruttovolumen`.
-
     - Untergeschoss von Unterkante Bodenplatte bis Oberkante Fertigboden.
-
     - Obergeschosse von Oberkante Fertigboden bis Oberkante nächster Fertigboden bzw. Dach.
-
-    - Optional nach Wohnungen, Einheiten oder Allgemeinflächen trennen; keine Überlappungen oder Doppelungen.'
-  fr: 'Fournit une base cohérente pour les études volumétriques, les évaluations de surfaces et de volumes ainsi que les décisions urbanistiques.
-
+    - Optional nach Wohnungen, Einheiten oder Allgemeinflächen trennen; keine Überlappungen oder Doppelungen.
+  fr: |-
+    Fournit une base cohérente pour les études volumétriques, les évaluations de surfaces et de volumes ainsi que les décisions urbanistiques.
 
     **Description**
-
-    - Volumes bruts par étage modélisés comme volumes continus jusqu''au bord extérieur de la façade.
-
-    - La norme prévoit que le volume brut s''étende jusqu''au bord extérieur de l''isolation et non jusqu''au bord extérieur d''une façade ventilée ; comme il s''agit souvent de lignes de façade urbanistiques
-    et de zones de recul, nous recommandons de s''écarter de la norme.
-
+    - Volumes bruts par étage modélisés comme volumes continus jusqu'au bord extérieur de la façade.
+    - La norme prévoit que le volume brut s'étende jusqu'au bord extérieur de l'isolation et non jusqu'au bord extérieur d'une façade ventilée ; comme il s'agit souvent de lignes de façade urbanistiques et de zones de recul, nous recommandons de s'écarter de la norme.
     - Les parts de programme comme logements, unités ou espaces communs sont portées par LongName selon le programme.
 
-
     **Directives de modélisation**
-
-    - Modéliser comme volume avec l''outil local, étage par étage ; horizontalement jusqu''au bord extérieur de la façade ; PredefinedType = `GFA`, dans IFC2x3 ObjectType = `Volume brut`.
-
+    - Modéliser comme volume avec l'outil local, étage par étage ; horizontalement jusqu'au bord extérieur de la façade ; PredefinedType = `GFA`, dans IFC2x3 ObjectType = `Volume brut`.
     - Sous-sol : de la face inférieure de la dalle de fondation au dessus du sol fini.
-
     - Étages supérieurs : du dessus du sol fini au dessus du sol fini suivant ou à la toiture.
-
-    - Séparer facultativement par logements, unités ou espaces communs ; pas de chevauchement ni de duplication.'
-  it: 'Fornisce una base coerente per gli studi volumetrici, le valutazioni di superfici e volumi e le decisioni urbanistiche.
-
+    - Séparer facultativement par logements, unités ou espaces communs ; pas de chevauchement ni de duplication.
+  it: |-
+    Fornisce una base coerente per gli studi volumetrici, le valutazioni di superfici e volumi e le decisioni urbanistiche.
 
     **Descrizione**
-
     - Volumi lordi per piano modellati come volumi continui fino al bordo esterno della facciata.
-
-    - La norma prevede che il volume lordo arrivi fino al bordo esterno dello strato isolante e non al bordo esterno di una facciata ventilata; poiché spesso contano le linee di facciata urbanistica e le
-    distanze, raccomandiamo di discostarsi dalla norma.
-
+    - La norma prevede che il volume lordo arrivi fino al bordo esterno dello strato isolante e non al bordo esterno di una facciata ventilata; poiché spesso contano le linee di facciata urbanistica e le distanze, raccomandiamo di discostarsi dalla norma.
     - Quote di programma come alloggi, unità o spazi comuni sono indicate in LongName secondo il programma.
 
-
     **Direttive di modellazione**
-
     - Modellare come volume con lo strumento locale, piano per piano; orizzontalmente fino al bordo esterno della facciata; PredefinedType = `GFA`, in IFC2x3 ObjectType = `Volume lordo`.
-
     - Sotterraneo: dal bordo inferiore della soletta di fondazione al bordo superiore del pavimento finito.
-
     - Piani superiori: dal bordo superiore del pavimento finito al bordo superiore del pavimento finito successivo o alla copertura.
-
-    - Separare facoltativamente per alloggi, unità o spazi comuni; nessuna sovrapposizione o duplicazione.'
-  en: 'Provides a consistent basis for massing studies, area and volume evaluations, and urban design decisions.
-
+    - Separare facoltativamente per alloggi, unità o spazi comuni; nessuna sovrapposizione o duplicazione.
+  en: |-
+    Provides a consistent basis for massing studies, area and volume evaluations, and urban design decisions.
 
     **Description**
-
     - Gross room volumes per storey modelled as continuous volumes to the outer edge of the facade.
-
-    - The standard requires gross volume to extend to the outer edge of the insulation layer, not the outer edge of a ventilated facade; as urban alignment lines and setback areas are often decisive, we
-    recommend deviating from the standard.
-
+    - The standard requires gross volume to extend to the outer edge of the insulation layer, not the outer edge of a ventilated facade; as urban alignment lines and setback areas are often decisive, we recommend deviating from the standard.
     - Programme shares such as flats, units, or public space are carried in LongName according to the brief.
 
-
     **Modelling guidelines**
-
     - Model as a volume with the space tool, storey by storey; horizontally to the outer edge of the facade; PredefinedType = `GFA`, in IFC2x3 ObjectType = `Gross volume`.
-
     - Basement from underside of base slab to top of finished floor.
-
     - Upper storeys from top of finished floor to top of next finished floor or roof.
-
-    - Optionally separate by flats, units, or public space; no overlaps or duplicates.'
+    - Optionally separate by flats, units, or public space; no overlaps or duplicates.
 needed_in_domain:
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcSpace
@@ -119,23 +83,8 @@ attributes:
     it: Denominazione o numero di unità facoltativo secondo il progetto.
     en: Optional unit designation or number according to the project.
   datatype: IfcIdentifier
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-functional-brief-test-planning
   - pragmaticbim:workflow/bes-existing-structure-model-procurement
@@ -147,54 +96,38 @@ attributes:
   - pragmaticbim:workflow/des-floor-area-from-model
   - pragmaticbim:workflow/des-environmental-impact-assessment
   - pragmaticbim:workflow/qas-stakeholder-dialog
+  - pragmaticbim:workflow/des-building-permit
   is_applicability: false
   status: active
   sort_order: 1
 - name: PredefinedType
+  requirement_kind: identification
   pset: null
   definition:
-    de: 'Kennzeichnet den Raum als geschossweise Bruttogeschossfläche.
-
+    de: |-
+      Kennzeichnet den Raum als geschossweise Bruttogeschossfläche.
 
       **Zulässige Werte**
-
-      - `GFA` — Bruttogeschossfläche einschliesslich Konstruktionsflächen und Gebäudehülle'
-    fr: 'Identifie l''espace comme surface brute de plancher par étage.
-
+      - `GFA` — Bruttogeschossfläche einschliesslich Konstruktionsflächen und Gebäudehülle
+    fr: |-
+      Identifie l'espace comme surface brute de plancher par étage.
 
       **Valeurs admises**
-
-      - `GFA` — surface brute de plancher comprenant les surfaces de construction et l''enveloppe du bâtiment'
-    it: 'Identifica lo spazio come superficie lorda di piano.
-
+      - `GFA` — surface brute de plancher comprenant les surfaces de construction et l'enveloppe du bâtiment
+    it: |-
+      Identifica lo spazio come superficie lorda di piano.
 
       **Valori ammessi**
-
-      - `GFA` — superficie lorda di piano comprendente le superfici costruttive e l''involucro dell''edificio'
-    en: 'Marks the space as the gross floor area for a storey.
-
+      - `GFA` — superficie lorda di piano comprendente le superfici costruttive e l'involucro dell'edificio
+    en: |-
+      Marks the space as the gross floor area for a storey.
 
       **Allowed values**
-
-      - `GFA` — gross floor area including construction areas and the building envelope'
+      - `GFA` — gross floor area including construction areas and the building envelope
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-space-gfa
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-functional-brief-test-planning
   - pragmaticbim:workflow/bes-existing-structure-model-procurement
@@ -206,53 +139,38 @@ attributes:
   - pragmaticbim:workflow/des-floor-area-from-model
   - pragmaticbim:workflow/des-environmental-impact-assessment
   - pragmaticbim:workflow/qas-stakeholder-dialog
+  - pragmaticbim:workflow/des-building-permit
   is_applicability: true
   status: active
   sort_order: 2
 - name: ObjectType
+  requirement_kind: identification
   pset: null
   definition:
-    de: 'Kennzeichnung des Bruttovolumens in IFC2x3.
-
+    de: |-
+      Kennzeichnung des Bruttovolumens in IFC2x3.
 
       **Zulässige Werte**
-
-      - `Bruttovolumen` — geschossweises Bruttovolumen'
-    fr: 'Identification du volume brut dans IFC2x3.
-
+      - `Bruttovolumen` — geschossweises Bruttovolumen
+    fr: |-
+      Identification du volume brut dans IFC2x3.
 
       **Valeurs admises**
-
-      - `Volume brut` — volume brut par étage'
-    it: 'Identificazione del volume lordo in IFC2x3.
-
+      - `Volume brut` — volume brut par étage
+    it: |-
+      Identificazione del volume lordo in IFC2x3.
 
       **Valori ammessi**
-
-      - `Volume lordo` — volume lordo per piano'
-    en: 'Gross-volume identifier in IFC2x3.
-
+      - `Volume lordo` — volume lordo per piano
+    en: |-
+      Gross-volume identifier in IFC2x3.
 
       **Allowed values**
-
-      - `Gross volume` — storey-wise gross volume'
+      - `Gross volume` — storey-wise gross volume
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/objecttype-bruttovolumen
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-environmental-impact-assessment
   - pragmaticbim:workflow/qas-stakeholder-dialog
@@ -264,10 +182,12 @@ attributes:
   - pragmaticbim:workflow/des-model-based-visualization
   - pragmaticbim:workflow/qas-urban-ar-assessment
   - pragmaticbim:workflow/des-floor-area-from-model
+  - pragmaticbim:workflow/des-building-permit
   is_applicability: true
   status: active
   sort_order: 3
 - name: LongName
+  requirement_kind: identification
   pset: null
   definition:
     de: Einheits- oder Nutzungsbezeichnung gemäss Programm (z. B. Wohnung, Einheit, Allgemeinfläche).
@@ -275,23 +195,8 @@ attributes:
     it: Denominazione di unità o uso secondo il programma (p. es. alloggio, unità, spazio comune).
     en: Unit or use designation according to the brief (for example apartment, unit, common area).
   datatype: IfcLabel
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-functional-brief-test-planning
   - pragmaticbim:workflow/des-apartment-schedule
@@ -309,22 +214,8 @@ attributes:
     en: Gross floor area of the modelled gross volume.
   datatype: IfcAreaMeasure
   unit: m²
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-functional-brief-test-planning
   - pragmaticbim:workflow/des-apartment-schedule
@@ -332,6 +223,7 @@ attributes:
   - pragmaticbim:workflow/des-floor-area-from-model
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/des-building-permit
   is_applicability: false
   status: active
   sort_order: 5
@@ -344,22 +236,8 @@ attributes:
     en: Gross volume of the modelled gross room volume.
   datatype: IfcVolumeMeasure
   unit: m³
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-functional-brief-test-planning
   - pragmaticbim:workflow/des-urban-design-mass-study
@@ -367,6 +245,7 @@ attributes:
   - pragmaticbim:workflow/des-construction-volume
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/des-building-permit
   is_applicability: false
   status: active
   sort_order: 6
@@ -379,26 +258,13 @@ attributes:
     en: Height of the modelled gross volume.
   datatype: IfcLengthMeasure
   unit: m
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-functional-brief-test-planning
   - pragmaticbim:workflow/des-urban-design-mass-study
   - pragmaticbim:workflow/des-floor-area-from-model
+  - pragmaticbim:workflow/des-building-permit
   is_applicability: false
   status: active
   sort_order: 7

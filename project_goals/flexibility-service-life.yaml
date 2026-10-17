@@ -1,0 +1,92 @@
+id: pragmaticbim:project-goal/flexibility-service-life
+sort_order: 30
+group: rahmenbedingungen
+code: PG-40
+name:
+  de: Flexibilität / Nutzungsdauer
+  fr: Flexibilité / durée d'utilisation
+  it: Flessibilità / durata d'utilizzo
+  en: Flexibility / service life
+tag:
+  de: Flexibilität
+  fr: Flexibilité
+  it: Flessibilità
+  en: Flexibility
+description:
+  de: |-
+    Festgelegt werden die geplante Nutzungsdauer und wie weit Tragwerk, Ausbau und Gebäudetechnik voneinander getrennt sind. Die Festlegung bestimmt Geschosshöhen, Tragraster und Installationszonen.
+
+    Ohne diese Festlegung werden Leitungen in tragende Bauteile eingelegt und Raster auf die erste Nutzung zugeschnitten. Eine spätere Umnutzung wird dann zum Rückbau.
+  fr: |-
+    Cette condition-cadre fixe la durée d'utilisation prévue et le degré de séparation entre structure porteuse, aménagement et installations techniques. Elle détermine les hauteurs d'étage, la trame porteuse et les zones d'installation.
+
+    Sans cette définition, les conduites sont noyées dans les éléments porteurs et la trame est taillée pour la première utilisation. Un changement d'affectation ultérieur devient alors une déconstruction.
+  it: |-
+    Questa condizione quadro stabilisce la durata d'utilizzo prevista e il grado di separazione tra struttura portante, finiture e impianti. Determina altezze di piano, maglia strutturale e zone impiantistiche.
+
+    Senza questa definizione, le condotte vengono annegate negli elementi portanti e la maglia viene tagliata sul primo utilizzo. Un successivo cambio di destinazione diventa allora una decostruzione.
+  en: |-
+    This framework condition sets the design service life and how far structure, fit-out, and building services are separated. It drives storey heights, the structural grid, and installation zones.
+
+    Without it, services are cast into load-bearing components and the grid is tailored to the first use. A later change of use then becomes deconstruction.
+status: active
+is_boundary_condition: true
+comment: 'Kumulativ. Kein Einfluss auf Anwendungsfälle der Nutzung; kann später min_height der Raumtypen beeinflussen. Abgrenzung: PG-15 Umbauhäufigkeit regelt, wie aktuell die Betriebsdaten sein müssen, nicht die bauliche Flexibilität.'
+levels:
+- id: pragmaticbim:project-goal-level/flexibility-standard
+  code: FLX-01
+  sort_order: 1
+  name:
+    de: Übliche Nutzungsdauer
+    fr: Durée d'utilisation usuelle
+    it: Durata d'utilizzo usuale
+    en: Standard service life
+  description:
+    de: Nutzungsdauer nach üblichen Kennwerten, ohne besondere Anforderungen an die Trennung von Tragwerk, Ausbau und Gebäudetechnik.
+    fr: Durée d'utilisation selon les valeurs usuelles, sans exigences particulières de séparation entre structure porteuse, aménagement et installations techniques.
+    it: Durata d'utilizzo secondo i valori usuali, senza requisiti particolari di separazione tra struttura portante, finiture e impianti.
+    en: Service life based on usual values, without special requirements for separating structure, fit-out, and building services.
+  status: active
+  activated_workflows: []
+  comment: ''
+- id: pragmaticbim:project-goal-level/flexibility-system-separation
+  code: FLX-02
+  sort_order: 2
+  name:
+    de: Systemtrennung
+    fr: Séparation des systèmes
+    it: Separazione dei sistemi
+    en: System separation
+  description:
+    de: Tragwerk, Ausbau und Gebäudetechnik sind getrennt, damit sie sich mit ihrer eigenen Lebensdauer ersetzen lassen. Installationszonen werden früh festgelegt und freigehalten.
+    fr: Structure porteuse, aménagement et installations techniques sont séparés, afin de pouvoir être remplacés selon leur propre durée de vie. Les zones d'installation sont fixées tôt et maintenues libres.
+    it: Struttura portante, finiture e impianti sono separati, affinché si possano sostituire secondo la propria durata di vita. Le zone impiantistiche vengono fissate presto e mantenute libere.
+    en: Structure, fit-out, and building services are separated so each can be replaced over its own service life. Installation zones are set early and kept clear.
+  status: active
+  activated_workflows: []
+  comment: >-
+    Keine Anwendungsfälle. Koordinationszonen gehören zur Terminkoordination,
+    der Materialpass zur Nachhaltigkeitsstufe hoch.
+- id: pragmaticbim:project-goal-level/flexibility-high
+  code: FLX-03
+  sort_order: 3
+  name:
+    de: Hohe Nutzungsflexibilität
+    fr: Grande flexibilité d'utilisation
+    it: Elevata flessibilità d'uso
+    en: High flexibility of use
+  description:
+    de: Tragraster, Geschosshöhen und Installationszonen lassen andere Nutzungen ohne Eingriff ins Tragwerk zu. Installationswege werden für spätere Nutzungen mitgeprüft.
+    fr: Trame porteuse, hauteurs d'étage et zones d'installation permettent d'autres utilisations sans intervention sur la structure. Les tracés d'installations sont aussi contrôlés pour des utilisations ultérieures.
+    it: Maglia strutturale, altezze di piano e zone impiantistiche consentono altri usi senza interventi sulla struttura. I percorsi impiantistici vengono verificati anche per usi futuri.
+    en: The structural grid, storey heights, and installation zones allow other uses without work on the structure. Installation routes are also checked for later uses.
+  status: active
+  activated_workflows: []
+  performance_targets:
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 3.0
+  comment: >-
+    Keine Anwendungsfälle. Einbringwege gehören zur Terminkoordination.
+    Sollwert DesignAreaLoad vor Freigabe fachlich bestätigen.

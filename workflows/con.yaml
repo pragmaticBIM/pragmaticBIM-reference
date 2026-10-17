@@ -7,20 +7,16 @@ name:
   it: Costruzione
   en: Construction
 description:
-  de: 'Verlässliche, einfach verständliche und nachvollziehbare Grundlagen für Fertigung, Bestellung, Montage und Baustellenlogistik. Die bewährte Qualität gewerkespezifischer, vollständig lesbarer Ausführungspläne
-    muss auch im digitalen Prozess erhalten bleiben. Modelle allein ersetzen diese Aufbereitung nicht: Gebäudestruktur, Bauteilklassifikation und Änderungen müssen eindeutig erkennbar sein. Wo möglich,
-    sollen geeignete Ansichten bereitgestellt oder gewerkespezifische Pläne aus dem Modell abgeleitet werden. Die blosse Bereitstellung regelmässig überschriebener Modelle genügt nicht als Ausführungs-
-    oder Änderungsdokumentation.'
-  fr: 'Exécution physique, fabrication et pose sur chantier ou dans la chaîne d''approvisionnement. Exemples: plans d''atelier, modèles conformes à l''exécution, logistique chantier, fiches de pose.'
-  it: 'Esecuzione fisica, produzione e installazione in cantiere o nella supply chain. Esempi: disegni di officina, modelli as-built, logistica cantiere, registri di posa.'
-  en: 'Reliable, easy-to-understand, and traceable information for fabrication, ordering, installation, and site logistics. The proven quality of trade-specific, fully legible construction drawings must
-    also be maintained in the digital process. Models alone do not replace this preparation: building structure, component classification, and changes must be clearly identifiable. Where possible, suitable
-    views should be provided or trade-specific drawings derived from the model. Merely providing models that are regularly overwritten is not sufficient as construction or change documentation.'
+  de: |-
+    Verlässliche, einfach verständliche und nachvollziehbare Grundlagen für Fertigung, Bestellung, Montage und Baustellenlogistik. Die für die Ausschreibung gewerkespezifisch aufbereiteten Unterlagen werden nach der Vergabe als Ausführungsgrundlage weitergeführt, etappenweise freigegeben und mit eindeutigem Revisionsstand bereitgestellt. Die bewährte Qualität gewerkespezifischer, vollständig lesbarer Ausführungspläne muss auch im digitalen Prozess erhalten bleiben. Modelle allein ersetzen diese Aufbereitung nicht: Gebäudestruktur, Bauteilklassifikation und Änderungen müssen eindeutig erkennbar sein. Wo möglich, sollen geeignete Ansichten bereitgestellt oder gewerkespezifische Pläne aus dem Modell abgeleitet werden. Die blosse Bereitstellung regelmässig überschriebener Modelle genügt nicht als Ausführungs- oder Änderungsdokumentation.
+  fr: 'Informations fiables, faciles à comprendre et traçables pour la fabrication, la commande, la pose et la logistique de chantier. Les documents préparés par corps de métier pour l''appel d''offres sont tenus à jour après l''adjudication comme base d''exécution, approuvés par étape et remis avec un indice de révision univoque. La qualité éprouvée de plans d''exécution par corps de métier, entièrement lisibles, doit aussi être préservée dans le processus numérique. Les maquettes seules ne remplacent pas cette préparation : la structure du bâtiment, la classification des éléments et les modifications doivent être clairement identifiables. Lorsque cela est possible, des vues appropriées sont fournies ou des plans par corps de métier sont obtenus depuis la maquette. La simple mise à disposition de maquettes régulièrement écrasées ne constitue pas une documentation suffisante de l''exécution ou des modifications.'
+  it: 'Informazioni affidabili, facilmente comprensibili e tracciabili per produzione, ordinazione, montaggio e logistica di cantiere. I documenti predisposti per categoria di lavoro per la gara vengono aggiornati dopo l''aggiudicazione come base per l''esecuzione, approvati per tappa e forniti con uno stato di revisione univoco. La comprovata qualità di disegni esecutivi per categoria di lavoro, pienamente leggibili, deve essere preservata anche nel processo digitale. I modelli da soli non sostituiscono questa preparazione: la struttura dell''edificio, la classificazione dei componenti e le modifiche devono essere chiaramente riconoscibili. Ove possibile, vengono fornite viste adeguate o ricavati dal modello disegni per categoria di lavoro. La semplice messa a disposizione di modelli regolarmente sovrascritti non costituisce una documentazione sufficiente dell''esecuzione o delle modifiche.'
+  en: 'Reliable, easy-to-understand, and traceable information for fabrication, ordering, installation, and site logistics. The trade-specific documents prepared for tendering are developed after award as the basis for construction, approved by stage, and issued with an unambiguous revision status. The proven quality of trade-specific, fully legible construction drawings must also be maintained in the digital process. Models alone do not replace this preparation: building structure, component classification, and changes must be clearly identifiable. Where possible, suitable views should be provided or trade-specific drawings derived from the model. Merely providing models that are regularly overwritten is not sufficient as construction or change documentation.'
 workflow_group: null
 parent_workflow: null
 picture_link: null
 status: active
 needed_in_domain:
-- pragmaticbim:domain/architecture
-- pragmaticbim:domain/mep
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
 comment: 'Abstract use case classification: https://schema.pragmaticbim.ch/classification/usecase.html'

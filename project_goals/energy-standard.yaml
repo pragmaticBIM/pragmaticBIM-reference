@@ -1,0 +1,162 @@
+id: pragmaticbim:project-goal/energy-standard
+sort_order: 70
+group: rahmenbedingungen
+code: PG-34
+name:
+  de: Energiestandard
+  fr: Standard énergétique
+  it: Standard energetico
+  en: Energy standard
+tag:
+  de: Energie
+  fr: Énergie
+  it: Energia
+  en: Energy
+description:
+  de: |-
+    Festgelegt wird, ob das Gebäude das gesetzliche Minimum erfüllt oder einen Standard wie Minergie, Minergie-P oder Minergie-A erreicht. Der Standard bestimmt Aussenwände, Dächer, Fenster und die Luftdichtheit der Gebäudehülle.
+
+    Ohne diese Festlegung werden Wandstärken und Fenster auf ein Ziel ausgelegt, das später verschärft wird. Die Hülle muss dann nachgedämmt und die Grundrisse müssen angepasst werden.
+  fr: |-
+    Cette condition-cadre détermine si le bâtiment respecte le minimum légal ou atteint un standard tel que Minergie, Minergie-P ou Minergie-A. Le standard détermine les murs extérieurs, les toitures, les fenêtres et l'étanchéité à l'air de l'enveloppe.
+
+    Sans cette définition, l'épaisseur des murs et les fenêtres sont dimensionnées pour un objectif renforcé par la suite. L'enveloppe doit alors être isolée davantage et les plans d'étage adaptés.
+  it: |-
+    Questa condizione quadro stabilisce se l'edificio rispetta il minimo legale o raggiunge uno standard come Minergie, Minergie-P o Minergie-A. Lo standard determina pareti esterne, tetti, finestre e tenuta all'aria dell'involucro.
+
+    Senza questa definizione, spessori delle pareti e finestre vengono dimensionati per un obiettivo che in seguito viene inasprito. L'involucro deve allora essere isolato ulteriormente e le planimetrie adattate.
+  en: |-
+    This framework condition sets whether the building meets the legal minimum or reaches a standard such as Minergie, Minergie-P, or Minergie-A. The standard drives exterior walls, roofs, windows, and the airtightness of the envelope.
+
+    Without it, wall thicknesses and windows are designed for a target that is tightened later. The envelope then needs extra insulation and the floor plans have to be adjusted.
+status: active
+is_boundary_condition: true
+comment: 'Kumulativ. Kein Einfluss auf Anwendungsfälle der Nutzung oder Raumtypen; wirkt auf Aussenwände, Dächer, Fenster und Luftdichtheit (ThermalProperty u_value). Die Stufen setzen ThermalTransmittanceMax als Sollwert. Luftdichtheit n50 (air_tightness_n50) gilt für die Gebäudehülle und braucht noch ein Attribut am Gebäude.'
+levels:
+- id: pragmaticbim:project-goal-level/energy-standard-legal
+  code: ENE-01
+  sort_order: 1
+  name:
+    de: Gesetzliches Minimum
+    fr: Minimum légal
+    it: Minimo legale
+    en: Legal minimum
+  description:
+    de: Anforderungen nach kantonalem Energiegesetz (MuKEn) und SIA 380/1, nachgewiesen mit dem Energienachweis zum Baugesuch.
+    fr: Exigences selon la loi cantonale sur l'énergie (MoPEC) et SIA 380/1, justifiées par le justificatif énergétique de la demande d'autorisation.
+    it: Requisiti secondo la legge cantonale sull'energia (MoPEC) e SIA 380/1, verificati con la prova energetica della domanda di costruzione.
+    en: Requirements under cantonal energy law (MuKEn) and SIA 380/1, verified with the energy certificate for the permit application.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  performance_targets:
+  - element: pragmaticbim:element/architecture-wall-exterior
+    name: ThermalTransmittanceMax
+    pset: ePset_WallRequirement
+    value: 0.17
+  - element: pragmaticbim:element/architecture-slab-flat-roof
+    name: ThermalTransmittanceMax
+    pset: ePset_SlabRequirement
+    value: 0.17
+  - element: pragmaticbim:element/architecture-slab-base
+    name: ThermalTransmittanceMax
+    pset: ePset_SlabRequirement
+    value: 0.25
+  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
+- id: pragmaticbim:project-goal-level/energy-standard-minergie
+  code: ENE-02
+  sort_order: 2
+  name:
+    de: Minergie
+    fr: Minergie
+    it: Minergie
+    en: Minergie
+  description:
+    de: Gut gedämmte Hülle, kontrollierter Luftwechsel und erneuerbare Wärmeerzeugung. Die Kennwerte der Hüllbauteile werden mit einem Bauphysikkonzept festgelegt und geprüft.
+    fr: Enveloppe bien isolée, renouvellement d'air contrôlé et production de chaleur renouvelable. Les valeurs des éléments d'enveloppe sont fixées et contrôlées dans un concept de physique du bâtiment.
+    it: Involucro ben isolato, ricambio d'aria controllato e produzione di calore rinnovabile. I valori degli elementi d'involucro vengono fissati e verificati in un concetto di fisica della costruzione.
+    en: A well-insulated envelope, controlled air exchange, and renewable heat generation. The values of envelope components are set and checked in a building physics concept.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  - pragmaticbim:workflow/des-building-physics-concept
+  - pragmaticbim:workflow/qas-element-type-performance-verification
+  performance_targets:
+  - element: pragmaticbim:element/architecture-wall-exterior
+    name: ThermalTransmittanceMax
+    pset: ePset_WallRequirement
+    value: 0.15
+  - element: pragmaticbim:element/architecture-slab-flat-roof
+    name: ThermalTransmittanceMax
+    pset: ePset_SlabRequirement
+    value: 0.15
+  - element: pragmaticbim:element/architecture-slab-base
+    name: ThermalTransmittanceMax
+    pset: ePset_SlabRequirement
+    value: 0.15
+  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
+- id: pragmaticbim:project-goal-level/energy-standard-minergie-p
+  code: ENE-03
+  sort_order: 3
+  name:
+    de: Minergie-P
+    fr: Minergie-P
+    it: Minergie-P
+    en: Minergie-P
+  description:
+    de: Sehr tiefer Heizwärmebedarf mit besonders dichter Hülle. Wärmebrücken und Luftdichtheit werden an jedem Hüllbauteil nachgewiesen.
+    fr: Besoins de chaleur pour le chauffage très faibles avec une enveloppe particulièrement étanche. Ponts thermiques et étanchéité à l'air sont justifiés pour chaque élément d'enveloppe.
+    it: Fabbisogno termico per il riscaldamento molto basso con involucro particolarmente ermetico. Ponti termici e tenuta all'aria vengono verificati per ogni elemento d'involucro.
+    en: Very low heating demand with a particularly airtight envelope. Thermal bridges and airtightness are verified for every envelope component.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  - pragmaticbim:workflow/des-building-physics-concept
+  - pragmaticbim:workflow/qas-element-type-performance-verification
+  performance_targets:
+  - element: pragmaticbim:element/architecture-wall-exterior
+    name: ThermalTransmittanceMax
+    pset: ePset_WallRequirement
+    value: 0.12
+  - element: pragmaticbim:element/architecture-slab-flat-roof
+    name: ThermalTransmittanceMax
+    pset: ePset_SlabRequirement
+    value: 0.12
+  - element: pragmaticbim:element/architecture-slab-base
+    name: ThermalTransmittanceMax
+    pset: ePset_SlabRequirement
+    value: 0.12
+  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
+- id: pragmaticbim:project-goal-level/energy-standard-minergie-a
+  code: ENE-04
+  sort_order: 4
+  name:
+    de: Minergie-A
+    fr: Minergie-A
+    it: Minergie-A
+    en: Minergie-A
+  description:
+    de: Das Gebäude erzeugt über das Jahr mindestens so viel Energie, wie es verbraucht. Dach und Fassade werden zusätzlich für die Stromproduktion geplant.
+    fr: Sur l'année, le bâtiment produit au moins autant d'énergie qu'il en consomme. Toiture et façade sont en outre planifiées pour la production d'électricité.
+    it: Nell'arco dell'anno l'edificio produce almeno tanta energia quanta ne consuma. Tetto e facciata vengono inoltre progettati per la produzione di elettricità.
+    en: Over the year, the building generates at least as much energy as it uses. Roof and facade are also designed for electricity generation.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  - pragmaticbim:workflow/des-building-physics-concept
+  - pragmaticbim:workflow/qas-element-type-performance-verification
+  - pragmaticbim:workflow/des-facade-planning
+  performance_targets:
+  - element: pragmaticbim:element/architecture-wall-exterior
+    name: ThermalTransmittanceMax
+    pset: ePset_WallRequirement
+    value: 0.12
+  - element: pragmaticbim:element/architecture-slab-flat-roof
+    name: ThermalTransmittanceMax
+    pset: ePset_SlabRequirement
+    value: 0.12
+  - element: pragmaticbim:element/architecture-slab-base
+    name: ThermalTransmittanceMax
+    pset: ePset_SlabRequirement
+    value: 0.12
+  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'

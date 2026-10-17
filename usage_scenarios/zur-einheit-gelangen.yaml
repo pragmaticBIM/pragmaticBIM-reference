@@ -1,0 +1,54 @@
+id: pragmaticbim:usage-scenario/zur-einheit-gelangen
+code: US-GE-01
+sort_order: 1
+name:
+  de: Zur Einheit gelangen
+  fr: Accéder à l'unité
+  it: Raggiungere l'unità
+  en: Reaching the unit
+description:
+  de: Nutzende gelangen vom Gebäudeeingang zu ihrer Einheit. Die Erschliessung
+    entscheidet über Wege, Hindernisfreiheit und Flächenbedarf.
+  fr: Les usagers vont de l'entrée du bâtiment à leur unité. La desserte détermine
+    les parcours, l'accès sans obstacle et la surface nécessaire.
+  it: Gli utenti vanno dall'ingresso dell'edificio alla propria unità. L'accesso
+    determina percorsi, assenza di ostacoli e fabbisogno di superficie.
+  en: Users travel from the building entrance to their unit. The access arrangement
+    determines routes, step-free access, and area demand.
+tags:
+- ankommen
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/zur-einheit-gelangen-stair
+  sort_order: 1
+  name:
+    de: Treppenhaus
+    fr: Cage d'escalier
+    it: Vano scale
+    en: Stairwell
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+- id: pragmaticbim:scenario-option/zur-einheit-gelangen-stair-elevator
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/permit-medium
+  sort_order: 2
+  name:
+    de: Treppenhaus und Aufzug
+    fr: Cage d'escalier et ascenseur
+    it: Vano scale e ascensore
+    en: Stairwell and elevator
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone

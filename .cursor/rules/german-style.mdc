@@ -1,0 +1,49 @@
+---
+description: German role names and gender-fair wording for de fields and the German book locale
+globs: "{elements,workflows,values,documents,models,project_goals,phases,domains}/*.yaml,book/locales/de/**,book/editions/*-de.yaml"
+alwaysApply: false
+---
+
+# German style (Elementplan)
+
+## Roles, not persons
+
+Name the role or the organization, not a gendered person. No generic masculine,
+no gender symbols (`*`, `:`, `_`, Binnen-I), no pair forms (`Planerinnen und
+Planer`) in running text.
+
+| Use | Not |
+|---|---|
+| Bauherrschaft, Auftraggebende, Bestellende | Bauherr, Bauherren, Auftraggeber, Besteller |
+| Planende, Fachplanende, Planungsteam | Planer, Fachplaner |
+| Architekturbüro, Architekturteam, die Architektur | Architekt, Architekten |
+| Unternehmen, Unternehmerlos | Unternehmer (as company) |
+| Betrieb, Betreiberorganisation | Betreiber |
+| Nutzende, Anwendende, Modellierende | Nutzer, Anwender, Modellierer |
+| Projektleitung, Projektleitende | Projektleiter |
+| Entscheidungsträger, Führungsverantwortung | Entscheider, Entscheidungstragende |
+| Mitarbeitende | Mitarbeiter |
+
+Keep the Swiss term `Bauherrschaft`; do not replace it with `Bauherrin` or
+`Auftraggeberin`. Compounds stay as established: `Bauherrenvertretung`,
+`Bauherrenseite`.
+
+## Exceptions
+
+- **Book title** `Was Bauherren bestellen und Architekten liefern` stays; the
+  imprint explains it under «Sprachliche Gleichbehandlung».
+- **Concrete persons** in praxis boxes and anecdotes keep their actual gender:
+  `Ein Bauherrenvertreter …`, `Ein Projektleiter berief …`.
+- **The author about himself**: `Ich war Architekt.`
+- **Quoted testimonials**, company names (`… Fankhauser Architekten`), and norm
+  or contract titles stay verbatim.
+
+```markdown
+<!-- ❌ BAD -->
+Kein Bauherr verfolgt das Ziel, eine Million Franken auszugeben.
+Der Architekt stellt den Fachplaner*innen die Grundlage bereit.
+
+<!-- ✅ GOOD -->
+Keine Bauherrschaft verfolgt das Ziel, eine Million Franken auszugeben.
+Das Architekturteam stellt den Fachplanenden die Grundlage bereit.
+```

@@ -1,0 +1,51 @@
+id: pragmaticbim:usage-scenario/stromversorgung-sichern
+code: US-RZ-02
+sort_order: 3
+name:
+  de: Stromversorgung sichern
+  fr: Assurer l'alimentation électrique
+  it: Garantire l'alimentazione elettrica
+  en: Securing power supply
+description:
+  de: Die Server brauchen Strom ohne Unterbruch. Das Versorgungskonzept entscheidet über Redundanz, Technikfläche
+    und Brandabschnitte.
+  fr: Les serveurs ont besoin d'un courant sans interruption. Le concept d'alimentation détermine la redondance,
+    la surface technique et les compartiments coupe-feu.
+  it: I server necessitano di corrente senza interruzioni. Il concetto di alimentazione determina ridondanza,
+    superficie tecnica e compartimenti antincendio.
+  en: Servers need uninterrupted power. The supply concept determines redundancy, plant area, and fire
+    compartments.
+uses:
+- pragmaticbim:use/rechenzentrum
+tags:
+- energie
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/stromversorgung-sichern-grid
+  sort_order: 1
+  name:
+    de: Netzanschluss mit Transformator
+    fr: Raccordement réseau avec transformateur
+    it: Allacciamento con trasformatore
+    en: Grid connection with transformer
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/transformatorenraum
+    to_room_type: pragmaticbim:room-type/elektroraum
+  adds:
+  - pragmaticbim:room-type/transformatorenraum
+  - pragmaticbim:room-type/elektroraum
+- id: pragmaticbim:scenario-option/stromversorgung-sichern-backup
+  sort_order: 2
+  name:
+    de: Mit Notstromaggregat
+    fr: Avec groupe électrogène
+    it: Con gruppo elettrogeno
+    en: With backup generator
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/generatorraum
+    to_room_type: pragmaticbim:room-type/elektroraum
+  adds:
+  - pragmaticbim:room-type/generatorraum
+  - pragmaticbim:room-type/elektroraum

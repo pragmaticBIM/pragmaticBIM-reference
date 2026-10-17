@@ -1,0 +1,73 @@
+id: pragmaticbim:room-type/terrasse
+code: RT-WH-31
+sort_order: 31
+name:
+  de: Terrasse
+  fr: Terrasse
+  it: Terrazza
+  en: Terrace
+definition:
+  de: Aussenliegende Terrassenfläche.
+  fr: Surface de terrasse à l'extérieur.
+  it: Superficie a terrazza all'esterno.
+  en: Exterior paved or decked platform.
+room_type_kind: room
+room_name: RN-11-10-02
+activity: O
+default_scope: dwelling
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/terrasse-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Terrasse
+      fr: Terrasse
+      it: Terrazza
+      en: Terrace
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: ANF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  status: active
+  restrictions:
+    min_area: 8

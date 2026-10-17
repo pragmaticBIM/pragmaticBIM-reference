@@ -1,0 +1,51 @@
+id: pragmaticbim:usage-scenario/waren-anliefern-und-lagern
+code: US-GA-04
+sort_order: 5
+name:
+  de: Waren anliefern und lagern
+  fr: Livrer et stocker les marchandises
+  it: Consegnare e stoccare le merci
+  en: Delivering and storing goods
+description:
+  de: Waren werden regelmässig angeliefert und bis zur Verarbeitung gelagert. Die Logistik entscheidet
+    über Lieferwege, Lagerfläche und die Trennung von Gästen.
+  fr: Les marchandises sont régulièrement livrées et stockées avant transformation. La logistique détermine
+    les chemins de livraison, le stockage et la séparation des clients.
+  it: Le merci vengono consegnate regolarmente e stoccate prima della lavorazione. La logistica determina
+    percorsi, deposito e separazione dagli ospiti.
+  en: Goods are regularly delivered and stored before processing. Logistics determine delivery routes,
+    storage area, and separation from guests.
+uses:
+- pragmaticbim:use/gastronomie
+tags:
+- logistik
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/waren-anliefern-und-lagern-receiving-store
+  sort_order: 1
+  name:
+    de: Annahme und Lager
+    fr: Réception et stockage
+    it: Ricezione e deposito
+    en: Receiving and storage
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/laderampe
+    to_room_type: pragmaticbim:room-type/annahmelager
+  adds:
+  - pragmaticbim:room-type/laderampe
+  - pragmaticbim:room-type/annahmelager
+- id: pragmaticbim:scenario-option/waren-anliefern-und-lagern-cold-store
+  sort_order: 2
+  name:
+    de: Annahme und Kühllager
+    fr: Réception et chambre froide
+    it: Ricezione e cella frigorifera
+    en: Receiving and cold store
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/annahmelager
+    to_room_type: pragmaticbim:room-type/kuehlraum
+  adds:
+  - pragmaticbim:room-type/annahmelager
+  - pragmaticbim:room-type/kuehlraum

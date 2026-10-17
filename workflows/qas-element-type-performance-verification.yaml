@@ -1,0 +1,95 @@
+id: pragmaticbim:workflow/qas-element-type-performance-verification
+code: QAS-ELEMENT-PERF
+sort_order: 79
+name:
+  de: Bauteiltypen gegen Leistungsanforderungen prüfen
+  fr: Contrôler les types d'éléments par rapport aux exigences de performance
+  it: Verificare i tipi di elementi rispetto ai requisiti prestazionali
+  en: Check component types against performance requirements
+description:
+  de: |-
+    Bauteiltypen von Wänden, Decken, Fenstern und Türen gegen die Leistungsanforderungen prüfen, die aus den gewählten Rahmenbedingungen folgen, damit jeder Typ nachweislich erfüllt, was bestellt wurde.
+
+    **Ausgangslage**
+    - Energiestandard, Treibhausgasziel, Schallschutz und Erdbeben setzen Sollwerte, die in getrennten Fachberichten stehen und an keinem Bauteiltyp zusammenlaufen.
+    - Ein Typ, der einen Wert verfehlt, fällt erst im Nachweis, bei der Zertifizierung oder bei der Abnahme auf.
+
+    **Ziel & Nutzen**
+    - Die Sollwerte der gewählten Stufen und der Raumbeziehungen jedem Bauteiltyp zuordnen und mit seinen Kennwerten vergleichen.
+    - Für jeden Typ und jede Anforderung zeigen, ob sie erfüllt, nicht erfüllt oder mangels Angaben offen ist.
+
+    **Ablauf**
+    1. Gewählte Rahmenbedingungen, Architekturmodell mit Räumen und Bauteilkatalog mit Kennwerten bereitstellen.
+    2. Sollwerte den betroffenen Bauteiltypen zuordnen und automatisiert mit Wärmeschutz, Schallschutz, Brandschutz, Tragfähigkeit und Treibhausgasen der Typen vergleichen.
+    3. Nicht erfüllte und offene Anforderungen dokumentieren, fachlich beurteilen und über Typwechsel oder angepasste Kennwerte bereinigen.
+
+    **Lieferergebnis**
+    - Bauteilkatalog mit nachvollziehbarem Erfüllungsstand je Typ und Anforderung
+    - Prüfbericht mit offenen, akzeptierten und bereinigten Abweichungen
+  fr: |-
+    Contrôler les types d'éléments des murs, dalles, fenêtres et portes par rapport aux exigences de performance découlant des conditions-cadres choisies, afin que chaque type remplisse de manière vérifiable ce qui a été commandé.
+
+    **Situation de départ**
+    - Standard énergétique, objectif de gaz à effet de serre, isolation acoustique et séisme fixent des valeurs de référence consignées dans des rapports spécialisés distincts, qui ne convergent sur aucun type d'élément.
+    - Un type qui manque une valeur n'est remarqué qu'au justificatif, à la certification ou à la réception.
+
+    **Objectif et bénéfice**
+    - Attribuer à chaque type d'élément les valeurs de référence des niveaux choisis et des relations entre locaux, et les comparer à ses caractéristiques.
+    - Indiquer pour chaque type et chaque exigence si celle-ci est remplie, non remplie ou ouverte faute d'indications.
+
+    **Déroulement**
+    1. Fournir les conditions-cadres choisies, la maquette d'architecture avec les locaux et le catalogue des éléments avec leurs caractéristiques.
+    2. Attribuer les valeurs de référence aux types d'éléments concernés et les comparer automatiquement à l'isolation thermique, à l'isolation acoustique, à la protection incendie, à la capacité portante et aux gaz à effet de serre des types.
+    3. Documenter les exigences non remplies et ouvertes, les évaluer du point de vue spécialisé et les corriger par un changement de type ou des caractéristiques adaptées.
+
+    **Livrable**
+    - Catalogue des éléments indiquant de manière traçable l'état de conformité par type et par exigence
+    - Rapport de contrôle indiquant les écarts ouverts, acceptés et corrigés
+  it: |-
+    Verificare i tipi di elementi di pareti, solette, finestre e porte rispetto ai requisiti prestazionali che derivano dalle condizioni quadro scelte, affinché ogni tipo soddisfi in modo verificabile quanto ordinato.
+
+    **Situazione di partenza**
+    - Standard energetico, obiettivo di gas serra, isolamento acustico e sisma fissano valori di riferimento riportati in rapporti specialistici separati, che non confluiscono su nessun tipo di elemento.
+    - Un tipo che manca un valore viene notato solo nella verifica, alla certificazione o al collaudo.
+
+    **Obiettivo e beneficio**
+    - Attribuire a ogni tipo di elemento i valori di riferimento dei livelli scelti e delle relazioni tra locali, e confrontarli con le sue caratteristiche.
+    - Indicare per ogni tipo e requisito se è soddisfatto, non soddisfatto o aperto per mancanza di dati.
+
+    **Svolgimento**
+    1. Fornire le condizioni quadro scelte, il modello di architettura con i locali e il catalogo degli elementi con le loro caratteristiche.
+    2. Attribuire i valori di riferimento ai tipi di elementi interessati e confrontarli automaticamente con isolamento termico, isolamento acustico, protezione antincendio, capacità portante e gas serra dei tipi.
+    3. Documentare i requisiti non soddisfatti e aperti, valutarli dal punto di vista specialistico e risolverli con un cambio di tipo o caratteristiche adattate.
+
+    **Risultato della fornitura**
+    - Catalogo degli elementi con lo stato di conformità tracciabile per tipo e requisito
+    - Rapporto di verifica con gli scostamenti aperti, accettati e risolti
+  en: |-
+    Check wall, slab, window, and door component types against the performance requirements that follow from the chosen framework conditions, so every type demonstrably meets what was ordered.
+
+    **Starting point**
+    - Energy standard, greenhouse gas target, sound insulation, and earthquake set target values that sit in separate discipline reports and never meet on a component type.
+    - A type that misses a value is noticed only at verification, certification, or handover.
+
+    **Goal & benefit**
+    - Assign the target values of the chosen levels and of the space relationships to each component type and compare them with its values.
+    - Show for every type and requirement whether it is met, unmet, or open because information is missing.
+
+    **Process**
+    1. Provide the chosen framework conditions, the architecture model with spaces, and the component catalogue with its values.
+    2. Assign target values to the affected component types and automatically compare them with the thermal, acoustic, fire, load-bearing, and greenhouse gas values of the types.
+    3. Document unmet and open requirements, get a specialist assessment, and resolve them by changing the type or adjusting its values.
+
+    **Deliverable**
+    - Component catalogue showing traceably how far each type meets each requirement
+    - Check report showing open, accepted, and resolved deviations
+workflow_group: fachpruefung
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/building-physics
+- pragmaticbim:domain/structural
+comment: Activated by PG-33 Erdbeben, PG-34 Energiestandard, PG-35 Treibhausgasziel and PG-38 Schallschutz. Goal levels preset target attributes on the building, walls, slabs and spaces via performance_targets (ePset_BuildingRequirement, ePset_WallRequirement, ePset_SlabRequirement, ePset_SpaceRequirement). The seismic structure class is a building property and sits on ePset_BuildingRequirement only. Each target attribute names its contract key in performance_property_key (resistance_rating, u_value, airborne_sound_rating_db, impact_sound_rating_db, seismic_structure_class, gwp_embodied) and the attribute with the delivered value (verified_by). Targets become PerformanceRequirement records; outcome is MatchChange met / unmet / unknown per element type. DES-WALL-REQUIREMENTS builds the wall requirement profiles; QAS-ACOUSTIC checks placed components for sound and thermal only. Airtightness n50 is a building-level key and has no element attribute yet.

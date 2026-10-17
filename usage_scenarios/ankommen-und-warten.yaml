@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/ankommen-und-warten
+code: US-HE-01
+sort_order: 2
+name:
+  de: Ankommen und warten
+  fr: Arriver et attendre
+  it: Arrivare e attendere
+  en: Arriving and waiting
+description:
+  de: Patientinnen, Patienten und Begleitpersonen kommen an und warten auf ihre Versorgung. Das Aufrufsystem
+    entscheidet über Wartefläche, Wege und Privatheit.
+  fr: Les patients et leurs accompagnants arrivent et attendent leur prise en charge. Le système d'appel
+    détermine l'attente, les trajets et l'intimité.
+  it: Pazienti e accompagnatori arrivano e attendono la presa in carico. Il sistema di chiamata determina
+    attesa, percorsi e riservatezza.
+  en: Patients and accompanying people arrive and wait for care. The calling system determines waiting
+    area, travel, and privacy.
+uses:
+- pragmaticbim:use/gesundheit
+tags:
+- patientenweg
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/ankommen-und-warten-waiting-room
+  sort_order: 1
+  name:
+    de: Wartezimmer
+    fr: Salle d'attente
+    it: Sala d'attesa
+    en: Waiting room
+  adds:
+  - pragmaticbim:room-type/wartezimmer
+- id: pragmaticbim:scenario-option/ankommen-und-warten-direct
+  sort_order: 2
+  name:
+    de: Direkter Aufruf in den Behandlungsraum
+    fr: Appel direct en salle de traitement
+    it: Chiamata diretta nel locale di trattamento
+    en: Direct rooming
+  adds:
+  - pragmaticbim:room-type/behandlungsraum

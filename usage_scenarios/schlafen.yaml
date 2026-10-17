@@ -1,0 +1,57 @@
+id: pragmaticbim:usage-scenario/schlafen
+code: US-WH-22
+sort_order: 5
+name:
+  de: Schlafen
+  fr: Dormir
+  it: Dormire
+  en: Sleeping
+description:
+  de: Bewohnende schlafen jede Nacht in der Wohnung. Ein abgetrenntes Zimmer oder
+    ein Teil des Wohnraums entscheidet über Zimmerzahl, Fläche und wie ungestört der
+    Schlaf vom übrigen Wohnen ist.
+  fr: Les habitants dorment chaque nuit dans le logement. Une chambre séparée ou une
+    partie du séjour décide du nombre de pièces, de la surface et du calme du sommeil
+    par rapport au reste du logement.
+  it: Gli abitanti dormono ogni notte nell'alloggio. Una camera separata o una parte
+    del soggiorno decide numero di locali, superficie e quanto il sonno resta indisturbato
+    dal resto dell'abitare.
+  en: Residents sleep in the dwelling every night. A separate room or part of the
+    living room decides the room count, the area, and how far sleep stays undisturbed
+    by the rest of the home.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- wohnalltag
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/schlafen-bedroom
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-standard
+  - pragmaticbim:project-goal-level/fit-out-elevated
+  - pragmaticbim:project-goal-level/fit-out-premium
+  sort_order: 1
+  name:
+    de: Eigenes Schlafzimmer
+    fr: Chambre séparée
+    it: Camera da letto separata
+    en: Separate bedroom
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/schlafzimmer
+  target: pragmaticbim:room-type/wohnung
+  adds:
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/schlafzimmer
+- id: pragmaticbim:scenario-option/schlafen-living-room
+  sort_order: 2
+  name:
+    de: Teil des Wohnraums
+    fr: Partie du séjour
+    it: Parte del soggiorno
+    en: Part of the living room
+  target: pragmaticbim:room-type/wohnung
+  adds:
+  - pragmaticbim:room-type/wohnzimmer

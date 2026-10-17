@@ -15,22 +15,22 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - ZU
-  - AB
-  - AU
-  - FO
+    - ZU
+    - AB
+    - AU
+    - FO
   fr:
-  - ZU
-  - AB
-  - AU
-  - FO
+    - ZU
+    - AB
+    - AU
+    - FO
   it:
-  - ZU
-  - AB
-  - AU
-  - FO
+    - ZU
+    - AB
+    - AU
+    - FO
   en:
-  - ZU
-  - AB
-  - AU
-  - FO
+    - ZU
+    - AB
+    - AU
+    - FO

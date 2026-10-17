@@ -1,5 +1,5 @@
 id: pragmaticbim:project-goal/facility-management
-sort_order: 25
+sort_order: 150
 group: rahmenbedingungen
 code: PG-04
 name:
@@ -14,19 +14,48 @@ tag:
   en: Operation
 description:
   de: |-
-    Festgelegt wird, wer das Gebäude betreibt und mit welchen Systemen: ob der Betreiber Raum- und Anlagenlisten braucht, bewirtschaftete Objekte im 3D-Modell oder einen Import über COBie. Davon hängt ab, welche Informationen am Projektende übergeben werden müssen. Ohne diese Festlegung werden Betriebsdaten am Projektende nacherfasst, oft als kostentreibender Nachtrag.
+    Festgelegt wird, wer das Gebäude betreibt und mit welchen Systemen: ob der Betreiber Raum- und Anlagenlisten braucht, bewirtschaftete Objekte im 3D-Modell oder einen Import über COBie. Davon hängt ab, welche Informationen am Projektende übergeben werden müssen.
+
+    Dazu gehört auch, was verbaut wurde. Ansprüche kommen oft Jahre nach der Übergabe, nach einem Wasserschaden, einem Brand oder einem Produktrückruf. Wer dann belegen kann, welches Produkt wo eingebaut ist, verhandelt über Fakten statt über Vermutungen.
+
+    Ohne diese Festlegung werden Betriebsdaten am Projektende nacherfasst, oft als kostentreibender Nachtrag. Was verbaut ist, lässt sich später nur noch am offenen Bauteil feststellen.
   fr: |-
     Cette condition-cadre fixe qui exploite le bâtiment et avec quels systèmes: listes de locaux et d'installations, objets gérés dans la maquette 3D ou import COBie. Elle détermine quelles informations doivent être remises à la fin du projet.
 
-    Sans cette décision, les données d'exploitation sont saisies après coup, souvent par un avenant coûteux.
+    Elle couvre aussi ce qui a été mis en œuvre. Les prétentions surviennent souvent des années après la remise, à la suite d'un dégât d'eau, d'un incendie ou d'un rappel de produit. Qui peut alors prouver quel produit est installé à quel endroit négocie sur des faits plutôt que sur des suppositions.
+
+    Sans cette décision, les données d'exploitation sont saisies après coup, souvent par un avenant coûteux. Ce qui a été mis en œuvre ne peut ensuite être constaté qu'en ouvrant l'élément.
   it: |-
     Questa condizione quadro stabilisce chi gestisce l'edificio e con quali sistemi: elenchi di locali e impianti, oggetti gestiti nel modello 3D oppure importazione COBie. Ne dipende quali informazioni devono essere consegnate alla fine del progetto.
 
-    Senza questa decisione, i dati di esercizio vengono rilevati a posteriori, spesso come variante costosa.
+    Ne fa parte anche ciò che è stato messo in opera. Le pretese emergono spesso anni dopo la consegna, in seguito a un danno d'acqua, a un incendio o al richiamo di un prodotto. Chi allora può dimostrare quale prodotto è installato e dove tratta su fatti anziché su supposizioni.
+
+    Senza questa decisione, i dati di esercizio vengono rilevati a posteriori, spesso come variante costosa. Ciò che è stato messo in opera si può poi accertare solo aprendo il componente.
   en: |-
     This framework condition determines who operates the building and with which systems: space and equipment lists, managed objects in the 3D model, or a COBie import. That decision determines which information must be handed over at the end of the project.
 
-    Without it, operations data is captured afterwards, often as a costly change order.
+    This also covers what was installed. Claims often arise years after handover, after water damage, a fire, or a product recall. Whoever can then show which product is installed where negotiates on facts rather than assumptions.
+
+    Without it, operations data is captured afterwards, often as a costly change order. What was installed can then only be established by opening up the component.
+practice:
+  de:
+    title: Asbest im Fensterkitt
+    body: |-
+      Bei einem Umbau sollten die Fenster ersetzt werden. Erst beim Ausbau zeigte sich, dass Fensterkitt und Fugen asbesthaltig waren. Die Arbeiten wurden gestoppt, ein Schadstoffgutachten bestellt und eine Spezialfirma mit dem Ausbau beauftragt. Der Terminplan verschob sich um Wochen, und die Sanierung kam als ungeplante Mehrkosten dazu. Bestandspläne gab es, aber niemand hatte festgehalten, welche Produkte verbaut worden waren.
+
+      Rund drei Viertel der Gebäude, die vor 1990 erstellt wurden, enthalten laut Suva noch Asbest. Damals war er ein zugelassener und verbreiteter Baustoff. Heute wird jede Stelle, an der er stecken könnte, zum Termin- und Kostenrisiko.
+
+      Asbest wird nicht der letzte Stoff sein, der später neu bewertet wird. Weltweit sind über 350'000 Chemikalien und Gemische für Produktion und Verwendung registriert. In der EU sind rund 21'500 Stoffe unter REACH registriert, und bei rund drei Vierteln der geprüften Registrierungen fehlten wichtige Angaben. Wer heute festhält, welches Produkt wo verbaut ist, weiss morgen, wo er suchen muss und wo nicht.
+    lesson: Was heute nicht festgehalten wird, wird in fünfzig Jahren sondiert.
+  en:
+    title: Asbestos in the window putty
+    body: |-
+      During a conversion, the windows were to be replaced. Only when they were removed did it turn out that the window putty and joints contained asbestos. Work was stopped, a hazardous-substances survey was commissioned, and a specialist firm was brought in for the removal. The schedule slipped by weeks, and the remediation came on top as unplanned extra cost. Existing drawings were available, but nobody had recorded which products had been installed.
+
+      According to Suva, around three quarters of buildings constructed before 1990 still contain asbestos. At the time it was an approved and widely used building material. Today every spot where it might be hidden becomes a schedule and cost risk.
+
+      Asbestos will not be the last substance to be reassessed later. Worldwide, more than 350'000 chemicals and mixtures are registered for production and use. In the EU, around 21'500 substances are registered under REACH, and around three quarters of the registrations checked lacked important information. Whoever records today which product is installed where will know tomorrow where to look and where not to.
+    lesson: What is not recorded today will have to be opened up in fifty years.
 status: active
 comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (explizit, nicht kumulativ).'
 levels:
@@ -68,6 +97,8 @@ levels:
   - pragmaticbim:workflow/opr-facility-management-architecture-model
   - pragmaticbim:workflow/opr-facility-management-point-cloud
   - pragmaticbim:workflow/hov-native-model-handover
+  - pragmaticbim:workflow/hov-product-pass-gtin
+  - pragmaticbim:workflow/hov-product-pass-serial-number
   comment: Explicit set at level 3D-Übergabe (sort_order 2); not cumulative.
 - id: pragmaticbim:project-goal-level/facility-management-cobie
   code: OPS-03
@@ -85,6 +116,8 @@ levels:
   status: active
   activated_workflows:
   - pragmaticbim:workflow/hov-cobie-data-delivery
+  - pragmaticbim:workflow/hov-product-pass-gtin
+  - pragmaticbim:workflow/hov-product-pass-serial-number
   comment: Explicit set at level COBie (sort_order 3); not cumulative.
 - id: pragmaticbim:project-goal-level/facility-management-optimization
   code: OPS-04

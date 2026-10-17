@@ -1,11 +1,8 @@
-"""Explicit per-picture brand-engraving specs for catalog PNGs.
+"""Explicit per-picture brand-engraving placement for catalog PNGs.
 
-Placement and size are keyed by catalog entry ``id`` so tuning one card does
-not change another. Host selection remains geometric; only the flags and
-stamp size below are fixed per picture.
-
-``stamp_width`` (metres) is absolute letter-run length on the host face.
-When omitted, ``scale`` multiplies the procedural size from the host AABB.
+Placement is keyed by catalog entry ``id`` so tuning one card does not
+change another. Host selection remains geometric. Letter size is shared:
+the renderer sizes the wordmark from the camera frame.
 """
 
 from __future__ import annotations
@@ -29,12 +26,9 @@ class EngraveSpec:
     center_along_wall: bool = False
     # Optional exact IfcWall.Name host for this picture.
     wall_name: str | None = None
-    scale: float = 1.0
-    # Absolute horizontal/vertical stamp width in metres; wins over ``scale``.
-    stamp_width: float | None = None
 
 
-# Defaults: highest horizontal plate, procedural size (scale 1.0).
+# Defaults: highest horizontal plate.
 _DEFAULT = EngraveSpec()
 
 # Fixed per catalog picture id (see catalog/sample_data.py).
@@ -50,37 +44,25 @@ ENGRAVE_BY_ID: dict[str, EngraveSpec] = {
         rotate_90=True,
         center_along_wall=True,
     ),
-    "turning-radius-01": EngraveSpec(prefer_lowest=True, stamp_width=3.5),
-    "decision-volume-01": EngraveSpec(
-        prefer_lowest=True,
-        stamp_width=1.6,
-    ),
+    "turning-radius-01": EngraveSpec(prefer_lowest=True),
+    "decision-volume-01": EngraveSpec(prefer_lowest=True),
     "movement-clearance-01": EngraveSpec(
         prefer_wall=True,
         wall_name="Rueckwand",
         wall_top=True,
     ),
-    "building-law-parcel-01": EngraveSpec(prefer_lowest=True, stamp_width=4.0),
-    "surrounding-building-01": EngraveSpec(prefer_lowest=True, stamp_width=4.0),
-    "construction-logistics-01": EngraveSpec(prefer_lowest=True, stamp_width=4.0),
-    "planning-constraint-01": EngraveSpec(prefer_lowest=True, stamp_width=4.0),
-    "umbau-perimeter-01": EngraveSpec(
-        prefer_lowest=True,
-        stamp_width=1.6,
-    ),
-    "cladding-exterior-01": EngraveSpec(prefer_lowest=True, scale=2.5),
+    "building-law-parcel-01": EngraveSpec(prefer_lowest=True),
+    "surrounding-building-01": EngraveSpec(prefer_lowest=True),
+    "construction-logistics-01": EngraveSpec(prefer_lowest=True),
+    "planning-constraint-01": EngraveSpec(prefer_lowest=True),
+    "umbau-perimeter-01": EngraveSpec(prefer_lowest=True),
+    "cladding-exterior-01": EngraveSpec(prefer_lowest=True),
     "footing-pad-01": EngraveSpec(far_corner=True),
     # Column: near-corner brand so text sits in front of the centred column.
     "column-01": EngraveSpec(),
-    # Slab hierarchy cards: wide roof plate + isometric foreshortening —
-    # high scale fills the plate and tallens glyphs on the flat top.
-    "slab-base-01": EngraveSpec(scale=5.0),
-    "slab-floor-01": EngraveSpec(scale=5.0),
-    "slab-roof-01": EngraveSpec(scale=5.0),
-    "slab-balcony-01": EngraveSpec(scale=5.0),
-    # Tree: lateral terrain tip; absolute width so other cards stay untouched.
-    "tree-01": EngraveSpec(side_corner=True, stamp_width=2.8),
-    "retention-01": EngraveSpec(side_corner=True, stamp_width=2.8),
+    # Tree: lateral terrain tip so the crown does not hide the brand.
+    "tree-01": EngraveSpec(side_corner=True),
+    "retention-01": EngraveSpec(side_corner=True),
     # Furniture: brand on the back wall (same as other interior wall cards).
     "furniture-01": EngraveSpec(prefer_wall=True, wall_top=True),
     "built-in-furniture-kitchen-01": EngraveSpec(prefer_wall=True, wall_top=True),
@@ -88,7 +70,7 @@ ENGRAVE_BY_ID: dict[str, EngraveSpec] = {
     "space-parking-01": EngraveSpec(prefer_wall=True),
     "space-elevator-01": EngraveSpec(prefer_wall=True, wall_top=True),
     "space-vorsatzschale-01": EngraveSpec(prefer_wall=True, wall_top=True),
-    "detail-reference-01": EngraveSpec(prefer_wall=True, wall_top=True, scale=0.8),
+    "detail-reference-01": EngraveSpec(prefer_wall=True, wall_top=True),
     "wall-exterior-01": EngraveSpec(prefer_wall=True, wall_top=True),
     "wall-interior-01": EngraveSpec(prefer_wall=True, wall_top=True),
     "wall-interior-lb-01": EngraveSpec(prefer_wall=True, wall_top=True),
@@ -100,6 +82,7 @@ ENGRAVE_BY_ID: dict[str, EngraveSpec] = {
     "door-interior-01": EngraveSpec(prefer_wall=True, wall_top=True),
     "window-interior-01": EngraveSpec(prefer_wall=True, wall_top=True),
     "roofing-insulation-01": EngraveSpec(prefer_wall=True, wall_top=True),
+    "roof-overflow-01": EngraveSpec(prefer_wall=True, wall_top=True),
 }
 
 
@@ -121,8 +104,6 @@ def engrave_kwargs_for(entry_id: str) -> dict[str, Any]:
         "engrave_rotate_90": spec.rotate_90,
         "engrave_center_along_wall": spec.center_along_wall,
         "engrave_wall_name": spec.wall_name,
-        "engrave_scale": spec.scale,
-        "engrave_stamp_width": spec.stamp_width,
     }
 
 

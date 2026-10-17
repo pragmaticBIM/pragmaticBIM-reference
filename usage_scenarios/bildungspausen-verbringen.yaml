@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/bildungspausen-verbringen
+code: US-BI-04
+sort_order: 5
+name:
+  de: Pausen verbringen
+  fr: Passer les pauses
+  it: Trascorrere le pause
+  en: Spending breaks
+description:
+  de: Lernende verbringen Pausen gemeinsam. Der Aufenthaltsort entscheidet über Aufsicht, Lärm und die
+    Nutzung von Innen- und Aussenflächen.
+  fr: Les apprenants passent les pauses ensemble. Le lieu de séjour détermine la surveillance, le bruit
+    et l'usage des espaces intérieurs et extérieurs.
+  it: I discenti trascorrono insieme le pause. Il luogo determina sorveglianza, rumore e uso degli spazi
+    interni ed esterni.
+  en: Learners spend breaks together. The location determines supervision, noise, and the use of indoor
+    and outdoor areas.
+uses:
+- pragmaticbim:use/bildung
+tags:
+- pause
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/bildungspausen-verbringen-assembly-hall
+  sort_order: 1
+  name:
+    de: Aula
+    fr: Aula
+    it: Aula magna
+    en: Assembly hall
+  adds:
+  - pragmaticbim:room-type/aula
+- id: pragmaticbim:scenario-option/bildungspausen-verbringen-courtyard
+  sort_order: 2
+  name:
+    de: Innenhof
+    fr: Cour intérieure
+    it: Corte interna
+    en: Courtyard
+  adds:
+  - pragmaticbim:room-type/innenhof

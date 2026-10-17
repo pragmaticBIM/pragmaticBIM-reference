@@ -1,0 +1,112 @@
+id: pragmaticbim:project-goal/finanzierung
+sort_order: 1012
+group: rahmenbedingungen
+code: PG-14
+name:
+  de: Finanzierung
+  fr: Financement
+  it: Finanziamento
+  en: Financing
+tag:
+  de: Finanzierung
+  fr: Financement
+  it: Finanziamento
+  en: Financing
+description:
+  de: |-
+    Die Finanzierungsform entscheidet, ob Wohnungen vermietet, einzeln veräussert oder mit dem Gebäude zusammen gehalten werden.
+
+    Ohne diese Festlegung bleibt offen, wem die Wohnungen gehören und wie sie übergeben werden. Erschliessung, Nebenräume und die Schnittstelle zu Verkauf oder Vermietung folgen daraus.
+  fr: |-
+    Le mode de financement décide si les logements sont loués, vendus à part ou restent liés à l'immeuble.
+
+    Sans cette décision, il reste ouvert à qui appartiennent les logements et comment ils sont remis. Desserte, locaux annexes et l'interface avec la vente ou la location en découlent.
+  it: |-
+    La forma di finanziamento decide se gli alloggi si affittano, si vendono singolarmente o restano legati all'edificio.
+
+    Senza questa decisione resta aperto a chi appartengono gli alloggi e come vengono consegnati. Accessi, locali accessori e l'interfaccia con la vendita o la locazione ne derivano.
+  en: |-
+    The form of financing decides whether dwellings are let, sold on their own, or held together with the building.
+
+    Without this decision it stays open who owns the dwellings and how they are handed over. Access, ancillary rooms, and the interface to sale or letting follow from that.
+status: active
+uses:
+- pragmaticbim:use/wohnen
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/finanzierung-vermietung
+  code: FIN-01
+  sort_order: 1
+  name:
+    de: Vermietung
+    fr: Location
+    it: Locazione
+    en: Rental
+  description:
+    de: Die Wohnungen bleiben bei der Bauherrschaft und werden vermietet.
+    fr: Les logements restent au maître d'ouvrage et sont loués.
+    it: Gli alloggi restano al committente e vengono affittati.
+    en: The dwellings stay with the client and are let.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/finanzierung-genossenschaft
+  code: FIN-02
+  sort_order: 2
+  name:
+    de: Genossenschaft
+    fr: Coopérative
+    it: Cooperativa
+    en: Cooperative
+  description:
+    de: Die Bewohnenden tragen die Genossenschaft. Belegung und Mietzins folgen deren Zweck.
+    fr: Les habitants sont membres de la coopérative. L'attribution et le loyer suivent son but.
+    it: Chi abita è membro della cooperativa. Assegnazione e pigione seguono il suo scopo.
+    en: The people who live there are members of the cooperative. Allocation and rent follow its purpose.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/finanzierung-gemischt
+  code: FIN-03
+  sort_order: 3
+  name:
+    de: Miete und Stockwerkeigentum
+    fr: Location et propriété par étages
+    it: Locazione e proprietà per piani
+    en: Rental and condominium
+  description:
+    de: Ein Teil der Wohnungen wird vermietet, ein Teil als Stockwerkeigentum veräussert.
+    fr: Une part des logements est louée, une part est vendue en propriété par étages.
+    it: Una parte degli alloggi è affittata, una parte è venduta in proprietà per piani.
+    en: Some dwellings are let, some are sold as condominium units.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/finanzierung-stockwerkeigentum
+  code: FIN-04
+  sort_order: 4
+  name:
+    de: Stockwerkeigentum
+    fr: Propriété par étages
+    it: Proprietà per piani
+    en: Condominium
+  description:
+    de: Die Wohnungen werden einzeln als Stockwerkeigentum veräussert.
+    fr: Les logements sont vendus individuellement en propriété par étages.
+    it: Gli alloggi sono venduti singolarmente in proprietà per piani.
+    en: The dwellings are sold individually as condominium units.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/finanzierung-verkauf
+  code: FIN-05
+  sort_order: 5
+  name:
+    de: Verkauf
+    fr: Vente de l'immeuble
+    it: Vendita dell'edificio
+    en: Building sale
+  description:
+    de: Das Gebäude wird als Ganzes veräussert, ohne Aufteilung in Stockwerkeigentum.
+    fr: L'immeuble est vendu dans son ensemble, sans division en propriété par étages.
+    it: L'edificio è venduto nel suo insieme, senza divisione in proprietà per piani.
+    en: The building is sold as a whole, without a split into condominium units.
+  status: active
+  comment: ''

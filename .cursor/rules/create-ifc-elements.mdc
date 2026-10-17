@@ -1,0 +1,510 @@
+---
+description: How to add IFC catalog sample generators (follow Space as the reference)
+globs: generators/**/*.py,catalog/**/*.py,render/**/*.py,runner.py
+alwaysApply: false
+---
+
+# Create IFC catalog elements
+
+Use **Space** (`generators/space.py` + `catalog/*` + `runner.py`) as the template when adding a new element type (wall, door, slab standalone, etc.).
+
+## Pipeline
+
+```
+catalog/sample_data.py  →  catalog/mapping.py  →  generators/<type>.py  →  output/{id}.ifc + .png
+         ↑                         ↑
+   geometry + overrides    loads elements/<slug>.yaml via catalog/schema.py
+```
+
+Run: `python runner.py --output-dir output`
+
+## Checklist for a new element type
+
+1. **Generator** `generators/<type>.py`
+   - Export `generate_<type>(params) -> (ifc_file, primary_entity)`
+   - Reuse `create_project_shell`, `place_product`, `assign_pset`, `assign_qto` from `generators/base.py`
+   - Reuse geometry helpers from `generators/parts.py` (and `wall`/`slab`/`covering` when composing a vignette)
+   - Units: **metres**; Body representation on Model/Body/MODEL_VIEW
+   - Optional `with_context` vignette for readable isometric previews (Space adds neighbour + fabric)
+
+2. **Schema defaults** in `catalog/schema.py`
+   - Element slug → `elements/<slug>.yaml`
+   - Stable defaults for value-list tokens (German tokens from `values/*.yaml`)
+   - Resolve active IFC4 attrs into entity fields / psets / qtos (see `build_space_attributes_from_yaml`)
+
+3. **Mapping** in `catalog/mapping.py`
+   - Register in `ELEMENT_GENERATORS`
+   - Add `map_<type>_params(entry) -> params` (geometry from entry; attrs from YAML + entry overrides)
+   - Keep Space mapping as the pattern: entry overrides win over curated defaults
+
+4. **Sample** in `catalog/sample_data.py`
+   - Minimal entry: `id`, `element_type`, required geometry, optional attr overrides
+
+5. **Runner** `runner.py`
+   - Dispatch the new type (do not hardcode Space-only forever)
+   - Write `{id}.ifc` + catalog `{id}.png` + print `{id}-print.tif` via `render.isometric.render_isometric`
+   - Catalog PNG: 1024² RGB with brand engraving; print TIFF: 1200² @ 600 DPI Device CMYK, no engraving/watermark
+   - Accent the primary product GUID(s) in the PNG
+
+## Space reference (do not reinvent)
+
+| Concern | Where |
+|---------|--------|
+| IfcSpace + extruded body + Qto/Pset | `generators/space.py` → `generate_space` |
+| Room vignette (slabs, coverings, partition, neighbour) | `_add_space_vignette` |
+| YAML → attributes | `catalog/schema.py` + `elements/spaces-interior.yaml` |
+| Catalog entry → params | `map_space_params` |
+| Batch + preview | `runner.py` |
+
+## Spatial structure pictures (Project / Site / Building / Storey)
+
+Shared opaque-slab vignette for hierarchy catalog cards (not translucent Space volumes):
+
+| Concern | Where |
+|---------|--------|
+| Multi-storey shell | `generators/base.py` → `create_multi_storey_shell` |
+| Plot + 3 IfcSlab plates + highlight modes | `generators/spatial_structure.py` → `generate_spatial_structure` |
+| YAML attributes (Name, Phase, psets) | `catalog/schema.py` `build_element_attributes_from_yaml` via `map_spatial_structure_params` |
+| Graded storey accents | `runner.py` `_primary_colors` + `render.isometric.primary_colors` |
+| Published PNGs | `media/images/{project,site,building,storey}.png` via `picture_link` |
+
+## Architectural slab pictures (Bodenplatte / Decke / Flachdach / Balkon)
+
+Same plot + three plates (+ projecting balcony) as the spatial-structure vignette; each card accents one plate:
+
+| Concern | Where |
+|---------|--------|
+| Highlight `slab-base` / `slab-floor` / `slab-roof` / `slab-balcony` | `generators/spatial_structure.py` |
+| YAML attrs (BASESLAB / FLOOR / ROOF / balcony FLOOR+IsExternal) | `map_slab_params` + `SLAB_*_DEFAULTS` in `catalog/schema.py` |
+| Samples | `catalog/sample_data.py` (`slab-base-01`, `slab-floor-01`, `slab-roof-01`, `slab-balcony-01`) |
+| Engraving | shared camera-frame size; default highest plate |
+| Published PNGs | `media/images/architecture-slab-{base,floor,flat-roof,balcony}.png` |
+
+## Architectural opening (Durchbruch / Aussparung)
+
+Interior-space fabric without spaces or ceiling; orange IfcOpeningElement in the partition:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/opening.py` → `generate_opening` |
+| YAML attrs (OPENING / RECESS) | `map_opening_params` + `OPENING_DEFAULTS` in `catalog/schema.py` |
+| Value list | `values/predefinedtype-opening-element.yaml` |
+| Sample | `catalog/sample_data.py` (`opening-void-01`) |
+| Published PNG/IFC | `media/images|attachments/architecture-opening-void.*` |
+
+## Exterior space (Aussenraum) + fabric (Aussenwand / Fassadenbekleidung / Aussentür / Aussenfenster)
+
+Shared balcony + facade vignette; space card accents the EXTERNAL IfcSpace.
+`spaces-exterior` keeps the walk-out terrace only — no BalconySlabUpper overhang;
+cladding covers the interior ceiling-slab edge (`cladding_covers_slab`).
+Fabric cards omit IfcSpace volumes and accent one product:
+Wall accent omits cladding, top slab, upper balcony, and suspended ceiling (open top).
+Preview engraves the brand at the top of the accent facade (same as Detailverweis).
+Cladding accent omits top slab, upper balcony, and suspended ceiling (open top;
+keeps the walk-out terrace — do not reintroduce BalconySlabUpper).
+Door accent omits the upper projecting balcony (keeps the walk-out terrace);
+cladding covers the interior ceiling-slab edge (`cladding_covers_slab`).
+Window accent omits the projecting balcony slabs; cladding covers both
+floor- and ceiling-slab front edges (`cladding_covers_slab`, no balcony).
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/exterior_fabric.py` → `generate_exterior_fabric` |
+| Shared geometry | exterior vignette in `generators/space.py` (`omit_primary_space`) |
+| YAML attrs | `map_exterior_fabric_params` + `WALL_EXTERIOR_*` / `CLADDING_*` / `DOOR_EXTERIOR_*` / `WINDOW_EXTERIOR_*` defaults |
+| Samples | `wall-exterior-01`, `cladding-exterior-01`, `door-exterior-01`, `window-exterior-01` |
+| Engraving | Wall / door / window: `ENGRAVE_BY_ID` prefer_wall + wall_top. Cladding: `prefer_lowest` |
+| Published PNGs | `media/images/{architecture-wall-exterior,architecture-wall-cladding-exterior,architecture-door-exterior,architecture-window-exterior}.png` |
+
+## Interior openings (Innentür / Revisionsöffnung / Innenfenster)
+
+Two-room interior vignette with exterior envelope walls around the slab and an
+interior door + window in the partition. Space card (`spaces-interior`) uses the
+same flags and drops the camera-facing envelope wall
+(`omit_camera_facing_envelope`) so the rooms stay visible. The floor slab
+stops on that open plane instead of projecting past it. Fabric cards omit
+spaces and accent the door or window. The door card also places a suspended
+ceiling over the primary room with an orange `TRAPDOOR` in that ceiling;
+the swing door stays visible from the open neighbour room.
+
+| Concern | Where |
+|---------|--------|
+| Geometry | `_add_space_vignette` flags `include_exterior_envelope` + `include_partition_openings` |
+| Generator | `generators/interior_fabric.py` → accents `door` / `window` |
+| YAML attrs | `map_interior_fabric_params` + `DOOR_INTERIOR_*` / `WINDOW_INTERIOR_*` defaults |
+| Samples | `door-interior-01`, `window-interior-01` (+ refreshed `space-office-01`) |
+| Published PNGs | `media/images/{architecture-door-interior,architecture-window-interior,spaces-interior}.png` |
+
+## Interior wall cladding (Wandbekleidung Innen)
+
+Same interior partition vignette as the Innenwand card. Accent a limited
+tile splashback (`IfcCovering` CLADDING) on the camera-facing partition face,
+with a schematic wall-hung washbasin in front. NetArea is splash width × height.
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/interior_fabric.py` → accent `cladding` |
+| YAML attrs | `map_interior_fabric_params` + `CLADDING_INTERIOR_DEFAULTS` |
+| Sample | `catalog/sample_data.py` (`wall-cladding-interior-01`) |
+| Engraving | `ENGRAVE_BY_ID["wall-cladding-interior-01"]` → prefer_wall + wall_top |
+| Published PNG/IFC | `media/images|attachments/architecture-wall-cladding-interior.*` |
+
+## Drywall reinforcement (Verstärkungsbereich Trockenbau)
+
+Same interior-wall vignette as the Innenwand card. Accent one limited backing
+panel (`IfcBuildingElementProxy`, ObjectType `Trockenbauverstärkung`) centred
+in the parallel partition. That host wall is drawn dotted and see-through.
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/interior_fabric.py` → accent `reinforcement` |
+| YAML attrs | `map_interior_fabric_params` + `DRYWALL_REINFORCEMENT_DEFAULTS` |
+| Sample | `catalog/sample_data.py` (`drywall-reinforcement-01`) |
+| Engraving | `ENGRAVE_BY_ID["drywall-reinforcement-01"]` → prefer_wall + wall_top |
+| Published PNG/IFC | `media/images|attachments/architecture-drywall-reinforcement.*` |
+
+## Detail reference (Detailverweis)
+
+Exterior-wall vignette (no top slab / ceiling) with Detailverweis volumes along the
+balcony–wall line: first detail flanks the door, second sits in the door opening.
+Preview engraves the brand at the top of the white facade wall:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/detail_reference.py` → `generate_detail_references` |
+| YAML attrs | `map_detail_reference_params` + `DETAIL_REFERENCE_DEFAULTS` |
+| Sample | `catalog/sample_data.py` (`detail-reference-01`) |
+| Graded oranges | `runner.py` `_DETAIL_REFERENCE_COLORS` (by Name: flank vs door) |
+| Engraving | `ENGRAVE_BY_ID["detail-reference-01"]` → prefer_wall + wall_top |
+| Published PNG/IFC | `media/images|attachments/architecture-detail-reference.*` |
+
+## Architectural beam (Unterzug / Überzug)
+
+Same atrium vignette as ``spaces-luftraum``; accent IfcBeams under a half top slab
+(gallery half kept; atrium half open so beams read from above):
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/beam.py` → `generate_beam` |
+| Shared geometry | Luftraum vignette (`top_slab_half`; void kept; no ceiling covering) |
+| YAML attrs | `map_beam_params` + `BEAM_DEFAULTS` in `catalog/schema.py` |
+| Sample | `catalog/sample_data.py` (`beam-01`) |
+| Published PNG/IFC | `media/images|attachments/architecture-beam.*` |
+
+## Architectural suspended ceiling (Abhangdecke)
+
+Same atrium vignette as ``spaces-luftraum``; accent IfcCovering CEILING under the beams:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/covering.py` → `generate_covering` (CEILING path) |
+| Shared geometry | Luftraum vignette (void kept; ceiling covering included) |
+| YAML attrs | `map_covering_params` + `CEILING_DEFAULTS` in `catalog/schema.py` |
+| Sample | `catalog/sample_data.py` (`ceiling-suspended-01`) |
+| Published PNG/IFC | `media/images|attachments/architecture-ceiling-suspended.*` |
+
+## Architectural footing (Fundament) / column (Stütze)
+
+Shared pad + base slab + column vignette for footing; column card omits the pad,
+closes the slab, and centres the column:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/footing.py` → `generate_footing` (`close_slab` / `omit_footing` / `highlight`) |
+| YAML attrs | `map_footing_params` / `map_column_params` + `FOOTING_*` / `COLUMN_*` defaults |
+| Samples | `footing-pad-01`, `column-01` |
+| Engraving | Footing: `far_corner`; column: near corner (in front of column) |
+| Published PNG/IFC | `media/images|attachments/architecture-{footing,column}.*` |
+
+## Architectural maintenance space (Wartungsraum)
+
+Floor slab + long multi-part monoblock (Ansaug→Filter→…→Ausblas) + 90 cm clear
+proxy in front of the Filter; accent IfcBuildingElementProxy:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/maintenance_space.py` → `generate_maintenance_space` |
+| YAML attrs (USERDEFINED + language ObjectType) | `map_maintenance_space_params` + `MAINTENANCE_SPACE_DEFAULTS` |
+| Value list | `values/objecttype-maintenance-space.yaml` (de/fr/it/en tokens) |
+| Sample | `catalog/sample_data.py` (`maintenance-space-01`) |
+| Published PNG/IFC | `media/images|attachments/architecture-maintenance-space.*` |
+
+## Architectural installation path (Einbringweg)
+
+L-corridor 2.5 m clear + door + corner (viewer-facing inner/end walls omitted);
+extended 2.4 m transparent path volume that clashes with a column; accent
+IfcBuildingElementProxy:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/installation_path.py` → `generate_installation_path` |
+| YAML attrs (USERDEFINED + Einbringweg) | `map_installation_path_params` + `INSTALLATION_PATH_DEFAULTS` |
+| Value list | `values/objecttype-installation-path.yaml` |
+| Sample | `catalog/sample_data.py` (`installation-path-01`) |
+| Engraving | `ENGRAVE_BY_ID["installation-path-01"]` → prefer_wall + wall_top |
+| Published PNG/IFC | `media/images|attachments/architecture-installation-path.*` |
+
+## Architectural turning radius (Wenderadius)
+
+Curved street clear of a building cube; translucent 2 m Lastzug Fahrkurve
+as a single extruded union envelope (outer outline of discrete home-plate
+poses with trailer cut-in); accent IfcBuildingElementProxy that overlaps
+the cube:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/turning_radius.py` → `generate_turning_radius` |
+| YAML attrs (USERDEFINED + Wenderadius) | `map_turning_radius_params` + `TURNING_RADIUS_DEFAULTS` |
+| Value list | `values/objecttype-turning-radius.yaml` |
+| Sample | `catalog/sample_data.py` (`turning-radius-01`) |
+| Engraving | `ENGRAVE_BY_ID["turning-radius-01"]` → prefer_lowest |
+| Published PNG/IFC | `media/images|attachments/architecture-turning-radius.*` |
+
+## Architectural decision volume (Entscheidungskörper)
+
+One closed storey (Wohnen, Schlafen, Küche, Bad), no roof. Three orange
+proxies in different rooms, each with its own reference and status
+(OPEN, APPROVED, SUPERSEDED). Door voids use IfcOpeningElement on continuous
+wall Bodies (no fragmented lintel/jamb solids). Wandfarbe spans the living
+room to the opposite partition. Preview uses a steep camera so the storey
+reads as a floor plan:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/decision_volume.py` → `generate_decision_volume` |
+| YAML attrs (USERDEFINED + Entscheidungskörper, DecisionReference, DecisionStatus) | `map_decision_volume_params` + `DECISION_VOLUME_DEFAULTS` |
+| Value lists | `values/objecttype-decision-volume.yaml`, `values/decision-status.yaml` |
+| Sample | `catalog/sample_data.py` (`decision-volume-01`) |
+| Engraving | `ENGRAVE_BY_ID["decision-volume-01"]` → prefer_lowest |
+| Published PNG/IFC | `media/images|attachments/architecture-decision-volume.*` |
+
+## Architectural movement clearance (Bewegungsfläche)
+
+Accessible wet room sized like a Fertigbad plan. Camera-facing front and the
+door side stay open. Schematic washbasin, 2 cm floor recess for the shower,
+and WC at the open front; one orange Wendefläche 1.20×1.20×1.50 on the left
+clear floor, forward of the basin and clear of the toilet:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/movement_clearance.py` → `generate_movement_clearance` |
+| YAML attrs (USERDEFINED + Bewegungsfläche) | `map_movement_clearance_params` + `MOVEMENT_CLEARANCE_DEFAULTS` |
+| Value lists | `values/objecttype-movement-clearance.yaml`, `values/name-movement-clearance.yaml` |
+| Sample | `catalog/sample_data.py` (`movement-clearance-01`) |
+| Engraving | `ENGRAVE_BY_ID["movement-clearance-01"]` → prefer_wall + wall_top on Rueckwand |
+| Published PNG/IFC | `media/images|attachments/architecture-movement-clearance.*` |
+
+## Building-law parcels (Baurechtliche Parzellen)
+
+Three translucent cadastral parcel volumes extend from −10 m to +10 m
+through a schematic terrain surface; accent all IfcBuildingElementProxy
+parcels (Name = Katasternummer):
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/building_law_parcel.py` → `generate_building_law_parcel` |
+| YAML attrs (USERDEFINED + Baurechtliche Parzelle) | `map_building_law_parcel_params` + `BUILDING_LAW_PARCEL_DEFAULTS` |
+| Value list | `values/objecttype-building-law-parcel.yaml` |
+| Sample | `catalog/sample_data.py` (`building-law-parcel-01`) |
+| Graded oranges | `runner.py` `_BUILDING_LAW_PARCEL_COLORS` |
+| Engraving | `ENGRAVE_BY_ID["building-law-parcel-01"]` → prefer_lowest |
+| Published PNG/IFC | `media/images|attachments/architecture-building-law-parcel.*` |
+
+## Construction logistics (Baustelleneinrichtungsobjekt)
+
+Yard plot + opaque building mass; accent fence, container, crane pad+mast,
+and storage proxies (Name = setup kind from value list; ObjectType =
+Baustelleneinricht):
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/construction_logistics.py` → `generate_construction_logistics` |
+| YAML attrs (USERDEFINED + Baustelleneinricht) | `map_construction_logistics_params` + `CONSTRUCTION_LOGISTICS_DEFAULTS` |
+| Value lists | `values/objecttype-construction-logistics.yaml`, `values/name-construction-logistics.yaml` |
+| Sample | `catalog/sample_data.py` (`construction-logistics-01`) |
+| Graded oranges | `runner.py` `_CONSTRUCTION_LOGISTICS_COLORS` (same Name shares colour) |
+| Engraving | `ENGRAVE_BY_ID["construction-logistics-01"]` → prefer_lowest |
+| Published PNG/IFC | `media/images|attachments/architecture-construction-logistics.*` |
+
+## Planning constraint (Rahmenbedingung)
+
+Plot + opaque building; accent flood zone, railway corridor, and flight
+corridor proxies (Name = constraint kind; ObjectType = Rahmenbedingung):
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/planning_constraint.py` → `generate_planning_constraint` |
+| YAML attrs (USERDEFINED + Rahmenbedingung) | `map_planning_constraint_params` + `PLANNING_CONSTRAINT_DEFAULTS` |
+| Value lists | `values/objecttype-planning-constraint.yaml`, `values/name-planning-constraint.yaml` |
+| Sample | `catalog/sample_data.py` (`planning-constraint-01`) |
+| Graded oranges | `runner.py` `_PLANNING_CONSTRAINT_COLORS` |
+| Engraving | `ENGRAVE_BY_ID["planning-constraint-01"]` → prefer_lowest |
+| Published PNG/IFC | `media/images|attachments/architecture-planning-constraint.*` |
+
+Bauenvelope is a Name on this element (`USERDEFINED`, ObjectType
+`Rahmenbedingung`), not a separate page. The value list is
+`values/name-planning-constraint.yaml`.
+
+## Architectural pitched roof (Steildach)
+
+Gable IfcRoof with attic IfcSpace whose top follows both roof slopes:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/roof.py` → `generate_pitched_roof` |
+| FacetedBrep helpers | `generators/parts.py` (`create_faceted_brep`, `create_brep_body_representation`) |
+| YAML attrs (GABLE_ROOF) | `map_roof_pitched_params` + `ROOF_PITCHED_DEFAULTS` |
+| Sample | `catalog/sample_data.py` (`roof-pitched-01`) |
+| Published PNG/IFC | `media/images|attachments/architecture-roof-pitched.*` |
+
+## Coordination zone (Koordinationszone)
+
+Luftraum roof/beam fabric (no IfcSpace volumes); accent one transparent
+IfcBuildingElementProxy wrapping the top slab and beams (XY flush with beam
+ends by default). Preview engraves the brand on the white floor plate:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/coordination_zone.py` → `generate_coordination_zone` |
+| Shared fabric | `generators/luftraum.py` (`omit_spaces`) |
+| YAML attrs (Koordinationszone) | `map_coordination_zone_params` + `COORDINATION_ZONE_DEFAULTS` |
+| Sample | `catalog/sample_data.py` (`coordination-zone-01`) |
+| Engraving | `ENGRAVE_BY_ID["coordination-zone-01"]` → prefer_lowest |
+| Published PNG/IFC | `media/images|attachments/architecture-coordination-zone.*` |
+
+## Architectural roofing / Gefälledämmung
+
+Flat roof slab + Attika + flush exterior cladding + Attika-top insulation;
+accent tapered IfcCovering ROOFING (+ Attika-top covering). Preview engraves
+the brand on the vertical facade cladding:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/roofing.py` → `generate_roofing` |
+| YAML attrs (ROOFING + IsExternal) | `map_roofing_params` + `ROOFING_DEFAULTS` in `catalog/schema.py` |
+| Sample | `catalog/sample_data.py` (`roofing-insulation-01`) |
+| Engraving | `ENGRAVE_BY_ID["roofing-insulation-01"]` → prefer_wall + wall_top |
+| Published PNG/IFC | `media/images|attachments/architecture-roof-drainage.*` |
+
+## Architectural roof overflow (Notüberlauf)
+
+Same flat-roof vignette; accent one rectangular IfcBuildingElementProxy.
+The proxy keeps only the spout outside the facade. Attika and cladding are
+boolean-cut on that footprint so the solids do not overlap:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/roofing.py` → `generate_roof_overflow` |
+| YAML attrs (USERDEFINED + Notüberlauf) | `map_roof_overflow_params` + `ROOF_OVERFLOW_DEFAULTS` |
+| Sample | `catalog/sample_data.py` (`roof-overflow-01`) |
+| Engraving | `ENGRAVE_BY_ID["roof-overflow-01"]` → prefer_wall + wall_top |
+| Published PNG/IFC | `media/images|attachments/architecture-roof-overflow.*` |
+
+## Parking spaces (Parkplätze)
+
+Three side-by-side PARKING bays flush to the head wall; one flooring over street
++ bays (flush to wall face); slab under street + bays + wall; 3 m street
+aisle at the same clear height. Preview engraves the brand on the head wall:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/parking.py` → `generate_parking` |
+| YAML attrs (PARKING, Name=P####) | `map_parking_params` + `parking_defaults` in `catalog/schema.py` |
+| Sample | `catalog/sample_data.py` (`space-parking-01`) |
+| Engraving | `ENGRAVE_BY_ID["space-parking-01"]` → prefer_wall |
+| Published PNG/IFC | `media/images|attachments/spaces-parking.*` |
+
+## Facing shell space (Vorsatzschale)
+
+Bathroom vignette: floor slab + Tragwand + 7 cm facing wall with 20 cm clear
+gap (accent IfcSpace ObjectType=Vorsatzschale) + schematic toilet in front.
+Preview engraves the brand on the structural wall:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/vorsatzschale.py` → `generate_vorsatzschale` |
+| YAML attrs (USERDEFINED + Vorsatzschale) | `map_vorsatzschale_params` + `vorsatzschale_defaults` |
+| Value lists | `values/predefinedtype-space-userdefined.yaml`, `values/objecttype-vorsatzschale.yaml` |
+| Sample | `catalog/sample_data.py` (`space-vorsatzschale-01`) |
+| Engraving | `ENGRAVE_BY_ID["space-vorsatzschale-01"]` → prefer_wall + wall_top |
+| Published PNG/IFC | `media/images|attachments/spaces-vorsatzschale.*` |
+
+## Architectural railing (Absturzsicherung / Geländer)
+
+Reuse the complete exterior-space balcony vignette (interior room, facade,
+openings, cladding, and walk-out terrace) and accent one simplified linear
+`IfcRailing` at the exposed slab edge. The sample uses `Status=TEMPORARY` to
+demonstrate an intermediate construction state:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/railing.py` → `generate_railing` |
+| YAML attrs | `map_railing_params` + `RAILING_DEFAULTS` in `catalog/schema.py` |
+| Value list | `values/predefinedtype-railing.yaml` |
+| Sample | `catalog/sample_data.py` (`railing-01`) |
+| Engraving | `ENGRAVE_BY_ID["railing-01"]` → prefer_wall + wall_top |
+| Published PNG/IFC | `media/images|attachments/architecture-railing.*` |
+
+## Landscape tree (Baum)
+
+Schematic IfcGeographicElement VEGETATION: crown sphere + trunk cylinder + root sphere:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/tree.py` → `generate_tree` |
+| YAML attrs (VEGETATION + Species) | `map_tree_params` + `TREE_DEFAULTS` in `catalog/schema.py` |
+| Value lists | `values/predefinedtype-geographic-element-vegetation.yaml`, `values/objecttype-tree.yaml`, `values/tree-species.yaml` |
+| Sample | `catalog/sample_data.py` (`tree-01`) |
+| Engraving | `render/engrave_specs.py` → `ENGRAVE_BY_ID["tree-01"]` (`side_corner`) |
+| Published PNG/IFC | `media/images|attachments/landscape-tree.*` |
+
+## Architectural alteration area (Umbauperimeter)
+
+Same closed storey plan as Entscheidungskörper (Wohnen, Schlafen, Küche, Bad).
+One transparent alteration volume covers the left rooms; `Name` carries the
+project number; dates and lifecycle status remain on the proxy for spatial
+history. Preview uses the same steep plan camera as decision volumes:
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/umbau_perimeter.py` → `generate_umbau_perimeter` |
+| Shared plan | `generators/decision_volume.py` → `add_closed_storey_plan` |
+| YAML attrs | `map_umbau_perimeter_params` + `UMBAU_PERIMETER_DEFAULTS` |
+| Value lists | `values/objecttype-umbau-perimeter.yaml`, `values/alteration-status.yaml` |
+| Sample | `catalog/sample_data.py` (`umbau-perimeter-01`) |
+| Engraving | `ENGRAVE_BY_ID["umbau-perimeter-01"]` → prefer_lowest |
+| Published PNG/IFC | `media/images|attachments/architecture-umbau-perimeter.*` |
+
+## Furniture (Möbel)
+
+Floor slab + back wall; schematic table and chair in front (both orange accents):
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/furniture.py` → `generate_furniture` |
+| YAML attrs (TABLE + cost interfaces) | `map_furniture_params` + `FURNITURE_DEFAULTS` |
+| Value list | `values/predefinedtype-furniture.yaml` |
+| Sample | `catalog/sample_data.py` (`furniture-01`) |
+| Engraving | `ENGRAVE_BY_ID["furniture-01"]` → prefer_wall + wall_top |
+| Published PNG/IFC | `media/images|attachments/furniture.*` |
+
+## Brand engraving (per picture)
+
+Placement is **fixed per catalog entry id** in
+`render/engrave_specs.py` (`ENGRAVE_BY_ID`). Host face is still chosen
+geometrically. Letter size is shared: the renderer derives one letter-run
+from the camera frame, so pictures are not retuned individually.
+
+| Concern | Where |
+|---------|--------|
+| Specs map | `render/engrave_specs.py` → `ENGRAVE_BY_ID` / `engrave_kwargs_for` |
+| Cutter | `render/isometric.py` → `_brand_cutter_horizontal` / `_brand_cutter_vertical` |
+| Wire-up | `runner.py` → `**engrave_kwargs_for(element_id)` |
+
+## Rules
+
+- Prefer ifcopenshell **API** (`ifcopenshell.api.*`) over raw entity construction.
+- Property datatypes must match Elementplan YAML (`property_datatypes` → `assign_pset`).
+- Geometry-derived quantities (area, height, volume) should align with the extruded solid.
+- Keep generators focused; shared helpers stay in `base.py` / `parts.py`.
+- Do not invent IFC attribute names — take them from the element YAML.

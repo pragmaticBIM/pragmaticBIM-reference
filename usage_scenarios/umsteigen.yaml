@@ -1,0 +1,51 @@
+id: pragmaticbim:usage-scenario/umsteigen
+code: US-VE-04
+sort_order: 5
+name:
+  de: Umsteigen
+  fr: Changer de ligne
+  it: Cambiare linea
+  en: Transferring
+description:
+  de: Reisende wechseln zwischen Linien und Verkehrsmitteln. Die Verbindungswege entscheiden über Umsteigezeit,
+    Barrierefreiheit und Gedränge.
+  fr: Les voyageurs passent d'une ligne ou d'un moyen de transport à l'autre. Les cheminements de liaison
+    déterminent le temps de correspondance, l'accessibilité et l'affluence.
+  it: I viaggiatori passano da una linea o da un mezzo all'altro. I percorsi di collegamento determinano
+    tempi di coincidenza, accessibilità e affollamento.
+  en: Passengers change between lines and modes. Connecting routes determine transfer time, accessibility,
+    and crowding.
+uses:
+- pragmaticbim:use/verkehr
+tags:
+- umsteigen
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/umsteigen-passage
+  sort_order: 1
+  name:
+    de: Passage zum Perron
+    fr: Passage vers le quai
+    it: Passaggio verso il marciapiede
+    en: Passage to the platform
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/flur
+    to_room_type: pragmaticbim:room-type/perron
+  adds:
+  - pragmaticbim:room-type/flur
+  - pragmaticbim:room-type/perron
+- id: pragmaticbim:scenario-option/umsteigen-ramp
+  sort_order: 2
+  name:
+    de: Rampe zum Perron
+    fr: Rampe vers le quai
+    it: Rampa verso il marciapiede
+    en: Ramp to the platform
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/rampe
+    to_room_type: pragmaticbim:room-type/perron
+  adds:
+  - pragmaticbim:room-type/rampe
+  - pragmaticbim:room-type/perron

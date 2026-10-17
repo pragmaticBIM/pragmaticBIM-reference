@@ -15,42 +15,42 @@ norm_reference: ISO / IEST
 status: active
 values:
   de:
-  - ISO Workshop
-  - ISO Office
-  - ISO Residential (Night)
-  - ISO Operating Theatre (OT)
-  - VC-A
-  - VC-B
-  - VC-C
-  - VC-D
-  - VC-E
+    - ISO Workshop
+    - ISO Office
+    - ISO Residential (Night)
+    - ISO Operating Theatre (OT)
+    - VC-A
+    - VC-B
+    - VC-C
+    - VC-D
+    - VC-E
   fr:
-  - ISO Workshop
-  - ISO Office
-  - ISO Residential (Night)
-  - ISO Operating Theatre (OT)
-  - VC-A
-  - VC-B
-  - VC-C
-  - VC-D
-  - VC-E
+    - ISO Workshop
+    - ISO Office
+    - ISO Residential (Night)
+    - ISO Operating Theatre (OT)
+    - VC-A
+    - VC-B
+    - VC-C
+    - VC-D
+    - VC-E
   it:
-  - ISO Workshop
-  - ISO Office
-  - ISO Residential (Night)
-  - ISO Operating Theatre (OT)
-  - VC-A
-  - VC-B
-  - VC-C
-  - VC-D
-  - VC-E
+    - ISO Workshop
+    - ISO Office
+    - ISO Residential (Night)
+    - ISO Operating Theatre (OT)
+    - VC-A
+    - VC-B
+    - VC-C
+    - VC-D
+    - VC-E
   en:
-  - ISO Workshop
-  - ISO Office
-  - ISO Residential (Night)
-  - ISO Operating Theatre (OT)
-  - VC-A
-  - VC-B
-  - VC-C
-  - VC-D
-  - VC-E
+    - ISO Workshop
+    - ISO Office
+    - ISO Residential (Night)
+    - ISO Operating Theatre (OT)
+    - VC-A
+    - VC-B
+    - VC-C
+    - VC-D
+    - VC-E

@@ -1,0 +1,51 @@
+id: pragmaticbim:room-type/wohnung-2-5
+legacy_ids:
+- pragmaticbim:unit-type/wohnung-2-5
+code: UT-WH-25
+sort_order: 3
+name:
+  de: 2.5-Zimmer-Wohnung
+  fr: Logement de 2,5 pièces
+  it: Alloggio di 2,5 locali
+  en: 2.5-room dwelling
+definition:
+  de: Bruttovolumen einer 2.5-Zimmer-Wohnung, mit einem Schlafzimmer.
+  fr: Volume brut d'un logement de 2,5 pièces, avec une chambre.
+  it: Volume lordo di un alloggio di 2,5 locali, con una camera.
+  en: Gross volume of a 2.5-room dwelling, with one bedroom.
+room_type_kind: container
+uses:
+- pragmaticbim:use/wohnen
+extends: pragmaticbim:room-type/wohnung
+contains:
+- room_type: pragmaticbim:room-type/wohnungseingang
+- room_type: pragmaticbim:room-type/gang
+- room_type: pragmaticbim:room-type/wohnzimmer
+- room_type: pragmaticbim:room-type/schlafzimmer
+- room_type: pragmaticbim:room-type/kueche
+- room_type: pragmaticbim:room-type/badezimmer
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/wohnung-2-5-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: 2.5-Zimmer-Wohnung
+      fr: Logement de 2,5 pièces
+      it: Alloggio di 2,5 locali
+      en: 2.5-room dwelling
+  status: active
+  restrictions:
+    min_area: 65

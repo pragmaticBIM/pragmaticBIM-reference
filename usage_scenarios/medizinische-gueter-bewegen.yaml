@@ -1,0 +1,47 @@
+id: pragmaticbim:usage-scenario/medizinische-gueter-bewegen
+code: US-HE-06
+sort_order: 7
+name:
+  de: Medizinische Güter bewegen
+  fr: Déplacer les biens médicaux
+  it: Movimentare beni medici
+  en: Moving medical goods
+description:
+  de: Material und Proben werden bereitgestellt, verwendet und abtransportiert. Das Logistikkonzept entscheidet
+    über Lagerung, Wege und die Trennung sauberer und gebrauchter Güter.
+  fr: Le matériel et les échantillons sont fournis, utilisés et évacués. La logistique détermine le stockage,
+    les trajets et la séparation du propre et de l'usagé.
+  it: Materiali e campioni vengono forniti, usati e rimossi. La logistica determina deposito, percorsi
+    e separazione tra pulito e usato.
+  en: Materials and samples are supplied, used, and removed. Logistics determine storage, travel, and
+    separation of clean and used goods.
+uses:
+- pragmaticbim:use/gesundheit
+tags:
+- logistik
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/medizinische-gueter-bewegen-supply
+  sort_order: 1
+  name:
+    de: Materialraum
+    fr: Local à matériel
+    it: Locale materiali
+    en: Supply room
+  adds:
+  - pragmaticbim:room-type/materialraum
+- id: pragmaticbim:scenario-option/medizinische-gueter-bewegen-sample-store
+  sort_order: 2
+  name:
+    de: Probenlager mit Schleuse
+    fr: Stockage d'échantillons avec sas
+    it: Deposito campioni con filtro
+    en: Sample store with airlock
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/schleuse
+    to_room_type: pragmaticbim:room-type/probenlager
+  adds:
+  - pragmaticbim:room-type/schleuse
+  - pragmaticbim:room-type/probenlager

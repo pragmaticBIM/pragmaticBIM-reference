@@ -1,0 +1,56 @@
+id: pragmaticbim:usage-scenario/beobachten-und-pflegen
+code: US-HE-05
+sort_order: 6
+name:
+  de: Beobachten und pflegen
+  fr: Observer et soigner
+  it: Osservare e assistere
+  en: Observing and caring
+description:
+  de: Patientinnen und Patienten bleiben nach einer Behandlung oder über Nacht unter Beobachtung. Die
+    Aufenthaltsdauer entscheidet über Privatheit, Überwachung und Pflegewege.
+  fr: Les patients restent sous observation après un traitement ou pendant la nuit. La durée détermine
+    l'intimité, la surveillance et les parcours de soins.
+  it: I pazienti restano in osservazione dopo un trattamento o durante la notte. La durata determina riservatezza,
+    sorveglianza e percorsi assistenziali.
+  en: Patients remain under observation after treatment or overnight. Length of stay determines privacy,
+    monitoring, and care routes.
+uses:
+- pragmaticbim:use/gesundheit
+tags:
+- pflege
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/beobachten-und-pflegen-recovery
+  sort_order: 1
+  name:
+    de: Aufwachraum
+    fr: Salle de réveil
+    it: Sala risveglio
+    en: Recovery room
+  adds:
+  - pragmaticbim:room-type/aufwachraum
+- id: pragmaticbim:scenario-option/beobachten-und-pflegen-patient-room
+  sort_order: 2
+  name:
+    de: Patientenzimmer
+    fr: Chambre de patient
+    it: Camera paziente
+    en: Patient room
+  adds:
+  - pragmaticbim:room-type/patientenzimmer
+- id: pragmaticbim:scenario-option/beobachten-und-pflegen-patient-bath
+  sort_order: 3
+  name:
+    de: Patientenzimmer mit Bad
+    fr: Chambre de patient avec salle de bain
+    it: Camera paziente con bagno
+    en: Patient room with bathroom
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/patientenzimmer
+    to_room_type: pragmaticbim:room-type/badezimmer
+  adds:
+  - pragmaticbim:room-type/patientenzimmer
+  - pragmaticbim:room-type/badezimmer

@@ -1,0 +1,42 @@
+id: pragmaticbim:usage-scenario/betrieb-ueberwachen
+code: US-RZ-04
+sort_order: 6
+name:
+  de: Betrieb überwachen
+  fr: Surveiller l'exploitation
+  it: Monitorare l'esercizio
+  en: Monitoring operations
+description:
+  de: Personal überwacht die Anlagen und reagiert auf Störungen. Ein besetzter Leitstand entscheidet über
+    Reaktionszeit, Arbeitsplätze und Zutrittskontrolle.
+  fr: Le personnel surveille les installations et réagit aux pannes. Une salle de contrôle occupée détermine
+    le temps de réaction, les postes de travail et le contrôle d'accès.
+  it: Il personale sorveglia gli impianti e interviene in caso di guasti. Una sala di controllo presidiata
+    determina tempi di reazione, postazioni e controllo degli accessi.
+  en: Staff monitor the systems and respond to faults. A staffed control room determines response time,
+    workstations, and access control.
+uses:
+- pragmaticbim:use/rechenzentrum
+tags:
+- betrieb
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/betrieb-ueberwachen-on-site
+  sort_order: 1
+  name:
+    de: Leitstand vor Ort
+    fr: Salle de contrôle sur place
+    it: Sala di controllo in loco
+    en: On-site control room
+  adds:
+  - pragmaticbim:room-type/leitstand
+- id: pragmaticbim:scenario-option/betrieb-ueberwachen-remote
+  sort_order: 2
+  name:
+    de: Fernüberwachung
+    fr: Surveillance à distance
+    it: Monitoraggio remoto
+    en: Remote monitoring
+  exclusive: true

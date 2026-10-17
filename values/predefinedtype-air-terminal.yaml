@@ -15,22 +15,22 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - DIFFUSER
-  - GRILLE
-  - LOUVRE
-  - REGISTER
+    - DIFFUSER
+    - GRILLE
+    - LOUVRE
+    - REGISTER
   fr:
-  - DIFFUSER
-  - GRILLE
-  - LOUVRE
-  - REGISTER
+    - DIFFUSER
+    - GRILLE
+    - LOUVRE
+    - REGISTER
   it:
-  - DIFFUSER
-  - GRILLE
-  - LOUVRE
-  - REGISTER
+    - DIFFUSER
+    - GRILLE
+    - LOUVRE
+    - REGISTER
   en:
-  - DIFFUSER
-  - GRILLE
-  - LOUVRE
-  - REGISTER
+    - DIFFUSER
+    - GRILLE
+    - LOUVRE
+    - REGISTER

@@ -2,11 +2,13 @@
 
 Project, Site, Building, Storey, and the survey reference point are required in
 every IFC model deliverable and every use case. Declare them once here; models
-opt in with ``includes_spatial_baseline: true``. Their attributes list every
-active concrete workflow, because the editor resolves each
+opt in with ``includes_spatial_baseline: true``. Their shared attributes list
+every active concrete workflow, because the editor resolves each
 ``needed_for_workflows`` entry and rejects the ``*`` token. The book still
 treats that full list like ``*``: it omits these rows from per-use-case tables
-and shows a short shared note.
+and shows them once in a shared table. Workflow-specific attributes on these
+elements (e.g. the building's seismic structure class) appear in the
+per-use-case tables of their workflows.
 """
 
 from __future__ import annotations

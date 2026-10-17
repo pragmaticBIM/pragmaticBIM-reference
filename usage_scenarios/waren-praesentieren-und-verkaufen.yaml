@@ -1,0 +1,52 @@
+id: pragmaticbim:usage-scenario/waren-praesentieren-und-verkaufen
+code: US-VK-01
+sort_order: 2
+name:
+  de: Waren präsentieren und verkaufen
+  fr: Présenter et vendre des marchandises
+  it: Esporre e vendere merci
+  en: Displaying and selling goods
+description:
+  de: Kundschaft sieht Waren, wählt aus und bezahlt. Das Verkaufskonzept entscheidet über Fläche, Warenpräsenz
+    und Personalbedarf.
+  fr: La clientèle découvre les marchandises, choisit et paie. Le concept de vente détermine la surface,
+    la présentation des produits et les besoins en personnel.
+  it: La clientela vede le merci, sceglie e paga. Il concetto di vendita determina superficie, esposizione
+    delle merci e fabbisogno di personale.
+  en: Customers browse goods, choose, and pay. The retail concept determines area, product display, and
+    staffing.
+uses:
+- pragmaticbim:use/verkauf
+tags:
+- sortiment
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/waren-praesentieren-und-verkaufen-served
+  sort_order: 1
+  name:
+    de: Bedienter Verkaufsraum
+    fr: Local de vente avec service
+    it: Locale di vendita servito
+    en: Served retail room
+  adds:
+  - pragmaticbim:room-type/verkaufsraum
+- id: pragmaticbim:scenario-option/waren-praesentieren-und-verkaufen-self-service
+  sort_order: 2
+  name:
+    de: Offene Verkaufsfläche
+    fr: Surface de vente ouverte
+    it: Superficie di vendita aperta
+    en: Open sales floor
+  adds:
+  - pragmaticbim:room-type/verkaufsflaeche
+- id: pragmaticbim:scenario-option/waren-praesentieren-und-verkaufen-kiosk
+  sort_order: 3
+  name:
+    de: Kiosk
+    fr: Kiosque
+    it: Chiosco
+    en: Kiosk
+  adds:
+  - pragmaticbim:room-type/kiosk

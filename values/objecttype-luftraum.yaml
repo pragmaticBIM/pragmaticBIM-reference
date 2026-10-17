@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Luftraum
+    - Luftraum
   fr:
-  - Volume d'air
+    - Volume d'air
   it:
-  - Volume d'aria
+    - Volume d'aria
   en:
-  - Air space
+    - Air space

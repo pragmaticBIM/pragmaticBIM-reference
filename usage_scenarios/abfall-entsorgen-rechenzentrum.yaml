@@ -1,0 +1,63 @@
+id: pragmaticbim:usage-scenario/abfall-entsorgen-rechenzentrum
+code: US-RZ-07
+sort_order: 8
+name:
+  de: Abfall entsorgen
+  fr: Évacuer les déchets
+  it: Conferire i rifiuti
+  en: Disposing of waste
+description:
+  de: Mitarbeitende bringen Verpackungs- und Restabfall regelmässig weg. Die getrennten Arten
+    entscheiden über Fläche, Lüftung und Wege zur Sammelstelle.
+  fr: Le personnel évacue régulièrement les déchets d'emballage et les déchets résiduels. Les
+    fractions séparées déterminent la surface, la ventilation et les chemins vers le point de
+    collecte.
+  it: Il personale conferisce regolarmente imballaggi e rifiuti residui. Le frazioni separate
+    determinano superficie, ventilazione e percorsi verso il punto di raccolta.
+  en: Staff regularly take packaging and residual waste away. The separated fractions determine area,
+    ventilation, and routes to the collection point.
+uses:
+- pragmaticbim:use/rechenzentrum
+tags:
+- entsorgung
+status: active
+jurisdiction:
+- general
+allows_multiple: true
+options:
+- id: pragmaticbim:scenario-option/abfall-entsorgen-rechenzentrum-kehricht
+  sort_order: 1
+  name:
+    de: Kehricht
+    fr: Déchets résiduels
+    it: Rifiuti residui
+    en: Residual waste
+  adds:
+  - pragmaticbim:room-type/abfallraum
+- id: pragmaticbim:scenario-option/abfall-entsorgen-rechenzentrum-papier
+  sort_order: 2
+  name:
+    de: Papier und Karton
+    fr: Papier et carton
+    it: Carta e cartone
+    en: Paper and cardboard
+  adds:
+  - pragmaticbim:room-type/abfallraum
+- id: pragmaticbim:scenario-option/abfall-entsorgen-rechenzentrum-glas
+  sort_order: 3
+  name:
+    de: Glas
+    fr: Verre
+    it: Vetro
+    en: Glass
+  adds:
+  - pragmaticbim:room-type/abfallraum
+- id: pragmaticbim:scenario-option/abfall-entsorgen-rechenzentrum-pet
+  sort_order: 4
+  name:
+    de: PET und Kunststoff
+    fr: PET et plastique
+    it: PET e plastica
+    en: PET and plastic
+  adds:
+  - pragmaticbim:room-type/abfallraum

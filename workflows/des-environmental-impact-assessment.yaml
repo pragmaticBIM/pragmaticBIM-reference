@@ -7,131 +7,84 @@ name:
   it: Elaborare il rapporto di impatto ambientale
   en: Develop the environmental impact report
 description:
-  de: 'Die Umweltverträglichkeitsprüfung aus dem aktuellen Planungsstand erarbeiten, damit Auswirkungen für Behörden und Baugesuch konsistent nachgewiesen werden können.
-
+  de: |-
+    Die Umweltverträglichkeitsprüfung aus dem aktuellen Planungsstand erarbeiten, damit Auswirkungen für Behörden und Baugesuch konsistent nachgewiesen werden können.
 
     **Ausgangslage**
-
     - Bewilligungsbehörden verlangen je nach Vorhaben eine Umweltverträglichkeitsprüfung; Annahmen sind im Projekt verstreut.
-
     - Ohne gebündelte Prüfung fehlen Gesuch und Fachplanung eine gemeinsame Lesart der Umweltauswirkungen.
 
-
     **Ziel & Nutzen**
-
     - Auswirkungen auf Umwelt und Umfeld nachvollziehbar belegen.
-
     - Prüfung mit Planungsstand und Bewilligungsunterlagen abstimmen.
 
-
     **Ablauf**
-
     1. Vorhaben, Lage und relevante Umweltaspekte aus dem aktuellen Planungsstand zusammenstellen.
-
     2. Umweltverträglichkeitsprüfung erarbeiten und mit Behörde und Fachplanung abstimmen.
-
     3. Prüfung als Grundlage für das Baugesuch freigeben.
 
-
     **Lieferergebnis**
-
     - Umweltverträglichkeitsprüfung mit den erforderlichen Beurteilungs- und Massnahmeninformationen
+    - Aktuelles Planungsmodell als räumlicher Bezug der Beurteilung
 
-    - Aktuelles Planungsmodell als räumlicher Bezug der Beurteilung'
-  fr: 'Établir l''étude d''impact sur l''environnement avec les effets du projet sur l''environnement et le voisinage comme base pour la mise à l''enquête.
-
+  fr: |-
+    Établir l'étude d'impact sur l'environnement avec les effets du projet sur l'environnement et le voisinage comme base pour la mise à l'enquête.
 
     **Situation de départ**
-
-    - Selon le projet, les autorités exigent une étude d''impact ; les hypothèses sont dispersées dans le projet.
-
-    - Sans étude regroupée, enquête et spécialistes n''ont pas de lecture commune des effets environnementaux.
-
+    - Selon le projet, les autorités exigent une étude d'impact ; les hypothèses sont dispersées dans le projet.
+    - Sans étude regroupée, enquête et spécialistes n'ont pas de lecture commune des effets environnementaux.
 
     **Objectif et bénéfice**
-
-    - Justifier de façon traçable les effets sur l''environnement et le voisinage.
-
-    - Aligner l''étude avec l''état de planification et les dossiers d''autorisation.
-
+    - Justifier de façon traçable les effets sur l'environnement et le voisinage.
+    - Aligner l'étude avec l'état de planification et les dossiers d'autorisation.
 
     **Déroulement**
-
-    1. Rassembler projet, situation et aspects environnementaux pertinents à partir de l''état actuel de planification.
-
-    2. Établir l''étude d''impact et l''aligner avec autorité et spécialistes.
-
-    3. Approuver l''étude comme base pour la mise à l''enquête.
-
+    1. Rassembler projet, situation et aspects environnementaux pertinents à partir de l'état actuel de planification.
+    2. Établir l'étude d'impact et l'aligner avec autorité et spécialistes.
+    3. Approuver l'étude comme base pour la mise à l'enquête.
 
     **Livrable**
-
-    - Étude d''impact sur l''environnement avec les informations requises sur l''évaluation et les mesures
-
-    - Maquette de planification actuelle comme référence spatiale de l''évaluation'
-  it: 'Predisporre la valutazione d''impatto ambientale con gli effetti del progetto su ambiente e contesto come base per la domanda edilizia.
-
+    - Étude d'impact sur l'environnement avec les informations requises sur l'évaluation et les mesures
+    - Maquette de planification actuelle comme référence spatiale de l'évaluation
+  it: |-
+    Predisporre la valutazione d'impatto ambientale con gli effetti del progetto su ambiente e contesto come base per la domanda edilizia.
 
     **Situazione di partenza**
-
-    - A seconda del progetto, le autorità richiedono una valutazione d''impatto; le ipotesi sono sparse nel progetto.
-
+    - A seconda del progetto, le autorità richiedono una valutazione d'impatto; le ipotesi sono sparse nel progetto.
     - Senza valutazione raggruppata, domanda e specialisti non hanno una lettura comune degli effetti ambientali.
 
-
     **Obiettivo e beneficio**
-
     - Documentare in modo tracciabile gli effetti su ambiente e contesto.
-
     - Allineare la valutazione con lo stato di pianificazione e gli atti di autorizzazione.
 
-
     **Svolgimento**
-
     1. Raccogliere progetto, situazione e aspetti ambientali pertinenti dallo stato attuale di pianificazione.
-
-    2. Predisporre la valutazione d''impatto e allinearla con autorità e specialisti.
-
+    2. Predisporre la valutazione d'impatto e allinearla con autorità e specialisti.
     3. Approvare la valutazione come base per la domanda edilizia.
 
-
     **Risultato della fornitura**
-
-    - Valutazione d''impatto ambientale con le informazioni necessarie sulla valutazione e sulle misure
-
-    - Modello di progettazione aggiornato come riferimento spaziale della valutazione'
-  en: 'Prepare the environmental impact assessment from the current design state so that impacts can be demonstrated consistently to authorities and in the building application.
-
+    - Valutazione d'impatto ambientale con le informazioni necessarie sulla valutazione e sulle misure
+    - Modello di progettazione aggiornato come riferimento spaziale della valutazione
+  en: |-
+    Prepare the environmental impact assessment from the current design state so that impacts can be demonstrated consistently to authorities and in the building application.
 
     **Starting point**
-
     - Depending on the project, authorities require an environmental impact assessment; assumptions are scattered across the project.
-
     - Without a bundled assessment, the application and specialists lack a shared reading of environmental effects.
 
-
     **Goal & benefit**
-
     - Evidence effects on the environment and surroundings traceably.
-
     - Align the assessment with planning status and permit documents.
 
-
     **Process**
-
     1. Assemble the project, site, and relevant environmental aspects from the current planning status.
-
     2. Prepare the environmental impact assessment and align it with the authority and specialists.
-
     3. Release the assessment as the basis for the building application.
 
-
     **Deliverable**
-
     - Environmental impact assessment with the required assessment and mitigation information
-
-    - Current planning model as the spatial reference for the assessment'
-workflow_group: konzept
+    - Current planning model as the spatial reference for the assessment
+workflow_group: nachhaltigkeit-energie
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active

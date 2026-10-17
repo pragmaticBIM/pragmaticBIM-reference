@@ -1,0 +1,51 @@
+id: pragmaticbim:usage-scenario/zimmer-bewirtschaften
+code: US-BH-05
+sort_order: 6
+name:
+  de: Zimmer bewirtschaften
+  fr: Entretenir les chambres
+  it: Gestire le camere
+  en: Servicing rooms
+description:
+  de: Zimmer werden regelmässig gereinigt und mit Verbrauchsmaterial versorgt. Der Stützpunkt entscheidet
+    über Wege, Lagerfläche und Betriebsabläufe.
+  fr: Les chambres sont régulièrement nettoyées et approvisionnées. Le point de service détermine les
+    trajets, le stockage et l'exploitation.
+  it: Le camere vengono pulite e rifornite regolarmente. Il punto di servizio determina percorsi, deposito
+    e gestione.
+  en: Rooms are regularly cleaned and supplied with consumables. The service point determines travel,
+    storage, and operations.
+uses:
+- pragmaticbim:use/beherbergung
+tags:
+- betrieb
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/zimmer-bewirtschaften-supply-room
+  sort_order: 1
+  name:
+    de: Materialraum
+    fr: Local à matériel
+    it: Locale materiali
+    en: Supply room
+  adds:
+  - pragmaticbim:room-type/materialraum
+- id: pragmaticbim:scenario-option/zimmer-bewirtschaften-caretaker-closet
+  sort_order: 2
+  name:
+    de: Hauswarteschrank
+    fr: Local de conciergerie
+    it: Locale del custode
+    en: Caretaker closet
+  adds:
+  - pragmaticbim:room-type/hauswarteschrank
+- id: pragmaticbim:scenario-option/zimmer-bewirtschaften-external
+  sort_order: 3
+  name:
+    de: Externer Dienst
+    fr: Service externe
+    it: Servizio esterno
+    en: External service
+  exclusive: true

@@ -8,92 +8,58 @@ name:
   it: Stratigrafia di pavimento interna
   en: Interior floor build-up
 definition:
-  de: 'Schafft eine verlässliche Grundlage für Höhenkoordination, Fugenkonzept, Ausschreibung und Mengenermittlung im Innenausbau. Frühe Planung ohne modelliertes Covering: FloorCovering am Innenraum.
-
+  de: |-
+    Schafft eine verlässliche Grundlage für Höhenkoordination, Fugenkonzept, Ausschreibung und Mengenermittlung im Innenausbau. Frühe Planung ohne modelliertes Covering: FloorCovering am Innenraum.
 
     **Beschreibung**
-
     - Bodenaufbau aus Unterlagsboden und Belag gemäss Bauteilkatalog – nur Innenräume.
-
     - Fugen sind im Modell enthalten, insbesondere bei Fussbodenheizung.
 
-
     **Modellierungshinweis**
-
     - Als eine Schicht modellieren – nicht nach Räumen, sondern nach Aufbautypen trennen; ein Aufbau kann mehrere Räume umfassen.
-
     - Fugen und Fugenausführung modellieren, insbesondere bei Fussbodenheizung.
-
     - Bodenbelagstyp über Finish, Unterlagsbodentyp über SubfloorType erfassen.
-
     - Geeignetes Material im Autorensystem verwenden und exportieren.
-
-    - Aussenbodenflächen nicht hier modellieren – frühe Planung: FloorCovering (AOF) am Aussenraum; Detail: Bodenbelag Aussen (ARC-FLOOR-COV-EXT).'
-  fr: 'Fournit une base fiable pour la coordination des niveaux, le concept de joints, l''appel d''offres et le métré des aménagements intérieurs. Planification précoce sans covering modélisé : FloorCovering
-    sur le local intérieur.
-
+    - Aussenbodenflächen nicht hier modellieren – frühe Planung: FloorCovering (AOF) am Aussenraum; Detail: Bodenbelag Aussen (ARC-FLOOR-COV-EXT).
+  fr: |-
+    Fournit une base fiable pour la coordination des niveaux, le concept de joints, l'appel d'offres et le métré des aménagements intérieurs. Planification précoce sans covering modélisé : FloorCovering sur le local intérieur.
 
     **Description**
-
     - Complexe de sol avec chape et revêtement selon le catalogue de composants – locaux intérieurs uniquement.
-
     - Joints inclus dans le modèle, notamment avec chauffage au sol.
 
-
     **Directives de modélisation**
-
-    - Modéliser comme couche unique – diviser par type d''aufbau, pas par locaux ; un aufbau peut couvrir plusieurs locaux.
-
+    - Modéliser comme couche unique – diviser par type d'aufbau, pas par locaux ; un aufbau peut couvrir plusieurs locaux.
     - Modéliser joints et exécution des joints, notamment avec chauffage au sol.
-
     - Saisir le type de revêtement via Finish, le type de chape via SubfloorType.
-
     - Utiliser et exporter le matériau approprié depuis le logiciel auteur.
-
-    - Ne pas modéliser ici les surfaces de sol extérieures – planification précoce : FloorCovering (AOF) sur l''espace extérieur ; détail : Revêtement de sol extérieur (ARC-FLOOR-COV-EXT).'
-  it: 'Fornisce una base affidabile per il coordinamento delle quote, il concetto dei giunti, l’appalto e il computo metrico delle finiture interne. Pianificazione precoce senza covering modellato: FloorCovering
-    sul locale interno.
-
+    - Ne pas modéliser ici les surfaces de sol extérieures – planification précoce : FloorCovering (AOF) sur l'espace extérieur ; détail : Revêtement de sol extérieur (ARC-FLOOR-COV-EXT).
+  it: |-
+    Fornisce una base affidabile per il coordinamento delle quote, il concetto dei giunti, l’appalto e il computo metrico delle finiture interne. Pianificazione precoce senza covering modellato: FloorCovering sul locale interno.
 
     **Descrizione**
-
     - Stratigrafia di pavimento con sottofondo e rivestimento secondo il catalogo componenti – solo locali interni.
-
     - Fughe incluse nel modello, in particolare con riscaldamento a pavimento.
 
-
     **Direttive di modellazione**
-
     - Modellare come strato unico – dividere per tipo di stratigrafia, non per locali; una stratigrafia può coprire più locali.
-
     - Modellare fughe ed esecuzione delle fughe, in particolare con riscaldamento a pavimento.
-
     - Registrare il tipo di pavimentazione tramite Finish, il tipo di sottofondo tramite SubfloorType.
-
     - Usare ed esportare il materiale appropriato dal software di modellazione.
-
-    - Non modellare qui le superfici di pavimento esterne – pianificazione precoce: FloorCovering (AOF) sullo spazio esterno; dettaglio: Pavimentazione esterna (ARC-FLOOR-COV-EXT).'
-  en: 'Provides a reliable basis for level coordination, joint design, tendering, and quantity take-off for interior finishes. Early design without a modelled covering: FloorCovering on the interior space.
-
+    - Non modellare qui le superfici di pavimento esterne – pianificazione precoce: FloorCovering (AOF) sullo spazio esterno; dettaglio: Pavimentazione esterna (ARC-FLOOR-COV-EXT).
+  en: |-
+    Provides a reliable basis for level coordination, joint design, tendering, and quantity take-off for interior finishes. Early design without a modelled covering: FloorCovering on the interior space.
 
     **Description**
-
     - Floor build-up with subfloor and finish according to the component catalogue – interior spaces only.
-
     - Joints included in the model, especially with underfloor heating.
 
-
     **Modelling guidelines**
-
     - Model as one layer – split by build-up type, not by rooms; one build-up may span several rooms.
-
     - Model joints and joint execution, especially with underfloor heating.
-
     - Capture floor covering type via Finish, subfloor type via SubfloorType.
-
     - Use and export the appropriate material from the authoring system.
-
-    - Do not model exterior floor surfaces here – early design: FloorCovering (AOF) on the exterior space; detail: Exterior floor covering (ARC-FLOOR-COV-EXT).'
+    - Do not model exterior floor surfaces here – early design: FloorCovering (AOF) on the exterior space; detail: Exterior floor covering (ARC-FLOOR-COV-EXT).
 needed_in_domain:
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcCovering
@@ -108,42 +74,30 @@ attributes:
 - name: PredefinedType
   pset: null
   definition:
-    de: 'Kennzeichnet den Bodenaufbau.
-
+    de: |-
+      Kennzeichnet den Bodenaufbau.
 
       **Zulässige Werte**
-
-      - `FLOORING` — Bodenbelag'
-    fr: 'Identifie le complexe de sol.
-
+      - `FLOORING` — Bodenbelag
+    fr: |-
+      Identifie le complexe de sol.
 
       **Valeurs admises**
-
-      - `FLOORING` — revêtement de sol'
-    it: 'Identifica la stratigrafia di pavimento.
-
+      - `FLOORING` — revêtement de sol
+    it: |-
+      Identifica la stratigrafia di pavimento.
 
       **Valori ammessi**
-
-      - `FLOORING` — pavimentazione'
-    en: 'Marks the floor build-up.
-
+      - `FLOORING` — pavimentazione
+    en: |-
+      Marks the floor build-up.
 
       **Allowed values**
-
-      - `FLOORING` — floor covering'
+      - `FLOORING` — floor covering
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-covering-flooring
-  needed_in_phases:
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-design-build-procurement
   - pragmaticbim:workflow/des-flooring-planning
@@ -158,43 +112,30 @@ attributes:
 - name: Finish
   pset: Pset_CoveringCommon
   definition:
-    de: 'Bodenbelagstyp Innen gemäss Bauteilkatalog.
-
+    de: |-
+      Bodenbelagstyp Innen gemäss Bauteilkatalog.
 
       **Zulässige Werte**
-
-      - Siehe Werteliste Bodenbelagstyp Innen.'
-    fr: 'Type de revêtement de sol intérieur selon le catalogue de composants.
-
+      - Siehe Werteliste Bodenbelagstyp Innen.
+    fr: |-
+      Type de revêtement de sol intérieur selon le catalogue de composants.
 
       **Valeurs admises**
-
-      - Voir la liste de valeurs Type de revêtement de sol intérieur.'
-    it: 'Tipo di pavimentazione interna secondo il catalogo componenti.
-
+      - Voir la liste de valeurs Type de revêtement de sol intérieur.
+    it: |-
+      Tipo di pavimentazione interna secondo il catalogo componenti.
 
       **Valori ammessi**
-
-      - Vedere l''elenco valori Tipo pavimentazione interna.'
-    en: 'Interior floor covering type according to the component catalogue.
-
+      - Vedere l'elenco valori Tipo pavimentazione interna.
+    en: |-
+      Interior floor covering type according to the component catalogue.
 
       **Allowed values**
-
-      - See the Interior floor covering type value list.'
+      - See the Interior floor covering type value list.
   datatype: IfcText
   allowed_values: pragmaticbim:value/floor-covering-type
-  needed_in_phases:
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-flooring-planning
   - pragmaticbim:workflow/des-underfloor-heating-planning
@@ -205,72 +146,42 @@ attributes:
 - name: Status
   pset: Pset_CoveringCommon
   definition:
-    de: 'Bauteilstatus für Koordination im Bestand.
-
+    de: |-
+      Bauteilstatus für Koordination im Bestand.
 
       **Zulässige Werte**
-
       - `NEW` — Neubau
-
       - `EXISTING` — Bestand
-
       - `DEMOLISH` — Abbruch
-
-      - `TEMPORARY` — Temporär'
-    fr: 'Statut de l''élément pour la coordination dans l''existant.
-
+      - `TEMPORARY` — Temporär
+    fr: |-
+      Statut de l'élément pour la coordination dans l'existant.
 
       **Valeurs admises**
-
       - `NEW` — neuf
-
       - `EXISTING` — existant
-
       - `DEMOLISH` — à démolir
-
-      - `TEMPORARY` — temporaire'
-    it: 'Stato dell''elemento per il coordinamento sull''esistente.
-
+      - `TEMPORARY` — temporaire
+    it: |-
+      Stato dell'elemento per il coordinamento sull'esistente.
 
       **Valori ammessi**
-
       - `NEW` — nuovo
-
       - `EXISTING` — esistente
-
       - `DEMOLISH` — da demolire
-
-      - `TEMPORARY` — temporaneo'
-    en: 'Component status for coordinating work in existing buildings.
-
+      - `TEMPORARY` — temporaneo
+    en: |-
+      Component status for coordinating work in existing buildings.
 
       **Allowed values**
-
       - `NEW` — new build
-
       - `EXISTING` — existing
-
       - `DEMOLISH` — demolition
-
-      - `TEMPORARY` — temporary'
+      - `TEMPORARY` — temporary
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-structure-model-procurement
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
@@ -282,43 +193,30 @@ attributes:
 - name: SubfloorType
   pset: ePset_CoveringFlooring
   definition:
-    de: 'Unterlagsbodentyp im modellierten Bodenaufbau.
-
+    de: |-
+      Unterlagsbodentyp im modellierten Bodenaufbau.
 
       **Zulässige Werte**
-
-      - Siehe Werteliste Unterlagsboden.'
-    fr: 'Type de chape dans le complexe de sol modélisé.
-
+      - Siehe Werteliste Unterlagsboden.
+    fr: |-
+      Type de chape dans le complexe de sol modélisé.
 
       **Valeurs admises**
-
-      - Voir la liste de valeurs Chape.'
-    it: 'Tipo di sottofondo nella stratigrafia di pavimento modellata.
-
+      - Voir la liste de valeurs Chape.
+    it: |-
+      Tipo di sottofondo nella stratigrafia di pavimento modellata.
 
       **Valori ammessi**
-
-      - Vedere l''elenco valori Sottofondo.'
-    en: 'Subfloor type in the modelled floor build-up.
-
+      - Vedere l'elenco valori Sottofondo.
+    en: |-
+      Subfloor type in the modelled floor build-up.
 
       **Allowed values**
-
-      - See the Subfloor value list.'
+      - See the Subfloor value list.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/subfloor-type
-  needed_in_phases:
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-flooring-planning
   - pragmaticbim:workflow/des-underfloor-heating-planning
@@ -328,91 +226,54 @@ attributes:
 - name: ElementStatus
   pset: ePset_ElementStatus
   definition:
-    de: 'Bauteilstatus für Koordination im Bestand.
-
+    de: |-
+      Bauteilstatus für Koordination im Bestand.
 
       **Zulässige Werte**
-
       - `NEW` — Neubau
-
       - `EXISTING` — Bestand
-
       - `DEMOLISH` — Abbruch
-
       - `TEMPORARY` — Temporär
 
-
       **Hinweis**
-
-      - IFC2x3-Ersatz für Status.'
-    fr: 'Statut de l''élément pour la coordination dans l''existant.
-
+      - IFC2x3-Ersatz für Status.
+    fr: |-
+      Statut de l'élément pour la coordination dans l'existant.
 
       **Valeurs admises**
-
       - `NEW` — neuf
-
       - `EXISTING` — existant
-
       - `DEMOLISH` — à démolir
-
       - `TEMPORARY` — temporaire
 
-
       **Remarque**
-
-      - Substitut IFC2x3 de Status.'
-    it: 'Stato dell''elemento per il coordinamento sull''esistente.
-
+      - Substitut IFC2x3 de Status.
+    it: |-
+      Stato dell'elemento per il coordinamento sull'esistente.
 
       **Valori ammessi**
-
       - `NEW` — nuovo
-
       - `EXISTING` — esistente
-
       - `DEMOLISH` — da demolire
-
       - `TEMPORARY` — temporaneo
 
-
       **Nota**
-
-      - Sostituto IFC2x3 di Status.'
-    en: 'Component status for coordinating work in existing buildings.
-
+      - Sostituto IFC2x3 di Status.
+    en: |-
+      Component status for coordinating work in existing buildings.
 
       **Allowed values**
-
       - `NEW` — new build
-
       - `EXISTING` — existing
-
       - `DEMOLISH` — demolition
-
       - `TEMPORARY` — temporary
 
-
       **Note**
-
-      - IFC2x3 substitute for Status.'
+      - IFC2x3 substitute for Status.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-structure-model-procurement
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
@@ -424,48 +285,33 @@ attributes:
 - name: CostInterface
   pset: ePset_Cost
   definition:
-    de: 'Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
-
+    de: |-
+      Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
 
       **Zulässige Werte**
-
       - `GAB` — Grundausbau (Bauherr / Vermieter)
-
-      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_MieterA`'
-    fr: 'Interface de coûts de l''élément – aménagement de base ou aménagement locataire.
-
+      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_MieterA`
+    fr: |-
+      Interface de coûts de l'élément – aménagement de base ou aménagement locataire.
 
       **Valeurs admises**
-
-      - `GAB` — aménagement de base (maître d''ouvrage / bailleur)
-
-      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_MieterA`'
-    it: 'Interfaccia di costo del componente – allestimento di base o allestimento locatario.
-
+      - `GAB` — aménagement de base (maître d'ouvrage / bailleur)
+      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_MieterA`
+    it: |-
+      Interfaccia di costo del componente – allestimento di base o allestimento locatario.
 
       **Valori ammessi**
-
       - `GAB` — allestimento di base (committente / locatore)
-
-      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`'
-    en: 'Cost interface of the component – base building or tenant fit-out.
-
+      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`
+    en: |-
+      Cost interface of the component – base building or tenant fit-out.
 
       **Allowed values**
-
       - `GAB` — base building (client / landlord)
-
-      - `MAB_{TenantName}` — tenant fit-out, e.g. `MAB_TenantA`'
+      - `MAB_{TenantName}` — tenant fit-out, e.g. `MAB_TenantA`
   datatype: IfcLabel
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
   is_applicability: false
@@ -474,25 +320,17 @@ attributes:
 - name: FundingApplication
   pset: ePset_Cost
   definition:
-    de: Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
-    fr: Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune
-      demande.
-    it: Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
-    en: Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs
-      to no application.
+    de: |-
+      Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
+    fr: |-
+      Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune demande.
+    it: |-
+      Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
+    en: |-
+      Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs to no application.
   datatype: IfcLabel
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-funding-verification
   is_applicability: false
@@ -501,84 +339,64 @@ attributes:
 - name: AwardInterface
   pset: ePset_Cost
   definition:
-    de: 'Vergabepaket des Bauteils – damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
-
+    de: |-
+      Vergabepaket des Bauteils – damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
 
       **Zulässige Werte**
-
-      - Siehe Werteliste Vergabepaket. Das vorliegende Schweizer Datenpaket verwendet dreistellige BKP-Codes, z. B. `211`, `221`, `244`.'
-    fr: 'Lot d’adjudication de l’élément – il permet de rendre visibles les interfaces entre les lots confiés aux entreprises.
-
+      - Siehe Werteliste Vergabepaket. Das vorliegende Schweizer Datenpaket verwendet dreistellige BKP-Codes, z. B. `211`, `221`, `244`.
+    fr: |-
+      Lot d’adjudication de l’élément – il permet de rendre visibles les interfaces entre les lots confiés aux entreprises.
 
       **Valeurs admises**
-
-      - Voir la liste de valeurs Lot d’adjudication. Le présent paquet de données suisse utilise des codes BKP à trois chiffres, p. ex. `211`, `221`, `244`.'
-    it: 'Lotto d’appalto del componente – rende visibili le interfacce tra i lotti assegnati alle imprese.
-
+      - Voir la liste de valeurs Lot d’adjudication. Le présent paquet de données suisse utilise des codes BKP à trois chiffres, p. ex. `211`, `221`, `244`.
+    it: |-
+      Lotto d’appalto del componente – rende visibili le interfacce tra i lotti assegnati alle imprese.
 
       **Valori ammessi**
-
-      - Vedere l’elenco di valori Lotto d’appalto. Il presente pacchetto di dati svizzero utilizza codici BKP a tre cifre, ad es. `211`, `221`, `244`.'
-    en: 'Procurement package of the component, so interfaces between contractor packages become visible.
-
+      - Vedere l’elenco di valori Lotto d’appalto. Il presente pacchetto di dati svizzero utilizza codici BKP a tre cifre, ad es. `211`, `221`, `244`.
+    en: |-
+      Procurement package of the component, so interfaces between contractor packages become visible.
 
       **Allowed values**
-
-      - See the Procurement package value list. This Swiss data package uses three-digit BKP codes, e.g. `211`, `221`, `244`.'
+      - See the Procurement package value list. This Swiss data package uses three-digit BKP codes, e.g. `211`, `221`, `244`.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-award-package
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-award-interface-visualization
+  - pragmaticbim:workflow/bes-element-based-tendering
+  - pragmaticbim:workflow/bes-element-cost-post-calculation
   is_applicability: false
   status: active
   sort_order: 8
 - name: PlanningInterface
   pset: ePset_Cost
   definition:
-    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller – damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
-
+    de: |-
+      Planungsschnittstelle des Bauteils nach BKP-3-Steller – damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
 
       **Zulässige Werte**
-
-      - Siehe Werteliste BKP-Planungspaket – z. B. `091`, `092`, `094`.'
-    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres – pour rendre visibles les responsabilités entre disciplines de planification.
-
+      - Siehe Werteliste BKP-Planungspaket – z. B. `091`, `092`, `094`.
+    fr: |-
+      Interface de planification de l'élément selon le BKP à trois chiffres – pour rendre visibles les responsabilités entre disciplines de planification.
 
       **Valeurs admises**
-
-      - Voir la liste de valeurs Lot de planification BKP – p. ex. `091`, `092`, `094`.'
-    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre – per rendere visibili le responsabilità tra discipline di pianificazione.
-
+      - Voir la liste de valeurs Lot de planification BKP – p. ex. `091`, `092`, `094`.
+    it: |-
+      Interfaccia di pianificazione del componente secondo il BKP a tre cifre – per rendere visibili le responsabilità tra discipline di pianificazione.
 
       **Valori ammessi**
-
-      - Vedere l''elenco valori Lotto di pianificazione BKP – es. `091`, `092`, `094`.'
-    en: 'Planning interface of the component as a three-digit BKP code, so responsibilities between design disciplines become visible.
-
+      - Vedere l'elenco valori Lotto di pianificazione BKP – es. `091`, `092`, `094`.
+    en: |-
+      Planning interface of the component as a three-digit BKP code, so responsibilities between design disciplines become visible.
 
       **Allowed values**
-
-      - See the BKP planning package value list, e.g. `091`, `092`, `094`.'
+      - See the BKP planning package value list, e.g. `091`, `092`, `094`.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-planning-package
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-planning-interface-visualization
   is_applicability: false
@@ -587,49 +405,34 @@ attributes:
 - name: BelowTerrain
   pset: ePset_Cost
   definition:
-    de: 'Kennzeichnet, ob das Bauteil unter Terrain liegt.
-
+    de: |-
+      Kennzeichnet, ob das Bauteil unter Terrain liegt.
 
       **Zulässige Werte**
-
       - `TRUE` — unter Terrain
-
-      - `FALSE` — über Terrain'
-    fr: 'Indique si l''élément se trouve sous le niveau du terrain.
-
+      - `FALSE` — über Terrain
+    fr: |-
+      Indique si l'élément se trouve sous le niveau du terrain.
 
       **Valeurs admises**
-
       - `TRUE` — sous le niveau du terrain
-
-      - `FALSE` — au-dessus du niveau du terrain'
-    it: 'Indica se il componente si trova sotto il livello del terreno.
-
+      - `FALSE` — au-dessus du niveau du terrain
+    it: |-
+      Indica se il componente si trova sotto il livello del terreno.
 
       **Valori ammessi**
-
       - `TRUE` — sotto il livello del terreno
-
-      - `FALSE` — sopra il livello del terreno'
-    en: 'Marks whether the component sits below ground level.
-
+      - `FALSE` — sopra il livello del terreno
+    en: |-
+      Marks whether the component sits below ground level.
 
       **Allowed values**
-
       - `TRUE` — below ground
-
-      - `FALSE` — above ground'
+      - `FALSE` — above ground
   datatype: IfcBoolean
   allowed_values: pragmaticbim:value/boolean
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-ebkp-h-classification
   is_applicability: false
@@ -638,41 +441,30 @@ attributes:
 - name: eBKP
   pset: ePset_Cost
   definition:
-    de: 'eBKP-H-Klassifizierung nach SN 506 511 – ableitbar aus IsExternal, LoadBearing und BelowTerrain.
-
+    de: |-
+      eBKP-H-Klassifizierung nach SN 506 511 – ableitbar aus IsExternal, LoadBearing und BelowTerrain.
 
       **Zulässige Werte**
-
-      - `G02.02` — Bodenbelag'
-    fr: 'Classification eBKP-H selon SN 506 511 – déductible à partir de IsExternal, LoadBearing et BelowTerrain.
-
+      - `G02.02` — Bodenbelag
+    fr: |-
+      Classification eBKP-H selon SN 506 511 – déductible à partir de IsExternal, LoadBearing et BelowTerrain.
 
       **Valeurs admises**
-
-      - `G02.02` — revêtement de sol'
-    it: 'Classificazione eBKP-H secondo SN 506 511 – ricavabile da IsExternal, LoadBearing e BelowTerrain.
-
+      - `G02.02` — revêtement de sol
+    it: |-
+      Classificazione eBKP-H secondo SN 506 511 – ricavabile da IsExternal, LoadBearing e BelowTerrain.
 
       **Valori ammessi**
-
-      - `G02.02` — pavimentazione'
-    en: 'eBKP-H classification according to SN 506 511 – derivable from IsExternal, LoadBearing, and BelowTerrain.
-
+      - `G02.02` — pavimentazione
+    en: |-
+      eBKP-H classification according to SN 506 511 – derivable from IsExternal, LoadBearing, and BelowTerrain.
 
       **Allowed values**
-
-      - `G02.02` — floor covering'
+      - `G02.02` — floor covering
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/ebkp-h-floor-covering
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-ebkp-h-classification
   - pragmaticbim:workflow/des-circularity
@@ -682,53 +474,40 @@ attributes:
 - name: ProductClass
   pset: ePset_Cost
   definition:
-    de: 'Produktklasse für Kosten- und Ausschreibungszuordnung. Die Zuordnung kann manuell erfolgen; für konsistente Ausschreibungsdaten sollte sie regelbasiert automatisiert oder KI-unterstützt aus den
-      Bauteileigenschaften abgeleitet werden.
-
+    de: |-
+      Produktklasse als gemeinsamer Schlüssel für Kosten, Ausschreibung und Ökobilanz. Sie wird abgeleitet, wo Material und Bauteileigenschaften sie eindeutig bestimmen, sonst gesetzt. In frühen Phasen ist eine begründete Annahme zulässig.
 
       **Zulässige Werte**
-
-      - Siehe Werteliste [Produktklasse](https://schema.pragmaticbim.ch/classification/floor-covering-product.html).'
-    fr: 'Classe de produit pour le rattachement aux coûts et à l''appel d''offres. L''attribution peut être manuelle ; pour garantir des données d''appel d''offres cohérentes, elle devrait être déduite
-      des propriétés de l''élément par des règles automatisées ou avec l''aide de l''IA.
-
+      - Siehe Werteliste [Produktklasse](https://schema.pragmaticbim.ch/classification/floor-covering-product.html).
+    fr: |-
+      Classe de produit servant de clé commune aux coûts, à l'appel d'offres et à l'écobilan. Elle est déduite là où le matériau et les propriétés de l'élément la déterminent sans ambiguïté, sinon elle est saisie. En phase initiale, une hypothèse fondée est admise.
 
       **Valeurs admises**
-
-      - Voir la liste de valeurs [Classe de produit](https://schema.pragmaticbim.ch/classification/floor-covering-product.html).'
-    it: 'Classe di prodotto per l''attribuzione a costi e gara. L''attribuzione può essere manuale; per garantire dati di gara coerenti, dovrebbe essere ricavata dalle proprietà del componente mediante
-      regole automatizzate o con il supporto dell''IA.
-
+      - Voir la liste de valeurs [Classe de produit](https://schema.pragmaticbim.ch/classification/floor-covering-product.html).
+    it: |-
+      Classe di prodotto come chiave comune per costi, gara ed ecobilancio. Viene ricavata dove il materiale e le proprietà del componente la determinano in modo univoco, altrimenti viene impostata. Nella fase iniziale è ammessa un'ipotesi motivata.
 
       **Valori ammessi**
-
-      - Vedere l''elenco valori [Classe di prodotto](https://schema.pragmaticbim.ch/classification/floor-covering-product.html).'
-    en: 'Product class for cost and tender assignment. It may be assigned manually; for consistent tender data, it should preferably be derived from component properties through deterministic automation
-      or AI-assisted mapping.
-
+      - Vedere l'elenco valori [Classe di prodotto](https://schema.pragmaticbim.ch/classification/floor-covering-product.html).
+    en: |-
+      Product class as the shared key for costs, tendering, and life-cycle assessment. It is derived where material and component properties determine it unambiguously, otherwise set. In early phases, a reasoned assumption is acceptable.
 
       **Allowed values**
-
-      - See the [Product class](https://schema.pragmaticbim.ch/classification/floor-covering-product.html) value list.'
+      - See the [Product class](https://schema.pragmaticbim.ch/classification/floor-covering-product.html) value list.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/product-class-floor-covering
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
-  - pragmaticbim:workflow/bes-model-based-tendering
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   - pragmaticbim:workflow/bes-existing-structure-model-procurement
   - pragmaticbim:workflow/bes-tiling-tender-basis
   - pragmaticbim:workflow/des-full-life-cycle-calculation
   - pragmaticbim:workflow/qas-component-cost-plausibility
+  - pragmaticbim:workflow/des-element-based-cost-early
+  - pragmaticbim:workflow/des-element-based-cost-late
+  - pragmaticbim:workflow/bes-element-based-tendering
+  - pragmaticbim:workflow/bes-element-cost-post-calculation
   is_applicability: false
   status: active
   sort_order: 12
@@ -741,114 +520,78 @@ attributes:
     en: Project- or office-specific unit price per unit of the reference quantity, used to check component costs for plausibility.
   datatype: IfcMonetaryMeasure
   unit: CHF/m²
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-component-cost-plausibility
+    - pragmaticbim:workflow/qas-component-cost-plausibility
+    - pragmaticbim:workflow/des-element-based-cost-early
+    - pragmaticbim:workflow/des-element-based-cost-late
+    - pragmaticbim:workflow/bes-element-cost-post-calculation
   is_applicability: false
   status: active
   sort_order: 13
 - name: ReferenceQuantity
   pset: ePset_Cost
   definition:
-    de: 'Verbindliche Referenzmenge für den Einheitspreis: `Qto_CoveringBaseQuantities.NetArea`.'
-    fr: 'Quantité de référence faisant foi pour le prix unitaire : `Qto_CoveringBaseQuantities.NetArea`.'
-    it: 'Quantità di riferimento vincolante per il prezzo unitario: `Qto_CoveringBaseQuantities.NetArea`.'
-    en: 'Authoritative reference quantity used with UnitPrice: `Qto_CoveringBaseQuantities.NetArea`.'
+    de: "Verbindliche Referenzmenge für den Einheitspreis: `Qto_CoveringBaseQuantities.NetArea`."
+    fr: "Quantité de référence faisant foi pour le prix unitaire : `Qto_CoveringBaseQuantities.NetArea`."
+    it: "Quantità di riferimento vincolante per il prezzo unitario: `Qto_CoveringBaseQuantities.NetArea`."
+    en: "Authoritative reference quantity used with UnitPrice: `Qto_CoveringBaseQuantities.NetArea`."
   datatype: IfcLabel
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-component-cost-plausibility
+    - pragmaticbim:workflow/qas-component-cost-plausibility
+    - pragmaticbim:workflow/des-element-based-cost-early
+    - pragmaticbim:workflow/des-element-based-cost-late
+    - pragmaticbim:workflow/bes-element-based-tendering
+    - pragmaticbim:workflow/bes-element-cost-post-calculation
   is_applicability: false
   status: active
   sort_order: 14
 - name: Connection
   pset: ePset_Circularity
   definition:
-    de: 'Art der Verbindung für die Demontierbarkeit (Madaster).
-
+    de: |-
+      Art der Verbindung für die Demontierbarkeit (Madaster).
 
       **Zulässige Werte**
-
       - `DryConnection` — trockene Verbindung
-
       - `AddedConnection` — Verbindung mit Zusatzteilen
-
       - `DirectConnection` — direkte integrale Verbindung
-
       - `SoftChemicalConnection` — weiche chemische Verbindung
-
-      - `HardChemicalConnection` — harte chemische Verbindung'
-    fr: 'Type de connexion pour la démontabilité (Madaster).
-
+      - `HardChemicalConnection` — harte chemische Verbindung
+    fr: |-
+      Type de connexion pour la démontabilité (Madaster).
 
       **Valeurs admises**
-
       - `DryConnection` — connexion sèche
-
       - `AddedConnection` — connexion avec éléments ajoutés
-
       - `DirectConnection` — connexion intégrale directe
-
       - `SoftChemicalConnection` — liaison chimique souple
-
-      - `HardChemicalConnection` — liaison chimique dure'
-    it: 'Tipo di connessione per la smontabilità (Madaster).
-
+      - `HardChemicalConnection` — liaison chimique dure
+    it: |-
+      Tipo di connessione per la smontabilità (Madaster).
 
       **Valori ammessi**
-
       - `DryConnection` — connessione a secco
-
       - `AddedConnection` — connessione con elementi aggiunti
-
       - `DirectConnection` — connessione integrale diretta
-
       - `SoftChemicalConnection` — connessione chimica morbida
-
-      - `HardChemicalConnection` — connessione chimica dura'
-    en: 'Connection type for detachability (Madaster).
-
+      - `HardChemicalConnection` — connessione chimica dura
+    en: |-
+      Connection type for detachability (Madaster).
 
       **Allowed values**
-
       - `DryConnection` — dry connection
-
       - `AddedConnection` — connection using added parts
-
       - `DirectConnection` — direct integral connection
-
       - `SoftChemicalConnection` — soft chemical connection
-
-      - `HardChemicalConnection` — hard chemical connection'
+      - `HardChemicalConnection` — hard chemical connection
   datatype: IfcText
   allowed_values: pragmaticbim:value/detachability-connection-type
-  needed_in_phases:
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-circularity
   is_applicability: false
@@ -857,75 +600,46 @@ attributes:
 - name: Accessibility
   pset: ePset_Circularity
   definition:
-    de: 'Zugänglichkeit der Verbindung ohne Zerstörung von Bauteil oder Umgebung (Madaster).
-
+    de: |-
+      Zugänglichkeit der Verbindung ohne Zerstörung von Bauteil oder Umgebung (Madaster).
 
       **Zulässige Werte**
-
       - `Accessible` — frei zugänglich ohne Zusatzmassnahmen
-
       - `PartialNoDamage` — zugänglich mit Massnahmen ohne Schaden
-
       - `PartialWithRepairableDamage` — zugänglich mit vollständig reparierbarem Schaden
-
       - `PartialWithDamage` — zugänglich mit teilweise reparierbarem Schaden
-
-      - `NotAccessible` — nicht zugänglich, irreparabler Schaden'
-    fr: 'Accessibilité de la connexion sans destruction de l''élément ou de l''entourage (Madaster).
-
+      - `NotAccessible` — nicht zugänglich, irreparabler Schaden
+    fr: |-
+      Accessibilité de la connexion sans destruction de l'élément ou de l'entourage (Madaster).
 
       **Valeurs admises**
-
       - `Accessible` — librement accessible sans actions supplémentaires
-
       - `PartialNoDamage` — accessible avec actions sans dommage
-
       - `PartialWithRepairableDamage` — accessible avec dommage entièrement réparable
-
       - `PartialWithDamage` — accessible avec dommage partiellement réparable
-
-      - `NotAccessible` — non accessible, dommage irréparable'
-    it: 'Accessibilità della connessione senza distruggere il componente o l''intorno (Madaster).
-
+      - `NotAccessible` — non accessible, dommage irréparable
+    it: |-
+      Accessibilità della connessione senza distruggere il componente o l'intorno (Madaster).
 
       **Valori ammessi**
-
       - `Accessible` — liberamente accessibile senza azioni aggiuntive
-
       - `PartialNoDamage` — accessibile con azioni senza danno
-
       - `PartialWithRepairableDamage` — accessibile con danno interamente riparabile
-
       - `PartialWithDamage` — accessibile con danno parzialmente riparabile
-
-      - `NotAccessible` — non accessibile, danno irreparabile'
-    en: 'Accessibility of the connection without destroying the component or surroundings (Madaster).
-
+      - `NotAccessible` — non accessibile, danno irreparabile
+    en: |-
+      Accessibility of the connection without destroying the component or surroundings (Madaster).
 
       **Allowed values**
-
       - `Accessible` — freely accessible without additional actions
-
       - `PartialNoDamage` — accessible with actions that cause no damage
-
       - `PartialWithRepairableDamage` — accessible with fully repairable damage
-
       - `PartialWithDamage` — accessible with partially repairable damage
-
-      - `NotAccessible` — not accessible; irreparable damage'
+      - `NotAccessible` — not accessible; irreparable damage
   datatype: IfcText
   allowed_values: pragmaticbim:value/detachability-accessibility
-  needed_in_phases:
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-circularity
   is_applicability: false
@@ -939,18 +653,8 @@ attributes:
     it: Quota di materiale già riusato o riciclato nel componente (0.01–1.00, es. 0.80 = 80 %).
     en: Share of already reused or recycled material in the component (0.01–1.00, e.g. 0.80 = 80 %).
   datatype: IfcReal
-  needed_in_phases:
-  - '11'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-circularity-procurement
   - pragmaticbim:workflow/des-circularity
@@ -965,17 +669,8 @@ attributes:
     it: ID univoco del materiale o prodotto nella banca dati collegata (es. Madaster, baubook).
     en: Unique ID of the material or product in the linked database (e.g. Madaster, baubook).
   datatype: IfcText
-  needed_in_phases:
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-circularity
   is_applicability: false
@@ -984,23 +679,17 @@ attributes:
 - name: WasteCodes
   pset: ePset_Circularity
   definition:
-    de: Abfallcodes für Rückbau und Entsorgung. Code nach VeVA (CH) bzw. EAK/AVV (EU); Format gemäss Madaster, z. B. `17 01:0.25:Inert:60:60;`.
-    fr: Codes déchets pour déconstruction et élimination. Code selon VeVA (CH) ou CED/AVV (EU) ; format Madaster, p. ex. `17 01:0.25:Inert:60:60;`.
-    it: Codici rifiuti per smantellamento e smaltimento. Codice secondo VeVA (CH) o CER/AVV (EU); formato Madaster, es. `17 01:0.25:Inert:60:60;`.
-    en: Waste codes for deconstruction and disposal. Code to VeVA (CH) or EWC/AVV (EU); format as used by Madaster, e.g. `17 01:0.25:Inert:60:60;`.
+    de: |-
+      Abfallcodes für Rückbau und Entsorgung. Code nach VeVA (CH) bzw. EAK/AVV (EU); Format gemäss Madaster, z. B. `17 01:0.25:Inert:60:60;`.
+    fr: |-
+      Codes déchets pour déconstruction et élimination. Code selon VeVA (CH) ou CED/AVV (EU) ; format Madaster, p. ex. `17 01:0.25:Inert:60:60;`.
+    it: |-
+      Codici rifiuti per smantellamento e smaltimento. Codice secondo VeVA (CH) o CER/AVV (EU); formato Madaster, es. `17 01:0.25:Inert:60:60;`.
+    en: |-
+      Waste codes for deconstruction and disposal. Code to VeVA (CH) or EWC/AVV (EU); format as used by Madaster, e.g. `17 01:0.25:Inert:60:60;`.
   datatype: IfcText
-  needed_in_phases:
-  - '11'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-circularity-procurement
   - pragmaticbim:workflow/des-circularity
@@ -1015,16 +704,8 @@ attributes:
     it: GTIN (Global Trade Item Number) del tipo di prodotto; secondo la struttura GS1, 8, 12, 13 o 14 cifre.
     en: GTIN (Global Trade Item Number) of the product type; 8, 12, 13, or 14 digits depending on the GS1 structure.
   datatype: IfcIdentifier
-  needed_in_phases:
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-circularity
   - pragmaticbim:workflow/hov-product-pass-gtin
@@ -1035,93 +716,54 @@ attributes:
 - name: HazardType
   pset: ePset_HazardousMaterial
   definition:
-    de: 'Schadstoffart gemäss Gutachten am betroffenen Bestandsbauteil.
-
+    de: |-
+      Schadstoffart gemäss Gutachten am betroffenen Bestandsbauteil.
 
       **Zulässige Werte**
-
       - `Asbestos` — Asbest
-
       - `PCB` — PCB
-
       - `PAH` — PAK
-
       - `PCP` — PCP
-
       - `Lead` — Blei
-
       - `None` — kein Schadstoff
-
-      - `Unknown` — unbekannt / nicht untersucht'
-    fr: 'Type de polluant selon l''expertise sur l''élément existant concerné.
-
+      - `Unknown` — unbekannt / nicht untersucht
+    fr: |-
+      Type de polluant selon l'expertise sur l'élément existant concerné.
 
       **Valeurs admises**
-
       - `Asbestos` — amiante
-
       - `PCB` — PCB
-
       - `PAH` — HAP
-
       - `PCP` — PCP
-
       - `Lead` — plomb
-
       - `None` — aucun polluant
-
-      - `Unknown` — inconnu / non investigué'
-    it: 'Tipo di inquinante secondo la perizia sul componente esistente interessato.
-
+      - `Unknown` — inconnu / non investigué
+    it: |-
+      Tipo di inquinante secondo la perizia sul componente esistente interessato.
 
       **Valori ammessi**
-
       - `Asbestos` — amianto
-
       - `PCB` — PCB
-
       - `PAH` — IPA
-
       - `PCP` — PCP
-
       - `Lead` — piombo
-
       - `None` — nessun inquinante
-
-      - `Unknown` — sconosciuto / non indagato'
-    en: 'Type of hazardous material found by survey on the affected existing component.
-
+      - `Unknown` — sconosciuto / non indagato
+    en: |-
+      Type of hazardous material found by survey on the affected existing component.
 
       **Allowed values**
-
       - `Asbestos` — asbestos
-
       - `PCB` — PCB
-
       - `PAH` — PAH
-
       - `PCP` — PCP
-
       - `Lead` — lead
-
       - `None` — no hazardous material
-
-      - `Unknown` — unknown / not investigated'
+      - `Unknown` — unknown / not investigated
   datatype: IfcText
   allowed_values: pragmaticbim:value/hazard-type
-  needed_in_phases:
-  - '11'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-circularity-procurement
   - pragmaticbim:workflow/qas-hazmat-check
@@ -1131,69 +773,42 @@ attributes:
 - name: RemovalCategory
   pset: ePset_HazardousMaterial
   definition:
-    de: 'Sanierungsdringlichkeit / Handlungsbedarf gemäss Gutachten.
-
+    de: |-
+      Sanierungsdringlichkeit / Handlungsbedarf gemäss Gutachten.
 
       **Zulässige Werte**
-
       - `Immediate` — sofortige Sanierung nötig
-
       - `PriorToDemolition` — Sanierung vor Abbruch/Umbau
-
       - `InSitu` — kann im Bestand verbleiben, Überwachung
-
-      - `None` — kein Handlungsbedarf'
-    fr: 'Urgence d''assainissement / besoin d''action selon l''expertise.
-
+      - `None` — kein Handlungsbedarf
+    fr: |-
+      Urgence d'assainissement / besoin d'action selon l'expertise.
 
       **Valeurs admises**
-
       - `Immediate` — assainissement immédiat nécessaire
-
       - `PriorToDemolition` — assainissement avant démolition/transformation
-
       - `InSitu` — peut rester en place, surveillance
-
-      - `None` — aucune action requise'
-    it: 'Urgenza di bonifica / necessità di intervento secondo la perizia.
-
+      - `None` — aucune action requise
+    it: |-
+      Urgenza di bonifica / necessità di intervento secondo la perizia.
 
       **Valori ammessi**
-
       - `Immediate` — bonifica immediata necessaria
-
       - `PriorToDemolition` — bonifica prima di demolizione/trasformazione
-
       - `InSitu` — può restare in opera, sorveglianza
-
-      - `None` — nessun intervento richiesto'
-    en: 'Remediation urgency and action required, as determined by the survey.
-
+      - `None` — nessun intervento richiesto
+    en: |-
+      Remediation urgency and action required, as determined by the survey.
 
       **Allowed values**
-
       - `Immediate` — remediate immediately
-
       - `PriorToDemolition` — remediate before demolition or alteration
-
       - `InSitu` — may remain in place, under monitoring
-
-      - `None` — no action required'
+      - `None` — no action required
   datatype: IfcText
   allowed_values: pragmaticbim:value/removal-category
-  needed_in_phases:
-  - '11'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-circularity-procurement
   - pragmaticbim:workflow/qas-hazmat-check
@@ -1208,15 +823,8 @@ attributes:
     it: Numero di serie assegnato dal fabbricante a un singolo prodotto; insieme al GTIN costituisce la chiave del passaporto di prodotto specifico dell’oggetto.
     en: Serial number the manufacturer assigns to an individual product; with the GTIN it identifies the product passport for that specific item.
   datatype: IfcIdentifier
-  needed_in_phases:
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/hov-product-pass-serial-number
   is_applicability: false
@@ -1231,20 +839,8 @@ attributes:
     en: Net area of the modelled floor build-up.
   datatype: IfcAreaMeasure
   unit: m²
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-component-cost-plausibility
   - pragmaticbim:workflow/des-full-life-cycle-calculation
@@ -1253,8 +849,11 @@ attributes:
   - pragmaticbim:workflow/des-circularity
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   - pragmaticbim:workflow/bes-existing-structure-model-procurement
-  - pragmaticbim:workflow/bes-model-based-tendering
   - pragmaticbim:workflow/bes-tiling-tender-basis
+  - pragmaticbim:workflow/des-element-based-cost-early
+  - pragmaticbim:workflow/des-element-based-cost-late
+  - pragmaticbim:workflow/bes-element-based-tendering
+  - pragmaticbim:workflow/bes-element-cost-post-calculation
   is_applicability: false
   status: active
   sort_order: 24

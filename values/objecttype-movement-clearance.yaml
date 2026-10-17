@@ -15,10 +15,10 @@ norm_reference: SIA 500
 status: active
 values:
   de:
-  - Bewegungsfläche
+    - Bewegungsfläche
   fr:
-  - Aire de mouvement
+    - Aire de mouvement
   it:
-  - Area di movimento
+    - Area di movimento
   en:
-  - Movement clearance
+    - Movement clearance

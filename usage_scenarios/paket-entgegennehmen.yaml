@@ -1,26 +1,66 @@
 id: pragmaticbim:usage-scenario/paket-entgegennehmen
 code: US-WH-14
-sort_order: 14
+sort_order: 15
 name:
   de: Paket entgegennehmen
   fr: Réception d'un colis
   it: Ritiro di un pacco
   en: Receiving a parcel
 description:
-  de: Die Zustellung kommt von der Strasse in die Eingangshalle und übergibt das Paket am Wohnungseingang, ohne den Postraum.
-  fr: La livraison arrive de la rue dans le hall d'entrée et remet le colis à l'entrée du logement, sans passer par le local courrier.
-  it: La consegna arriva dalla strada nell'atrio e consegna il pacco all'ingresso dell'alloggio, senza il locale posta.
-  en: Delivery arrives from the street into the lobby and hands over the parcel at the dwelling entry, without the mail room.
-scenario_group: Wohnen
+  de: Pakete kommen auch an, wenn niemand zu Hause ist. Der Übergabeort entscheidet,
+    ob sie geschützt warten können.
+  fr: Les colis arrivent aussi lorsque personne n'est à la maison. Le lieu de remise
+    décide s'ils peuvent attendre à l'abri.
+  it: I pacchi arrivano anche quando non c'è nessuno in casa. Il punto di consegna
+    decide se possono attendere al riparo.
+  en: Parcels arrive even when no one is home. The handover point decides whether
+    they can wait in a safe place.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- zustellung
 status: active
 jurisdiction:
-- ch
-required_room_types:
-- pragmaticbim:room-type/strasse
-- pragmaticbim:room-type/eingangshalle
-- pragmaticbim:room-type/wohnungseingang
-room_relationships:
-- from_room_type: pragmaticbim:room-type/strasse
-  to_room_type: pragmaticbim:room-type/eingangshalle
-- from_room_type: pragmaticbim:room-type/eingangshalle
-  to_room_type: pragmaticbim:room-type/wohnungseingang
+- general
+options:
+- id: pragmaticbim:scenario-option/paket-entgegennehmen-door
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-standard
+  sort_order: 1
+  name:
+    de: Wohnungseingang
+    fr: Entrée du logement
+    it: Ingresso dell'alloggio
+    en: Dwelling entry
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/strasse
+    to_room_type: pragmaticbim:room-type/wohnungseingang
+  adds:
+  - pragmaticbim:room-type/strasse
+  - pragmaticbim:room-type/wohnungseingang
+- id: pragmaticbim:scenario-option/paket-entgegennehmen-locker
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-elevated
+  sort_order: 2
+  name:
+    de: Paketraum
+    fr: Local à colis
+    it: Locale pacchi
+    en: Parcel room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/strasse
+    to_room_type: pragmaticbim:room-type/paketraum
+  - from_room_type: pragmaticbim:room-type/paketraum
+    to_room_type: pragmaticbim:room-type/wohnungseingang
+  adds:
+  - pragmaticbim:room-type/strasse
+  - pragmaticbim:room-type/paketraum
+  - pragmaticbim:room-type/wohnungseingang
+- id: pragmaticbim:scenario-option/paket-entgegennehmen-external
+  sort_order: 3
+  name:
+    de: Externe Abholstelle
+    fr: Point de retrait externe
+    it: Punto di ritiro esterno
+    en: External collection point
+  exclusive: true

@@ -15,10 +15,10 @@ norm_reference: Projektkonvention
 status: active
 values:
   de:
-  - Aufzug
+    - Aufzug
   fr:
-  - Ascenseur
+    - Ascenseur
   it:
-  - Ascensore
+    - Ascensore
   en:
-  - Elevator
+    - Elevator

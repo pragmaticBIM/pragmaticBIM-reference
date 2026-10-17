@@ -1,0 +1,76 @@
+id: pragmaticbim:usage-scenario/zum-saal-gelangen
+code: US-VS-08
+sort_order: 1
+name:
+  de: Zum Saal gelangen
+  fr: Accéder à la salle
+  it: Raggiungere la sala
+  en: Reaching the hall
+description:
+  de: Publikum gelangt in kurzer Zeit zum Saal und verlässt ihn gleichzeitig, Bühnenmaterial muss auf
+    andere Geschosse. Die Erschliessung entscheidet über Personenfluss, Fluchtwege und die Trennung von
+    Publikum und Anlieferung.
+  fr: Le public rejoint la salle en peu de temps et la quitte en même temps, le matériel de scène doit
+    changer d'étage. La desserte détermine les flux, les voies d'évacuation et la séparation du public
+    et des livraisons.
+  it: Il pubblico raggiunge la sala in poco tempo e la lascia contemporaneamente, il materiale scenico
+    deve cambiare piano. L'accesso determina flussi, vie di fuga e separazione tra pubblico e consegne.
+  en: Audiences reach the hall within a short time and leave together, and stage equipment must reach
+    other floors. The access arrangement determines crowd flow, escape routes, and separation of audience
+    and deliveries.
+uses:
+- pragmaticbim:use/versammlung
+tags:
+- erschliessung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/zum-saal-gelangen-stair
+  sort_order: 1
+  name:
+    de: Treppenhaus
+    fr: Cage d'escalier
+    it: Vano scale
+    en: Stairwell
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+- id: pragmaticbim:scenario-option/zum-saal-gelangen-stair-elevator
+  sort_order: 2
+  name:
+    de: Treppenhaus und Aufzug
+    fr: Cage d'escalier et ascenseur
+    it: Vano scale e ascensore
+    en: Stairwell and elevator
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+- id: pragmaticbim:scenario-option/zum-saal-gelangen-service-lift
+  sort_order: 3
+  name:
+    de: Treppenhaus, Aufzug und Warenaufzug
+    fr: Cage d'escalier, ascenseur et monte-charge
+    it: Vano scale, ascensore e montacarichi
+    en: Stairwell, elevator, and service lift
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  - from_room_type: pragmaticbim:room-type/treppenhaus
+    to_room_type: pragmaticbim:room-type/warenaufzug
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+  - pragmaticbim:room-type/warenaufzug

@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - ROOF
+    - ROOF
   fr:
-  - ROOF
+    - ROOF
   it:
-  - ROOF
+    - ROOF
   en:
-  - ROOF
+    - ROOF

@@ -8,74 +8,50 @@ name:
   it: Protezione anticaduta / parapetto
   en: Fall protection / railing
 definition:
-  de: 'Vereinfachte Geometrie für die räumliche Planung und Beurteilung von permanenten und temporären Absturzsicherungen.
-
+  de: |-
+    Vereinfachte Geometrie für die räumliche Planung und Beurteilung von permanenten und temporären Absturzsicherungen.
 
     **Beschreibung**
-
     - Geländer und andere lineare Absturzsicherungen an Decken-, Balkon-, Dach-, Podest- und Treppenkanten.
-
     - Dient der Festlegung von Lage und Abmessungen sowie der Visualisierung von Optionen und Zwischenbauzuständen, nicht der konstruktiven Detailplanung.
 
-
     **Modellierungshinweis**
-
     - Als vereinfachtes lineares Volumen mit abgestimmter Lage, Länge und Höhe modellieren.
-
     - Temporäre Absturzsicherungen mit dem Status `TEMPORARY` kennzeichnen und dem betreffenden Geschoss zuordnen.
-
-    - Pfosten, Füllungen, Anschlüsse und Befestigungen nicht ausmodellieren; dafür bleiben Detail-, Werkstatt- oder Montagepläne beziehungsweise ein Unternehmermodell führend.'
-  fr: 'Géométrie simplifiée pour l''étude spatiale et l''évaluation des protections permanentes et temporaires contre les chutes.
-
+    - Pfosten, Füllungen, Anschlüsse und Befestigungen nicht ausmodellieren; dafür bleiben Detail-, Werkstatt- oder Montagepläne beziehungsweise ein Unternehmermodell führend.
+  fr: |-
+    Géométrie simplifiée pour l'étude spatiale et l'évaluation des protections permanentes et temporaires contre les chutes.
 
     **Description**
-
     - Garde-corps et autres protections linéaires contre les chutes aux bords de dalles, balcons, toitures, paliers et escaliers.
-
-    - Sert à définir l''emplacement et les dimensions ainsi qu''à visualiser des variantes et des états intermédiaires, et non à étudier les détails constructifs.
-
+    - Sert à définir l'emplacement et les dimensions ainsi qu'à visualiser des variantes et des états intermédiaires, et non à étudier les détails constructifs.
 
     **Directives de modélisation**
-
     - Modéliser un volume linéaire simplifié avec emplacement, longueur et hauteur convenus.
-
-    - Identifier les protections temporaires avec le statut `TEMPORARY` et les rattacher à l''étage concerné.
-
-    - Ne pas modéliser les montants, remplissages, raccords et fixations; les plans de détail, d''atelier ou de montage, ou la maquette de l''entrepreneur, restent déterminants à cet effet.'
-  it: 'Geometria semplificata per la progettazione spaziale e la valutazione delle protezioni anticaduta permanenti e temporanee.
-
+    - Identifier les protections temporaires avec le statut `TEMPORARY` et les rattacher à l'étage concerné.
+    - Ne pas modéliser les montants, remplissages, raccords et fixations; les plans de détail, d'atelier ou de montage, ou la maquette de l'entrepreneur, restent déterminants à cet effet.
+  it: |-
+    Geometria semplificata per la progettazione spaziale e la valutazione delle protezioni anticaduta permanenti e temporanee.
 
     **Descrizione**
-
     - Parapetti e altre protezioni anticaduta lineari lungo i bordi di solai, balconi, coperture, pianerottoli e scale.
-
     - Serve a definire posizione e dimensioni e a visualizzare varianti e stati intermedi, non alla progettazione dei dettagli costruttivi.
 
-
     **Direttive di modellazione**
-
     - Modellare un volume lineare semplificato con posizione, lunghezza e altezza concordate.
-
     - Contrassegnare le protezioni temporanee con lo stato `TEMPORARY` e assegnarle al piano interessato.
-
-    - Non modellare montanti, tamponamenti, raccordi e fissaggi; a tale scopo restano determinanti i piani di dettaglio, d''officina o di montaggio oppure il modello dell''impresa.'
-  en: 'Simplified geometry for spatial planning and assessment of permanent and temporary fall protection.
-
+    - Non modellare montanti, tamponamenti, raccordi e fissaggi; a tale scopo restano determinanti i piani di dettaglio, d'officina o di montaggio oppure il modello dell'impresa.
+  en: |-
+    Simplified geometry for spatial planning and assessment of permanent and temporary fall protection.
 
     **Description**
-
     - Railings and other linear fall protection at slab, balcony, roof, landing, and stair edges.
-
     - Defines location and dimensions and visualizes options and intermediate states; it is not intended for construction detailing.
 
-
     **Modelling guidelines**
-
     - Model as a simplified linear volume with coordinated location, length, and height.
-
     - Mark temporary fall protection with status `TEMPORARY` and assign it to the relevant storey.
-
-    - Do not model posts, infill, connections, or fixings; detail, shop, or installation drawings, or a contractor model, remain authoritative for these.'
+    - Do not model posts, infill, connections, or fixings; detail, shop, or installation drawings, or a contractor model, remain authoritative for these.
 needed_in_domain:
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcRailing
@@ -95,18 +71,8 @@ attributes:
     it: Denominazione della protezione anticaduta secondo il piano di architettura o di montaggio.
     en: Fall-protection designation according to the architecture or installation drawing.
   datatype: IfcLabel
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-complex-assembly-planning
   - pragmaticbim:workflow/bes-steelwork-tender-basis
@@ -117,76 +83,46 @@ attributes:
 - name: PredefinedType
   pset: null
   definition:
-    de: 'Art der Absturzsicherung.
-
+    de: |-
+      Art der Absturzsicherung.
 
       **Zulässige Werte**
-
       - `BALUSTRADE` — Geländer an Decken-, Balkon- oder Dachkanten
-
       - `GUARDRAIL` — Absturzsicherung an Treppen, Rampen oder Podesten
-
       - `HANDRAIL` — Handlauf
-
       - `USERDEFINED` — benutzerdefinierte Absturzsicherung
-
-      - `NOTDEFINED` — nicht näher bestimmte Absturzsicherung'
-    fr: 'Type de protection contre les chutes.
-
+      - `NOTDEFINED` — nicht näher bestimmte Absturzsicherung
+    fr: |-
+      Type de protection contre les chutes.
 
       **Valeurs admises**
-
-      - `BALUSTRADE` — garde-corps au bord d''une dalle, d''un balcon ou d''une toiture
-
-      - `GUARDRAIL` — protection contre les chutes le long d''un escalier, d''une rampe ou d''un palier
-
+      - `BALUSTRADE` — garde-corps au bord d'une dalle, d'un balcon ou d'une toiture
+      - `GUARDRAIL` — protection contre les chutes le long d'un escalier, d'une rampe ou d'un palier
       - `HANDRAIL` — main courante
-
-      - `USERDEFINED` — protection contre les chutes définie par l''utilisateur
-
-      - `NOTDEFINED` — protection contre les chutes non précisée'
-    it: 'Tipo di protezione anticaduta.
-
+      - `USERDEFINED` — protection contre les chutes définie par l'utilisateur
+      - `NOTDEFINED` — protection contre les chutes non précisée
+    it: |-
+      Tipo di protezione anticaduta.
 
       **Valori ammessi**
-
       - `BALUSTRADE` — parapetto lungo il bordo di un solaio, balcone o copertura
-
       - `GUARDRAIL` — protezione anticaduta lungo scale, rampe o pianerottoli
-
       - `HANDRAIL` — corrimano
-
-      - `USERDEFINED` — protezione anticaduta definita dall''utente
-
-      - `NOTDEFINED` — protezione anticaduta non specificata'
-    en: 'Type of fall protection.
-
+      - `USERDEFINED` — protezione anticaduta definita dall'utente
+      - `NOTDEFINED` — protezione anticaduta non specificata
+    en: |-
+      Type of fall protection.
 
       **Allowed values**
-
       - `BALUSTRADE` — railing at a slab, balcony, or roof edge
-
       - `GUARDRAIL` — fall protection along a stair, ramp, or landing
-
       - `HANDRAIL` — handrail
-
       - `USERDEFINED` — user-defined fall protection
-
-      - `NOTDEFINED` — unspecified fall protection'
+      - `NOTDEFINED` — unspecified fall protection
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-railing
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-design-build-procurement
   - pragmaticbim:workflow/bes-ipd-procurement
@@ -198,67 +134,42 @@ attributes:
 - name: Status
   pset: Pset_RailingCommon
   definition:
-    de: 'Bauteilstatus für permanente und temporäre Absturzsicherungen.
-
+    de: |-
+      Bauteilstatus für permanente und temporäre Absturzsicherungen.
 
       **Zulässige Werte**
-
       - `NEW` — Neubau
-
       - `EXISTING` — Bestand
-
       - `DEMOLISH` — Abbruch
-
-      - `TEMPORARY` — Temporär'
-    fr: 'Statut de l''élément pour les protections permanentes et temporaires contre les chutes.
-
+      - `TEMPORARY` — Temporär
+    fr: |-
+      Statut de l'élément pour les protections permanentes et temporaires contre les chutes.
 
       **Valeurs admises**
-
       - `NEW` — neuf
-
       - `EXISTING` — existant
-
       - `DEMOLISH` — à démolir
-
-      - `TEMPORARY` — temporaire'
-    it: 'Stato dell''elemento per le protezioni anticaduta permanenti e temporanee.
-
+      - `TEMPORARY` — temporaire
+    it: |-
+      Stato dell'elemento per le protezioni anticaduta permanenti e temporanee.
 
       **Valori ammessi**
-
       - `NEW` — nuovo
-
       - `EXISTING` — esistente
-
       - `DEMOLISH` — da demolire
-
-      - `TEMPORARY` — temporaneo'
-    en: 'Component status for permanent and temporary fall protection.
-
+      - `TEMPORARY` — temporaneo
+    en: |-
+      Component status for permanent and temporary fall protection.
 
       **Allowed values**
-
       - `NEW` — new
-
       - `EXISTING` — existing
-
       - `DEMOLISH` — to demolish
-
-      - `TEMPORARY` — temporary'
+      - `TEMPORARY` — temporary
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-complex-assembly-planning
   - pragmaticbim:workflow/qas-fall-protection-verification
@@ -274,18 +185,8 @@ attributes:
     en: Height of the top of the fall protection above the floor or stair in metres.
   datatype: IfcPositiveLengthMeasure
   unit: m
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-complex-assembly-planning
   - pragmaticbim:workflow/bes-steelwork-tender-basis
@@ -296,86 +197,54 @@ attributes:
 - name: ElementStatus
   pset: ePset_ElementStatus
   definition:
-    de: 'Bauteilstatus für permanente und temporäre Absturzsicherungen.
-
+    de: |-
+      Bauteilstatus für permanente und temporäre Absturzsicherungen.
 
       **Zulässige Werte**
-
       - `NEW` — Neubau
-
       - `EXISTING` — Bestand
-
       - `DEMOLISH` — Abbruch
-
       - `TEMPORARY` — Temporär
 
-
       **Hinweis**
-
-      - IFC2x3-Ersatz für Status.'
-    fr: 'Statut de l''élément pour les protections permanentes et temporaires contre les chutes.
-
+      - IFC2x3-Ersatz für Status.
+    fr: |-
+      Statut de l'élément pour les protections permanentes et temporaires contre les chutes.
 
       **Valeurs admises**
-
       - `NEW` — neuf
-
       - `EXISTING` — existant
-
       - `DEMOLISH` — à démolir
-
       - `TEMPORARY` — temporaire
 
-
       **Remarque**
-
-      - Substitut IFC2x3 de Status.'
-    it: 'Stato dell''elemento per le protezioni anticaduta permanenti e temporanee.
-
+      - Substitut IFC2x3 de Status.
+    it: |-
+      Stato dell'elemento per le protezioni anticaduta permanenti e temporanee.
 
       **Valori ammessi**
-
       - `NEW` — nuovo
-
       - `EXISTING` — esistente
-
       - `DEMOLISH` — da demolire
-
       - `TEMPORARY` — temporaneo
 
-
       **Nota**
-
-      - Sostituto IFC2x3 di Status.'
-    en: 'Component status for permanent and temporary fall protection.
-
+      - Sostituto IFC2x3 di Status.
+    en: |-
+      Component status for permanent and temporary fall protection.
 
       **Allowed values**
-
       - `NEW` — new
-
       - `EXISTING` — existing
-
       - `DEMOLISH` — to demolish
-
       - `TEMPORARY` — temporary
 
-
       **Note**
-
-      - IFC2x3 substitute for Status.'
+      - IFC2x3 substitute for Status.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc2x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-complex-assembly-planning
   - pragmaticbim:workflow/qas-fall-protection-verification
@@ -385,50 +254,37 @@ attributes:
 - name: ProductClass
   pset: ePset_Cost
   definition:
-    de: 'Produktklasse für Kosten- und Ausschreibungszuordnung. Die Zuordnung kann manuell erfolgen; für konsistente Ausschreibungsdaten sollte sie regelbasiert automatisiert oder KI-unterstützt aus den
-      Bauteileigenschaften abgeleitet werden.
-
+    de: |-
+      Produktklasse als gemeinsamer Schlüssel für Kosten, Ausschreibung und Ökobilanz. Sie wird abgeleitet, wo Material und Bauteileigenschaften sie eindeutig bestimmen, sonst gesetzt. In frühen Phasen ist eine begründete Annahme zulässig.
 
       **Zulässige Werte**
-
-      - Siehe Werteliste [Produktklasse](https://schema.pragmaticbim.ch/classification/railing-product.html).'
-    fr: 'Classe de produit pour le rattachement aux coûts et à l''appel d''offres. L''attribution peut être manuelle ; pour garantir des données d''appel d''offres cohérentes, elle devrait être déduite
-      des propriétés de l''élément par des règles automatisées ou avec l''aide de l''IA.
-
+      - Siehe Werteliste [Produktklasse](https://schema.pragmaticbim.ch/classification/railing-product.html).
+    fr: |-
+      Classe de produit servant de clé commune aux coûts, à l'appel d'offres et à l'écobilan. Elle est déduite là où le matériau et les propriétés de l'élément la déterminent sans ambiguïté, sinon elle est saisie. En phase initiale, une hypothèse fondée est admise.
 
       **Valeurs admises**
-
-      - Voir la liste de valeurs [Classe de produit](https://schema.pragmaticbim.ch/classification/railing-product.html).'
-    it: 'Classe di prodotto per l''attribuzione a costi e gara. L''attribuzione può essere manuale; per garantire dati di gara coerenti, dovrebbe essere ricavata dalle proprietà del componente mediante
-      regole automatizzate o con il supporto dell''IA.
-
+      - Voir la liste de valeurs [Classe de produit](https://schema.pragmaticbim.ch/classification/railing-product.html).
+    it: |-
+      Classe di prodotto come chiave comune per costi, gara ed ecobilancio. Viene ricavata dove il materiale e le proprietà del componente la determinano in modo univoco, altrimenti viene impostata. Nella fase iniziale è ammessa un'ipotesi motivata.
 
       **Valori ammessi**
-
-      - Vedere l''elenco valori [Classe di prodotto](https://schema.pragmaticbim.ch/classification/railing-product.html).'
-    en: 'Product class for cost and tender assignment. It may be assigned manually; for consistent tender data, it should preferably be derived from component properties through deterministic automation
-      or AI-assisted mapping.
-
+      - Vedere l'elenco valori [Classe di prodotto](https://schema.pragmaticbim.ch/classification/railing-product.html).
+    en: |-
+      Product class as the shared key for costs, tendering, and life-cycle assessment. It is derived where material and component properties determine it unambiguously, otherwise set. In early phases, a reasoned assumption is acceptable.
 
       **Allowed values**
-
-      - See the [Product class](https://schema.pragmaticbim.ch/classification/railing-product.html) value list.'
+      - See the [Product class](https://schema.pragmaticbim.ch/classification/railing-product.html) value list.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/product-class-railing
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
-  - pragmaticbim:workflow/bes-model-based-tendering
-  - pragmaticbim:workflow/des-full-life-cycle-calculation
-  - pragmaticbim:workflow/qas-component-cost-plausibility
+    - pragmaticbim:workflow/des-full-life-cycle-calculation
+    - pragmaticbim:workflow/qas-component-cost-plausibility
+    - pragmaticbim:workflow/des-element-based-cost-early
+    - pragmaticbim:workflow/des-element-based-cost-late
+    - pragmaticbim:workflow/bes-element-based-tendering
+    - pragmaticbim:workflow/bes-element-cost-post-calculation
   is_applicability: false
   status: active
   sort_order: 6
@@ -441,39 +297,32 @@ attributes:
     en: Project- or office-specific unit price per unit of the reference quantity, used to check component costs for plausibility.
   datatype: IfcMonetaryMeasure
   unit: CHF/m
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-component-cost-plausibility
+    - pragmaticbim:workflow/qas-component-cost-plausibility
+    - pragmaticbim:workflow/des-element-based-cost-early
+    - pragmaticbim:workflow/des-element-based-cost-late
+    - pragmaticbim:workflow/bes-element-cost-post-calculation
   is_applicability: false
   status: active
   sort_order: 7
 - name: ReferenceQuantity
   pset: ePset_Cost
   definition:
-    de: 'Verbindliche Referenzmenge für den Einheitspreis: `Qto_RailingBaseQuantities.Length`.'
-    fr: 'Quantité de référence faisant foi pour le prix unitaire : `Qto_RailingBaseQuantities.Length`.'
-    it: 'Quantità di riferimento vincolante per il prezzo unitario: `Qto_RailingBaseQuantities.Length`.'
-    en: 'Authoritative reference quantity used with UnitPrice: `Qto_RailingBaseQuantities.Length`.'
+    de: "Verbindliche Referenzmenge für den Einheitspreis: `Qto_RailingBaseQuantities.Length`."
+    fr: "Quantité de référence faisant foi pour le prix unitaire : `Qto_RailingBaseQuantities.Length`."
+    it: "Quantità di riferimento vincolante per il prezzo unitario: `Qto_RailingBaseQuantities.Length`."
+    en: "Authoritative reference quantity used with UnitPrice: `Qto_RailingBaseQuantities.Length`."
   datatype: IfcLabel
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-component-cost-plausibility
+    - pragmaticbim:workflow/qas-component-cost-plausibility
+    - pragmaticbim:workflow/des-element-based-cost-early
+    - pragmaticbim:workflow/des-element-based-cost-late
+    - pragmaticbim:workflow/bes-element-based-tendering
+    - pragmaticbim:workflow/bes-element-cost-post-calculation
   is_applicability: false
   status: active
   sort_order: 8
@@ -485,15 +334,8 @@ attributes:
     it: GTIN (Global Trade Item Number) del tipo di prodotto; secondo la struttura GS1, 8, 12, 13 o 14 cifre.
     en: GTIN (Global Trade Item Number) of the product type; 8, 12, 13, or 14 digits depending on the GS1 structure.
   datatype: IfcIdentifier
-  needed_in_phases:
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/hov-product-pass-gtin
   - pragmaticbim:workflow/hov-product-pass-serial-number
@@ -508,15 +350,8 @@ attributes:
     it: Numero di serie assegnato dal fabbricante a un singolo prodotto; insieme al GTIN costituisce la chiave del passaporto di prodotto specifico dell’oggetto.
     en: Serial number the manufacturer assigns to an individual product; with the GTIN it identifies the product passport for that specific item.
   datatype: IfcIdentifier
-  needed_in_phases:
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/hov-product-pass-serial-number
   is_applicability: false
@@ -531,24 +366,18 @@ attributes:
     en: Length of the modelled fall protection in metres.
   datatype: IfcLengthMeasure
   unit: m
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
-  - pragmaticbim:workflow/bes-model-based-tendering
   - pragmaticbim:workflow/qas-component-cost-plausibility
   - pragmaticbim:workflow/des-complex-assembly-planning
   - pragmaticbim:workflow/bes-steelwork-tender-basis
   - pragmaticbim:workflow/qas-fall-protection-verification
   - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/des-element-based-cost-early
+  - pragmaticbim:workflow/des-element-based-cost-late
+  - pragmaticbim:workflow/bes-element-based-tendering
+  - pragmaticbim:workflow/bes-element-cost-post-calculation
   is_applicability: false
   status: active
   sort_order: 11

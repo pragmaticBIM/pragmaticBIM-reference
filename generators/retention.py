@@ -1,4 +1,4 @@
-"""IfcGeographicElement retention volume — shallow storage basin on terrain."""
+"""IfcBuildingElementProxy retention volume — storage body on terrain."""
 
 from __future__ import annotations
 
@@ -91,7 +91,7 @@ def _add_ground_slab(
 def generate_retention(
     params: dict[str, Any] | None = None,
 ) -> tuple[ifcopenshell.file, ifcopenshell.entity_instance]:
-    """Build a shallow retention basin volume on a ground slab.
+    """Build a retention storage volume on a ground slab.
 
     Returns ``(ifc_file, retention_entity)``.
     """
@@ -130,17 +130,12 @@ def generate_retention(
 
     retention = create_entity(
         ifc_file,
-        ifc_class="IfcGeographicElement",
+        ifc_class="IfcBuildingElementProxy",
         name=str(name),
         predefined_type=predefined_type,
     )
     retention.ObjectType = str(object_type)
     assign_container(ifc_file, relating_structure=site, products=[retention])
-    edit_object_placement(
-        ifc_file,
-        product=retention,
-        matrix=translation_matrix(z=-depth),
-    )
     solid = create_extruded_area_solid(
         ifc_file,
         _rect(length / 2.0, width / 2.0),

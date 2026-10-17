@@ -1,0 +1,51 @@
+id: pragmaticbim:usage-scenario/fertigware-versenden
+code: US-PR-04
+sort_order: 5
+name:
+  de: Fertigware verpacken und versenden
+  fr: Emballer et expédier les produits finis
+  it: Imballare e spedire i prodotti finiti
+  en: Packing and shipping finished goods
+description:
+  de: Fertige Produkte werden verpackt, bereitgestellt und abgeholt. Der Versand entscheidet über Pufferflächen
+    und die Trennung von Anlieferung und Auslieferung.
+  fr: Les produits finis sont emballés, préparés et enlevés. L'expédition détermine les surfaces tampons
+    et la séparation entre réception et expédition.
+  it: I prodotti finiti vengono imballati, preparati e ritirati. La spedizione determina superfici di
+    transito e separazione tra arrivi e partenze.
+  en: Finished products are packed, staged, and collected. Shipping determines buffer areas and the separation
+    of inbound and outbound goods.
+uses:
+- pragmaticbim:use/produktion
+tags:
+- versand
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/fertigware-versenden-dock
+  sort_order: 1
+  name:
+    de: Verpackung an der Rampe
+    fr: Emballage au quai
+    it: Imballaggio alla rampa
+    en: Packing at the dock
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/verpackungsbereich
+    to_room_type: pragmaticbim:room-type/laderampe
+  adds:
+  - pragmaticbim:room-type/verpackungsbereich
+  - pragmaticbim:room-type/laderampe
+- id: pragmaticbim:scenario-option/fertigware-versenden-warehouse
+  sort_order: 2
+  name:
+    de: Verpackung mit Fertigwarenlager
+    fr: Emballage avec stock de produits finis
+    it: Imballaggio con magazzino prodotti finiti
+    en: Packing with finished-goods store
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/verpackungsbereich
+    to_room_type: pragmaticbim:room-type/lagerhalle
+  adds:
+  - pragmaticbim:room-type/verpackungsbereich
+  - pragmaticbim:room-type/lagerhalle

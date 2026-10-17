@@ -1,0 +1,27 @@
+id: pragmaticbim:use/gastronomie
+code: USE-GA
+sort_order: 5
+name:
+  de: Gastronomie
+  fr: Restauration
+  it: Ristorazione
+  en: Food service
+definition:
+  de: 'Zubereitung und Ausgabe von Speisen und Getränken an Gäste. Bezugsgrösse: Anzahl Sitzplätze,
+    ausgegebene Speisen.'
+  fr: 'Préparation et service de mets et boissons aux hôtes. Grandeur de référence : nombre de places
+    assises, mets servis.'
+  it: 'Preparazione e servizio di cibi e bevande agli ospiti. Grandezza di riferimento: numero di posti
+    a sedere, pietanze servite.'
+  en: 'Preparing and serving food and drink to guests. Reference quantity: number of seats, meals served.'
+reference_quantity:
+  id: pragmaticbim:quantity/gastronomie-sitzplaetze
+  code: USE-GA-Q
+  sort_order: 1
+  name:
+    de: Anzahl Sitzplätze
+    fr: Nombre de places assises
+    it: Numero di posti a sedere
+    en: Number of seats
+  status: active
+status: active

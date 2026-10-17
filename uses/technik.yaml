@@ -1,0 +1,14 @@
+# Supporting use, not a reason to build. Replaced by room activity S-TEC / O-TEC.
+id: pragmaticbim:use/technik
+code: USE-TE
+name:
+  de: Technik
+  fr: Technique
+  it: Tecnica
+  en: Building services
+definition:
+  de: Räume für Haustechnik, Energie und Anschlüsse.
+  fr: Locaux pour les installations techniques, l'énergie et les raccordements.
+  it: Locali per impianti tecnici, energia e allacciamenti.
+  en: Rooms for building services, energy and utility connections.
+status: deprecated

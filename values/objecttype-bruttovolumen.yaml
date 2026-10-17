@@ -15,10 +15,10 @@ norm_reference: IFC2x3
 status: active
 values:
   de:
-  - Bruttovolumen
+    - Bruttovolumen
   fr:
-  - Volume brut
+    - Volume brut
   it:
-  - Volume lordo
+    - Volume lordo
   en:
-  - Gross volume
+    - Gross volume

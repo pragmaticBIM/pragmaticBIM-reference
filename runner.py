@@ -38,10 +38,12 @@ from catalog.mapping import (
     PLANNING_CONSTRAINT_TYPES,
     UMBAU_PERIMETER_TYPES,
     OPENING_TYPES,
+    FIRE_ACOUSTIC_SEAL_TYPES,
     PARKING_TYPES,
     ELEVATOR_TYPES,
     REFERENCE_POINT_TYPES,
     ROOF_PITCHED_TYPES,
+    ROOF_OVERFLOW_TYPES,
     ROOFING_TYPES,
     SLAB_TYPES,
     SPACE_TYPES,
@@ -484,6 +486,7 @@ def run_catalog(
         | SPATIAL_STRUCTURE_TYPES
         | SLAB_TYPES
         | OPENING_TYPES
+        | FIRE_ACOUSTIC_SEAL_TYPES
         | FOOTING_TYPES
         | COLUMN_TYPES
         | MAINTENANCE_SPACE_TYPES
@@ -507,6 +510,7 @@ def run_catalog(
         | BEAM_TYPES
         | ROOF_PITCHED_TYPES
         | ROOFING_TYPES
+        | ROOF_OVERFLOW_TYPES
         | EXTERIOR_FABRIC_TYPES
         | INTERIOR_FABRIC_TYPES
         | DETAIL_REFERENCE_TYPES
@@ -735,7 +739,7 @@ def run_catalog(
                         _print_element_properties(product)
             elif element_type in RETENTION_TYPES:
                 print(f"OK  {element_id} -> {assets}")
-                for ifc_class in ("IfcGeographicElement", "IfcSlab", "IfcBuildingElementProxy"):
+                for ifc_class in ("IfcBuildingElementProxy", "IfcSlab"):
                     for product in ifc_file.by_type(ifc_class):
                         mark = " *" if product == primary else ""
                         print(f"    [{ifc_class}]{mark}")

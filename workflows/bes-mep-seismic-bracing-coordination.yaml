@@ -1,0 +1,105 @@
+id: pragmaticbim:workflow/bes-mep-seismic-bracing-coordination
+code: BES-SEISMIC-MEP
+sort_order: 18
+name:
+  de: Installationsaufhängungen als eigenes Gewerk ausschreiben
+  fr: Mettre les suspensions d'installations en appel d'offres comme corps de métier distinct
+  it: Mettere a gara le sospensioni degli impianti come impianto separato
+  en: Tender installation suspensions as a separate trade
+description:
+  de: |-
+    Die Aufhängung der Installationen früh als eigenes Gewerk ausschreiben, damit Planung, Koordination und Ausführung eindeutig bei einem Spezialunternehmen liegen.
+
+    **Ausgangslage**
+    - Jede TGA-Disziplin plant die Aufhängung ihrer eigenen Leitungen; gemeinsame Abhängungen und Erdbebenabspannungen liegen dadurch in keinem eindeutigen Leistungsumfang.
+    - Bleiben Anteile der Aufhängungsleistung zusätzlich in anderen Gewerken enthalten, entstehen Doppelspurigkeiten und unklare Schnittstellen.
+    - Diagonale Abspannungen brauchen Platz im Deckenhohlraum, der bereits an Lüftung, Sprinkler, Kabeltrassen und Deckenraster vergeben ist.
+
+    **Ziel & Nutzen**
+    - Ein Spezialunternehmen übernimmt Planung, Bemessung, Koordination und Ausführung der Aufhängungen über alle TGA-Gewerke.
+    - Bauwerksklasse und Anforderungen an Herabfallschutz und Funktionserhalt sind im Leistungsumfang festgelegt; Ankerpunkte, Lasten und Platzbedarf sind mit Tragwerk und TGA abgestimmt.
+
+    **Ablauf**
+    1. Aufhängungen früh als eigenes Gewerk ausschreiben und die entsprechenden Leistungsanteile aus den anderen TGA-Gewerken herausnehmen.
+    2. Planung und Koordination durch das Spezialunternehmen erbringen lassen; keine formalen Modellierungsvorgaben machen, da das Spezialunternehmen die dafür benötigten Informationen und die geeignete Modellstruktur festlegt.
+    3. Aufhängungen gemäss dem koordinierten Modell des Spezialunternehmens ausführen.
+
+    **Lieferergebnis**
+    - Separat ausgeschriebenes Aufhängungsgewerk mit eindeutig abgegrenztem Leistungsumfang.
+    - Koordiniertes Modell des Spezialunternehmens mit abgestimmten Aufhängungen, Ankerpunkten und Lasten als Grundlage für die Ausführung.
+  fr: |-
+    Mettre suffisamment tôt en appel d'offres la suspension des installations comme corps de métier distinct, afin qu'une entreprise spécialisée assume clairement les études, la coordination et l'exécution.
+
+    **Situation de départ**
+    - Chaque discipline CVC planifie la suspension de ses propres réseaux; les suspensions communes et les contreventements parasismiques ne figurent donc dans aucun périmètre de prestations clairement défini.
+    - Si des parts de la prestation restent également comprises dans d'autres corps de métier, il en résulte des doublons et des interfaces mal définies.
+    - Les contreventements diagonaux occupent de la place dans le vide de plafond, déjà attribuée à la ventilation, aux sprinklers, aux chemins de câbles et à la trame du plafond.
+
+    **Objectif et bénéfice**
+    - Une entreprise spécialisée assume les études, le dimensionnement, la coordination et l'exécution des suspensions pour tous les corps de métier CVC.
+    - La classe d'ouvrage et les exigences relatives à la protection contre la chute et au maintien de la fonction sont définies dans le périmètre; les points d'ancrage, les charges et l'encombrement sont coordonnés avec la structure et les techniques du bâtiment.
+
+    **Déroulement**
+    1. Mettre suffisamment tôt les suspensions en appel d'offres comme corps de métier distinct et retirer les parts de prestation correspondantes des autres corps de métier CVC.
+    2. Confier les études et la coordination à l'entreprise spécialisée sans imposer de prescriptions formelles de modélisation; celle-ci définit les informations nécessaires et la structure de maquette appropriée.
+    3. Exécuter les suspensions conformément à la maquette coordonnée de l'entreprise spécialisée.
+
+    **Livrable**
+    - Corps de métier des suspensions mis en appel d'offres séparément, avec un périmètre de prestations clairement délimité.
+    - Maquette coordonnée de l'entreprise spécialisée avec suspensions, points d'ancrage et charges convenus comme base de l'exécution.
+  it: |-
+    Mettere tempestivamente a gara la sospensione degli impianti come impianto separato, affinché progettazione, coordinamento ed esecuzione siano chiaramente affidati a un'impresa specializzata.
+
+    **Situazione di partenza**
+    - Ogni disciplina impiantistica progetta la sospensione delle proprie reti; le sospensioni comuni e le controventature sismiche non rientrano quindi in un perimetro di prestazioni chiaramente definito.
+    - Se parti della prestazione rimangono incluse anche in altri impianti, si creano duplicazioni e interfacce poco chiare.
+    - Le controventature diagonali occupano spazio nel vano del controsoffitto, già assegnato a ventilazione, sprinkler, canaline e orditura del soffitto.
+
+    **Obiettivo e beneficio**
+    - Un'impresa specializzata assume progettazione, dimensionamento, coordinamento ed esecuzione delle sospensioni per tutti gli impianti.
+    - La classe d'opera e i requisiti di protezione dalla caduta e mantenimento della funzione sono definiti nel perimetro; punti di ancoraggio, carichi e ingombri sono coordinati con struttura e impianti.
+
+    **Svolgimento**
+    1. Mettere tempestivamente a gara le sospensioni come impianto separato e rimuovere le relative parti di prestazione dagli altri impianti.
+    2. Affidare progettazione e coordinamento all'impresa specializzata senza imporre prescrizioni formali di modellazione; l'impresa definisce le informazioni necessarie e la struttura del modello appropriata.
+    3. Eseguire le sospensioni conformemente al modello coordinato dell'impresa specializzata.
+
+    **Risultato della fornitura**
+    - Impianto delle sospensioni messo a gara separatamente con un perimetro di prestazioni chiaramente delimitato.
+    - Modello coordinato dell'impresa specializzata con sospensioni, punti di ancoraggio e carichi concordati come base per l'esecuzione.
+  en: |-
+    Tender suspension of building services early as a separate trade so that design, coordination, and installation are clearly owned by one specialist contractor.
+
+    **Starting point**
+    - Each MEP discipline designs the suspension of its own services; shared hangers and seismic bracing therefore fall outside any clearly defined scope.
+    - If parts of the suspension service also remain in other trade packages, this creates duplication and unclear interfaces.
+    - Diagonal braces need space in the ceiling void that is already taken by ventilation, sprinklers, cable trays, and the ceiling grid.
+
+    **Goal & benefit**
+    - One specialist contractor designs, sizes, coordinates, and installs the suspensions across all MEP trades.
+    - The structure class and requirements for protection against falling and functional integrity are defined in the scope; anchor points, loads, and space requirements are coordinated with structure and MEP.
+
+    **Process**
+    1. Tender the suspensions early as a separate trade and remove the corresponding scope from the other MEP trade packages.
+    2. Have the specialist contractor carry out design and coordination without formal modelling requirements; the specialist determines the information needed and the appropriate model structure.
+    3. Install the suspensions in accordance with the specialist contractor's coordinated model.
+
+    **Deliverable**
+    - Separately tendered suspension trade with a clearly delimited scope.
+    - Specialist contractor's coordinated model with agreed suspensions, anchor points, and loads as the basis for installation.
+workflow_group: planungsteam
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: special
+countries:
+  - CH
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/structural
+  - pragmaticbim:domain/mep
+comment: >-
+  Procurement use case without formal model requirements. The suspension trade
+  owns its design and coordinated model; triggered by
+  SeismicStructureClassRequired on the building (project goal PG-33, levels
+  ERD-02 and ERD-03). Requirements for nonstructural components follow SIA 261.

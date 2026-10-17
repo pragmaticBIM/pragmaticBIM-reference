@@ -1,0 +1,92 @@
+id: pragmaticbim:room-type/qualitaetskontrollraum
+code: RT-IN-08
+sort_order: 91
+name:
+  de: Qualitätskontrollraum
+  fr: Local de contrôle qualité
+  it: Locale controllo qualità
+  en: Quality Control Room
+definition:
+  de: Raum für Prüfung und Qualitätskontrolle.
+  fr: Local pour le contrôle et l'assurance qualité.
+  it: Locale per il controllo e la verifica della qualità.
+  en: Room for inspection and quality testing.
+room_type_kind: room
+room_name: RN-08-20-03
+activity: M-WRK-PRD
+default_scope: building
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/qualitaetskontrollraum-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-interior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-interior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: false
+  - element: pragmaticbim:element/spaces-interior
+    name: LongName
+    value:
+      de: Qualitätskontrollraum
+      fr: Local de contrôle qualité
+      it: Locale controllo qualità
+      en: Quality Control Room
+  - element: pragmaticbim:element/spaces-interior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: HNF
+  - element: pragmaticbim:element/spaces-interior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Linoleum
+  - element: pragmaticbim:element/spaces-interior
+    name: WallCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Anstrich
+  - element: pragmaticbim:element/spaces-interior
+    name: CeilingCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Mineralfaser-Akustikdecke
+      fr: Mineral-fibre acoustic ceiling
+      it: Mineral-fibre acoustic ceiling
+      en: Mineral-fibre acoustic ceiling
+  - element: pragmaticbim:element/spaces-interior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Office
+  - element: pragmaticbim:element/spaces-interior
+    name: InteriorOrExteriorSpace
+    value: INTERNAL
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 5.0
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-interior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  - element: pragmaticbim:element/spaces-interior
+    name: PeakOccupancy
+    pset: ePset_SpaceRequirement
+    value: 2
+  - element: pragmaticbim:element/spaces-interior
+    name: DailyOperatingHours
+    pset: ePset_SpaceRequirement
+    value: 10
+  - element: pragmaticbim:element/spaces-interior
+    name: OutdoorAirFlowRate
+    pset: ePset_SpaceRequirement
+    value: 60
+  status: active

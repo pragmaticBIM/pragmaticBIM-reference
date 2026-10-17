@@ -1,0 +1,47 @@
+id: pragmaticbim:usage-scenario/pausen-im-verkauf-verbringen
+code: US-VK-04
+sort_order: 5
+name:
+  de: Pausen im Verkauf verbringen
+  fr: Prendre ses pauses dans la vente
+  it: Fare pausa nella vendita
+  en: Taking breaks in retail
+description:
+  de: Verkaufspersonal arbeitet in Schichten und braucht Pausen und Umkleiden abseits der Kundschaft.
+    Die Personalräume entscheiden über Erholung, Hygiene und Nebenflächen.
+  fr: Le personnel de vente travaille en équipes et a besoin de pauses et de vestiaires à l'écart de la
+    clientèle. Les locaux du personnel déterminent le repos, l'hygiène et les surfaces annexes.
+  it: Il personale di vendita lavora a turni e necessita di pause e spogliatoi lontano dalla clientela.
+    I locali del personale determinano riposo, igiene e superfici accessorie.
+  en: Retail staff work in shifts and need breaks and changing away from customers. Staff rooms determine
+    rest, hygiene, and ancillary area.
+uses:
+- pragmaticbim:use/verkauf
+tags:
+- personal
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/pausen-im-verkauf-verbringen-break-room
+  sort_order: 1
+  name:
+    de: Pausenraum
+    fr: Salle de pause
+    it: Sala pausa
+    en: Break room
+  adds:
+  - pragmaticbim:room-type/pausenraum
+- id: pragmaticbim:scenario-option/pausen-im-verkauf-verbringen-break-changing
+  sort_order: 2
+  name:
+    de: Pausenraum mit Umkleide
+    fr: Salle de pause avec vestiaire
+    it: Sala pausa con spogliatoio
+    en: Break room with changing room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/umkleideraum
+    to_room_type: pragmaticbim:room-type/pausenraum
+  adds:
+  - pragmaticbim:room-type/umkleideraum
+  - pragmaticbim:room-type/pausenraum

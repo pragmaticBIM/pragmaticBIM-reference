@@ -32,6 +32,7 @@ SLAB_FLOOR_ELEMENT_SLUG = "architecture-slab-floor"
 SLAB_ROOF_ELEMENT_SLUG = "architecture-slab-flat-roof"
 SLAB_BALCONY_ELEMENT_SLUG = "architecture-slab-balcony"
 OPENING_ELEMENT_SLUG = "architecture-opening-void"
+FIRE_ACOUSTIC_SEAL_ELEMENT_SLUG = "architecture-fire-acoustic-seal"
 FOOTING_ELEMENT_SLUG = "architecture-footing"
 COLUMN_ELEMENT_SLUG = "architecture-column"
 MAINTENANCE_SPACE_ELEMENT_SLUG = "architecture-maintenance-space"
@@ -50,6 +51,7 @@ SHADING_DEVICE_ELEMENT_SLUG = "architecture-shading-device"
 COORDINATION_ZONE_ELEMENT_SLUG = "architecture-coordination-zone"
 ROOF_PITCHED_ELEMENT_SLUG = "architecture-roof-pitched"
 ROOFING_ELEMENT_SLUG = "architecture-roof-drainage"
+ROOF_OVERFLOW_ELEMENT_SLUG = "architecture-roof-overflow"
 WALL_EXTERIOR_ELEMENT_SLUG = "architecture-wall-exterior"
 CLADDING_EXTERIOR_ELEMENT_SLUG = "architecture-wall-cladding-exterior"
 WALL_INTERIOR_ELEMENT_SLUG = "architecture-wall-interior"
@@ -75,7 +77,7 @@ _ENTITY_ATTRS = frozenset({"Name", "LongName", "PredefinedType", "ObjectType", "
 # Value-list attributes must use a token that exists in the corresponding list.
 _SPACE_DEFAULTS: dict[str, Any] = {
     "PredefinedType": "INTERNAL",
-    "LongName": "Buero",
+    "LongName": "Büro",
     "Name": "101",
     "SignageRoomNumber": "101",
     "Reference": "HNF",
@@ -259,6 +261,16 @@ OPENING_DEFAULTS: dict[str, Any] = {
     "Status": "NEW",
 }
 
+FIRE_ACOUSTIC_SEAL_DEFAULTS: dict[str, Any] = {
+    "PredefinedType": "USERDEFINED",
+    "ObjectType": "Brandschott",
+    "Name": "BS-01",
+    "Reference": "BS-01",
+    "OpeningReference": "D-01",
+    "FireRating": "EI 90",
+    "FireStoppingType": "Weichschott",
+}
+
 # Architectural beam / Unterzug in the Luftraum atrium vignette
 BEAM_DEFAULTS: dict[str, Any] = {
     "PredefinedType": "BEAM",
@@ -396,7 +408,7 @@ RAILING_DEFAULTS: dict[str, Any] = {
     "Height": 1.10,
 }
 
-# Exterior shading device — vertical lamellas above a window.
+# Exterior shading device — lamellas parallel to the wall above a window.
 SHADING_DEVICE_DEFAULTS: dict[str, Any] = {
     "PredefinedType": "JALOUSIE",
     "Name": "SS-01",
@@ -498,6 +510,14 @@ ROOFING_DEFAULTS: dict[str, Any] = {
     "CostInterface": "GAB",
     "AwardInterface": "273",
     "PlanningInterface": "092",
+}
+
+# Emergency overflow through the Attika in the flat-roof vignette
+ROOF_OVERFLOW_DEFAULTS: dict[str, Any] = {
+    "PredefinedType": "USERDEFINED",
+    "ObjectType": "Notüberlauf",
+    "Name": "NÜ-01",
+    "Status": "NEW",
 }
 
 # Detail reference volumes (Detailverweis) on the exterior-wall vignette
@@ -638,7 +658,7 @@ _LUFTRAUM_DEFAULTS: dict[str, Any] = {
 # Upper gallery room in the Luftraum vignette (neighbour bay, upper storey)
 _LUFTRAUM_UPPER_DEFAULTS: dict[str, Any] = {
     "PredefinedType": "INTERNAL",
-    "LongName": "Buero",
+    "LongName": "Büro",
     "Name": "201",
     "SignageRoomNumber": "201",
     "Reference": "HNF",

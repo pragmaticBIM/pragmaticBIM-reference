@@ -1,0 +1,107 @@
+id: pragmaticbim:project-goal/certification
+sort_order: 60
+group: rahmenbedingungen
+code: PG-36
+name:
+  de: Zertifizierung
+  fr: Certification
+  it: Certificazione
+  en: Certification
+tag:
+  de: Zertifizierung
+  fr: Certification
+  it: Certificazione
+  en: Certification
+description:
+  de: |-
+    Festgelegt wird, ob das Gebäude ein Label wie Minergie-ECO, SNBS Hochbau oder DGNB/SGNI erhält. Das Label setzt Mindeststufen für Energiestandard, Treibhausgasziel und Schallschutz. Diese Stufen lassen sich erhöhen, aber nicht unterschreiten.
+
+    Ohne diese Festlegung werden Energie-, Material- und Schallschutzziele einzeln vereinbart. Erst bei der Zertifizierung zeigt sich, dass eines davon die Labelanforderung nicht erfüllt.
+  fr: |-
+    Cette condition-cadre détermine si le bâtiment obtient un label tel que Minergie-ECO, SNBS Bâtiment ou DGNB/SGNI. Le label fixe des niveaux minimaux pour le standard énergétique, l'objectif de gaz à effet de serre et l'isolation acoustique. Ces niveaux peuvent être relevés, mais pas abaissés.
+
+    Sans cette définition, les objectifs d'énergie, de matériaux et d'isolation acoustique sont convenus séparément. Ce n'est qu'à la certification qu'il apparaît que l'un d'eux ne satisfait pas l'exigence du label.
+  it: |-
+    Questa condizione quadro stabilisce se l'edificio ottiene un label come Minergie-ECO, SNBS Edilizia o DGNB/SGNI. Il label fissa livelli minimi per standard energetico, obiettivo di gas serra e isolamento acustico. Questi livelli si possono alzare, ma non abbassare.
+
+    Senza questa definizione, gli obiettivi di energia, materiali e isolamento acustico vengono concordati separatamente. Solo alla certificazione emerge che uno di essi non soddisfa il requisito del label.
+  en: |-
+    This framework condition sets whether the building receives a label such as Minergie-ECO, SNBS Building Construction, or DGNB/SGNI. The label sets minimum levels for the energy standard, the greenhouse gas target, and sound insulation. These levels can be raised but not lowered.
+
+    Without it, energy, material, and sound insulation targets are agreed one by one. Only at certification does it turn out that one of them misses the label requirement.
+status: active
+is_boundary_condition: true
+comment: 'Keine eigenen Anwendungsfälle; wirkt über implied_levels auf PG-34, PG-35 und PG-38. Kein Einfluss auf Anwendungsfälle der Nutzung oder Raumtypen. Mindeststufen je Label vor Freigabe fachlich bestätigen.'
+levels:
+- id: pragmaticbim:project-goal-level/certification-none
+  code: ZER-01
+  sort_order: 1
+  name:
+    de: Keine
+    fr: Aucune
+    it: Nessuna
+    en: None
+  description:
+    de: Das Gebäude wird nicht zertifiziert. Energiestandard, Treibhausgasziel und Schallschutz werden einzeln festgelegt.
+    fr: Le bâtiment n'est pas certifié. Standard énergétique, objectif de gaz à effet de serre et isolation acoustique sont fixés séparément.
+    it: L'edificio non viene certificato. Standard energetico, obiettivo di gas serra e isolamento acustico vengono fissati separatamente.
+    en: The building is not certified. Energy standard, greenhouse gas target, and sound insulation are set one by one.
+  status: active
+  activated_workflows: []
+  comment: ''
+- id: pragmaticbim:project-goal-level/certification-minergie-eco
+  code: ZER-02
+  sort_order: 2
+  name:
+    de: Minergie-ECO
+    fr: Minergie-ECO
+    it: Minergie-ECO
+    en: Minergie-ECO
+  description:
+    de: Minergie mit zusätzlichen Anforderungen an Gesundheit und Bauökologie. Setzt mindestens Minergie, den Richtwert SIA 390/1 und erhöhten Schallschutz.
+    fr: Minergie avec des exigences supplémentaires en matière de santé et d'écologie de la construction. Fixe au moins Minergie, la valeur indicative SIA 390/1 et une isolation acoustique accrue.
+    it: Minergie con requisiti supplementari di salute ed ecologia della costruzione. Fissa almeno Minergie, il valore indicativo SIA 390/1 e un isolamento acustico elevato.
+    en: Minergie with additional requirements for health and building ecology. Sets at least Minergie, the SIA 390/1 guide value, and increased sound insulation.
+  status: active
+  activated_workflows: []
+  implied_levels:
+  - pragmaticbim:project-goal-level/energy-standard-minergie
+  - pragmaticbim:project-goal-level/ghg-target-sia-390-1
+  - pragmaticbim:project-goal-level/sound-insulation-increased
+  comment: ''
+- id: pragmaticbim:project-goal-level/certification-snbs
+  code: ZER-03
+  sort_order: 3
+  name:
+    de: SNBS Hochbau
+    fr: SNBS Bâtiment
+    it: SNBS Edilizia
+    en: SNBS Building Construction
+  description:
+    de: Standard Nachhaltiges Bauen Schweiz mit Kriterien zu Gesellschaft, Wirtschaft und Umwelt. Setzt mindestens den Richtwert SIA 390/1.
+    fr: Standard Construction durable Suisse avec des critères relatifs à la société, à l'économie et à l'environnement. Fixe au moins la valeur indicative SIA 390/1.
+    it: Standard Costruzione sostenibile Svizzera con criteri relativi a società, economia e ambiente. Fissa almeno il valore indicativo SIA 390/1.
+    en: Swiss Sustainable Building Standard with criteria for society, economy, and environment. Sets at least the SIA 390/1 guide value.
+  status: active
+  activated_workflows: []
+  implied_levels:
+  - pragmaticbim:project-goal-level/ghg-target-sia-390-1
+  comment: ''
+- id: pragmaticbim:project-goal-level/certification-dgnb-sgni
+  code: ZER-04
+  sort_order: 4
+  name:
+    de: DGNB/SGNI
+    fr: DGNB/SGNI
+    it: DGNB/SGNI
+    en: DGNB/SGNI
+  description:
+    de: Internationales Nachhaltigkeitslabel in der Schweizer Fassung der SGNI. Setzt mindestens den Richtwert SIA 390/1.
+    fr: Label international de durabilité dans la version suisse de la SGNI. Fixe au moins la valeur indicative SIA 390/1.
+    it: Label internazionale di sostenibilità nella versione svizzera della SGNI. Fissa almeno il valore indicativo SIA 390/1.
+    en: International sustainability label in the Swiss version of the SGNI. Sets at least the SIA 390/1 guide value.
+  status: active
+  activated_workflows: []
+  implied_levels:
+  - pragmaticbim:project-goal-level/ghg-target-sia-390-1
+  comment: ''

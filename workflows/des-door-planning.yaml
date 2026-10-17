@@ -7,125 +7,82 @@ name:
   it: Ricavare le basi per la pianificazione delle porte
   en: Derive the basis for door planning
 description:
-  de: 'Türplanungsgrundlagen aus dem Modell ableiten, damit Türlisten und Fachkoordination nicht auf verstreuten Einzelangaben beruhen.
-
+  de: |-
+    Türplanungsgrundlagen aus dem Modell ableiten, damit Türlisten und Fachkoordination nicht auf verstreuten Einzelangaben beruhen.
 
     **Ausgangslage**
-
     - Nach der Layoutentscheidung fehlen oft strukturierte Türangaben für Türlisten, Mengen und Koordination.
-
     - Türen sind das komplexeste zu planende Bauteil. Sehr viele Fachspezialisten müssen ihre Informationen dazu beitragen – Fehler in der Türplanung sind kosten- und terminkritisch.
 
-
     **Ziel & Nutzen**
-
     - Türen im Modell mit Abmessungen, PredefinedType und OperationType führen.
-
     - Türplanungsgrundlagen für Listen, Variantenvergleich und Koordination aus dem Modell ableiten.
 
-
     **Ablauf**
-
     1. Raumlayout und Türen aus der Layoutplanung bereitstellen.
-
     2. Eine stabile Türnummer als Datenschlüssel zum Verknüpfen von Daten definieren. Türlisten aus dem Modell ableiten.
-
     3. Die Türliste durch Fachplaner mit Informationen ergänzen.
 
-
     **Lieferergebnis**
+    - Architekturmodell mit korrekt zugeordneten Türen und den erforderlichen Türplanungsinformationen
 
-    - Architekturmodell mit korrekt zugeordneten Türen und den erforderlichen Türplanungsinformationen'
-  fr: 'Déduire les bases de planification des portes à partir du modèle – dimensions, type de porte et sens d''ouverture pour listes et coordination.
-
+  fr: |-
+    Déduire les bases de planification des portes à partir du modèle – dimensions, type de porte et sens d'ouverture pour listes et coordination.
 
     **Situation de départ**
-
     - Après la décision de layout, les données structurées sur les portes manquent souvent pour listes, métrés et coordination.
-
-    - Les portes sont fréquemment planifiées en 2D ; dimensions et sens d''ouverture ne sont pas traçables dans le modèle.
-
+    - Les portes sont fréquemment planifiées en 2D ; dimensions et sens d'ouverture ne sont pas traçables dans le modèle.
 
     **Objectif et bénéfice**
-
     - Saisir les portes dans le modèle avec dimensions, PredefinedType et OperationType.
-
     - Déduire les bases de planification des portes pour listes, comparaison de variantes et coordination.
 
-
     **Déroulement**
-
     1. Fournir le layout spatial et les portes symboliques de la planification de layout.
-
     2. Compléter les portes avec OverallWidth, OverallHeight, PredefinedType et OperationType.
-
     3. Déduire et coordonner listes de portes et bases de planification à partir du modèle.
 
-
     **Livrable**
-
-    - Maquette architecture avec portes correctement affectées et les informations requises pour leur planification'
-  it: 'Ricavare le basi per la pianificazione delle porte dal modello – dimensioni, tipo di porta e senso di apertura per elenchi e coordinamento.
-
+    - Maquette architecture avec portes correctement affectées et les informations requises pour leur planification
+  it: |-
+    Ricavare le basi per la pianificazione delle porte dal modello – dimensioni, tipo di porta e senso di apertura per elenchi e coordinamento.
 
     **Situazione di partenza**
-
     - Dopo la decisione di layout mancano spesso dati strutturati sulle porte per elenchi, quantità e coordinamento.
-
     - Le porte sono spesso pianificate in 2D; dimensioni e senso di apertura non sono tracciabili nel modello.
 
-
     **Obiettivo e beneficio**
-
     - Gestire le porte nel modello con dimensioni, PredefinedType e OperationType.
-
     - Ricavare le basi per la pianificazione delle porte per elenchi, confronto varianti e coordinamento.
 
-
     **Svolgimento**
-
     1. Fornire il layout degli spazi e le porte simboliche dalla pianificazione layout.
-
     2. Completare le porte con OverallWidth, OverallHeight, PredefinedType e OperationType.
-
     3. Ricavare e coordinare elenchi porte e basi di pianificazione dal modello.
 
-
     **Risultato della fornitura**
-
-    - Modello di architettura con porte correttamente assegnate e le informazioni necessarie per la loro pianificazione'
-  en: 'Derive the door-design basis from the model so that door schedules and discipline coordination do not rely on scattered individual details.
-
+    - Modello di architettura con porte correttamente assegnate e le informazioni necessarie per la loro pianificazione
+  en: |-
+    Derive the door-design basis from the model so that door schedules and discipline coordination do not rely on scattered individual details.
 
     **Starting point**
-
     - After layout decisions, structured door data is often missing for schedules, quantities, and coordination.
-
     - Doors are the most complex components to design. Many specialists must contribute information, and door-design errors are critical to cost and schedule.
 
-
     **Goal & benefit**
-
     - Maintain doors in the model with dimensions, PredefinedType, and OperationType.
-
     - Derive door planning foundations for schedules, option comparison, and coordination.
 
-
     **Process**
-
     1. Provide the spatial layout and symbolic doors from layout planning.
-
     2. Define a stable door number as the data key for linking information; add OverallWidth, OverallHeight, PredefinedType, and OperationType to the doors.
-
     3. Derive and align door schedules and planning foundations from the model.
 
-
     **Deliverable**
-
-    - Architecture model with correctly assigned doors and the required door-planning information'
+    - Architecture model with correctly assigned doors and the required door-planning information
 workflow_group: arbeitsvorbereitung
 parent_workflow: pragmaticbim:workflow/des
-picture_link: null
+picture_link:
 status: active
 service_kind: basic
 needed_in_domain:

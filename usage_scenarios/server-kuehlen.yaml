@@ -1,0 +1,51 @@
+id: pragmaticbim:usage-scenario/server-kuehlen
+code: US-RZ-03
+sort_order: 4
+name:
+  de: Server kühlen
+  fr: Refroidir les serveurs
+  it: Raffreddare i server
+  en: Cooling servers
+description:
+  de: Die Server geben laufend Wärme ab. Das Kühlkonzept entscheidet über Kälteleistung, Abwärmenutzung
+    und Technikfläche.
+  fr: Les serveurs dégagent de la chaleur en continu. Le concept de refroidissement détermine la puissance
+    frigorifique, la valorisation des rejets thermiques et la surface technique.
+  it: I server producono calore in continuo. Il concetto di raffreddamento determina potenza frigorifera,
+    recupero del calore e superficie tecnica.
+  en: Servers give off heat continuously. The cooling concept determines cooling capacity, waste-heat
+    use, and plant area.
+uses:
+- pragmaticbim:use/rechenzentrum
+tags:
+- kuehlung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/server-kuehlen-chiller
+  sort_order: 1
+  name:
+    de: Kältezentrale
+    fr: Centrale frigorifique
+    it: Centrale frigorifera
+    en: Chiller plant
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/kaelteraum
+    to_room_type: pragmaticbim:room-type/serverraum
+  adds:
+  - pragmaticbim:room-type/kaelteraum
+  - pragmaticbim:room-type/serverraum
+- id: pragmaticbim:scenario-option/server-kuehlen-chiller-hvac
+  sort_order: 2
+  name:
+    de: Kälte- und Lüftungszentrale
+    fr: Centrale frigorifique et de ventilation
+    it: Centrale frigorifera e di ventilazione
+    en: Chiller and HVAC plant
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/kaelteraum
+    to_room_type: pragmaticbim:room-type/hlk-zentralraum
+  adds:
+  - pragmaticbim:room-type/kaelteraum
+  - pragmaticbim:room-type/hlk-zentralraum

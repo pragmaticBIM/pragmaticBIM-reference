@@ -15,10 +15,10 @@ norm_reference: SN 506 511
 status: active
 values:
   de:
-  - D02.03
+    - 'D02.03'
   fr:
-  - D02.03
+    - 'D02.03'
   it:
-  - D02.03
+    - 'D02.03'
   en:
-  - D02.03
+    - 'D02.03'

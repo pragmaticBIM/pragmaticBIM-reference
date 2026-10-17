@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/zusammenarbeiten
+code: US-WR-02
+sort_order: 3
+name:
+  de: Zusammenarbeiten
+  fr: Collaborer
+  it: Collaborare
+  en: Collaborating
+description:
+  de: Teams arbeiten regelmässig gemeinsam an Aufgaben. Der Ort entscheidet, ob Austausch im Arbeitsbereich
+    oder in einem getrennten Raum stattfindet.
+  fr: Les équipes travaillent régulièrement ensemble. Le lieu détermine si les échanges ont lieu dans
+    la zone de travail ou dans une salle séparée.
+  it: I gruppi lavorano regolarmente insieme. Il luogo determina se lo scambio avviene nell'area di lavoro
+    o in un locale separato.
+  en: Teams regularly work together. The location determines whether collaboration happens in the work
+    area or in a separate room.
+uses:
+- pragmaticbim:use/arbeit
+tags:
+- zusammenarbeit
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/zusammenarbeiten-work-area
+  sort_order: 1
+  name:
+    de: Im Arbeitsbereich
+    fr: Dans la zone de travail
+    it: Nell'area di lavoro
+    en: In the work area
+  adds:
+  - pragmaticbim:room-type/grossraumbuero
+- id: pragmaticbim:scenario-option/zusammenarbeiten-team-room
+  sort_order: 2
+  name:
+    de: Teamraum
+    fr: Salle d'équipe
+    it: Sala di gruppo
+    en: Team room
+  adds:
+  - pragmaticbim:room-type/besprechungsraum

@@ -1,0 +1,82 @@
+id: pragmaticbim:project-goal/fahrzeugmix
+sort_order: 1151
+group: rahmenbedingungen
+code: PG-32
+name:
+  de: Fahrzeugmix
+  fr: Répartition des véhicules
+  it: Composizione dei veicoli
+  en: Vehicle mix
+tag:
+  de: Fahrzeuge
+  fr: Véhicules
+  it: Veicoli
+  en: Vehicles
+description:
+  de: |-
+    Der Fahrzeugmix und die Zahl der Parkplätze bestimmen Rampen, Fahrgassen, Ladeinfrastruktur und Brandschutz.
+
+    Ohne diese Festlegung bleiben Rampen, Fahrgassen und Ladepunkte unbestimmt. Die Parkierung lässt sich dann nicht auf die Fahrzeuge auslegen, die tatsächlich kommen.
+  fr: |-
+    La répartition des véhicules et le nombre de places déterminent les rampes, les voies de circulation, l'infrastructure de recharge et la protection incendie.
+
+    Sans cette décision, rampes, voies de circulation et points de recharge restent indéterminés. Le stationnement ne peut alors pas être dimensionné pour les véhicules qui arrivent réellement.
+  it: |-
+    La composizione dei veicoli e il numero di posteggi determinano rampe, corsie, infrastruttura di ricarica e protezione antincendio.
+
+    Senza questa decisione rampe, corsie e punti di ricarica restano indeterminati. Il posteggio non può allora essere dimensionato per i veicoli che arrivano davvero.
+  en: |-
+    The vehicle mix and the number of parking spaces determine ramps, aisles, charging infrastructure, and fire protection.
+
+    Without this decision ramps, aisles, and charging points stay undefined. Parking then cannot be sized for the vehicles that actually arrive.
+status: active
+uses:
+- pragmaticbim:use/parkierung
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/fahrzeugmix-auto
+  code: FZM-01
+  sort_order: 1
+  name:
+    de: Auto
+    fr: Voiture
+    it: Auto
+    en: Car
+  description:
+    de: Parkplätze für Personenwagen.
+    fr: Places pour voitures de tourisme.
+    it: Posteggi per automobili.
+    en: Parking for cars.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/fahrzeugmix-velo
+  code: FZM-02
+  sort_order: 2
+  name:
+    de: Velo
+    fr: Vélo
+    it: Bicicletta
+    en: Bicycle
+  description:
+    de: Abstellplätze für Velos und Cargo-Velos.
+    fr: Places pour vélos et vélos-cargos.
+    it: Posteggi per biciclette e bici cargo.
+    en: Parking for bicycles and cargo bikes.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/fahrzeugmix-e-ladung
+  code: FZM-03
+  sort_order: 3
+  name:
+    de: E-Ladung
+    fr: Recharge électrique
+    it: Ricarica elettrica
+    en: EV charging
+  description:
+    de: Parkplätze mit Ladestationen für Elektrofahrzeuge.
+    fr: Places avec bornes de recharge pour véhicules électriques.
+    it: Posteggi con stazioni di ricarica per veicoli elettrici.
+    en: Parking with charging points for electric vehicles.
+  status: active
+  comment: ''

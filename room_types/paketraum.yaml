@@ -1,0 +1,94 @@
+id: pragmaticbim:room-type/paketraum
+code: RT-ST-12
+sort_order: 134
+name:
+  de: Paketraum
+  fr: Local à colis
+  it: Locale pacchi
+  en: Parcel Room
+definition:
+  de: Raum für Paketfächer, im Unterschied zum Postraum und zu persönlichen Schliessfächern.
+  fr: Local à casiers pour colis, distinct du local courrier et des casiers personnels.
+  it: Locale per armadietti pacchi, distinto dal locale posta e dagli armadietti personali.
+  en: Parcel locker room, distinct from the mail room and from personal lockers.
+room_type_kind: room
+room_name: RN-10-20-08
+activity: S-STO-GEN
+default_scope: building
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/paketraum-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-interior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-interior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: false
+  - element: pragmaticbim:element/spaces-interior
+    name: LongName
+    value:
+      de: Paketraum
+      fr: Local à colis
+      it: Locale pacchi
+      en: Parcel Room
+  - element: pragmaticbim:element/spaces-interior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: NNF
+  - element: pragmaticbim:element/spaces-interior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Plattenbelag
+  - element: pragmaticbim:element/spaces-interior
+    name: WallCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Anstrich
+  - element: pragmaticbim:element/spaces-interior
+    name: CeilingCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Gipskarton-Decke
+      fr: Gypsum board ceiling
+      it: Gypsum board ceiling
+      en: Gypsum board ceiling
+  - element: pragmaticbim:element/spaces-interior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-interior
+    name: InteriorOrExteriorSpace
+    value: INTERNAL
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 5.0
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-interior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Eingeschränkt
+      fr: Restreint
+      it: Ristretto
+      en: Restricted
+  - element: pragmaticbim:element/spaces-interior
+    name: PeakOccupancy
+    pset: ePset_SpaceRequirement
+    value: 1
+  - element: pragmaticbim:element/spaces-interior
+    name: DailyOperatingHours
+    pset: ePset_SpaceRequirement
+    value: 1
+  - element: pragmaticbim:element/spaces-interior
+    name: OutdoorAirFlowRate
+    pset: ePset_SpaceRequirement
+    value: 30
+  status: active
+  restrictions:
+    min_area: 4

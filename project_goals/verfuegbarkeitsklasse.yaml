@@ -1,0 +1,97 @@
+id: pragmaticbim:project-goal/verfuegbarkeitsklasse
+sort_order: 1131
+group: rahmenbedingungen
+code: PG-30
+name:
+  de: Verfügbarkeitsklasse
+  fr: Classe de disponibilité
+  it: Classe di disponibilità
+  en: Availability class
+tag:
+  de: Verfügbarkeit
+  fr: Disponibilité
+  it: Disponibilità
+  en: Availability
+description:
+  de: |-
+    Die Verfügbarkeitsklasse nach EN 50600 und die IT-Last bestimmen Redundanz von Strom und Kühlung, Technikflächen und Wartungswege.
+
+    Ohne diese Festlegung bleiben Redundanz, Technikflächen und Wartungswege offen. Strom und Kühlung werden dann für eine Verfügbarkeit ausgelegt, die der Betrieb nicht braucht oder nicht erreicht.
+  fr: |-
+    La classe de disponibilité selon EN 50600 et la charge IT déterminent la redondance de l'alimentation et du refroidissement, les surfaces techniques et les accès de maintenance.
+
+    Sans cette décision, redondance, surfaces techniques et accès de maintenance restent ouverts. Alimentation et refroidissement sont alors dimensionnés pour une disponibilité que l'exploitation n'exige pas, ou n'atteint pas.
+  it: |-
+    La classe di disponibilità secondo EN 50600 e il carico IT determinano ridondanza di alimentazione e raffreddamento, superfici tecniche e percorsi di manutenzione.
+
+    Senza questa decisione ridondanza, superfici tecniche e percorsi di manutenzione restano aperti. Alimentazione e raffreddamento vengono allora dimensionati per una disponibilità che l'esercizio non richiede, o non raggiunge.
+  en: |-
+    The availability class according to EN 50600 and the IT load determine redundancy of power and cooling, plant areas, and maintenance routes.
+
+    Without this decision redundancy, plant areas, and maintenance routes stay open. Power and cooling are then sized for an availability the operation does not need, or does not reach.
+status: active
+uses:
+- pragmaticbim:use/rechenzentrum
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/verfuegbarkeitsklasse-vk-1
+  code: VFK-01
+  sort_order: 1
+  name:
+    de: Klasse 1
+    fr: Classe 1
+    it: Classe 1
+    en: Class 1
+  description:
+    de: Niedrige Verfügbarkeit, ohne Redundanz.
+    fr: Disponibilité faible, sans redondance.
+    it: Disponibilità bassa, senza ridondanza.
+    en: Low availability, without redundancy.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/verfuegbarkeitsklasse-vk-2
+  code: VFK-02
+  sort_order: 2
+  name:
+    de: Klasse 2
+    fr: Classe 2
+    it: Classe 2
+    en: Class 2
+  description:
+    de: Mittlere Verfügbarkeit, redundante Komponenten.
+    fr: Disponibilité moyenne, composants redondants.
+    it: Disponibilità media, componenti ridondanti.
+    en: Medium availability, redundant components.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/verfuegbarkeitsklasse-vk-3
+  code: VFK-03
+  sort_order: 3
+  name:
+    de: Klasse 3
+    fr: Classe 3
+    it: Classe 3
+    en: Class 3
+  description:
+    de: Hohe Verfügbarkeit, Wartung ohne Unterbruch.
+    fr: Disponibilité élevée, maintenance sans interruption.
+    it: Disponibilità alta, manutenzione senza interruzione.
+    en: High availability, maintenance without interruption.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/verfuegbarkeitsklasse-vk-4
+  code: VFK-04
+  sort_order: 4
+  name:
+    de: Klasse 4
+    fr: Classe 4
+    it: Classe 4
+    en: Class 4
+  description:
+    de: Sehr hohe Verfügbarkeit, fehlertolerant.
+    fr: Disponibilité très élevée, tolérante aux pannes.
+    it: Disponibilità molto alta, tollerante ai guasti.
+    en: Very high availability, fault tolerant.
+  status: active
+  comment: ''

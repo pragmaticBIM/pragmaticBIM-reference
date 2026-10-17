@@ -1,0 +1,73 @@
+id: pragmaticbim:usage-scenario/zu-den-gastraeumen-gelangen
+code: US-GA-06
+sort_order: 1
+name:
+  de: Zu den Gasträumen gelangen
+  fr: Accéder aux salles
+  it: Raggiungere le sale
+  en: Reaching the dining rooms
+description:
+  de: Gäste gelangen zu den Gasträumen, Speisen und Geschirr bewegen sich zwischen Küche und Service.
+    Die Erschliessung entscheidet über Hindernisfreiheit und die Trennung von Gäste- und Servicewegen.
+  fr: Les clients accèdent aux salles, plats et vaisselle circulent entre cuisine et service. La desserte
+    détermine l'accès sans obstacle et la séparation des parcours clients et service.
+  it: Gli ospiti raggiungono le sale, piatti e stoviglie si muovono tra cucina e servizio. L'accesso determina
+    assenza di ostacoli e separazione dei percorsi ospiti e servizio.
+  en: Guests reach the dining rooms while food and tableware move between kitchen and service. The access
+    arrangement determines step-free access and separation of guest and service routes.
+uses:
+- pragmaticbim:use/gastronomie
+tags:
+- erschliessung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/zu-den-gastraeumen-gelangen-stair
+  sort_order: 1
+  name:
+    de: Treppenhaus
+    fr: Cage d'escalier
+    it: Vano scale
+    en: Stairwell
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+- id: pragmaticbim:scenario-option/zu-den-gastraeumen-gelangen-stair-elevator
+  sort_order: 2
+  name:
+    de: Treppenhaus und Aufzug
+    fr: Cage d'escalier et ascenseur
+    it: Vano scale e ascensore
+    en: Stairwell and elevator
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+- id: pragmaticbim:scenario-option/zu-den-gastraeumen-gelangen-service-lift
+  sort_order: 3
+  name:
+    de: Treppenhaus, Aufzug und Warenaufzug
+    fr: Cage d'escalier, ascenseur et monte-charge
+    it: Vano scale, ascensore e montacarichi
+    en: Stairwell, elevator, and service lift
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  - from_room_type: pragmaticbim:room-type/treppenhaus
+    to_room_type: pragmaticbim:room-type/warenaufzug
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+  - pragmaticbim:room-type/warenaufzug

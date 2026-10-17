@@ -1,0 +1,71 @@
+id: pragmaticbim:room-type/beckenflaeche
+code: RT-OU-04
+sort_order: 125
+name:
+  de: Beckenfläche
+  fr: Aire de bassin
+  it: Area vasca
+  en: Pool Area
+definition:
+  de: Aussenliegende Becken- oder Wasserfläche.
+  fr: Surface extérieure de bassin ou d'eau.
+  it: Superficie esterna di vasca o d'acqua.
+  en: Outdoor pool or water feature area.
+room_type_kind: room
+room_name: RN-11-20-03
+activity: O-GRN-REC
+default_scope: site
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/beckenflaeche-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Beckenfläche
+      fr: Aire de bassin
+      it: Area vasca
+      en: Pool Area
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: BUF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  status: active

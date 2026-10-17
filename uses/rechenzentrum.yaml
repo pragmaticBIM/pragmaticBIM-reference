@@ -1,0 +1,28 @@
+id: pragmaticbim:use/rechenzentrum
+code: USE-RZ
+sort_order: 13
+name:
+  de: Rechenzentrum
+  fr: Centre de données
+  it: Centro dati
+  en: Data centre
+definition:
+  de: 'Betrieb von IT-Infrastruktur. Bezugsgrösse: IT-Last (MW).'
+  fr: 'Exploitation d''infrastructures informatiques. Grandeur de référence : charge IT (MW).'
+  it: 'Esercizio di infrastrutture IT. Grandezza di riferimento: carico IT (MW).'
+  en: 'Operation of IT infrastructure. Reference quantity: IT load (MW).'
+reference_quantity:
+  id: pragmaticbim:quantity/rechenzentrum-it-last
+  code: USE-RZ-Q
+  sort_order: 1
+  name:
+    de: IT-Last
+    fr: Charge IT
+    it: Carico IT
+    en: IT load
+  unit: MW
+  status: active
+typical_levels:
+- pragmaticbim:project-goal-level/indoor-climate-cooling
+- pragmaticbim:project-goal-level/seismic-bwk-2
+status: active

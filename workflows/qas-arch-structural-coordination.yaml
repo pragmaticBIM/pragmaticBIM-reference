@@ -7,131 +7,83 @@ name:
   it: Coordinare architettura e struttura
   en: Coordinate architecture and structure
 description:
-  de: 'Tragende Bauteile zwischen Architektur- und Tragwerksmodell abstimmen, damit Geometrieabweichungen vor der Ausführung erkannt und nicht doppelt nachgeführt werden müssen.
-
+  de: |-
+    Tragende Bauteile zwischen Architektur- und Tragwerksmodell abstimmen, damit Geometrieabweichungen vor der Ausführung erkannt und nicht doppelt nachgeführt werden müssen.
 
     **Ausgangslage**
-
     - Die Abstimmung zwischen Architektur und Tragwerksplanung erfolgte bisher auf 2D-Schalplänen.
-
     - Architektur- und Tragwerksgeometrie mussten aufwendig gegeneinander geprüft und Abweichungen manuell nachgeführt werden.
 
-
     **Ziel & Nutzen**
-
     - Probleme und Abweichungen zwischen Architektur und Tragwerk vor der Ausführung erkennen.
-
     - Prüfung und Bearbeitung der festgestellten Abweichungen nachvollziehbar dokumentieren.
 
-
     **Ablauf**
-
     1. Architektur- und Tragwerksmodelle im zu prüfenden Stand bereitstellen.
-
     2. Modelle gegeneinander auf Abweichungen und Kollisionen prüfen.
-
     3. Geprüfte Modellstände und festgestellte Abweichungen dokumentieren, beispielsweise als BCF-Aufgaben.
 
-
     **Lieferergebnis**
-
     - Architektur- und Tragwerksmodelle im geprüften Stand.
-
-    - Prüfprotokoll mit geprüften Modellständen und BCF-Aufgaben.'
-  fr: 'Harmoniser les éléments porteurs entre les modèles d''architecture et de structure – comme auparavant sur les plans de coffrage, désormais en maquette.
-
+    - Prüfprotokoll mit geprüften Modellständen und BCF-Aufgaben.
+  fr: |-
+    Harmoniser les éléments porteurs entre les modèles d'architecture et de structure – comme auparavant sur les plans de coffrage, désormais en maquette.
 
     **Situation de départ**
-
-    - L''harmonisation entre architecture et ingénierie structurelle se faisait auparavant sur des plans de coffrage 2D.
-
-    - Les géométries d''architecture et de structure devaient être comparées laborieusement et les écarts reportés manuellement.
-
+    - L'harmonisation entre architecture et ingénierie structurelle se faisait auparavant sur des plans de coffrage 2D.
+    - Les géométries d'architecture et de structure devaient être comparées laborieusement et les écarts reportés manuellement.
 
     **Objectif et bénéfice**
-
     - Détecter les problèmes et écarts entre architecture et structure avant la réalisation.
-
     - Documenter de manière traçable le contrôle et le traitement des écarts constatés.
 
-
     **Déroulement**
-
-    1. Fournir les maquettes d''architecture et de structure dans l''état à contrôler.
-
+    1. Fournir les maquettes d'architecture et de structure dans l'état à contrôler.
     2. Comparer les maquettes pour détecter les écarts et collisions.
-
     3. Documenter les versions contrôlées et les écarts constatés, par exemple sous forme de tâches BCF.
 
-
     **Livrable**
-
-    - Maquettes d''architecture et de structure dans l''état contrôlé.
-
-    - Rapport de contrôle avec versions contrôlées et tâches BCF.'
-  it: 'Allineare gli elementi portanti tra modello di architettura e modello strutturale – come in passato sui piani delle casseforme, ora nel modello.
-
+    - Maquettes d'architecture et de structure dans l'état contrôlé.
+    - Rapport de contrôle avec versions contrôlées et tâches BCF.
+  it: |-
+    Allineare gli elementi portanti tra modello di architettura e modello strutturale – come in passato sui piani delle casseforme, ora nel modello.
 
     **Situazione di partenza**
-
-    - L''allineamento tra architettura e ingegneria strutturale avveniva finora su piani delle casseforme 2D.
-
+    - L'allineamento tra architettura e ingegneria strutturale avveniva finora su piani delle casseforme 2D.
     - Le geometrie architettoniche e strutturali dovevano essere confrontate con grande dispendio e gli scostamenti aggiornati manualmente.
 
-
     **Obiettivo e beneficio**
-
-    - Rilevare problemi e scostamenti tra architettura e struttura prima dell''esecuzione.
-
+    - Rilevare problemi e scostamenti tra architettura e struttura prima dell'esecuzione.
     - Documentare in modo tracciabile la verifica e la gestione degli scostamenti rilevati.
 
-
     **Svolgimento**
-
     1. Fornire i modelli di architettura e struttura nello stato da verificare.
-
     2. Confrontare i modelli per rilevare scostamenti e collisioni.
-
     3. Documentare le versioni verificate e gli scostamenti rilevati, ad esempio come attività BCF.
 
-
     **Risultato della fornitura**
-
     - Modelli di architettura e struttura nello stato verificato.
-
-    - Rapporto di verifica con versioni controllate e attività BCF.'
-  en: 'Coordinate load-bearing components between the architecture and structural models so that geometric deviations are detected before construction and do not have to be maintained twice.
-
+    - Rapporto di verifica con versioni controllate e attività BCF.
+  en: |-
+    Coordinate load-bearing components between the architecture and structural models so that geometric deviations are detected before construction and do not have to be maintained twice.
 
     **Starting point**
-
     - Alignment between architecture and structural engineering previously happened on 2D formwork plans.
-
     - Architecture and structural geometry had to be compared laboriously, with deviations tracked manually.
 
-
     **Goal & benefit**
-
     - Detect problems and deviations between architecture and structure before construction.
-
     - Document the check and resolution of identified deviations traceably.
 
-
     **Process**
-
     1. Provide the architecture and structural models in the versions to be checked.
-
     2. Check the models against each other for deviations and clashes.
-
     3. Document the checked model versions and identified deviations, for example as BCF issues.
 
-
     **Deliverable**
-
     - Architecture and structural models in the checked versions.
-
-    - Review report with checked model versions and BCF issues.'
-workflow_group: entwurf
+    - Review report with checked model versions and BCF issues.
+workflow_group: koordination
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active

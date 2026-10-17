@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/einchecken
+code: US-BH-01
+sort_order: 2
+name:
+  de: Einchecken
+  fr: S'enregistrer
+  it: Fare il check-in
+  en: Checking in
+description:
+  de: Gäste kommen an und erhalten Zugang zu ihrer Unterkunft. Das Verfahren entscheidet über Empfangsfläche,
+    Personal und Orientierung.
+  fr: Les hôtes arrivent et obtiennent l'accès à leur hébergement. La procédure détermine la surface d'accueil,
+    le personnel et l'orientation.
+  it: Gli ospiti arrivano e ottengono accesso all'alloggio. La procedura determina superficie di accoglienza,
+    personale e orientamento.
+  en: Guests arrive and gain access to their accommodation. The process determines reception area, staffing,
+    and wayfinding.
+uses:
+- pragmaticbim:use/beherbergung
+tags:
+- ankommen
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/einchecken-reception
+  sort_order: 1
+  name:
+    de: Bedienter Empfang
+    fr: Réception avec personnel
+    it: Ricezione presidiata
+    en: Staffed reception
+  adds:
+  - pragmaticbim:room-type/empfang
+- id: pragmaticbim:scenario-option/einchecken-self-service
+  sort_order: 2
+  name:
+    de: Direkter Selbst-Check-in
+    fr: Enregistrement autonome direct
+    it: Check-in autonomo diretto
+    en: Direct self check-in
+  adds:
+  - pragmaticbim:room-type/hotelzimmer

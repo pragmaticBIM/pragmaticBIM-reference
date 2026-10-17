@@ -1,0 +1,27 @@
+id: pragmaticbim:use/beherbergung
+code: USE-BH
+sort_order: 6
+name:
+  de: Beherbergung
+  fr: Hébergement
+  it: Alloggio
+  en: Accommodation
+definition:
+  de: 'Vorübergehendes Übernachten von Gästen, etwa in Hotels. Bezugsgrösse: Anzahl Zimmer.'
+  fr: 'Hébergement temporaire d''hôtes, par exemple dans des hôtels. Grandeur de référence : nombre de
+    chambres.'
+  it: 'Alloggio temporaneo di ospiti, ad esempio in alberghi. Grandezza di riferimento: numero di camere.'
+  en: 'Temporary overnight stay of guests, for example in hotels. Reference quantity: number of rooms.'
+reference_quantity:
+  id: pragmaticbim:quantity/beherbergung-zimmer
+  code: USE-BH-Q
+  sort_order: 1
+  name:
+    de: Anzahl Zimmer
+    fr: Nombre de chambres
+    it: Numero di camere
+    en: Number of rooms
+  status: active
+typical_levels:
+- pragmaticbim:project-goal-level/sound-insulation-special
+status: active

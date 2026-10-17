@@ -7,140 +7,88 @@ name:
   it: Tenere la facciata nel modello
   en: Maintain the facade in the model
 description:
-  de: 'Gebäudehülle im Modell führen – einfache Aufbauten als mehrschichtiger Bauteil, komplexe Aufbauten mit einzeln konstruierten Fassadenschichten.
-
+  de: |-
+    Gebäudehülle im Modell führen – einfache Aufbauten als mehrschichtiger Bauteil, komplexe Aufbauten mit einzeln konstruierten Fassadenschichten.
 
     **Ausgangslage**
-
     - Mehrschichtbauteile sind in den Autorenwerkzeugen auf die Plangrafik optimiert; für Mengenauszug und konstruktive Details sind sie nur bedingt brauchbar.
-
-    - Bei einfachen Gebäuden reicht das vollkommen aus. Bei komplexeren Situationen – etwa einem innenliegenden Dämmstreifen, einer Unterkonstruktion oder wechselnden Bekleidungen – lässt sich der Aufbau
-    nicht mehr sauber in einer Wand abbilden.
-
+    - Bei einfachen Gebäuden reicht das vollkommen aus. Bei komplexeren Situationen – etwa einem innenliegenden Dämmstreifen, einer Unterkonstruktion oder wechselnden Bekleidungen – lässt sich der Aufbau nicht mehr sauber in einer Wand abbilden.
 
     **Ziel & Nutzen**
-
     - Den Fassadenaufbau mit einer seiner konstruktiven Komplexität angemessenen Modellierungstiefe darstellen.
-
     - Eine verlässliche und nachvollziehbare Grundlage für Plangrafik, Mengenermittlung, Bauphysik und Detailplanung schaffen.
-
     - Manuelle Flächenschätzungen und widersprüchliche Angaben zu Schichten, Anschlüssen und Öffnungen vermeiden.
 
-
     **Ablauf**
-
     1. Aussenwände, Fenster und Türen bereitstellen.
-
     2. Aufbau entscheiden: einfacher Aufbau als Mehrschichtbauteil, komplexer Aufbau mit einzeln konstruierten Schichten.
-
     3. Fassadenflächen und Öffnungsanteile aus dem Modell für Mengenauszug und Bauphysik ableiten.
 
-
     **Lieferergebnis**
+    - Architekturmodell mit Fassadenaufbau, Öffnungen und daraus ableitbaren Mengen
 
-    - Architekturmodell mit Fassadenaufbau, Öffnungen und daraus ableitbaren Mengen'
-  fr: 'Tenir l''enveloppe du bâtiment dans la maquette – les constructions simples comme élément multicouche, les constructions complexes avec des couches de façade modélisées individuellement.
-
+  fr: |-
+    Tenir l'enveloppe du bâtiment dans la maquette – les constructions simples comme élément multicouche, les constructions complexes avec des couches de façade modélisées individuellement.
 
     **Situation de départ**
-
     - Les éléments multicouches des logiciels de modélisation sont optimisés pour le graphisme des plans ; pour le métré et les détails constructifs, ils ne servent que de façon limitée.
-
-    - Pour les bâtiments simples, cela suffit largement. Dans les situations plus complexes – par exemple une bande isolante intérieure, une ossature secondaire ou des revêtements changeants – la construction
-    ne tient plus proprement dans un seul mur.
-
+    - Pour les bâtiments simples, cela suffit largement. Dans les situations plus complexes – par exemple une bande isolante intérieure, une ossature secondaire ou des revêtements changeants – la construction ne tient plus proprement dans un seul mur.
 
     **Objectif et bénéfice**
-
     - Représenter la composition de façade avec un niveau de détail adapté à sa complexité constructive.
-
     - Créer une base fiable et traçable pour le graphisme des plans, le métré, la physique du bâtiment et la planification des détails.
-
     - Éviter les estimations manuelles de surfaces et les indications contradictoires sur les couches, les raccords et les ouvertures.
 
-
     **Déroulement**
-
     1. Fournir murs extérieurs, fenêtres et portes.
-
     2. Décider de la construction : construction simple comme élément multicouche, construction complexe avec des couches modélisées individuellement.
-
-    3. Déduire surfaces de façade et parts d''ouvertures de la maquette pour le métré et la physique du bâtiment.
-
+    3. Déduire surfaces de façade et parts d'ouvertures de la maquette pour le métré et la physique du bâtiment.
 
     **Livrable**
-
-    - Maquette architecture avec la construction de façade, les ouvertures et les quantités qui en découlent'
-  it: 'Tenere l''involucro nel modello – stratigrafie semplici come componente multistrato, stratigrafie complesse con i singoli strati di facciata modellati separatamente.
-
+    - Maquette architecture avec la construction de façade, les ouvertures et les quantités qui en découlent
+  it: |-
+    Tenere l'involucro nel modello – stratigrafie semplici come componente multistrato, stratigrafie complesse con i singoli strati di facciata modellati separatamente.
 
     **Situazione di partenza**
-
     - I componenti multistrato negli strumenti di modellazione sono ottimizzati per la grafica dei piani; per il computo metrico e i dettagli costruttivi sono utilizzabili solo in parte.
-
-    - Per edifici semplici questo basta ampiamente. In situazioni più complesse – per esempio una fascia isolante interna, una sottostruttura o rivestimenti variabili – la stratigrafia non sta più in modo
-    pulito in un unico muro.
-
+    - Per edifici semplici questo basta ampiamente. In situazioni più complesse – per esempio una fascia isolante interna, una sottostruttura o rivestimenti variabili – la stratigrafia non sta più in modo pulito in un unico muro.
 
     **Obiettivo e beneficio**
-
     - Rappresentare la stratigrafia della facciata con un livello di dettaglio adeguato alla sua complessità costruttiva.
-
     - Creare una base affidabile e tracciabile per la grafica dei piani, il computo metrico, la fisica della costruzione e la progettazione dei dettagli.
-
     - Evitare stime manuali delle superfici e indicazioni contraddittorie su strati, raccordi e aperture.
 
-
     **Svolgimento**
-
     1. Fornire pareti esterne, finestre e porte.
-
     2. Decidere la stratigrafia: stratigrafia semplice come componente multistrato, stratigrafia complessa con i singoli strati modellati separatamente.
-
     3. Ricavare superfici di facciata e quote di aperture dal modello per computo metrico e fisica edilizia.
 
-
     **Risultato della fornitura**
-
-    - Modello di architettura con la stratigrafia di facciata, le aperture e le quantità che ne derivano'
-  en: 'Maintain the building envelope in the model – simple build-ups as a multi-layer component, complex build-ups with individually modelled facade layers.
-
+    - Modello di architettura con la stratigrafia di facciata, le aperture e le quantità che ne derivano
+  en: |-
+    Maintain the building envelope in the model – simple build-ups as a multi-layer component, complex build-ups with individually modelled facade layers.
 
     **Starting point**
-
     - Multi-layer components in authoring tools are optimized for drawing graphics; for quantity take-off and constructive details they are only of limited use.
-
-    - For simple buildings this is entirely sufficient. In more complex situations – an internal insulation strip, a substructure, or changing claddings – the build-up can no longer be represented cleanly
-    in a single wall.
-
+    - For simple buildings this is entirely sufficient. In more complex situations – an internal insulation strip, a substructure, or changing claddings – the build-up can no longer be represented cleanly in a single wall.
 
     **Goal & benefit**
-
     - Represent the facade build-up at a level of detail appropriate to its construction complexity.
-
     - Create a reliable and traceable basis for drawing graphics, quantity take-off, building physics, and detail design.
-
     - Avoid manual area estimates and inconsistent information about layers, junctions, and openings.
 
-
     **Process**
-
     1. Provide exterior walls, windows, and doors.
-
     2. Decide on the build-up: simple build-up as a multi-layer component, complex build-up with individually modelled layers.
-
     3. Derive facade areas and opening ratios from the model for quantity take-off and building physics.
 
-
     **Deliverable**
-
-    - Architecture model with the facade build-up, openings, and the quantities derived from them'
+    - Architecture model with the facade build-up, openings, and the quantities derived from them
 workflow_group: arbeitsvorbereitung
 parent_workflow: pragmaticbim:workflow/des
-picture_link: null
+picture_link:
 status: active
 service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Multi-layer IfcWall layer sets are graphics-driven in the authoring tools – fine for simple build-ups, but they do not carry reliable quantities or junction geometry. Model the relevant layers
-  as separate elements (IfcCovering or own components) as soon as the build-up becomes constructively relevant (e.g. internal insulation strips, substructure, multiple cladding types).
+comment: Multi-layer IfcWall layer sets are graphics-driven in the authoring tools – fine for simple build-ups, but they do not carry reliable quantities or junction geometry. Model the relevant layers as separate elements (IfcCovering or own components) as soon as the build-up becomes constructively relevant (e.g. internal insulation strips, substructure, multiple cladding types).

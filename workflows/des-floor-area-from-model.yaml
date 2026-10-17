@@ -7,131 +7,84 @@ name:
   it: Determinare le superfici di piano
   en: Determine storey floor areas
 description:
-  de: 'Geschossflächen aus dem Raummodell ableiten, damit baurechtliche und wirtschaftliche Kennzahlen mit dem Planungsstand nachgeführt werden.
-
+  de: |-
+    Geschossflächen aus dem Raummodell ableiten, damit baurechtliche und wirtschaftliche Kennzahlen mit dem Planungsstand nachgeführt werden.
 
     **Ausgangslage**
-
     - Geschossflächennachweise und Kennwerte brauchen nachvollziehbare Mengen je Geschoss.
-
     - Manuelle Abzüge für Atrien und Durchbrüche sind fehleranfällig und schwer mit dem Modell abzugleichen.
 
-
     **Ziel & Nutzen**
-
     - Geschossvolumen und Lufträume getrennt im Modell führen.
-
     - Anrechenbare Geschossfläche und Volumen direkt aus Geschossvolumen − Luftraum ableiten.
 
-
     **Ablauf**
-
     1. Geschossvolumen je Geschoss gemäss Modellierungshinweis bereitstellen.
-
     2. Nicht nutzbare Lufträume geschossweise modellieren.
-
     3. Geschossfläche und Volumen aus Geschossvolumen minus Luftraum auswerten.
 
-
     **Lieferergebnis**
-
     - Architekturmodell mit den erforderlichen Geschossvolumen-, Luftraum- und Mengeninformationen
+    - Geschossauswertung mit nachvollziehbarem Abzug der Lufträume
 
-    - Geschossauswertung mit nachvollziehbarem Abzug der Lufträume'
-  fr: 'Modéliser les volumes d''étage et les volumes d''air, puis déduire la surface de plancher à partir du volume d''étage moins le volume d''air.
-
+  fr: |-
+    Modéliser les volumes d'étage et les volumes d'air, puis déduire la surface de plancher à partir du volume d'étage moins le volume d'air.
 
     **Situation de départ**
-
     - Les justificatifs de surface de plancher et les indicateurs exigent des quantités traçables par étage.
-
-    - Les déductions manuelles pour atriums et vides sont sources d''erreurs et difficiles à aligner avec le modèle.
-
+    - Les déductions manuelles pour atriums et vides sont sources d'erreurs et difficiles à aligner avec le modèle.
 
     **Objectif et bénéfice**
-
-    - Saisir séparément volumes d''étage et volumes d''air dans le modèle.
-
-    - Déduire surface de plancher et volume comptables directement de volume d''étage − volume d''air.
-
+    - Saisir séparément volumes d'étage et volumes d'air dans le modèle.
+    - Déduire surface de plancher et volume comptables directement de volume d'étage − volume d'air.
 
     **Déroulement**
-
-    1. Fournir les volumes d''étage selon la directive de modélisation.
-
-    2. Modéliser les volumes d''air non utilisables étage par étage.
-
-    3. Évaluer surface de plancher et volume à partir du volume d''étage moins le volume d''air.
-
+    1. Fournir les volumes d'étage selon la directive de modélisation.
+    2. Modéliser les volumes d'air non utilisables étage par étage.
+    3. Évaluer surface de plancher et volume à partir du volume d'étage moins le volume d'air.
 
     **Livrable**
-
-    - Maquette architecture avec les informations requises sur les volumes d''étage, les volumes d''air et les quantités
-
-    - Évaluation par étage avec déduction traçable des volumes d''air'
-  it: 'Modellare i volumi di piano e i volumi d''aria e ricavare la superficie di piano da volume di piano meno volume d''aria.
-
+    - Maquette architecture avec les informations requises sur les volumes d'étage, les volumes d'air et les quantités
+    - Évaluation par étage avec déduction traçable des volumes d'air
+  it: |-
+    Modellare i volumi di piano e i volumi d'aria e ricavare la superficie di piano da volume di piano meno volume d'aria.
 
     **Situazione di partenza**
-
     - Le verifiche di superficie di piano e gli indicatori richiedono quantità tracciabili per piano.
-
     - Detrazioni manuali per atrii e fori sono soggette a errori e difficili da allineare al modello.
 
-
     **Obiettivo e beneficio**
-
-    - Gestire separatamente volumi di piano e volumi d''aria nel modello.
-
-    - Ricavare superficie di piano e volume computabili direttamente da volume di piano − volume d''aria.
-
+    - Gestire separatamente volumi di piano e volumi d'aria nel modello.
+    - Ricavare superficie di piano e volume computabili direttamente da volume di piano − volume d'aria.
 
     **Svolgimento**
-
     1. Fornire i volumi di piano secondo la direttiva di modellazione.
-
-    2. Modellare i volumi d''aria non utilizzabili piano per piano.
-
-    3. Valutare superficie di piano e volume da volume di piano meno volume d''aria.
-
+    2. Modellare i volumi d'aria non utilizzabili piano per piano.
+    3. Valutare superficie di piano e volume da volume di piano meno volume d'aria.
 
     **Risultato della fornitura**
-
-    - Modello di architettura con le informazioni necessarie su volumi di piano, volumi d''aria e quantità
-
-    - Valutazione per piano con detrazione tracciabile dei volumi d''aria'
-  en: 'Derive floor areas from the space model so that planning-law and economic metrics remain aligned with the design state.
-
+    - Modello di architettura con le informazioni necessarie su volumi di piano, volumi d'aria e quantità
+    - Valutazione per piano con detrazione tracciabile dei volumi d'aria
+  en: |-
+    Derive floor areas from the space model so that planning-law and economic metrics remain aligned with the design state.
 
     **Starting point**
-
     - Floor-area verification and metrics need traceable quantities per storey.
-
     - Manual deductions for atriums and voids are error-prone and hard to align with the model.
 
-
     **Goal & benefit**
-
     - Maintain storey volumes and air spaces separately in the model.
-
     - Derive countable floor area and volume directly from storey volume − air space.
 
-
     **Process**
-
     1. Provide storey volumes as set out in the modelling guideline.
-
     2. Model non-occupiable air spaces storey by storey.
-
     3. Evaluate floor area and volume from storey volume minus air space.
 
-
     **Deliverable**
-
     - Architecture model with the required storey-volume, air-space and quantity information
-
-    - Storey evaluation with traceable deduction of air spaces'
-workflow_group: konzept
+    - Storey evaluation with traceable deduction of air spaces
+workflow_group: kosten-mengen
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active

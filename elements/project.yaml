@@ -8,73 +8,53 @@ name:
   it: Progetto
   en: Project
 definition:
-  de: 'Schafft den gemeinsamen organisatorischen Bezugsrahmen, damit Fachmodelle und ihre Inhalte eindeutig demselben Bauvorhaben zugeordnet werden können.
-
+  de: |-
+    Schafft den gemeinsamen organisatorischen Bezugsrahmen, damit Fachmodelle und ihre Inhalte eindeutig demselben Bauvorhaben zugeordnet werden können.
 
     **Beschreibung**
-
     - Wurzel der räumlichen Struktur; fasst alle Planungsinhalte einer IFC-Datei zusammen.
-
     - Muss in jeder IFC-Datei vorhanden sein.
 
-
     **Modellierungshinweis**
-
     - Genau ein Projekt pro IFC-Datei.
-
-    - Name gemäss Projektbezeichnung pflegen.'
-  fr: 'Établit le cadre organisationnel commun afin que les maquettes métiers et leur contenu puissent être rattachés sans ambiguïté au même projet de construction.
-
+    - Name gemäss Projektbezeichnung pflegen.
+  fr: |-
+    Établit le cadre organisationnel commun afin que les maquettes métiers et leur contenu puissent être rattachés sans ambiguïté au même projet de construction.
 
     **Description**
-
-    - Racine de la structure spatiale; regroupe l''ensemble du contenu de planification d''un fichier IFC.
-
+    - Racine de la structure spatiale; regroupe l'ensemble du contenu de planification d'un fichier IFC.
     - Obligatoire dans chaque fichier IFC.
 
-
     **Directives de modélisation**
-
     - Exactement un projet par fichier IFC.
-
-    - Renseigner Name selon la désignation du projet.'
-  it: 'Crea il quadro organizzativo comune affinché i modelli disciplinari e i loro contenuti possano essere attribuiti in modo univoco allo stesso progetto di costruzione.
-
+    - Renseigner Name selon la désignation du projet.
+  it: |-
+    Crea il quadro organizzativo comune affinché i modelli disciplinari e i loro contenuti possano essere attribuiti in modo univoco allo stesso progetto di costruzione.
 
     **Descrizione**
-
     - Radice della struttura spaziale; riunisce tutti i contenuti di pianificazione di un file IFC.
-
     - Obbligatorio in ogni file IFC.
 
-
     **Direttive di modellazione**
-
     - Esattamente un progetto per file IFC.
-
-    - Compilare Name secondo la denominazione di progetto.'
-  en: 'Establishes the shared organizational frame of reference so that discipline models and their content can be assigned unambiguously to the same construction project.
-
+    - Compilare Name secondo la denominazione di progetto.
+  en: |-
+    Establishes the shared organizational frame of reference so that discipline models and their content can be assigned unambiguously to the same construction project.
 
     **Description**
-
     - Root of the spatial structure; groups all planning content of an IFC file.
-
     - Required in every IFC file.
 
-
     **Modelling guidelines**
-
     - Exactly one project per IFC file.
-
-    - Populate Name according to the project designation.'
+    - Populate Name according to the project designation.
 needed_in_domain:
-- pragmaticbim:domain/architecture
-- pragmaticbim:domain/mep
-- pragmaticbim:domain/structural
-- pragmaticbim:domain/fire-protection
-- pragmaticbim:domain/building-physics
-- pragmaticbim:domain/surveyor
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
+  - pragmaticbim:domain/structural
+  - pragmaticbim:domain/fire-protection
+  - pragmaticbim:domain/building-physics
+  - pragmaticbim:domain/surveyor
 entity_ifc2x3: IfcProject
 entity_ifc4: IfcProject
 entity_ifc4_3: IfcProject
@@ -82,430 +62,362 @@ picture_link: project.png
 model_link: null
 applicability: entity_ifc4=IfcProject OR entity_ifc2x3=IfcProject
 attributes:
-- name: Name
-  pset: null
-  definition:
-    de: Projektbezeichnung zur eindeutigen Zuordnung der Dateien.
-    fr: Désignation du projet pour identifier le fichier IFC.
-    it: Denominazione del progetto per identificare il file IFC.
-    en: Project designation used to assign files unambiguously to the project.
-  datatype: IfcLabel
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
-  - pragmaticbim:workflow/bes-award-interface-visualization
-  - pragmaticbim:workflow/bes-concrete-tender-from-model
-  - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
-  - pragmaticbim:workflow/bes-design-build-procurement
-  - pragmaticbim:workflow/bes-designer-procurement
-  - pragmaticbim:workflow/bes-door-tender-basis
-  - pragmaticbim:workflow/bes-drywall-tender-basis
-  - pragmaticbim:workflow/bes-element-unit-price-backfeed
-  - pragmaticbim:workflow/bes-elevator-early-procurement
-  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
-  - pragmaticbim:workflow/bes-existing-building-point-cloud-procurement
-  - pragmaticbim:workflow/bes-existing-circularity-procurement
-  - pragmaticbim:workflow/bes-existing-structure-model-procurement
-  - pragmaticbim:workflow/bes-firestop-tender-basis
-  - pragmaticbim:workflow/bes-flooring-tender-basis
-  - pragmaticbim:workflow/bes-functional-brief-test-planning
-  - pragmaticbim:workflow/bes-ipd-procurement
-  - pragmaticbim:workflow/bes-masonry-tender-basis
-  - pragmaticbim:workflow/bes-model-based-tendering
-  - pragmaticbim:workflow/bes-owner-cde-procurement
-  - pragmaticbim:workflow/bes-painting-tender-basis
-  - pragmaticbim:workflow/bes-plan-model-box
-  - pragmaticbim:workflow/bes-room-program-brief
-  - pragmaticbim:workflow/bes-site-wlan
-  - pragmaticbim:workflow/bes-steelwork-tender-basis
-  - pragmaticbim:workflow/bes-survey-existing-model-procurement
-  - pragmaticbim:workflow/bes-tiling-tender-basis
-  - pragmaticbim:workflow/bes-timber-contractor-procurement
-  - pragmaticbim:workflow/bes-window-tender-basis
-  - pragmaticbim:workflow/con-construction-progress-documentation
-  - pragmaticbim:workflow/con-defect-management
-  - pragmaticbim:workflow/con-fastening-suspension-from-model
-  - pragmaticbim:workflow/con-final-measurement-from-model
-  - pragmaticbim:workflow/con-formwork-reinforcement-plans
-  - pragmaticbim:workflow/con-logistics-fit-out
-  - pragmaticbim:workflow/con-precast-concrete-ordering-from-model
-  - pragmaticbim:workflow/con-reinforcement-execution-from-model
-  - pragmaticbim:workflow/con-robotic-floor-layout
-  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
-  - pragmaticbim:workflow/des-abstractbim-element-based-cost
-  - pragmaticbim:workflow/des-apartment-schedule
-  - pragmaticbim:workflow/des-arch-mep-coordination
-  - pragmaticbim:workflow/des-basic-piping-planning
-  - pragmaticbim:workflow/des-building-law-parcels
-  - pragmaticbim:workflow/des-building-permit
-  - pragmaticbim:workflow/des-building-physics-concept
-  - pragmaticbim:workflow/des-ceiling-mirror-planning
-  - pragmaticbim:workflow/des-circularity
-  - pragmaticbim:workflow/des-complex-assembly-planning
-  - pragmaticbim:workflow/des-construction-volume
-  - pragmaticbim:workflow/des-critical-area-insert-model
-  - pragmaticbim:workflow/des-d0165-area-verification
-  - pragmaticbim:workflow/des-door-planning
-  - pragmaticbim:workflow/des-drawing-derivation
-  - pragmaticbim:workflow/des-drywall-reinforcement-planning
-  - pragmaticbim:workflow/des-ebkp-h-classification
-  - pragmaticbim:workflow/des-embed-reinforcement-coordination
-  - pragmaticbim:workflow/des-environmental-impact-assessment
-  - pragmaticbim:workflow/des-facade-planning
-  - pragmaticbim:workflow/des-fire-control-matrix
-  - pragmaticbim:workflow/des-fire-protection-concept
-  - pragmaticbim:workflow/des-floor-area-from-model
-  - pragmaticbim:workflow/des-flooring-planning
-  - pragmaticbim:workflow/des-full-life-cycle-calculation
-  - pragmaticbim:workflow/des-furniture-planning
-  - pragmaticbim:workflow/des-humus-handling
-  - pragmaticbim:workflow/des-layout-planning
-  - pragmaticbim:workflow/des-lighting-design-coordination
-  - pragmaticbim:workflow/des-mep-schematics
-  - pragmaticbim:workflow/des-mep-usage-agreement-visualization
-  - pragmaticbim:workflow/des-model-based-visualization
-  - pragmaticbim:workflow/des-parking-verification
-  - pragmaticbim:workflow/des-planning-interface-visualization
-  - pragmaticbim:workflow/des-sanitary-fixture-coordination
-  - pragmaticbim:workflow/des-sia416-area-verification
-  - pragmaticbim:workflow/des-struct-masonry-adoption
-  - pragmaticbim:workflow/des-struct-mep-opening-planning
-  - pragmaticbim:workflow/des-terrain-design
-  - pragmaticbim:workflow/des-traffic-study
-  - pragmaticbim:workflow/des-underfloor-heating-planning
-  - pragmaticbim:workflow/des-urban-design-mass-study
-  - pragmaticbim:workflow/des-usage-agreement-visualization
-  - pragmaticbim:workflow/des-wall-requirements-from-space-use
-  - pragmaticbim:workflow/hov-cobie-data-delivery
-  - pragmaticbim:workflow/hov-fm-3d-information-delivery
-  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
-  - pragmaticbim:workflow/hov-native-model-handover
-  - pragmaticbim:workflow/hov-product-pass-gtin
-  - pragmaticbim:workflow/hov-product-pass-serial-number
-  - pragmaticbim:workflow/opr-building-performance-optimization
-  - pragmaticbim:workflow/opr-facility-management-architecture-model
-  - pragmaticbim:workflow/opr-facility-management-point-cloud
-  - pragmaticbim:workflow/opr-firestop-maintenance
-  - pragmaticbim:workflow/opr-signage-room-number
-  - pragmaticbim:workflow/qas-accessibility-sia500-verification
-  - pragmaticbim:workflow/qas-acoustic-building-physics
-  - pragmaticbim:workflow/qas-arch-structural-adoption
-  - pragmaticbim:workflow/qas-arch-structural-coordination
-  - pragmaticbim:workflow/qas-building-security-verification
-  - pragmaticbim:workflow/qas-component-cost-plausibility
-  - pragmaticbim:workflow/qas-construction-site-logistics
-  - pragmaticbim:workflow/qas-contractor-design-verification
-  - pragmaticbim:workflow/qas-coordination-zone-planning
-  - pragmaticbim:workflow/qas-daylight-area-verification
-  - pragmaticbim:workflow/qas-decision-impact-visualization
-  - pragmaticbim:workflow/qas-design-review
-  - pragmaticbim:workflow/qas-detail-reference-model
-  - pragmaticbim:workflow/qas-early-design-coordination
-  - pragmaticbim:workflow/qas-facing-shell-area-verification
-  - pragmaticbim:workflow/qas-fall-protection-verification
-  - pragmaticbim:workflow/qas-fire-protection
-  - pragmaticbim:workflow/qas-funding-verification
-  - pragmaticbim:workflow/qas-furnishability-verification
-  - pragmaticbim:workflow/qas-hazmat-check
-  - pragmaticbim:workflow/qas-installation-path-verification
-  - pragmaticbim:workflow/qas-maintenance-space-verification
-  - pragmaticbim:workflow/qas-mep-detail-coordination
-  - pragmaticbim:workflow/qas-outlet-user-approval
-  - pragmaticbim:workflow/qas-planning-constraints
-  - pragmaticbim:workflow/qas-project-benchmark
-  - pragmaticbim:workflow/qas-qr-stakeholder-info
-  - pragmaticbim:workflow/qas-room-program-verification
-  - pragmaticbim:workflow/qas-special-room-user-coordination
-  - pragmaticbim:workflow/qas-sponge-city
-  - pragmaticbim:workflow/qas-stakeholder-dialog
-  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
-  - pragmaticbim:workflow/qas-tree-preservation-verification
-  - pragmaticbim:workflow/qas-urban-ar-assessment
-  - pragmaticbim:workflow/qas-usage-agreement-verification
-  is_applicability: false
-  status: active
-  sort_order: 1
-- name: Phase
-  pset: null
-  definition:
-    de: 'Bezeichnung der Teilphase gemäss SIA 112.
-
-
-      **Zulässige Werte**
-
-      - `11` — Strategische Planung
-
-      - `21` — Vorstudien
-
-      - `22` — Vorstudien Verfahren
-
-      - `31` — Vorprojekt
-
-      - `32` — Bauprojekt
-
-      - `33` — Bewilligungsverfahren
-
-      - `41` — Ausschreibung
-
-      - `51` — Ausführungsplanung
-
-      - `52` — Ausführung
-
-      - `53` — Inbetriebnahme
-
-      - `61` — Betrieb
-
-      - `62` — Überwachung'
-    fr: 'Désignation de la phase partielle selon SIA 112.
-
-
-      **Valeurs admises**
-
-      - `11` — Planification stratégique
-
-      - `21` — Études préliminaires
-
-      - `22` — Études préliminaires, procédure
-
-      - `31` — Avant-projet
-
-      - `32` — Projet de construction
-
-      - `33` — Procédure d''autorisation
-
-      - `41` — Appel d''offres
-
-      - `51` — Planification d''exécution
-
-      - `52` — Exécution
-
-      - `53` — Mise en service
-
-      - `61` — Exploitation
-
-      - `62` — Surveillance'
-    it: 'Denominazione della sottofase secondo SIA 112.
-
-
-      **Valori ammessi**
-
-      - `11` — Pianificazione strategica
-
-      - `21` — Studi preliminari
-
-      - `22` — Studi preliminari, procedura
-
-      - `31` — Avamprogetto
-
-      - `32` — Progetto di costruzione
-
-      - `33` — Procedura di autorizzazione
-
-      - `41` — Gara
-
-      - `51` — Pianificazione esecutiva
-
-      - `52` — Esecuzione
-
-      - `53` — Messa in servizio
-
-      - `61` — Esercizio
-
-      - `62` — Sorveglianza'
-    en: 'Designation of the sub-phase according to SIA 112.
-
-
-      **Allowed values**
-
-      - `11` — Strategic planning
-
-      - `21` — Preliminary studies
-
-      - `22` — Preliminary studies, procedure
-
-      - `31` — Preliminary design
-
-      - `32` — Construction project
-
-      - `33` — Permit procedure
-
-      - `41` — Tender
-
-      - `51` — Execution planning
-
-      - `52` — Construction
-
-      - `53` — Commissioning
-
-      - `61` — Operation
-
-      - `62` — Monitoring'
-  datatype: IfcLabel
-  allowed_values: pragmaticbim:value/sia-phase
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
-  - pragmaticbim:workflow/bes-award-interface-visualization
-  - pragmaticbim:workflow/bes-concrete-tender-from-model
-  - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
-  - pragmaticbim:workflow/bes-design-build-procurement
-  - pragmaticbim:workflow/bes-designer-procurement
-  - pragmaticbim:workflow/bes-door-tender-basis
-  - pragmaticbim:workflow/bes-drywall-tender-basis
-  - pragmaticbim:workflow/bes-element-unit-price-backfeed
-  - pragmaticbim:workflow/bes-elevator-early-procurement
-  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
-  - pragmaticbim:workflow/bes-existing-building-point-cloud-procurement
-  - pragmaticbim:workflow/bes-existing-circularity-procurement
-  - pragmaticbim:workflow/bes-existing-structure-model-procurement
-  - pragmaticbim:workflow/bes-firestop-tender-basis
-  - pragmaticbim:workflow/bes-flooring-tender-basis
-  - pragmaticbim:workflow/bes-functional-brief-test-planning
-  - pragmaticbim:workflow/bes-ipd-procurement
-  - pragmaticbim:workflow/bes-masonry-tender-basis
-  - pragmaticbim:workflow/bes-model-based-tendering
-  - pragmaticbim:workflow/bes-owner-cde-procurement
-  - pragmaticbim:workflow/bes-painting-tender-basis
-  - pragmaticbim:workflow/bes-plan-model-box
-  - pragmaticbim:workflow/bes-room-program-brief
-  - pragmaticbim:workflow/bes-site-wlan
-  - pragmaticbim:workflow/bes-steelwork-tender-basis
-  - pragmaticbim:workflow/bes-survey-existing-model-procurement
-  - pragmaticbim:workflow/bes-tiling-tender-basis
-  - pragmaticbim:workflow/bes-timber-contractor-procurement
-  - pragmaticbim:workflow/bes-window-tender-basis
-  - pragmaticbim:workflow/con-construction-progress-documentation
-  - pragmaticbim:workflow/con-defect-management
-  - pragmaticbim:workflow/con-fastening-suspension-from-model
-  - pragmaticbim:workflow/con-final-measurement-from-model
-  - pragmaticbim:workflow/con-formwork-reinforcement-plans
-  - pragmaticbim:workflow/con-logistics-fit-out
-  - pragmaticbim:workflow/con-precast-concrete-ordering-from-model
-  - pragmaticbim:workflow/con-reinforcement-execution-from-model
-  - pragmaticbim:workflow/con-robotic-floor-layout
-  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
-  - pragmaticbim:workflow/des-abstractbim-element-based-cost
-  - pragmaticbim:workflow/des-apartment-schedule
-  - pragmaticbim:workflow/des-arch-mep-coordination
-  - pragmaticbim:workflow/des-basic-piping-planning
-  - pragmaticbim:workflow/des-building-law-parcels
-  - pragmaticbim:workflow/des-building-permit
-  - pragmaticbim:workflow/des-building-physics-concept
-  - pragmaticbim:workflow/des-ceiling-mirror-planning
-  - pragmaticbim:workflow/des-circularity
-  - pragmaticbim:workflow/des-complex-assembly-planning
-  - pragmaticbim:workflow/des-construction-volume
-  - pragmaticbim:workflow/des-critical-area-insert-model
-  - pragmaticbim:workflow/des-d0165-area-verification
-  - pragmaticbim:workflow/des-door-planning
-  - pragmaticbim:workflow/des-drawing-derivation
-  - pragmaticbim:workflow/des-drywall-reinforcement-planning
-  - pragmaticbim:workflow/des-ebkp-h-classification
-  - pragmaticbim:workflow/des-embed-reinforcement-coordination
-  - pragmaticbim:workflow/des-environmental-impact-assessment
-  - pragmaticbim:workflow/des-facade-planning
-  - pragmaticbim:workflow/des-fire-control-matrix
-  - pragmaticbim:workflow/des-fire-protection-concept
-  - pragmaticbim:workflow/des-floor-area-from-model
-  - pragmaticbim:workflow/des-flooring-planning
-  - pragmaticbim:workflow/des-full-life-cycle-calculation
-  - pragmaticbim:workflow/des-furniture-planning
-  - pragmaticbim:workflow/des-humus-handling
-  - pragmaticbim:workflow/des-layout-planning
-  - pragmaticbim:workflow/des-lighting-design-coordination
-  - pragmaticbim:workflow/des-mep-schematics
-  - pragmaticbim:workflow/des-mep-usage-agreement-visualization
-  - pragmaticbim:workflow/des-model-based-visualization
-  - pragmaticbim:workflow/des-parking-verification
-  - pragmaticbim:workflow/des-planning-interface-visualization
-  - pragmaticbim:workflow/des-sanitary-fixture-coordination
-  - pragmaticbim:workflow/des-sia416-area-verification
-  - pragmaticbim:workflow/des-struct-masonry-adoption
-  - pragmaticbim:workflow/des-struct-mep-opening-planning
-  - pragmaticbim:workflow/des-terrain-design
-  - pragmaticbim:workflow/des-traffic-study
-  - pragmaticbim:workflow/des-underfloor-heating-planning
-  - pragmaticbim:workflow/des-urban-design-mass-study
-  - pragmaticbim:workflow/des-usage-agreement-visualization
-  - pragmaticbim:workflow/des-wall-requirements-from-space-use
-  - pragmaticbim:workflow/hov-cobie-data-delivery
-  - pragmaticbim:workflow/hov-fm-3d-information-delivery
-  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
-  - pragmaticbim:workflow/hov-native-model-handover
-  - pragmaticbim:workflow/hov-product-pass-gtin
-  - pragmaticbim:workflow/hov-product-pass-serial-number
-  - pragmaticbim:workflow/opr-building-performance-optimization
-  - pragmaticbim:workflow/opr-facility-management-architecture-model
-  - pragmaticbim:workflow/opr-facility-management-point-cloud
-  - pragmaticbim:workflow/opr-firestop-maintenance
-  - pragmaticbim:workflow/opr-signage-room-number
-  - pragmaticbim:workflow/qas-accessibility-sia500-verification
-  - pragmaticbim:workflow/qas-acoustic-building-physics
-  - pragmaticbim:workflow/qas-arch-structural-adoption
-  - pragmaticbim:workflow/qas-arch-structural-coordination
-  - pragmaticbim:workflow/qas-building-security-verification
-  - pragmaticbim:workflow/qas-component-cost-plausibility
-  - pragmaticbim:workflow/qas-construction-site-logistics
-  - pragmaticbim:workflow/qas-contractor-design-verification
-  - pragmaticbim:workflow/qas-coordination-zone-planning
-  - pragmaticbim:workflow/qas-daylight-area-verification
-  - pragmaticbim:workflow/qas-decision-impact-visualization
-  - pragmaticbim:workflow/qas-design-review
-  - pragmaticbim:workflow/qas-detail-reference-model
-  - pragmaticbim:workflow/qas-early-design-coordination
-  - pragmaticbim:workflow/qas-facing-shell-area-verification
-  - pragmaticbim:workflow/qas-fall-protection-verification
-  - pragmaticbim:workflow/qas-fire-protection
-  - pragmaticbim:workflow/qas-funding-verification
-  - pragmaticbim:workflow/qas-furnishability-verification
-  - pragmaticbim:workflow/qas-hazmat-check
-  - pragmaticbim:workflow/qas-installation-path-verification
-  - pragmaticbim:workflow/qas-maintenance-space-verification
-  - pragmaticbim:workflow/qas-mep-detail-coordination
-  - pragmaticbim:workflow/qas-outlet-user-approval
-  - pragmaticbim:workflow/qas-planning-constraints
-  - pragmaticbim:workflow/qas-project-benchmark
-  - pragmaticbim:workflow/qas-qr-stakeholder-info
-  - pragmaticbim:workflow/qas-room-program-verification
-  - pragmaticbim:workflow/qas-special-room-user-coordination
-  - pragmaticbim:workflow/qas-sponge-city
-  - pragmaticbim:workflow/qas-stakeholder-dialog
-  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
-  - pragmaticbim:workflow/qas-tree-preservation-verification
-  - pragmaticbim:workflow/qas-urban-ar-assessment
-  - pragmaticbim:workflow/qas-usage-agreement-verification
-  is_applicability: false
-  status: active
-  sort_order: 2
+  - name: Name
+    pset: null
+    definition:
+      de: Projektbezeichnung zur eindeutigen Zuordnung der Dateien.
+      fr: Désignation du projet pour identifier le fichier IFC.
+      it: Denominazione del progetto per identificare il file IFC.
+      en: Project designation used to assign files unambiguously to the project.
+    datatype: IfcLabel
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
+      - pragmaticbim:workflow/bes-award-interface-visualization
+      - pragmaticbim:workflow/bes-concrete-tender-from-model
+      - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
+      - pragmaticbim:workflow/bes-design-build-procurement
+      - pragmaticbim:workflow/bes-designer-procurement
+      - pragmaticbim:workflow/bes-door-tender-basis
+      - pragmaticbim:workflow/bes-drywall-tender-basis
+      - pragmaticbim:workflow/bes-element-based-tendering
+      - pragmaticbim:workflow/bes-element-cost-post-calculation
+      - pragmaticbim:workflow/bes-elevator-early-procurement
+      - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+      - pragmaticbim:workflow/bes-existing-building-point-cloud-procurement
+      - pragmaticbim:workflow/bes-existing-circularity-procurement
+      - pragmaticbim:workflow/bes-existing-structure-model-procurement
+      - pragmaticbim:workflow/bes-firestop-tender-basis
+      - pragmaticbim:workflow/bes-flooring-tender-basis
+      - pragmaticbim:workflow/bes-functional-brief-test-planning
+      - pragmaticbim:workflow/bes-ice-session
+      - pragmaticbim:workflow/bes-ipd-procurement
+      - pragmaticbim:workflow/bes-masonry-tender-basis
+      - pragmaticbim:workflow/bes-mep-seismic-bracing-coordination
+      - pragmaticbim:workflow/bes-owner-cde-procurement
+      - pragmaticbim:workflow/bes-painting-tender-basis
+      - pragmaticbim:workflow/bes-plan-model-box
+      - pragmaticbim:workflow/bes-room-program-brief
+      - pragmaticbim:workflow/bes-site-wlan
+      - pragmaticbim:workflow/bes-steelwork-tender-basis
+      - pragmaticbim:workflow/bes-survey-existing-model-procurement
+      - pragmaticbim:workflow/bes-tiling-tender-basis
+      - pragmaticbim:workflow/bes-timber-contractor-procurement
+      - pragmaticbim:workflow/bes-window-tender-basis
+      - pragmaticbim:workflow/con-construction-progress-documentation
+      - pragmaticbim:workflow/con-defect-management
+      - pragmaticbim:workflow/con-fastening-suspension-from-model
+      - pragmaticbim:workflow/con-final-measurement-from-model
+      - pragmaticbim:workflow/con-formwork-reinforcement-plans
+      - pragmaticbim:workflow/con-logistics-fit-out
+      - pragmaticbim:workflow/con-precast-concrete-ordering-from-model
+      - pragmaticbim:workflow/con-reinforcement-execution-from-model
+      - pragmaticbim:workflow/con-robotic-floor-layout
+      - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+      - pragmaticbim:workflow/des-apartment-schedule
+      - pragmaticbim:workflow/des-arch-mep-coordination
+      - pragmaticbim:workflow/des-basic-piping-planning
+      - pragmaticbim:workflow/des-building-law-parcels
+      - pragmaticbim:workflow/des-building-permit
+      - pragmaticbim:workflow/des-building-physics-concept
+      - pragmaticbim:workflow/des-ceiling-mirror-planning
+      - pragmaticbim:workflow/des-circularity
+      - pragmaticbim:workflow/des-complex-assembly-planning
+      - pragmaticbim:workflow/des-construction-volume
+      - pragmaticbim:workflow/des-critical-area-insert-model
+      - pragmaticbim:workflow/des-d0165-area-verification
+      - pragmaticbim:workflow/des-door-planning
+      - pragmaticbim:workflow/des-drawing-derivation
+      - pragmaticbim:workflow/des-drywall-reinforcement-planning
+      - pragmaticbim:workflow/des-ebkp-h-classification
+      - pragmaticbim:workflow/des-element-based-cost-early
+      - pragmaticbim:workflow/des-element-based-cost-late
+      - pragmaticbim:workflow/des-embed-reinforcement-coordination
+      - pragmaticbim:workflow/des-environmental-impact-assessment
+      - pragmaticbim:workflow/des-facade-planning
+      - pragmaticbim:workflow/des-fire-control-matrix
+      - pragmaticbim:workflow/des-fire-protection-concept
+      - pragmaticbim:workflow/des-floor-area-from-model
+      - pragmaticbim:workflow/des-flooring-planning
+      - pragmaticbim:workflow/des-full-life-cycle-calculation
+      - pragmaticbim:workflow/des-furniture-planning
+      - pragmaticbim:workflow/des-humus-handling
+      - pragmaticbim:workflow/des-layout-planning
+      - pragmaticbim:workflow/des-lighting-design-coordination
+      - pragmaticbim:workflow/des-mep-schematics
+      - pragmaticbim:workflow/des-mep-usage-agreement-visualization
+      - pragmaticbim:workflow/des-model-based-visualization
+      - pragmaticbim:workflow/des-parking-verification
+      - pragmaticbim:workflow/des-planning-interface-visualization
+      - pragmaticbim:workflow/des-sanitary-fixture-coordination
+      - pragmaticbim:workflow/des-sia416-area-verification
+      - pragmaticbim:workflow/des-struct-masonry-adoption
+      - pragmaticbim:workflow/des-struct-mep-opening-planning
+      - pragmaticbim:workflow/des-terrain-design
+      - pragmaticbim:workflow/des-traffic-study
+      - pragmaticbim:workflow/des-underfloor-heating-planning
+      - pragmaticbim:workflow/des-urban-design-mass-study
+      - pragmaticbim:workflow/des-usage-agreement-visualization
+      - pragmaticbim:workflow/des-wall-requirements-from-space-use
+      - pragmaticbim:workflow/hov-cobie-data-delivery
+      - pragmaticbim:workflow/hov-fm-3d-information-delivery
+      - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+      - pragmaticbim:workflow/hov-native-model-handover
+      - pragmaticbim:workflow/hov-product-pass-gtin
+      - pragmaticbim:workflow/hov-product-pass-serial-number
+      - pragmaticbim:workflow/opr-building-performance-optimization
+      - pragmaticbim:workflow/opr-facility-management-architecture-model
+      - pragmaticbim:workflow/opr-facility-management-point-cloud
+      - pragmaticbim:workflow/opr-firestop-maintenance
+      - pragmaticbim:workflow/opr-signage-room-number
+      - pragmaticbim:workflow/qas-accessibility-sia500-verification
+      - pragmaticbim:workflow/qas-acoustic-building-physics
+      - pragmaticbim:workflow/qas-arch-structural-adoption
+      - pragmaticbim:workflow/qas-arch-structural-coordination
+      - pragmaticbim:workflow/qas-building-security-verification
+      - pragmaticbim:workflow/qas-component-cost-plausibility
+      - pragmaticbim:workflow/qas-construction-site-logistics
+      - pragmaticbim:workflow/qas-contractor-design-verification
+      - pragmaticbim:workflow/qas-coordination-zone-planning
+      - pragmaticbim:workflow/qas-daylight-area-verification
+      - pragmaticbim:workflow/qas-decision-impact-visualization
+      - pragmaticbim:workflow/qas-design-review
+      - pragmaticbim:workflow/qas-detail-reference-model
+      - pragmaticbim:workflow/qas-early-design-coordination
+      - pragmaticbim:workflow/qas-element-type-performance-verification
+      - pragmaticbim:workflow/qas-facing-shell-area-verification
+      - pragmaticbim:workflow/qas-fall-protection-verification
+      - pragmaticbim:workflow/qas-fire-protection
+      - pragmaticbim:workflow/qas-functional-building-acceptance
+      - pragmaticbim:workflow/qas-funding-verification
+      - pragmaticbim:workflow/qas-furnishability-verification
+      - pragmaticbim:workflow/qas-hazmat-check
+      - pragmaticbim:workflow/qas-installation-path-verification
+      - pragmaticbim:workflow/qas-maintenance-space-verification
+      - pragmaticbim:workflow/qas-mep-detail-coordination
+      - pragmaticbim:workflow/qas-outlet-user-approval
+      - pragmaticbim:workflow/qas-planning-constraints
+      - pragmaticbim:workflow/qas-project-benchmark
+      - pragmaticbim:workflow/qas-qr-stakeholder-info
+      - pragmaticbim:workflow/qas-room-program-verification
+      - pragmaticbim:workflow/qas-special-room-user-coordination
+      - pragmaticbim:workflow/qas-sponge-city
+      - pragmaticbim:workflow/qas-stakeholder-dialog
+      - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+      - pragmaticbim:workflow/qas-tree-preservation-verification
+      - pragmaticbim:workflow/qas-urban-ar-assessment
+      - pragmaticbim:workflow/qas-usage-agreement-verification
+    is_applicability: false
+    status: active
+    sort_order: 1
+  - name: Phase
+    pset: null
+    definition:
+      de: |-
+        Bezeichnung der Teilphase gemäss SIA 112.
+        
+        **Zulässige Werte**
+        - `11` — Strategische Planung
+        - `21` — Vorstudien
+        - `22` — Vorstudien Verfahren
+        - `31` — Vorprojekt
+        - `32` — Bauprojekt
+        - `33` — Bewilligungsverfahren
+        - `41` — Ausschreibung
+        - `51` — Ausführungsplanung
+        - `52` — Ausführung
+        - `53` — Inbetriebnahme
+        - `61` — Betrieb
+        - `62` — Überwachung
+      fr: |-
+        Désignation de la phase partielle selon SIA 112.
+        
+        **Valeurs admises**
+        - `11` — Planification stratégique
+        - `21` — Études préliminaires
+        - `22` — Études préliminaires, procédure
+        - `31` — Avant-projet
+        - `32` — Projet de construction
+        - `33` — Procédure d'autorisation
+        - `41` — Appel d'offres
+        - `51` — Planification d'exécution
+        - `52` — Exécution
+        - `53` — Mise en service
+        - `61` — Exploitation
+        - `62` — Surveillance
+      it: |-
+        Denominazione della sottofase secondo SIA 112.
+        
+        **Valori ammessi**
+        - `11` — Pianificazione strategica
+        - `21` — Studi preliminari
+        - `22` — Studi preliminari, procedura
+        - `31` — Avamprogetto
+        - `32` — Progetto di costruzione
+        - `33` — Procedura di autorizzazione
+        - `41` — Gara
+        - `51` — Pianificazione esecutiva
+        - `52` — Esecuzione
+        - `53` — Messa in servizio
+        - `61` — Esercizio
+        - `62` — Sorveglianza
+      en: |-
+        Designation of the sub-phase according to SIA 112.
+        
+        **Allowed values**
+        - `11` — Strategic planning
+        - `21` — Preliminary studies
+        - `22` — Preliminary studies, procedure
+        - `31` — Preliminary design
+        - `32` — Construction project
+        - `33` — Permit procedure
+        - `41` — Tender
+        - `51` — Execution planning
+        - `52` — Construction
+        - `53` — Commissioning
+        - `61` — Operation
+        - `62` — Monitoring
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/sia-phase
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
+      - pragmaticbim:workflow/bes-award-interface-visualization
+      - pragmaticbim:workflow/bes-concrete-tender-from-model
+      - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
+      - pragmaticbim:workflow/bes-design-build-procurement
+      - pragmaticbim:workflow/bes-designer-procurement
+      - pragmaticbim:workflow/bes-door-tender-basis
+      - pragmaticbim:workflow/bes-drywall-tender-basis
+      - pragmaticbim:workflow/bes-element-based-tendering
+      - pragmaticbim:workflow/bes-element-cost-post-calculation
+      - pragmaticbim:workflow/bes-elevator-early-procurement
+      - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+      - pragmaticbim:workflow/bes-existing-building-point-cloud-procurement
+      - pragmaticbim:workflow/bes-existing-circularity-procurement
+      - pragmaticbim:workflow/bes-existing-structure-model-procurement
+      - pragmaticbim:workflow/bes-firestop-tender-basis
+      - pragmaticbim:workflow/bes-flooring-tender-basis
+      - pragmaticbim:workflow/bes-functional-brief-test-planning
+      - pragmaticbim:workflow/bes-ice-session
+      - pragmaticbim:workflow/bes-ipd-procurement
+      - pragmaticbim:workflow/bes-masonry-tender-basis
+      - pragmaticbim:workflow/bes-mep-seismic-bracing-coordination
+      - pragmaticbim:workflow/bes-owner-cde-procurement
+      - pragmaticbim:workflow/bes-painting-tender-basis
+      - pragmaticbim:workflow/bes-plan-model-box
+      - pragmaticbim:workflow/bes-room-program-brief
+      - pragmaticbim:workflow/bes-site-wlan
+      - pragmaticbim:workflow/bes-steelwork-tender-basis
+      - pragmaticbim:workflow/bes-survey-existing-model-procurement
+      - pragmaticbim:workflow/bes-tiling-tender-basis
+      - pragmaticbim:workflow/bes-timber-contractor-procurement
+      - pragmaticbim:workflow/bes-window-tender-basis
+      - pragmaticbim:workflow/con-construction-progress-documentation
+      - pragmaticbim:workflow/con-defect-management
+      - pragmaticbim:workflow/con-fastening-suspension-from-model
+      - pragmaticbim:workflow/con-final-measurement-from-model
+      - pragmaticbim:workflow/con-formwork-reinforcement-plans
+      - pragmaticbim:workflow/con-logistics-fit-out
+      - pragmaticbim:workflow/con-precast-concrete-ordering-from-model
+      - pragmaticbim:workflow/con-reinforcement-execution-from-model
+      - pragmaticbim:workflow/con-robotic-floor-layout
+      - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+      - pragmaticbim:workflow/des-apartment-schedule
+      - pragmaticbim:workflow/des-arch-mep-coordination
+      - pragmaticbim:workflow/des-basic-piping-planning
+      - pragmaticbim:workflow/des-building-law-parcels
+      - pragmaticbim:workflow/des-building-permit
+      - pragmaticbim:workflow/des-building-physics-concept
+      - pragmaticbim:workflow/des-ceiling-mirror-planning
+      - pragmaticbim:workflow/des-circularity
+      - pragmaticbim:workflow/des-complex-assembly-planning
+      - pragmaticbim:workflow/des-construction-volume
+      - pragmaticbim:workflow/des-critical-area-insert-model
+      - pragmaticbim:workflow/des-d0165-area-verification
+      - pragmaticbim:workflow/des-door-planning
+      - pragmaticbim:workflow/des-drawing-derivation
+      - pragmaticbim:workflow/des-drywall-reinforcement-planning
+      - pragmaticbim:workflow/des-ebkp-h-classification
+      - pragmaticbim:workflow/des-element-based-cost-early
+      - pragmaticbim:workflow/des-element-based-cost-late
+      - pragmaticbim:workflow/des-embed-reinforcement-coordination
+      - pragmaticbim:workflow/des-environmental-impact-assessment
+      - pragmaticbim:workflow/des-facade-planning
+      - pragmaticbim:workflow/des-fire-control-matrix
+      - pragmaticbim:workflow/des-fire-protection-concept
+      - pragmaticbim:workflow/des-floor-area-from-model
+      - pragmaticbim:workflow/des-flooring-planning
+      - pragmaticbim:workflow/des-full-life-cycle-calculation
+      - pragmaticbim:workflow/des-furniture-planning
+      - pragmaticbim:workflow/des-humus-handling
+      - pragmaticbim:workflow/des-layout-planning
+      - pragmaticbim:workflow/des-lighting-design-coordination
+      - pragmaticbim:workflow/des-mep-schematics
+      - pragmaticbim:workflow/des-mep-usage-agreement-visualization
+      - pragmaticbim:workflow/des-model-based-visualization
+      - pragmaticbim:workflow/des-parking-verification
+      - pragmaticbim:workflow/des-planning-interface-visualization
+      - pragmaticbim:workflow/des-sanitary-fixture-coordination
+      - pragmaticbim:workflow/des-sia416-area-verification
+      - pragmaticbim:workflow/des-struct-masonry-adoption
+      - pragmaticbim:workflow/des-struct-mep-opening-planning
+      - pragmaticbim:workflow/des-terrain-design
+      - pragmaticbim:workflow/des-traffic-study
+      - pragmaticbim:workflow/des-underfloor-heating-planning
+      - pragmaticbim:workflow/des-urban-design-mass-study
+      - pragmaticbim:workflow/des-usage-agreement-visualization
+      - pragmaticbim:workflow/des-wall-requirements-from-space-use
+      - pragmaticbim:workflow/hov-cobie-data-delivery
+      - pragmaticbim:workflow/hov-fm-3d-information-delivery
+      - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+      - pragmaticbim:workflow/hov-native-model-handover
+      - pragmaticbim:workflow/hov-product-pass-gtin
+      - pragmaticbim:workflow/hov-product-pass-serial-number
+      - pragmaticbim:workflow/opr-building-performance-optimization
+      - pragmaticbim:workflow/opr-facility-management-architecture-model
+      - pragmaticbim:workflow/opr-facility-management-point-cloud
+      - pragmaticbim:workflow/opr-firestop-maintenance
+      - pragmaticbim:workflow/opr-signage-room-number
+      - pragmaticbim:workflow/qas-accessibility-sia500-verification
+      - pragmaticbim:workflow/qas-acoustic-building-physics
+      - pragmaticbim:workflow/qas-arch-structural-adoption
+      - pragmaticbim:workflow/qas-arch-structural-coordination
+      - pragmaticbim:workflow/qas-building-security-verification
+      - pragmaticbim:workflow/qas-component-cost-plausibility
+      - pragmaticbim:workflow/qas-construction-site-logistics
+      - pragmaticbim:workflow/qas-contractor-design-verification
+      - pragmaticbim:workflow/qas-coordination-zone-planning
+      - pragmaticbim:workflow/qas-daylight-area-verification
+      - pragmaticbim:workflow/qas-decision-impact-visualization
+      - pragmaticbim:workflow/qas-design-review
+      - pragmaticbim:workflow/qas-detail-reference-model
+      - pragmaticbim:workflow/qas-early-design-coordination
+      - pragmaticbim:workflow/qas-element-type-performance-verification
+      - pragmaticbim:workflow/qas-facing-shell-area-verification
+      - pragmaticbim:workflow/qas-fall-protection-verification
+      - pragmaticbim:workflow/qas-fire-protection
+      - pragmaticbim:workflow/qas-functional-building-acceptance
+      - pragmaticbim:workflow/qas-funding-verification
+      - pragmaticbim:workflow/qas-furnishability-verification
+      - pragmaticbim:workflow/qas-hazmat-check
+      - pragmaticbim:workflow/qas-installation-path-verification
+      - pragmaticbim:workflow/qas-maintenance-space-verification
+      - pragmaticbim:workflow/qas-mep-detail-coordination
+      - pragmaticbim:workflow/qas-outlet-user-approval
+      - pragmaticbim:workflow/qas-planning-constraints
+      - pragmaticbim:workflow/qas-project-benchmark
+      - pragmaticbim:workflow/qas-qr-stakeholder-info
+      - pragmaticbim:workflow/qas-room-program-verification
+      - pragmaticbim:workflow/qas-special-room-user-coordination
+      - pragmaticbim:workflow/qas-sponge-city
+      - pragmaticbim:workflow/qas-stakeholder-dialog
+      - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+      - pragmaticbim:workflow/qas-tree-preservation-verification
+      - pragmaticbim:workflow/qas-urban-ar-assessment
+      - pragmaticbim:workflow/qas-usage-agreement-verification
+    is_applicability: false
+    status: active
+    sort_order: 2

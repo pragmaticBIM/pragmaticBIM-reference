@@ -1,0 +1,113 @@
+id: pragmaticbim:project-goal/indoor-climate
+sort_order: 50
+group: rahmenbedingungen
+code: PG-37
+name:
+  de: Raumklima
+  fr: Climat intérieur
+  it: Clima interno
+  en: Indoor climate
+tag:
+  de: Raumklima
+  fr: Climat
+  it: Clima
+  en: Climate
+description:
+  de: |-
+    Festgelegt wird, ob Räume nur beheizt, zusätzlich gekühlt oder in Temperatur und Feuchte geregelt werden. Die Festlegung bestimmt die Raumtypen mit ihren Sollwerten und die Gebäudetechnik. Sie gehört zu den teuersten Entscheiden der Bauherrschaft.
+
+    Ohne diese Festlegung werden Technikflächen, Schächte und Deckenhöhen für ein Raumklima ausgelegt, das sich später ändert. Nachträglich eingebaute Kühlung oder Befeuchtung braucht Platz, den das Projekt nicht mehr hat.
+  fr: |-
+    Cette condition-cadre détermine si les locaux sont seulement chauffés, également refroidis ou régulés en température et en humidité. Elle détermine les types de locaux avec leurs valeurs de consigne et les installations techniques. Elle fait partie des décisions les plus coûteuses du maître d'ouvrage.
+
+    Sans cette définition, les surfaces techniques, les gaines et les hauteurs d'étage sont dimensionnées pour un climat intérieur qui change par la suite. Un refroidissement ou une humidification ajoutés après coup demandent une place dont le projet ne dispose plus.
+  it: |-
+    Questa condizione quadro stabilisce se i locali vengono solo riscaldati, anche raffrescati o regolati in temperatura e umidità. Determina i tipi di locali con i loro valori nominali e gli impianti. È una delle decisioni più costose del committente.
+
+    Senza questa definizione, superfici tecniche, cavedi e altezze di piano vengono dimensionati per un clima interno che in seguito cambia. Un raffrescamento o un'umidificazione aggiunti a posteriori richiedono uno spazio che il progetto non ha più.
+  en: |-
+    This framework condition sets whether spaces are only heated, also cooled, or controlled for temperature and humidity. It drives the room types with their target values and the building services. It is one of the most expensive decisions the client makes.
+
+    Without it, plant areas, shafts, and storey heights are designed for an indoor climate that changes later. Cooling or humidification added afterwards needs space the design no longer has.
+status: active
+is_boundary_condition: true
+comment: 'Kumulativ. Einfluss auf Raumtypen: Sollwerte SummerTemperatureMax und RelativeHumidity* sowie die Grösse von hlk-zentralraum und kaelteraum hängen von der Stufe ab. Raumtyp-Konfigurationen über project_goal_levels verknüpfen ist offen. Die Stufen setzen die Sollwerte am Innenraum über performance_targets.'
+levels:
+- id: pragmaticbim:project-goal-level/indoor-climate-heating
+  code: KLI-01
+  sort_order: 1
+  name:
+    de: Nur Heizung
+    fr: Chauffage seul
+    it: Solo riscaldamento
+    en: Heating only
+  description:
+    de: Räume werden beheizt und natürlich oder mit einfacher Lüftung belüftet. Der sommerliche Wärmeschutz wird über Hülle und Sonnenschutz erreicht.
+    fr: Les locaux sont chauffés et ventilés naturellement ou par une ventilation simple. La protection thermique estivale est assurée par l'enveloppe et les protections solaires.
+    it: I locali vengono riscaldati e aerati naturalmente o con una ventilazione semplice. La protezione termica estiva è garantita da involucro e protezioni solari.
+    en: Spaces are heated and ventilated naturally or with simple ventilation. Summer heat protection comes from the envelope and solar shading.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-mep-schematics
+  performance_targets:
+  - element: pragmaticbim:element/spaces-interior
+    name: SummerTemperatureMax
+    pset: ePset_SpaceRequirement
+    value: 26.5
+  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
+- id: pragmaticbim:project-goal-level/indoor-climate-cooling
+  code: KLI-02
+  sort_order: 2
+  name:
+    de: Kühlung
+    fr: Refroidissement
+    it: Raffrescamento
+    en: Cooling
+  description:
+    de: Räume werden zusätzlich gekühlt. Kälteerzeugung, Verteilung und Rückkühlung brauchen Technikflächen und Installationswege, die mit der Architektur abgestimmt werden.
+    fr: Les locaux sont en outre refroidis. Production de froid, distribution et refroidissement de retour demandent des surfaces techniques et des tracés d'installations coordonnés avec l'architecture.
+    it: I locali vengono inoltre raffrescati. Produzione del freddo, distribuzione e raffreddamento di ritorno richiedono superfici tecniche e percorsi impiantistici coordinati con l'architettura.
+    en: Spaces are also cooled. Chilling, distribution, and heat rejection need plant areas and installation routes coordinated with the architecture.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-mep-schematics
+  - pragmaticbim:workflow/des-arch-mep-coordination
+  - pragmaticbim:workflow/qas-installation-path-verification
+  performance_targets:
+  - element: pragmaticbim:element/spaces-interior
+    name: SummerTemperatureMax
+    pset: ePset_SpaceRequirement
+    value: 26
+  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
+- id: pragmaticbim:project-goal-level/indoor-climate-humidity
+  code: KLI-03
+  sort_order: 3
+  name:
+    de: Kontrollierte Feuchte
+    fr: Humidité contrôlée
+    it: Umidità controllata
+    en: Controlled humidity
+  description:
+    de: Temperatur und Luftfeuchte werden in engen Bandbreiten geregelt, etwa für Labors, Archive oder Museen. Lüftungszentralen und Kanäle bestimmen Geschosshöhen und Schächte.
+    fr: Température et humidité de l'air sont régulées dans des plages étroites, par exemple pour des laboratoires, des archives ou des musées. Centrales de ventilation et gaines déterminent hauteurs d'étage et gaines techniques.
+    it: Temperatura e umidità dell'aria vengono regolate in intervalli ristretti, ad esempio per laboratori, archivi o musei. Centrali di ventilazione e canali determinano altezze di piano e cavedi.
+    en: Temperature and humidity are controlled within narrow bands, for example for laboratories, archives, or museums. Ventilation plant and ducts drive storey heights and shafts.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-mep-schematics
+  - pragmaticbim:workflow/des-arch-mep-coordination
+  - pragmaticbim:workflow/qas-installation-path-verification
+  performance_targets:
+  - element: pragmaticbim:element/spaces-interior
+    name: SummerTemperatureMax
+    pset: ePset_SpaceRequirement
+    value: 26
+  - element: pragmaticbim:element/spaces-interior
+    name: RelativeHumidityMin
+    pset: ePset_SpaceRequirement
+    value: 40
+  - element: pragmaticbim:element/spaces-interior
+    name: RelativeHumidityMax
+    pset: ePset_SpaceRequirement
+    value: 60
+  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'

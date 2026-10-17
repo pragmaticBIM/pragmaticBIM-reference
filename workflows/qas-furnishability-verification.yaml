@@ -7,144 +7,91 @@ name:
   it: Giustificare l'arredabilità
   en: Verify furnishability
 description:
-  de: 'Möblierbarkeit von Innenräumen so nachweisen, dass Besteller ohne Planlesekompetenz entscheiden und freigeben können.
-
+  de: |-
+    Möblierbarkeit von Innenräumen so nachweisen, dass Besteller ohne Planlesekompetenz entscheiden und freigeben können.
 
     **Ausgangslage**
-
     - Laien können oft keine Pläne lesen, wodurch die tatsächliche Möblierbarkeit für den Besteller unsichtbar bleibt.
-
     - Möbel werden in Plänen oft in der bestmöglichen Anordnung eingezeichnet und verschleiern so schlechte Raumzuschnitte.
-
     - Schlechte Raumzuschnitte erzeugen im Ergebnis Räume mit versteckter Verkehrsfläche.
 
-
     **Ziel & Nutzen**
-
     - Möblierbarkeit in laienverständlicher Sprache im Modell nachweisen.
-
     - Grundriss auf Basis des Nachweises optimieren und mit dem Besteller freigeben.
 
-
     **Ablauf**
-
     1. Innenräume mit Nutzung und Abmessungen bereitstellen.
-
     2. Möbel schematisch mit realen Abmessungen platzieren und Passung sowie Bewegungsflächen prüfen.
-
     3. Möglichkeiten mit dem Besteller prüfen und Freigabe herbeiführen.
 
-
     **Lieferergebnis**
-
     - Architekturmodell mit nachgewiesen möblierbaren Räumen.
-
-    - Dokumentierte Besteller-Freigabe der gewählten Möblierungsvariante.'
-  fr: 'Prouver la meublabilité des locaux intérieurs de façon que le maître d''ouvrage puisse décider et valider sans savoir lire les plans.
-
+    - Dokumentierte Besteller-Freigabe der gewählten Möblierungsvariante.
+  fr: |-
+    Prouver la meublabilité des locaux intérieurs de façon que le maître d'ouvrage puisse décider et valider sans savoir lire les plans.
 
     **Situation de départ**
-
-    - Les non-spécialistes ne savent souvent pas lire les plans, ce qui rend la meublabilité réelle invisible pour le maître d''ouvrage.
-
+    - Les non-spécialistes ne savent souvent pas lire les plans, ce qui rend la meublabilité réelle invisible pour le maître d'ouvrage.
     - Sur les plans, le mobilier est souvent dessiné dans la disposition la plus favorable et masque ainsi de mauvais découpages de locaux.
-
     - De mauvais découpages produisent au final des locaux avec une surface de circulation cachée.
 
-
     **Objectif et bénéfice**
-
     - Prouver la meublabilité dans la maquette, dans un langage compréhensible pour des non-spécialistes.
-
-    - Optimiser le plan sur la base de cette preuve et le faire valider par le maître d''ouvrage.
-
+    - Optimiser le plan sur la base de cette preuve et le faire valider par le maître d'ouvrage.
 
     **Déroulement**
-
     1. Fournir les locaux intérieurs avec usage et dimensions.
-
-    2. Placer le mobilier de façon schématique avec dimensions réelles et vérifier l''ajustement ainsi que les surfaces de circulation.
-
-    3. Examiner les possibilités avec le maître d''ouvrage et obtenir la validation.
-
+    2. Placer le mobilier de façon schématique avec dimensions réelles et vérifier l'ajustement ainsi que les surfaces de circulation.
+    3. Examiner les possibilités avec le maître d'ouvrage et obtenir la validation.
 
     **Livrable**
-
-    - Maquette d''architecture avec locaux dont la meublabilité est prouvée.
-
-    - Validation documentée du maître d''ouvrage pour la variante d''ameublement retenue.'
-  it: 'Dimostrare l''arredabilità dei locali interni in modo che il committente possa decidere e approvare senza saper leggere i piani.
-
+    - Maquette d'architecture avec locaux dont la meublabilité est prouvée.
+    - Validation documentée du maître d'ouvrage pour la variante d'ameublement retenue.
+  it: |-
+    Dimostrare l'arredabilità dei locali interni in modo che il committente possa decidere e approvare senza saper leggere i piani.
 
     **Situazione di partenza**
-
-    - I non addetti ai lavori spesso non sanno leggere i piani, per cui l''arredabilità reale resta invisibile per il committente.
-
+    - I non addetti ai lavori spesso non sanno leggere i piani, per cui l'arredabilità reale resta invisibile per il committente.
     - Nei piani gli arredi sono spesso disegnati nella disposizione più favorevole e mascherano così cattivi tagli dei locali.
-
     - Cattivi tagli producono di conseguenza locali con superficie di circolazione nascosta.
 
-
     **Obiettivo e beneficio**
-
-    - Dimostrare l''arredabilità nel modello in un linguaggio comprensibile ai non addetti ai lavori.
-
+    - Dimostrare l'arredabilità nel modello in un linguaggio comprensibile ai non addetti ai lavori.
     - Ottimizzare la pianta sulla base della prova e farla approvare dal committente.
 
-
     **Svolgimento**
-
     1. Fornire i locali interni con uso e dimensioni.
-
     2. Posizionare gli arredi in modo schematico con dimensioni reali e verificare adattamento nonché superfici di circolazione.
-
-    3. Esaminare le possibilità con il committente e ottenere l''approvazione.
-
+    3. Esaminare le possibilità con il committente e ottenere l'approvazione.
 
     **Risultato della fornitura**
-
     - Modello di architettura con locali la cui arredabilità è dimostrata.
-
-    - Approvazione documentata del committente per la variante di arredo scelta.'
-  en: 'Prove furnishability of interior rooms so clients can decide and approve without being able to read plans.
-
+    - Approvazione documentata del committente per la variante di arredo scelta.
+  en: |-
+    Prove furnishability of interior rooms so clients can decide and approve without being able to read plans.
 
     **Starting point**
-
     - Laypeople often cannot read plans, so actual furnishability stays invisible to the client.
-
     - Furniture on drawings is often shown in the most favourable layout and thus conceals poor room proportions.
-
     - Poor room proportions result in rooms with hidden circulation area.
 
-
     **Goal & benefit**
-
     - Prove furnishability in the model in language laypeople understand.
-
     - Optimize the layout on the basis of that verification and obtain client approval.
 
-
     **Process**
-
     1. Provide interior spaces with use and dimensions.
-
     2. Place furniture schematically with real dimensions and check fit and circulation.
-
     3. Discuss the options with the client and obtain approval.
 
-
     **Deliverable**
-
     - Architecture model with rooms whose furnishability is proven.
-
-    - Documented client approval of the chosen furnishing option.'
-workflow_group: entwurf
+    - Documented client approval of the chosen furnishing option.
+workflow_group: koordination
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active
 service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Schematic IfcFurniture (IFC4+) or IfcFurnishingElement (IFC2x3) with real footprint for clash/fit checks against interior spaces and building. Distinct from des-furniture-planning (layout lists)
-  and qas-special-room-user-coordination (informal sketches).
+comment: Schematic IfcFurniture (IFC4+) or IfcFurnishingElement (IFC2x3) with real footprint for clash/fit checks against interior spaces and building. Distinct from des-furniture-planning (layout lists) and qas-special-room-user-coordination (informal sketches).

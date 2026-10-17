@@ -1,0 +1,62 @@
+---
+description: Checkable content lists for document YAML descriptions
+globs: documents/*.yaml
+alwaysApply: false
+---
+
+# Document descriptions (Elementplan)
+
+Write `description` so an LLM can check whether a file fits the document type. Keep `definition` as the short catalog purpose.
+
+## Template
+
+```yaml
+description:
+  de: |-
+    - {required content 1}
+    - {required content 2}
+    - {required content 3}
+    - {required content 4}
+  fr: |-
+    - {required content 1}
+    - {required content 2}
+    - {required content 3}
+    - {required content 4}
+  it: |-
+    - {required content 1}
+    - {required content 2}
+    - {required content 3}
+    - {required content 4}
+  en: |-
+    - {required content 1}
+    - {required content 2}
+    - {required content 3}
+    - {required content 4}
+```
+
+Place `description` after `definition`, before `file_name`.
+
+## Rules
+
+1. **Checkable contents only**: 4–6 bullets of what must be observable on the file (drawing, report, table, contract).
+2. No section headers. No “what it is not”.
+3. No `Ifc*` tokens. Construction language.
+4. Do not restate `name` or copy `definition`.
+5. All four languages: same bullets and meaning in `de`, `fr`, `it`, `en`.
+6. **Write from German, not from English word order.** Default language is `de`. FR/IT must sound like Swiss planning language, not like a calque of EN.
+
+## Tone / calques (do not use)
+
+| Concept | de | fr (native) | it (native) | avoid |
+|---|---|---|---|---|
+| keep in model | im Modell führen | saisir / tenir dans la maquette | gestire / tenere nel modello | FR *Porter* |
+| derive | ableiten / berechnen | déduire / calculer / obtenir | ricavare / calcolare | FR *dériver*, IT *Derivare* |
+| MEP medium | Medium | fluide | fluido | FR *médium*, IT *mezzo* (unless “by means of”) |
+| component | Bauteil | élément | componente | FR *composant* as default |
+| MEP | TGA | CVC | impianti | TGA in FR/IT; FR *GT* |
+| title block | Plankopf | cartouche | cartiglio | |
+| scale | Massstab | échelle | scala | |
+| storey | Geschoss | étage | piano | |
+| tenant placeholder | `{Mietername}` | `{nom du locataire}` | `{nome locatario}` | German token in FR/IT |
+
+Do not translate IFC/property tokens.

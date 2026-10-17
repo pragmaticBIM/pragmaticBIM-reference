@@ -1,0 +1,71 @@
+id: pragmaticbim:room-type/ueberdachter-fussweg
+code: RT-OU-06
+sort_order: 127
+name:
+  de: Überdachter Fussweg
+  fr: Passage couvert
+  it: Passaggio coperto
+  en: Covered Walkway
+definition:
+  de: Überdachter Aussenweg für Fussgänger.
+  fr: Cheminement extérieur couvert pour les piétons.
+  it: Percorso esterno coperto per i pedoni.
+  en: Covered exterior pedestrian route.
+room_type_kind: room
+room_name: RN-11-30-01
+activity: O-CIR-PED
+default_scope: site
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/ueberdachter-fussweg-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Überdachter Fussweg
+      fr: Passage couvert
+      it: Passaggio coperto
+      en: Covered Walkway
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: AVF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Öffentlich
+      fr: Public
+      it: Pubblico
+      en: Public
+  status: active

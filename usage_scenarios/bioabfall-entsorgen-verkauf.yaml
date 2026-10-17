@@ -1,0 +1,45 @@
+id: pragmaticbim:usage-scenario/bioabfall-entsorgen-verkauf
+code: US-VK-09
+sort_order: 9
+name:
+  de: Bioabfall entsorgen
+  fr: Évacuer les biodéchets
+  it: Conferire i rifiuti organici
+  en: Disposing of organic waste
+description:
+  de: Personal und Kundschaft bringen Speise- und Grünabfälle während der Öffnungszeit getrennt vom
+    übrigen Abfall weg. Der Sammelort entscheidet über Geruch, Kühlung und den Abholrhythmus.
+  fr: Le personnel et la clientèle évacuent les déchets alimentaires et verts pendant les heures
+    d'ouverture, séparément des autres déchets. Le point de collecte détermine les odeurs, le
+    refroidissement et le rythme d'enlèvement.
+  it: Personale e clientela conferiscono scarti alimentari e verdi durante l'orario di apertura,
+    separati dagli altri rifiuti. Il punto di raccolta determina odori, raffreddamento e ritmo di
+    ritiro.
+  en: Staff and customers take food and green waste away during opening hours, separately from other
+    waste. The collection point determines odour, cooling, and how often it is collected.
+uses:
+- pragmaticbim:use/verkauf
+tags:
+- entsorgung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/bioabfall-entsorgen-verkauf-im-abfallraum
+  sort_order: 1
+  name:
+    de: Im Abfallraum
+    fr: Dans le local déchets
+    it: Nel locale rifiuti
+    en: In the waste room
+  adds:
+  - pragmaticbim:room-type/abfallraum
+- id: pragmaticbim:scenario-option/bioabfall-entsorgen-verkauf-aussen
+  sort_order: 2
+  name:
+    de: Aussen bereitstellen
+    fr: Présenter à l'extérieur
+    it: Conferire all'esterno
+    en: Set out outdoors
+  adds:
+  - pragmaticbim:room-type/abfallsammelplatz-aussen

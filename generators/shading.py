@@ -1,4 +1,4 @@
-"""IfcShadingDevice: vertical lamellas on a 1 m cantilever above the exterior window."""
+"""IfcShadingDevice: lamellas parallel to the wall above the window, with two outrigger beams."""
 
 from __future__ import annotations
 
@@ -27,9 +27,15 @@ from generators.space import (
 )
 
 DEFAULT_CANTILEVER = 1.0
-DEFAULT_LAMELLA_COUNT = 6
+DEFAULT_LAMELLA_COUNT = 4
 DEFAULT_LAMELLA_THICKNESS = 0.04
-DEFAULT_LAMELLA_HEIGHT = 0.50
+DEFAULT_LAMELLA_HEIGHT = 0.42
+DEFAULT_BEAM_WIDTH = 0.08
+DEFAULT_BEAM_HEIGHT = 0.08
+# Clear stretch of beam between the wall and the first lamella.
+BEAM_LEAD = 0.10
+# Beams end on the outer face of the last lamella.
+BEAM_TAIL = 0.0
 # Keep in sync with ``space.py`` exterior vignette (window near the −Y end).
 WINDOW_ALONG = 0.40
 
@@ -37,13 +43,30 @@ WINDOW_ALONG = 0.40
 def generate_shading(
     params: dict[str, Any],
 ) -> tuple[ifcopenshell.file, ifcopenshell.entity_instance]:
-    """Reuse the exterior-window vignette and add vertical lamellas above it."""
+    """Reuse the exterior-window vignette and add lamellas above the opening.
+
+    The lamellas stand parallel to the facade. Two beams project from the wall,
+    one along each side of the lamellas.
+    """
     cantilever = float(params.get("cantilever", DEFAULT_CANTILEVER))
     lamella_count = int(params.get("lamella_count", DEFAULT_LAMELLA_COUNT))
     thickness = float(params.get("lamella_thickness", DEFAULT_LAMELLA_THICKNESS))
     lamella_height = float(params.get("lamella_height", DEFAULT_LAMELLA_HEIGHT))
-    if cantilever <= 0 or lamella_count < 2 or thickness <= 0 or lamella_height <= 0:
-        raise ValueError("cantilever, lamella count, thickness, and height must be positive")
+    beam_width = float(params.get("beam_width", DEFAULT_BEAM_WIDTH))
+    beam_height = float(params.get("beam_height", DEFAULT_BEAM_HEIGHT))
+    if (
+        cantilever <= 0
+        or lamella_count < 2
+        or thickness <= 0
+        or lamella_height <= 0
+        or beam_width <= 0
+        or beam_height <= 0
+    ):
+        raise ValueError(
+            "cantilever, lamella count, thickness, height, and beam size must be positive"
+        )
+    if beam_height >= lamella_height:
+        raise ValueError("beams must sit within the lamella height")
 
     space_params = dict(params.get("space_params") or {})
     if not space_params:
@@ -77,23 +100,43 @@ def generate_shading(
 
     span_start = float(params.get("window_along", WINDOW_ALONG))
     span_end = span_start + float(params.get("window_width", WINDOW_WIDTH))
-    usable = span_end - span_start - thickness
-    step = usable / (lamella_count - 1)
+    span = span_end - span_start
+    if span <= 2 * beam_width:
+        raise ValueError("window span must be wider than the two beams")
+    packed = lamella_count * thickness + BEAM_LEAD + BEAM_TAIL
+    if cantilever <= packed:
+        raise ValueError("cantilever must leave gaps between the lamellas")
+    gap = (cantilever - packed) / (lamella_count - 1)
     z_head = float(params.get("window_sill", WINDOW_SILL)) + float(
         params.get("window_height", WINDOW_HEIGHT)
     )
+    # Top of each arm lines up with the top of the lamellas.
+    beam_z = z_head + lamella_height - beam_height
+    beam_ys = (span_start, span_end - beam_width)
+    lamella_y0 = span_start + beam_width
+    lamella_y1 = span_end - beam_width
 
     solids = []
-    for index in range(lamella_count):
-        y0 = span_start + index * step
+    for y0 in beam_ys:
         solids.append(
             create_extruded_area_solid(
                 ifc_file,
-                rect_polyline(facade_outer, y0, facade_outer + cantilever, y0 + thickness),
+                rect_polyline(facade_outer, y0, facade_outer + cantilever, y0 + beam_width),
+                beam_height,
+                origin=(0.0, 0.0, beam_z),
+            )
+        )
+    x0 = facade_outer + BEAM_LEAD
+    for _index in range(lamella_count):
+        solids.append(
+            create_extruded_area_solid(
+                ifc_file,
+                rect_polyline(x0, lamella_y0, x0 + thickness, lamella_y1),
                 lamella_height,
                 origin=(0.0, 0.0, z_head),
             )
         )
+        x0 += thickness + gap
 
     shading = create_entity(
         ifc_file,

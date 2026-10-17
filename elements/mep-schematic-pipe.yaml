@@ -8,82 +8,55 @@ name:
   it: Condotta (schematica)
   en: Pipe (schematic)
 definition:
-  de: 'Reserviert in der frühen Phase die Haupttrassen der Rohrnetze und reduziert spätere Kollisionen.
-
+  de: |-
+    Reserviert in der frühen Phase die Haupttrassen der Rohrnetze und reduziert spätere Kollisionen.
 
     **Beschreibung**
-
     - Vereinfachtes Segment oder Volumen für Hauptführungen (Heizung, Kälte, Frischwasser, Abwasser u. a.).
-
     - Dient der Machbarkeits- und Kollisionsprüfung, nicht der Ausführungsplanung.
 
-
     **Modellierungshinweis**
-
     - Als Volumen oder vereinfachtes Segment modellieren; Querschnitt gemäss Grobkonzept.
-
     - Medium über Reference setzen (z. B. HZ, KZ, TW, AW, ENT).
-
     - Nur im Vorprojekt verwenden. Ab dem Bauprojekt ist die Fallleitung ein eigenes Element mit Reference `FL`.
-
-    - Keine Armaturen, Regelventile oder Anschlussdetails modellieren.'
-  fr: 'Réserve en phase initiale les tracés principaux des réseaux et réduit les collisions ultérieures.
-
+    - Keine Armaturen, Regelventile oder Anschlussdetails modellieren.
+  fr: |-
+    Réserve en phase initiale les tracés principaux des réseaux et réduit les collisions ultérieures.
 
     **Description**
-
     - Segment ou volume simplifié pour les tracés principaux (chauffage, froid, eau fraîche, eaux usées, etc.).
-
     - Sert à vérifier la faisabilité et les collisions, pas à planifier l’exécution.
 
-
     **Directives de modélisation**
-
     - Le modéliser en volume ou en segment simplifié ; section selon l’esquisse.
-
     - Renseigner le fluide dans Reference (p. ex. HZ, KZ, TW, AW, ENT).
-
     - Ne l’utiliser qu’à l’avant-projet. Dès le projet de construction, la descente est un élément à part, avec Reference `FL`.
-
-    - Ne pas modéliser les accessoires, les vannes de régulation ni les détails de raccordement.'
-  it: 'Riserva già nella fase iniziale i tracciati principali delle reti di condotte e riduce le interferenze successive.
-
+    - Ne pas modéliser les accessoires, les vannes de régulation ni les détails de raccordement.
+  it: |-
+    Riserva già nella fase iniziale i tracciati principali delle reti di condotte e riduce le interferenze successive.
 
     **Descrizione**
-
     - Segmento o volume semplificato per percorsi principali (riscaldamento, freddo, acqua, scarichi, ecc.).
-
-    - Serve per fattibilità e collisioni, non per l''esecuzione.
-
+    - Serve per fattibilità e collisioni, non per l'esecuzione.
 
     **Direttive di modellazione**
-
     - Modellare come volume o segmento semplificato; sezione secondo il concetto di massima.
-
     - Impostare il fluido in Reference (p. es. HZ, KZ, TW, AW, ENT).
-
-    - Usare solo nell''avamprogetto. Dal progetto di costruzione il pluviale è un componente distinto con Reference `FL`.
-
-    - Non modellare armature, valvole o dettagli di collegamento.'
-  en: 'Reserves main pipework routes in the initial phase and reduces later clashes.
-
+    - Usare solo nell'avamprogetto. Dal progetto di costruzione il pluviale è un componente distinto con Reference `FL`.
+    - Non modellare armature, valvole o dettagli di collegamento.
+  en: |-
+    Reserves main pipework routes in the initial phase and reduces later clashes.
 
     **Description**
-
     - Simplified segment or volume for main routes (heating, cooling, water, wastewater, etc.).
-
     - Used for feasibility and clash checking, not for execution planning.
 
-
     **Modelling guidelines**
-
     - Model as a volume or simplified segment; cross-section according to the sketch concept.
-
     - Set the medium in Reference (e.g. HZ, KZ, TW, AW, ENT).
-
     - Use only in preliminary design. From the construction project onward, the downpipe is a separate element with Reference `FL`.
+    - Do not model fittings, control valves, or connection details.
 
-    - Do not model fittings, control valves, or connection details.'
 needed_in_domain:
 - pragmaticbim:domain/mep
 entity_ifc2x3: IfcFlowSegment
@@ -91,127 +64,75 @@ entity_ifc4: IfcPipeSegment
 entity_ifc4_3: IfcPipeSegment
 picture_link: null
 model_link: null
-applicability: (entity_ifc4=IfcPipeSegment AND (Reference=HZ OR Reference=VL-H OR Reference=RL-H OR Reference=KZ OR Reference=VL-K OR Reference=RL-K OR Reference=TW OR Reference=FW OR Reference=AW OR Reference=WW
-  OR Reference=ENT)) OR (entity_ifc2x3=IfcFlowSegment AND (Reference=HZ OR Reference=VL-H OR Reference=RL-H OR Reference=KZ OR Reference=VL-K OR Reference=RL-K OR Reference=TW OR Reference=FW OR Reference=AW
-  OR Reference=WW OR Reference=ENT))
+applicability: (entity_ifc4=IfcPipeSegment AND (Reference=HZ OR Reference=VL-H OR Reference=RL-H OR Reference=KZ OR Reference=VL-K OR Reference=RL-K OR Reference=TW OR Reference=FW OR Reference=AW OR Reference=WW OR Reference=ENT)) OR (entity_ifc2x3=IfcFlowSegment AND (Reference=HZ OR Reference=VL-H OR Reference=RL-H OR Reference=KZ OR Reference=VL-K OR Reference=RL-K OR Reference=TW OR Reference=FW OR Reference=AW OR Reference=WW OR Reference=ENT))
 attributes:
 - name: Reference
   pset: Pset_PipeSegmentTypeCommon
   definition:
-    de: 'Medium der schematischen Rohrleitung.
-
+    de: |-
+      Medium der schematischen Rohrleitung.
 
       **Zulässige Werte**
-
       - `HZ` — Heizung
-
       - `VL-H` — Vorlauf Heizung
-
       - `RL-H` — Rücklauf Heizung
-
       - `KZ` — Kälte
-
       - `VL-K` — Vorlauf Kälte
-
       - `RL-K` — Rücklauf Kälte
-
       - `TW` — Trinkwasser
-
       - `FW` — Frischwasser
-
       - `AW` — Abwasser (sanitär)
-
       - `WW` — Abwasser (alternative Kennung)
-
-      - `ENT` — Entwässerung (Gebäudeentwässerung)'
-    fr: 'Fluide de la canalisation schématique.
-
+      - `ENT` — Entwässerung (Gebäudeentwässerung)
+    fr: |-
+      Fluide de la canalisation schématique.
 
       **Valeurs admises**
-
       - `HZ` — chauffage
-
       - `VL-H` — départ chauffage
-
       - `RL-H` — retour chauffage
-
       - `KZ` — froid
-
       - `VL-K` — départ froid
-
       - `RL-K` — retour froid
-
       - `TW` — eau potable
-
       - `FW` — eau fraîche
-
       - `AW` — eaux usées (sanitaires)
-
       - `WW` — eaux usées (autre code)
-
-      - `ENT` — évacuation du bâtiment'
-    it: 'Mezzo della condotta schematica.
-
+      - `ENT` — évacuation du bâtiment
+    it: |-
+      Mezzo della condotta schematica.
 
       **Valori ammessi**
-
       - `HZ` — riscaldamento
-
       - `VL-H` — mandata riscaldamento
-
       - `RL-H` — ritorno riscaldamento
-
       - `KZ` — freddo
-
       - `VL-K` — mandata freddo
-
       - `RL-K` — ritorno freddo
-
       - `TW` — acqua potabile
-
       - `FW` — acqua fredda
-
       - `AW` — acque reflue (sanitarie)
-
       - `WW` — acque reflue (codice alternativo)
-
-      - `ENT` — drenaggio (edificio)'
-    en: 'Medium of the schematic pipe.
-
+      - `ENT` — drenaggio (edificio)
+    en: |-
+      Medium of the schematic pipe.
 
       **Allowed values**
-
       - `HZ` — heating
-
       - `VL-H` — heating flow (supply)
-
       - `RL-H` — heating return
-
       - `KZ` — cooling
-
       - `VL-K` — cooling flow (supply)
-
       - `RL-K` — cooling return
-
       - `TW` — drinking water
-
       - `FW` — fresh water
-
       - `AW` — wastewater (sanitary)
-
       - `WW` — wastewater (alternate code)
-
-      - `ENT` — drainage (building)'
+      - `ENT` — drainage (building)
   datatype: IfcIdentifier
   allowed_values: pragmaticbim:value/pipe-reference-schematic
-  needed_in_phases:
-  - '21'
-  - '22'
-  - '31'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['21', '22', '31']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-early-design-coordination
   - pragmaticbim:workflow/des-basic-piping-planning
@@ -222,63 +143,42 @@ attributes:
 - name: Status
   pset: Pset_PipeSegmentTypeCommon
   definition:
-    de: 'Bauteilstatus für Koordination im Bestand.
-
+    de: |-
+      Bauteilstatus für Koordination im Bestand.
 
       **Zulässige Werte**
-
       - `NEW` — Neubau
-
       - `EXISTING` — Bestand
-
       - `DEMOLISH` — Abbruch
-
-      - `TEMPORARY` — Temporär'
-    fr: 'Statut de l''élément pour la coordination dans l''existant.
-
+      - `TEMPORARY` — Temporär
+    fr: |-
+      Statut de l'élément pour la coordination dans l'existant.
 
       **Valeurs admises**
-
       - `NEW` — neuf
-
       - `EXISTING` — existant
-
       - `DEMOLISH` — à démolir
-
-      - `TEMPORARY` — temporaire'
-    it: 'Stato dell''elemento per il coordinamento sull''esistente.
-
+      - `TEMPORARY` — temporaire
+    it: |-
+      Stato dell'elemento per il coordinamento sull'esistente.
 
       **Valori ammessi**
-
       - `NEW` — nuovo
-
       - `EXISTING` — esistente
-
       - `DEMOLISH` — da demolire
-
-      - `TEMPORARY` — temporaneo'
-    en: 'Component status for coordinating work in existing buildings.
-
+      - `TEMPORARY` — temporaneo
+    en: |-
+      Component status for coordinating work in existing buildings.
 
       **Allowed values**
-
       - `NEW` — new build
-
       - `EXISTING` — existing
-
       - `DEMOLISH` — demolition
-
-      - `TEMPORARY` — temporary'
+      - `TEMPORARY` — temporary
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '21'
-  - '22'
-  - '31'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['21', '22', '31']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
@@ -287,82 +187,54 @@ attributes:
 - name: ElementStatus
   pset: ePset_ElementStatus
   definition:
-    de: 'Bauteilstatus für Koordination im Bestand.
-
+    de: |-
+      Bauteilstatus für Koordination im Bestand.
 
       **Zulässige Werte**
-
       - `NEW` — Neubau
-
       - `EXISTING` — Bestand
-
       - `DEMOLISH` — Abbruch
-
       - `TEMPORARY` — Temporär
 
-
       **Hinweis**
-
-      - IFC2x3-Ersatz für Status.'
-    fr: 'Statut de l''élément pour la coordination dans l''existant.
-
+      - IFC2x3-Ersatz für Status.
+    fr: |-
+      Statut de l'élément pour la coordination dans l'existant.
 
       **Valeurs admises**
-
       - `NEW` — neuf
-
       - `EXISTING` — existant
-
       - `DEMOLISH` — à démolir
-
       - `TEMPORARY` — temporaire
 
-
       **Remarque**
-
-      - Substitut IFC2x3 de Status.'
-    it: 'Stato dell''elemento per il coordinamento sull''esistente.
-
+      - Substitut IFC2x3 de Status.
+    it: |-
+      Stato dell'elemento per il coordinamento sull'esistente.
 
       **Valori ammessi**
-
       - `NEW` — nuovo
-
       - `EXISTING` — esistente
-
       - `DEMOLISH` — da demolire
-
       - `TEMPORARY` — temporaneo
 
-
       **Nota**
-
-      - Sostituto IFC2x3 di Status.'
-    en: 'Component status for coordinating work in existing buildings.
-
+      - Sostituto IFC2x3 di Status.
+    en: |-
+      Component status for coordinating work in existing buildings.
 
       **Allowed values**
-
       - `NEW` — new build
-
       - `EXISTING` — existing
-
       - `DEMOLISH` — demolition
-
       - `TEMPORARY` — temporary
 
-
       **Note**
-
-      - IFC2x3 substitute for Status.'
+      - IFC2x3 substitute for Status.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '21'
-  - '22'
-  - '31'
-  ifc_versions:
-  - ifc2x3
+  needed_in_phases: ['21', '22', '31']
+  ifc_versions: [ifc2x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
@@ -371,19 +243,17 @@ attributes:
 - name: FundingApplication
   pset: ePset_Cost
   definition:
-    de: Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
-    fr: Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune
-      demande.
-    it: Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
-    en: Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs
-      to no application.
+    de: |-
+      Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
+    fr: |-
+      Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune demande.
+    it: |-
+      Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
+    en: |-
+      Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs to no application.
   datatype: IfcLabel
-  needed_in_phases:
-  - '31'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['31']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-funding-verification
   is_applicability: false
@@ -398,13 +268,8 @@ attributes:
     en: Cross-sectional area of the modelled schematic pipe.
   datatype: IfcAreaMeasure
   unit: m²
-  needed_in_phases:
-  - '21'
-  - '22'
-  - '31'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['21', '22', '31']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-early-design-coordination
   is_applicability: false

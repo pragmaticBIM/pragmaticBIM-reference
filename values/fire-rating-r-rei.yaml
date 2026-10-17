@@ -15,30 +15,30 @@ norm_reference: VKF
 status: active
 values:
   de:
-  - R 30
-  - R 60
-  - R 90
-  - REI 30
-  - REI 60
-  - REI 90
+    - R 30
+    - R 60
+    - R 90
+    - REI 30
+    - REI 60
+    - REI 90
   fr:
-  - R 30
-  - R 60
-  - R 90
-  - REI 30
-  - REI 60
-  - REI 90
+    - R 30
+    - R 60
+    - R 90
+    - REI 30
+    - REI 60
+    - REI 90
   it:
-  - R 30
-  - R 60
-  - R 90
-  - REI 30
-  - REI 60
-  - REI 90
+    - R 30
+    - R 60
+    - R 90
+    - REI 30
+    - REI 60
+    - REI 90
   en:
-  - R 30
-  - R 60
-  - R 90
-  - REI 30
-  - REI 60
-  - REI 90
+    - R 30
+    - R 60
+    - R 90
+    - REI 30
+    - REI 60
+    - REI 90

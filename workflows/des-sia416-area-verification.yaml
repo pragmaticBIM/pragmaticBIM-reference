@@ -7,138 +7,94 @@ name:
   it: Giustificare le superfici secondo SIA 416
   en: Verify areas to SIA 416
 description:
-  de: 'Den Flächennachweis nach SIA 416 aus dem Raummodell ableiten, damit Flächenklassen nachvollziehbar ausgewertet und geprüft werden können.
-
+  de: |-
+    Den Flächennachweis nach SIA 416 aus dem Raummodell ableiten, damit Flächenklassen nachvollziehbar ausgewertet und geprüft werden können.
 
     **Ausgangslage**
-
     - Flächennachweise nach SIA 416 (HNF, NNF, VF, FF, KF sowie Aussenflächen) brauchen eine nachvollziehbare Zuordnung je Raum.
-
     - Separat gepflegte Klassifikationsattribute können nach einer Nutzungsänderung dem Raumnamen widersprechen.
 
-
     **Ziel & Nutzen**
-
     - Innen- und Aussenräume mit einer standardisierten Raumnutzung in LongName führen.
-
     - Die SIA-416-Klasse über eine eindeutige Zuordnung aus dem Raumnamen berechnen. Damit wird sie bei einer Nutzungsänderung automatisch nachgeführt und bleibt widerspruchsfrei.
 
-
     **Ablauf**
-
     1. Innen- und Aussenräume als Volumen mit standardisierter Raumnutzung in LongName bereitstellen.
-
     2. Nettoflächen je Raum aus dem Modell auswerten.
-
     3. Die SIA-416-Klasse aus LongName ableiten und die Flächen danach aggregieren.
 
-
     **Lieferergebnis**
-
     - Raummodell mit standardisierter Raumnutzung und Nettofläche je Raum
+    - Flächennachweis nach SIA 416 mit nachvollziehbarer Zuordnung von Raumnutzung und Flächenklasse
 
-    - Flächennachweis nach SIA 416 mit nachvollziehbarer Zuordnung von Raumnutzung und Flächenklasse'
-  fr: 'Justificatif de surfaces selon SIA 416 à partir du modèle spatial – classe de surface déduite de l''usage normalisé du local.
-
+  fr: |-
+    Justificatif de surfaces selon SIA 416 à partir du modèle spatial – classe de surface déduite de l'usage normalisé du local.
 
     **Situation de départ**
-
     - Les justificatifs SIA 416 (HNF, NNF, VF, FF, KF et surfaces extérieures) exigent une affectation traçable par local.
-
-    - Des attributs de classification gérés séparément peuvent contredire le nom du local après un changement d''usage.
-
+    - Des attributs de classification gérés séparément peuvent contredire le nom du local après un changement d'usage.
 
     **Objectif et bénéfice**
-
     - Saisir les espaces intérieurs et extérieurs avec un usage normalisé dans LongName.
-
-    - Calculer la classe SIA 416 par une correspondance univoque à partir du nom du local. Elle est ainsi mise à jour automatiquement lors d''un changement d''usage et reste cohérente.
-
+    - Calculer la classe SIA 416 par une correspondance univoque à partir du nom du local. Elle est ainsi mise à jour automatiquement lors d'un changement d'usage et reste cohérente.
 
     **Déroulement**
-
     1. Fournir les espaces intérieurs et extérieurs comme volumes avec un usage normalisé dans LongName.
-
     2. Évaluer les surfaces nettes par local à partir du modèle.
-
     3. Déduire la classe SIA 416 de LongName et agréger les surfaces selon cette classe.
 
-
     **Livrable**
-
     - Maquette spatiale avec usage normalisé et surface nette par local
-
-    - Justificatif de surfaces SIA 416 avec correspondance traçable entre usage du local et classe de surface'
-  it: 'Verifica delle superfici secondo SIA 416 dal modello spaziale – classe di superficie derivata dall''uso normalizzato del locale.
-
+    - Justificatif de surfaces SIA 416 avec correspondance traçable entre usage du local et classe de surface
+  it: |-
+    Verifica delle superfici secondo SIA 416 dal modello spaziale – classe di superficie derivata dall'uso normalizzato del locale.
 
     **Situazione di partenza**
-
-    - Le verifiche SIA 416 (HNF, NNF, VF, FF, KF e superfici esterne) richiedono un''assegnazione tracciabile per locale.
-
-    - Attributi di classificazione gestiti separatamente possono contraddire il nome del locale dopo un cambiamento d''uso.
-
+    - Le verifiche SIA 416 (HNF, NNF, VF, FF, KF e superfici esterne) richiedono un'assegnazione tracciabile per locale.
+    - Attributi di classificazione gestiti separatamente possono contraddire il nome del locale dopo un cambiamento d'uso.
 
     **Obiettivo e beneficio**
-
     - Gestire spazi interni ed esterni con un uso normalizzato in LongName.
-
-    - Calcolare la classe SIA 416 tramite un''associazione univoca dal nome del locale. In questo modo viene aggiornata automaticamente in caso di cambiamento d''uso e rimane coerente.
-
+    - Calcolare la classe SIA 416 tramite un'associazione univoca dal nome del locale. In questo modo viene aggiornata automaticamente in caso di cambiamento d'uso e rimane coerente.
 
     **Svolgimento**
-
     1. Fornire spazi interni ed esterni come volumi con un uso normalizzato in LongName.
-
     2. Valutare le superfici nette per locale dal modello.
-
     3. Derivare la classe SIA 416 da LongName e aggregare le superfici in base a tale classe.
 
-
     **Risultato della fornitura**
-
     - Modello spaziale con uso normalizzato e superficie netta per locale
-
-    - Verifica delle superfici SIA 416 con associazione tracciabile tra uso del locale e classe di superficie'
-  en: 'SIA 416 area verification from the space model – derive the area class from the standardized room use.
-
+    - Verifica delle superfici SIA 416 con associazione tracciabile tra uso del locale e classe di superficie
+  en: |-
+    SIA 416 area verification from the space model – derive the area class from the standardized room use.
 
     **Starting point**
-
     - SIA 416 area verification (HNF, NNF, VF, FF, KF, and exterior areas) needs a traceable assignment per space.
-
     - Separately maintained classification attributes can contradict the room name after a change of use.
 
-
     **Goal & benefit**
-
     - Maintain interior and exterior spaces with a standardized room use in LongName.
-
     - Calculate the SIA 416 class through an unambiguous mapping from the room name. It is then updated automatically when the use changes and remains consistent.
 
-
     **Process**
-
     1. Provide interior and exterior spaces as volumes with a standardized room use in LongName.
-
     2. Evaluate net areas per space from the model.
-
     3. Derive the SIA 416 class from LongName and aggregate the areas by that class.
 
-
     **Deliverable**
-
     - Space model with standardized room use and net area for each space
-
-    - SIA 416 area verification with a traceable mapping between room use and area class'
-workflow_group: konzept
+    - SIA 416 area verification with a traceable mapping between room use and area class
+workflow_group: kosten-mengen
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
 service_kind: basic
 countries:
-- CH
+  - CH
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: 'Reference carries the SIA 416 area class (shortcuts e.g. sia:HNF, sia:NNF, sia:VF, sia:FF, sia:KF, sia:AGF, sia:UF, sia:AVF, sia:BUF, sia:UUF). LongName remains the Building Space Name Classification
-  room use. Mapping: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html'
+comment: >-
+  Reference carries the SIA 416 area class (shortcuts e.g. sia:HNF, sia:NNF,
+  sia:VF, sia:FF, sia:KF, sia:AGF, sia:UF, sia:AVF, sia:BUF, sia:UUF).
+  LongName remains the Building Space Name Classification room use.
+  Mapping: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html

@@ -15,18 +15,18 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - CHP
-  - ENGINEGENERATOR
-  - STANDALONE
+    - CHP
+    - ENGINEGENERATOR
+    - STANDALONE
   fr:
-  - CHP
-  - ENGINEGENERATOR
-  - STANDALONE
+    - CHP
+    - ENGINEGENERATOR
+    - STANDALONE
   it:
-  - CHP
-  - ENGINEGENERATOR
-  - STANDALONE
+    - CHP
+    - ENGINEGENERATOR
+    - STANDALONE
   en:
-  - CHP
-  - ENGINEGENERATOR
-  - STANDALONE
+    - CHP
+    - ENGINEGENERATOR
+    - STANDALONE

@@ -1,0 +1,47 @@
+id: pragmaticbim:usage-scenario/sportgeraete-lagern
+code: US-SP-04
+sort_order: 5
+name:
+  de: Sportgeräte lagern
+  fr: Ranger le matériel de sport
+  it: Riporre gli attrezzi sportivi
+  en: Storing sports equipment
+description:
+  de: Matten, Tore und Geräte werden nach dem Training versorgt. Der Ort des Lagers entscheidet über Rüstzeiten
+    und nutzbare Hallenfläche.
+  fr: Tapis, buts et engins sont rangés après l'entraînement. L'emplacement du dépôt détermine les temps
+    de préparation et la surface utile de la salle.
+  it: Materassi, porte e attrezzi vengono riposti dopo l'allenamento. La posizione del deposito determina
+    tempi di allestimento e superficie utile della palestra.
+  en: Mats, goals, and apparatus are put away after training. The location of the store determines set-up
+    time and usable hall area.
+uses:
+- pragmaticbim:use/sport
+tags:
+- betrieb
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/sportgeraete-lagern-adjacent
+  sort_order: 1
+  name:
+    de: Geräteraum an der Halle
+    fr: Local à engins attenant à la salle
+    it: Deposito attrezzi adiacente alla palestra
+    en: Equipment store next to the hall
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/sporthalle
+    to_room_type: pragmaticbim:room-type/geraetelager
+  adds:
+  - pragmaticbim:room-type/sporthalle
+  - pragmaticbim:room-type/geraetelager
+- id: pragmaticbim:scenario-option/sportgeraete-lagern-remote
+  sort_order: 2
+  name:
+    de: Separater Materialraum
+    fr: Local de matériel séparé
+    it: Locale materiale separato
+    en: Separate supply room
+  adds:
+  - pragmaticbim:room-type/materialraum

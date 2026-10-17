@@ -7,123 +7,79 @@ name:
   it: Gara lavori in calcestruzzo dal modello
   en: Concrete works tender from model
 description:
-  de: 'Betonarbeiten im Tragwerksmodell mit ausschreibungsrelevanten Angaben abbilden, damit Mengen und Leistungsverzeichnis aus einer gemeinsamen Grundlage abgeleitet werden können.
-
+  de: |-
+    Betonarbeiten im Tragwerksmodell mit ausschreibungsrelevanten Angaben abbilden, damit Mengen und Leistungsverzeichnis aus einer gemeinsamen Grundlage abgeleitet werden können.
 
     **Ausgangslage**
-
     - Mengen und Bauteilangaben für Betonarbeiten werden oft manuell aus Plänen übertragen.
-
     - Für NPK-Position 211.5 fehlen im Modell häufig die ausschreibungsrelevanten Eigenschaften zu Bewehrung, Oberfläche und Betonqualität.
 
-
     **Ziel & Nutzen**
-
     - Betonbauteile im Tragwerksmodell mit ausschreibungsrelevanten Attributen versehen.
-
     - Mengenermittlung und Leistungsverzeichnis direkt aus dem Modell ableiten.
 
-
     **Ablauf**
-
     1. Tragwerksmodell mit ausführungsgenauen Betonbauteilen bereitstellen.
-
     2. NPK-Eigenschaften je Bauteil im Property Set 211.5 Beton- und Stahlbetonarbeiten erfassen.
-
     3. Modell für Mengenermittlung und Ausschreibungsunterlagen exportieren.
 
-
     **Lieferergebnis**
-
-    - Tragwerksmodell mit prüfbaren Mengen und ausschreibungsrelevanten Angaben zu Beton und Bewehrung.'
-  fr: 'Préparer les travaux en béton et béton armé à partir du modèle structurel pour l''appel d''offres.
-
+    - Tragwerksmodell mit prüfbaren Mengen und ausschreibungsrelevanten Angaben zu Beton und Bewehrung.
+  fr: |-
+    Préparer les travaux en béton et béton armé à partir du modèle structurel pour l'appel d'offres.
 
     **Situation de départ**
-
     - Les quantités et données de composants pour les travaux en béton sont souvent reprises manuellement depuis les plans.
-
-    - Pour la position NPK 211.5, le modèle manque fréquemment des propriétés pertinentes pour l''appel d''offres sur le ferraillage, la surface et la qualité du béton.
-
+    - Pour la position NPK 211.5, le modèle manque fréquemment des propriétés pertinentes pour l'appel d'offres sur le ferraillage, la surface et la qualité du béton.
 
     **Objectif et bénéfice**
-
-    - Attribuer aux éléments en béton du modèle structurel les propriétés pertinentes pour l''appel d''offres.
-
+    - Attribuer aux éléments en béton du modèle structurel les propriétés pertinentes pour l'appel d'offres.
     - Déduire le métré et le cahier des charges directement du modèle.
 
-
     **Déroulement**
-
-    1. Fournir le modèle structurel avec des éléments en béton conformes à l''exécution.
-
+    1. Fournir le modèle structurel avec des éléments en béton conformes à l'exécution.
     2. Saisir les propriétés NPK par élément dans le jeu de propriétés 211.5 Travaux en béton et béton armé.
-
-    3. Exporter le modèle pour le métré et les documents d''appel d''offres.
-
+    3. Exporter le modèle pour le métré et les documents d'appel d'offres.
 
     **Livrable**
-
-    - Maquette structure avec quantités vérifiables et données sur le béton et les armatures utiles à l''appel d''offres.'
-  it: 'Preparare i lavori in calcestruzzo e calcestruzzo armato dal modello strutturale per la gara.
-
+    - Maquette structure avec quantités vérifiables et données sur le béton et les armatures utiles à l'appel d'offres.
+  it: |-
+    Preparare i lavori in calcestruzzo e calcestruzzo armato dal modello strutturale per la gara.
 
     **Situazione di partenza**
-
     - Quantità e dati dei componenti per i lavori in calcestruzzo vengono spesso trasferiti manualmente dai disegni.
-
     - Per la posizione NPK 211.5 nel modello mancano spesso le proprietà rilevanti per la gara su armatura, superficie e qualità del calcestruzzo.
 
-
     **Obiettivo e beneficio**
-
     - Dotare gli elementi in calcestruzzo del modello strutturale con proprietà rilevanti per la gara.
-
     - Ricavare computo metrico e capitolato direttamente dal modello.
 
-
     **Svolgimento**
-
     1. Fornire il modello strutturale con elementi in calcestruzzo esecutivi.
-
     2. Registrare le proprietà NPK per elemento nel property set 211.5 Lavori in calcestruzzo e calcestruzzo armato.
-
     3. Esportare il modello per computo metrico e documenti di gara.
 
-
     **Risultato della fornitura**
-
-    - Modello strutturale con quantità verificabili e dati su calcestruzzo e armature rilevanti per la gara.'
-  en: 'Represent concrete works in the structural model with tender-relevant information so that quantities and the specification can be derived from a common basis.
-
+    - Modello strutturale con quantità verificabili e dati su calcestruzzo e armature rilevanti per la gara.
+  en: |-
+    Represent concrete works in the structural model with tender-relevant information so that quantities and the specification can be derived from a common basis.
 
     **Starting point**
-
     - Quantities and component data for concrete works are often transferred manually from drawings.
-
     - For NPK position 211.5, the model often lacks tender-relevant properties for reinforcement, surface, and concrete quality.
 
-
     **Goal & benefit**
-
     - Equip concrete components in the structural model with tender-relevant attributes.
-
     - Derive quantity take-off and specification directly from the model.
 
-
     **Process**
-
     1. Provide the structural model with execution-accurate concrete components.
-
     2. Capture NPK properties per component in property set 211.5 Concrete and reinforced concrete works.
-
     3. Export the model for quantity take-off and tender documents.
 
-
     **Deliverable**
-
-    - Structural model with verifiable quantities and tender-relevant concrete and reinforcement information.'
-workflow_group: ausschreibung
+    - Structural model with verifiable quantities and tender-relevant concrete and reinforcement information.
+workflow_group: unternehmen
 parent_workflow: pragmaticbim:workflow/bes
 picture_link: null
 status: active

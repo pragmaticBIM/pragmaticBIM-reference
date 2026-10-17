@@ -1,26 +1,83 @@
 id: pragmaticbim:usage-scenario/arbeiten-von-zuhause
 code: US-WH-02
-sort_order: 2
+sort_order: 7
 name:
   de: Arbeiten von Zuhause
   fr: Travail à domicile
   it: Lavoro da casa
   en: Working from home
 description:
-  de: Bewohnende betreten die Wohnung und gehen über den Gang ins Arbeitszimmer, ohne den Wohnbereich zu durchqueren.
-  fr: Les occupants entrent dans le logement et rejoignent le bureau à domicile par le couloir, sans traverser le séjour.
-  it: Chi abita entra nell'alloggio e raggiunge lo studio dal corridoio, senza attraversare il soggiorno.
-  en: Occupants enter the dwelling and reach the home study from the hallway, without crossing the living room.
-scenario_group: Wohnen
+  de: Bewohnende arbeiten zeitweise zu Hause. Ein eigener Raum entscheidet über Ruhe
+    und Fläche und ob kleine Wohnungen dafür taugen.
+  fr: Les habitants travaillent parfois à domicile. Une pièce à soi décide du calme,
+    de la surface et de l'aptitude des petits logements.
+  it: Gli abitanti lavorano a volte da casa. Un locale proprio decide quiete e superficie
+    e se gli alloggi piccoli sono adatti.
+  en: Residents sometimes work from home. A room of its own decides quiet and area,
+    and whether small dwellings are suitable.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- wohnalltag
 status: active
 jurisdiction:
-- ch
-required_room_types:
-- pragmaticbim:room-type/wohnungseingang
-- pragmaticbim:room-type/gang
-- pragmaticbim:room-type/arbeitszimmer
-room_relationships:
-- from_room_type: pragmaticbim:room-type/wohnungseingang
-  to_room_type: pragmaticbim:room-type/gang
-- from_room_type: pragmaticbim:room-type/gang
-  to_room_type: pragmaticbim:room-type/arbeitszimmer
+- general
+options:
+- id: pragmaticbim:scenario-option/arbeiten-von-zuhause-study
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-elevated
+  sort_order: 1
+  name:
+    de: Arbeitszimmer
+    fr: Bureau à domicile
+    it: Studio
+    en: Home study
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gang
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/arbeitszimmer
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/arbeitszimmer
+- id: pragmaticbim:scenario-option/arbeiten-von-zuhause-living-room
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-standard
+  sort_order: 2
+  name:
+    de: Wohnzimmer
+    fr: Séjour
+    it: Soggiorno
+    en: Living room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gang
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/wohnzimmer
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/wohnzimmer
+- id: pragmaticbim:scenario-option/arbeiten-von-zuhause-community-office
+  sort_order: 3
+  name:
+    de: Gemeinschaftsbüro
+    fr: Bureau communautaire
+    it: Ufficio comunitario
+    en: Community office
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gemeinschaftsbuero
+    max_distance: 30
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gemeinschaftsbuero
+- id: pragmaticbim:scenario-option/arbeiten-von-zuhause-none
+  sort_order: 4
+  name:
+    de: Kein besonderes Angebot
+    fr: Aucune offre particulière
+    it: Nessuna offerta specifica
+    en: No dedicated provision
+  exclusive: true

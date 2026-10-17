@@ -1,0 +1,92 @@
+id: pragmaticbim:project-goal/betriebsform
+sort_order: 1051
+group: rahmenbedingungen
+code: PG-22
+name:
+  de: Betriebsform
+  fr: Forme d'exploitation
+  it: Forma di gestione
+  en: Service model
+tag:
+  de: Betrieb
+  fr: Exploitation
+  it: Gestione
+  en: Service
+description:
+  de: |-
+    Die Betriebsform und die Zahl der Sitzplätze und Mahlzeiten bestimmen Küche, Ausgabe, Lager und Gastraum.
+
+    Ohne diese Festlegung bleibt offen, ob gekocht, ausgegeben oder nur ausgeliefert wird. Küche, Lager und Gastraum werden dann zu gross oder zu klein bestellt.
+  fr: |-
+    La forme d'exploitation, le nombre de places assises et de repas déterminent la cuisine, la distribution, le stockage et la salle.
+
+    Sans cette décision, il reste ouvert si l'on cuisine, sert ou seulement livre. Cuisine, stockage et salle sont alors commandés trop grands ou trop petits.
+  it: |-
+    La forma di gestione, il numero di posti a sedere e di pasti determinano cucina, distribuzione, deposito e sala.
+
+    Senza questa decisione resta aperto se si cucina, si distribuisce o si consegna soltanto. Cucina, deposito e sala vengono allora commissionati troppo grandi o troppo piccoli.
+  en: |-
+    The service model and the number of seats and meals determine kitchen, serving, storage, and dining room.
+
+    Without this decision it stays open whether food is cooked, served, or only delivered. Kitchen, storage, and dining room are then ordered too large or too small.
+status: active
+uses:
+- pragmaticbim:use/gastronomie
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/betriebsform-bedienung
+  code: BTF-01
+  sort_order: 1
+  name:
+    de: Bedienung
+    fr: Service à table
+    it: Servizio al tavolo
+    en: Table service
+  description:
+    de: Gäste werden am Tisch bedient; die Küche produziert à la carte.
+    fr: Les hôtes sont servis à table; la cuisine produit à la carte.
+    it: Gli ospiti sono serviti al tavolo; la cucina produce alla carta.
+    en: Guests are served at the table; the kitchen cooks à la carte.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/betriebsform-selbstbedienung
+  code: BTF-02
+  sort_order: 2
+  name:
+    de: Selbstbedienung
+    fr: Libre-service
+    it: Self-service
+    en: Self-service
+  description:
+    de: Gäste holen die Speisen an einer Ausgabe, etwa in Mensa oder Kantine.
+    fr: Les hôtes se servent à un comptoir, par exemple au restaurant scolaire ou à la cantine.
+    it: Gli ospiti ritirano i pasti a un banco, ad esempio in mensa.
+    en: Guests collect food at a counter, such as in a canteen.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/betriebsform-produktionskueche
+  code: BTF-03
+  sort_order: 3
+  name:
+    de: Produktionsküche
+    fr: Cuisine de production
+    it: Cucina di produzione
+    en: Production kitchen
+  description:
+    de: Die Küche produziert für andere Standorte und liefert aus.
+    fr: La cuisine produit pour d'autres sites et livre.
+    it: La cucina produce per altre sedi e consegna.
+    en: The kitchen produces for other sites and delivers.
+  status: active
+  comment: ''
+quantities:
+- id: pragmaticbim:quantity/betriebsform-mahlzeiten
+  code: BTF-Q02
+  sort_order: 1
+  name:
+    de: Mahlzeiten pro Tag
+    fr: Repas par jour
+    it: Pasti al giorno
+    en: Meals per day
+  status: active

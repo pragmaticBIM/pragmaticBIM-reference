@@ -1,0 +1,28 @@
+id: pragmaticbim:value/pipe-reference-fresh-water
+code: PIPE-REF-FW
+name:
+  de: Referenz Frischwasser
+  fr: Référence eau fraîche
+  it: Riferimento acqua fredda
+  en: Fresh water reference
+description:
+  de: Referenzkennung für Frischwasser- und Trinkwasserleitungen in der Koordination.
+  fr: Code de référence pour les canalisations d'eau fraîche et potable en coordination.
+  it: Codice di riferimento per condotte di acqua fredda e potabile nel coordinamento.
+  en: Reference code for fresh and drinking water piping in coordination.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - TW
+    - FW
+  fr:
+    - TW
+    - FW
+  it:
+    - TW
+    - FW
+  en:
+    - TW
+    - FW

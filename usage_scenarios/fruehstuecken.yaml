@@ -1,0 +1,49 @@
+id: pragmaticbim:usage-scenario/fruehstuecken
+code: US-BH-04
+sort_order: 5
+name:
+  de: Frühstücken
+  fr: Prendre le petit-déjeuner
+  it: Fare colazione
+  en: Having breakfast
+description:
+  de: Gäste frühstücken während ihres Aufenthalts. Das Angebot entscheidet über Gastraum, Wege und Betriebszeiten.
+  fr: Les hôtes prennent le petit-déjeuner pendant leur séjour. L'offre détermine la salle, les trajets
+    et les horaires d'exploitation.
+  it: Gli ospiti fanno colazione durante il soggiorno. L'offerta determina sala, percorsi e orari di esercizio.
+  en: Guests have breakfast during their stay. The provision determines dining space, travel, and operating
+    hours.
+uses:
+- pragmaticbim:use/beherbergung
+tags:
+- verpflegung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/fruehstuecken-restaurant
+  sort_order: 1
+  name:
+    de: Frühstücksrestaurant
+    fr: Restaurant du petit-déjeuner
+    it: Ristorante per la colazione
+    en: Breakfast restaurant
+  adds:
+  - pragmaticbim:room-type/restaurant
+- id: pragmaticbim:scenario-option/fruehstuecken-cafeteria
+  sort_order: 2
+  name:
+    de: Cafeteria
+    fr: Cafétéria
+    it: Caffetteria
+    en: Cafeteria
+  adds:
+  - pragmaticbim:room-type/cafeteria
+- id: pragmaticbim:scenario-option/fruehstuecken-external
+  sort_order: 3
+  name:
+    de: Externes Angebot
+    fr: Offre externe
+    it: Offerta esterna
+    en: External provision
+  exclusive: true

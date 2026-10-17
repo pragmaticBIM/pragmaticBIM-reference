@@ -1,0 +1,27 @@
+id: pragmaticbim:use/wohnen
+code: USE-WH
+sort_order: 1
+name:
+  de: Wohnen
+  fr: Habitation
+  it: Abitazione
+  en: Housing
+definition:
+  de: 'Dauerhaftes Wohnen von Haushalten. Bezugsgrösse: Anzahl Wohnungen.'
+  fr: 'Logement permanent de ménages. Grandeur de référence : nombre de logements.'
+  it: 'Abitazione permanente di nuclei domestici. Grandezza di riferimento: numero di alloggi.'
+  en: 'Permanent residence of households. Reference quantity: number of dwellings.'
+reference_quantity:
+  id: pragmaticbim:quantity/wohnen-wohnungen
+  code: USE-WH-Q
+  sort_order: 1
+  name:
+    de: Anzahl Wohnungen
+    fr: Nombre de logements
+    it: Numero di alloggi
+    en: Number of dwellings
+  status: active
+typical_levels:
+- pragmaticbim:project-goal-level/sound-insulation-increased
+- pragmaticbim:project-goal-level/accessibility-adaptable
+status: active

@@ -7,127 +7,79 @@ name:
   it: Consegnare i dati di esercizio minimi come elenchi
   en: Hand over minimal operational data as lists
 description:
-  de: 'Raum-, Tür- und Fensterlisten sowie FM-relevante Gebäudetechnik als strukturierte Daten zur Übergabe an den Betreiber liefern – ohne vollständige 3D-Anlagenmodellierung.
-
+  de: |-
+    Raum-, Tür- und Fensterlisten sowie FM-relevante Gebäudetechnik als strukturierte Daten zur Übergabe an den Betreiber liefern – ohne vollständige 3D-Anlagenmodellierung.
 
     **Ausgangslage**
-
-    - Zur Übergabe braucht der Betreiber belastbare Listen zu Räumen, Türen und Fenstern. Vollständige TGA-3D-Modelle sind oft nicht verfügbar oder nicht gefordert; zudem fehlen häufig die Mittel für ihre
-    Nachführung. Ein klar gegliederter Übergabeordner ist deshalb oft mehr wert als ein perfektes 3D-Modell, das erst sechs Monate nach der Übergabe vorliegt.
-
+    - Zur Übergabe braucht der Betreiber belastbare Listen zu Räumen, Türen und Fenstern. Vollständige TGA-3D-Modelle sind oft nicht verfügbar oder nicht gefordert; zudem fehlen häufig die Mittel für ihre Nachführung. Ein klar gegliederter Übergabeordner ist deshalb oft mehr wert als ein perfektes 3D-Modell, das erst sechs Monate nach der Übergabe vorliegt.
     - Fehlende oder inkonsistente Stammdaten erschweren die FM-Datenübergabe.
 
-
     **Ziel & Nutzen**
-
     - Prüfbare Raum-, Tür- und Fensterlisten aus dem Modell ableiten und übergeben.
-
     - Gebäudetechnik nur in dem Umfang liefern, den das verwendete FM-System verlangt – Umfang mit Betreiber klären, kein festes TGA-Elementpaket.
 
-
     **Ablauf**
-
     1. Innenräume, Türen und Fenster mit den geforderten Stammdaten und Mengen im Modell führen.
-
     2. Listen und Kennwerte aus dem Modell ausziehen und mit den Übergabeanforderungen des FM-Systems abgleichen.
-
     3. TGA-Attribute und Objekte nach den Anforderungen des eingesetzten FM-Systems ergänzen und übergeben.
 
-
     **Lieferergebnis**
-
-    - FM-Übergabedaten mit prüfbaren Raum-, Tür- und Fensterlisten sowie der vereinbarten Gebäudetechnik.'
-  fr: 'Livrer des listes de locaux, de portes et de fenêtres ainsi que la technique du bâtiment pertinente pour le FM lors de la réception – sans modélisation 3D complète des installations.
-
+    - FM-Übergabedaten mit prüfbaren Raum-, Tür- und Fensterlisten sowie der vereinbarten Gebäudetechnik.
+  fr: |-
+    Livrer des listes de locaux, de portes et de fenêtres ainsi que la technique du bâtiment pertinente pour le FM lors de la réception – sans modélisation 3D complète des installations.
 
     **Situation de départ**
-
-    - À la réception, l''exploitant a besoin de listes fiables de locaux, de portes et de fenêtres. Les maquettes CVC 3D complètes ne sont souvent ni disponibles ni exigées ; les moyens nécessaires à leur
-    mise à jour font en outre fréquemment défaut. Un dossier de remise clairement structuré a donc souvent plus de valeur qu''une maquette 3D parfaite livrée six mois après la réception.
-
+    - À la réception, l'exploitant a besoin de listes fiables de locaux, de portes et de fenêtres. Les maquettes CVC 3D complètes ne sont souvent ni disponibles ni exigées ; les moyens nécessaires à leur mise à jour font en outre fréquemment défaut. Un dossier de remise clairement structuré a donc souvent plus de valeur qu'une maquette 3D parfaite livrée six mois après la réception.
     - Des données de base manquantes ou incohérentes compliquent la livraison des données FM.
 
-
     **Objectif et bénéfice**
-
     - Déduire de la maquette et remettre des listes vérifiables de locaux, de portes et de fenêtres.
-
-    - Technique du bâtiment uniquement dans la mesure exigée par le système FM – clarifier le périmètre avec l''exploitant, pas de catalogue CVC fixe.
-
+    - Technique du bâtiment uniquement dans la mesure exigée par le système FM – clarifier le périmètre avec l'exploitant, pas de catalogue CVC fixe.
 
     **Déroulement**
-
     1. Saisir dans la maquette les locaux intérieurs, les portes et les fenêtres avec les données de base et quantités requises.
-
     2. Extraire listes et indicateurs du modèle et les aligner avec les exigences de réception du système FM.
-
     3. Compléter les attributs et objets CVC selon les exigences du système FM utilisé, puis les livrer.
 
-
     **Livrable**
-
-    - Données de remise FM avec listes vérifiables des locaux, des portes et des fenêtres ainsi que la technique du bâtiment convenue.'
-  it: 'Consegnare elenchi di locali, porte e finestre nonché impianti rilevanti per il FM in fase di consegna all''esercizio – senza modellazione 3D completa degli impianti.
-
+    - Données de remise FM avec listes vérifiables des locaux, des portes et des fenêtres ainsi que la technique du bâtiment convenue.
+  it: |-
+    Consegnare elenchi di locali, porte e finestre nonché impianti rilevanti per il FM in fase di consegna all'esercizio – senza modellazione 3D completa degli impianti.
 
     **Situazione di partenza**
-
-    - Alla consegna il gestore necessita di elenchi affidabili di locali, porte e finestre. Modelli 3D completi degli impianti spesso non sono disponibili o richiesti; inoltre mancano frequentemente le
-    risorse per mantenerli aggiornati. Una cartella di consegna chiaramente strutturata vale quindi spesso più di un modello 3D perfetto fornito sei mesi dopo la consegna.
-
+    - Alla consegna il gestore necessita di elenchi affidabili di locali, porte e finestre. Modelli 3D completi degli impianti spesso non sono disponibili o richiesti; inoltre mancano frequentemente le risorse per mantenerli aggiornati. Una cartella di consegna chiaramente strutturata vale quindi spesso più di un modello 3D perfetto fornito sei mesi dopo la consegna.
     - Dati anagrafici mancanti o incoerenti ostacolano la consegna dei dati FM.
 
-
     **Obiettivo e beneficio**
-
     - Ricavare dal modello e consegnare elenchi verificabili di locali, porte e finestre.
-
     - Consegnare gli impianti solo nella misura richiesta dal sistema FM – chiarire il perimetro con il gestore, nessun catalogo impianti fisso.
 
-
     **Svolgimento**
-
     1. Gestire nel modello locali interni, porte e finestre con i dati anagrafici e le quantità richieste.
-
     2. Estrarre elenchi e indicatori dal modello e allinearli ai requisiti di consegna del sistema FM.
-
     3. Completare attributi e oggetti degli impianti secondo i requisiti del sistema FM usato e consegnarli.
 
-
     **Risultato della fornitura**
-
-    - Dati di consegna FM con elenchi verificabili di locali, porte e finestre nonché gli impianti concordati.'
-  en: 'Deliver space, door, and window lists plus FM-relevant building services as structured data at handover to the operator – without full 3D plant modelling.
-
+    - Dati di consegna FM con elenchi verificabili di locali, porte e finestre nonché gli impianti concordati.
+  en: |-
+    Deliver space, door, and window lists plus FM-relevant building services as structured data at handover to the operator – without full 3D plant modelling.
 
     **Starting point**
-
-    - At handover, the operator needs reliable space, door, and window lists. Full MEP 3D models are often unavailable or not required, and the resources to maintain them are frequently missing. A clearly
-    structured handover folder is therefore often more valuable than a perfect 3D model delivered six months after handover.
-
+    - At handover, the operator needs reliable space, door, and window lists. Full MEP 3D models are often unavailable or not required, and the resources to maintain them are frequently missing. A clearly structured handover folder is therefore often more valuable than a perfect 3D model delivered six months after handover.
     - Missing or inconsistent master data makes FM data handover harder.
 
-
     **Goal & benefit**
-
     - Derive and hand over verifiable space, door, and window lists from the model.
-
     - Deliver building services only to the extent required by the FM system – agree scope with the operator; no fixed MEP element pack.
 
-
     **Process**
-
     1. Maintain interior spaces, doors, and windows in the model with the required master data and quantities.
-
-    2. Extract lists and metrics from the model and align them with the FM system''s handover requirements.
-
+    2. Extract lists and metrics from the model and align them with the FM system's handover requirements.
     3. Add MEP attributes and objects to the requirements of the FM system in use, then hand over.
 
-
     **Deliverable**
-
-    - FM handover data with verifiable space, door, and window lists and the agreed building services information.'
-workflow_group: null
+    - FM handover data with verifiable space, door, and window lists and the agreed building services information.
+workflow_group: produkt-betriebsdaten
 parent_workflow: pragmaticbim:workflow/hov
 picture_link: null
 status: active

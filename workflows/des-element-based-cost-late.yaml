@@ -1,0 +1,112 @@
+id: pragmaticbim:workflow/des-element-based-cost-late
+code: DES-ELEMENT-COST-LATE
+sort_order: 43
+name:
+  de: Elementbasierte Kostenberechnung in späten Projektphasen
+  fr: Calculer les coûts par élément dans les phases avancées du projet
+  it: Calcolare i costi per componente nelle fasi avanzate del progetto
+  en: Calculate element-based costs in late project phases
+description:
+  de: |-
+    Die frühe Kostenprognose mit berechneten Bauteiltypen, präzisierten Mengen und typbezogenen Einheitspreisen zur detaillierten Kostenberechnung weiterentwickeln.
+
+    **Ausgangslage**
+    - Mit fortschreitender Planung reichen Durchschnittspreise je Produktklasse nicht mehr aus, weil Aufbauten, Abmessungen und Leistungsanforderungen die Bauteilkosten wesentlich verändern.
+    - Werden Mengen und Typen für Kosten, Ausschreibung und Ökobilanz getrennt gebildet, entstehen widersprüchliche Berechnungsstände und nicht nachvollziehbare Abweichungen.
+
+    **Ziel & Nutzen**
+    - Kosten je berechnetem Bauteiltyp mit den tatsächlich geplanten Aufbauten und Anforderungen ermitteln.
+    - Änderungen gegenüber der frühen Kostenberechnung auf Menge, Typ oder Einheitspreis zurückführen.
+    - Eine gemeinsame typbasierte Grundlage für Ausschreibung und Ökobilanz bereitstellen.
+
+    **Ablauf**
+    1. Kostenrelevante Bauteile mit Produktklasse, kostenbestimmenden Eigenschaften, Referenzmenge und präzisierten Modellmengen bereitstellen und den Bauteiltyp regelbasiert berechnen.
+    2. Einheitspreise je Produktklasse und berechnetem Typ aus der freigegebenen Kostendatenbank zuordnen und die Bauteilkosten aus Referenzmenge × Einheitspreis berechnen.
+    3. Kosten nach Bauteiltypen auswerten, Abweichungen zum Kostenvoranschlag erklären und Kostenstand, Reserven sowie Gesamtkosten nachführen.
+
+    **Lieferergebnis**
+    - Detaillierte elementbasierte Kostenberechnung nach Produktklasse und Bauteiltyp
+    - Abweichungsnachweis gegenüber dem Kostenvoranschlag mit aktualisierten Gesamtkosten
+  fr: |-
+    Développer la prévision initiale en un calcul détaillé des coûts au moyen de types d'éléments calculés, de quantités précisées et de prix unitaires propres aux types.
+
+    **Situation de départ**
+    - Avec l'avancement des études, les prix moyens par classe de produit ne suffisent plus, car compositions, dimensions et performances modifient sensiblement les coûts des éléments.
+    - Si quantités et types sont établis séparément pour les coûts, l'appel d'offres et l'écobilan, les états de calcul divergent et les écarts ne sont plus traçables.
+
+    **Objectif et bénéfice**
+    - Calculer les coûts par type d'élément selon les compositions et performances effectivement prévues.
+    - Ramener les modifications par rapport au calcul initial à la quantité, au type ou au prix unitaire.
+    - Fournir une base commune par types pour l'appel d'offres et l'écobilan.
+
+    **Déroulement**
+    1. Fournir les éléments déterminants avec classe de produit, propriétés influençant les coûts, quantité de référence et quantités précisées issues de la maquette, puis calculer le type d'élément selon des règles.
+    2. Affecter les prix unitaires par classe de produit et type calculé issus de la base de données des coûts approuvée, puis calculer les coûts d'éléments par quantité de référence × prix unitaire.
+    3. Évaluer les coûts par types d'éléments, expliquer les écarts par rapport au devis estimatif et mettre à jour état des prix, réserves et coût total.
+
+    **Livrable**
+    - Calcul détaillé des coûts par éléments selon la classe de produit et le type d'élément
+    - Justification des écarts par rapport au devis estimatif avec coût total actualisé
+  it: |-
+    Sviluppare la previsione iniziale in un calcolo dettagliato dei costi mediante tipi di componente calcolati, quantità precisate e prezzi unitari specifici per tipo.
+
+    **Situazione di partenza**
+    - Con l'avanzamento della progettazione, i prezzi medi per classe di prodotto non sono più sufficienti, perché stratigrafie, dimensioni e prestazioni modificano sensibilmente i costi dei componenti.
+    - Se quantità e tipi vengono definiti separatamente per costi, gara ed ecobilancio, si creano stati di calcolo divergenti e scostamenti non tracciabili.
+
+    **Obiettivo e beneficio**
+    - Calcolare i costi per tipo di componente con le stratigrafie e le prestazioni effettivamente previste.
+    - Ricondurre le modifiche rispetto al calcolo iniziale a quantità, tipo o prezzo unitario.
+    - Fornire una base comune per tipo per la gara e l'ecobilancio.
+
+    **Svolgimento**
+    1. Fornire i componenti rilevanti con classe di prodotto, proprietà determinanti per i costi, quantità di riferimento e quantità precisate dal modello, quindi calcolare il tipo di componente secondo regole.
+    2. Assegnare i prezzi unitari per classe di prodotto e tipo calcolato dalla banca dati dei costi approvata e calcolare i costi dei componenti come quantità di riferimento × prezzo unitario.
+    3. Valutare i costi per tipo di componente, spiegare gli scostamenti rispetto al preventivo e aggiornare base prezzi, riserve e costo totale.
+
+    **Risultato della fornitura**
+    - Calcolo dettagliato dei costi per componenti secondo classe di prodotto e tipo
+    - Giustificazione degli scostamenti rispetto al preventivo con costo totale aggiornato
+  en: |-
+    Develop the early forecast into a detailed cost calculation using calculated component types, refined quantities, and type-specific unit rates.
+
+    **Starting point**
+    - As design advances, average rates per product class no longer suffice because build-ups, dimensions, and performance requirements materially change component costs.
+    - If quantities and types are created separately for costs, tendering, and life-cycle assessment, calculation states diverge and variances become untraceable.
+
+    **Goal & benefit**
+    - Calculate costs per component type using the build-ups and requirements actually designed.
+    - Attribute changes from the early calculation to quantity, type, or unit rate.
+    - Provide a shared type-based basis for tendering and life-cycle assessment.
+
+    **Process**
+    1. Provide cost-relevant components with product class, cost-driving properties, reference quantity, and refined model quantities, then calculate the component type using rules.
+    2. Assign unit rates per product class and calculated type from the approved cost database and calculate component costs as reference quantity × unit rate.
+    3. Evaluate costs by component type, explain variances from the cost estimate, and update the price basis, contingencies, and total cost.
+
+    **Deliverable**
+    - Detailed element-based cost calculation by product class and component type
+    - Variance statement against the cost estimate with updated total cost
+workflow_group: kosten-mengen
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+countries:
+  - CH
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+comment: >-
+  Detailed stage from phase 32. Cost key:
+  ePset_Cost.ProductClass + ePset_Cost.CalculatedType +
+  ePset_Cost.ReferenceQuantity; project rate: ePset_Cost.UnitPrice.
+  CalculatedType is derived here from cost-driving component properties and is
+  the grouping token shared with BES-ELEMENT-TENDER and DES-LCA. Typing logic
+  and DMN/FEEL tables live in book Anhang D (Bauteiltypisierung). Type tokens
+  are German by design (Swiss LV/KVA), use metres as inputs, omit empty
+  segments, and use underscore separators. Do not store the result in
+  occurrence Name. Logic names: FundamentTypisierung, WandTypisierung,
+  PlattenTypisierung, StuetzeTypisierung, TraegerTypisierung,
+  TreppeTypisierung, TuerTypisierung, FensterTypisierung.
+  Upstream: DES-ELEMENT-COST-EARLY. Downstream: BES-ELEMENT-TENDER,
+  QAS-COST-PLAUS, DES-LCA.

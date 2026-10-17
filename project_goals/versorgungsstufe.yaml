@@ -1,0 +1,101 @@
+id: pragmaticbim:project-goal/versorgungsstufe
+sort_order: 1081
+group: rahmenbedingungen
+code: PG-24
+name:
+  de: Versorgungsstufe
+  fr: Niveau de soins
+  it: Livello di cura
+  en: Level of care
+tag:
+  de: Versorgung
+  fr: Soins
+  it: Cura
+  en: Care
+description:
+  de: |-
+    Die Versorgungsstufe und die Zahl der Betten, Behandlungsplätze und OP-Säle bestimmen Pflegestationen, Diagnostik, Technik und Logistik.
+
+    Ohne diese Festlegung bleiben Pflegestationen, Diagnostik und OP-Säle offen. Das Haus wird dann für eine Versorgung gebaut, die es nicht leistet.
+  fr: |-
+    Le niveau de soins et le nombre de lits, de places de traitement et de salles d'opération déterminent les unités de soins, le diagnostic, la technique et la logistique.
+
+    Sans cette décision, unités de soins, diagnostic et salles d'opération restent ouverts. Le bâtiment est alors construit pour un niveau de soins qu'il ne fournit pas.
+  it: |-
+    Il livello di cura e il numero di letti, posti di trattamento e sale operatorie determinano reparti di degenza, diagnostica, impianti e logistica.
+
+    Senza questa decisione reparti di degenza, diagnostica e sale operatorie restano aperti. L'edificio viene allora costruito per un livello di cura che non eroga.
+  en: |-
+    The level of care and the number of beds, treatment places, and operating theatres determine wards, diagnostics, building services, and logistics.
+
+    Without this decision wards, diagnostics, and operating theatres stay open. The building is then built for a level of care it does not provide.
+status: active
+uses:
+- pragmaticbim:use/gesundheit
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/versorgungsstufe-akut
+  code: VST-01
+  sort_order: 1
+  name:
+    de: Akut
+    fr: Soins aigus
+    it: Acuto
+    en: Acute care
+  description:
+    de: Akutspital mit Notfall, Operationen und Intensivpflege.
+    fr: Hôpital de soins aigus avec urgences, opérations et soins intensifs.
+    it: Ospedale acuto con pronto soccorso, interventi e cure intense.
+    en: Acute hospital with emergency, surgery, and intensive care.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/versorgungsstufe-reha
+  code: VST-02
+  sort_order: 2
+  name:
+    de: Rehabilitation
+    fr: Réadaptation
+    it: Riabilitazione
+    en: Rehabilitation
+  description:
+    de: Klinik mit Therapie- und Trainingsräumen.
+    fr: Clinique avec salles de thérapie et d'entraînement.
+    it: Clinica con locali di terapia e allenamento.
+    en: Clinic with therapy and training rooms.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/versorgungsstufe-pflege
+  code: VST-03
+  sort_order: 3
+  name:
+    de: Pflege
+    fr: Soins de longue durée
+    it: Cure a lungo termine
+    en: Long-term care
+  description:
+    de: Pflegeheim für längere Aufenthalte.
+    fr: Établissement médico-social pour des séjours prolongés.
+    it: Casa di cura per soggiorni prolungati.
+    en: Care home for longer stays.
+  status: active
+  comment: ''
+quantities:
+- id: pragmaticbim:quantity/versorgungsstufe-behandlungsplaetze
+  code: VST-Q02
+  sort_order: 1
+  name:
+    de: Anzahl Behandlungsplätze
+    fr: Nombre de places de traitement
+    it: Numero di posti di trattamento
+    en: Number of treatment places
+  status: active
+- id: pragmaticbim:quantity/versorgungsstufe-op-saele
+  code: VST-Q03
+  sort_order: 2
+  name:
+    de: Anzahl OP-Säle
+    fr: Nombre de salles d'opération
+    it: Numero di sale operatorie
+    en: Number of operating theatres
+  status: active

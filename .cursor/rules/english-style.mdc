@@ -1,0 +1,117 @@
+---
+description: English spelling, terminology, and register for en fields and the English book locale
+globs: "{elements,workflows,values,documents,models,project_goals,phases,domains}/*.yaml,book/locales/en/**"
+alwaysApply: false
+---
+
+# English style (Elementplan)
+
+English is a translation target, not the source. Write from the German meaning,
+never from German word order. A sentence that a British project manager would
+not say out loud is wrong, even when every word is a correct dictionary match.
+
+## Spelling: Oxford British English
+
+Same convention as ISO 19650: British spelling, but `-ize` / `-ization` endings.
+
+| Use | Not | Note |
+|---|---|---|
+| modelling, modelled, modeller | modeling, modeled | also remodelling |
+| storey, storeys | story, stories | `story` only for narrative |
+| colour, behaviour, favour, neighbour, labour | color, behavior, … | |
+| centre, metre, metres, fibre, litre | center, meter, … | `meter` stays for metering devices: gas meter, water meter |
+| catalogue, dialogue, analogue | catalog, dialog | |
+| programme (room programme, functional programme) | program | `program` only for software |
+| fulfil, fulfils, fulfilment | fulfill, fulfillment | |
+| cancelled, levelled, signalling, travelling | canceled, leveled | double the final `l` |
+| grey, kerb, ageing, judgement, licence (noun) | gray, curb, aging | `license` stays the verb |
+| organization, optimize, visualization, prioritize, harmonize, standardize, normalize, synchronize | organisation, optimise, visualisation, … | `-ize`, not `-ise` |
+| analysis, analyse | analyzis | noun `analysis`, verb `analyse` |
+
+## Terminology
+
+| German | English | Never |
+|---|---|---|
+| Bauherr, Bauherrschaft, Auftraggeber | client | owner, employer, building owner, principal |
+| Planer, Fachplaner, Planung (die Rolle) | designer, specialist designer | planner — a false friend; an English planner does programming or town planning |
+| Bestand, Bestandsbau | existing building, existing structure | existing stock, stock |
+| Fachbereich, Fachdisziplin | discipline | domain, subject area |
+| Gewerk, Unternehmerlos | trade, contractor package | craft, guild |
+| Vergabepaket | procurement package | award lot, tender lot |
+| Planungsschnittstelle | planning interface | design cut |
+| Geschoss | storey | floor (ambiguous with floor slab) |
+| Raumprogramm | room programme | room program, space program |
+| Nutzungsvereinbarung | usage agreement | utilisation agreement |
+| Plausibilisierung | plausibility check | plausibilisation |
+| fachlich beurteilen | get a specialist assessment | assess professionally |
+| Plangrafik | drawing graphics | plan graphics |
+| Erfüllungsgrad | how far the order is met | degree of fulfilment |
+| Bauteil | component | building part, construction element |
+| Anwendungsfall | use case | application case |
+| Werteliste | value list | list of values |
+| Abnahme | handover, acceptance | takeover |
+| Rückbau | deconstruction | dismantling (unless literal) |
+| Terrain | terrain | ground level (when the attribute is BelowTerrain) |
+
+`Elementplan`, `pragmaticBIM`, `abstractBIM`, `Madaster` and IFC identifiers
+stay untranslated. `pragmaticBIM-Referenz` is *pragmaticBIM Reference*, short
+*the Reference* (capitalized). `Webanwendung` is *web application*; see
+`.cursor/rules/naming.mdc` for which subject does what.
+
+## Register
+
+1. Write what happens, not what is theoretically possible. `The model shows …`,
+   not `The model offers the possibility of showing …`.
+2. Prefer a verb over a noun chain. `decide early` beats `early decision-making`.
+3. Drop `as well as` when `and` works, and `in each case` / `respectively` /
+   `thereby` / `hereby` entirely – they are German connectives in disguise.
+4. Keep the German sentence count. Do not merge two German sentences into one
+   English one, and do not split one into two; the book layout depends on length.
+5. Enumerations after an em dash stay lower case: `` `NEW` — new ``.
+
+## Dashes and numbers (Swiss)
+
+Use dashes sparingly.
+
+| Role | Form | Example |
+|---|---|---|
+| Parenthetical aside | spaced en dash ` – ` | `… delivers – in every role.` |
+| Token / definition gloss | em dash `—` after backtick or bold label | `` `NEW` — new ``, `**Concept** — …` |
+| Compound | hyphen `-` | `timber-concrete` |
+
+Numbers follow Swiss convention in all languages: thousands with apostrophe
+(`1'000`), decimal point (`3.14`), space before percent (`80 %`, `± 25 %`).
+
+## Structure is fixed
+
+Section headers translate one-to-one and nothing else moves:
+
+| de | en |
+|---|---|
+| Beschreibung | Description |
+| Modellierungshinweis | Modelling guidelines |
+| Zulässige Werte | Allowed values |
+| Hinweis | Note |
+| Beispiel | Example |
+
+IFC entities, property set names, enum tokens in backticks, FEEL expressions,
+and `pragmaticbim:` identifiers are never translated. Norm references keep their
+original designation: `SIA 416`, `SN 506 511`, `ÖNORM A 2063`, `VeVA`.
+
+One deliberate exception: free-text `ObjectType` and `LongName` values are
+localized per language, and `applicability` follows them. `ObjectType=Humus` in
+`de` is `ObjectType=Topsoil` in `en` because `values/objecttype-humus.yaml`
+carries a separate `values:` array per language. Do not "correct" these to
+match across languages.
+
+```yaml
+# ❌ BAD — calque, -ise ending, wrong client term
+en: |-
+  Identifies if the component lies under terrain, whereby the building owner
+  can optimise the existing stock as well as the room program.
+
+# ✅ GOOD
+en: |-
+  Marks whether the component is below terrain, so the client can optimize the
+  existing building and the room programme.
+```

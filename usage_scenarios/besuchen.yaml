@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/besuchen
+code: US-HE-07
+sort_order: 8
+name:
+  de: Besuchen
+  fr: Rendre visite
+  it: Fare visita
+  en: Visiting
+description:
+  de: Angehörige und Bekannte besuchen Patientinnen und Patienten während des Aufenthalts. Der Besuchsort
+    entscheidet über Privatheit, Störung des Pflegebetriebs und Wege durch die Station.
+  fr: Les proches et connaissances rendent visite aux patients pendant leur séjour. Le lieu de visite détermine
+    l'intimité, la perturbation des soins et les parcours dans l'unité.
+  it: Familiari e conoscenti fanno visita ai pazienti durante la degenza. Il luogo della visita determina
+    riservatezza, disturbo dell'assistenza e percorsi nel reparto.
+  en: Relatives and friends visit patients during their stay. The visiting location determines privacy,
+    disruption of care, and routes through the ward.
+uses:
+- pragmaticbim:use/gesundheit
+tags:
+- patientenweg
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/besuchen-patient-room
+  sort_order: 1
+  name:
+    de: Besuch im Patientenzimmer
+    fr: Visite en chambre
+    it: Visita in camera
+    en: Visit in the patient room
+  adds:
+  - pragmaticbim:room-type/patientenzimmer
+- id: pragmaticbim:scenario-option/besuchen-cafeteria
+  sort_order: 2
+  name:
+    de: Besuch in der Cafeteria
+    fr: Visite à la cafétéria
+    it: Visita in caffetteria
+    en: Visit in the cafeteria
+  adds:
+  - pragmaticbim:room-type/cafeteria

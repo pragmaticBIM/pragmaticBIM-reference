@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-cablecarrier-tray
+code: CABLE-TRAY
+name:
+  de: Elektrotrasse
+  fr: Chemin de câbles
+  it: Canalina elettrica
+  en: Cable tray
+description:
+  de: PredefinedType für IfcCableCarrierSegment als Elektrotrasse.
+  fr: PredefinedType pour IfcCableCarrierSegment comme chemin de câbles.
+  it: PredefinedType per IfcCableCarrierSegment come canalina elettrica.
+  en: PredefinedType for IfcCableCarrierSegment as a cable tray.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - CABLETRAY
+  fr:
+    - CABLETRAY
+  it:
+    - CABLETRAY
+  en:
+    - CABLETRAY

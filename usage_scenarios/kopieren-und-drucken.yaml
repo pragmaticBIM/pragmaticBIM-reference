@@ -1,0 +1,42 @@
+id: pragmaticbim:usage-scenario/kopieren-und-drucken
+code: US-WR-06
+sort_order: 7
+name:
+  de: Kopieren und drucken
+  fr: Copier et imprimer
+  it: Copiare e stampare
+  en: Copying and printing
+description:
+  de: Mitarbeitende drucken, kopieren und holen mehrmals täglich Büromaterial. Ein eigener Raum entscheidet
+    über Lärm, Emissionen und Wege in der Bürozone.
+  fr: Le personnel imprime, copie et va chercher des fournitures plusieurs fois par jour. Un local dédié
+    détermine le bruit, les émissions et les parcours dans la zone de bureaux.
+  it: Il personale stampa, fotocopia e preleva materiale d'ufficio più volte al giorno. Un locale dedicato
+    determina rumore, emissioni e percorsi nella zona uffici.
+  en: Staff print, copy, and fetch office supplies several times a day. A dedicated room determines noise,
+    emissions, and routes within the office zone.
+uses:
+- pragmaticbim:use/arbeit
+tags:
+- buero
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/kopieren-und-drucken-copy-room
+  sort_order: 1
+  name:
+    de: Kopierraum
+    fr: Local de reprographie
+    it: Locale fotocopie
+    en: Copy room
+  adds:
+  - pragmaticbim:room-type/kopierraum
+- id: pragmaticbim:scenario-option/kopieren-und-drucken-open-zone
+  sort_order: 2
+  name:
+    de: Geräte in der Bürozone
+    fr: Appareils dans la zone de bureaux
+    it: Apparecchi nella zona uffici
+    en: Devices in the office zone
+  exclusive: true

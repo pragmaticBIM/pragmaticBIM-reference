@@ -1,0 +1,43 @@
+id: pragmaticbim:usage-scenario/ergebnisse-auswerten
+code: US-LA-05
+sort_order: 6
+name:
+  de: Ergebnisse auswerten
+  fr: Analyser les résultats
+  it: Valutare i risultati
+  en: Evaluating results
+description:
+  de: Forschende werten Daten aus und schreiben Berichte ausserhalb des Labors. Getrennte Schreibplätze
+    entscheiden über Laborfläche, Sicherheit und Austausch im Team.
+  fr: Les chercheurs analysent les données et rédigent des rapports hors du laboratoire. Des postes d'écriture
+    séparés déterminent la surface de laboratoire, la sécurité et les échanges dans l'équipe.
+  it: I ricercatori analizzano i dati e redigono rapporti fuori dal laboratorio. Postazioni di scrittura
+    separate determinano superficie di laboratorio, sicurezza e scambio nel team.
+  en: Researchers analyse data and write reports outside the lab. Separate write-up spaces determine lab
+    area, safety, and team exchange.
+uses:
+- pragmaticbim:use/labor
+tags:
+- auswertung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/ergebnisse-auswerten-office
+  sort_order: 1
+  name:
+    de: Büro
+    fr: Bureau
+    it: Ufficio
+    en: Office
+  adds:
+  - pragmaticbim:room-type/buero
+- id: pragmaticbim:scenario-option/ergebnisse-auswerten-shared
+  sort_order: 2
+  name:
+    de: Gemeinschaftsbüro
+    fr: Bureau partagé
+    it: Ufficio condiviso
+    en: Shared office
+  adds:
+  - pragmaticbim:room-type/gemeinschaftsbuero

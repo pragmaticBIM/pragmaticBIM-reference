@@ -1,0 +1,85 @@
+id: pragmaticbim:project-goal/arbeitsplatzmodell
+sort_order: 1021
+group: rahmenbedingungen
+code: PG-16
+name:
+  de: Arbeitsplatzmodell
+  fr: Modèle de poste de travail
+  it: Modello di postazione
+  en: Workplace model
+tag:
+  de: Arbeitsplatz
+  fr: Poste
+  it: Postazione
+  en: Workplace
+description:
+  de: |-
+    Das Arbeitsplatzmodell und die Zahl der Arbeitsplätze bestimmen die Bürofläche und den Bedarf an Rückzugs- und Besprechungsräumen.
+
+    Ohne diese Festlegung bleibt offen, wie dicht gearbeitet wird. Bürofläche, Rückzugsräume und die Desk-Sharing-Quote lassen sich dann nicht aus dem Bedarf ableiten.
+  fr: |-
+    Le modèle de poste de travail et le nombre de postes déterminent la surface de bureau et le besoin en espaces de retrait et de réunion.
+
+    Sans cette décision, il reste ouvert à quelle densité l'on travaille. La surface de bureau, les espaces de retrait et le taux de desk sharing ne se déduisent alors plus du besoin.
+  it: |-
+    Il modello di postazione e il numero di postazioni determinano la superficie d'ufficio e il fabbisogno di spazi di concentrazione e riunione.
+
+    Senza questa decisione resta aperto con quale densità si lavora. Superficie d'ufficio, spazi di concentrazione e quota di desk sharing non si ricavano allora dal fabbisogno.
+  en: |-
+    The workplace model and the number of workstations determine the office area and the need for retreat and meeting rooms.
+
+    Without this decision it stays open how densely people work. Office area, retreat rooms, and the desk-sharing ratio then cannot be derived from the need.
+status: active
+uses:
+- pragmaticbim:use/arbeit
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/arbeitsplatzmodell-zellenbuero
+  code: APM-01
+  sort_order: 1
+  name:
+    de: Zellenbüro
+    fr: Bureau cloisonné
+    it: Ufficio singolo
+    en: Cellular office
+  description:
+    de: Einzel- und Gruppenbüros entlang der Fassade.
+    fr: Bureaux individuels et collectifs le long de la façade.
+    it: Uffici singoli e di gruppo lungo la facciata.
+    en: Single and group offices along the façade.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/arbeitsplatzmodell-open-space
+  code: APM-02
+  sort_order: 2
+  name:
+    de: Open Space
+    fr: Open space
+    it: Open space
+    en: Open space
+  description:
+    de: Offene Bürofläche mit Zonen für Rückzug und Besprechung.
+    fr: Surface de bureau ouverte avec des zones de retrait et de réunion.
+    it: Superficie d'ufficio aperta con zone di concentrazione e riunione.
+    en: Open-plan office with zones for retreat and meetings.
+  status: active
+  comment: ''
+quantities:
+- id: pragmaticbim:quantity/arbeitsplatzmodell-desk-sharing
+  code: APM-Q02
+  sort_order: 1
+  name:
+    de: Desk-Sharing-Quote
+    fr: Taux de desk sharing
+    it: Quota di desk sharing
+    en: Desk-sharing ratio
+  description:
+    de: Anteil der Arbeitsplätze, die mehrere Personen teilen. Bei 0 % hat jede Person einen eigenen Arbeitsplatz
+      (1:1).
+    fr: Part des postes partagés par plusieurs personnes. À 0 %, chaque personne a son propre poste (1:1).
+    it: Quota di postazioni condivise da più persone. Con lo 0 % ogni persona ha la propria postazione
+      (1:1).
+    en: Share of desks used by several people. At 0 %, every person has their own desk (1:1).
+  unit: '%'
+  status: active

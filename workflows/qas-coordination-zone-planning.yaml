@@ -7,123 +7,79 @@ name:
   it: Pianificare le zone di coordinamento
   en: Plan coordination zones
 description:
-  de: 'Koordinationszonen im Modell festlegen und Meetings zuordnen, damit nicht alle Modelle gegen alle geprüft werden müssen.
-
+  de: |-
+    Koordinationszonen im Modell festlegen und Meetings zuordnen, damit nicht alle Modelle gegen alle geprüft werden müssen.
 
     **Ausgangslage**
-
     - Auf grossen Projekten skaliert die Koordination aller Modelle gegen alle Modelle nicht; der Aufwand explodiert und der Nutzen sinkt.
-
     - Ohne geplante Koordinationszonen fehlen klare Besprechungsziele und Verbindlichkeiten.
 
-
     **Ziel & Nutzen**
-
     - Koordinationsprogramm volumetrisch im Modell führen: jeder Bereich ist einem benannten Meeting zugeordnet.
-
     - Umfang und Priorität der Koordination für alle Disziplinen nachvollziehbar machen.
 
-
     **Ablauf**
-
     1. Koordinationszonen und zugehörige Meetings festlegen.
-
     2. Zonen als Proxy-Volumen modellieren und den Meeting-Namen im Name setzen.
-
     3. Modell als Grundlage für Koordinationsplan und Besprechungsziele nutzen.
 
-
     **Lieferergebnis**
-
-    - Koordinationszonenmodell mit geschossbezogenen Zonen und Zuordnung zum zuständigen Koordinationsmeeting.'
-  fr: 'Quels secteurs sont coordonnés dans quelle réunion de coordination – au lieu de tout contre tout.
-
+    - Koordinationszonenmodell mit geschossbezogenen Zonen und Zuordnung zum zuständigen Koordinationsmeeting.
+  fr: |-
+    Quels secteurs sont coordonnés dans quelle réunion de coordination – au lieu de tout contre tout.
 
     **Situation de départ**
-
-    - Sur les grands projets, coordonner tous les modèles contre tous ne passe pas à l''échelle ; l''effort explose et le bénéfice diminue.
-
+    - Sur les grands projets, coordonner tous les modèles contre tous ne passe pas à l'échelle ; l'effort explose et le bénéfice diminue.
     - Sans zones de coordination planifiées, les périmètres de réunion et les engagements manquent de clarté.
 
-
     **Objectif et bénéfice**
-
     - Saisir le programme de coordination de façon volumétrique dans le modèle : chaque secteur est rattaché à une réunion nommée.
-
     - Rendre le périmètre et la priorité de la coordination compréhensibles pour toutes les disciplines.
 
-
     **Déroulement**
-
     1. Définir les zones de coordination et les réunions associées.
-
     2. Modéliser les zones comme volumes proxy et renseigner le nom de la réunion dans Name.
-
     3. Utiliser le modèle comme base pour le plan de coordination et les périmètres de réunion.
 
-
     **Livrable**
-
-    - Maquette des zones de coordination rattachées aux étages et aux séances de coordination compétentes.'
-  it: 'Quali ambiti sono coordinati in quale riunione di coordinamento – invece di tutto contro tutto.
-
+    - Maquette des zones de coordination rattachées aux étages et aux séances de coordination compétentes.
+  it: |-
+    Quali ambiti sono coordinati in quale riunione di coordinamento – invece di tutto contro tutto.
 
     **Situazione di partenza**
-
     - Nei grandi progetti, coordinare tutti i modelli contro tutti non scala; lo sforzo esplode e il beneficio cala.
-
     - Senza zone di coordinamento pianificate mancano ambiti di riunione e impegni chiari.
 
-
     **Obiettivo e beneficio**
-
     - Gestire il programma di coordinamento in modo volumetrico nel modello: ogni ambito è assegnato a una riunione nominata.
-
     - Rendere ambito e priorità del coordinamento comprensibili per tutte le discipline.
 
-
     **Svolgimento**
-
     1. Definire le zone di coordinamento e le riunioni associate.
-
     2. Modellare le zone come volumi proxy e impostare il nome della riunione in Name.
-
     3. Usare il modello come base per il piano di coordinamento e gli ambiti delle riunioni.
 
-
     **Risultato della fornitura**
-
-    - Modello delle zone di coordinamento assegnate ai piani e alle riunioni di coordinamento competenti.'
-  en: 'Define coordination zones in the model and assign them to meetings so that not every model has to be checked against every other model.
-
+    - Modello delle zone di coordinamento assegnate ai piani e alle riunioni di coordinamento competenti.
+  en: |-
+    Define coordination zones in the model and assign them to meetings so that not every model has to be checked against every other model.
 
     **Starting point**
-
     - On large projects, coordinating all models against all models does not scale; effort explodes and benefit drops.
-
     - Without planned coordination zones, meeting scopes and commitments stay unclear.
 
-
     **Goal & benefit**
-
     - Maintain the coordination programme volumetrically in the model: each area is assigned to a named meeting.
-
     - Make coordination scope and priority understandable for all disciplines.
 
-
     **Process**
-
     1. Define coordination zones and the associated meetings.
-
     2. Model the zones as proxy volumes and set the meeting name in Name.
-
     3. Use the model as the basis for the coordination plan and meeting scopes.
 
-
     **Deliverable**
-
-    - Coordination zone model with zones assigned to their storeys and responsible coordination meetings.'
-workflow_group: entwurf
+    - Coordination zone model with zones assigned to their storeys and responsible coordination meetings.
+workflow_group: koordination
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active

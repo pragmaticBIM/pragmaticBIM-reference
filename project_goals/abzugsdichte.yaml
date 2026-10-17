@@ -1,0 +1,82 @@
+id: pragmaticbim:project-goal/abzugsdichte
+sort_order: 1123
+group: rahmenbedingungen
+code: PG-42
+name:
+  de: Abzugsdichte
+  fr: Densité de hottes
+  it: Densità di cappe
+  en: Fume hood density
+tag:
+  de: Abzug
+  fr: Hotte
+  it: Cappa
+  en: Hood
+description:
+  de: |-
+    Die Abzugsdichte bestimmt Abluftmenge, Schächte und die Tiefe der Laborarbeitsplätze.
+
+    Ohne diese Festlegung bleiben Abluft und Labortiefe offen. Das Labor wird dann mit zu vielen Abzügen gebaut, oder mit zu wenigen.
+  fr: |-
+    La densité de hottes détermine le débit d'air extrait, les gaines et la profondeur des postes de laboratoire.
+
+    Sans cette décision, air extrait et profondeur du laboratoire restent ouverts. Le laboratoire est alors construit avec trop de hottes, ou avec trop peu.
+  it: |-
+    La densità di cappe determina la portata d'aria estratta, i cavedi e la profondità delle postazioni di laboratorio.
+
+    Senza questa decisione aria estratta e profondità del laboratorio restano aperti. Il laboratorio viene allora costruito con troppe cappe, o con troppo poche.
+  en: |-
+    Fume hood density determines extract airflow, shafts, and how deep the lab workstations are.
+
+    Without this decision extract air and lab depth stay open. The lab is then built with too many fume hoods, or with too few.
+status: active
+uses:
+- pragmaticbim:use/labor
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/abzugsdichte-keine
+  code: AZD-01
+  sort_order: 1
+  name:
+    de: keine
+    fr: aucune
+    it: nessuna
+    en: none
+  description:
+    de: Kein Abzug am Laborarbeitsplatz.
+    fr: Aucune hotte au poste de laboratoire.
+    it: Nessuna cappa alla postazione di laboratorio.
+    en: No fume hood at the lab workstation.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/abzugsdichte-gering
+  code: AZD-02
+  sort_order: 2
+  name:
+    de: gering
+    fr: faible
+    it: bassa
+    en: low
+  description:
+    de: Zum Beispiel weniger als 0.5 Abzüge pro Laborarbeitsplatz.
+    fr: Par exemple moins de 0.5 hotte par poste de laboratoire.
+    it: Per esempio meno di 0.5 cappe per postazione di laboratorio.
+    en: For example fewer than 0.5 fume hoods per lab workstation.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/abzugsdichte-hoch
+  code: AZD-03
+  sort_order: 3
+  name:
+    de: hoch
+    fr: élevée
+    it: alta
+    en: high
+  description:
+    de: Mindestens 1 Abzug pro Laborarbeitsplatz.
+    fr: Au moins 1 hotte par poste de laboratoire.
+    it: Almeno 1 cappa per postazione di laboratorio.
+    en: At least 1 fume hood per lab workstation.
+  status: active
+  comment: ''

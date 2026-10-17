@@ -1,0 +1,74 @@
+id: pragmaticbim:room-type/unterflurcontainer
+code: RT-WH-41
+sort_order: 137
+name:
+  de: Unterflurcontainer
+  fr: Conteneur enterré
+  it: Contenitore interrato
+  en: Underground Waste Container
+definition:
+  de: Aussenfläche für einen unterirdischen Sammelcontainer für Siedlungsabfall.
+  fr: Aire extérieure réservée à un conteneur enterré pour la collecte des déchets
+    ménagers.
+  it: Area esterna destinata a un contenitore interrato per la raccolta dei rifiuti
+    domestici.
+  en: Outdoor space allocated to an underground household-waste collection container.
+room_type_kind: room
+room_name: RN-11-50-02
+activity: O-TEC
+default_scope: site
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/unterflurcontainer-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Unterflurcontainer
+      fr: Conteneur enterré
+      it: Contenitore interrato
+      en: Underground Waste Container
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: AFF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Workshop
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 5.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 10.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Öffentlich
+      fr: Public
+      it: Pubblico
+      en: Public
+  status: active

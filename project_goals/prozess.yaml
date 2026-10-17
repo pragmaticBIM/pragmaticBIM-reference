@@ -1,0 +1,77 @@
+id: pragmaticbim:project-goal/prozess
+sort_order: 1091
+group: rahmenbedingungen
+code: PG-25
+name:
+  de: Prozess
+  fr: Procédé
+  it: Processo
+  en: Process
+tag:
+  de: Prozess
+  fr: Procédé
+  it: Processo
+  en: Process
+description:
+  de: |-
+    Der Prozess und der Ausstoss bestimmen Hallenhöhe, Lasten, Materialfluss und die Zahl der Arbeitsplätze.
+
+    Ohne diese Festlegung bleiben Lasten, Hallenhöhe und Materialfluss offen. Die Zahl der Arbeitsplätze lässt sich dann nicht aus dem Ausstoss ableiten.
+  fr: |-
+    Le procédé et la production déterminent la hauteur de la halle, les charges, le flux de matériaux et le nombre de postes de travail.
+
+    Sans cette décision, charges, hauteur de halle et flux de matériaux restent ouverts. Le nombre de postes ne se déduit alors pas de la production.
+  it: |-
+    Il processo e la produzione determinano altezza del capannone, carichi, flusso dei materiali e numero di postazioni.
+
+    Senza questa decisione carichi, altezza del capannone e flusso dei materiali restano aperti. Il numero di postazioni non si ricava allora dalla produzione.
+  en: |-
+    The process and the output determine hall height, loads, material flow, and the number of workstations.
+
+    Without this decision loads, hall height, and material flow stay open. The number of workstations then cannot be derived from the output.
+status: active
+uses:
+- pragmaticbim:use/produktion
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/prozess-fertigung
+  code: PRZ-01
+  sort_order: 1
+  name:
+    de: Fertigung
+    fr: Fabrication
+    it: Fabbricazione
+    en: Manufacturing
+  description:
+    de: Bauteile entstehen aus Rohmaterial, oft mit schweren Maschinen.
+    fr: Les pièces sont fabriquées à partir de matière première, souvent avec des machines lourdes.
+    it: I componenti nascono dalla materia prima, spesso con macchine pesanti.
+    en: Parts are made from raw material, often with heavy machinery.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/prozess-montage
+  code: PRZ-02
+  sort_order: 2
+  name:
+    de: Montage
+    fr: Montage
+    it: Montaggio
+    en: Assembly
+  description:
+    de: Bauteile werden zu Produkten zusammengesetzt.
+    fr: Les pièces sont assemblées en produits.
+    it: I componenti vengono assemblati in prodotti.
+    en: Parts are assembled into products.
+  status: active
+  comment: ''
+quantities:
+- id: pragmaticbim:quantity/prozess-arbeitsplaetze
+  code: PRZ-Q02
+  sort_order: 1
+  name:
+    de: Anzahl Arbeitsplätze
+    fr: Nombre de postes de travail
+    it: Numero di postazioni
+    en: Number of workstations
+  status: active

@@ -1,0 +1,51 @@
+id: pragmaticbim:usage-scenario/waren-einlagern
+code: US-LO-02
+sort_order: 3
+name:
+  de: Waren einlagern
+  fr: Stocker les marchandises
+  it: Immagazzinare le merci
+  en: Storing goods
+description:
+  de: Waren bleiben Tage bis Monate am Lager. Die Lagerart entscheidet über Raumhöhe, Temperatur und Brandschutz.
+  fr: Les marchandises restent en stock de quelques jours à plusieurs mois. Le type de stockage détermine
+    la hauteur, la température et la protection incendie.
+  it: Le merci restano in magazzino da giorni a mesi. Il tipo di deposito determina altezza, temperatura
+    e protezione antincendio.
+  en: Goods stay in stock for days to months. The storage type determines room height, temperature, and
+    fire protection.
+uses:
+- pragmaticbim:use/logistik
+tags:
+- lagerung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/waren-einlagern-warehouse
+  sort_order: 1
+  name:
+    de: Lagerhalle
+    fr: Entrepôt
+    it: Magazzino
+    en: Warehouse
+  adds:
+  - pragmaticbim:room-type/lagerhalle
+- id: pragmaticbim:scenario-option/waren-einlagern-cold
+  sort_order: 2
+  name:
+    de: Kühllager
+    fr: Entrepôt frigorifique
+    it: Magazzino refrigerato
+    en: Cold store
+  adds:
+  - pragmaticbim:room-type/kuehlraum
+- id: pragmaticbim:scenario-option/waren-einlagern-hazardous
+  sort_order: 3
+  name:
+    de: Gefahrstofflager
+    fr: Entrepôt de matières dangereuses
+    it: Deposito sostanze pericolose
+    en: Hazardous goods store
+  adds:
+  - pragmaticbim:room-type/gefahrstofflager

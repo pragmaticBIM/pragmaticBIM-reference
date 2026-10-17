@@ -1,0 +1,52 @@
+id: pragmaticbim:usage-scenario/kundschaft-beraten
+code: US-VK-02
+sort_order: 3
+name:
+  de: Kundschaft beraten
+  fr: Conseiller la clientèle
+  it: Consigliare la clientela
+  en: Advising customers
+description:
+  de: Kundschaft braucht Beratung, Service oder eine Reklamation abseits der Kasse. Ein eigener Bereich
+    entscheidet über Diskretion, Wartezeit und Fläche auf der Verkaufsfläche.
+  fr: La clientèle a besoin de conseils, d'un service ou d'une réclamation à l'écart de la caisse. Un
+    espace dédié détermine la discrétion, le temps d'attente et la surface de vente.
+  it: La clientela necessita di consulenza, assistenza o un reclamo lontano dalla cassa. Un'area dedicata
+    determina riservatezza, tempi di attesa e superficie di vendita.
+  en: Customers need advice, service, or a complaint handled away from the checkout. A dedicated area
+    determines discretion, waiting time, and sales floor area.
+uses:
+- pragmaticbim:use/verkauf
+tags:
+- beratung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/kundschaft-beraten-sales-floor
+  sort_order: 1
+  name:
+    de: Auf der Verkaufsfläche
+    fr: Sur la surface de vente
+    it: Sulla superficie di vendita
+    en: On the sales floor
+  adds:
+  - pragmaticbim:room-type/verkaufsflaeche
+- id: pragmaticbim:scenario-option/kundschaft-beraten-service-area
+  sort_order: 2
+  name:
+    de: Kundenbetreuungsbereich
+    fr: Espace service clientèle
+    it: Area assistenza clienti
+    en: Customer service area
+  adds:
+  - pragmaticbim:room-type/kundenbetreuungsbereich
+- id: pragmaticbim:scenario-option/kundschaft-beraten-meeting-room
+  sort_order: 3
+  name:
+    de: Beratung im Besprechungsraum
+    fr: Conseil en salle de réunion
+    it: Consulenza in sala riunioni
+    en: Advice in a meeting room
+  adds:
+  - pragmaticbim:room-type/besprechungsraum

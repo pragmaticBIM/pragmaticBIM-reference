@@ -1,0 +1,50 @@
+id: pragmaticbim:room-type/wohnung
+legacy_ids:
+- pragmaticbim:unit-type/wohnung
+code: UT-WH-01
+sort_order: 1
+name:
+  de: Wohnung
+  fr: Logement
+  it: Alloggio
+  en: Dwelling
+definition:
+  de: Bruttovolumen einer Wohnung. Die Zimmerzahl folgt der Schweizer Zählung; die
+    halbe Zimmerzahl ist die Küche. Die Grössen sind eigene Einheiten.
+  fr: Volume brut d'un logement. Le nombre de pièces suit le décompte suisse ; la
+    demi-pièce est la cuisine. Les tailles sont des unités propres.
+  it: Volume lordo di un alloggio. Il numero di locali segue il conteggio svizzero;
+    il mezzo locale è la cucina. Le grandezze sono unità proprie.
+  en: Gross volume of a dwelling. The room count follows the Swiss count; the half
+    room is the kitchen. The sizes are units of their own.
+room_type_kind: container
+uses:
+- pragmaticbim:use/wohnen
+contains:
+- room_type: pragmaticbim:room-type/wohnungseingang
+- room_type: pragmaticbim:room-type/wohnzimmer
+- room_type: pragmaticbim:room-type/kueche
+- room_type: pragmaticbim:room-type/badezimmer
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/wohnung-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Wohnung
+      fr: Logement
+      it: Alloggio
+      en: Dwelling
+  status: active

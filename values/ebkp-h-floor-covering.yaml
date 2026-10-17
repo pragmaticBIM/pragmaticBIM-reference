@@ -15,10 +15,10 @@ norm_reference: SN 506 511
 status: active
 values:
   de:
-  - G02.02
+    - 'G02.02'
   fr:
-  - G02.02
+    - 'G02.02'
   it:
-  - G02.02
+    - 'G02.02'
   en:
-  - G02.02
+    - 'G02.02'

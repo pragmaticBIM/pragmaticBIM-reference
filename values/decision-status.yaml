@@ -15,18 +15,18 @@ norm_reference: project-specific
 status: active
 values:
   de:
-  - OPEN
-  - APPROVED
-  - SUPERSEDED
+    - OPEN
+    - APPROVED
+    - SUPERSEDED
   fr:
-  - OPEN
-  - APPROVED
-  - SUPERSEDED
+    - OPEN
+    - APPROVED
+    - SUPERSEDED
   it:
-  - OPEN
-  - APPROVED
-  - SUPERSEDED
+    - OPEN
+    - APPROVED
+    - SUPERSEDED
   en:
-  - OPEN
-  - APPROVED
-  - SUPERSEDED
+    - OPEN
+    - APPROVED
+    - SUPERSEDED

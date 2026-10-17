@@ -15,10 +15,10 @@ norm_reference: SN 506 511
 status: active
 values:
   de:
-  - G03.02
+    - 'G03.02'
   fr:
-  - G03.02
+    - 'G03.02'
   it:
-  - G03.02
+    - 'G03.02'
   en:
-  - G03.02
+    - 'G03.02'

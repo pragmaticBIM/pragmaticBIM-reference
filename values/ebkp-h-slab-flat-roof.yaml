@@ -15,10 +15,10 @@ norm_reference: SN 506 511
 status: active
 values:
   de:
-  - C04.04
+    - 'C04.04'
   fr:
-  - C04.04
+    - 'C04.04'
   it:
-  - C04.04
+    - 'C04.04'
   en:
-  - C04.04
+    - 'C04.04'

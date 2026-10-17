@@ -1,0 +1,82 @@
+id: pragmaticbim:project-goal/verkehrsmittel
+sort_order: 1141
+group: rahmenbedingungen
+code: PG-31
+name:
+  de: Verkehrsmittel
+  fr: Moyen de transport
+  it: Mezzo di trasporto
+  en: Mode of transport
+tag:
+  de: Verkehr
+  fr: Transport
+  it: Trasporto
+  en: Transport
+description:
+  de: |-
+    Das Verkehrsmittel und die Reisenden in der Spitzenstunde bestimmen Perronlängen, Wartebereiche, Personenflüsse und Fluchtwege.
+
+    Ohne diese Festlegung bleiben Perrons, Wartebereiche und Personenflüsse offen. Fluchtwege und Zugänge werden dann nicht auf die Spitzenstunde ausgelegt.
+  fr: |-
+    Le moyen de transport et les voyageurs à l'heure de pointe déterminent la longueur des quais, les zones d'attente, les flux de personnes et les voies d'évacuation.
+
+    Sans cette décision, quais, zones d'attente et flux de personnes restent ouverts. Voies d'évacuation et accès ne sont alors pas dimensionnés pour l'heure de pointe.
+  it: |-
+    Il mezzo di trasporto e i viaggiatori nell'ora di punta determinano lunghezza dei marciapiedi, zone d'attesa, flussi di persone e vie di fuga.
+
+    Senza questa decisione marciapiedi, zone d'attesa e flussi di persone restano aperti. Vie di fuga e accessi non vengono allora dimensionati per l'ora di punta.
+  en: |-
+    The mode of transport and peak-hour passengers determine platform lengths, waiting areas, passenger flows, and escape routes.
+
+    Without this decision platforms, waiting areas, and passenger flows stay open. Escape routes and access are then not sized for the peak hour.
+status: active
+uses:
+- pragmaticbim:use/verkehr
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/verkehrsmittel-bahn
+  code: VKM-01
+  sort_order: 1
+  name:
+    de: Bahn
+    fr: Train
+    it: Treno
+    en: Rail
+  description:
+    de: Bahnhof mit Perrons und Zugängen.
+    fr: Gare avec quais et accès.
+    it: Stazione con marciapiedi e accessi.
+    en: Railway station with platforms and access.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/verkehrsmittel-bus
+  code: VKM-02
+  sort_order: 2
+  name:
+    de: Bus
+    fr: Bus
+    it: Autobus
+    en: Bus
+  description:
+    de: Busterminal mit Haltekanten.
+    fr: Gare routière avec quais.
+    it: Autostazione con banchine.
+    en: Bus terminal with bus bays.
+  status: active
+  comment: ''
+- id: pragmaticbim:project-goal-level/verkehrsmittel-flug
+  code: VKM-03
+  sort_order: 3
+  name:
+    de: Flug
+    fr: Avion
+    it: Aereo
+    en: Air
+  description:
+    de: Flughafen mit Kontrollen und Gates.
+    fr: Aéroport avec contrôles et portes d'embarquement.
+    it: Aeroporto con controlli e gate.
+    en: Airport with checks and gates.
+  status: active
+  comment: ''

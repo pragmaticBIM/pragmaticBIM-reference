@@ -11,18 +11,61 @@ definition:
   fr: Accès public devant le bâtiment.
   it: Accesso pubblico davanti all'edificio.
   en: Public access in front of the building.
-attribute_presets:
-- element: pragmaticbim:element/spaces-exterior
-  name: PredefinedType
-  value: SPACE
-- element: pragmaticbim:element/spaces-exterior
-  name: IsExternal
-  value: true
-- element: pragmaticbim:element/spaces-exterior
-  name: LongName
-  value:
-    de: Strasse
-    fr: Rue
-    it: Strada
-    en: Street
+room_type_kind: room
+room_name: RN-11-40-02
+activity: O-CIR-RD
+default_scope: site
 status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/strasse-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Strasse
+      fr: Rue
+      it: Strada
+      en: Street
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: AVF
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Asphalt
+      fr: Asphalt
+      it: Asphalt
+      en: Asphalt
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Workshop
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: SecurityLevel
+    value:
+      de: Öffentlich
+      fr: Public
+      it: Pubblico
+      en: Public
+  status: active

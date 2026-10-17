@@ -1,0 +1,56 @@
+id: pragmaticbim:usage-scenario/material-lagern
+code: US-VS-06
+sort_order: 7
+name:
+  de: Material lagern
+  fr: Stocker le matériel
+  it: Immagazzinare il materiale
+  en: Storing equipment
+description:
+  de: Bühnenelemente, Bestuhlung und Ausstellungsmaterial werden zwischen den Veranstaltungen gelagert.
+    Der Lagerort entscheidet über Umbauzeiten, Transportwege und Fläche im Haus.
+  fr: Éléments de scène, sièges et matériel d'exposition sont stockés entre les manifestations. Le lieu
+    de stockage détermine les temps de transformation, les chemins de transport et la surface dans le
+    bâtiment.
+  it: Elementi scenici, sedute e materiale espositivo vengono immagazzinati tra un evento e l'altro. Il
+    luogo di deposito determina tempi di allestimento, percorsi di trasporto e superficie nell'edificio.
+  en: Stage elements, seating, and exhibition material are stored between events. The storage location
+    determines changeover time, transport routes, and area in the building.
+uses:
+- pragmaticbim:use/versammlung
+tags:
+- lagerung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/material-lagern-in-house
+  sort_order: 1
+  name:
+    de: Lager im Haus
+    fr: Stock dans le bâtiment
+    it: Deposito nell'edificio
+    en: In-house store
+  adds:
+  - pragmaticbim:room-type/allgemeiner-lagerraum
+- id: pragmaticbim:scenario-option/material-lagern-next-to-hall
+  sort_order: 2
+  name:
+    de: Stuhl- und Gerätelager am Saal
+    fr: Dépôt de sièges et d'équipements attenant à la salle
+    it: Deposito sedie e attrezzature adiacente alla sala
+    en: Chair and equipment store next to the hall
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/aula
+    to_room_type: pragmaticbim:room-type/geraetelager
+  adds:
+  - pragmaticbim:room-type/aula
+  - pragmaticbim:room-type/geraetelager
+- id: pragmaticbim:scenario-option/material-lagern-external
+  sort_order: 3
+  name:
+    de: Externes Lager
+    fr: Stock externe
+    it: Deposito esterno
+    en: External store
+  exclusive: true

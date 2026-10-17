@@ -7,123 +7,79 @@ name:
   it: Giustificare i locali di manutenzione
   en: Verify maintenance spaces
 description:
-  de: 'Freizuhaltende Wartungsräume im Modell führen und kollisionsfrei nachweisen – bevor Anlagen nicht mehr wartbar sind.
-
+  de: |-
+    Freizuhaltende Wartungsräume im Modell führen und kollisionsfrei nachweisen – bevor Anlagen nicht mehr wartbar sind.
 
     **Ausgangslage**
-
     - Ohne freigehaltene Wartungsräume fehlen Zugänge und Arbeitsflächen für Betrieb und Unterhalt.
-
     - Späte Konflikte mit Bauwerk oder TGA machen Wartung teuer oder unmöglich.
 
-
     **Ziel & Nutzen**
-
     - Freizuhaltende Wartungsräume als Proxy-Volumen im Modell führen.
-
     - Im Gesamtmodell gegen Bauwerk und TGA auf Kollisionen prüfen und den Nachweis dokumentieren.
 
-
     **Ablauf**
-
     1. Freizuhaltende Wartungsräume als Proxy-Volumen modellieren.
-
     2. Regelmässig Wartungsräume im Gesamtmodell gegen Bauwerk und Gebäudetechnik auf Kollisionen prüfen.
-
     3. Kollisionsnachweis dokumentieren und freigegebene Volumen verbindlich halten.
 
-
     **Lieferergebnis**
-
-    - Koordinationsmodell mit den erforderlichen Lage- und Grösseninformationen zu freizuhaltenden Wartungsräumen.'
-  fr: 'Saisir les locaux de maintenance à maintenir libres dans le modèle et prouver l''absence de collisions – avant que les installations ne deviennent non maintenables.
-
+    - Koordinationsmodell mit den erforderlichen Lage- und Grösseninformationen zu freizuhaltenden Wartungsräumen.
+  fr: |-
+    Saisir les locaux de maintenance à maintenir libres dans le modèle et prouver l'absence de collisions – avant que les installations ne deviennent non maintenables.
 
     **Situation de départ**
-
     - Sans locaux de maintenance réservés, accès et surfaces de travail pour exploitation et entretien manquent.
-
     - Des conflits tardifs avec le bâtiment ou les techniques rendent la maintenance coûteuse ou impossible.
 
-
     **Objectif et bénéfice**
-
     - Saisir les locaux de maintenance à maintenir libres comme volumes proxy dans le modèle.
-
     - Vérifier les collisions en maquette fédérée contre bâtiment et techniques et documenter la preuve.
 
-
     **Déroulement**
-
     1. Modéliser les locaux de maintenance à maintenir libres comme volumes proxy.
-
     2. Vérifier régulièrement les collisions des locaux de maintenance en maquette fédérée contre bâtiment et techniques du bâtiment.
-
     3. Documenter le contrôle des collisions et tenir les volumes approuvés comme contraignants.
 
-
     **Livrable**
-
-    - Maquette de coordination avec les informations de position et de dimension requises sur les espaces de maintenance à maintenir libres.'
-  it: 'Gestire nel modello i locali di manutenzione da mantenere liberi e dimostrare l''assenza di collisioni – prima che gli impianti non siano più manutenibili.
-
+    - Maquette de coordination avec les informations de position et de dimension requises sur les espaces de maintenance à maintenir libres.
+  it: |-
+    Gestire nel modello i locali di manutenzione da mantenere liberi e dimostrare l'assenza di collisioni – prima che gli impianti non siano più manutenibili.
 
     **Situazione di partenza**
-
     - Senza locali di manutenzione riservati, mancano accessi e superfici di lavoro per esercizio e manutenzione.
-
     - Conflitti tardivi con edificio o impianti rendono la manutenzione costosa o impossibile.
 
-
     **Obiettivo e beneficio**
-
     - Gestire i locali di manutenzione da mantenere liberi come volumi proxy nel modello.
-
     - Verificare collisioni nel modello federato contro edificio e impianti e documentare la prova.
 
-
     **Svolgimento**
-
     1. Modellare i locali di manutenzione da mantenere liberi come volumi proxy.
-
     2. Verificare regolarmente le collisioni dei locali di manutenzione nel modello federato contro edificio e impianti.
-
     3. Documentare la prova di collisione e mantenere vincolanti i volumi approvati.
 
-
     **Risultato della fornitura**
-
-    - Modello di coordinamento con le informazioni necessarie su posizione e dimensioni degli spazi di manutenzione da mantenere liberi.'
-  en: 'Maintain clear maintenance spaces in the model and prove them clash-free – before plant becomes unmaintainable.
-
+    - Modello di coordinamento con le informazioni necessarie su posizione e dimensioni degli spazi di manutenzione da mantenere liberi.
+  en: |-
+    Maintain clear maintenance spaces in the model and prove them clash-free – before plant becomes unmaintainable.
 
     **Starting point**
-
     - Without reserved maintenance spaces, access and working areas for operation and upkeep are missing.
-
     - Late conflicts with the building or MEP make maintenance costly or impossible.
 
-
     **Goal & benefit**
-
     - Maintain clear maintenance spaces as proxy volumes in the model.
-
     - Check clashes against building and MEP in the federated model and document the verification.
 
-
     **Process**
-
     1. Model clear maintenance spaces as proxy volumes.
-
     2. Regularly check maintenance spaces for clashes against building and building services in the federated model.
-
     3. Document the clash verification and keep approved volumes binding.
 
-
     **Deliverable**
-
-    - Coordination model with the required location and size information for clear maintenance spaces.'
-workflow_group: entwurf
+    - Coordination model with the required location and size information for clear maintenance spaces.
+workflow_group: koordination
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active
@@ -131,5 +87,4 @@ service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep
-comment: Clear maintenance spaces as IfcBuildingElementProxy; ObjectType is language-specific (Wartungsraum / Local de maintenance / Locale di manutenzione / Maintenance space). Clash checks against building/MEP
-  in the federated model. Not an IfcSpace room object.
+comment: Clear maintenance spaces as IfcBuildingElementProxy; ObjectType is language-specific (Wartungsraum / Local de maintenance / Locale di manutenzione / Maintenance space). Clash checks against building/MEP in the federated model. Not an IfcSpace room object.

@@ -1,0 +1,45 @@
+id: pragmaticbim:room-type/hotel-suite
+legacy_ids:
+- pragmaticbim:unit-type/hotel-suite
+code: UT-BH-03
+sort_order: 10
+name:
+  de: Suite
+  fr: Suite
+  it: Suite
+  en: Suite
+definition:
+  de: Bruttovolumen einer Suite mit Schlafzimmer, separatem Wohnraum und eigenem Bad.
+  fr: Volume brut d'une suite avec chambre, séjour séparé et salle de bain privée.
+  it: Volume lordo di una suite con camera, soggiorno separato e bagno privato.
+  en: Gross volume of a suite with a bedroom, a separate living room, and a private bathroom.
+room_type_kind: container
+uses:
+- pragmaticbim:use/beherbergung
+contains:
+- room_type: pragmaticbim:room-type/hotelzimmer
+- room_type: pragmaticbim:room-type/wohnzimmer
+- room_type: pragmaticbim:room-type/badezimmer
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/hotel-suite-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Suite
+      fr: Suite
+      it: Suite
+      en: Suite
+  status: active

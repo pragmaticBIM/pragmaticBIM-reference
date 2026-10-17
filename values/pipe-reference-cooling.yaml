@@ -1,0 +1,32 @@
+id: pragmaticbim:value/pipe-reference-cooling
+code: PIPE-REF-KZ
+name:
+  de: Referenz Kälte
+  fr: Référence froid
+  it: Riferimento raffrescamento
+  en: Cooling reference
+description:
+  de: Referenzkennung für Kälte- und Kühlungsleitungen in der Koordination.
+  fr: Code de référence pour les canalisations de froid et de refroidissement en coordination.
+  it: Codice di riferimento per condotte di freddo e raffrescamento nel coordinamento.
+  en: Reference code for cooling piping in coordination.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - KZ
+    - VL-K
+    - RL-K
+  fr:
+    - KZ
+    - VL-K
+    - RL-K
+  it:
+    - KZ
+    - VL-K
+    - RL-K
+  en:
+    - KZ
+    - VL-K
+    - RL-K

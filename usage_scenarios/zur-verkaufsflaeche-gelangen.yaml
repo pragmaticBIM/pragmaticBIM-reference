@@ -1,0 +1,73 @@
+id: pragmaticbim:usage-scenario/zur-verkaufsflaeche-gelangen
+code: US-VK-06
+sort_order: 1
+name:
+  de: Zur Verkaufsfläche gelangen
+  fr: Accéder à la surface de vente
+  it: Raggiungere la superficie di vendita
+  en: Reaching the sales floor
+description:
+  de: Kundschaft gelangt mit Taschen oder Einkaufswagen zur Verkaufsfläche, Ware muss ins Lager. Die Erschliessung
+    entscheidet über Hindernisfreiheit und die Trennung von Kunden- und Warenwegen.
+  fr: La clientèle accède à la surface de vente avec sacs ou chariots, la marchandise doit rejoindre le
+    stock. La desserte détermine l'accès sans obstacle et la séparation des parcours clients et marchandises.
+  it: La clientela raggiunge la superficie di vendita con borse o carrelli, la merce deve arrivare al
+    magazzino. L'accesso determina assenza di ostacoli e separazione dei percorsi clienti e merci.
+  en: Customers reach the sales floor with bags or trolleys, and stock must reach the store room. The
+    access arrangement determines step-free access and separation of customer and goods routes.
+uses:
+- pragmaticbim:use/verkauf
+tags:
+- erschliessung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/zur-verkaufsflaeche-gelangen-stair
+  sort_order: 1
+  name:
+    de: Treppenhaus
+    fr: Cage d'escalier
+    it: Vano scale
+    en: Stairwell
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+- id: pragmaticbim:scenario-option/zur-verkaufsflaeche-gelangen-stair-elevator
+  sort_order: 2
+  name:
+    de: Treppenhaus und Aufzug
+    fr: Cage d'escalier et ascenseur
+    it: Vano scale e ascensore
+    en: Stairwell and elevator
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+- id: pragmaticbim:scenario-option/zur-verkaufsflaeche-gelangen-service-lift
+  sort_order: 3
+  name:
+    de: Treppenhaus, Aufzug und Warenaufzug
+    fr: Cage d'escalier, ascenseur et monte-charge
+    it: Vano scale, ascensore e montacarichi
+    en: Stairwell, elevator, and service lift
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/aufzugszone
+  - from_room_type: pragmaticbim:room-type/treppenhaus
+    to_room_type: pragmaticbim:room-type/warenaufzug
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/aufzugszone
+  - pragmaticbim:room-type/warenaufzug

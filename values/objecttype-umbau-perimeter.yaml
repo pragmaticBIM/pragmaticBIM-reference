@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-  - Umbauperimeter
+    - Umbauperimeter
   fr:
-  - Périmètre de transformation
+    - Périmètre de transformation
   it:
-  - Perimetro di trasformazione
+    - Perimetro di trasformazione
   en:
-  - Alteration area
+    - Alteration area

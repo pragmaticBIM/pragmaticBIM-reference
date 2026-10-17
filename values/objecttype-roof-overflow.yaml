@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-roof-overflow
+code: OBJ-ROOF-OVERFLOW
+name:
+  de: ObjectType Notüberlauf
+  fr: ObjectType trop-plein de secours
+  it: ObjectType scarico di emergenza
+  en: ObjectType emergency overflow
+description:
+  de: ObjectType für IfcBuildingElementProxy als Notüberlauf in Attika, Brüstung oder Fassade.
+  fr: ObjectType pour IfcBuildingElementProxy comme trop-plein de secours dans un acrotère, un parapet ou une façade.
+  it: ObjectType per IfcBuildingElementProxy come scarico di emergenza in un parapetto, una balaustra o una facciata.
+  en: ObjectType for IfcBuildingElementProxy as an emergency overflow in a parapet or facade.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - Notüberlauf
+  fr:
+    - Trop-plein de secours
+  it:
+    - Scarico di emergenza
+  en:
+    - Emergency overflow

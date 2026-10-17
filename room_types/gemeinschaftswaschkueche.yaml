@@ -2,29 +2,116 @@ id: pragmaticbim:room-type/gemeinschaftswaschkueche
 code: RT-WH-18
 sort_order: 18
 name:
-  de: Gemeinschaftswaschkueche
+  de: Gemeinschaftswaschküche
   fr: Buanderie commune
   it: Lavanderia comune
-  en: Communal laundry
+  en: Communal Laundry
 definition:
-  de: Gemeinsame Waschküche für mehrere Wohneinheiten.
-  fr: Buanderie commune à plusieurs logements.
-  it: Lavanderia comune a più unità abitative.
-  en: Shared laundry for several dwelling units.
-attribute_presets:
-- element: pragmaticbim:element/spaces-interior
-  name: PredefinedType
-  value: SPACE
-- element: pragmaticbim:element/spaces-interior
-  name: IsExternal
-  value: false
-- element: pragmaticbim:element/spaces-interior
-  name: LongName
-  value:
-    de: Waschkueche
-    fr: Buanderie
-    it: Lavanderia
-    en: Laundry Room
-restrictions:
-  min_area: 12
+  de: Gemeinsame Waschküche mehrerer Wohneinheiten, im Unterschied zur Waschküche
+    innerhalb einer Wohnung.
+  fr: Buanderie commune à plusieurs logements, distincte de la buanderie à l'intérieur
+    d'un logement.
+  it: Lavanderia comune di più unità abitative, distinta dalla lavanderia all'interno
+    di un alloggio.
+  en: Shared laundry for several dwellings, distinct from the laundry inside one dwelling.
+room_type_kind: room
+room_name: RN-01-20-10
+activity: M-RES
+default_scope: building
 status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/gemeinschaftswaschkueche-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-interior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-interior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: false
+  - element: pragmaticbim:element/spaces-interior
+    name: LongName
+    value:
+      de: Gemeinschaftswaschküche
+      fr: Buanderie commune
+      it: Lavanderia comune
+      en: Communal Laundry
+  - element: pragmaticbim:element/spaces-interior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: HNF
+  - element: pragmaticbim:element/spaces-interior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Plattenbelag
+  - element: pragmaticbim:element/spaces-interior
+    name: WallCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Anstrich
+  - element: pragmaticbim:element/spaces-interior
+    name: CeilingCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Gipskarton-Decke
+      fr: Gypsum board ceiling
+      it: Gypsum board ceiling
+      en: Gypsum board ceiling
+  - element: pragmaticbim:element/spaces-interior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-interior
+    name: InteriorOrExteriorSpace
+    value: INTERNAL
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-interior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  - element: pragmaticbim:element/spaces-interior
+    name: WinterTemperatureMin
+    pset: ePset_SpaceRequirement
+    value: 20
+  - element: pragmaticbim:element/spaces-interior
+    name: WinterTemperatureMax
+    pset: ePset_SpaceRequirement
+    value: 24
+  - element: pragmaticbim:element/spaces-interior
+    name: SummerTemperatureMin
+    pset: ePset_SpaceRequirement
+    value: 22
+  - element: pragmaticbim:element/spaces-interior
+    name: SummerTemperatureMax
+    pset: ePset_SpaceRequirement
+    value: 26
+  - element: pragmaticbim:element/spaces-interior
+    name: RequiredIlluminance
+    pset: ePset_SpaceRequirement
+    value: 200
+  - element: pragmaticbim:element/spaces-interior
+    name: PeakOccupancy
+    pset: ePset_SpaceRequirement
+    value: 2
+  - element: pragmaticbim:element/spaces-interior
+    name: DailyOperatingHours
+    pset: ePset_SpaceRequirement
+    value: 2
+  - element: pragmaticbim:element/spaces-interior
+    name: OutdoorAirFlowRate
+    pset: ePset_SpaceRequirement
+    value: 60
+  status: active
+  restrictions:
+    min_area: 12

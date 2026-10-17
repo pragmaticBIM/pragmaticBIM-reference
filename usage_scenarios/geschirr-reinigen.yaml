@@ -1,0 +1,42 @@
+id: pragmaticbim:usage-scenario/geschirr-reinigen
+code: US-GA-05
+sort_order: 6
+name:
+  de: Geschirr reinigen
+  fr: Nettoyer la vaisselle
+  it: Lavare le stoviglie
+  en: Washing dishes
+description:
+  de: Gebrauchtes Geschirr wird während des Betriebs zurückgebracht und gereinigt. Der Ort entscheidet
+    über Rücklaufwege, Lärm und die Trennung von sauber und gebraucht.
+  fr: La vaisselle utilisée est rapportée et nettoyée pendant le service. Le lieu détermine les circuits
+    de retour, le bruit et la séparation du propre et du sale.
+  it: Le stoviglie usate vengono riportate e lavate durante il servizio. Il luogo determina percorsi di
+    ritorno, rumore e separazione tra pulito e sporco.
+  en: Used dishes are returned and washed during service. The location determines return routes, noise,
+    and separation of clean and used items.
+uses:
+- pragmaticbim:use/gastronomie
+tags:
+- betrieb
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/geschirr-reinigen-wash-up
+  sort_order: 1
+  name:
+    de: Spülküche
+    fr: Laverie
+    it: Lavaggio stoviglie
+    en: Dishwashing area
+  adds:
+  - pragmaticbim:room-type/spuelkueche
+- id: pragmaticbim:scenario-option/geschirr-reinigen-external
+  sort_order: 2
+  name:
+    de: Externe Reinigung
+    fr: Nettoyage externe
+    it: Lavaggio esterno
+    en: External washing
+  exclusive: true

@@ -1,0 +1,42 @@
+id: pragmaticbim:usage-scenario/besprechungen-durchfuehren
+code: US-WR-03
+sort_order: 4
+name:
+  de: Besprechungen durchführen
+  fr: Tenir des réunions
+  it: Svolgere riunioni
+  en: Holding meetings
+description:
+  de: Mitarbeitende und Gäste treffen sich zu geplanten Besprechungen. Die Gruppengrösse entscheidet über
+    Art und Anzahl der Räume.
+  fr: Le personnel et les visiteurs se réunissent pour des séances planifiées. La taille du groupe détermine
+    le type et le nombre de salles.
+  it: Il personale e gli ospiti si incontrano per riunioni programmate. La dimensione del gruppo determina
+    il tipo e il numero dei locali.
+  en: Staff and visitors meet for planned discussions. Group size determines the type and number of rooms.
+uses:
+- pragmaticbim:use/arbeit
+tags:
+- besprechung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/besprechungen-durchfuehren-meeting-room
+  sort_order: 1
+  name:
+    de: Besprechungsraum
+    fr: Salle de réunion
+    it: Sala riunioni
+    en: Meeting room
+  adds:
+  - pragmaticbim:room-type/besprechungsraum
+- id: pragmaticbim:scenario-option/besprechungen-durchfuehren-conference-room
+  sort_order: 2
+  name:
+    de: Konferenzraum
+    fr: Salle de conférence
+    it: Sala conferenze
+    en: Conference room
+  adds:
+  - pragmaticbim:room-type/konferenzraum

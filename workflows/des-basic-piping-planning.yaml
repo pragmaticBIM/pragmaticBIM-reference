@@ -7,133 +7,90 @@ name:
   it: Coordinare presto drenaggio e acque reflue
   en: Coordinate drainage and wastewater early
 description:
-  de: 'Entwässerung und Abwasser früh im Modell koordinieren – bevor Kollisionen in Steigzonen und unter der Bodenplatte teure Planungsänderungen auslösen.
-
+  de: |-
+    Entwässerung und Abwasser früh im Modell koordinieren – bevor Kollisionen in Steigzonen und unter der Bodenplatte teure Planungsänderungen auslösen.
 
     **Ausgangslage**
-
     - Dachentwässerung, Fallleitungen und Abwasser werden oft erst spät geplant; Kollisionen mit Tragwerk und Gebäudetechnik sind dann schwer zu lösen.
-
     - Balkonentwässerung wird häufig vergessen und führt zu Nachträgen in der Ausführungsplanung.
-
+    - Notüberläufe sind zwischen Architektur und Sanitärplanung oft nicht zugewiesen; sie fehlen dann in Attika, Fassade und Lastannahme.
 
     **Ziel & Nutzen**
-
     - Entwässerungsweg von Dach und Balkon über Fallleitungen bis zu den Abwasserrohren früh nachvollziehbar modellieren.
-
     - Steigzonen, Durchführungen und Platzbedarf vor der Detailplanung prüfen.
 
-
     **Ablauf**
-
-    1. Gefälledämmung auf Flachdach und Balkon mit Gefälle modellieren; Entwässerungspunkte aus Gefälleverlauf ableiten.
-
+    1. Gefälledämmung auf Flachdach und Balkon mit Gefälle modellieren; Entwässerungspunkte aus Gefälleverlauf ableiten und je Dach in Abstimmung mit der Sanitärplanung Notüberläufe setzen.
     2. Fallleitungen von Dach und Balkonen bis zur Sammelleitung führen.
-
     3. Abwasserrohre in Steigzonen und Haupttrasse koordinieren und im Gesamtmodell auf Kollisionen prüfen.
 
-
     **Lieferergebnis**
+    - Architekturmodell mit den erforderlichen Entwässerungsflächen, Gefälleinformationen und Notüberläufen
+    - TGA-Modell mit durchgängiger Dach-, Balkon- und Abwasserführung
 
-    - Architekturmodell mit den erforderlichen Entwässerungsflächen und Gefälleinformationen
-
-    - TGA-Modell mit durchgängiger Dach-, Balkon- und Abwasserführung'
-  fr: 'Coordonner tôt l’évacuation et les eaux usées dans la maquette – avant que des collisions dans les gaines techniques et sous le radier n’entraînent des modifications coûteuses.
-
+  fr: |-
+    Coordonner tôt l’évacuation et les eaux usées dans la maquette – avant que des collisions dans les gaines techniques et sous le radier n’entraînent des modifications coûteuses.
 
     **Situation de départ**
-
     - Drainage de toiture, descentes et eaux usées sont souvent planifiés tard ; les collisions avec la structure et le CVC deviennent difficiles à résoudre.
-
-    - Le drainage des balcons est fréquemment oublié et mène à des avenants en phase d''exécution.
-
+    - Le drainage des balcons est fréquemment oublié et mène à des avenants en phase d'exécution.
+    - Les trop-pleins de secours ne sont souvent attribués ni à l’architecture ni à la planification sanitaire ; ils manquent alors dans l’acrotère, la façade et les hypothèses de charge.
 
     **Objectif et bénéfice**
-
-    - Modéliser tôt le parcours d''évacuation du toit et du balcon via descentes jusqu''aux collecteurs d''eaux usées.
-
-    - Vérifier les gaines techniques, les traversées et le besoin d''espace avant la planification détaillée.
-
+    - Modéliser tôt le parcours d'évacuation du toit et du balcon via descentes jusqu'aux collecteurs d'eaux usées.
+    - Vérifier les gaines techniques, les traversées et le besoin d'espace avant la planification détaillée.
 
     **Déroulement**
-
-    1. Modéliser l''isolation à pente sur toiture plate et balcon ; déduire les points d''évacuation du tracé de pente.
-
-    2. Mener les descentes du toit et des balcons jusqu''au collecteur principal.
-
-    3. Coordonner les canalisations d''eaux usées dans les gaines techniques et sur le tracé principal ; vérifier les collisions en maquette fédérée.
-
+    1. Modéliser l'isolation à pente sur toiture plate et balcon ; déduire les points d'évacuation du tracé de pente et prévoir des trop-pleins de secours pour chaque toiture en coordination avec la planification sanitaire.
+    2. Mener les descentes du toit et des balcons jusqu'au collecteur principal.
+    3. Coordonner les canalisations d'eaux usées dans les gaines techniques et sur le tracé principal ; vérifier les collisions en maquette fédérée.
 
     **Livrable**
-
-    - Maquette architecture avec les surfaces à évacuer et les informations de pente requises
-
-    - Maquette CVC avec cheminement continu des eaux de toiture, de balcon et des eaux usées'
-  it: 'Coordinare presto drenaggio e acque reflue nel modello – prima che collisioni in vani e sotto controsoffitti provochino modifiche costose.
-
+    - Maquette architecture avec les surfaces à évacuer, les informations de pente et les trop-pleins de secours requis
+    - Maquette CVC avec cheminement continu des eaux de toiture, de balcon et des eaux usées
+  it: |-
+    Coordinare presto drenaggio e acque reflue nel modello – prima che collisioni in vani e sotto controsoffitti provochino modifiche costose.
 
     **Situazione di partenza**
-
     - Drenaggio di tetto, pluviali e acque reflue sono spesso pianificati tardi; le collisioni con struttura e impianti diventano difficili da risolvere.
-
     - Il drenaggio dei balconi viene spesso dimenticato e porta a varianti in fase esecutiva.
-
+    - Gli scarichi di emergenza spesso non sono assegnati tra architettura e progettazione sanitaria; mancano quindi nel parapetto, nella facciata e nelle ipotesi di carico.
 
     **Obiettivo e beneficio**
-
     - Modellare presto il percorso di drenaggio da tetto e balcone attraverso pluviali fino ai collettori di acque reflue.
-
     - Verificare vani, attraversamenti e spazio necessario prima della pianificazione di dettaglio.
 
-
     **Svolgimento**
-
-    1. Modellare l''isolamento a pendenza su tetto piano e balcone; ricavare i punti di scarico dal tracciato di pendenza.
-
+    1. Modellare l'isolamento a pendenza su tetto piano e balcone; ricavare i punti di scarico dal tracciato di pendenza e prevedere scarichi di emergenza per ogni tetto in coordinamento con la progettazione sanitaria.
     2. Condurre i pluviali da tetto e balconi fino al collettore principale.
-
     3. Coordinare le condotte di acque reflue in vani e tratta principale; verificare collisioni nel modello federato.
 
-
     **Risultato della fornitura**
-
-    - Modello di architettura con le superfici da drenare e le informazioni necessarie sulle pendenze
-
-    - Modello impianti con percorso continuo delle acque di tetti, balconi e delle acque reflue'
-  en: 'Coordinate drainage and wastewater early in the model – before clashes in risers and below the base slab trigger costly design changes.
-
+    - Modello di architettura con le superfici da drenare, le informazioni necessarie sulle pendenze e gli scarichi di emergenza
+    - Modello impianti con percorso continuo delle acque di tetti, balconi e delle acque reflue
+  en: |-
+    Coordinate drainage and wastewater early in the model – before clashes in risers and below the base slab trigger costly design changes.
 
     **Starting point**
-
     - Roof drainage, downpipes, and wastewater are often planned late; clashes with structure and MEP become hard to resolve.
-
     - Balcony drainage is frequently forgotten and leads to change orders during execution planning.
-
+    - Emergency overflows are often not assigned between architecture and sanitary design; they are then missing from the parapet, facade, and structural load assumptions.
 
     **Goal & benefit**
-
     - Model the drainage path from roof and balcony through downpipes to wastewater mains early and traceably.
-
     - Check risers, penetrations, and space requirements before detailed planning.
 
-
     **Process**
-
-    1. Model tapered insulation on flat roof and balcony with falls; derive drainage points from the fall layout.
-
+    1. Model tapered insulation on flat roof and balcony with falls; derive drainage points from the fall layout and provide emergency overflows for each roof in coordination with the sanitary designer.
     2. Route downpipes from roof and balconies to the main collector.
-
     3. Coordinate wastewater pipes in risers and main routes; check for clashes in the federated model.
 
-
     **Deliverable**
-
-    - Architecture model with the required drainage surfaces and fall information
-
-    - MEP model with continuous roof, balcony and wastewater routing'
+    - Architecture model with the required drainage surfaces, fall information, and emergency overflows
+    - MEP model with continuous roof, balcony and wastewater routing
 workflow_group: arbeitsvorbereitung
 parent_workflow: pragmaticbim:workflow/des
-picture_link: null
+picture_link:
 status: active
 service_kind: basic
 needed_in_domain:

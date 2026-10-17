@@ -7,137 +7,91 @@ name:
   it: Visualizzare le interfacce di costo tra allestimento di base e allestimento locatario
   en: Visualize cost interfaces between base building and tenant fit-out
 description:
-  de: 'Kostenträger je Bauteil im Modell abbilden, damit Grund- und Mieterausbau in Plänen, Mengen und Ausschreibung eindeutig getrennt und geprüft werden können.
-
+  de: |-
+    Kostenträger je Bauteil im Modell abbilden, damit Grund- und Mieterausbau in Plänen, Mengen und Ausschreibung eindeutig getrennt und geprüft werden können.
 
     **Ausgangslage**
-
     - Die Kostenschnittstelle zwischen Grundausbau und Mieterausbau wird oft nur in Listen oder Verträgen geführt.
-
     - Das ergibt oft Unstimmigkeiten und vergessene Zuständigkeiten mit Kosten- und Terminfolge.
 
-
     **Ziel & Nutzen**
-
     - Das Schnittstellenmanagement unterstützen: jedes Architektur- und TGA-Bauteil einem Kostenträger zuweisen – Grundausbau oder ein benannter Mieterausbau.
-
     - Kolorierte Pläne, Filter und Mengen nach Kostenschnittstelle direkt aus dem Modell ableiten und für die vereinfachte Kommunikation nutzen.
 
-
     **Ablauf**
-
     1. Architektur- und TGA-Bauteile im Fachmodell bereitstellen.
-
     2. CostInterface setzen: `GAB` oder `MAB_{Mietername}` (ein Wert je Bauteil).
-
     3. Visualisierungen und Mengen nach Kostenschnittstelle aus dem Modell ableiten.
 
-
     **Lieferergebnis**
-
     - Architektur- und TGA-Fachmodelle mit eindeutiger Zuordnung der Bauteile zu Grund- oder benanntem Mieterausbau.
-
-    - Kolorierte Kosten- und Mengenauswertung mit sichtbaren Zuordnungslücken und Widersprüchen.'
-  fr: 'Saisir l''imputation de chaque élément dans la maquette, afin de séparer et de vérifier clairement l''aménagement de base et l''aménagement locataire dans les plans, les quantités et l''appel d''offres.
-
+    - Kolorierte Kosten- und Mengenauswertung mit sichtbaren Zuordnungslücken und Widersprüchen.
+  fr: |-
+    Saisir l'imputation de chaque élément dans la maquette, afin de séparer et de vérifier clairement l'aménagement de base et l'aménagement locataire dans les plans, les quantités et l'appel d'offres.
 
     **Situation de départ**
-
-    - L''interface de coûts entre aménagement de base et aménagement locataire n''est souvent tenue que dans des listes ou des contrats.
-
+    - L'interface de coûts entre aménagement de base et aménagement locataire n'est souvent tenue que dans des listes ou des contrats.
     - Il en résulte souvent des incohérences et des responsabilités oubliées, avec des conséquences sur les coûts et les délais.
 
-
     **Objectif et bénéfice**
-
-    - Soutenir la gestion des interfaces : affecter chaque élément d''architecture et de CVC à une imputation, aménagement de base ou aménagement locataire nommé.
-
+    - Soutenir la gestion des interfaces : affecter chaque élément d'architecture et de CVC à une imputation, aménagement de base ou aménagement locataire nommé.
     - Déduire directement de la maquette des plans colorés, des filtres et des quantités par interface de coûts, et les utiliser pour une communication plus simple.
 
-
     **Déroulement**
-
-    1. Fournir les éléments d''architecture et CVC dans la maquette de discipline.
-
+    1. Fournir les éléments d'architecture et CVC dans la maquette de discipline.
     2. Définir CostInterface : `GAB` ou `MAB_{nom du locataire}` (une valeur par élément).
-
     3. Déduire visualisations et quantités par interface de coûts à partir du modèle.
 
-
     **Livrable**
-
-    - Maquettes architecture et CVC avec affectation claire des éléments à l''aménagement de base ou d''un locataire désigné.
-
-    - Évaluation coloriée des coûts et quantités faisant apparaître les lacunes et les incohérences.'
-  it: 'Rappresentare nel modello l''imputazione di ogni componente, così da separare e verificare chiaramente allestimento di base e allestimento locatario in planimetrie, quantità e gara.
-
+    - Maquettes architecture et CVC avec affectation claire des éléments à l'aménagement de base ou d'un locataire désigné.
+    - Évaluation coloriée des coûts et quantités faisant apparaître les lacunes et les incohérences.
+  it: |-
+    Rappresentare nel modello l'imputazione di ogni componente, così da separare e verificare chiaramente allestimento di base e allestimento locatario in planimetrie, quantità e gara.
 
     **Situazione di partenza**
-
-    - L''interfaccia di costo tra allestimento di base e allestimento locatario è spesso tenuta solo in elenchi o contratti.
-
+    - L'interfaccia di costo tra allestimento di base e allestimento locatario è spesso tenuta solo in elenchi o contratti.
     - Ne derivano spesso incongruenze e responsabilità dimenticate, con conseguenze su costi e tempi.
 
-
     **Obiettivo e beneficio**
-
-    - Sostenere la gestione delle interfacce: assegnare ogni componente di architettura e impianti a un''imputazione, allestimento di base o allestimento locatario nominato.
-
+    - Sostenere la gestione delle interfacce: assegnare ogni componente di architettura e impianti a un'imputazione, allestimento di base o allestimento locatario nominato.
     - Ricavare direttamente dal modello planimetrie colorate, filtri e quantità per interfaccia di costo e usarli per una comunicazione più semplice.
 
-
     **Svolgimento**
-
     1. Fornire i componenti di architettura e impianti nel modello di disciplina.
-
     2. Impostare CostInterface: `GAB` o `MAB_{nome locatario}` (un valore per componente).
-
     3. Ricavare visualizzazioni e quantità per interfaccia di costo dal modello.
 
-
     **Risultato della fornitura**
-
-    - Modelli di architettura e impianti con assegnazione chiara degli elementi all''allestimento di base o di un locatario specifico.
-
-    - Valutazione colorata di costi e quantità con evidenza di lacune e incongruenze.'
-  en: 'Record the cost bearer for each component in the model so that base building and tenant fit-out can be clearly separated and checked in drawings, quantities, and tendering.
-
+    - Modelli di architettura e impianti con assegnazione chiara degli elementi all'allestimento di base o di un locatario specifico.
+    - Valutazione colorata di costi e quantità con evidenza di lacune e incongruenze.
+  en: |-
+    Record the cost bearer for each component in the model so that base building and tenant fit-out can be clearly separated and checked in drawings, quantities, and tendering.
 
     **Starting point**
-
     - The cost interface between base building and tenant fit-out is often maintained only in lists or contracts.
-
     - This often causes inconsistencies and forgotten responsibilities, with consequences for cost and schedule.
 
-
     **Goal & benefit**
-
     - Assign every architecture and MEP component to a cost bearer: base building or a named tenant fit-out.
-
     - Derive coloured plans, filters, and quantities by cost interface directly from the model and use them for simpler communication.
 
-
     **Process**
-
     1. Provide architecture and MEP components in the discipline model.
-
     2. Set CostInterface: `GAB` or `MAB_{TenantName}` (one value per component).
-
     3. Derive visualizations and quantities by cost interface from the model.
 
-
     **Deliverable**
-
     - Architecture and MEP models with components clearly assigned to the base building or a named tenant fit-out.
-
-    - Coloured cost and quantity evaluation showing assignment gaps and conflicts.'
-workflow_group: ausschreibung
+    - Coloured cost and quantity evaluation showing assignment gaps and conflicts.
+workflow_group: unternehmen
 parent_workflow: pragmaticbim:workflow/bes
-picture_link: null
+picture_link:
 status: active
 service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep
-comment: 'Custom property CostInterface in ePset_Cost. Values: GAB (base building) or MAB_{tenant name} (tenant fit-out). Tenant names are project-specific – no closed enum. Typical phases 32–41 (design
-  through tender).'
+comment: >-
+  Custom property CostInterface in ePset_Cost. Values: GAB (base building)
+  or MAB_{tenant name} (tenant fit-out). Tenant names are project-specific – no closed enum.
+  Typical phases 32–41 (design through tender).

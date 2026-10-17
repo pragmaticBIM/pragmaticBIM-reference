@@ -1,0 +1,27 @@
+id: pragmaticbim:use/labor
+code: USE-LA
+sort_order: 12
+name:
+  de: Labor und Forschung
+  fr: Laboratoire et recherche
+  it: Laboratorio e ricerca
+  en: Laboratory and research
+definition:
+  de: 'Experimentelle Forschung und Analytik. Bezugsgrösse: Anzahl Laborarbeitsplätze.'
+  fr: 'Recherche expérimentale et analyses. Grandeur de référence : nombre de postes de laboratoire.'
+  it: 'Ricerca sperimentale e analisi. Grandezza di riferimento: numero di postazioni di laboratorio.'
+  en: 'Experimental research and analysis. Reference quantity: number of lab workstations.'
+reference_quantity:
+  id: pragmaticbim:quantity/labor-laborarbeitsplaetze
+  code: USE-LA-Q
+  sort_order: 1
+  name:
+    de: Anzahl Laborarbeitsplätze
+    fr: Nombre de postes de laboratoire
+    it: Numero di postazioni di laboratorio
+    en: Number of lab workstations
+  status: active
+typical_levels:
+- pragmaticbim:project-goal-level/flexibility-high
+- pragmaticbim:project-goal-level/indoor-climate-humidity
+status: active

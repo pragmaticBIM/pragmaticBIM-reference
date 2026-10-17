@@ -1,0 +1,56 @@
+id: pragmaticbim:usage-scenario/herstellen-und-montieren
+code: US-PR-01
+sort_order: 2
+name:
+  de: Herstellen und montieren
+  fr: Fabriquer et assembler
+  it: Produrre e assemblare
+  en: Manufacturing and assembly
+description:
+  de: Produkte werden in Serie oder als Einzelstück gefertigt. Das Fertigungskonzept entscheidet über
+    Hallengrösse, Kranbahnen und Materialfluss.
+  fr: Les produits sont fabriqués en série ou à l'unité. Le concept de fabrication détermine la taille
+    de la halle, les ponts roulants et le flux de matières.
+  it: I prodotti vengono fabbricati in serie o come pezzi unici. Il concetto produttivo determina dimensione
+    del capannone, carroponti e flusso dei materiali.
+  en: Products are made in series or as one-offs. The manufacturing concept determines hall size, crane
+    runways, and material flow.
+uses:
+- pragmaticbim:use/produktion
+tags:
+- fertigung
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/herstellen-und-montieren-workshop
+  sort_order: 1
+  name:
+    de: Werkstatt
+    fr: Atelier
+    it: Officina
+    en: Workshop
+  adds:
+  - pragmaticbim:room-type/werkstatt
+- id: pragmaticbim:scenario-option/herstellen-und-montieren-hall
+  sort_order: 2
+  name:
+    de: Produktionshalle
+    fr: Halle de production
+    it: Capannone di produzione
+    en: Production hall
+  adds:
+  - pragmaticbim:room-type/produktionshalle
+- id: pragmaticbim:scenario-option/herstellen-und-montieren-hall-assembly
+  sort_order: 3
+  name:
+    de: Halle mit Montagebereich
+    fr: Halle avec zone de montage
+    it: Capannone con area di montaggio
+    en: Hall with assembly area
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/produktionshalle
+    to_room_type: pragmaticbim:room-type/montagebereich
+  adds:
+  - pragmaticbim:room-type/produktionshalle
+  - pragmaticbim:room-type/montagebereich

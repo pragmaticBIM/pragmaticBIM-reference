@@ -8,74 +8,51 @@ name:
   it: Spazio generatori (schematico)
   en: Plant space (schematic)
 definition:
-  de: 'Reserviert in der frühen Phase genügend Fläche für Technikzentralen und verhindert Nutzungskonflikte.
-
+  de: |-
+    Reserviert in der frühen Phase genügend Fläche für Technikzentralen und verhindert Nutzungskonflikte.
 
     **Beschreibung**
-
     - Koordinationsvolumen für Technikzentralen, Hauszentralen und ähnliche Anlagen – kein Raumobjekt.
-
     - Dient der Machbarkeitsprüfung, nicht der Ausführungsplanung.
 
-
     **Modellierungshinweis**
-
     - Als vereinfachten Proxy-Körper modellieren; Abmessungen gemäss Grobkonzept inklusive Wartungszone.
-
     - ObjectType = Erzeugerplatz; dem zugehörigen Geschoss zuweisen.
-
-    - Keine einzelnen Geräte oder Anschlussdetails modellieren.'
-  fr: 'Réserve en phase initiale une emprise suffisante pour les locaux techniques et évite les conflits d’usage.
-
+    - Keine einzelnen Geräte oder Anschlussdetails modellieren.
+  fr: |-
+    Réserve en phase initiale une emprise suffisante pour les locaux techniques et évite les conflits d’usage.
 
     **Description**
-
     - Volume de coordination pour les centrales techniques et installations similaires – pas un objet de local.
-
     - Sert à vérifier la faisabilité, pas à planifier l’exécution.
 
-
     **Directives de modélisation**
-
     - Le modéliser en corps proxy simplifié ; dimensions selon l’esquisse, zone de maintenance comprise.
-
     - ObjectType = Erzeugerplatz ; le rattacher à l’étage concerné.
-
-    - Ne pas modéliser les appareils individuels ni les détails de raccordement.'
-  it: 'Riserva già nella fase iniziale una superficie sufficiente per le centrali tecniche ed evita conflitti d’uso.
-
+    - Ne pas modéliser les appareils individuels ni les détails de raccordement.
+  it: |-
+    Riserva già nella fase iniziale una superficie sufficiente per le centrali tecniche ed evita conflitti d’uso.
 
     **Descrizione**
-
     - Volume di coordinamento per centrali tecniche – non un oggetto locale.
-
-    - Serve per la fattibilità, non per l''esecuzione.
-
+    - Serve per la fattibilità, non per l'esecuzione.
 
     **Direttive di modellazione**
-
     - Modellare come corpo proxy semplificato; dimensioni secondo il concetto di massima inclusa la zona di manutenzione.
-
     - ObjectType = Erzeugerplatz; assegnare al piano corrispondente.
-
-    - Non modellare singoli apparecchi o dettagli di collegamento.'
-  en: 'Reserves sufficient plant-room space in the initial phase and prevents conflicts with other uses.
-
+    - Non modellare singoli apparecchi o dettagli di collegamento.
+  en: |-
+    Reserves sufficient plant-room space in the initial phase and prevents conflicts with other uses.
 
     **Description**
-
     - Coordination volume for plant rooms and similar installations – not a space object.
-
     - Used for feasibility checking, not for execution planning.
 
-
     **Modelling guidelines**
-
     - Model as a simplified proxy body; dimensions according to the sketch concept including maintenance clearance.
-
     - ObjectType = Plant space; assign to the matching storey.
+    - Do not model individual appliances or connection details.
 
-    - Do not model individual appliances or connection details.'
 needed_in_domain:
 - pragmaticbim:domain/mep
 entity_ifc2x3: IfcBuildingElementProxy
@@ -92,48 +69,30 @@ attributes:
 - name: ObjectType
   pset: null
   definition:
-    de: 'Art des Proxy-Elements.
-
+    de: |-
+      Art des Proxy-Elements.
 
       **Zulässige Werte**
-
-      - `Erzeugerplatz` — schematischer Platzbedarf für Erzeuger / Technikzentralen'
-    fr: 'Nature de l''élément proxy.
-
+      - `Erzeugerplatz` — schematischer Platzbedarf für Erzeuger / Technikzentralen
+    fr: |-
+      Nature de l'élément proxy.
 
       **Valeurs admises**
-
-      - `Erzeugerplatz` — besoin d''espace schématique pour générateurs / centrales'
-    it: 'Tipo dell''elemento proxy.
-
+      - `Erzeugerplatz` — besoin d'espace schématique pour générateurs / centrales
+    it: |-
+      Tipo dell'elemento proxy.
 
       **Valori ammessi**
-
-      - `Erzeugerplatz` — fabbisogno schematico di spazio per generatori / centrali'
-    en: 'Kind of proxy element.
-
+      - `Erzeugerplatz` — fabbisogno schematico di spazio per generatori / centrali
+    en: |-
+      Kind of proxy element.
 
       **Allowed values**
-
-      - `Plant space` — schematic space requirement for plant and technical rooms'
+      - `Plant space` — schematic space requirement for plant and technical rooms
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/objecttype-equipment-space
-  needed_in_phases:
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-early-design-coordination
   is_applicability: true
@@ -142,47 +101,30 @@ attributes:
 - name: PredefinedType
   pset: null
   definition:
-    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
-
+    de: |-
+      Kennzeichnet den Proxy als benutzerdefinierten Typ.
 
       **Zulässige Werte**
-
-      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
-    fr: 'Identifie le proxy comme type défini par l''utilisateur.
-
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art
+    fr: |-
+      Identifie le proxy comme type défini par l'utilisateur.
 
       **Valeurs admises**
-
-      - `USERDEFINED` — type défini par l''utilisateur; ObjectType précise la nature'
-    it: 'Identifica il proxy come tipo definito dall''utente.
-
+      - `USERDEFINED` — type défini par l'utilisateur; ObjectType précise la nature
+    it: |-
+      Identifica il proxy come tipo definito dall'utente.
 
       **Valori ammessi**
-
-      - `USERDEFINED` — tipo definito dall''utente; ObjectType precisa la natura'
-    en: 'Marks the proxy as a user-defined type.
-
+      - `USERDEFINED` — tipo definito dall'utente; ObjectType precisa la natura
+    en: |-
+      Marks the proxy as a user-defined type.
 
       **Allowed values**
-
-      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
-  needed_in_phases:
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-early-design-coordination
   is_applicability: false
@@ -191,72 +133,42 @@ attributes:
 - name: Status
   pset: Pset_BuildingElementProxyCommon
   definition:
-    de: 'Bauteilstatus für Koordination im Bestand.
-
+    de: |-
+      Bauteilstatus für Koordination im Bestand.
 
       **Zulässige Werte**
-
       - `NEW` — Neubau
-
       - `EXISTING` — Bestand
-
       - `DEMOLISH` — Abbruch
-
-      - `TEMPORARY` — Temporär'
-    fr: 'Statut de l''élément pour la coordination dans l''existant.
-
+      - `TEMPORARY` — Temporär
+    fr: |-
+      Statut de l'élément pour la coordination dans l'existant.
 
       **Valeurs admises**
-
       - `NEW` — neuf
-
       - `EXISTING` — existant
-
       - `DEMOLISH` — à démolir
-
-      - `TEMPORARY` — temporaire'
-    it: 'Stato dell''elemento per il coordinamento sull''esistente.
-
+      - `TEMPORARY` — temporaire
+    it: |-
+      Stato dell'elemento per il coordinamento sull'esistente.
 
       **Valori ammessi**
-
       - `NEW` — nuovo
-
       - `EXISTING` — esistente
-
       - `DEMOLISH` — da demolire
-
-      - `TEMPORARY` — temporaneo'
-    en: 'Component status for coordinating work in existing buildings.
-
+      - `TEMPORARY` — temporaneo
+    en: |-
+      Component status for coordinating work in existing buildings.
 
       **Allowed values**
-
       - `NEW` — new build
-
       - `EXISTING` — existing
-
       - `DEMOLISH` — demolition
-
-      - `TEMPORARY` — temporary'
+      - `TEMPORARY` — temporary
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
@@ -265,91 +177,54 @@ attributes:
 - name: ElementStatus
   pset: ePset_ElementStatus
   definition:
-    de: 'Bauteilstatus für Koordination im Bestand.
-
+    de: |-
+      Bauteilstatus für Koordination im Bestand.
 
       **Zulässige Werte**
-
       - `NEW` — Neubau
-
       - `EXISTING` — Bestand
-
       - `DEMOLISH` — Abbruch
-
       - `TEMPORARY` — Temporär
 
-
       **Hinweis**
-
-      - IFC2x3-Ersatz für Status.'
-    fr: 'Statut de l''élément pour la coordination dans l''existant.
-
+      - IFC2x3-Ersatz für Status.
+    fr: |-
+      Statut de l'élément pour la coordination dans l'existant.
 
       **Valeurs admises**
-
       - `NEW` — neuf
-
       - `EXISTING` — existant
-
       - `DEMOLISH` — à démolir
-
       - `TEMPORARY` — temporaire
 
-
       **Remarque**
-
-      - Substitut IFC2x3 de Status.'
-    it: 'Stato dell''elemento per il coordinamento sull''esistente.
-
+      - Substitut IFC2x3 de Status.
+    it: |-
+      Stato dell'elemento per il coordinamento sull'esistente.
 
       **Valori ammessi**
-
       - `NEW` — nuovo
-
       - `EXISTING` — esistente
-
       - `DEMOLISH` — da demolire
-
       - `TEMPORARY` — temporaneo
 
-
       **Nota**
-
-      - Sostituto IFC2x3 di Status.'
-    en: 'Component status for coordinating work in existing buildings.
-
+      - Sostituto IFC2x3 di Status.
+    en: |-
+      Component status for coordinating work in existing buildings.
 
       **Allowed values**
-
       - `NEW` — new build
-
       - `EXISTING` — existing
-
       - `DEMOLISH` — demolition
-
       - `TEMPORARY` — temporary
 
-
       **Note**
-
-      - IFC2x3 substitute for Status.'
+      - IFC2x3 substitute for Status.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false

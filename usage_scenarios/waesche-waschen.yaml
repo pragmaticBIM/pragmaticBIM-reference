@@ -1,0 +1,79 @@
+id: pragmaticbim:usage-scenario/waesche-waschen
+code: US-WH-09
+sort_order: 10
+name:
+  de: Wäsche waschen
+  fr: Faire la lessive
+  it: Fare il bucato
+  en: Doing laundry
+description:
+  de: Haushalte waschen regelmässig Wäsche. Die Wahl entscheidet, ob jede Wohnung
+    eigene Maschinen hat oder der Weg zu einer gemeinsamen Waschküche führt.
+  fr: Les ménages font régulièrement la lessive. Le choix décide si chaque logement
+    a ses propres machines ou si le chemin mène à une buanderie commune.
+  it: Le economie domestiche fanno regolarmente il bucato. La scelta decide se ogni
+    alloggio ha le proprie macchine o se si va in una lavanderia comune.
+  en: Households do laundry regularly. The choice decides whether each dwelling has
+    its own machines or the way leads to a communal laundry.
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- haushalt
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/waesche-waschen-in-dwelling
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-elevated
+  sort_order: 1
+  name:
+    de: Waschküche
+    fr: Buanderie
+    it: Lavanderia
+    en: Laundry room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gang
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/waschkueche
+  target: pragmaticbim:room-type/wohnung
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/waschkueche
+- id: pragmaticbim:scenario-option/waesche-waschen-communal
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-standard
+  sort_order: 2
+  name:
+    de: Gemeinsame Waschküche
+    fr: Buanderie commune
+    it: Lavanderia comune
+    en: Communal laundry
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gemeinschaftswaschkueche
+    max_distance: 30
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gemeinschaftswaschkueche
+- id: pragmaticbim:scenario-option/waesche-waschen-utility
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-premium
+  sort_order: 3
+  name:
+    de: Hauswirtschaftsraum
+    fr: Local ménager
+    it: Locale di servizio
+    en: Utility room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gang
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/hauswirtschaftsraum
+  target: pragmaticbim:room-type/wohnung
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/hauswirtschaftsraum

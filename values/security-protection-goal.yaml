@@ -15,22 +15,22 @@ norm_reference: project-specific
 status: active
 values:
   de:
-  - Einbruch
-  - Sabotage
-  - Spionage
-  - Vandalismus
+    - Einbruch
+    - Sabotage
+    - Spionage
+    - Vandalismus
   fr:
-  - Effraction
-  - Sabotage
-  - Espionnage
-  - Vandalisme
+    - Effraction
+    - Sabotage
+    - Espionnage
+    - Vandalisme
   it:
-  - Effrazione
-  - Sabotaggio
-  - Spionaggio
-  - Vandalismo
+    - Effrazione
+    - Sabotaggio
+    - Spionaggio
+    - Vandalismo
   en:
-  - Burglary
-  - Sabotage
-  - Espionage
-  - Vandalism
+    - Burglary
+    - Sabotage
+    - Espionage
+    - Vandalism

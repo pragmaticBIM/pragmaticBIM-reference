@@ -15,30 +15,30 @@ norm_reference: EN 1627
 status: active
 values:
   de:
-  - RC1
-  - RC2
-  - RC3
-  - RC4
-  - RC5
-  - RC6
+    - RC1
+    - RC2
+    - RC3
+    - RC4
+    - RC5
+    - RC6
   fr:
-  - RC1
-  - RC2
-  - RC3
-  - RC4
-  - RC5
-  - RC6
+    - RC1
+    - RC2
+    - RC3
+    - RC4
+    - RC5
+    - RC6
   it:
-  - RC1
-  - RC2
-  - RC3
-  - RC4
-  - RC5
-  - RC6
+    - RC1
+    - RC2
+    - RC3
+    - RC4
+    - RC5
+    - RC6
   en:
-  - RC1
-  - RC2
-  - RC3
-  - RC4
-  - RC5
-  - RC6
+    - RC1
+    - RC2
+    - RC3
+    - RC4
+    - RC5
+    - RC6

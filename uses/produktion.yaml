@@ -1,0 +1,24 @@
+id: pragmaticbim:use/produktion
+code: USE-PR
+sort_order: 9
+name:
+  de: Produktion
+  fr: Production
+  it: Produzione
+  en: Production
+definition:
+  de: 'Herstellung und Verarbeitung von Gütern. Bezugsgrösse: Ausstoss pro Jahr.'
+  fr: 'Fabrication et transformation de biens. Grandeur de référence : production annuelle.'
+  it: 'Fabbricazione e lavorazione di beni. Grandezza di riferimento: produzione annua.'
+  en: 'Manufacturing and processing of goods. Reference quantity: output per year.'
+reference_quantity:
+  id: pragmaticbim:quantity/produktion-ausstoss
+  code: USE-PR-Q
+  sort_order: 1
+  name:
+    de: Ausstoss pro Jahr
+    fr: Production annuelle
+    it: Produzione annua
+    en: Output per year
+  status: active
+status: active

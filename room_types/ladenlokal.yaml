@@ -1,0 +1,44 @@
+id: pragmaticbim:room-type/ladenlokal
+legacy_ids:
+- pragmaticbim:unit-type/ladenlokal
+code: UT-CO-01
+sort_order: 12
+name:
+  de: Ladenlokal
+  fr: Local commercial
+  it: Locale di vendita
+  en: Shop
+definition:
+  de: Bruttovolumen eines vermietbaren Ladenlokals.
+  fr: Volume brut d'un local commercial à louer.
+  it: Volume lordo di un locale di vendita in locazione.
+  en: Gross volume of a lettable shop.
+room_type_kind: container
+uses:
+- pragmaticbim:use/verkauf
+contains:
+- room_type: pragmaticbim:room-type/verkaufsraum
+- room_type: pragmaticbim:room-type/allgemeiner-lagerraum
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/ladenlokal-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Ladenlokal
+      fr: Local commercial
+      it: Locale di vendita
+      en: Shop
+  status: active

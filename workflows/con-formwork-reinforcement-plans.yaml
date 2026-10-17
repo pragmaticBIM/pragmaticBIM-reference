@@ -7,131 +7,83 @@ name:
   it: Predisporre i piani di casseratura e delle armature
   en: Create formwork and reinforcement plans
 description:
-  de: 'Schal- und Bewehrungspläne für die Betonausführung aus dem Tragwerksmodell ableiten.
-
+  de: |-
+    Schal- und Bewehrungspläne für die Betonausführung aus dem Tragwerksmodell ableiten.
 
     **Ausgangslage**
-
     - Die Baustelle braucht lesbare Schal- und Bewehrungspläne; das Modell allein reicht für Abmessungen, Lagen und Positionen nicht.
-
     - Ohne abgeleitete Pläne bleiben Schalung und Bewehrung in der Ausführung unklar.
 
-
     **Ziel & Nutzen**
-
     - Schalpläne mit Abmessungen und Anschlüssen sowie Bewehrungspläne mit Stäben, Lagen und Positionen aus dem Modell ableiten.
-
     - Pläne für die Baustelle lesbar machen – ergänzend zur lageweisen Modellauswertung der Ausführung.
 
-
     **Ablauf**
-
     1. Tragwerks- und Bewehrungsmodell mit aktuellem Ausführungsstand bereitstellen.
-
     2. Schalpläne und Bewehrungspläne aus dem Modell ableiten.
-
     3. Lesbarkeit für die Baustelle prüfen und Pläne freigeben.
 
-
     **Lieferergebnis**
-
     - Ausführungsreife Schal- und Bewehrungspläne mit prüfbaren Abmessungen, Anschlüssen und Bewehrungslagen.
-
-    - Aktuelles Tragwerks- und Bewehrungsmodell als Grundlage der Pläne.'
-  fr: 'Obtenir les plans de coffrage et d''armature pour l''exécution du béton à partir du modèle de structure.
-
+    - Aktuelles Tragwerks- und Bewehrungsmodell als Grundlage der Pläne.
+  fr: |-
+    Obtenir les plans de coffrage et d'armature pour l'exécution du béton à partir du modèle de structure.
 
     **Situation de départ**
-
-    - Le chantier a besoin de plans de coffrage et d''armature lisibles ; la maquette seule ne suffit pas pour dimensions, nappes et positions.
-
-    - Sans plans obtenus depuis la maquette, coffrage et ferraillage restent peu clairs à l''exécution.
-
+    - Le chantier a besoin de plans de coffrage et d'armature lisibles ; la maquette seule ne suffit pas pour dimensions, nappes et positions.
+    - Sans plans obtenus depuis la maquette, coffrage et ferraillage restent peu clairs à l'exécution.
 
     **Objectif et bénéfice**
-
-    - Obtenir les plans de coffrage avec dimensions et raccords ainsi que les plans d''armature avec barres, nappes et positions.
-
-    - Rendre les plans lisibles pour le chantier – en complément de l''évaluation par lit du modèle d''exécution.
-
+    - Obtenir les plans de coffrage avec dimensions et raccords ainsi que les plans d'armature avec barres, nappes et positions.
+    - Rendre les plans lisibles pour le chantier – en complément de l'évaluation par lit du modèle d'exécution.
 
     **Déroulement**
-
-    1. Fournir les maquettes structure et armatures avec l''état actuel d''exécution.
-
-    2. Obtenir les plans de coffrage et d''armature à partir de la maquette.
-
+    1. Fournir les maquettes structure et armatures avec l'état actuel d'exécution.
+    2. Obtenir les plans de coffrage et d'armature à partir de la maquette.
     3. Contrôler la lisibilité pour le chantier et approuver les plans.
 
-
     **Livrable**
-
-    - Plans de coffrage et d''armature prêts à l''exécution, avec dimensions, raccords et nappes vérifiables.
-
-    - Maquettes structure et armatures à jour servant de base aux plans.'
-  it: 'Ottenere i piani di casseratura e delle armature per l''esecuzione del calcestruzzo dal modello strutturale.
-
+    - Plans de coffrage et d'armature prêts à l'exécution, avec dimensions, raccords et nappes vérifiables.
+    - Maquettes structure et armatures à jour servant de base aux plans.
+  it: |-
+    Ottenere i piani di casseratura e delle armature per l'esecuzione del calcestruzzo dal modello strutturale.
 
     **Situazione di partenza**
-
     - Il cantiere ha bisogno di piani di casseratura e armatura leggibili; il modello da solo non basta per dimensioni, strati e posizioni.
-
     - Senza piani ottenuti dal modello, casseratura e armatura restano poco chiare in esecuzione.
 
-
     **Obiettivo e beneficio**
-
     - Ottenere i piani di casseratura con dimensioni e raccordi nonché i piani delle armature con barre, strati e posizioni.
-
     - Rendere i piani leggibili per il cantiere – in complementarità alla valutazione per strato del modello di esecuzione.
 
-
     **Svolgimento**
-
     1. Fornire i modelli struttura e armatura con lo stato attuale di esecuzione.
-
     2. Ottenere i piani di casseratura e delle armature dal modello.
-
     3. Verificare la leggibilità per il cantiere e approvare i piani.
 
-
     **Risultato della fornitura**
-
     - Piani di casseratura e delle armature esecutivi, con dimensioni, raccordi e strati di armatura verificabili.
-
-    - Modelli strutturale e delle armature aggiornati come base per i piani.'
-  en: 'Derive formwork and reinforcement plans for concrete execution from the structural model.
-
+    - Modelli strutturale e delle armature aggiornati come base per i piani.
+  en: |-
+    Derive formwork and reinforcement plans for concrete execution from the structural model.
 
     **Starting point**
-
     - Site needs readable formwork and reinforcement plans; the model alone is not enough for dimensions, layers, and positions.
-
     - Without drawings derived from the model, formwork and reinforcement stay unclear in execution.
 
-
     **Goal & benefit**
-
     - Derive formwork plans with dimensions and junctions and reinforcement plans with bars, layers, and positions from the model.
-
     - Make the plans readable for site – complementary to layer-wise model evaluation for execution.
 
-
     **Process**
-
     1. Provide the structural and reinforcement models with the current execution status.
-
     2. Derive formwork and reinforcement plans from the model.
-
     3. Check readability for site and release the plans.
 
-
     **Deliverable**
-
     - Execution-ready formwork and reinforcement plans with verifiable dimensions, junctions, and reinforcement layers.
-
-    - Current structural and reinforcement models forming the basis of the plans.'
-workflow_group: null
+    - Current structural and reinforcement models forming the basis of the plans.
+workflow_group: produktion-montage
 parent_workflow: pragmaticbim:workflow/con
 picture_link: null
 status: active

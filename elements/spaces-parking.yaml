@@ -8,74 +8,50 @@ name:
   it: Posti auto
   en: Parking spaces
 definition:
-  de: 'Ermöglicht ab Bauprojekt einen nachvollziehbaren Parkplatznachweis sowie belastbare Flächen- und Verkehrsplanung.
-
+  de: |-
+    Ermöglicht ab Bauprojekt einen nachvollziehbaren Parkplatznachweis sowie belastbare Flächen- und Verkehrsplanung.
 
     **Beschreibung**
-
     - Einzelne Parkplätze (innen oder aussen) als eigene Raumvolumen.
-
     - Dienen dem Parkplatznachweis und der Flächenauswertung aus dem Modell.
 
-
     **Modellierungshinweis**
-
     - Ab Bauprojekt jeden Parkplatz als eigenen Raum modellieren.
-
     - Name mit eindeutiger Parkplatznummer führen (z. B. P0016).
-
-    - Dem zugehörigen Geschoss bzw. Aussenbereich zuweisen; keine Überlappungen.'
-  fr: 'Permet dès le projet de l''ouvrage un justificatif traçable des places de stationnement ainsi qu''une planification fiable des surfaces et des circulations.
-
+    - Dem zugehörigen Geschoss bzw. Aussenbereich zuweisen; keine Überlappungen.
+  fr: |-
+    Permet dès le projet de l'ouvrage un justificatif traçable des places de stationnement ainsi qu'une planification fiable des surfaces et des circulations.
 
     **Description**
-
     - Places de stationnement individuelles (intérieures ou extérieures) comme volumes de local distincts.
-
-    - Servent au justificatif de places et à l''évaluation des surfaces à partir du modèle.
-
+    - Servent au justificatif de places et à l'évaluation des surfaces à partir du modèle.
 
     **Directives de modélisation**
-
     - Dès le projet de construction, modéliser chaque place comme local distinct.
-
     - Saisir Name avec un numéro de place unique (p. ex. P0016).
-
-    - Rattacher à l''étage ou à l''espace extérieur concerné ; pas de chevauchement.'
-  it: 'Consente dal progetto dell''opera una verifica tracciabile dei posti auto e una pianificazione affidabile delle superfici e della viabilità.
-
+    - Rattacher à l'étage ou à l'espace extérieur concerné ; pas de chevauchement.
+  it: |-
+    Consente dal progetto dell'opera una verifica tracciabile dei posti auto e una pianificazione affidabile delle superfici e della viabilità.
 
     **Descrizione**
-
     - Singoli posti auto (interni o esterni) come volumi di locale distinti.
-
     - Servono alla verifica dei posti e alla valutazione delle superfici dal modello.
 
-
     **Direttive di modellazione**
-
     - Dal progetto di costruzione modellare ogni posto come locale distinto.
-
     - Portare Name con un numero di posto univoco (p. es. P0016).
-
-    - Assegnare al piano o all''area esterna corrispondente; nessuna sovrapposizione.'
-  en: 'Enables traceable parking verification and reliable area and traffic planning from the building design phase onward.
-
+    - Assegnare al piano o all'area esterna corrispondente; nessuna sovrapposizione.
+  en: |-
+    Enables traceable parking verification and reliable area and traffic planning from the building design phase onward.
 
     **Description**
-
     - Individual parking spaces (interior or exterior) as dedicated space volumes.
-
     - Used for parking verification and area evaluation from the model.
 
-
     **Modelling guidelines**
-
     - From building design onward, model each parking bay as its own space.
-
     - Carry Name with a unique parking number (e.g. P0016).
-
-    - Assign to the matching storey or exterior area; no overlaps.'
+    - Assign to the matching storey or exterior area; no overlaps.
 needed_in_domain:
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcSpace
@@ -95,19 +71,8 @@ attributes:
     it: Numero di posto univoco secondo il modello P seguito da un numero a quattro cifre (p. es. P0016).
     en: Unique parking number in the pattern P followed by a four-digit number (e.g. P0016).
   datatype: IfcIdentifier
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-parking-verification
   - pragmaticbim:workflow/des-traffic-study
@@ -115,46 +80,33 @@ attributes:
   status: active
   sort_order: 1
 - name: PredefinedType
+  requirement_kind: identification
   pset: null
   definition:
-    de: 'Kennzeichnet den Raum als Parkplatz.
-
+    de: |-
+      Kennzeichnet den Raum als Parkplatz.
 
       **Zulässige Werte**
-
-      - `PARKING` — Parkplatz'
-    fr: 'Identifie l''espace comme place de stationnement.
-
+      - `PARKING` — Parkplatz
+    fr: |-
+      Identifie l'espace comme place de stationnement.
 
       **Valeurs admises**
-
-      - `PARKING` — place de stationnement'
-    it: 'Identifica lo spazio come posto auto.
-
+      - `PARKING` — place de stationnement
+    it: |-
+      Identifica lo spazio come posto auto.
 
       **Valori ammessi**
-
-      - `PARKING` — posto auto'
-    en: 'Marks the space as a parking space.
-
+      - `PARKING` — posto auto
+    en: |-
+      Marks the space as a parking space.
 
       **Allowed values**
-
-      - `PARKING` — parking space'
+      - `PARKING` — parking space
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-space-parking
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-parking-verification
   - pragmaticbim:workflow/des-traffic-study
@@ -162,87 +114,53 @@ attributes:
   status: active
   sort_order: 2
 - name: ParkingUse
+  requirement_kind: identification
   pset: Pset_SpaceParking
   definition:
-    de: 'Fahrzeugart, für welche der Parkplatz ausgelegt ist.
-
+    de: |-
+      Fahrzeugart, für welche der Parkplatz ausgelegt ist.
 
       **Zulässige Werte**
-
       - `CAR` — PKW
-
       - `BICYCLE` — Velo
-
       - `MOTORCYCLE` — Motorrad
-
       - `TRUCK` — LKW
-
       - `BUS` — Bus
-
-      - `OTHER` — sonstige Fahrzeugart'
-    fr: 'Type de véhicule pour lequel la place de stationnement est conçue.
-
+      - `OTHER` — sonstige Fahrzeugart
+    fr: |-
+      Type de véhicule pour lequel la place de stationnement est conçue.
 
       **Valeurs admises**
-
       - `CAR` — voiture
-
       - `BICYCLE` — vélo
-
       - `MOTORCYCLE` — moto
-
       - `TRUCK` — camion
-
       - `BUS` — autobus
-
-      - `OTHER` — autre type de véhicule'
-    it: 'Tipo di veicolo per il quale il posto è progettato.
-
+      - `OTHER` — autre type de véhicule
+    it: |-
+      Tipo di veicolo per il quale il posto è progettato.
 
       **Valori ammessi**
-
       - `CAR` — autovettura
-
       - `BICYCLE` — bicicletta
-
       - `MOTORCYCLE` — motocicletta
-
       - `TRUCK` — autocarro
-
       - `BUS` — autobus
-
-      - `OTHER` — altro tipo di veicolo'
-    en: 'Type of vehicle for which the parking space is designed.
-
+      - `OTHER` — altro tipo di veicolo
+    en: |-
+      Type of vehicle for which the parking space is designed.
 
       **Allowed values**
-
       - `CAR` — car
-
       - `BICYCLE` — bicycle
-
       - `MOTORCYCLE` — motorcycle
-
       - `TRUCK` — truck
-
       - `BUS` — bus
-
-      - `OTHER` — other vehicle type'
+      - `OTHER` — other vehicle type
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/parking-use
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-parking-verification
   - pragmaticbim:workflow/des-traffic-study
@@ -257,19 +175,8 @@ attributes:
     it: Riferimento stabile dell'unità d'uso alla quale è assegnato il posto auto, per esempio appartamento, unità per uffici o unità commerciale.
     en: Stable reference of the usage unit to which the parking space is assigned, for example an apartment, office unit, or commercial unit.
   datatype: IfcIdentifier
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-parking-verification
   - pragmaticbim:workflow/des-traffic-study
@@ -285,18 +192,8 @@ attributes:
     en: Net floor area of the modelled parking space.
   datatype: IfcAreaMeasure
   unit: m²
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
+  needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-parking-verification
   - pragmaticbim:workflow/des-traffic-study

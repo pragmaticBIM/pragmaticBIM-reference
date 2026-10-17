@@ -1,0 +1,42 @@
+id: pragmaticbim:room-type/vertikale-erschliessung
+legacy_ids:
+- pragmaticbim:unit-type/vertikale-erschliessung
+code: UT-ER-01
+sort_order: 14
+name:
+  de: Vertikale Erschliessung
+  fr: Desserte verticale
+  it: Distribuzione verticale
+  en: Vertical circulation
+definition:
+  de: Bruttovolumen der vertikalen Erschliessung.
+  fr: Volume brut de la desserte verticale.
+  it: Volume lordo della distribuzione verticale.
+  en: Gross volume of the vertical circulation.
+room_type_kind: container
+contains:
+- room_type: pragmaticbim:room-type/treppenhaus
+- room_type: pragmaticbim:room-type/aufzugszone
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/vertikale-erschliessung-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Vertikale Erschliessung
+      fr: Desserte verticale
+      it: Distribuzione verticale
+      en: Vertical circulation
+  status: active

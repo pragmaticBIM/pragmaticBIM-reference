@@ -1,0 +1,53 @@
+id: pragmaticbim:usage-scenario/chemie-abfall-entsorgen
+code: US-LA-09
+sort_order: 8
+name:
+  de: Sonderabfälle entsorgen
+  fr: Évacuer les déchets spéciaux
+  it: Conferire i rifiuti speciali
+  en: Disposing of special waste
+description:
+  de: Forschende bringen gefährliche Laborabfälle getrennt vom übrigen Abfall weg. Die Art entscheidet
+    über Lüftung, Abschirmung und den Weg aus dem Gebäude.
+  fr: Les chercheurs évacuent les déchets dangereux de laboratoire séparément des autres déchets. Le
+    type détermine la ventilation, le blindage et le chemin hors du bâtiment.
+  it: I ricercatori conferiscono i rifiuti pericolosi di laboratorio separati dagli altri rifiuti. Il
+    tipo determina ventilazione, schermatura e percorso fuori dall'edificio.
+  en: Researchers take hazardous laboratory waste away separately from other waste. The kind determines
+    ventilation, shielding, and the route out of the building.
+uses:
+- pragmaticbim:use/labor
+tags:
+- entsorgung
+status: active
+jurisdiction:
+- general
+allows_multiple: true
+options:
+- id: pragmaticbim:scenario-option/chemie-abfall-entsorgen-chemie
+  sort_order: 1
+  name:
+    de: Chemieabfälle
+    fr: Déchets chimiques
+    it: Rifiuti chimici
+    en: Chemical waste
+  adds:
+  - pragmaticbim:room-type/chemieabfallraum
+- id: pragmaticbim:scenario-option/chemie-abfall-entsorgen-biologisch
+  sort_order: 2
+  name:
+    de: Biologische Abfälle
+    fr: Déchets biologiques
+    it: Rifiuti biologici
+    en: Biological waste
+  adds:
+  - pragmaticbim:room-type/biologieabfallraum
+- id: pragmaticbim:scenario-option/chemie-abfall-entsorgen-radioaktiv
+  sort_order: 3
+  name:
+    de: Radioaktive Abfälle
+    fr: Déchets radioactifs
+    it: Rifiuti radioattivi
+    en: Radioactive waste
+  adds:
+  - pragmaticbim:room-type/radioaktivabfallraum
