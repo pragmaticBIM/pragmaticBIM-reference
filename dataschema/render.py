@@ -37,7 +37,15 @@ def _engrave_kwargs(spec: EngraveSpec) -> dict[str, Any]:
     }
 
 
-def render_card(card_id: str, card: Card, image_dir: Path, ifc_dir: Path | None = None) -> tuple[Path, Path]:
+def render_card(
+    card_id: str,
+    card: Card,
+    image_dir: Path,
+    ifc_dir: Path | None = None,
+    *,
+    accent: Sequence[float] | None = None,
+    brand: bool = True,
+) -> tuple[Path, Path]:
     scene = card.build(**card.kwargs)
     result = scene.result(card.highlight)
     if ifc_dir is not None:
@@ -54,8 +62,9 @@ def render_card(card_id: str, card: Card, image_dir: Path, ifc_dir: Path | None 
         camera_padding=card.camera_padding,
         camera_direction=card.camera_direction,
         color_flooring=False,
+        accent=accent,
     )
-    render_isometric(result.ifc_file, png, **common, **_engrave_kwargs(card.engrave))
+    render_isometric(result.ifc_file, png, engrave=brand, watermark=brand, **common, **_engrave_kwargs(card.engrave))
     render_isometric(
         result.ifc_file,
         tif,

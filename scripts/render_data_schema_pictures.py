@@ -4,7 +4,10 @@
 Sources are keyed by data-schema element id:
 
 - ``dataschema.cards.CARDS``: scenes rendered here (no Reference element exists).
-- ``REUSE``: Reference pictures copied under the data-schema id.
+- ``REUSE``: Reference scenes (``runner.SAMPLE_CATALOG``) under the data-schema id.
+
+Every picture is rendered in the armasuisse style: red accent, no
+pragmaticBIM engraving or watermark.
 
 arma ids equal to a data-schema id use that source; other arma ids are
 mapped in ``dataschema.arma.ARMA_SOURCES`` (to a data-schema id or straight
@@ -23,6 +26,8 @@ unreferenced picture in the arma media folder.
 from __future__ import annotations
 
 import argparse
+import contextlib
+import io
 import re
 import shutil
 import sys
@@ -35,12 +40,15 @@ sys.path.insert(0, str(ROOT))
 from dataschema.arma import ARMA_SOURCES  # noqa: E402
 from dataschema.cards import CARDS  # noqa: E402
 from dataschema.render import render_card  # noqa: E402
+from runner import SAMPLE_CATALOG, run_catalog  # noqa: E402
 
 ARMA = ROOT.parent / "arma-elementplan-data"
 ARMA_ELEMENTS = ARMA / "elements"
 ARMA_IMAGES = ARMA / "media" / "images"
 REFERENCE_IMAGES = ROOT / "media" / "images"
 IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".tif", ".tiff"}
+# Material colour; lit top faces render as the armasuisse red #D43131.
+ARMA_ACCENT = (0.53, 0.02, 0.02)
 
 # data-schema id → Reference picture slug.
 REUSE: dict[str, str] = {
@@ -138,14 +146,34 @@ def arma_sources() -> dict[str, str]:
     return sources
 
 
-def source_files(kind: str, key: str, card_dir: Path, ifc_dir: Path, rendered: dict[str, tuple[Path, Path]]) -> tuple[Path, Path | None]:
-    """PNG and print TIF for a source; each card is rendered once per run."""
-    if kind == "card":
-        if key not in rendered:
-            rendered[key] = render_card(key, CARDS[key], card_dir, ifc_dir)
-        return rendered[key]
-    tif = REFERENCE_IMAGES / f"{key}-print.tif"
-    return REFERENCE_IMAGES / f"{key}.png", tif if tif.exists() else None
+def catalog_entry(slug: str) -> dict:
+    """Reference catalog entry that renders the picture of ``slug``."""
+    for entry in SAMPLE_CATALOG:
+        if entry.get("attach_element") == slug:
+            return entry
+    for entry in SAMPLE_CATALOG:
+        if entry.get("id") == f"spatial-{slug}-01":
+            return entry
+    raise KeyError(f"no Reference catalog entry for {slug!r}")
+
+
+def render_reference(slug: str, out_dir: Path) -> tuple[Path, Path]:
+    entry = catalog_entry(slug)
+    with contextlib.redirect_stdout(io.StringIO()):
+        _, failed, _ = run_catalog([entry], out_dir, attach=False, accent=ARMA_ACCENT, brand=False)
+    if failed:
+        raise RuntimeError(f"Reference render failed for {slug!r}")
+    return out_dir / f"{entry['id']}.png", out_dir / f"{entry['id']}-print.tif"
+
+
+def source_files(kind: str, key: str, work_dir: Path, rendered: dict[str, tuple[Path, Path]]) -> tuple[Path, Path]:
+    """PNG and print TIF for a source; each source is rendered once per run."""
+    if key not in rendered:
+        if kind == "card":
+            rendered[key] = render_card(key, CARDS[key], work_dir / "cards", work_dir / "ifc", accent=ARMA_ACCENT, brand=False)
+        else:
+            rendered[key] = render_reference(key, work_dir / "reference")
+    return rendered[key]
 
 
 def place(arma_id: str, png: Path, tif: Path | None, image_dir: Path) -> tuple[Path, Path | None]:
@@ -216,8 +244,6 @@ def main(argv: list[str] | None = None) -> int:
 
     sources = arma_sources()
     image_dir = ARMA_IMAGES if args.publish else args.output_dir
-    card_dir = args.output_dir / "cards"
-    ifc_dir = args.output_dir / "ifc"
     wanted = set(args.only) if args.only else None
     unknown = (wanted or set()) - set(sources)
     if unknown:
@@ -233,7 +259,7 @@ def main(argv: list[str] | None = None) -> int:
             continue
         try:
             kind, key = resolve(source)
-            png, tif = place(arma_id, *source_files(kind, key, card_dir, ifc_dir, rendered), image_dir)
+            png, tif = place(arma_id, *source_files(kind, key, args.output_dir, rendered), image_dir)
             if args.publish:
                 replaced |= link_element(arma_id, png, tif)
             done += 1

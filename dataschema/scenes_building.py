@@ -98,8 +98,12 @@ CORRIDOR_WIDTH = 2.4
 CORRIDOR_HEIGHT = 3.0
 
 
-def corridor() -> Scene:
-    """Corridor with two doors, turnstiles, fire curtain and the security device families."""
+def corridor(system: str | None = None) -> Scene:
+    """Corridor with two doors; ``system`` limits the devices to that one system (default: all)."""
+
+    def show(key: str) -> bool:
+        return system is None or system == key
+
     s = Scene.new("Korridor")
     f = s.ifc_file
     t = 0.2
@@ -113,65 +117,69 @@ def corridor() -> Scene:
     door_2 = framed_opening(s, back, "Zutrittstuer", wall_origin=origin, wall_thickness=t, along=5.2, sill=0.0, width=1.0, height=2.1)
     s.tag(door_2, ("i-079-el-zutrittskontrolle",))
 
-    # Fire curtain housing under the slab plus guide rails on both walls.
-    s.add(
-        "IfcBuildingElementProxy",
-        "Brandschutzvorhang",
-        [box_solid(f, 3.6, 0.0, 2.65, 3.9, CORRIDOR_WIDTH, 2.95), box_solid(f, 3.65, 0.0, 0.0, 3.85, 0.06, 2.65)],
-        keys=("i-014-abschlusse",),
-        object_type="Brandschutzvorhang",
-    )
-
     def wall_box(x0: float, z0: float, w: float, h: float, d: float = 0.06):
         return box_solid(f, x0, 0.0, z0, x0 + w, d, z0 + h)
 
-    # Emergency lighting: exit signs above both doors + emergency luminaires.
-    s.add(
-        "IfcLightFixture",
-        "Fluchtwegkennzeichnung",
-        [wall_box(1.45, 2.2, 0.5, 0.2, 0.08), wall_box(5.45, 2.2, 0.5, 0.2, 0.08)],
-        keys=("i-002-notlichtanlage",),
-        predefined_type="SECURITYLIGHTING",
-    )
-    s.add(
-        "IfcLightFixture",
-        "Notleuchte",
-        [wall_box(3.0, 2.55, 0.35, 0.12, 0.1), box_solid(f, 0.0, 1.6, 2.55, 0.1, 1.95, 2.67)],
-        keys=("i-002-notlichtanlage",),
-        predefined_type="SECURITYLIGHTING",
-    )
-    # Video cameras on brackets.
-    s.add(
-        "IfcAudioVisualAppliance",
-        "Kamera",
-        [
-            box_solid(f, 4.55, 0.0, 2.45, 4.65, 0.25, 2.55),
-            pipe_solid(f, (4.6, 0.2, 2.42), (4.6, 0.45, 2.3), 0.08, segments=10),
-            box_solid(f, 0.0, 0.35, 2.45, 0.25, 0.45, 2.55),
-            pipe_solid(f, (0.2, 0.4, 2.42), (0.45, 0.4, 2.3), 0.08, segments=10),
-        ],
-        keys=("i-010-videouberwachung",),
-        predefined_type="CAMERA",
-    )
-    # Evacuation speakers.
-    s.add(
-        "IfcAudioVisualAppliance",
-        "Lautsprecher",
-        [wall_box(2.6, 2.0, 0.25, 0.25, 0.1), wall_box(6.8, 2.0, 0.25, 0.25, 0.1)],
-        keys=("i-025-evakuationsanlage",),
-        predefined_type="SPEAKER",
-    )
-    # Card reader beside the access door.
-    s.add("IfcSensor", "Kartenleser", [wall_box(6.35, 1.05, 0.09, 0.14, 0.04)], keys=("i-079-el-zutrittskontrolle",), predefined_type="IDENTIFIERSENSOR")
-    # Alarm panel and flashing beacon on the side wall.
-    s.add("IfcController", "Alarmzentrale", [box_solid(f, 0.0, 1.0, 1.1, 0.12, 1.5, 1.8)], keys=("i-012-alarmmanagement",))
-    s.add("IfcAlarm", "Blitzleuchte", [vertical_cylinder_solid(f, 0.08, 1.25, 2.1, 0.07, 0.15, segments=12)], keys=("i-012-alarmmanagement",), predefined_type="LIGHT")
-    # Turnstiles across the corridor end.
-    turnstiles = []
-    for y in (0.15, 0.95, 1.75):
-        turnstiles.append(box_solid(f, 7.6, y, 0.0, 8.6, y + 0.22, 1.0))
-        turnstiles.append(box_solid(f, 8.0, y + 0.22, 0.85, 8.05, y + 0.62, 0.9))
-    s.add("IfcBuildingElementProxy", "Drehsperren", turnstiles, keys=("i-009-personenvereinzelungsanlage",), object_type="Personenvereinzelung")
+    if show("i-014-abschlusse"):
+        # Fire curtain housing under the slab plus guide rails on both walls.
+        s.add(
+            "IfcBuildingElementProxy",
+            "Brandschutzvorhang",
+            [box_solid(f, 3.6, 0.0, 2.65, 3.9, CORRIDOR_WIDTH, 2.95), box_solid(f, 3.65, 0.0, 0.0, 3.85, 0.06, 2.65)],
+            keys=("i-014-abschlusse",),
+            object_type="Brandschutzvorhang",
+        )
+    if show("i-002-notlichtanlage"):
+        # Exit signs above both doors + emergency luminaires.
+        s.add(
+            "IfcLightFixture",
+            "Fluchtwegkennzeichnung",
+            [wall_box(1.45, 2.2, 0.5, 0.2, 0.08), wall_box(5.45, 2.2, 0.5, 0.2, 0.08)],
+            keys=("i-002-notlichtanlage",),
+            predefined_type="SECURITYLIGHTING",
+        )
+        s.add(
+            "IfcLightFixture",
+            "Notleuchte",
+            [wall_box(3.0, 2.55, 0.35, 0.12, 0.1), box_solid(f, 0.0, 1.6, 2.55, 0.1, 1.95, 2.67)],
+            keys=("i-002-notlichtanlage",),
+            predefined_type="SECURITYLIGHTING",
+        )
+    if show("i-010-videouberwachung"):
+        # Video cameras on brackets.
+        s.add(
+            "IfcAudioVisualAppliance",
+            "Kamera",
+            [
+                box_solid(f, 4.55, 0.0, 2.45, 4.65, 0.25, 2.55),
+                pipe_solid(f, (4.6, 0.2, 2.42), (4.6, 0.45, 2.3), 0.08, segments=10),
+                box_solid(f, 0.0, 0.35, 2.45, 0.25, 0.45, 2.55),
+                pipe_solid(f, (0.2, 0.4, 2.42), (0.45, 0.4, 2.3), 0.08, segments=10),
+            ],
+            keys=("i-010-videouberwachung",),
+            predefined_type="CAMERA",
+        )
+    if show("i-025-evakuationsanlage"):
+        s.add(
+            "IfcAudioVisualAppliance",
+            "Lautsprecher",
+            [wall_box(2.6, 2.0, 0.25, 0.25, 0.1), wall_box(6.8, 2.0, 0.25, 0.25, 0.1)],
+            keys=("i-025-evakuationsanlage",),
+            predefined_type="SPEAKER",
+        )
+    if show("i-079-el-zutrittskontrolle"):
+        s.add("IfcSensor", "Kartenleser", [wall_box(6.35, 1.05, 0.09, 0.14, 0.04)], keys=("i-079-el-zutrittskontrolle",), predefined_type="IDENTIFIERSENSOR")
+    if show("i-012-alarmmanagement"):
+        # Alarm panel and flashing beacon on the side wall.
+        s.add("IfcController", "Alarmzentrale", [box_solid(f, 0.0, 1.0, 1.1, 0.12, 1.5, 1.8)], keys=("i-012-alarmmanagement",))
+        s.add("IfcAlarm", "Blitzleuchte", [vertical_cylinder_solid(f, 0.08, 1.25, 2.1, 0.07, 0.15, segments=12)], keys=("i-012-alarmmanagement",), predefined_type="LIGHT")
+    if show("i-009-personenvereinzelungsanlage"):
+        # Turnstiles across the corridor end.
+        turnstiles = []
+        for y in (0.15, 0.95, 1.75):
+            turnstiles.append(box_solid(f, 7.6, y, 0.0, 8.6, y + 0.22, 1.0))
+            turnstiles.append(box_solid(f, 8.0, y + 0.22, 0.85, 8.05, y + 0.62, 0.9))
+        s.add("IfcBuildingElementProxy", "Drehsperren", turnstiles, keys=("i-009-personenvereinzelungsanlage",), object_type="Personenvereinzelung")
     return s
 
 

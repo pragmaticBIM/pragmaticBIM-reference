@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import colorsys
 import os
 from pathlib import Path
 from typing import Collection, Mapping, Sequence
@@ -155,6 +156,21 @@ def _primary_style(ifc_class: str) -> tuple[list[float], bool]:
     if ifc_class in _VOLUME_CLASSES:
         return list(_ACCENT_VOLUME), True
     return list(_ACCENT_SOLID), False
+
+
+def recolor_accent(rgba: Sequence[float], accent: Sequence[float]) -> list[float]:
+    """Map the orange accent family (graded, translucent) onto ``accent`` RGB.
+
+    Hue becomes the accent hue; saturation and value scale so the default orange
+    lands exactly on ``accent``. Non-orange colours pass through unchanged.
+    """
+    hue, sat, val = colorsys.rgb_to_hsv(*rgba[:3])
+    if sat < 0.25 or not 0.02 <= hue <= 0.15:
+        return list(rgba)
+    _, base_sat, base_val = colorsys.rgb_to_hsv(*_ACCENT_SOLID[:3])
+    target_hue, target_sat, target_val = colorsys.rgb_to_hsv(*accent[:3])
+    rgb = colorsys.hsv_to_rgb(target_hue, min(1.0, sat * target_sat / base_sat), min(1.0, val * target_val / base_val))
+    return [*rgb, *rgba[3:]]
 
 
 def _material(rgba: Sequence[float], *, blend: bool = False) -> pyrender.MetallicRoughnessMaterial:
@@ -1541,6 +1557,7 @@ def render_isometric(
     engrave_wall_name: str | None = None,
     camera_bounds: np.ndarray | None = None,
     fit_content: bool = True,
+    accent: Sequence[float] | None = None,
 ) -> Path:
     """Render all geometry in ``ifc_file`` to a fixed-angle isometric image.
 
@@ -1579,6 +1596,7 @@ def render_isometric(
     orthographic magnification, and stroke width instead of the mesh bounds.
     ``fit_content`` when False, skips the crop-and-rescale pass so a shared
     camera stays identical across pictures.
+    ``accent`` optional RGB replacing the orange accent family (see ``recolor_accent``).
     If omitted, the first IfcSpace (else first product with geometry) is treated as primary.
     """
     product_meshes = _product_meshes(
@@ -1608,6 +1626,11 @@ def render_isometric(
                 break
         if not primary and product_meshes:
             primary.add(product_meshes[0][0])
+    if accent is not None:
+        colors = {g: recolor_accent(c, accent) for g, c in colors.items()}
+        for guid, ifc_class, _mesh in product_meshes:
+            if guid in primary and guid not in colors:
+                colors[guid] = recolor_accent(_primary_style(ifc_class)[0], accent)
 
     width, height = int(resolution[0]), int(resolution[1])
     # Render-only: carve brand into top horizontal surface, else white vertical wall.

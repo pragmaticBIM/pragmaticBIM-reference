@@ -13,6 +13,7 @@ from generators.mep_parts import (
     add_corner_room,
     box_solid,
     duct_solid,
+    pipe_solid,
     vertical_cylinder_solid,
 )
 from generators.parts import rect_polyline
@@ -33,6 +34,14 @@ _DUCT_H = 0.25
 _BRANCH_X = 4.3
 _BRANCH_W = 0.30
 _BRANCH_H = 0.20
+
+_SPRINKLER_Y = 3.5
+_SPRINKLER_Z = 2.9
+_SPRINKLER_R = 0.04
+_BEAM_FLOW = (1.55, 2.9)  # (y, z) of the cooled-beam flow / return runs
+_BEAM_RETURN = (1.85, 2.8)
+_BEAM_PIPE_X = 0.8
+_BEAM_PIPE_R = 0.03
 
 OFFICE_CEILING_SLUGS = frozenset(
     {
@@ -124,13 +133,38 @@ def generate_mep_office_ceiling(
             "Anschluss-Luftauslass",
             [duct_solid(f, (_BRANCH_X, y0 + 0.3, z_ceiling_top + 0.02), (_BRANCH_X, y0 + 0.3, _DUCT_Z - _BRANCH_H * 0.5), 0.2, 0.2)],
         )
-    scene.device("mep-cooled-beam", [box_solid(f, 0.6, 1.4, CEILING_BOTTOM - 0.12, 3.0, 2.0, z_ceiling_top + 0.02)])
+    beam_top = z_ceiling_top + 0.02
+    scene.device("mep-cooled-beam", [box_solid(f, 0.6, 1.4, CEILING_BOTTOM - 0.12, 3.0, 2.0, beam_top)])
+    # Chilled-water flow / return: up from the beam end, then through the side wall.
+    for name, (y, z) in (("Kuehlbalken-VL", _BEAM_FLOW), ("Kuehlbalken-RL", _BEAM_RETURN)):
+        scene.context(
+            "IfcPipeSegment",
+            name,
+            [
+                pipe_solid(f, (_BEAM_PIPE_X, y, beam_top), (_BEAM_PIPE_X, y, z), _BEAM_PIPE_R),
+                pipe_solid(f, (_BEAM_PIPE_X, y, z), (-WALL_THICKNESS, y, z), _BEAM_PIPE_R),
+            ],
+        )
     for x0, x1 in ((0.6, 2.1), (2.4, 3.6)):
         scene.device("mep-light-fixture", [box_solid(f, x0, 2.7, CEILING_BOTTOM - 0.06, x1, 2.95, z_ceiling_top + 0.02)])
-    for x in (1.0, 2.3, 3.6):
+    sprinkler_xs = (1.0, 2.3, 3.6)
+    sprinkler_height = 0.22
+    sprinkler_z0 = CEILING_BOTTOM - 0.14
+    # Sprinkler main in the plenum from the side wall, with a drop to each head.
+    scene.context(
+        "IfcPipeSegment",
+        "Sprinkler-Hauptleitung",
+        [pipe_solid(f, (-WALL_THICKNESS, _SPRINKLER_Y, _SPRINKLER_Z), (sprinkler_xs[-1], _SPRINKLER_Y, _SPRINKLER_Z), _SPRINKLER_R)],
+    )
+    for x in sprinkler_xs:
         scene.device(
             "mep-fire-suppression-terminal",
-            [vertical_cylinder_solid(f, x, 3.5, CEILING_BOTTOM - 0.14, 0.07, 0.22, segments=10)],
+            [vertical_cylinder_solid(f, x, _SPRINKLER_Y, sprinkler_z0, 0.07, sprinkler_height, segments=10)],
+        )
+        scene.context(
+            "IfcPipeSegment",
+            "Sprinkler-Anschluss",
+            [pipe_solid(f, (x, _SPRINKLER_Y, sprinkler_z0 + sprinkler_height), (x, _SPRINKLER_Y, _SPRINKLER_Z), _SPRINKLER_R * 0.7)],
         )
     scene.device(
         "mep-alarm",

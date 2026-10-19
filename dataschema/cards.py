@@ -79,9 +79,9 @@ CARDS: dict[str, Card] = {
         ),
     ),
     # Korridor ---------------------------------------------------------------
-    **_room_cards(
-        building.corridor,
-        (
+    **{
+        card_id: Card(building.corridor, card_id, {"system": card_id}, engrave=_BACK_WALL)
+        for card_id in (
             "i-002-notlichtanlage",
             "i-009-personenvereinzelungsanlage",
             "i-010-videouberwachung",
@@ -89,8 +89,8 @@ CARDS: dict[str, Card] = {
             "i-014-abschlusse",
             "i-025-evakuationsanlage",
             "i-079-el-zutrittskontrolle",
-        ),
-    ),
+        )
+    },
     # Wandabschnitt / Kueche / Buero -----------------------------------------
     **{
         card_id: Card(

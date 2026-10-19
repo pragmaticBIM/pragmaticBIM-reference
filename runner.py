@@ -7,6 +7,7 @@ import argparse
 import sys
 import traceback
 from pathlib import Path
+from typing import Sequence
 
 from catalog.attach import attach_preview_to_element
 from catalog.mapping import (
@@ -482,8 +483,13 @@ def run_catalog(
     *,
     cover_iso: bool = False,
     attach: bool = True,
+    accent: Sequence[float] | None = None,
+    brand: bool = True,
 ) -> tuple[int, int, list[str]]:
-    """Process known catalog types. Returns (succeeded, failed, failed_ids)."""
+    """Process known catalog types. Returns (succeeded, failed, failed_ids).
+
+    ``accent`` recolours the orange accent; ``brand=False`` drops engraving and watermark.
+    """
     output_dir.mkdir(parents=True, exist_ok=True)
 
     succeeded = 0
@@ -622,11 +628,14 @@ def run_catalog(
                     else None
                 ),
                 orthographic=cover_iso,
+                accent=accent,
             )
             # Catalog card: 1024² with brand engraving + corner watermark.
             render_isometric(
                 ifc_file,
                 png_path,
+                engrave=brand,
+                watermark=brand,
                 **render_kwargs,
                 **engrave_kwargs_for(element_id),
             )
