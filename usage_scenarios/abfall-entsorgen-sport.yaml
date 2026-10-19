@@ -15,8 +15,7 @@ description:
     superficie, ventilazione e percorsi verso il punto di raccolta.
   en: Clubs and individuals take waste away after training. The separated fractions determine area,
     ventilation, and routes to the collection point.
-uses:
-- pragmaticbim:use/sport
+use: pragmaticbim:use/sport
 tags:
 - entsorgung
 status: active

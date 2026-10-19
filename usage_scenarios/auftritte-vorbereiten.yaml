@@ -15,8 +15,7 @@ description:
     Il retropalco determina flussi, riservatezza e gestione del palco.
   en: Performers change, wash, rehearse, and wait for their appearance, apart from the audience. The backstage
     determines workflows, privacy, and stage operation.
-uses:
-- pragmaticbim:use/versammlung
+use: pragmaticbim:use/versammlung
 tags:
 - betrieb
 status: active

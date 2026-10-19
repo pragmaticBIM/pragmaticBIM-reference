@@ -15,8 +15,7 @@ description:
     o all'esterno e quanto dista l'alloggio.
   en: Residents park their bicycles every day. The place decides whether bicycles stand sheltered indoors
     or outdoors, and how far the dwelling is.
-uses:
-- pragmaticbim:use/wohnen
+use: pragmaticbim:use/wohnen
 tags:
 - ankommen
 status: active

@@ -15,8 +15,7 @@ description:
     specializzati, percorsi e attrezzature.
   en: Professionals produce diagnostic images or analyse samples. The method determines specialist rooms,
     travel, and technical equipment.
-uses:
-- pragmaticbim:use/gesundheit
+use: pragmaticbim:use/gesundheit
 tags:
 - diagnostik
 status: active

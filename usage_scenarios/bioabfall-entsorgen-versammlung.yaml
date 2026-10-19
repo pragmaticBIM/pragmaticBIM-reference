@@ -17,8 +17,7 @@ description:
     ritiro.
   en: Audiences and the operation take food and green waste away at events, separately from other
     waste. The collection point determines odour, cooling, and how often it is collected.
-uses:
-- pragmaticbim:use/versammlung
+use: pragmaticbim:use/versammlung
 tags:
 - entsorgung
 status: active

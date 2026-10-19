@@ -15,8 +15,7 @@ description:
     o in un locale separato.
   en: Teams regularly work together. The location determines whether collaboration happens in the work
     area or in a separate room.
-uses:
-- pragmaticbim:use/arbeit
+use: pragmaticbim:use/arbeit
 tags:
 - zusammenarbeit
 status: active

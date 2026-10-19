@@ -15,8 +15,7 @@ description:
     sequenza di accesso determina protezione dalla contaminazione e tempi di passaggio.
   en: Staff change clothes and pass hygiene barriers before the laboratory area. The access sequence determines
     contamination protection and transit time.
-uses:
-- pragmaticbim:use/labor
+use: pragmaticbim:use/labor
 tags:
 - zugang
 status: active

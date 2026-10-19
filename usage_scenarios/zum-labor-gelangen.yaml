@@ -16,8 +16,7 @@ description:
     degli accessi, trasporto di sostanze pericolose e separazione dei percorsi persone e materiali.
   en: Researchers, samples, and supplies reach the laboratory floors. The access arrangement determines
     access control, hazardous goods transport, and separation of people and material routes.
-uses:
-- pragmaticbim:use/labor
+use: pragmaticbim:use/labor
 tags:
 - erschliessung
 status: active

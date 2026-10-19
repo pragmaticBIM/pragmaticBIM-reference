@@ -15,8 +15,7 @@ description:
     qualità di sosta, ristorazione e superficie.
   en: Audiences gather before the start and during the interval. The foyer offer determines dwell quality,
     catering, and area.
-uses:
-- pragmaticbim:use/versammlung
+use: pragmaticbim:use/versammlung
 tags:
 - pause
 status: active

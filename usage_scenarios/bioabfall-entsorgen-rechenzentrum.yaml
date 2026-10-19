@@ -16,8 +16,7 @@ description:
     punto di raccolta determina odori, raffreddamento e ritmo di ritiro.
   en: Staff regularly take food and green waste away, separately from other waste. The collection
     point determines odour, cooling, and how often it is collected.
-uses:
-- pragmaticbim:use/rechenzentrum
+use: pragmaticbim:use/rechenzentrum
 tags:
 - entsorgung
 status: active

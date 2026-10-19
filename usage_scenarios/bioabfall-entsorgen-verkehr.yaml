@@ -17,8 +17,7 @@ description:
     ritiro.
   en: Passengers and the operation take food and green waste away during the stay, separately from
     other waste. The collection point determines odour, cooling, and how often it is collected.
-uses:
-- pragmaticbim:use/verkehr
+use: pragmaticbim:use/verkehr
 tags:
 - entsorgung
 status: active

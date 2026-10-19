@@ -15,8 +15,7 @@ description:
     e gestione.
   en: Rooms are regularly cleaned and supplied with consumables. The service point determines travel,
     storage, and operations.
-uses:
-- pragmaticbim:use/beherbergung
+use: pragmaticbim:use/beherbergung
 tags:
 - betrieb
 status: active

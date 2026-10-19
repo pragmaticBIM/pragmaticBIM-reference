@@ -15,8 +15,7 @@ description:
     determinano compartimenti antincendio, ventilazione e percorsi nell'edificio.
   en: Chemicals and hazardous substances are delivered, stored, and disposed of. Separate stores determine
     fire compartments, ventilation, and routes through the building.
-uses:
-- pragmaticbim:use/labor
+use: pragmaticbim:use/labor
 tags:
 - sicherheit
 status: active

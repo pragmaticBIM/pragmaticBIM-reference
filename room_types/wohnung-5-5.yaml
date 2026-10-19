@@ -48,6 +48,8 @@ configurations:
       fr: Logement de 5,5 pièces
       it: Alloggio di 5,5 locali
       en: 5.5-room dwelling
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: GrossPlannedArea
+    pset: ePset_SpaceRequirement
+    value: 135
   status: active
-  restrictions:
-    min_area: 135

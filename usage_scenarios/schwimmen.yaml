@@ -15,8 +15,7 @@ description:
     tecniche, sorveglianza e spogliatoi.
   en: Swimmers train, learn to swim, or relax in the water. The pool determines plant area, supervision,
     and changing facilities.
-uses:
-- pragmaticbim:use/sport
+use: pragmaticbim:use/sport
 tags:
 - wasser
 status: active

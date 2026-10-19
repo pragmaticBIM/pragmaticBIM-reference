@@ -15,8 +15,7 @@ description:
     determina la centrale termica, l'allacciamento e il fabbisogno termico dell'edificio.
   en: Servers give off heat that would otherwise be lost at the heat rejection. Using that waste heat
     determines the boiler room, the connection, and the building's heat demand.
-uses:
-- pragmaticbim:use/rechenzentrum
+use: pragmaticbim:use/rechenzentrum
 tags:
 - energie
 status: active

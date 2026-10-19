@@ -15,8 +15,7 @@ description:
     vicinanza al magazzino e accesso in auto.
   en: Customers collect goods ordered online or bulky purchases. Collection determines waiting time, proximity
     to stock, and car access.
-uses:
-- pragmaticbim:use/verkauf
+use: pragmaticbim:use/verkauf
 tags:
 - abholung
 status: active

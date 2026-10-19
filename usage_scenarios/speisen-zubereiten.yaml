@@ -14,8 +14,7 @@ description:
   it: Il personale prepara pasti per gli ospiti. L'entità della produzione determina superficie di cucina,
     attrezzature e flusso delle merci.
   en: Staff prepare food for guests. Production scale determines kitchen area, equipment, and goods flow.
-uses:
-- pragmaticbim:use/gastronomie
+use: pragmaticbim:use/gastronomie
 tags:
 - produktion
 status: active

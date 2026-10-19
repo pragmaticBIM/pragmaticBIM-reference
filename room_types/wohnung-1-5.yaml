@@ -47,6 +47,8 @@ configurations:
       fr: Logement de 1,5 pièces
       it: Alloggio di 1,5 locali
       en: 1.5-room dwelling
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: GrossPlannedArea
+    pset: ePset_SpaceRequirement
+    value: 45
   status: active
-  restrictions:
-    min_area: 45

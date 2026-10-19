@@ -15,8 +15,7 @@ description:
     e separazione tra pulito e usato.
   en: Materials and samples are supplied, used, and removed. Logistics determine storage, travel, and
     separation of clean and used goods.
-uses:
-- pragmaticbim:use/gesundheit
+use: pragmaticbim:use/gesundheit
 tags:
 - logistik
 status: active

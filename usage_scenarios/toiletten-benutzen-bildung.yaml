@@ -15,8 +15,7 @@ description:
     La suddivisione determina numero, superficie e flessibilità d'uso.
   en: Pupils and teachers need toilets during their stay, including wheelchair users. The split determines
     number, area, and how flexibly the toilets can be used.
-uses:
-- pragmaticbim:use/bildung
+use: pragmaticbim:use/bildung
 tags:
 - sanitaer
 status: active

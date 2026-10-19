@@ -45,7 +45,7 @@ configurations:
     value: ANF
   - element: pragmaticbim:element/spaces-exterior
     name: NetPlannedArea
-    pset: Pset_SpaceCommon
+    pset: ePset_SpaceRequirement
     value: 4
   - element: pragmaticbim:element/spaces-exterior
     name: FloorCovering
@@ -70,16 +70,7 @@ configurations:
     name: DesignPointLoad
     pset: ePset_SpaceRequirement
     value: 2.0
-  - element: pragmaticbim:element/spaces-exterior
-    name: SecurityLevel
-    value:
-      de: Intern
-      fr: Interne
-      it: Interno
-      en: Internal
   status: active
-  restrictions:
-    min_area: 4
 - id: pragmaticbim:room-type-configuration/balkon-medium
   sort_order: 2
   name:
@@ -108,7 +99,7 @@ configurations:
     value: ANF
   - element: pragmaticbim:element/spaces-exterior
     name: NetPlannedArea
-    pset: Pset_SpaceCommon
+    pset: ePset_SpaceRequirement
     value: 8
   - element: pragmaticbim:element/spaces-exterior
     name: FloorCovering
@@ -133,16 +124,7 @@ configurations:
     name: DesignPointLoad
     pset: ePset_SpaceRequirement
     value: 2.0
-  - element: pragmaticbim:element/spaces-exterior
-    name: SecurityLevel
-    value:
-      de: Intern
-      fr: Interne
-      it: Interno
-      en: Internal
   status: active
-  restrictions:
-    min_area: 8
 - id: pragmaticbim:room-type-configuration/balkon-large
   sort_order: 3
   name:
@@ -171,7 +153,7 @@ configurations:
     value: ANF
   - element: pragmaticbim:element/spaces-exterior
     name: NetPlannedArea
-    pset: Pset_SpaceCommon
+    pset: ePset_SpaceRequirement
     value: 12
   - element: pragmaticbim:element/spaces-exterior
     name: FloorCovering
@@ -196,13 +178,4 @@ configurations:
     name: DesignPointLoad
     pset: ePset_SpaceRequirement
     value: 2.0
-  - element: pragmaticbim:element/spaces-exterior
-    name: SecurityLevel
-    value:
-      de: Intern
-      fr: Interne
-      it: Interno
-      en: Internal
   status: active
-  restrictions:
-    min_area: 12

@@ -83,15 +83,18 @@ def test_container_room_types() -> None:
         assert len(component_ids) == len(set(component_ids)), container["id"]
         assert not (set(component_ids) - set(by_id)), container["id"]
         presets = _presets(container)
-        assert set(presets) == {"PredefinedType", "ObjectType", "LongName"}, container["id"]
+        expected = {"PredefinedType", "ObjectType", "LongName"}
+        if container["id"] in DWELLING_SIZES:
+            expected.add("GrossPlannedArea")
+        assert set(presets) == expected, container["id"]
+        assert "restrictions" not in container["configurations"][0], container["id"]
         assert presets["PredefinedType"] == "GFA", container["id"]
         assert presets["ObjectType"] == OBJECT_TYPE, container["id"]
         assert presets["LongName"] == container["name"], container["id"]
 
     parent = by_id["pragmaticbim:room-type/wohnung"]
     assert "extends" not in parent
-    assert "restrictions" not in parent["configurations"][0]
     for room_id, area in DWELLING_SIZES.items():
         container = by_id[room_id]
         assert container["extends"] == parent["id"], room_id
-        assert container["configurations"][0]["restrictions"]["min_area"] == area
+        assert _presets(container)["GrossPlannedArea"] == area, room_id

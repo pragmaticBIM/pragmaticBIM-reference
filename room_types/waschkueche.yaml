@@ -40,7 +40,7 @@ configurations:
     value: HNF
   - element: pragmaticbim:element/spaces-interior
     name: NetPlannedArea
-    pset: Pset_SpaceCommon
+    pset: ePset_SpaceRequirement
     value: 4
   - element: pragmaticbim:element/spaces-interior
     name: FloorCovering
@@ -114,5 +114,3 @@ configurations:
     pset: ePset_SpaceRequirement
     value: 60
   status: active
-  restrictions:
-    min_area: 4

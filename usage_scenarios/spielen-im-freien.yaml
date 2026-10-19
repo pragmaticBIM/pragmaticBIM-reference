@@ -15,8 +15,7 @@ description:
     offre un'area giochi.
   en: Children play outdoors near home. The choice decides whether the site offers
     a play area.
-uses:
-- pragmaticbim:use/wohnen
+use: pragmaticbim:use/wohnen
 tags:
 - aussenraum
 status: active

@@ -15,8 +15,7 @@ description:
     spazi, luce e sicurezza.
   en: Visitors view objects or works over a longer time. The exhibition concept determines room sequence,
     light, and security.
-uses:
-- pragmaticbim:use/versammlung
+use: pragmaticbim:use/versammlung
 tags:
 - ausstellung
 status: active

@@ -15,8 +15,7 @@ description:
     al riparo e quanto dista dall'alloggio.
   en: Mail is delivered and collected daily. The place decides where it is kept safe
     and how far it is from the dwelling.
-uses:
-- pragmaticbim:use/wohnen
+use: pragmaticbim:use/wohnen
 tags:
 - zustellung
 status: active

@@ -15,8 +15,7 @@ description:
     e zone di sicurezza.
   en: Patients receive procedures of varying complexity. The procedure determines room type, support,
     and safety zones.
-uses:
-- pragmaticbim:use/gesundheit
+use: pragmaticbim:use/gesundheit
 tags:
 - behandlung
 status: active

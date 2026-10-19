@@ -15,8 +15,7 @@ description:
     personale e orientamento.
   en: Guests arrive and gain access to their accommodation. The process determines reception area, staffing,
     and wayfinding.
-uses:
-- pragmaticbim:use/beherbergung
+use: pragmaticbim:use/beherbergung
 tags:
 - ankommen
 status: active

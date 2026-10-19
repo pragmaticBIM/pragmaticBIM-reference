@@ -15,8 +15,7 @@ description:
     accoglienza determina contatto personale, controllo visivo e controllo degli accessi.
   en: Residents and visitors announce themselves at the building entrance. The reception
     method determines personal contact, visual confirmation, and access control.
-uses:
-- pragmaticbim:use/wohnen
+use: pragmaticbim:use/wohnen
 tags:
 - ankommen
 status: active

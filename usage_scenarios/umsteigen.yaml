@@ -15,8 +15,7 @@ description:
     tempi di coincidenza, accessibilità e affollamento.
   en: Passengers change between lines and modes. Connecting routes determine transfer time, accessibility,
     and crowding.
-uses:
-- pragmaticbim:use/verkehr
+use: pragmaticbim:use/verkehr
 tags:
 - umsteigen
 status: active

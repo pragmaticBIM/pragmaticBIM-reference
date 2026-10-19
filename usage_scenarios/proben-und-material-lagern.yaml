@@ -15,8 +15,7 @@ description:
     determinano temperatura, accesso e tracciabilità.
   en: Samples, reagents, and consumables are kept until use. Storage conditions determine temperature,
     access, and traceability.
-uses:
-- pragmaticbim:use/labor
+use: pragmaticbim:use/labor
 tags:
 - lagerung
 status: active

@@ -15,8 +15,7 @@ description:
     del piazzale, protezione dalle intemperie e rumore.
   en: Trucks collect picked goods and wait until departure. Truck bays determine yard area, weather protection,
     and noise.
-uses:
-- pragmaticbim:use/logistik
+use: pragmaticbim:use/logistik
 tags:
 - warenausgang
 status: active

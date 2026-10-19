@@ -15,8 +15,7 @@ description:
     flussi, assenza di ostacoli e separazione dei percorsi sportivi e spettatori.
   en: Athletes and spectators travel from the entrance to changing rooms, hall, and stand. The access
     arrangement determines crowd flow, step-free access, and separation of athlete and spectator routes.
-uses:
-- pragmaticbim:use/sport
+use: pragmaticbim:use/sport
 tags:
 - erschliessung
 status: active

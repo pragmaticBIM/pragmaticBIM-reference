@@ -268,3 +268,21 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 7
+- name: GrossPlannedArea
+  pset: ePset_SpaceRequirement
+  definition:
+    de: Bestellte Soll-Bruttogeschossfläche des Bruttovolumens.
+    fr: Surface brute de plancher cible commandée pour le volume brut.
+    it: Superficie lorda di pavimento obiettivo ordinata per il volume lordo.
+    en: Ordered target gross floor area of the gross volume.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/qas-room-program-verification
+  - pragmaticbim:workflow/des-apartment-schedule
+  is_applicability: false
+  status: active
+  sort_order: 8

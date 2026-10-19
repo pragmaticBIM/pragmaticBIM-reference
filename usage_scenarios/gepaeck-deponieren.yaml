@@ -14,8 +14,7 @@ description:
   it: I viaggiatori lasciano i bagagli per alcune ore. L'offerta di deposito determina sicurezza, superficie
     e fabbisogno di personale.
   en: Passengers leave luggage for a few hours. The storage offer determines security, area, and staffing.
-uses:
-- pragmaticbim:use/verkehr
+use: pragmaticbim:use/verkehr
 tags:
 - gepaeck
 status: active

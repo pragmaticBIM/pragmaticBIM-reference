@@ -339,7 +339,7 @@ attributes:
   status: active
   sort_order: 6
 - name: NetPlannedArea
-  pset: Pset_SpaceCommon
+  pset: ePset_SpaceRequirement
   definition:
     de: Bestellte Soll-Nettofläche des Aussenraums.
     fr: Surface nette cible commandée pour l'espace extérieur.
@@ -356,6 +356,60 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 7
+- name: MinClearHeight
+  pset: ePset_SpaceRequirement
+  definition:
+    de: Geforderte minimale lichte Raumhöhe des Aussenraums.
+    fr: Hauteur libre minimale exigée de l'espace extérieur.
+    it: Altezza libera minima richiesta dello spazio esterno.
+    en: Required minimum clear height of the exterior space.
+  datatype: IfcLengthMeasure
+  unit: m
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-ipd-procurement
+  is_applicability: false
+  status: active
+  sort_order: 8
+- name: MinClearLength
+  pset: ePset_SpaceRequirement
+  definition:
+    de: Geforderte minimale lichte Raumlänge des Aussenraums.
+    fr: Longueur libre minimale exigée de l'espace extérieur.
+    it: Lunghezza libera minima richiesta dello spazio esterno.
+    en: Required minimum clear length of the exterior space.
+  datatype: IfcLengthMeasure
+  unit: m
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-ipd-procurement
+  is_applicability: false
+  status: active
+  sort_order: 9
+- name: MinClearWidth
+  pset: ePset_SpaceRequirement
+  definition:
+    de: Geforderte minimale lichte Raumbreite des Aussenraums.
+    fr: Largeur libre minimale exigée de l'espace extérieur.
+    it: Larghezza libera minima richiesta dello spazio esterno.
+    en: Required minimum clear width of the exterior space.
+  datatype: IfcLengthMeasure
+  unit: m
+  needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-ipd-procurement
+  is_applicability: false
+  status: active
+  sort_order: 10
 - name: SignageRoomNumber
   pset: ePset_Space
   definition:
@@ -374,7 +428,7 @@ attributes:
   - pragmaticbim:workflow/opr-signage-room-number
   is_applicability: false
   status: active
-  sort_order: 8
+  sort_order: 11
 - name: DesignAreaLoad
   requirement_kind: performance
   pset: ePset_SpaceRequirement
@@ -392,7 +446,7 @@ attributes:
   - pragmaticbim:workflow/des-usage-agreement-visualization
   is_applicability: false
   status: active
-  sort_order: 9
+  sort_order: 12
 - name: DesignPointLoad
   requirement_kind: performance
   pset: ePset_SpaceRequirement
@@ -410,7 +464,7 @@ attributes:
   - pragmaticbim:workflow/des-usage-agreement-visualization
   is_applicability: false
   status: active
-  sort_order: 10
+  sort_order: 13
 - name: VibrationRequirements
   requirement_kind: performance
   pset: ePset_SpaceRequirement
@@ -476,7 +530,7 @@ attributes:
   - pragmaticbim:workflow/des-usage-agreement-visualization
   is_applicability: false
   status: active
-  sort_order: 11
+  sort_order: 14
 - name: DesignAreaLoadActual
   pset: ePset_Space
   definition:
@@ -492,7 +546,7 @@ attributes:
   - pragmaticbim:workflow/qas-usage-agreement-verification
   is_applicability: false
   status: active
-  sort_order: 12
+  sort_order: 15
 - name: DesignPointLoadActual
   pset: ePset_Space
   definition:
@@ -508,7 +562,7 @@ attributes:
   - pragmaticbim:workflow/qas-usage-agreement-verification
   is_applicability: false
   status: active
-  sort_order: 13
+  sort_order: 16
 - name: VibrationRequirementsActual
   pset: ePset_Space
   definition:
@@ -572,7 +626,7 @@ attributes:
   - pragmaticbim:workflow/qas-usage-agreement-verification
   is_applicability: false
   status: active
-  sort_order: 14
+  sort_order: 17
 - name: UsageUnitReference
   pset: ePset_Space
   definition:
@@ -605,7 +659,7 @@ attributes:
   - pragmaticbim:workflow/bes-ipd-procurement
   is_applicability: false
   status: active
-  sort_order: 15
+  sort_order: 18
 - name: FloorCovering
   requirement_kind: material
   pset: Pset_SpaceCoveringRequirements
@@ -647,7 +701,7 @@ attributes:
   - pragmaticbim:workflow/qas-sponge-city
   is_applicability: false
   status: active
-  sort_order: 16
+  sort_order: 19
 - name: Checkliste
   pset: ePset_Space
   definition:
@@ -662,7 +716,7 @@ attributes:
   - pragmaticbim:workflow/con-logistics-fit-out
   is_applicability: false
   status: active
-  sort_order: 17
+  sort_order: 20
 - name: NetFloorArea
   pset: Qto_SpaceBaseQuantities
   definition:
@@ -681,4 +735,4 @@ attributes:
   - pragmaticbim:workflow/qas-sponge-city
   is_applicability: false
   status: active
-  sort_order: 18
+  sort_order: 21

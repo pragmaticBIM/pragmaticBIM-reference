@@ -15,8 +15,7 @@ description:
     cosa occupa spazio nell'alloggio e che cosa resta fuori.
   en: Households store things they rarely use. The place decides what takes space
     in the dwelling and what is kept outside it.
-uses:
-- pragmaticbim:use/wohnen
+use: pragmaticbim:use/wohnen
 tags:
 - haushalt
 status: active

@@ -15,8 +15,7 @@ description:
     determinano superficie, ventilazione e percorsi verso il punto di raccolta.
   en: Staff and patients take waste away during the stay. The separated fractions determine area,
     ventilation, and routes to the collection point.
-uses:
-- pragmaticbim:use/gesundheit
+use: pragmaticbim:use/gesundheit
 tags:
 - entsorgung
 status: active

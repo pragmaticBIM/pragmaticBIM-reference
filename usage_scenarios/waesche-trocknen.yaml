@@ -15,8 +15,7 @@ description:
     stanno umidità e apparecchi, nell'alloggio o in comune nell'edificio.
   en: Households dry laundry regularly. The place decides where moisture and equipment
     sit, in the dwelling or shared in the building.
-uses:
-- pragmaticbim:use/wohnen
+use: pragmaticbim:use/wohnen
 tags:
 - haushalt
 status: active

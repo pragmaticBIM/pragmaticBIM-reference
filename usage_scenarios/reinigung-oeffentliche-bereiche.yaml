@@ -15,8 +15,7 @@ description:
     necessita di un locale per il materiale di pulizia.
   en: Shared rooms are cleaned regularly. The choice decides whether the building
     needs space for cleaning supplies.
-uses:
-- pragmaticbim:use/wohnen
+use: pragmaticbim:use/wohnen
 tags:
 - betrieb
 status: active

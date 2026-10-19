@@ -15,8 +15,7 @@ description:
     determina riservatezza, tempi di attesa e superficie di vendita.
   en: Customers need advice, service, or a complaint handled away from the checkout. A dedicated area
     determines discretion, waiting time, and sales floor area.
-uses:
-- pragmaticbim:use/verkauf
+use: pragmaticbim:use/verkauf
 tags:
 - beratung
 status: active

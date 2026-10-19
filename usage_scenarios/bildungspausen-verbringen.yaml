@@ -15,8 +15,7 @@ description:
     interni ed esterni.
   en: Learners spend breaks together. The location determines supervision, noise, and the use of indoor
     and outdoor areas.
-uses:
-- pragmaticbim:use/bildung
+use: pragmaticbim:use/bildung
 tags:
 - pause
 status: active

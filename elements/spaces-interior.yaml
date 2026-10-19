@@ -424,7 +424,7 @@ attributes:
     status: active
     sort_order: 6
   - name: NetPlannedArea
-    pset: Pset_SpaceCommon
+    pset: ePset_SpaceRequirement
     definition:
       de: Bestellte Soll-Nettofläche des Raums.
       fr: Surface nette cible commandée pour le local.
@@ -442,6 +442,63 @@ attributes:
     is_applicability: false
     status: active
     sort_order: 7
+  - name: MinClearHeight
+    pset: ePset_SpaceRequirement
+    definition:
+      de: Geforderte minimale lichte Raumhöhe des Raums.
+      fr: Hauteur libre minimale exigée du local.
+      it: Altezza libera minima richiesta del locale.
+      en: Required minimum clear height of the space.
+    datatype: IfcLengthMeasure
+    unit: m
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+    - pragmaticbim:workflow/bes-room-program-brief
+    - pragmaticbim:workflow/qas-room-program-verification
+    - pragmaticbim:workflow/bes-design-build-procurement
+    - pragmaticbim:workflow/bes-ipd-procurement
+    is_applicability: false
+    status: active
+    sort_order: 8
+  - name: MinClearLength
+    pset: ePset_SpaceRequirement
+    definition:
+      de: Geforderte minimale lichte Raumlänge des Raums.
+      fr: Longueur libre minimale exigée du local.
+      it: Lunghezza libera minima richiesta del locale.
+      en: Required minimum clear length of the space.
+    datatype: IfcLengthMeasure
+    unit: m
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+    - pragmaticbim:workflow/bes-room-program-brief
+    - pragmaticbim:workflow/qas-room-program-verification
+    - pragmaticbim:workflow/bes-design-build-procurement
+    - pragmaticbim:workflow/bes-ipd-procurement
+    is_applicability: false
+    status: active
+    sort_order: 9
+  - name: MinClearWidth
+    pset: ePset_SpaceRequirement
+    definition:
+      de: Geforderte minimale lichte Raumbreite des Raums.
+      fr: Largeur libre minimale exigée du local.
+      it: Larghezza libera minima richiesta del locale.
+      en: Required minimum clear width of the space.
+    datatype: IfcLengthMeasure
+    unit: m
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+    - pragmaticbim:workflow/bes-room-program-brief
+    - pragmaticbim:workflow/qas-room-program-verification
+    - pragmaticbim:workflow/bes-design-build-procurement
+    - pragmaticbim:workflow/bes-ipd-procurement
+    is_applicability: false
+    status: active
+    sort_order: 10
   - name: SignageRoomNumber
     pset: ePset_Space
     definition:
@@ -460,7 +517,7 @@ attributes:
       - pragmaticbim:workflow/opr-signage-room-number
     is_applicability: false
     status: active
-    sort_order: 8
+    sort_order: 11
   - name: FloorCovering
     requirement_kind: material
     pset: Pset_SpaceCoveringRequirements
@@ -496,7 +553,7 @@ attributes:
       - pragmaticbim:workflow/des-underfloor-heating-planning
     is_applicability: false
     status: active
-    sort_order: 9
+    sort_order: 12
   - name: TotalHeatLoss
     pset: Pset_SpaceThermalDesign
     definition:
@@ -528,7 +585,7 @@ attributes:
       - pragmaticbim:workflow/des-underfloor-heating-planning
     is_applicability: false
     status: active
-    sort_order: 10
+    sort_order: 13
   - name: DesignAreaLoad
     requirement_kind: performance
     pset: ePset_SpaceRequirement
@@ -551,7 +608,7 @@ attributes:
       pset: ePset_Space
     is_applicability: false
     status: active
-    sort_order: 11
+    sort_order: 14
   - name: DesignPointLoad
     requirement_kind: performance
     pset: ePset_SpaceRequirement
@@ -574,7 +631,7 @@ attributes:
       pset: ePset_Space
     is_applicability: false
     status: active
-    sort_order: 12
+    sort_order: 15
   - name: VibrationRequirements
     requirement_kind: performance
     pset: ePset_SpaceRequirement
@@ -646,7 +703,7 @@ attributes:
       pset: ePset_Space
     is_applicability: false
     status: active
-    sort_order: 13
+    sort_order: 16
   - name: DesignAreaLoadActual
     pset: ePset_Space
     definition:
@@ -662,7 +719,7 @@ attributes:
       - pragmaticbim:workflow/qas-usage-agreement-verification
     is_applicability: false
     status: active
-    sort_order: 14
+    sort_order: 17
   - name: DesignPointLoadActual
     pset: ePset_Space
     definition:
@@ -678,7 +735,7 @@ attributes:
       - pragmaticbim:workflow/qas-usage-agreement-verification
     is_applicability: false
     status: active
-    sort_order: 15
+    sort_order: 18
   - name: VibrationRequirementsActual
     pset: ePset_Space
     definition:
@@ -742,7 +799,7 @@ attributes:
       - pragmaticbim:workflow/qas-usage-agreement-verification
     is_applicability: false
     status: active
-    sort_order: 16
+    sort_order: 19
   - name: WinterTemperatureMin
     requirement_kind: performance
     pset: ePset_SpaceRequirement
@@ -765,7 +822,7 @@ attributes:
       pset: ePset_Space
     is_applicability: false
     status: active
-    sort_order: 17
+    sort_order: 20
   - name: WinterTemperatureMax
     requirement_kind: performance
     pset: ePset_SpaceRequirement
@@ -788,7 +845,7 @@ attributes:
       pset: ePset_Space
     is_applicability: false
     status: active
-    sort_order: 18
+    sort_order: 21
   - name: SummerTemperatureMin
     requirement_kind: performance
     pset: ePset_SpaceRequirement
@@ -811,7 +868,7 @@ attributes:
       pset: ePset_Space
     is_applicability: false
     status: active
-    sort_order: 19
+    sort_order: 22
   - name: SummerTemperatureMax
     requirement_kind: performance
     pset: ePset_SpaceRequirement
@@ -834,7 +891,7 @@ attributes:
       pset: ePset_Space
     is_applicability: false
     status: active
-    sort_order: 20
+    sort_order: 23
   - name: RelativeHumidityMin
     requirement_kind: performance
     pset: ePset_SpaceRequirement
@@ -857,7 +914,7 @@ attributes:
       pset: ePset_Space
     is_applicability: false
     status: active
-    sort_order: 21
+    sort_order: 24
   - name: RelativeHumidityMax
     requirement_kind: performance
     pset: ePset_SpaceRequirement
@@ -880,7 +937,7 @@ attributes:
       pset: ePset_Space
     is_applicability: false
     status: active
-    sort_order: 22
+    sort_order: 25
   - name: OutdoorAirFlowRate
     requirement_kind: performance
     pset: ePset_SpaceRequirement
@@ -903,7 +960,7 @@ attributes:
       pset: ePset_Space
     is_applicability: false
     status: active
-    sort_order: 23
+    sort_order: 26
   - name: PeakOccupancy
     requirement_kind: performance
     pset: ePset_SpaceRequirement
@@ -926,7 +983,7 @@ attributes:
       pset: ePset_Space
     is_applicability: false
     status: active
-    sort_order: 24
+    sort_order: 27
   - name: DailyOperatingHours
     requirement_kind: performance
     pset: ePset_SpaceRequirement
@@ -949,7 +1006,7 @@ attributes:
       pset: ePset_Space
     is_applicability: false
     status: active
-    sort_order: 25
+    sort_order: 28
   - name: RequiredIlluminance
     requirement_kind: performance
     pset: ePset_SpaceRequirement
@@ -972,7 +1029,7 @@ attributes:
       pset: ePset_Space
     is_applicability: false
     status: active
-    sort_order: 26
+    sort_order: 29
   - name: WinterTemperatureMinActual
     pset: ePset_Space
     definition:
@@ -988,7 +1045,7 @@ attributes:
       - pragmaticbim:workflow/qas-usage-agreement-verification
     is_applicability: false
     status: active
-    sort_order: 27
+    sort_order: 30
   - name: WinterTemperatureMaxActual
     pset: ePset_Space
     definition:
@@ -1004,7 +1061,7 @@ attributes:
       - pragmaticbim:workflow/qas-usage-agreement-verification
     is_applicability: false
     status: active
-    sort_order: 28
+    sort_order: 31
   - name: SummerTemperatureMinActual
     pset: ePset_Space
     definition:
@@ -1020,7 +1077,7 @@ attributes:
       - pragmaticbim:workflow/qas-usage-agreement-verification
     is_applicability: false
     status: active
-    sort_order: 29
+    sort_order: 32
   - name: SummerTemperatureMaxActual
     pset: ePset_Space
     definition:
@@ -1036,7 +1093,7 @@ attributes:
       - pragmaticbim:workflow/qas-usage-agreement-verification
     is_applicability: false
     status: active
-    sort_order: 30
+    sort_order: 33
   - name: RelativeHumidityMinActual
     pset: ePset_Space
     definition:
@@ -1052,7 +1109,7 @@ attributes:
       - pragmaticbim:workflow/qas-usage-agreement-verification
     is_applicability: false
     status: active
-    sort_order: 31
+    sort_order: 34
   - name: RelativeHumidityMaxActual
     pset: ePset_Space
     definition:
@@ -1068,7 +1125,7 @@ attributes:
       - pragmaticbim:workflow/qas-usage-agreement-verification
     is_applicability: false
     status: active
-    sort_order: 32
+    sort_order: 35
   - name: OutdoorAirFlowRateActual
     pset: ePset_Space
     definition:
@@ -1084,7 +1141,7 @@ attributes:
       - pragmaticbim:workflow/qas-usage-agreement-verification
     is_applicability: false
     status: active
-    sort_order: 33
+    sort_order: 36
   - name: PeakOccupancyActual
     pset: ePset_Space
     definition:
@@ -1100,7 +1157,7 @@ attributes:
       - pragmaticbim:workflow/qas-usage-agreement-verification
     is_applicability: false
     status: active
-    sort_order: 34
+    sort_order: 37
   - name: DailyOperatingHoursActual
     pset: ePset_Space
     definition:
@@ -1116,7 +1173,7 @@ attributes:
       - pragmaticbim:workflow/qas-usage-agreement-verification
     is_applicability: false
     status: active
-    sort_order: 35
+    sort_order: 38
   - name: RequiredIlluminanceActual
     pset: ePset_Space
     definition:
@@ -1132,7 +1189,7 @@ attributes:
       - pragmaticbim:workflow/qas-usage-agreement-verification
     is_applicability: false
     status: active
-    sort_order: 36
+    sort_order: 39
   - name: Checkliste
     pset: ePset_Space
     definition:
@@ -1147,7 +1204,7 @@ attributes:
       - pragmaticbim:workflow/con-logistics-fit-out
     is_applicability: false
     status: active
-    sort_order: 37
+    sort_order: 40
   - name: UsageUnitReference
     pset: ePset_Space
     definition:
@@ -1182,7 +1239,7 @@ attributes:
     - pragmaticbim:workflow/bes-ipd-procurement
     is_applicability: false
     status: active
-    sort_order: 38
+    sort_order: 41
   - name: FireCompartmentReference
     pset: ePset_Space
     definition:
@@ -1198,7 +1255,7 @@ attributes:
       - pragmaticbim:workflow/des-wall-requirements-from-space-use
     is_applicability: false
     status: active
-    sort_order: 39
+    sort_order: 42
   - name: SecurityZoneReference
     pset: ePset_Space
     definition:
@@ -1214,7 +1271,7 @@ attributes:
       - pragmaticbim:workflow/qas-building-security-verification
     is_applicability: false
     status: active
-    sort_order: 40
+    sort_order: 43
   - name: SecurityLevel
     requirement_kind: performance
     pset: ePset_Space
@@ -1259,7 +1316,7 @@ attributes:
       - pragmaticbim:workflow/qas-building-security-verification
     is_applicability: false
     status: active
-    sort_order: 41
+    sort_order: 44
   - name: ProtectionGoal
     pset: ePset_Space
     definition:
@@ -1303,7 +1360,7 @@ attributes:
       - pragmaticbim:workflow/qas-building-security-verification
     is_applicability: false
     status: active
-    sort_order: 42
+    sort_order: 45
   - name: NetFloorArea
     pset: Qto_SpaceBaseQuantities
     definition:
@@ -1335,7 +1392,7 @@ attributes:
       - pragmaticbim:workflow/des-building-permit
     is_applicability: false
     status: active
-    sort_order: 43
+    sort_order: 46
   - name: NetPerimeter
     pset: Qto_SpaceBaseQuantities
     definition:
@@ -1351,7 +1408,7 @@ attributes:
       - pragmaticbim:workflow/bes-flooring-tender-basis
     is_applicability: false
     status: active
-    sort_order: 44
+    sort_order: 47
   - name: NetVolume
     pset: Qto_SpaceBaseQuantities
     definition:
@@ -1367,7 +1424,7 @@ attributes:
       - pragmaticbim:workflow/des-construction-volume
     is_applicability: false
     status: active
-    sort_order: 45
+    sort_order: 48
   - name: Height
     pset: Qto_SpaceBaseQuantities
     definition:
@@ -1385,7 +1442,7 @@ attributes:
       - pragmaticbim:workflow/hov-cobie-data-delivery
     is_applicability: false
     status: active
-    sort_order: 46
+    sort_order: 49
   - name: FinishCeilingHeight
     pset: Qto_SpaceBaseQuantities
     definition:
@@ -1418,7 +1475,7 @@ attributes:
       - pragmaticbim:workflow/des-lighting-design-coordination
     is_applicability: false
     status: active
-    sort_order: 47
+    sort_order: 50
   - name: CeilingCovering
     requirement_kind: material
     pset: Pset_SpaceCoveringRequirements
@@ -1451,7 +1508,7 @@ attributes:
       - pragmaticbim:workflow/des-ceiling-mirror-planning
     is_applicability: false
     status: active
-    sort_order: 48
+    sort_order: 51
   - name: WallCovering
     requirement_kind: material
     pset: Pset_SpaceCoveringRequirements
@@ -1485,7 +1542,7 @@ attributes:
       - pragmaticbim:workflow/bes-painting-tender-basis
     is_applicability: false
     status: active
-    sort_order: 49
+    sort_order: 52
   - name: GrossWallArea
     pset: Qto_SpaceBaseQuantities
     definition:
@@ -1501,7 +1558,7 @@ attributes:
       - pragmaticbim:workflow/bes-painting-tender-basis
     is_applicability: false
     status: active
-    sort_order: 50
+    sort_order: 53
   - name: NetWallArea
     pset: Qto_SpaceBaseQuantities
     definition:
@@ -1518,7 +1575,7 @@ attributes:
       - pragmaticbim:workflow/bes-painting-tender-basis
     is_applicability: false
     status: active
-    sort_order: 51
+    sort_order: 54
   - name: HandicapAccessible
     requirement_kind: performance
     pset: Pset_SpaceCommon
@@ -1555,4 +1612,4 @@ attributes:
       - pragmaticbim:workflow/qas-accessibility-sia500-verification
     is_applicability: false
     status: active
-    sort_order: 52
+    sort_order: 55

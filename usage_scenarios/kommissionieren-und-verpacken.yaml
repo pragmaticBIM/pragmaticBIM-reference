@@ -15,8 +15,7 @@ description:
     postazioni e superfici di transito.
   en: Orders are picked and made ready for shipping. Picking determines routes, workstations, and buffer
     areas.
-uses:
-- pragmaticbim:use/logistik
+use: pragmaticbim:use/logistik
 tags:
 - versand
 status: active

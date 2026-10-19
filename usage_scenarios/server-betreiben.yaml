@@ -15,8 +15,7 @@ description:
     ed espandibilità.
   en: IT systems run around the clock. The arrangement of IT rooms determines availability, loads, and
     expandability.
-uses:
-- pragmaticbim:use/rechenzentrum
+use: pragmaticbim:use/rechenzentrum
 tags:
 - it
 status: active

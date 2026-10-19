@@ -15,8 +15,7 @@ description:
     tra produzione e spazio ospiti.
   en: Staff prepare and serve drinks. The service point determines travel and separation between production
     and guest areas.
-uses:
-- pragmaticbim:use/gastronomie
+use: pragmaticbim:use/gastronomie
 tags:
 - ausgabe
 status: active

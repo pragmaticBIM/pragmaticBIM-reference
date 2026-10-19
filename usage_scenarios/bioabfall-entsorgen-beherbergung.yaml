@@ -16,8 +16,7 @@ description:
     dagli altri rifiuti. Il punto di raccolta determina odori, raffreddamento e ritmo di ritiro.
   en: Guests and the operation take food and green waste away during the stay, separately from other
     waste. The collection point determines odour, cooling, and how often it is collected.
-uses:
-- pragmaticbim:use/beherbergung
+use: pragmaticbim:use/beherbergung
 tags:
 - entsorgung
 status: active

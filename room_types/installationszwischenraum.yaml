@@ -40,7 +40,7 @@ configurations:
     value: FF
   - element: pragmaticbim:element/spaces-interior
     name: NetPlannedArea
-    pset: Pset_SpaceCommon
+    pset: ePset_SpaceRequirement
     value: 10
   - element: pragmaticbim:element/spaces-interior
     name: FloorCovering

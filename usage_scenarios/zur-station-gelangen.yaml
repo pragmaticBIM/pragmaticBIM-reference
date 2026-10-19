@@ -18,8 +18,7 @@ description:
     percorsi.
   en: Patients are moved in beds between ward, diagnostics, and surgery while visitors and supplies use
     the same floors. The access arrangement determines bed transport, hygiene, and separation of routes.
-uses:
-- pragmaticbim:use/gesundheit
+use: pragmaticbim:use/gesundheit
 tags:
 - erschliessung
 status: active

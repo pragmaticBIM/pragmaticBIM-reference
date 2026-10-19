@@ -15,8 +15,7 @@ description:
     determina rumore, emissioni e percorsi nella zona uffici.
   en: Staff print, copy, and fetch office supplies several times a day. A dedicated room determines noise,
     emissions, and routes within the office zone.
-uses:
-- pragmaticbim:use/arbeit
+use: pragmaticbim:use/arbeit
 tags:
 - buero
 status: active

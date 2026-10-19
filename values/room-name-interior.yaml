@@ -40,6 +40,7 @@ values:
   - Pausenraum
   - Gemeinschaftsbüro
   - Kopierraum
+  - Telefonkabine
   - Empfang
   - Flur
   - Eingangshalle
@@ -168,6 +169,7 @@ values:
   - Salle de pause
   - Bureau communautaire
   - Local de reprographie
+  - Cabine téléphonique
   - Réception
   - Couloir commun
   - Hall d'entrée
@@ -296,6 +298,7 @@ values:
   - Sala pausa
   - Ufficio comunitario
   - Locale fotocopie
+  - Cabina telefonica
   - Ricezione
   - Corridoio comune
   - Atrio
@@ -424,6 +427,7 @@ values:
   - Break Room
   - Community Office
   - Copy Room
+  - Phone Booth
   - Reception
   - Corridor
   - Lobby

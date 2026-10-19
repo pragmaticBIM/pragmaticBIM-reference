@@ -16,8 +16,7 @@ description:
     separate determinano superficie, ventilazione e percorsi verso il punto di raccolta.
   en: The operation and the guests regularly take packaging and residual waste away. The separated
     fractions determine area, ventilation, and routes to the collection point.
-uses:
-- pragmaticbim:use/gastronomie
+use: pragmaticbim:use/gastronomie
 tags:
 - entsorgung
 status: active

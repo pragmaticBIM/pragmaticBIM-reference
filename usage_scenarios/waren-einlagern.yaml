@@ -14,8 +14,7 @@ description:
     e protezione antincendio.
   en: Goods stay in stock for days to months. The storage type determines room height, temperature, and
     fire protection.
-uses:
-- pragmaticbim:use/logistik
+use: pragmaticbim:use/logistik
 tags:
 - lagerung
 status: active

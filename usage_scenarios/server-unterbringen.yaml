@@ -15,8 +15,7 @@ description:
     tecnica, raffreddamento e disponibilità.
   en: The organisation runs its own servers and network equipment. The location of IT determines plant
     area, cooling, and availability.
-uses:
-- pragmaticbim:use/arbeit
+use: pragmaticbim:use/arbeit
 tags:
 - it
 status: active

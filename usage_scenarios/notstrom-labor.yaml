@@ -17,8 +17,7 @@ description:
   en: Experiments, refrigerated samples, and fume cupboards have to keep running during a power cut. Emergency
     power determines whether a dedicated generator is needed, and with it the plant area and the fire
     compartment.
-uses:
-- pragmaticbim:use/labor
+use: pragmaticbim:use/labor
 tags:
 - energie
 status: active

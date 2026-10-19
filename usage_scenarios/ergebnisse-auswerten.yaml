@@ -15,8 +15,7 @@ description:
     separate determinano superficie di laboratorio, sicurezza e scambio nel team.
   en: Researchers analyse data and write reports outside the lab. Separate write-up spaces determine lab
     area, safety, and team exchange.
-uses:
-- pragmaticbim:use/labor
+use: pragmaticbim:use/labor
 tags:
 - auswertung
 status: active

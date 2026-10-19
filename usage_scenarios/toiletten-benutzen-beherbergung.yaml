@@ -16,8 +16,7 @@ description:
     anche in sedia a rotelle. La suddivisione determina numero, superficie e flessibilità d'uso.
   en: Guests and visitors in the public areas need toilets during their stay, including wheelchair users.
     The split determines number, area, and how flexibly the toilets can be used.
-uses:
-- pragmaticbim:use/beherbergung
+use: pragmaticbim:use/beherbergung
 tags:
 - sanitaer
 status: active

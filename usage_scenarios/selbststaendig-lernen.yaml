@@ -15,8 +15,7 @@ description:
     sorveglianza e accessibilità.
   en: Learners work alone or in small groups outside lessons. The location determines quiet, supervision,
     and accessibility.
-uses:
-- pragmaticbim:use/bildung
+use: pragmaticbim:use/bildung
 tags:
 - lernen
 status: active

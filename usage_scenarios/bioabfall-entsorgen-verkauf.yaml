@@ -17,8 +17,7 @@ description:
     ritiro.
   en: Staff and customers take food and green waste away during opening hours, separately from other
     waste. The collection point determines odour, cooling, and how often it is collected.
-uses:
-- pragmaticbim:use/verkauf
+use: pragmaticbim:use/verkauf
 tags:
 - entsorgung
 status: active

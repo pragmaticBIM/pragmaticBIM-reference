@@ -15,8 +15,7 @@ description:
     accessi, carichi di trasporto e zone di sicurezza.
   en: Staff and hardware reach the IT rooms under control. The access arrangement determines access control,
     transport loads, and security zones.
-uses:
-- pragmaticbim:use/rechenzentrum
+use: pragmaticbim:use/rechenzentrum
 tags:
 - erschliessung
 status: active

@@ -15,8 +15,7 @@ description:
     e percorsi verso la produzione.
   en: Raw materials and semi-finished goods arrive by truck. Delivery determines yard area, stock levels,
     and routes to production.
-uses:
-- pragmaticbim:use/produktion
+use: pragmaticbim:use/produktion
 tags:
 - logistik
 status: active

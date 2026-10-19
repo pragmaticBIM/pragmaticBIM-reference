@@ -15,8 +15,7 @@ description:
     delle merci e fabbisogno di personale.
   en: Customers browse goods, choose, and pay. The retail concept determines area, product display, and
     staffing.
-uses:
-- pragmaticbim:use/verkauf
+use: pragmaticbim:use/verkauf
 tags:
 - sortiment
 status: active

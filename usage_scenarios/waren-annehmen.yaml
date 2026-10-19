@@ -15,8 +15,7 @@ description:
     determinano tempi di attesa e traffico nel piazzale.
   en: Trucks deliver goods in fixed time slots. The number of doors and the receiving area determine waiting
     times and yard traffic.
-uses:
-- pragmaticbim:use/logistik
+use: pragmaticbim:use/logistik
 tags:
 - wareneingang
 status: active

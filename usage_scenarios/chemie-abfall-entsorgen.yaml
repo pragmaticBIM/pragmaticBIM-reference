@@ -15,8 +15,7 @@ description:
     tipo determina ventilazione, schermatura e percorso fuori dall'edificio.
   en: Researchers take hazardous laboratory waste away separately from other waste. The kind determines
     ventilation, shielding, and the route out of the building.
-uses:
-- pragmaticbim:use/labor
+use: pragmaticbim:use/labor
 tags:
 - entsorgung
 status: active

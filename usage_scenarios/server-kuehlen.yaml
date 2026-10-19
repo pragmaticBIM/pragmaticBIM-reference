@@ -15,8 +15,7 @@ description:
     recupero del calore e superficie tecnica.
   en: Servers give off heat continuously. The cooling concept determines cooling capacity, waste-heat
     use, and plant area.
-uses:
-- pragmaticbim:use/rechenzentrum
+use: pragmaticbim:use/rechenzentrum
 tags:
 - kuehlung
 status: active

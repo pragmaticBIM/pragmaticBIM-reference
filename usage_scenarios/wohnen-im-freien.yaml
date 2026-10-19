@@ -15,8 +15,7 @@ description:
     accanto al soggiorno decide l'uscita diretta all'aperto.
   en: Residents spend time outdoors without leaving home. A private outdoor space
     by the living room decides direct access to the outside.
-uses:
-- pragmaticbim:use/wohnen
+use: pragmaticbim:use/wohnen
 tags:
 - aussenraum
 status: active

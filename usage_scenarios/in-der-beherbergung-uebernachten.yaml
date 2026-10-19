@@ -15,8 +15,7 @@ description:
     riservatezza, dotazioni e superficie.
   en: Guests sleep and stay temporarily in the accommodation. The room concept determines privacy, equipment,
     and area.
-uses:
-- pragmaticbim:use/beherbergung
+use: pragmaticbim:use/beherbergung
 tags:
 - aufenthalt
 status: active

@@ -15,8 +15,7 @@ description:
     protezione dalle vibrazioni e vicinanza alla produzione.
   en: Parts and products are checked before delivery. The test environment determines indoor climate,
     vibration protection, and proximity to production.
-uses:
-- pragmaticbim:use/produktion
+use: pragmaticbim:use/produktion
 tags:
 - qualitaet
 status: active

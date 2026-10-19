@@ -15,8 +15,7 @@ description:
     percorsi, assenza di ostacoli e fabbisogno di superficie.
   en: Staff and visitors travel from the entrance to workplaces on every floor. The access arrangement
     determines routes, step-free access, and area demand.
-uses:
-- pragmaticbim:use/arbeit
+use: pragmaticbim:use/arbeit
 tags:
 - erschliessung
 status: active

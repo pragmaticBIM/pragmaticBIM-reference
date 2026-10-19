@@ -15,8 +15,7 @@ description:
     magazzino. L'accesso determina assenza di ostacoli e separazione dei percorsi clienti e merci.
   en: Customers reach the sales floor with bags or trolleys, and stock must reach the store room. The
     access arrangement determines step-free access and separation of customer and goods routes.
-uses:
-- pragmaticbim:use/verkauf
+use: pragmaticbim:use/verkauf
 tags:
 - erschliessung
 status: active

@@ -15,8 +15,7 @@ description:
     determina tempi di montaggio, percorsi dietro le quinte e superfici del piazzale.
   en: Technical equipment, set construction, and catering are delivered before each event and collected
     afterwards. Delivery determines set-up time, backstage routes, and yard area.
-uses:
-- pragmaticbim:use/versammlung
+use: pragmaticbim:use/versammlung
 tags:
 - logistik
 status: active

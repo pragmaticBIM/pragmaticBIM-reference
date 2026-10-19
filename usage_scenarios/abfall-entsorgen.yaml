@@ -15,8 +15,7 @@ description:
     il percorso.
   en: Residents take out their waste regularly. The collection point decides the walking
     distance.
-uses:
-- pragmaticbim:use/wohnen
+use: pragmaticbim:use/wohnen
 tags:
 - haushalt
 status: active

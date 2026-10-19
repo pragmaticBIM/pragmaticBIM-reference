@@ -5,6 +5,10 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 COMPARISON_WORKFLOW = "pragmaticbim:workflow/qas-usage-agreement-verification"
+ROOM_PROGRAM_WORKFLOW = "pragmaticbim:workflow/bes-room-program-brief"
+
+# Room-programme sizes: ordered in the room programme, not the usage agreement.
+SIZE = {"NetPlannedArea", "MinClearHeight", "MinClearLength", "MinClearWidth"}
 
 STRUCTURAL = {"DesignAreaLoad", "DesignPointLoad", "VibrationRequirements"}
 MEP = {
@@ -55,16 +59,24 @@ def test_mep_usage_agreement_has_matching_requirement_and_actual_sets() -> None:
 
 def test_comparison_workflow_uses_every_requirement_and_actual_value() -> None:
     for element in ("spaces-interior", "spaces-exterior"):
-        requirement_names = _names_by_pset(element, "ePset_SpaceRequirement")
+        requirement_names = _names_by_pset(element, "ePset_SpaceRequirement") - SIZE
         actual_names = {_actual_name(name) for name in requirement_names}
         for attribute in _attributes(element):
-            if attribute.get("pset") == "ePset_SpaceRequirement":
+            if attribute.get("pset") == "ePset_SpaceRequirement" and attribute["name"] not in SIZE:
                 assert COMPARISON_WORKFLOW in attribute["needed_for_workflows"]
             if (
                 attribute.get("pset") == "ePset_Space"
                 and attribute["name"] in actual_names
             ):
                 assert COMPARISON_WORKFLOW in attribute["needed_for_workflows"]
+
+
+def test_room_sizes_are_requirements_of_the_room_programme() -> None:
+    for element in ("spaces-interior", "spaces-exterior"):
+        assert SIZE <= _names_by_pset(element, "ePset_SpaceRequirement")
+        for attribute in _attributes(element):
+            if attribute["name"] in SIZE:
+                assert ROOM_PROGRAM_WORKFLOW in attribute["needed_for_workflows"]
 
 
 def test_structural_visualization_no_longer_aligns_the_usage_agreement() -> None:

@@ -40,7 +40,7 @@ configurations:
     value: ANF
   - element: pragmaticbim:element/spaces-exterior
     name: NetPlannedArea
-    pset: Pset_SpaceCommon
+    pset: ePset_SpaceRequirement
     value: 30
   - element: pragmaticbim:element/spaces-exterior
     name: FloorCovering
@@ -65,11 +65,4 @@ configurations:
     name: DesignPointLoad
     pset: ePset_SpaceRequirement
     value: 4.0
-  - element: pragmaticbim:element/spaces-exterior
-    name: SecurityLevel
-    value:
-      de: Intern
-      fr: Interne
-      it: Interno
-      en: Internal
   status: active

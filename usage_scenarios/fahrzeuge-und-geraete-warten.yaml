@@ -15,8 +15,7 @@ description:
     manutenzione proprie determinano tempi di fermo e fabbisogno di officina.
   en: Forklifts and delivery vehicles are charged, serviced, and repaired. Dedicated maintenance areas
     determine downtime and workshop needs.
-uses:
-- pragmaticbim:use/logistik
+use: pragmaticbim:use/logistik
 tags:
 - betrieb
 status: active

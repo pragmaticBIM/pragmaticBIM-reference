@@ -15,8 +15,7 @@ description:
     I locali del personale determinano riposo, igiene e superfici accessorie.
   en: Retail staff work in shifts and need breaks and changing away from customers. Staff rooms determine
     rest, hygiene, and ancillary area.
-uses:
-- pragmaticbim:use/verkauf
+use: pragmaticbim:use/verkauf
 tags:
 - personal
 status: active
