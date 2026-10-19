@@ -44,6 +44,10 @@ configurations:
     pset: Pset_SpaceCommon
     value: ANF
   - element: pragmaticbim:element/spaces-exterior
+    name: NetPlannedArea
+    pset: Pset_SpaceCommon
+    value: 4
+  - element: pragmaticbim:element/spaces-exterior
     name: FloorCovering
     pset: Pset_SpaceCoveringRequirements
     value:
@@ -103,6 +107,10 @@ configurations:
     pset: Pset_SpaceCommon
     value: ANF
   - element: pragmaticbim:element/spaces-exterior
+    name: NetPlannedArea
+    pset: Pset_SpaceCommon
+    value: 8
+  - element: pragmaticbim:element/spaces-exterior
     name: FloorCovering
     pset: Pset_SpaceCoveringRequirements
     value:
@@ -161,6 +169,10 @@ configurations:
     name: Reference
     pset: Pset_SpaceCommon
     value: ANF
+  - element: pragmaticbim:element/spaces-exterior
+    name: NetPlannedArea
+    pset: Pset_SpaceCommon
+    value: 12
   - element: pragmaticbim:element/spaces-exterior
     name: FloorCovering
     pset: Pset_SpaceCoveringRequirements

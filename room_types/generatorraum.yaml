@@ -39,6 +39,10 @@ configurations:
     pset: Pset_SpaceCommon
     value: FF
   - element: pragmaticbim:element/spaces-interior
+    name: NetPlannedArea
+    pset: Pset_SpaceCommon
+    value: 30
+  - element: pragmaticbim:element/spaces-interior
     name: FloorCovering
     pset: Pset_SpaceCoveringRequirements
     value: Beton

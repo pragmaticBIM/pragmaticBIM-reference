@@ -40,6 +40,11 @@ values:
   - Parkplatz LKW Aussen
   - Parkplatz Velo Aussen
   - Parkplatz Motorrad Aussen
+  - Überdachter Hof
+  - Gartenhaus
+  - Perron
+  - Laderampe
+  - Tribüne
   fr:
   - Balcon
   - Terrasse
@@ -66,6 +71,11 @@ values:
   - Place camion extérieure
   - Place vélo extérieure
   - Place moto extérieure
+  - Cour couverte
+  - Abri de jardin
+  - Quai
+  - Quai de chargement
+  - Tribune
   it:
   - Balcone
   - Terrazza
@@ -92,6 +102,11 @@ values:
   - Posto camion esterno
   - Posto bici esterno
   - Posto moto esterno
+  - Cortile coperto
+  - Casetta da giardino
+  - Marciapiede
+  - Banchina di carico
+  - Tribuna
   en:
   - Balcony
   - Terrace
@@ -118,3 +133,8 @@ values:
   - Exterior Truck Parking
   - Exterior Bicycle Parking
   - Exterior Motorcycle Parking
+  - Covered Yard
+  - Garden Shed
+  - Platform
+  - Loading Dock
+  - Spectator Stand

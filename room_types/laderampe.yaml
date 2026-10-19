@@ -20,73 +20,56 @@ configurations:
 - id: pragmaticbim:room-type-configuration/laderampe-default
   sort_order: 1
   attribute_presets:
-  - element: pragmaticbim:element/spaces-interior
+  - element: pragmaticbim:element/spaces-exterior
     name: PredefinedType
     value: SPACE
-  - element: pragmaticbim:element/spaces-interior
+  - element: pragmaticbim:element/spaces-exterior
     name: IsExternal
     pset: Pset_SpaceCommon
-    value: false
-  - element: pragmaticbim:element/spaces-interior
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
     name: LongName
     value:
       de: Laderampe
       fr: Quai de chargement
       it: Banchina di carico
       en: Loading Dock
-  - element: pragmaticbim:element/spaces-interior
+  - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon
-    value: NNF
-  - element: pragmaticbim:element/spaces-interior
+    value: ANF
+  - element: pragmaticbim:element/spaces-exterior
+    name: NetPlannedArea
+    pset: Pset_SpaceCommon
+    value: 30
+  - element: pragmaticbim:element/spaces-exterior
     name: FloorCovering
     pset: Pset_SpaceCoveringRequirements
-    value: Beton
-  - element: pragmaticbim:element/spaces-interior
-    name: WallCovering
-    pset: Pset_SpaceCoveringRequirements
-    value: Beton roh
-  - element: pragmaticbim:element/spaces-interior
-    name: CeilingCovering
-    pset: Pset_SpaceCoveringRequirements
     value:
-      de: Metallpaneel-Decke
-      fr: Metal panel ceiling
-      it: Metal panel ceiling
-      en: Metal panel ceiling
-  - element: pragmaticbim:element/spaces-interior
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
     name: VibrationRequirements
     pset: ePset_SpaceRequirement
     value: ISO Workshop
-  - element: pragmaticbim:element/spaces-interior
+  - element: pragmaticbim:element/spaces-exterior
     name: InteriorOrExteriorSpace
-    value: INTERNAL
-  - element: pragmaticbim:element/spaces-interior
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
     name: DesignAreaLoad
     pset: ePset_SpaceRequirement
     value: 5.0
-  - element: pragmaticbim:element/spaces-interior
+  - element: pragmaticbim:element/spaces-exterior
     name: DesignPointLoad
     pset: ePset_SpaceRequirement
     value: 4.0
-  - element: pragmaticbim:element/spaces-interior
+  - element: pragmaticbim:element/spaces-exterior
     name: SecurityLevel
-    pset: ePset_Space
     value:
       de: Intern
       fr: Interne
       it: Interno
       en: Internal
-  - element: pragmaticbim:element/spaces-interior
-    name: PeakOccupancy
-    pset: ePset_SpaceRequirement
-    value: 2
-  - element: pragmaticbim:element/spaces-interior
-    name: DailyOperatingHours
-    pset: ePset_SpaceRequirement
-    value: 4
-  - element: pragmaticbim:element/spaces-interior
-    name: OutdoorAirFlowRate
-    pset: ePset_SpaceRequirement
-    value: 60
   status: active

@@ -50,7 +50,6 @@ values:
   - Rampe
   - Warenaufzug
   - Bettenaufzug
-  - Perron
   - Schalterhalle
   - Herren-WC
   - Damen-WC
@@ -93,7 +92,6 @@ values:
   - Abholstation
   - Hotelzimmer
   - Bühne
-  - Tribüne
   - Garderobe
   - Sporthalle
   - Werkstatt
@@ -102,10 +100,8 @@ values:
   - Verpackungsbereich
   - Reinraum
   - Lagerhalle
-  - Laderampe
   - Qualitätskontrollraum
   - Wartungsbucht
-  - Überdachter Hof
   - HLK-Zentralraum
   - Pumpenraum
   - Heizungsraum
@@ -129,7 +125,6 @@ values:
   - Annahmelager
   - Hauswarteschrank
   - Kinderwagenraum
-  - Gartenhaus
   - Archivraum
   - Postraum
   - Kühlraum
@@ -183,7 +178,6 @@ values:
   - Rampe
   - Monte-charge
   - Ascenseur pour lits
-  - Quai
   - Hall des guichets
   - WC hommes
   - WC femmes
@@ -226,7 +220,6 @@ values:
   - Point de retrait
   - Chambre d'hôtel
   - Scène
-  - Tribune
   - Vestiaire
   - Salle de sport
   - Atelier
@@ -235,10 +228,8 @@ values:
   - Zone d'emballage
   - Salle blanche
   - Halle de stockage
-  - Quai de chargement
   - Local de contrôle qualité
   - Poste d'entretien
-  - Cour couverte
   - Centrale CVC
   - Local des pompes
   - Chaufferie
@@ -262,7 +253,6 @@ values:
   - Dépôt de réception
   - Placard de conciergerie
   - Local à poussettes
-  - Abri de jardin
   - Archives
   - Local courrier
   - Chambre froide
@@ -316,7 +306,6 @@ values:
   - Rampa
   - Montacarichi
   - Montalettighe
-  - Marciapiede
   - Atrio biglietteria
   - WC uomini
   - WC donne
@@ -359,7 +348,6 @@ values:
   - Punto di ritiro
   - Camera d'albergo
   - Palco
-  - Tribuna
   - Guardaroba
   - Palestra
   - Officina
@@ -368,10 +356,8 @@ values:
   - Zona di imballaggio
   - Camera bianca
   - Magazzino
-  - Banchina di carico
   - Locale controllo qualità
   - Postazione di manutenzione
-  - Cortile coperto
   - Centrale CVC
   - Locale pompe
   - Centrale termica
@@ -395,7 +381,6 @@ values:
   - Deposito di ricezione
   - Armadio del custode
   - Locale passeggini
-  - Casetta da giardino
   - Archivio
   - Locale posta
   - Cella frigorifera
@@ -449,7 +434,6 @@ values:
   - Ramp
   - Service Lift
   - Bed Lift
-  - Platform
   - Ticket Hall
   - Male Toilet
   - Female Toilet
@@ -492,7 +476,6 @@ values:
   - Pickup Point
   - Hotel Room
   - Stage
-  - Spectator Stand
   - Cloakroom
   - Sports Hall
   - Workshop
@@ -501,10 +484,8 @@ values:
   - Packaging Area
   - Clean Room
   - Warehouse
-  - Loading Dock
   - Quality Control Room
   - Maintenance Bay
-  - Covered Yard
   - HVAC Plant Room
   - Pump Room
   - Boiler Room
@@ -528,7 +509,6 @@ values:
   - Unloading Storage
   - Janitor Closet
   - Stroller Room
-  - Garden Shed
   - Archive Room
   - Mail Room
   - Cold Storage

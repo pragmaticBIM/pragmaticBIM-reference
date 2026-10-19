@@ -7,10 +7,10 @@ name:
   it: Cortile coperto
   en: Covered Yard
 definition:
-  de: Überdachter Aussenarbeits- oder Lagerhof als Raum modelliert.
-  fr: Cour de travail ou de stockage couverte, modélisée comme local.
-  it: Corte di lavoro o di deposito coperta, modellata come locale.
-  en: Covered exterior work or storage yard modeled as space.
+  de: Überdachter Aussenarbeits- oder Lagerhof.
+  fr: Cour de travail ou de stockage extérieure couverte.
+  it: Corte di lavoro o di deposito esterna coperta.
+  en: Covered exterior work or storage yard.
 room_type_kind: room
 room_name: RN-08-30-01
 activity: M-WRK-PRD
@@ -20,73 +20,56 @@ configurations:
 - id: pragmaticbim:room-type-configuration/ueberdachter-hof-default
   sort_order: 1
   attribute_presets:
-  - element: pragmaticbim:element/spaces-interior
+  - element: pragmaticbim:element/spaces-exterior
     name: PredefinedType
     value: SPACE
-  - element: pragmaticbim:element/spaces-interior
+  - element: pragmaticbim:element/spaces-exterior
     name: IsExternal
     pset: Pset_SpaceCommon
-    value: false
-  - element: pragmaticbim:element/spaces-interior
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
     name: LongName
     value:
       de: Überdachter Hof
       fr: Cour couverte
       it: Cortile coperto
       en: Covered Yard
-  - element: pragmaticbim:element/spaces-interior
+  - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon
-    value: HNF
-  - element: pragmaticbim:element/spaces-interior
+    value: ANF
+  - element: pragmaticbim:element/spaces-exterior
+    name: NetPlannedArea
+    pset: Pset_SpaceCommon
+    value: 100
+  - element: pragmaticbim:element/spaces-exterior
     name: FloorCovering
     pset: Pset_SpaceCoveringRequirements
-    value: Beton
-  - element: pragmaticbim:element/spaces-interior
-    name: WallCovering
-    pset: Pset_SpaceCoveringRequirements
-    value: Beton roh
-  - element: pragmaticbim:element/spaces-interior
-    name: CeilingCovering
-    pset: Pset_SpaceCoveringRequirements
     value:
-      de: Metallpaneel-Decke
-      fr: Metal panel ceiling
-      it: Metal panel ceiling
-      en: Metal panel ceiling
-  - element: pragmaticbim:element/spaces-interior
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
     name: VibrationRequirements
     pset: ePset_SpaceRequirement
     value: ISO Workshop
-  - element: pragmaticbim:element/spaces-interior
+  - element: pragmaticbim:element/spaces-exterior
     name: InteriorOrExteriorSpace
-    value: INTERNAL
-  - element: pragmaticbim:element/spaces-interior
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
     name: DesignAreaLoad
     pset: ePset_SpaceRequirement
     value: 5.0
-  - element: pragmaticbim:element/spaces-interior
+  - element: pragmaticbim:element/spaces-exterior
     name: DesignPointLoad
     pset: ePset_SpaceRequirement
     value: 4.0
-  - element: pragmaticbim:element/spaces-interior
+  - element: pragmaticbim:element/spaces-exterior
     name: SecurityLevel
-    pset: ePset_Space
     value:
       de: Intern
       fr: Interne
       it: Interno
       en: Internal
-  - element: pragmaticbim:element/spaces-interior
-    name: PeakOccupancy
-    pset: ePset_SpaceRequirement
-    value: 8
-  - element: pragmaticbim:element/spaces-interior
-    name: DailyOperatingHours
-    pset: ePset_SpaceRequirement
-    value: 10
-  - element: pragmaticbim:element/spaces-interior
-    name: OutdoorAirFlowRate
-    pset: ePset_SpaceRequirement
-    value: 240
   status: active

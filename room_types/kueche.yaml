@@ -44,6 +44,10 @@ configurations:
     pset: Pset_SpaceCommon
     value: HNF
   - element: pragmaticbim:element/spaces-interior
+    name: NetPlannedArea
+    pset: Pset_SpaceCommon
+    value: 8
+  - element: pragmaticbim:element/spaces-interior
     name: FloorCovering
     pset: Pset_SpaceCoveringRequirements
     value: Plattenbelag
@@ -145,6 +149,10 @@ configurations:
     name: Reference
     pset: Pset_SpaceCommon
     value: HNF
+  - element: pragmaticbim:element/spaces-interior
+    name: NetPlannedArea
+    pset: Pset_SpaceCommon
+    value: 5
   - element: pragmaticbim:element/spaces-interior
     name: FloorCovering
     pset: Pset_SpaceCoveringRequirements

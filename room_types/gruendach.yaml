@@ -39,6 +39,10 @@ configurations:
     pset: Pset_SpaceCommon
     value: UUF
   - element: pragmaticbim:element/spaces-exterior
+    name: NetPlannedArea
+    pset: Pset_SpaceCommon
+    value: 200
+  - element: pragmaticbim:element/spaces-exterior
     name: FloorCovering
     pset: Pset_SpaceCoveringRequirements
     value:
