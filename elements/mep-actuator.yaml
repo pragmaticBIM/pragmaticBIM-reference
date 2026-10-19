@@ -54,8 +54,10 @@ needed_in_domain:
 entity_ifc2x3: IfcDistributionControlElement
 entity_ifc4: IfcActuator
 entity_ifc4_3: IfcActuator
-picture_link: null
-model_link: null
+picture_link: mep-actuator.png
+attachment_link: mep-actuator.ifc
+picture_print_link: mep-actuator-print.tif
+model_link: mep-actuator.ifc
 applicability: entity_ifc4=IfcActuator
 attributes:
 - name: PredefinedType

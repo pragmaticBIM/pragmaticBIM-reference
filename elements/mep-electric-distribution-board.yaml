@@ -58,8 +58,10 @@ needed_in_domain:
 entity_ifc2x3: IfcElectricDistributionPoint
 entity_ifc4: IfcElectricDistributionBoard
 entity_ifc4_3: IfcElectricDistributionBoard
-picture_link: null
-model_link: null
+picture_link: mep-electric-distribution-board.png
+attachment_link: mep-electric-distribution-board.ifc
+picture_print_link: mep-electric-distribution-board-print.tif
+model_link: mep-electric-distribution-board.ifc
 applicability: entity_ifc4=IfcElectricDistributionBoard
 attributes:
 - name: PredefinedType

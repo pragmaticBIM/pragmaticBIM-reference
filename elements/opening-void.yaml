@@ -57,8 +57,10 @@ needed_in_domain:
 entity_ifc2x3: IfcOpeningElement
 entity_ifc4: IfcOpeningElement
 entity_ifc4_3: IfcOpeningElement
-picture_link: null
-model_link: null
+picture_link: opening-void.png
+attachment_link: opening-void.ifc
+picture_print_link: opening-void-print.tif
+model_link: opening-void.ifc
 applicability: entity_ifc4=IfcOpeningElement OR entity_ifc2x3=IfcOpeningElement
 attributes:
 - name: Name

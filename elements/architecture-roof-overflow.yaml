@@ -77,6 +77,8 @@ attributes:
     datatype: IfcLabel
     needed_in_phases: ['31', '32', '33', '41', '51']
     ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-basic-piping-planning
     is_applicability: false
     status: active
     sort_order: 1
@@ -107,6 +109,8 @@ attributes:
     allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
     needed_in_phases: ['31', '32', '33', '41', '51']
     ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-basic-piping-planning
     is_applicability: true
     status: active
     sort_order: 2
@@ -137,6 +141,8 @@ attributes:
     allowed_values: pragmaticbim:value/objecttype-roof-overflow
     needed_in_phases: ['31', '32', '33', '41', '51']
     ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-basic-piping-planning
     is_applicability: true
     status: active
     sort_order: 3

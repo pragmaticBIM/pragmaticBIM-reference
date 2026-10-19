@@ -53,8 +53,10 @@ needed_in_domain:
 entity_ifc2x3: IfcSlab
 entity_ifc4: IfcSlab
 entity_ifc4_3: IfcSlab
-picture_link: null
-model_link: null
+picture_link: structural-slab-floor.png
+attachment_link: structural-slab-floor.ifc
+picture_print_link: structural-slab-floor-print.tif
+model_link: structural-slab-floor.ifc
 applicability: entity_ifc4=IfcSlab AND PredefinedType=FLOOR
 attributes:
 - name: Name

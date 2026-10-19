@@ -54,8 +54,10 @@ needed_in_domain:
 entity_ifc2x3: IfcEnergyConversionDevice
 entity_ifc4: IfcChiller
 entity_ifc4_3: IfcChiller
-picture_link: null
-model_link: null
+picture_link: mep-chiller.png
+attachment_link: mep-chiller.ifc
+picture_print_link: mep-chiller-print.tif
+model_link: mep-chiller.ifc
 applicability: entity_ifc4=IfcChiller
 attributes:
 - name: PredefinedType

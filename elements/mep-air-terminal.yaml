@@ -54,8 +54,10 @@ needed_in_domain:
 entity_ifc2x3: IfcFlowTerminal
 entity_ifc4: IfcAirTerminal
 entity_ifc4_3: IfcAirTerminal
-picture_link: null
-model_link: null
+picture_link: mep-air-terminal.png
+attachment_link: mep-air-terminal.ifc
+picture_print_link: mep-air-terminal-print.tif
+model_link: mep-air-terminal.ifc
 applicability: entity_ifc4=IfcAirTerminal
 attributes:
 - name: PredefinedType

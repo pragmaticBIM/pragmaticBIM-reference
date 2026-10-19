@@ -57,8 +57,10 @@ needed_in_domain:
 entity_ifc2x3: IfcBuildingElementProxy
 entity_ifc4: IfcBuildingElementProxy
 entity_ifc4_3: IfcBuildingElementProxy
-picture_link: null
-model_link: null
+picture_link: structural-exclusion-zone.png
+attachment_link: structural-exclusion-zone.ifc
+picture_print_link: structural-exclusion-zone-print.tif
+model_link: structural-exclusion-zone.ifc
 applicability:
   de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Sperrzone) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Sperrzone)
   fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Zone d'exclusion") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Zone d'exclusion")

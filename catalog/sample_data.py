@@ -6,6 +6,8 @@ with stable defaults unless overridden.
 
 from __future__ import annotations
 
+from catalog.sample_data_mep import MEP_SAMPLE_CATALOG
+
 SAMPLE_CATALOG: list[dict] = [
     {
         "id": "space-office-01",
@@ -267,6 +269,90 @@ SAMPLE_CATALOG: list[dict] = [
         "clear_width": 0.60,
         "clear_height": 0.40,
         "attach_element": "architecture-opening-void",
+    },
+    {
+        # Same Durchbruch picture; attributes from the structural opening-void.yaml.
+        "id": "opening-void-structural-01",
+        "element_type": "STR-OPENING-VOID",
+        "height": 2.8,
+        "width": 4.0,
+        "depth": 5.0,
+        "clear_width": 0.60,
+        "clear_height": 0.40,
+        "attach_element": "opening-void",
+    },
+    # Structural (Tragwerk) cards on the shared shell-construction vignette.
+    {
+        # Floor slab + upper wall; translucent Sperrzonen around the column head and in the wall.
+        "id": "structural-exclusion-zone-01",
+        "element_type": "STR-EXCL-ZONE",
+        "attach_element": "structural-exclusion-zone",
+    },
+    {
+        # One bearing wall; girder on an elastomer pad, cut end towards the camera.
+        "id": "structural-beam-01",
+        "element_type": "STR-BEAM",
+        "attach_element": "structural-beam",
+    },
+    {
+        # Chamfered column with head strengthening under an L-cut floor slab.
+        "id": "structural-column-01",
+        "element_type": "STR-COLUMN",
+        "attach_element": "structural-column",
+    },
+    {
+        # Wall with door opening, recess and horizontal construction joint.
+        "id": "structural-wall-01",
+        "element_type": "STR-WALL",
+        "attach_element": "structural-wall",
+    },
+    {
+        # Floor slab with shaft opening and wet-room recess.
+        "id": "structural-slab-floor-01",
+        "element_type": "STR-SLAB-FLOOR",
+        "attach_element": "structural-slab-floor",
+    },
+    {
+        # Base slab with lift pit, sump and thickened edge.
+        "id": "structural-slab-base-01",
+        "element_type": "STR-SLAB-BASE",
+        "attach_element": "structural-slab-base",
+    },
+    {
+        # Roof slab with cast-in upstand and roof hatch.
+        "id": "structural-slab-roof-01",
+        "element_type": "STR-SLAB-ROOF",
+        "attach_element": "structural-slab-flat-roof",
+    },
+    {
+        # Strip footing under the wall, pad footing under the column; dashed base slab.
+        "id": "structural-footing-01",
+        "element_type": "STR-FOOTING",
+        "attach_element": "structural-footing",
+    },
+    {
+        # Precast flight on elastomer pads between base slab and landing ledge.
+        "id": "structural-stair-01",
+        "element_type": "STR-STAIR",
+        "attach_element": "structural-stair",
+    },
+    {
+        # Sloped ramp slab; slot for a drainage channel at the foot.
+        "id": "structural-ramp-01",
+        "element_type": "STR-RAMP",
+        "attach_element": "structural-ramp",
+    },
+    {
+        # Dashed slab corner with two orange rebar layers.
+        "id": "structural-rebar-01",
+        "element_type": "STR-REBAR",
+        "attach_element": "structural-reinforcing-bar",
+    },
+    {
+        # Orange edge formwork along the camera-facing floor-slab edges.
+        "id": "structural-edge-strip-01",
+        "element_type": "STR-EDGE-STRIP",
+        "attach_element": "structural-edge-strip",
     },
     {
         # Same penetration vignette; orange proxy fills the coordinated opening.
@@ -581,4 +667,5 @@ SAMPLE_CATALOG: list[dict] = [
         "storey_names": ["EG", "01", "02"],
         "attach_element": "spaces-gross-volume",
     },
+    *MEP_SAMPLE_CATALOG,
 ]

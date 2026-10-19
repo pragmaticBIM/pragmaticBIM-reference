@@ -57,8 +57,10 @@ needed_in_domain:
 entity_ifc2x3: IfcStair
 entity_ifc4: IfcStair
 entity_ifc4_3: IfcStair
-picture_link: null
-model_link: null
+picture_link: structural-stair.png
+attachment_link: structural-stair.ifc
+picture_print_link: structural-stair-print.tif
+model_link: structural-stair.ifc
 applicability: entity_ifc4=IfcStair OR entity_ifc2x3=IfcStair
 attributes:
 - name: Name

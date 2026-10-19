@@ -28,6 +28,8 @@ from catalog.mapping import (
     INTERIOR_WALL_TYPES,
     LUFTRAUM_TYPES,
     MAINTENANCE_SPACE_TYPES,
+    MEP_TYPES,
+    MEP_VOLUME_TYPES,
     INSTALLATION_PATH_TYPES,
     TURNING_RADIUS_TYPES,
     DECISION_VOLUME_TYPES,
@@ -49,6 +51,8 @@ from catalog.mapping import (
     SPACE_TYPES,
     SPATIAL_STRUCTURE_TYPES,
     STAIR_TYPES,
+    STRUCTURAL_EXCLUSION_ZONE_TYPES,
+    STRUCTURAL_TYPES,
     RAILING_TYPES,
     SHADING_DEVICE_TYPES,
     TREE_TYPES,
@@ -121,6 +125,8 @@ _UMBAU_PERIMETER_COLOR: list[float] = [1.0, 0.45, 0.1, 0.38]
 _INSTALLATION_PATH_COLOR: list[float] = [1.0, 0.45, 0.1, 0.38]
 _TURNING_RADIUS_COLOR: list[float] = [1.0, 0.45, 0.1, 0.38]
 _HUMUS_COLOR: list[float] = [1.0, 0.45, 0.1, 0.55]
+_EXCLUSION_ZONE_COLOR: list[float] = [1.0, 0.45, 0.1, 0.38]
+_MEP_VOLUME_COLOR: list[float] = [1.0, 0.45, 0.1, 0.38]
 
 # Graded translucent oranges for Entscheidungskörper (open, approved, superseded).
 _DECISION_VOLUME_COLORS: list[list[float]] = [
@@ -276,10 +282,20 @@ def _primary_guids(ifc_file, element_type: str, primary) -> set[str]:
 
 def _primary_colors(element_type: str, primary) -> dict[str, list[float]] | None:
     """Optional per-GUID accent colours (Storey / Bruttovolumen oranges)."""
+    if element_type in MEP_VOLUME_TYPES:
+        products = primary if isinstance(primary, list) else [primary]
+        return {p.GlobalId: list(_MEP_VOLUME_COLOR) for p in products} or None
     if element_type in UMBAU_PERIMETER_TYPES:
         proxies = primary if isinstance(primary, list) else [primary]
         return {
             proxy.GlobalId: list(_UMBAU_PERIMETER_COLOR)
+            for proxy in proxies
+            if proxy.is_a("IfcBuildingElementProxy")
+        } or None
+    if element_type in STRUCTURAL_EXCLUSION_ZONE_TYPES:
+        proxies = primary if isinstance(primary, list) else [primary]
+        return {
+            proxy.GlobalId: list(_EXCLUSION_ZONE_COLOR)
             for proxy in proxies
             if proxy.is_a("IfcBuildingElementProxy")
         } or None
@@ -465,6 +481,7 @@ def run_catalog(
     output_dir: Path,
     *,
     cover_iso: bool = False,
+    attach: bool = True,
 ) -> tuple[int, int, list[str]]:
     """Process known catalog types. Returns (succeeded, failed, failed_ids)."""
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -514,6 +531,8 @@ def run_catalog(
         | EXTERIOR_FABRIC_TYPES
         | INTERIOR_FABRIC_TYPES
         | DETAIL_REFERENCE_TYPES
+        | STRUCTURAL_TYPES
+        | MEP_TYPES
     )
     entries = [e for e in catalog if e.get("element_type") in supported]
     skipped = len(catalog) - len(entries)
@@ -598,7 +617,8 @@ def run_catalog(
                 show_context_volumes=show_context_volumes,
                 disable_opening_subtractions=(
                     False
-                    if element_type in ELEVATOR_TYPES | DECISION_VOLUME_TYPES
+                    if element_type
+                    in ELEVATOR_TYPES | DECISION_VOLUME_TYPES | STRUCTURAL_TYPES
                     else None
                 ),
                 orthographic=cover_iso,
@@ -782,7 +802,7 @@ def run_catalog(
                 _print_element_properties(primary)
 
             attach_slug = entry.get("attach_element")
-            if attach_slug and not cover_iso:
+            if attach_slug and attach and not cover_iso:
                 attached = attach_preview_to_element(
                     element_slug=str(attach_slug),
                     png_path=png_path,
@@ -830,6 +850,17 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Render orthographic title tiles into media/images/{slug}-iso.*",
     )
+    parser.add_argument(
+        "--prefix",
+        type=str,
+        default=None,
+        help="Only generate catalog ids starting with this prefix (e.g. mep-)",
+    )
+    parser.add_argument(
+        "--no-attach",
+        action="store_true",
+        help="Write drafts to --output-dir only; leave media/ and element YAML untouched",
+    )
     args = parser.parse_args(argv)
 
     catalog = SAMPLE_CATALOG
@@ -848,10 +879,18 @@ def main(argv: list[str] | None = None) -> int:
         if not catalog:
             print(f"No catalog entry with id={args.only!r}", file=sys.stderr)
             return 1
+    if args.prefix:
+        catalog = [e for e in catalog if str(e.get("id") or "").startswith(args.prefix)]
+        if not catalog:
+            print(f"No catalog entry with id prefix {args.prefix!r}", file=sys.stderr)
+            return 1
 
     print(f"Processing {len(catalog)} catalog entr(y/ies)…")
     succeeded, failed, failed_ids = run_catalog(
-        catalog, args.output_dir, cover_iso=args.cover_iso
+        catalog,
+        args.output_dir,
+        cover_iso=args.cover_iso,
+        attach=not args.no_attach,
     )
 
     print()

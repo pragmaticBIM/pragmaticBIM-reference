@@ -57,8 +57,10 @@ needed_in_domain:
 entity_ifc2x3: IfcFooting
 entity_ifc4: IfcFooting
 entity_ifc4_3: IfcFooting
-picture_link: null
-model_link: null
+picture_link: structural-footing.png
+attachment_link: structural-footing.ifc
+picture_print_link: structural-footing-print.tif
+model_link: structural-footing.ifc
 applicability: entity_ifc4=IfcFooting OR entity_ifc2x3=IfcFooting
 attributes:
 - name: Name

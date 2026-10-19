@@ -57,8 +57,10 @@ needed_in_domain:
 entity_ifc2x3: IfcColumn
 entity_ifc4: IfcColumn
 entity_ifc4_3: IfcColumn
-picture_link: null
-model_link: null
+picture_link: structural-column.png
+attachment_link: structural-column.ifc
+picture_print_link: structural-column-print.tif
+model_link: structural-column.ifc
 applicability: entity_ifc4=IfcColumn OR entity_ifc2x3=IfcColumn
 attributes:
 - name: Name

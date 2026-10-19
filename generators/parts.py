@@ -116,6 +116,41 @@ def create_extruded_area_solid(
     )
 
 
+def create_oriented_extruded_solid(
+    ifc_file: ifcopenshell.file,
+    polyline: Sequence[Sequence[float]],
+    depth: float,
+    *,
+    origin: Sequence[float],
+    axis: Sequence[float],
+    ref_direction: Sequence[float],
+) -> ifcopenshell.entity_instance:
+    """IfcExtrudedAreaSolid whose profile lies in the plane at ``origin`` normal to ``axis``.
+
+    The profile X runs along ``ref_direction``; the solid extrudes ``depth``
+    metres along ``axis``.
+    """
+    if depth <= 0:
+        raise ValueError("extrusion depth must be positive")
+    profile = ifc_file.create_entity(
+        "IfcArbitraryClosedProfileDef",
+        ProfileType="AREA",
+        ProfileName=None,
+        OuterCurve=_closed_polyline_2d(ifc_file, polyline),
+    )
+    return ifc_file.create_entity(
+        "IfcExtrudedAreaSolid",
+        SweptArea=profile,
+        Position=_axis2placement3d(
+            ifc_file, origin, axis=axis, ref_direction=ref_direction
+        ),
+        ExtrudedDirection=ifc_file.create_entity(
+            "IfcDirection", DirectionRatios=(0.0, 0.0, 1.0)
+        ),
+        Depth=float(depth),
+    )
+
+
 def create_tapered_extruded_solid(
     ifc_file: ifcopenshell.file,
     *,

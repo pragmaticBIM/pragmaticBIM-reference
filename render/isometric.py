@@ -43,6 +43,7 @@ _FLOORING_COLOR = [0.78, 0.68, 0.52, 1.0]  # warm beige so covering reads vs whi
 _WALL_COLOR = [1.0, 1.0, 1.0, 1.0]  # interior walls always fully opaque
 _FRAME_COLOR = [1.0, 1.0, 1.0, 1.0]  # door/window frames
 _GLASS_COLOR = [0.0, 0.0, 0.0, 1.0]  # glazing shown solid black in catalog PNGs
+_MEMBRANE_COLOR = [0.22, 0.22, 0.22, 1.0]  # elastomer bearing pads read against white and orange
 _EDGE_COLOR = [0.05, 0.05, 0.05, 1.0]
 _DOTTED_EDGE_COLOR = [0.35, 0.35, 0.35, 1.0]
 _THIN_EDGE_COLOR = [0.45, 0.45, 0.45, 1.0]
@@ -651,6 +652,8 @@ def _product_material(
     if ifc_class == "IfcPlate":
         # Opening glazing: solid black in PNG; IFC keeps transparent Glass material
         return _glass_material(_GLASS_COLOR), False
+    if ifc_class == "IfcDiscreteAccessory":
+        return _material(_MEMBRANE_COLOR, blend=False), False
     return _material(_CONTEXT_COLOR, blend=False), False
 
 
@@ -864,6 +867,7 @@ def _horizontal_hosts(
     *,
     prefer_lowest: bool = False,
     camera_direction: Sequence[float] | None = None,
+    skip_guids: Collection[str] = (),
 ) -> list[tuple[int, float, np.ndarray]]:
     """Flat opaque tops overlapping the primary XY.
 
@@ -889,11 +893,14 @@ def _horizontal_hosts(
     x1 = float(primary_bounds[1][0]) + pad
     y1 = float(primary_bounds[1][1]) + pad
     candidates: list[tuple[int, float, np.ndarray, float]] = []
-    for i, (_guid, ifc_class, mesh) in enumerate(product_meshes):
+    for i, (guid, ifc_class, mesh) in enumerate(product_meshes):
         if ifc_class in _OUTLINE_ONLY_CLASSES or ifc_class in _VOLUME_CLASSES:
             continue
         # Skip glass and transparent accent proxies (carve white context only)
         if ifc_class in {"IfcPlate", "IfcBuildingElementProxy"}:
+            continue
+        # Dashed outlines have no faces, so a carved brand would not show
+        if guid in skip_guids:
             continue
         b = _robust_mesh_bounds(mesh)
         if b[1][0] < x0 or b[0][0] > x1 or b[1][1] < y0 or b[0][1] > y1:
@@ -1350,6 +1357,7 @@ def _engrave_brand_into_meshes(
     wall_name: str | None = None,
     wall_name_by_guid: dict[str, str] | None = None,
     stamp_width: float | None = None,
+    skip_guids: Collection[str] = (),
 ) -> None:
     """Boolean-subtract brand letters (render-only).
 
@@ -1366,6 +1374,7 @@ def _engrave_brand_into_meshes(
     ``rotate_90`` turns lettering by 90 degrees within the wall face.
     ``center_along_wall`` places mid-face along the wall length.
     ``stamp_width`` (metres) is the shared letter-run along camera-right.
+    ``skip_guids`` excludes dashed-outline products from horizontal hosts.
     """
     primary_bounds = _primary_bounds(product_meshes, primary)
     if not prefer_wall:
@@ -1374,6 +1383,7 @@ def _engrave_brand_into_meshes(
             primary_bounds,
             prefer_lowest=prefer_lowest,
             camera_direction=camera_direction,
+            skip_guids=skip_guids,
         ):
             cutter = _brand_cutter_horizontal(
                 surface_bounds,
@@ -1636,6 +1646,7 @@ def render_isometric(
             wall_name=engrave_wall_name,
             wall_name_by_guid=wall_name_by_guid,
             stamp_width=stamp_width,
+            skip_guids=set(dotted_guids or ()),
         )
 
     all_bounds: list[np.ndarray] = []
@@ -1666,7 +1677,8 @@ def render_isometric(
         all_bounds.append(mesh.bounds)
         if guid in focus:
             focus_bounds.append(mesh.bounds)
-        if ifc_class in _OUTLINE_ONLY_CLASSES or guid in dotted:
+        # MEP segments stay dashed context unless they are the accented subject.
+        if (ifc_class in _OUTLINE_ONLY_CLASSES and guid not in primary) or guid in dotted:
             dotted_edge_sources.append(mesh)
             continue
         # Optional: wireframe-only context rooms (Luftraum card — only void is filled)
@@ -1708,7 +1720,9 @@ def render_isometric(
         )
         occluders: list[pyrender.Mesh] = []
         for guid, ifc_class, mesh in voided:
-            if ifc_class in _OUTLINE_ONLY_CLASSES or ifc_class in _VOLUME_CLASSES:
+            if (
+                ifc_class in _OUTLINE_ONLY_CLASSES and guid not in primary
+            ) or ifc_class in _VOLUME_CLASSES:
                 continue
             material, is_transparent = _product_material(
                 guid,

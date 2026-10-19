@@ -54,8 +54,10 @@ needed_in_domain:
 entity_ifc2x3: IfcDistributionControlElement
 entity_ifc4: IfcAlarm
 entity_ifc4_3: IfcAlarm
-picture_link: null
-model_link: null
+picture_link: mep-alarm.png
+attachment_link: mep-alarm.ifc
+picture_print_link: mep-alarm-print.tif
+model_link: mep-alarm.ifc
 applicability: entity_ifc4=IfcAlarm
 attributes:
 - name: PredefinedType

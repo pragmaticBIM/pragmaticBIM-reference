@@ -54,8 +54,10 @@ needed_in_domain:
 entity_ifc2x3: IfcFlowTerminal
 entity_ifc4: IfcFireSuppressionTerminal
 entity_ifc4_3: IfcFireSuppressionTerminal
-picture_link: null
-model_link: null
+picture_link: mep-fire-suppression-terminal.png
+attachment_link: mep-fire-suppression-terminal.ifc
+picture_print_link: mep-fire-suppression-terminal-print.tif
+model_link: mep-fire-suppression-terminal.ifc
 applicability: entity_ifc4=IfcFireSuppressionTerminal
 attributes:
 - name: PredefinedType

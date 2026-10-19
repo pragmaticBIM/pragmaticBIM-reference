@@ -54,8 +54,10 @@ needed_in_domain:
 entity_ifc2x3: IfcFlowMovingDevice
 entity_ifc4: IfcCompressor
 entity_ifc4_3: IfcCompressor
-picture_link: null
-model_link: null
+picture_link: mep-compressor.png
+attachment_link: mep-compressor.ifc
+picture_print_link: mep-compressor-print.tif
+model_link: mep-compressor.ifc
 applicability: entity_ifc4=IfcCompressor
 attributes:
 - name: PredefinedType

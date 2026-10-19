@@ -54,8 +54,10 @@ needed_in_domain:
 entity_ifc2x3: IfcFlowTerminal
 entity_ifc4: IfcFlowTerminal
 entity_ifc4_3: IfcFlowTerminal
-picture_link: null
-model_link: null
+picture_link: mep-gas-terminal.png
+attachment_link: mep-gas-terminal.ifc
+picture_print_link: mep-gas-terminal-print.tif
+model_link: mep-gas-terminal.ifc
 applicability: entity_ifc4=IfcFlowTerminal OR entity_ifc2x3=IfcFlowTerminal
 attributes:
 - name: ObjectType

@@ -38,6 +38,7 @@ from catalog.schema import (
     FOOTING_ELEMENT_SLUG,
     GROSS_VOLUME_ELEMENT_SLUG,
     MAINTENANCE_SPACE_DEFAULTS,
+    MEP_DEVICE_DEFAULTS,
     MAINTENANCE_SPACE_ELEMENT_SLUG,
     INSTALLATION_PATH_DEFAULTS,
     INSTALLATION_PATH_ELEMENT_SLUG,
@@ -112,6 +113,31 @@ from catalog.schema import (
     WINDOW_EXTERIOR_ELEMENT_SLUG,
     WINDOW_INTERIOR_DEFAULTS,
     WINDOW_INTERIOR_ELEMENT_SLUG,
+    OPENING_STRUCTURAL_ELEMENT_SLUG,
+    STRUCTURAL_BEAM_DEFAULTS,
+    STRUCTURAL_BEAM_ELEMENT_SLUG,
+    STRUCTURAL_COLUMN_DEFAULTS,
+    STRUCTURAL_COLUMN_ELEMENT_SLUG,
+    STRUCTURAL_EDGE_STRIP_DEFAULTS,
+    STRUCTURAL_EDGE_STRIP_ELEMENT_SLUG,
+    STRUCTURAL_EXCLUSION_ZONE_DEFAULTS,
+    STRUCTURAL_EXCLUSION_ZONE_ELEMENT_SLUG,
+    STRUCTURAL_FOOTING_DEFAULTS,
+    STRUCTURAL_FOOTING_ELEMENT_SLUG,
+    STRUCTURAL_RAMP_DEFAULTS,
+    STRUCTURAL_RAMP_ELEMENT_SLUG,
+    STRUCTURAL_REBAR_DEFAULTS,
+    STRUCTURAL_REBAR_ELEMENT_SLUG,
+    STRUCTURAL_SLAB_BASE_DEFAULTS,
+    STRUCTURAL_SLAB_BASE_ELEMENT_SLUG,
+    STRUCTURAL_SLAB_FLOOR_DEFAULTS,
+    STRUCTURAL_SLAB_FLOOR_ELEMENT_SLUG,
+    STRUCTURAL_SLAB_ROOF_DEFAULTS,
+    STRUCTURAL_SLAB_ROOF_ELEMENT_SLUG,
+    STRUCTURAL_STAIR_DEFAULTS,
+    STRUCTURAL_STAIR_ELEMENT_SLUG,
+    STRUCTURAL_WALL_DEFAULTS,
+    STRUCTURAL_WALL_ELEMENT_SLUG,
     build_element_attributes_from_yaml,
     build_interior_context_attributes,
     build_luftraum_lower_attributes,
@@ -119,6 +145,7 @@ from catalog.schema import (
     build_neighbor_space_attributes,
     build_space_attributes_from_yaml,
     exterior_space_defaults,
+    load_element,
     luftraum_defaults,
     parking_defaults,
     elevator_defaults,
@@ -360,6 +387,9 @@ from generators.luftraum import (
     generate_luftraum,
 )
 from generators.opening import generate_opening
+from generators.exclusion_zone import generate_exclusion_zone
+from generators.structural_beam import generate_structural_beam
+from generators.structural_detail import generate_structural_detail
 from generators.fire_acoustic_seal import generate_fire_acoustic_seal
 from generators.parking import (
     DEFAULT_BAY_COUNT,
@@ -406,6 +436,7 @@ from generators.spatial_structure import (
     DEFAULT_SLAB_THICKNESS,
     generate_spatial_structure,
 )
+from generators.mep import MEP_VOLUME_SLUGS, generate_mep
 
 # Dispatch table — extend when more element generators land.
 ELEMENT_GENERATORS: dict[str, Callable[[dict[str, Any]], tuple]] = {
@@ -438,6 +469,19 @@ ELEMENT_GENERATORS: dict[str, Callable[[dict[str, Any]], tuple]] = {
     "ARC-SLAB-BALCONY": generate_spatial_structure,
     "IfcOpeningElement": generate_opening,
     "ARC-OPENING-VOID": generate_opening,
+    "STR-OPENING-VOID": generate_opening,
+    "STR-EXCL-ZONE": generate_exclusion_zone,
+    "STR-BEAM": generate_structural_beam,
+    "STR-COLUMN": generate_structural_detail,
+    "STR-WALL": generate_structural_detail,
+    "STR-SLAB-FLOOR": generate_structural_detail,
+    "STR-SLAB-BASE": generate_structural_detail,
+    "STR-SLAB-ROOF": generate_structural_detail,
+    "STR-FOOTING": generate_structural_detail,
+    "STR-STAIR": generate_structural_detail,
+    "STR-RAMP": generate_structural_detail,
+    "STR-REBAR": generate_structural_detail,
+    "STR-EDGE-STRIP": generate_structural_detail,
     "ARC-FIRE-ACOUSTIC-SEAL": generate_fire_acoustic_seal,
     "IfcFooting": generate_footing,
     "ARC-FOOTING": generate_footing,
@@ -489,6 +533,17 @@ ELEMENT_GENERATORS: dict[str, Callable[[dict[str, Any]], tuple]] = {
     "Detailverweis": generate_detail_references,
 }
 
+# MEP cards use the element YAML ``code`` as element_type (e.g. MEP-BOILER).
+MEP_SLUG_BY_TYPE: dict[str, str] = {
+    str(load_element(slug)["code"]): slug for slug in MEP_DEVICE_DEFAULTS
+}
+MEP_TYPES = frozenset(MEP_SLUG_BY_TYPE)
+# Reservation volumes (Erzeugerplatz, Aussparungsanforderung) render translucent.
+MEP_VOLUME_TYPES = frozenset(
+    code for code, slug in MEP_SLUG_BY_TYPE.items() if slug in MEP_VOLUME_SLUGS
+)
+ELEMENT_GENERATORS.update({code: generate_mep for code in MEP_TYPES})
+
 SPACE_TYPES = frozenset({"IfcSpace", "SPACE-INT"})
 EXTERIOR_SPACE_TYPES = frozenset({"SPACE-EXT"})
 PARKING_TYPES = frozenset({"SPACE-PARK"})
@@ -522,7 +577,44 @@ SLAB_TYPES = frozenset(
         "ARC-SLAB-BALCONY",
     }
 )
-OPENING_TYPES = frozenset({"IfcOpeningElement", "ARC-OPENING-VOID"})
+OPENING_TYPES = frozenset({"IfcOpeningElement", "ARC-OPENING-VOID", "STR-OPENING-VOID"})
+# Structural (Tragwerk) cards: element_type → (card key, element slug, defaults).
+STRUCTURAL_CARDS: dict[str, tuple[str, str, dict[str, Any]]] = {
+    "STR-EXCL-ZONE": (
+        "exclusion_zone",
+        STRUCTURAL_EXCLUSION_ZONE_ELEMENT_SLUG,
+        STRUCTURAL_EXCLUSION_ZONE_DEFAULTS,
+    ),
+    "STR-BEAM": ("beam", STRUCTURAL_BEAM_ELEMENT_SLUG, STRUCTURAL_BEAM_DEFAULTS),
+    "STR-COLUMN": ("column", STRUCTURAL_COLUMN_ELEMENT_SLUG, STRUCTURAL_COLUMN_DEFAULTS),
+    "STR-WALL": ("wall", STRUCTURAL_WALL_ELEMENT_SLUG, STRUCTURAL_WALL_DEFAULTS),
+    "STR-SLAB-FLOOR": (
+        "slab_floor",
+        STRUCTURAL_SLAB_FLOOR_ELEMENT_SLUG,
+        STRUCTURAL_SLAB_FLOOR_DEFAULTS,
+    ),
+    "STR-SLAB-BASE": (
+        "slab_base",
+        STRUCTURAL_SLAB_BASE_ELEMENT_SLUG,
+        STRUCTURAL_SLAB_BASE_DEFAULTS,
+    ),
+    "STR-SLAB-ROOF": (
+        "slab_roof",
+        STRUCTURAL_SLAB_ROOF_ELEMENT_SLUG,
+        STRUCTURAL_SLAB_ROOF_DEFAULTS,
+    ),
+    "STR-FOOTING": ("footing", STRUCTURAL_FOOTING_ELEMENT_SLUG, STRUCTURAL_FOOTING_DEFAULTS),
+    "STR-STAIR": ("stair", STRUCTURAL_STAIR_ELEMENT_SLUG, STRUCTURAL_STAIR_DEFAULTS),
+    "STR-RAMP": ("ramp", STRUCTURAL_RAMP_ELEMENT_SLUG, STRUCTURAL_RAMP_DEFAULTS),
+    "STR-REBAR": ("rebar", STRUCTURAL_REBAR_ELEMENT_SLUG, STRUCTURAL_REBAR_DEFAULTS),
+    "STR-EDGE-STRIP": (
+        "edge_strip",
+        STRUCTURAL_EDGE_STRIP_ELEMENT_SLUG,
+        STRUCTURAL_EDGE_STRIP_DEFAULTS,
+    ),
+}
+STRUCTURAL_TYPES = frozenset(STRUCTURAL_CARDS)
+STRUCTURAL_EXCLUSION_ZONE_TYPES = frozenset({"STR-EXCL-ZONE"})
 FIRE_ACOUSTIC_SEAL_TYPES = frozenset({"ARC-FIRE-ACOUSTIC-SEAL"})
 FOOTING_TYPES = frozenset({"IfcFooting", "ARC-FOOTING"})
 COLUMN_TYPES = frozenset({"IfcColumn", "ARC-COLUMN"})
@@ -606,6 +698,7 @@ _ELEMENT_SLUG_BY_TYPE: dict[str, str] = {
     "ARC-FLOOR-COV-EXT": FLOOR_COVERING_EXTERIOR_ELEMENT_SLUG,
     "IfcOpeningElement": OPENING_ELEMENT_SLUG,
     "ARC-OPENING-VOID": OPENING_ELEMENT_SLUG,
+    "STR-OPENING-VOID": OPENING_STRUCTURAL_ELEMENT_SLUG,
     "IfcWall": WALL_EXTERIOR_ELEMENT_SLUG,
     "ARC-WALL-EXT": WALL_EXTERIOR_ELEMENT_SLUG,
     "ARC-WALL-CLAD-EXT": CLADDING_EXTERIOR_ELEMENT_SLUG,
@@ -3071,7 +3164,8 @@ def map_opening_params(entry: dict[str, Any]) -> dict[str, Any]:
     """Convert an opening catalog entry into ``generate_opening`` params.
 
     Geometry matches the interior-space fabric (no spaces / no ceiling); opening
-    attributes come from ``architecture-opening-void.yaml``.
+    attributes come from ``architecture-opening-void.yaml`` or, for
+    ``STR-OPENING-VOID``, from the structural ``opening-void.yaml``.
     """
     if not is_opening_entry(entry):
         raise ValueError(
@@ -3112,7 +3206,7 @@ def map_opening_params(entry: dict[str, Any]) -> dict[str, Any]:
     }
     resolved = build_element_attributes_from_yaml(
         entry=entry,
-        element_slug=OPENING_ELEMENT_SLUG,
+        element_slug=_ELEMENT_SLUG_BY_TYPE.get(entry["element_type"], OPENING_ELEMENT_SLUG),
         defaults=defaults,
         geometry=geometry,
     )
@@ -3565,9 +3659,70 @@ def map_reference_point_params(entry: dict[str, Any]) -> dict[str, Any]:
     return params
 
 
+_STRUCTURAL_ENTRY_META = frozenset(
+    {"id", "element_type", "attach_element", "camera_padding", "camera_direction"}
+)
+
+
+def map_structural_params(entry: dict[str, Any]) -> dict[str, Any]:
+    """Convert a structural (Tragwerk) catalog entry into card generator params.
+
+    Attributes come from the structural element YAML via the card's curated
+    defaults. Geometry keys in the entry pass through as overrides; the card
+    generator derives quantities (GrossVolume) from its own geometry.
+    """
+    element_type = entry.get("element_type")
+    if element_type not in STRUCTURAL_CARDS:
+        raise ValueError(f"unsupported element_type for structural card: {element_type!r}")
+    card, slug, defaults = STRUCTURAL_CARDS[element_type]
+    resolved = build_element_attributes_from_yaml(
+        entry=entry,
+        element_slug=slug,
+        defaults=defaults,
+        geometry={},
+    )
+    params = {k: v for k, v in entry.items() if k not in _STRUCTURAL_ENTRY_META}
+    params.update(
+        card=card,
+        project_name=entry.get("project_name") or entry.get("id") or slug,
+        attrs=resolved,
+    )
+    return params
+
+
+def map_mep_params(entry: dict[str, Any]) -> dict[str, Any]:
+    """Convert an MEP catalog entry into ``generate_mep`` params.
+
+    The scene is chosen from the element slug; attributes come from the
+    element YAML with ``MEP_DEVICE_DEFAULTS`` as curated defaults.
+    """
+    slug = MEP_SLUG_BY_TYPE.get(str(entry.get("element_type")))
+    if slug is None:
+        raise ValueError(f"unsupported element_type for MEP: {entry.get('element_type')!r}")
+    defaults = MEP_DEVICE_DEFAULTS[slug]
+    resolved = build_element_attributes_from_yaml(
+        entry=entry,
+        element_slug=slug,
+        defaults=defaults,
+    )
+    return {
+        "project_name": entry.get("project_name") or entry.get("id") or slug,
+        "highlight": slug,
+        "name": entry.get("name") or resolved.get("Name") or defaults.get("Name"),
+        "predefined_type": resolved.get("PredefinedType") or defaults.get("PredefinedType"),
+        "object_type": resolved.get("ObjectType") or defaults.get("ObjectType"),
+        "tag": entry.get("Tag") or defaults.get("Tag"),
+        "properties": resolved.get("properties") or {},
+        "property_datatypes": resolved.get("property_datatypes") or {},
+        "quantities": resolved.get("quantities") or {},
+    }
+
+
 def map_entry_params(entry: dict[str, Any]) -> dict[str, Any]:
     """Dispatch catalog entry → generator params by element_type."""
     element_type = entry.get("element_type")
+    if element_type in STRUCTURAL_TYPES:
+        return map_structural_params(entry)
     if element_type in SPACE_TYPES:
         return map_space_params(entry)
     if element_type in EXTERIOR_SPACE_TYPES:
@@ -3648,6 +3803,8 @@ def map_entry_params(entry: dict[str, Any]) -> dict[str, Any]:
         return map_interior_fabric_params(entry)
     if element_type in DETAIL_REFERENCE_TYPES:
         return map_detail_reference_params(entry)
+    if element_type in MEP_TYPES:
+        return map_mep_params(entry)
     raise ValueError(f"unsupported element_type: {element_type!r}")
 
 

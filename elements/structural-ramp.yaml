@@ -57,8 +57,10 @@ needed_in_domain:
 entity_ifc2x3: IfcRamp
 entity_ifc4: IfcRamp
 entity_ifc4_3: IfcRamp
-picture_link: null
-model_link: null
+picture_link: structural-ramp.png
+attachment_link: structural-ramp.ifc
+picture_print_link: structural-ramp-print.tif
+model_link: structural-ramp.ifc
 applicability: entity_ifc4=IfcRamp OR entity_ifc2x3=IfcRamp
 attributes:
 - name: Name

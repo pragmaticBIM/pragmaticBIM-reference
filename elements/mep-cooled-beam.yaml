@@ -54,8 +54,10 @@ needed_in_domain:
 entity_ifc2x3: IfcEnergyConversionDevice
 entity_ifc4: IfcCooledBeam
 entity_ifc4_3: IfcCooledBeam
-picture_link: null
-model_link: null
+picture_link: mep-cooled-beam.png
+attachment_link: mep-cooled-beam.ifc
+picture_print_link: mep-cooled-beam-print.tif
+model_link: mep-cooled-beam.ifc
 applicability: entity_ifc4=IfcCooledBeam
 attributes:
 - name: PredefinedType

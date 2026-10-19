@@ -57,8 +57,10 @@ needed_in_domain:
 entity_ifc2x3: IfcSlab
 entity_ifc4: IfcSlab
 entity_ifc4_3: IfcSlab
-picture_link: null
-model_link: null
+picture_link: structural-slab-base.png
+attachment_link: structural-slab-base.ifc
+picture_print_link: structural-slab-base-print.tif
+model_link: structural-slab-base.ifc
 applicability: entity_ifc4=IfcSlab AND PredefinedType=BASESLAB
 attributes:
 - name: Name

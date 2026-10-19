@@ -58,8 +58,10 @@ needed_in_domain:
 entity_ifc2x3: IfcBuildingElementProxy
 entity_ifc4: IfcBuildingElementProxy
 entity_ifc4_3: IfcBuildingElementProxy
-picture_link: null
-model_link: null
+picture_link: mep-provision-for-void.png
+attachment_link: mep-provision-for-void.ifc
+picture_print_link: mep-provision-for-void-print.tif
+model_link: mep-provision-for-void.ifc
 applicability: entity_ifc4=IfcBuildingElementProxy AND PredefinedType=PROVISIONFORVOID
 attributes:
 - name: Name

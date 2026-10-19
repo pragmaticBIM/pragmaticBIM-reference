@@ -54,8 +54,10 @@ needed_in_domain:
 entity_ifc2x3: IfcFlowTerminal
 entity_ifc4: IfcSanitaryTerminal
 entity_ifc4_3: IfcSanitaryTerminal
-picture_link: null
-model_link: null
+picture_link: mep-sanitary-terminal.png
+attachment_link: mep-sanitary-terminal.ifc
+picture_print_link: mep-sanitary-terminal-print.tif
+model_link: mep-sanitary-terminal.ifc
 applicability: entity_ifc4=IfcSanitaryTerminal
 attributes:
 - name: PredefinedType

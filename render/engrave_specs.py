@@ -31,8 +31,79 @@ class EngraveSpec:
 # Defaults: highest horizontal plate.
 _DEFAULT = EngraveSpec()
 
+# MEP vignettes share one placement per scene (see catalog/sample_data_mep.py).
+_MEP_ENGRAVE_BY_SCENE: tuple[tuple[tuple[str, ...], EngraveSpec], ...] = (
+    (
+        (
+            "mep-boiler",
+            "mep-heat-exchanger",
+            "mep-chiller",
+            "mep-pump",
+            "mep-compressor",
+            "mep-gas-regulator",
+            "mep-tank",
+            "mep-schematic-equipment-space",
+            "mep-transformer",
+            "mep-ups",
+            "mep-electric-distribution-board",
+            "mep-electric-generator",
+        ),
+        EngraveSpec(prefer_wall=True, wall_name="Rueckwand", wall_top=True),
+    ),
+    (
+        ("mep-cooling-tower", "mep-unitary-equipment", "mep-fan"),
+        EngraveSpec(prefer_wall=True, wall_top=True),
+    ),
+    (
+        (
+            "mep-air-terminal",
+            "mep-light-fixture",
+            "mep-alarm",
+            "mep-fire-suppression-terminal",
+            "mep-cooled-beam",
+            "mep-air-terminal-box",
+            "mep-damper",
+            "mep-actuator",
+        ),
+        EngraveSpec(prefer_lowest=True),
+    ),
+    (
+        (
+            "mep-switching-device",
+            "mep-outlet",
+            "mep-sensor",
+            "mep-communications-appliance",
+        ),
+        EngraveSpec(prefer_wall=True, wall_name="Trennwand", wall_top=True),
+    ),
+    (
+        ("mep-space-heater", "mep-valve", "mep-gas-terminal"),
+        EngraveSpec(prefer_wall=True, wall_name="Aussenwand", wall_top=True),
+    ),
+    (
+        ("mep-sanitary-terminal", "mep-waste-terminal"),
+        EngraveSpec(prefer_wall=True, wall_name="Rueckwand", wall_top=True),
+    ),
+    # Riser pokes through the roof plate; brand goes on the plot in front.
+    (
+        (
+            "mep-schematic-pipe",
+            "mep-schematic-duct",
+            "mep-schematic-tray",
+            "mep-downpipe",
+            "mep-provision-for-void",
+        ),
+        EngraveSpec(prefer_lowest=True),
+    ),
+)
+
 # Fixed per catalog picture id (see catalog/sample_data.py).
 ENGRAVE_BY_ID: dict[str, EngraveSpec] = {
+    **{
+        f"{slug}-01": spec
+        for slugs, spec in _MEP_ENGRAVE_BY_SCENE
+        for slug in slugs
+    },
     # Horizontal plates -------------------------------------------------
     "coordination-zone-01": EngraveSpec(prefer_lowest=True),
     "stair-01": EngraveSpec(prefer_lowest=True),
@@ -58,6 +129,17 @@ ENGRAVE_BY_ID: dict[str, EngraveSpec] = {
     "umbau-perimeter-01": EngraveSpec(prefer_lowest=True),
     "cladding-exterior-01": EngraveSpec(prefer_lowest=True),
     "footing-pad-01": EngraveSpec(far_corner=True),
+    # Structural cards: base slab in front of the subject.
+    "structural-exclusion-zone-01": EngraveSpec(prefer_lowest=True),
+    "structural-beam-01": EngraveSpec(prefer_lowest=True),
+    "structural-slab-roof-01": EngraveSpec(prefer_lowest=True),
+    "structural-stair-01": EngraveSpec(prefer_lowest=True),
+    "structural-ramp-01": EngraveSpec(prefer_lowest=True),
+    "structural-wall-01": EngraveSpec(prefer_lowest=True),
+    "structural-column-01": EngraveSpec(prefer_lowest=True),
+    "structural-slab-floor-01": EngraveSpec(prefer_lowest=True),
+    "structural-slab-base-01": EngraveSpec(prefer_lowest=True),
+    "structural-rebar-01": EngraveSpec(prefer_lowest=True),
     # Column: near-corner brand so text sits in front of the centred column.
     "column-01": EngraveSpec(),
     # Tree: lateral terrain tip so the crown does not hide the brand.
@@ -83,6 +165,7 @@ ENGRAVE_BY_ID: dict[str, EngraveSpec] = {
     "window-interior-01": EngraveSpec(prefer_wall=True, wall_top=True),
     "roofing-insulation-01": EngraveSpec(prefer_wall=True, wall_top=True),
     "roof-overflow-01": EngraveSpec(prefer_wall=True, wall_top=True),
+    "structural-footing-01": EngraveSpec(prefer_wall=True, wall_top=True),
 }
 
 

@@ -62,8 +62,10 @@ needed_in_domain:
 entity_ifc2x3: IfcFlowSegment
 entity_ifc4: IfcPipeSegment
 entity_ifc4_3: IfcPipeSegment
-picture_link: null
-model_link: null
+picture_link: mep-schematic-pipe.png
+attachment_link: mep-schematic-pipe.ifc
+picture_print_link: mep-schematic-pipe-print.tif
+model_link: mep-schematic-pipe.ifc
 applicability: (entity_ifc4=IfcPipeSegment AND (Reference=HZ OR Reference=VL-H OR Reference=RL-H OR Reference=KZ OR Reference=VL-K OR Reference=RL-K OR Reference=TW OR Reference=FW OR Reference=AW OR Reference=WW OR Reference=ENT)) OR (entity_ifc2x3=IfcFlowSegment AND (Reference=HZ OR Reference=VL-H OR Reference=RL-H OR Reference=KZ OR Reference=VL-K OR Reference=RL-K OR Reference=TW OR Reference=FW OR Reference=AW OR Reference=WW OR Reference=ENT))
 attributes:
 - name: Reference

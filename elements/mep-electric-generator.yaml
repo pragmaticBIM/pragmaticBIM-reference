@@ -54,8 +54,10 @@ needed_in_domain:
 entity_ifc2x3: IfcEnergyConversionDevice
 entity_ifc4: IfcElectricGenerator
 entity_ifc4_3: IfcElectricGenerator
-picture_link: null
-model_link: null
+picture_link: mep-electric-generator.png
+attachment_link: mep-electric-generator.ifc
+picture_print_link: mep-electric-generator-print.tif
+model_link: mep-electric-generator.ifc
 applicability: entity_ifc4=IfcElectricGenerator
 attributes:
 - name: PredefinedType

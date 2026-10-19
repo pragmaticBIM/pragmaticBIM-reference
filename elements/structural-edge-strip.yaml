@@ -49,8 +49,10 @@ needed_in_domain:
 entity_ifc2x3: IfcBuildingElementProxy
 entity_ifc4: IfcBuildingElementProxy
 entity_ifc4_3: IfcBuildingElementProxy
-picture_link: null
-model_link: null
+picture_link: structural-edge-strip.png
+attachment_link: structural-edge-strip.ifc
+picture_print_link: structural-edge-strip-print.tif
+model_link: structural-edge-strip.ifc
 applicability:
   de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Randstreifen) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Randstreifen)
   fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Bande de rive") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Bande de rive")

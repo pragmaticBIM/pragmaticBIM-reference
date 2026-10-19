@@ -61,8 +61,10 @@ needed_in_domain:
 entity_ifc2x3: IfcFlowSegment
 entity_ifc4: IfcPipeSegment
 entity_ifc4_3: IfcPipeSegment
-picture_link: null
-model_link: null
+picture_link: mep-downpipe.png
+attachment_link: mep-downpipe.ifc
+picture_print_link: mep-downpipe-print.tif
+model_link: mep-downpipe.ifc
 applicability: (entity_ifc4=IfcPipeSegment AND Reference=FL) OR (entity_ifc2x3=IfcFlowSegment AND Reference=FL)
 attributes:
 - name: Name

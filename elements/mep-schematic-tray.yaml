@@ -58,8 +58,10 @@ needed_in_domain:
 entity_ifc2x3: IfcFlowSegment
 entity_ifc4: IfcCableCarrierSegment
 entity_ifc4_3: IfcCableCarrierSegment
-picture_link: null
-model_link: null
+picture_link: mep-schematic-tray.png
+attachment_link: mep-schematic-tray.ifc
+picture_print_link: mep-schematic-tray-print.tif
+model_link: mep-schematic-tray.ifc
 applicability: entity_ifc4=IfcCableCarrierSegment OR entity_ifc2x3=IfcFlowSegment
 attributes:
 - name: Reference

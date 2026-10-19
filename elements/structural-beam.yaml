@@ -57,8 +57,10 @@ needed_in_domain:
 entity_ifc2x3: IfcBeam
 entity_ifc4: IfcBeam
 entity_ifc4_3: IfcBeam
-picture_link: null
-model_link: null
+picture_link: structural-beam.png
+attachment_link: structural-beam.ifc
+picture_print_link: structural-beam-print.tif
+model_link: structural-beam.ifc
 applicability: entity_ifc4=IfcBeam OR entity_ifc2x3=IfcBeam
 attributes:
 - name: Name

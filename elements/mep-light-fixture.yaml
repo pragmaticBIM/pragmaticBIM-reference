@@ -54,8 +54,10 @@ needed_in_domain:
 entity_ifc2x3: IfcFlowTerminal
 entity_ifc4: IfcLightFixture
 entity_ifc4_3: IfcLightFixture
-picture_link: null
-model_link: null
+picture_link: mep-light-fixture.png
+attachment_link: mep-light-fixture.ifc
+picture_print_link: mep-light-fixture-print.tif
+model_link: mep-light-fixture.ifc
 applicability: entity_ifc4=IfcLightFixture
 attributes:
 - name: PredefinedType

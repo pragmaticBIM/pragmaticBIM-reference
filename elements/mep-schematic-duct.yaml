@@ -58,8 +58,10 @@ needed_in_domain:
 entity_ifc2x3: IfcFlowSegment
 entity_ifc4: IfcDuctSegment
 entity_ifc4_3: IfcDuctSegment
-picture_link: null
-model_link: null
+picture_link: mep-schematic-duct.png
+attachment_link: mep-schematic-duct.ifc
+picture_print_link: mep-schematic-duct-print.tif
+model_link: mep-schematic-duct.ifc
 applicability: entity_ifc4=IfcDuctSegment OR entity_ifc2x3=IfcFlowSegment
 attributes:
 - name: Reference

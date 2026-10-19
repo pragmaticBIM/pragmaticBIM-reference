@@ -70,6 +70,21 @@ RETENTION_ELEMENT_SLUG = "landscape-retention"
 FURNITURE_ELEMENT_SLUG = "furniture"
 BUILT_IN_FURNITURE_ELEMENT_SLUG = "architecture-built-in-furniture"
 
+# Structural (Tragwerk) model elements — models/concrete-structure.yaml
+OPENING_STRUCTURAL_ELEMENT_SLUG = "opening-void"
+STRUCTURAL_EXCLUSION_ZONE_ELEMENT_SLUG = "structural-exclusion-zone"
+STRUCTURAL_BEAM_ELEMENT_SLUG = "structural-beam"
+STRUCTURAL_COLUMN_ELEMENT_SLUG = "structural-column"
+STRUCTURAL_WALL_ELEMENT_SLUG = "structural-wall"
+STRUCTURAL_SLAB_FLOOR_ELEMENT_SLUG = "structural-slab-floor"
+STRUCTURAL_SLAB_BASE_ELEMENT_SLUG = "structural-slab-base"
+STRUCTURAL_SLAB_ROOF_ELEMENT_SLUG = "structural-slab-flat-roof"
+STRUCTURAL_FOOTING_ELEMENT_SLUG = "structural-footing"
+STRUCTURAL_STAIR_ELEMENT_SLUG = "structural-stair"
+STRUCTURAL_RAMP_ELEMENT_SLUG = "structural-ramp"
+STRUCTURAL_REBAR_ELEMENT_SLUG = "structural-reinforcing-bar"
+STRUCTURAL_EDGE_STRIP_ELEMENT_SLUG = "structural-edge-strip"
+
 # Entity-level attributes (pset is null) applied as IFC fields, not Psets
 _ENTITY_ATTRS = frozenset({"Name", "LongName", "PredefinedType", "ObjectType", "Phase"})
 
@@ -311,6 +326,89 @@ COLUMN_DEFAULTS: dict[str, Any] = {
     "BelowTerrain": "FALSE",
     "eBKP": "C03.02",
     "CalculatedType": "Stütze_Beton",
+}
+
+# Structural (Tragwerk) cards on the shared shell-construction vignette.
+# Concrete tender psets (211.5) share one curated set of tokens.
+_STRUCTURAL_CONCRETE_DEFAULTS: dict[str, Any] = {
+    "Status": "NEW",
+    "Bewehrungsgehalt": "100",
+    "Oberfläche": "nicht sichtbar",
+    "Betonqualität": "C",
+}
+STRUCTURAL_EXCLUSION_ZONE_DEFAULTS: dict[str, Any] = {
+    "Name": "SZ-01",
+    "PredefinedType": "USERDEFINED",
+    "ObjectType": "Sperrzone",
+}
+STRUCTURAL_BEAM_DEFAULTS: dict[str, Any] = {
+    **_STRUCTURAL_CONCRETE_DEFAULTS,
+    "Name": "U-01",
+    # GIRDER is listed in the value list but is not an IFC4 IfcBeamTypeEnum token.
+    "PredefinedType": "BEAM",
+    "Bewehrungsgehalt": "140",
+    "Oberfläche": "Sichtbeton BOK 2 zweiseitig",
+}
+STRUCTURAL_COLUMN_DEFAULTS: dict[str, Any] = {
+    **_STRUCTURAL_CONCRETE_DEFAULTS,
+    "Name": "S-01",
+    "Bewehrungsgehalt": "200",
+    "Oberfläche": "Sichtbeton BOK 2 zweiseitig",
+}
+STRUCTURAL_WALL_DEFAULTS: dict[str, Any] = {
+    **_STRUCTURAL_CONCRETE_DEFAULTS,
+    "Name": "W-01",
+}
+STRUCTURAL_SLAB_FLOOR_DEFAULTS: dict[str, Any] = {
+    **_STRUCTURAL_CONCRETE_DEFAULTS,
+    "Name": "D-01",
+    "PredefinedType": "FLOOR",
+    "Bewehrungsgehalt": "90",
+}
+STRUCTURAL_SLAB_BASE_DEFAULTS: dict[str, Any] = {
+    **_STRUCTURAL_CONCRETE_DEFAULTS,
+    "Name": "BP-01",
+    "PredefinedType": "BASESLAB",
+    "Bewehrungsgehalt": "80",
+}
+STRUCTURAL_SLAB_ROOF_DEFAULTS: dict[str, Any] = {
+    **_STRUCTURAL_CONCRETE_DEFAULTS,
+    "Name": "FD-01",
+    "PredefinedType": "ROOF",
+    "IsExternal": "TRUE",
+    "Bewehrungsgehalt": "90",
+}
+STRUCTURAL_FOOTING_DEFAULTS: dict[str, Any] = {
+    **_STRUCTURAL_CONCRETE_DEFAULTS,
+    "Name": "F-01",
+    "PredefinedType": "STRIP_FOOTING",
+    "Bewehrungsgehalt": "60",
+}
+STRUCTURAL_STAIR_DEFAULTS: dict[str, Any] = {
+    **_STRUCTURAL_CONCRETE_DEFAULTS,
+    "Name": "TR-01",
+    "PredefinedType": "STRAIGHT_RUN_STAIR",
+    "Bewehrungsgehalt": "120",
+    "Oberfläche": "Sichtbeton BOK 3 zweiseitig",
+}
+STRUCTURAL_RAMP_DEFAULTS: dict[str, Any] = {
+    **_STRUCTURAL_CONCRETE_DEFAULTS,
+    "Name": "RA-01",
+    "PredefinedType": "STRAIGHT_RUN_RAMP",
+    "Bewehrungsgehalt": "110",
+    "Betonqualität": "D",
+}
+STRUCTURAL_REBAR_DEFAULTS: dict[str, Any] = {
+    "Bewehrungsposition": "1",
+    "Bewehrungsdurchmesser": "16",
+    "Teilung": "200",
+    "Stahllistennummer": "SL-01",
+}
+STRUCTURAL_EDGE_STRIP_DEFAULTS: dict[str, Any] = {
+    "Name": "RS-01",
+    "PredefinedType": "USERDEFINED",
+    "ObjectType": "Randstreifen",
+    "Randabschluss": "Stellplatte",
 }
 
 # Maintenance clearance (Wartungsraum) at the filter of a monoblock — German ObjectType token
@@ -641,6 +739,142 @@ WINDOW_INTERIOR_DEFAULTS: dict[str, Any] = {
     "Status": "NEW",
     "eBKP": "G01.04",
     "CalculatedType": "Fenster_Innen_B=1.20m_H=1.40m",
+}
+
+# MEP devices and schematic segments (elements/mep-*.yaml), keyed by element slug.
+# Value-list tokens must exist in the referenced values/*.yaml list.
+# ``Tag`` has no pset and is not an _ENTITY_ATTRS field; MEP generators set it.
+_MEP_COMMON_DEFAULTS: dict[str, Any] = {
+    "Status": "NEW",
+    "ElementStatus": "NEW",
+    "CostInterface": "GAB",
+    "BelowTerrain": "FALSE",
+}
+_MEP_ELECTRICAL = {"AwardInterface": "232", "PlanningInterface": "093"}
+_MEP_LOW_VOLTAGE = {"AwardInterface": "236", "PlanningInterface": "093"}
+_MEP_HEATING = {"AwardInterface": "242", "PlanningInterface": "094"}
+_MEP_VENTILATION = {"AwardInterface": "244", "PlanningInterface": "094"}
+_MEP_COOLING = {"AwardInterface": "245", "PlanningInterface": "094"}
+_MEP_SANITARY = {"AwardInterface": "251", "PlanningInterface": "095"}
+_MEP_SANITARY_PIPES = {"AwardInterface": "254", "PlanningInterface": "095"}
+
+MEP_DEVICE_DEFAULTS: dict[str, dict[str, Any]] = {
+    # Plant room (Technikzentrale Wärme/Kälte)
+    "mep-boiler": {**_MEP_HEATING, "PredefinedType": "WATER", "Name": "WE-01", "Tag": "WE-01"},
+    "mep-heat-exchanger": {**_MEP_HEATING, "PredefinedType": "PLATE", "Name": "FWS-01", "Tag": "FWS-01"},
+    "mep-chiller": {**_MEP_COOLING, "PredefinedType": "WATERCOOLED", "Name": "KM-01", "Tag": "KM-01"},
+    "mep-pump": {**_MEP_HEATING, "PredefinedType": "CIRCULATOR", "Name": "P-01", "Tag": "P-01"},
+    "mep-compressor": {**_MEP_SANITARY, "PredefinedType": "SCROLL", "Name": "DL-01", "Tag": "DL-01"},
+    "mep-gas-regulator": {**_MEP_SANITARY, "PredefinedType": "GASMETER", "Name": "GDR-01", "Tag": "GDR-01"},
+    "mep-tank": {**_MEP_SANITARY, "PredefinedType": "STORAGE", "Name": "FA-01", "Tag": "FA-01"},
+    "mep-schematic-equipment-space": {
+        "PredefinedType": "USERDEFINED",
+        "ObjectType": "Erzeugerplatz",
+        "Name": "EP-01",
+    },
+    # Electrical room (Elektroraum)
+    "mep-transformer": {**_MEP_ELECTRICAL, "PredefinedType": "VOLTAGE", "Name": "TR-01", "Tag": "TR-01"},
+    "mep-ups": {**_MEP_ELECTRICAL, "PredefinedType": "UPS", "Name": "USV-01", "Tag": "USV-01"},
+    "mep-electric-distribution-board": {
+        **_MEP_ELECTRICAL,
+        "PredefinedType": "SWITCHBOARD",
+        "Name": "HV-01",
+        "Tag": "HV-01",
+    },
+    "mep-electric-generator": {
+        **_MEP_ELECTRICAL,
+        "PredefinedType": "ENGINEGENERATOR",
+        "Name": "NSA-01",
+        "Tag": "NSA-01",
+    },
+    # Roof plant (Dachzentrale)
+    "mep-cooling-tower": {
+        **_MEP_COOLING,
+        "PredefinedType": "MECHANICALFORCEDDRAFT",
+        "Name": "RK-01",
+        "Tag": "RK-01",
+    },
+    "mep-unitary-equipment": {
+        **_MEP_VENTILATION,
+        "PredefinedType": "AIRHANDLER",
+        "Name": "LA-01",
+        "Tag": "LA-01",
+    },
+    "mep-fan": {**_MEP_VENTILATION, "PredefinedType": "PROPELLORAXIAL", "Name": "DV-01", "Tag": "DV-01"},
+    # Office ceiling (Büro mit Abhangdecke)
+    "mep-air-terminal": {**_MEP_VENTILATION, "PredefinedType": "DIFFUSER", "Name": "LD-01", "Tag": "LD-01"},
+    "mep-light-fixture": {**_MEP_ELECTRICAL, "PredefinedType": "DIRECTIONSOURCE", "Name": "L-01", "Tag": "L-01"},
+    "mep-alarm": {
+        **_MEP_LOW_VOLTAGE,
+        "PredefinedType": "USERDEFINED",
+        "ObjectType": "Rauchmelder",
+        "Name": "RM-01",
+        "Tag": "RM-01",
+    },
+    "mep-fire-suppression-terminal": {
+        **_MEP_SANITARY,
+        "PredefinedType": "SPRINKLER",
+        "Name": "SPR-01",
+        "Tag": "SPR-01",
+    },
+    "mep-cooled-beam": {**_MEP_COOLING, "PredefinedType": "ACTIVE", "Name": "KB-01", "Tag": "KB-01"},
+    "mep-air-terminal-box": {
+        **_MEP_VENTILATION,
+        "PredefinedType": "VARIABLEFLOWPRESSUREINDEPENDANT",
+        "Name": "VVS-01",
+        "Tag": "VVS-01",
+    },
+    "mep-damper": {**_MEP_VENTILATION, "PredefinedType": "FIREDAMPER", "Name": "BSK-01", "Tag": "BSK-01"},
+    "mep-actuator": {
+        **_MEP_VENTILATION,
+        "PredefinedType": "ELECTRICACTUATOR",
+        "Name": "AN-01",
+        "Tag": "AN-01",
+    },
+    # Wall devices (Wandabschnitt Elektro / Wohnraum Aussenwand)
+    "mep-switching-device": {
+        **_MEP_ELECTRICAL,
+        "PredefinedType": "TOGGLESWITCH",
+        "Name": "S-01",
+        "Tag": "S-01",
+    },
+    "mep-outlet": {**_MEP_ELECTRICAL, "PredefinedType": "POWEROUTLET", "Name": "SD-01", "Tag": "SD-01"},
+    "mep-sensor": {**_MEP_LOW_VOLTAGE, "PredefinedType": "TEMPERATURESENSOR", "Name": "RT-01", "Tag": "RT-01"},
+    "mep-communications-appliance": {
+        **_MEP_LOW_VOLTAGE,
+        "PredefinedType": "NETWORKAPPLIANCE",
+        "Name": "AP-01",
+        "Tag": "AP-01",
+    },
+    "mep-space-heater": {**_MEP_HEATING, "PredefinedType": "RADIATOR", "Name": "HK-01", "Tag": "HK-01"},
+    "mep-valve": {**_MEP_HEATING, "PredefinedType": "DIVERTING", "Name": "HKV-01", "Tag": "HKV-01"},
+    "mep-gas-terminal": {**_MEP_SANITARY, "ObjectType": "GASAPPLIANCE", "Name": "GE-01", "Tag": "GE-01"},
+    # Bathroom (Bad)
+    "mep-sanitary-terminal": {
+        **_MEP_SANITARY,
+        "PredefinedType": "TOILETPAN",
+        "Name": "WC-01",
+        "Tag": "WC-01",
+    },
+    "mep-waste-terminal": {**_MEP_SANITARY, "PredefinedType": "FLOORWASTE", "Name": "BA-01", "Tag": "BA-01"},
+    # Riser section (Steigzone)
+    "mep-schematic-pipe": {**_MEP_HEATING, "Reference": "VL-H", "Name": "HZ-VL-01"},
+    "mep-schematic-duct": {**_MEP_VENTILATION, "Reference": "ZU", "Name": "ZU-01"},
+    "mep-schematic-tray": {**_MEP_ELECTRICAL, "Reference": "EL", "Name": "EL-01"},
+    "mep-downpipe": {
+        **_MEP_SANITARY_PIPES,
+        "PredefinedType": "RIGIDSEGMENT",
+        "Reference": "FL",
+        "Name": "FL-01",
+    },
+    "mep-provision-for-void": {
+        "PredefinedType": "PROVISIONFORVOID",
+        "Name": "DB-01",
+        "Reference": "DB-01",
+    },
+}
+MEP_DEVICE_DEFAULTS = {
+    slug: {**_MEP_COMMON_DEFAULTS, **values} for slug, values in MEP_DEVICE_DEFAULTS.items()
 }
 
 _GROSS_VOLUME_DEFAULTS: dict[str, Any] = {

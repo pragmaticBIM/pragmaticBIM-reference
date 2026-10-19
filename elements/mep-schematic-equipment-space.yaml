@@ -58,8 +58,10 @@ needed_in_domain:
 entity_ifc2x3: IfcBuildingElementProxy
 entity_ifc4: IfcBuildingElementProxy
 entity_ifc4_3: IfcBuildingElementProxy
-picture_link: null
-model_link: null
+picture_link: mep-schematic-equipment-space.png
+attachment_link: mep-schematic-equipment-space.ifc
+picture_print_link: mep-schematic-equipment-space-print.tif
+model_link: mep-schematic-equipment-space.ifc
 applicability:
   de: (entity_ifc4=IfcBuildingElementProxy AND ObjectType=Erzeugerplatz) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Erzeugerplatz)
   fr: (entity_ifc4=IfcBuildingElementProxy AND ObjectType="Espace générateur") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Espace générateur")

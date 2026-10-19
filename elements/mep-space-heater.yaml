@@ -54,8 +54,10 @@ needed_in_domain:
 entity_ifc2x3: IfcFlowTerminal
 entity_ifc4: IfcSpaceHeater
 entity_ifc4_3: IfcSpaceHeater
-picture_link: null
-model_link: null
+picture_link: mep-space-heater.png
+attachment_link: mep-space-heater.ifc
+picture_print_link: mep-space-heater-print.tif
+model_link: mep-space-heater.ifc
 applicability: entity_ifc4=IfcSpaceHeater
 attributes:
 - name: PredefinedType

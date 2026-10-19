@@ -54,8 +54,10 @@ needed_in_domain:
 entity_ifc2x3: IfcEnergyConversionDevice
 entity_ifc4: IfcTransformer
 entity_ifc4_3: IfcTransformer
-picture_link: null
-model_link: null
+picture_link: mep-transformer.png
+attachment_link: mep-transformer.ifc
+picture_print_link: mep-transformer-print.tif
+model_link: mep-transformer.ifc
 applicability: entity_ifc4=IfcTransformer
 attributes:
 - name: PredefinedType

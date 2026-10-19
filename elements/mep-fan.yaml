@@ -54,8 +54,10 @@ needed_in_domain:
 entity_ifc2x3: IfcFlowMovingDevice
 entity_ifc4: IfcFan
 entity_ifc4_3: IfcFan
-picture_link: null
-model_link: null
+picture_link: mep-fan.png
+attachment_link: mep-fan.ifc
+picture_print_link: mep-fan-print.tif
+model_link: mep-fan.ifc
 applicability: entity_ifc4=IfcFan
 attributes:
 - name: PredefinedType

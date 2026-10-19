@@ -54,8 +54,10 @@ needed_in_domain:
 entity_ifc2x3: IfcFlowController
 entity_ifc4: IfcAirTerminalBox
 entity_ifc4_3: IfcAirTerminalBox
-picture_link: null
-model_link: null
+picture_link: mep-air-terminal-box.png
+attachment_link: mep-air-terminal-box.ifc
+picture_print_link: mep-air-terminal-box-print.tif
+model_link: mep-air-terminal-box.ifc
 applicability: entity_ifc4=IfcAirTerminalBox
 attributes:
 - name: PredefinedType
