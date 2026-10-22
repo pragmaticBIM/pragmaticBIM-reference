@@ -7,7 +7,11 @@ Sources are keyed by data-schema element id:
 - ``REUSE``: Reference scenes (``runner.SAMPLE_CATALOG``) under the data-schema id.
 
 Every picture is rendered in the armasuisse style: red accent, no
-pragmaticBIM engraving or watermark.
+pragmaticBIM engraving or watermark. Elements whose ``entity_ifc4`` is a
+system (IfcDistributionSystem / IfcBuildingSystem) also accent the pipes,
+cables and trays that serve the accented devices. Virtual elements (project,
+site, building, storey, system, zone) get the IFC hierarchy tree in the
+top-left corner with their node highlighted.
 
 arma ids equal to a data-schema id use that source; other arma ids are
 mapped in ``dataschema.arma.ARMA_SOURCES`` (to a data-schema id or straight
@@ -19,8 +23,13 @@ folder as ``{arma-id}.png`` / ``{arma-id}-print.tif``, sets ``picture_link``
 no element references any more. ``--prune`` also deletes every other
 unreferenced picture in the arma media folder.
 
+``--reference`` renders the same project, site, building and storey scenes
+in the Reference style (orange accent, engraving and watermark) into
+``media/images`` and links the print TIF on the Reference element YAML.
+
     python scripts/render_data_schema_pictures.py --only brenner
     python scripts/render_data_schema_pictures.py --publish --prune
+    python scripts/render_data_schema_pictures.py --reference
 """
 
 from __future__ import annotations
@@ -39,6 +48,7 @@ sys.path.insert(0, str(ROOT))
 
 from dataschema.arma import ARMA_SOURCES  # noqa: E402
 from dataschema.cards import CARDS  # noqa: E402
+from dataschema.hierarchy import NODE_BY_ENTITY, apply_hierarchy  # noqa: E402
 from dataschema.render import render_card  # noqa: E402
 from runner import SAMPLE_CATALOG, run_catalog  # noqa: E402
 
@@ -46,7 +56,17 @@ ARMA = ROOT.parent / "arma-elementplan-data"
 ARMA_ELEMENTS = ARMA / "elements"
 ARMA_IMAGES = ARMA / "media" / "images"
 REFERENCE_IMAGES = ROOT / "media" / "images"
+REFERENCE_ELEMENTS = ROOT / "elements"
+# Reference element id → data-schema card shared with the arma pictures.
+REFERENCE_CARDS = {
+    "project": "projekt",
+    "site": "planungsperimeter-projektperimeter",
+    "building": "gebaude-bauwerke",
+    "storey": "geschoss-stockwerk",
+}
+REFERENCE_HIERARCHY_ACCENT = (252, 186, 87)
 IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".tif", ".tiff"}
+SYSTEM_ENTITIES = {"IfcDistributionSystem", "IfcBuildingSystem"}
 # Material colour; lit top faces render as the armasuisse red #D43131.
 ARMA_ACCENT = (0.53, 0.02, 0.02)
 
@@ -67,9 +87,7 @@ REUSE: dict[str, str] = {
     "fenster-oberlichter": "architecture-window-exterior",
     "feuerloschanschluss": "mep-fire-suppression-terminal",
     "fundamente": "architecture-footing",
-    "gebaude-bauwerke": "building",
     "generator": "mep-electric-generator",
-    "geschoss-stockwerk": "storey",
     "geschossvolumen": "spaces-gross-volume",
     "gitter": "mep-air-terminal",
     "heizkorper": "mep-space-heater",
@@ -82,11 +100,8 @@ REUSE: dict[str, str] = {
     "luftauslasskasten": "mep-air-terminal-box",
     "luftkanal": "mep-schematic-duct",
     "luftraum": "spaces-luftraum",
-    "modelleinfugepunkt-disziplin": "survey-reference-point",
     "modelleinfugepunkt-perimeter-bauwerk": "survey-reference-point",
     "monoblock": "mep-unitary-equipment",
-    "planungsperimeter-projektperimeter": "site",
-    "projekt": "project",
     "rauchmelder": "mep-sensor",
     "regelventil": "mep-valve",
     "rohrleitung": "mep-schematic-pipe",
@@ -106,7 +121,6 @@ REUSE: dict[str, str] = {
     "i-007-aufzuge": "spaces-elevator",
     "i-008-brandmeldeanlage": "mep-alarm",
     "i-011-abwasserpumpen": "mep-pump",
-    "i-013-anpassrampen": "structural-ramp",
     "i-019-einbruchmeldeanlage": "mep-sensor",
     "i-024-ersatzstromanlage": "mep-electric-generator",
     "i-026-gas-gebaudeinstallation": "mep-gas-terminal",
@@ -120,6 +134,14 @@ REUSE: dict[str, str] = {
     "i-066-wassererwarmer": "mep-boiler",
     "i-069-warmeerz-oel-gas": "mep-boiler",
     "i-081-oel-und-fettabscheider": "mep-tank",
+}
+
+# Non-system elements whose picture also accents the pipes serving the device.
+SERVING_RUNS = {"feuerloschanschluss"}
+
+# arma id → Reference catalog entry overrides (variant of the shared scene).
+ENTRY_OVERRIDES: dict[str, dict] = {
+    "g01-06-002-innentore-handbetrieben": {"include_hatch": False},
 }
 
 
@@ -146,6 +168,17 @@ def arma_sources() -> dict[str, str]:
     return sources
 
 
+def entity_ifc4(arma_id: str) -> str | None:
+    text = (ARMA_ELEMENTS / f"{arma_id}.yaml").read_text(encoding="utf-8")
+    match = re.search(r"^entity_ifc4:\s*(\S+)\s*$", text, re.MULTILINE)
+    return match.group(1) if match else None
+
+
+def is_system(arma_id: str) -> bool:
+    """System elements also accent the pipes, cables and trays of the system."""
+    return entity_ifc4(arma_id) in SYSTEM_ENTITIES
+
+
 def catalog_entry(slug: str) -> dict:
     """Reference catalog entry that renders the picture of ``slug``."""
     for entry in SAMPLE_CATALOG:
@@ -157,8 +190,19 @@ def catalog_entry(slug: str) -> dict:
     raise KeyError(f"no Reference catalog entry for {slug!r}")
 
 
-def render_reference(slug: str, out_dir: Path) -> tuple[Path, Path]:
-    entry = catalog_entry(slug)
+def render_reference(
+    slug: str,
+    out_dir: Path,
+    system: bool = False,
+    serving_runs: bool = False,
+    overrides: dict | None = None,
+) -> tuple[Path, Path]:
+    entry = {
+        **catalog_entry(slug),
+        "system": system,
+        "serving_runs": serving_runs,
+        **(overrides or {}),
+    }
     with contextlib.redirect_stdout(io.StringIO()):
         _, failed, _ = run_catalog([entry], out_dir, attach=False, accent=ARMA_ACCENT, brand=False)
     if failed:
@@ -166,14 +210,40 @@ def render_reference(slug: str, out_dir: Path) -> tuple[Path, Path]:
     return out_dir / f"{entry['id']}.png", out_dir / f"{entry['id']}-print.tif"
 
 
-def source_files(kind: str, key: str, work_dir: Path, rendered: dict[str, tuple[Path, Path]]) -> tuple[Path, Path]:
-    """PNG and print TIF for a source; each source is rendered once per run."""
-    if key not in rendered:
+def source_files(
+    kind: str,
+    key: str,
+    system: bool,
+    work_dir: Path,
+    rendered: dict[tuple, tuple[Path, Path]],
+    serving_runs: bool = False,
+    overrides: dict | None = None,
+) -> tuple[Path, Path]:
+    """PNG and print TIF for a source; each source is rendered once per run and variant."""
+    override_key = tuple(sorted((overrides or {}).items()))
+    variant = (key, system, serving_runs, override_key)
+    if variant not in rendered:
+        suffix = "-system" if system else "-runs" if serving_runs else ""
+        suffix += "".join(f"-{name}-{value}" for name, value in override_key)
         if kind == "card":
-            rendered[key] = render_card(key, CARDS[key], work_dir / "cards", work_dir / "ifc", accent=ARMA_ACCENT, brand=False)
+            rendered[variant] = render_card(
+                key,
+                CARDS[key],
+                work_dir / f"cards{suffix}",
+                work_dir / f"ifc{suffix}",
+                accent=ARMA_ACCENT,
+                brand=False,
+                system=system,
+            )
         else:
-            rendered[key] = render_reference(key, work_dir / "reference")
-    return rendered[key]
+            rendered[variant] = render_reference(
+                key,
+                work_dir / f"reference{suffix}",
+                system=system,
+                serving_runs=serving_runs,
+                overrides=overrides,
+            )
+    return rendered[variant]
 
 
 def place(arma_id: str, png: Path, tif: Path | None, image_dir: Path) -> tuple[Path, Path | None]:
@@ -234,13 +304,54 @@ def delete_unreferenced(candidates: set[str]) -> list[str]:
     return deleted
 
 
+def publish_reference(output_dir: Path, wanted: set[str] | None) -> int:
+    """Render the shared spatial scenes for the Reference elements and link them."""
+    unknown = (wanted or set()) - set(REFERENCE_CARDS)
+    if unknown:
+        print(f"No Reference picture source for: {', '.join(sorted(unknown))}", file=sys.stderr)
+        return 1
+    for element_id, card_id in REFERENCE_CARDS.items():
+        if wanted is not None and element_id not in wanted:
+            continue
+        png, tif = render_card(
+            card_id,
+            CARDS[card_id],
+            output_dir / "reference-cards",
+            output_dir / "reference-ifc",
+            watermark=False,
+        )
+        png, tif = place(element_id, png, tif, REFERENCE_IMAGES)
+        node = NODE_BY_ENTITY[entity_ifc4_of(REFERENCE_ELEMENTS / f"{element_id}.yaml")]
+        apply_hierarchy(png, tif, node, accent=REFERENCE_HIERARCHY_ACCENT, watermark=True)
+        path = REFERENCE_ELEMENTS / f"{element_id}.yaml"
+        text = _set_scalar(path.read_text(encoding="utf-8"), "picture_print_link", tif.name, after="picture_link")
+        path.write_text(text, encoding="utf-8")
+        print(f"OK  {element_id} (card {card_id})")
+    return 0
+
+
+def entity_ifc4_of(path: Path) -> str:
+    match = re.search(r"^entity_ifc4:\s*(\S+)\s*$", path.read_text(encoding="utf-8"), re.MULTILINE)
+    if not match:
+        raise ValueError(f"no entity_ifc4 in {path}")
+    return match.group(1)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--only", nargs="*", help="arma element ids (default: all with a source)")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "output" / "data-schema")
     parser.add_argument("--publish", action="store_true", help="Write into arma-elementplan-data and link the YAML")
     parser.add_argument("--prune", action="store_true", help="With --publish: delete all unreferenced arma pictures")
+    parser.add_argument(
+        "--reference",
+        action="store_true",
+        help="Render project, site, building and storey into the Reference media folder",
+    )
     args = parser.parse_args(argv)
+
+    if args.reference:
+        return publish_reference(args.output_dir, set(args.only) if args.only else None)
 
     sources = arma_sources()
     image_dir = ARMA_IMAGES if args.publish else args.output_dir
@@ -252,18 +363,35 @@ def main(argv: list[str] | None = None) -> int:
 
     failed: list[str] = []
     replaced: set[str] = set()
-    rendered: dict[str, tuple[Path, Path]] = {}
+    rendered: dict[tuple, tuple[Path, Path]] = {}
     done = 0
     for arma_id, source in sources.items():
         if wanted is not None and arma_id not in wanted:
             continue
         try:
             kind, key = resolve(source)
-            png, tif = place(arma_id, *source_files(kind, key, args.output_dir, rendered), image_dir)
+            system = is_system(arma_id)
+            serving_runs = arma_id in SERVING_RUNS
+            png, tif = place(
+                arma_id,
+                *source_files(
+                    kind,
+                    key,
+                    system,
+                    args.output_dir,
+                    rendered,
+                    serving_runs,
+                    ENTRY_OVERRIDES.get(arma_id),
+                ),
+                image_dir,
+            )
+            node = NODE_BY_ENTITY.get(entity_ifc4(arma_id) or "")
+            if node:
+                apply_hierarchy(png, tif, node)
             if args.publish:
                 replaced |= link_element(arma_id, png, tif)
             done += 1
-            print(f"OK  {arma_id} ({kind} {key})")
+            print(f"OK  {arma_id} ({kind} {key}{', system' if system else ''})")
         except Exception:
             failed.append(arma_id)
             print(f"ERR {arma_id}", file=sys.stderr)

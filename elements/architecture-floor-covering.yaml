@@ -9,52 +9,56 @@ name:
   en: Interior floor build-up
 definition:
   de: |-
-    Schafft eine verlässliche Grundlage für Höhenkoordination, Fugenkonzept, Ausschreibung und Mengenermittlung im Innenausbau. Frühe Planung ohne modelliertes Covering: FloorCovering am Innenraum.
+    Schafft eine verlässliche Grundlage für Höhenkoordination, Fugenkonzept, Ausschreibung und Mengenermittlung im Innenausbau. Ab der Ausschreibung in allen Räumen modelliert; davor und im Betrieb steht der Bodenbelag am Innenraum.
 
     **Beschreibung**
     - Bodenaufbau aus Unterlagsboden und Belag gemäss Bauteilkatalog – nur Innenräume.
     - Fugen sind im Modell enthalten, insbesondere bei Fussbodenheizung.
 
     **Modellierungshinweis**
+    - Ab Phase Ausschreibung in allen Innenräumen modellieren. In den Phasen davor und im Betrieb (FM) den Bodenbelag über FloorCovering am Innenraum erfassen.
     - Als eine Schicht modellieren – nicht nach Räumen, sondern nach Aufbautypen trennen; ein Aufbau kann mehrere Räume umfassen.
     - Fugen und Fugenausführung modellieren, insbesondere bei Fussbodenheizung.
     - Bodenbelagstyp über Finish, Unterlagsbodentyp über SubfloorType erfassen.
     - Geeignetes Material im Autorensystem verwenden und exportieren.
     - Aussenbodenflächen nicht hier modellieren – frühe Planung: FloorCovering (AOF) am Aussenraum; Detail: Bodenbelag Aussen (ARC-FLOOR-COV-EXT).
   fr: |-
-    Fournit une base fiable pour la coordination des niveaux, le concept de joints, l'appel d'offres et le métré des aménagements intérieurs. Planification précoce sans covering modélisé : FloorCovering sur le local intérieur.
+    Fournit une base fiable pour la coordination des niveaux, le concept de joints, l'appel d'offres et le métré des aménagements intérieurs. Modélisé dans tous les locaux dès l'appel d'offres ; avant et en exploitation, le revêtement de sol est saisi sur le local intérieur.
 
     **Description**
     - Complexe de sol avec chape et revêtement selon le catalogue de composants – locaux intérieurs uniquement.
     - Joints inclus dans le modèle, notamment avec chauffage au sol.
 
     **Directives de modélisation**
+    - Modéliser dans tous les locaux intérieurs dès la phase d'appel d'offres. Dans les phases précédentes et en exploitation (FM), saisir le revêtement de sol via FloorCovering sur le local intérieur.
     - Modéliser comme couche unique – diviser par type d'aufbau, pas par locaux ; un aufbau peut couvrir plusieurs locaux.
     - Modéliser joints et exécution des joints, notamment avec chauffage au sol.
     - Saisir le type de revêtement via Finish, le type de chape via SubfloorType.
     - Utiliser et exporter le matériau approprié depuis le logiciel auteur.
     - Ne pas modéliser ici les surfaces de sol extérieures – planification précoce : FloorCovering (AOF) sur l'espace extérieur ; détail : Revêtement de sol extérieur (ARC-FLOOR-COV-EXT).
   it: |-
-    Fornisce una base affidabile per il coordinamento delle quote, il concetto dei giunti, l’appalto e il computo metrico delle finiture interne. Pianificazione precoce senza covering modellato: FloorCovering sul locale interno.
+    Fornisce una base affidabile per il coordinamento delle quote, il concetto dei giunti, l’appalto e il computo metrico delle finiture interne. Modellata in tutti i locali a partire dall’appalto; prima e nell’esercizio la pavimentazione è registrata sul locale interno.
 
     **Descrizione**
     - Stratigrafia di pavimento con sottofondo e rivestimento secondo il catalogo componenti – solo locali interni.
     - Fughe incluse nel modello, in particolare con riscaldamento a pavimento.
 
     **Direttive di modellazione**
+    - Modellare in tutti i locali interni a partire dalla fase di appalto. Nelle fasi precedenti e nell’esercizio (FM), registrare la pavimentazione tramite FloorCovering sul locale interno.
     - Modellare come strato unico – dividere per tipo di stratigrafia, non per locali; una stratigrafia può coprire più locali.
     - Modellare fughe ed esecuzione delle fughe, in particolare con riscaldamento a pavimento.
     - Registrare il tipo di pavimentazione tramite Finish, il tipo di sottofondo tramite SubfloorType.
     - Usare ed esportare il materiale appropriato dal software di modellazione.
     - Non modellare qui le superfici di pavimento esterne – pianificazione precoce: FloorCovering (AOF) sullo spazio esterno; dettaglio: Pavimentazione esterna (ARC-FLOOR-COV-EXT).
   en: |-
-    Provides a reliable basis for level coordination, joint design, tendering, and quantity take-off for interior finishes. Early design without a modelled covering: FloorCovering on the interior space.
+    Provides a reliable basis for level coordination, joint design, tendering, and quantity take-off for interior finishes. Modelled in every room from tendering on; before that and in operation, the floor finish sits on the interior space.
 
     **Description**
     - Floor build-up with subfloor and finish according to the component catalogue – interior spaces only.
     - Joints included in the model, especially with underfloor heating.
 
     **Modelling guidelines**
+    - Model in every interior space from the tendering phase on. In earlier phases and in operation (FM), record the floor finish via FloorCovering on the interior space.
     - Model as one layer – split by build-up type, not by rooms; one build-up may span several rooms.
     - Model joints and joint execution, especially with underfloor heating.
     - Capture floor covering type via Finish, subfloor type via SubfloorType.
@@ -96,7 +100,7 @@ attributes:
       - `FLOORING` — floor covering
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-covering-flooring
-  needed_in_phases: ['41', '51', '52', '53', '61', '62']
+  needed_in_phases: ['41', '51', '52', '53']
   ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-design-build-procurement
@@ -134,7 +138,7 @@ attributes:
       - See the Interior floor covering type value list.
   datatype: IfcText
   allowed_values: pragmaticbim:value/floor-covering-type
-  needed_in_phases: ['41', '51', '52', '53', '61', '62']
+  needed_in_phases: ['41', '51', '52', '53']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-flooring-planning
@@ -215,7 +219,7 @@ attributes:
       - See the Subfloor value list.
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/subfloor-type
-  needed_in_phases: ['41', '51', '52', '53', '61', '62']
+  needed_in_phases: ['41', '51', '52', '53']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-flooring-planning

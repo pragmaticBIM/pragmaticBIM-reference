@@ -35,7 +35,7 @@ milestones:
       en: Mid Phase 0 (Strategic Definition)
     status: active
     phase: '0'
-    kind: custom
+    kind: middle
   - id: 'riba:0:E'
     code: E
     sort_order: 3
@@ -68,7 +68,7 @@ milestones:
       en: Mid Phase 1 (Preparation and Briefing)
     status: active
     phase: '1'
-    kind: custom
+    kind: middle
   - id: 'riba:1:E'
     code: E
     sort_order: 6
@@ -101,7 +101,7 @@ milestones:
       en: Mid Phase 2 (Concept Design)
     status: active
     phase: '2'
-    kind: custom
+    kind: middle
   - id: 'riba:2:E'
     code: E
     sort_order: 9
@@ -134,7 +134,7 @@ milestones:
       en: Mid Phase 3 (Spatial Coordination)
     status: active
     phase: '3'
-    kind: custom
+    kind: middle
   - id: 'riba:3:E'
     code: E
     sort_order: 12
@@ -167,7 +167,7 @@ milestones:
       en: Mid Phase 4 (Technical Design)
     status: active
     phase: '4'
-    kind: custom
+    kind: middle
   - id: 'riba:4:E'
     code: E
     sort_order: 15
@@ -200,7 +200,7 @@ milestones:
       en: Mid Phase 5 (Manufacturing and Construction)
     status: active
     phase: '5'
-    kind: custom
+    kind: middle
   - id: 'riba:5:E'
     code: E
     sort_order: 18
@@ -233,7 +233,7 @@ milestones:
       en: Mid Phase 6 (Handover)
     status: active
     phase: '6'
-    kind: custom
+    kind: middle
   - id: 'riba:6:E'
     code: E
     sort_order: 21
@@ -266,7 +266,7 @@ milestones:
       en: Mid Phase 7 (Use)
     status: active
     phase: '7'
-    kind: custom
+    kind: middle
   - id: 'riba:7:E'
     code: E
     sort_order: 24

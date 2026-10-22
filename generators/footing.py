@@ -116,14 +116,21 @@ def generate_footing(
         if close_slab:
             slab_poly = rect_polyline(0.0, 0.0, slab_w, slab_d)
         else:
-            # Cut slab through mid-column so the pad stays visible (L-shaped plate).
+            # Cut slab through mid-column so the pad stays visible (L-shaped plate);
+            # the column footprint is notched out so the column passes through.
+            col_x1 = col_x0 + col_w
+            col_y1 = col_y0 + col_d
             cut_x = col_x0 + col_w * 0.5
             cut_y = col_y0 + col_d * 0.5
             slab_poly = [
                 (0.0, 0.0),
                 (slab_w, 0.0),
                 (slab_w, cut_y),
-                (cut_x, cut_y),
+                (col_x1, cut_y),
+                (col_x1, col_y0),
+                (col_x0, col_y0),
+                (col_x0, col_y1),
+                (cut_x, col_y1),
                 (cut_x, slab_d),
                 (0.0, slab_d),
             ]

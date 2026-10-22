@@ -30,13 +30,14 @@ _SANITARY_PARTS = (
     ("WC", "TOILETPAN", "WC-01"),
     ("WC-Spuelkasten", "CISTERN", "SK-01"),
     ("Waschbecken", "WASHHANDBASIN", "WT-01"),
+    ("Dusche", "SHOWER", "DU-01"),
 )
 
 
 def generate_mep_bathroom(
     params: dict[str, Any] | None = None,
 ) -> tuple[ifcopenshell.file, list, list, list]:
-    """WC, cistern and washbasin as IfcSanitaryTerminal; floor drain in the shower recess."""
+    """WC, cistern, washbasin and shower as IfcSanitaryTerminal; floor drain in the shower recess."""
     params = dict(params or {})
     ifc_file, clearances = generate_movement_clearance(
         {"project_name": params.get("project_name") or "Bad"}

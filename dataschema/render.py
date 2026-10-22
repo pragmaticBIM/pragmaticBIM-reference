@@ -20,6 +20,8 @@ class Card:
     kwargs: dict[str, Any] = field(default_factory=dict)
     camera_padding: float = 1.6
     camera_direction: Sequence[float] | None = None
+    # Scene keys the camera frames; empty frames the whole scene.
+    camera_focus: tuple[str, ...] = ()
     engrave: EngraveSpec = EngraveSpec()
 
 
@@ -45,9 +47,15 @@ def render_card(
     *,
     accent: Sequence[float] | None = None,
     brand: bool = True,
+    watermark: bool | None = None,
+    system: bool = False,
 ) -> tuple[Path, Path]:
+    """``system`` renders the picture of a system: pipes, cables and trays serving the accent are accented too.
+
+    ``watermark`` defaults to ``brand``; turn it off to add the corner label after overlays.
+    """
     scene = card.build(**card.kwargs)
-    result = scene.result(card.highlight)
+    result = scene.result(card.highlight, system=system)
     if ifc_dir is not None:
         ifc_dir.mkdir(parents=True, exist_ok=True)
         result.ifc_file.write(str(ifc_dir / f"{card_id}.ifc"))
@@ -61,10 +69,18 @@ def render_card(
         thin_edge_guids={p.GlobalId for p in result.thin} or None,
         camera_padding=card.camera_padding,
         camera_direction=card.camera_direction,
+        camera_focus_guids={p.GlobalId for key in card.camera_focus for p in scene.groups.get(key, ())} or None,
         color_flooring=False,
         accent=accent,
     )
-    render_isometric(result.ifc_file, png, engrave=brand, watermark=brand, **common, **_engrave_kwargs(card.engrave))
+    render_isometric(
+        result.ifc_file,
+        png,
+        engrave=brand,
+        watermark=brand if watermark is None else watermark,
+        **common,
+        **_engrave_kwargs(card.engrave),
+    )
     render_isometric(
         result.ifc_file,
         tif,

@@ -106,6 +106,8 @@ Door accent omits the upper projecting balcony (keeps the walk-out terrace);
 cladding covers the interior ceiling-slab edge (`cladding_covers_slab`).
 Window accent omits the projecting balcony slabs; cladding covers both
 floor- and ceiling-slab front edges (`cladding_covers_slab`, no balcony).
+It also cuts a skylight (`SKYLIGHT`, `_add_skylight`) into the top slab: frame
+upstand plus a glass plate, accented together with the facade window.
 
 | Concern | Where |
 |---------|--------|
@@ -125,7 +127,9 @@ same flags and drops the camera-facing envelope wall
 stops on that open plane instead of projecting past it. Fabric cards omit
 spaces and accent the door or window. The door card also places a suspended
 ceiling over the primary room with an orange `TRAPDOOR` in that ceiling;
-the swing door stays visible from the open neighbour room.
+the swing door stays visible from the open neighbour room. The trapdoor is
+drawn open: a frame lining the cut plus a flap hinged on the camera-far edge,
+swung up into the plenum (`HATCH_OPEN_ANGLE`) so it reads as a hatch from above.
 
 | Concern | Where |
 |---------|--------|
@@ -190,6 +194,21 @@ Same atrium vignette as ``spaces-luftraum``; accent IfcBeams under a half top sl
 | YAML attrs | `map_beam_params` + `BEAM_DEFAULTS` in `catalog/schema.py` |
 | Sample | `catalog/sample_data.py` (`beam-01`) |
 | Published PNG/IFC | `media/images|attachments/architecture-beam.*` |
+
+## Architectural floor covering (Bodenaufbau Innen)
+
+Two-room interior vignette without ceiling slab or suspended ceiling (open top).
+The left (neighbour) room shows the modelled build-up, split by build-up type,
+as the accent; the right (primary) room keeps no covering and shows its `IfcSpace` dashed.
+This illustrates the rule: build-ups are modelled in every room from tendering
+(41) on; before that and in FM the floor finish sits on the space (`FloorCovering`).
+
+| Concern | Where |
+|---------|--------|
+| Generator | `generators/covering.py` → `generate_covering` (FLOORING interior path, `dotted` space) |
+| YAML attrs | `map_covering_params` in `catalog/mapping.py` |
+| Sample | `catalog/sample_data.py` (`floor-covering-01`) |
+| Published PNG/IFC | `media/images|attachments/architecture-floor-covering.*` |
 
 ## Architectural suspended ceiling (Abhangdecke)
 
@@ -546,13 +565,13 @@ accent (`render/isometric.py` fills accented `_OUTLINE_ONLY_CLASSES`).
 
 | Vignette | Generator | Cards (slug without `mep-`) | Picture |
 |----------|-----------|-----------------------------|---------|
-| Technikzentrale | `mep_plant_room.generate_mep_plant_room` | boiler, heat-exchanger, chiller, pump, compressor, gas-regulator, tank, schematic-equipment-space | Corner room 6.5 × 4.5 m, dashed flow/return header on the back wall; tank sunk in the floor. Equipment-space card shows the empty room with one translucent `Erzeugerplatz` proxy |
+| Technikzentrale | `mep_plant_room.generate_mep_plant_room` | boiler, heat-exchanger, chiller, pump, compressor, gas-regulator, tank, schematic-equipment-space | Corner room 6.5 × 4.5 m, dashed flow/return header on the back wall; tank sunk in the floor; compressed-air distribution with two outlets on the side wall (`serves` compressor). Equipment-space card shows the empty room with one translucent `Erzeugerplatz` proxy |
 | Elektroraum | `mep_plant_room.generate_mep_electrical_room` | transformer, ups, electric-distribution-board, electric-generator | Same room; dashed trays, generator on a plinth with exhaust |
 | Dachzentrale | `mep_roof_plant.generate_mep_roof_plant` | cooling-tower, unitary-equipment, fan | Reuses `generate_roofing`; units on plinths, dashed ducts dropping off the roof edge |
-| Bürodecke | `mep_office_ceiling.generate_mep_office_ceiling` | air-terminal, light-fixture, alarm, fire-suppression-terminal, cooled-beam, air-terminal-box, damper, actuator | Dashed `IfcCovering` CEILING; supply duct through the side wall (fire damper + actuator) → VAV box → branch to two diffusers |
+| Bürodecke | `mep_office_ceiling.generate_mep_office_ceiling` | air-terminal, light-fixture, alarm, fire-suppression-terminal, cooled-beam, air-terminal-box, damper, actuator | Dashed `IfcCovering` CEILING; supply duct through the side wall (fire damper + actuator) → VAV box → branch to two diffusers; fire alarm panel (`ALARMPANEL`) on the side wall, detector line down to it in system pictures |
 | Wandabschnitt Elektro | `mep_wall_devices.generate_mep_wall_electro` | switching-device, outlet, sensor, communications-appliance | Partition `Trennwand` with door; devices in one vertical strip beside the door |
 | Wohnraum Aussenwand | `mep_wall_devices.generate_mep_wall_heating` | space-heater, valve, gas-terminal | Radiator under the window, underfloor manifold cabinet on the side wall, gas outlet above a kitchen counter |
-| Bad | `mep_bathroom.generate_mep_bathroom` | sanitary-terminal, waste-terminal | Reuses `generate_movement_clearance` without clearances; WC, cistern and basin reclassified to `IfcSanitaryTerminal`, floor drain in the shower recess |
+| Bad | `mep_bathroom.generate_mep_bathroom` | sanitary-terminal, waste-terminal | Reuses `generate_movement_clearance` without clearances; WC, cistern, basin and shower tray reclassified to `IfcSanitaryTerminal`, floor drain in the shower recess |
 | Steigzone | `mep_riser.generate_mep_riser` | schematic-pipe, schematic-duct, schematic-tray, downpipe, provision-for-void | Reuses `generate_spatial_structure` (plot 12 × 10); riser in the near corner, horizontal runs hung under the roof slab (roof dashed on pipe / duct / tray cards), holes boolean-cut into 01 + roof slabs; voids dashed unless accented |
 
 | Concern | Where |
@@ -567,7 +586,9 @@ accent (`render/isometric.py` fills accented `_OUTLINE_ONLY_CLASSES`).
 | Published PNG/IFC | `media/images|attachments/mep-*.*` |
 
 Gotchas: faceted pipes get a feature edge per facet (> 15°), so thin pipes read
-black — put them in the scene's `thin` list. Small wall devices need a tight
+black — put them in the scene's `thin` list. For small accented fittings use
+≥ 25 facets and draw bends as one revolved solid (`dataschema/scenes_rooms.py`
+→ `bend_solid`), not as chained cylinders or boxes. Small wall devices need a tight
 `camera_padding` (1.3–1.4). Keep devices out of the brand corner (top of the
 named wall at its camera-near end).
 

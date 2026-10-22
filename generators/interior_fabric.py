@@ -8,6 +8,7 @@ in the partition (with envelope walls when openings are present).
 
 from __future__ import annotations
 
+import math
 from typing import Any, Sequence
 
 import ifcopenshell
@@ -22,6 +23,8 @@ from generators.parts import (
     _closed_polyline_2d,
     add_extruded_product,
     create_body_representation,
+    create_extruded_area_solid,
+    create_oriented_extruded_solid,
     rect_polyline,
     translation_matrix,
 )
@@ -59,8 +62,11 @@ REINF_THICKNESS = 0.04
 # Access hatch in the neighbour-room suspended ceiling (metres).
 HATCH_CLEAR = 0.90
 HATCH_INSET = 0.06
-# Panel sits below the ceiling face so the cut reads as an opening.
-HATCH_RECESS = 0.025
+HATCH_FRAME_WIDTH = 0.04
+HATCH_FRAME_DROP = 0.02
+HATCH_FLAP_THICKNESS = 0.03
+# Opening angle of the flap from the closed position, degrees.
+HATCH_OPEN_ANGLE = 105.0
 
 
 def _find_partition_wall(ifc_file: ifcopenshell.file) -> ifcopenshell.entity_instance:
@@ -434,21 +440,36 @@ def _add_suspended_ceiling_with_hatch(
         representation=create_body_representation(ifc_file, body_context, solid),
     )
 
-    panel = add_extruded_product(
+    # Frame lining the cut plus the opened flap, hinged on the camera-far
+    # edge (low Y) and standing up in the plenum so it reads from above.
+    panel = create_entity(ifc_file, ifc_class="IfcDoor", name="RO-01", predefined_type="TRAPDOOR")
+    assign_container(ifc_file, relating_structure=storey, products=[panel])
+    frame_z0 = finish_ceiling_height - HATCH_FRAME_DROP
+    frame_h = CEILING_COVERING_THICKNESS + HATCH_FRAME_DROP
+    t = HATCH_FRAME_WIDTH
+    frame = [
+        create_extruded_area_solid(ifc_file, rect_polyline(*bounds), frame_h, origin=(0.0, 0.0, frame_z0))
+        for bounds in (
+            (hx0, hy0, hx1, hy0 + t),
+            (hx0, hy1 - t, hx1, hy1),
+            (hx0, hy0 + t, hx0 + t, hy1 - t),
+            (hx1 - t, hy0 + t, hx1, hy1 - t),
+        )
+    ]
+    angle = math.radians(HATCH_OPEN_ANGLE)
+    flap_len = (hy1 - hy0) - 2.0 * HATCH_INSET
+    flap = create_oriented_extruded_solid(
         ifc_file,
-        ifc_class="IfcDoor",
-        name="RO-01",
-        body_context=body_context,
-        storey=storey,
-        polyline=rect_polyline(
-            hx0 + HATCH_INSET,
-            hy0 + HATCH_INSET,
-            hx1 - HATCH_INSET,
-            hy1 - HATCH_INSET,
-        ),
-        thickness=CEILING_COVERING_THICKNESS - HATCH_RECESS,
-        z_bottom=finish_ceiling_height,
-        predefined_type="TRAPDOOR",
+        rect_polyline(0.0, 0.0, flap_len, HATCH_FLAP_THICKNESS),
+        (hx1 - hx0) - 2.0 * HATCH_INSET,
+        origin=(hx0 + HATCH_INSET, hy0 + t, finish_ceiling_height + CEILING_COVERING_THICKNESS),
+        axis=(1.0, 0.0, 0.0),
+        ref_direction=(0.0, math.cos(angle), math.sin(angle)),
+    )
+    assign_representation(
+        ifc_file,
+        product=panel,
+        representation=create_body_representation(ifc_file, body_context, [*frame, flap]),
     )
     panel.OverallWidth = HATCH_CLEAR
     panel.OverallHeight = HATCH_CLEAR
@@ -502,7 +523,8 @@ def generate_interior_fabric(
     Geometry matches the Innenräume vignette with an open top so the partition
     reads clearly; attributes come from the element YAML.
     The door accent also adds a suspended ceiling over the primary room with
-    a ``TRAPDOOR`` in it, and returns both doors so both stay accented.
+    a ``TRAPDOOR`` in it, and returns both doors so both stay accented;
+    ``include_hatch=False`` keeps only the partition door.
     The reinforcement accent returns the host wall as a third value so the
     preview can draw it dotted and see-through.
     """
@@ -529,6 +551,8 @@ def generate_interior_fabric(
     if accent == "door":
         door = _find_interior_door(ifc_file)
         _apply_product_attrs(ifc_file, door, params)
+        if not params.get("include_hatch", True):
+            return ifc_file, door
         hatch = _add_suspended_ceiling_with_hatch(
             ifc_file,
             finish_ceiling_height=float(space_params.get("finish_ceiling_height", 2.6)),

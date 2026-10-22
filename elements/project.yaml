@@ -59,6 +59,7 @@ entity_ifc2x3: IfcProject
 entity_ifc4: IfcProject
 entity_ifc4_3: IfcProject
 picture_link: project.png
+picture_print_link: project-print.tif
 model_link: null
 applicability: entity_ifc4=IfcProject OR entity_ifc2x3=IfcProject
 attributes:

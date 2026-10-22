@@ -523,22 +523,22 @@ attributes:
     pset: Pset_SpaceCoveringRequirements
     definition:
       de: |-
-        Bodenbelagstyp Innen für die frühe Planung – nur als Raumeigenschaft, ohne modellierten Bodenaufbau.
+        Bodenbelagstyp Innen für die frühe Planung und den Betrieb – als Raumeigenschaft. Ab der Ausschreibung wird zusätzlich der Bodenaufbau modelliert.
 
         **Zulässige Werte**
         - Siehe Werteliste [Bodenbelagstyp Raum Innen](https://schema.pragmaticbim.ch/v0.2.0/classification/floor-covering-product.html).
       fr: |-
-        Type de revêtement de sol intérieur pour la planification en phase initiale – uniquement comme propriété de local, sans complexe de sol modélisé.
+        Type de revêtement de sol intérieur pour la planification en phase initiale et l'exploitation – comme propriété de local. Dès l'appel d'offres, le complexe de sol est en plus modélisé.
 
         **Valeurs admises**
         - Voir la liste de valeurs [Type de revêtement de sol local intérieur](https://schema.pragmaticbim.ch/v0.2.0/classification/floor-covering-product.html).
       it: |-
-        Tipo di pavimentazione interna per la pianificazione in fase iniziale – solo come proprietà del locale, senza stratigrafia di pavimento modellata.
+        Tipo di pavimentazione interna per la pianificazione in fase iniziale e l’esercizio – come proprietà del locale. A partire dall’appalto viene modellata anche la stratigrafia di pavimento.
 
         **Valori ammessi**
         - Vedere l'elenco valori [Tipo pavimentazione locale interno](https://schema.pragmaticbim.ch/v0.2.0/classification/floor-covering-product.html).
       en: |-
-        Interior floor covering type for early planning – as a space property only, without a modelled floor build-up.
+        Interior floor covering type for early planning and operation – as a space property. From tendering on, the floor build-up is modelled as well.
 
         **Allowed values**
         - See the [Interior space floor covering type](https://schema.pragmaticbim.ch/v0.2.0/classification/floor-covering-product.html) value list.

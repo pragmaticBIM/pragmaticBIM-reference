@@ -132,7 +132,12 @@ def sewage_structures() -> Scene:
     chamber_box(s, "Regenbecken", 1.0, 5.2, 7.5, 8.4, -3.6, keys=("abwasser-spezialbauwerk-regenbecken",), predefined="SUMP")
     chamber_box(s, "Pumpwerk", 9.0, 6.0, 11.6, 8.3, -3.8, keys=("abwasser-spezialbauwerk-pumpwerk",), predefined="SUMP")
     s.add("IfcElectricDistributionBoard", "Pumpwerk-Steuerung", [box_solid(f, 9.4, YARD + 0.2, 0.02, 10.6, YARD + 0.6, 1.4)], keys=("abwasser-spezialbauwerk-pumpwerk",), predefined_type="MOTORCONTROLCENTRE")
-    s.add("IfcPipeSegment", "Druckleitung", [pipe_solid(f, (10.3, 8.3, -2.0), (10.3, y - 0.4, z + 0.3), 0.12, segments=12)])
+    s.add(
+        "IfcPipeSegment",
+        "Druckleitung",
+        [pipe_solid(f, (10.3, 8.3, -2.0), (10.3, y - 0.4, z + 0.3), 0.12, segments=12)],
+        serves=("abwasser-spezialbauwerk-pumpwerk",),
+    )
 
     separator = ("abwasser-spezialbauwerk-oelabscheider-schwimmstoffabscheider",)
     s.add("IfcTank", "Oelabscheider", [pipe_solid(f, (12.5, 1.5, -1.9), (16.5, 1.5, -1.9), 0.9, segments=18)], keys=separator, predefined_type="BASIN")
@@ -224,6 +229,21 @@ def electricity(special: bool = False) -> Scene:
             [box_solid(f, x, SIDEWALK - 0.6, 0.02, x + 0.45, SIDEWALK - 0.3, 1.6) for x in (17.5, 19.0)],
             keys=("elektrizitat-spezialbauwerk-oeffentlicher-verbraucher",),
             object_type="Ladestation",
+        )
+        s.add(
+            "IfcCableSegment",
+            "Ladestation-Anschluss",
+            [
+                solid
+                for x in (17.72, 19.22)
+                for solid in (
+                    pipe_solid(f, (x, SIDEWALK - 0.45, 0.02), (x, SIDEWALK - 0.45, -0.9), 0.05, segments=8),
+                    pipe_solid(f, (x, SIDEWALK - 0.45, -0.9), (x, 6.0, -0.9), 0.05, segments=8),
+                )
+            ],
+            predefined_type="CABLESEGMENT",
+            thin=True,
+            serves=("elektrizitat-spezialbauwerk-oeffentlicher-verbraucher",),
         )
         _street_light(s, "Kandelaber", 6.0, SIDEWALK - 0.3, ())
     return s

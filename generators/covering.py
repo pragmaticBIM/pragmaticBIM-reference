@@ -6,7 +6,7 @@ from typing import Any, Sequence
 
 import ifcopenshell
 from ifcopenshell.api.geometry import assign_representation, edit_object_placement
-from ifcopenshell.api.root import create_entity
+from ifcopenshell.api.root import create_entity, remove_product
 from ifcopenshell.api.spatial import assign_container
 
 from generators.base import assign_pset, assign_qto
@@ -190,7 +190,9 @@ def generate_covering(
 
     - ``CEILING``: Luftraum atrium (same as ``space-luftraum-01``); accents the
       suspended ceiling spanning through the void under the beams.
-    - ``FLOORING``: interior-space vignette (same as Innenräume).
+    - ``FLOORING``: interior-space vignette (same as Innenräume). The interior
+      card keeps the build-up in one room and the space volume (returned as
+      third value, drawn dotted) in the other.
 
     ``params`` keys:
     - ``luftraum_params`` (CEILING) or ``space_params`` (FLOORING)
@@ -201,6 +203,7 @@ def generate_covering(
         params.get("predefined_type") or params.get("PredefinedType") or "CEILING"
     )
     predefined_type = str(predefined_type)
+    dotted: list[ifcopenshell.entity_instance] = []
 
     if predefined_type == "CEILING":
         from generators.luftraum import generate_luftraum
@@ -225,11 +228,25 @@ def generate_covering(
                 "space_params is required for FLOORING (reuse the interior-space vignette)"
             )
         space_params.setdefault("with_context", True)
-        ifc_file, _space = generate_space(space_params)
-        # Interior Bodenaufbau only: two plates per room so the joint is visible.
-        # The exterior balcony covering stays one plate.
-        if not space_params.get("include_balcony_floor_covering"):
+        interior = not space_params.get("include_balcony_floor_covering")
+        if interior:
+            space_params["omit_primary_space"] = False
+            space_params["include_neighbor_space"] = False
+            space_params["include_ceiling_slab"] = False
+            space_params["include_ceiling_covering"] = False
+        ifc_file, space = generate_space(space_params)
+        # Interior Bodenaufbau: the neighbour (left) room shows the modelled
+        # build-up, used from tender on; the primary (right) room keeps the
+        # floor data on the space, as in early phases and operation. Two
+        # plates so the joint is visible. The exterior balcony covering stays
+        # one plate.
+        if interior:
+            for covering in ifc_file.by_type("IfcCovering"):
+                name = covering.Name or ""
+                if name.endswith("-FloorCovering") and not name.endswith("-N-FloorCovering"):
+                    remove_product(ifc_file, product=covering)
             _split_interior_floor_coverings(ifc_file)
+            dotted.append(space)
         prefer_name = "FloorCovering"
 
     covering = _find_covering_by_type(
@@ -258,4 +275,6 @@ def generate_covering(
             datatypes=property_datatypes.get(pset_name),
         )
 
+    if dotted:
+        return ifc_file, covering, dotted
     return ifc_file, covering

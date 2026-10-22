@@ -34,7 +34,7 @@ milestones:
       en: Mid Phase Brief (Brief)
     status: active
     phase: 'Brief'
-    kind: custom
+    kind: middle
   - id: 'Brief:E'
     code: E
     sort_order: 3
@@ -67,7 +67,7 @@ milestones:
       en: Mid Phase Concept (Concept)
     status: active
     phase: 'Concept'
-    kind: custom
+    kind: middle
   - id: 'Concept:E'
     code: E
     sort_order: 6
@@ -100,7 +100,7 @@ milestones:
       en: Mid Phase PreConstruction (PreConstruction)
     status: active
     phase: 'PreConstruction'
-    kind: custom
+    kind: middle
   - id: 'PreConstruction:E'
     code: E
     sort_order: 9
@@ -133,7 +133,7 @@ milestones:
       en: Mid Phase Construction (Construction)
     status: active
     phase: 'Construction'
-    kind: custom
+    kind: middle
   - id: 'Construction:E'
     code: E
     sort_order: 12
@@ -166,7 +166,7 @@ milestones:
       en: Mid Phase Handover (Handover)
     status: active
     phase: 'Handover'
-    kind: custom
+    kind: middle
   - id: 'Handover:E'
     code: E
     sort_order: 15
@@ -199,7 +199,7 @@ milestones:
       en: Mid Phase Use (Use)
     status: active
     phase: 'Use'
-    kind: custom
+    kind: middle
   - id: 'Use:E'
     code: E
     sort_order: 18
@@ -232,7 +232,7 @@ milestones:
       en: Mid Phase Demolish (Demolish)
     status: active
     phase: 'Demolish'
-    kind: custom
+    kind: middle
   - id: 'Demolish:E'
     code: E
     sort_order: 21

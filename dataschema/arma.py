@@ -58,7 +58,6 @@ ARMA_SOURCES: dict[str, str] = {
     "d03-03-001-videouberwachung-sensitiv": "i-010-videouberwachung",
     # D04 Brandschutz ----------------------------------------------------------
     "d04-01-001-brandmeldeanlage": "i-008-brandmeldeanlage",
-    "d04-02-001-gasmeldeanlage": "mep-sensor",
     "d04-03-001-sprinkleranlage-spruhnebelanlage": "mep-fire-suppression-terminal",
     "d04-04-01-gasloschanlage-co2-inertgas-sauerstoffreduktion-halon": "i-017-co2-loschanlage",
     # D05 Waerme ---------------------------------------------------------------
@@ -96,7 +95,6 @@ ARMA_SOURCES: dict[str, str] = {
     "d08-02-009-entsalzungsanlage": "i-023-entsalzungsanlage",
     "d08-03-001-wassererwarmungsanlage-warmwasserspeicher": "i-066-wassererwarmer",
     "d08-05-001-armaturen-apparate": "sanitarobjekt",
-    "d09-01-001-leitungen": "abwasser-leitung",
     "d09-01-003-hebe-und-pumpanlage-mit-schmutz-und-abwasserpumpe": "i-011-abwasserpumpen",
     "d09-02-002-olabscheider-schwerkraftabscheider": "i-081-oel-und-fettabscheider",
     "d09-02-003-olabscheider-koaleszenz-abscheider": "i-081-oel-und-fettabscheider",
@@ -109,22 +107,17 @@ ARMA_SOURCES: dict[str, str] = {
     "d12-01-001-personenaufzug": "i-007-aufzuge",
     "d12-02-001-warenaufzug": "i-007-aufzuge",
     "d12-02-002-bettenaufzug": "i-007-aufzuge",
-    "d12-06-001-hebeeinrichtung": "i-003-krananlagen",
     "d12-06-002-krananlagen-automatisch-tragkraft-1000kg": "i-003-krananlagen",
     "d12-06-003-krananlage-automatisch-1000kg": "i-003-krananlagen",
-    "d12-06-004-krananlagen-handbetrieben": "i-003-krananlagen",
     "d12-06-006-anpassrampen": "i-013-anpassrampen",
-    # E03 / G01 / G05 Tueren, Tore, Abschluesse (approximate, to review) -------
+    # arma file i-029-heiz-warmeerzeugung holds D12.06.006 Anpassrampen, not the heating plant
+    "i-029-heiz-warmeerzeugung": "i-013-anpassrampen",
+    # E03 / G01 / G05 Tueren, Tore, Abschluesse --------------------------------
     "e03-02-001-aussenwandturen-automatisch": "architecture-door-exterior",
-    "e03-03-001-aussenwandtore-automatisch": "architecture-door-exterior",
     "e03-03-002-aussenwandtore-automatisch": "architecture-door-exterior",
     "e03-04-001-sonnen-und-blendschutzanlage": "architecture-shading-device",
-    "g01-05-001-innenturen-automatisch": "architecture-door-interior",
-    "g01-06-001-innentore-automatisch": "architecture-door-interior",
     "g01-06-002-innentore-handbetrieben": "architecture-door-interior",
     "g05-07-015-karusellturen-drehkreuze": "i-009-personenvereinzelungsanlage",
-    "g05-07-016-brandschutzturen-tore-ohne-elektr-alarmkomponenten": "i-014-abschlusse",
-    "g05-07-002-sicherheits-und-brandschutzturen-mit-elektr-alarmkomponenten": "i-014-abschlusse",
     # I05 Umgebung -------------------------------------------------------------
     "i05-01-006-windkraftwerk": "i-068-windkraftwerke",
     "i05-01-007-wasserkraftwerk": "i-067-wasserkraftwerke",
@@ -133,19 +126,3 @@ ARMA_SOURCES: dict[str, str] = {
     "i05-05-009-retentionsanlagen": "landscape-retention",
     "i05-07-004-gleisanlagen": "i-028-gleisanlagen",
 }
-
-# Approximate matches the doc flags for review.
-ARMA_TO_REVIEW: frozenset[str] = frozenset(
-    {
-        "d04-02-001-gasmeldeanlage",
-        "d05-02-019-heizung-versorgung",
-        "i05-05-001-wasseraufbereitungsanlagen",
-        "e03-02-001-aussenwandturen-automatisch",
-        "e03-03-001-aussenwandtore-automatisch",
-        "e03-03-002-aussenwandtore-automatisch",
-        "e03-04-001-sonnen-und-blendschutzanlage",
-        "g01-05-001-innenturen-automatisch",
-        "g01-06-001-innentore-automatisch",
-        "g01-06-002-innentore-handbetrieben",
-    }
-)

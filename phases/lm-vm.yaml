@@ -36,7 +36,7 @@ milestones:
       en: Mid Phase 1 (Basic analysis)
     status: active
     phase: '1'
-    kind: custom
+    kind: middle
   - id: 'lm-vm:1:E'
     code: E
     sort_order: 3
@@ -69,7 +69,7 @@ milestones:
       en: Mid Phase 2 (Preliminary design)
     status: active
     phase: '2'
-    kind: custom
+    kind: middle
   - id: 'lm-vm:2:E'
     code: E
     sort_order: 6
@@ -102,7 +102,7 @@ milestones:
       en: Mid Phase 3 (Design)
     status: active
     phase: '3'
-    kind: custom
+    kind: middle
   - id: 'lm-vm:3:E'
     code: E
     sort_order: 9
@@ -135,7 +135,7 @@ milestones:
       en: Mid Phase 4 (Permit planning)
     status: active
     phase: '4'
-    kind: custom
+    kind: middle
   - id: 'lm-vm:4:E'
     code: E
     sort_order: 12
@@ -168,7 +168,7 @@ milestones:
       en: Mid Phase 5 (Execution planning)
     status: active
     phase: '5'
-    kind: custom
+    kind: middle
   - id: 'lm-vm:5:E'
     code: E
     sort_order: 15
@@ -201,7 +201,7 @@ milestones:
       en: Mid Phase 6 (Tender and award participation)
     status: active
     phase: '6'
-    kind: custom
+    kind: middle
   - id: 'lm-vm:6:E'
     code: E
     sort_order: 18
@@ -234,7 +234,7 @@ milestones:
       en: Mid Phase 7 (Construction accompaniment)
     status: active
     phase: '7'
-    kind: custom
+    kind: middle
   - id: 'lm-vm:7:E'
     code: E
     sort_order: 21
@@ -267,7 +267,7 @@ milestones:
       en: Mid Phase 8 (Site supervision)
     status: active
     phase: '8'
-    kind: custom
+    kind: middle
   - id: 'lm-vm:8:E'
     code: E
     sort_order: 24
@@ -300,7 +300,7 @@ milestones:
       en: Mid Phase 9 (Project supervision)
     status: active
     phase: '9'
-    kind: custom
+    kind: middle
   - id: 'lm-vm:9:E'
     code: E
     sort_order: 27

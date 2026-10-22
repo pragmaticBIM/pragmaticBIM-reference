@@ -144,6 +144,7 @@ def generate_mep_office_ceiling(
                 pipe_solid(f, (_BEAM_PIPE_X, y, beam_top), (_BEAM_PIPE_X, y, z), _BEAM_PIPE_R),
                 pipe_solid(f, (_BEAM_PIPE_X, y, z), (-WALL_THICKNESS, y, z), _BEAM_PIPE_R),
             ],
+            serves=("mep-cooled-beam",),
         )
     for x0, x1 in ((0.6, 2.1), (2.4, 3.6)):
         scene.device("mep-light-fixture", [box_solid(f, x0, 2.7, CEILING_BOTTOM - 0.06, x1, 2.95, z_ceiling_top + 0.02)])
@@ -155,6 +156,7 @@ def generate_mep_office_ceiling(
         "IfcPipeSegment",
         "Sprinkler-Hauptleitung",
         [pipe_solid(f, (-WALL_THICKNESS, _SPRINKLER_Y, _SPRINKLER_Z), (sprinkler_xs[-1], _SPRINKLER_Y, _SPRINKLER_Z), _SPRINKLER_R)],
+        serves=("mep-fire-suppression-terminal",),
     )
     for x in sprinkler_xs:
         scene.device(
@@ -165,9 +167,35 @@ def generate_mep_office_ceiling(
             "IfcPipeSegment",
             "Sprinkler-Anschluss",
             [pipe_solid(f, (x, _SPRINKLER_Y, sprinkler_z0 + sprinkler_height), (x, _SPRINKLER_Y, _SPRINKLER_Z), _SPRINKLER_R * 0.7)],
+            serves=("mep-fire-suppression-terminal",),
         )
     scene.device(
         "mep-alarm",
         [vertical_cylinder_solid(f, _BRANCH_X, 3.5, CEILING_BOTTOM - 0.10, 0.12, 0.16, segments=14)],
     )
+    # Fire alarm control panel (Brandmeldezentrale) on the side wall.
+    panel_y, panel_top = 3.25, 2.0
+    scene.context(
+        "IfcUnitaryControlElement",
+        "Brandmeldezentrale",
+        [box_solid(f, 0.0, panel_y - 0.3, 1.2, 0.22, panel_y + 0.3, panel_top)],
+        predefined_type="ALARMPANEL",
+        serves=("mep-alarm",),
+    )
+    if params.get("system"):
+        # Detector line in the plenum, down through the ceiling into the panel.
+        cable_z = z_ceiling_top + 0.08
+        cable = scene.context(
+            "IfcCableSegment",
+            "Melderlinie",
+            [
+                pipe_solid(f, (_BRANCH_X, 3.5, CEILING_BOTTOM + 0.06), (_BRANCH_X, 3.5, cable_z), 0.015, segments=6),
+                pipe_solid(f, (_BRANCH_X, 3.5, cable_z), (_BRANCH_X, panel_y, cable_z), 0.015, segments=6),
+                pipe_solid(f, (_BRANCH_X, panel_y, cable_z), (0.11, panel_y, cable_z), 0.015, segments=6),
+                pipe_solid(f, (0.11, panel_y, cable_z), (0.11, panel_y, panel_top), 0.015, segments=6),
+            ],
+            predefined_type="CABLESEGMENT",
+            serves=("mep-alarm",),
+        )
+        scene.thin.append(cable)
     return scene.finish(params)

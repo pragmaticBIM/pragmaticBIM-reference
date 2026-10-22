@@ -2,13 +2,19 @@
 
 from __future__ import annotations
 
+import math
+
+import ifcopenshell
+from ifcopenshell.api.group import assign_group
+from ifcopenshell.api.root import create_entity
+
 from generators.mep_parts import box_solid, duct_solid, pipe_solid
 
+from dataschema.geometry import pyramid
 from dataschema.scene import Scene
 
 EBKP_GROUPS = ("ebkp-c", "ebkp-d", "ebkp-e", "ebkp-f", "ebkp-g")
 SIA_AREAS = ("sia-hnf", "sia-nnf", "sia-vf", "sia-ff", "sia-kf")
-
 
 def _ground(s: Scene, x0: float, y0: float, x1: float, y1: float) -> None:
     s.add("IfcGeographicElement", "Terrain", [box_solid(s.ifc_file, x0, y0, -0.35, x1, y1, -0.05)], predefined_type="TERRAIN")
@@ -84,27 +90,30 @@ _W, _D = 12.0, 8.0
 _FULL, _CUT, _SPACE = 2.8, 1.1, 2.6
 
 
-def _plan(s: Scene) -> None:
-    """Back facades full height, front facades and partitions cut low so the spaces read."""
+def _plan(s: Scene, cut: float = _CUT) -> dict[str, ifcopenshell.entity_instance]:
+    """Back facades full height, front facades and partitions at ``cut`` (low so the spaces read); returns the spaces by name."""
     f = s.ifc_file
     s.add("IfcSlab", "Bodenplatte", [box_solid(f, -0.3, -0.3, -0.3, _W + 1.8, _D + 1.8, 0.0)], predefined_type="BASESLAB")
     kf = ("sia-kf",)
     t, ti = 0.3, 0.12
     s.add("IfcWall", "Aussenwand-Rueck", [box_solid(f, -t, -t, 0.0, _W + t, 0.0, _FULL)], keys=kf, predefined_type="SOLIDWALL")
     s.add("IfcWall", "Aussenwand-Seite", [box_solid(f, -t, 0.0, 0.0, 0.0, _D + t, _FULL)], keys=kf, predefined_type="SOLIDWALL")
-    s.add("IfcWall", "Aussenwand-Vorne", [box_solid(f, 0.0, _D, 0.0, _W + t, _D + t, _CUT)], keys=kf, predefined_type="SOLIDWALL")
-    s.add("IfcWall", "Aussenwand-Rechts", [box_solid(f, _W, 0.0, 0.0, _W + t, _D, _CUT)], keys=kf, predefined_type="SOLIDWALL")
+    s.add("IfcWall", "Aussenwand-Vorne", [box_solid(f, 0.0, _D, 0.0, _W + t, _D + t, cut)], keys=kf, predefined_type="SOLIDWALL")
+    s.add("IfcWall", "Aussenwand-Rechts", [box_solid(f, _W, 0.0, 0.0, _W + t, _D, cut)], keys=kf, predefined_type="SOLIDWALL")
     partitions = [
-        box_solid(f, 0.0, 3.4 - ti / 2, 0.0, _W, 3.4 + ti / 2, _CUT),
-        box_solid(f, 0.0, 4.8 - ti / 2, 0.0, _W, 4.8 + ti / 2, _CUT),
-        *(box_solid(f, x - ti / 2, 0.0, 0.0, x + ti / 2, 3.4, _CUT) for x in (5.0, 7.0, 9.5)),
-        *(box_solid(f, x - ti / 2, 4.8, 0.0, x + ti / 2, _D, _CUT) for x in (4.0, 8.0)),
+        box_solid(f, 0.0, 3.4 - ti / 2, 0.0, _W, 3.4 + ti / 2, cut),
+        box_solid(f, 0.0, 4.8 - ti / 2, 0.0, _W, 4.8 + ti / 2, cut),
+        *(box_solid(f, x - ti / 2, 0.0, 0.0, x + ti / 2, 3.4, cut) for x in (5.0, 7.0, 9.5)),
+        *(box_solid(f, x - ti / 2, 4.8, 0.0, x + ti / 2, _D, cut) for x in (4.0, 8.0)),
     ]
     s.add("IfcWall", "Innenwaende", partitions, keys=kf, predefined_type="PARTITIONING")
     gap = ti / 2 + 0.02
-    for key, name, x0, y0, x1, y1 in _ROOMS:
-        s.add("IfcSpace", name, [box_solid(f, x0 + gap, y0 + gap, 0.0, x1 - gap, y1 - gap, _SPACE)], keys=(key,), predefined_type="SPACE")
+    spaces = {
+        name: s.add("IfcSpace", name, [box_solid(f, x0 + gap, y0 + gap, 0.0, x1 - gap, y1 - gap, _SPACE)], keys=(key,), predefined_type="SPACE")
+        for key, name, x0, y0, x1, y1 in _ROOMS
+    }
     s.volume("sia-hnf", "sia-nnf", "sia-vf", "sia-ff")
+    return spaces
 
 
 def sia416() -> Scene:
@@ -113,18 +122,59 @@ def sia416() -> Scene:
     return s
 
 
+_ZONE_ROOMS = ("Buero-1", "Buero-2", "Buero-3")
+
+
 def protection_zone() -> Scene:
-    """Protection zone wrapping the three front offices of the SIA 416 storey."""
+    """IfcZone grouping the net rooms of the front office unit; the corridor stays outside."""
     s = Scene.new("Schutzzone")
-    _plan(s)
-    s.add(
-        "IfcBuildingElementProxy",
-        "Schutzzone",
-        [box_solid(s.ifc_file, -0.15, 4.6, 0.0, _W + 0.15, _D + 0.15, _FULL + 0.1)],
-        keys=("schutzzone",),
-        object_type="Schutzzone",
-    )
+    spaces = _plan(s, cut=_FULL)
+    members = [spaces[name] for name in _ZONE_ROOMS]
+    zone = create_entity(s.ifc_file, ifc_class="IfcZone", name="Schutzzone 1")
+    assign_group(s.ifc_file, products=members, group=zone)
+    for space in members:
+        s.tag(space, ("schutzzone",))
     s.volume("schutzzone")
+    return s
+
+
+# ---------------------------------------------------------------------------
+# Modelleinfuegepunkt Disziplin: inverted pyramid cut into one slice per discipline,
+# all tips on the insertion point
+# ---------------------------------------------------------------------------
+
+# (key, name) counter-clockwise around the hexagon, starting at the corner facing the camera
+_SLICES = (
+    ("disziplin-architektur", "Architektur"),
+    ("disziplin-tragwerk", "Tragwerk"),
+    ("disziplin-hlk", "HLK"),
+    ("disziplin-sanitaer", "Sanitaer"),
+    ("disziplin-elektro", "Elektro"),
+    ("disziplin-sonstiges", "Sonstiges"),
+)
+# Highlight order picks the red shade (light → deep); neighbouring slices alternate light / deep.
+DISCIPLINES = tuple(_SLICES[i][0] for i in (0, 2, 4, 1, 3, 5))
+
+
+def discipline_insertion_point(radius: float = 1.0, height: float = 1.8) -> Scene:
+    s = Scene.new("Modelleinfuegepunkt Disziplin")
+    n = len(_SLICES)
+    for i, (key, name) in enumerate(_SLICES):
+        a0 = math.radians(45.0) + 2 * math.pi * i / n
+        a1 = a0 + 2 * math.pi / n
+        top = [
+            (0.0, 0.0, height),
+            (radius * math.cos(a0), radius * math.sin(a0), height),
+            (radius * math.cos(a1), radius * math.sin(a1), height),
+        ]
+        product = s.add(
+            "IfcBuildingElementProxy",
+            name,
+            [pyramid(s.ifc_file, top[::-1], (0.0, 0.0, 0.0))],
+            keys=(key,),
+            object_type="REFERENCEPOINT",
+        )
+        product.Description = f"Discipline Reference Point {name}"
     return s
 
 

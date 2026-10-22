@@ -37,7 +37,7 @@ DUCT_CENTER = (9.25, 6.85)
 DUCT_RISER = (0.40, 0.30)
 DUCT_RUN = (0.30, 0.30)
 TRAY_CENTER = (8.40, 6.34)
-TRAY_RISER = (0.40, 0.08)
+TRAY_RISER = (0.08, 0.40)
 TRAY_RUN = (0.40, 0.08)
 VOID_FOOTPRINT = (8.15, 6.10, 9.55, 7.75)
 VOID_MARGIN = 0.05
@@ -159,13 +159,17 @@ def generate_mep_riser(
         )
     )
 
+    # L-bends below: each riser stops under its run and the run starts at the
+    # riser's outer face, so the two solids touch without overlapping.
     dx, dy = DUCT_CENTER
     duct_z = ROOF - SOFFIT_GAP - DUCT_RUN[1] * 0.5
+    duct_riser_top = duct_z - DUCT_RUN[1] * 0.5
+    duct_run_start_x = dx + DUCT_RISER[0] * 0.5
     scene.device(
         "mep-schematic-duct",
         [
-            duct_solid(f, (dx, dy, RISER_BOTTOM), (dx, dy, RISER_TOP), *DUCT_RISER),
-            duct_solid(f, (dx, dy, duct_z), (RUN_END_X, dy, duct_z), *DUCT_RUN),
+            duct_solid(f, (dx, dy, RISER_BOTTOM), (dx, dy, duct_riser_top), *DUCT_RISER),
+            duct_solid(f, (duct_run_start_x, dy, duct_z), (RUN_END_X, dy, duct_z), *DUCT_RUN),
         ],
         quantities={
             "Qto_DuctSegmentBaseQuantities": {
@@ -176,11 +180,13 @@ def generate_mep_riser(
 
     tx, ty = TRAY_CENTER
     tray_z = ROOF - SOFFIT_GAP - TRAY_RUN[1] * 0.5
+    riser_top = tray_z - TRAY_RUN[1] * 0.5
+    run_start_x = tx + TRAY_RISER[0] * 0.5
     scene.device(
         "mep-schematic-tray",
         [
-            duct_solid(f, (tx, ty, RISER_BOTTOM), (tx, ty, RISER_TOP), *TRAY_RISER),
-            duct_solid(f, (tx, ty, tray_z), (RUN_END_X, ty, tray_z), *TRAY_RUN),
+            duct_solid(f, (tx, ty, RISER_BOTTOM), (tx, ty, riser_top), *TRAY_RISER),
+            duct_solid(f, (run_start_x, ty, tray_z), (RUN_END_X, ty, tray_z), *TRAY_RUN),
         ],
     )
 

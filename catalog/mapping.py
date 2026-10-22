@@ -1658,6 +1658,8 @@ def map_interior_fabric_params(entry: dict[str, Any]) -> dict[str, Any]:
         params["cladding_thickness"] = float(
             entry.get("cladding_thickness", INTERIOR_CLADDING_THICKNESS)
         )
+    if accent == "door":
+        params["include_hatch"] = bool(entry.get("include_hatch", True))
     return params
 
 
@@ -3715,6 +3717,8 @@ def map_mep_params(entry: dict[str, Any]) -> dict[str, Any]:
         "properties": resolved.get("properties") or {},
         "property_datatypes": resolved.get("property_datatypes") or {},
         "quantities": resolved.get("quantities") or {},
+        "system": bool(entry.get("system")),
+        "serving_runs": bool(entry.get("serving_runs")),
     }
 
 

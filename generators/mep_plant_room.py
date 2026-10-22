@@ -73,35 +73,38 @@ def _room_scene(params: dict[str, Any], storey_name: str) -> MepScene:
 
 
 def _header_stubs(
-    scene: MepScene, name: str, x_flow: float, x_return: float, z_top: float
+    scene: MepScene, name: str, x_flow: float, x_return: float, z_top: float, serves: str
 ) -> None:
     """Flow / return stubs from a device top up to the header pair."""
     f = scene.ifc_file
-    scene.context(
-        "IfcPipeSegment",
-        f"{name}-VL",
-        [pipe_solid(f, (x_flow, _HEADER_Y, z_top), (x_flow, _HEADER_Y, _FLOW_Z), _PIPE_R)],
-    )
-    scene.context(
-        "IfcPipeSegment",
-        f"{name}-RL",
-        [pipe_solid(f, (x_return, _HEADER_Y, z_top), (x_return, _HEADER_Y, _RETURN_Z), _PIPE_R)],
-    )
+    for suffix, x, z_header in (("VL", x_flow, _FLOW_Z), ("RL", x_return, _RETURN_Z)):
+        scene.thin.append(
+            scene.context(
+                "IfcPipeSegment",
+                f"{name}-{suffix}",
+                [pipe_solid(f, (x, _HEADER_Y, z_top), (x, _HEADER_Y, z_header), _PIPE_R)],
+                serves=(serves,),
+            )
+        )
 
 
-def _add_plant_devices(scene: MepScene) -> None:
+def _add_plant_devices(scene: MepScene, system: bool = False) -> None:
+    """``system`` adds connections that only system pictures show (tank line)."""
     f = scene.ifc_file
 
     # Header pair along the back wall; enters through the side wall (district heating).
     for name, z in (("Verteiler-VL", _FLOW_Z), ("Verteiler-RL", _RETURN_Z)):
-        scene.context(
-            "IfcPipeSegment",
-            name,
-            [pipe_solid(f, (-WALL_THICKNESS, _HEADER_Y, z), (ROOM_WIDTH - 0.2, _HEADER_Y, z), _PIPE_R)],
+        scene.thin.append(
+            scene.context(
+                "IfcPipeSegment",
+                name,
+                [pipe_solid(f, (-WALL_THICKNESS, _HEADER_Y, z), (ROOM_WIDTH - 0.2, _HEADER_Y, z), _PIPE_R)],
+                serves=("mep-chiller",),
+            )
         )
 
     scene.device("mep-heat-exchanger", [box_solid(f, 0.3, 0.0, 0.5, 1.3, 0.45, 1.9)])
-    _header_stubs(scene, "FWS", 0.6, 1.0, 1.9)
+    _header_stubs(scene, "FWS", 0.6, 1.0, 1.9, "mep-heat-exchanger")
 
     scene.device(
         "mep-boiler",
@@ -110,12 +113,13 @@ def _add_plant_devices(scene: MepScene) -> None:
             vertical_cylinder_solid(f, 2.1, 0.5, 1.80, 0.10, WALL_HEIGHT - 1.80, segments=8),
         ],
     )
-    _header_stubs(scene, "WE", 1.85, 2.35, 1.80)
+    _header_stubs(scene, "WE", 1.85, 2.35, 1.80, "mep-boiler")
 
     scene.context(
         "IfcPipeSegment",
         "Pumpenstrang",
         [pipe_solid(f, (3.0, _HEADER_Y, 0.0), (3.0, _HEADER_Y, _FLOW_Z), _PIPE_R)],
+        serves=("mep-pump",),
     )
     # In-line pump above the chiller top so it is not hidden behind it.
     scene.device(
@@ -127,7 +131,7 @@ def _add_plant_devices(scene: MepScene) -> None:
     )
 
     scene.device("mep-chiller", [box_solid(f, 3.6, 0.1, 0.0, 6.1, 1.1, 1.6)])
-    _header_stubs(scene, "KM", 4.1, 5.6, 1.60)
+    _header_stubs(scene, "KM", 4.1, 5.6, 1.60, "mep-chiller")
 
     # Compressed air: compressor + standing air receiver along the side wall.
     scene.device("mep-compressor", [box_solid(f, 0.2, 1.3, 0.0, 1.0, 2.0, 1.0)])
@@ -136,11 +140,36 @@ def _add_plant_devices(scene: MepScene) -> None:
         "Druckluftbehaelter",
         [vertical_cylinder_solid(f, 0.6, 2.6, 0.0, 0.30, 1.40)],
         predefined_type="PRESSUREVESSEL",
+        serves=("mep-compressor",),
     )
     scene.context(
         "IfcPipeSegment",
         "Druckluft",
         [pipe_solid(f, (0.6, 2.0, 0.7), (0.6, 2.3, 0.7), 0.03)],
+        serves=("mep-compressor",),
+    )
+    # Distribution: riser from the receiver, main along the side wall, drops to
+    # two tapping points.
+    air_z, air_x, taps_y = 2.55, 0.12, (0.8, 3.1)
+    scene.thin.append(
+        scene.context(
+            "IfcPipeSegment",
+            "Druckluft-Verteilung",
+            [
+                pipe_solid(f, (0.6, 2.6, 1.4), (0.6, 2.6, air_z), 0.03),
+                pipe_solid(f, (0.6, 2.6, air_z), (air_x, 2.6, air_z), 0.03),
+                pipe_solid(f, (air_x, taps_y[0], air_z), (air_x, taps_y[1], air_z), 0.03),
+                *(pipe_solid(f, (air_x, y, air_z), (air_x, y, 1.25), 0.025) for y in taps_y),
+            ],
+            serves=("mep-compressor",),
+        )
+    )
+    scene.context(
+        "IfcValve",
+        "Druckluft-Entnahmestelle",
+        [box_solid(f, 0.0, y - 0.08, 1.05, 0.2, y + 0.08, 1.25) for y in taps_y],
+        predefined_type="ISOLATING",
+        serves=("mep-compressor",),
     )
 
     # Gas line rises from the floor to the wall-mounted pressure regulator.
@@ -148,12 +177,14 @@ def _add_plant_devices(scene: MepScene) -> None:
         "IfcPipeSegment",
         "Gas-Zuleitung",
         [pipe_solid(f, (0.15, 3.6, 0.0), (0.15, 3.6, 0.95), 0.035)],
+        serves=("mep-gas-regulator",),
     )
     scene.device("mep-gas-regulator", [box_solid(f, 0.0, 3.35, 0.95, 0.30, 3.85, 1.45)])
     scene.context(
         "IfcPipeSegment",
         "Gas-Verteilung",
         [pipe_solid(f, (0.15, 3.6, 1.45), (0.15, 3.6, 2.6), 0.035)],
+        serves=("mep-gas-regulator",),
     )
 
     # Storage tank standing on the floor, with two manhole covers on top.
@@ -166,6 +197,18 @@ def _add_plant_devices(scene: MepScene) -> None:
             vertical_cylinder_solid(f, 4.4, 3.1, tank_top, 0.25, 0.08),
         ],
     )
+    if system:
+        # Tank line between the covers, up and back to the header return.
+        scene.context(
+            "IfcPipeSegment",
+            "Tankleitung",
+            [
+                pipe_solid(f, (4.0, 3.1, tank_top), (4.0, 3.1, 2.6), _PIPE_R),
+                pipe_solid(f, (4.0, 3.1, 2.6), (4.0, _HEADER_Y, 2.6), _PIPE_R),
+                pipe_solid(f, (4.0, _HEADER_Y, 2.6), (4.0, _HEADER_Y, _RETURN_Z), _PIPE_R),
+            ],
+            serves=("mep-tank",),
+        )
 
 
 def generate_mep_plant_room(
@@ -180,7 +223,7 @@ def generate_mep_plant_room(
             [box_solid(scene.ifc_file, 0.0, 0.0, 0.0, ROOM_WIDTH, 3.4, 2.6)],
         )
     else:
-        _add_plant_devices(scene)
+        _add_plant_devices(scene, system=bool(params.get("system")))
     return scene.finish(params)
 
 
@@ -197,13 +240,33 @@ def generate_mep_electrical_room(
         "IfcCableCarrierSegment",
         "Trasse-Rueckwand",
         [duct_solid(f, (-WALL_THICKNESS, 0.35, tray_z), (ROOM_WIDTH - 0.2, 0.35, tray_z), 0.40, 0.08)],
+        serves=("mep-electric-distribution-board",),
     )
-    for name, x, z_top in (("Trasse-HV", 1.2, 2.1), ("Trasse-USV", 3.5, 2.0)):
+    for name, x, z_top, slug in (
+        ("Trasse-HV", 1.2, 2.1, "mep-electric-distribution-board"),
+        ("Trasse-USV", 3.5, 2.0, "mep-ups"),
+    ):
         scene.context(
             "IfcCableCarrierSegment",
             name,
             [duct_solid(f, (x, 0.30, z_top), (x, 0.30, tray_z - 0.04), 0.30, 0.08)],
+            serves=(slug,),
         )
+    if params.get("system"):
+        # Feeder trays from the transformer and the generator to the back-wall tray.
+        for name, x, y, z_top, slug in (
+            ("Trasse-Trafo", 1.3, 1.75, 1.6, "mep-transformer"),
+            ("Trasse-NEA", 5.8, 2.9, 1.7, "mep-electric-generator"),
+        ):
+            scene.context(
+                "IfcCableCarrierSegment",
+                name,
+                [
+                    duct_solid(f, (x, y, z_top), (x, y, tray_z), 0.30, 0.08),
+                    duct_solid(f, (x, y + 0.04, tray_z), (x, 0.55, tray_z), 0.30, 0.08),
+                ],
+                serves=(slug,),
+            )
 
     scene.device(
         "mep-electric-distribution-board",

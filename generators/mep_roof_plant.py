@@ -7,7 +7,8 @@ from typing import Any
 import ifcopenshell
 
 from generators.base import get_body_context
-from generators.mep_parts import MepScene, box_solid, duct_solid, vertical_cylinder_solid
+from generators.mep_parts import MepScene, box_solid, pipe_solid, vertical_cylinder_solid
+from generators.parts import create_oriented_extruded_solid
 from generators.roofing import DEFAULT_SLAB_THICKNESS, generate_roofing
 
 # Metres — wider roof plate than the Gefälledämmung card; parapet on +Y.
@@ -17,6 +18,36 @@ ROOF_DEPTH = 5.0
 _PLINTH_TOP = DEFAULT_SLAB_THICKNESS + 0.42
 
 ROOF_PLANT_SLUGS = frozenset({"mep-cooling-tower", "mep-unitary-equipment", "mep-fan"})
+
+
+def _elbow_duct_solid(
+    ifc_file: ifcopenshell.file,
+    y: float,
+    *,
+    x_unit: float,
+    x_riser: float,
+    z_axis: float,
+    z_bottom: float,
+    size: float,
+) -> ifcopenshell.entity_instance:
+    """Square duct leaving the unit face along +X and dropping to ``z_bottom`` as one L-shaped solid."""
+    h = size * 0.5
+    profile = [
+        (x_unit, z_axis - h),
+        (x_riser - h, z_axis - h),
+        (x_riser - h, z_bottom),
+        (x_riser + h, z_bottom),
+        (x_riser + h, z_axis + h),
+        (x_unit, z_axis + h),
+    ]
+    return create_oriented_extruded_solid(
+        ifc_file,
+        profile,
+        size,
+        origin=(0.0, y + h, 0.0),
+        axis=(0.0, -1.0, 0.0),
+        ref_direction=(1.0, 0.0, 0.0),
+    )
 
 
 def generate_mep_roof_plant(
@@ -57,6 +88,18 @@ def generate_mep_roof_plant(
             vertical_cylinder_solid(f, 2.55, 1.2, z0 + 1.1, 0.45, 0.15, segments=16),
         ],
     )
+    if params.get("system"):
+        # Cooling-water flow / return leave the front face and drop into the roof.
+        for name, x in (("Rueckkuehlung-VL", 2.55), ("Rueckkuehlung-RL", 2.9)):
+            scene.context(
+                "IfcPipeSegment",
+                name,
+                [
+                    pipe_solid(f, (x, 1.8, z0 + 0.5), (x, 2.1, z0 + 0.5), 0.06),
+                    pipe_solid(f, (x, 2.1, z0 + 0.56), (x, 2.1, z_roof), 0.06),
+                ],
+                serves=("mep-cooling-tower",),
+            )
 
     # Rooftop air handler; supply / extract ducts leave the end face and drop into the roof.
     plinth("Sockel-LA", 3.6, 0.5, 6.0, 1.7)
@@ -64,13 +107,9 @@ def generate_mep_roof_plant(
     for name, y in (("Zuluft", 0.8), ("Abluft", 1.4)):
         scene.context(
             "IfcDuctSegment",
-            f"{name}-horizontal",
-            [duct_solid(f, (6.0, y, z0 + 0.9), (6.45, y, z0 + 0.9), 0.4, 0.4)],
-        )
-        scene.context(
-            "IfcDuctSegment",
-            f"{name}-vertikal",
-            [duct_solid(f, (6.45, y, z0 + 1.1), (6.45, y, z_roof), 0.4, 0.4)],
+            name,
+            [_elbow_duct_solid(f, y, x_unit=6.0, x_riser=6.45, z_axis=z0 + 0.9, z_bottom=z_roof, size=0.4)],
+            serves=("mep-unitary-equipment",),
         )
 
     # Roof exhaust fan on an upstand curb.

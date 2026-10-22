@@ -55,6 +55,7 @@ entity_ifc2x3: IfcBuilding
 entity_ifc4: IfcBuilding
 entity_ifc4_3: IfcBuilding
 picture_link: building.png
+picture_print_link: building-print.tif
 model_link: null
 applicability: entity_ifc4=IfcBuilding OR entity_ifc2x3=IfcBuilding
 attributes:

@@ -252,6 +252,10 @@ class MepScene:
     Every device is created with the IFC4 class from its element YAML. The
     highlighted slug receives the YAML-resolved attributes in ``finish``;
     the rest stays white context with Name / PredefinedType only.
+
+    Context pipes, ducts and trays can ``serve`` device slugs; with
+    ``params["system"]`` the highlight accents them too (system pictures).
+    ``params["serving_runs"]`` accents them without the system extras.
     """
 
     ifc_file: ifcopenshell.file
@@ -260,6 +264,7 @@ class MepScene:
     registry: dict[str, list[_Registered]] = field(default_factory=dict)
     dotted: list[ifcopenshell.entity_instance] = field(default_factory=list)
     thin: list[ifcopenshell.entity_instance] = field(default_factory=list)
+    served: dict[str, list[ifcopenshell.entity_instance]] = field(default_factory=dict)
 
     def device(
         self,
@@ -325,8 +330,9 @@ class MepScene:
         *,
         predefined_type: str | None = None,
         object_type: str | None = None,
+        serves: Sequence[str] = (),
     ) -> ifcopenshell.entity_instance:
-        return add_solid_product(
+        product = add_solid_product(
             self.ifc_file,
             ifc_class=ifc_class,
             name=name,
@@ -336,6 +342,9 @@ class MepScene:
             predefined_type=predefined_type,
             object_type=object_type,
         )
+        for slug in serves:
+            self.served.setdefault(slug, []).append(product)
+        return product
 
     def finish(
         self, params: dict[str, Any]
@@ -387,4 +396,6 @@ class MepScene:
             for qto_name, values in merged_qtos.items():
                 assign_qto(self.ifc_file, product, qto_name, values)
             primary.append(product)
+        if params.get("system") or params.get("serving_runs"):
+            primary.extend(self.served.get(highlight, ()))
         return self.ifc_file, primary, list(self.dotted), list(self.thin)

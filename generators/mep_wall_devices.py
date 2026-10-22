@@ -124,16 +124,17 @@ def generate_mep_wall_electro(
         thickness=t,
         predefined_type="PARTITIONING",
     )
+    door_along, door_width, door_height = 0.2, 0.9, 2.1
     _add_framed_opening(
         scene,
         host=wall,
         name="Innentuer",
         wall_origin=wall_origin,
         wall_thickness=t,
-        along=0.2,
+        along=door_along,
         sill=0.0,
-        width=0.9,
-        height=2.1,
+        width=door_width,
+        height=door_height,
         ifc_class="IfcDoor",
         predefined_type="DOOR",
     )
@@ -145,11 +146,24 @@ def generate_mep_wall_electro(
             "mep-outlet",
             [_wall_box(f, strip_x + index * 0.1, 0.25, 0.1, 0.1)],
         )
-    scene.device("mep-sensor", [_wall_box(f, strip_x, 1.45, 0.1, 0.13)])
+    sensor_z, sensor_h = 1.45, 0.13
+    scene.device("mep-sensor", [_wall_box(f, strip_x, sensor_z, 0.1, sensor_h)])
+    ap_size = 0.22
     scene.device(
         "mep-communications-appliance",
-        [_wall_box(f, strip_x - 0.05, 2.2, 0.22, 0.22, depth=0.05)],
+        [_wall_box(f, door_along + (door_width - ap_size) * 0.5, door_height + 0.12, ap_size, ap_size, depth=0.05)],
     )
+    if params.get("system"):
+        # Surface-mounted detector line straight up to the ceiling.
+        x, y = strip_x + 0.05, 0.012
+        cable = scene.context(
+            "IfcCableSegment",
+            "Melderlinie",
+            [pipe_solid(f, (x, y, sensor_z + sensor_h), (x, y, WALL_HEIGHT), 0.012, segments=6)],
+            predefined_type="CABLESEGMENT",
+            serves=("mep-sensor",),
+        )
+        scene.thin.append(cable)
     return scene.finish(params)
 
 
@@ -219,6 +233,7 @@ def generate_mep_wall_heating(
             "IfcPipeSegment",
             "FBH-Kreis",
             [pipe_solid(f, (0.06, y, 0.0), (0.06, y, 0.3), 0.02)],
+            serves=("mep-valve",),
         )
 
     scene.context(
@@ -229,4 +244,11 @@ def generate_mep_wall_heating(
         object_type="Einbaumöbel",
     )
     scene.device("mep-gas-terminal", [box_solid(f, 2.7, 0.0, 0.95, 2.92, 0.07, 1.15)])
+    if params.get("system"):
+        scene.context(
+            "IfcPipeSegment",
+            "Gasleitung",
+            [pipe_solid(f, (2.81, 0.03, 1.15), (2.81, 0.03, WALL_HEIGHT), 0.02)],
+            serves=("mep-gas-terminal",),
+        )
     return scene.finish(params)

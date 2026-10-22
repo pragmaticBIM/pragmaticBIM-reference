@@ -34,7 +34,7 @@ milestones:
       en: Mid Phase PD (Predesign / Programming)
     status: active
     phase: 'PD'
-    kind: custom
+    kind: middle
   - id: 'PD:E'
     code: E
     sort_order: 3
@@ -67,7 +67,7 @@ milestones:
       en: Mid Phase SD (Schematic Design)
     status: active
     phase: 'SD'
-    kind: custom
+    kind: middle
   - id: 'SD:E'
     code: E
     sort_order: 6
@@ -100,7 +100,7 @@ milestones:
       en: Mid Phase DD (Design Development)
     status: active
     phase: 'DD'
-    kind: custom
+    kind: middle
   - id: 'DD:E'
     code: E
     sort_order: 9
@@ -133,7 +133,7 @@ milestones:
       en: Mid Phase CD (Construction Documents)
     status: active
     phase: 'CD'
-    kind: custom
+    kind: middle
   - id: 'CD:E'
     code: E
     sort_order: 12
@@ -166,7 +166,7 @@ milestones:
       en: Mid Phase PR (Procurement)
     status: active
     phase: 'PR'
-    kind: custom
+    kind: middle
   - id: 'PR:E'
     code: E
     sort_order: 15
@@ -199,7 +199,7 @@ milestones:
       en: Mid Phase CA (Construction Administration)
     status: active
     phase: 'CA'
-    kind: custom
+    kind: middle
   - id: 'CA:E'
     code: E
     sort_order: 18
@@ -232,7 +232,7 @@ milestones:
       en: Mid Phase PO (Post Occupancy)
     status: active
     phase: 'PO'
-    kind: custom
+    kind: middle
   - id: 'PO:E'
     code: E
     sort_order: 21
