@@ -1,0 +1,71 @@
+id: pragmaticbim:component/bett-doppel
+code: CMP-FUR-03
+sort_order: 22
+name:
+  de: Doppelbett
+  fr: Lit double
+  it: Letto matrimoniale
+  en: Double bed
+definition:
+  de: Doppelbett mit dem Kopfende an der Wand und Zugang von beiden Seiten.
+  fr: Lit double avec la tête contre le mur et accès des deux côtés.
+  it: Letto matrimoniale con la testata a parete e accesso da entrambi i lati.
+  en: Double bed with the head against a wall and access from both sides.
+element: pragmaticbim:element/furniture
+predefined_type: BED
+category: furniture
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - party_wall
+  - exterior
+parameters:
+  width:
+    default: 1.8
+    min: 1.4
+    max: 2.0
+    unit: m
+  depth:
+    default: 2.0
+    min: 2.0
+    max: 2.2
+    unit: m
+  height:
+    default: 0.45
+    min: 0.4
+    max: 0.55
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: left
+  width: depth
+  depth: 0.6
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: right
+  width: depth
+  depth: 0.6
+- name:
+    de: Manövrierfläche
+    fr: Aire de manœuvre
+    it: Area di manovra
+    en: Manoeuvring area
+  side: right
+  width: 1.4
+  depth: 1.4
+  when:
+    project_goal_levels:
+    - pragmaticbim:project-goal-level/accessibility-wheelchair
+representation:
+  body: box
+  plan_symbol: bed_double
+comment: 'Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

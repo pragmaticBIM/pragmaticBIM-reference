@@ -113,4 +113,26 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 30
+  equipment:
+  - id: pragmaticbim:room-type-equipment/kellerabteil-default-regal
+    sort_order: 1
+    function: storage
+    components:
+    - pragmaticbim:component/regal
+    quantity:
+      min: 0
+      max: 4
+      default: 2
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/kellerabteil-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+    quantity: 1
+    status: active
   status: active

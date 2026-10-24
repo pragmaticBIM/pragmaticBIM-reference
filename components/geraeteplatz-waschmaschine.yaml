@@ -1,0 +1,63 @@
+id: pragmaticbim:component/geraeteplatz-waschmaschine
+code: CMP-LAU-02
+sort_order: 18
+name:
+  de: Geräteplatz Waschmaschine
+  fr: Emplacement lave-linge
+  it: Postazione lavatrice
+  en: Washing machine space
+definition:
+  de: Platz für eine Waschmaschine mit Wasser-, Abwasser- und Stromanschluss.
+  fr: Emplacement pour un lave-linge avec raccordements d'eau, d'évacuation et d'électricité.
+  it: Postazione per una lavatrice con allacciamenti idrici, di scarico ed elettrici.
+  en: Space for one washing machine with water, drainage and power connections.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: laundry
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  - exterior
+parameters:
+  width:
+    default: 0.65
+    min: 0.6
+    max: 0.7
+    unit: m
+  depth:
+    default: 0.65
+    min: 0.6
+    max: 0.7
+    unit: m
+  height:
+    default: 0.9
+    min: 0.85
+    max: 0.95
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: 0.9
+  depth: 0.9
+connections:
+- medium: drainage
+  max_distance_to_shaft: 3.0
+- medium: cold_water
+- medium: power
+representation:
+  body: box
+  plan_symbol: washing_machine
+comment: 'Geräteplatz als Blackbox; das Gerät selbst wird nicht modelliert. Freifläche: Planungswert;
+  vor Freigabe fachlich bestätigen.'
+status: active

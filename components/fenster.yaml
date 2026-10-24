@@ -1,0 +1,42 @@
+id: pragmaticbim:component/fenster
+code: CMP-WIN-01
+sort_order: 30
+name:
+  de: Fenster
+  fr: Fenêtre
+  it: Finestra
+  en: Window
+definition:
+  de: Fenster in der Aussenwand; Grösse und Brüstung bestimmen Belichtung und Aussicht.
+  fr: Fenêtre dans le mur extérieur; dimensions et allège déterminent l'éclairage et la vue.
+  it: Finestra nella parete esterna; dimensioni e parapetto determinano illuminazione e vista.
+  en: Window in the exterior wall; its size and sill set daylight and view.
+element: pragmaticbim:element/architecture-window-exterior
+predefined_type: WINDOW
+category: window
+placement:
+  host: wall_opening
+  edge_kinds:
+  - exterior
+  side_distance_min: 0.2
+  elevation: sill_height
+parameters:
+  width:
+    default: 1.2
+    min: 0.6
+    max: 3.0
+    unit: m
+  height:
+    default: 1.4
+    min: 0.6
+    max: 2.5
+    unit: m
+  sill_height:
+    default: 0.9
+    min: 0.0
+    max: 1.2
+    unit: m
+representation:
+  body: opening
+  plan_symbol: window
+status: active

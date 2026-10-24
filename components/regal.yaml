@@ -1,0 +1,51 @@
+id: pragmaticbim:component/regal
+code: CMP-FUR-01
+sort_order: 20
+name:
+  de: Regal
+  fr: Étagère
+  it: Scaffale
+  en: Shelf
+definition:
+  de: Offenes Regal an der Wand für Abstellräume, Keller und Arbeitszimmer.
+  fr: Étagère ouverte contre le mur pour réduits, caves et bureaux.
+  it: Scaffale aperto a parete per ripostigli, cantine e studi.
+  en: Open shelf against a wall for storerooms, cellars and studies.
+element: pragmaticbim:element/furniture
+predefined_type: SHELF
+category: furniture
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - party_wall
+  - exterior
+parameters:
+  width:
+    default: 1.0
+    min: 0.6
+    max: 2.0
+    unit: m
+  depth:
+    default: 0.4
+    min: 0.3
+    max: 0.6
+    unit: m
+  height:
+    default: 2.0
+    min: 1.8
+    max: 2.4
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 0.8
+representation:
+  body: box
+  plan_symbol: shelf
+status: active

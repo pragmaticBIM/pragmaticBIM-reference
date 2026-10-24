@@ -1,0 +1,56 @@
+id: pragmaticbim:component/wc-wandhaengend
+code: CMP-SAN-01
+sort_order: 1
+name:
+  de: WC wandhängend
+  fr: WC suspendu
+  it: WC sospeso
+  en: Wall-hung WC
+definition:
+  de: WC mit Vorwandinstallation; legt Platzbedarf und Lage zum Schacht für die Grundrissplanung fest.
+  fr: WC avec installation en applique; fixe l'emprise et la position par rapport à la gaine pour le plan.
+  it: WC con installazione a parete; fissa ingombro e posizione rispetto al cavedio per la pianta.
+  en: WC with pre-wall installation; fixes space and position relative to the shaft for the floor plan.
+element: pragmaticbim:element/mep-sanitary-terminal
+predefined_type: TOILETPAN
+category: sanitary
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  side_distance_min: 0.2
+parameters:
+  width:
+    default: 0.36
+    min: 0.35
+    max: 0.4
+    unit: m
+  depth:
+    default: 0.55
+    min: 0.48
+    max: 0.6
+    unit: m
+  height:
+    default: 0.4
+    min: 0.38
+    max: 0.46
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: 0.8
+  depth: 0.75
+connections:
+- medium: drainage
+  max_distance_to_shaft: 1.0
+- medium: cold_water
+representation:
+  body: box
+  plan_symbol: wc
+comment: 'Freifläche und Abstand zum Schacht: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

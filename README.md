@@ -30,7 +30,9 @@ Open it in the [web application](https://elementplan.pragmaticbim.ch), or read, 
 | `documents/` | Standard documents (plans, schematics, contracts) |
 | `uses/` | Building uses |
 | `usage_scenarios/` | Usage scenarios and their options |
-| `room_types/` | Functional rooms and container types composed with `contains` |
+| `room_types/` | Functional rooms and container types composed with `contains`; configurations order `equipment` and `openings` |
+| `components/` | Parametric templates for fixtures, built-in and loose furniture, doors, windows and clearances |
+| `schema/` | JSON Schema for components and the room type `equipment` / `openings` extension |
 | `catalog/` / `generators/` / `render/` / `runner.py` | IFC and isometric PNG sample generation ([generators/README.md](generators/README.md)) |
 | `media/` | Published catalogue images and IFC attachments |
 | `tests/` | Consistency checks for the data |
@@ -38,6 +40,22 @@ Open it in the [web application](https://elementplan.pragmaticbim.ch), or read, 
 Workflows follow the [abstract use case classification](https://schema.pragmaticbim.ch/classification/usecase.html). Several lean on [abstractBIM](https://www.abstractbim.com/), which derives walls, slabs, and quantities from correctly modelled spaces and openings.
 
 This is a starting point, not a Swiss standard. It does not replace KBOB or federal authority templates.
+
+## Components, equipment and openings
+
+Three levels stay apart so a generator can furnish a room from its outline:
+
+| Level | Answers | Where |
+| --- | --- | --- |
+| Element | Which IFC entity and attributes are ordered? | `elements/` |
+| Component | What size is it, what must stay clear, where does it connect? | `components/` |
+| Equipment / opening | What does a room of this type contain, and how is it reached and lit? | `room_types/` → `configurations[].equipment` / `.openings` |
+
+A component references one element and adds parameters (metres; `width` runs along the host wall), clearances, placement rules and connections. Clearance names come from the movement clearance value list, so placed clearances pass the same checks as hand-modelled ones.
+
+Equipment and openings reference components and leave position to the generator. When several components are listed, the generator picks one per item. `when` and `unless` switch an item by project goal level or scenario option. Openings are declared by the room they lead into; `connects_to: {relationships: incoming}` takes the neighbours from the `room_relationships` of the selected scenario options.
+
+Dimensions marked "Planungswert" or "SIA 500" in a `comment` still need professional confirmation before release.
 
 ## Contributing
 

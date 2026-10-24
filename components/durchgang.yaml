@@ -1,0 +1,36 @@
+id: pragmaticbim:component/durchgang
+code: CMP-PAS-01
+sort_order: 31
+name:
+  de: Durchgang
+  fr: Passage
+  it: Passaggio
+  en: Passage
+definition:
+  de: Türlose Öffnung zwischen zwei Räumen einer Wohnung, etwa zwischen Küche und Wohnzimmer.
+  fr: Ouverture sans porte entre deux pièces d'un logement, par exemple entre cuisine et séjour.
+  it: Apertura senza porta tra due locali di un alloggio, ad esempio tra cucina e soggiorno.
+  en: Doorless opening between two rooms of a dwelling, for example between kitchen and living room.
+element: pragmaticbim:element/architecture-opening-void
+predefined_type: OPENING
+category: passage
+placement:
+  host: wall_opening
+  edge_kinds:
+  - interior
+  side_distance_min: 0.1
+parameters:
+  clear_width:
+    default: 1.0
+    min: 0.8
+    max: 4.0
+    unit: m
+  clear_height:
+    default: 2.1
+    min: 2.0
+    max: 2.6
+    unit: m
+representation:
+  body: opening
+  plan_symbol: passage
+status: active

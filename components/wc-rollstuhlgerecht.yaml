@@ -1,0 +1,67 @@
+id: pragmaticbim:component/wc-rollstuhlgerecht
+code: CMP-SAN-02
+sort_order: 2
+name:
+  de: WC rollstuhlgerecht
+  fr: WC adapté aux fauteuils roulants
+  it: WC accessibile in sedia a rotelle
+  en: Wheelchair-accessible WC
+definition:
+  de: WC mit seitlicher Übersetzfläche, damit ein rollstuhlgerechtes Bad im Grundriss nachweisbar ist.
+  fr: WC avec aire de transfert latérale, afin de justifier une salle de bains adaptée aux fauteuils roulants
+    dans le plan.
+  it: WC con area di trasferimento laterale, per dimostrare in pianta un bagno accessibile in sedia a
+    rotelle.
+  en: WC with a lateral transfer area so a wheelchair-accessible bathroom can be verified in the floor
+    plan.
+element: pragmaticbim:element/mep-sanitary-terminal
+predefined_type: TOILETPAN
+category: sanitary
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  side_distance_min: 0.3
+parameters:
+  width:
+    default: 0.38
+    min: 0.36
+    max: 0.4
+    unit: m
+  depth:
+    default: 0.7
+    min: 0.65
+    max: 0.7
+    unit: m
+  height:
+    default: 0.46
+    min: 0.46
+    max: 0.48
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: left
+  width: depth
+  depth: 0.8
+- name:
+    de: Manövrierfläche
+    fr: Aire de manœuvre
+    it: Area di manovra
+    en: Manoeuvring area
+  side: front
+  width: 1.4
+  depth: 1.4
+connections:
+- medium: drainage
+  max_distance_to_shaft: 1.0
+- medium: cold_water
+representation:
+  body: box
+  plan_symbol: wc_accessible
+comment: Mass nach SIA 500 vor Freigabe fachlich bestätigen.
+status: active

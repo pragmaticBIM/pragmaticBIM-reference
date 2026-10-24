@@ -1,0 +1,53 @@
+id: pragmaticbim:component/kuechen-oberschrank
+code: CMP-KIT-05
+sort_order: 14
+name:
+  de: Küchen-Oberschrank
+  fr: Élément haut de cuisine
+  it: Pensile da cucina
+  en: Kitchen wall cabinet
+definition:
+  de: Hängeschrank über der Arbeitsfläche; Teil eines Küchenblocks.
+  fr: Élément suspendu au-dessus du plan de travail; fait partie d'un bloc cuisine.
+  it: Pensile sopra il piano di lavoro; parte di un blocco cucina.
+  en: Wall-hung cabinet above the worktop; part of a kitchen block.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: kitchen
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  - exterior
+  elevation: elevation
+parameters:
+  width:
+    default: 1.8
+    min: 0.6
+    max: 4.2
+    unit: m
+  depth:
+    default: 0.35
+    min: 0.3
+    max: 0.4
+    unit: m
+  height:
+    default: 0.7
+    min: 0.35
+    max: 0.9
+    unit: m
+  elevation:
+    default: 1.45
+    min: 1.4
+    max: 1.55
+    unit: m
+representation:
+  body: box
+  plan_symbol: wall_cabinet
+status: active

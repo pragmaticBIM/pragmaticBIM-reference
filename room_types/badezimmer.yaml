@@ -113,4 +113,119 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 30
+  equipment:
+  - id: pragmaticbim:room-type-equipment/badezimmer-default-wc
+    sort_order: 1
+    function: toilet
+    components:
+    - pragmaticbim:component/wc-wandhaengend
+    quantity: 1
+    unless:
+      project_goal_levels:
+      - pragmaticbim:project-goal-level/accessibility-wheelchair
+    status: active
+  - id: pragmaticbim:room-type-equipment/badezimmer-default-wc-rollstuhlgerecht
+    sort_order: 2
+    function: toilet
+    components:
+    - pragmaticbim:component/wc-rollstuhlgerecht
+    quantity: 1
+    when:
+      project_goal_levels:
+      - pragmaticbim:project-goal-level/accessibility-wheelchair
+    status: active
+  - id: pragmaticbim:room-type-equipment/badezimmer-default-waschtisch
+    sort_order: 3
+    function: washbasin
+    components:
+    - pragmaticbim:component/waschtisch
+    - pragmaticbim:component/doppelwaschtisch
+    quantity: 1
+    unless:
+      project_goal_levels:
+      - pragmaticbim:project-goal-level/accessibility-wheelchair
+    status: active
+  - id: pragmaticbim:room-type-equipment/badezimmer-default-waschtisch-unterfahrbar
+    sort_order: 4
+    function: washbasin
+    components:
+    - pragmaticbim:component/waschtisch-unterfahrbar
+    quantity: 1
+    when:
+      project_goal_levels:
+      - pragmaticbim:project-goal-level/accessibility-wheelchair
+    status: active
+  - id: pragmaticbim:room-type-equipment/badezimmer-default-baden
+    sort_order: 5
+    function: bathing
+    components:
+    - pragmaticbim:component/dusche-bodeneben
+    - pragmaticbim:component/badewanne
+    quantity: 1
+    unless:
+      project_goal_levels:
+      - pragmaticbim:project-goal-level/accessibility-wheelchair
+    status: active
+  - id: pragmaticbim:room-type-equipment/badezimmer-default-dusche-rollstuhlgerecht
+    sort_order: 6
+    function: bathing
+    components:
+    - pragmaticbim:component/dusche-bodeneben
+    quantity: 1
+    when:
+      project_goal_levels:
+      - pragmaticbim:project-goal-level/accessibility-wheelchair
+    params:
+      width:
+        default: 1.2
+        min: 1.2
+      depth:
+        default: 1.2
+        min: 1.2
+    comment: Mindestmass nach SIA 500 vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/badezimmer-default-manoevrierflaeche
+    sort_order: 7
+    function: manoeuvring
+    components:
+    - pragmaticbim:component/manoevrierflaeche
+    quantity: 1
+    when:
+      project_goal_levels:
+      - pragmaticbim:project-goal-level/accessibility-adaptable
+    comment: 'Anpassbar: Fläche für den späteren Umbau ohne Eingriff in Rohbau und Leitungen.'
+    status: active
+  - id: pragmaticbim:room-type-equipment/badezimmer-default-wendeflaeche
+    sort_order: 8
+    function: turning
+    components:
+    - pragmaticbim:component/wendeflaeche
+    quantity: 1
+    when:
+      project_goal_levels:
+      - pragmaticbim:project-goal-level/accessibility-wheelchair
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/badezimmer-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-schiebe-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/badezimmer-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 0
+      default: 1
+    fallback: mechanical_ventilation
+    status: active
   status: active

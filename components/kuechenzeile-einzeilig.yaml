@@ -1,0 +1,86 @@
+id: pragmaticbim:component/kuechenzeile-einzeilig
+code: CMP-KIT-01
+sort_order: 10
+name:
+  de: Küche einzeilig
+  fr: Cuisine linéaire
+  it: Cucina lineare
+  en: Single-row kitchen
+definition:
+  de: Küchenblock entlang einer Wand mit Unterschränken, Arbeitsfläche, Spüle und Hochschrank.
+  fr: Bloc cuisine le long d'un mur avec éléments bas, plan de travail, évier et armoire haute.
+  it: Blocco cucina lungo una parete con basi, piano di lavoro, lavello e armadio alto.
+  en: Kitchen block along one wall with base units, worktop, sink and a tall cabinet.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: kitchen
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  - exterior
+parameters:
+  width:
+    default: 3.0
+    min: 2.4
+    max: 4.8
+    unit: m
+  depth:
+    default: 0.6
+    min: 0.6
+    max: 0.65
+    unit: m
+  height:
+    default: 0.9
+    min: 0.85
+    max: 0.95
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.2
+- name:
+    de: Manövrierfläche
+    fr: Aire de manœuvre
+    it: Area di manovra
+    en: Manoeuvring area
+  side: front
+  width: 1.4
+  depth: 1.4
+  when:
+    project_goal_levels:
+    - pragmaticbim:project-goal-level/accessibility-wheelchair
+connections:
+- medium: drainage
+  max_distance_to_shaft: 3.0
+- medium: cold_water
+- medium: hot_water
+- medium: power
+- medium: exhaust_air
+parts:
+- component: pragmaticbim:component/spuele
+  quantity: 1
+  position: any
+- component: pragmaticbim:component/kuechen-hochschrank
+  quantity: 1
+  position: end
+- component: pragmaticbim:component/kuechen-oberschrank
+  quantity: 1
+  position: any
+representation:
+  body: parts
+  plan_symbol: kitchen_run
+comment: 'Geräte (Kochfeld, Backofen, Kühlschrank, Geschirrspüler) liegen in den Schränken und werden
+  nicht einzeln modelliert. Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

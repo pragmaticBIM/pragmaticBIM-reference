@@ -113,4 +113,37 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 300
+  equipment:
+  - id: pragmaticbim:room-type-equipment/gang-default-einbauschrank
+    sort_order: 1
+    function: storage
+    components:
+    - pragmaticbim:component/einbauschrank
+    quantity:
+      min: 0
+      max: 2
+      default: 0
+    status: active
+  - id: pragmaticbim:room-type-equipment/gang-default-manoevrierflaeche
+    sort_order: 2
+    function: manoeuvring
+    components:
+    - pragmaticbim:component/manoevrierflaeche
+    quantity: 1
+    when:
+      project_goal_levels:
+      - pragmaticbim:project-goal-level/accessibility-wheelchair
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/gang-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/durchgang
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-schiebe-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
   status: active

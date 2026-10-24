@@ -1,0 +1,56 @@
+id: pragmaticbim:component/garderobe
+code: CMP-STO-02
+sort_order: 16
+name:
+  de: Garderobe
+  fr: Vestiaire
+  it: Guardaroba
+  en: Entrance wardrobe
+definition:
+  de: Garderobenschrank beim Wohnungseingang für Jacken und Schuhe.
+  fr: Armoire de vestiaire à l'entrée du logement pour vestes et chaussures.
+  it: Armadio guardaroba all'ingresso dell'alloggio per giacche e scarpe.
+  en: Cupboard at the dwelling entrance for coats and shoes.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: storage
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - party_wall
+parameters:
+  width:
+    default: 1.2
+    min: 0.6
+    max: 2.4
+    unit: m
+  depth:
+    default: 0.45
+    min: 0.35
+    max: 0.6
+    unit: m
+  height:
+    default: 2.3
+    min: 2.1
+    max: 2.6
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 0.9
+representation:
+  body: box
+  plan_symbol: wardrobe
+comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

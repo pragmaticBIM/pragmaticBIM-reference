@@ -1,0 +1,48 @@
+id: pragmaticbim:component/manoevrierflaeche
+code: CMP-CLR-02
+sort_order: 33
+name:
+  de: Manövrierfläche SIA 500
+  fr: Aire de manœuvre SIA 500
+  it: Area di manovra SIA 500
+  en: Manoeuvring area SIA 500
+definition:
+  de: Freizuhaltende Fläche für Richtungswechsel über 45° im Rollstuhl, etwa vor Türen und Apparaten.
+  fr: Surface à maintenir libre pour un changement de direction de plus de 45° en fauteuil roulant, par
+    exemple devant les portes et les appareils.
+  it: Superficie da mantenere libera per cambi di direzione superiori a 45° in sedia a rotelle, ad esempio
+    davanti a porte e apparecchi.
+  en: Area kept clear for changes of direction over 45° in a wheelchair, for example in front of doors
+    and fixtures.
+element: pragmaticbim:element/architecture-movement-clearance
+predefined_type: USERDEFINED
+object_type:
+  de: Bewegungsfläche
+  fr: Aire de mouvement
+  it: Area di movimento
+  en: Movement clearance
+ifc_name:
+  de: Manövrierfläche
+  fr: Aire de manœuvre
+  it: Area di manovra
+  en: Manoeuvring area
+category: clearance
+placement:
+  host: floor
+parameters:
+  width:
+    default: 1.4
+    min: 1.4
+    unit: m
+  depth:
+    default: 1.4
+    min: 1.4
+    unit: m
+  height:
+    default: 1.5
+    unit: m
+representation:
+  body: volume
+  plan_symbol: manoeuvring_area
+comment: Darf Freiflächen von Apparaten überlagern, nicht aber Apparate und Wände.
+status: active

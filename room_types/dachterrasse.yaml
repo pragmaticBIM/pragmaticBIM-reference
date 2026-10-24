@@ -65,4 +65,16 @@ configurations:
     name: DesignPointLoad
     pset: ePset_SpaceRequirement
     value: 2.0
+  openings:
+  - id: pragmaticbim:room-type-opening/dachterrasse-default-zugang
+    sort_order: 1
+    function: outdoor_access
+    components:
+    - pragmaticbim:component/fenstertuer
+    connects_to:
+      relationships: incoming
+    quantity:
+      min: 1
+      default: 1
+    status: active
   status: active

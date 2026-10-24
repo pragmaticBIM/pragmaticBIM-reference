@@ -1,0 +1,61 @@
+id: pragmaticbim:component/wohnungseingangstuer
+code: CMP-DOR-03
+sort_order: 28
+name:
+  de: Wohnungseingangstür
+  fr: Porte palière
+  it: Porta d'ingresso dell'alloggio
+  en: Dwelling entrance door
+definition:
+  de: Eingangstür der Wohnung zum Treppenhaus oder Flur, mit Anforderungen an Brand-, Schall- und Einbruchschutz.
+  fr: Porte d'entrée du logement côté cage d'escalier ou couloir, avec exigences de protection incendie,
+    acoustique et anti-effraction.
+  it: Porta d'ingresso dell'alloggio verso il vano scala o il corridoio, con requisiti antincendio, acustici
+    e antieffrazione.
+  en: Entrance door of the dwelling to the stair core or corridor, with fire, acoustic and burglary requirements.
+element: pragmaticbim:element/architecture-door-interior
+predefined_type: DOOR
+category: door
+placement:
+  host: wall_opening
+  edge_kinds:
+  - interior
+  - party_wall
+  side_distance_min: 0.2
+parameters:
+  clear_width:
+    default: 0.9
+    min: 0.8
+    max: 1.1
+    unit: m
+  clear_height:
+    default: 2.1
+    min: 2.0
+    max: 2.2
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: swing
+  width: clear_width
+  depth: clear_width
+- name:
+    de: Manövrierfläche
+    fr: Aire de manœuvre
+    it: Area di manovra
+    en: Manoeuvring area
+  side: front
+  width: 1.4
+  depth: 1.4
+  when:
+    project_goal_levels:
+    - pragmaticbim:project-goal-level/accessibility-wheelchair
+representation:
+  body: opening
+  plan_symbol: door_swing
+comment: Brand- und Schallschutz über FireRating und AcousticRating am Element. Mass nach SIA 500 vor
+  Freigabe fachlich bestätigen.
+status: active

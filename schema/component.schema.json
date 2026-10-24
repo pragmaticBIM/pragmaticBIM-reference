@@ -1,0 +1,341 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.pragmaticbim.ch/elementplan/component.schema.json",
+  "title": "Component",
+  "description": "Parametric geometry template for one placeable object (fixture, built-in furniture, furniture, door, window, clearance). The element defines which IFC entity and attributes are ordered; the component adds size, clearances, placement rules and connections so a generator can place it in a room.",
+  "type": "object",
+  "required": [
+    "id",
+    "code",
+    "sort_order",
+    "name",
+    "definition",
+    "element",
+    "category",
+    "placement",
+    "parameters",
+    "representation",
+    "status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pragmaticbim:component/[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "code": {
+      "type": "string",
+      "pattern": "^CMP-[A-Z]+-[0-9]{2}$"
+    },
+    "sort_order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "name": {
+      "$ref": "#/$defs/localized"
+    },
+    "definition": {
+      "$ref": "#/$defs/localized"
+    },
+    "element": {
+      "description": "Element whose applicability the placed object must satisfy.",
+      "type": "string",
+      "pattern": "^pragmaticbim:element/[a-z0-9-]+$"
+    },
+    "predefined_type": {
+      "description": "IFC PredefinedType token; must be an allowed value of the element's PredefinedType attribute.",
+      "type": "string"
+    },
+    "object_type": {
+      "description": "ObjectType per language; required when the element's applicability filters on ObjectType.",
+      "$ref": "#/$defs/localized"
+    },
+    "ifc_name": {
+      "description": "Value written to IFC Name per language when the element constrains Name with a value list (e.g. movement clearances).",
+      "$ref": "#/$defs/localized"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "sanitary",
+        "kitchen",
+        "storage",
+        "furniture",
+        "laundry",
+        "door",
+        "window",
+        "passage",
+        "clearance"
+      ]
+    },
+    "placement": {
+      "$ref": "#/$defs/placement"
+    },
+    "parameters": {
+      "description": "Nominal dimensions in metres. Keys are free; width runs along the host wall, depth away from it.",
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "$ref": "#/$defs/parameter"
+      }
+    },
+    "clearances": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/clearance"
+      }
+    },
+    "connections": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/connection"
+      }
+    },
+    "parts": {
+      "description": "Sub-objects written as their own IFC products, e.g. the sink in a kitchen run.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/part"
+      }
+    },
+    "representation": {
+      "$ref": "#/$defs/representation"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "deprecated"
+      ]
+    }
+  },
+  "$defs": {
+    "localized": {
+      "type": "object",
+      "required": [
+        "de",
+        "fr",
+        "it",
+        "en"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "de": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fr": {
+          "type": "string",
+          "minLength": 1
+        },
+        "it": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "length": {
+      "description": "A length in metres, or the name of a component parameter.",
+      "oneOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        }
+      ]
+    },
+    "parameter": {
+      "type": "object",
+      "required": [
+        "default"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "default": {
+          "type": "number",
+          "minimum": 0
+        },
+        "min": {
+          "type": "number",
+          "minimum": 0
+        },
+        "max": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "m"
+          ]
+        }
+      }
+    },
+    "placement": {
+      "type": "object",
+      "required": [
+        "host"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "host": {
+          "description": "floor: free-standing; wall_face: back against a wall; wall_corner: two backs against two walls; wall_opening: cuts a wall and belongs to both rooms.",
+          "type": "string",
+          "enum": [
+            "floor",
+            "wall_face",
+            "wall_corner",
+            "wall_opening"
+          ]
+        },
+        "edge_kinds": {
+          "description": "Kinds of room edge the component may sit on or in.",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "interior",
+              "exterior",
+              "shaft",
+              "party_wall"
+            ]
+          }
+        },
+        "side_distance_min": {
+          "description": "Minimum distance from the component's side to a perpendicular wall, in metres.",
+          "type": "number",
+          "minimum": 0
+        },
+        "elevation": {
+          "description": "Height of the component's underside above finished floor, in metres (window sill, wall cabinet).",
+          "$ref": "#/$defs/length"
+        }
+      }
+    },
+    "clearance": {
+      "description": "Rectangle that must stay free of other components and walls; clearances may overlap each other. front/back: width runs along the component's width, depth away from it. left/right: width runs along the component's depth, depth away from its side. swing: door leaf sweep on the opening side.",
+      "type": "object",
+      "required": [
+        "name",
+        "side",
+        "width",
+        "depth"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "description": "Token from the movement clearance name value list, per language.",
+          "$ref": "#/$defs/localized"
+        },
+        "side": {
+          "type": "string",
+          "enum": [
+            "front",
+            "left",
+            "right",
+            "back",
+            "swing"
+          ]
+        },
+        "width": {
+          "$ref": "#/$defs/length"
+        },
+        "depth": {
+          "$ref": "#/$defs/length"
+        },
+        "offset": {
+          "description": "Shift of the rectangle's centre along the component's width, in metres.",
+          "type": "number"
+        },
+        "when": {
+          "$ref": "room-type-equipment.schema.json#/$defs/condition"
+        }
+      }
+    },
+    "connection": {
+      "type": "object",
+      "required": [
+        "medium"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "medium": {
+          "type": "string",
+          "enum": [
+            "drainage",
+            "cold_water",
+            "hot_water",
+            "power",
+            "exhaust_air"
+          ]
+        },
+        "max_distance_to_shaft": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "part": {
+      "type": "object",
+      "required": [
+        "component"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "component": {
+          "type": "string",
+          "pattern": "^pragmaticbim:component/[a-z0-9-]+$"
+        },
+        "quantity": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "position": {
+          "type": "string",
+          "enum": [
+            "start",
+            "centre",
+            "end",
+            "any"
+          ]
+        }
+      }
+    },
+    "representation": {
+      "type": "object",
+      "required": [
+        "body",
+        "plan_symbol"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "body": {
+          "description": "box: one extruded rectangle; parts: built from the listed parts plus a carcass; opening: cut in the host wall with a filling; volume: flat proxy body for clearances.",
+          "type": "string",
+          "enum": [
+            "box",
+            "parts",
+            "opening",
+            "volume"
+          ]
+        },
+        "plan_symbol": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$"
+        }
+      }
+    }
+  }
+}

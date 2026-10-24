@@ -1,0 +1,49 @@
+id: pragmaticbim:component/spuele
+code: CMP-SAN-09
+sort_order: 9
+name:
+  de: Spüle
+  fr: Évier
+  it: Lavello
+  en: Kitchen sink
+definition:
+  de: Spülbecken in der Arbeitsfläche; bestimmt in der Küchenzeile die Lage der Wasser- und Abwasseranschlüsse.
+  fr: Évier dans le plan de travail; détermine dans la cuisine la position des raccordements d'eau et
+    d'évacuation.
+  it: Lavello nel piano di lavoro; determina nella cucina la posizione degli allacciamenti idrici e di
+    scarico.
+  en: Sink set into the worktop; sets where the water and drainage connections sit in the kitchen run.
+element: pragmaticbim:element/mep-sanitary-terminal
+predefined_type: SINK
+category: sanitary
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  - exterior
+parameters:
+  width:
+    default: 0.6
+    min: 0.45
+    max: 1.0
+    unit: m
+  depth:
+    default: 0.5
+    min: 0.4
+    max: 0.55
+    unit: m
+  height:
+    default: 0.9
+    min: 0.85
+    max: 0.95
+    unit: m
+connections:
+- medium: drainage
+  max_distance_to_shaft: 3.0
+- medium: cold_water
+- medium: hot_water
+representation:
+  body: box
+  plan_symbol: kitchen_sink
+status: active
