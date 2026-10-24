@@ -35,6 +35,7 @@ from catalog.mapping import (
     TURNING_RADIUS_TYPES,
     DECISION_VOLUME_TYPES,
     MOVEMENT_CLEARANCE_TYPES,
+    DEVICE_SPACE_TYPES,
     BUILDING_LAW_PARCEL_TYPES,
     SURROUNDING_BUILDING_TYPES,
     CONSTRUCTION_LOGISTICS_TYPES,
@@ -333,7 +334,7 @@ def _primary_colors(element_type: str, primary) -> dict[str, list[float]] | None
                 _DECISION_VOLUME_COLORS[min(index, len(_DECISION_VOLUME_COLORS) - 1)]
             )
         return colors or None
-    if element_type in MOVEMENT_CLEARANCE_TYPES:
+    if element_type in MOVEMENT_CLEARANCE_TYPES | DEVICE_SPACE_TYPES:
         proxies = primary if isinstance(primary, list) else [primary]
         colors = {}
         for index, proxy in enumerate(proxies):
@@ -517,6 +518,7 @@ def run_catalog(
         | TURNING_RADIUS_TYPES
         | DECISION_VOLUME_TYPES
         | MOVEMENT_CLEARANCE_TYPES
+        | DEVICE_SPACE_TYPES
         | BUILDING_LAW_PARCEL_TYPES
         | SURROUNDING_BUILDING_TYPES
         | CONSTRUCTION_LOGISTICS_TYPES

@@ -93,4 +93,34 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/elektroraum-default-hauptverteilung
+    sort_order: 1
+    function: plant
+    components:
+    - pragmaticbim:component/hauptverteilung
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/elektroraum-default-unterverteilung
+    sort_order: 2
+    function: plant
+    components:
+    - pragmaticbim:component/unterverteilung
+    quantity:
+      min: 0
+      max: 4
+      default: 1
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/elektroraum-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    - pragmaticbim:component/tuer-aussen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
   status: active

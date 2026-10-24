@@ -1,0 +1,54 @@
+id: pragmaticbim:component/geraeteplatz-operationstisch
+code: CMP-DEV-01
+sort_order: 66
+name:
+  de: Geräteplatz Operationstisch
+  fr: Emplacement table d'opération
+  it: Postazione tavolo operatorio
+  en: Operating table space
+definition:
+  de: Operationstisch mit Zone für das OP-Team ringsum; bestimmt die Mindestgrösse des Operationssaals.
+  fr: Table d'opération avec zone pour l'équipe opératoire tout autour; détermine la taille minimale de
+    la salle d'opération.
+  it: Tavolo operatorio con zona per l'équipe tutt'intorno; determina la dimensione minima della sala
+    operatoria.
+  en: Operating table with a zone for the surgical team all round; sets the minimum size of the operating
+    theatre.
+element: pragmaticbim:element/architecture-device-space
+predefined_type: USERDEFINED
+object_type:
+  de: Geräteplatz
+  fr: Emplacement d'appareil
+  it: Postazione apparecchio
+  en: Device space
+ifc_name:
+  de: Operationstisch
+  fr: Table d'opération
+  it: Tavolo operatorio
+  en: Operating table
+category: device
+placement:
+  host: floor
+parameters:
+  width:
+    default: 2.4
+    min: 2.0
+    max: 3.2
+    unit: m
+  depth:
+    default: 3.6
+    min: 3.0
+    max: 4.4
+    unit: m
+  height:
+    default: 1.1
+    min: 0.9
+    max: 1.2
+    unit: m
+connections:
+- medium: power
+representation:
+  body: volume
+  plan_symbol: device_operating_table
+comment: Teamzone ist im Volumen enthalten. Planungswert; vor Freigabe fachlich bestätigen.
+status: active

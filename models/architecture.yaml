@@ -61,6 +61,7 @@ included_elements:
   - pragmaticbim:element/architecture-installation-path
   - pragmaticbim:element/architecture-maintenance-space
   - pragmaticbim:element/architecture-movement-clearance
+  - pragmaticbim:element/architecture-device-space
   - pragmaticbim:element/architecture-turning-radius
 scheduled_milestones:
   - "31:M"

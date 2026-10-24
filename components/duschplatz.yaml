@@ -1,0 +1,56 @@
+id: pragmaticbim:component/duschplatz
+code: CMP-SAN-12
+sort_order: 56
+name:
+  de: Duschplatz
+  fr: Poste de douche
+  it: Postazione doccia
+  en: Shower position
+definition:
+  de: Duschplatz an der Wand in einer Reihe; für Duschräume von Sport, Betrieb und Beherbergung.
+  fr: Poste de douche mural en série; pour les douches du sport, de l'entreprise et de l'hébergement.
+  it: Postazione doccia a parete in serie; per docce di sport, aziende e strutture ricettive.
+  en: Wall-mounted shower position in a row; for shower rooms in sports, workplaces and hospitality.
+element: pragmaticbim:element/mep-sanitary-terminal
+predefined_type: SHOWER
+category: sanitary
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  - exterior
+  axis_spacing_min: 0.9
+parameters:
+  width:
+    default: 0.9
+    min: 0.8
+    max: 1.2
+    unit: m
+  depth:
+    default: 0.9
+    min: 0.8
+    max: 1.2
+    unit: m
+  height:
+    default: 0.0
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 0.9
+connections:
+- medium: drainage
+  max_distance_to_shaft: 3.0
+- medium: cold_water
+- medium: hot_water
+representation:
+  body: box
+  plan_symbol: shower
+comment: 'Achsabstand und Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

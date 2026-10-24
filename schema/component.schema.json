@@ -62,6 +62,13 @@
         "storage",
         "furniture",
         "laundry",
+        "workplace",
+        "counter",
+        "seating",
+        "lab",
+        "medical",
+        "device",
+        "plant",
         "door",
         "window",
         "passage",
@@ -221,6 +228,11 @@
         "elevation": {
           "description": "Height of the component's underside above finished floor, in metres (window sill, wall cabinet).",
           "$ref": "#/$defs/length"
+        },
+        "axis_spacing_min": {
+          "description": "Minimum distance between the axes of two neighbouring components of the same kind, in metres (WC, urinal and shower rows).",
+          "type": "number",
+          "minimum": 0
         }
       }
     },

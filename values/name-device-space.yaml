@@ -1,0 +1,47 @@
+id: pragmaticbim:value/name-device-space
+code: NAME-DEVICE-SPACE
+name:
+  de: Name Geräteplatz
+  fr: Name emplacement d'appareil
+  it: Name postazione apparecchio
+  en: Device space name
+description:
+  de: Auswahlliste für die Art des Geräts, für das ein Geräteplatz reserviert wird.
+  fr: Liste de choix pour le type d'appareil auquel un emplacement est réservé.
+  it: Elenco di scelta per il tipo di apparecchio a cui è riservata una postazione.
+  en: Value list for the kind of device a device space is reserved for.
+year: 2026
+status: active
+values:
+  de:
+  - Operationstisch
+  - Bildgebungsgerät
+  - Medizingerät
+  - Maschine
+  - Serverschrank
+  - Kühlgerät
+  - Gerät
+  fr:
+  - Table d'opération
+  - Appareil d'imagerie
+  - Appareil médical
+  - Machine
+  - Armoire serveur
+  - Appareil frigorifique
+  - Appareil
+  it:
+  - Tavolo operatorio
+  - Apparecchio di diagnostica per immagini
+  - Apparecchio medicale
+  - Macchina
+  - Armadio server
+  - Apparecchio frigorifero
+  - Apparecchio
+  en:
+  - Operating table
+  - Imaging device
+  - Medical device
+  - Machine
+  - Server rack
+  - Cooling appliance
+  - Device

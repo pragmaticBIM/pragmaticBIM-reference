@@ -48,6 +48,8 @@ from catalog.schema import (
     DECISION_VOLUME_ELEMENT_SLUG,
     MOVEMENT_CLEARANCE_DEFAULTS,
     MOVEMENT_CLEARANCE_ELEMENT_SLUG,
+    DEVICE_SPACE_DEFAULTS,
+    DEVICE_SPACE_ELEMENT_SLUG,
     BUILDING_LAW_PARCEL_DEFAULTS,
     BUILDING_LAW_PARCEL_ELEMENT_SLUG,
     SURROUNDING_BUILDING_DEFAULTS,
@@ -208,6 +210,7 @@ from generators.decision_volume import (
     generate_decision_volume,
 )
 from generators.movement_clearance import generate_movement_clearance
+from generators.device_space import generate_device_space
 from generators.turning_radius import (
     DEFAULT_APPROACH,
     DEFAULT_ARC_SEGMENTS,
@@ -492,6 +495,7 @@ ELEMENT_GENERATORS: dict[str, Callable[[dict[str, Any]], tuple]] = {
     "ARC-TURN-RAD": generate_turning_radius,
     "ARC-DEC-VOL": generate_decision_volume,
     "ARC-MOVEMENT-CLEARANCE": generate_movement_clearance,
+    "ARC-DEVICE-SPACE": generate_device_space,
     "ARC-PARCEL": generate_building_law_parcel,
     "ARC-UMG-NEIGHBOR": generate_surrounding_building,
     "ARC-SITE-LOG": generate_construction_logistics,
@@ -623,6 +627,7 @@ INSTALLATION_PATH_TYPES = frozenset({"ARC-INSTALL-PATH"})
 TURNING_RADIUS_TYPES = frozenset({"ARC-TURN-RAD"})
 DECISION_VOLUME_TYPES = frozenset({"ARC-DEC-VOL"})
 MOVEMENT_CLEARANCE_TYPES = frozenset({"ARC-MOVEMENT-CLEARANCE"})
+DEVICE_SPACE_TYPES = frozenset({"ARC-DEVICE-SPACE"})
 BUILDING_LAW_PARCEL_TYPES = frozenset({"ARC-PARCEL"})
 SURROUNDING_BUILDING_TYPES = frozenset({"ARC-UMG-NEIGHBOR"})
 CONSTRUCTION_LOGISTICS_TYPES = frozenset({"ARC-SITE-LOG"})
@@ -2067,6 +2072,36 @@ def map_decision_volume_params(entry: dict[str, Any]) -> dict[str, Any]:
         "wall_height": float(entry.get("wall_height", DECISION_WALL_HEIGHT)),
     }
     return params
+
+
+def is_device_space_entry(entry: dict[str, Any]) -> bool:
+    return entry.get("element_type") in DEVICE_SPACE_TYPES
+
+
+def map_device_space_params(entry: dict[str, Any]) -> dict[str, Any]:
+    """Convert a Geräteplatz catalog entry into generator params.
+
+    Vignette: operating theatre with an operating table and an anaesthesia
+    workstation as device spaces.
+    """
+    if not is_device_space_entry(entry):
+        raise ValueError(
+            "unsupported element_type for device space: "
+            f"{entry.get('element_type')!r}"
+        )
+
+    resolved = build_element_attributes_from_yaml(
+        entry=entry,
+        element_slug=DEVICE_SPACE_ELEMENT_SLUG,
+        defaults=DEVICE_SPACE_DEFAULTS,
+        geometry={"area": 2.4 * 3.6, "height": 1.1},
+    )
+
+    return {
+        "project_name": entry.get("project_name") or entry.get("id") or "Geräteplatz",
+        "predefined_type": resolved.get("PredefinedType") or "USERDEFINED",
+        "object_type": resolved.get("ObjectType") or DEVICE_SPACE_DEFAULTS["ObjectType"],
+    }
 
 
 def is_movement_clearance_entry(entry: dict[str, Any]) -> bool:
@@ -3767,6 +3802,8 @@ def map_entry_params(entry: dict[str, Any]) -> dict[str, Any]:
         return map_decision_volume_params(entry)
     if element_type in MOVEMENT_CLEARANCE_TYPES:
         return map_movement_clearance_params(entry)
+    if element_type in DEVICE_SPACE_TYPES:
+        return map_device_space_params(entry)
     if element_type in BUILDING_LAW_PARCEL_TYPES:
         return map_building_law_parcel_params(entry)
     if element_type in SURROUNDING_BUILDING_TYPES:

@@ -1,0 +1,65 @@
+id: pragmaticbim:component/ausgabetheke
+code: CMP-CNT-03
+sort_order: 46
+name:
+  de: Ausgabetheke
+  fr: Comptoir de service
+  it: Banco di distribuzione
+  en: Service counter
+definition:
+  de: Theke für Bar, Buffet, Kiosk oder Garderobe, mit Warteschlange davor und Bedienzone dahinter.
+  fr: Comptoir pour bar, buffet, kiosque ou vestiaire, avec file d'attente devant et zone de service derrière.
+  it: Banco per bar, buffet, chiosco o guardaroba, con coda davanti e zona di servizio dietro.
+  en: Counter for a bar, buffet, kiosk or cloakroom, with a queue in front and a service zone behind.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: counter
+placement:
+  host: floor
+parameters:
+  width:
+    default: 3.6
+    min: 1.2
+    max: 15.0
+    unit: m
+  depth:
+    default: 0.8
+    min: 0.6
+    max: 1.0
+    unit: m
+  height:
+    default: 1.1
+    min: 0.9
+    max: 1.2
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.5
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: back
+  width: width
+  depth: 1.0
+connections:
+- medium: power
+- medium: drainage
+- medium: cold_water
+representation:
+  body: box
+  plan_symbol: service_counter
+comment: 'Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

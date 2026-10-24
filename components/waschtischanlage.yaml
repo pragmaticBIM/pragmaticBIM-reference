@@ -1,0 +1,58 @@
+id: pragmaticbim:component/waschtischanlage
+code: CMP-SAN-11
+sort_order: 55
+name:
+  de: Waschtischanlage
+  fr: Rangée de lavabos
+  it: Batteria di lavabi
+  en: Washbasin row
+definition:
+  de: Waschtischplatte mit mehreren Becken für öffentliche Toiletten, Umkleiden und Duschräume.
+  fr: Plan de lavabos à plusieurs vasques pour toilettes publiques, vestiaires et douches.
+  it: Piano lavabo con più bacini per servizi pubblici, spogliatoi e docce.
+  en: Washbasin top with several bowls for public toilets, changing rooms and shower rooms.
+element: pragmaticbim:element/mep-sanitary-terminal
+predefined_type: WASHHANDBASIN
+category: sanitary
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  - exterior
+  side_distance_min: 0.15
+parameters:
+  width:
+    default: 1.8
+    min: 1.2
+    max: 6.0
+    unit: m
+  depth:
+    default: 0.5
+    min: 0.45
+    max: 0.6
+    unit: m
+  height:
+    default: 0.85
+    min: 0.8
+    max: 0.9
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 0.9
+connections:
+- medium: drainage
+  max_distance_to_shaft: 2.5
+- medium: cold_water
+- medium: hot_water
+representation:
+  body: box
+  plan_symbol: washbasin_row
+comment: 'Rund 0.60 m Plattenlänge pro Becken. Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

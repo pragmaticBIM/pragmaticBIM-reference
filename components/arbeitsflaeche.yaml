@@ -1,0 +1,59 @@
+id: pragmaticbim:component/arbeitsflaeche
+code: CMP-WRK-03
+sort_order: 36
+name:
+  de: Arbeitsfläche
+  fr: Plan de travail
+  it: Piano di lavoro
+  en: Worktop
+definition:
+  de: Fest eingebaute Arbeitsfläche an der Wand, etwa für Kopierraum, Telefonkabine oder Stationszimmer.
+  fr: Plan de travail fixe contre le mur, par exemple pour salle de photocopie, cabine téléphonique ou
+    office de soins.
+  it: Piano di lavoro fisso a parete, ad esempio per sala fotocopie, cabina telefonica o locale di reparto.
+  en: Fixed worktop against a wall, for example in a copy room, phone booth or nurses' station.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: workplace
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - party_wall
+  - exterior
+parameters:
+  width:
+    default: 2.4
+    min: 0.8
+    max: 6.0
+    unit: m
+  depth:
+    default: 0.6
+    min: 0.4
+    max: 0.8
+    unit: m
+  height:
+    default: 0.9
+    min: 0.72
+    max: 1.1
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.0
+connections:
+- medium: power
+representation:
+  body: box
+  plan_symbol: worktop
+status: active

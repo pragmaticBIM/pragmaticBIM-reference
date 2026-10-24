@@ -1,0 +1,49 @@
+id: pragmaticbim:component/stuhlreihe
+code: CMP-SEA-02
+sort_order: 42
+name:
+  de: Stuhlreihe
+  fr: Rangée de chaises
+  it: Fila di sedie
+  en: Chair row
+definition:
+  de: Reihe aus Stühlen für Aula, Tribüne und Wartebereich; die Breite folgt der Anzahl Plätze.
+  fr: Rangée de chaises pour aula, tribune et zone d'attente; la largeur suit le nombre de places.
+  it: Fila di sedie per aula magna, tribuna e zona d'attesa; la larghezza segue il numero di posti.
+  en: Row of chairs for assembly halls, stands and waiting areas; its width follows the number of seats.
+element: pragmaticbim:element/furniture
+predefined_type: CHAIR
+category: seating
+placement:
+  host: floor
+parameters:
+  width:
+    default: 4.5
+    min: 0.5
+    max: 20.0
+    unit: m
+  depth:
+    default: 0.5
+    min: 0.45
+    max: 0.6
+    unit: m
+  height:
+    default: 0.8
+    min: 0.45
+    max: 0.9
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 0.45
+representation:
+  body: box
+  plan_symbol: chair_row
+comment: Rund 0.50 m Reihenbreite pro Platz. Durchgang und Reihenlänge nach Brandschutzvorschriften projektbezogen
+  festlegen.
+status: active

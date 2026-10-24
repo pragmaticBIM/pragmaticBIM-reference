@@ -113,4 +113,38 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 30
+  equipment:
+  - id: pragmaticbim:room-type-equipment/duschraum-default-dusche
+    sort_order: 1
+    function: bathing
+    components:
+    - pragmaticbim:component/duschplatz
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 2.5
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/duschraum-default-waschtisch
+    sort_order: 2
+    function: washbasin
+    components:
+    - pragmaticbim:component/waschtischanlage
+    - pragmaticbim:component/waschtisch
+    quantity:
+      min: 0
+      max: 1
+      default: 1
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/duschraum-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
   status: active

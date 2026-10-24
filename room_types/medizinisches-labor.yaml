@@ -113,4 +113,70 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 240
+  equipment:
+  - id: pragmaticbim:room-type-equipment/medizinisches-labor-default-laborbank
+    sort_order: 1
+    function: lab_work
+    components:
+    - pragmaticbim:component/laborbank
+    - pragmaticbim:component/laborbank-mittel
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 12
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/medizinisches-labor-default-abzug
+    sort_order: 2
+    function: lab_work
+    components:
+    - pragmaticbim:component/laborabzug
+    quantity:
+      min: 0
+      max: 2
+      default: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/medizinisches-labor-default-waschtisch
+    sort_order: 3
+    function: washbasin
+    components:
+    - pragmaticbim:component/waschtisch
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/medizinisches-labor-default-kuehlgeraet
+    sort_order: 4
+    function: device
+    components:
+    - pragmaticbim:component/geraeteplatz-kuehlgeraet
+    quantity:
+      min: 0
+      max: 4
+      default: 1
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/medizinisches-labor-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/vorraum
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/medizinisches-labor-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 0
+      default: 1
+    fallback: mechanical_ventilation
+    status: active
   status: active

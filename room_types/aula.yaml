@@ -113,4 +113,52 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 1500
+  equipment:
+  - id: pragmaticbim:room-type-equipment/aula-default-bestuhlung
+    sort_order: 1
+    function: seating
+    components:
+    - pragmaticbim:component/stuhlreihe
+    quantity:
+      min: 4
+      per:
+        quantity: net_floor_area
+        divisor: 6
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/aula-default-rollstuhlplatz
+    sort_order: 2
+    function: manoeuvring
+    components:
+    - pragmaticbim:component/manoevrierflaeche
+    quantity:
+      min: 1
+      max: 6
+      default: 2
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/aula-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      relationships: incoming
+    quantity:
+      min: 2
+      max: 6
+      default: 2
+    status: active
+  - id: pragmaticbim:room-type-opening/aula-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 0
+      default: 1
+    fallback: mechanical_ventilation
+    status: active
   status: active

@@ -93,4 +93,48 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/qualitaetskontrollraum-default-pruefplatz
+    sort_order: 1
+    function: working
+    components:
+    - pragmaticbim:component/arbeitstisch
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 8
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/qualitaetskontrollraum-default-arbeitsplatz
+    sort_order: 2
+    function: working
+    components:
+    - pragmaticbim:component/arbeitsplatz-buero
+    quantity: 1
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/qualitaetskontrollraum-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/qualitaetskontrollraum-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 1
+      default: 1
+    glazing_to_floor_ratio_min: 0.1
+    comment: Mindestanteil Glasfläche nach kantonalem Recht und Arbeitsgesetz; projektbezogen prüfen.
+    status: active
   status: active

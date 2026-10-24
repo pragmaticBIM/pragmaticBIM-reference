@@ -1,0 +1,52 @@
+id: pragmaticbim:component/speicher
+code: CMP-PLT-02
+sort_order: 73
+name:
+  de: Speicher
+  fr: Accumulateur
+  it: Accumulo
+  en: Storage tank
+definition:
+  de: Warmwasser- oder Pufferspeicher in der Technikzentrale.
+  fr: Accumulateur d'eau chaude ou ballon tampon en local technique.
+  it: Accumulo di acqua calda o serbatoio tampone nel locale tecnico.
+  en: Hot water or buffer tank in the plant room.
+element: pragmaticbim:element/mep-tank
+predefined_type: STORAGE
+category: plant
+placement:
+  host: floor
+parameters:
+  width:
+    default: 0.9
+    min: 0.5
+    max: 3.0
+    unit: m
+  depth:
+    default: 0.9
+    min: 0.5
+    max: 3.0
+    unit: m
+  height:
+    default: 2.0
+    min: 1.0
+    max: 4.0
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 0.8
+connections:
+- medium: cold_water
+- medium: hot_water
+- medium: drainage
+representation:
+  body: box
+  plan_symbol: tank
+comment: Masse nach Fachplanung ersetzen; Planungswert; vor Freigabe fachlich bestätigen.
+status: active

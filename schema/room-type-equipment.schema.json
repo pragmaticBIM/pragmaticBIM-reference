@@ -7,28 +7,74 @@
   "properties": {
     "equipment": {
       "type": "array",
-      "items": {"$ref": "#/$defs/equipment"}
+      "items": {
+        "$ref": "#/$defs/equipment"
+      }
     },
     "openings": {
       "type": "array",
-      "items": {"$ref": "#/$defs/opening"}
+      "items": {
+        "$ref": "#/$defs/opening"
+      }
     }
   },
   "$defs": {
-    "componentRef": {"type": "string", "pattern": "^pragmaticbim:component/[a-z0-9]+(-[a-z0-9]+)*$"},
-    "roomTypeRef": {"type": "string", "pattern": "^pragmaticbim:room-type/[a-z0-9]+(-[a-z0-9]+)*$"},
+    "componentRef": {
+      "type": "string",
+      "pattern": "^pragmaticbim:component/[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "roomTypeRef": {
+      "type": "string",
+      "pattern": "^pragmaticbim:room-type/[a-z0-9]+(-[a-z0-9]+)*$"
+    },
     "quantity": {
       "oneOf": [
-        {"type": "integer", "minimum": 1},
+        {
+          "type": "integer",
+          "minimum": 1
+        },
         {
           "type": "object",
-          "required": ["min"],
+          "required": [
+            "min"
+          ],
           "additionalProperties": false,
           "properties": {
-            "min": {"type": "integer", "minimum": 0},
-            "max": {"type": "integer", "minimum": 1},
-            "default": {"type": "integer", "minimum": 0}
-          }
+            "min": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "max": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "default": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "per": {
+              "type": "object",
+              "required": [
+                "quantity",
+                "divisor"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "quantity": {
+                  "type": "string",
+                  "enum": [
+                    "net_floor_area",
+                    "peak_occupancy"
+                  ]
+                },
+                "divisor": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                }
+              }
+            }
+          },
+          "description": "min/max bound the count. With per, the target count is ceil(value / divisor), clamped to min and max; value is the room's net floor area from its outline (falling back to NetPlannedArea) or its PeakOccupancy."
         }
       ]
     },
@@ -40,9 +86,18 @@
         "minProperties": 1,
         "additionalProperties": false,
         "properties": {
-          "default": {"type": "number", "minimum": 0},
-          "min": {"type": "number", "minimum": 0},
-          "max": {"type": "number", "minimum": 0}
+          "default": {
+            "type": "number",
+            "minimum": 0
+          },
+          "min": {
+            "type": "number",
+            "minimum": 0
+          },
+          "max": {
+            "type": "number",
+            "minimum": 0
+          }
         }
       }
     },
@@ -55,39 +110,106 @@
         "project_goal_levels": {
           "type": "array",
           "minItems": 1,
-          "items": {"type": "string", "pattern": "^pragmaticbim:project-goal-level/[a-z0-9-]+$"}
+          "items": {
+            "type": "string",
+            "pattern": "^pragmaticbim:project-goal-level/[a-z0-9-]+$"
+          }
         },
         "scenario_options": {
           "type": "array",
           "minItems": 1,
-          "items": {"type": "string", "pattern": "^pragmaticbim:scenario-option/[a-z0-9-]+$"}
+          "items": {
+            "type": "string",
+            "pattern": "^pragmaticbim:scenario-option/[a-z0-9-]+$"
+          }
         }
       }
     },
     "equipment": {
       "type": "object",
-      "required": ["id", "sort_order", "function", "components", "quantity", "status"],
+      "required": [
+        "id",
+        "sort_order",
+        "function",
+        "components",
+        "quantity",
+        "status"
+      ],
       "additionalProperties": false,
       "properties": {
-        "id": {"type": "string", "pattern": "^pragmaticbim:room-type-equipment/[a-z0-9]+(-[a-z0-9]+)*$"},
-        "sort_order": {"type": "integer", "minimum": 1},
+        "id": {
+          "type": "string",
+          "pattern": "^pragmaticbim:room-type-equipment/[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "sort_order": {
+          "type": "integer",
+          "minimum": 1
+        },
         "function": {
           "type": "string",
-          "enum": ["toilet", "washbasin", "bathing", "kitchen", "dining", "seating", "sleeping", "storage", "wardrobe", "working", "laundry", "utility_sink", "turning", "manoeuvring"]
+          "enum": [
+            "toilet",
+            "washbasin",
+            "bathing",
+            "kitchen",
+            "dining",
+            "seating",
+            "sleeping",
+            "storage",
+            "wardrobe",
+            "working",
+            "laundry",
+            "utility_sink",
+            "turning",
+            "manoeuvring",
+            "meeting",
+            "teaching",
+            "serving",
+            "display",
+            "dishwashing",
+            "patient_care",
+            "examination",
+            "lab_work",
+            "hazardous_storage",
+            "changing",
+            "lockers",
+            "urinal",
+            "waiting",
+            "device",
+            "plant"
+          ]
         },
         "components": {
           "description": "Allowed components. The generator picks one per item.",
           "type": "array",
           "minItems": 1,
           "uniqueItems": true,
-          "items": {"$ref": "#/$defs/componentRef"}
+          "items": {
+            "$ref": "#/$defs/componentRef"
+          }
         },
-        "quantity": {"$ref": "#/$defs/quantity"},
-        "params": {"$ref": "#/$defs/params"},
-        "when": {"$ref": "#/$defs/condition"},
-        "unless": {"$ref": "#/$defs/condition"},
-        "comment": {"type": "string"},
-        "status": {"type": "string", "enum": ["active", "deprecated"]}
+        "quantity": {
+          "$ref": "#/$defs/quantity"
+        },
+        "params": {
+          "$ref": "#/$defs/params"
+        },
+        "when": {
+          "$ref": "#/$defs/condition"
+        },
+        "unless": {
+          "$ref": "#/$defs/condition"
+        },
+        "comment": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "active",
+            "deprecated"
+          ]
+        }
       }
     },
     "connectsTo": {
@@ -95,47 +217,95 @@
         {
           "description": "Neighbours from the room_relationships of the selected scenario options that lead into this room type.",
           "type": "object",
-          "required": ["relationships"],
-          "additionalProperties": false,
-          "properties": {"relationships": {"const": "incoming"}}
-        },
-        {
-          "type": "object",
-          "required": ["room_types"],
+          "required": [
+            "relationships"
+          ],
           "additionalProperties": false,
           "properties": {
-            "room_types": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/roomTypeRef"}}
+            "relationships": {
+              "const": "incoming"
+            }
           }
         },
         {
           "type": "object",
-          "required": ["exterior"],
+          "required": [
+            "room_types"
+          ],
           "additionalProperties": false,
-          "properties": {"exterior": {"const": true}}
+          "properties": {
+            "room_types": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "$ref": "#/$defs/roomTypeRef"
+              }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "exterior"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "exterior": {
+              "const": true
+            }
+          }
         }
       ]
     },
     "opening": {
       "type": "object",
-      "required": ["id", "sort_order", "function", "components", "connects_to", "quantity", "status"],
+      "required": [
+        "id",
+        "sort_order",
+        "function",
+        "components",
+        "connects_to",
+        "quantity",
+        "status"
+      ],
       "additionalProperties": false,
       "properties": {
-        "id": {"type": "string", "pattern": "^pragmaticbim:room-type-opening/[a-z0-9]+(-[a-z0-9]+)*$"},
-        "sort_order": {"type": "integer", "minimum": 1},
+        "id": {
+          "type": "string",
+          "pattern": "^pragmaticbim:room-type-opening/[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "sort_order": {
+          "type": "integer",
+          "minimum": 1
+        },
         "function": {
           "description": "access: door into the room; connection: open passage or door between rooms of one unit; daylight: window; outdoor_access: door to a private outdoor space.",
           "type": "string",
-          "enum": ["access", "connection", "daylight", "outdoor_access"]
+          "enum": [
+            "access",
+            "connection",
+            "daylight",
+            "outdoor_access"
+          ]
         },
         "components": {
           "type": "array",
           "minItems": 1,
           "uniqueItems": true,
-          "items": {"$ref": "#/$defs/componentRef"}
+          "items": {
+            "$ref": "#/$defs/componentRef"
+          }
         },
-        "connects_to": {"$ref": "#/$defs/connectsTo"},
-        "quantity": {"$ref": "#/$defs/quantity"},
-        "params": {"$ref": "#/$defs/params"},
+        "connects_to": {
+          "$ref": "#/$defs/connectsTo"
+        },
+        "quantity": {
+          "$ref": "#/$defs/quantity"
+        },
+        "params": {
+          "$ref": "#/$defs/params"
+        },
         "glazing_to_floor_ratio_min": {
           "description": "Minimum glazing area as a share of the room's net floor area (daylight openings only).",
           "type": "number",
@@ -145,12 +315,26 @@
         "fallback": {
           "description": "What replaces the opening when it is not possible (quantity min 0).",
           "type": "string",
-          "enum": ["mechanical_ventilation"]
+          "enum": [
+            "mechanical_ventilation"
+          ]
         },
-        "when": {"$ref": "#/$defs/condition"},
-        "unless": {"$ref": "#/$defs/condition"},
-        "comment": {"type": "string"},
-        "status": {"type": "string", "enum": ["active", "deprecated"]}
+        "when": {
+          "$ref": "#/$defs/condition"
+        },
+        "unless": {
+          "$ref": "#/$defs/condition"
+        },
+        "comment": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "active",
+            "deprecated"
+          ]
+        }
       }
     }
   }

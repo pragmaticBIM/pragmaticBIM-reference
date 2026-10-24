@@ -93,4 +93,29 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/hlk-zentralraum-default-lueftungsgeraet
+    sort_order: 1
+    function: plant
+    components:
+    - pragmaticbim:component/lueftungsgeraet
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 30
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/hlk-zentralraum-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    - pragmaticbim:component/tuer-aussen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
   status: active

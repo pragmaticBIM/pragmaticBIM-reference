@@ -113,4 +113,30 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 36
+  equipment:
+  - id: pragmaticbim:room-type-equipment/telefonkabine-default-ablage
+    sort_order: 1
+    function: working
+    components:
+    - pragmaticbim:component/arbeitsflaeche
+    quantity: 1
+    params:
+      width:
+        default: 0.8
+        max: 1.2
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/telefonkabine-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-schiebe-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/vorraum
+    quantity: 1
+    status: active
   status: active

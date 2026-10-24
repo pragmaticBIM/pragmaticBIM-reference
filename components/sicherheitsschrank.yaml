@@ -1,0 +1,58 @@
+id: pragmaticbim:component/sicherheitsschrank
+code: CMP-LAB-04
+sort_order: 60
+name:
+  de: Sicherheitsschrank
+  fr: Armoire de sécurité
+  it: Armadio di sicurezza
+  en: Safety cabinet
+definition:
+  de: Feuerbeständiger, entlüfteter Schrank für Chemikalien und Gefahrstoffe.
+  fr: Armoire résistante au feu et ventilée pour produits chimiques et substances dangereuses.
+  it: Armadio resistente al fuoco e ventilato per prodotti chimici e sostanze pericolose.
+  en: Fire-resistant, ventilated cabinet for chemicals and hazardous substances.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: lab
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - party_wall
+  - exterior
+parameters:
+  width:
+    default: 1.2
+    min: 0.6
+    max: 1.2
+    unit: m
+  depth:
+    default: 0.6
+    min: 0.6
+    max: 0.65
+    unit: m
+  height:
+    default: 1.95
+    min: 1.1
+    max: 2.0
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.0
+connections:
+- medium: exhaust_air
+representation:
+  body: box
+  plan_symbol: safety_cabinet
+status: active

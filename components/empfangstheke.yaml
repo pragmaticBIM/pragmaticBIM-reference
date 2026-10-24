@@ -1,0 +1,72 @@
+id: pragmaticbim:component/empfangstheke
+code: CMP-CNT-01
+sort_order: 44
+name:
+  de: Empfangstheke
+  fr: Comptoir d'accueil
+  it: Banco reception
+  en: Reception desk
+definition:
+  de: Theke für Empfang und Kundenberatung, mit Personalzone dahinter und Besucherzone davor.
+  fr: Comptoir pour l'accueil et le conseil, avec zone du personnel derrière et zone des visiteurs devant.
+  it: Banco per accoglienza e consulenza, con zona personale dietro e zona visitatori davanti.
+  en: Desk for reception and customer service, with a staff zone behind and a visitor zone in front.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: counter
+placement:
+  host: floor
+parameters:
+  width:
+    default: 2.4
+    min: 1.2
+    max: 6.0
+    unit: m
+  depth:
+    default: 0.8
+    min: 0.6
+    max: 1.0
+    unit: m
+  height:
+    default: 1.1
+    min: 0.75
+    max: 1.2
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.2
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: back
+  width: width
+  depth: 1.0
+- name:
+    de: Manövrierfläche
+    fr: Aire de manœuvre
+    it: Area di manovra
+    en: Manoeuvring area
+  side: front
+  width: 1.4
+  depth: 1.4
+connections:
+- medium: power
+representation:
+  body: box
+  plan_symbol: reception_desk
+comment: Manövrierfläche vor einem abgesenkten Thekenteil für Rollstuhlnutzende. Planungswert; vor Freigabe
+  fachlich bestätigen.
+status: active

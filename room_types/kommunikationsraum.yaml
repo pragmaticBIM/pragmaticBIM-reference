@@ -93,4 +93,37 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/kommunikationsraum-default-rack
+    sort_order: 1
+    function: device
+    components:
+    - pragmaticbim:component/serverschrank
+    quantity:
+      min: 1
+      max: 4
+      default: 2
+    status: active
+  - id: pragmaticbim:room-type-equipment/kommunikationsraum-default-verteilung
+    sort_order: 2
+    function: plant
+    components:
+    - pragmaticbim:component/unterverteilung
+    quantity: 1
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/kommunikationsraum-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    - pragmaticbim:component/tuer-aussen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/vorraum
+    quantity: 1
+    status: active
   status: active

@@ -65,4 +65,39 @@ configurations:
     name: DesignPointLoad
     pset: ePset_SpaceRequirement
     value: 3.0
+  equipment:
+  - id: pragmaticbim:room-type-equipment/tribuene-default-bestuhlung
+    sort_order: 1
+    function: seating
+    components:
+    - pragmaticbim:component/stuhlreihe
+    quantity:
+      min: 2
+      per:
+        quantity: net_floor_area
+        divisor: 5
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/tribuene-default-rollstuhlplatz
+    sort_order: 2
+    function: manoeuvring
+    components:
+    - pragmaticbim:component/manoevrierflaeche
+    quantity:
+      min: 1
+      max: 6
+      default: 2
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/tribuene-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/flur
+    quantity: 1
+    status: active
   status: active

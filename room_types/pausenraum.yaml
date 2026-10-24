@@ -113,4 +113,49 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 240
+  equipment:
+  - id: pragmaticbim:room-type-equipment/pausenraum-default-teekueche
+    sort_order: 1
+    function: kitchen
+    components:
+    - pragmaticbim:component/kuechenzeile-einzeilig
+    quantity: 1
+    params:
+      width:
+        default: 2.4
+    status: active
+  - id: pragmaticbim:room-type-equipment/pausenraum-default-tisch
+    sort_order: 2
+    function: dining
+    components:
+    - pragmaticbim:component/esstisch
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 12
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/pausenraum-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-schiebe-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/pausenraum-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 0
+      default: 1
+    fallback: mechanical_ventilation
+    status: active
   status: active

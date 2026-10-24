@@ -113,4 +113,29 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 240
+  equipment:
+  - id: pragmaticbim:room-type-equipment/bildgebungsraum-default-geraet
+    sort_order: 1
+    function: device
+    components:
+    - pragmaticbim:component/geraeteplatz-bildgebung
+    quantity: 1
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/bildgebungsraum-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/vorraum
+    quantity: 1
+    params:
+      clear_width:
+        min: 1.4
+    comment: Strahlenschutz an Türen und Wänden prüfen.
+    status: active
   status: active

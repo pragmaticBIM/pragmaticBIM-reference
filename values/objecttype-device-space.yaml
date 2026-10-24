@@ -1,0 +1,26 @@
+id: pragmaticbim:value/objecttype-device-space
+code: OBJ-DEVICE-SPACE
+name:
+  de: ObjectType Geräteplatz
+  fr: ObjectType emplacement d'appareil
+  it: ObjectType postazione apparecchio
+  en: ObjectType device space
+description:
+  de: ObjectType für IfcBuildingElementProxy als Platzhalter für ein Gerät samt Bedien- und Wartungszone.
+  fr: ObjectType pour IfcBuildingElementProxy comme réservation pour un appareil, zone d'utilisation et
+    de maintenance comprises.
+  it: ObjectType per IfcBuildingElementProxy come riserva per un apparecchio, comprese le zone d'uso e
+    di manutenzione.
+  en: ObjectType for IfcBuildingElementProxy as a placeholder for a device including its operating and
+    service zone.
+year: 2026
+status: active
+values:
+  de:
+  - Geräteplatz
+  fr:
+  - Emplacement d'appareil
+  it:
+  - Postazione apparecchio
+  en:
+  - Device space

@@ -1,0 +1,63 @@
+id: pragmaticbim:component/laborbank-mittel
+code: CMP-LAB-02
+sort_order: 58
+name:
+  de: Laborbank frei stehend
+  fr: Paillasse centrale
+  it: Bancone da laboratorio centrale
+  en: Island lab bench
+definition:
+  de: Beidseitig nutzbare Laborbank im Raum mit Medienversorgung von oben oder aus dem Boden.
+  fr: Paillasse centrale utilisable des deux côtés, alimentée en fluides par le plafond ou le sol.
+  it: Bancone centrale utilizzabile da due lati, con fluidi dall'alto o dal pavimento.
+  en: Double-sided lab bench in the room, with services from above or from the floor.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: lab
+placement:
+  host: floor
+parameters:
+  width:
+    default: 3.0
+    min: 1.2
+    max: 9.0
+    unit: m
+  depth:
+    default: 1.5
+    min: 1.2
+    max: 1.8
+    unit: m
+  height:
+    default: 0.9
+    min: 0.75
+    max: 0.95
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.5
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: back
+  width: width
+  depth: 1.5
+connections:
+- medium: power
+representation:
+  body: box
+  plan_symbol: lab_bench_island
+comment: 'Gangbreite: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

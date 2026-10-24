@@ -1,0 +1,63 @@
+id: pragmaticbim:component/laborabzug
+code: CMP-LAB-03
+sort_order: 59
+name:
+  de: Laborabzug
+  fr: Sorbonne
+  it: Cappa chimica
+  en: Fume cupboard
+definition:
+  de: Abzug für Arbeiten mit Gefahrstoffen, mit eigener Abluft; als Blackbox modelliert.
+  fr: Sorbonne pour les travaux avec substances dangereuses, avec extraction propre; modélisée en boîte
+    noire.
+  it: Cappa per lavori con sostanze pericolose, con estrazione propria; modellata come scatola nera.
+  en: Fume cupboard for work with hazardous substances, with its own exhaust; modelled as a black box.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: lab
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  - exterior
+parameters:
+  width:
+    default: 1.5
+    min: 1.2
+    max: 2.4
+    unit: m
+  depth:
+    default: 0.9
+    min: 0.8
+    max: 1.0
+    unit: m
+  height:
+    default: 2.5
+    min: 2.3
+    max: 2.8
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.5
+connections:
+- medium: exhaust_air
+- medium: power
+- medium: cold_water
+- medium: drainage
+representation:
+  body: box
+  plan_symbol: fume_cupboard
+comment: 'Abstand zu Türen und Verkehrswegen: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

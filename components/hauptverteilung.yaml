@@ -1,0 +1,55 @@
+id: pragmaticbim:component/hauptverteilung
+code: CMP-PLT-06
+sort_order: 77
+name:
+  de: Hauptverteilung
+  fr: Tableau principal
+  it: Quadro principale
+  en: Main switchboard
+definition:
+  de: Hauptverteilung an der Wand mit Bediengang davor.
+  fr: Tableau principal contre le mur avec couloir de service devant.
+  it: Quadro principale a parete con corridoio di servizio davanti.
+  en: Main switchboard against a wall with an operating aisle in front.
+element: pragmaticbim:element/mep-electric-distribution-board
+predefined_type: SWITCHBOARD
+category: plant
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - party_wall
+  - exterior
+  - shaft
+parameters:
+  width:
+    default: 2.4
+    min: 0.6
+    max: 15.0
+    unit: m
+  depth:
+    default: 0.6
+    min: 0.4
+    max: 1.0
+    unit: m
+  height:
+    default: 2.2
+    min: 1.8
+    max: 2.4
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.2
+connections:
+- medium: power
+representation:
+  body: box
+  plan_symbol: switchboard
+comment: Bediengang nach Starkstromverordnung; Planungswert; vor Freigabe fachlich bestätigen.
+status: active

@@ -1,0 +1,55 @@
+id: pragmaticbim:component/palettenregal
+code: CMP-STO-06
+sort_order: 50
+name:
+  de: Palettenregal
+  fr: Rayonnage à palettes
+  it: Scaffalatura porta pallet
+  en: Pallet racking
+definition:
+  de: Fest montiertes Palettenregal mit Staplergang davor; bestimmt Lagerkapazität und Hallenhöhe.
+  fr: Rayonnage à palettes fixe avec allée pour chariot élévateur; détermine la capacité de stockage et
+    la hauteur de la halle.
+  it: Scaffalatura porta pallet fissa con corsia per carrello elevatore; determina la capacità di stoccaggio
+    e l'altezza del capannone.
+  en: Fixed pallet racking with a forklift aisle in front; sets storage capacity and hall height.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: storage
+placement:
+  host: floor
+parameters:
+  width:
+    default: 2.7
+    min: 1.8
+    max: 40.0
+    unit: m
+  depth:
+    default: 1.1
+    min: 0.9
+    max: 2.4
+    unit: m
+  height:
+    default: 6.0
+    min: 2.0
+    max: 12.0
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 3.0
+representation:
+  body: box
+  plan_symbol: pallet_rack
+comment: Gangbreite nach Staplertyp; Planungswert; vor Freigabe fachlich bestätigen.
+status: active

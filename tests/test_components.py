@@ -210,6 +210,10 @@ def _quantity(value: Any, where: str) -> None:
         assert value >= 1, where
         return
     assert isinstance(value, dict) and "min" in value, f"{where}: quantity"
+    if "per" in value:
+        assert value["per"]["quantity"] in {"net_floor_area", "peak_occupancy"}, f"{where}: per.quantity"
+        assert value["per"]["divisor"] > 0, f"{where}: per.divisor"
+        assert "default" not in value, f"{where}: per computes the count; drop default"
     lo = value["min"]
     hi = value.get("max", max(lo, value.get("default", lo)))
     assert 0 <= lo <= hi, f"{where}: quantity min/max"
@@ -221,6 +225,14 @@ def _params(params: dict[str, Any] | None, component_ids: list[str], where: str)
     for key, spec in (params or {}).items():
         for component_id in component_ids:
             assert key in _components()[component_id]["parameters"], f"{where}: {component_id} has no {key}"
+            base = _components()[component_id]["parameters"][key]
+            for bound in ("default", "min", "max"):
+                if bound in spec:
+                    lo = base.get("min", base["default"])
+                    hi = base.get("max", base["default"])
+                    assert lo <= spec[bound] <= hi, (
+                        f"{where}: {key}.{bound}={spec[bound]} outside {component_id} range {lo}–{hi}"
+                    )
         lo, hi = spec.get("min"), spec.get("max")
         if lo is not None and hi is not None:
             assert lo <= hi, f"{where}: {key} min > max"

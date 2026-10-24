@@ -1,0 +1,54 @@
+id: pragmaticbim:component/lueftungsgeraet
+code: CMP-PLT-04
+sort_order: 75
+name:
+  de: Lüftungsgerät
+  fr: Monobloc de ventilation
+  it: Monoblocco di ventilazione
+  en: Air handling unit
+definition:
+  de: Monoblock der Lüftungszentrale; die Bedienseite braucht Platz für Filterwechsel.
+  fr: Monobloc de la centrale de ventilation; le côté de service demande de la place pour changer les
+    filtres.
+  it: Monoblocco della centrale di ventilazione; il lato di servizio richiede spazio per il cambio dei
+    filtri.
+  en: Air handling unit in the ventilation plant room; its service side needs room for filter changes.
+element: pragmaticbim:element/mep-unitary-equipment
+predefined_type: AIRHANDLER
+category: plant
+placement:
+  host: floor
+parameters:
+  width:
+    default: 4.0
+    min: 1.5
+    max: 15.0
+    unit: m
+  depth:
+    default: 1.6
+    min: 0.6
+    max: 3.5
+    unit: m
+  height:
+    default: 2.0
+    min: 0.8
+    max: 3.5
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: depth
+connections:
+- medium: power
+- medium: drainage
+representation:
+  body: box
+  plan_symbol: air_handler
+comment: Bedienseite in Gerätetiefe für Filterzug. Masse nach Fachplanung ersetzen; Planungswert; vor
+  Freigabe fachlich bestätigen.
+status: active

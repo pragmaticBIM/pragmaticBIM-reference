@@ -40,6 +40,7 @@ INSTALLATION_PATH_ELEMENT_SLUG = "architecture-installation-path"
 TURNING_RADIUS_ELEMENT_SLUG = "architecture-turning-radius"
 DECISION_VOLUME_ELEMENT_SLUG = "architecture-decision-volume"
 MOVEMENT_CLEARANCE_ELEMENT_SLUG = "architecture-movement-clearance"
+DEVICE_SPACE_ELEMENT_SLUG = "architecture-device-space"
 BUILDING_LAW_PARCEL_ELEMENT_SLUG = "architecture-building-law-parcel"
 SURROUNDING_BUILDING_ELEMENT_SLUG = "architecture-surrounding-building"
 CONSTRUCTION_LOGISTICS_ELEMENT_SLUG = "architecture-construction-logistics"
@@ -446,6 +447,13 @@ MOVEMENT_CLEARANCE_DEFAULTS: dict[str, Any] = {
     "PredefinedType": "USERDEFINED",
     "ObjectType": "Bewegungsfläche",
     "Name": "Wendefläche",
+}
+
+# Device space (Geräteplatz) — placeholder for a device incl. service zone
+DEVICE_SPACE_DEFAULTS: dict[str, Any] = {
+    "PredefinedType": "USERDEFINED",
+    "ObjectType": "Geräteplatz",
+    "Name": "Operationstisch",
 }
 
 # Building-law parcel (Baurechtliche Parzelle) — Name = cadastral number
