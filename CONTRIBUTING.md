@@ -16,7 +16,7 @@ Open an issue and describe the problem briefly: element, attribute, workflow, an
 2. Edit the affected YAML files: element definitions, attributes, value lists, or workflow descriptions.
 3. Run the checks: `python -m pytest`.
 4. Commit with a clear reason: **what** changes and **why**, ideally with a reference to the workflow.
-5. Open a pull request and wait for review.
+5. Open a pull request. CodeRabbit reviews it first; small data changes from trusted authors can merge automatically, everything else goes to the maintainer. See [MERGE_POLICY.md](MERGE_POLICY.md).
 
 You can also edit in the [web application](https://elementplan.pragmaticbim.ch): changes to the Reference are submitted as pull requests to this repository.
 
