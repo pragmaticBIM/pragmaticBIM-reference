@@ -1,0 +1,51 @@
+id: pragmaticbim:component/kaeltemaschine
+code: CMP-PLT-03
+sort_order: 74
+name:
+  de: Kältemaschine
+  fr: Machine frigorifique
+  it: Gruppo frigorifero
+  en: Chiller
+definition:
+  de: Kältemaschine in der Kältezentrale mit Wartungszone auf der Längsseite.
+  fr: Machine frigorifique en centrale de froid avec zone de maintenance sur le grand côté.
+  it: Gruppo frigorifero nella centrale frigorifera con zona di manutenzione sul lato lungo.
+  en: Chiller in the cooling plant room with a service zone along its long side.
+element: pragmaticbim:element/mep-chiller
+predefined_type: WATERCOOLED
+category: plant
+placement:
+  host: floor
+parameters:
+  width:
+    default: 3.0
+    min: 1.0
+    max: 8.0
+    unit: m
+  depth:
+    default: 1.2
+    min: 0.8
+    max: 3.0
+    unit: m
+  height:
+    default: 1.8
+    min: 1.2
+    max: 3.0
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.0
+connections:
+- medium: power
+- medium: drainage
+representation:
+  body: box
+  plan_symbol: chiller
+comment: Masse nach Fachplanung ersetzen; Planungswert; vor Freigabe fachlich bestätigen.
+status: active

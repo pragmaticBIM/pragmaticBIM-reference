@@ -144,6 +144,16 @@ configurations:
     - pragmaticbim:component/waschtisch
     quantity: 1
     status: active
+  - id: pragmaticbim:room-type-equipment/medizinisches-labor-default-kuehlgeraet
+    sort_order: 4
+    function: device
+    components:
+    - pragmaticbim:component/geraeteplatz-kuehlgeraet
+    quantity:
+      min: 0
+      max: 4
+      default: 1
+    status: active
   openings:
   - id: pragmaticbim:room-type-opening/medizinisches-labor-default-zugang
     sort_order: 1

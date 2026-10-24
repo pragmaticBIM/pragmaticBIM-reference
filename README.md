@@ -59,6 +59,8 @@ A quantity can scale with the room: `quantity: {min: 1, per: {quantity: net_floo
 
 Circulation, voids, parking and outdoor room types carry no equipment; the rooms they lead into declare their doors.
 
+Devices that drive room size but are chosen late (operating tables, imaging, machines, server racks, cooling appliances) are reserved with the Geräteplatz element (`architecture-device-space`); plant rooms use the existing MEP elements (boiler, tank, chiller, air handler, pump, switchboard, transformer, generator, UPS).
+
 Dimensions marked "Planungswert" or "SIA 500" in a `comment` still need professional confirmation before release.
 
 ## Contributing

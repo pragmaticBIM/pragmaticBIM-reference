@@ -1,0 +1,56 @@
+id: pragmaticbim:component/geraeteplatz-bildgebung
+code: CMP-DEV-03
+sort_order: 68
+name:
+  de: Geräteplatz Bildgebung
+  fr: Emplacement imagerie
+  it: Postazione diagnostica per immagini
+  en: Imaging device space
+definition:
+  de: Platz für Röntgen-, CT- oder MR-Gerät samt Patiententisch; prägt Raumgrösse, Strahlenschutz und
+    Deckenlast.
+  fr: Emplacement pour appareil de radiologie, CT ou IRM avec table patient; détermine la taille du local,
+    la radioprotection et la charge.
+  it: Postazione per apparecchio radiologico, TC o RM con lettino; determina dimensione del locale, radioprotezione
+    e carico.
+  en: Space for an X-ray, CT or MR device with its patient table; drives room size, radiation shielding
+    and load.
+element: pragmaticbim:element/architecture-device-space
+predefined_type: USERDEFINED
+object_type:
+  de: Geräteplatz
+  fr: Emplacement d'appareil
+  it: Postazione apparecchio
+  en: Device space
+ifc_name:
+  de: Bildgebungsgerät
+  fr: Appareil d'imagerie
+  it: Apparecchio di diagnostica per immagini
+  en: Imaging device
+category: device
+placement:
+  host: floor
+parameters:
+  width:
+    default: 3.0
+    min: 2.0
+    max: 5.0
+    unit: m
+  depth:
+    default: 6.0
+    min: 3.0
+    max: 8.0
+    unit: m
+  height:
+    default: 2.0
+    min: 1.8
+    max: 2.6
+    unit: m
+connections:
+- medium: power
+- medium: exhaust_air
+representation:
+  body: volume
+  plan_symbol: device_imaging
+comment: Gewicht und Abschirmung nach Gerätehersteller. Planungswert; vor Freigabe fachlich bestätigen.
+status: active

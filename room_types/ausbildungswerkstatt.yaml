@@ -153,6 +153,16 @@ configurations:
     - pragmaticbim:component/waschtrog
     quantity: 1
     status: active
+  - id: pragmaticbim:room-type-equipment/ausbildungswerkstatt-default-maschine
+    sort_order: 5
+    function: device
+    components:
+    - pragmaticbim:component/geraeteplatz-maschine
+    quantity:
+      min: 0
+      max: 6
+      default: 2
+    status: active
   openings:
   - id: pragmaticbim:room-type-opening/ausbildungswerkstatt-default-zugang
     sort_order: 1

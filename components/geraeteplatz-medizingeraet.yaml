@@ -1,0 +1,59 @@
+id: pragmaticbim:component/geraeteplatz-medizingeraet
+code: CMP-DEV-02
+sort_order: 67
+name:
+  de: Geräteplatz Medizingerät
+  fr: Emplacement appareil médical
+  it: Postazione apparecchio medicale
+  en: Medical device space
+definition:
+  de: Platz für ein fahrbares oder fest montiertes Medizingerät, etwa Anästhesie- oder Monitoringeinheit.
+  fr: Emplacement pour un appareil médical mobile ou fixe, par exemple une unité d'anesthésie ou de monitorage.
+  it: Postazione per un apparecchio medicale mobile o fisso, ad esempio un'unità di anestesia o di monitoraggio.
+  en: Space for a mobile or fixed medical device, for example an anaesthesia or monitoring unit.
+element: pragmaticbim:element/architecture-device-space
+predefined_type: USERDEFINED
+object_type:
+  de: Geräteplatz
+  fr: Emplacement d'appareil
+  it: Postazione apparecchio
+  en: Device space
+ifc_name:
+  de: Medizingerät
+  fr: Appareil médical
+  it: Apparecchio medicale
+  en: Medical device
+category: device
+placement:
+  host: floor
+parameters:
+  width:
+    default: 0.9
+    min: 0.5
+    max: 2.0
+    unit: m
+  depth:
+    default: 0.9
+    min: 0.5
+    max: 2.0
+    unit: m
+  height:
+    default: 1.6
+    min: 0.8
+    max: 2.2
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 0.8
+connections:
+- medium: power
+representation:
+  body: volume
+  plan_symbol: device_medical
+status: active

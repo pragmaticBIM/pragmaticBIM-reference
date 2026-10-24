@@ -93,6 +93,27 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/kaelteraum-default-kaeltemaschine
+    sort_order: 1
+    function: plant
+    components:
+    - pragmaticbim:component/kaeltemaschine
+    quantity:
+      min: 1
+      max: 3
+      default: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/kaelteraum-default-pumpe
+    sort_order: 2
+    function: plant
+    components:
+    - pragmaticbim:component/pumpe
+    quantity:
+      min: 1
+      max: 4
+      default: 2
+    status: active
   openings:
   - id: pragmaticbim:room-type-opening/kaelteraum-default-zugang
     sort_order: 1
@@ -107,6 +128,5 @@ configurations:
       - pragmaticbim:room-type/eingangshalle
       - pragmaticbim:room-type/vorraum
     quantity: 1
-    comment: Anlagen nach Fachplanung; nur Zugang bestellt.
     status: active
   status: active

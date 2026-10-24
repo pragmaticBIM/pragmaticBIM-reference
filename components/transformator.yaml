@@ -1,0 +1,51 @@
+id: pragmaticbim:component/transformator
+code: CMP-PLT-08
+sort_order: 79
+name:
+  de: Transformator
+  fr: Transformateur
+  it: Trasformatore
+  en: Transformer
+definition:
+  de: Transformator in der Trafostation mit Bedien- und Einbringseite.
+  fr: Transformateur en station transformatrice avec côté de service et de mise en place.
+  it: Trasformatore nella cabina con lato di servizio e di posa.
+  en: Transformer in the substation with its operating and installation side.
+element: pragmaticbim:element/mep-transformer
+predefined_type: VOLTAGE
+category: plant
+placement:
+  host: floor
+parameters:
+  width:
+    default: 2.0
+    min: 1.0
+    max: 3.5
+    unit: m
+  depth:
+    default: 1.2
+    min: 0.8
+    max: 2.0
+    unit: m
+  height:
+    default: 2.0
+    min: 1.5
+    max: 3.0
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.0
+connections:
+- medium: power
+representation:
+  body: box
+  plan_symbol: transformer
+comment: Abstände nach Netzbetreiber. Masse nach Fachplanung ersetzen; Planungswert; vor Freigabe fachlich
+  bestätigen.
+status: active

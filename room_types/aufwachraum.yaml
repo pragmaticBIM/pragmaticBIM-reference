@@ -140,6 +140,17 @@ configurations:
     - pragmaticbim:component/waschtisch
     quantity: 1
     status: active
+  - id: pragmaticbim:room-type-equipment/aufwachraum-default-medizingeraet
+    sort_order: 4
+    function: device
+    components:
+    - pragmaticbim:component/geraeteplatz-medizingeraet
+    quantity:
+      min: 0
+      per:
+        quantity: net_floor_area
+        divisor: 8
+    status: active
   openings:
   - id: pragmaticbim:room-type-opening/aufwachraum-default-zugang
     sort_order: 1

@@ -1,0 +1,53 @@
+id: pragmaticbim:component/waermeerzeuger
+code: CMP-PLT-01
+sort_order: 72
+name:
+  de: Wärmeerzeuger
+  fr: Générateur de chaleur
+  it: Generatore di calore
+  en: Heat generator
+definition:
+  de: Kessel oder Wärmepumpe in der Heizzentrale mit Wartungszone davor.
+  fr: Chaudière ou pompe à chaleur en chaufferie avec zone de maintenance devant.
+  it: Caldaia o pompa di calore nella centrale termica con zona di manutenzione davanti.
+  en: Boiler or heat pump in the heating plant room with a service zone in front.
+element: pragmaticbim:element/mep-boiler
+predefined_type: WATER
+category: plant
+placement:
+  host: floor
+parameters:
+  width:
+    default: 1.0
+    min: 0.6
+    max: 3.0
+    unit: m
+  depth:
+    default: 1.0
+    min: 0.6
+    max: 3.0
+    unit: m
+  height:
+    default: 1.8
+    min: 1.0
+    max: 3.0
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.0
+connections:
+- medium: power
+- medium: cold_water
+- medium: drainage
+representation:
+  body: box
+  plan_symbol: boiler
+comment: Wärmepumpe je nach Energiekonzept als anderes Element. Masse nach Fachplanung ersetzen; Planungswert;
+  vor Freigabe fachlich bestätigen.
+status: active

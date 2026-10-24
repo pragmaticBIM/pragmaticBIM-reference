@@ -113,6 +113,14 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 240
+  equipment:
+  - id: pragmaticbim:room-type-equipment/bildgebungsraum-default-geraet
+    sort_order: 1
+    function: device
+    components:
+    - pragmaticbim:component/geraeteplatz-bildgebung
+    quantity: 1
+    status: active
   openings:
   - id: pragmaticbim:room-type-opening/bildgebungsraum-default-zugang
     sort_order: 1
@@ -128,7 +136,6 @@ configurations:
     params:
       clear_width:
         min: 1.4
-    comment: Medizin- und Betriebsgeräte sind nicht modelliert; es fehlt ein Element für Geräte. Strahlenschutz
-      an Türen und Wänden prüfen.
+    comment: Strahlenschutz an Türen und Wänden prüfen.
     status: active
   status: active

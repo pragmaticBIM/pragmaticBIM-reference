@@ -1,0 +1,50 @@
+id: pragmaticbim:component/usv-anlage
+code: CMP-PLT-10
+sort_order: 81
+name:
+  de: USV-Anlage
+  fr: Alimentation sans interruption
+  it: Gruppo di continuità
+  en: UPS unit
+definition:
+  de: Unterbrechungsfreie Stromversorgung mit Batterieschrank im Elektro- oder Serverraum.
+  fr: Alimentation sans interruption avec armoire à batteries en local électrique ou serveur.
+  it: Gruppo di continuità con armadio batterie nel locale elettrico o server.
+  en: Uninterruptible power supply with battery cabinet in the electrical or server room.
+element: pragmaticbim:element/mep-ups
+predefined_type: UPS
+category: plant
+placement:
+  host: floor
+parameters:
+  width:
+    default: 1.2
+    min: 0.6
+    max: 6.0
+    unit: m
+  depth:
+    default: 0.8
+    min: 0.6
+    max: 1.2
+    unit: m
+  height:
+    default: 2.0
+    min: 1.2
+    max: 2.2
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.0
+connections:
+- medium: power
+representation:
+  body: box
+  plan_symbol: ups
+comment: Masse nach Fachplanung ersetzen; Planungswert; vor Freigabe fachlich bestätigen.
+status: active

@@ -1,0 +1,68 @@
+id: pragmaticbim:component/serverschrank
+code: CMP-DEV-05
+sort_order: 70
+name:
+  de: Serverschrank
+  fr: Armoire serveur
+  it: Armadio server
+  en: Server rack
+definition:
+  de: Rack für Server und Netzwerk mit Bediengang vorne und Wartungsgang hinten.
+  fr: Baie pour serveurs et réseau avec allée de service à l'avant et allée de maintenance à l'arrière.
+  it: Rack per server e rete con corridoio di servizio davanti e corridoio di manutenzione dietro.
+  en: Rack for servers and network with an operating aisle in front and a service aisle behind.
+element: pragmaticbim:element/architecture-device-space
+predefined_type: USERDEFINED
+object_type:
+  de: Geräteplatz
+  fr: Emplacement d'appareil
+  it: Postazione apparecchio
+  en: Device space
+ifc_name:
+  de: Serverschrank
+  fr: Armoire serveur
+  it: Armadio server
+  en: Server rack
+category: device
+placement:
+  host: floor
+parameters:
+  width:
+    default: 0.6
+    min: 0.6
+    max: 0.8
+    unit: m
+  depth:
+    default: 1.2
+    min: 1.0
+    max: 1.2
+    unit: m
+  height:
+    default: 2.1
+    min: 2.0
+    max: 2.3
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.2
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: back
+  width: width
+  depth: 1.0
+connections:
+- medium: power
+representation:
+  body: volume
+  plan_symbol: server_rack
+comment: Gänge nach Kühlkonzept (Kalt- und Warmgang). Planungswert; vor Freigabe fachlich bestätigen.
+status: active

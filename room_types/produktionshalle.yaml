@@ -93,6 +93,30 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 240
+  equipment:
+  - id: pragmaticbim:room-type-equipment/produktionshalle-default-maschine
+    sort_order: 1
+    function: device
+    components:
+    - pragmaticbim:component/geraeteplatz-maschine
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 50
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/produktionshalle-default-arbeitstisch
+    sort_order: 2
+    function: working
+    components:
+    - pragmaticbim:component/arbeitstisch
+    quantity:
+      min: 0
+      per:
+        quantity: net_floor_area
+        divisor: 100
+    status: active
   openings:
   - id: pragmaticbim:room-type-opening/produktionshalle-default-zugang
     sort_order: 1
@@ -108,7 +132,6 @@ configurations:
       min: 1
       max: 4
       default: 2
-    comment: Medizin- und Betriebsgeräte sind nicht modelliert; es fehlt ein Element für Geräte.
     status: active
   - id: pragmaticbim:room-type-opening/produktionshalle-default-tor
     sort_order: 2

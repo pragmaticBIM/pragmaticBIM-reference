@@ -105,6 +105,17 @@ configurations:
         quantity: net_floor_area
         divisor: 5
     status: active
+  - id: pragmaticbim:room-type-equipment/probenlager-default-kuehlgeraet
+    sort_order: 2
+    function: device
+    components:
+    - pragmaticbim:component/geraeteplatz-kuehlgeraet
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 4
+    status: active
   openings:
   - id: pragmaticbim:room-type-opening/probenlager-default-zugang
     sort_order: 1

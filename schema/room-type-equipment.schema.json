@@ -174,7 +174,9 @@
             "changing",
             "lockers",
             "urinal",
-            "waiting"
+            "waiting",
+            "device",
+            "plant"
           ]
         },
         "components": {

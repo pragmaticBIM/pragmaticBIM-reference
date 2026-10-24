@@ -67,6 +67,8 @@
         "seating",
         "lab",
         "medical",
+        "device",
+        "plant",
         "door",
         "window",
         "passage",

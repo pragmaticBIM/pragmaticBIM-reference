@@ -1,0 +1,64 @@
+id: pragmaticbim:component/geraeteplatz-kuehlgeraet
+code: CMP-DEV-06
+sort_order: 71
+name:
+  de: Geräteplatz Kühlgerät
+  fr: Emplacement appareil frigorifique
+  it: Postazione apparecchio frigorifero
+  en: Cooling appliance space
+definition:
+  de: Platz für Labor- oder Medikamentenkühlschrank und Tiefkühler an der Wand.
+  fr: Emplacement pour réfrigérateur de laboratoire ou à médicaments et congélateur contre le mur.
+  it: Postazione per frigorifero da laboratorio o per farmaci e congelatore a parete.
+  en: Space for a laboratory or medicine fridge and freezer against a wall.
+element: pragmaticbim:element/architecture-device-space
+predefined_type: USERDEFINED
+object_type:
+  de: Geräteplatz
+  fr: Emplacement d'appareil
+  it: Postazione apparecchio
+  en: Device space
+ifc_name:
+  de: Kühlgerät
+  fr: Appareil frigorifique
+  it: Apparecchio frigorifero
+  en: Cooling appliance
+category: device
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - party_wall
+  - exterior
+  - shaft
+parameters:
+  width:
+    default: 0.7
+    min: 0.6
+    max: 1.5
+    unit: m
+  depth:
+    default: 0.8
+    min: 0.6
+    max: 1.0
+    unit: m
+  height:
+    default: 2.0
+    min: 0.85
+    max: 2.2
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.0
+connections:
+- medium: power
+representation:
+  body: volume
+  plan_symbol: device_cooling
+status: active

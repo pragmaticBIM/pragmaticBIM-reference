@@ -101,6 +101,36 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/serverraum-default-rack
+    sort_order: 1
+    function: device
+    components:
+    - pragmaticbim:component/serverschrank
+    quantity:
+      min: 2
+      per:
+        quantity: net_floor_area
+        divisor: 2.5
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/serverraum-default-usv
+    sort_order: 2
+    function: plant
+    components:
+    - pragmaticbim:component/usv-anlage
+    quantity:
+      min: 0
+      max: 2
+      default: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/serverraum-default-verteilung
+    sort_order: 3
+    function: plant
+    components:
+    - pragmaticbim:component/unterverteilung
+    quantity: 1
+    status: active
   openings:
   - id: pragmaticbim:room-type-opening/serverraum-default-zugang
     sort_order: 1
@@ -112,6 +142,5 @@ configurations:
     connects_to:
       relationships: incoming
     quantity: 1
-    comment: Anlagen nach Fachplanung; nur Zugang bestellt.
     status: active
   status: active
