@@ -113,4 +113,66 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 240
+  equipment:
+  - id: pragmaticbim:room-type-equipment/gewerbekueche-default-kochblock
+    sort_order: 1
+    function: kitchen
+    components:
+    - pragmaticbim:component/gastro-kochblock
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/gewerbekueche-default-arbeitstisch
+    sort_order: 2
+    function: working
+    components:
+    - pragmaticbim:component/arbeitstisch
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 15
+    status: active
+  - id: pragmaticbim:room-type-equipment/gewerbekueche-default-handwaschbecken
+    sort_order: 3
+    function: washbasin
+    components:
+    - pragmaticbim:component/waschtisch
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/gewerbekueche-default-regal
+    sort_order: 4
+    function: storage
+    components:
+    - pragmaticbim:component/regal
+    quantity:
+      min: 1
+      max: 4
+      default: 2
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/gewerbekueche-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/restaurant
+      - pragmaticbim:room-type/cafeteria
+      - pragmaticbim:room-type/food-court
+      - pragmaticbim:room-type/flur
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/gewerbekueche-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 0
+      default: 1
+    fallback: mechanical_ventilation
+    status: active
   status: active

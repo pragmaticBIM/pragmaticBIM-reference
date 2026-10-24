@@ -1,0 +1,64 @@
+id: pragmaticbim:component/wandtafel
+code: CMP-EDU-02
+sort_order: 40
+name:
+  de: Wandtafel
+  fr: Tableau mural
+  it: Lavagna
+  en: Wall board
+definition:
+  de: Wandtafel oder interaktive Tafel an der Stirnwand; legt die Unterrichtsrichtung im Raum fest.
+  fr: Tableau mural ou interactif sur le mur frontal; fixe l'orientation de l'enseignement dans la salle.
+  it: Lavagna murale o interattiva sulla parete frontale; fissa l'orientamento della lezione nell'aula.
+  en: Wall board or interactive board on the front wall; sets which way the room faces for teaching.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: workplace
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - party_wall
+  elevation: elevation
+parameters:
+  width:
+    default: 4.0
+    min: 1.8
+    max: 8.0
+    unit: m
+  depth:
+    default: 0.1
+    min: 0.05
+    max: 0.2
+    unit: m
+  height:
+    default: 1.2
+    min: 1.0
+    max: 1.5
+    unit: m
+  elevation:
+    default: 0.8
+    min: 0.7
+    max: 1.0
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.5
+connections:
+- medium: power
+representation:
+  body: box
+  plan_symbol: wall_board
+comment: 'Freifläche als Lehrerzone: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

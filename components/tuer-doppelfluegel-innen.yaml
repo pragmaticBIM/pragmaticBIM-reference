@@ -1,0 +1,53 @@
+id: pragmaticbim:component/tuer-doppelfluegel-innen
+code: CMP-DOR-05
+sort_order: 63
+name:
+  de: Doppelflügeltür innen
+  fr: Porte à deux vantaux intérieure
+  it: Porta a due ante interna
+  en: Interior double door
+definition:
+  de: Zwei- oder anderthalbflügelige Innentür für Bettentransport, Warenverkehr und grosse Personenströme.
+  fr: Porte intérieure à deux vantaux ou à vantail et demi pour le transport des lits, des marchandises
+    et les grands flux de personnes.
+  it: Porta interna a due ante o ad anta e mezza per trasporto letti, merci e grandi flussi di persone.
+  en: Double or leaf-and-a-half interior door for bed transport, goods and large flows of people.
+element: pragmaticbim:element/architecture-door-interior
+predefined_type: DOOR
+category: door
+placement:
+  host: wall_opening
+  edge_kinds:
+  - interior
+  - party_wall
+  side_distance_min: 0.2
+parameters:
+  clear_width:
+    default: 1.6
+    min: 1.2
+    max: 2.4
+    unit: m
+  clear_height:
+    default: 2.1
+    min: 2.0
+    max: 2.5
+    unit: m
+  leaf_width:
+    default: 0.8
+    min: 0.6
+    max: 1.2
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: swing
+  width: clear_width
+  depth: leaf_width
+representation:
+  body: opening
+  plan_symbol: door_double
+comment: Für Bettentransport lichte Breite nach Spitalstandard; Planungswert; vor Freigabe fachlich bestätigen.
+status: active

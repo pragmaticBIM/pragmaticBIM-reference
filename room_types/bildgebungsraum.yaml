@@ -113,4 +113,22 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 240
+  openings:
+  - id: pragmaticbim:room-type-opening/bildgebungsraum-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/vorraum
+    quantity: 1
+    params:
+      clear_width:
+        min: 1.4
+    comment: Medizin- und Betriebsgeräte sind nicht modelliert; es fehlt ein Element für Geräte. Strahlenschutz
+      an Türen und Wänden prüfen.
+    status: active
   status: active

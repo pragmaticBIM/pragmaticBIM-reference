@@ -1,0 +1,58 @@
+id: pragmaticbim:component/schliessfachanlage
+code: CMP-STO-05
+sort_order: 49
+name:
+  de: Spind- und Schliessfachanlage
+  fr: Casiers et vestiaires
+  it: Armadietti e cassette di sicurezza
+  en: Lockers
+definition:
+  de: Schrankanlage mit abschliessbaren Fächern für Umkleiden, Schliessfachräume, Paketfächer und Briefkästen.
+  fr: Ensemble d'armoires à casiers verrouillables pour vestiaires, consignes, casiers à colis et boîtes
+    aux lettres.
+  it: Insieme di armadietti con scomparti chiudibili per spogliatoi, depositi, cassette pacchi e bucalettere.
+  en: Cabinet run with lockable compartments for changing rooms, locker rooms, parcel lockers and letterboxes.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: storage
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - party_wall
+  - exterior
+parameters:
+  width:
+    default: 1.2
+    min: 0.3
+    max: 12.0
+    unit: m
+  depth:
+    default: 0.5
+    min: 0.3
+    max: 0.65
+    unit: m
+  height:
+    default: 1.8
+    min: 1.2
+    max: 2.2
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.2
+representation:
+  body: box
+  plan_symbol: lockers
+comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

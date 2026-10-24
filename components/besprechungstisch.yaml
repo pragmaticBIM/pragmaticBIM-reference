@@ -1,0 +1,77 @@
+id: pragmaticbim:component/besprechungstisch
+code: CMP-WRK-02
+sort_order: 35
+name:
+  de: Besprechungstisch
+  fr: Table de réunion
+  it: Tavolo riunioni
+  en: Meeting table
+definition:
+  de: Tisch mit Stuhlzone ringsum; die Länge folgt der Anzahl Plätze im Besprechungs- oder Konferenzraum.
+  fr: Table avec zone de chaises tout autour; la longueur suit le nombre de places de la salle de réunion
+    ou de conférence.
+  it: Tavolo con zona sedie tutt'intorno; la lunghezza segue il numero di posti della sala riunioni o
+    conferenze.
+  en: Table with a chair zone all round; its length follows the number of seats in the meeting or conference
+    room.
+element: pragmaticbim:element/furniture
+predefined_type: TABLE
+category: workplace
+placement:
+  host: floor
+parameters:
+  width:
+    default: 2.4
+    min: 1.2
+    max: 8.0
+    unit: m
+  depth:
+    default: 1.2
+    min: 0.8
+    max: 1.6
+    unit: m
+  height:
+    default: 0.74
+    min: 0.72
+    max: 0.76
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.0
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: back
+  width: width
+  depth: 1.0
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: left
+  width: depth
+  depth: 0.8
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: right
+  width: depth
+  depth: 0.8
+connections:
+- medium: power
+representation:
+  body: box
+  plan_symbol: meeting_table
+comment: 'Rund 0.70 m Tischlänge pro Platz. Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

@@ -113,4 +113,46 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 30
+  equipment:
+  - id: pragmaticbim:room-type-equipment/herren-wc-default-wc
+    sort_order: 1
+    function: toilet
+    components:
+    - pragmaticbim:component/wc-wandhaengend
+    quantity:
+      min: 1
+      default: 2
+    comment: Anzahl nach Nutzerzahl und kantonalen Vorgaben projektbezogen festlegen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/herren-wc-default-urinal
+    sort_order: 2
+    function: urinal
+    components:
+    - pragmaticbim:component/urinal
+    quantity:
+      min: 1
+      default: 2
+    comment: Anzahl nach Nutzerzahl und kantonalen Vorgaben projektbezogen festlegen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/herren-wc-default-waschtisch
+    sort_order: 3
+    function: washbasin
+    components:
+    - pragmaticbim:component/waschtischanlage
+    - pragmaticbim:component/waschtisch
+    quantity: 1
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/herren-wc-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/vorraum
+    quantity: 1
+    status: active
   status: active

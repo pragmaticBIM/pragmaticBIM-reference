@@ -93,4 +93,52 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 240
+  equipment:
+  - id: pragmaticbim:room-type-equipment/lagerhalle-default-regal
+    sort_order: 1
+    function: storage
+    components:
+    - pragmaticbim:component/palettenregal
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 40
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/lagerhalle-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tor
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/lagerhalle-default-tor
+    sort_order: 2
+    function: access
+    components:
+    - pragmaticbim:component/tor
+    connects_to:
+      exterior: true
+    quantity:
+      min: 1
+      max: 6
+      default: 2
+    status: active
+  - id: pragmaticbim:room-type-opening/lagerhalle-default-fenster
+    sort_order: 3
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 0
+      default: 1
+    fallback: mechanical_ventilation
+    status: active
   status: active

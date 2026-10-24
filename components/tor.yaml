@@ -1,0 +1,48 @@
+id: pragmaticbim:component/tor
+code: CMP-DOR-07
+sort_order: 65
+name:
+  de: Tor
+  fr: Portail
+  it: Portone
+  en: Gate
+definition:
+  de: Sektional- oder Rolltor in der Fassade für Fahrzeuge und Waren.
+  fr: Porte sectionnelle ou à enroulement en façade pour véhicules et marchandises.
+  it: Portone sezionale o avvolgibile in facciata per veicoli e merci.
+  en: Sectional or roller gate in the façade for vehicles and goods.
+element: pragmaticbim:element/architecture-door-exterior
+predefined_type: GATE
+category: door
+placement:
+  host: wall_opening
+  edge_kinds:
+  - exterior
+  side_distance_min: 0.3
+parameters:
+  clear_width:
+    default: 4.0
+    min: 2.5
+    max: 8.0
+    unit: m
+  clear_height:
+    default: 4.0
+    min: 2.5
+    max: 6.0
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: clear_width
+  depth: 3.0
+connections:
+- medium: power
+representation:
+  body: opening
+  plan_symbol: gate
+comment: Freifläche als Rangierzone innen; Planungswert; vor Freigabe fachlich bestätigen.
+status: active

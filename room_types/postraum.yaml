@@ -93,4 +93,26 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 30
+  equipment:
+  - id: pragmaticbim:room-type-equipment/postraum-default-briefkaesten
+    sort_order: 1
+    function: lockers
+    components:
+    - pragmaticbim:component/schliessfachanlage
+    quantity: 1
+    params:
+      depth:
+        default: 0.35
+    comment: Briefkastenanlage als Fachanlage.
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/postraum-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
   status: active

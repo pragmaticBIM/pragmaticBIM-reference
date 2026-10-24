@@ -93,4 +93,36 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 30
+  equipment:
+  - id: pragmaticbim:room-type-equipment/gefahrstofflager-default-sicherheitsschrank
+    sort_order: 1
+    function: hazardous_storage
+    components:
+    - pragmaticbim:component/sicherheitsschrank
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 6
+    status: active
+  - id: pragmaticbim:room-type-equipment/gefahrstofflager-default-regal
+    sort_order: 2
+    function: storage
+    components:
+    - pragmaticbim:component/regal
+    quantity:
+      min: 0
+      max: 4
+      default: 1
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/gefahrstofflager-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
   status: active

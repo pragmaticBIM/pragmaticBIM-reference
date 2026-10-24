@@ -93,4 +93,46 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 240
+  openings:
+  - id: pragmaticbim:room-type-opening/produktionshalle-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/vorraum
+    quantity:
+      min: 1
+      max: 4
+      default: 2
+    comment: Medizin- und Betriebsgeräte sind nicht modelliert; es fehlt ein Element für Geräte.
+    status: active
+  - id: pragmaticbim:room-type-opening/produktionshalle-default-tor
+    sort_order: 2
+    function: access
+    components:
+    - pragmaticbim:component/tor
+    connects_to:
+      exterior: true
+    quantity:
+      min: 1
+      max: 4
+      default: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/produktionshalle-default-fenster
+    sort_order: 3
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 1
+      default: 1
+    glazing_to_floor_ratio_min: 0.1
+    comment: Mindestanteil Glasfläche nach kantonalem Recht und Arbeitsgesetz; projektbezogen prüfen.
+    status: active
   status: active

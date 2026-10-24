@@ -113,4 +113,64 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/hotelzimmer-default-bett
+    sort_order: 1
+    function: sleeping
+    components:
+    - pragmaticbim:component/bett-doppel
+    - pragmaticbim:component/bett-einzel
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/hotelzimmer-default-schreibtisch
+    sort_order: 2
+    function: working
+    components:
+    - pragmaticbim:component/schreibtisch
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/hotelzimmer-default-schrank
+    sort_order: 3
+    function: wardrobe
+    components:
+    - pragmaticbim:component/einbauschrank
+    quantity: 1
+    params:
+      width:
+        default: 1.2
+    status: active
+  - id: pragmaticbim:room-type-equipment/hotelzimmer-default-wendeflaeche
+    sort_order: 4
+    function: turning
+    components:
+    - pragmaticbim:component/wendeflaeche
+    quantity: 1
+    when:
+      project_goal_levels:
+      - pragmaticbim:project-goal-level/accessibility-wheelchair
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/hotelzimmer-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/hotelzimmer-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 1
+      default: 1
+    glazing_to_floor_ratio_min: 0.1
+    comment: Mindestanteil Glasfläche nach kantonalem Recht und Arbeitsgesetz; projektbezogen prüfen.
+    status: active
   status: active

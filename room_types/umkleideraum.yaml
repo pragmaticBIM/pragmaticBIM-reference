@@ -113,4 +113,41 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 240
+  equipment:
+  - id: pragmaticbim:room-type-equipment/umkleideraum-default-sitzbank
+    sort_order: 1
+    function: changing
+    components:
+    - pragmaticbim:component/sitzbank
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 6
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/umkleideraum-default-spinde
+    sort_order: 2
+    function: lockers
+    components:
+    - pragmaticbim:component/schliessfachanlage
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 8
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/umkleideraum-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/vorraum
+    quantity: 1
+    status: active
   status: active

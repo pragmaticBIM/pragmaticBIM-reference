@@ -1,0 +1,65 @@
+id: pragmaticbim:component/laborbank
+code: CMP-LAB-01
+sort_order: 57
+name:
+  de: Laborbank an der Wand
+  fr: Paillasse murale
+  it: Bancone da laboratorio a parete
+  en: Wall lab bench
+definition:
+  de: Labortisch an der Wand mit Medien und Becken; bestimmt die Laborachsen.
+  fr: Paillasse contre le mur avec fluides et évier; détermine les axes du laboratoire.
+  it: Bancone a parete con fluidi e lavello; determina gli assi del laboratorio.
+  en: Lab bench against a wall with services and a sink; sets the laboratory axes.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: lab
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  - exterior
+parameters:
+  width:
+    default: 3.0
+    min: 1.2
+    max: 9.0
+    unit: m
+  depth:
+    default: 0.75
+    min: 0.6
+    max: 0.9
+    unit: m
+  height:
+    default: 0.9
+    min: 0.75
+    max: 0.95
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.5
+connections:
+- medium: power
+- medium: cold_water
+- medium: drainage
+parts:
+- component: pragmaticbim:component/spuele
+  quantity: 1
+  position: end
+representation:
+  body: parts
+  plan_symbol: lab_bench
+comment: 'Gangbreite zwischen Laborbänken: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

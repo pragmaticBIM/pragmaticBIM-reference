@@ -113,4 +113,59 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/aufwachraum-default-bett
+    sort_order: 1
+    function: patient_care
+    components:
+    - pragmaticbim:component/pflegebett
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 8
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/aufwachraum-default-stationsplatz
+    sort_order: 2
+    function: working
+    components:
+    - pragmaticbim:component/arbeitsflaeche
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/aufwachraum-default-waschtisch
+    sort_order: 3
+    function: washbasin
+    components:
+    - pragmaticbim:component/waschtisch
+    quantity: 1
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/aufwachraum-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/vorraum
+    quantity: 1
+    params:
+      clear_width:
+        min: 1.4
+    status: active
+  - id: pragmaticbim:room-type-opening/aufwachraum-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 0
+      default: 1
+    fallback: mechanical_ventilation
+    status: active
   status: active

@@ -113,4 +113,37 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 300
+  equipment:
+  - id: pragmaticbim:room-type-equipment/eingangshalle-default-rollstuhlflaeche
+    sort_order: 1
+    function: manoeuvring
+    components:
+    - pragmaticbim:component/manoevrierflaeche
+    quantity: 1
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/eingangshalle-default-eingang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-aussen
+    connects_to:
+      exterior: true
+    quantity:
+      min: 1
+      max: 4
+      default: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/eingangshalle-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 0
+      default: 1
+    fallback: mechanical_ventilation
+    status: active
   status: active

@@ -1,0 +1,72 @@
+id: pragmaticbim:component/pflegebett
+code: CMP-MED-01
+sort_order: 61
+name:
+  de: Pflegebett
+  fr: Lit de soins
+  it: Letto di degenza
+  en: Care bed
+definition:
+  de: Pflegebett mit dem Kopfende an der Wand, Pflegezone auf beiden Seiten und Bettentransport am Fussende.
+  fr: Lit de soins avec la tête contre le mur, zone de soins des deux côtés et transport du lit au pied.
+  it: Letto di degenza con la testata a parete, zona di cura su entrambi i lati e trasporto del letto
+    ai piedi.
+  en: Care bed with the head against a wall, a care zone on both sides and bed transport at the foot.
+element: pragmaticbim:element/furniture
+predefined_type: BED
+category: medical
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - party_wall
+  - exterior
+parameters:
+  width:
+    default: 1.0
+    min: 0.9
+    max: 1.05
+    unit: m
+  depth:
+    default: 2.2
+    min: 2.1
+    max: 2.3
+    unit: m
+  height:
+    default: 0.6
+    min: 0.4
+    max: 0.8
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: left
+  width: depth
+  depth: 0.9
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: right
+  width: depth
+  depth: 0.9
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.2
+connections:
+- medium: power
+representation:
+  body: box
+  plan_symbol: care_bed
+comment: 'Medizinische Gase und Rufanlage an der Bettenwand. Freiflächen: Planungswert; vor Freigabe fachlich
+  bestätigen.'
+status: active

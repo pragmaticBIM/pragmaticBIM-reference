@@ -1,0 +1,73 @@
+id: pragmaticbim:component/bistrotisch
+code: CMP-FUR-07
+sort_order: 51
+name:
+  de: Bistrotisch
+  fr: Table de bistrot
+  it: Tavolino da bistrot
+  en: Bistro table
+definition:
+  de: Kleiner Gästetisch mit Stuhlzone ringsum; zählt die Plätze in Cafeteria, Restaurant und Bar.
+  fr: Petite table de clients avec zone de chaises tout autour; compte les places de cafétéria, restaurant
+    et bar.
+  it: Tavolino per clienti con zona sedie tutt'intorno; conta i posti di caffetteria, ristorante e bar.
+  en: Small guest table with a chair zone all round; counts the seats in cafeterias, restaurants and bars.
+element: pragmaticbim:element/furniture
+predefined_type: TABLE
+category: furniture
+placement:
+  host: floor
+parameters:
+  width:
+    default: 0.8
+    min: 0.6
+    max: 1.2
+    unit: m
+  depth:
+    default: 0.8
+    min: 0.6
+    max: 0.9
+    unit: m
+  height:
+    default: 0.75
+    min: 0.72
+    max: 1.1
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 0.6
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: back
+  width: width
+  depth: 0.6
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: left
+  width: depth
+  depth: 0.6
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: right
+  width: depth
+  depth: 0.6
+representation:
+  body: box
+  plan_symbol: bistro_table
+comment: 'Zwei bis vier Plätze je Tisch. Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

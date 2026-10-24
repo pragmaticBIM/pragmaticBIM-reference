@@ -1,0 +1,63 @@
+id: pragmaticbim:component/kassentheke
+code: CMP-CNT-02
+sort_order: 45
+name:
+  de: Kassentheke
+  fr: Comptoir de caisse
+  it: Banco cassa
+  en: Checkout counter
+definition:
+  de: Kassenplatz im Verkauf mit Kundenzone davor und Personalzone dahinter.
+  fr: Poste de caisse dans la vente avec zone clients devant et zone du personnel derrière.
+  it: Postazione cassa nella vendita con zona clienti davanti e zona personale dietro.
+  en: Checkout point in retail with a customer zone in front and a staff zone behind.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: counter
+placement:
+  host: floor
+parameters:
+  width:
+    default: 1.6
+    min: 1.0
+    max: 4.0
+    unit: m
+  depth:
+    default: 0.7
+    min: 0.6
+    max: 0.9
+    unit: m
+  height:
+    default: 0.9
+    min: 0.75
+    max: 1.1
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.2
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: back
+  width: width
+  depth: 1.0
+connections:
+- medium: power
+representation:
+  body: box
+  plan_symbol: checkout
+comment: 'Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

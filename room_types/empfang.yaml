@@ -113,4 +113,49 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/empfang-default-theke
+    sort_order: 1
+    function: serving
+    components:
+    - pragmaticbim:component/empfangstheke
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/empfang-default-warten
+    sort_order: 2
+    function: waiting
+    components:
+    - pragmaticbim:component/stuhlreihe
+    quantity:
+      min: 0
+      max: 2
+      default: 1
+    params:
+      width:
+        default: 2.0
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/empfang-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/durchgang
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-aussen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/empfang-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 0
+      default: 1
+    fallback: mechanical_ventilation
+    status: active
   status: active

@@ -121,4 +121,21 @@ configurations:
     name: RelativeHumidityMax
     pset: ePset_SpaceRequirement
     value: 60
+  openings:
+  - id: pragmaticbim:room-type-opening/operationssaal-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/vorraum
+    quantity: 1
+    params:
+      clear_width:
+        min: 1.4
+    comment: Medizin- und Betriebsgeräte sind nicht modelliert; es fehlt ein Element für Geräte.
+    status: active
   status: active

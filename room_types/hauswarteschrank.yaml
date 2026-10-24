@@ -93,4 +93,32 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 30
+  equipment:
+  - id: pragmaticbim:room-type-equipment/hauswarteschrank-default-ausguss
+    sort_order: 1
+    function: utility_sink
+    components:
+    - pragmaticbim:component/waschtrog
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/hauswarteschrank-default-regal
+    sort_order: 2
+    function: storage
+    components:
+    - pragmaticbim:component/regal
+    quantity: 1
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/hauswarteschrank-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/vorraum
+    quantity: 1
+    status: active
   status: active

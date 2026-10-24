@@ -1,0 +1,58 @@
+id: pragmaticbim:component/untersuchungsliege
+code: CMP-MED-02
+sort_order: 62
+name:
+  de: Untersuchungsliege
+  fr: Divan d'examen
+  it: Lettino da visita
+  en: Examination couch
+definition:
+  de: Liege für Untersuchung und Behandlung, von einer Längsseite und vom Kopfende zugänglich.
+  fr: Divan pour l'examen et le traitement, accessible par un grand côté et par la tête.
+  it: Lettino per visita e trattamento, accessibile da un lato lungo e dalla testa.
+  en: Couch for examination and treatment, accessible from one long side and the head end.
+element: pragmaticbim:element/furniture
+predefined_type: BED
+category: medical
+placement:
+  host: floor
+parameters:
+  width:
+    default: 0.7
+    min: 0.6
+    max: 0.8
+    unit: m
+  depth:
+    default: 2.0
+    min: 1.9
+    max: 2.1
+    unit: m
+  height:
+    default: 0.75
+    min: 0.5
+    max: 0.9
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: right
+  width: depth
+  depth: 1.0
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: back
+  width: width
+  depth: 0.8
+connections:
+- medium: power
+representation:
+  body: box
+  plan_symbol: examination_couch
+comment: 'Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

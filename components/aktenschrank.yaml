@@ -1,0 +1,51 @@
+id: pragmaticbim:component/aktenschrank
+code: CMP-STO-03
+sort_order: 47
+name:
+  de: Aktenschrank
+  fr: Armoire à dossiers
+  it: Armadio per documenti
+  en: Filing cabinet
+definition:
+  de: Schrank für Akten und Arbeitsmaterial an der Wand.
+  fr: Armoire pour dossiers et matériel de travail contre le mur.
+  it: Armadio per documenti e materiale di lavoro a parete.
+  en: Cabinet for files and work materials against a wall.
+element: pragmaticbim:element/furniture
+predefined_type: FILECABINET
+category: storage
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - party_wall
+  - exterior
+parameters:
+  width:
+    default: 0.8
+    min: 0.4
+    max: 2.4
+    unit: m
+  depth:
+    default: 0.45
+    min: 0.4
+    max: 0.6
+    unit: m
+  height:
+    default: 1.2
+    min: 0.7
+    max: 2.2
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 0.9
+representation:
+  body: box
+  plan_symbol: filing_cabinet
+status: active

@@ -1,0 +1,59 @@
+id: pragmaticbim:component/werkbank
+code: CMP-WRK-04
+sort_order: 37
+name:
+  de: Werkbank
+  fr: Établi
+  it: Banco da lavoro
+  en: Workbench
+definition:
+  de: Werkbank an der Wand mit Stromanschluss für Werkstatt, Ausbildungswerkstatt und Wartung.
+  fr: Établi contre le mur avec raccordement électrique pour atelier, atelier de formation et maintenance.
+  it: Banco da lavoro a parete con allacciamento elettrico per officina, laboratorio di formazione e manutenzione.
+  en: Workbench against a wall with power for workshops, training workshops and maintenance.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: workplace
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - party_wall
+  - exterior
+parameters:
+  width:
+    default: 2.0
+    min: 1.2
+    max: 4.0
+    unit: m
+  depth:
+    default: 0.8
+    min: 0.7
+    max: 0.9
+    unit: m
+  height:
+    default: 0.9
+    min: 0.85
+    max: 1.0
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.2
+connections:
+- medium: power
+representation:
+  body: box
+  plan_symbol: workbench
+comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

@@ -113,4 +113,42 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 240
+  equipment:
+  - id: pragmaticbim:room-type-equipment/eingriffsraum-default-liege
+    sort_order: 1
+    function: examination
+    components:
+    - pragmaticbim:component/untersuchungsliege
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/eingriffsraum-default-arbeitsflaeche
+    sort_order: 2
+    function: working
+    components:
+    - pragmaticbim:component/arbeitsflaeche
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/eingriffsraum-default-waschtisch
+    sort_order: 3
+    function: washbasin
+    components:
+    - pragmaticbim:component/waschtisch
+    quantity: 1
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/eingriffsraum-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/vorraum
+    quantity: 1
+    params:
+      clear_width:
+        min: 1.4
+    status: active
   status: active

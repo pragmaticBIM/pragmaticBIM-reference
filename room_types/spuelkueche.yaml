@@ -113,4 +113,35 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 240
+  equipment:
+  - id: pragmaticbim:room-type-equipment/spuelkueche-default-spuelstrasse
+    sort_order: 1
+    function: dishwashing
+    components:
+    - pragmaticbim:component/spuelstrasse
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/spuelkueche-default-regal
+    sort_order: 2
+    function: storage
+    components:
+    - pragmaticbim:component/regal
+    quantity:
+      min: 1
+      max: 4
+      default: 2
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/spuelkueche-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/gewerbekueche
+      - pragmaticbim:room-type/restaurant
+      - pragmaticbim:room-type/cafeteria
+    quantity: 1
+    status: active
   status: active

@@ -113,4 +113,14 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 600
+  openings:
+  - id: pragmaticbim:room-type-opening/buehne-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
   status: active

@@ -113,4 +113,14 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  openings:
+  - id: pragmaticbim:room-type-opening/schleuse-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
   status: active

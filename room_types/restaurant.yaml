@@ -113,4 +113,55 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 1500
+  equipment:
+  - id: pragmaticbim:room-type-equipment/restaurant-default-tisch
+    sort_order: 1
+    function: dining
+    components:
+    - pragmaticbim:component/bistrotisch
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 5
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/restaurant-default-buffet
+    sort_order: 2
+    function: serving
+    components:
+    - pragmaticbim:component/ausgabetheke
+    quantity:
+      min: 0
+      max: 1
+      default: 0
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/restaurant-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/durchgang
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/vorraum
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/restaurant-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 1
+      default: 1
+    glazing_to_floor_ratio_min: 0.1
+    comment: Mindestanteil Glasfläche nach kantonalem Recht und Arbeitsgesetz; projektbezogen prüfen.
+    status: active
   status: active

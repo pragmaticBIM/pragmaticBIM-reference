@@ -93,4 +93,27 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 30
+  equipment:
+  - id: pragmaticbim:room-type-equipment/materialraum-default-regal
+    sort_order: 1
+    function: storage
+    components:
+    - pragmaticbim:component/regal
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 5
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/materialraum-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
   status: active
