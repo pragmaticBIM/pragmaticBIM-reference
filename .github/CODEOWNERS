@@ -1,0 +1,20 @@
+# Paths outside the auto-merge lane. GitHub requests a review from the owner
+# automatically. See MERGE_POLICY.md.
+
+/.github/            @simondilhas
+/.coderabbit.yaml    @simondilhas
+/MERGE_POLICY.md     @simondilhas
+/LICENSE             @simondilhas
+/schema/             @simondilhas
+/catalog/            @simondilhas
+/generators/         @simondilhas
+/render/             @simondilhas
+/runner.py           @simondilhas
+/scripts/            @simondilhas
+/tests/              @simondilhas
+/requirements.txt    @simondilhas
+/pytest.ini          @simondilhas
+/project.yaml        @simondilhas
+/phases/             @simondilhas
+/components/         @simondilhas
+/media/              @simondilhas
