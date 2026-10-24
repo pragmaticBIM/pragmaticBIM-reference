@@ -135,6 +135,16 @@ configurations:
     - pragmaticbim:component/waschtisch
     quantity: 1
     status: active
+  - id: pragmaticbim:room-type-equipment/eingriffsraum-default-medizingeraet
+    sort_order: 4
+    function: device
+    components:
+    - pragmaticbim:component/geraeteplatz-medizingeraet
+    quantity:
+      min: 0
+      max: 2
+      default: 1
+    status: active
   openings:
   - id: pragmaticbim:room-type-opening/eingriffsraum-default-zugang
     sort_order: 1

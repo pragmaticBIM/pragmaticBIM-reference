@@ -93,6 +93,37 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/heizungsraum-default-waermeerzeuger
+    sort_order: 1
+    function: plant
+    components:
+    - pragmaticbim:component/waermeerzeuger
+    quantity:
+      min: 1
+      max: 3
+      default: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/heizungsraum-default-speicher
+    sort_order: 2
+    function: plant
+    components:
+    - pragmaticbim:component/speicher
+    quantity:
+      min: 1
+      max: 4
+      default: 2
+    status: active
+  - id: pragmaticbim:room-type-equipment/heizungsraum-default-pumpe
+    sort_order: 3
+    function: plant
+    components:
+    - pragmaticbim:component/pumpe
+    quantity:
+      min: 0
+      max: 4
+      default: 1
+    status: active
   openings:
   - id: pragmaticbim:room-type-opening/heizungsraum-default-zugang
     sort_order: 1
@@ -104,6 +135,5 @@ configurations:
     connects_to:
       relationships: incoming
     quantity: 1
-    comment: Anlagen nach Fachplanung; nur Zugang bestellt.
     status: active
   status: active

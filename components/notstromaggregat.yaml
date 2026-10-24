@@ -1,0 +1,61 @@
+id: pragmaticbim:component/notstromaggregat
+code: CMP-PLT-09
+sort_order: 80
+name:
+  de: Notstromaggregat
+  fr: Groupe électrogène
+  it: Gruppo elettrogeno
+  en: Standby generator
+definition:
+  de: Notstromaggregat mit Wartungszone ringsum, Zu- und Abluft sowie Abgasführung.
+  fr: Groupe électrogène avec zone de maintenance tout autour, air neuf, air rejeté et évacuation des
+    gaz.
+  it: Gruppo elettrogeno con zona di manutenzione tutt'intorno, aria di immissione, espulsione e scarico
+    fumi.
+  en: Standby generator with a service zone all round, supply and exhaust air and flue.
+element: pragmaticbim:element/mep-electric-generator
+predefined_type: ENGINEGENERATOR
+category: plant
+placement:
+  host: floor
+parameters:
+  width:
+    default: 3.5
+    min: 1.5
+    max: 8.0
+    unit: m
+  depth:
+    default: 1.5
+    min: 0.8
+    max: 3.0
+    unit: m
+  height:
+    default: 2.0
+    min: 1.2
+    max: 3.0
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.0
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: back
+  width: width
+  depth: 1.0
+connections:
+- medium: power
+- medium: exhaust_air
+representation:
+  body: box
+  plan_symbol: generator
+comment: Masse nach Fachplanung ersetzen; Planungswert; vor Freigabe fachlich bestätigen.
+status: active

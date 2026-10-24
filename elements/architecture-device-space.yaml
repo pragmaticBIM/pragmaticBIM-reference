@@ -1,0 +1,180 @@
+id: pragmaticbim:element/architecture-device-space
+code: ARC-DEVICE-SPACE
+sort_order: 111
+status: active
+name:
+  de: Geräteplatz
+  fr: Emplacement d'appareil
+  it: Postazione apparecchio
+  en: Device space
+definition:
+  de: |-
+    Reserviert früh den Platz für Geräte, die Raumgrösse, Tragwerk oder Anschlüsse bestimmen, damit Spezialräume vor der Gerätewahl mit den Nutzenden abgestimmt werden können.
+
+    **Beschreibung**
+    - Platzhalter für Operationstisch, Bildgebungsgerät, Produktionsmaschine, Serverschrank und ähnliche Geräte.
+    - Umfasst Gerät, Bedienzone und Wartungszone; ersetzt nicht die Geräteplanung.
+
+    **Modellierungshinweis**
+    - Als vereinfachten Proxy-Körper mit den Aussenmassen von Gerät und Wartungszone modellieren.
+    - ObjectType = Geräteplatz; Name nach Werteliste Name Geräteplatz.
+    - Dem zugehörigen Geschoss zuweisen; keine Geräteteile oder Anschlussdetails modellieren.
+  fr: |-
+    Réserve tôt la place des appareils qui déterminent la taille du local, la structure ou les raccordements, afin de concerter les locaux spéciaux avec les utilisateurs avant le choix des appareils.
+
+    **Description**
+    - Réservation pour table d'opération, appareil d'imagerie, machine de production, armoire serveur et appareils semblables.
+    - Comprend l'appareil, la zone d'utilisation et la zone de maintenance; ne remplace pas la planification des appareils.
+
+    **Directives de modélisation**
+    - Modéliser un corps proxy simplifié aux dimensions extérieures de l'appareil et de sa zone de maintenance.
+    - ObjectType = Emplacement d'appareil; Name selon la liste de valeurs Name emplacement d'appareil.
+    - Rattacher à l'étage concerné; ne pas modéliser de pièces d'appareil ni de détails de raccordement.
+  it: |-
+    Riserva presto lo spazio per apparecchi che determinano la dimensione del locale, la struttura o gli allacciamenti, per concertare i locali speciali con gli utenti prima della scelta degli apparecchi.
+
+    **Descrizione**
+    - Riserva per tavolo operatorio, apparecchio di diagnostica per immagini, macchina di produzione, armadio server e apparecchi simili.
+    - Comprende apparecchio, zona d'uso e zona di manutenzione; non sostituisce la pianificazione degli apparecchi.
+
+    **Direttive di modellazione**
+    - Modellare un corpo proxy semplificato con le dimensioni esterne di apparecchio e zona di manutenzione.
+    - ObjectType = Postazione apparecchio; Name secondo l'elenco valori Name postazione apparecchio.
+    - Assegnare al piano corrispondente; non modellare parti dell'apparecchio né dettagli di allacciamento.
+  en: |-
+    Reserves space early for devices that drive room size, structure or connections, so special rooms can be agreed with users before devices are chosen.
+
+    **Description**
+    - Placeholder for operating tables, imaging devices, production machines, server racks and similar devices.
+    - Covers the device, its operating zone and its service zone; does not replace device planning.
+
+    **Modelling guidelines**
+    - Model as a simplified proxy body with the outer dimensions of device and service zone.
+    - ObjectType = Device space; Name from the device space name value list.
+    - Assign to the matching storey; do not model device parts or connection details.
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: architecture-device-space.png
+attachment_link: architecture-device-space.ifc
+picture_print_link: architecture-device-space-print.tif
+model_link: architecture-device-space.ifc
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Geräteplatz)
+    OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Geräteplatz)
+  fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Emplacement
+    d'appareil") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Emplacement d'appareil")
+  it: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Postazione apparecchio")
+    OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Postazione apparecchio")
+  en: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Device space")
+    OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Device space")
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: |-
+      Art des Geräts.
+
+      **Zulässige Werte**
+      - Siehe Werteliste Name Geräteplatz.
+    fr: |-
+      Type d'appareil.
+
+      **Valeurs admises**
+      - Voir la liste de valeurs Name emplacement d'appareil.
+    it: |-
+      Tipo di apparecchio.
+
+      **Valori ammessi**
+      - Vedere l'elenco valori Name postazione apparecchio.
+    en: |-
+      Kind of device.
+
+      **Allowed values**
+      - See the device space name value list.
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/name-device-space
+  needed_in_phases: &id001
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows: &id002
+  - pragmaticbim:workflow/qas-special-room-user-coordination
+  - pragmaticbim:workflow/qas-furnishability-verification
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: |-
+      Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+      **Zulässige Werte**
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art
+    fr: |-
+      Identifie le proxy comme type défini par l'utilisateur.
+
+      **Valeurs admises**
+      - `USERDEFINED` — type défini par l'utilisateur ; ObjectType précise la nature
+    it: |-
+      Identifica il proxy come tipo definito dall'utente.
+
+      **Valori ammessi**
+      - `USERDEFINED` — tipo definito dall'utente; ObjectType precisa la natura
+    en: |-
+      Marks the proxy as a user-defined type.
+
+      **Allowed values**
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases: *id001
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows: *id002
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: ObjectType
+  pset: null
+  definition:
+    de: |-
+      Art des Proxy-Elements.
+
+      **Zulässige Werte**
+      - Siehe Werteliste ObjectType Geräteplatz.
+    fr: |-
+      Nature de l'élément proxy.
+
+      **Valeurs admises**
+      - Voir la liste de valeurs ObjectType emplacement d'appareil.
+    it: |-
+      Tipo dell'elemento proxy.
+
+      **Valori ammessi**
+      - Vedere l'elenco valori ObjectType postazione apparecchio.
+    en: |-
+      Kind of proxy element.
+
+      **Allowed values**
+      - See the ObjectType device space value list.
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-device-space
+  needed_in_phases: *id001
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows: *id002
+  is_applicability: true
+  status: active
+  sort_order: 3

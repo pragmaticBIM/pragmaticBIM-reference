@@ -117,6 +117,11 @@ ENGRAVE_BY_ID: dict[str, EngraveSpec] = {
     ),
     "turning-radius-01": EngraveSpec(prefer_lowest=True),
     "decision-volume-01": EngraveSpec(prefer_lowest=True),
+    "device-space-01": EngraveSpec(
+        prefer_wall=True,
+        wall_name="Rueckwand",
+        wall_top=True,
+    ),
     "movement-clearance-01": EngraveSpec(
         prefer_wall=True,
         wall_name="Rueckwand",

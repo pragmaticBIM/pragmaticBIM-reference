@@ -1,0 +1,60 @@
+id: pragmaticbim:component/geraeteplatz-maschine
+code: CMP-DEV-04
+sort_order: 69
+name:
+  de: Geräteplatz Maschine
+  fr: Emplacement machine
+  it: Postazione macchina
+  en: Machine space
+definition:
+  de: Platz für eine Produktions- oder Werkstattmaschine mit Bedien- und Wartungszone.
+  fr: Emplacement pour une machine de production ou d'atelier avec zone d'utilisation et de maintenance.
+  it: Postazione per una macchina di produzione o d'officina con zona d'uso e di manutenzione.
+  en: Space for a production or workshop machine with its operating and service zone.
+element: pragmaticbim:element/architecture-device-space
+predefined_type: USERDEFINED
+object_type:
+  de: Geräteplatz
+  fr: Emplacement d'appareil
+  it: Postazione apparecchio
+  en: Device space
+ifc_name:
+  de: Maschine
+  fr: Machine
+  it: Macchina
+  en: Machine
+category: device
+placement:
+  host: floor
+parameters:
+  width:
+    default: 3.0
+    min: 1.0
+    max: 20.0
+    unit: m
+  depth:
+    default: 2.0
+    min: 1.0
+    max: 10.0
+    unit: m
+  height:
+    default: 2.0
+    min: 1.0
+    max: 8.0
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.2
+connections:
+- medium: power
+representation:
+  body: volume
+  plan_symbol: device_machine
+comment: Fundament, Lasten und Medien nach Maschinenplanung. Planungswert; vor Freigabe fachlich bestätigen.
+status: active

@@ -488,6 +488,13 @@ SAMPLE_CATALOG: list[dict] = [
         "camera_padding": 1.35,
     },
     {
+        # Operating theatre; operating table and anaesthesia device spaces.
+        "id": "device-space-01",
+        "element_type": "ARC-DEVICE-SPACE",
+        "attach_element": "architecture-device-space",
+        "camera_padding": 1.35,
+    },
+    {
         # Accessible wet room with sanitary fixtures and one Wendefläche.
         "id": "movement-clearance-01",
         "element_type": "ARC-MOVEMENT-CLEARANCE",

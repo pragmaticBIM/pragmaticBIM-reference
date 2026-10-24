@@ -1,0 +1,51 @@
+id: pragmaticbim:component/pumpe
+code: CMP-PLT-05
+sort_order: 76
+name:
+  de: Pumpe
+  fr: Pompe
+  it: Pompa
+  en: Pump
+definition:
+  de: Pumpe oder Pumpengruppe, etwa für Sprinkler, Druckerhöhung oder Heizung.
+  fr: Pompe ou groupe de pompes, par exemple pour sprinkler, surpression ou chauffage.
+  it: Pompa o gruppo di pompe, ad esempio per sprinkler, pressurizzazione o riscaldamento.
+  en: Pump or pump set, for example for sprinklers, pressure boosting or heating.
+element: pragmaticbim:element/mep-pump
+predefined_type: ENDSUCTION
+category: plant
+placement:
+  host: floor
+parameters:
+  width:
+    default: 1.5
+    min: 0.4
+    max: 6.0
+    unit: m
+  depth:
+    default: 0.8
+    min: 0.4
+    max: 2.0
+    unit: m
+  height:
+    default: 1.0
+    min: 0.4
+    max: 2.0
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 0.8
+connections:
+- medium: power
+- medium: drainage
+representation:
+  body: box
+  plan_symbol: pump
+comment: Masse nach Fachplanung ersetzen; Planungswert; vor Freigabe fachlich bestätigen.
+status: active
