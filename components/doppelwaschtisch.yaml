@@ -1,0 +1,58 @@
+id: pragmaticbim:component/doppelwaschtisch
+code: CMP-SAN-04
+sort_order: 4
+name:
+  de: Doppelwaschtisch
+  fr: Double lavabo
+  it: Lavabo doppio
+  en: Double washbasin
+definition:
+  de: Waschtisch mit zwei Becken für Bäder, die zwei Personen gleichzeitig nutzen.
+  fr: Lavabo à deux vasques pour les salles de bains utilisées par deux personnes en même temps.
+  it: Lavabo a due bacini per bagni usati da due persone contemporaneamente.
+  en: Washbasin with two bowls for bathrooms used by two people at once.
+element: pragmaticbim:element/mep-sanitary-terminal
+predefined_type: WASHHANDBASIN
+category: sanitary
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  - exterior
+  side_distance_min: 0.15
+parameters:
+  width:
+    default: 1.2
+    min: 1.2
+    max: 1.8
+    unit: m
+  depth:
+    default: 0.5
+    min: 0.45
+    max: 0.55
+    unit: m
+  height:
+    default: 0.85
+    min: 0.8
+    max: 0.9
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 0.75
+connections:
+- medium: drainage
+  max_distance_to_shaft: 2.0
+- medium: cold_water
+- medium: hot_water
+representation:
+  body: box
+  plan_symbol: washbasin_double
+comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

@@ -1,0 +1,48 @@
+id: pragmaticbim:component/wendeflaeche
+code: CMP-CLR-01
+sort_order: 32
+name:
+  de: Wendefläche SIA 500
+  fr: Aire de rotation SIA 500
+  it: Area di rotazione SIA 500
+  en: Turning area SIA 500
+definition:
+  de: Freizuhaltende Fläche für eine Wendung um 180° im Rollstuhl; macht den Nachweis nach SIA 500 im
+    Modell prüfbar.
+  fr: Surface à maintenir libre pour un demi-tour en fauteuil roulant; rend le contrôle SIA 500 vérifiable
+    dans la maquette.
+  it: Superficie da mantenere libera per una rotazione di 180° in sedia a rotelle; rende verificabile
+    nel modello il controllo SIA 500.
+  en: Area kept clear for a 180° turn in a wheelchair; makes the SIA 500 check verifiable in the model.
+element: pragmaticbim:element/architecture-movement-clearance
+predefined_type: USERDEFINED
+object_type:
+  de: Bewegungsfläche
+  fr: Aire de mouvement
+  it: Area di movimento
+  en: Movement clearance
+ifc_name:
+  de: Wendefläche
+  fr: Aire de rotation
+  it: Area di rotazione
+  en: Turning area
+category: clearance
+placement:
+  host: floor
+parameters:
+  width:
+    default: 1.4
+    min: 1.4
+    unit: m
+  depth:
+    default: 1.7
+    min: 1.7
+    unit: m
+  height:
+    default: 1.5
+    unit: m
+representation:
+  body: volume
+  plan_symbol: turning_area
+comment: Darf Freiflächen von Apparaten überlagern, nicht aber Apparate und Wände.
+status: active

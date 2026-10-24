@@ -1,0 +1,38 @@
+id: pragmaticbim:component/tuer-schiebe-innen
+code: CMP-DOR-02
+sort_order: 27
+name:
+  de: Schiebetür innen
+  fr: Porte coulissante intérieure
+  it: Porta scorrevole interna
+  en: Interior sliding door
+definition:
+  de: Schiebetür vor der Wand oder in der Wandtasche; spart die Aufschlagfläche in kleinen Räumen.
+  fr: Porte coulissante en applique ou à galandage; évite la surface de débattement dans les petits locaux.
+  it: Porta scorrevole esterno muro o a scomparsa; evita la superficie di apertura nei locali piccoli.
+  en: Sliding door in front of the wall or in a wall pocket; saves the swing area in small rooms.
+element: pragmaticbim:element/architecture-door-interior
+predefined_type: DOOR
+category: door
+placement:
+  host: wall_opening
+  edge_kinds:
+  - interior
+  side_distance_min: 0.1
+parameters:
+  clear_width:
+    default: 0.8
+    min: 0.8
+    max: 1.2
+    unit: m
+  clear_height:
+    default: 2.0
+    min: 2.0
+    max: 2.2
+    unit: m
+representation:
+  body: opening
+  plan_symbol: door_sliding
+comment: Daneben braucht die Wand eine freie Länge in Türbreite für den Flügel. Mass nach SIA 500 vor
+  Freigabe fachlich bestätigen.
+status: active

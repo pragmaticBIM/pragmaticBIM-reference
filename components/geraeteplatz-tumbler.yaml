@@ -1,0 +1,63 @@
+id: pragmaticbim:component/geraeteplatz-tumbler
+code: CMP-LAU-03
+sort_order: 19
+name:
+  de: Geräteplatz Tumbler
+  fr: Emplacement sèche-linge
+  it: Postazione asciugatrice
+  en: Tumble dryer space
+definition:
+  de: Platz für einen Tumbler mit Stromanschluss und, je nach Gerät, Kondensatablauf.
+  fr: Emplacement pour un sèche-linge avec raccordement électrique et, selon l'appareil, évacuation des
+    condensats.
+  it: Postazione per un'asciugatrice con allacciamento elettrico e, secondo l'apparecchio, scarico della
+    condensa.
+  en: Space for a tumble dryer with power and, depending on the appliance, a condensate drain.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: laundry
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  - exterior
+parameters:
+  width:
+    default: 0.65
+    min: 0.6
+    max: 0.7
+    unit: m
+  depth:
+    default: 0.65
+    min: 0.6
+    max: 0.7
+    unit: m
+  height:
+    default: 0.9
+    min: 0.85
+    max: 0.95
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: 0.9
+  depth: 0.9
+connections:
+- medium: power
+- medium: drainage
+representation:
+  body: box
+  plan_symbol: tumble_dryer
+comment: 'Geräteplatz als Blackbox; das Gerät selbst wird nicht modelliert. Freifläche: Planungswert;
+  vor Freigabe fachlich bestätigen.'
+status: active

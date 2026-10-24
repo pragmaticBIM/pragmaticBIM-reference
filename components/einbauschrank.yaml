@@ -1,0 +1,57 @@
+id: pragmaticbim:component/einbauschrank
+code: CMP-STO-01
+sort_order: 15
+name:
+  de: Einbauschrank
+  fr: Armoire encastrée
+  it: Armadio a muro
+  en: Built-in wardrobe
+definition:
+  de: Raumhoher Einbauschrank an einer Wand für Kleider und Vorräte.
+  fr: Armoire encastrée sur toute la hauteur contre un mur, pour vêtements et provisions.
+  it: Armadio a muro a tutta altezza contro una parete, per abiti e scorte.
+  en: Full-height built-in wardrobe against a wall for clothes and supplies.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: storage
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - party_wall
+  - exterior
+parameters:
+  width:
+    default: 1.8
+    min: 0.6
+    max: 4.0
+    unit: m
+  depth:
+    default: 0.6
+    min: 0.55
+    max: 0.65
+    unit: m
+  height:
+    default: 2.3
+    min: 2.1
+    max: 2.6
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 0.9
+representation:
+  body: box
+  plan_symbol: wardrobe
+comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

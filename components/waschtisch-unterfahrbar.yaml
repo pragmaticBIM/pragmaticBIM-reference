@@ -1,0 +1,59 @@
+id: pragmaticbim:component/waschtisch-unterfahrbar
+code: CMP-SAN-05
+sort_order: 5
+name:
+  de: Waschtisch unterfahrbar
+  fr: Lavabo accessible en fauteuil roulant
+  it: Lavabo accessibile in sedia a rotelle
+  en: Wheelchair-accessible washbasin
+definition:
+  de: Unterfahrbarer Waschtisch mit Manövrierfläche davor, damit er im Rollstuhl nutzbar ist.
+  fr: Lavabo accessible par-dessous avec aire de manœuvre devant, afin qu'il soit utilisable en fauteuil
+    roulant.
+  it: Lavabo con spazio libero sotto e area di manovra antistante, per l'uso in sedia a rotelle.
+  en: Washbasin with knee space and a manoeuvring area in front so it can be used from a wheelchair.
+element: pragmaticbim:element/mep-sanitary-terminal
+predefined_type: WASHHANDBASIN
+category: sanitary
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  - exterior
+  side_distance_min: 0.2
+parameters:
+  width:
+    default: 0.6
+    min: 0.55
+    max: 0.7
+    unit: m
+  depth:
+    default: 0.55
+    min: 0.5
+    max: 0.6
+    unit: m
+  height:
+    default: 0.8
+    min: 0.78
+    max: 0.82
+    unit: m
+clearances:
+- name:
+    de: Manövrierfläche
+    fr: Aire de manœuvre
+    it: Area di manovra
+    en: Manoeuvring area
+  side: front
+  width: 1.4
+  depth: 1.4
+connections:
+- medium: drainage
+  max_distance_to_shaft: 2.0
+- medium: cold_water
+- medium: hot_water
+representation:
+  body: box
+  plan_symbol: washbasin_accessible
+comment: Mass nach SIA 500 vor Freigabe fachlich bestätigen.
+status: active

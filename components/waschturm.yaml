@@ -1,0 +1,64 @@
+id: pragmaticbim:component/waschturm
+code: CMP-LAU-01
+sort_order: 17
+name:
+  de: Geräteplatz Waschturm
+  fr: Emplacement colonne lave-linge et sèche-linge
+  it: Postazione colonna lavatrice e asciugatrice
+  en: Washer-dryer stack space
+definition:
+  de: Platz für Waschmaschine und Tumbler übereinander, mit Wasser-, Abwasser- und Stromanschluss.
+  fr: Emplacement pour lave-linge et sèche-linge superposés, avec raccordements d'eau, d'évacuation et
+    d'électricité.
+  it: Postazione per lavatrice e asciugatrice sovrapposte, con allacciamenti idrici, di scarico ed elettrici.
+  en: Space for a washing machine and tumble dryer stacked, with water, drainage and power connections.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: laundry
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  - exterior
+parameters:
+  width:
+    default: 0.65
+    min: 0.6
+    max: 0.7
+    unit: m
+  depth:
+    default: 0.65
+    min: 0.6
+    max: 0.7
+    unit: m
+  height:
+    default: 1.8
+    min: 1.7
+    max: 1.9
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: 0.9
+  depth: 0.9
+connections:
+- medium: drainage
+  max_distance_to_shaft: 3.0
+- medium: cold_water
+- medium: power
+representation:
+  body: box
+  plan_symbol: washer_dryer
+comment: 'Geräteplatz als Blackbox; die Geräte selbst werden nicht modelliert. Freifläche: Planungswert;
+  vor Freigabe fachlich bestätigen.'
+status: active

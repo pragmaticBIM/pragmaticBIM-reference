@@ -116,4 +116,55 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/gemeinschaftswaschkueche-default-waschmaschine
+    sort_order: 1
+    function: laundry
+    components:
+    - pragmaticbim:component/geraeteplatz-waschmaschine
+    quantity:
+      min: 1
+      default: 2
+    comment: Anzahl nach Anzahl Wohnungen projektbezogen festlegen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/gemeinschaftswaschkueche-default-tumbler
+    sort_order: 2
+    function: laundry
+    components:
+    - pragmaticbim:component/geraeteplatz-tumbler
+    quantity:
+      min: 1
+      default: 2
+    comment: Anzahl nach Anzahl Wohnungen projektbezogen festlegen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/gemeinschaftswaschkueche-default-waschtrog
+    sort_order: 3
+    function: utility_sink
+    components:
+    - pragmaticbim:component/waschtrog
+    quantity: 1
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/gemeinschaftswaschkueche-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/gemeinschaftswaschkueche-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 0
+      default: 1
+    fallback: mechanical_ventilation
+    status: active
   status: active

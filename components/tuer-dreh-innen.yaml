@@ -1,0 +1,50 @@
+id: pragmaticbim:component/tuer-dreh-innen
+code: CMP-DOR-01
+sort_order: 26
+name:
+  de: Drehtür innen
+  fr: Porte battante intérieure
+  it: Porta a battente interna
+  en: Interior swing door
+definition:
+  de: Einflügelige Drehtür zwischen zwei Innenräumen; der Aufschlag hält eine Fläche im Zielraum frei.
+  fr: Porte battante à un vantail entre deux locaux intérieurs; le débattement garde une surface libre
+    dans le local desservi.
+  it: Porta a battente a un'anta tra due locali interni; l'apertura mantiene libera una superficie nel
+    locale servito.
+  en: Single-leaf swing door between two interior rooms; its swing keeps an area clear in the room it
+    opens into.
+element: pragmaticbim:element/architecture-door-interior
+predefined_type: DOOR
+category: door
+placement:
+  host: wall_opening
+  edge_kinds:
+  - interior
+  side_distance_min: 0.1
+parameters:
+  clear_width:
+    default: 0.8
+    min: 0.8
+    max: 1.0
+    unit: m
+  clear_height:
+    default: 2.0
+    min: 2.0
+    max: 2.2
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: swing
+  width: clear_width
+  depth: clear_width
+representation:
+  body: opening
+  plan_symbol: door_swing
+comment: Lichte Breite 0.80 m als Mindestmass für anpassbaren Wohnungsbau. Mass nach SIA 500 vor Freigabe
+  fachlich bestätigen.
+status: active

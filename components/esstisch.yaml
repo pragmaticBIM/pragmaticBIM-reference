@@ -1,0 +1,56 @@
+id: pragmaticbim:component/esstisch
+code: CMP-FUR-04
+sort_order: 23
+name:
+  de: Esstisch
+  fr: Table à manger
+  it: Tavolo da pranzo
+  en: Dining table
+definition:
+  de: Esstisch mit Stuhlzone auf beiden Längsseiten; die Breite folgt der Anzahl Plätze.
+  fr: Table à manger avec zone de chaises sur les deux grands côtés; la largeur suit le nombre de places.
+  it: Tavolo da pranzo con zona sedie sui due lati lunghi; la larghezza segue il numero di posti.
+  en: Dining table with a chair zone on both long sides; its width follows the number of seats.
+element: pragmaticbim:element/furniture
+predefined_type: TABLE
+category: furniture
+placement:
+  host: floor
+parameters:
+  width:
+    default: 1.6
+    min: 0.8
+    max: 2.8
+    unit: m
+  depth:
+    default: 0.9
+    min: 0.8
+    max: 1.0
+    unit: m
+  height:
+    default: 0.75
+    min: 0.72
+    max: 0.76
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 0.8
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: back
+  width: width
+  depth: 0.8
+representation:
+  body: box
+  plan_symbol: dining_table
+comment: 'Rund 0.60 m Tischbreite pro Platz. Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

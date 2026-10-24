@@ -1,0 +1,50 @@
+id: pragmaticbim:component/kuechen-hochschrank
+code: CMP-KIT-04
+sort_order: 13
+name:
+  de: Küchen-Hochschrank
+  fr: Armoire haute de cuisine
+  it: Armadio alto da cucina
+  en: Kitchen tall cabinet
+definition:
+  de: Raumhoher Küchenschrank, meist für Kühlschrank und Backofen; Teil eines Küchenblocks.
+  fr: Armoire de cuisine sur toute la hauteur, souvent pour réfrigérateur et four; fait partie d'un bloc
+    cuisine.
+  it: Armadio da cucina a tutta altezza, spesso per frigorifero e forno; parte di un blocco cucina.
+  en: Full-height kitchen cabinet, usually for fridge and oven; part of a kitchen block.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: kitchen
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  - exterior
+parameters:
+  width:
+    default: 0.6
+    min: 0.6
+    max: 1.2
+    unit: m
+  depth:
+    default: 0.6
+    min: 0.6
+    max: 0.65
+    unit: m
+  height:
+    default: 2.1
+    min: 1.95
+    max: 2.4
+    unit: m
+connections:
+- medium: power
+representation:
+  body: box
+  plan_symbol: tall_cabinet
+status: active

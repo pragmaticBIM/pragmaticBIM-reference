@@ -1,0 +1,58 @@
+id: pragmaticbim:component/waschtisch
+code: CMP-SAN-03
+sort_order: 3
+name:
+  de: Waschtisch
+  fr: Lavabo
+  it: Lavabo
+  en: Washbasin
+definition:
+  de: Einzelwaschtisch an der Wand; zeigt Platzbedarf und Wasseranschluss im Bad.
+  fr: Lavabo simple au mur; montre l'emprise et le raccordement d'eau dans la salle de bains.
+  it: Lavabo singolo a parete; mostra ingombro e allacciamento idrico nel bagno.
+  en: Single wall-mounted washbasin; shows space and water connection in the bathroom.
+element: pragmaticbim:element/mep-sanitary-terminal
+predefined_type: WASHHANDBASIN
+category: sanitary
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - shaft
+  - exterior
+  side_distance_min: 0.15
+parameters:
+  width:
+    default: 0.6
+    min: 0.45
+    max: 0.9
+    unit: m
+  depth:
+    default: 0.48
+    min: 0.4
+    max: 0.55
+    unit: m
+  height:
+    default: 0.85
+    min: 0.8
+    max: 0.9
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: 0.8
+  depth: 0.75
+connections:
+- medium: drainage
+  max_distance_to_shaft: 2.0
+- medium: cold_water
+- medium: hot_water
+representation:
+  body: box
+  plan_symbol: washbasin
+comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

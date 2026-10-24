@@ -118,6 +118,65 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/kueche-default-kuechenblock
+    sort_order: 1
+    function: kitchen
+    components:
+    - pragmaticbim:component/kuechenzeile-l
+    - pragmaticbim:component/kuechenzeile-einzeilig
+    quantity: 1
+    params:
+      width:
+        min: 3.0
+    status: active
+  - id: pragmaticbim:room-type-equipment/kueche-default-kochinsel
+    sort_order: 2
+    function: kitchen
+    components:
+    - pragmaticbim:component/kochinsel
+    quantity:
+      min: 0
+      max: 1
+      default: 1
+    when:
+      project_goal_levels:
+      - pragmaticbim:project-goal-level/fit-out-premium
+    status: active
+  - id: pragmaticbim:room-type-equipment/kueche-default-manoevrierflaeche
+    sort_order: 3
+    function: manoeuvring
+    components:
+    - pragmaticbim:component/manoevrierflaeche
+    quantity: 1
+    when:
+      project_goal_levels:
+      - pragmaticbim:project-goal-level/accessibility-wheelchair
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/kueche-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/durchgang
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-schiebe-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/kueche-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 0
+      default: 1
+    fallback: mechanical_ventilation
+    status: active
   status: active
 - id: pragmaticbim:room-type-configuration/kueche-small
   sort_order: 2
@@ -222,4 +281,41 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/kueche-small-kuechenblock
+    sort_order: 1
+    function: kitchen
+    components:
+    - pragmaticbim:component/kuechenzeile-einzeilig
+    quantity: 1
+    params:
+      width:
+        default: 2.4
+        min: 2.4
+        max: 3.0
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/kueche-small-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/durchgang
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-schiebe-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/kueche-small-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 0
+      default: 1
+    fallback: mechanical_ventilation
+    status: active
   status: active

@@ -1,0 +1,63 @@
+id: pragmaticbim:component/kochinsel
+code: CMP-KIT-03
+sort_order: 12
+name:
+  de: Kochinsel
+  fr: Îlot de cuisine
+  it: Isola cucina
+  en: Kitchen island
+definition:
+  de: Frei stehender Küchenblock mit Arbeitsfläche, ringsum zugänglich.
+  fr: Bloc cuisine isolé avec plan de travail, accessible de tous les côtés.
+  it: Blocco cucina isolato con piano di lavoro, accessibile da tutti i lati.
+  en: Free-standing kitchen block with worktop, accessible from all sides.
+element: pragmaticbim:element/architecture-built-in-furniture
+predefined_type: USERDEFINED
+object_type:
+  de: Einbaumöbel
+  fr: Mobilier intégré
+  it: Arredo fisso
+  en: Built-in furniture
+category: kitchen
+placement:
+  host: floor
+parameters:
+  width:
+    default: 1.8
+    min: 1.2
+    max: 3.0
+    unit: m
+  depth:
+    default: 0.9
+    min: 0.8
+    max: 1.2
+    unit: m
+  height:
+    default: 0.9
+    min: 0.85
+    max: 0.95
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.2
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: back
+  width: width
+  depth: 1.0
+connections:
+- medium: power
+representation:
+  body: box
+  plan_symbol: kitchen_island
+comment: 'Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

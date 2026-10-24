@@ -113,4 +113,69 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/schlafzimmer-default-bett
+    sort_order: 1
+    function: sleeping
+    components:
+    - pragmaticbim:component/bett-doppel
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/schlafzimmer-default-einbauschrank
+    sort_order: 2
+    function: wardrobe
+    components:
+    - pragmaticbim:component/einbauschrank
+    quantity: 1
+    params:
+      width:
+        default: 1.8
+        min: 1.2
+    status: active
+  - id: pragmaticbim:room-type-equipment/schlafzimmer-default-wendeflaeche
+    sort_order: 3
+    function: turning
+    components:
+    - pragmaticbim:component/wendeflaeche
+    quantity: 1
+    when:
+      project_goal_levels:
+      - pragmaticbim:project-goal-level/accessibility-wheelchair
+    status: active
+  - id: pragmaticbim:room-type-equipment/schlafzimmer-default-pflegeflaeche
+    sort_order: 4
+    function: manoeuvring
+    components:
+    - pragmaticbim:component/manoevrierflaeche
+    quantity: 1
+    when:
+      scenario_options:
+      - pragmaticbim:scenario-option/unterstuetzung-zu-hause-home-care
+    comment: Arbeitsfläche für die ambulante Pflege neben dem Bett.
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/schlafzimmer-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-schiebe-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/schlafzimmer-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 1
+      default: 1
+    glazing_to_floor_ratio_min: 0.1
+    comment: Mindestanteil Glasfläche nach kantonalem Recht, häufig 1/10 der Bodenfläche; projektbezogen
+      prüfen.
+    status: active
   status: active

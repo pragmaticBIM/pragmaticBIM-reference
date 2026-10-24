@@ -113,4 +113,55 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 30
+  equipment:
+  - id: pragmaticbim:room-type-equipment/hauswirtschaftsraum-default-waschturm
+    sort_order: 1
+    function: laundry
+    components:
+    - pragmaticbim:component/waschturm
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/hauswirtschaftsraum-default-waschtrog
+    sort_order: 2
+    function: utility_sink
+    components:
+    - pragmaticbim:component/waschtrog
+    quantity:
+      min: 0
+      max: 1
+      default: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/hauswirtschaftsraum-default-regal
+    sort_order: 3
+    function: storage
+    components:
+    - pragmaticbim:component/regal
+    quantity:
+      min: 1
+      max: 3
+      default: 2
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/hauswirtschaftsraum-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-schiebe-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/hauswirtschaftsraum-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 0
+      default: 1
+    fallback: mechanical_ventilation
+    status: active
   status: active

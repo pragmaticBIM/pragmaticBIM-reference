@@ -1,0 +1,52 @@
+id: pragmaticbim:component/schreibtisch
+code: CMP-FUR-06
+sort_order: 25
+name:
+  de: Schreibtisch
+  fr: Bureau
+  it: Scrivania
+  en: Desk
+definition:
+  de: Schreibtisch an der Wand mit Stuhlzone für Arbeiten von Zuhause.
+  fr: Bureau contre le mur avec zone de chaise pour le travail à domicile.
+  it: Scrivania a parete con zona sedia per il lavoro da casa.
+  en: Desk against a wall with a chair zone for working from home.
+element: pragmaticbim:element/furniture
+predefined_type: DESK
+category: furniture
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - party_wall
+  - exterior
+parameters:
+  width:
+    default: 1.4
+    min: 1.2
+    max: 1.8
+    unit: m
+  depth:
+    default: 0.7
+    min: 0.6
+    max: 0.8
+    unit: m
+  height:
+    default: 0.75
+    min: 0.72
+    max: 0.76
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: front
+  width: width
+  depth: 1.0
+representation:
+  body: box
+  plan_symbol: desk
+comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

@@ -1,0 +1,52 @@
+id: pragmaticbim:component/bett-einzel
+code: CMP-FUR-02
+sort_order: 21
+name:
+  de: Einzelbett
+  fr: Lit simple
+  it: Letto singolo
+  en: Single bed
+definition:
+  de: Einzelbett mit dem Kopfende an der Wand; prüft die Möblierbarkeit von Schlaf- und Gästezimmern.
+  fr: Lit simple avec la tête contre le mur; vérifie l'aménagement des chambres et chambres d'amis.
+  it: Letto singolo con la testata a parete; verifica l'arredabilità di camere e camere degli ospiti.
+  en: Single bed with the head against a wall; checks whether bedrooms and guest rooms can be furnished.
+element: pragmaticbim:element/furniture
+predefined_type: BED
+category: furniture
+placement:
+  host: wall_face
+  edge_kinds:
+  - interior
+  - party_wall
+  - exterior
+parameters:
+  width:
+    default: 0.9
+    min: 0.9
+    max: 1.2
+    unit: m
+  depth:
+    default: 2.0
+    min: 2.0
+    max: 2.2
+    unit: m
+  height:
+    default: 0.45
+    min: 0.4
+    max: 0.55
+    unit: m
+clearances:
+- name:
+    de: Freifläche
+    fr: Aire libre
+    it: Area libera
+    en: Clear area
+  side: right
+  width: depth
+  depth: 0.6
+representation:
+  body: box
+  plan_symbol: bed_single
+comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+status: active

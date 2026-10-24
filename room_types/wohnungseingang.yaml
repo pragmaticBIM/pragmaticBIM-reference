@@ -113,4 +113,37 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/wohnungseingang-default-garderobe
+    sort_order: 1
+    function: wardrobe
+    components:
+    - pragmaticbim:component/garderobe
+    quantity:
+      min: 0
+      max: 1
+      default: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/wohnungseingang-default-manoevrierflaeche
+    sort_order: 2
+    function: manoeuvring
+    components:
+    - pragmaticbim:component/manoevrierflaeche
+    quantity: 1
+    when:
+      project_goal_levels:
+      - pragmaticbim:project-goal-level/accessibility-wheelchair
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/wohnungseingang-default-eingangstuer
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/wohnungseingangstuer
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/treppenhaus
+    quantity: 1
+    status: active
   status: active
