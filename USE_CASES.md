@@ -4,8 +4,8 @@ All 135 use cases from `workflows/`, grouped by the 6 top-level categories of th
 
 | Category | Code | Use cases |
 | --- | --- | --- |
-| Ordering (Bestellung) | BES | 34 |
-| Quality assurance (Qualitätssicherung) | QAS | 37 |
+| Ordering (Bestellung) | BES | 31 |
+| Quality assurance (Qualitätssicherung) | QAS | 40 |
 | Design (Planung) | DES | 44 |
 | Construction (Ausführung) | CON | 9 |
 | Handover (Übergabe) | HOV | 6 |
@@ -17,8 +17,6 @@ All 135 use cases from `workflows/`, grouped by the 6 top-level categories of th
 
 | Code | English | Deutsch | File |
 | --- | --- | --- | --- |
-| BES-COST-INTERFACE | Visualize cost interfaces between base building and tenant fit-out | Kostenschnittstellen zwischen Grund- und Mieterausbau visualisieren | [`bes-cost-interface-tenant-fitout.yaml`](workflows/bes-cost-interface-tenant-fitout.yaml) |
-| BES-AWARD-INTERFACE | Visualize award interfaces | Vergabeschnittstellen visualisieren | [`bes-award-interface-visualization.yaml`](workflows/bes-award-interface-visualization.yaml) |
 | BES-CONCRETE-TENDER | Concrete works tender from model | Ausschreibung Betonarbeiten ab Modell | [`bes-concrete-tender-from-model.yaml`](workflows/bes-concrete-tender-from-model.yaml) |
 | BES-FLOORING-TENDER | Provide the basis for the flooring tender | Grundlage für die Bodenbelagsausschreibung liefern | [`bes-flooring-tender-basis.yaml`](workflows/bes-flooring-tender-basis.yaml) |
 | BES-FIRESTOP-TENDER | Provide the basis for the firestop tender | Grundlage für die Brandschott-Ausschreibung liefern | [`bes-firestop-tender-basis.yaml`](workflows/bes-firestop-tender-basis.yaml) |
@@ -61,12 +59,6 @@ All 135 use cases from `workflows/`, grouped by the 6 top-level categories of th
 | BES-SEISMIC-MEP | Tender installation suspensions as a separate trade | Installationsaufhängungen als eigenes Gewerk ausschreiben | [`bes-mep-seismic-bracing-coordination.yaml`](workflows/bes-mep-seismic-bracing-coordination.yaml) |
 | BES-ICE-SESSION | Order an ICE session | ICE-Session bestellen | [`bes-ice-session.yaml`](workflows/bes-ice-session.yaml) |
 
-### rueckfuehrung
-
-| Code | English | Deutsch | File |
-| --- | --- | --- | --- |
-| BES-ELEMENT-COST-POSTCALC | Post-calculate component costs and feed unit rates back | Bauteilkosten nachkalkulieren und Einheitspreise zurückführen | [`bes-element-cost-post-calculation.yaml`](workflows/bes-element-cost-post-calculation.yaml) |
-
 ## QAS – Quality assurance (Qualitätssicherung)
 
 ### koordination
@@ -91,6 +83,8 @@ All 135 use cases from `workflows/`, grouped by the 6 top-level categories of th
 | QAS-VORSATZ | Verify the area requirement of facing shells | Flächenbedarf von Vorsatzschalen nachweisen | [`qas-facing-shell-area-verification.yaml`](workflows/qas-facing-shell-area-verification.yaml) |
 | QAS-FURNISHABILITY | Verify furnishability | Möblierbarkeit nachweisen | [`qas-furnishability-verification.yaml`](workflows/qas-furnishability-verification.yaml) |
 | QAS-ROOM-PROGRAM | Reconcile the room programme with the model | Raumprogramm mit dem Modell abgleichen | [`qas-room-program-verification.yaml`](workflows/qas-room-program-verification.yaml) |
+| QAS-COST-INTERFACE | Visualize cost interfaces between base building and tenant fit-out | Kostenschnittstellen zwischen Grund- und Mieterausbau visualisieren | [`qas-cost-interface-tenant-fitout.yaml`](workflows/qas-cost-interface-tenant-fitout.yaml) |
+| QAS-AWARD-INTERFACE | Visualize award interfaces | Vergabeschnittstellen visualisieren | [`qas-award-interface-visualization.yaml`](workflows/qas-award-interface-visualization.yaml) |
 | QAS-SITE-LOGISTICS | Check site logistics across the construction phases | Baustellenlogistik über die Bauphasen prüfen | [`qas-construction-site-logistics.yaml`](workflows/qas-construction-site-logistics.yaml) |
 | QAS-FALL-PROTECTION | Assess fall protection | Absturzsicherungen beurteilen | [`qas-fall-protection-verification.yaml`](workflows/qas-fall-protection-verification.yaml) |
 
@@ -109,6 +103,7 @@ All 135 use cases from `workflows/`, grouped by the 6 top-level categories of th
 | QAS-CONTRACTOR-DESIGN | Verify shop and installation design | Werk- und Montageplanung prüfen | [`qas-contractor-design-verification.yaml`](workflows/qas-contractor-design-verification.yaml) |
 | QAS-COST-PLAUS | Component cost plausibility check | Bauteilkosten plausibilisieren | [`qas-component-cost-plausibility.yaml`](workflows/qas-component-cost-plausibility.yaml) |
 | QAS-BENCHMARK | Benchmark a project against comparable building tasks | Benchmarking eines Projekts gegen vergleichbare Bauaufgaben | [`qas-project-benchmark.yaml`](workflows/qas-project-benchmark.yaml) |
+| QAS-ELEMENT-COST-POSTCALC | Post-calculate component costs and feed unit rates back | Bauteilkosten nachkalkulieren und Einheitspreise zurückführen | [`qas-element-cost-post-calculation.yaml`](workflows/qas-element-cost-post-calculation.yaml) |
 | QAS-FUND | Check and verify funding | Fördermittel prüfen und nachweisen | [`qas-funding-verification.yaml`](workflows/qas-funding-verification.yaml) |
 | QAS-USAGE-AGREEMENT | Compare usage-agreement requirements with actual values | Nutzungsvereinbarung Soll-Ist abgleichen | [`qas-usage-agreement-verification.yaml`](workflows/qas-usage-agreement-verification.yaml) |
 | QAS-BUILD-SEC | Verify building security measures | Gebäudesicherheitsmassnahmen prüfen | [`qas-building-security-verification.yaml`](workflows/qas-building-security-verification.yaml) |

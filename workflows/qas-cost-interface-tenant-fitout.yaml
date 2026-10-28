@@ -1,0 +1,98 @@
+id: pragmaticbim:workflow/qas-cost-interface-tenant-fitout
+code: QAS-COST-INTERFACE
+sort_order: 87
+name:
+  de: Kostenschnittstellen zwischen Grund- und Mieterausbau visualisieren
+  fr: Visualiser les interfaces de coûts entre aménagement de base et aménagement locataire
+  it: Visualizzare le interfacce di costo tra allestimento di base e allestimento locatario
+  en: Visualize cost interfaces between base building and tenant fit-out
+description:
+  de: |-
+    Vor der Ausschreibung und nach jeder Vertragsänderung prüfen, ob die Kostenträger im Modell der im Mietvertrag vereinbarten Kostenteilung zwischen Grund- und Mieterausbau entsprechen.
+
+    **Ausgangslage**
+    - Die Kostenteilung zwischen Grundausbau und Mieterausbau wird im Mietvertrag entschieden, in Plänen, Mengen und Ausschreibung aber nur in Listen nachgeführt.
+    - Das ergibt oft Unstimmigkeiten und vergessene Zuständigkeiten mit Kosten- und Terminfolge.
+
+    **Ziel & Nutzen**
+    - Jedes Architektur- und TGA-Bauteil eindeutig einem Kostenträger zuweisen – Grundausbau oder ein benannter Mieterausbau – und gegen die vertragliche Kostenteilung prüfen.
+    - Kolorierte Pläne und Mengen nach Kostenträger machen Lücken und Widersprüche sichtbar, bevor sie in Ausschreibung und Abrechnung gelangen.
+
+    **Ablauf**
+    1. Kostenträger gemäss Mietvertrag an den Architektur- und TGA-Bauteilen setzen: `GAB` oder `MAB_{Mietername}` (ein Wert je Bauteil).
+    2. Vor der Ausschreibung und nach jeder Vertragsänderung das Modell gegen die vereinbarte Kostenteilung prüfen: Bauteile ohne Kostenträger, nicht vereinbarte Mieter und Abweichungen vom Vertrag.
+    3. Abweichungen mit der Bauherrschaft klären und die geprüfte Zuordnung dokumentieren.
+
+    **Lieferergebnis**
+    - Architektur- und TGA-Fachmodelle mit eindeutiger Zuordnung der Bauteile zu Grund- oder benanntem Mieterausbau.
+    - Prüfbericht mit kolorierter Kosten- und Mengenauswertung, offenen Zuordnungslücken und Abweichungen von der vereinbarten Kostenteilung.
+  fr: |-
+    Avant l'appel d'offres et après chaque modification du contrat, vérifier que les imputations de la maquette correspondent à la répartition des coûts entre aménagement de base et aménagement locataire convenue dans le bail.
+
+    **Situation de départ**
+    - La répartition des coûts entre aménagement de base et aménagement locataire est décidée dans le bail, mais n'est suivie que dans des listes pour les plans, les quantités et l'appel d'offres.
+    - Il en résulte souvent des incohérences et des responsabilités oubliées, avec des conséquences sur les coûts et les délais.
+
+    **Objectif et bénéfice**
+    - Affecter chaque élément d'architecture et CVC à une seule imputation – aménagement de base ou aménagement locataire nommé – et la vérifier par rapport à la répartition contractuelle des coûts.
+    - Les plans colorés et les quantités par imputation font apparaître lacunes et contradictions avant qu'elles n'entrent dans l'appel d'offres et le décompte.
+
+    **Déroulement**
+    1. Définir l'imputation des éléments d'architecture et CVC selon le bail : `GAB` ou `MAB_{nom du locataire}` (une valeur par élément).
+    2. Avant l'appel d'offres et après chaque modification du contrat, contrôler la maquette par rapport à la répartition convenue : éléments sans imputation, locataires non convenus et écarts par rapport au contrat.
+    3. Clarifier les écarts avec le maître d'ouvrage et documenter l'affectation contrôlée.
+
+    **Livrable**
+    - Maquettes architecture et CVC avec affectation claire des éléments à l'aménagement de base ou d'un locataire désigné.
+    - Rapport de contrôle avec évaluation coloriée des coûts et quantités, lacunes d'affectation ouvertes et écarts par rapport à la répartition convenue.
+  it: |-
+    Prima della gara e dopo ogni modifica contrattuale, verificare che le imputazioni nel modello corrispondano alla ripartizione dei costi tra allestimento di base e allestimento locatario concordata nel contratto di locazione.
+
+    **Situazione di partenza**
+    - La ripartizione dei costi tra allestimento di base e allestimento locatario è decisa nel contratto di locazione, ma per planimetrie, quantità e gara è seguita solo in elenchi.
+    - Ne derivano spesso incongruenze e responsabilità dimenticate, con conseguenze su costi e tempi.
+
+    **Obiettivo e beneficio**
+    - Assegnare ogni componente di architettura e impianti a una sola imputazione – allestimento di base o allestimento locatario nominato – e verificarla rispetto alla ripartizione contrattuale dei costi.
+    - Planimetrie colorate e quantità per imputazione rendono visibili lacune e contraddizioni prima che entrino in gara e nel conteggio.
+
+    **Svolgimento**
+    1. Impostare l'imputazione dei componenti di architettura e impianti secondo il contratto di locazione: `GAB` o `MAB_{nome locatario}` (un valore per componente).
+    2. Prima della gara e dopo ogni modifica contrattuale, verificare il modello rispetto alla ripartizione concordata: componenti senza imputazione, locatari non concordati e scostamenti dal contratto.
+    3. Chiarire gli scostamenti con il committente e documentare l'assegnazione verificata.
+
+    **Risultato della fornitura**
+    - Modelli di architettura e impianti con assegnazione chiara degli elementi all'allestimento di base o di un locatario specifico.
+    - Rapporto di verifica con valutazione colorata di costi e quantità, lacune di assegnazione aperte e scostamenti dalla ripartizione concordata.
+  en: |-
+    Before tendering and after every contract change, check that the cost bearers in the model match the split between base building and tenant fit-out agreed in the lease.
+
+    **Starting point**
+    - The cost split between base building and tenant fit-out is decided in the lease, but drawings, quantities, and tendering only track it in lists.
+    - This often causes inconsistencies and forgotten responsibilities, with consequences for cost and schedule.
+
+    **Goal & benefit**
+    - Assign every architecture and MEP component to exactly one cost bearer – base building or a named tenant fit-out – and check it against the contractual cost split.
+    - Coloured plans and quantities by cost bearer show gaps and conflicts before they reach the tender and the final account.
+
+    **Process**
+    1. Set the cost bearer on architecture and MEP components according to the lease: `GAB` or `MAB_{TenantName}` (one value per component).
+    2. Before tendering and after every contract change, check the model against the agreed split: components without a cost bearer, tenants not covered by a lease, and deviations from the contract.
+    3. Resolve deviations with the client and document the checked assignment.
+
+    **Deliverable**
+    - Architecture and MEP models with components clearly assigned to the base building or a named tenant fit-out.
+    - Check report with a coloured cost and quantity evaluation, open assignment gaps, and deviations from the agreed cost split.
+workflow_group: koordination
+parent_workflow: pragmaticbim:workflow/qas
+picture_link:
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: >-
+  Custom property CostInterface in ePset_Cost. Values: GAB (base building)
+  or MAB_{tenant name} (tenant fit-out). Tenant names are project-specific – no closed enum.
+  The cost split itself is decided in the lease; this use case checks the model against it.
+  Typical phases 32–41 (design through tender).

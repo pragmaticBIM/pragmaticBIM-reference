@@ -107,4 +107,4 @@ comment: >-
   and CalculatedType are traceable references and do not replace that
   breakdown. Mapping between component types and specification items may be
   many-to-many. The model supplements rather than replaces the written tender
-  documents. Downstream: trade tender bases and BES-ELEMENT-COST-POSTCALC.
+  documents. Downstream: trade tender bases and QAS-ELEMENT-COST-POSTCALC.

@@ -10,7 +10,7 @@ EARLY_COST_WORKFLOW = "pragmaticbim:workflow/des-element-based-cost-early"
 LATE_COST_WORKFLOW = "pragmaticbim:workflow/des-element-based-cost-late"
 TENDER_WORKFLOW = "pragmaticbim:workflow/bes-element-based-tendering"
 POSTCALC_WORKFLOW = (
-    "pragmaticbim:workflow/bes-element-cost-post-calculation"
+    "pragmaticbim:workflow/qas-element-cost-post-calculation"
 )
 
 REFERENCE_QUANTITIES = {
