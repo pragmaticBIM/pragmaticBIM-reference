@@ -2,90 +2,90 @@ id: pragmaticbim:workflow/bes-existing-structure-model-procurement
 code: BES-EXISTING-STRUCTURE
 sort_order: 8
 name:
-  de: Gebäudekörper und Rohbau nachmodellieren
+  de: Gebäudekörper und Rohbau konzeptbezogen nachmodellieren
   fr: Modéliser le bâtiment et le gros œuvre selon le concept
   it: Modellare l’edificio e la struttura grezza in funzione del concetto
   en: Model the building and structural shell for the chosen concept
 description:
   de: |-
-    Gebäudekörper und Rohbau erst nach Klärung der Konzeptrichtung gezielt nachmodellieren, damit nur die für Umbau, Rückbau oder Erweiterung benötigten Bestandsinformationen erarbeitet werden.
+    Die Bauherrschaft bestellt nach Klärung der Konzeptrichtung ein georeferenziertes Bestandsmodell von Gebäudekörper und Rohbau, beschränkt auf die konzeptrelevanten Bereiche, damit Umbau, Rückbau oder Erweiterung auf geprüften Bestandsangaben beruhen und keine unnötigen Bereiche bezahlt werden.
 
     **Ausgangslage**
     - Bestandspläne fehlen häufig, sind unvollständig oder bilden nachträgliche Umbauten nicht ab.
     - Eine vollständige Nachmodellierung vor dem Konzeptentscheid erzeugt ungeprüfte Annahmen und erfasst Bereiche, die für die gewählte Lösung möglicherweise nicht benötigt werden.
 
     **Ziel & Nutzen**
-    - Auf Grundlage der georeferenzierten Punktwolke nur die konzeptrelevanten Bereiche und Bauteile mit zweckgerechter Tiefe nachmodellieren.
-    - Möglichst das beauftragte Projektteam mit der Nachmodellierung betrauen, damit Aufnahmeumfang und Planung unmittelbar aufeinander abgestimmt sind.
-    - Bestandsbauteilen eine Produktklasse zuweisen, damit Rückbau, Kosten und Ökobilanz auf denselben Schlüssel zugreifen wie der Neubau.
+    - Nur die für die gewählte Lösung benötigten Bereiche bestellen und verbleibende Annahmen vor der Planung sichtbar machen.
+    - Die Nachmodellierung möglichst beim beauftragten Planungsteam bestellen, damit Aufnahmeumfang und Planung aufeinander abgestimmt sind.
+    - Rückbau, Kosten und Ökobilanz auf denselben Bauteilschlüssel abstützen wie den Neubau.
 
     **Ablauf**
-    1. Nach Klärung der Konzeptrichtung die georeferenzierte Punktwolke und vorhandenen Bestandspläne bereitstellen sowie die relevanten Bereiche und Bauteile festlegen.
-    2. Sichtbare Geometrie anhand der Punktwolke nachmodellieren, Bestandspläne damit plausibilisieren und Abweichungen, nicht sichtbare Konstruktionen sowie Annahmen kennzeichnen.
-    3. Kritische Stellen punktuell nachmessen und, wenn möglich, sondieren; bestätigte und weiterhin angenommene Angaben dokumentieren und das Modell für die Planung freigeben.
+    1. Nach Klärung der Konzeptrichtung relevante Bereiche, Bauteile und Erfassungstiefe festlegen, Punktwolke und vorhandene Bestandspläne bereitstellen und die Nachmodellierung bestellen.
+    2. Bestandsmodell einfordern und prüfen, ob Abweichungen zu den Bestandsplänen, nicht sichtbare Konstruktionen und Annahmen gekennzeichnet und kritische Stellen nachgemessen oder sondiert sind.
+    3. Modell mit dokumentierten Annahmen freigeben und als Grundlage für Planung, Rückbau, Kosten und Ökobilanz weiterverwenden.
 
     **Lieferergebnis**
     - Konzeptbezogenes, georeferenziertes Bestandsmodell der relevanten Bereiche von Gebäudekörper und Rohbau.
     - Dokumentierter Abgleich von Punktwolke und Bestandsplänen mit erkennbaren Abweichungen, Sondierungsbefunden und verbleibenden Annahmen.
     - Vereinbarte Erfassungstiefe, geprüfte kritische Stellen und Modellfreigabe als nachvollziehbare Planungsgrundlage.
   fr: |-
-    Ne modéliser de manière ciblée le bâtiment et le gros œuvre qu’une fois l’orientation du concept arrêtée, afin de produire uniquement les informations sur l’existant nécessaires à la transformation, à la déconstruction ou à l’extension.
+    Le maître d’ouvrage commande, une fois l’orientation du concept arrêtée, une maquette géoréférencée de l’existant pour le bâtiment et le gros œuvre, limitée aux zones déterminantes pour le concept, afin que la transformation, la déconstruction ou l’extension reposent sur des données vérifiées de l’existant et qu’aucune zone inutile ne soit payée.
 
     **Situation de départ**
     - Les plans de l’existant manquent souvent, sont incomplets ou ne tiennent pas compte de transformations ultérieures.
     - Une modélisation complète avant le choix du concept génère des hypothèses non vérifiées et saisit des zones qui ne seront peut-être pas utiles à la solution retenue.
 
     **Objectif et bénéfice**
-    - À partir du nuage de points géoréférencé, ne modéliser que les zones et éléments déterminants pour le concept, avec une profondeur adaptée à l’usage.
-    - Confier si possible la modélisation à l’équipe de projet mandatée afin de coordonner directement le périmètre du relevé et les besoins des études.
-    - Attribuer une classe de produit aux éléments existants, afin que la déconstruction, les coûts et l’écobilan s’appuient sur la même clé que le neuf.
+    - Ne commander que les zones nécessaires à la solution retenue et rendre visibles les hypothèses restantes avant les études.
+    - Commander si possible la modélisation à l’équipe de projet mandatée afin que le périmètre du relevé et les études soient coordonnés.
+    - Appuyer la déconstruction, les coûts et l’écobilan sur la même clé d’éléments que le neuf.
 
     **Déroulement**
-    1. Une fois l’orientation du concept arrêtée, fournir le nuage de points géoréférencé et les plans disponibles, puis définir les zones et éléments déterminants.
-    2. Modéliser la géométrie visible d’après le nuage de points, vérifier la plausibilité des plans et signaler les écarts, les constructions non visibles et les hypothèses.
-    3. Effectuer des mesures ponctuelles et, si possible, des sondages aux endroits critiques; documenter les données confirmées et celles qui restent supposées, puis valider la maquette pour les études.
+    1. Une fois l’orientation du concept arrêtée, définir les zones, les éléments et la profondeur de saisie déterminants, fournir le nuage de points et les plans de l’existant disponibles, puis commander la modélisation.
+    2. Exiger la maquette de l’existant et vérifier que les écarts par rapport aux plans, les constructions non visibles et les hypothèses sont signalés et que les endroits critiques ont été mesurés ou sondés.
+    3. Valider la maquette avec les hypothèses documentées et la réutiliser comme base pour les études, la déconstruction, les coûts et l’écobilan.
 
     **Livrable**
     - Maquette géoréférencée de l’existant, limitée aux zones du bâtiment et du gros œuvre déterminantes pour le concept.
     - Comparaison documentée du nuage de points et des plans, avec les écarts, résultats des sondages et hypothèses restantes clairement identifiables.
     - Profondeur de saisie convenue, endroits critiques contrôlés et validation de la maquette comme base traçable des études.
   it: |-
-    Modellare in modo mirato l’edificio e la struttura grezza solo dopo aver chiarito l’indirizzo del concetto, così da elaborare unicamente le informazioni dello stato di fatto necessarie per trasformazione, smantellamento o ampliamento.
+    La committenza ordina, dopo aver chiarito l’indirizzo del concetto, un modello georiferito dello stato di fatto dell’edificio e della struttura grezza, limitato alle aree rilevanti per il concetto, affinché trasformazione, smantellamento o ampliamento si basino su dati verificati dello stato di fatto e non vengano pagate aree inutili.
 
     **Situazione di partenza**
     - I piani dello stato di fatto spesso mancano, sono incompleti o non riportano trasformazioni successive.
     - Una modellazione completa prima della scelta del concetto genera ipotesi non verificate e rileva aree che potrebbero non servire alla soluzione scelta.
 
     **Obiettivo e beneficio**
-    - Sulla base della nuvola di punti georiferita, modellare soltanto le aree e i componenti rilevanti per il concetto, con una profondità adeguata allo scopo.
-    - Affidare se possibile la modellazione al gruppo di progettazione incaricato, affinché il perimetro del rilievo e le esigenze della progettazione siano coordinati direttamente.
-    - Assegnare una classe di prodotto ai componenti esistenti, affinché smantellamento, costi ed ecobilancio si basino sulla stessa chiave della nuova costruzione.
+    - Ordinare solo le aree necessarie alla soluzione scelta e rendere visibili le ipotesi rimanenti prima della progettazione.
+    - Ordinare se possibile la modellazione al gruppo di progettazione incaricato, affinché perimetro del rilievo e progettazione siano coordinati.
+    - Basare smantellamento, costi ed ecobilancio sulla stessa chiave dei componenti della nuova costruzione.
 
     **Svolgimento**
-    1. Dopo aver chiarito l’indirizzo del concetto, fornire la nuvola di punti georiferita e i piani disponibili e definire le aree e i componenti rilevanti.
-    2. Modellare la geometria visibile in base alla nuvola di punti, verificare la plausibilità dei piani e contrassegnare scostamenti, costruzioni non visibili e ipotesi.
-    3. Eseguire misurazioni puntuali e, se possibile, sondaggi nei punti critici; documentare i dati confermati e quelli ancora ipotizzati e approvare il modello per la progettazione.
+    1. Dopo aver chiarito l’indirizzo del concetto, definire aree, componenti e profondità di acquisizione rilevanti, fornire la nuvola di punti e i piani disponibili e ordinare la modellazione.
+    2. Richiedere il modello dello stato di fatto e verificare che scostamenti rispetto ai piani, costruzioni non visibili e ipotesi siano contrassegnati e che i punti critici siano stati misurati o sondati.
+    3. Approvare il modello con le ipotesi documentate e riutilizzarlo come base per progettazione, smantellamento, costi ed ecobilancio.
 
     **Risultato della fornitura**
     - Modello georiferito dello stato di fatto limitato alle aree dell’edificio e della struttura grezza rilevanti per il concetto.
     - Confronto documentato tra nuvola di punti e piani, con scostamenti, risultati dei sondaggi e ipotesi rimanenti chiaramente riconoscibili.
     - Profondità di acquisizione concordata, punti critici verificati e approvazione del modello come base tracciabile per la progettazione.
   en: |-
-    Model the building and structural shell selectively once the concept direction is clear, so that only the existing-condition information required for conversion, deconstruction, or extension is produced.
+    Once the concept direction is clear, the client orders a georeferenced existing-condition model of the building and structural shell, limited to the areas relevant to the concept, so that conversion, deconstruction, or extension rest on checked existing-condition information and no unnecessary areas are paid for.
 
     **Starting point**
     - Existing drawings are often missing, incomplete, or do not include later alterations.
     - Complete modelling before the concept decision creates unchecked assumptions and captures areas that may not be needed for the chosen solution.
 
     **Goal & benefit**
-    - Use the georeferenced point cloud to model only the areas and components relevant to the concept, at a depth suited to the intended use.
-    - Where possible, commission the appointed project team to create the model so that survey scope and design needs are coordinated directly.
-    - Assign a product class to existing components so that deconstruction, costs, and LCA use the same key as new construction.
+    - Order only the areas needed for the chosen solution and make remaining assumptions visible before design.
+    - Where possible, order the modelling from the appointed design team so that survey scope and design are coordinated.
+    - Base deconstruction, costs, and LCA on the same component key as new construction.
 
     **Process**
-    1. Once the concept direction is clear, provide the georeferenced point cloud and available existing drawings and define the relevant areas and components.
-    2. Model visible geometry from the point cloud, check the plausibility of the drawings, and identify deviations, concealed construction, and assumptions.
-    3. Take local check measurements and, where possible, open up critical locations; document confirmed and remaining assumed information and approve the model for design.
+    1. Once the concept direction is clear, define the relevant areas, components, and capture depth, provide the point cloud and available existing drawings, and order the modelling.
+    2. Request the existing-condition model and check that deviations from the existing drawings, concealed construction, and assumptions are identified and that critical locations have been measured or opened up.
+    3. Approve the model with its documented assumptions and reuse it as the basis for design, deconstruction, costs, and LCA.
 
     **Deliverable**
     - Concept-specific georeferenced existing-condition model of the relevant building and structural-shell areas.
@@ -106,6 +106,10 @@ comment: >-
   Drittes Beschaffungspaket für Bestandsgrundlagen. Baut auf Lagebezug,
   Gelände und Gebäude-Punktwolke auf. Nachmodellierung erst nach Klärung der
   Konzeptrichtung und vorzugsweise durch das beauftragte Projektteam.
+  Visible geometry is modelled from the georeferenced point cloud; existing
+  drawings are checked against it; critical locations are measured locally
+  and, where possible, opened up. Existing components carry a ProductClass so
+  deconstruction, costs, and LCA share the key used for new construction.
   Attribute pack on Rohbau/Gebäudekörper elements: Status/ElementStatus,
   PredefinedType, LoadBearing (where defined), ProductClass (where defined),
   and the element reference BaseQuantity (or all Qto_ attrs when no

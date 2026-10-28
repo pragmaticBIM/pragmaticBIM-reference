@@ -19,7 +19,7 @@ All 135 use cases from `workflows/`, grouped by the 6 top-level categories of th
 | --- | --- | --- | --- |
 | BES-COST-INTERFACE | Visualize cost interfaces between base building and tenant fit-out | Kostenschnittstellen zwischen Grund- und Mieterausbau visualisieren | [`bes-cost-interface-tenant-fitout.yaml`](workflows/bes-cost-interface-tenant-fitout.yaml) |
 | BES-AWARD-INTERFACE | Visualize award interfaces | Vergabeschnittstellen visualisieren | [`bes-award-interface-visualization.yaml`](workflows/bes-award-interface-visualization.yaml) |
-| BES-CONCRETE-TENDER | Concrete works tender from model | Ausschreibung Betonarbeiten ab Modell | [`bes-concrete-tender-from-model.yaml`](workflows/bes-concrete-tender-from-model.yaml) |
+| BES-CONCRETE-TENDER | Provide the basis for the concrete tender | Grundlage für die Betonausschreibung liefern | [`bes-concrete-tender-from-model.yaml`](workflows/bes-concrete-tender-from-model.yaml) |
 | BES-FLOORING-TENDER | Provide the basis for the flooring tender | Grundlage für die Bodenbelagsausschreibung liefern | [`bes-flooring-tender-basis.yaml`](workflows/bes-flooring-tender-basis.yaml) |
 | BES-FIRESTOP-TENDER | Provide the basis for the firestop tender | Grundlage für die Brandschott-Ausschreibung liefern | [`bes-firestop-tender-basis.yaml`](workflows/bes-firestop-tender-basis.yaml) |
 | BES-ELEMENT-TENDER | Prepare the tender from component types and quantities | Ausschreibung aus Bauteiltypen und Mengen erstellen | [`bes-element-based-tendering.yaml`](workflows/bes-element-based-tendering.yaml) |
@@ -43,7 +43,7 @@ All 135 use cases from `workflows/`, grouped by the 6 top-level categories of th
 | BES-OWNER-CDE | Procure the CDE through the client | CDE durch die Bauherrschaft beschaffen | [`bes-owner-cde-procurement.yaml`](workflows/bes-owner-cde-procurement.yaml) |
 | BES-EXISTING-SITE | Procure the spatial reference and terrain | Lagebezug und Gelände beschaffen | [`bes-survey-existing-model-procurement.yaml`](workflows/bes-survey-existing-model-procurement.yaml) |
 | BES-EXISTING-POINT-CLOUD | Capture the existing building as a point cloud | Gebäudebestand als Punktwolke aufnehmen | [`bes-existing-building-point-cloud-procurement.yaml`](workflows/bes-existing-building-point-cloud-procurement.yaml) |
-| BES-EXISTING-STRUCTURE | Model the building and structural shell for the chosen concept | Gebäudekörper und Rohbau nachmodellieren | [`bes-existing-structure-model-procurement.yaml`](workflows/bes-existing-structure-model-procurement.yaml) |
+| BES-EXISTING-STRUCTURE | Model the building and structural shell for the chosen concept | Gebäudekörper und Rohbau konzeptbezogen nachmodellieren | [`bes-existing-structure-model-procurement.yaml`](workflows/bes-existing-structure-model-procurement.yaml) |
 | BES-EXISTING-BUILDING-MEP | Procure the existing structural shell, fit-out, and MEP model | Bestandsmodell von Rohbau, Ausbau und TGA beschaffen | [`bes-existing-building-mep-model-procurement.yaml`](workflows/bes-existing-building-mep-model-procurement.yaml) |
 | BES-EXISTING-CIRCULARITY | Procure existing-condition information for circularity | Kreislaufwirtschaftliche Bestandsinformationen beschaffen | [`bes-existing-circularity-procurement.yaml`](workflows/bes-existing-circularity-procurement.yaml) |
 | BES-ROOM-PROGRAM | Formulate the room programme for designer procurement and competition | Raumprogramm für Planerbeschaffung und Wettbewerb formulieren | [`bes-room-program-brief.yaml`](workflows/bes-room-program-brief.yaml) |
@@ -54,7 +54,7 @@ All 135 use cases from `workflows/`, grouped by the 6 top-level categories of th
 
 | Code | English | Deutsch | File |
 | --- | --- | --- | --- |
-| BES-DESIGNER-PROCUREMENT | Procure designers who are capable in their discipline and digitally | Fachlich und digital kompetente Planer beschaffen | [`bes-designer-procurement.yaml`](workflows/bes-designer-procurement.yaml) |
+| BES-DESIGNER-PROCUREMENT | Procure a design team with professional and digital expertise | Fachlich und digital kompetentes Planungsteam beschaffen | [`bes-designer-procurement.yaml`](workflows/bes-designer-procurement.yaml) |
 | BES-ABSTRACTBIM-COMP | Evaluate competition entries with a room model | Wettbewerbsbeiträge mit Raummodell auswerten | [`bes-abstractbim-competition-evaluation.yaml`](workflows/bes-abstractbim-competition-evaluation.yaml) |
 | BES-DESIGN-BUILD | Procure design-build services with a binding offer | Design-Build-Leistung mit verbindlichem Preis beschaffen | [`bes-design-build-procurement.yaml`](workflows/bes-design-build-procurement.yaml) |
 | BES-IPD | Procure IPD services against a functional base reference and reference costs | IPD-Leistung über funktionale Grundreferenz und Referenzkosten beschaffen | [`bes-ipd-procurement.yaml`](workflows/bes-ipd-procurement.yaml) |
