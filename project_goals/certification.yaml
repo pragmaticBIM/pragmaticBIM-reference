@@ -31,6 +31,7 @@ description:
     Without it, energy, material, and sound insulation targets are agreed one by one. Only at certification does it turn out that one of them misses the label requirement.
 status: active
 is_boundary_condition: true
+allows_multiple: true
 comment: 'Keine eigenen Anwendungsfälle; wirkt über implied_levels auf PG-34, PG-35 und PG-38. Kein Einfluss auf Anwendungsfälle der Nutzung oder Raumtypen. Mindeststufen je Label vor Freigabe fachlich bestätigen.'
 levels:
 - id: pragmaticbim:project-goal-level/certification-none
@@ -47,6 +48,7 @@ levels:
     it: L'edificio non viene certificato. Standard energetico, obiettivo di gas serra e isolamento acustico vengono fissati separatamente.
     en: The building is not certified. Energy standard, greenhouse gas target, and sound insulation are set one by one.
   status: active
+  exclusive: true
   activated_workflows: []
   comment: ''
 - id: pragmaticbim:project-goal-level/certification-minergie-eco
