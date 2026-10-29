@@ -15,7 +15,9 @@ description:
     sicurezza e fabbisogno di superficie.
   en: Learners carry out experiments or creative and manual work. The activity determines equipment, safety,
     and area demand.
-use: pragmaticbim:use/bildung
+scope: use
+uses:
+- pragmaticbim:use/bildung
 tags:
 - praxis
 status: active

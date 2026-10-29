@@ -14,7 +14,7 @@ definition:
 room_type_kind: room
 room_name: RN-01-30-03
 activity: M-RES
-default_scope: dwelling
+default_scope: unit
 status: active
 configurations:
 - id: pragmaticbim:room-type-configuration/wohneinheit-default

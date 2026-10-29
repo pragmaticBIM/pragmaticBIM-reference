@@ -15,7 +15,9 @@ description:
     superficie tecnica e compartimenti antincendio.
   en: Servers need uninterrupted power. The supply concept determines redundancy, plant area, and fire
     compartments.
-use: pragmaticbim:use/rechenzentrum
+scope: use
+uses:
+- pragmaticbim:use/rechenzentrum
 tags:
 - energie
 status: active

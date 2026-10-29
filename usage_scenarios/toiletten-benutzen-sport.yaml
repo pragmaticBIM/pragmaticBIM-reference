@@ -15,7 +15,9 @@ description:
     rotelle. La suddivisione determina numero, superficie e flessibilità d'uso.
   en: Athletes and spectators need toilets during their stay, including wheelchair users. The split determines
     number, area, and how flexibly the toilets can be used.
-use: pragmaticbim:use/sport
+scope: use
+uses:
+- pragmaticbim:use/sport
 tags:
 - sanitaer
 status: active

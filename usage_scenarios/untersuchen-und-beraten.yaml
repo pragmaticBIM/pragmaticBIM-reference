@@ -14,7 +14,9 @@ description:
   it: I professionisti esaminano e consigliano i pazienti. La distribuzione dei locali determina cambi,
     riservatezza e utilizzo.
   en: Professionals examine and consult patients. Room allocation determines transfers, privacy, and utilisation.
-use: pragmaticbim:use/gesundheit
+scope: use
+uses:
+- pragmaticbim:use/gesundheit
 tags:
 - behandlung
 status: active

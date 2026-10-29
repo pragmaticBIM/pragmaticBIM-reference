@@ -15,7 +15,9 @@ description:
     determina affollamento, assenza di ostacoli e vie di fuga.
   en: Learners and teachers change rooms at the same time at the start and end of breaks. The access arrangement
     determines crowding, step-free access, and escape routes.
-use: pragmaticbim:use/bildung
+scope: use
+uses:
+- pragmaticbim:use/bildung
 tags:
 - erschliessung
 status: active

@@ -15,7 +15,9 @@ description:
     dal nucleo domestico.
   en: Visitors stay overnight now and then. A bed of their own decides whether guests
     sleep apart from the household.
-use: pragmaticbim:use/wohnen
+scope: unit
+uses:
+- pragmaticbim:use/wohnen
 tags:
 - wohnalltag
 status: active

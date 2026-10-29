@@ -15,7 +15,9 @@ description:
     movimentazione e separazione dei percorsi persone e merci.
   en: Goods and staff move between the dock and storage floors. The access arrangement determines loads,
     handling time, and separation of people and goods routes.
-use: pragmaticbim:use/logistik
+scope: use
+uses:
+- pragmaticbim:use/logistik
 tags:
 - erschliessung
 status: active

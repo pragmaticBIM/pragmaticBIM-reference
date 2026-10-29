@@ -15,7 +15,9 @@ description:
     e separazione dei percorsi persone e merci.
   en: Staff and materials reach the production floors. The access arrangement determines loads, material
     flow, and separation of people and goods routes.
-use: pragmaticbim:use/produktion
+scope: use
+uses:
+- pragmaticbim:use/produktion
 tags:
 - erschliessung
 status: active

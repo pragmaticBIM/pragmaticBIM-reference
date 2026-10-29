@@ -16,7 +16,9 @@ description:
     determinano superficie, ventilazione e percorsi verso il punto di raccolta.
   en: The operation regularly takes packaging and residual waste away. The separated fractions
     determine area, ventilation, and routes to the collection point.
-use: pragmaticbim:use/logistik
+scope: use
+uses:
+- pragmaticbim:use/logistik
 tags:
 - entsorgung
 status: active

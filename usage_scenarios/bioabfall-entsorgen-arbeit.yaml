@@ -16,7 +16,9 @@ description:
     altri rifiuti. Il punto di raccolta determina odori, raffreddamento e ritmo di ritiro.
   en: Staff take food and green waste away during the working day, separately from other waste. The
     collection point determines odour, cooling, and how often it is collected.
-use: pragmaticbim:use/arbeit
+scope: use
+uses:
+- pragmaticbim:use/arbeit
 tags:
 - entsorgung
 status: active

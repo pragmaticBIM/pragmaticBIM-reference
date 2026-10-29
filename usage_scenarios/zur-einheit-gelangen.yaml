@@ -15,6 +15,22 @@ description:
     determina percorsi, assenza di ostacoli e fabbisogno di superficie.
   en: Users travel from the building entrance to their unit. The access arrangement
     determines routes, step-free access, and area demand.
+scope: project
+uses:
+- pragmaticbim:use/wohnen
+- pragmaticbim:use/arbeit
+- pragmaticbim:use/bildung
+- pragmaticbim:use/verkauf
+- pragmaticbim:use/gastronomie
+- pragmaticbim:use/beherbergung
+- pragmaticbim:use/versammlung
+- pragmaticbim:use/gesundheit
+- pragmaticbim:use/produktion
+- pragmaticbim:use/logistik
+- pragmaticbim:use/sport
+- pragmaticbim:use/labor
+- pragmaticbim:use/rechenzentrum
+- pragmaticbim:use/verkehr
 tags:
 - ankommen
 status: active

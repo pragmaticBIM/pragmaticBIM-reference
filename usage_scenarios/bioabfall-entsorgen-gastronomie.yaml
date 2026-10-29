@@ -16,7 +16,9 @@ description:
     rifiuti. Il punto di raccolta determina odori, raffreddamento e ritmo di ritiro.
   en: The operation and the guests regularly take food waste away, separately from other waste. The
     collection point determines odour, cooling, and how often it is collected.
-use: pragmaticbim:use/gastronomie
+scope: use
+uses:
+- pragmaticbim:use/gastronomie
 tags:
 - entsorgung
 status: active

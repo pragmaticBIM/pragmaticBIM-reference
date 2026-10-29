@@ -15,7 +15,9 @@ description:
     deve offrire superfici di parcheggio.
   en: Residents arrive by car. The parking place decides the route from the car to the dwelling and whether
     the site needs parking space.
-use: pragmaticbim:use/wohnen
+scope: use
+uses:
+- pragmaticbim:use/wohnen
 tags:
 - ankommen
 status: active

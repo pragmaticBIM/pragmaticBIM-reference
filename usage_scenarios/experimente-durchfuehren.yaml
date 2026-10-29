@@ -15,7 +15,9 @@ description:
     fornitura di fluidi e livello di sicurezza.
   en: Researchers carry out tests, measurements, and analyses. The laboratory type determines ventilation,
     media supply, and safety level.
-use: pragmaticbim:use/labor
+scope: use
+uses:
+- pragmaticbim:use/labor
 tags:
 - forschung
 status: active

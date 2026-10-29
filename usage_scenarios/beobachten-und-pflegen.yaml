@@ -15,7 +15,9 @@ description:
     sorveglianza e percorsi assistenziali.
   en: Patients remain under observation after treatment or overnight. Length of stay determines privacy,
     monitoring, and care routes.
-use: pragmaticbim:use/gesundheit
+scope: use
+uses:
+- pragmaticbim:use/gesundheit
 tags:
 - pflege
 status: active

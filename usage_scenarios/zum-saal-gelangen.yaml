@@ -18,7 +18,9 @@ description:
   en: Audiences reach the hall within a short time and leave together, and stage equipment must reach
     other floors. The access arrangement determines crowd flow, escape routes, and separation of audience
     and deliveries.
-use: pragmaticbim:use/versammlung
+scope: use
+uses:
+- pragmaticbim:use/versammlung
 tags:
 - erschliessung
 status: active
