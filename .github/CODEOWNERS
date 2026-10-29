@@ -2,7 +2,6 @@
 # automatically. See MERGE_POLICY.md.
 
 /.github/            @simondilhas
-/.coderabbit.yaml    @simondilhas
 /MERGE_POLICY.md     @simondilhas
 /LICENSE             @simondilhas
 /schema/             @simondilhas
