@@ -1,7 +1,8 @@
 name: Merge gate
 
 # Classifies each PR as auto-merge, wait, back-to-author or escalate.
-# Rules: MERGE_POLICY.md. Logic: .github/scripts/merge_gate.py
+# Rules: MERGE_POLICY.md. Settings: .github/merge-gate.json.
+# Logic: .github/scripts/merge_gate.py (same script in every pragmaticBIM repo).
 #
 # Security: pull_request_target and status run with write access. The job
 # checks out the protected development branch only and never runs PR code.
@@ -10,13 +11,14 @@ on:
   pull_request_target:
     types: [opened, reopened, synchronize, ready_for_review, labeled, unlabeled]
     branches: [development]
-  status: # CodeRabbit finished (or re-finished) its review
+  status: # an "ai-review" status was posted (only used when require_ai_review is on)
 
 permissions:
   contents: read
   pull-requests: write
   issues: write
   statuses: read
+  checks: read
 
 concurrency:
   group: merge-gate-${{ github.event.pull_request.number || github.event.sha }}
@@ -26,7 +28,7 @@ jobs:
   gate:
     if: >-
       github.event_name == 'pull_request_target' ||
-      (github.event.context == 'CodeRabbit' && github.event.state != 'pending')
+      (github.event.context == 'ai-review' && github.event.state != 'pending')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

@@ -1,0 +1,27 @@
+{
+  "base_branch": "development",
+  "maintainer": "simondilhas",
+  "trusted_authors": [
+    "simondilhas",
+    "pragmaticbim-editor-staging[bot]",
+    "editor-pragmaticbim-ch[bot]",
+    "pragmaticbim-editor-lokal[bot]"
+  ],
+  "auto_merge_paths": [
+    "elements/",
+    "values/",
+    "workflows/",
+    "project_goals/",
+    "domains/",
+    "models/",
+    "documents/",
+    "uses/",
+    "usage_scenarios/",
+    "room_types/"
+  ],
+  "auto_merge_suffixes": [".yaml", ".yml"],
+  "max_files": 25,
+  "max_changed_lines": 400,
+  "merge_mode": "auto_merge",
+  "require_ai_review": false
+}
