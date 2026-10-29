@@ -10,7 +10,7 @@ PR metadata through the GitHub API, so it is safe under pull_request_target.
 Environment:
   GITHUB_TOKEN       token of the workflow (labels, comments, reviews)
   AUTOMERGE_TOKEN    optional fine-grained PAT of a maintainer who may push to
-                     main; used only to enable auto-merge. Without it the gate
+                     development; used only to enable auto-merge. Without it the gate
                      labels the PR "automerge-ready" and a maintainer clicks
                      "Enable auto-merge".
   GITHUB_REPOSITORY  owner/repo
@@ -29,7 +29,7 @@ from dataclasses import dataclass, field
 
 # --- Policy --------------------------------------------------------------
 
-BASE_BRANCH = "main"
+BASE_BRANCH = "development"
 MAINTAINER = "simondilhas"
 
 # Authors whose PRs may auto-merge. Everyone else is reviewed by the maintainer.
@@ -269,7 +269,7 @@ def render(decision: Decision, auto_merge_enabled: bool) -> str:
         lines += ["", "A maintainer can click *Enable auto-merge*; it merges once all required checks pass."]
     if decision.action == "fix":
         lines += ["", "Address or answer the CodeRabbit findings and resolve the threads. A second change request escalates to the maintainer."]
-    lines += ["", "Rules: [MERGE_POLICY.md](../blob/main/MERGE_POLICY.md)"]
+    lines += ["", "Rules: [MERGE_POLICY.md](../blob/development/MERGE_POLICY.md)"]
     return "\n".join(lines)
 
 

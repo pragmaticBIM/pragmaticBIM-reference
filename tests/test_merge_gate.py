@@ -14,7 +14,7 @@ _spec.loader.exec_module(gate)
 REPO = {"full_name": "pragmaticBIM/pragmaticBIM-reference"}
 
 
-def pr(author="simondilhas", fork=False, base="main", draft=False):
+def pr(author="simondilhas", fork=False, base="development", draft=False):
     head_repo = {"full_name": "someone/fork"} if fork else REPO
     return {
         "user": {"login": author},

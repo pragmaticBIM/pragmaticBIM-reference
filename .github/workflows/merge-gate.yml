@@ -3,13 +3,13 @@ name: Merge gate
 # Classifies each PR as auto-merge, wait, back-to-author or escalate.
 # Rules: MERGE_POLICY.md. Logic: .github/scripts/merge_gate.py
 #
-# Security: pull_request_target and status run the workflow from main with
-# write access. The job checks out main only and never runs PR code.
+# Security: pull_request_target and status run with write access. The job
+# checks out the protected development branch only and never runs PR code.
 
 on:
   pull_request_target:
     types: [opened, reopened, synchronize, ready_for_review, labeled, unlabeled]
-    branches: [main]
+    branches: [development]
   status: # CodeRabbit finished (or re-finished) its review
 
 permissions:
@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.repository.default_branch }}
+          ref: development
           sparse-checkout: .github/scripts
           persist-credentials: false
       - uses: actions/setup-python@v5
