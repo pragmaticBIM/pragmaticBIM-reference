@@ -1,0 +1,167 @@
+# Mirrors agent_* labels into the "Agent stage" field of the Roadmap project,
+# so a board view can use the labels as kanban columns.
+#
+# Labels are the source of truth. Sync is one-way: label -> field.
+#   agent_ready    (or agent-ready)    -> agent_ready
+#   agent_working  (or agent-working)  -> agent_progress
+#   agent_finished                     -> agent_review
+#   issue closed with an agent label   -> agent_done
+#   no agent label                     -> empty column (= pool)
+# If an issue carries several agent labels, the most advanced one wins.
+#
+# Setup (once per repo):
+#   secret  PROJECT_TOKEN  classic PAT with scopes: project, repo
+# Optional repo variables (defaults shown):
+#   PROJECT_OWNER = simondilhas
+#   PROJECT_TITLE = Roadmap
+#
+# Run "Agent stage sync" manually (workflow_dispatch) once to backfill
+# existing labeled issues.
+
+name: Agent stage sync
+
+on:
+  issues:
+    types: [labeled, unlabeled, opened, reopened, closed]
+  workflow_dispatch:
+
+concurrency:
+  group: agent-stage-sync-${{ github.event.issue.number || 'backfill' }}
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        env:
+          PROJECT_OWNER: ${{ vars.PROJECT_OWNER || 'simondilhas' }}
+          PROJECT_TITLE: ${{ vars.PROJECT_TITLE || 'Roadmap' }}
+        with:
+          github-token: ${{ secrets.PROJECT_TOKEN }}
+          script: |
+            const FIELD = 'Agent stage';
+            // Order = progression. Later entries win when several labels are set.
+            const STAGES = [
+              { label: 'agent_ready',    from: ['agent_ready', 'agent-ready'],     color: 'BLUE',   description: 'Specified, an agent can pick it up' },
+              { label: 'agent_progress', from: ['agent_working', 'agent-working'], color: 'YELLOW', description: 'An agent is working on it' },
+              { label: 'agent_review',   from: ['agent_finished'],                 color: 'PURPLE', description: 'Agent finished, waiting for human check' },
+              { label: 'agent_done',     from: [],                                 color: 'GREEN',  description: 'Issue closed' },
+            ];
+            const AGENT_LABELS = STAGES.flatMap(s => s.from);
+
+            const owner = process.env.PROJECT_OWNER;
+            const title = process.env.PROJECT_TITLE;
+
+            // --- project lookup (user first, then organization) -----------------
+            async function findProject() {
+              for (const kind of ['user', 'organization']) {
+                let after = null;
+                try {
+                  do {
+                    const r = await github.graphql(
+                      `query($login:String!,$after:String){ ${kind}(login:$login){
+                         projectsV2(first:50, after:$after){
+                           nodes{ id title } pageInfo{ hasNextPage endCursor } } } }`,
+                      { login: owner, after });
+                    const page = r[kind].projectsV2;
+                    const hit = page.nodes.find(p => p.title === title);
+                    if (hit) return hit.id;
+                    after = page.pageInfo.hasNextPage ? page.pageInfo.endCursor : null;
+                  } while (after);
+                } catch (e) { /* login is not this kind; try the other */ }
+              }
+              throw new Error(`Project "${title}" not found for ${owner}. Check PROJECT_TOKEN scopes.`);
+            }
+
+            // --- field lookup / creation -----------------------------------------
+            async function ensureField(projectId) {
+              const r = await github.graphql(
+                `query($id:ID!,$name:String!){ node(id:$id){ ... on ProjectV2 {
+                   field(name:$name){ ... on ProjectV2SingleSelectField { id options{ id name } } } } } }`,
+                { id: projectId, name: FIELD });
+              let field = r.node.field;
+              if (!field) {
+                const c = await github.graphql(
+                  `mutation($p:ID!,$name:String!,$opts:[ProjectV2SingleSelectFieldOptionInput!]!){
+                     createProjectV2Field(input:{projectId:$p, dataType:SINGLE_SELECT, name:$name, singleSelectOptions:$opts}){
+                       projectV2Field{ ... on ProjectV2SingleSelectField { id options{ id name } } } } }`,
+                  { p: projectId, name: FIELD,
+                    opts: STAGES.map(s => ({ name: s.label, color: s.color, description: s.description })) });
+                field = c.createProjectV2Field.projectV2Field;
+                core.info(`Created field "${FIELD}"`);
+              }
+              const missing = STAGES.filter(s => !field.options.some(o => o.name === s.label));
+              if (missing.length) {
+                throw new Error(`Field "${FIELD}" lacks options: ${missing.map(m => m.label).join(', ')}. Add them in the project settings.`);
+              }
+              return field;
+            }
+
+            function stageFor(labels, state) {
+              const names = labels.map(l => (typeof l === 'string' ? l : l.name));
+              let stage = null;
+              for (const s of STAGES) if (s.from.some(n => names.includes(n))) stage = s.label;
+              if (stage && String(state).toLowerCase() === 'closed') stage = 'agent_done';
+              return stage;
+            }
+
+            // --- sync one issue --------------------------------------------------
+            async function syncIssue(issueNodeId, labels, state, ref, projectId, field) {
+              const stage = stageFor(labels, state);
+              const r = await github.graphql(
+                `query($id:ID!){ node(id:$id){ ... on Issue {
+                   projectItems(first:50){ nodes{ id project{ id } } } } } }`,
+                { id: issueNodeId });
+              let item = r.node.projectItems.nodes.find(n => n.project.id === projectId);
+
+              if (!stage) {
+                if (item) {
+                  await github.graphql(
+                    `mutation($p:ID!,$i:ID!,$f:ID!){ clearProjectV2ItemFieldValue(input:{projectId:$p,itemId:$i,fieldId:$f}){ clientMutationId } }`,
+                    { p: projectId, i: item.id, f: field.id });
+                }
+                core.info(`${ref}: no agent label -> pool`);
+                return;
+              }
+
+              if (!item) {
+                const a = await github.graphql(
+                  `mutation($p:ID!,$c:ID!){ addProjectV2ItemById(input:{projectId:$p,contentId:$c}){ item{ id } } }`,
+                  { p: projectId, c: issueNodeId });
+                item = a.addProjectV2ItemById.item;
+                core.info(`${ref}: added to project`);
+              }
+              const option = field.options.find(o => o.name === stage);
+              await github.graphql(
+                `mutation($p:ID!,$i:ID!,$f:ID!,$o:String!){ updateProjectV2ItemFieldValue(input:{
+                   projectId:$p,itemId:$i,fieldId:$f,value:{singleSelectOptionId:$o}}){ clientMutationId } }`,
+                { p: projectId, i: item.id, f: field.id, o: option.id });
+              core.info(`${ref}: -> ${stage}`);
+            }
+
+            // --- main ------------------------------------------------------------
+            const projectId = await findProject();
+            const field = await ensureField(projectId);
+
+            if (context.eventName === 'issues') {
+              const issue = context.payload.issue;
+              const touched = context.payload.label?.name;
+              const relevant = (touched && AGENT_LABELS.includes(touched)) ||
+                               issue.labels.some(l => AGENT_LABELS.includes(l.name));
+              if (!relevant) { core.info('No agent label involved, skipping'); return; }
+              await syncIssue(issue.node_id, issue.labels, issue.state, `#${issue.number}`, projectId, field);
+            } else {
+              // Backfill: every issue in this repo that carries an agent label.
+              const seen = new Set();
+              for (const name of AGENT_LABELS) {
+                const issues = await github.paginate(github.rest.issues.listForRepo, {
+                  ...context.repo, labels: name, state: 'all', per_page: 100 });
+                for (const i of issues) {
+                  if (i.pull_request || seen.has(i.number)) continue;
+                  seen.add(i.number);
+                  await syncIssue(i.node_id, i.labels, i.state, `#${i.number}`, projectId, field);
+                }
+              }
+              core.info(`Backfilled ${seen.size} issue(s)`);
+            }
