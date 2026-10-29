@@ -13,7 +13,7 @@ description:
     détermine la surface technique, le refroidissement et la disponibilité.
   it: L'azienda gestisce server e apparecchiature di rete propri. L'ubicazione dell'IT determina superficie
     tecnica, raffreddamento e disponibilità.
-  en: The organisation runs its own servers and network equipment. The location of IT determines plant
+  en: The organization runs its own servers and network equipment. The location of IT determines plant
     area, cooling, and availability.
 use: pragmaticbim:use/arbeit
 tags:

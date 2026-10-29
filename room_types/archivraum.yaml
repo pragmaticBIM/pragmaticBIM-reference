@@ -5,7 +5,7 @@ name:
   de: Archivraum
   fr: Archives
   it: Archivio
-  en: Archive Room
+  en: Archive room
 definition:
   de: Raum für Dokumenten- und Aktenarchive.
   fr: Local pour les archives de documents et de dossiers.
@@ -33,7 +33,7 @@ configurations:
       de: Archivraum
       fr: Archives
       it: Archivio
-      en: Archive Room
+      en: Archive room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

@@ -5,7 +5,7 @@ name:
   de: Kälteraum
   fr: Local des groupes froids
   it: Locale gruppi frigoriferi
-  en: Chiller Room
+  en: Chiller room
 definition:
   de: Raum für Kälteanlagen.
   fr: Local pour les installations de froid.
@@ -33,7 +33,7 @@ configurations:
       de: Kälteraum
       fr: Local des groupes froids
       it: Locale gruppi frigoriferi
-      en: Chiller Room
+      en: Chiller room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

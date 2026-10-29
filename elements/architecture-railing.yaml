@@ -162,9 +162,9 @@ attributes:
       Component status for permanent and temporary fall protection.
 
       **Allowed values**
-      - `NEW` — new
+      - `NEW` — new build
       - `EXISTING` — existing
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
       - `TEMPORARY` — temporary
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
@@ -234,9 +234,9 @@ attributes:
       Component status for permanent and temporary fall protection.
 
       **Allowed values**
-      - `NEW` — new
+      - `NEW` — new build
       - `EXISTING` — existing
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
       - `TEMPORARY` — temporary
 
       **Note**

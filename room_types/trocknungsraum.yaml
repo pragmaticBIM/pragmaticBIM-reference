@@ -5,7 +5,7 @@ name:
   de: Trocknungsraum
   fr: Local de séchage
   it: Locale di asciugatura
-  en: Drying Room
+  en: Drying room
 definition:
   de: Raum zum Trocknen der Wäsche, im Unterschied zum Waschraum.
   fr: Local pour le séchage du linge, distinct du local de lavage.
@@ -33,7 +33,7 @@ configurations:
       de: Trocknungsraum
       fr: Local de séchage
       it: Locale di asciugatura
-      en: Drying Room
+      en: Drying room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

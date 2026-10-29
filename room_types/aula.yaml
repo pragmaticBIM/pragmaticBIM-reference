@@ -5,7 +5,7 @@ name:
   de: Aula
   fr: Aula
   it: Aula
-  en: Auditorium
+  en: Assembly hall
 definition:
   de: Grosse Versammlungshalle für Veranstaltungen.
   fr: Grande salle de rassemblement pour les manifestations.
@@ -33,7 +33,7 @@ configurations:
       de: Aula
       fr: Aula
       it: Aula
-      en: Auditorium
+      en: Assembly hall
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

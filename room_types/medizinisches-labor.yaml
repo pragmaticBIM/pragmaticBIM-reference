@@ -5,7 +5,7 @@ name:
   de: Medizinisches Labor
   fr: Laboratoire médical
   it: Laboratorio medico
-  en: Medical Laboratory
+  en: Medical laboratory
 definition:
   de: Labor für medizinische Analysen.
   fr: Laboratoire pour les analyses médicales.
@@ -33,7 +33,7 @@ configurations:
       de: Medizinisches Labor
       fr: Laboratoire médical
       it: Laboratorio medico
-      en: Medical Laboratory
+      en: Medical laboratory
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

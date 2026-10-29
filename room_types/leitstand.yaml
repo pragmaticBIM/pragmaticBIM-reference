@@ -5,7 +5,7 @@ name:
   de: Leitstand
   fr: Salle de contrôle
   it: Sala di controllo
-  en: Control Room
+  en: Control room
 definition:
   de: Besetzter Raum für Überwachung und Steuerung von Gebäude- oder IT-Anlagen.
   fr: Local occupé pour la surveillance et la commande des installations du bâtiment ou informatiques.
@@ -33,7 +33,7 @@ configurations:
       de: Leitstand
       fr: Salle de contrôle
       it: Sala di controllo
-      en: Control Room
+      en: Control room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

@@ -5,7 +5,7 @@ name:
   de: Aufwachraum
   fr: Salle de réveil
   it: Sala risveglio
-  en: Recovery Room
+  en: Recovery room
 definition:
   de: Raum für postoperative Überwachung.
   fr: Local pour la surveillance après une intervention.
@@ -33,7 +33,7 @@ configurations:
       de: Aufwachraum
       fr: Salle de réveil
       it: Sala risveglio
-      en: Recovery Room
+      en: Recovery room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

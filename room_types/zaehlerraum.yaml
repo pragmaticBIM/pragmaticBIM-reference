@@ -5,7 +5,7 @@ name:
   de: Zählerraum
   fr: Local des compteurs
   it: Locale contatori
-  en: Meter Room
+  en: Meter room
 definition:
   de: Raum für Verbrauchszähler.
   fr: Local pour les compteurs de consommation.
@@ -33,7 +33,7 @@ configurations:
       de: Zählerraum
       fr: Local des compteurs
       it: Locale contatori
-      en: Meter Room
+      en: Meter room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

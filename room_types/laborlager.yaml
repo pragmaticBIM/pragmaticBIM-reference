@@ -5,7 +5,7 @@ name:
   de: Laborlager
   fr: Dépôt de laboratoire
   it: Deposito di laboratorio
-  en: Laboratory Storage
+  en: Laboratory store
 definition:
   de: Lager für Labormaterial und Verbrauchsgüter.
   fr: Dépôt pour le matériel et les consommables de laboratoire.
@@ -33,7 +33,7 @@ configurations:
       de: Laborlager
       fr: Dépôt de laboratoire
       it: Deposito di laboratorio
-      en: Laboratory Storage
+      en: Laboratory store
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

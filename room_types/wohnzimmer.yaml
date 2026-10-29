@@ -5,7 +5,7 @@ name:
   de: Wohnzimmer
   fr: Séjour
   it: Soggiorno
-  en: Living Room
+  en: Living room
 definition:
   de: Raum für Wohnen und Entspannung.
   fr: Local pour habiter et se détendre.
@@ -33,7 +33,7 @@ configurations:
       de: Wohnzimmer
       fr: Séjour
       it: Soggiorno
-      en: Living Room
+      en: Living room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

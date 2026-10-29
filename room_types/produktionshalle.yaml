@@ -5,7 +5,7 @@ name:
   de: Produktionshalle
   fr: Halle de production
   it: Capannone di produzione
-  en: Production Hall
+  en: Production hall
 definition:
   de: Halle für Produktionsprozesse.
   fr: Halle pour les processus de production.
@@ -33,7 +33,7 @@ configurations:
       de: Produktionshalle
       fr: Halle de production
       it: Capannone di produzione
-      en: Production Hall
+      en: Production hall
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

@@ -5,7 +5,7 @@ name:
   de: Ausstellungsraum
   fr: Salle d'exposition
   it: Sala espositiva
-  en: Exhibition Space
+  en: Exhibition space
 definition:
   de: Raum für Ausstellungen.
   fr: Local pour les expositions.
@@ -33,7 +33,7 @@ configurations:
       de: Ausstellungsraum
       fr: Salle d'exposition
       it: Sala espositiva
-      en: Exhibition Space
+      en: Exhibition space
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

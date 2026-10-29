@@ -71,7 +71,7 @@ options:
     de: Innenhof
     fr: Cour intérieure
     it: Corte interna
-    en: Patio
+    en: Courtyard
   room_relationships:
   - from_room_type: pragmaticbim:room-type/wohnzimmer
     to_room_type: pragmaticbim:room-type/innenhof

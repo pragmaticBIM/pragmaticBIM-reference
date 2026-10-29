@@ -5,7 +5,7 @@ name:
   de: Wintergarten
   fr: Jardin d'hiver
   it: Giardino d'inverno
-  en: Winter Garden
+  en: Winter garden
 definition:
   de: Geschlossener verglaster Wohnraum, im Unterschied zu offenen Aussenplattformen
     wie Balkon, Terrasse und Innenhof.
@@ -37,7 +37,7 @@ configurations:
       de: Wintergarten
       fr: Jardin d'hiver
       it: Giardino d'inverno
-      en: Winter Garden
+      en: Winter garden
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

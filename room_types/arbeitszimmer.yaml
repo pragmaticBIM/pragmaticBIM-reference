@@ -5,7 +5,7 @@ name:
   de: Arbeitszimmer
   fr: Bureau à domicile
   it: Studio
-  en: Home Study
+  en: Home study
 definition:
   de: Wohnlicher Raum für Arbeit oder Studium.
   fr: Local d'habitation pour le travail ou l'étude.
@@ -33,7 +33,7 @@ configurations:
       de: Arbeitszimmer
       fr: Bureau à domicile
       it: Studio
-      en: Home Study
+      en: Home study
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

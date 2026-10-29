@@ -5,7 +5,7 @@ name:
   de: Aufzugszone
   fr: Palier d'ascenseur
   it: Zona ascensore
-  en: Elevator Lobby
+  en: Elevator lobby
 definition:
   de: Vorzone vor dem Lift auf einem Geschoss.
   fr: Palier devant l'ascenseur à un étage.
@@ -33,7 +33,7 @@ configurations:
       de: Aufzugszone
       fr: Palier d'ascenseur
       it: Zona ascensore
-      en: Elevator Lobby
+      en: Elevator lobby
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

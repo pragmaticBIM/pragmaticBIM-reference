@@ -5,7 +5,7 @@ name:
   de: Briefkasten- und Paketfachanlage Aussen
   fr: Installation extérieure de boîtes aux lettres et casiers à colis
   it: Impianto esterno di cassette postali e armadietti per pacchi
-  en: Exterior Mailbox and Parcel Locker Area
+  en: Exterior mailbox and parcel locker area
 definition:
   de: Aussenfläche für Briefkästen und Paketfächer.
   fr: Aire extérieure réservée aux boîtes aux lettres et aux casiers à colis.
@@ -33,7 +33,7 @@ configurations:
       de: Briefkasten- und Paketfachanlage Aussen
       fr: Installation extérieure de boîtes aux lettres et casiers à colis
       it: Impianto esterno di cassette postali e armadietti per pacchi
-      en: Exterior Mailbox and Parcel Locker Area
+      en: Exterior mailbox and parcel locker area
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

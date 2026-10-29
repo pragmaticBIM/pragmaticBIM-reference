@@ -5,7 +5,7 @@ name:
   de: Hotelzimmer
   fr: Chambre d'hôtel
   it: Camera d'albergo
-  en: Hotel Room
+  en: Hotel room
 definition:
   de: Übernachtungszimmer für Gäste.
   fr: Chambre pour les hôtes qui passent la nuit.
@@ -33,7 +33,7 @@ configurations:
       de: Hotelzimmer
       fr: Chambre d'hôtel
       it: Camera d'albergo
-      en: Hotel Room
+      en: Hotel room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

@@ -5,7 +5,7 @@ name:
   de: Montagebereich
   fr: Zone de montage
   it: Zona di montaggio
-  en: Assembly Area
+  en: Assembly area
 definition:
   de: Bereich für Montage.
   fr: Zone de montage.
@@ -33,7 +33,7 @@ configurations:
       de: Montagebereich
       fr: Zone de montage
       it: Zona di montaggio
-      en: Assembly Area
+      en: Assembly area
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

@@ -5,7 +5,7 @@ name:
   de: Überdachter Hof
   fr: Cour couverte
   it: Cortile coperto
-  en: Covered Yard
+  en: Covered yard
 definition:
   de: Überdachter Aussenarbeits- oder Lagerhof.
   fr: Cour de travail ou de stockage extérieure couverte.
@@ -33,7 +33,7 @@ configurations:
       de: Überdachter Hof
       fr: Cour couverte
       it: Cortile coperto
-      en: Covered Yard
+      en: Covered yard
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

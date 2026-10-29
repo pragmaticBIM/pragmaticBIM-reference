@@ -5,7 +5,7 @@ name:
   de: Barrierefreies WC
   fr: WC sans obstacle
   it: WC privo di barriere
-  en: Accessible Toilet
+  en: Accessible toilet
 definition:
   de: Rollstuhlgängiges WC.
   fr: WC accessible en fauteuil roulant.
@@ -33,7 +33,7 @@ configurations:
       de: Barrierefreies WC
       fr: WC sans obstacle
       it: WC privo di barriere
-      en: Accessible Toilet
+      en: Accessible toilet
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

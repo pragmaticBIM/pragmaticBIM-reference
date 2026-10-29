@@ -5,7 +5,7 @@ name:
   de: Überdachter Fussweg
   fr: Passage couvert
   it: Passaggio coperto
-  en: Covered Walkway
+  en: Covered walkway
 definition:
   de: Überdachter Aussenweg für Fussgänger.
   fr: Cheminement extérieur couvert pour les piétons.
@@ -33,7 +33,7 @@ configurations:
       de: Überdachter Fussweg
       fr: Passage couvert
       it: Passaggio coperto
-      en: Covered Walkway
+      en: Covered walkway
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

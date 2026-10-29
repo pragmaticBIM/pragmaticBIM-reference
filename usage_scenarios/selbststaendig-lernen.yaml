@@ -28,7 +28,7 @@ options:
     de: Lernraum
     fr: Salle d'étude
     it: Aula studio
-    en: Learning room
+    en: Study room
   adds:
   - pragmaticbim:room-type/lernraum
 - id: pragmaticbim:scenario-option/selbststaendig-lernen-library

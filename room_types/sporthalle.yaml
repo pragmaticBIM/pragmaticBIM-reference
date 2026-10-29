@@ -5,7 +5,7 @@ name:
   de: Sporthalle
   fr: Salle de sport
   it: Palestra
-  en: Sports Hall
+  en: Sports hall
 definition:
   de: Halle für Hallensport und Sportunterricht.
   fr: Salle pour les sports en salle et l'éducation physique.
@@ -33,7 +33,7 @@ configurations:
       de: Sporthalle
       fr: Salle de sport
       it: Palestra
-      en: Sports Hall
+      en: Sports hall
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

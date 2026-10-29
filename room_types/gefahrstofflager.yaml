@@ -5,7 +5,7 @@ name:
   de: Gefahrstofflager
   fr: Dépôt de matières dangereuses
   it: Deposito sostanze pericolose
-  en: Hazardous Material Storage
+  en: Hazardous materials store
 definition:
   de: Lager für Gefahrstoffe.
   fr: Dépôt pour les matières dangereuses.
@@ -33,7 +33,7 @@ configurations:
       de: Gefahrstofflager
       fr: Dépôt de matières dangereuses
       it: Deposito sostanze pericolose
-      en: Hazardous Material Storage
+      en: Hazardous materials store
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

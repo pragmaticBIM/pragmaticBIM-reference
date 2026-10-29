@@ -5,7 +5,7 @@ name:
   de: Kellerabteil
   fr: Compartiment de cave
   it: Comparto cantina
-  en: Cellar Compartment
+  en: Cellar compartment
 definition:
   de: Zugeordnetes Kellerabteil einer Wohneinheit.
   fr: Compartiment de cave attribué à un logement.
@@ -33,7 +33,7 @@ configurations:
       de: Kellerabteil
       fr: Compartiment de cave
       it: Comparto cantina
-      en: Cellar Compartment
+      en: Cellar compartment
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

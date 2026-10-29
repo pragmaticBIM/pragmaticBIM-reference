@@ -5,7 +5,7 @@ name:
   de: Schalterhalle
   fr: Hall des guichets
   it: Atrio biglietteria
-  en: Ticket Hall
+  en: Ticket hall
 definition:
   de: Halle mit Billettschaltern und -automaten im Personenverkehr.
   fr: Hall avec guichets et distributeurs de billets pour le transport de voyageurs.
@@ -33,7 +33,7 @@ configurations:
       de: Schalterhalle
       fr: Hall des guichets
       it: Atrio biglietteria
-      en: Ticket Hall
+      en: Ticket hall
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

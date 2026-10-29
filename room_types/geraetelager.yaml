@@ -5,7 +5,7 @@ name:
   de: Gerätelager
   fr: Dépôt d'appareils
   it: Deposito apparecchi
-  en: Equipment Storage
+  en: Equipment storage
 definition:
   de: Lager für Geräte und Werkzeuge.
   fr: Dépôt pour les appareils et les outils.
@@ -33,7 +33,7 @@ configurations:
       de: Gerätelager
       fr: Dépôt d'appareils
       it: Deposito apparecchi
-      en: Equipment Storage
+      en: Equipment storage
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

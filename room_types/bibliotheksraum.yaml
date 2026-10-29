@@ -5,7 +5,7 @@ name:
   de: Bibliotheksraum
   fr: Salle de bibliothèque
   it: Sala biblioteca
-  en: Library Room
+  en: Library room
 definition:
   de: Raum für Lesen und Bibliotheksnutzung.
   fr: Local pour la lecture et l'usage de la bibliothèque.
@@ -33,7 +33,7 @@ configurations:
       de: Bibliotheksraum
       fr: Salle de bibliothèque
       it: Sala biblioteca
-      en: Library Room
+      en: Library room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

@@ -5,7 +5,7 @@ name:
   de: Wartungsbucht
   fr: Poste d'entretien
   it: Postazione di manutenzione
-  en: Maintenance Bay
+  en: Maintenance bay
 definition:
   de: Bucht für Gerätewartung.
   fr: Poste pour l'entretien des appareils.
@@ -33,7 +33,7 @@ configurations:
       de: Wartungsbucht
       fr: Poste d'entretien
       it: Postazione di manutenzione
-      en: Maintenance Bay
+      en: Maintenance bay
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

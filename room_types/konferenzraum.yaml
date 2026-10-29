@@ -5,7 +5,7 @@ name:
   de: Konferenzraum
   fr: Salle de conférence
   it: Sala conferenze
-  en: Conference Room
+  en: Conference room
 definition:
   de: Raum für formelle Sitzungen und Präsentationen.
   fr: Local pour les séances formelles et les présentations.
@@ -33,7 +33,7 @@ configurations:
       de: Konferenzraum
       fr: Salle de conférence
       it: Sala conferenze
-      en: Conference Room
+      en: Conference room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

@@ -5,7 +5,7 @@ name:
   de: Untersuchungsraum
   fr: Salle d'examen
   it: Sala visite
-  en: Examination Room
+  en: Examination room
 definition:
   de: Raum für ärztliche Untersuchung.
   fr: Local pour l'examen médical.
@@ -33,7 +33,7 @@ configurations:
       de: Untersuchungsraum
       fr: Salle d'examen
       it: Sala visite
-      en: Examination Room
+      en: Examination room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

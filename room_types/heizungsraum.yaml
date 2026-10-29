@@ -5,7 +5,7 @@ name:
   de: Heizungsraum
   fr: Chaufferie
   it: Centrale termica
-  en: Boiler Room
+  en: Boiler room
 definition:
   de: Raum für Heizkessel und Wärmeerzeugung.
   fr: Local pour les chaudières et la production de chaleur.
@@ -33,7 +33,7 @@ configurations:
       de: Heizungsraum
       fr: Chaufferie
       it: Centrale termica
-      en: Boiler Room
+      en: Boiler room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

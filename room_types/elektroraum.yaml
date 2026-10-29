@@ -5,7 +5,7 @@ name:
   de: Elektroraum
   fr: Local électrique
   it: Locale elettrico
-  en: Electrical Room
+  en: Electrical room
 definition:
   de: Raum für elektrische Verteilung.
   fr: Local pour la distribution électrique.
@@ -33,7 +33,7 @@ configurations:
       de: Elektroraum
       fr: Local électrique
       it: Locale elettrico
-      en: Electrical Room
+      en: Electrical room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

@@ -5,7 +5,7 @@ name:
   de: Abfallraum
   fr: Local déchets
   it: Locale rifiuti
-  en: Waste Room
+  en: Waste room
 definition:
   de: Raum für das Sammeln und Bereitstellen von Siedlungsabfall.
   fr: Local pour collecter et présenter les déchets ménagers.
@@ -33,7 +33,7 @@ configurations:
       de: Abfallraum
       fr: Local déchets
       it: Locale rifiuti
-      en: Waste Room
+      en: Waste room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

@@ -5,7 +5,7 @@ name:
   de: Esszimmer
   fr: Salle à manger
   it: Sala da pranzo
-  en: Dining Room
+  en: Dining room
 definition:
   de: Raum für Mahlzeiten.
   fr: Local pour les repas.
@@ -33,7 +33,7 @@ configurations:
       de: Esszimmer
       fr: Salle à manger
       it: Sala da pranzo
-      en: Dining Room
+      en: Dining room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

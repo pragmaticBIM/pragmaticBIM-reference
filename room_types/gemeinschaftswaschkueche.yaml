@@ -5,7 +5,7 @@ name:
   de: Gemeinschaftswaschküche
   fr: Buanderie commune
   it: Lavanderia comune
-  en: Communal Laundry
+  en: Communal laundry
 definition:
   de: Gemeinsame Waschküche mehrerer Wohneinheiten, im Unterschied zur Waschküche
     innerhalb einer Wohnung.
@@ -36,7 +36,7 @@ configurations:
       de: Gemeinschaftswaschküche
       fr: Buanderie commune
       it: Lavanderia comune
-      en: Communal Laundry
+      en: Communal laundry
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

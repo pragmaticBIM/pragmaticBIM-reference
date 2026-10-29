@@ -5,7 +5,7 @@ name:
   de: Gewerbeküche
   fr: Cuisine professionnelle
   it: Cucina professionale
-  en: Commercial Kitchen
+  en: Commercial kitchen
 definition:
   de: Küche für die gewerbliche Zubereitung von Speisen.
   fr: Cuisine destinée à la préparation professionnelle de repas.
@@ -33,7 +33,7 @@ configurations:
       de: Gewerbeküche
       fr: Cuisine professionnelle
       it: Cucina professionale
-      en: Commercial Kitchen
+      en: Commercial kitchen
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

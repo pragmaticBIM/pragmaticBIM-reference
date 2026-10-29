@@ -5,7 +5,7 @@ name:
   de: Kopierraum
   fr: Local de reprographie
   it: Locale fotocopie
-  en: Copy Room
+  en: Copy room
 definition:
   de: Gemeinsam genutzter Raum für Drucken, Kopieren und Büromaterial.
   fr: Local partagé pour l'impression, la copie et les fournitures de bureau.
@@ -33,7 +33,7 @@ configurations:
       de: Kopierraum
       fr: Local de reprographie
       it: Locale fotocopie
-      en: Copy Room
+      en: Copy room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

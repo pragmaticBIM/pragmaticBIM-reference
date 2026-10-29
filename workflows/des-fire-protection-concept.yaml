@@ -70,24 +70,26 @@ description:
     - Modello dei requisiti antincendio approvato con regole tracciabili, requisiti di riferimento attribuiti spazialmente e riferimento allo stato del progetto
     - Locali con assegnazione univoca al compartimento antincendio secondo il concetto antincendio
   en: |-
-    Translate the approved fire protection concept into a rule-based requirements model so requirements can be assigned unambiguously and continuously checked as the design changes.
+    Keep the approved fire protection concept as a requirements model instead of a fire protection plan, so requirements are assigned unambiguously to the components and can be checked when the design changes.
 
     **Starting point**
-    - Protection goals, fire compartments, and required fire-resistance classes often appear in loosely coordinated reports and separate drawings; several reference documents must be consulted on site.
-    - On BIM projects, architects often transfer requirements to components manually. This creates additional effort and divergent interpretations, while the fire protection specialist usually checks only at phase completion or on request.
+    - Fire protection requirements are usually drawn on a fire protection plan. The architects then transfer them to the components.
+    - Plan and model drift apart when floor plans change. The assignment has to be redrawn or updated, and the fire protection specialist usually checks only at phase completion or on request.
 
     **Goal & benefit**
-    - The fire protection specialist translates the approved concept into traceable rules and a binding discipline requirements model.
-    - Assign requirements unambiguously to the affected components based on spaces, fire compartments, and spatial relationships.
-    - Detect the effects of design changes early through automated comparison with the architecture model.
+    - The fire protection specialist translates the approved concept into a spatially assigned requirements model and keeps it as the check reference in place of the fire protection plan.
+    - Assign fire resistance unambiguously to the affected components based on the adjacent spaces.
+    - Detect the effects of design changes early by comparing against the architecture model.
 
     **Process**
     1. Provide the architecture model with clearly bounded spaces and the approved fire protection concept.
-    2. Translate protection goals, fire compartments, and fire-resistance requirements into rules and assign them spatially in the fire protection requirements model.
-    3. Coordinate the requirements model with the current design status, approve it as the check reference, and update it when discipline requirements change.
+    2. Assign fire compartments to the spaces and determine the fire resistance of each wall manually from its two adjacent spaces; add doors, slabs, and other relevant components accordingly.
+    3. Coordinate the requirements model with the current design status, approve it in place of the fire protection plan, and update it when discipline requirements change.
+
+    **Note:** When working with abstractBIM, walls are generated automatically from the spaces. Each wall has a 1:2 space relationship. This can be used to enrich fire protection requirements by rule.
 
     **Deliverable**
-    - Approved fire protection requirements model with traceable rules, spatially assigned target requirements, and a reference to the design status
+    - Approved fire protection requirements model with spatially assigned target requirements in place of a fire protection plan
     - Spaces with an unambiguous fire-compartment assignment as set out in the fire protection concept
 workflow_group: konzept-bewilligung
 parent_workflow: pragmaticbim:workflow/des

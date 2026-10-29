@@ -5,7 +5,7 @@ name:
   de: Pflegestationszimmer
   fr: Poste de soins
   it: Locale del personale di cura
-  en: Nurses Station
+  en: Nurses station
 definition:
   de: Zentrale Pflegestation.
   fr: Poste de soins central.
@@ -33,7 +33,7 @@ configurations:
       de: Pflegestationszimmer
       fr: Poste de soins
       it: Locale del personale di cura
-      en: Nurses Station
+      en: Nurses station
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

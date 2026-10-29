@@ -5,7 +5,7 @@ name:
   de: Pumpenraum
   fr: Local des pompes
   it: Locale pompe
-  en: Pump Room
+  en: Pump room
 definition:
   de: Raum für Pumpen und Flüssigkeitstechnik.
   fr: Local pour les pompes et la technique des fluides.
@@ -33,7 +33,7 @@ configurations:
       de: Pumpenraum
       fr: Local des pompes
       it: Locale pompe
-      en: Pump Room
+      en: Pump room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

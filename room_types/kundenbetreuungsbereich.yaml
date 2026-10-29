@@ -5,7 +5,7 @@ name:
   de: Kundenbetreuungsbereich
   fr: Accueil clientèle
   it: Area assistenza clienti
-  en: Customer Service Area
+  en: Customer service area
 definition:
   de: Bereich für Kundenbetreuung.
   fr: Zone d'accueil et de conseil à la clientèle.
@@ -33,7 +33,7 @@ configurations:
       de: Kundenbetreuungsbereich
       fr: Accueil clientèle
       it: Area assistenza clienti
-      en: Customer Service Area
+      en: Customer service area
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

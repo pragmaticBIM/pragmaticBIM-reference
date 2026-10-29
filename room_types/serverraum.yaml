@@ -5,7 +5,7 @@ name:
   de: Serverraum
   fr: Local serveurs
   it: Locale server
-  en: Server Room
+  en: Server room
 definition:
   de: Raum für IT- und Netzwerktechnik.
   fr: Local pour la technique informatique et de réseau.
@@ -33,7 +33,7 @@ configurations:
       de: Serverraum
       fr: Local serveurs
       it: Locale server
-      en: Server Room
+      en: Server room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

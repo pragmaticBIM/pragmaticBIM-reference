@@ -5,7 +5,7 @@ name:
   de: Allgemeiner Lagerraum
   fr: Dépôt général
   it: Deposito generale
-  en: General Storage
+  en: General storage
 definition:
   de: Raum für allgemeine Materiallagerung.
   fr: Local pour le stockage général de matériel.
@@ -33,7 +33,7 @@ configurations:
       de: Allgemeiner Lagerraum
       fr: Dépôt général
       it: Deposito generale
-      en: General Storage
+      en: General storage
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

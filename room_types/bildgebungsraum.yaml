@@ -5,7 +5,7 @@ name:
   de: Bildgebungsraum
   fr: Salle d'imagerie
   it: Sala di diagnostica per immagini
-  en: Imaging Room
+  en: Imaging room
 definition:
   de: Raum für diagnostische Bildgebung.
   fr: Local pour l'imagerie diagnostique.
@@ -33,7 +33,7 @@ configurations:
       de: Bildgebungsraum
       fr: Salle d'imagerie
       it: Sala di diagnostica per immagini
-      en: Imaging Room
+      en: Imaging room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

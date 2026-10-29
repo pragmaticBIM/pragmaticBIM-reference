@@ -5,7 +5,7 @@ name:
   de: Chemikalienlager
   fr: Dépôt de produits chimiques
   it: Deposito prodotti chimici
-  en: Chemical Storage
+  en: Chemical store
 definition:
   de: Lager für Chemikalien.
   fr: Dépôt pour les produits chimiques.
@@ -33,7 +33,7 @@ configurations:
       de: Chemikalienlager
       fr: Dépôt de produits chimiques
       it: Deposito prodotti chimici
-      en: Chemical Storage
+      en: Chemical store
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

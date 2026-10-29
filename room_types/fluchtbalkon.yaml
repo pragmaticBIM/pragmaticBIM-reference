@@ -5,7 +5,7 @@ name:
   de: Fluchtbalkon
   fr: Balcon de fuite
   it: Balcone di fuga
-  en: Escape Balcony
+  en: Escape balcony
 definition:
   de: Balkon als zweiter Rettungsweg.
   fr: Balcon servant de second chemin de fuite.
@@ -33,7 +33,7 @@ configurations:
       de: Fluchtbalkon
       fr: Balcon de fuite
       it: Balcone di fuga
-      en: Escape Balcony
+      en: Escape balcony
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

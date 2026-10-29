@@ -5,7 +5,7 @@ name:
   de: Kommunikationsraum
   fr: Local de communication
   it: Locale comunicazioni
-  en: Communications Room
+  en: Communications room
 definition:
   de: Raum für Telekommunikations- und Schwachstromanlagen.
   fr: Local pour les installations de télécommunication et de courant faible.
@@ -33,7 +33,7 @@ configurations:
       de: Kommunikationsraum
       fr: Local de communication
       it: Locale comunicazioni
-      en: Communications Room
+      en: Communications room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

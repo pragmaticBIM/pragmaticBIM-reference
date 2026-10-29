@@ -5,7 +5,7 @@ name:
   de: Computerraum
   fr: Salle informatique
   it: Aula informatica
-  en: Computer Lab
+  en: Computer room
 definition:
   de: Raum mit Computerarbeitsplätzen für Unterricht.
   fr: Local avec des postes informatiques pour l'enseignement.
@@ -33,7 +33,7 @@ configurations:
       de: Computerraum
       fr: Salle informatique
       it: Aula informatica
-      en: Computer Lab
+      en: Computer room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

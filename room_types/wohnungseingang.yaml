@@ -5,7 +5,7 @@ name:
   de: Wohnungseingang
   fr: Entrée du logement
   it: Ingresso dell'alloggio
-  en: Residential Entry
+  en: Residential entry
 definition:
   de: Eingangsbereich innerhalb einer Wohneinheit.
   fr: Zone d'entrée à l'intérieur d'un logement.
@@ -33,7 +33,7 @@ configurations:
       de: Wohnungseingang
       fr: Entrée du logement
       it: Ingresso dell'alloggio
-      en: Residential Entry
+      en: Residential entry
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
