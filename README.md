@@ -16,6 +16,30 @@ Configure intensity per project goal instead of ticking a use-case checklist. On
 
 Open it in the [web application](https://elementplan.pragmaticbim.ch), or read, fork, or copy it into your own project.
 
+## Use with AI assistants
+
+The Reference is available as a public MCP server, so Claude, ChatGPT and other MCP clients can answer with its goals, workflows, elements, attributes and room codes, citing stable IDs and catalog links.
+
+Endpoint (Streamable HTTP):
+
+```text
+https://pragmaticbim.ch/mcp
+```
+
+Setup steps for Claude, ChatGPT and other clients: [pragmaticbim.ch/de/mcp](https://pragmaticbim.ch/de/mcp).
+
+| Tool | Returns |
+| --- | --- |
+| `search_catalog` | Entries matching a query and the catalog filters |
+| `get_entry` | One entry with its relations (goal → uses → workflows → elements) |
+| `get_element_attributes` | An element's attributes with type, unit, IFC mapping and the workflows that require them |
+| `resolve_room_code` | Room type for a room code or name |
+| `list_vocabulary` | Allowed filter values (types, areas, goals, categories, uses) |
+
+Example question: *"Which attributes does an interior door need for the door tender, and how do they map to IFC?"*
+
+The server is read-only, needs no account and stores no project data. It serves the released version of this repository, so changes on `main` appear after the next release.
+
 ## What is in this repository
 
 | Folder | Role |
