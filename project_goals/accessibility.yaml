@@ -23,7 +23,7 @@ description:
     This framework condition sets how far the building is accessible beyond the legal minimum under SIA 500: adaptable or wheelchair-accessible throughout. It drives doors, spaces, and circulation.
 status: active
 is_boundary_condition: true
-comment: 'Kumulativ. Einfluss auf Raumtypen und Nutzungsszenarien: barrierefreies-wc, rampe, Varianten der toiletten-benutzen-* Szenarien und Türbreiten. Varianten über project_goal_levels verknüpfen ist offen. qas-accessibility-sia500-verification bleibt zusätzlich unter PG-09 Bewilligungssicherheit.'
+comment: 'Kumulativ. Einfluss auf Raumtypen und Nutzungsszenarien: barrierefreies-wc, rampe, Varianten des Szenarios toiletten-benutzen und Türbreiten. Varianten über project_goal_levels verknüpfen ist offen. qas-accessibility-sia500-verification bleibt zusätzlich unter PG-09 Bewilligungssicherheit.'
 levels:
 - id: pragmaticbim:project-goal-level/accessibility-minimum
   code: HIN-01
