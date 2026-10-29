@@ -8,85 +8,81 @@ name:
   en: Prepare the tender from component types and quantities
 description:
   de: |-
-    Die typbasierte Kosten- und Mengengrundlage in eine nach Gewerken gegliederte Ausschreibung überführen, ohne den Bezug zu den Bauteilen zu verlieren.
+    Die Bauherrschaft bestellt beim Planungsteam eine nach Gewerken gegliederte Ausschreibung, deren Positionen auf Bauteiltypen und Modellmengen zurückführbar sind, damit sie Angebote mit der Kostenberechnung vergleichen und die Nachkalkulation ohne erneute Mengenermittlung durchführen kann.
 
     **Ausgangslage**
-    - Kostenberechnungen sind nach Elementen aufgebaut, Leistungsverzeichnisse dagegen nach NPK, BKP oder Unternehmerlosen; eine direkte Übernahme der Gliederung ist deshalb nicht möglich.
-    - Werden Leistungen verschiedener Bauteile im LV zusammengefasst, gehen Typ- und Mengenbezüge verloren und die spätere Nachkalkulation wird aufwendig.
+    - Kostenberechnungen sind nach Elementen gegliedert, Leistungsverzeichnisse nach NPK, BKP oder Unternehmerlosen; ohne dokumentierte Zuordnung lassen sich Angebote nicht mit dem Kostenvoranschlag vergleichen.
+    - Fasst das Leistungsverzeichnis Leistungen verschiedener Bauteile zusammen, gehen Typ- und Mengenbezüge verloren; Abweichungen und Nachträge sind dann schwer zu begründen.
 
     **Ziel & Nutzen**
-    - Unternehmen eine vollständige und kalkulierbare Grundlage mit nachvollziehbaren Mengen und Leistungen bereitstellen.
-    - Elementbasierte Kostenpositionen eindeutig auf Gewerke und LV-Positionen abbilden.
-    - Produktklasse und Bauteiltyp als Referenz für Prüfung und Nachkalkulation erhalten, ohne die Gewerkegliederung zu ersetzen.
-    - Die gewerkespezifisch aufbereiteten Unterlagen so strukturieren, dass Modell, Pläne und Listen nach der Vergabe mit Produktentscheiden und ausführungsrelevanten Details fortgeschrieben werden können.
+    - Angebote positionsweise mit der Kostenberechnung vergleichen und Kostenabweichungen früh erkennen.
+    - Unternehmen eine vollständige, kalkulierbare Grundlage geben und damit Risikozuschläge und Nachträge reduzieren.
+    - Dieselbe Zuordnung für Vergabe, Nachkalkulation und Kostenkennwerte künftiger Projekte weiterverwenden.
 
     **Ablauf**
-    1. Freigegebene Bauteiltypen, Leistungsmerkmale, Mengen und Vergabepakete aus der detaillierten Kostenberechnung und den Fachmodellen bereitstellen.
-    2. Leistungen den BKP-/NPK-Positionen oder funktionalen Leistungsbeschrieben zuordnen und die Beziehungen zu Produktklasse, Bauteiltyp und Referenzmenge dokumentieren.
-    3. Modell, Ausschreibungspläne und Leistungsverzeichnis gemeinsam prüfen und mit eindeutigen Referenzen zwischen Bauteilen, Mengen, Positionen und Vergabepaketen abgeben.
+    1. Vergabepakete, Gliederung des Leistungsverzeichnisses und die geforderte Zuordnung zu Bauteiltypen und Modellmengen festlegen und mit dem Ausschreibungsauftrag bestellen.
+    2. Leistungsverzeichnis, Ausschreibungspläne und Zuordnung einfordern und stichprobenweise prüfen, ob Positionen und Mengen auf Bauteiltypen im Modell zurückführbar sind und mit der Kostenberechnung übereinstimmen.
+    3. Ausschreibung freigeben und die Zuordnung für Angebotsvergleich, Vergabe und Nachkalkulation weiterverwenden.
 
     **Lieferergebnis**
     - Nach Gewerken gegliedertes Leistungsverzeichnis mit nachvollziehbaren Modellmengen
     - Dokumentierte Zuordnung zwischen Bauteiltypen, LV-Positionen und Vergabepaketen
   fr: |-
-    Transposer la base des coûts et quantités par types dans un appel d'offres structuré par corps de métier, sans perdre le lien avec les éléments.
+    Le maître d'ouvrage commande à l'équipe de planification un appel d'offres structuré par corps de métier dont les articles renvoient aux types d'éléments et aux quantités de la maquette, afin de comparer les offres avec le calcul des coûts et d'effectuer l'après-calcul sans nouveau métré.
 
     **Situation de départ**
-    - Les calculs de coûts sont structurés par éléments, tandis que les descriptifs suivent le CAN, le CFC ou les lots d'entrepreneur ; leur structure ne peut donc pas être reprise directement.
-    - Lorsque les prestations de plusieurs éléments sont regroupées dans le descriptif, les références aux types et aux quantités se perdent et l'après-calcul devient laborieux.
+    - Les calculs de coûts sont structurés par éléments, les descriptifs selon le CAN, le CFC ou les lots d'entrepreneur ; sans affectation documentée, les offres ne peuvent pas être comparées au devis estimatif.
+    - Lorsque le descriptif regroupe les prestations de plusieurs éléments, les références aux types et aux quantités se perdent ; les écarts et les avenants deviennent alors difficiles à justifier.
 
     **Objectif et bénéfice**
-    - Fournir aux entreprises un dossier complet et calculable avec quantités et prestations traçables.
-    - Affecter sans ambiguïté les positions de coûts par éléments aux corps de métier et aux articles du descriptif.
-    - Conserver classe de produit et type d'élément comme références pour le contrôle et l'après-calcul, sans remplacer la structure par corps de métier.
-    - Structurer les documents préparés par corps de métier afin de pouvoir tenir à jour la maquette, les plans et les listes après l'adjudication avec les choix de produits et les détails nécessaires à l'exécution.
+    - Comparer les offres article par article avec le calcul des coûts et détecter tôt les écarts.
+    - Fournir aux entreprises une base complète et calculable afin de réduire les suppléments de risque et les avenants.
+    - Réutiliser la même affectation pour l'adjudication, l'après-calcul et les valeurs de référence de projets futurs.
 
     **Déroulement**
-    1. Fournir les types d'éléments approuvés, performances, quantités et lots d'adjudication issus du calcul détaillé des coûts et des maquettes de discipline.
-    2. Affecter les prestations aux articles CFC/CAN ou aux descriptifs fonctionnels et documenter leurs relations avec la classe de produit, le type d'élément et la quantité de référence.
-    3. Contrôler ensemble maquette, plans d'appel d'offres et descriptif, puis les remettre avec des références univoques entre éléments, quantités, articles et lots d'adjudication.
+    1. Définir les lots d'adjudication, la structure du descriptif et l'affectation requise aux types d'éléments et aux quantités de la maquette, puis les commander avec le mandat d'appel d'offres.
+    2. Exiger le descriptif, les plans d'appel d'offres et l'affectation, puis vérifier par sondage que les articles et les quantités renvoient aux types d'éléments de la maquette et concordent avec le calcul des coûts.
+    3. Valider l'appel d'offres et réutiliser l'affectation pour la comparaison des offres, l'adjudication et l'après-calcul.
 
     **Livrable**
     - Descriptif structuré par corps de métier avec quantités traçables issues de la maquette
     - Affectation documentée entre types d'éléments, articles du descriptif et lots d'adjudication
   it: |-
-    Trasferire la base di costi e quantità per tipo in una gara strutturata per categorie di lavoro, senza perdere il riferimento ai componenti.
+    La committenza ordina al gruppo di progettazione una gara strutturata per categorie di lavoro, le cui posizioni sono riconducibili ai tipi di componente e alle quantità del modello, per confrontare le offerte con il calcolo dei costi ed eseguire il consuntivo senza un nuovo computo.
 
     **Situazione di partenza**
-    - I calcoli dei costi sono strutturati per componenti, mentre i capitolati seguono CPN, CCC o lotti d'impresa; la loro struttura non può quindi essere ripresa direttamente.
-    - Quando le prestazioni di diversi componenti vengono raggruppate nel capitolato, si perdono i riferimenti a tipi e quantità e il consuntivo diventa oneroso.
+    - I calcoli dei costi sono strutturati per componenti, i capitolati secondo CPN, CCC o lotti d'impresa; senza un'assegnazione documentata le offerte non possono essere confrontate con il preventivo.
+    - Quando il capitolato raggruppa le prestazioni di diversi componenti, si perdono i riferimenti a tipi e quantità; scostamenti e varianti diventano quindi difficili da giustificare.
 
     **Obiettivo e beneficio**
-    - Fornire alle imprese una documentazione completa e calcolabile con quantità e prestazioni tracciabili.
-    - Assegnare in modo univoco le posizioni di costo per componenti alle categorie di lavoro e alle posizioni del capitolato.
-    - Conservare classe di prodotto e tipo di componente come riferimenti per verifica e consuntivo, senza sostituire la struttura per categorie di lavoro.
-    - Strutturare i documenti predisposti per categoria di lavoro in modo che modello, disegni ed elenchi possano essere aggiornati dopo l'aggiudicazione con le scelte dei prodotti e i dettagli necessari all'esecuzione.
+    - Confrontare le offerte posizione per posizione con il calcolo dei costi e individuare tempestivamente gli scostamenti.
+    - Fornire alle imprese una base completa e calcolabile, riducendo supplementi per rischi e varianti.
+    - Riutilizzare la stessa assegnazione per aggiudicazione, consuntivo e valori di riferimento di progetti futuri.
 
     **Svolgimento**
-    1. Fornire tipi di componente approvati, prestazioni, quantità e lotti di aggiudicazione dal calcolo dettagliato dei costi e dai modelli disciplinari.
-    2. Assegnare le prestazioni alle posizioni CCC/CPN o ai capitolati funzionali e documentare i rapporti con classe di prodotto, tipo di componente e quantità di riferimento.
-    3. Verificare congiuntamente modello, piani di gara e capitolato e consegnarli con riferimenti univoci tra componenti, quantità, posizioni e lotti di aggiudicazione.
+    1. Definire i lotti di aggiudicazione, la struttura del capitolato e l'assegnazione richiesta ai tipi di componente e alle quantità del modello e ordinarli con il mandato di gara.
+    2. Richiedere capitolato, piani di gara e assegnazione e verificare a campione che posizioni e quantità siano riconducibili ai tipi di componente del modello e concordino con il calcolo dei costi.
+    3. Approvare la gara e riutilizzare l'assegnazione per il confronto delle offerte, l'aggiudicazione e il consuntivo.
 
     **Risultato della fornitura**
     - Capitolato strutturato per categorie di lavoro con quantità tracciabili dal modello
     - Assegnazione documentata tra tipi di componente, posizioni del capitolato e lotti di aggiudicazione
   en: |-
-    Translate the type-based cost and quantity basis into a trade-structured tender without losing its links to the components.
+    The client orders from the design team a trade-structured tender whose items trace back to component types and model quantities, so that offers can be compared with the cost calculation and post-calculation needs no new quantity take-off.
 
     **Starting point**
-    - Cost calculations are structured by element, while specifications follow NPK, BKP, or contractor packages, so one breakdown cannot be copied directly into the other.
-    - When specifications combine work from different components, type and quantity references are lost and later post-calculation becomes laborious.
+    - Cost calculations are structured by element, specifications by NPK, BKP, or contractor package; without a documented mapping, offers cannot be compared with the cost estimate.
+    - When the specification combines work from different components, type and quantity references are lost, and deviations and variations become hard to justify.
 
     **Goal & benefit**
-    - Provide contractors with a complete, priceable basis containing traceable quantities and scope.
-    - Map element-based cost items unambiguously to trades and specification items.
-    - Retain product class and component type as references for checking and post-calculation without replacing the trade breakdown.
-    - Structure the trade-specific documents so that the model, drawings, and schedules can be developed after award with product decisions and the details needed for construction.
+    - Compare offers item by item with the cost calculation and spot cost deviations early.
+    - Give contractors a complete, priceable basis and so reduce risk premiums and variations.
+    - Reuse the same mapping for award, post-calculation, and cost benchmarks for future projects.
 
     **Process**
-    1. Provide approved component types, performance attributes, quantities, and procurement packages from the detailed cost calculation and discipline models.
-    2. Assign the work to BKP/NPK items or functional specifications and document the relationships to product class, component type, and reference quantity.
-    3. Check the model, tender drawings, and specification together and issue them with unambiguous references between components, quantities, items, and procurement packages.
+    1. Define procurement packages, the specification structure, and the required mapping to component types and model quantities, and order them with the tender commission.
+    2. Request the specification, tender drawings, and mapping, and spot-check that items and quantities trace back to component types in the model and match the cost calculation.
+    3. Approve the tender and reuse the mapping for offer comparison, award, and post-calculation.
 
     **Deliverable**
     - Trade-structured specification with traceable model quantities

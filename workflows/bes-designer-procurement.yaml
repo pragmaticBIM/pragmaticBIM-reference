@@ -2,10 +2,10 @@ id: pragmaticbim:workflow/bes-designer-procurement
 code: BES-DESIGNER-PROCUREMENT
 sort_order: 8
 name:
-  de: Fachlich und digital kompetente Planer beschaffen
-  fr: Mandater des planificateurs compétents sur les plans professionnel et numérique
-  it: Incaricare progettisti con competenze professionali e digitali
-  en: Procure designers who are capable in their discipline and digitally
+  de: Fachlich und digital kompetentes Planungsteam beschaffen
+  fr: Mandater une équipe de planification compétente sur les plans professionnel et numérique
+  it: Incaricare un gruppo di progettazione con competenze professionali e digitali
+  en: Procure a design team with professional and digital expertise
 description:
   de: |-
     Planungsleistungen anhand der benötigten Fähigkeiten, Ergebnisse und Datenlieferungen beschaffen, statt BIM pauschal als zusätzliche Arbeitsmethode zu bestellen.
