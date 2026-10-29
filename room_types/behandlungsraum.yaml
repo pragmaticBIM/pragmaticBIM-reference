@@ -5,7 +5,7 @@ name:
   de: Behandlungsraum
   fr: Salle de soins
   it: Sala di cura
-  en: Treatment Room
+  en: Treatment room
 definition:
   de: Raum für ambulante Behandlung.
   fr: Local pour les traitements ambulatoires.
@@ -33,7 +33,7 @@ configurations:
       de: Behandlungsraum
       fr: Salle de soins
       it: Sala di cura
-      en: Treatment Room
+      en: Treatment room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

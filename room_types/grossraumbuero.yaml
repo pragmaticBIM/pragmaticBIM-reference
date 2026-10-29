@@ -5,7 +5,7 @@ name:
   de: Grossraumbüro
   fr: Bureau paysager
   it: Ufficio open space
-  en: Open-Plan Office
+  en: Open-plan office
 definition:
   de: Offene Bürolandschaft ohne geschlossene Zellbüros.
   fr: Paysage de bureaux ouvert, sans bureaux cellulaires fermés.
@@ -33,7 +33,7 @@ configurations:
       de: Grossraumbüro
       fr: Bureau paysager
       it: Ufficio open space
-      en: Open-Plan Office
+      en: Open-plan office
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

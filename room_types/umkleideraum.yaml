@@ -5,7 +5,7 @@ name:
   de: Umkleideraum
   fr: Vestiaire
   it: Spogliatoio
-  en: Changing Room
+  en: Changing room
 definition:
   de: Raum zum Umziehen.
   fr: Local pour se changer.
@@ -33,7 +33,7 @@ configurations:
       de: Umkleideraum
       fr: Vestiaire
       it: Spogliatoio
-      en: Changing Room
+      en: Changing room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

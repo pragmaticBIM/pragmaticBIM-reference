@@ -5,12 +5,12 @@ name:
   de: Gründach
   fr: Toiture végétalisée
   it: Tetto verde
-  en: Green Roof
+  en: Green roof
 definition:
   de: Begrünte Flachdachfläche als Aussenraum modelliert.
   fr: Surface de toiture plate végétalisée, modélisée comme espace extérieur.
   it: Superficie di tetto piano inverdita, modellata come spazio esterno.
-  en: Vegetated flat-roof area modeled as outdoor space.
+  en: Vegetated flat-roof area modelled as outdoor space.
 room_type_kind: room
 room_name: RN-11-10-08
 activity: O-GRN-GDN
@@ -33,7 +33,7 @@ configurations:
       de: Gründach
       fr: Toiture végétalisée
       it: Tetto verde
-      en: Green Roof
+      en: Green roof
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

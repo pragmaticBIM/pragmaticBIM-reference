@@ -5,7 +5,7 @@ name:
   de: Technikaufstellfläche
   fr: Aire technique
   it: Area tecnica
-  en: Technical Plant Pad
+  en: Technical plant pad
 definition:
   de: Flachdach- oder Aussenfläche für die Aufstellung haustechnischer Anlagen und
     Geräte.
@@ -34,7 +34,7 @@ configurations:
       de: Technikaufstellfläche
       fr: Aire technique
       it: Area tecnica
-      en: Technical Plant Pad
+      en: Technical plant pad
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

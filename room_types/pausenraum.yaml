@@ -5,7 +5,7 @@ name:
   de: Pausenraum
   fr: Salle de pause
   it: Sala pausa
-  en: Break Room
+  en: Break room
 definition:
   de: Informeller Raum für Pausen.
   fr: Local informel pour les pauses.
@@ -33,7 +33,7 @@ configurations:
       de: Pausenraum
       fr: Salle de pause
       it: Sala pausa
-      en: Break Room
+      en: Break room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

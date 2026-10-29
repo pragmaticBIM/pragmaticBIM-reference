@@ -5,7 +5,7 @@ name:
   de: Telefonkabine
   fr: Cabine téléphonique
   it: Cabina telefonica
-  en: Phone Booth
+  en: Phone booth
 definition:
   de: Schallgeschützte Kabine für Telefonate und Online-Besprechungen einer Person.
   fr: Cabine insonorisée pour les appels et les réunions en ligne d'une personne.
@@ -33,7 +33,7 @@ configurations:
       de: Telefonkabine
       fr: Cabine téléphonique
       it: Cabina telefonica
-      en: Phone Booth
+      en: Phone booth
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

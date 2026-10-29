@@ -5,7 +5,7 @@ name:
   de: Hauswarteschrank
   fr: Placard de conciergerie
   it: Armadio del custode
-  en: Janitor Closet
+  en: "Caretaker's cupboard"
 definition:
   de: Abstellraum der Hauswartung für Reinigung und Unterhalt.
   fr: Local de conciergerie pour le nettoyage et l'entretien.
@@ -33,7 +33,7 @@ configurations:
       de: Hauswarteschrank
       fr: Placard de conciergerie
       it: Armadio del custode
-      en: Janitor Closet
+      en: "Caretaker's cupboard"
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

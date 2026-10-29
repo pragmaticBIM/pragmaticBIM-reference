@@ -5,7 +5,7 @@ name:
   de: Duschraum
   fr: Local de douches
   it: Locale docce
-  en: Shower Room
+  en: Shower room
 definition:
   de: Raum mit Duscheinrichtungen.
   fr: Local avec des douches.
@@ -33,7 +33,7 @@ configurations:
       de: Duschraum
       fr: Local de douches
       it: Locale docce
-      en: Shower Room
+      en: Shower room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

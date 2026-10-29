@@ -5,7 +5,7 @@ name:
   de: Wartezimmer
   fr: Salle d'attente
   it: Sala d'attesa
-  en: Waiting Room
+  en: Waiting room
 definition:
   de: Raum für wartende Patienten und Besucher.
   fr: Local pour les patients et les visiteurs qui attendent.
@@ -33,7 +33,7 @@ configurations:
       de: Wartezimmer
       fr: Salle d'attente
       it: Sala d'attesa
-      en: Waiting Room
+      en: Waiting room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

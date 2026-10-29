@@ -5,7 +5,7 @@ name:
   de: Materialraum
   fr: Local à matériel
   it: Locale materiali
-  en: Supply Room
+  en: Supply room
 definition:
   de: Raum für Verbrauchsmaterial.
   fr: Local pour les consommables.
@@ -33,7 +33,7 @@ configurations:
       de: Materialraum
       fr: Local à matériel
       it: Locale materiali
-      en: Supply Room
+      en: Supply room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

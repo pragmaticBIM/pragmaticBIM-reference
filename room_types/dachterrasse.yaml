@@ -5,7 +5,7 @@ name:
   de: Dachterrasse
   fr: Terrasse de toit
   it: Terrazza sul tetto
-  en: Roof Terrace
+  en: Roof terrace
 definition:
   de: Begehbares und nutzbares Flachdach als Aussenfläche.
   fr: Toiture plate accessible et utilisable comme surface extérieure.
@@ -33,7 +33,7 @@ configurations:
       de: Dachterrasse
       fr: Terrasse de toit
       it: Terrazza sul tetto
-      en: Roof Terrace
+      en: Roof terrace
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

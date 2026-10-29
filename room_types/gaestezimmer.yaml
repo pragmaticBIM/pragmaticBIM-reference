@@ -5,7 +5,7 @@ name:
   de: Gästezimmer
   fr: Chambre d'amis
   it: Camera ospiti
-  en: Guest Room
+  en: Guest room
 definition:
   de: Raum für über Nacht bleibende Gäste.
   fr: Local pour les hôtes qui restent la nuit.
@@ -33,7 +33,7 @@ configurations:
       de: Gästezimmer
       fr: Chambre d'amis
       it: Camera ospiti
-      en: Guest Room
+      en: Guest room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

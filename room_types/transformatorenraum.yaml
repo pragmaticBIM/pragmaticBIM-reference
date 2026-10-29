@@ -5,7 +5,7 @@ name:
   de: Transformatorenraum
   fr: Local transformateur
   it: Locale trasformatore
-  en: Transformer Room
+  en: Transformer room
 definition:
   de: Raum für Transformatoren.
   fr: Local pour les transformateurs.
@@ -33,7 +33,7 @@ configurations:
       de: Transformatorenraum
       fr: Local transformateur
       it: Locale trasformatore
-      en: Transformer Room
+      en: Transformer room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

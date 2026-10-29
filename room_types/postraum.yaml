@@ -5,7 +5,7 @@ name:
   de: Postraum
   fr: Local courrier
   it: Locale posta
-  en: Mail Room
+  en: Mail room
 definition:
   de: Raum für die Annahme und Verteilung von Postsendungen.
   fr: Local pour la réception et la distribution du courrier.
@@ -33,7 +33,7 @@ configurations:
       de: Postraum
       fr: Local courrier
       it: Locale posta
-      en: Mail Room
+      en: Mail room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

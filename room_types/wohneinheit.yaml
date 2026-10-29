@@ -5,7 +5,7 @@ name:
   de: Wohneinheit
   fr: Logement
   it: Alloggio
-  en: Apartment Unit
+  en: Apartment unit
 definition:
   de: Generische Wohneinheit ohne weitere Unterteilung.
   fr: Logement générique sans subdivision supplémentaire.
@@ -33,7 +33,7 @@ configurations:
       de: Wohneinheit
       fr: Logement
       it: Alloggio
-      en: Apartment Unit
+      en: Apartment unit
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

@@ -5,7 +5,7 @@ name:
   de: Hauswirtschaftsraum
   fr: Local ménager
   it: Locale di servizio
-  en: Utility Room
+  en: Utility room
 definition:
   de: Raum für haushaltstechnische Einrichtungen.
   fr: Local pour les installations techniques du ménage.
@@ -33,7 +33,7 @@ configurations:
       de: Hauswirtschaftsraum
       fr: Local ménager
       it: Locale di servizio
-      en: Utility Room
+      en: Utility room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

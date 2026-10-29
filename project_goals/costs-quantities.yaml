@@ -78,7 +78,7 @@ levels:
     de: Elementbasierte Kostenermittlung und Kostenplausibilisierung mit Modellmengen, automatisierte eBKP-H-Klassifizierung, geplante Humusmengen, Visualisierung der Planungsschnittstellen und vergleichbare Wettbewerbsauswertung.
     fr: Calcul et contrôle de plausibilité des coûts par élément à partir des quantités de la maquette, classification eBKP-H automatisée, quantités d'humus planifiées, visualisation des interfaces de planification et évaluation comparable des concours.
     it: Calcolo e verifica della plausibilità dei costi per componente dalle quantità del modello, classificazione eBKP-H automatica, quantità di humus pianificate, visualizzazione delle interfacce di pianificazione e valutazione comparabile dei concorsi.
-    en: Element-based cost calculation and plausibility checking from model quantities, automated eBKP-H classification, planned humus quantities, visualization of planning interfaces, and comparable competition evaluation.
+    en: Element-based cost calculation and plausibility checking from model quantities, automated eBKP-H classification, planned topsoil quantities, visualization of planning interfaces, and comparable competition evaluation.
   status: active
   activated_workflows:
   - pragmaticbim:workflow/des-sia416-area-verification

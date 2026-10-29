@@ -5,7 +5,7 @@ name:
   de: Kinderwagenraum
   fr: Local à poussettes
   it: Locale passeggini
-  en: Stroller Room
+  en: Stroller room
 definition:
   de: Abstellraum für Kinderwagen und Mobilitätshilfen an der Eingangshalle, ausserhalb
     des Fluchtwegs.
@@ -36,7 +36,7 @@ configurations:
       de: Kinderwagenraum
       fr: Local à poussettes
       it: Locale passeggini
-      en: Stroller Room
+      en: Stroller room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

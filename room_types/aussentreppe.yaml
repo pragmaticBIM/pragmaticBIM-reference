@@ -5,7 +5,7 @@ name:
   de: Aussentreppe
   fr: Escalier extérieur
   it: Scala esterna
-  en: Exterior Stair
+  en: Exterior stair
 definition:
   de: Aussenliegende Treppe zur vertikalen Erschliessung.
   fr: Escalier extérieur pour la desserte verticale.
@@ -33,7 +33,7 @@ configurations:
       de: Aussentreppe
       fr: Escalier extérieur
       it: Scala esterna
-      en: Exterior Stair
+      en: Exterior stair
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

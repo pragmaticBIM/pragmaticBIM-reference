@@ -5,7 +5,7 @@ name:
   de: Laderampe
   fr: Quai de chargement
   it: Banchina di carico
-  en: Loading Dock
+  en: Loading dock
 definition:
   de: Bereich für Be- und Entladung.
   fr: Zone de chargement et de déchargement.
@@ -33,7 +33,7 @@ configurations:
       de: Laderampe
       fr: Quai de chargement
       it: Banchina di carico
-      en: Loading Dock
+      en: Loading dock
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

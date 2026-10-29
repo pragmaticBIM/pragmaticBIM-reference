@@ -5,7 +5,7 @@ name:
   de: Generatorraum
   fr: Local du groupe électrogène
   it: Locale gruppo elettrogeno
-  en: Generator Room
+  en: Generator room
 definition:
   de: Raum für Notstromaggregate.
   fr: Local pour les groupes électrogènes de secours.
@@ -33,7 +33,7 @@ configurations:
       de: Generatorraum
       fr: Local du groupe électrogène
       it: Locale gruppo elettrogeno
-      en: Generator Room
+      en: Generator room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

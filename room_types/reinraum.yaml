@@ -5,7 +5,7 @@ name:
   de: Reinraum
   fr: Salle blanche
   it: Camera bianca
-  en: Clean Room
+  en: Clean room
 definition:
   de: Produktionsraum mit kontrollierter Umgebung.
   fr: Local de production à environnement contrôlé.
@@ -33,7 +33,7 @@ configurations:
       de: Reinraum
       fr: Salle blanche
       it: Camera bianca
-      en: Clean Room
+      en: Clean room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

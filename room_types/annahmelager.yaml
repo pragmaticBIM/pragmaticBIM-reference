@@ -5,7 +5,7 @@ name:
   de: Annahmelager
   fr: Dépôt de réception
   it: Deposito di ricezione
-  en: Unloading Storage
+  en: Unloading storage
 definition:
   de: Zwischenlager am Annahmeort.
   fr: Dépôt temporaire au point de réception.
@@ -33,7 +33,7 @@ configurations:
       de: Annahmelager
       fr: Dépôt de réception
       it: Deposito di ricezione
-      en: Unloading Storage
+      en: Unloading storage
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

@@ -5,7 +5,7 @@ name:
   de: Hörsaal
   fr: Auditoire
   it: Aula magna
-  en: Lecture Hall
+  en: Lecture hall
 definition:
   de: Raum mit festem Gestühl für Vorlesungen.
   fr: Local à sièges fixes pour les cours magistraux.
@@ -33,7 +33,7 @@ configurations:
       de: Hörsaal
       fr: Auditoire
       it: Aula magna
-      en: Lecture Hall
+      en: Lecture hall
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

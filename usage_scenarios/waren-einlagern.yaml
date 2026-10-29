@@ -45,6 +45,6 @@ options:
     de: Gefahrstofflager
     fr: Entrepôt de matières dangereuses
     it: Deposito sostanze pericolose
-    en: Hazardous goods store
+    en: Hazardous materials store
   adds:
   - pragmaticbim:room-type/gefahrstofflager

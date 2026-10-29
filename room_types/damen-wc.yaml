@@ -5,7 +5,7 @@ name:
   de: Damen-WC
   fr: WC femmes
   it: WC donne
-  en: Female Toilet
+  en: Female toilet
 definition:
   de: WC für Frauen.
   fr: WC pour femmes.
@@ -33,7 +33,7 @@ configurations:
       de: Damen-WC
       fr: WC femmes
       it: WC donne
-      en: Female Toilet
+      en: Female toilet
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

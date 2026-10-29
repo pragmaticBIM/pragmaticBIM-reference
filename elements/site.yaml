@@ -6,7 +6,7 @@ name:
   de: Planungsperimeter
   fr: Site
   it: Sito
-  en: Site
+  en: Planning perimeter
 definition:
   de: |-
     Grenzt den gemeinsamen Bearbeitungsbereich ab, damit Gebäude, Grundstücksbezüge und Umgebungsplanung räumlich konsistent koordiniert werden können.

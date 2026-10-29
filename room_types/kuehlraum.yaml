@@ -5,7 +5,7 @@ name:
   de: Kühlraum
   fr: Chambre froide
   it: Cella frigorifera
-  en: Cold Storage
+  en: Cold storage
 definition:
   de: Gekühlter Lagerraum.
   fr: Local de stockage réfrigéré.
@@ -33,7 +33,7 @@ configurations:
       de: Kühlraum
       fr: Chambre froide
       it: Cella frigorifera
-      en: Cold Storage
+      en: Cold storage
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

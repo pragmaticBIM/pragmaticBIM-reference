@@ -5,7 +5,7 @@ name:
   de: Lernraum
   fr: Salle d'étude
   it: Sala studio
-  en: Study Room
+  en: Study room
 definition:
   de: Raum für selbstständiges Lernen.
   fr: Local pour l'apprentissage autonome.
@@ -33,7 +33,7 @@ configurations:
       de: Lernraum
       fr: Salle d'étude
       it: Sala studio
-      en: Study Room
+      en: Study room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

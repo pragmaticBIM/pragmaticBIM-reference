@@ -5,7 +5,7 @@ name:
   de: Radioaktivabfallraum
   fr: Local à déchets radioactifs
   it: Locale rifiuti radioattivi
-  en: Radioactive Waste Room
+  en: Radioactive waste room
 definition:
   de: Raum für das Sammeln und Abklingenlassen von radioaktivem Laborabfall, getrennt vom übrigen Abfall.
   fr: Local pour collecter les déchets radioactifs de laboratoire et les laisser décroître, séparés des autres déchets.
@@ -33,7 +33,7 @@ configurations:
       de: Radioaktivabfallraum
       fr: Local à déchets radioactifs
       it: Locale rifiuti radioattivi
-      en: Radioactive Waste Room
+      en: Radioactive waste room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

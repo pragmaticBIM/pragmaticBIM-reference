@@ -5,7 +5,7 @@ name:
   de: Unterflurcontainer
   fr: Conteneur enterré
   it: Contenitore interrato
-  en: Underground Waste Container
+  en: Underground waste container
 definition:
   de: Aussenfläche für einen unterirdischen Sammelcontainer für Siedlungsabfall.
   fr: Aire extérieure réservée à un conteneur enterré pour la collecte des déchets
@@ -35,7 +35,7 @@ configurations:
       de: Unterflurcontainer
       fr: Conteneur enterré
       it: Contenitore interrato
-      en: Underground Waste Container
+      en: Underground waste container
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

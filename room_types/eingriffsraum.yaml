@@ -5,7 +5,7 @@ name:
   de: Eingriffsraum
   fr: Salle d'intervention
   it: Sala per interventi
-  en: Procedure Room
+  en: Procedure room
 definition:
   de: Raum für kleinere medizinische Eingriffe.
   fr: Local pour les interventions médicales mineures.
@@ -33,7 +33,7 @@ configurations:
       de: Eingriffsraum
       fr: Salle d'intervention
       it: Sala per interventi
-      en: Procedure Room
+      en: Procedure room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

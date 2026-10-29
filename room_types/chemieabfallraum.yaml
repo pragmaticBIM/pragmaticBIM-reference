@@ -5,7 +5,7 @@ name:
   de: Chemieabfallraum
   fr: Local à déchets chimiques
   it: Locale rifiuti chimici
-  en: Chemical Waste Room
+  en: Chemical waste room
 definition:
   de: Raum für das Sammeln und Bereitstellen von chemischem Laborabfall, getrennt vom übrigen Abfall.
   fr: Local pour collecter et présenter les déchets chimiques de laboratoire, séparés des autres déchets.
@@ -33,7 +33,7 @@ configurations:
       de: Chemieabfallraum
       fr: Local à déchets chimiques
       it: Locale rifiuti chimici
-      en: Chemical Waste Room
+      en: Chemical waste room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

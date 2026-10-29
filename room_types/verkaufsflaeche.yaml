@@ -5,7 +5,7 @@ name:
   de: Verkaufsfläche
   fr: Surface de vente
   it: Superficie di vendita
-  en: Sales Floor
+  en: Sales floor
 definition:
   de: Offene Verkaufsfläche.
   fr: Surface de vente ouverte.
@@ -33,7 +33,7 @@ configurations:
       de: Verkaufsfläche
       fr: Surface de vente
       it: Superficie di vendita
-      en: Sales Floor
+      en: Sales floor
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

@@ -5,7 +5,7 @@ name:
   de: Tribüne
   fr: Tribune
   it: Tribuna
-  en: Spectator Stand
+  en: Spectator stand
 definition:
   de: Gestufte Sitz- oder Stehfläche für Zuschauende.
   fr: Gradins assis ou debout pour le public.
@@ -33,7 +33,7 @@ configurations:
       de: Tribüne
       fr: Tribune
       it: Tribuna
-      en: Spectator Stand
+      en: Spectator stand
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

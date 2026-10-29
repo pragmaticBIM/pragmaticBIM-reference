@@ -5,7 +5,7 @@ name:
   de: Seminarraum
   fr: Salle de séminaire
   it: Sala seminari
-  en: Seminar Room
+  en: Seminar room
 definition:
   de: Raum für Seminare und Workshops.
   fr: Local pour les séminaires et les ateliers.
@@ -33,7 +33,7 @@ configurations:
       de: Seminarraum
       fr: Salle de séminaire
       it: Sala seminari
-      en: Seminar Room
+      en: Seminar room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

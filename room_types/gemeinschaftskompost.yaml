@@ -5,7 +5,7 @@ name:
   de: Gemeinsamer Kompost
   fr: Compost commun
   it: Compostaggio comune
-  en: Shared Compost
+  en: Shared compost
 definition:
   de: Aussenfläche, auf der Bewohnende organische Abfälle gemeinsam kompostieren.
   fr: Aire extérieure où les habitants compostent ensemble les déchets organiques.
@@ -33,7 +33,7 @@ configurations:
       de: Gemeinsamer Kompost
       fr: Compost commun
       it: Compostaggio comune
-      en: Shared Compost
+      en: Shared compost
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

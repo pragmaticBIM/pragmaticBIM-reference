@@ -5,7 +5,7 @@ name:
   de: Paketraum
   fr: Local à colis
   it: Locale pacchi
-  en: Parcel Room
+  en: Parcel room
 definition:
   de: Raum für Paketfächer, im Unterschied zum Postraum und zu persönlichen Schliessfächern.
   fr: Local à casiers pour colis, distinct du local courrier et des casiers personnels.
@@ -33,7 +33,7 @@ configurations:
       de: Paketraum
       fr: Local à colis
       it: Locale pacchi
-      en: Parcel Room
+      en: Parcel room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

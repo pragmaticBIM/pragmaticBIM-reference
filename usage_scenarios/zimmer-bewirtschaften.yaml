@@ -37,7 +37,7 @@ options:
     de: Hauswarteschrank
     fr: Local de conciergerie
     it: Locale del custode
-    en: Caretaker closet
+    en: "Caretaker's cupboard"
   adds:
   - pragmaticbim:room-type/hauswarteschrank
 - id: pragmaticbim:scenario-option/zimmer-bewirtschaften-external

@@ -5,7 +5,7 @@ name:
   de: Ausbildungswerkstatt
   fr: Atelier de formation
   it: Officina di formazione
-  en: Training Workshop
+  en: Training workshop
 definition:
   de: Raum für praktische Ausbildung.
   fr: Local pour la formation pratique.
@@ -33,7 +33,7 @@ configurations:
       de: Ausbildungswerkstatt
       fr: Atelier de formation
       it: Officina di formazione
-      en: Training Workshop
+      en: Training workshop
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

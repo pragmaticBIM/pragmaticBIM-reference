@@ -5,7 +5,7 @@ name:
   de: Qualitätskontrollraum
   fr: Local de contrôle qualité
   it: Locale controllo qualità
-  en: Quality Control Room
+  en: Quality control room
 definition:
   de: Raum für Prüfung und Qualitätskontrolle.
   fr: Local pour le contrôle et l'assurance qualité.
@@ -33,7 +33,7 @@ configurations:
       de: Qualitätskontrollraum
       fr: Local de contrôle qualité
       it: Locale controllo qualità
-      en: Quality Control Room
+      en: Quality control room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

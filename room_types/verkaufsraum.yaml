@@ -5,7 +5,7 @@ name:
   de: Verkaufsraum
   fr: Local de vente
   it: Locale di vendita
-  en: Retail Space
+  en: Retail space
 definition:
   de: Raum für Warenpräsentation und Verkauf.
   fr: Local pour la présentation et la vente de marchandises.
@@ -33,7 +33,7 @@ configurations:
       de: Verkaufsraum
       fr: Local de vente
       it: Locale di vendita
-      en: Retail Space
+      en: Retail space
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

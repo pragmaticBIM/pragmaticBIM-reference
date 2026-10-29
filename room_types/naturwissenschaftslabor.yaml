@@ -5,7 +5,7 @@ name:
   de: Naturwissenschaftslabor
   fr: Laboratoire de sciences
   it: Laboratorio scientifico
-  en: Science Lab
+  en: Science laboratory
 definition:
   de: Labor für naturwissenschaftlichen Unterricht.
   fr: Laboratoire pour l'enseignement des sciences.
@@ -33,7 +33,7 @@ configurations:
       de: Naturwissenschaftslabor
       fr: Laboratoire de sciences
       it: Laboratorio scientifico
-      en: Science Lab
+      en: Science laboratory
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

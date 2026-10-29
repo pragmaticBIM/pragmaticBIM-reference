@@ -5,7 +5,7 @@ name:
   de: Gemeinschaftsbüro
   fr: Bureau communautaire
   it: Ufficio comunitario
-  en: Community Office
+  en: Community office
 definition:
   de: Gemeinsam genutzter Arbeitsraum für Bewohnende ausserhalb der Wohnung.
   fr: Bureau partagé destiné aux habitants, situé hors des logements.
@@ -33,7 +33,7 @@ configurations:
       de: Gemeinschaftsbüro
       fr: Bureau communautaire
       it: Ufficio comunitario
-      en: Community Office
+      en: Community office
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

@@ -5,7 +5,7 @@ name:
   de: Food-Court
   fr: Aire de restauration
   it: Area ristorazione
-  en: Food Court
+  en: Food court
 definition:
   de: Gemeinsame Gastronomiefläche mit mehreren Anbietern.
   fr: Surface de restauration commune à plusieurs exploitants.
@@ -33,7 +33,7 @@ configurations:
       de: Food-Court
       fr: Aire de restauration
       it: Area ristorazione
-      en: Food Court
+      en: Food court
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

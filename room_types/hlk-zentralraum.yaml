@@ -5,7 +5,7 @@ name:
   de: HLK-Zentralraum
   fr: Centrale CVC
   it: Centrale CVC
-  en: HVAC Plant Room
+  en: HVAC plant room
 definition:
   de: Raum für Heizungs-, Lüftungs- und Klimaanlagen.
   fr: Local pour les installations de chauffage, de ventilation et de climatisation.
@@ -33,7 +33,7 @@ configurations:
       de: HLK-Zentralraum
       fr: Centrale CVC
       it: Centrale CVC
-      en: HVAC Plant Room
+      en: HVAC plant room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

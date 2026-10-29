@@ -5,7 +5,7 @@ name:
   de: Abholstation
   fr: Point de retrait
   it: Punto di ritiro
-  en: Pickup Point
+  en: Pickup point
 definition:
   de: Theke oder Bereich, an dem Kundschaft bestellte oder gekaufte Waren abholt.
   fr: Comptoir ou espace où la clientèle retire les marchandises commandées ou achetées.
@@ -33,7 +33,7 @@ configurations:
       de: Abholstation
       fr: Point de retrait
       it: Punto di ritiro
-      en: Pickup Point
+      en: Pickup point
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

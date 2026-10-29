@@ -5,7 +5,7 @@ name:
   de: Schliessfachraum
   fr: Local à casiers
   it: Locale armadietti
-  en: Locker Room
+  en: Locker room
 definition:
   de: Raum mit persönlichen Schliessfächern.
   fr: Local avec des casiers personnels.
@@ -33,7 +33,7 @@ configurations:
       de: Schliessfachraum
       fr: Local à casiers
       it: Locale armadietti
-      en: Locker Room
+      en: Locker room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

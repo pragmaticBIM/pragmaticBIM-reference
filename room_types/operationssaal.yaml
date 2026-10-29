@@ -5,7 +5,7 @@ name:
   de: Operationssaal
   fr: Salle d'opération
   it: Sala operatoria
-  en: Operating Room
+  en: Operating theatre
 definition:
   de: Raum für operative Eingriffe.
   fr: Local pour les interventions chirurgicales.
@@ -33,7 +33,7 @@ configurations:
       de: Operationssaal
       fr: Salle d'opération
       it: Sala operatoria
-      en: Operating Room
+      en: Operating theatre
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

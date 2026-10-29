@@ -5,7 +5,7 @@ name:
   de: Abfallsammelplatz Aussen
   fr: Aire extérieure de collecte des déchets
   it: Area esterna di raccolta rifiuti
-  en: Exterior Waste Collection Area
+  en: Exterior waste collection area
 definition:
   de: Aussenfläche für das Sammeln und Bereitstellen von Siedlungsabfall in Säcken.
   fr: Aire extérieure destinée à collecter et présenter les déchets ménagers en sacs.
@@ -33,7 +33,7 @@ configurations:
       de: Abfallsammelplatz Aussen
       fr: Aire extérieure de collecte des déchets
       it: Area esterna di raccolta rifiuti
-      en: Exterior Waste Collection Area
+      en: Exterior waste collection area
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

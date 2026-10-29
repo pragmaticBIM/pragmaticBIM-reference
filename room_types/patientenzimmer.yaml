@@ -5,7 +5,7 @@ name:
   de: Patientenzimmer
   fr: Chambre de patient
   it: Camera di degenza
-  en: Patient Room
+  en: Patient room
 definition:
   de: Raum für stationäre Pflege.
   fr: Local pour les soins stationnaires.
@@ -33,7 +33,7 @@ configurations:
       de: Patientenzimmer
       fr: Chambre de patient
       it: Camera di degenza
-      en: Patient Room
+      en: Patient room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

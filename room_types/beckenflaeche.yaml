@@ -5,7 +5,7 @@ name:
   de: Beckenfläche
   fr: Aire de bassin
   it: Area vasca
-  en: Pool Area
+  en: Pool area
 definition:
   de: Aussenliegende Becken- oder Wasserfläche.
   fr: Surface extérieure de bassin ou d'eau.
@@ -33,7 +33,7 @@ configurations:
       de: Beckenfläche
       fr: Aire de bassin
       it: Area vasca
-      en: Pool Area
+      en: Pool area
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

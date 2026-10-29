@@ -5,7 +5,7 @@ name:
   de: Allgemeines WC
   fr: WC commun
   it: WC comune
-  en: Unisex Toilet
+  en: Unisex toilet
 definition:
   de: WC für gemischte oder all-gender Nutzung.
   fr: WC pour un usage mixte ou all-gender.
@@ -33,7 +33,7 @@ configurations:
       de: Allgemeines WC
       fr: WC commun
       it: WC comune
-      en: Unisex Toilet
+      en: Unisex toilet
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

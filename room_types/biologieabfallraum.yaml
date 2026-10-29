@@ -5,7 +5,7 @@ name:
   de: Biologieabfallraum
   fr: Local à déchets biologiques
   it: Locale rifiuti biologici
-  en: Biological Waste Room
+  en: Biological waste room
 definition:
   de: Raum für das Sammeln und Bereitstellen von biologischem Laborabfall, getrennt vom übrigen Abfall.
   fr: Local pour collecter et présenter les déchets biologiques de laboratoire, séparés des autres déchets.
@@ -33,7 +33,7 @@ configurations:
       de: Biologieabfallraum
       fr: Local à déchets biologiques
       it: Locale rifiuti biologici
-      en: Biological Waste Room
+      en: Biological waste room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

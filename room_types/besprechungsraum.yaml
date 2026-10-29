@@ -5,7 +5,7 @@ name:
   de: Besprechungsraum
   fr: Salle de réunion
   it: Sala riunioni
-  en: Meeting Room
+  en: Meeting room
 definition:
   de: Raum für kleine Besprechungen.
   fr: Local pour de petites réunions.
@@ -33,7 +33,7 @@ configurations:
       de: Besprechungsraum
       fr: Salle de réunion
       it: Sala riunioni
-      en: Meeting Room
+      en: Meeting room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

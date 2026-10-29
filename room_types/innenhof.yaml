@@ -5,12 +5,12 @@ name:
   de: Innenhof
   fr: Cour intérieure
   it: Corte interna
-  en: Patio
+  en: Courtyard
 definition:
   de: Innenhof oder Patio.
   fr: Cour intérieure ou patio.
   it: Corte interna o patio.
-  en: Enclosed or semi-enclosed outdoor sitting area.
+  en: Courtyard or patio.
 room_type_kind: room
 room_name: RN-11-10-03
 activity: O
@@ -33,7 +33,7 @@ configurations:
       de: Innenhof
       fr: Cour intérieure
       it: Corte interna
-      en: Patio
+      en: Courtyard
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

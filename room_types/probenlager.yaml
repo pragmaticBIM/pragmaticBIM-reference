@@ -5,7 +5,7 @@ name:
   de: Probenlager
   fr: Dépôt d'échantillons
   it: Deposito campioni
-  en: Sample Storage
+  en: Sample storage
 definition:
   de: Lager für Labor- oder Materialproben.
   fr: Dépôt pour les échantillons de laboratoire ou de matériaux.
@@ -33,7 +33,7 @@ configurations:
       de: Probenlager
       fr: Dépôt d'échantillons
       it: Deposito campioni
-      en: Sample Storage
+      en: Sample storage
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

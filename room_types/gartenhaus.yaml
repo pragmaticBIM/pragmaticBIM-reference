@@ -5,7 +5,7 @@ name:
   de: Gartenhaus
   fr: Abri de jardin
   it: Casetta da giardino
-  en: Garden Shed
+  en: Garden shed
 definition:
   de: Geschlossener Abstellraum im Aussenbereich für Gartengeräte und Haushaltsgüter.
   fr: Local de rangement fermé à l'extérieur pour les outils de jardin et les biens
@@ -34,7 +34,7 @@ configurations:
       de: Gartenhaus
       fr: Abri de jardin
       it: Casetta da giardino
-      en: Garden Shed
+      en: Garden shed
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

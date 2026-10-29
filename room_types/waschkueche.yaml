@@ -5,7 +5,7 @@ name:
   de: Waschküche
   fr: Buanderie
   it: Lavanderia
-  en: Laundry Room
+  en: Laundry room
 definition:
   de: Waschküche innerhalb einer Wohneinheit.
   fr: Buanderie à l'intérieur d'un logement.
@@ -33,7 +33,7 @@ configurations:
       de: Waschküche
       fr: Buanderie
       it: Lavanderia
-      en: Laundry Room
+      en: Laundry room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

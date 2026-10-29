@@ -5,7 +5,7 @@ name:
   de: Kunstatelier
   fr: Atelier d'arts
   it: Atelier artistico
-  en: Art Studio
+  en: Art studio
 definition:
   de: Raum für bildnerischen Unterricht.
   fr: Local pour l'enseignement des arts visuels.
@@ -33,7 +33,7 @@ configurations:
       de: Kunstatelier
       fr: Atelier d'arts
       it: Atelier artistico
-      en: Art Studio
+      en: Art studio
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
