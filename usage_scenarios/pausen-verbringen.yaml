@@ -15,7 +15,9 @@ description:
     superficie aggiuntiva.
   en: Staff take breaks and eat during the working day. The provision determines social contact, travel,
     and additional area.
-use: pragmaticbim:use/arbeit
+scope: use
+uses:
+- pragmaticbim:use/arbeit
 tags:
 - pause
 status: active

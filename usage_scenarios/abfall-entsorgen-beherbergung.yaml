@@ -15,7 +15,9 @@ description:
     determinano superficie, ventilazione e percorsi verso il punto di raccolta.
   en: Guests and the operation take waste away during the stay. The separated fractions determine
     area, ventilation, and routes to the collection point.
-use: pragmaticbim:use/beherbergung
+scope: use
+uses:
+- pragmaticbim:use/beherbergung
 tags:
 - entsorgung
 status: active

@@ -15,7 +15,9 @@ description:
     discipline, suddivisibilità e occupazione.
   en: Clubs, schools, and individuals train ball sports, gymnastics, or fitness. The hall determines the
     sports, divisibility, and booking.
-use: pragmaticbim:use/sport
+scope: use
+uses:
+- pragmaticbim:use/sport
 tags:
 - training
 status: active

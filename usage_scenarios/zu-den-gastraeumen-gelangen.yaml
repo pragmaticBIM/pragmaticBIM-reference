@@ -15,7 +15,9 @@ description:
     assenza di ostacoli e separazione dei percorsi ospiti e servizio.
   en: Guests reach the dining rooms while food and tableware move between kitchen and service. The access
     arrangement determines step-free access and separation of guest and service routes.
-use: pragmaticbim:use/gastronomie
+scope: use
+uses:
+- pragmaticbim:use/gastronomie
 tags:
 - erschliessung
 status: active

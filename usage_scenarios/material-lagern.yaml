@@ -16,7 +16,9 @@ description:
     luogo di deposito determina tempi di allestimento, percorsi di trasporto e superficie nell'edificio.
   en: Stage elements, seating, and exhibition material are stored between events. The storage location
     determines changeover time, transport routes, and area in the building.
-use: pragmaticbim:use/versammlung
+scope: use
+uses:
+- pragmaticbim:use/versammlung
 tags:
 - lagerung
 status: active

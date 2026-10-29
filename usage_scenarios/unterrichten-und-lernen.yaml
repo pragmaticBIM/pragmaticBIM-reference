@@ -15,7 +15,9 @@ description:
     e flessibilità dei locali.
   en: Learners and teachers regularly work in groups. The teaching format determines room size, furniture,
     and adaptability.
-use: pragmaticbim:use/bildung
+scope: use
+uses:
+- pragmaticbim:use/bildung
 tags:
 - lernen
 status: active

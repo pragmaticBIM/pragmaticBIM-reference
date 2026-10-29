@@ -15,7 +15,9 @@ description:
     transito e separazione tra arrivi e partenze.
   en: Finished products are packed, staged, and collected. Shipping determines buffer areas and the separation
     of inbound and outbound goods.
-use: pragmaticbim:use/produktion
+scope: use
+uses:
+- pragmaticbim:use/produktion
 tags:
 - versand
 status: active

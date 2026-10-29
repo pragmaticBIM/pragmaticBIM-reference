@@ -16,7 +16,9 @@ description:
     altri rifiuti. Il punto di raccolta determina odori, raffreddamento e ritmo di ritiro.
   en: Clubs and individuals take food and green waste away after training, separately from other
     waste. The collection point determines odour, cooling, and how often it is collected.
-use: pragmaticbim:use/sport
+scope: use
+uses:
+- pragmaticbim:use/sport
 tags:
 - entsorgung
 status: active

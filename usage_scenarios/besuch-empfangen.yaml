@@ -15,7 +15,9 @@ description:
     accessi e percorso verso il posto di lavoro.
   en: External visitors come to the workplace. The reception point determines wayfinding, access control,
     and the route to work areas.
-use: pragmaticbim:use/arbeit
+scope: use
+uses:
+- pragmaticbim:use/arbeit
 tags:
 - ankommen
 status: active

@@ -15,7 +15,9 @@ description:
     permanenza e superficie aggiuntiva.
   en: Learners and staff eat during the education day. The provision determines travel, dwell time, and
     additional area.
-use: pragmaticbim:use/bildung
+scope: use
+uses:
+- pragmaticbim:use/bildung
 tags:
 - verpflegung
 status: active

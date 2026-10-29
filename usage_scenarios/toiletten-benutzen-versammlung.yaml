@@ -15,7 +15,9 @@ description:
     La suddivisione determina numero, superficie e flessibilità d'uso.
   en: Visitors need toilets during their stay, including wheelchair users. The split determines number,
     area, and how flexibly the toilets can be used.
-use: pragmaticbim:use/versammlung
+scope: use
+uses:
+- pragmaticbim:use/versammlung
 tags:
 - sanitaer
 status: active

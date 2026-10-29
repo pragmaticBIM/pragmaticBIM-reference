@@ -16,7 +16,9 @@ description:
     piani. L'accesso determina assenza di ostacoli, quiete e separazione dei percorsi ospiti e servizio.
   en: Guests reach their rooms with luggage while staff move linen and supplies between floors. The access
     arrangement determines step-free access, quiet, and separation of guest and service routes.
-use: pragmaticbim:use/beherbergung
+scope: use
+uses:
+- pragmaticbim:use/beherbergung
 tags:
 - erschliessung
 status: active

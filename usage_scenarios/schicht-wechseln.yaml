@@ -15,7 +15,9 @@ description:
     igiene, separazione per sesso e percorsi verso la produzione.
   en: Staff put on and take off work clothes before and after each shift. Changing rooms determine hygiene,
     gender separation, and routes to production.
-use: pragmaticbim:use/produktion
+scope: use
+uses:
+- pragmaticbim:use/produktion
 tags:
 - personal
 status: active
