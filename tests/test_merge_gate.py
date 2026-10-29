@@ -174,3 +174,10 @@ def test_combine_checks():
     assert gate.combine_checks([cr("tests", conclusion="failure"), cr("x", "queued", None)], [], ignore) == "failure"
     assert gate.combine_checks([], [{"context": "ci", "state": "error"}], ignore) == "failure"
     assert gate.combine_checks([], [{"context": "ai-review", "state": "failure"}], ignore) is None
+
+
+def test_missing_required_check_is_pending():
+    ignore = {"gate"}
+    assert gate.combine_checks([], [], ignore, ("tests",)) == "pending"
+    assert gate.combine_checks([cr("other")], [], ignore, ("tests",)) == "pending"
+    assert gate.combine_checks([cr("tests")], [], ignore, ("tests",)) == "success"

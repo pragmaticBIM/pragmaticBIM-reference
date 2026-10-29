@@ -19,9 +19,15 @@
     "usage_scenarios/",
     "room_types/"
   ],
-  "auto_merge_suffixes": [".yaml", ".yml"],
+  "auto_merge_suffixes": [
+    ".yaml",
+    ".yml"
+  ],
   "max_files": 25,
   "max_changed_lines": 400,
   "merge_mode": "auto_merge",
-  "require_ai_review": false
+  "require_ai_review": false,
+  "required_checks": [
+    "tests"
+  ]
 }

@@ -8,6 +8,9 @@ The same script runs in every repository; only the JSON differs.
 The script never checks out or runs code from the pull request. It only reads
 PR metadata through the GitHub API, so it is safe under pull_request_target.
 
+required_checks in the JSON lists checks that must have reported before the
+gate merges in direct mode (in auto_merge mode the branch ruleset does this).
+
 Merge modes (merge_mode in the JSON):
   auto_merge  GitHub native auto-merge. Needs branch protection with required
               checks, so GitHub waits for them. Used on public repositories.
@@ -71,6 +74,7 @@ class Config:
     max_changed_lines: int = 400
     merge_mode: str = "auto_merge"
     require_ai_review: bool = False
+    required_checks: tuple[str, ...] = ()
 
     @classmethod
     def load(cls, path: str | os.PathLike) -> "Config":
@@ -85,6 +89,7 @@ class Config:
             max_changed_lines=raw.get("max_changed_lines", 400),
             merge_mode=raw.get("merge_mode", "auto_merge"),
             require_ai_review=raw.get("require_ai_review", False),
+            required_checks=tuple(raw.get("required_checks", [])),
         )
         if cfg.merge_mode not in ("auto_merge", "direct"):
             raise ValueError(f"unknown merge_mode {cfg.merge_mode!r}")
@@ -196,9 +201,16 @@ def evaluate(
     return Decision("automerge", ["low-risk change within the auto-merge lane"])
 
 
-def combine_checks(check_runs: list[dict], statuses: list[dict], ignore: set[str]) -> str | None:
-    """Fold check runs and commit statuses into one state; names in ignore are skipped."""
-    states: list[str] = []
+def combine_checks(
+    check_runs: list[dict], statuses: list[dict], ignore: set[str], required: tuple[str, ...] = ()
+) -> str | None:
+    """Fold check runs and commit statuses into one state; names in ignore are skipped.
+
+    A required check that has not reported yet counts as pending, so the gate
+    never merges in the gap before CI has registered its runs.
+    """
+    seen = {r["name"] for r in check_runs} | {s["context"] for s in statuses}
+    states: list[str] = ["pending" for name in required if name not in seen]
     for run in check_runs:
         if run["name"] in ignore:
             continue
@@ -272,12 +284,12 @@ def unresolved_thread_count(repo: str, number: int, token: str) -> int:
     return sum(1 for n in nodes if not n["isResolved"])
 
 
-def head_state(repo: str, sha: str, token: str) -> tuple[str | None, str | None]:
+def head_state(cfg: Config, repo: str, sha: str, token: str) -> tuple[str | None, str | None]:
     """Return (combined state of other checks, state of the ai-review status)."""
     runs = _paged(f"/repos/{repo}/commits/{sha}/check-runs", token, key="check_runs")
     statuses = _request("GET", f"/repos/{repo}/commits/{sha}/status", token).get("statuses", [])
     ai = next((s["state"] for s in statuses if s["context"] == AI_REVIEW_CONTEXT), None)
-    return combine_checks(runs, statuses, {GATE_CHECK_NAME, AI_REVIEW_CONTEXT}), ai
+    return combine_checks(runs, statuses, {GATE_CHECK_NAME, AI_REVIEW_CONTEXT}, cfg.required_checks), ai
 
 
 def set_labels(repo: str, number: int, add: str | None, current: set[str], token: str) -> None:
@@ -358,7 +370,7 @@ def _snapshot(cfg: Config, repo: str, number: int, token: str):
         for r in _paged(f"/repos/{repo}/pulls/{number}/reviews", token)
         if r["state"] in ("APPROVED", "CHANGES_REQUESTED")
     ]
-    checks, ai = head_state(repo, pr["head"]["sha"], token)
+    checks, ai = head_state(cfg, repo, pr["head"]["sha"], token)
     decision = evaluate(cfg, pr, files, labels, reviews,
                         unresolved_thread_count(repo, number, token), checks, ai)
     return pr, labels, checks, decision
