@@ -284,7 +284,7 @@ attributes:
     - pragmaticbim:workflow/des-element-based-cost-early
     - pragmaticbim:workflow/des-element-based-cost-late
     - pragmaticbim:workflow/bes-element-based-tendering
-    - pragmaticbim:workflow/bes-element-cost-post-calculation
+    - pragmaticbim:workflow/qas-element-cost-post-calculation
   is_applicability: false
   status: active
   sort_order: 6
@@ -303,7 +303,7 @@ attributes:
     - pragmaticbim:workflow/qas-component-cost-plausibility
     - pragmaticbim:workflow/des-element-based-cost-early
     - pragmaticbim:workflow/des-element-based-cost-late
-    - pragmaticbim:workflow/bes-element-cost-post-calculation
+    - pragmaticbim:workflow/qas-element-cost-post-calculation
   is_applicability: false
   status: active
   sort_order: 7
@@ -322,7 +322,7 @@ attributes:
     - pragmaticbim:workflow/des-element-based-cost-early
     - pragmaticbim:workflow/des-element-based-cost-late
     - pragmaticbim:workflow/bes-element-based-tendering
-    - pragmaticbim:workflow/bes-element-cost-post-calculation
+    - pragmaticbim:workflow/qas-element-cost-post-calculation
   is_applicability: false
   status: active
   sort_order: 8
@@ -377,7 +377,7 @@ attributes:
   - pragmaticbim:workflow/des-element-based-cost-early
   - pragmaticbim:workflow/des-element-based-cost-late
   - pragmaticbim:workflow/bes-element-based-tendering
-  - pragmaticbim:workflow/bes-element-cost-post-calculation
+  - pragmaticbim:workflow/qas-element-cost-post-calculation
   is_applicability: false
   status: active
   sort_order: 11

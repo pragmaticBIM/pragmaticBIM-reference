@@ -133,8 +133,8 @@ levels:
   - pragmaticbim:workflow/bes-steelwork-tender-basis
   - pragmaticbim:workflow/des-element-based-cost-late
   - pragmaticbim:workflow/bes-element-based-tendering
-  - pragmaticbim:workflow/bes-award-interface-visualization
-  - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
-  - pragmaticbim:workflow/bes-element-cost-post-calculation
+  - pragmaticbim:workflow/qas-award-interface-visualization
+  - pragmaticbim:workflow/qas-cost-interface-tenant-fitout
+  - pragmaticbim:workflow/qas-element-cost-post-calculation
   - pragmaticbim:workflow/con-final-measurement-from-model
   comment: Full set at level hoch (sort_order 3); includes lower levels.
