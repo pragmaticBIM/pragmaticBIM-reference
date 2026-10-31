@@ -16,6 +16,18 @@ Configure intensity per project goal instead of ticking a use-case checklist. On
 
 Open it in the [web application](https://elementplan.pragmaticbim.ch), or read, fork, or copy it into your own project.
 
+## Principles
+
+The Reference is opinionated. These rules decide what goes in and what stays out:
+
+1. **No requirement without a consumer.** Every element and attribute is ordered because a workflow needs it. Completeness for its own sake is not a reason.
+2. **Goals drive scope.** Projects set an intensity per project goal. The goals activate workflows, the workflows name the data. Nobody ticks use cases one by one.
+3. **One chain, stable IDs.** Goal → use → workflow → element → attribute. Every entry has a `pragmaticbim:` ID and one place in that chain.
+4. **One source, many outputs.** Contract Excel, PDF reports and IDS come from the same YAML. Nothing is maintained twice.
+5. **Spaces first.** Correctly modelled spaces and openings carry the building. Walls, slabs and quantities are derived from them where possible.
+6. **Type before occurrence.** Data that is the same for every instance belongs to the type.
+7. **Checked like code.** The tests enforce these rules. A change that breaks the chain does not merge.
+
 ## Use with AI assistants
 
 The Reference is available as a public MCP server, so Claude, ChatGPT and other MCP clients can answer with its goals, workflows, elements, attributes and room codes, citing stable IDs and catalog links.
@@ -63,7 +75,7 @@ The server is read-only, needs no account and stores no project data. It serves 
 
 Workflows follow the [abstract use case classification](https://schema.pragmaticbim.ch/classification/usecase.html). Several lean on [abstractBIM](https://www.abstractbim.com/), which derives walls, slabs, and quantities from correctly modelled spaces and openings.
 
-This is a starting point, not a Swiss standard. It does not replace KBOB or federal authority templates.
+The Reference is an opinionated default, not a Swiss standard. Use it as it is, or fork it and change the opinions for your organisation. It does not replace KBOB or federal authority templates.
 
 ## Components, equipment and openings
 
