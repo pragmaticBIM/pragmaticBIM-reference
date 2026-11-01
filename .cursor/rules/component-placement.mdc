@@ -42,6 +42,10 @@ A generator reads a component in its own local axes. Write `placement`, `paramet
 - `swing` is the door leaf sweep into the room that declares the opening. Every hinged door has one; sliding doors, gates without a leaf and passages do not.
 - Clearances may overlap each other but not walls or other components.
 
+## Mirroring
+
+A generator may mirror any component left to right. `left` and `right` clearances swap, offsets along `width` change sign, and a `wall_corner` component takes its side wall on the other side. Write one-sided components (WC transfer area, single bed, examination couch) in one hand only; do not add a mirrored copy.
+
 ## Connections
 
 - `max_distance_to_shaft`: straight-line plan distance from the component centre to the nearest shaft edge. Give it for `drainage`; omit it for media that run freely (power, cold water).
