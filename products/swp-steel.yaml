@@ -1,0 +1,14 @@
+id: pragmaticbim:product/swp-steel
+sort_order: 6
+status: active
+name:
+  de: Stahl-Wand
+  fr: Mur à ossature métallique
+  it: Parete con struttura in acciaio
+  en: Steel frame wall
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-STEEL
+tender_text:
+  de: Tragende oder nichttragende Wand mit primärer Stahlkonstruktion aus Profilen oder Ständern und Ausfachungs- oder Bekleidungsschichten. Vorgefertigte Rahmen werden vor Ort montiert, Dämmung und Bekleidung schichtweise ergänzt. Geeignet für Aussen- und Innenwände mit geringem Eigengewicht und hoher Ausbauflexibilität.
+  en: Load-bearing or non-load-bearing wall with a primary steel structure of sections or studs and sheathing or infill layers. Prefabricated frames are erected on site, with insulation and lining added layer by layer. Suitable for exterior and interior walls with low dead load and high fit-out flexibility.

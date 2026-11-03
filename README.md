@@ -67,6 +67,7 @@ The server is read-only, needs no account and stores no project data. It serves 
 | `uses/` | Building uses |
 | `usage_scenarios/` | Usage scenarios and their options |
 | `room_types/` | Functional rooms and container types composed with `contains`; configurations order `equipment` and `openings` |
+| `products/` | Product class data sheets: name, tender text and notes per class named in the [data contract](https://schema.pragmaticbim.ch/) |
 | `components/` | Parametric templates for fixtures, built-in and loose furniture, doors, windows and clearances |
 | `schema/` | JSON Schema for components and the room type `equipment` / `openings` extension |
 | `catalog/` / `generators/` / `render/` / `runner.py` | IFC and isometric PNG sample generation ([generators/README.md](generators/README.md)) |
@@ -98,6 +99,26 @@ Circulation, voids, parking and outdoor room types carry no equipment; the rooms
 Devices that drive room size but are chosen late (operating tables, imaging, machines, server racks, cooling appliances) are reserved with the Geräteplatz element (`architecture-device-space`); plant rooms use the existing MEP elements (boiler, tank, chiller, air handler, pump, switchboard, transformer, generator, UPS).
 
 Dimensions marked "Planungswert" or "SIA 500" in a `comment` still need professional confirmation before release.
+
+## Products
+
+The [pragmatic BIM data contract](https://schema.pragmaticbim.ch/) identifies each product class: notation, short definition, hierarchy, and crosswalks to KBOB, BKP and materials. The Reference describes it in `products/<code>.yaml`: name in four languages, tender text, and optional application notes and media. Element attributes such as the wall product class select from the same classes through `values/product-class-*.yaml`.
+
+| File | Edited by |
+| --- | --- |
+| `products/<code>.yaml` | hand, one data sheet per top concept |
+| `products/_contract-pin.yaml` | hand, the pinned contract commit and the schemes it covers |
+| `products/_names.yaml` | generated, the name index of the pinned contract |
+| `values/product-class-*.yaml` | generated, German and English from the contract, French and Italian from the sheets |
+
+The German and English names on a sheet must match the contract label; the tests check this. To move to a new contract release, check the contract out at the new commit, update `_contract-pin.yaml` and run:
+
+```bash
+pip install rdflib
+python scripts/sync_products.py --contract ../pragmatic-bim-data-contract
+```
+
+After editing sheet names, rebuild the value lists with `python scripts/sync_products.py --values-only`.
 
 ## Contributing
 

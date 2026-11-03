@@ -1,0 +1,14 @@
+id: pragmaticbim:product/sfp-gate
+sort_order: 8
+status: active
+name:
+  de: Tor
+  fr: Portail
+  it: Portone
+  en: Gate
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-GATE
+tender_text:
+  de: Oeffnung in der Baustellenabschrankung fuer Fahrzeuge oder Personen, einschliesslich Schiebe-, Dreh- oder Schrankentoren, mit der zum Tor gehoerenden Verriegelung.
+  en: Opening in the site enclosure for vehicles or people, including sliding, swing, or barrier gates, with the locking that belongs to the gate itself.

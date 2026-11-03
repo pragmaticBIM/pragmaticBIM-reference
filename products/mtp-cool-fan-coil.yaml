@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mtp-cool-fan-coil
+sort_order: 12
+status: active
+name:
+  de: Geblaesekonvektor (Kuehlbetrieb)
+  fr: Ventilo-convecteur (mode refroidissement)
+  it: Ventilconvettore (modalità raffrescamento)
+  en: Fan coil (cooling mode)
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-COOL-FAN-COIL
+tender_text:
+  de: Kühlt und entfeuchtet die Raumluft, indem sie mit einem Ventilator über einen Kaltwasser- oder Direktverdampfer-Wärmeübertrager geführt und in den Raum zurückgegeben wird, und deckt damit innere und solare Kühllasten. Wird sichtbar oder verdeckt an Wand oder Decke oder als Bodengerät montiert und an Kaltwasser oder Kältemittel, eine Kondensatleitung sowie Strom- und Steuerleitungen angeschlossen, mit raumweiser Regelung von Ventilatorstufe und Kühlleistung. Geeignet für Büros, Besprechungsräume und andere Räume mit hohen inneren Lasten, wobei Filter, Kondensatwanne und Ablauf für die Reinigung zugänglich sind und Luft- und Wasserdurchsatz bei der Inbetriebnahme eingestellt werden.
+  en: Cools and dehumidifies room air by drawing it with a fan over a chilled-water or direct-expansion coil and returning it to the space, covering internal and solar cooling loads. Mounted exposed or concealed on wall or ceiling or as a floor unit and connected to chilled water or refrigerant, a condensate drain, and power and control wiring, with room-wise control of fan stage and coil output. Suitable for offices, meeting rooms, and other spaces with high internal loads, with filter, condensate tray, and drain accessible for cleaning and with air and water flows set during commissioning.

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mup-fw-pressure-booster
+sort_order: 16
+status: active
+name:
+  de: Druckerhoehungsanlage
+  fr: Surpresseur
+  it: Impianto di sopraelevazione della pressione
+  en: Pressure booster
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-FW-PRESSURE-BOOSTER
+tender_text:
+  de: Erhöht den Druck der Trinkwasserversorgung, damit an allen Verbrauchern einschliesslich oberer Geschosse und entfernter Entnahmestellen der erforderliche Fliessdruck verfügbar ist. Lieferung als werkseitig montierte Pumpengruppe mit Steuerschrank, Druckbehälter und Sensorik auf schwingungsentkoppelter Unterlage im Hauseinführungs- oder Technikraum, Anschluss an die Einspeiseleitung und die Gebäudeverteilung, bedarfsgeführte Drehzahlregelung und Störmeldungen an die Gebäudeautomation. Geeignet für hohe Gebäude und Grundstücke mit unzureichendem Netzdruck; erfordert einen entwässerten Aufstellort, Beachtung von Schall- und Schwingungsübertragung sowie Zugang für Pumpen- und Steuerungswartung bei aufrechterhaltener Versorgung.
+  en: Raises the pressure of the potable water supply so that the required flow pressure is available at all consumers, including upper floors and remote draw-off points. Delivered as a factory-assembled pump set with control cabinet, pressure vessel, and sensors on a vibration-isolated base in the service entry or plant room, connected to the incoming main and the building distribution, with demand-led speed control and fault signals to building automation. Suitable for tall buildings and sites with insufficient network pressure; requires a drained plant location, attention to noise and vibration transmission, and access for pump and control maintenance while supply is maintained.

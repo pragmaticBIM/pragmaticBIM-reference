@@ -1,0 +1,14 @@
+id: pragmaticbim:product/swp-rammed-earth
+sort_order: 3
+status: active
+name:
+  de: Lehmstampf-Wand
+  fr: Mur en pisé
+  it: Parete in terra cruda battuta
+  en: Rammed earth wall
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-RAMMED-EARTH
+tender_text:
+  de: Tragende oder nichttragende Wand aus verdichtetem, unbehandeltem Erdmaterial in Schalung eingebracht. Massive, monolithische Bauweise ohne zusätzliche Bekleidung.
+  en: Load-bearing or non-load-bearing wall from compacted, untreated earth material placed in formwork. Solid, monolithic construction without additional cladding.

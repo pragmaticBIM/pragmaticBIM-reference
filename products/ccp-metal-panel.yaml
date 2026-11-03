@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ccp-metal-panel
+sort_order: 6
+status: active
+name:
+  de: Metallpaneel-Decke
+  fr: Plafond en panneaux métalliques
+  it: Controsoffitto a pannelli metallici
+  en: Metal panel ceiling
+product_classification:
+  classification_scheme: AbstractCeilingCoveringProduct
+  classification_code: CCP-METAL-PANEL
+tender_text:
+  de: Deckensystem aus linearen Metallpaneelen oder Lamellen unter der tragenden Decke, mit glatten oder perforierten Sichtflächen und offenen oder geschlossenen Fugen. Auf Tragschienen einer abgehängten Unterkonstruktion eingeklipst, einzeln demontierbar, bei Bedarf mit Akustikvlies und Dämmung im Hohlraum. Geeignet für Erschliessungsflächen, Bahnhof- und Industriebereiche sowie Vordächer mit Anforderungen an Robustheit, Reinigbarkeit und schnelle Zugänglichkeit der Installationen.
+  en: Ceiling system from linear metal panels or lamellas below the load-bearing slab, with plain or perforated faces and open or closed joints. Clipped onto carrier rails of a suspended substructure, individually demountable, with acoustic fleece and insulation in the cavity where required. Suitable for circulation areas, station-type and industrial spaces, and canopies with requirements on robustness, cleanability, and quick access to services.

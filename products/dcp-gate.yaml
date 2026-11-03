@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-gate
+sort_order: 6
+status: active
+name:
+  de: Tor / Industrietuer
+  fr: Portail / porte industrielle
+  it: Portone / porta industriale
+  en: Gate / industrial door
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-GATE
+tender_text:
+  de: Grossformatiger Verschluss einer Fahrzeug- oder Warenöffnung, als Sektional-, Roll-, Schiebe-, Falt- oder Schwingtor mit Führungsschienen und Gewichtsausgleichssystem. Panele, Laufschienen, Federn und Antrieb werden vorgefertigt, in der Öffnung montiert, an der tragenden Laibung oder am Sturz verankert und mit Antrieb, Steuerung und Sicherheitseinrichtungen in Betrieb genommen. Geeignet für Garagen, Anlieferungen und Industriehallen mit häufigen Betriebszyklen; erfordert Kanten- und Quetschschutz, definierte Öffnungsgeschwindigkeit, manuelle Notbedienung und regelmässige Kontrolle der bewegten Teile.
+  en: Large-format closure of a vehicle or goods opening, as a sectional, rolling, sliding, folding, or up-and-over leaf with guide tracks and a weight compensation system. Panels, tracks, springs, and drive are prefabricated, assembled in the opening, anchored to the structural reveal or lintel, and commissioned together with drive, control, and safety devices. Suitable for garages, loading bays, and industrial halls with frequent operating cycles; requires edge and crush protection, a defined opening speed, manual emergency operation, and periodic inspection of the moving parts.

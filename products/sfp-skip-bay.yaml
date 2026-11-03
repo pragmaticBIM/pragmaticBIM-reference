@@ -1,0 +1,14 @@
+id: pragmaticbim:product/sfp-skip-bay
+sort_order: 21
+status: active
+name:
+  de: Muldenplatz
+  fr: Emplacement des bennes
+  it: Area per benne
+  en: Skip bay
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-SKIP-BAY
+tender_text:
+  de: Verstaerkte Bucht, in der Mulden abgestellt, gefuellt und abgeholt werden, mit Zufahrt fuer den Muldenlastwagen. Keine allgemeine Lagerflaeche und kein Umschlagplatz fuer Baumaterial.
+  en: Reinforced bay where skips are placed, filled, and collected, with access for the skip lorry. Not general open storage and not the transfer area for construction materials.

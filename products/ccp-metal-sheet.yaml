@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ccp-metal-sheet
+sort_order: 1
+status: active
+name:
+  de: Metallblech-Deckenbekleidung
+  fr: Revêtement de plafond en tôle
+  it: Rivestimento di soffitto in lamiera
+  en: Metal sheet ceiling
+product_classification:
+  classification_scheme: AbstractCeilingCoveringProduct
+  classification_code: CCP-METAL-SHEET
+tender_text:
+  de: Sichtbare Deckenbekleidung aus Metallblechen oder -streifen unter der tragenden Decke, mit glatter oder perforierter Oberfläche. Auf abgehängter Metallunterkonstruktion eingeklipst oder verschraubt, bei Bedarf mit Akustikvlies und Dämmung im Hohlraum. Geeignet für Erschliessungs-, Sanitär- und Technikräume mit Anforderungen an Reinigbarkeit, nichtbrennbare Oberflächen und teilweise Zugänglichkeit der Installationen im Deckenhohlraum.
+  en: Visible ceiling lining from metal sheets or strips below the load-bearing slab, with a plain or perforated surface. Clipped or screwed onto a suspended metal substructure, with acoustic fleece and insulation laid in the cavity where required. Suitable for circulation areas, sanitary rooms, and technical rooms with requirements on cleanability, non-combustible surfaces, and partial access to services in the ceiling void.

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mup-vent-fan
+sort_order: 10
+status: active
+name:
+  de: Ventilator
+  fr: Ventilateur
+  it: Ventilatore
+  en: Fan
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-VENT-FAN
+tender_text:
+  de: Fördert Zu-, Ab- oder Umluft durch einen Kanal- oder Schachtabschnitt und überwindet dessen Strömungswiderstand, damit der erforderliche Luftvolumenstrom sichergestellt ist. Lieferung als werkseitig montierte Einheit für Kanal-, Wand-, Schacht- oder Sockelmontage auf schwingungsentkoppelter Unterlage, Anschluss an das Kanalnetz über flexible Verbindungen, an die Stromversorgung und an die Drehzahlregelung der Gebäudeautomation. Geeignet für Einzelräume, Schächte sowie Rauch- oder Prozessabluftaufgaben; erfordert Zugang für Inspektion, Laufradreinigung und Motorwechsel sowie Beachtung der Schallübertragung am Einbauort.
+  en: Moves supply, extract, or transfer air through a duct or shaft section and overcomes its flow resistance so that the required air volume is maintained. Delivered as a factory-assembled unit for duct, wall, shaft, or base mounting on a vibration-isolated support, connected to the ductwork through flexible connectors, to the power supply, and to speed control from building automation. Suitable for single rooms, shafts, and smoke or process extract duties; requires access for inspection, impeller cleaning, and motor replacement, and attention to noise transmission at the installation point.

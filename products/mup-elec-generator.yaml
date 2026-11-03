@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mup-elec-generator
+sort_order: 5
+status: active
+name:
+  de: Notstromaggregat
+  fr: Groupe électrogène de secours
+  it: Gruppo elettrogeno di emergenza
+  en: Backup generator
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-ELEC-GENERATOR
+tender_text:
+  de: Erzeugt bei Ausfall der Netzversorgung elektrische Energie vor Ort und versorgt Sicherheits- und ausgewählte Ersatzverbraucher bis zur Rückkehr der Normalversorgung. Lieferung als werkseitig montiertes Aggregat auf schwingungsentkoppeltem Fundament oder in einem Aussengehäuse, mit Brennstoffversorgung, Abgas- und Verbrennungsluftführung, Kühlluftwegen sowie automatischer Zuschaltung auf die Verteilung über die Gebäudeautomation. Geeignet für Gebäude mit sicherheitsrelevanten oder betriebskritischen Verbrauchern; erfordert einen brandabgetrennten Aufstellort, Schall- und Abgasführung, Brennstofflagerung sowie regelmässige Probeläufe und Wartung.
+  en: Generates electricity on site when the mains supply fails and feeds safety and selected standby loads until normal supply returns. Delivered as a factory-assembled set on a vibration-isolated foundation or in an outdoor enclosure, with fuel supply, exhaust and combustion air routes, cooling air paths, and automatic transfer to the distribution under control of building automation. Suitable for buildings with safety-relevant or business-critical loads; requires a fire-separated plant location, noise and exhaust routing, fuel storage, and periodic test runs and servicing.

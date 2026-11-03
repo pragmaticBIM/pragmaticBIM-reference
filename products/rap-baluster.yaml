@@ -1,0 +1,14 @@
+id: pragmaticbim:product/rap-baluster
+sort_order: 1
+status: active
+name:
+  de: Staketengeländer
+  fr: Garde-corps à barreaux
+  it: Parapetto a bacchette
+  en: Metal baluster railing
+product_classification:
+  classification_scheme: RailingProduct
+  classification_code: RAP-BALUSTER
+tender_text:
+  de: Absturzsicherung mit vertikalen Metallstaketen zwischen Pfosten und Handlauf, die den Rand von Decken, Treppen und Balkonen schliesst. Vorgefertigte Rahmen werden an Deckenrändern, Stufen oder Brüstungen befestigt und verzinkt oder beschichtet. Geeignet für Bereiche mit Kinderaufenthalt, in denen überkletterbare horizontale Glieder zu vermeiden sind.
+  en: Fall protection with vertical metal balusters between posts and handrail, closing the edge of floors, stairs, and balconies. Prefabricated frames are anchored to slab edges, treads, or parapets and finished by galvanizing or coating. Suitable for areas used by children, where climbable horizontal members must be avoided.

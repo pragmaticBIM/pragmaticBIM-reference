@@ -1,0 +1,14 @@
+id: pragmaticbim:product/wcp-wallpaper
+sort_order: 2
+status: active
+name:
+  de: Tapete
+  fr: Papier peint
+  it: Carta da parati
+  en: Wallpaper
+product_classification:
+  classification_scheme: AbstractWallCoveringProduct
+  classification_code: WCP-WALLPAPER
+tender_text:
+  de: Dünne dekorative Innenwandbekleidung aus Papier-, Vlies- oder Vinylrollenware auf glattem, verspachteltem Untergrund. Bahnenweise vollflächig verklebt mit Stoss- oder Überlappungsfugen, einschliesslich Untergrundvorbereitung und bei Bedarf Makulatur. Geeignet für Büro-, Erschliessungs- und Aufenthaltsräume mit Farb- oder Musteranforderung und geringer mechanischer Beanspruchung.
+  en: Thin decorative interior wall covering from paper, non-woven, or vinyl roll goods on a smooth, filled substrate. Adhered over the full surface in strips with butt or overlapping joints, including substrate preparation and lining paper where required. Suitable for offices, circulation areas, and rooms where a colour or pattern finish with limited mechanical loading is required.

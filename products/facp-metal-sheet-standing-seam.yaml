@@ -1,0 +1,14 @@
+id: pragmaticbim:product/facp-metal-sheet-standing-seam
+sort_order: 3
+status: active
+name:
+  de: Stehfalz-Metallblechfassade
+  fr: Façade en tôle à joint debout
+  it: Facciata in lamiera aggraffata
+  en: Metal sheet standing-seam facade
+product_classification:
+  classification_scheme: EuropeanFacadeCoveringProduct
+  classification_code: FaCP-METAL-SHEET-STANDING-SEAM
+tender_text:
+  de: Nichttragende Metallhaut aus Profilblech oder Stehfalzbahnen in Aluminium, Stahl, Kupfer oder Zink vor der Aussenwand. Die Bahnen werden auf einer hinterlüfteten Holz- oder Metall-Unterkonstruktion gefalzt oder geklipst, mit Schiebehaftern für die thermische Längenänderung. Geeignet für Neubau und leichte Sanierungsüberkleidungen an exponierten und geometrisch anspruchsvollen Fassaden mit hoher Anforderung an Wasserdichtigkeit bei geringem Zusatzgewicht.
+  en: Non-load-bearing metal skin of profiled sheet or standing-seam bands in aluminium, steel, copper, or zinc in front of the exterior wall. The bands are seamed or clipped onto a ventilated timber or metal sub-frame using sliding clips that accommodate thermal movement. Suitable for new build and lightweight retrofit overlays on exposed and geometrically demanding facades where high watertightness is required at low added dead load.

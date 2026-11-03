@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mtp-vent-grille
+sort_order: 8
+status: active
+name:
+  de: Gitter / Luftgitter
+  fr: Grille d'aération
+  it: Griglia di ventilazione
+  en: Grille
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-VENT-GRILLE
+tender_text:
+  de: Lässt Luft ohne aktive Regelung zwischen Räumen oder zwischen Raum und Kanal übertreten und sichert den vorgesehenen Luftweg für Lüftung und Druckausgleich. Wird als festes Gitter oder Linearschlitz in Wand, Tür, Decke oder Kanalöffnung eingebaut, ohne bewegliche Regelorgane. Geeignet für Übertritts- und Überströmöffnungen in Sanitär-, Korridor- und Technikbereichen, ausgelegt auf geringen Druckverlust und mit im eingebauten Zustand reinigbarer Sichtfläche.
+  en: Lets air pass between rooms or between room and duct without active regulation and secures the intended air path for ventilation and pressure balance. Fitted into a wall, door, ceiling, or duct opening as a fixed grille or linear slot, without moving control elements. Suitable for transfer and overflow openings in sanitary, corridor, and technical areas, sized for a low pressure drop and with a face that can be cleaned in place.

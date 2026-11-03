@@ -1,0 +1,14 @@
+id: pragmaticbim:product/sfp-canopy
+sort_order: 9
+status: active
+name:
+  de: Schutzdach
+  fr: Auvent de protection
+  it: Tettoia di protezione
+  en: Protective canopy
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-CANOPY
+tender_text:
+  de: Ueberdachter Gang entlang der oeffentlichen Seite der Baustelle, mit einer Decke, die herabfallende Teile auffaengt, und einem freien Durchgang darunter. Kein Arbeitsgeruest und kein Bauzaun.
+  en: Covered walkway along the public side of the site, with a deck that catches debris and a clear passage underneath. It is not a work scaffold and not the site fence.

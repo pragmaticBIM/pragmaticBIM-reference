@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ccp-metal-grid
+sort_order: 7
+status: active
+name:
+  de: Metallraster-Decke
+  fr: Plafond à grille métallique
+  it: Controsoffitto a griglia metallica
+  en: Metal grid ceiling
+product_classification:
+  classification_scheme: AbstractCeilingCoveringProduct
+  classification_code: CCP-METAL-GRID
+tender_text:
+  de: Abgehängte Decke aus sichtbarem Metallraster mit abnehmbaren Einlegeplatten oder offenen Rasterzellen unter der tragenden Decke. Rasterprofile werden mit verstellbaren Abhängern an der Rohdecke aufgehängt, die Platten ohne Befestigung eingelegt, sodass jedes Feld einzeln entnommen werden kann. Geeignet für Büro-, Labor- und Technikbereiche mit dichten Installationen im Deckenhohlraum, die vollflächig und wiederholt zugänglich sein müssen, wobei Akustik und Brandverhalten von der gewählten Einlage abhängen.
+  en: Suspended ceiling from a visible metal grid with removable lay-in tiles or open grid cells below the load-bearing slab. Grid profiles are hung from the slab on adjustable hangers, and tiles are laid in without fixings so that every field can be removed individually. Suitable for offices, laboratories, and technical areas with dense services in the ceiling void that require full and repeated access, with acoustic and fire behaviour determined by the chosen infill.

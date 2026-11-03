@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ssp-timber
+sort_order: 4
+status: active
+name:
+  de: Holzdecke / -platte
+  fr: Dalle en bois
+  it: Solaio in legno
+  en: Timber slab / deck
+product_classification:
+  classification_scheme: AbstractSlabSeparatorProduct
+  classification_code: SSP-TIMBER
+tender_text:
+  de: Tragendes horizontales Bauteil mit primärer Konstruktion aus Holzbalken, Rippen oder Holzwerkstoffplatten, in der Regel mit Beplankung und darüberliegendem Bodenaufbau. Als Balken- oder Rippendeckenmodule vorgefertigt, vor Ort auf Wände oder Unterzüge aufgelegt und mit Schallschutzschichten und Beschwerung ergänzt. Geeignet für Geschoss- und Dachdecken mit geringem Eigengewicht, trockener Bauweise und kurzer Montagezeit.
+  en: Load-bearing horizontal element with a primary structure of timber joists, ribs, or wood-based panels, usually with sheathing and a separating floor build-up above. Prefabricated as joist or rib-deck modules, set on walls or beams on site, and completed with acoustic layers and ballast fill. Suitable for floor and roof decks with low dead load, dry construction, and short erection times.

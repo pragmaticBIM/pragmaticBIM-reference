@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-pvc
+sort_order: 4
+status: active
+name:
+  de: Kunststoff- / PVC-Tuer
+  fr: Porte en matière synthétique / PVC
+  it: Porta in materiale sintetico / PVC
+  en: Plastic / PVC door system
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-PVC
+tender_text:
+  de: Türkonstruktion mit Rahmen- und Blattprofilen aus Kunststoff, üblicherweise Mehrkammerprofile mit innerer Armierung und Paneel- oder Glasfüllung, die eine Zugangsöffnung verschliesst. Die Profile werden im Werk verschweisst und mit Dichtungen und Beschlägen ausgerüstet, der Rahmen wird in die Öffnung eingesetzt, verankert und abgedichtet und das Blatt auf umlaufend dichten Anschlag eingestellt. Geeignet für Nebeneingänge, Feuchträume und Öffnungen, bei denen eine abwaschbare, korrosionsfreie Oberfläche ohne Anstricherneuerung gefordert ist.
+  en: Door assembly with plastic frame and leaf profiles, usually multi-chamber sections with internal reinforcement and a panel or glazed infill, closing an access opening. Profiles are welded and fitted with gaskets and hardware in the factory, the frame is set into the opening, anchored and sealed, and the leaf is adjusted to close tight all round. Suitable for secondary entrances, wet rooms, and openings where a washable, corrosion-free surface without coating renewal is required.

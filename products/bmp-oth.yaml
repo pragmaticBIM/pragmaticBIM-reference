@@ -1,0 +1,14 @@
+id: pragmaticbim:product/bmp-oth
+sort_order: 4
+status: active
+name:
+  de: Anderer oder unbekannter Träger
+  fr: Poutre autre ou inconnue
+  it: Trave altra o sconosciuta
+  en: Other or unknown beam
+product_classification:
+  classification_scheme: BeamProduct
+  classification_code: BMP-OTH
+tender_text:
+  de: Platzhalter für Träger, deren Material oder Produkttyp zum Zeitpunkt der Ausschreibung noch nicht festgelegt ist, sowie für Verbund- und Mauerwerksträger ausserhalb der gelisteten Typen. Spannweite, Lasten und geforderter Feuerwiderstand sind gesondert zu beschreiben. Nur in frühen Planungsphasen oder bei unvollständiger Datenlage verwenden.
+  en: Placeholder for beams whose material or product type is not yet fixed at tender stage, and for composite or masonry beams outside the listed types. Span, loads, and required fire resistance must be stated separately. Use only in early design stages or where data is incomplete.

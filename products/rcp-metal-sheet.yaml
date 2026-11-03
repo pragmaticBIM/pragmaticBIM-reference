@@ -1,0 +1,14 @@
+id: pragmaticbim:product/rcp-metal-sheet
+sort_order: 4
+status: active
+name:
+  de: Metallblech-Dach
+  fr: Toiture en tôle
+  it: Copertura in lamiera
+  en: Metal sheet roof
+product_classification:
+  classification_scheme: AbstractRoofCoveringProduct
+  classification_code: RCP-METAL-SHEET
+tender_text:
+  de: Witterungsbeständige äussere Dachhaut aus geformtem Metallblech, auf Lattung, Pfetten oder Schalung über einer Trenn- und Belüftungsschicht befestigt. Die Bahnen werden durch Stehfalze, Hafte oder profilierte Überlappungen verbunden, die thermische Bewegungen zulassen, mit Abschlüssen an Traufe, Ortgang und Durchdringungen. Geeignet für geneigte und flach geneigte Dächer mit grossen Spannweiten, exponierten Lagen und Anforderungen an lange Nutzungsdauer bei geringem Flächengewicht.
+  en: Weatherproof outer roof skin from formed metal sheet, fixed on battens, purlins, or boarding above a separation and ventilation layer. Panels are joined by standing seams, clips, or profiled overlaps that allow thermal movement, with flashings at eaves, verges, and penetrations. Suitable for pitched and low-slope roofs with long spans, exposed locations, and demands on a long service life at low surface weight.

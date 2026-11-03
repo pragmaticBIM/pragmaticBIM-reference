@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fdp-raft
+sort_order: 1
+status: active
+name:
+  de: Platten- / Bodenplattenfundament
+  fr: Radier / dalle de fondation
+  it: Platea / piastra di fondazione
+  en: Raft / base slab foundation
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-RAFT
+tender_text:
+  de: Durchgehende tragende Platte unter der Gebäudegrundfläche, die Stützen-, Wand- und Deckenlasten gleichmässig in den Baugrund verteilt. Vor Ort auf einer Sauberkeitsschicht mit darunterliegender Dämmung und Abdichtung betoniert, vollflächig bewehrt und unter konzentrierten Lasten örtlich verstärkt. Geeignet für gering tragfähigen oder ungleichmässigen Baugrund und für Untergeschosse, in denen die Platte zugleich die unterste Geschossfläche bildet.
+  en: Continuous load-bearing plate under the building footprint that spreads column, wall, and slab loads evenly into the subsoil. Cast in place on a levelling layer with insulation and sealing beneath, reinforced across the full area and locally thickened under concentrated loads. Suitable for weak or uneven ground and for basements where the plate also forms the lowest floor surface.
