@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Kranfundament
+  fr: Fondation de grue
+  it: Fondazione della gru
   en: Crane foundation
 product_classification:
   classification_scheme: SiteFacilityProduct

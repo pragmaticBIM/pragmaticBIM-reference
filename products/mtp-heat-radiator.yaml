@@ -3,6 +3,8 @@ sort_order: 9
 status: active
 name:
   de: Radiator / Heizkoerper
+  fr: Radiateur
+  it: Radiatore
   en: Radiator
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

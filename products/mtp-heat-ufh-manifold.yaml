@@ -3,6 +3,8 @@ sort_order: 10
 status: active
 name:
   de: Heizkreisverteiler (FBH)
+  fr: Distributeur de chauffage au sol
+  it: Collettore del riscaldamento a pavimento
   en: Underfloor heating manifold
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

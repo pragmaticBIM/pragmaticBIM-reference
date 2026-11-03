@@ -3,6 +3,8 @@ sort_order: 25
 status: active
 name:
   de: Rauchmelder
+  fr: Détecteur de fumée
+  it: Rilevatore di fumo
   en: Smoke detector
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

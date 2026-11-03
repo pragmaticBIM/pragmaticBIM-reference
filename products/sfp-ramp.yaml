@@ -3,6 +3,8 @@ sort_order: 18
 status: active
 name:
   de: Rampe
+  fr: Rampe
+  it: Rampa
   en: Ramp
 product_classification:
   classification_scheme: SiteFacilityProduct

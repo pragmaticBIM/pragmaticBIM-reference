@@ -3,6 +3,8 @@ sort_order: 23
 status: active
 name:
   de: Betonmischanlage
+  fr: Centrale à béton
+  it: Impianto di betonaggio
   en: Concrete batching plant
 product_classification:
   classification_scheme: SiteFacilityProduct

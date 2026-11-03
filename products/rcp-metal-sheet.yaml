@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Metallblech-Dach
+  fr: Toiture en tôle
+  it: Copertura in lamiera
   en: Metal sheet roof
 product_classification:
   classification_scheme: AbstractRoofCoveringProduct

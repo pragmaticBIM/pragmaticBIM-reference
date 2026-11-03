@@ -3,6 +3,8 @@ sort_order: 6
 status: active
 name:
   de: Spezielles lichtdurchlaessiges Bauteil
+  fr: Élément translucide spécial
+  it: Elemento traslucido speciale
   en: Special transparent opening
 product_classification:
   classification_scheme: AbstractWindowConnectorProduct

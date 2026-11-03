@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Kunststein-Wandverkleidung
+  fr: Revêtement mural en pierre artificielle
+  it: Rivestimento murale in pietra artificiale
   en: Artificial stone wall cladding
 product_classification:
   classification_scheme: AbstractWallCoveringProduct

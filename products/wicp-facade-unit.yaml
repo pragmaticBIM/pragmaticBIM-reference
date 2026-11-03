@@ -3,6 +3,8 @@ sort_order: 8
 status: active
 name:
   de: Fassaden-Verglasungselement
+  fr: Élément vitré de façade
+  it: Elemento vetrato di facciata
   en: Facade glazing unit
 product_classification:
   classification_scheme: AbstractWindowConnectorProduct

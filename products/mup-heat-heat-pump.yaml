@@ -3,6 +3,8 @@ sort_order: 12
 status: active
 name:
   de: Waermepumpe
+  fr: Pompe à chaleur
+  it: Pompa di calore
   en: Heat pump
 product_classification:
   classification_scheme: AbstractMepUnitProduct

@@ -3,6 +3,8 @@ sort_order: 9
 status: active
 name:
   de: Sonstiges / unbekanntes Fenster
+  fr: Fenêtre autre ou inconnue
+  it: Finestra altra o sconosciuta
   en: Other / unknown window
 product_classification:
   classification_scheme: AbstractWindowConnectorProduct

@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Andere oder unbekannte Stütze
+  fr: Colonne autre ou inconnue
+  it: Pilastro altro o sconosciuto
   en: Other or unknown column
 product_classification:
   classification_scheme: ColumnProduct

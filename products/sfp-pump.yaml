@@ -3,6 +3,8 @@ sort_order: 24
 status: active
 name:
   de: Betonpumpe
+  fr: Pompe à béton
+  it: Pompa per calcestruzzo
   en: Concrete pump
 product_classification:
   classification_scheme: SiteFacilityProduct

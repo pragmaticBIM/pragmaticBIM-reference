@@ -3,6 +3,8 @@ sort_order: 3
 status: active
 name:
   de: VSG-Geländer punktgehalten
+  fr: Garde-corps en verre feuilleté à fixation ponctuelle
+  it: Parapetto in vetro stratificato a fissaggio puntuale
   en: Point-fixed structural glass railing
 product_classification:
   classification_scheme: RailingProduct

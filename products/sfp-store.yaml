@@ -3,6 +3,8 @@ sort_order: 11
 status: active
 name:
   de: Magazin
+  fr: Magasin
+  it: Magazzino
   en: Site store
 product_classification:
   classification_scheme: SiteFacilityProduct

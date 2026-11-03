@@ -3,6 +3,8 @@ sort_order: 7
 status: active
 name:
   de: Holz-Wand
+  fr: Mur à ossature bois
+  it: Parete con struttura in legno
   en: Timber frame wall
 product_classification:
   classification_scheme: AbstractWallSeparatorProduct

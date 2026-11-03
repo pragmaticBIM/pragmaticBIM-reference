@@ -3,6 +3,8 @@ sort_order: 7
 status: active
 name:
   de: Spezialtuer
+  fr: Porte spéciale
+  it: Porta speciale
   en: Special door system
 product_classification:
   classification_scheme: AbstractDoorConnectorProduct

@@ -3,6 +3,8 @@ sort_order: 5
 status: active
 name:
   de: Keramik- / Feinsteinzeug-Wandfliese
+  fr: Carrelage mural en céramique / grès cérame
+  it: Piastrelle murali in ceramica / gres porcellanato
   en: Ceramic / porcelain wall tile
 product_classification:
   classification_scheme: AbstractWallCoveringProduct

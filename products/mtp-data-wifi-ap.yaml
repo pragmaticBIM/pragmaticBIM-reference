@@ -3,6 +3,8 @@ sort_order: 5
 status: active
 name:
   de: WLAN-Access-Point
+  fr: Point d'accès WLAN
+  it: Access point WLAN
   en: WiFi access point
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

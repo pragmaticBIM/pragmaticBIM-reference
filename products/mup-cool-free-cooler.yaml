@@ -3,6 +3,8 @@ sort_order: 15
 status: active
 name:
   de: Freecooler
+  fr: Refroidisseur à air libre
+  it: Free cooler
   en: Free cooler
 product_classification:
   classification_scheme: AbstractMepUnitProduct

@@ -3,6 +3,8 @@ sort_order: 7
 status: active
 name:
   de: Textile Wandbekleidung
+  fr: Revêtement mural textile
+  it: Rivestimento murale tessile
   en: Textile wall covering
 product_classification:
   classification_scheme: AbstractWallCoveringProduct

@@ -3,6 +3,8 @@ sort_order: 1
 status: active
 name:
   de: Platten- / Bodenplattenfundament
+  fr: Radier / dalle de fondation
+  it: Platea / piastra di fondazione
   en: Raft / base slab foundation
 product_classification:
   classification_scheme: AbstractFoundationProduct

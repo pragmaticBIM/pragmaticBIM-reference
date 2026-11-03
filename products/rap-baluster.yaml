@@ -3,6 +3,8 @@ sort_order: 1
 status: active
 name:
   de: Staketengeländer
+  fr: Garde-corps à barreaux
+  it: Parapetto a bacchette
   en: Metal baluster railing
 product_classification:
   classification_scheme: RailingProduct

@@ -3,6 +3,8 @@ sort_order: 1
 status: active
 name:
   de: Unterlagsboden / Ausgleichsschicht
+  fr: Chape / couche de ragréage
+  it: Sottofondo / strato di livellamento
   en: Subfloor / leveling layer
 product_classification:
   classification_scheme: AbstractFloorCoveringProduct

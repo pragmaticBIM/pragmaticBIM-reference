@@ -3,6 +3,8 @@ sort_order: 2
 status: active
 name:
   de: Leuchte
+  fr: Luminaire
+  it: Apparecchio illuminante
   en: Light fixture
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

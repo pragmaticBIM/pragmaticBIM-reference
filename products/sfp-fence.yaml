@@ -3,6 +3,8 @@ sort_order: 7
 status: active
 name:
   de: Zaun
+  fr: Clôture
+  it: Recinzione
   en: Site fence
 product_classification:
   classification_scheme: SiteFacilityProduct

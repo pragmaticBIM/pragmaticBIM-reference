@@ -3,6 +3,8 @@ sort_order: 8
 status: active
 name:
   de: Leichtbauwand
+  fr: Mur en construction légère
+  it: Parete in costruzione leggera
   en: Lightweight construction wall
 product_classification:
   classification_scheme: AbstractWallSeparatorProduct

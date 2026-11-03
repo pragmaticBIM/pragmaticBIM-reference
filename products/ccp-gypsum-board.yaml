@@ -3,6 +3,8 @@ sort_order: 2
 status: active
 name:
   de: Gipskarton-Decke
+  fr: Plafond en plaques de plâtre
+  it: Controsoffitto in cartongesso
   en: Gypsum board ceiling
 product_classification:
   classification_scheme: AbstractCeilingCoveringProduct

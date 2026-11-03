@@ -3,6 +3,8 @@ sort_order: 1
 status: active
 name:
   de: Ortbeton-Wand
+  fr: Mur en béton coulé sur place
+  it: Parete in calcestruzzo gettato in opera
   en: In-situ concrete wall
 product_classification:
   classification_scheme: AbstractWallSeparatorProduct

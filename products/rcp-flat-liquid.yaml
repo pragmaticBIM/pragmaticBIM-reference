@@ -3,6 +3,8 @@ sort_order: 3
 status: active
 name:
   de: Fluessigkunststoff-Flachdach
+  fr: Toiture plate en résine liquide
+  it: Tetto piano in resina liquida
   en: Liquid-applied flat roof
 product_classification:
   classification_scheme: AbstractRoofCoveringProduct

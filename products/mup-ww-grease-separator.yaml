@@ -3,6 +3,8 @@ sort_order: 19
 status: active
 name:
   de: Fettabscheider
+  fr: Séparateur de graisses
+  it: Separatore di grassi
   en: Grease separator
 product_classification:
   classification_scheme: AbstractMepUnitProduct

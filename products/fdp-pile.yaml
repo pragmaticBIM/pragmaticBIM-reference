@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Pfahlgruendung
+  fr: Fondation sur pieux
+  it: Fondazione su pali
   en: Driven / bored pile foundation
 product_classification:
   classification_scheme: AbstractFoundationProduct

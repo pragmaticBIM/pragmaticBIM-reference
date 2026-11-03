@@ -3,6 +3,8 @@ sort_order: 3
 status: active
 name:
   de: Kranstellfläche
+  fr: Aire de stationnement de grue
+  it: Area di stazionamento della gru
   en: Crane set-up pad
 product_classification:
   classification_scheme: SiteFacilityProduct

@@ -3,6 +3,8 @@ sort_order: 6
 status: active
 name:
   de: Betonziegel-Dach
+  fr: Toiture en tuiles de béton
+  it: Copertura in tegole di calcestruzzo
   en: Concrete tile roof
 product_classification:
   classification_scheme: AbstractRoofCoveringProduct

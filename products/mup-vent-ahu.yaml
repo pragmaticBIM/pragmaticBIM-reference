@@ -3,6 +3,8 @@ sort_order: 9
 status: active
 name:
   de: Lueftungsgeraet / Monoblock
+  fr: Monobloc de ventilation
+  it: Unità di trattamento aria / monoblocco
   en: Air handling unit / monoblock
 product_classification:
   classification_scheme: AbstractMepUnitProduct

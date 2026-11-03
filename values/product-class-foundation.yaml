@@ -27,29 +27,29 @@ values:
   - Fundamententwaesserung und -schutz
   - Sonstiges / unbekanntes Fundament
   fr:
-  - Raft / base slab foundation
+  - Radier / dalle de fondation
   - Raft foundation thermal insulation layer
-  - Strip footing foundation
-  - Pad / isolated footing
-  - Driven / bored pile foundation
-  - Micropile / ground improvement
-  - Basement / retaining foundation wall
+  - Semelle filante
+  - Fondation isolée / semelle isolée
+  - Fondation sur pieux
+  - Micropieu / amélioration du sol
+  - Mur de sous-sol / mur de soutènement
   - Basement / retaining wall insulation layer
-  - Foundation waterproofing / tanking
-  - Foundation drainage and protection
-  - Other / unknown foundation
+  - Étanchéité des fondations / du sous-sol
+  - Drainage et protection des fondations
+  - Fondation autre ou inconnue
   it:
-  - Raft / base slab foundation
+  - Platea / piastra di fondazione
   - Raft foundation thermal insulation layer
-  - Strip footing foundation
-  - Pad / isolated footing
-  - Driven / bored pile foundation
-  - Micropile / ground improvement
-  - Basement / retaining foundation wall
+  - Fondazione continua
+  - Plinto di fondazione
+  - Fondazione su pali
+  - Micropalo / consolidamento del terreno
+  - Muro di cantina / muro di sostegno
   - Basement / retaining wall insulation layer
-  - Foundation waterproofing / tanking
-  - Foundation drainage and protection
-  - Other / unknown foundation
+  - Impermeabilizzazione delle fondazioni / della cantina
+  - Drenaggio e protezione delle fondazioni
+  - Fondazione altra o sconosciuta
   en:
   - Raft / base slab foundation
   - Raft foundation thermal insulation layer

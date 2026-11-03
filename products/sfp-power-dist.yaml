@@ -3,6 +3,8 @@ sort_order: 27
 status: active
 name:
   de: Baustromverteiler
+  fr: Tableau électrique de chantier
+  it: Quadro elettrico di cantiere
   en: Site power distribution board
 product_classification:
   classification_scheme: SiteFacilityProduct

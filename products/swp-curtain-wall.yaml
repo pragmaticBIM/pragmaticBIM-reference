@@ -3,6 +3,8 @@ sort_order: 9
 status: active
 name:
   de: Vorhangfassade
+  fr: Façade-rideau
+  it: Facciata continua
   en: Curtain wall / facade system
 product_classification:
   classification_scheme: AbstractWallSeparatorProduct

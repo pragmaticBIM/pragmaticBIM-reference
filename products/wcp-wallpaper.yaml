@@ -3,6 +3,8 @@ sort_order: 2
 status: active
 name:
   de: Tapete
+  fr: Papier peint
+  it: Carta da parati
   en: Wallpaper
 product_classification:
   classification_scheme: AbstractWallCoveringProduct

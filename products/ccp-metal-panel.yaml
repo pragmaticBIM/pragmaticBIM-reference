@@ -3,6 +3,8 @@ sort_order: 6
 status: active
 name:
   de: Metallpaneel-Decke
+  fr: Plafond en panneaux métalliques
+  it: Controsoffitto a pannelli metallici
   en: Metal panel ceiling
 product_classification:
   classification_scheme: AbstractCeilingCoveringProduct

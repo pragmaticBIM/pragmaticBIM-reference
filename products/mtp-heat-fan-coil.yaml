@@ -3,6 +3,8 @@ sort_order: 11
 status: active
 name:
   de: Geblaesekonvektor (Heizbetrieb)
+  fr: Ventilo-convecteur (mode chauffage)
+  it: Ventilconvettore (modalità riscaldamento)
   en: Fan coil (heating mode)
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

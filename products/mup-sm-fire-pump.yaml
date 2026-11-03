@@ -3,6 +3,8 @@ sort_order: 22
 status: active
 name:
   de: Sprinklerpumpe / Loeschwasserpumpe
+  fr: Pompe sprinkler / pompe d'eau d'extinction
+  it: Pompa sprinkler / pompa antincendio
   en: Fire pump
 product_classification:
   classification_scheme: AbstractMepUnitProduct

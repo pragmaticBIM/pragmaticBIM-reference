@@ -3,6 +3,8 @@ sort_order: 8
 status: active
 name:
   de: Fundamententwaesserung und -schutz
+  fr: Drainage et protection des fondations
+  it: Drenaggio e protezione delle fondazioni
   en: Foundation drainage and protection
 product_classification:
   classification_scheme: AbstractFoundationProduct

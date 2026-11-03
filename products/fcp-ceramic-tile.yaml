@@ -3,6 +3,8 @@ sort_order: 8
 status: active
 name:
   de: Keramik- / Feinsteinzeug-Bodenbelag
+  fr: Revêtement de sol en céramique / grès cérame
+  it: Pavimento in ceramica / gres porcellanato
   en: Ceramic / porcelain tile floor
 product_classification:
   classification_scheme: AbstractFloorCoveringProduct

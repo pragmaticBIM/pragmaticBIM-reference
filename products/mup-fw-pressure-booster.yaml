@@ -3,6 +3,8 @@ sort_order: 16
 status: active
 name:
   de: Druckerhoehungsanlage
+  fr: Surpresseur
+  it: Impianto di sopraelevazione della pressione
   en: Pressure booster
 product_classification:
   classification_scheme: AbstractMepUnitProduct

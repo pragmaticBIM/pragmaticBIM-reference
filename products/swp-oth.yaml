@@ -3,6 +3,8 @@ sort_order: 11
 status: active
 name:
   de: Sonstige / unbekannte Wand
+  fr: Mur autre ou inconnu
+  it: Parete altra o sconosciuta
   en: Other / unknown wall separator
 product_classification:
   classification_scheme: AbstractWallSeparatorProduct

@@ -3,6 +3,8 @@ sort_order: 2
 status: active
 name:
   de: Vorgehängte Natursteinfassade
+  fr: Façade ventilée en pierre naturelle
+  it: Facciata ventilata in pietra naturale
   en: Ventilated natural stone cladding
 product_classification:
   classification_scheme: EuropeanFacadeCoveringProduct

@@ -3,6 +3,8 @@ sort_order: 1
 status: active
 name:
   de: Metallblech-Deckenbekleidung
+  fr: Revêtement de plafond en tôle
+  it: Rivestimento di soffitto in lamiera
   en: Metal sheet ceiling
 product_classification:
   classification_scheme: AbstractCeilingCoveringProduct

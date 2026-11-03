@@ -3,6 +3,8 @@ sort_order: 1
 status: active
 name:
   de: Holzfenster
+  fr: Fenêtre en bois
+  it: Finestra in legno
   en: Wood window system
 product_classification:
   classification_scheme: AbstractWindowConnectorProduct

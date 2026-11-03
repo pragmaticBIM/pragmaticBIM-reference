@@ -3,6 +3,8 @@ sort_order: 21
 status: active
 name:
   de: Sprinklerkopf
+  fr: Tête de sprinkler
+  it: Testina sprinkler
   en: Sprinkler head
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

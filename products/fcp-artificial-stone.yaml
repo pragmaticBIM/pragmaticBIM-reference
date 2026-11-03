@@ -3,6 +3,8 @@ sort_order: 7
 status: active
 name:
   de: Kunststein-Bodenbelag
+  fr: Revêtement de sol en pierre artificielle
+  it: Pavimento in pietra artificiale
   en: Artificial stone flooring
 product_classification:
   classification_scheme: AbstractFloorCoveringProduct

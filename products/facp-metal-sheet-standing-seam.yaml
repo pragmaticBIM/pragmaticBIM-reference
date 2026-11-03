@@ -3,6 +3,8 @@ sort_order: 3
 status: active
 name:
   de: Stehfalz-Metallblechfassade
+  fr: Façade en tôle à joint debout
+  it: Facciata in lamiera aggraffata
   en: Metal sheet standing-seam facade
 product_classification:
   classification_scheme: EuropeanFacadeCoveringProduct

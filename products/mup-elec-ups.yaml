@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: USV-Anlage
+  fr: Alimentation sans interruption (ASI)
+  it: Gruppo di continuità (UPS)
   en: Uninterruptible power supply
 product_classification:
   classification_scheme: AbstractMepUnitProduct

@@ -3,6 +3,8 @@ sort_order: 21
 status: active
 name:
   de: Muldenplatz
+  fr: Emplacement des bennes
+  it: Area per benne
   en: Skip bay
 product_classification:
   classification_scheme: SiteFacilityProduct

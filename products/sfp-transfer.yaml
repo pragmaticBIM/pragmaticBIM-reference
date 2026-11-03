@@ -3,6 +3,8 @@ sort_order: 12
 status: active
 name:
   de: Umschlagplatz
+  fr: Aire de transbordement
+  it: Area di trasbordo
   en: Transfer area
 product_classification:
   classification_scheme: SiteFacilityProduct

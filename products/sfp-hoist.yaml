@@ -3,6 +3,8 @@ sort_order: 25
 status: active
 name:
   de: Bauaufzug
+  fr: Monte-charge de chantier
+  it: Montacarichi da cantiere
   en: Construction hoist
 product_classification:
   classification_scheme: SiteFacilityProduct

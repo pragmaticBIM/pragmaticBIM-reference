@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Lochblech- oder Streckmetallgeländer
+  fr: Garde-corps en tôle perforée ou métal déployé
+  it: Parapetto in lamiera forata o metallo stirato
   en: Perforated or expanded metal railing
 product_classification:
   classification_scheme: RailingProduct

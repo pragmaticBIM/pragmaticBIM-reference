@@ -3,6 +3,8 @@ sort_order: 29
 status: active
 name:
   de: Sonstige / unbekannte Baustelleneinrichtung
+  fr: Installation de chantier autre ou inconnue
+  it: Installazione di cantiere altra o sconosciuta
   en: Other / unknown site facility
 product_classification:
   classification_scheme: SiteFacilityProduct

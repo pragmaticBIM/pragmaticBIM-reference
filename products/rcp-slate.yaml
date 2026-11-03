@@ -3,6 +3,8 @@ sort_order: 7
 status: active
 name:
   de: Naturschiefer-Dach
+  fr: Toiture en ardoise naturelle
+  it: Copertura in ardesia naturale
   en: Natural slate roof
 product_classification:
   classification_scheme: AbstractRoofCoveringProduct

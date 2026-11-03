@@ -3,6 +3,8 @@ sort_order: 5
 status: active
 name:
   de: Drahtseil- oder Netzgeländer
+  fr: Garde-corps à câbles ou à treillis
+  it: Parapetto a funi o a rete
   en: Cable or mesh infill railing
 product_classification:
   classification_scheme: RailingProduct

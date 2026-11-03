@@ -3,6 +3,8 @@ sort_order: 2
 status: active
 name:
   de: Holzträger
+  fr: Poutre en bois
+  it: Trave in legno
   en: Timber beam
 product_classification:
   classification_scheme: BeamProduct

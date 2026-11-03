@@ -3,6 +3,8 @@ sort_order: 15
 status: active
 name:
   de: Dusche
+  fr: Douche
+  it: Doccia
   en: Shower
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

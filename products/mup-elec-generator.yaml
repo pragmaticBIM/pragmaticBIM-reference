@@ -3,6 +3,8 @@ sort_order: 5
 status: active
 name:
   de: Notstromaggregat
+  fr: Groupe électrogène de secours
+  it: Gruppo elettrogeno di emergenza
   en: Backup generator
 product_classification:
   classification_scheme: AbstractMepUnitProduct

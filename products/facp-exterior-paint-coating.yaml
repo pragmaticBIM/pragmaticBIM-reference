@@ -3,6 +3,8 @@ sort_order: 12
 status: active
 name:
   de: Aussenanstrich / Schutzanstrichsystem
+  fr: Peinture extérieure / système de revêtement protecteur
+  it: Pittura esterna / sistema di rivestimento protettivo
   en: Exterior paint / protective coating finish
 product_classification:
   classification_scheme: EuropeanFacadeCoveringProduct

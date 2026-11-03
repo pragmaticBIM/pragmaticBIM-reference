@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Vinyl- / LVT-Bodenbelag
+  fr: Revêtement de sol vinyle / LVT
+  it: Pavimento in vinile / LVT
   en: Vinyl / LVT floor
 product_classification:
   classification_scheme: AbstractFloorCoveringProduct

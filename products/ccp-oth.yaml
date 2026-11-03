@@ -3,6 +3,8 @@ sort_order: 8
 status: active
 name:
   de: Sonstige / unbekannte Deckenbekleidung
+  fr: Revêtement de plafond autre ou inconnu
+  it: Rivestimento di soffitto altro o sconosciuto
   en: Other / unknown ceiling covering
 product_classification:
   classification_scheme: AbstractCeilingCoveringProduct

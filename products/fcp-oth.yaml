@@ -3,6 +3,8 @@ sort_order: 12
 status: active
 name:
   de: Sonstiger / unbekannter Bodenbelag
+  fr: Revêtement de sol autre ou inconnu
+  it: Pavimentazione altra o sconosciuta
   en: Other / unknown floor covering
 product_classification:
   classification_scheme: AbstractFloorCoveringProduct

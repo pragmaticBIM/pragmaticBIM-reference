@@ -3,6 +3,8 @@ sort_order: 10
 status: active
 name:
   de: Sonstiger / unbekannter Wandbelag
+  fr: Revêtement mural autre ou inconnu
+  it: Rivestimento murale altro o sconosciuto
   en: Other / unknown wall covering
 product_classification:
   classification_scheme: AbstractWallCoveringProduct

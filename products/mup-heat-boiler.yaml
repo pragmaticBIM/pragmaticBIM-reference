@@ -3,6 +3,8 @@ sort_order: 11
 status: active
 name:
   de: Heizkessel
+  fr: Chaudière
+  it: Caldaia
   en: Boiler
 product_classification:
   classification_scheme: AbstractMepUnitProduct

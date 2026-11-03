@@ -3,6 +3,8 @@ sort_order: 9
 status: active
 name:
   de: Gebäudeintegrierte Photovoltaik-Fassade
+  fr: Façade photovoltaïque intégrée au bâtiment
+  it: Facciata fotovoltaica integrata nell'edificio
   en: Building-integrated photovoltaic facade
 product_classification:
   classification_scheme: EuropeanFacadeCoveringProduct

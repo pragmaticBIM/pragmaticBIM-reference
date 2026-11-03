@@ -3,6 +3,8 @@ sort_order: 8
 status: active
 name:
   de: Handlauf
+  fr: Main courante
+  it: Corrimano
   en: Handrail only
 product_classification:
   classification_scheme: RailingProduct

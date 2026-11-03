@@ -3,6 +3,8 @@ sort_order: 18
 status: active
 name:
   de: WC-Ablauf
+  fr: Écoulement WC
+  it: Scarico WC
   en: WC outlet
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

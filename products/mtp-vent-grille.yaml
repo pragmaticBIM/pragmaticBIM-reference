@@ -3,6 +3,8 @@ sort_order: 8
 status: active
 name:
   de: Gitter / Luftgitter
+  fr: Grille d'aération
+  it: Griglia di ventilazione
   en: Grille
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

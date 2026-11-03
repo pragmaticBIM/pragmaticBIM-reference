@@ -3,6 +3,8 @@ sort_order: 20
 status: active
 name:
   de: Parkplatz
+  fr: Place de stationnement
+  it: Parcheggio
   en: Parking area
 product_classification:
   classification_scheme: SiteFacilityProduct

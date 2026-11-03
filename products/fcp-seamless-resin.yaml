@@ -3,6 +3,8 @@ sort_order: 2
 status: active
 name:
   de: Fugenloser Kunstharzboden
+  fr: Sol en résine sans joints
+  it: Pavimento in resina senza giunti
   en: Seamless resin floor
 product_classification:
   classification_scheme: AbstractFloorCoveringProduct

@@ -3,6 +3,8 @@ sort_order: 7
 status: active
 name:
   de: Holz-Lehm-Decke
+  fr: Dalle bois-terre crue
+  it: Solaio legno-argilla
   en: Timber–clay slab / deck
 product_classification:
   classification_scheme: AbstractSlabSeparatorProduct

@@ -3,6 +3,8 @@ sort_order: 3
 status: active
 name:
   de: Textiler Teppichbelag
+  fr: Moquette textile
+  it: Moquette tessile
   en: Textile carpet
 product_classification:
   classification_scheme: AbstractFloorCoveringProduct

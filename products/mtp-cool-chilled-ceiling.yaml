@@ -3,6 +3,8 @@ sort_order: 13
 status: active
 name:
   de: Kuehldecke / Kuehlbalken
+  fr: Plafond rafraîchissant / poutre froide
+  it: Soffitto raffrescante / trave fredda
   en: Chilled ceiling / beam
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

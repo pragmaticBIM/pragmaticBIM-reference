@@ -3,6 +3,8 @@ sort_order: 9
 status: active
 name:
   de: Sonstige / unbekannte Decke / Platte
+  fr: Dalle autre ou inconnue
+  it: Solaio altro o sconosciuto
   en: Other / unknown slab separator
 product_classification:
   classification_scheme: AbstractSlabSeparatorProduct

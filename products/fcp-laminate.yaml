@@ -3,6 +3,8 @@ sort_order: 10
 status: active
 name:
   de: Laminatboden
+  fr: Sol stratifié
+  it: Pavimento in laminato
   en: Laminate flooring
 product_classification:
   classification_scheme: AbstractFloorCoveringProduct

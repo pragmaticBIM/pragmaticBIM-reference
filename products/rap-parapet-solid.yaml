@@ -3,6 +3,8 @@ sort_order: 7
 status: active
 name:
   de: Massive Brüstung
+  fr: Allège pleine
+  it: Parapetto pieno
   en: Solid parapet
 product_classification:
   classification_scheme: RailingProduct

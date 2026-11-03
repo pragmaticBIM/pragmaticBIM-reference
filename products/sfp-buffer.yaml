@@ -3,6 +3,8 @@ sort_order: 13
 status: active
 name:
   de: Zwischenlager
+  fr: Dépôt intermédiaire
+  it: Deposito intermedio
   en: Intermediate storage
 product_classification:
   classification_scheme: SiteFacilityProduct

@@ -3,6 +3,8 @@ sort_order: 7
 status: active
 name:
   de: Fundament- / Kellerabdichtung
+  fr: Étanchéité des fondations / du sous-sol
+  it: Impermeabilizzazione delle fondazioni / della cantina
   en: Foundation waterproofing / tanking
 product_classification:
   classification_scheme: AbstractFoundationProduct

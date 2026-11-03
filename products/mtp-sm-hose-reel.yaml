@@ -3,6 +3,8 @@ sort_order: 22
 status: active
 name:
   de: Schlauchhaspel / Wandhydrant
+  fr: Dévidoir / poste incendie mural
+  it: Naspo / idrante a muro
   en: Hose reel
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

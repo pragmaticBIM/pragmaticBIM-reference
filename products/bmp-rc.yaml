@@ -3,6 +3,8 @@ sort_order: 3
 status: active
 name:
   de: Stahlbetonträger
+  fr: Poutre en béton armé
+  it: Trave in calcestruzzo armato
   en: Reinforced concrete beam
 product_classification:
   classification_scheme: BeamProduct

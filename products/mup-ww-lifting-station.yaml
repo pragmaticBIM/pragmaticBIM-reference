@@ -3,6 +3,8 @@ sort_order: 18
 status: active
 name:
   de: Hebeanlage
+  fr: Station de relevage
+  it: Impianto di sollevamento
   en: Lifting station
 product_classification:
   classification_scheme: AbstractMepUnitProduct

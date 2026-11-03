@@ -3,6 +3,8 @@ sort_order: 1
 status: active
 name:
   de: Fugenlose Wandbeschichtung
+  fr: Revêtement mural sans joints
+  it: Rivestimento murale senza giunti
   en: Seamless wall coating
 product_classification:
   classification_scheme: AbstractWallCoveringProduct

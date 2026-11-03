@@ -3,6 +3,8 @@ sort_order: 1
 status: active
 name:
   de: Kran
+  fr: Grue
+  it: Gru
   en: Crane
 product_classification:
   classification_scheme: SiteFacilityProduct

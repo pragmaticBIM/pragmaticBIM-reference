@@ -3,6 +3,8 @@ sort_order: 3
 status: active
 name:
   de: Schalter
+  fr: Interrupteur
+  it: Interruttore
   en: Switch
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

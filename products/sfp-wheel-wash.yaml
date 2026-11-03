@@ -3,6 +3,8 @@ sort_order: 6
 status: active
 name:
   de: Reifenwaschanlage
+  fr: Installation de lavage des roues
+  it: Impianto di lavaggio ruote
   en: Wheel wash
 product_classification:
   classification_scheme: SiteFacilityProduct

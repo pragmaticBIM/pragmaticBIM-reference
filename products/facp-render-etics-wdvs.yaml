@@ -3,6 +3,8 @@ sort_order: 7
 status: active
 name:
   de: Putzsystem / WDVS-Fassade
+  fr: Façade crépie / isolation thermique extérieure crépie
+  it: Facciata intonacata / sistema a cappotto
   en: Render / ETICS facade system
 product_classification:
   classification_scheme: EuropeanFacadeCoveringProduct

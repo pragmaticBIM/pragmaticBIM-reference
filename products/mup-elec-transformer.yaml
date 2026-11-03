@@ -3,6 +3,8 @@ sort_order: 1
 status: active
 name:
   de: Transformator
+  fr: Transformateur
+  it: Trasformatore
   en: Transformer
 product_classification:
   classification_scheme: AbstractMepUnitProduct

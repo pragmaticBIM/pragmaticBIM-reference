@@ -3,6 +3,8 @@ sort_order: 6
 status: active
 name:
   de: Holzgeländer
+  fr: Garde-corps en bois
+  it: Parapetto in legno
   en: Timber railing
 product_classification:
   classification_scheme: RailingProduct

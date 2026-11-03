@@ -3,6 +3,8 @@ sort_order: 9
 status: active
 name:
   de: Innenanstrich
+  fr: Peinture intérieure
+  it: Pittura interna
   en: Interior paint finish
 product_classification:
   classification_scheme: AbstractWallCoveringProduct

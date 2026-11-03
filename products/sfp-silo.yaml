@@ -3,6 +3,8 @@ sort_order: 22
 status: active
 name:
   de: Silo
+  fr: Silo
+  it: Silo
   en: Silo
 product_classification:
   classification_scheme: SiteFacilityProduct

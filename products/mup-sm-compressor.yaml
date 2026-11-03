@@ -3,6 +3,8 @@ sort_order: 20
 status: active
 name:
   de: Druckluftkompressor
+  fr: Compresseur d'air comprimé
+  it: Compressore d'aria compressa
   en: Compressed air compressor
 product_classification:
   classification_scheme: AbstractMepUnitProduct

@@ -3,6 +3,8 @@ sort_order: 2
 status: active
 name:
   de: Einfachlagen-Flachdach (EPDM / TPO / PVC)
+  fr: Toiture plate monocouche (EPDM / TPO / PVC)
+  it: Tetto piano monostrato (EPDM / TPO / PVC)
   en: Single-ply membrane flat roof
 product_classification:
   classification_scheme: AbstractRoofCoveringProduct

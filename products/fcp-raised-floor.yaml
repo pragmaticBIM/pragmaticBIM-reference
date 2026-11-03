@@ -3,6 +3,8 @@ sort_order: 11
 status: active
 name:
   de: Doppelboden / Hohlraumboden
+  fr: Faux plancher / plancher creux
+  it: Pavimento sopraelevato / pavimento cavo
   en: Raised / access floor
 product_classification:
   classification_scheme: AbstractFloorCoveringProduct

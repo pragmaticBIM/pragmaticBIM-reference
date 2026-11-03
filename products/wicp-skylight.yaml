@@ -3,6 +3,8 @@ sort_order: 7
 status: active
 name:
   de: Dachfenster / Oberlicht
+  fr: Fenêtre de toit / lanterneau
+  it: Finestra per tetti / lucernario
   en: Roof window / skylight
 product_classification:
   classification_scheme: AbstractWindowConnectorProduct

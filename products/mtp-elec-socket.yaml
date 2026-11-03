@@ -3,6 +3,8 @@ sort_order: 1
 status: active
 name:
   de: Steckdose
+  fr: Prise de courant
+  it: Presa elettrica
   en: Socket outlet
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

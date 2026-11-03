@@ -3,6 +3,8 @@ sort_order: 5
 status: active
 name:
   de: Tonziegel-Dach
+  fr: Toiture en tuiles de terre cuite
+  it: Copertura in tegole di laterizio
   en: Clay tile roof
 product_classification:
   classification_scheme: AbstractRoofCoveringProduct

@@ -3,6 +3,8 @@ sort_order: 17
 status: active
 name:
   de: Baustraße
+  fr: Piste de chantier
+  it: Pista di cantiere
   en: Haul road
 product_classification:
   classification_scheme: SiteFacilityProduct

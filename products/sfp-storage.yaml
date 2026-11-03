@@ -3,6 +3,8 @@ sort_order: 10
 status: active
 name:
   de: Lagerfläche
+  fr: Aire de stockage
+  it: Area di deposito
   en: Storage area
 product_classification:
   classification_scheme: SiteFacilityProduct

@@ -3,6 +3,8 @@ sort_order: 5
 status: active
 name:
   de: Glas- / Verglasungstuer
+  fr: Porte vitrée
+  it: Porta vetrata
   en: Glazed door system
 product_classification:
   classification_scheme: AbstractDoorConnectorProduct

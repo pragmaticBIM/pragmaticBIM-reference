@@ -3,6 +3,8 @@ sort_order: 8
 status: active
 name:
   de: Server
+  fr: Serveur
+  it: Server
   en: Server
 product_classification:
   classification_scheme: AbstractMepUnitProduct

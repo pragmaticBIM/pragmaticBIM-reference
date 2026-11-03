@@ -3,6 +3,8 @@ sort_order: 1
 status: active
 name:
   de: Stahlstütze
+  fr: Colonne en acier
+  it: Pilastro in acciaio
   en: Steel column
 product_classification:
   classification_scheme: ColumnProduct

@@ -3,6 +3,8 @@ sort_order: 5
 status: active
 name:
   de: Mikropfahl / Bodenverbesserung
+  fr: Micropieu / amélioration du sol
+  it: Micropalo / consolidamento del terreno
   en: Micropile / ground improvement
 product_classification:
   classification_scheme: AbstractFoundationProduct

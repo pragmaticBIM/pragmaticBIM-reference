@@ -3,6 +3,8 @@ sort_order: 17
 status: active
 name:
   de: Warmwasserbereiter
+  fr: Chauffe-eau
+  it: Scaldacqua
   en: Water heater / DHW boiler
 product_classification:
   classification_scheme: AbstractMepUnitProduct

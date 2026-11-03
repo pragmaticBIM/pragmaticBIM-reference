@@ -3,6 +3,8 @@ sort_order: 7
 status: active
 name:
   de: Zuluft- / Abluftventil oder Diffusor
+  fr: Bouche de soufflage / d'extraction ou diffuseur
+  it: Valvola di immissione / estrazione o diffusore
   en: Supply / extract air valve or diffuser
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

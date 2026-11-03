@@ -3,6 +3,8 @@ sort_order: 8
 status: active
 name:
   de: Sonstige / unbekannte Tuer
+  fr: Porte autre ou inconnue
+  it: Porta altra o sconosciuta
   en: Other / unknown door
 product_classification:
   classification_scheme: AbstractDoorConnectorProduct

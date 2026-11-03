@@ -3,6 +3,8 @@ sort_order: 9
 status: active
 name:
   de: Parkett / Mehrschicht-Holzboden
+  fr: Parquet / parquet multicouche
+  it: Parquet / parquet multistrato
   en: Parquet / engineered wood floor
 product_classification:
   classification_scheme: AbstractFloorCoveringProduct

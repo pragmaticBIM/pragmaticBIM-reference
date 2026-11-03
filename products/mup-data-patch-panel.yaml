@@ -3,6 +3,8 @@ sort_order: 6
 status: active
 name:
   de: Patchpanel
+  fr: Panneau de brassage
+  it: Pannello di permutazione
   en: Patch panel
 product_classification:
   classification_scheme: AbstractMepUnitProduct

@@ -3,6 +3,8 @@ sort_order: 8
 status: active
 name:
   de: Leichtbau-Decke / -Platte
+  fr: Dalle en construction légère
+  it: Solaio in costruzione leggera
   en: Lightweight slab system
 product_classification:
   classification_scheme: AbstractSlabSeparatorProduct

@@ -3,6 +3,8 @@ sort_order: 3
 status: active
 name:
   de: Lehmstampf-Wand
+  fr: Mur en pisé
+  it: Parete in terra cruda battuta
   en: Rammed earth wall
 product_classification:
   classification_scheme: AbstractWallSeparatorProduct

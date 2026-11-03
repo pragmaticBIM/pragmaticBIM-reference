@@ -3,6 +3,8 @@ sort_order: 3
 status: active
 name:
   de: Stahlbetonstütze
+  fr: Colonne en béton armé
+  it: Pilastro in calcestruzzo armato
   en: Reinforced concrete column
 product_classification:
   classification_scheme: ColumnProduct

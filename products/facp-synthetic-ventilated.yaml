@@ -3,6 +3,8 @@ sort_order: 8
 status: active
 name:
   de: Kunststoff-Vorgehängte Fassade
+  fr: Façade ventilée en matière synthétique
+  it: Facciata ventilata in materiale sintetico
   en: Synthetic ventilated facade panel
 product_classification:
   classification_scheme: EuropeanFacadeCoveringProduct

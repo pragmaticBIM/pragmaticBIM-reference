@@ -3,6 +3,8 @@ sort_order: 5
 status: active
 name:
   de: Kunststoff-Deckenbekleidung
+  fr: Revêtement de plafond synthétique
+  it: Rivestimento di soffitto in materiale sintetico
   en: Synthetic ceiling lining
 product_classification:
   classification_scheme: AbstractCeilingCoveringProduct

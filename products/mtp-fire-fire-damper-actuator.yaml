@@ -3,6 +3,8 @@ sort_order: 24
 status: active
 name:
   de: Brandschutzklappen-Antrieb
+  fr: Servomoteur de clapet coupe-feu
+  it: Attuatore della serranda tagliafuoco
   en: Fire damper actuator
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

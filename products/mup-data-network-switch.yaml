@@ -3,6 +3,8 @@ sort_order: 7
 status: active
 name:
   de: Netzwerk-Switch / Rack
+  fr: Commutateur réseau / baie
+  it: Switch di rete / rack
   en: Network switch / rack
 product_classification:
   classification_scheme: AbstractMepUnitProduct

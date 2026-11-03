@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Andere oder unbekannte Treppe
+  fr: Escalier autre ou inconnu
+  it: Scala altra o sconosciuta
   en: Other or unknown stair
 product_classification:
   classification_scheme: StairProduct

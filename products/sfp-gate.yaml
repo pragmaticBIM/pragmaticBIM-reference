@@ -3,6 +3,8 @@ sort_order: 8
 status: active
 name:
   de: Tor
+  fr: Portail
+  it: Portone
   en: Gate
 product_classification:
   classification_scheme: SiteFacilityProduct

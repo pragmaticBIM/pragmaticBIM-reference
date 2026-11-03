@@ -3,6 +3,8 @@ sort_order: 9
 status: active
 name:
   de: Schutzdach
+  fr: Auvent de protection
+  it: Tettoia di protezione
   en: Protective canopy
 product_classification:
   classification_scheme: SiteFacilityProduct

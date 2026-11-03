@@ -3,6 +3,8 @@ sort_order: 16
 status: active
 name:
   de: Sanitäranlage
+  fr: Installation sanitaire
+  it: Impianto sanitario
   en: Sanitary facility
 product_classification:
   classification_scheme: SiteFacilityProduct

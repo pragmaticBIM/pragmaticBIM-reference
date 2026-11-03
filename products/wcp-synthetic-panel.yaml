@@ -3,6 +3,8 @@ sort_order: 8
 status: active
 name:
   de: Kunststoff-Wandverkleidung
+  fr: Revêtement mural synthétique
+  it: Rivestimento murale in materiale sintetico
   en: Synthetic wall panel
 product_classification:
   classification_scheme: AbstractWallCoveringProduct

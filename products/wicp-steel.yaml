@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Stahlfenster
+  fr: Fenêtre en acier
+  it: Finestra in acciaio
   en: Steel window system
 product_classification:
   classification_scheme: AbstractWindowConnectorProduct

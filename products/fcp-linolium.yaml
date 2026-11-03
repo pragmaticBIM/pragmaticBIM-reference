@@ -3,6 +3,8 @@ sort_order: 5
 status: active
 name:
   de: Linoleum
+  fr: Linoléum
+  it: Linoleum
   en: Linoleum
 product_classification:
   classification_scheme: AbstractFloorCoveringProduct

@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Leichtbeton-Tafel-Wand (BLT)
+  fr: Mur en panneaux de béton léger (BLT)
+  it: Parete in pannelli di calcestruzzo leggero (BLT)
   en: Lightweight concrete panel (BLT) wall
 product_classification:
   classification_scheme: AbstractWallSeparatorProduct

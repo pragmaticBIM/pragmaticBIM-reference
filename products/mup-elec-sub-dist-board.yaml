@@ -3,6 +3,8 @@ sort_order: 3
 status: active
 name:
   de: Unterverteilung
+  fr: Tableau de distribution secondaire
+  it: Quadro di distribuzione secondario
   en: Sub-distribution board
 product_classification:
   classification_scheme: AbstractMepUnitProduct

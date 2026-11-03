@@ -3,6 +3,8 @@ sort_order: 12
 status: active
 name:
   de: Geblaesekonvektor (Kuehlbetrieb)
+  fr: Ventilo-convecteur (mode refroidissement)
+  it: Ventilconvettore (modalità raffrescamento)
   en: Fan coil (cooling mode)
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

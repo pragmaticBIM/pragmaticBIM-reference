@@ -3,6 +3,8 @@ sort_order: 20
 status: active
 name:
   de: Gasentnahmestelle
+  fr: Prise de gaz
+  it: Presa gas
   en: Gas outlet valve
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

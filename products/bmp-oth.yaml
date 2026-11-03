@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Anderer oder unbekannter Träger
+  fr: Poutre autre ou inconnue
+  it: Trave altra o sconosciuta
   en: Other or unknown beam
 product_classification:
   classification_scheme: BeamProduct

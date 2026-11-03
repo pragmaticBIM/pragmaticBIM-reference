@@ -3,6 +3,8 @@ sort_order: 13
 status: active
 name:
   de: Sanierungsüberkleidungssystem (Verbund)
+  fr: Système de surrevêtement pour rénovation (composite)
+  it: Sistema di sovrarivestimento per risanamento (composito)
   en: Retrofit overcladding system (composite)
 product_classification:
   classification_scheme: EuropeanFacadeCoveringProduct

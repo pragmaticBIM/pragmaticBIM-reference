@@ -3,6 +3,8 @@ sort_order: 6
 status: active
 name:
   de: Sensor / Aktuator (KNX / BACnet)
+  fr: Capteur / actionneur (KNX / BACnet)
+  it: Sensore / attuatore (KNX / BACnet)
   en: Sensor / actuator (KNX / BACnet)
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

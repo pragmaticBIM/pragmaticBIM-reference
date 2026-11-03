@@ -3,6 +3,8 @@ sort_order: 26
 status: active
 name:
   de: Gerüst
+  fr: Échafaudage
+  it: Ponteggio
   en: Scaffold
 product_classification:
   classification_scheme: SiteFacilityProduct

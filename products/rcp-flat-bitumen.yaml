@@ -3,6 +3,8 @@ sort_order: 1
 status: active
 name:
   de: Mehrlagen- / Bitumen-Flachdach
+  fr: Toiture plate bicouche / bitumineuse
+  it: Tetto piano multistrato / bituminoso
   en: Built-up / bitumen flat roof
 product_classification:
   classification_scheme: AbstractRoofCoveringProduct

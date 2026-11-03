@@ -3,6 +3,8 @@ sort_order: 14
 status: active
 name:
   de: Baubüro
+  fr: Bureau de chantier
+  it: Ufficio di cantiere
   en: Site office
 product_classification:
   classification_scheme: SiteFacilityProduct

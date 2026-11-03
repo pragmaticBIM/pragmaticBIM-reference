@@ -3,6 +3,8 @@ sort_order: 21
 status: active
 name:
   de: Gasdruckregler
+  fr: Détendeur de gaz
+  it: Regolatore di pressione del gas
   en: Gas pressure regulator
 product_classification:
   classification_scheme: AbstractMepUnitProduct

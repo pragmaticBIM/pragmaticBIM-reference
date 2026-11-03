@@ -3,6 +3,8 @@ sort_order: 11
 status: active
 name:
   de: Aufgestaendigtes Photovoltaik-Dach
+  fr: Toiture photovoltaïque sur supports
+  it: Tetto fotovoltaico su supporti
   en: Roof-mounted photovoltaic system
 product_classification:
   classification_scheme: AbstractRoofCoveringProduct

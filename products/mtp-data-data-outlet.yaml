@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Datendose
+  fr: Prise de données
+  it: Presa dati
   en: Data outlet
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

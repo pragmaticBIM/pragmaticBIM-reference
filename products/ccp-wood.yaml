@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Holz-Deckenbekleidung
+  fr: Revêtement de plafond en bois
+  it: Rivestimento di soffitto in legno
   en: Wood ceiling lining
 product_classification:
   classification_scheme: AbstractCeilingCoveringProduct

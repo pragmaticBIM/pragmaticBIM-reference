@@ -3,6 +3,8 @@ sort_order: 12
 status: active
 name:
   de: Sonstige / unbekannte Dachbekleidung
+  fr: Couverture de toiture autre ou inconnue
+  it: Copertura del tetto altra o sconosciuta
   en: Other / unknown roof covering
 product_classification:
   classification_scheme: AbstractRoofCoveringProduct

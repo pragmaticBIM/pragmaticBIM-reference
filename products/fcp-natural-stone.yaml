@@ -3,6 +3,8 @@ sort_order: 6
 status: active
 name:
   de: Naturstein-Bodenbelag
+  fr: Revêtement de sol en pierre naturelle
+  it: Pavimento in pietra naturale
   en: Natural stone flooring
 product_classification:
   classification_scheme: AbstractFloorCoveringProduct

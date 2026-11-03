@@ -3,6 +3,8 @@ sort_order: 3
 status: active
 name:
   de: Holz-Metall-Tuer
+  fr: Porte bois-métal
+  it: Porta legno-metallo
   en: Wood–metal composite door
 product_classification:
   classification_scheme: AbstractDoorConnectorProduct

@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Metallverbund-Fassadenpaneel (AVP)
+  fr: Panneau de façade composite métallique
+  it: Pannello di facciata composito metallico
   en: Metal composite facade panel (ACP)
 product_classification:
   classification_scheme: EuropeanFacadeCoveringProduct

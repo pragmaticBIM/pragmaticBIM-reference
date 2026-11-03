@@ -3,6 +3,8 @@ sort_order: 10
 status: active
 name:
   de: Intensives Gruendach
+  fr: Toiture végétalisée intensive
+  it: Tetto verde intensivo
   en: Intensive green roof
 product_classification:
   classification_scheme: AbstractRoofCoveringProduct

@@ -3,6 +3,8 @@ sort_order: 2
 status: active
 name:
   de: Hauptverteilung
+  fr: Tableau de distribution principal
+  it: Quadro di distribuzione principale
   en: Main distribution board
 product_classification:
   classification_scheme: AbstractMepUnitProduct

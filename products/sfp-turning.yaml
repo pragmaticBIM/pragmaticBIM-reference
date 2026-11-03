@@ -3,6 +3,8 @@ sort_order: 19
 status: active
 name:
   de: Wendefläche
+  fr: Aire de retournement
+  it: Area di inversione
   en: Turning area
 product_classification:
   classification_scheme: SiteFacilityProduct

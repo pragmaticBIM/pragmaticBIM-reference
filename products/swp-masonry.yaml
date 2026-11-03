@@ -3,6 +3,8 @@ sort_order: 2
 status: active
 name:
   de: Mauerwerk-Wand
+  fr: Mur en maçonnerie
+  it: Parete in muratura
   en: Masonry wall
 product_classification:
   classification_scheme: AbstractWallSeparatorProduct

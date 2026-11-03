@@ -3,6 +3,8 @@ sort_order: 5
 status: active
 name:
   de: Container
+  fr: Conteneur
+  it: Container
   en: Site container
 product_classification:
   classification_scheme: SiteFacilityProduct

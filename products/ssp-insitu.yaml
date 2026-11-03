@@ -3,6 +3,8 @@ sort_order: 1
 status: active
 name:
   de: Ortbeton-Decke / -Platte
+  fr: Dalle en béton coulé sur place
+  it: Solaio in calcestruzzo gettato in opera
   en: In-situ concrete slab
 product_classification:
   classification_scheme: AbstractSlabSeparatorProduct

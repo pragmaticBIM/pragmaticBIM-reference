@@ -3,6 +3,8 @@ sort_order: 16
 status: active
 name:
   de: Sonstige / unbekannte Fassadenbekleidung
+  fr: Revêtement de façade autre ou inconnu
+  it: Rivestimento di facciata altro o sconosciuto
   en: Other / unknown facade covering
 product_classification:
   classification_scheme: EuropeanFacadeCoveringProduct

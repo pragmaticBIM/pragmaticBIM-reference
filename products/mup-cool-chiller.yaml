@@ -3,6 +3,8 @@ sort_order: 14
 status: active
 name:
   de: Kaelteanlage / Kaeltemaschine
+  fr: Machine frigorifique
+  it: Gruppo frigorifero
   en: Chiller
 product_classification:
   classification_scheme: AbstractMepUnitProduct

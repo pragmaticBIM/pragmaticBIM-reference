@@ -3,6 +3,8 @@ sort_order: 1
 status: active
 name:
   de: Holztuer
+  fr: Porte en bois
+  it: Porta in legno
   en: Wood door system
 product_classification:
   classification_scheme: AbstractDoorConnectorProduct

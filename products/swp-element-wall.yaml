@@ -3,6 +3,8 @@ sort_order: 10
 status: active
 name:
   de: Trockenbau- / Elementtrennwand
+  fr: Cloison sèche / cloison modulaire
+  it: Parete a secco / parete divisoria modulare
   en: Drywall / element partition wall
 product_classification:
   classification_scheme: AbstractWallSeparatorProduct

@@ -3,6 +3,8 @@ sort_order: 5
 status: active
 name:
   de: Holz-Vorgehängte Fassade
+  fr: Façade ventilée en bois
+  it: Facciata ventilata in legno
   en: Timber ventilated facade system
 product_classification:
   classification_scheme: EuropeanFacadeCoveringProduct

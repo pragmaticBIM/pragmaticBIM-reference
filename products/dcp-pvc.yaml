@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Kunststoff- / PVC-Tuer
+  fr: Porte en matière synthétique / PVC
+  it: Porta in materiale sintetico / PVC
   en: Plastic / PVC door system
 product_classification:
   classification_scheme: AbstractDoorConnectorProduct

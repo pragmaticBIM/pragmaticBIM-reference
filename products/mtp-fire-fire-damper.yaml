@@ -3,6 +3,8 @@ sort_order: 23
 status: active
 name:
   de: Brandschutzklappe
+  fr: Clapet coupe-feu
+  it: Serranda tagliafuoco
   en: Fire damper
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

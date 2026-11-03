@@ -3,6 +3,8 @@ sort_order: 2
 status: active
 name:
   de: Holzstütze
+  fr: Colonne en bois
+  it: Pilastro in legno
   en: Timber column
 product_classification:
   classification_scheme: ColumnProduct

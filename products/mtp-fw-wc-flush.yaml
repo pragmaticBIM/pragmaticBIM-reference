@@ -3,6 +3,8 @@ sort_order: 16
 status: active
 name:
   de: WC-Spuelung
+  fr: Chasse d'eau WC
+  it: Cassetta di risciacquo WC
   en: WC flush valve
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

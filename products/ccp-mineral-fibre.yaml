@@ -3,6 +3,8 @@ sort_order: 3
 status: active
 name:
   de: Mineralfaser-Akustikdecke
+  fr: Plafond acoustique en fibres minérales
+  it: Controsoffitto acustico in fibra minerale
   en: Mineral-fibre acoustic ceiling
 product_classification:
   classification_scheme: AbstractCeilingCoveringProduct

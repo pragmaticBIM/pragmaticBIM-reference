@@ -3,6 +3,8 @@ sort_order: 9
 status: active
 name:
   de: Anderes oder unbekanntes Geländer
+  fr: Garde-corps autre ou inconnu
+  it: Parapetto altro o sconosciuto
   en: Other or unknown railing
 product_classification:
   classification_scheme: RailingProduct

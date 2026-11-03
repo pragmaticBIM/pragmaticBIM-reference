@@ -3,6 +3,8 @@ sort_order: 7
 status: active
 name:
   de: Metallraster-Decke
+  fr: Plafond à grille métallique
+  it: Controsoffitto a griglia metallica
   en: Metal grid ceiling
 product_classification:
   classification_scheme: AbstractCeilingCoveringProduct

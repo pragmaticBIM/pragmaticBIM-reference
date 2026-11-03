@@ -3,6 +3,8 @@ sort_order: 1
 status: active
 name:
   de: Stahlträger
+  fr: Poutre en acier
+  it: Trave in acciaio
   en: Steel beam
 product_classification:
   classification_scheme: BeamProduct

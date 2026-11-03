@@ -3,6 +3,8 @@ sort_order: 3
 status: active
 name:
   de: Stahlverbunddecke
+  fr: Dalle mixte acier-béton
+  it: Solaio misto acciaio-calcestruzzo
   en: Steel deck / composite slab
 product_classification:
   classification_scheme: AbstractSlabSeparatorProduct

@@ -3,6 +3,8 @@ sort_order: 5
 status: active
 name:
   de: Aluminiumfenster
+  fr: Fenêtre en aluminium
+  it: Finestra in alluminio
   en: Aluminium window system
 product_classification:
   classification_scheme: AbstractWindowConnectorProduct

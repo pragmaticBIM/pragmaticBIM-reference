@@ -3,6 +3,8 @@ sort_order: 3
 status: active
 name:
   de: Einzelfundament / Fundamentplatte
+  fr: Fondation isolée / semelle isolée
+  it: Plinto di fondazione
   en: Pad / isolated footing
 product_classification:
   classification_scheme: AbstractFoundationProduct

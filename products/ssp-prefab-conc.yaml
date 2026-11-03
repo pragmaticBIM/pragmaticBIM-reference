@@ -3,6 +3,8 @@ sort_order: 2
 status: active
 name:
   de: Elementdecke / -platte Beton
+  fr: Dalle préfabriquée en béton
+  it: Solaio prefabbricato in calcestruzzo
   en: Prefabricated concrete slab
 product_classification:
   classification_scheme: AbstractSlabSeparatorProduct

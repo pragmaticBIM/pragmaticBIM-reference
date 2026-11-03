@@ -3,6 +3,8 @@ sort_order: 4
 status: active
 name:
   de: Holzdecke / -platte
+  fr: Dalle en bois
+  it: Solaio in legno
   en: Timber slab / deck
 product_classification:
   classification_scheme: AbstractSlabSeparatorProduct

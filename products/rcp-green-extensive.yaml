@@ -3,6 +3,8 @@ sort_order: 9
 status: active
 name:
   de: Extensives Gruendach
+  fr: Toiture végétalisée extensive
+  it: Tetto verde estensivo
   en: Extensive green roof
 product_classification:
   classification_scheme: AbstractRoofCoveringProduct

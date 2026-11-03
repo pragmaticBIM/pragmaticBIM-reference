@@ -3,6 +3,8 @@ sort_order: 10
 status: active
 name:
   de: Ventilator
+  fr: Ventilateur
+  it: Ventilatore
   en: Fan
 product_classification:
   classification_scheme: AbstractMepUnitProduct

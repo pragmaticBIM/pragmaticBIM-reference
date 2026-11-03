@@ -3,6 +3,8 @@ sort_order: 9
 status: active
 name:
   de: Sonstiges / unbekanntes Fundament
+  fr: Fondation autre ou inconnue
+  it: Fondazione altra o sconosciuta
   en: Other / unknown foundation
 product_classification:
   classification_scheme: AbstractFoundationProduct

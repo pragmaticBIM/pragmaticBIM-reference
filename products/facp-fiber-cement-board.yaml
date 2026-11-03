@@ -3,6 +3,8 @@ sort_order: 6
 status: active
 name:
   de: Faserzement-Fassadensystem
+  fr: Système de façade en fibrociment
+  it: Sistema di facciata in fibrocemento
   en: Fibre-cement board facade
 product_classification:
   classification_scheme: EuropeanFacadeCoveringProduct

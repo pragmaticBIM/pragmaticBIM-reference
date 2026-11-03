@@ -3,6 +3,8 @@ sort_order: 8
 status: active
 name:
   de: Holzschindel- / -schindeldach
+  fr: Toiture en bardeaux de bois
+  it: Copertura in scandole di legno
   en: Wood shingle / shake roof
 product_classification:
   classification_scheme: AbstractRoofCoveringProduct

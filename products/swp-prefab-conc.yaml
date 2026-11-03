@@ -3,6 +3,8 @@ sort_order: 5
 status: active
 name:
   de: Element-Wand Beton
+  fr: Mur préfabriqué en béton
+  it: Parete prefabbricata in calcestruzzo
   en: Prefabricated concrete wall
 product_classification:
   classification_scheme: AbstractWallSeparatorProduct

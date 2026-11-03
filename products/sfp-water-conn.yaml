@@ -3,6 +3,8 @@ sort_order: 28
 status: active
 name:
   de: Bauwasseranschluss
+  fr: Raccordement d'eau de chantier
+  it: Allacciamento idrico di cantiere
   en: Site water connection
 product_classification:
   classification_scheme: SiteFacilityProduct

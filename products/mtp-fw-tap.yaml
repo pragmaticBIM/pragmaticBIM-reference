@@ -3,6 +3,8 @@ sort_order: 14
 status: active
 name:
   de: Wasserhahn
+  fr: Robinet
+  it: Rubinetto
   en: Tap / faucet
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

@@ -3,6 +3,8 @@ sort_order: 5
 status: active
 name:
   de: Brettsperrholz-Decke / -Platte (CLT)
+  fr: Dalle en bois lamellé-croisé (CLT)
+  it: Solaio in legno lamellare a strati incrociati (CLT)
   en: Cross-laminated timber (CLT) slab
 product_classification:
   classification_scheme: AbstractSlabSeparatorProduct

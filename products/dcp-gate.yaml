@@ -3,6 +3,8 @@ sort_order: 6
 status: active
 name:
   de: Tor / Industrietuer
+  fr: Portail / porte industrielle
+  it: Portone / porta industriale
   en: Gate / industrial door
 product_classification:
   classification_scheme: AbstractDoorConnectorProduct

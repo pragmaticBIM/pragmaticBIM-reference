@@ -3,6 +3,8 @@ sort_order: 13
 status: active
 name:
   de: Waermeuebergabestation
+  fr: Sous-station de chauffage à distance
+  it: Sottostazione di teleriscaldamento
   en: District heat substation
 product_classification:
   classification_scheme: AbstractMepUnitProduct

@@ -3,6 +3,8 @@ sort_order: 17
 status: active
 name:
   de: Bodenablauf
+  fr: Siphon de sol
+  it: Pilettone a pavimento
   en: Floor drain
 product_classification:
   classification_scheme: AbstractMepTerminalProduct

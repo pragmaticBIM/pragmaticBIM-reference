@@ -3,6 +3,8 @@ sort_order: 6
 status: active
 name:
   de: Holz-Wandverkleidung
+  fr: Revêtement mural en bois
+  it: Rivestimento murale in legno
   en: Wood wall panel
 product_classification:
   classification_scheme: AbstractWallCoveringProduct
