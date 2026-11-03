@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mtp-data-sensor-actuator
+sort_order: 6
+status: active
+name:
+  de: Sensor / Aktuator (KNX / BACnet)
+  en: Sensor / actuator (KNX / BACnet)
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-DATA-SENSOR-ACTUATOR
+tender_text:
+  de: Erfasst Raumzustände oder Nutzereingaben und setzt Befehle der Automation in Schalt- oder Stellvorgänge am versorgten Gerät um. Wird im Raum, im Deckenhohlraum oder direkt am geregelten Gerät montiert und an den Automationsbus oder die Steuerverdrahtung angeschlossen, wobei Adressierung und Parameter bei der Inbetriebnahme gesetzt werden. Geeignet überall dort, wo Raumzustände geregelt oder überwacht werden, mit für den Raum repräsentativen und für Parameteränderungen und Ersatz erreichbaren Montageorten.
+  en: Captures room conditions or user input and converts automation commands into switching or positioning action on the served equipment. Mounted in the room, in the ceiling void, or directly on the controlled device and connected to the automation bus or control wiring, with addressing and parameters set during commissioning. Suitable wherever room conditions are controlled or monitored, with mounting positions representative of the space and reachable for parameter changes and replacement.

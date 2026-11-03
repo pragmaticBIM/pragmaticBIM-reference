@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mup-data-server
+sort_order: 8
+status: active
+name:
+  de: Server
+  en: Server
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-DATA-SERVER
+tender_text:
+  de: Stellt Rechen- und Speicherkapazität für gebäudebezogene Anwendungen wie Automation, Zutrittskontrolle oder Medientechnik bereit. Lieferung als rackmontierte Hardware in einem Kommunikations- oder Serverraum mit gesicherter Stromversorgung, Netzwerkanbindung und Kühlung, Inbetriebnahme gemeinsam mit den betriebenen Anwendungen. Geeignet dort, wo Gebäudedaten lokal verarbeitet oder vorgehalten werden müssen; erfordert kontrolliertes Raumklima, überwachten Zugang und einen definierten Weg für Wartung, Datensicherung und Hardwareerneuerung.
+  en: Provides computing and storage capacity for building-related applications such as automation, access control, or media services. Delivered as rack-mounted hardware in a communications or server room with secured power supply, network connection, and cooling, and commissioned together with the applications it hosts. Suitable where building data must be processed or retained locally; requires a controlled room climate, monitored access, and a defined path for maintenance, data backup, and hardware renewal.

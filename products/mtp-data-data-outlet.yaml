@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mtp-data-data-outlet
+sort_order: 4
+status: active
+name:
+  de: Datendose
+  en: Data outlet
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-DATA-DATA-OUTLET
+tender_text:
+  de: Stellt den nutzerseitigen Anschlusspunkt der strukturierten Verkabelung bereit und macht Netzwerk- und Telekomdienste im Raum verfügbar. Wird auf oder unter Putz in Wand, Bodentank oder Möbel montiert und über die Etagenverkabelung auf den Etagenverteiler aufgelegt, wobei jeder Port einzeln gekennzeichnet wird. Geeignet für Arbeitsplätze und Technikräume, wobei die Anzahl der Anschlüsse je Arbeitsplatz vorab festgelegt und jede Verbindung vor der Übergabe geprüft und dokumentiert wird.
+  en: Provides the user-side connection point of the structured cabling and makes network and telecom services available in the space. Mounted surface or flush in wall, floor tank, or furniture and terminated on horizontal cabling running back to the floor distributor, with every port individually identified. Suitable for workplaces and technical rooms, with the number of outlets per workplace defined in advance and each link tested and documented before handover.

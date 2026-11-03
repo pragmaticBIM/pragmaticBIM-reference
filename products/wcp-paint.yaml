@@ -1,0 +1,12 @@
+id: pragmaticbim:product/wcp-paint
+sort_order: 9
+status: active
+name:
+  de: Innenanstrich
+  en: Interior paint finish
+product_classification:
+  classification_scheme: AbstractWallCoveringProduct
+  classification_code: WCP-PAINT
+tender_text:
+  de: Dünnschichtige, sichtbare Innenwandoberfläche aus Anstrich oder Beschichtung auf Verputz-, Platten- oder Betonuntergrund. Nass mit Pinsel, Rolle oder Spritzverfahren in Grund- und Deckanstrich aufgetragen, einschliesslich Untergrundvorbereitung, Spachtelung und Schliff auf die vereinbarte Oberflächenqualität. Geeignet als Standardoberfläche in allen Raumtypen, wobei Glanzgrad, Nassabriebbeständigkeit und Emissionsanforderungen je Raumnutzung festzulegen sind.
+  en: Thin-layer visible interior wall finish from paint or coating on plaster, board, or concrete substrates. Applied wet by brush, roller, or spray in primer and finish coats, including substrate preparation, filling, and sanding to the agreed surface quality. Suitable as a standard finish in all room types, with degree of gloss, wet abrasion resistance, and emission requirements to be specified per room use.

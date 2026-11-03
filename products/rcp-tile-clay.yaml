@@ -1,0 +1,12 @@
+id: pragmaticbim:product/rcp-tile-clay
+sort_order: 5
+status: active
+name:
+  de: Tonziegel-Dach
+  en: Clay tile roof
+product_classification:
+  classification_scheme: AbstractRoofCoveringProduct
+  classification_code: RCP-TILE-CLAY
+tender_text:
+  de: Äussere Dachhaut aus kleinformatigen gebrannten Tonziegeln, in überlappenden Reihen als wasserabführende Oberfläche eines Steildachs verlegt. Die Ziegel werden auf Lattung über Konterlattung und einer Unterdachbahn eingehängt, die anfallendes Wasser ableitet, und in exponierten Lagen einzeln befestigt oder verklammert. Geeignet für Steildächer oberhalb der Mindestneigung des gewählten Ziegels, mit einzeln austauschbaren Elementen und hinterlüftetem Aufbau.
+  en: Outer roof skin from small-format fired clay units laid in overlapping courses as the rain-shedding surface of a pitched roof. Tiles are hung on battens above counter-battens and an underlay that drains incidental water, and are individually fixed or clipped in exposed areas. Suitable for pitched roofs above the minimum pitch of the chosen tile, with individually replaceable units and a ventilated build-up.

@@ -1,0 +1,12 @@
+id: pragmaticbim:product/rcp-flat-bitumen
+sort_order: 1
+status: active
+name:
+  de: Mehrlagen- / Bitumen-Flachdach
+  en: Built-up / bitumen flat roof
+product_classification:
+  classification_scheme: AbstractRoofCoveringProduct
+  classification_code: RCP-FLAT-BITUMEN
+tender_text:
+  de: Abdichtungsaufbau für Flach- und flach geneigte Dächer, bei dem mehrere Bitumenbahnen die wasserführende Schicht oberhalb der Tragdecke bilden. Die Lagen werden über der Dämmung mit überlappenden Nähten verschweisst oder heiss verklebt, mit Trenn- und Schutzschichten darunter und darüber. Geeignet für gering geneigte Dächer, beschwerte oder begangene Oberflächen und hohe Anforderungen an die Redundanz der Abdichtung.
+  en: Weatherproofing build-up for flat and low-slope roofs in which several bitumen sheets form the water-bearing layer above the structural deck. The plies are torch-welded or hot-bonded over the insulation with overlapping seams, with separation and protection layers below and above. Suitable for low-pitch roofs, ballasted or trafficked surfaces, and high demands on redundancy of the waterproofing.

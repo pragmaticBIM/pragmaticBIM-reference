@@ -1,0 +1,12 @@
+id: pragmaticbim:product/swp-element-wall
+sort_order: 10
+status: active
+name:
+  de: Trockenbau- / Elementtrennwand
+  en: Drywall / element partition wall
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-ELEMENT-WALL
+tender_text:
+  de: Nichttragende Innenwand aus Trockenbau-, Ständer- oder modularen Elementsystemen mit Metall- oder Holzständerwerk und Plattenbeplankung. Vor Ort aus vorgefertigten Teilen montiert, mit Hohlraumdämmung und bei Bedarf integrierten Installationen. Geeignet für Trenn-, Schacht- und Vorsatzwände, insbesondere bei späterem Umbau- oder Rückbaubedarf.
+  en: Non-load-bearing interior wall from drywall, stud-framed, or modular element systems with metal or timber studs and board sheathing. Assembled on site from prefabricated parts, with cavity insulation and integrated services where required. Suitable for partitions, shaft walls, and lining walls, in particular where later reconfiguration or removal is expected.

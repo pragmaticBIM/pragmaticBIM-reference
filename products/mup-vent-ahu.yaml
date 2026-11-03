@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mup-vent-ahu
+sort_order: 9
+status: active
+name:
+  de: Lueftungsgeraet / Monoblock
+  en: Air handling unit / monoblock
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-VENT-AHU
+tender_text:
+  de: Konditioniert Aussen- und Abluft einer Lüftungszone durch Filterung, Wärmerückgewinnung, Heizung, Kühlung und bei Bedarf Feuchtebehandlung und fördert die Zu- und Abluftvolumenströme. Lieferung als werkseitig montierter Monoblock oder als vor Ort gefügte Modulsektionen, Aufstellung auf schwingungsentkoppeltem Grundrahmen in der Technikzentrale oder auf dem Dach, Anschluss an Kanalnetz, Heiz- und Kältekreise, Kondensatentwässerung und Stromversorgung, Regelung in die Gebäudeautomation eingebunden. Geeignet für Zonen mit definierten Anforderungen an Luftqualität oder Komfort; erfordert Platz in der Technikzentrale mit Freiräumen für Filter- und Komponentenzugang, einen Transportweg für die grösste Sektion und Vorsorge für den Austausch von Komponenten über die Nutzungsdauer.
+  en: Conditions outdoor and extract air for a ventilation zone by filtering, heat recovery, heating, cooling, and where required humidity treatment, and moves the supply and extract air volumes. Delivered as a factory-assembled monoblock or as modular sections joined on site, set on a vibration-isolated base frame in a plant room or on the roof and connected to ductwork, heating and cooling circuits, condensate drainage, and power supply, with its control integrated into building automation. Suitable for zones with defined air quality or comfort requirements; requires plant room space with clearances for filter and component access, a transport route for the largest section, and provision for component replacement over the service life.

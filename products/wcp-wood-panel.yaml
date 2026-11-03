@@ -1,0 +1,12 @@
+id: pragmaticbim:product/wcp-wood-panel
+sort_order: 6
+status: active
+name:
+  de: Holz-Wandverkleidung
+  en: Wood wall panel
+product_classification:
+  classification_scheme: AbstractWallCoveringProduct
+  classification_code: WCP-WOOD-PANEL
+tender_text:
+  de: Innenwandverkleidung aus Vollholz oder Holzwerkstoffen als Platten, Bretter oder Lamellen vor der tragenden Wand. Mechanisch auf Lattung oder Unterkonstruktion befestigt, mit Hohlraum für Dämmung, Akustikvlies oder Installationen und mit sichtbarer oder verdeckter Befestigung. Geeignet für Sitzungs-, Saal- und Schulungsräume mit akustischen Anforderungen, wobei Oberflächenbehandlung und Brandverhalten des Holzes gesondert festzulegen sind.
+  en: Interior wall cladding from solid wood or wood-based panels, boards, or slats in front of the load-bearing wall. Mechanically fixed on battens or a substructure, with a cavity for insulation, acoustic backing, or services, and with visible or concealed fastenings. Suitable for meeting rooms, halls, and educational rooms with acoustic requirements, where surface treatment and fire behaviour of the wood are specified separately.

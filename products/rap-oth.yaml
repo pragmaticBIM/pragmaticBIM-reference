@@ -1,0 +1,12 @@
+id: pragmaticbim:product/rap-oth
+sort_order: 9
+status: active
+name:
+  de: Anderes oder unbekanntes Geländer
+  en: Other or unknown railing
+product_classification:
+  classification_scheme: RailingProduct
+  classification_code: RAP-OTH
+tender_text:
+  de: Platzhalter für Geländer, deren Produkttyp zum Zeitpunkt der Ausschreibung noch nicht festgelegt ist, sowie für spezielle Absturzsicherungssysteme ausserhalb der gelisteten Typen. Schutzfunktion, Horizontallasten und Anforderungen an die Füllung sind gesondert zu beschreiben. Nur in frühen Planungsphasen oder bei unvollständiger Datenlage verwenden.
+  en: Placeholder for railings whose product type is not yet fixed at tender stage, and for special guarding systems outside the listed types. Guarding function, horizontal loads, and infill requirements must be stated separately. Use only in early design stages or where data is incomplete.

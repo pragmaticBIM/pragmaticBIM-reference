@@ -1,0 +1,12 @@
+id: pragmaticbim:product/sfp-ramp
+sort_order: 18
+status: active
+name:
+  de: Rampe
+  en: Ramp
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-RAMP
+tender_text:
+  de: Geneigte temporaere Konstruktion oder Erdrampe, ueber die Fahrzeuge oder Personen die Hoehe wechseln, zum Beispiel in eine Baugrube oder an eine Ladestelle. Keine Baustrasse und keine Wendeflaeche.
+  en: Inclined temporary structure or earth ramp that lets vehicles or people change level, for example into an excavation or up to a loading point. Not a haul road and not a turning area.

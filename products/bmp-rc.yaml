@@ -1,0 +1,12 @@
+id: pragmaticbim:product/bmp-rc
+sort_order: 3
+status: active
+name:
+  de: Stahlbetonträger
+  en: Reinforced concrete beam
+product_classification:
+  classification_scheme: BeamProduct
+  classification_code: BMP-RC
+tender_text:
+  de: Horizontales Tragglied aus Stahlbeton als Unterzug oder Überzug innerhalb einer Betondeckenkonstruktion. Vor Ort mit Schalung und Bewehrung betoniert oder als Fertigteil versetzt und monolithisch angeschlossen. Geeignet für hohe Lasten, monolithischen Anschluss an Decken und inhärenten Feuerwiderstand.
+  en: Horizontal load-bearing member of reinforced concrete acting as downstand or upstand beam within a concrete floor structure. Cast in place with formwork and reinforcement, or set as a precast element and connected monolithically. Suitable for high loads, monolithic connection to slabs, and inherent fire resistance.

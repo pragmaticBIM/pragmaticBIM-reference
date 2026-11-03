@@ -1,0 +1,12 @@
+id: pragmaticbim:product/wcp-seamless-coating
+sort_order: 1
+status: active
+name:
+  de: Fugenlose Wandbeschichtung
+  en: Seamless wall coating
+product_classification:
+  classification_scheme: AbstractWallCoveringProduct
+  classification_code: WCP-SEAMLESS-COATING
+tender_text:
+  de: Sichtbare Innenwandoberfläche aus fugenloser mineralischer oder synthetischer Beschichtung auf vorbereitetem Untergrund aus Verputz, Beton oder Platten. Nass in einer oder mehreren Lagen aufgebracht und auf die geforderte Oberflächenqualität gezogen oder gespritzt, einschliesslich Grundierung und Ausgleichsschichten. Geeignet für Räume mit Anforderung an eine durchgehende, fugenlose Fläche, auch in Feuchträumen bei passendem Dichtungsaufbau.
+  en: Visible interior wall finish from a jointless mineral or synthetic coating on a prepared substrate of plaster, concrete, or board. Applied wet in one or more coats and troweled or sprayed to the required surface quality, including primer and levelling layers. Suitable for rooms where a continuous surface without joints is required, including moist areas when a matching sealing build-up is used.

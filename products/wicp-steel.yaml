@@ -1,0 +1,12 @@
+id: pragmaticbim:product/wicp-steel
+sort_order: 4
+status: active
+name:
+  de: Stahlfenster
+  en: Steel window system
+product_classification:
+  classification_scheme: AbstractWindowConnectorProduct
+  classification_code: WICP-STEEL
+tender_text:
+  de: Fenstereinheit mit schlanken Stahlprofilen für Rahmen und Flügel und verglaster Füllung, die eine Öffnung in einer Wand oder Trennwand verschliesst. Die Profile werden in der Werkstatt geschweisst oder verschraubt, beschichtet, verglast und mit Beschlägen versehen, danach in der Öffnung verankert und an die angrenzende Konstruktion abgedichtet. Geeignet für Öffnungen mit schmalen Ansichtsbreiten, hoher mechanischer Beanspruchung oder Aufgaben im Brandabschnitts- und Sicherheitsbereich, einschliesslich Ersatzeinheiten in bestehenden Industrie- und Baudenkmalbauten.
+  en: Window unit with slender steel frame and sash profiles and a glazed infill, closing an opening in a wall or partition. Profiles are welded or screwed into frames in the workshop, coated, glazed and fitted with hardware, then anchored in the opening and sealed against the adjoining construction. Suitable for openings with narrow sight lines, high mechanical loading, or fire compartmentation and security duty, including replacement units in existing industrial and heritage buildings.

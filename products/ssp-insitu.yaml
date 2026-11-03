@@ -1,0 +1,12 @@
+id: pragmaticbim:product/ssp-insitu
+sort_order: 1
+status: active
+name:
+  de: Ortbeton-Decke / -Platte
+  en: In-situ concrete slab
+product_classification:
+  classification_scheme: AbstractSlabSeparatorProduct
+  classification_code: SSP-INSITU
+tender_text:
+  de: Tragendes horizontales Bauteil aus vor Ort betoniertem Stahlbeton, das zwischen Wänden, Unterzügen oder Stützen spannt. Schalung, Bewehrung und Betonage erfolgen auf der Baustelle, wodurch eine fugenlose monolithische Platte entsteht. Geeignet für Geschossdecken, Bodenplatten und Dachdecken mit hoher Tragfähigkeit, Feuerwiderstand und Speichermasse.
+  en: Load-bearing horizontal element cast in place from reinforced concrete, spanning between walls, beams, or columns. Formwork, reinforcement, and pouring are carried out on site, producing a jointless monolithic plate. Suitable for floor, base, and roof slabs with high load capacity, fire resistance, and thermal mass.

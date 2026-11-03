@@ -1,0 +1,12 @@
+id: pragmaticbim:product/sfp-turning
+sort_order: 19
+status: active
+name:
+  de: Wendefläche
+  en: Turning area
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-TURNING
+tender_text:
+  de: Befestigte oder verstaerkte Flaeche, deren Geometrie Lieferfahrzeugen das Wenden erlaubt, einschliesslich der Schleppkurve des Bemessungsfahrzeugs. Nicht die zufuehrende Baustrasse und keine Rampe.
+  en: Paved or reinforced surface whose geometry allows delivery vehicles to turn, including the swept path of the design vehicle. It is not the haul road that leads to it and not a ramp.

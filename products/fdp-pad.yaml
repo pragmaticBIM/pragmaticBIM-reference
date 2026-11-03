@@ -1,0 +1,12 @@
+id: pragmaticbim:product/fdp-pad
+sort_order: 3
+status: active
+name:
+  de: Einzelfundament / Fundamentplatte
+  en: Pad / isolated footing
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-PAD
+tender_text:
+  de: Einzelfundament unter einer Stütze oder einem konzentrierten Lastpunkt, das die Punktlast auf eine ausreichende Aufstandsfläche verteilt. Als Stahlbetonblock geschalt und vor Ort betoniert, oft abgestuft oder abgeschrägt, mit Ankern oder Anschlussbewehrung für den Stützenanschluss. Geeignet für Skelett- und Hallenbauten auf tragfähigem Baugrund mit punktueller Lasteinleitung.
+  en: Isolated footing beneath a single column or concentrated load point that spreads the point load onto a sufficient bearing area. Formed and cast in place as a reinforced concrete block, often stepped or tapered, with anchors or starter bars for the column connection. Suitable for skeleton and hall structures on load-bearing ground where loads arrive at discrete points.

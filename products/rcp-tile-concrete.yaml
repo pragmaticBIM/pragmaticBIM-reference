@@ -1,0 +1,12 @@
+id: pragmaticbim:product/rcp-tile-concrete
+sort_order: 6
+status: active
+name:
+  de: Betonziegel-Dach
+  en: Concrete tile roof
+product_classification:
+  classification_scheme: AbstractRoofCoveringProduct
+  classification_code: RCP-TILE-CONCRETE
+tender_text:
+  de: Äussere Dachhaut aus kleinformatigen Beton- oder Faserzementelementen, in überlappenden Reihen auf einem Steildach verlegt. Die Elemente werden auf Lattung über Konterlattung und Unterdachbahn eingehängt und dort befestigt oder verklammert, wo Windsog dies erfordert. Geeignet für Steildächer mit robuster, schwerer Eindeckung, höherem Eigengewicht auf der Tragkonstruktion und einzeln austauschbaren Elementen.
+  en: Outer roof skin from small-format concrete or fibre-cement units laid in overlapping courses on a pitched roof. Units are hung on battens above counter-battens and an underlay and are fixed or clipped where wind uplift requires it. Suitable for pitched roofs with a robust, heavy covering, a higher dead load on the structure, and individually replaceable units.

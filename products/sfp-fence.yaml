@@ -1,0 +1,12 @@
+id: pragmaticbim:product/sfp-fence
+sort_order: 7
+status: active
+name:
+  de: Zaun
+  en: Site fence
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-FENCE
+tender_text:
+  de: Bauzaun oder Sichtschutz auf temporaeren Pfosten, der die Baustellengrenze markiert, den Zutritt steuert und die Arbeiten abschirmt. Tore im Zaun sind ein eigenes Konzept.
+  en: Hoarding or mesh fence on temporary posts that marks the site boundary, controls access, and screens the works. Gates in the fence are a separate concept.

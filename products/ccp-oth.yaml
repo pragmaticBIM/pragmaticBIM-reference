@@ -1,0 +1,12 @@
+id: pragmaticbim:product/ccp-oth
+sort_order: 8
+status: active
+name:
+  de: Sonstige / unbekannte Deckenbekleidung
+  en: Other / unknown ceiling covering
+product_classification:
+  classification_scheme: AbstractCeilingCoveringProduct
+  classification_code: CCP-OTH
+tender_text:
+  de: Platzhalter für Deckenbekleidungen, deren Produkttyp zum Zeitpunkt der Ausschreibung noch nicht festgelegt oder nicht klassifiziert ist. Funktionale Anforderungen an Abhängehöhe, Zugänglichkeit der Installationen im Deckenhohlraum, Raumakustik, Brandverhalten und Reinigbarkeit sind gesondert zu beschreiben. Nur in frühen Planungsphasen oder bei unvollständiger Datenlage verwenden.
+  en: Placeholder for ceiling coverings whose product type is not yet fixed or not classified at tender stage. Functional requirements on suspension height, access to services in the ceiling void, room acoustics, fire behaviour, and cleanability must be stated separately. Use only in early design stages or where data is incomplete.

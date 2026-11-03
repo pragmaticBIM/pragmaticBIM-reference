@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mtp-elec-switch
+sort_order: 3
+status: active
+name:
+  de: Schalter
+  en: Switch
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-ELEC-SWITCH
+tender_text:
+  de: Ermöglicht das lokale Schalten oder Dimmen von Beleuchtungs- und Stromkreisen im versorgten Raum. Wird auf oder unter Putz in definierter Höhe an der Wand montiert und in den Stromkreis eingebunden oder als Steuereingang an die Gebäudeautomation angeschlossen. Geeignet für alle Raumtypen, mit Anordnung nahe Raumzugängen und Türen, eindeutiger Zuordnung der geschalteten Gruppen und Kennzeichnung, wenn mehrere Kreise von einer Stelle bedient werden.
+  en: Allows users to switch or dim lighting and power circuits locally in the served space. Mounted surface or flush in the wall at a defined height and wired into the circuit or connected as a control input to the building automation. Suitable for all room types, with positions near room entrances and doors, clear allocation of the switched groups, and labelling where several circuits are operated from one location.

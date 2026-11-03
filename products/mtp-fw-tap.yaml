@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mtp-fw-tap
+sort_order: 14
+status: active
+name:
+  de: Wasserhahn
+  en: Tap / faucet
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-FW-TAP
+tender_text:
+  de: Gibt Trinkwasser an der Entnahmestelle in der erforderlichen Menge und Temperatur ab und ermöglicht den Nutzenden das Öffnen, Schliessen und Mischen des Wasserstroms. Wird am Sanitärapparat, an der Wand oder auf der Arbeitsfläche montiert und an Kalt- und Warmwasserleitung mit Absperrung und, wo erforderlich, Rückflussverhinderung angeschlossen. Geeignet für Küchen, Sanitärräume und Reinigungsstellen, wobei die Durchflussmenge auf den Nutzungsbedarf begrenzt wird und Anschlüsse und Absperrorgane für Service und Ersatz erreichbar bleiben.
+  en: Delivers drinking water at the draw-off point in the required quantity and temperature and lets users open, close, and mix the flow. Mounted on the sanitary fixture, on the wall, or on the worktop and connected to cold and hot water pipework with shut-off and, where required, backflow protection. Suitable for kitchens, sanitary rooms, and cleaning points, with the flow rate limited to what the use requires and with connections and shut-off devices reachable for service and replacement.

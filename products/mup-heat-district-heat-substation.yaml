@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mup-heat-district-heat-substation
+sort_order: 13
+status: active
+name:
+  de: Waermeuebergabestation
+  en: District heat substation
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-HEAT-DISTRICT-HEAT-SUBSTATION
+tender_text:
+  de: Überträgt Wärme aus dem externen Versorgungsnetz auf die Heiz- und Warmwasserkreise des Gebäudes, trennt Primär- und Sekundärseite hydraulisch und regelt die sekundäre Vorlauftemperatur. Lieferung als werkseitig montierte und geprüfte Kompaktstation mit Wärmetauscher, Pumpen, Regelventilen, Sicherheitseinrichtungen und Messung, Aufstellung im Übergaberaum nahe der Hauseinführung, Anschluss an Netzanschluss und Gebäudeverteilung, Regel- und Verbrauchsdaten an die Gebäudeautomation. Geeignet für Gebäude mit Anschluss an ein Fern- oder Nahwärmenetz; erfordert einen kompakten Übergaberaum mit Entwässerung, Freiraum für die Reinigung des Wärmetauschers und Zugang des Netzbetreibers zur Messeinrichtung.
+  en: Transfers heat from the external supply network to the building heating and hot water circuits, separates the primary and secondary sides hydraulically, and controls the secondary flow temperature. Delivered as a factory-assembled and tested skid with heat exchanger, pumps, control valves, safety devices, and metering, placed in the transfer room near the service entry and connected to the network connection and the building distribution, with control and consumption data passed to building automation. Suitable for buildings supplied from a district or local heating network; requires a compact transfer room with drainage, clearance for cleaning the heat exchanger, and access for the network operator to the metering equipment.

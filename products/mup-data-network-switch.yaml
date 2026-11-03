@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mup-data-network-switch
+sort_order: 7
+status: active
+name:
+  de: Netzwerk-Switch / Rack
+  en: Network switch / rack
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-DATA-NETWORK-SWITCH
+tender_text:
+  de: Vermittelt den Datenverkehr zwischen den angeschlossenen Endgeräten und dem Netzwerk-Backbone und speist bei Bedarf Endgeräte über dieselbe Verkabelung mit Energie. Lieferung als rackmontierte Komponente im Kommunikationsschrank mit gesicherter Stromversorgung, Uplink-Anbindung und Einbindung in Netzwerk- und Gebäudeautomationsmanagement. Geeignet für die Etagen- und Zonenverteilung von Gebäude-ICT- und Gebäudeautomationsnetzen; erfordert Rackplatz, Wärmeabfuhr aus dem Schrank und kontrollierten Zugang für Konfiguration und Austausch.
+  en: Forwards data traffic between the connected end devices and the network backbone and, where required, supplies terminal devices with power over the same cabling. Delivered as rack-mounted equipment in a communications cabinet with secured power supply, uplink connections, and integration into network and building automation management. Suitable for floor and zone distribution of building ICT and building automation networks; requires rack space, heat removal from the cabinet, and controlled access for configuration and replacement.

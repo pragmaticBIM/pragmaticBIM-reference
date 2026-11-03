@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mup-sm-fire-pump
+sort_order: 22
+status: active
+name:
+  de: Sprinklerpumpe / Loeschwasserpumpe
+  en: Fire pump
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-SM-FIRE-PUMP
+tender_text:
+  de: Stellt dem Sprinkler- oder Hydrantennetz Löschwasser mit dem erforderlichen Druck und Volumenstrom bereit, sobald Bedarf erkannt wird, und hält das Netz im Bereitschaftsbetrieb unter Druck. Lieferung als werkseitig montierte Pumpengruppe mit Antrieb, Steuerschrank und Armaturen auf schwingungsentkoppeltem Fundament in einem eigenen, brandabgetrennten Pumpenraum, Anschluss an Vorratsbehälter oder Zuleitung, Steigleitungsnetz, Strom- oder Brennstoffversorgung und Entwässerung, Bereitschafts- und Störzustände überwacht und an Gebäudeautomation und Alarmierung gemeldet. Geeignet für Gebäude mit automatischen Löschanlagen oder druckbeaufschlagten Hydrantennetzen; erfordert eine gesicherte Versorgung und einen geschützten Pumpenraum mit Entwässerung sowie Zugang für regelmässige Probeläufe und Funktionskontrollen über die Nutzungsdauer.
+  en: Supplies the sprinkler or hydrant network with firefighting water at the required pressure and flow rate as soon as demand is detected, and holds the network pressurised in standby. Delivered as a factory-assembled pump set with drive, control cabinet, and fittings on a vibration-isolated foundation in a dedicated fire-separated pump room, connected to the storage tank or supply main, the riser network, power or fuel supply, and drainage, with readiness and fault states monitored and reported to building automation and the alarm system. Suitable for buildings with automatic extinguishing systems or pressurised hydrant networks; requires a secured supply and a protected pump room with drainage, and access for periodic test runs and functional checks over the service life.

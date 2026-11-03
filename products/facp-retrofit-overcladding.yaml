@@ -1,0 +1,12 @@
+id: pragmaticbim:product/facp-retrofit-overcladding
+sort_order: 13
+status: active
+name:
+  de: Sanierungsüberkleidungssystem (Verbund)
+  en: Retrofit overcladding system (composite)
+product_classification:
+  classification_scheme: EuropeanFacadeCoveringProduct
+  classification_code: FaCP-RETROFIT-OVERCLADDING
+tender_text:
+  de: Nichttragende Überkleidung über der erhaltenen bestehenden Fassade; sie ergänzt Dämmung und eine neue wetterschützende Oberfläche, ohne die alte Wand zu entfernen. Der neue Aufbau wird durch die alte Oberfläche im tragenden Untergrund verankert, entweder geklebt mit Putz oder auf einer ausgleichenden Unterkonstruktion, die Unebenheiten des Bestands aufnimmt. Geeignet für die energetische Erneuerung des Gebäudebestands; Zustand, Ebenheit und Verankerungsfähigkeit der alten Fassade sowie neue Fenster-, Dachrand- und Sockeldetails sind vorab zu klären.
+  en: Non-load-bearing overlay built over a retained existing facade, adding insulation and a new weather-protecting surface without removing the old wall. The new build-up is anchored through the old surface into the load-bearing substrate, either bonded with render or carried on a levelling sub-frame that takes up the unevenness of the existing wall. Suitable for energy refurbishment of existing stock; condition, flatness, and anchor capacity of the old facade as well as new window, eaves, and plinth details must be established beforehand.

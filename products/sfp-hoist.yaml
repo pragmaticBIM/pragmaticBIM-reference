@@ -1,0 +1,12 @@
+id: pragmaticbim:product/sfp-hoist
+sort_order: 25
+status: active
+name:
+  de: Bauaufzug
+  en: Construction hoist
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-HOIST
+tender_text:
+  de: Mastgefuehrter Personen- oder Materialaufzug, am Bauwerk verankert, mit Zugaengen auf den bedienten Ebenen. Kein Kran und kein Geruest.
+  en: Mast-guided hoist or material lift tied to the structure, with landings at the served levels. Not a crane and not scaffolding.

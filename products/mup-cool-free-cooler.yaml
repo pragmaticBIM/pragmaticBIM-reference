@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mup-cool-free-cooler
+sort_order: 15
+status: active
+name:
+  de: Freecooler
+  en: Free cooler
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-COOL-FREE-COOLER
+tender_text:
+  de: Gibt Wärme aus einem Wasserkreis direkt an die Aussenluft ab und stellt Kälte ohne maschinelle Kälteerzeugung bereit, solange die Aussenbedingungen dies zulassen, oder dient als Rückkühler einer Kältemaschine. Lieferung als werkseitig montierte Einheit für Aussenaufstellung oder belüfteten Technikbereich auf schwingungsentkoppelter Unterlage oder Stahlrahmen, Anschluss an Vor- und Rücklauf, Stromversorgung und im Nassbetrieb an Wasserversorgung und Entwässerung, Umschaltung und Ventilatorregelung über die Gebäudeautomation. Geeignet für Gebäude mit ganzjährigem Kältebedarf und verfügbarer Aussenaufstellung; erfordert freie Luftwege, Schutz gegen Luftkurzschluss, Frostschutzmassnahmen und Zugang für Reinigung und Wartung der Wärmeübertrager.
+  en: Rejects heat from a water circuit directly to the outdoor air and supplies cooling without mechanical refrigeration whenever outdoor conditions allow, or serves as recooler for a chiller. Delivered as a factory-assembled unit for outdoor placement or a ventilated plant area on a vibration-isolated support or steel frame, connected to circuit flow and return, power supply, and, in wet operation, water supply and drainage, with changeover and fan control from building automation. Suitable for buildings with year-round cooling demand and available outdoor placement; requires unobstructed air paths, protection against air short-circuiting, frost protection measures, and access for coil cleaning and maintenance.

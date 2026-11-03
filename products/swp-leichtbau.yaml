@@ -1,0 +1,12 @@
+id: pragmaticbim:product/swp-leichtbau
+sort_order: 8
+status: active
+name:
+  de: Leichtbauwand
+  en: Lightweight construction wall
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-LEICHTBAU
+tender_text:
+  de: Nichttragende oder gering belastete Wand aus gerahmter oder panelisierter Leichtbaukonstruktion mit Dämmung und ein- oder beidseitiger Beplankung. Vor Ort aus Einzelteilen aufgebaut, nicht monolithisch. Geeignet für Innenwände und leichte Aussenwandaufbauten mit Anforderungen an Schall- und Brandschutz.
+  en: Non-load-bearing or lightly loaded wall from a framed or panelised lightweight structure with insulation and sheathing on one or both sides. Built up on site from individual parts rather than monolithically. Suitable for interior walls and light exterior wall build-ups with acoustic and fire protection requirements.

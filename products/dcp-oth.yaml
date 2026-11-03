@@ -1,0 +1,12 @@
+id: pragmaticbim:product/dcp-oth
+sort_order: 8
+status: active
+name:
+  de: Sonstige / unbekannte Tuer
+  en: Other / unknown door
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-OTH
+tender_text:
+  de: Platzhalter für Türprodukte, deren Material, System und Betätigungsart zum Zeitpunkt der Ausschreibung noch nicht festgelegt oder nicht klassifiziert sind. Funktionale Anforderungen an Zugang, Bedienung, Trennfunktion und Anschluss an die angrenzende Konstruktion sind gesondert zu beschreiben. Nur in frühen Planungsphasen oder bei unvollständiger Datenlage verwenden.
+  en: Placeholder for door products whose material, system, and operating type are not yet fixed or not classified at tender stage. Functional requirements for access, operation, separating duty, and connection to the adjoining construction must be stated separately. Use only in early design stages or where data is incomplete.

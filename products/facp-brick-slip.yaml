@@ -1,0 +1,12 @@
+id: pragmaticbim:product/facp-brick-slip
+sort_order: 15
+status: active
+name:
+  de: Ziegelriemchen- / Klinker-Vorhangfassade
+  en: Brick slip / tile-hung ventilated facade
+product_classification:
+  classification_scheme: EuropeanFacadeCoveringProduct
+  classification_code: FaCP-BRICK-SLIP
+tender_text:
+  de: Nichttragende Bekleidung im Mauerwerksbild aus dünnen Ziegelriemchen oder kleinformatigen Platten vor der gedämmten Aussenwand, ohne Lastabtrag aus dem Gebäude. Die Riemchen werden auf Trägerschienen, Trägerplatten oder einer verputzten Trägerschicht auf hinterlüfteter Unterkonstruktion eingehängt oder verklebt, mit verfugten oder offenen Stossfugen. Geeignet für Neubau und Sanierung, wenn das Bild massiven Sichtmauerwerks bei geringem Eigengewicht gefordert ist, etwa bei Aussendämmung einer bestehenden Klinkerfassade.
+  en: Non-load-bearing cladding with a masonry appearance from thin brick slips or small-format tiles in front of the insulated exterior wall, without any load transfer from the building. The slips are hung or bonded onto carrier rails, carrier boards, or a rendered carrier layer on a ventilated sub-frame, with pointed or open joints. Suitable for new build and retrofit where the appearance of solid facing masonry is required at low dead load, for instance when an existing brick facade is insulated from outside.

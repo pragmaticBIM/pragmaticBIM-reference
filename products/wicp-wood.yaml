@@ -1,0 +1,12 @@
+id: pragmaticbim:product/wicp-wood
+sort_order: 1
+status: active
+name:
+  de: Holzfenster
+  en: Wood window system
+product_classification:
+  classification_scheme: AbstractWindowConnectorProduct
+  classification_code: WICP-WOOD
+tender_text:
+  de: Fenstereinheit mit Rahmen und Flügel aus Vollholz oder verleimtem Holz, die eine Wand- oder Dachöffnung mit einer Isolierverglasung verschliesst. Wird als werkseitig verglaste und oberflächenbehandelte Einheit geliefert, in die Laibung eingesetzt, befestigt und innen wie aussen an die angrenzende Konstruktion abgedichtet. Geeignet für Fassadenöffnungen mit Anforderungen an Wärme- und Schalltrennung, mit öffenbaren oder festen Flügeln und regelmässiger Pflege der bewitterten Holzoberflächen.
+  en: Window unit with frame and sash from solid or laminated timber, closing a wall or roof opening with an insulating glazing infill. Delivered as a factory-glazed and pre-finished unit, set into the reveal, fixed and sealed against the adjoining construction on the inside and the outside. Suitable for facade openings with thermal and acoustic separation duty, with operable or fixed sashes and periodic surface maintenance of the weather-exposed timber.

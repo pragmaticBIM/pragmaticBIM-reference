@@ -1,0 +1,12 @@
+id: pragmaticbim:product/fcp-oth
+sort_order: 12
+status: active
+name:
+  de: Sonstiger / unbekannter Bodenbelag
+  en: Other / unknown floor covering
+product_classification:
+  classification_scheme: AbstractFloorCoveringProduct
+  classification_code: FCP-OTH
+tender_text:
+  de: Platzhalter für Bodenbelagsprodukte, deren Systemtyp zum Zeitpunkt der Ausschreibung noch nicht festgelegt oder nicht klassifiziert ist. Funktionale Anforderungen wie Nutzungsklasse, Trittsicherheit, Trittschallminderung, Feuchtebeanspruchung und Reinigbarkeit sind gesondert zu beschreiben. Nur in frühen Planungsphasen oder bei unvollständiger Datenlage verwenden.
+  en: Placeholder for floor covering products whose system type is not yet fixed or not classified at tender stage. Functional requirements such as wear class, slip resistance, impact-sound reduction, moisture exposure, and cleanability must be stated separately. Use only in early design stages or where data is incomplete.

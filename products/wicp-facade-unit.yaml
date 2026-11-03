@@ -1,0 +1,12 @@
+id: pragmaticbim:product/wicp-facade-unit
+sort_order: 8
+status: active
+name:
+  de: Fassaden-Verglasungselement
+  en: Facade glazing unit
+product_classification:
+  classification_scheme: AbstractWindowConnectorProduct
+  classification_code: WICP-FACADE-UNIT
+tender_text:
+  de: Verglasungsfeld eines Fassadensystems, das die Fensteröffnung bildet, mit Festverglasungen und integrierten Öffnungsflügeln oder Lüftungsklappen im Pfosten-Riegel- oder Elementraster. Wird als komplettes Glaselement vorgefertigt, eingehoben, an Konsolen am Tragwerk befestigt und oben, unten und seitlich in das Fassadenraster eingedichtet. Geeignet für vollflächig verglaste Fassaden, bei denen Öffnungsfunktion, Wärme- und Schalltrennung sowie späteres Reinigen und Ersetzen von Scheiben innerhalb des Fassadensystems gelöst werden müssen.
+  en: Glazed field of a facade system that acts as the window opening, with fixed panes and integrated opening lights or ventilation flaps within a mullion-transom or unitised grid. Prefabricated as a complete glazed element, lifted into position, fixed to brackets on the load-bearing structure and sealed into the facade grid at head, sill, and jambs. Suitable for fully glazed facades where opening function, thermal and acoustic separation, and later cleaning and pane replacement have to be resolved inside the facade system.

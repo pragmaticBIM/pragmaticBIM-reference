@@ -1,0 +1,12 @@
+id: pragmaticbim:product/rcp-pv-roof
+sort_order: 11
+status: active
+name:
+  de: Aufgestaendigtes Photovoltaik-Dach
+  en: Roof-mounted photovoltaic system
+product_classification:
+  classification_scheme: AbstractRoofCoveringProduct
+  classification_code: RCP-PV-ROOF
+tender_text:
+  de: Stromerzeugende Modulanordnung auf der Dachfläche, entweder aufgeständert über der bestehenden Deckung oder diese als witterungsschützende Schicht ersetzend. Die Module werden beschwert oder auf Schienen und Konsolen befestigt, die in die Tragkonstruktion eingebunden sind, wobei Durchdringungen der Abdichtung dicht ausgeführt und die Leitungen zu den Wechselrichtern geführt werden. Geeignet für Dächer mit ausreichender Lastreserve und Besonnung; übernehmen die Module die Witterungsschutzfunktion, sind Regendichtheit und Windsogsicherheit durch das System selbst zu erbringen.
+  en: Electricity-generating module array carried by the roof surface, either mounted on a frame above the existing covering or replacing it as the weatherproof layer. Modules are ballasted or fixed to rails and brackets tied into the structure, with penetrations of the waterproofing sealed and cabling routed to the inverters. Suitable for roofs with sufficient load reserve and solar exposure; where the modules take over the weatherproofing function, rain-tightness and wind uplift resistance must be delivered by the system itself.

@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mtp-fire-fire-damper-actuator
+sort_order: 24
+status: active
+name:
+  de: Brandschutzklappen-Antrieb
+  en: Fire damper actuator
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-FIRE-FIRE-DAMPER-ACTUATOR
+tender_text:
+  de: Fährt das Klappenblatt bei Alarm oder Spannungsausfall in die Sicherheitsstellung und meldet die erreichte Stellung an die Leittechnik zurück, sodass das Schliessen fernausgelöst und überprüft werden kann. Wird direkt auf der Klappenachse aussen am Kanal montiert und an Strom- und Überwachungsleitungen angeschlossen, mit Endschaltern oder Busmodul für Rückmeldung und zyklische Testfahrten. Geeignet überall dort, wo das Schliessen der Klappen überwacht oder zentral ausgelöst werden muss, wobei der Antrieb an einer Revisionsöffnung liegt und ohne Öffnen des umgebenden Bauteils ersetzbar bleibt.
+  en: Drives the damper blade into its safe position on alarm or loss of power and reports the reached position back to the control system, so that closing can be triggered and verified remotely. Mounted directly on the damper shaft outside the duct and connected to power and monitoring wiring, with limit switches or a bus module for feedback and for scheduled test runs. Suitable wherever damper closing must be monitored or triggered centrally, with the actuator located at an inspection opening so that it stays replaceable without opening the surrounding construction.

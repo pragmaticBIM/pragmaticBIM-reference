@@ -1,0 +1,12 @@
+id: pragmaticbim:product/fcp-raised-floor
+sort_order: 11
+status: active
+name:
+  de: Doppelboden / Hohlraumboden
+  en: Raised / access floor
+product_classification:
+  classification_scheme: AbstractFloorCoveringProduct
+  classification_code: FCP-RAISED-FLOOR
+tender_text:
+  de: Erhöhte Bodenkonstruktion, die einen durchgehenden, zugänglichen Hohlraum zwischen Rohdecke und Gehniveau bildet. Abnehmbare Paneele liegen auf höhenverstellbaren Stützen oder auf einem selbsttragenden Hohlraumaufbau und nehmen den Fertigbelag auf, werkseitig aufgebracht oder separat verlegt. Geeignet für Büro-, Technik- und Serverräume mit dichter Installationsführung, häufigen Umnutzungen und definierter Punkt- und Flächenlast.
+  en: Elevated floor construction that forms a continuous accessible cavity between the structural slab and the walking level. Removable panels rest on height-adjustable pedestals or on a self-supporting cavity build-up and carry the final finish, applied in the factory or laid separately. Suitable for office, technical, and server rooms with dense service distribution, frequent reconfiguration, and defined point and distributed load capacity.

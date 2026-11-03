@@ -1,0 +1,12 @@
+id: pragmaticbim:product/bmp-timber
+sort_order: 2
+status: active
+name:
+  de: Holzträger
+  en: Timber beam
+product_classification:
+  classification_scheme: BeamProduct
+  classification_code: BMP-TIMBER
+tender_text:
+  de: Horizontales Tragglied aus Vollholz, Brettschichtholz oder Konstruktionsholz, das zwischen Auflagern spannt. Auf Länge vorgefertigt und vor Ort mit Stahlverbindungsmitteln und Trägerschuhen angeschlossen. Geeignet für Holz- und Hybridtragwerke mit sichtbaren Traggliedern, geringem Eigengewicht und trockener Montage.
+  en: Horizontal load-bearing member of solid, glued laminated, or engineered timber spanning between supports. Prefabricated to length and connected on site with steel fasteners and beam hangers. Suitable for timber and hybrid structures with visible members, low dead load, and dry erection.

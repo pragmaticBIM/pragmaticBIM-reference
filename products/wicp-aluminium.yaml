@@ -1,0 +1,12 @@
+id: pragmaticbim:product/wicp-aluminium
+sort_order: 5
+status: active
+name:
+  de: Aluminiumfenster
+  en: Aluminium window system
+product_classification:
+  classification_scheme: AbstractWindowConnectorProduct
+  classification_code: WICP-ALUMINIUM
+tender_text:
+  de: Fenstereinheit mit thermisch getrennten Aluminiumprofilen für Rahmen und Flügel und einer Isolierverglasung, die eine Fassadenöffnung verschliesst. Die Profile werden im Werk zugeschnitten, gefügt und verglast, danach in die Laibung eingesetzt, am Rohbau verankert und an die angrenzende Konstruktion abgedichtet. Geeignet für grossformatige und stark genutzte Fassadenöffnungen mit dauerhaft beschichteten Oberflächen und geringem Unterhaltsaufwand auf der Wetterseite.
+  en: Window unit with thermally separated aluminium frame and sash profiles and an insulating glazing infill, closing a facade opening. Profiles are cut, joined, and glazed in the factory, then set into the reveal, anchored to the structure and sealed against the adjoining construction. Suitable for large-format and heavily used facade openings, with durable coated surfaces and low maintenance effort on the weather side.

@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mup-heat-boiler
+sort_order: 11
+status: active
+name:
+  de: Heizkessel
+  en: Boiler
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-HEAT-BOILER
+tender_text:
+  de: Erzeugt Wärme für Raum- oder Prozesswärme und übergibt sie mit der erforderlichen Vorlauftemperatur und dem erforderlichen Volumenstrom an den Heizkreis. Lieferung als werkseitig montierte Einheit, Aufstellung auf Sockel in der Heizzentrale, Anschluss an Brennstoffversorgung, Abgasanlage, Heizungsvor- und -rücklauf, Sicherheitseinrichtungen und Ausdehnung, Folge- und Temperaturregelung in die Gebäudeautomation eingebunden. Geeignet als Grund- oder Spitzenlasterzeuger in Einzel- und Mehrkesselanlagen; erfordert eine brandabgetrennte Heizzentrale, Zuluft- und Abgasführung, Transport- und Servicefreiräume sowie Zugang für Brenner- und Wärmetauscherwartung.
+  en: Generates heat for space heating or process use and transfers it to the heating circuit at the required flow temperature and flow rate. Delivered as a factory-assembled unit set on a plinth in the heating plant room and connected to fuel supply, flue, heating flow and return, safety devices, and expansion, with sequence and temperature control integrated into building automation. Suitable as lead or peak-load generator in single and multi-unit plant; requires a fire-separated plant room, combustion air and flue routing, transport and service clearances, and access for burner and heat exchanger maintenance.

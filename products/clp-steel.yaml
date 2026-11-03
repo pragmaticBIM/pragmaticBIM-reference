@@ -1,0 +1,12 @@
+id: pragmaticbim:product/clp-steel
+sort_order: 1
+status: active
+name:
+  de: Stahlstütze
+  en: Steel column
+product_classification:
+  classification_scheme: ColumnProduct
+  classification_code: CLP-STEEL
+tender_text:
+  de: Vertikales Tragglied aus Stahl, das Decken- und Dachlasten in die darunterliegende Struktur weiterleitet. Als Walz-, Schweiss- oder Hohlprofil im Werk gefertigt und vor Ort mit geschraubten oder geschweissten Anschlüssen montiert. Geeignet für schlanke Stützen und grosse Spannweiten; Korrosions- und Brandschutz richten sich nach Exposition und gefordertem Feuerwiderstand.
+  en: Vertical load-bearing member of steel transferring floor and roof loads to the structure below. Fabricated in the workshop as rolled, welded, or hollow section and erected on site with bolted or welded connections. Suitable for slender columns and long spans; corrosion and fire protection follow the exposure and the required fire resistance.

@@ -1,0 +1,12 @@
+id: pragmaticbim:product/fdp-retaining
+sort_order: 6
+status: active
+name:
+  de: Keller- / Stuetzwandfundament
+  en: Basement / retaining foundation wall
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-RETAINING
+tender_text:
+  de: Erdberührte Wand, die vertikale Gebäudelasten abträgt und gleichzeitig Erd- und Wasserdruck aus dem umgebenden Baugrund aufnimmt. Als Ortbetonwand, Fertigteilwand oder verbleibende Baugrubenwand erstellt und erdseitig mit Abdichtung, Dämmung und Entwässerung ergänzt. Geeignet für Kellerumfassungen, Stützbauwerke bei Geländesprüngen und erdberührte Teile der Gebäudehülle.
+  en: Below-grade wall that carries vertical building loads and at the same time resists earth and water pressure from the surrounding ground. Built as in-situ reinforced concrete, prefabricated elements, or an excavation-support wall left in place, completed on the earth side with sealing, insulation, and drainage. Suitable for basement enclosures, retaining structures at level changes, and buried parts of the building envelope.

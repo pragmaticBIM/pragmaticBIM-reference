@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mtp-fw-wc-flush
+sort_order: 16
+status: active
+name:
+  de: WC-Spuelung
+  en: WC flush valve
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-FW-WC-FLUSH
+tender_text:
+  de: Gibt eine dosierte Wassermenge zur Spülung des WC-Beckens ab und füllt Spülkasten oder Spülleitung nach jedem Vorgang wieder. Wird verdeckt in der Wand, in einem Vorwandgestell oder sichtbar über dem Becken eingebaut und an die Kaltwasserleitung mit Absperrung und Rückflussverhinderung angeschlossen, mit Auslösung über Platte, Taster oder Sensor. Geeignet für Sanitärräume aller Nutzungsarten, mit Zwei-Mengen- oder Spülstopp-Funktion, wo der Wasserverbrauch zu senken ist, und mit hinter der Betätigungsplatte erreichbarem Füllventil und Absperrorgan für den Service.
+  en: Releases a measured volume of water to rinse the WC pan and refills the cistern or flush line after every operation. Installed concealed in the wall, in a prewall frame, or exposed above the pan and connected to the cold water supply with shut-off and backflow protection, with actuation by plate, push button, or sensor. Suitable for sanitary rooms of all use types, with dual or interruptible flush where water consumption is to be reduced, and with fill valve and shut-off reachable behind the actuation plate for service.

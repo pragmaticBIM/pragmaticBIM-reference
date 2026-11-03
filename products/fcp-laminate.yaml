@@ -1,0 +1,12 @@
+id: pragmaticbim:product/fcp-laminate
+sort_order: 10
+status: active
+name:
+  de: Laminatboden
+  en: Laminate flooring
+product_classification:
+  classification_scheme: AbstractFloorCoveringProduct
+  classification_code: FCP-LAMINATE
+tender_text:
+  de: Nutzschicht aus Plattenelementen mit bedruckter, harzimprägnierter Dekorschicht auf einem Holzwerkstoffkern. Schwimmend mit Klickverbindung auf einer Trittschall- und Trennunterlage über dem Unterlagsboden verlegt, mit Randdehnfugen und Sockelleisten. Geeignet für Räume mit geringer bis mittlerer Beanspruchung in trockener Nutzung, wenn eine rasche und kostengünstige Verlegung gefordert ist; die Nutzschicht ist nicht nachschleifbar.
+  en: Wearing surface from board elements with a printed, resin-impregnated decorative top layer on a wood-based core. Laid floating with click joints on an impact-sound and separation underlay over the screed, with perimeter expansion gaps and skirtings. Suitable for rooms with low to moderate traffic in dry use where fast and low-cost installation is required; the wear layer cannot be re-sanded.

@@ -1,0 +1,12 @@
+id: pragmaticbim:product/sfp-silo
+sort_order: 22
+status: active
+name:
+  de: Silo
+  en: Silo
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-SILO
+tender_text:
+  de: Aufgestelltes Silo mit Befuellung und Austrag auf vorbereitetem Untergrund, das einen Mischer oder eine Pumpe speist. Das Silo ist der Behaelter; Mischanlage und Pumpe sind eigene Objekte.
+  en: Erected silo with filling and discharge, standing on a prepared base and feeding a mixer or pump. The silo is the storage vessel; the mixing plant and the pump are separate objects.

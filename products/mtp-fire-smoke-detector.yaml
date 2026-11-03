@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mtp-fire-smoke-detector
+sort_order: 25
+status: active
+name:
+  de: Rauchmelder
+  en: Smoke detector
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-FIRE-SMOKE-DETECTOR
+tender_text:
+  de: Überwacht die Luft im Raum oder Hohlraum auf Rauch und löst den Alarm aus, der Evakuierung und die verknüpften Brandfallsteuerungen anstösst. Wird an der Decke oder im überwachten Hohlraum auf einem Sockel mit der Ringleitungsverdrahtung montiert, wobei jeder Melder einzeln adressiert und damit von der Zentrale aus lokalisierbar ist. Geeignet für Fluchtwege, genutzte Räume und zu überwachende verdeckte Hohlräume, wobei die überwachte Fläche je Melder aus Raumgeometrie und Luftbewegung abgeleitet wird und der Montageort für periodische Prüfung und Reinigung erreichbar bleibt.
+  en: Monitors the air in the room or void for smoke and raises the alarm that starts evacuation and the linked fire control functions. Mounted on the ceiling or inside the monitored void on a base carrying the loop wiring, with each detector individually addressed so that it can be located from the alarm panel. Suitable for escape routes, occupied rooms, and concealed voids to be monitored, with the area covered per detector derived from room geometry and air movement and with the mounting position reachable for periodic testing and cleaning.

@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mup-elec-main-dist-board
+sort_order: 2
+status: active
+name:
+  de: Hauptverteilung
+  en: Main distribution board
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-ELEC-MAIN-DIST-BOARD
+tender_text:
+  de: Übernimmt die Einspeisung und verteilt sie auf Unterverteilungen und Hauptverbraucher, mit den Schutz-, Schalt-, Trenn- und Messstellen am Gebäude- oder Anschlusseingang. Lieferung als werkseitig gefertigte und geprüfte Felder, Aufstellung auf Sockel in einem Elektroraum, Anschluss über Schienen und Kabel an Einspeisung und Abgänge, Zustands- und Störmeldungen an die Gebäudeautomation. Geeignet als zentraler Versorgungsknoten eines Gebäudes; erfordert einen zugänglichen Elektroraum mit Bedienfreiräumen, Reserveplatz für spätere Abgänge und sicheren Zugang für Prüfung und Wartung.
+  en: Receives the incoming supply and distributes it to sub-distribution boards and main loads, providing the protection, switching, isolation, and metering points at building or site entry. Delivered as factory-built and tested cubicles, set on a plinth in an electrical room and connected by busbar and cable to the incoming supply and the outgoing circuits, with status and fault signals passed to building automation. Suitable as the central supply node of a building; requires an accessible electrical room with operating clearances, spare capacity for later circuits, and safe access for testing and maintenance.

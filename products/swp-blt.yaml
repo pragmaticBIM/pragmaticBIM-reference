@@ -1,0 +1,12 @@
+id: pragmaticbim:product/swp-blt
+sort_order: 4
+status: active
+name:
+  de: Leichtbeton-Tafel-Wand (BLT)
+  en: Lightweight concrete panel (BLT) wall
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-BLT
+tender_text:
+  de: Tragende oder nichttragende Wand aus vorgefertigten Leichtbeton-Blöcken oder geschosshohen Tafeln. Werkseitig hergestellt und vor Ort versetzt, mit geringerem Eigengewicht als Normalbeton. Geeignet für Aussen- und Innenwände, bei denen Tragfähigkeit und Wärmedämmung im gleichen Bauteil gefordert sind.
+  en: Load-bearing or non-load-bearing wall from prefabricated lightweight-concrete blocks or storey-height panels. Factory-produced and set in place on site, with lower dead load than normal-weight concrete. Suitable for exterior and interior walls where structure and thermal insulation are required in the same component.

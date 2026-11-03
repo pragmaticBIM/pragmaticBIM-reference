@@ -1,0 +1,12 @@
+id: pragmaticbim:product/facp-bipv-integrated
+sort_order: 9
+status: active
+name:
+  de: Gebäudeintegrierte Photovoltaik-Fassade
+  en: Building-integrated photovoltaic facade
+product_classification:
+  classification_scheme: EuropeanFacadeCoveringProduct
+  classification_code: FaCP-BIPV-INTEGRATED
+tender_text:
+  de: Nichttragende Fassadenbekleidung mit zusätzlicher Stromerzeugung; Photovoltaikzellen sind in die sichtbare Aussenschicht des Wandaufbaus integriert. Aktive Module ersetzen herkömmliche Bekleidungspaneele auf einer Unterkonstruktion oder in einem Elementsystem und werden durch den Hohlraum zu Wechselrichtern verkabelt, sodass Wetterschutz und Energiegewinnung in derselben Schicht erbracht werden. Geeignet für Neubau und repräsentative Erneuerung an gut besonnten Fassaden; Modultemperatur, Zugänglichkeit für Unterhalt und Austausch sowie Kabelführung sind in der Planung zu lösen.
+  en: Non-load-bearing facade cladding that additionally generates electricity, with photovoltaic cells integrated into the visible outer layer of the wall build-up. Active modules replace conventional cladding panels on a sub-frame or unitised system and are wired through the cavity to inverters, so weather protection and energy generation are delivered by the same layer. Suitable for new build and prestige renewal on well-exposed facades; module temperature, access for maintenance and replacement, and cable routing must be resolved in the design.

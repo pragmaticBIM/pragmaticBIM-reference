@@ -1,0 +1,12 @@
+id: pragmaticbim:product/ssp-prefab-conc
+sort_order: 2
+status: active
+name:
+  de: Elementdecke / -platte Beton
+  en: Prefabricated concrete slab
+product_classification:
+  classification_scheme: AbstractSlabSeparatorProduct
+  classification_code: SSP-PREFAB-CONC
+tender_text:
+  de: Tragendes horizontales Bauteil aus werkseitig hergestellten Betonelementen wie Hohldielen, Doppel-T-Trägern oder Flachdeckenelementen. Die Elemente werden einbaufertig geliefert, auf das Tragwerk versetzt und über Fugenverguss oder eine statisch wirksame Ortbetonauflage verbunden. Geeignet für Geschoss- und Dachdecken mit kurzer Montagezeit und grossen Spannweiten bei geringem Aufwand auf der Baustelle.
+  en: Load-bearing horizontal element assembled from factory-made concrete units such as hollow-core, double-tee, or flat slab elements. Elements are delivered ready to install, set on the supporting structure, and joined with grouted joints or a structural concrete topping. Suitable for floor and roof slabs where short erection times and large spans with little site labour are required.

@@ -1,0 +1,12 @@
+id: pragmaticbim:product/fdp-waterproof
+sort_order: 7
+status: active
+name:
+  de: Fundament- / Kellerabdichtung
+  en: Foundation waterproofing / tanking
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-WATERPROOF
+tender_text:
+  de: Abdichtungssystem, das Bodenfeuchte, Sickerwasser und drückendes Wasser von den erdberührten Gebäudeteilen fernhält. Entweder als verklebte oder lose verlegte Abdichtungsbahn auf Platten- und Wandflächen oder als wasserundurchlässige Betonkonstruktion mit abgedichteten Fugen und Durchdringungen ausgeführt. Geeignet für Untergeschosse, Tiefgaragen und alle erdberührten Umschliessungen mit Anforderung an trockene Innenräume.
+  en: Sealing system that keeps ground moisture, seeping water, and pressing water away from the buried parts of the building. Executed either as a bonded or loose-laid membrane on slab and wall surfaces or as watertight concrete construction with sealed joints and penetrations. Suitable for basements, underground garages, and all buried enclosures where a dry interior is required.

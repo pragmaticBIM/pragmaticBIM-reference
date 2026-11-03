@@ -1,0 +1,12 @@
+id: pragmaticbim:product/swp-ortbeton
+sort_order: 1
+status: active
+name:
+  de: Ortbeton-Wand
+  en: In-situ concrete wall
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-ORTBETON
+tender_text:
+  de: Tragende oder nichttragende Wand aus vor Ort betoniertem Beton oder Stahlbeton. Schalung, Bewehrung und Betonage erfolgen auf der Baustelle, wodurch fugenlose, monolithische Wandscheiben entstehen. Geeignet für Aussen- und Innenwände mit tragenden, aussteifenden oder abdichtenden Anforderungen.
+  en: Load-bearing or non-load-bearing wall cast in place from concrete or reinforced concrete. Formwork, reinforcement, and pouring are carried out on site, producing jointless monolithic wall panels. Suitable for exterior and interior walls with structural, bracing, or watertightness requirements.

@@ -1,0 +1,12 @@
+id: pragmaticbim:product/sfp-crane-pad
+sort_order: 3
+status: active
+name:
+  de: Kranstellfläche
+  en: Crane set-up pad
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-CRANE-PAD
+tender_text:
+  de: Temporaere Aufstandsflaeche fuer Mobil- oder Raupenkran, einschliesslich Abstuetzplatten und Lastverteilung. Wird auf Bodentragfaehigkeit geprueft. Weder der Kran noch ein dauerhaftes Fundament.
+  en: Temporary bearing surface a mobile or crawler crane stands on, including outrigger pads and load-spreading. Checked for ground bearing. It is not the crane and not a permanent foundation.

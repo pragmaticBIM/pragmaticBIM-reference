@@ -1,0 +1,12 @@
+id: pragmaticbim:product/wcp-textile
+sort_order: 7
+status: active
+name:
+  de: Textile Wandbekleidung
+  en: Textile wall covering
+product_classification:
+  classification_scheme: AbstractWallCoveringProduct
+  classification_code: WCP-TEXTILE
+tender_text:
+  de: Weiche Innenwandbekleidung aus textilen oder Stoffoberflächen, in der Regel mit schallabsorbierender Hinterlage. Entweder vollflächig auf dem Untergrund verklebt oder als Spannrahmenelement mit Unterkonstruktion in Randprofile eingespannt. Geeignet für Sitzungs-, Vortrags- und Büroräume mit Anforderungen an Raumakustik und reflexionsarme Oberflächen, bei begrenzter mechanischer Belastbarkeit und Reinigbarkeit.
+  en: Soft interior wall covering from textile or fabric surfaces, usually with a sound-absorbing backing layer. Either adhered to the substrate over the full surface or stretched into edge profiles as a fabric-covered element on a substructure. Suitable for meeting rooms, auditoriums, and offices with requirements on room acoustics and a low-reflection surface, with limited mechanical loading and cleanability.

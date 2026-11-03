@@ -1,0 +1,12 @@
+id: pragmaticbim:product/sfp-parking
+sort_order: 20
+status: active
+name:
+  de: Parkplatz
+  en: Parking area
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-PARKING
+tender_text:
+  de: Markierte Flaeche, auf der Personenwagen, Lieferwagen und Baustellenfahrzeuge stehen, solange sie nicht laden oder wenden. Unterscheidet sich von Baustrasse, Wendeflaeche und Umschlagplatz.
+  en: Marked area where cars, vans, and site vehicles stand while they are not loading or turning. Distinct from the haul road, the turning area, and the transfer point.

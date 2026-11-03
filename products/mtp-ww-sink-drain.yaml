@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mtp-ww-sink-drain
+sort_order: 19
+status: active
+name:
+  de: Spuelbeckenablauf
+  en: Sink drain
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-WW-SINK-DRAIN
+tender_text:
+  de: Führt Gebrauchtwasser von Spülbecken, Waschbecken oder Gerät in die Abwasserleitung ab und hält Gerüche vom Raum fern. Wird mit Ablaufgarnitur und Geruchverschluss am Apparateabgang montiert und an den Abwasserstrang angeschlossen, bei Bedarf mit zusätzlichem Anschluss für Geräteschläuche. Geeignet für Küchen, Sanitärräume und Labors, wobei der Geruchverschluss im Möbel oder Installationsraum erreichbar bleibt und ohne Ausbau des Apparats geöffnet und gereinigt werden kann.
+  en: Drains used water from a sink, basin, or appliance into the waste water pipework and keeps odour from entering the room. Fitted to the fixture outlet with a waste set and water trap and connected to the waste branch, with an additional connection for appliance hoses where required. Suitable for kitchens, sanitary rooms, and laboratories, with the trap reachable inside the cabinet or service space so that it can be opened and cleaned without dismantling the fixture.

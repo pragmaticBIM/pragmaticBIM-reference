@@ -1,0 +1,12 @@
+id: pragmaticbim:product/swp-timber
+sort_order: 7
+status: active
+name:
+  de: Holz-Wand
+  en: Timber frame wall
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-TIMBER
+tender_text:
+  de: Tragende oder nichttragende Wand mit primärer Konstruktion aus Vollholz, Brettschichtholz oder Holzwerkstoffplatten. Als Rahmen-, Ständer- oder Massivholzelement vorgefertigt und vor Ort montiert. Geeignet für Aussen- und Innenwände mit hohem Vorfertigungsgrad und geringem Eigengewicht.
+  en: Load-bearing or non-load-bearing wall with a primary structure of solid timber, glued laminated timber, or engineered wood panels. Prefabricated as frame, stud, or solid timber elements and assembled on site. Suitable for exterior and interior walls with a high degree of prefabrication and low dead load.

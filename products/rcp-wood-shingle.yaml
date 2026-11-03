@@ -1,0 +1,12 @@
+id: pragmaticbim:product/rcp-wood-shingle
+sort_order: 8
+status: active
+name:
+  de: Holzschindel- / -schindeldach
+  en: Wood shingle / shake roof
+product_classification:
+  classification_scheme: AbstractRoofCoveringProduct
+  classification_code: RCP-WOOD-SHINGLE
+tender_text:
+  de: Äussere Dachhaut aus gesägten oder gespaltenen Holzschindeln, Spaltschindeln oder Brettern, in überlappenden Reihen auf einem Steildach verlegt. Die Schindeln werden auf offene Lattung oder Schalung über einem hinterlüfteten Hohlraum genagelt, damit die Deckung beidseitig austrocknen kann. Geeignet für Steildächer mit ausreichender Neigung und guter Belüftung, insbesondere wenn ein erneuerbarer Deckwerkstoff und ein traditionelles Erscheinungsbild gefordert sind.
+  en: Outer roof skin from sawn or split timber shingles, shakes, or boards laid in overlapping courses on a pitched roof. Shingles are nailed onto open battens or boarding over a rear-ventilated cavity so that the covering can dry out on both faces. Suitable for pitched roofs with generous pitch and good ventilation, in particular where a renewable covering material and a traditional appearance are required.

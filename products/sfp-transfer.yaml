@@ -1,0 +1,12 @@
+id: pragmaticbim:product/sfp-transfer
+sort_order: 12
+status: active
+name:
+  de: Umschlagplatz
+  en: Transfer area
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-TRANSFER
+tender_text:
+  de: Festgelegter Umschlagpunkt zum Abladen, Umladen und kurzen Abstellen zwischen Transport und Einbauort. Umfasst den Platz der Umschlaggeraete, nicht die Lagerflaeche selbst.
+  en: Designated handling point for unloading, reloading, and short-term set-down between transport and the place of use. Includes the space the handling equipment needs, not the storage yard itself.

@@ -1,0 +1,12 @@
+id: pragmaticbim:product/fdp-strip
+sort_order: 2
+status: active
+name:
+  de: Streifenfundament
+  en: Strip footing foundation
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-STRIP
+tender_text:
+  de: Durchgehendes Fundament unter tragenden Wänden oder Stützenreihen, das Linienlasten auf eine breitere Aufstandsfläche im Boden verteilt. Als Graben bis in frostfreie Tiefe ausgehoben und in Ortbeton bewehrt oder unbewehrt erstellt, mit Anschlussbewehrung für die aufgehende Wand. Geeignet für tragfähigen Baugrund und wandorientierte Tragwerke, bei denen keine durchgehende Bodenplatte erforderlich ist.
+  en: Continuous footing running below load-bearing walls or lines of columns, spreading linear loads onto a wider bearing area in the soil. Excavated as a trench down to frost-free depth and cast in place in reinforced or plain concrete, with starter bars for the wall above. Suitable for firm ground and wall-dominated structures where a full raft is not required.

@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mup-data-patch-panel
+sort_order: 6
+status: active
+name:
+  de: Patchpanel
+  en: Patch panel
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-DATA-PATCH-PANEL
+tender_text:
+  de: Schliesst die strukturierte Verkabelung eines Verteilbereichs ab und erlaubt das Rangieren einzelner Verbindungen auf die aktive Technik mittels Patchkabel. Lieferung als vorgefertigte Panels oder Rangierfelder, montiert in Schrank oder Rack eines Kommunikationsraums, Verkabelung aufgelegt, geprüft und beschriftet, mit Kabelführung für Zugentlastung und Biegeradien. Geeignet für die flexible Umbelegung von Anschlüssen im Betrieb; erfordert Rackplatz, Rangierfreiraum an der Front und eine dokumentierte Portbeschriftung für den Unterhalt.
+  en: Terminates the structured cabling of a distribution area and allows individual links to be cross-connected to active equipment with patch cords. Delivered as prefabricated panels or cross-connect frames mounted in a cabinet or rack in a communications room, with the cabling terminated, tested, and labelled and with cable management for strain relief and bend radii. Suitable for flexible reassignment of outlets during operation; requires rack space, patching clearance at the front, and documented port labelling for maintenance.

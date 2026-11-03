@@ -1,0 +1,12 @@
+id: pragmaticbim:product/ssp-lightweight
+sort_order: 8
+status: active
+name:
+  de: Leichtbau-Decke / -Platte
+  en: Lightweight slab system
+product_classification:
+  classification_scheme: AbstractSlabSeparatorProduct
+  classification_code: SSP-LIGHTWEIGHT
+tender_text:
+  de: Horizontale Decke oder Plattform mit leichter, nicht monolithischer Primärkonstruktion aus Profilen, Rippen oder Paneelen für begrenzte Lasten. Vor Ort aus vorgefertigten Teilen montiert und am Tragwerk befestigt, in der Regel ohne schwere Auflage. Geeignet für untergeordnete Decken, Technikpodeste und Installationsebenen, bei denen geringes Eigengewicht und Rückbaubarkeit wichtiger sind als Masse.
+  en: Horizontal deck or platform with a light, non-monolithic primary structure of profiles, ribs, or panels carrying limited loads. Assembled on site from prefabricated parts and fixed to the supporting structure, normally without a heavy topping. Suitable for secondary decks, technical platforms, and service levels where low dead load and demountability matter more than mass.

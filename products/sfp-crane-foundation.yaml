@@ -1,0 +1,12 @@
+id: pragmaticbim:product/sfp-crane-foundation
+sort_order: 4
+status: active
+name:
+  de: Kranfundament
+  en: Crane foundation
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-CRANE-FOUNDATION
+tender_text:
+  de: Ortbeton- oder Fertigteilsockel, der einen Turmdrehkran haelt, mit Ankern oder Zentralballast. Wird nach dem Rueckbaukonzept entfernt oder belassen. Unterscheidet sich von der Kranstellflaeche.
+  en: Cast or precast base that holds a tower crane, with anchors or a central ballast block. Removed or left according to the dismantling concept. Distinct from a mobile-crane pad.

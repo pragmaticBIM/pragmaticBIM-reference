@@ -1,0 +1,12 @@
+id: pragmaticbim:product/ssp-clt
+sort_order: 5
+status: active
+name:
+  de: Brettsperrholz-Decke / -Platte (CLT)
+  en: Cross-laminated timber (CLT) slab
+product_classification:
+  classification_scheme: AbstractSlabSeparatorProduct
+  classification_code: SSP-CLT
+tender_text:
+  de: Tragendes horizontales Bauteil aus massiven Holzplatten, ein- oder zweiachsig spannend. Die Platten werden im Werk einschliesslich Öffnungen und Installationsführungen abgebunden, eingehoben und entlang der Plattenstösse verschraubt. Geeignet für Geschoss- und Dachdecken mit sichtbarer Holzuntersicht, hohem Vorfertigungsgrad und geringem Eigengewicht.
+  en: Load-bearing horizontal element formed by solid mass timber plates that span in one or two directions. Plates are cut to size in the factory including openings and service routes, lifted into position, and screwed along the panel joints. Suitable for floor and roof decks where a visible timber soffit, a high degree of prefabrication, and low dead load are required.

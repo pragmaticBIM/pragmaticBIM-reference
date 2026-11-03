@@ -1,0 +1,12 @@
+id: pragmaticbim:product/dcp-metal
+sort_order: 2
+status: active
+name:
+  de: Metalltuer
+  en: Metal door system
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-METAL
+tender_text:
+  de: Türkonstruktion mit Blatt und Rahmen aus Stahl oder anderem Metall, üblicherweise als Blechschale mit dämmendem oder aussteifendem Kern, die eine Zugangsöffnung verschliesst. Blatt und Rahmen werden in der Werkstatt geschweisst, beschichtet und vormontiert, der Rahmen wird in der Laibung verankert und das Blatt mit hochbelastbaren Bändern, Verschlüssen und bei Bedarf Türschliessern und Panikbeschlägen eingehängt. Geeignet für Technikräume, Fluchtwege sowie Aussen- und stark genutzte Öffnungen mit Anforderungen an Brandabschnitts-, Rauch- oder Einbruchschutz.
+  en: Door assembly with leaf and frame of steel or other metal, usually a sheet-metal shell with an insulating or stiffening core, closing an access opening. Leaf and frame are welded, coated, and pre-fitted in the workshop, the frame is anchored into the reveal and the leaf hung with heavy-duty hinges, locking, and where required closers and panic hardware. Suitable for technical rooms, escape routes, and exterior or heavily used openings with fire compartmentation, smoke control, or burglar resistance duty.

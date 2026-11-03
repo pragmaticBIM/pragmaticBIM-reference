@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mtp-fire-fire-damper
+sort_order: 23
+status: active
+name:
+  de: Brandschutzklappe
+  en: Fire damper
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-FIRE-FIRE-DAMPER
+tender_text:
+  de: Verschliesst die Kanaldurchführung an einer Brandabschnittsgrenze im Brandfall und verhindert die Ausbreitung von Feuer und Rauch in den angrenzenden Abschnitt. Wird mit geprüfter Abschottung gegen das umgebende Bauteil in die Wand- oder Deckenöffnung eingebaut und inline in die Verteilung eingebunden, mit Auslöseelement oder Stellantrieb und Stellungsrückmeldung. Geeignet an jeder von der Verteilung gekreuzten Abschnittsgrenze, mit Revisionsöffnung oder abnehmbarem Deckenfeld je Gerät, damit Funktionsprüfung, Rückstellung und Reinigung möglich sind.
+  en: Closes the duct penetration at a fire compartment boundary in case of fire and prevents fire and smoke from spreading into the adjoining compartment. Built into the wall or floor opening with a certified seal against the surrounding construction and connected inline in the distribution, with a release element or actuator and position feedback. Suitable at every compartment boundary crossed by the distribution, with an inspection opening or removable ceiling section at each unit so that function tests, resetting, and cleaning are possible.

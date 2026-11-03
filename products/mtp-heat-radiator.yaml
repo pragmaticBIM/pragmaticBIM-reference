@@ -1,0 +1,12 @@
+id: pragmaticbim:product/mtp-heat-radiator
+sort_order: 9
+status: active
+name:
+  de: Radiator / Heizkoerper
+  en: Radiator
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-HEAT-RADIATOR
+tender_text:
+  de: Überträgt Wärme aus dem Heizwasser durch Strahlung und Konvektion in den Raum und deckt den Wärmeverlust des Raums. Wird an der Wand oder in einem Bodenkanal montiert, meist unter Fenstern, und an Vor- und Rücklauf der Heizverteilung mit Absperrung, Entleerung und Thermostatventil angeschlossen. Geeignet für Einzelräume in Wohnungen, Büros und Schulen, wobei je Raum ein oder mehrere Geräte auf die Raumheizlast ausgelegt werden und Ventil und Oberflächen für Einstellung und Reinigung zugänglich bleiben.
+  en: Transfers heat from the heating water into the room by radiation and convection and covers the heat loss of the space. Mounted on the wall or in a floor channel, usually below windows, and connected to flow and return of the heating distribution with shut-off, drain, and a thermostatic control valve. Suitable for individual rooms in dwellings, offices, and schools, with one or more units per room sized to the room heat load and with valve and surfaces accessible for adjustment and cleaning.

@@ -1,0 +1,12 @@
+id: pragmaticbim:product/ccp-synthetic
+sort_order: 5
+status: active
+name:
+  de: Kunststoff-Deckenbekleidung
+  en: Synthetic ceiling lining
+product_classification:
+  classification_scheme: AbstractCeilingCoveringProduct
+  classification_code: CCP-SYNTHETIC
+tender_text:
+  de: Leichte Deckenbekleidung aus Kunststoff-, Textil- oder synthetischen Paneelen oder einer Spannmembran unter der tragenden Decke. In umlaufende Randprofile eingespannt oder auf leichter abgehängter Unterkonstruktion befestigt, mit dichten Durchdringungen für Leuchten und Luftdurchlässe. Geeignet für Nassräume, Reinräume und grosse Spannweiten mit Anforderung an eine glatte, abwischbare und weitgehend fugenlose Oberfläche bei geringem Eigengewicht.
+  en: Lightweight ceiling lining from plastic, textile, or synthetic panels or a tensioned membrane below the load-bearing slab. Stretched into perimeter edge profiles or fixed onto a light suspended substructure, with sealed penetrations for luminaires and air outlets. Suitable for wet rooms, clean rooms, and large spans where a smooth, wipeable, and largely joint-free surface with low dead load is required.

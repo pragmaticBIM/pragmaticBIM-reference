@@ -1,0 +1,12 @@
+id: pragmaticbim:product/wicp-oth
+sort_order: 9
+status: active
+name:
+  de: Sonstiges / unbekanntes Fenster
+  en: Other / unknown window
+product_classification:
+  classification_scheme: AbstractWindowConnectorProduct
+  classification_code: WICP-OTH
+tender_text:
+  de: Platzhalter für Fensterprodukte, deren Rahmenmaterial, System und Öffnungsart zum Zeitpunkt der Ausschreibung noch nicht festgelegt oder nicht klassifiziert sind. Funktionale Anforderungen an Öffnung, Verglasung, Bedienung und Anschluss an die angrenzende Konstruktion sind gesondert zu beschreiben. Nur in frühen Planungsphasen oder bei unvollständiger Datenlage verwenden.
+  en: Placeholder for window products whose frame material, system, and opening type are not yet fixed or not classified at tender stage. Functional requirements for the opening, the glazing, the operation, and the connection to the adjoining construction must be stated separately. Use only in early design stages or where data is incomplete.

@@ -1,0 +1,12 @@
+id: pragmaticbim:product/rcp-flat-single-ply
+sort_order: 2
+status: active
+name:
+  de: Einfachlagen-Flachdach (EPDM / TPO / PVC)
+  en: Single-ply membrane flat roof
+product_classification:
+  classification_scheme: AbstractRoofCoveringProduct
+  classification_code: RCP-FLAT-SINGLE-PLY
+tender_text:
+  de: Abdichtungsaufbau für Flach- und flach geneigte Dächer, bei dem eine einzelne Kunststoffbahn die wasserführende Schicht oberhalb der Dämmung bildet. Die Bahn wird lose verlegt und beschwert, mechanisch befestigt oder vollflächig verklebt, die Nähte werden heissluftverschweisst oder verklebt und bilden eine durchgehende Haut. Geeignet für grosse, gering geneigte Dachflächen mit Anforderungen an rasche Montage und geringes Aufbaugewicht.
+  en: Weatherproofing build-up for flat and low-slope roofs in which a single synthetic sheet forms the water-bearing layer above the insulation. The membrane is loose-laid and ballasted, mechanically fixed, or fully adhered, with seams hot-air welded or taped into a continuous skin. Suitable for large low-pitch roof areas where fast installation and low build-up weight are required.

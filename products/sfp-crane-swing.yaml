@@ -1,0 +1,12 @@
+id: pragmaticbim:product/sfp-crane-swing
+sort_order: 2
+status: active
+name:
+  de: Schwenkbereich
+  en: Crane swing envelope
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-CRANE-SWING
+tender_text:
+  de: 'Arbeitsbereich eines Krans: Auslegerradius, Schwenksektor und Hakenhoehe. Logistik- und Sicherheitsablaeufe pruefen, was der Kran abdeckt, unabhaengig von der Maschine, die den Bereich erzeugt.'
+  en: 'Operational envelope of a crane: jib or boom radius, slewing sector, and hook height. Logistics and safety workflows test what the crane covers, independent of the machine that produces the envelope.'

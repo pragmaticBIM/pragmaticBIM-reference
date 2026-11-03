@@ -1,0 +1,12 @@
+id: pragmaticbim:product/ssp-oth
+sort_order: 9
+status: active
+name:
+  de: Sonstige / unbekannte Decke / Platte
+  en: Other / unknown slab separator
+product_classification:
+  classification_scheme: AbstractSlabSeparatorProduct
+  classification_code: SSP-OTH
+tender_text:
+  de: Platzhalter für Deckenprodukte, deren Bauart zum Zeitpunkt der Ausschreibung noch nicht festgelegt oder nicht klassifiziert ist. Funktionale Anforderungen wie Spannweite, Nutzlast, Feuerwiderstand und Schallschutz sind gesondert zu beschreiben. Nur in frühen Planungsphasen oder bei unvollständiger Datenlage verwenden.
+  en: Placeholder for slab products whose construction type is not yet fixed or not classified at tender stage. Functional requirements such as span, imposed load, fire resistance, and acoustic performance must be stated separately. Use only in early design stages or where data is incomplete.
