@@ -27,4 +27,24 @@ configurations:
     name: ParkingUse
     pset: Pset_SpaceParking
     value: MOTORCYCLE
+  equipment:
+  - id: pragmaticbim:room-type-equipment/parkplatz-motorrad-innen-default-steckdose
+    sort_order: 1
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/parkplatz-motorrad-innen-default-lichtschalter
+    sort_order: 2
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
+    status: active
   status: active

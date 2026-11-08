@@ -176,7 +176,9 @@
             "urinal",
             "waiting",
             "device",
-            "plant"
+            "plant",
+            "power_outlet",
+            "light_switch"
           ]
         },
         "components": {
