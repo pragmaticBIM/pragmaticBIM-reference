@@ -124,6 +124,19 @@ configurations:
       per:
         quantity: net_floor_area
         divisor: 6
+    placement_rules:
+    - id: pragmaticbim:placement-rule/buero-default-arbeitsplatz-tageslicht
+      relation: distance_to
+      target:
+        opening_function: daylight
+      distance:
+        max: 3.0
+      severity: preferred
+    - id: pragmaticbim:placement-rule/buero-default-arbeitsplatz-tuer-frei
+      relation: not_in_clearance_of
+      target:
+        opening_function: access
+      severity: required
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
     status: active
   - id: pragmaticbim:room-type-equipment/buero-default-aktenschrank
@@ -135,6 +148,12 @@ configurations:
       min: 0
       max: 3
       default: 1
+    placement_rules:
+    - id: pragmaticbim:placement-rule/buero-default-aktenschrank-nicht-fensterwand
+      relation: not_on_wall_with
+      target:
+        opening_function: daylight
+      severity: preferred
     status: active
   - id: pragmaticbim:room-type-equipment/buero-default-steckdose
     sort_order: 3
@@ -146,6 +165,27 @@ configurations:
       per:
         quantity: net_floor_area
         divisor: 10
+    placement_rules:
+    - id: pragmaticbim:placement-rule/buero-default-steckdose-hoehe
+      relation: elevation
+      value:
+        min: 0.3
+        max: 0.3
+      severity: required
+    - id: pragmaticbim:placement-rule/buero-default-steckdose-tuer-frei
+      relation: not_in_clearance_of
+      target:
+        opening_function: access
+      severity: required
+    - id: pragmaticbim:placement-rule/buero-default-steckdose-arbeitsplatz
+      relation: next_to
+      target:
+        equipment_function: working
+      distance:
+        max: 1.0
+      scope: each_target
+      severity: required
+      comment: Abstand zum Arbeitsplatz als Planungswert vor Freigabe fachlich bestätigen.
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
     status: active
   - id: pragmaticbim:room-type-equipment/buero-default-lichtschalter
@@ -154,6 +194,30 @@ configurations:
     components:
     - pragmaticbim:component/lichtschalter
     quantity: 1
+    placement_rules:
+    - id: pragmaticbim:placement-rule/buero-default-lichtschalter-tuer
+      relation: next_to
+      target:
+        opening_function: access
+      side: latch_side
+      distance:
+        max: 0.3
+      severity: required
+      variants:
+      - relation: next_to
+        target:
+          opening_function: access
+        side: latch_side
+        distance:
+          max: 0.3
+        room_side: outside
+        comment: Schalter ausserhalb des Raums neben der Tür.
+    - id: pragmaticbim:placement-rule/buero-default-lichtschalter-hoehe
+      relation: elevation
+      value:
+        min: 0.9
+        max: 1.1
+      severity: required
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/buero-default-zugang
@@ -168,6 +232,12 @@ configurations:
       - pragmaticbim:room-type/eingangshalle
       - pragmaticbim:room-type/vorraum
     quantity: 1
+    placement_rules:
+    - id: pragmaticbim:placement-rule/buero-default-zugang-innenwand
+      relation: not_on_wall_with
+      target:
+        edge_kind: exterior
+      severity: required
     status: active
   - id: pragmaticbim:room-type-opening/buero-default-fenster
     sort_order: 2
@@ -180,6 +250,12 @@ configurations:
       min: 1
       default: 1
     glazing_to_floor_ratio_min: 0.1
+    placement_rules:
+    - id: pragmaticbim:placement-rule/buero-default-fenster-aussenwand
+      relation: same_wall_as
+      target:
+        edge_kind: exterior
+      severity: required
     comment: Mindestanteil Glasfläche nach kantonalem Recht und Arbeitsgesetz; projektbezogen prüfen.
     status: active
   status: active
