@@ -5,7 +5,7 @@ name:
   de: Kellerabteil
   fr: Compartiment de cave
   it: Comparto cantina
-  en: Cellar Compartment
+  en: Cellar compartment
 definition:
   de: Zugeordnetes Kellerabteil einer Wohneinheit.
   fr: Compartiment de cave attribué à un logement.
@@ -33,7 +33,7 @@ configurations:
       de: Kellerabteil
       fr: Compartiment de cave
       it: Comparto cantina
-      en: Cellar Compartment
+      en: Cellar compartment
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -123,6 +123,25 @@ configurations:
       min: 0
       max: 4
       default: 2
+    status: active
+  - id: pragmaticbim:room-type-equipment/kellerabteil-default-steckdose
+    sort_order: 2
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/kellerabteil-default-lichtschalter
+    sort_order: 3
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/kellerabteil-default-zugang

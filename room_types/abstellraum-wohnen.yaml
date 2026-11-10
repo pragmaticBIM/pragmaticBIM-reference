@@ -5,7 +5,7 @@ name:
   de: Abstellraum Wohnen
   fr: Débarras du logement
   it: Ripostiglio dell'alloggio
-  en: Residential Closet
+  en: Residential closet
 definition:
   de: Kleiner Abstellraum innerhalb einer Wohneinheit.
   fr: Petit débarras à l'intérieur d'un logement.
@@ -33,7 +33,7 @@ configurations:
       de: Abstellraum Wohnen
       fr: Débarras du logement
       it: Ripostiglio dell'alloggio
-      en: Residential Closet
+      en: Residential closet
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -123,6 +123,25 @@ configurations:
       min: 1
       max: 4
       default: 2
+    status: active
+  - id: pragmaticbim:room-type-equipment/abstellraum-wohnen-default-steckdose
+    sort_order: 2
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/abstellraum-wohnen-default-lichtschalter
+    sort_order: 3
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/abstellraum-wohnen-default-zugang

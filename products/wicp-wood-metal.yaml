@@ -1,0 +1,14 @@
+id: pragmaticbim:product/wicp-wood-metal
+sort_order: 2
+status: active
+name:
+  de: Holz-Metall-Fenster
+  fr: Fenêtre bois-métal
+  it: Finestra legno-metallo
+  en: Wood–metal composite window
+product_classification:
+  classification_scheme: AbstractWindowConnectorProduct
+  classification_code: WICP-WOOD-METAL
+tender_text:
+  de: Fenstereinheit mit Holzrahmen auf der Raumseite und Metallschale auf der Wetterseite, die eine Fassadenöffnung mit einer Isolierverglasung verschliesst. Rahmen- und Deckschalenprofile werden im Werk zusammengefügt und verglast, anschliessend in die Laibung eingesetzt, verankert und an die angrenzende Konstruktion abgedichtet. Geeignet für stark bewitterte Fassadenöffnungen, bei denen innen eine Holzoberfläche gewünscht und aussen ein wetterfester, wartungsarmer Abschluss gefordert ist.
+  en: Window unit with a timber frame on the room side and a metal cover shell on the weather side, closing a facade opening with an insulating glazing infill. Frame and cover profiles are combined and glazed in the factory, then set into the reveal, anchored and sealed against the adjoining construction. Suitable for exposed facade openings where a timber interior surface is wanted and the exterior face has to stay weather-resistant and low-maintenance.

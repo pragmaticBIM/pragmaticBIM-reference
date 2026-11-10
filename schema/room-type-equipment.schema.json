@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://schema.pragmaticbim.ch/elementplan/room-type-equipment.schema.json",
   "title": "Room type equipment and openings",
-  "description": "Extension of a room type configuration. equipment lists what a room of this type contains, openings how it connects to neighbouring rooms and the exterior. Both reference components; position is left to the generator.",
+  "description": "Extension of a room type configuration. equipment lists what a room of this type contains, openings how it connects to neighbouring rooms and the exterior. Both reference components; optional placement_rules state where an item belongs relative to walls, openings and other equipment.",
   "type": "object",
   "properties": {
     "equipment": {
@@ -146,38 +146,7 @@
           "minimum": 1
         },
         "function": {
-          "type": "string",
-          "enum": [
-            "toilet",
-            "washbasin",
-            "bathing",
-            "kitchen",
-            "dining",
-            "seating",
-            "sleeping",
-            "storage",
-            "wardrobe",
-            "working",
-            "laundry",
-            "utility_sink",
-            "turning",
-            "manoeuvring",
-            "meeting",
-            "teaching",
-            "serving",
-            "display",
-            "dishwashing",
-            "patient_care",
-            "examination",
-            "lab_work",
-            "hazardous_storage",
-            "changing",
-            "lockers",
-            "urinal",
-            "waiting",
-            "device",
-            "plant"
-          ]
+          "$ref": "#/$defs/equipmentFunction"
         },
         "components": {
           "description": "Allowed components. The generator picks one per item.",
@@ -199,6 +168,9 @@
         },
         "unless": {
           "$ref": "#/$defs/condition"
+        },
+        "placement_rules": {
+          "$ref": "#/$defs/placementRules"
         },
         "comment": {
           "type": "string"
@@ -280,14 +252,7 @@
           "minimum": 1
         },
         "function": {
-          "description": "access: door into the room; connection: open passage or door between rooms of one unit; daylight: window; outdoor_access: door to a private outdoor space.",
-          "type": "string",
-          "enum": [
-            "access",
-            "connection",
-            "daylight",
-            "outdoor_access"
-          ]
+          "$ref": "#/$defs/openingFunction"
         },
         "components": {
           "type": "array",
@@ -325,6 +290,9 @@
         "unless": {
           "$ref": "#/$defs/condition"
         },
+        "placement_rules": {
+          "$ref": "#/$defs/placementRules"
+        },
         "comment": {
           "type": "string"
         },
@@ -335,6 +303,306 @@
             "deprecated"
           ]
         }
+      }
+    },
+    "equipmentFunction": {
+      "type": "string",
+      "enum": [
+        "toilet",
+        "washbasin",
+        "bathing",
+        "kitchen",
+        "dining",
+        "seating",
+        "sleeping",
+        "storage",
+        "wardrobe",
+        "working",
+        "laundry",
+        "utility_sink",
+        "turning",
+        "manoeuvring",
+        "meeting",
+        "teaching",
+        "serving",
+        "display",
+        "dishwashing",
+        "patient_care",
+        "examination",
+        "lab_work",
+        "hazardous_storage",
+        "changing",
+        "lockers",
+        "urinal",
+        "waiting",
+        "device",
+        "plant",
+        "power_outlet",
+        "light_switch"
+      ]
+    },
+    "openingFunction": {
+      "description": "access: door into the room; connection: open passage or door between rooms of one unit; daylight: window; outdoor_access: door to a private outdoor space.",
+      "type": "string",
+      "enum": [
+        "access",
+        "connection",
+        "daylight",
+        "outdoor_access"
+      ]
+    },
+    "range": {
+      "description": "Bounds in metres; at least one of min and max.",
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "min": {
+          "type": "number",
+          "minimum": 0
+        },
+        "max": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "placementTarget": {
+      "description": "What a rule measures against: every item of an equipment function, every opening of an opening function, or every room edge of a kind, in the same room.",
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "equipment_function": {
+          "$ref": "#/$defs/equipmentFunction"
+        },
+        "opening_function": {
+          "$ref": "#/$defs/openingFunction"
+        },
+        "edge_kind": {
+          "type": "string",
+          "enum": [
+            "exterior",
+            "interior",
+            "party_wall"
+          ]
+        }
+      }
+    },
+    "placementRelation": {
+      "description": "next_to: plan distance to the target within distance (with side: along the wall from that jamb of the opening). opposite: on the wall facing the target's wall. same_wall_as / not_on_wall_with: on (not on) the target's wall. distance_to: centre to centre within distance. facing: the front faces the target. elevation: underside above finished floor within value. not_in_clearance_of: stays out of the target's clearances.",
+      "type": "string",
+      "enum": [
+        "next_to",
+        "opposite",
+        "same_wall_as",
+        "not_on_wall_with",
+        "distance_to",
+        "facing",
+        "elevation",
+        "not_in_clearance_of"
+      ]
+    },
+    "placementCheckRules": {
+      "description": "Which fields a relation needs and allows.",
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "relation": {
+                "const": "elevation"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "value"
+            ],
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "target"
+                  ]
+                },
+                {
+                  "required": [
+                    "distance"
+                  ]
+                }
+              ]
+            }
+          },
+          "else": {
+            "required": [
+              "target"
+            ],
+            "not": {
+              "required": [
+                "value"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "relation": {
+                "enum": [
+                  "next_to",
+                  "distance_to"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "distance"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "distance"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "side"
+            ]
+          },
+          "then": {
+            "properties": {
+              "relation": {
+                "const": "next_to"
+              },
+              "target": {
+                "required": [
+                  "opening_function"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "placementVariant": {
+      "description": "Accepted alternative to the rule it belongs to; the rule holds when it or any variant holds.",
+      "type": "object",
+      "required": [
+        "relation"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "relation": {
+          "$ref": "#/$defs/placementRelation"
+        },
+        "target": {
+          "$ref": "#/$defs/placementTarget"
+        },
+        "side": {
+          "$ref": "#/$defs/openingSide"
+        },
+        "distance": {
+          "$ref": "#/$defs/range"
+        },
+        "value": {
+          "$ref": "#/$defs/range"
+        },
+        "room_side": {
+          "$ref": "#/$defs/roomSide"
+        },
+        "comment": {
+          "type": "string"
+        }
+      },
+      "$ref": "#/$defs/placementCheckRules"
+    },
+    "openingSide": {
+      "description": "Jamb of an opening: latch_side where the leaf closes, hinge_side where it is hung (sliding doors: where the leaf parks).",
+      "type": "string",
+      "enum": [
+        "latch_side",
+        "hinge_side"
+      ]
+    },
+    "roomSide": {
+      "description": "Where the item stands: inside the room (default) or outside, in the neighbouring room behind the target opening.",
+      "type": "string",
+      "enum": [
+        "inside",
+        "outside"
+      ]
+    },
+    "placementRule": {
+      "description": "Where an item belongs in the room. The generator treats required rules as hard constraints and scores preferred rules; the checker reports both.",
+      "type": "object",
+      "required": [
+        "id",
+        "relation",
+        "severity"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^pragmaticbim:placement-rule/[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "relation": {
+          "$ref": "#/$defs/placementRelation"
+        },
+        "target": {
+          "$ref": "#/$defs/placementTarget"
+        },
+        "side": {
+          "$ref": "#/$defs/openingSide"
+        },
+        "distance": {
+          "$ref": "#/$defs/range"
+        },
+        "value": {
+          "$ref": "#/$defs/range"
+        },
+        "room_side": {
+          "$ref": "#/$defs/roomSide"
+        },
+        "severity": {
+          "type": "string",
+          "enum": [
+            "required",
+            "preferred"
+          ]
+        },
+        "scope": {
+          "description": "each_item (default): every item satisfies the rule. each_target: every target has at least one item that satisfies it.",
+          "type": "string",
+          "enum": [
+            "each_item",
+            "each_target"
+          ]
+        },
+        "variants": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/placementVariant"
+          }
+        },
+        "comment": {
+          "type": "string"
+        }
+      },
+      "$ref": "#/$defs/placementCheckRules"
+    },
+    "placementRules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/placementRule"
       }
     }
   }

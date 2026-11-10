@@ -5,7 +5,7 @@ name:
   de: Briefkasten- und Paketfachanlage Aussen
   fr: Installation extérieure de boîtes aux lettres et casiers à colis
   it: Impianto esterno di cassette postali e armadietti per pacchi
-  en: Exterior Mailbox and Parcel Locker Area
+  en: Exterior mailbox and parcel locker area
 definition:
   de: Aussenfläche für Briefkästen und Paketfächer.
   fr: Aire extérieure réservée aux boîtes aux lettres et aux casiers à colis.
@@ -33,7 +33,7 @@ configurations:
       de: Briefkasten- und Paketfachanlage Aussen
       fr: Installation extérieure de boîtes aux lettres et casiers à colis
       it: Impianto esterno di cassette postali e armadietti per pacchi
-      en: Exterior Mailbox and Parcel Locker Area
+      en: Exterior mailbox and parcel locker area
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon
@@ -65,4 +65,24 @@ configurations:
     name: DesignPointLoad
     pset: ePset_SpaceRequirement
     value: 2.0
+  equipment:
+  - id: pragmaticbim:room-type-equipment/briefkasten-paketfachanlage-aussen-default-steckdose-aussen
+    sort_order: 1
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose-aussen
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/briefkasten-paketfachanlage-aussen-default-lichtschalter
+    sort_order: 2
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
+    status: active
   status: active

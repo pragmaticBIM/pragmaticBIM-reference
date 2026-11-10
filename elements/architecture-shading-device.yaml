@@ -242,9 +242,9 @@ attributes:
       Component status for coordinating work in existing buildings.
 
       **Allowed values**
-      - `NEW` — new
+      - `NEW` — new build
       - `EXISTING` — existing
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
       - `TEMPORARY` — temporary
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/element-status
@@ -296,9 +296,9 @@ attributes:
       Component status for coordinating work in existing buildings.
 
       **Allowed values**
-      - `NEW` — new
+      - `NEW` — new build
       - `EXISTING` — existing
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
       - `TEMPORARY` — temporary
 
       **Note**

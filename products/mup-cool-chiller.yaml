@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mup-cool-chiller
+sort_order: 14
+status: active
+name:
+  de: Kaelteanlage / Kaeltemaschine
+  fr: Machine frigorifique
+  it: Gruppo frigorifero
+  en: Chiller
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-COOL-CHILLER
+tender_text:
+  de: Entzieht dem Kaltwasser- oder Kältemittelkreis Wärme und gibt sie an die Umgebungsluft oder einen Rückkühlkreis ab, um die von den Kälteverbrauchern geforderte Vorlauftemperatur zu halten. Lieferung als werkseitig montierte Einheit für die Innenaufstellung in der Kältezentrale oder die Aussenaufstellung auf schwingungsentkoppelter Unterlage, Anschluss an Kaltwasservor- und -rücklauf, Rückkühlung, Stromversorgung und Kondensatentwässerung, Stufenschaltung und Sollwerte über die Gebäudeautomation. Geeignet für Gebäude mit dauerndem oder prozessbedingtem Kältebedarf; erfordert Platz für Luftwege und Wartung, Beachtung der Schallemission sowie Zugang für Servicearbeiten am Kältekreis und den Komponentenaustausch.
+  en: Removes heat from the chilled water or refrigerant circuit and rejects it to the ambient air or a recooling circuit, holding the supply temperature required by the cooling consumers. Delivered as a factory-assembled unit for indoor placement in the refrigeration plant room or for outdoor placement on a vibration-isolated base, connected to chilled water flow and return, recooling, power supply, and condensate drainage, with staging and setpoints controlled from building automation. Suitable for buildings with continuous or process-driven cooling demand; requires space for air paths and maintenance, attention to noise emission, and access for refrigerant circuit servicing and component replacement.

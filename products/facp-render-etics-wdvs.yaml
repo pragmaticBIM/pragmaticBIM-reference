@@ -1,0 +1,14 @@
+id: pragmaticbim:product/facp-render-etics-wdvs
+sort_order: 7
+status: active
+name:
+  de: Putzsystem / WDVS-Fassade
+  fr: Façade crépie / isolation thermique extérieure crépie
+  it: Facciata intonacata / sistema a cappotto
+  en: Render / ETICS facade system
+product_classification:
+  classification_scheme: EuropeanFacadeCoveringProduct
+  classification_code: FaCP-RENDER-ETICS-WDVS
+tender_text:
+  de: Nichttragendes, geklebtes Aussendämm- und Putzsystem, direkt auf der tragenden Aussenwand ohne Hinterlüftungsraum. Die Dämmplatten werden auf den Untergrund geklebt und mechanisch verdübelt und anschliessend mit bewehrtem Unterputz mit eingelegtem Armierungsgewebe und Deckputz überzogen. Geeignet für Neubau und energetische Sanierung massiver Wände mit Verdickung des Wandaufbaus von aussen; Ebenheit, Dübeltragfähigkeit und Feuchtezustand des Untergrunds sind zu prüfen.
+  en: Non-load-bearing bonded external insulation and render system applied directly onto the load-bearing exterior wall without a ventilated cavity. Insulation boards are adhesive-bonded and mechanically anchored to the substrate and then covered with a reinforced base coat with embedded mesh and a finishing render. Suitable for new build and for energy retrofit of solid walls where the wall is thickened from outside; flatness, anchor capacity, and moisture condition of the substrate must be verified.

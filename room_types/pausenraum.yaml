@@ -5,7 +5,7 @@ name:
   de: Pausenraum
   fr: Salle de pause
   it: Sala pausa
-  en: Break Room
+  en: Break room
 definition:
   de: Informeller Raum für Pausen.
   fr: Local informel pour les pauses.
@@ -33,7 +33,7 @@ configurations:
       de: Pausenraum
       fr: Salle de pause
       it: Sala pausa
-      en: Break Room
+      en: Break room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -134,6 +134,25 @@ configurations:
       per:
         quantity: net_floor_area
         divisor: 12
+    status: active
+  - id: pragmaticbim:room-type-equipment/pausenraum-default-steckdose
+    sort_order: 3
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/pausenraum-default-lichtschalter
+    sort_order: 4
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/pausenraum-default-zugang

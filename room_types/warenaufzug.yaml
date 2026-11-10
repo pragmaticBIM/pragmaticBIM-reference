@@ -5,7 +5,7 @@ name:
   de: Warenaufzug
   fr: Monte-charge
   it: Montacarichi
-  en: Service Lift
+  en: Service lift
 definition:
   de: Aufzug für Waren, Personal und Servicewege, getrennt von öffentlichen Aufzügen.
   fr: Ascenseur pour marchandises, personnel et circulations de service, séparé des ascenseurs publics.
@@ -33,7 +33,7 @@ configurations:
       de: Warenaufzug
       fr: Monte-charge
       it: Montacarichi
-      en: Service Lift
+      en: Service lift
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

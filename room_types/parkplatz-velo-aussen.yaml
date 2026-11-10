@@ -5,7 +5,7 @@ name:
   de: Parkplatz Velo Aussen
   fr: Place vélo extérieure
   it: Posto bici esterno
-  en: Exterior Bicycle Parking
+  en: Exterior bicycle parking
 definition:
   de: Aussenparkplatz für Velos.
   fr: Place de stationnement extérieure pour vélos.
@@ -27,4 +27,24 @@ configurations:
     name: ParkingUse
     pset: Pset_SpaceParking
     value: BICYCLE
+  equipment:
+  - id: pragmaticbim:room-type-equipment/parkplatz-velo-aussen-default-steckdose-aussen
+    sort_order: 1
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose-aussen
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/parkplatz-velo-aussen-default-lichtschalter
+    sort_order: 2
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
+    status: active
   status: active

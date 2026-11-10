@@ -5,7 +5,7 @@ name:
   de: Leitstand
   fr: Salle de contrôle
   it: Sala di controllo
-  en: Control Room
+  en: Control room
 definition:
   de: Besetzter Raum für Überwachung und Steuerung von Gebäude- oder IT-Anlagen.
   fr: Local occupé pour la surveillance et la commande des installations du bâtiment ou informatiques.
@@ -33,7 +33,7 @@ configurations:
       de: Leitstand
       fr: Salle de contrôle
       it: Sala di controllo
-      en: Control Room
+      en: Control room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -105,6 +105,25 @@ configurations:
         quantity: net_floor_area
         divisor: 6
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/leitstand-default-steckdose
+    sort_order: 2
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/leitstand-default-lichtschalter
+    sort_order: 3
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/leitstand-default-zugang

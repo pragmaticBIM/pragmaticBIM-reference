@@ -1,0 +1,14 @@
+id: pragmaticbim:product/facp-synthetic-ventilated
+sort_order: 8
+status: active
+name:
+  de: Kunststoff-Vorgehängte Fassade
+  fr: Façade ventilée en matière synthétique
+  it: Facciata ventilata in materiale sintetico
+  en: Synthetic ventilated facade panel
+product_classification:
+  classification_scheme: EuropeanFacadeCoveringProduct
+  classification_code: FaCP-SYNTHETIC-VENTILATED
+tender_text:
+  de: Nichttragende Bekleidung aus Kunststoffpaneelen wie Laminaten, Kunststoffplatten oder faserverstärkten Verbundwerkstoffen, vorgehängt vor der gedämmten Aussenwand. Die Paneele werden mechanisch auf einer Metall- oder Holz-Unterkonstruktion mit Hinterlüftungsraum befestigt, mit Befestigungen und Fugenbreiten für die vergleichsweise grosse thermische Längenänderung des Materials. Geeignet für Gewerbe-, Industrie- und niedrige Gebäude; Farbbeständigkeit unter UV-Belastung, Stossfestigkeit und Brandverhalten der Paneele sind anzugeben.
+  en: Non-load-bearing cladding of synthetic panels such as laminates, plastics, or fibre-reinforced composites hung in front of the insulated exterior wall. The panels are mechanically fixed to a metal or timber sub-frame with a ventilated cavity, using fixings and joint widths that allow the comparatively large thermal movement of the material. Suitable for commercial, industrial, and low-rise buildings; colour fastness under ultraviolet exposure, impact resistance, and reaction to fire of the panel must be stated.

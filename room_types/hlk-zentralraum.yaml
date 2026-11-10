@@ -5,7 +5,7 @@ name:
   de: HLK-Zentralraum
   fr: Centrale CVC
   it: Centrale CVC
-  en: HVAC Plant Room
+  en: HVAC plant room
 definition:
   de: Raum für Heizungs-, Lüftungs- und Klimaanlagen.
   fr: Local pour les installations de chauffage, de ventilation et de climatisation.
@@ -33,7 +33,7 @@ configurations:
       de: HLK-Zentralraum
       fr: Centrale CVC
       it: Centrale CVC
-      en: HVAC Plant Room
+      en: HVAC plant room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -105,6 +105,25 @@ configurations:
         quantity: net_floor_area
         divisor: 30
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/hlk-zentralraum-default-steckdose
+    sort_order: 2
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/hlk-zentralraum-default-lichtschalter
+    sort_order: 3
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/hlk-zentralraum-default-zugang

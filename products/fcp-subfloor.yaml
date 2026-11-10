@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fcp-subfloor
+sort_order: 1
+status: active
+name:
+  de: Unterlagsboden / Ausgleichsschicht
+  fr: Chape / couche de ragréage
+  it: Sottofondo / strato di livellamento
+  en: Subfloor / leveling layer
+product_classification:
+  classification_scheme: AbstractFloorCoveringProduct
+  classification_code: FCP-SUBFLOOR
+tender_text:
+  de: Last verteilende und ausgleichende Schicht zwischen Rohdecke und sichtbarem Bodenbelag. Als verbundener, schwimmender oder beheizter Unterlagsboden auf Trenn- und Trittschallschichten eingebracht, abgezogen und bis zur Belegreife ausgehärtet. Sie stellt einen ebenen, trockenen und tragfähigen Untergrund bereit und nimmt Bodenheizung, Installationsführungen und den Niveauausgleich des Geschosses auf.
+  en: Load-distributing and levelling layer between the structural slab and the visible floor finish. Placed as a bonded, floating, or heated screed on separation and impact-sound layers, levelled and cured until ready to receive the covering. Delivers an even, dry, and load-bearing substrate and takes up floor heating, service runs, and the level compensation of the storey.

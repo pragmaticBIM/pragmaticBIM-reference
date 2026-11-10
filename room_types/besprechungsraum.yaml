@@ -5,7 +5,7 @@ name:
   de: Besprechungsraum
   fr: Salle de réunion
   it: Sala riunioni
-  en: Meeting Room
+  en: Meeting room
 definition:
   de: Raum für kleine Besprechungen.
   fr: Local pour de petites réunions.
@@ -33,7 +33,7 @@ configurations:
       de: Besprechungsraum
       fr: Salle de réunion
       it: Sala riunioni
-      en: Meeting Room
+      en: Meeting room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -124,6 +124,25 @@ configurations:
       width:
         default: 2.4
         max: 4.0
+    status: active
+  - id: pragmaticbim:room-type-equipment/besprechungsraum-default-steckdose
+    sort_order: 2
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/besprechungsraum-default-lichtschalter
+    sort_order: 3
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/besprechungsraum-default-zugang

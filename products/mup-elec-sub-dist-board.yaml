@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mup-elec-sub-dist-board
+sort_order: 3
+status: active
+name:
+  de: Unterverteilung
+  fr: Tableau de distribution secondaire
+  it: Quadro di distribuzione secondario
+  en: Sub-distribution board
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-ELEC-SUB-DIST-BOARD
+tender_text:
+  de: Verteilt die Energie innerhalb einer Etage, Zone oder Mietfläche und stellt Schutz und Schaltung für die zugeordneten Endstromkreise bereit. Lieferung als werkseitig gefertigter Schrank für Wand-, Einbau- oder Standmontage in Steigzone, Korridor oder Nebenraum, Anschluss über eine Zuleitung an die vorgelagerte Verteilung, bei Bedarf Meldung der Stromkreiszustände an die Gebäudeautomation. Geeignet für etappierten Ausbau und Mieterwechsel; erfordert eine zugängliche Lage mit Bedienfreiraum und Reserveplätze für spätere Stromkreise.
+  en: Distributes power within a floor, zone, or tenancy and provides protection and switching for the final circuits it serves. Delivered as a factory-built cabinet for wall, recess, or floor mounting in a riser, corridor, or ancillary room, connected to the upstream distribution by a feeder cable and, where required, reporting circuit states to building automation. Suitable for staged fit-out and tenant changes; requires an accessible location with operating clearance and spare ways for later circuits.

@@ -5,7 +5,7 @@ name:
   de: Grossraumbüro
   fr: Bureau paysager
   it: Ufficio open space
-  en: Open-Plan Office
+  en: Open-plan office
 definition:
   de: Offene Bürolandschaft ohne geschlossene Zellbüros.
   fr: Paysage de bureaux ouvert, sans bureaux cellulaires fermés.
@@ -33,7 +33,7 @@ configurations:
       de: Grossraumbüro
       fr: Bureau paysager
       it: Ufficio open space
-      en: Open-Plan Office
+      en: Open-plan office
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -150,6 +150,25 @@ configurations:
       per:
         quantity: net_floor_area
         divisor: 25
+    status: active
+  - id: pragmaticbim:room-type-equipment/grossraumbuero-default-steckdose
+    sort_order: 4
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/grossraumbuero-default-lichtschalter
+    sort_order: 5
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/grossraumbuero-default-zugang

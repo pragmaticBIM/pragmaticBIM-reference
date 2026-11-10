@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mup-elec-ups
+sort_order: 4
+status: active
+name:
+  de: USV-Anlage
+  fr: Alimentation sans interruption (ASI)
+  it: Gruppo di continuità (UPS)
+  en: Uninterruptible power supply
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-ELEC-UPS
+tender_text:
+  de: Überbrückt Versorgungsunterbrüche und Spannungsstörungen für kritische Verbraucher durch unterbrechungsfreie Umschaltung auf gespeicherte Energie. Lieferung als werkseitig montierte Einheit mit Batterie- oder Speicherschränken, Aufstellung in einem belüfteten oder gekühlten Technikraum, Einbindung zwischen vorgelagerter Verteilung und den geschützten Stromkreisen, Betriebs- und Speicherzustände an die Gebäudeautomation gemeldet. Geeignet dort, wo ein Versorgungsausfall nicht zulässig ist; erfordert ausreichende Bodentragfähigkeit, Wärmeabfuhr, einen Bypass für Servicearbeiten und geplanten Austausch der Speicherkomponenten innerhalb der Nutzungsdauer.
+  en: Bridges supply interruptions and voltage disturbances for critical loads by switching over to stored energy without interruption. Delivered as a factory-assembled unit with battery or storage cabinets, placed in a ventilated or cooled technical room and connected between the upstream distribution and the protected circuits, with operating and storage states reported to building automation. Suitable where a loss of supply is not acceptable; requires floor loading capacity, heat removal, a bypass for servicing, and planned replacement of the storage components within the service life.

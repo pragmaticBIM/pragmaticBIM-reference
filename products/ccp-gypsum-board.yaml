@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ccp-gypsum-board
+sort_order: 2
+status: active
+name:
+  de: Gipskarton-Decke
+  fr: Plafond en plaques de plâtre
+  it: Controsoffitto in cartongesso
+  en: Gypsum board ceiling
+product_classification:
+  classification_scheme: AbstractCeilingCoveringProduct
+  classification_code: CCP-GYPSUM-BOARD
+tender_text:
+  de: Geschlossene, fugenlos wirkende Deckenoberfläche aus Gipsplatten, direkt an der Decke befestigt oder davor abgehängt. Auf Metall- oder Holzunterkonstruktion verschraubt, mit verspachtelten und malfertigen Fugen sowie Revisionsöffnungen dort, wo Installationen zugänglich bleiben müssen. Geeignet für Büro-, Wohn- und Aufenthaltsräume mit Anforderungen an Brand- oder Schallschutz, wenn der Deckenhohlraum Installationen aufnimmt und keine regelmässige Zugänglichkeit nötig ist.
+  en: Closed, jointless-looking ceiling surface from gypsum boards, either fixed directly to the slab or suspended in front of it. Screwed onto a metal or timber substructure, with taped and filled joints ready for painting, and with access panels where services must remain reachable. Suitable for offices, dwellings, and rooms with fire protection or sound insulation requirements, where the ceiling void carries services and no regular access is needed.

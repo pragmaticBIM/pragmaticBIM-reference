@@ -1,0 +1,44 @@
+# Pinned release of the pragmatic BIM data contract that names the product classes.
+# The contract owns notation, labels, definition and hierarchy; products/*.yaml own the data sheet.
+# Bump `commit` and run `python scripts/sync_products.py --contract PATH` to refresh
+# products/_names.yaml and values/product-class-*.yaml.
+repository: https://github.com/pragmaticBIM/pragmatic-bim-data-contract
+commit: 4d80069cc349099b1d9558715992ce413e2f90cf
+
+# One entry per product scheme. `value_set` names the generated allowed-value list;
+# schemes without `value_set` are named in _names.yaml but have no value list yet.
+# `sheets: false` marks a scheme whose classes have no data sheet yet (explicit gap).
+schemes:
+  - path: abstract-separator-product-classification/wall-separator-products.skos.ttl
+    value_set: product-class-wall-separator
+  - path: abstract-separator-product-classification/slab-separator-products.skos.ttl
+    value_set: product-class-slab-separator
+  - path: abstract-connector-product-classification/door-connector-products.skos.ttl
+    value_set: product-class-door-connector
+  - path: abstract-connector-product-classification/window-connector-products.skos.ttl
+    value_set: product-class-window-connector
+  - path: abstract-covering-product-classification/floor-covering-products.skos.ttl
+    value_set: product-class-floor-covering
+  - path: abstract-covering-product-classification/wall-covering-products.skos.ttl
+    value_set: product-class-wall-covering
+  - path: abstract-covering-product-classification/ceiling-covering-products.skos.ttl
+    value_set: product-class-ceiling-covering
+  - path: abstract-covering-product-classification/facade-covering-products.skos.ttl
+    value_set: product-class-facade-covering
+  - path: abstract-covering-product-classification/roof-covering-products.skos.ttl
+    value_set: product-class-roof-covering
+  - path: abstract-covering-product-classification/outdoor-floor-surfaces.skos.ttl
+    sheets: false
+  - path: abstract-foundation-product-classification/foundation-products.skos.ttl
+    value_set: product-class-foundation
+  - path: abstract-member-product-classification/column-products.skos.ttl
+    value_set: product-class-column
+  - path: abstract-member-product-classification/beam-products.skos.ttl
+    value_set: product-class-beam
+  - path: abstract-member-product-classification/stair-products.skos.ttl
+    value_set: product-class-stair
+  - path: abstract-member-product-classification/railing-products.skos.ttl
+    value_set: product-class-railing
+  - path: abstract-mep-product-classification/mep-terminal-products.skos.ttl
+  - path: abstract-mep-product-classification/mep-unit-products.skos.ttl
+  - path: abstract-site-setup-classification/site-setup-products.skos.ttl

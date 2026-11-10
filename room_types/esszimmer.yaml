@@ -5,7 +5,7 @@ name:
   de: Esszimmer
   fr: Salle à manger
   it: Sala da pranzo
-  en: Dining Room
+  en: Dining room
 definition:
   de: Raum für Mahlzeiten.
   fr: Local pour les repas.
@@ -33,7 +33,7 @@ configurations:
       de: Esszimmer
       fr: Salle à manger
       it: Sala da pranzo
-      en: Dining Room
+      en: Dining room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -124,6 +124,25 @@ configurations:
       width:
         default: 1.8
         min: 1.4
+    status: active
+  - id: pragmaticbim:room-type-equipment/esszimmer-default-steckdose
+    sort_order: 2
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/esszimmer-default-lichtschalter
+    sort_order: 3
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/esszimmer-default-zugang

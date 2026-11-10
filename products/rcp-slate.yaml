@@ -1,0 +1,14 @@
+id: pragmaticbim:product/rcp-slate
+sort_order: 7
+status: active
+name:
+  de: Naturschiefer-Dach
+  fr: Toiture en ardoise naturelle
+  it: Copertura in ardesia naturale
+  en: Natural slate roof
+product_classification:
+  classification_scheme: AbstractRoofCoveringProduct
+  classification_code: RCP-SLATE
+tender_text:
+  de: Äussere Dachhaut aus gespaltenen Natursteinplatten, in überlappenden Reihen als wasserabführende Oberfläche eines Steildachs verlegt. Die Schiefer werden auf Schalung oder Lattung über einer Unterdachbahn genagelt oder gehakt, wobei Deckbild und Überdeckung nach Neigung und Exposition festgelegt werden. Geeignet für steilere Dächer, auch auf gekrümmten oder komplexen Flächen, wenn eine langlebige Eindeckung mit kleinteiligem Erscheinungsbild gefordert ist.
+  en: Outer roof skin from split natural stone plates laid in overlapping courses as the rain-shedding surface of a pitched roof. Slates are nailed or hooked onto boarding or battens over an underlay, with course pattern and headlap set by pitch and exposure. Suitable for steeper pitched roofs, also on curved or complex surfaces, where a durable covering with a fine-grained appearance is required.

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/facp-other
+sort_order: 16
+status: active
+name:
+  de: Sonstige / unbekannte Fassadenbekleidung
+  fr: Revêtement de façade autre ou inconnu
+  it: Rivestimento di facciata altro o sconosciuto
+  en: Other / unknown facade covering
+product_classification:
+  classification_scheme: EuropeanFacadeCoveringProduct
+  classification_code: FaCP-OTHER
+tender_text:
+  de: Platzhalter für Fassadenbekleidungen, deren Produkt- oder Systemtyp zum Zeitpunkt der Ausschreibung noch nicht festgelegt oder nicht klassifizierbar ist. Funktionale Anforderungen wie Wetterschutz, Wärmeschutz, Brandverhalten, Untergrund- und Befestigungsprinzip sowie erwartete Nutzungsdauer sind gesondert zu beschreiben. Nur in frühen Planungsphasen oder bei unvollständiger Bestandskenntnis verwenden.
+  en: Placeholder for facade coverings whose product or system type is not yet fixed at tender stage or cannot be classified. Functional requirements such as weather protection, thermal performance, reaction to fire, substrate and fixing principle, and expected service life must be stated separately in the specification. Use only in early design stages or where information on the existing facade is incomplete.

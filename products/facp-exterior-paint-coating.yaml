@@ -1,0 +1,14 @@
+id: pragmaticbim:product/facp-exterior-paint-coating
+sort_order: 12
+status: active
+name:
+  de: Aussenanstrich / Schutzanstrichsystem
+  fr: Peinture extérieure / système de revêtement protecteur
+  it: Pittura esterna / sistema di rivestimento protettivo
+  en: Exterior paint / protective coating finish
+product_classification:
+  classification_scheme: EuropeanFacadeCoveringProduct
+  classification_code: FaCP-EXTERIOR-PAINT-COATING
+tender_text:
+  de: Nichttragende Beschichtung, dünnschichtig direkt auf dem Fassadenuntergrund aufgebracht; sie wirkt als Schutz- und Gestaltungsoberfläche und nicht als eigene Bekleidungsschicht. Der Auftrag erfolgt nach Reinigung und Instandsetzung des Untergrunds in Grund- und Deckanstrich mit Pinsel, Rolle oder Spritzverfahren, wobei die Dampfdurchlässigkeit auf den Untergrund abzustimmen ist, damit die Wand abtrocknen kann. Geeignet für Neubauoberflächen und Fassadenrenovation als wiederkehrende Unterhaltsmassnahme; Schichtdicke, Farbton und Untergrundvorbereitung sind vorzugeben.
+  en: Non-load-bearing coating applied thinly and directly onto the facade substrate, acting as protective and decorative surface rather than as a separate cladding layer. It is applied after cleaning and repair of the substrate in primer and topcoat passes by brush, roller, or spray, and its vapour permeability must be matched to the substrate so that the wall can dry out. Suitable for new build finishes and for facade refurbishment as a recurring maintenance measure; film build, colour, and surface preparation are to be specified.

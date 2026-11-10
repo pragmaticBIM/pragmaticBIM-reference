@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mup-fw-water-heater
+sort_order: 17
+status: active
+name:
+  de: Warmwasserbereiter
+  fr: Chauffe-eau
+  it: Scaldacqua
+  en: Water heater / DHW boiler
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-FW-WATER-HEATER
+tender_text:
+  de: Erwärmt Trinkwasser auf die erforderliche Temperatur und hält einen Vorrat bereit, damit der Spitzenbedarf an den Entnahmestellen gedeckt wird. Lieferung als werkseitig gefertigte Einheit mit Speicherbehälter, Heizflächen oder Elektroheizeinsätzen, Dämmung und Sicherheitsarmaturen, Aufstellung auf Sockel im Technikraum, Anschluss an Wärmeerzeuger oder Stromversorgung, Kalt- und Warmwasserleitungen, Zirkulation und Entwässerung, Temperatur- und Hygienebetriebsarten über die Gebäudeautomation. Geeignet für die Warmwasserversorgung von Wohn- und Gewerbebauten; erfordert Bodentragfähigkeit und Raumhöhe für Einbringung und Ziehen der Heizeinsätze sowie Zugang für Kontrolle, Entkalkung und Austausch von Anode oder Komponenten.
+  en: Heats potable water to the required temperature and holds a reserve so that peak draw-off demand is covered at the taps. Delivered as a factory-made unit with storage vessel, heating surfaces or electric elements, insulation, and safety fittings, set on a plinth in the plant room and connected to the heat source or power supply, cold and hot water lines, circulation, and drainage, with temperature and hygiene operating modes controlled from building automation. Suitable for hot water supply in residential and commercial buildings; requires floor loading capacity and headroom for delivery and withdrawal of heating elements, and access for inspection, descaling, and replacement of anode or components.

@@ -6,7 +6,7 @@ name:
   de: Humus
   fr: Humus
   it: Humus
-  en: Humus
+  en: Topsoil
 definition:
   de: |-
     Macht Humusmengen für die Kosten früh prüfbar, damit Abtrag, Neueinbau und Überschuss nicht erst bei der Vergabe auftauchen.
@@ -39,10 +39,10 @@ definition:
     - Modellare come uno strato unico; separare secondo la situazione.
     - Non modellare cumuli, fondazione di percorsi né scavo di cantiere.
   en: |-
-    Makes humus quantities verifiable early for cost, so that stripping, reinstatement, and surplus do not appear only at tender.
+    Makes topsoil quantities verifiable early for cost, so that stripping, reinstatement, and surplus do not appear only at tender.
 
     **Description**
-    - Humus layer in the planning perimeter, split into existing, stripping, and reinstatement.
+    - Topsoil layer in the planning perimeter, split into existing, stripping, and reinstatement.
     - Used for the cost balance. The intermediate stockpile is a site-setup object.
 
     **Modelling guidelines**
@@ -69,7 +69,7 @@ attributes:
     de: Bezeichnung der Humusschicht.
     fr: Désignation de la couche d'humus.
     it: Designazione dello strato di humus.
-    en: Designation of the humus layer.
+    en: Designation of the topsoil layer.
   datatype: IfcLabel
   needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
@@ -97,7 +97,7 @@ attributes:
       **Valori ammessi**
       - `USERDEFINED` — tipo definito dall'utente ; ObjectType = Terra vegetale
     en: |-
-      Marks the element as a humus layer.
+      Marks the element as a topsoil layer.
 
       **Allowed values**
       - `USERDEFINED` — user-defined type; ObjectType = Topsoil
@@ -129,10 +129,10 @@ attributes:
       **Valori ammessi**
       - `Terra vegetale` — strato di humus
     en: |-
-      Kind of element as a humus layer.
+      Kind of element as a topsoil layer.
 
       **Allowed values**
-      - `Topsoil` — humus layer
+      - `Topsoil` — topsoil layer
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/objecttype-humus
   needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
@@ -170,7 +170,7 @@ attributes:
       - `NEW` — ripristino
       - `TEMPORARY` — temporaneo
     en: |-
-      Situation of the humus layer. The intermediate stockpile is not a status of this layer.
+      Situation of the topsoil layer. The intermediate stockpile is not a status of this layer.
 
       **Allowed values**
       - `EXISTING` — existing
@@ -192,7 +192,7 @@ attributes:
     de: Nettofläche der modellierten Humusschicht.
     fr: Surface nette de la couche d'humus modélisée.
     it: Superficie netta dello strato di humus modellato.
-    en: Net area of the modelled humus layer.
+    en: Net area of the modelled topsoil layer.
   datatype: IfcAreaMeasure
   unit: m²
   needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
@@ -208,7 +208,7 @@ attributes:
     de: Nettovolumen der modellierten Humusschicht.
     fr: Volume net de la couche d'humus modélisée.
     it: Volume netto dello strato di humus modellato.
-    en: Net volume of the modelled humus layer.
+    en: Net volume of the modelled topsoil layer.
   datatype: IfcVolumeMeasure
   unit: m³
   needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']

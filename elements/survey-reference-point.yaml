@@ -80,15 +80,15 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
     - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
-    - pragmaticbim:workflow/bes-award-interface-visualization
+    - pragmaticbim:workflow/qas-award-interface-visualization
     - pragmaticbim:workflow/bes-concrete-tender-from-model
-    - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
+    - pragmaticbim:workflow/qas-cost-interface-tenant-fitout
     - pragmaticbim:workflow/bes-design-build-procurement
     - pragmaticbim:workflow/bes-designer-procurement
     - pragmaticbim:workflow/bes-door-tender-basis
     - pragmaticbim:workflow/bes-drywall-tender-basis
     - pragmaticbim:workflow/bes-element-based-tendering
-    - pragmaticbim:workflow/bes-element-cost-post-calculation
+    - pragmaticbim:workflow/qas-element-cost-post-calculation
     - pragmaticbim:workflow/bes-elevator-early-procurement
     - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
     - pragmaticbim:workflow/bes-existing-building-point-cloud-procurement
@@ -246,15 +246,15 @@ attributes:
   ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
     - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
-    - pragmaticbim:workflow/bes-award-interface-visualization
+    - pragmaticbim:workflow/qas-award-interface-visualization
     - pragmaticbim:workflow/bes-concrete-tender-from-model
-    - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
+    - pragmaticbim:workflow/qas-cost-interface-tenant-fitout
     - pragmaticbim:workflow/bes-design-build-procurement
     - pragmaticbim:workflow/bes-designer-procurement
     - pragmaticbim:workflow/bes-door-tender-basis
     - pragmaticbim:workflow/bes-drywall-tender-basis
     - pragmaticbim:workflow/bes-element-based-tendering
-    - pragmaticbim:workflow/bes-element-cost-post-calculation
+    - pragmaticbim:workflow/qas-element-cost-post-calculation
     - pragmaticbim:workflow/bes-elevator-early-procurement
     - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
     - pragmaticbim:workflow/bes-existing-building-point-cloud-procurement
@@ -412,15 +412,15 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
     - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
-    - pragmaticbim:workflow/bes-award-interface-visualization
+    - pragmaticbim:workflow/qas-award-interface-visualization
     - pragmaticbim:workflow/bes-concrete-tender-from-model
-    - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
+    - pragmaticbim:workflow/qas-cost-interface-tenant-fitout
     - pragmaticbim:workflow/bes-design-build-procurement
     - pragmaticbim:workflow/bes-designer-procurement
     - pragmaticbim:workflow/bes-door-tender-basis
     - pragmaticbim:workflow/bes-drywall-tender-basis
     - pragmaticbim:workflow/bes-element-based-tendering
-    - pragmaticbim:workflow/bes-element-cost-post-calculation
+    - pragmaticbim:workflow/qas-element-cost-post-calculation
     - pragmaticbim:workflow/bes-elevator-early-procurement
     - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
     - pragmaticbim:workflow/bes-existing-building-point-cloud-procurement

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/sfp-sanitary
+sort_order: 16
+status: active
+name:
+  de: Sanitäranlage
+  fr: Installation sanitaire
+  it: Impianto sanitario
+  en: Sanitary facility
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-SANITARY
+tender_text:
+  de: Sanitaercontainer oder Kabinen mit WC, Waschbecken und bei Bedarf Duschen, an Bauwasser und Entwaesserung angeschlossen. Kein Aufenthaltsraum und kein Buero.
+  en: Sanitary containers or cabins with WC, washbasins, and where required showers, connected to site water and drainage. Not a break room and not an office.

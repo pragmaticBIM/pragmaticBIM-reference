@@ -1,0 +1,14 @@
+id: pragmaticbim:product/sfp-break-room
+sort_order: 15
+status: active
+name:
+  de: Aufenthaltsraum
+  fr: Local de séjour
+  it: Locale di soggiorno
+  en: Break room
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-BREAK-ROOM
+tender_text:
+  de: Eingerichteter Pausenraum fuer Beschaeftigte, mit Sitzplaetzen und einer Essmoeglichkeit. Weder das Baubuero noch die Sanitaeranlage.
+  en: Furnished rest space for workers, with seating and a place to eat. It is neither the site office nor the sanitary unit.

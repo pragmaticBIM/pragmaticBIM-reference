@@ -31,37 +31,37 @@ values:
   - Leichtbau-Decke / -Platte
   - Sonstige / unbekannte Decke / Platte
   fr:
-  - In-situ concrete slab
-  - Prefabricated concrete slab
-  - Steel deck / composite slab
+  - Dalle en béton coulé sur place
+  - Dalle préfabriquée en béton
+  - Dalle mixte acier-béton
   - Steel deck layer
   - Composite slab concrete topping layer
-  - Timber slab / deck
-  - Cross-laminated timber (CLT) slab
-  - Timber–concrete composite slab (HBV)
+  - Dalle en bois
+  - Dalle en bois lamellé-croisé (CLT)
+  - Dalle mixte bois-béton
   - HBV timber base layer
   - HBV concrete topping layer
-  - Timber–clay slab / deck
+  - Dalle bois-terre crue
   - Timber–clay slab timber layer
   - Timber–clay slab clay infill layer
-  - Lightweight slab system
-  - Other / unknown slab separator
+  - Dalle en construction légère
+  - Dalle autre ou inconnue
   it:
-  - In-situ concrete slab
-  - Prefabricated concrete slab
-  - Steel deck / composite slab
+  - Solaio in calcestruzzo gettato in opera
+  - Solaio prefabbricato in calcestruzzo
+  - Solaio misto acciaio-calcestruzzo
   - Steel deck layer
   - Composite slab concrete topping layer
-  - Timber slab / deck
-  - Cross-laminated timber (CLT) slab
-  - Timber–concrete composite slab (HBV)
+  - Solaio in legno
+  - Solaio in legno lamellare a strati incrociati (CLT)
+  - Solaio misto legno-calcestruzzo
   - HBV timber base layer
   - HBV concrete topping layer
-  - Timber–clay slab / deck
+  - Solaio legno-argilla
   - Timber–clay slab timber layer
   - Timber–clay slab clay infill layer
-  - Lightweight slab system
-  - Other / unknown slab separator
+  - Solaio in costruzione leggera
+  - Solaio altro o sconosciuto
   en:
   - In-situ concrete slab
   - Prefabricated concrete slab

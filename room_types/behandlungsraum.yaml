@@ -5,7 +5,7 @@ name:
   de: Behandlungsraum
   fr: Salle de soins
   it: Sala di cura
-  en: Treatment Room
+  en: Treatment room
 definition:
   de: Raum für ambulante Behandlung.
   fr: Local pour les traitements ambulatoires.
@@ -33,7 +33,7 @@ configurations:
       de: Behandlungsraum
       fr: Salle de soins
       it: Sala di cura
-      en: Treatment Room
+      en: Treatment room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -136,6 +136,25 @@ configurations:
     function: washbasin
     components:
     - pragmaticbim:component/waschtisch
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/behandlungsraum-default-steckdose
+    sort_order: 4
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/behandlungsraum-default-lichtschalter
+    sort_order: 5
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
     quantity: 1
     status: active
   openings:

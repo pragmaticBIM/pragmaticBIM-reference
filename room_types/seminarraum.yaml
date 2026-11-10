@@ -5,7 +5,7 @@ name:
   de: Seminarraum
   fr: Salle de séminaire
   it: Sala seminari
-  en: Seminar Room
+  en: Seminar room
 definition:
   de: Raum für Seminare und Workshops.
   fr: Local pour les séminaires et les ateliers.
@@ -33,7 +33,7 @@ configurations:
       de: Seminarraum
       fr: Salle de séminaire
       it: Sala seminari
-      en: Seminar Room
+      en: Seminar room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -131,6 +131,25 @@ configurations:
     function: teaching
     components:
     - pragmaticbim:component/wandtafel
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/seminarraum-default-steckdose
+    sort_order: 3
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/seminarraum-default-lichtschalter
+    sort_order: 4
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
     quantity: 1
     status: active
   openings:

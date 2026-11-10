@@ -5,7 +5,7 @@ name:
   de: Wartezimmer
   fr: Salle d'attente
   it: Sala d'attesa
-  en: Waiting Room
+  en: Waiting room
 definition:
   de: Raum für wartende Patienten und Besucher.
   fr: Local pour les patients et les visiteurs qui attendent.
@@ -33,7 +33,7 @@ configurations:
       de: Wartezimmer
       fr: Salle d'attente
       it: Sala d'attesa
-      en: Waiting Room
+      en: Waiting room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -134,6 +134,25 @@ configurations:
     function: manoeuvring
     components:
     - pragmaticbim:component/manoevrierflaeche
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/wartezimmer-default-steckdose
+    sort_order: 3
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/wartezimmer-default-lichtschalter
+    sort_order: 4
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
     quantity: 1
     status: active
   openings:

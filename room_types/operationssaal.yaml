@@ -5,7 +5,7 @@ name:
   de: Operationssaal
   fr: Salle d'opération
   it: Sala operatoria
-  en: Operating Room
+  en: Operating theatre
 definition:
   de: Raum für operative Eingriffe.
   fr: Local pour les interventions chirurgicales.
@@ -33,7 +33,7 @@ configurations:
       de: Operationssaal
       fr: Salle d'opération
       it: Sala operatoria
-      en: Operating Room
+      en: Operating theatre
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -148,6 +148,25 @@ configurations:
       min: 0
       max: 2
       default: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/operationssaal-default-steckdose
+    sort_order: 4
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/operationssaal-default-lichtschalter
+    sort_order: 5
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/operationssaal-default-zugang

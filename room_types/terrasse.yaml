@@ -65,6 +65,26 @@ configurations:
     name: DesignPointLoad
     pset: ePset_SpaceRequirement
     value: 2.0
+  equipment:
+  - id: pragmaticbim:room-type-equipment/terrasse-default-steckdose-aussen
+    sort_order: 1
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose-aussen
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/terrasse-default-lichtschalter
+    sort_order: 2
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
+    status: active
   openings:
   - id: pragmaticbim:room-type-opening/terrasse-default-zugang
     sort_order: 1

@@ -5,7 +5,7 @@ name:
   de: Abfallsammelplatz Aussen
   fr: Aire extérieure de collecte des déchets
   it: Area esterna di raccolta rifiuti
-  en: Exterior Waste Collection Area
+  en: Exterior waste collection area
 definition:
   de: Aussenfläche für das Sammeln und Bereitstellen von Siedlungsabfall in Säcken.
   fr: Aire extérieure destinée à collecter et présenter les déchets ménagers en sacs.
@@ -33,7 +33,7 @@ configurations:
       de: Abfallsammelplatz Aussen
       fr: Aire extérieure de collecte des déchets
       it: Area esterna di raccolta rifiuti
-      en: Exterior Waste Collection Area
+      en: Exterior waste collection area
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon
@@ -65,4 +65,24 @@ configurations:
     name: DesignPointLoad
     pset: ePset_SpaceRequirement
     value: 4.0
+  equipment:
+  - id: pragmaticbim:room-type-equipment/abfallsammelplatz-aussen-default-steckdose-aussen
+    sort_order: 1
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose-aussen
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/abfallsammelplatz-aussen-default-lichtschalter
+    sort_order: 2
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
+    status: active
   status: active

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mtp-fw-shower
+sort_order: 15
+status: active
+name:
+  de: Dusche
+  fr: Douche
+  it: Doccia
+  en: Shower
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-FW-SHOWER
+tender_text:
+  de: Gibt gemischtes Warmwasser als Brausestrahl für die Körperreinigung ab und lässt Temperatur und Durchfluss an der Entnahmestelle einstellen. Wird als Auf- oder Unterputzgarnitur an Wand oder Decke montiert und an Kalt- und Warmwasserleitung sowie an den Duschablauf angeschlossen, mit Mischarmatur und Schutz gegen Verbrühung. Geeignet für Badezimmer, Garderoben und Sportanlagen, wobei Schlauch, Brausekopf und Mischerteile ersetzbar und entkalkbar sind und verdeckte Teile über eine zugängliche Revisionsöffnung bedient werden.
+  en: Delivers mixed warm water as a spray for body cleaning and lets users set temperature and flow at the point of use. Mounted on wall or ceiling as an exposed or concealed set and connected to cold and hot water pipework and to the shower waste, with a mixer and protection against scalding. Suitable for bathrooms, changing rooms, and sports facilities, with hose, spray head, and mixer parts replaceable and descalable and with concealed parts served through an accessible inspection opening.

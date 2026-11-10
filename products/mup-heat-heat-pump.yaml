@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mup-heat-heat-pump
+sort_order: 12
+status: active
+name:
+  de: Waermepumpe
+  fr: Pompe à chaleur
+  it: Pompa di calore
+  en: Heat pump
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-HEAT-HEAT-PUMP
+tender_text:
+  de: Hebt Wärme aus Luft, Erdreich, Wasser oder Abwärme auf ein nutzbares Temperaturniveau für den Heizkreis und liefert im reversiblen Betrieb zusätzlich Kälte. Lieferung als werkseitig montierte Innen- oder Ausseneinheit auf schwingungsentkoppelter Unterlage, Anschluss an Quellenkreis, Heizungsvor- und -rücklauf, Speicher, Stromversorgung und Kondensatentwässerung, Betriebsarten und Quellentemperaturen über die Gebäudeautomation geregelt. Geeignet dort, wo eine Wärmequelle auf dem Grundstück erschlossen werden kann; erfordert Quellenerschliessung, Platz und Freiräume um das Gerät, Beachtung der Schallemission am Aufstellort und Zugang für Servicearbeiten am Kältekreis.
+  en: Raises heat taken from air, ground, water, or waste heat to a usable temperature for the heating circuit and, in reversible operation, also supplies cooling. Delivered as a factory-assembled indoor or outdoor unit on a vibration-isolated base, connected to the source circuit, heating flow and return, buffer storage, power supply, and condensate drainage, with operating modes and source temperatures controlled through building automation. Suitable where a heat source can be developed on the site; requires source installation works, space and clearances around the unit, attention to noise emission at the installation point, and access for servicing the refrigerant circuit.

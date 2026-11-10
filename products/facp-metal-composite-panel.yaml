@@ -1,0 +1,14 @@
+id: pragmaticbim:product/facp-metal-composite-panel
+sort_order: 4
+status: active
+name:
+  de: Metallverbund-Fassadenpaneel (AVP)
+  fr: Panneau de façade composite métallique
+  it: Pannello di facciata composito metallico
+  en: Metal composite facade panel (ACP)
+product_classification:
+  classification_scheme: EuropeanFacadeCoveringProduct
+  classification_code: FaCP-METAL-COMPOSITE-PANEL
+tender_text:
+  de: Nichttragende Fassadenhaut aus werkseitig gefertigten Sandwichpaneelen mit Metalldeckschichten und verklebtem Kern, vorgehängt vor der gedämmten Aussenwand. Die Paneele werden zu Kassetten oder Schalen gekantet und mechanisch auf einer ausgerichteten Metall-Unterkonstruktion befestigt, mit definierten Fugen und Hinterlüftung. Geeignet für Neubau und rasche Sanierung grosser ebener Flächen; der Kern ist als nichtbrennbar nachzuweisen, wenn Gebäudehöhe oder Nutzung dies verlangen.
+  en: Non-load-bearing facade skin of factory-made sandwich panels with metal faces and a bonded core, hung in front of the insulated exterior wall. The panels are folded into cassettes or trays and mechanically fixed to an aligned metal sub-frame, with defined joints and cavity ventilation. Suitable for new build and fast retrofit of large flat surfaces; the core must be declared non-combustible where building height or use demands it.

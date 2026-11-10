@@ -98,9 +98,9 @@ comment: >-
   ePset_Cost.ReferenceQuantity. Component cost = referenced model quantity ×
   project unit price. Compare against (a) versioned schema.pragmaticbim.ch
   product EP / ranges and (b) office Kostendatenbank fed by
-  BES-ELEMENT-COST-POSTCALC.
+  QAS-ELEMENT-COST-POSTCALC.
   Align currency, price date, quality standard, and included scope before
   comparing. Schema and office rates are external benchmarks, not IFC attributes.
   ProductClass is established in DES-ELEMENT-COST-EARLY and CalculatedType is
   derived in DES-ELEMENT-COST-LATE (logic in book Anhang D,
-  Bauteiltypisierung); office EPs come from BES-ELEMENT-COST-POSTCALC.
+  Bauteiltypisierung); office EPs come from QAS-ELEMENT-COST-POSTCALC.
