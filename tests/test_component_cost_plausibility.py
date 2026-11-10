@@ -48,7 +48,7 @@ REFERENCE_QUANTITIES = {
     "architecture-footing": ("Qto_FootingBaseQuantities.GrossVolume", "CHF/m³"),
     "architecture-column": ("Qto_ColumnBaseQuantities.GrossVolume", "CHF/m³"),
     "architecture-beam": ("Qto_BeamBaseQuantities.Length", "CHF/m"),
-    "architecture-stair": ("Qto_StairBaseQuantities.GrossVolume", "CHF/m³"),
+    "architecture-stair": ("Pset_StairFlightCommon.NumberOfRiser", "CHF/St"),
     "architecture-railing": ("Qto_RailingBaseQuantities.Length", "CHF/m"),
     "architecture-window-exterior": ("Qto_WindowBaseQuantities.Area", "CHF/m²"),
     "architecture-window-interior": ("Qto_WindowBaseQuantities.Area", "CHF/m²"),

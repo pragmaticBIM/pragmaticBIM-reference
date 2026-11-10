@@ -51,11 +51,11 @@ options:
     it: Locale di asciugatura
     en: Drying room
   room_relationships:
-  - from_room_type: pragmaticbim:room-type/wohnungseingang
+  - from_room_type: pragmaticbim:room-type/eingangshalle
     to_room_type: pragmaticbim:room-type/trocknungsraum
     max_distance: 30
   adds:
-  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/eingangshalle
   - pragmaticbim:room-type/trocknungsraum
 - id: pragmaticbim:scenario-option/waesche-trocknen-balcony
   project_goal_levels:

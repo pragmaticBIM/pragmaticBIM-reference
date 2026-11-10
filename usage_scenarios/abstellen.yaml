@@ -77,6 +77,7 @@ options:
   - from_room_type: pragmaticbim:room-type/wohnungseingang
     to_room_type: pragmaticbim:room-type/kellerabteil
     max_distance: 40
+  target: pragmaticbim:room-type/wohnung
   adds:
   - pragmaticbim:room-type/wohnungseingang
   - pragmaticbim:room-type/kellerabteil
@@ -90,9 +91,9 @@ options:
     it: Casetta da giardino
     en: Garden shed
   room_relationships:
-  - from_room_type: pragmaticbim:room-type/wohnungseingang
+  - from_room_type: pragmaticbim:room-type/eingangshalle
     to_room_type: pragmaticbim:room-type/gartenhaus
     max_distance: 40
   adds:
-  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/eingangshalle
   - pragmaticbim:room-type/gartenhaus

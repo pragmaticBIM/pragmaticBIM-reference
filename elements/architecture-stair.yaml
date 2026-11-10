@@ -17,6 +17,9 @@ definition:
 
     **Modellierungshinweis**
     - Treppenläufe und Podeste als getrennte, vereinfachte Bauteile mit abgestimmter Laufbreite, Steigung und Podestlage modellieren.
+    - Jeden Treppenlauf als `IfcStairFlight` exportieren, Podeste als `IfcSlab` mit PredefinedType=LANDING.
+    - Anzahl Steigungen, Steigungshöhe und Auftrittslänge in `Pset_StairFlightCommon` exportieren.
+    - Die Innen- oder Aussenlage folgt aus dem Raum, in dem der Lauf liegt (`Pset_SpaceCommon.IsExternal`).
     - Den unteren Treppenlauf dem unteren Geschoss, das Podest und den oberen Treppenlauf dem oberen Geschoss zuordnen.
     - Diese Geschosszuordnung ist keine gängige Modellierungspraxis, entspricht jedoch genau der Logik des Planzeichnens: Im Grundriss wird der obere Treppenlauf strichliert dargestellt, während Wand, Tür und Raum unter diesem Lauf im unteren Geschoss sichtbar bleiben.
     - Den Raum unter dem oberen Treppenlauf als eigenes Raumvolumen modellieren und Innen-/Aussenlage korrekt kennzeichnen.
@@ -31,6 +34,9 @@ definition:
 
     **Directives de modélisation**
     - Modéliser les volées et les paliers comme des éléments distincts et simplifiés avec largeur de volée, pente et position des paliers convenues.
+    - Exporter chaque volée comme `IfcStairFlight` et les paliers comme `IfcSlab` avec PredefinedType=LANDING.
+    - Exporter le nombre de contremarches, la hauteur de contremarche et le giron dans `Pset_StairFlightCommon`.
+    - La situation intérieure ou extérieure découle du local dans lequel se trouve la volée (`Pset_SpaceCommon.IsExternal`).
     - Rattacher la volée inférieure à l'étage inférieur, et le palier ainsi que la volée supérieure à l'étage supérieur.
     - Cette attribution par étage n'est pas une pratique courante dans les maquettes, mais elle suit exactement la logique du dessin en plan : la volée supérieure y apparaît en traitillé, tandis que le mur, la porte et le local situés dessous restent visibles à l'étage inférieur.
     - Modéliser le local sous la volée supérieure comme un volume distinct et indiquer correctement la situation intérieure ou extérieure.
@@ -45,6 +51,9 @@ definition:
 
     **Direttive di modellazione**
     - Modellare rampe e pianerottoli come componenti distinti e semplificati con larghezza della rampa, pendenza e posizione dei pianerottoli concordate.
+    - Esportare ogni rampa come `IfcStairFlight` e i pianerottoli come `IfcSlab` con PredefinedType=LANDING.
+    - Esportare numero di alzate, altezza dell'alzata e pedata in `Pset_StairFlightCommon`.
+    - La posizione interna o esterna deriva dal locale in cui si trova la rampa (`Pset_SpaceCommon.IsExternal`).
     - Assegnare la rampa inferiore al piano inferiore e il pianerottolo con la rampa superiore al piano superiore.
     - Questa assegnazione ai piani non è una prassi di modellazione comune, ma segue esattamente la logica del disegno in pianta: la rampa superiore è rappresentata tratteggiata, mentre la parete, la porta e il locale sottostanti restano visibili al piano inferiore.
     - Modellare il locale sotto la rampa superiore come volume distinto e indicare correttamente la posizione interna o esterna.
@@ -59,6 +68,9 @@ definition:
 
     **Modelling guidelines**
     - Model flights and landings as separate, simplified components with coordinated flight width, rise, and landing positions.
+    - Export each flight as `IfcStairFlight` and landings as `IfcSlab` with PredefinedType=LANDING.
+    - Export the number of risers, riser height, and tread length in `Pset_StairFlightCommon`.
+    - Interior or exterior follows from the space the flight sits in (`Pset_SpaceCommon.IsExternal`).
     - Assign the lower flight to the lower storey, and the landing and upper flight to the upper storey.
     - This storey assignment is not common modelling practice, but it follows plan-drawing logic exactly: the upper flight is shown dashed, while the wall, door, and space below it remain visible on the lower-storey plan.
     - Model the space below the upper flight as a separate space volume and mark the interior or exterior location correctly.
@@ -66,14 +78,14 @@ definition:
     - Above the uppermost stair flight, also model an air-space volume so that this area is filled with a space – as a reference for building services and volume evaluation.
 needed_in_domain:
 - pragmaticbim:domain/architecture
-entity_ifc2x3: IfcStair
-entity_ifc4: IfcStair
-entity_ifc4_3: IfcStair
+entity_ifc2x3: IfcStairFlight
+entity_ifc4: IfcStairFlight
+entity_ifc4_3: IfcStairFlight
 picture_link: architecture-stair.png
 attachment_link: architecture-stair.ifc
 picture_print_link: architecture-stair-print.tif
 model_link: architecture-stair.ifc
-applicability: entity_ifc4=IfcStair OR entity_ifc2x3=IfcStair
+applicability: entity_ifc4=IfcStairFlight OR entity_ifc2x3=IfcStairFlight
 attributes:
 - name: Name
   pset: null
@@ -95,83 +107,47 @@ attributes:
   pset: null
   definition:
     de: |-
-      Form der Treppe.
+      Form des Treppenlaufs.
 
       **Zulässige Werte**
-      - `STRAIGHT_RUN_STAIR` — einläufige gerade Treppe
-      - `TWO_STRAIGHT_RUN_STAIR` — gerade Treppe mit zwei Läufen
-      - `QUARTER_WINDING_STAIR` — viertelgewendelte Treppe
-      - `QUARTER_TURN_STAIR` — Treppe mit Viertelpodest
-      - `HALF_WINDING_STAIR` — halbgewendelte Treppe
-      - `HALF_TURN_STAIR` — Treppe mit Halbpodest
-      - `TWO_QUARTER_WINDING_STAIR` — zweimal viertelgewendelte Treppe
-      - `TWO_QUARTER_TURN_STAIR` — Treppe mit zwei Viertelpodesten
-      - `THREE_QUARTER_WINDING_STAIR` — dreimal viertelgewendelte Treppe
-      - `THREE_QUARTER_TURN_STAIR` — Treppe mit drei Viertelpodesten
-      - `SPIRAL_STAIR` — Spindeltreppe
-      - `DOUBLE_RETURN_STAIR` — gegenläufige mehrläufige Treppe
-      - `CURVED_RUN_STAIR` — Bogentreppe
-      - `TWO_CURVED_RUN_STAIR` — zweiläufige Bogentreppe
-      - `USERDEFINED` — benutzerdefinierte Treppe
+      - `STRAIGHT` — gerader Lauf
+      - `WINDER` — gewendelter Lauf
+      - `SPIRAL` — Spindellauf
+      - `CURVED` — Bogenlauf
+      - `FREEFORM` — Freiform
+      - `USERDEFINED` — benutzerdefiniert
     fr: |-
-      Forme de l'escalier.
+      Forme de la volée.
 
       **Valeurs admises**
-      - `STRAIGHT_RUN_STAIR` — escalier droit à une volée
-      - `TWO_STRAIGHT_RUN_STAIR` — escalier droit à deux volées
-      - `QUARTER_WINDING_STAIR` — escalier balancé à quart tournant
-      - `QUARTER_TURN_STAIR` — escalier avec palier quart tournant
-      - `HALF_WINDING_STAIR` — escalier balancé à demi-tour
-      - `HALF_TURN_STAIR` — escalier avec palier demi-tour
-      - `TWO_QUARTER_WINDING_STAIR` — escalier balancé à deux quarts tournants
-      - `TWO_QUARTER_TURN_STAIR` — escalier avec deux paliers quart tournant
-      - `THREE_QUARTER_WINDING_STAIR` — escalier balancé à trois quarts tournants
-      - `THREE_QUARTER_TURN_STAIR` — escalier avec trois paliers quart tournant
-      - `SPIRAL_STAIR` — escalier en colimaçon
-      - `DOUBLE_RETURN_STAIR` — escalier à plusieurs volées en retour
-      - `CURVED_RUN_STAIR` — escalier courbe
-      - `TWO_CURVED_RUN_STAIR` — escalier courbe à deux volées
-      - `USERDEFINED` — escalier défini par l’utilisateur
+      - `STRAIGHT` — volée droite
+      - `WINDER` — volée balancée
+      - `SPIRAL` — volée hélicoïdale
+      - `CURVED` — volée courbe
+      - `FREEFORM` — forme libre
+      - `USERDEFINED` — défini par l’utilisateur
     it: |-
-      Forma della scala.
+      Forma della rampa.
 
       **Valori ammessi**
-      - `STRAIGHT_RUN_STAIR` — scala retta a una rampa
-      - `TWO_STRAIGHT_RUN_STAIR` — scala retta a due rampe
-      - `QUARTER_WINDING_STAIR` — scala bilanciata a un quarto di giro
-      - `QUARTER_TURN_STAIR` — scala con pianerottolo a un quarto di giro
-      - `HALF_WINDING_STAIR` — scala bilanciata a mezzo giro
-      - `HALF_TURN_STAIR` — scala con pianerottolo a mezzo giro
-      - `TWO_QUARTER_WINDING_STAIR` — scala bilanciata a due quarti di giro
-      - `TWO_QUARTER_TURN_STAIR` — scala con due pianerottoli a un quarto di giro
-      - `THREE_QUARTER_WINDING_STAIR` — scala bilanciata a tre quarti di giro
-      - `THREE_QUARTER_TURN_STAIR` — scala con tre pianerottoli a un quarto di giro
-      - `SPIRAL_STAIR` — scala a chiocciola
-      - `DOUBLE_RETURN_STAIR` — scala a più rampe contrapposte
-      - `CURVED_RUN_STAIR` — scala curva
-      - `TWO_CURVED_RUN_STAIR` — scala curva a due rampe
-      - `USERDEFINED` — scala definita dall’utente
+      - `STRAIGHT` — rampa retta
+      - `WINDER` — rampa con gradini a ventaglio
+      - `SPIRAL` — rampa elicoidale
+      - `CURVED` — rampa curva
+      - `FREEFORM` — forma libera
+      - `USERDEFINED` — definita dall’utente
     en: |-
-      Form of the stair.
+      Form of the flight.
 
       **Allowed values**
-      - `STRAIGHT_RUN_STAIR` — single straight flight
-      - `TWO_STRAIGHT_RUN_STAIR` — two straight flights
-      - `QUARTER_WINDING_STAIR` — quarter-turn winding stair
-      - `QUARTER_TURN_STAIR` — stair with quarter-turn landing
-      - `HALF_WINDING_STAIR` — half-turn winding stair
-      - `HALF_TURN_STAIR` — stair with half-turn landing
-      - `TWO_QUARTER_WINDING_STAIR` — two-quarter winding stair
-      - `TWO_QUARTER_TURN_STAIR` — stair with two quarter-turn landings
-      - `THREE_QUARTER_WINDING_STAIR` — three-quarter winding stair
-      - `THREE_QUARTER_TURN_STAIR` — stair with three quarter-turn landings
-      - `SPIRAL_STAIR` — spiral stair
-      - `DOUBLE_RETURN_STAIR` — multi-flight return stair
-      - `CURVED_RUN_STAIR` — curved stair
-      - `TWO_CURVED_RUN_STAIR` — two-flight curved stair
-      - `USERDEFINED` — user-defined stair
+      - `STRAIGHT` — straight flight
+      - `WINDER` — winder flight
+      - `SPIRAL` — spiral flight
+      - `CURVED` — curved flight
+      - `FREEFORM` — freeform
+      - `USERDEFINED` — user-defined
   datatype: IfcLabel
-  allowed_values: pragmaticbim:value/predefinedtype-stair
+  allowed_values: pragmaticbim:value/predefinedtype-stair-flight
   needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
   ifc_versions: [ifc4, ifc4x3]
   needed_for_workflows:
@@ -185,47 +161,8 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 2
-- name: IsExternal
-  pset: Pset_StairCommon
-  definition:
-    de: |-
-      Kennzeichnet, ob die Treppe aussen oder innen liegt.
-
-      **Zulässige Werte**
-      - `TRUE` — aussen liegende Treppe
-      - `FALSE` — innen liegende Treppe
-    fr: |-
-      Indique si l'escalier est situé à l'extérieur ou à l'intérieur.
-
-      **Valeurs admises**
-      - `TRUE` — escalier extérieur
-      - `FALSE` — escalier intérieur
-    it: |-
-      Indica se la scala si trova all'esterno o all'interno.
-
-      **Valori ammessi**
-      - `TRUE` — scala esterna
-      - `FALSE` — scala interna
-    en: |-
-      Indicates whether the stair is exterior or interior.
-
-      **Allowed values**
-      - `TRUE` — exterior stair
-      - `FALSE` — interior stair
-  datatype: IfcBoolean
-  allowed_values: pragmaticbim:value/boolean
-  needed_in_phases: ['32', '33', '41', '51']
-  ifc_versions: [ifc2x3, ifc4, ifc4x3]
-  needed_for_workflows:
-  - pragmaticbim:workflow/qas-contractor-design-verification
-  - pragmaticbim:workflow/des-ebkp-h-classification
-  - pragmaticbim:workflow/des-element-based-cost-late
-  - pragmaticbim:workflow/bes-element-based-tendering
-  is_applicability: false
-  status: active
-  sort_order: 3
 - name: Status
-  pset: Pset_StairCommon
+  pset: Pset_StairFlightCommon
   definition:
     de: |-
       Bauteilstatus für Koordination im Bestand.
@@ -268,7 +205,60 @@ attributes:
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
   status: active
+  sort_order: 3
+- name: NumberOfRiser
+  pset: Pset_StairFlightCommon
+  definition:
+    de: Anzahl Steigungen des Treppenlaufs; Referenzmenge für den Einheitspreis und Teil des berechneten Typnamens.
+    fr: Nombre de contremarches de la volée ; quantité de référence pour le prix unitaire et partie du nom de type calculé.
+    it: Numero di alzate della rampa; quantità di riferimento per il prezzo unitario e parte del nome di tipo calcolato.
+    en: Number of risers of the flight; reference quantity for the unit price and part of the calculated type name.
+  datatype: IfcCountMeasure
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  - pragmaticbim:workflow/des-element-based-cost-early
+  - pragmaticbim:workflow/des-element-based-cost-late
+  - pragmaticbim:workflow/bes-element-based-tendering
+  - pragmaticbim:workflow/bes-element-cost-post-calculation
+  is_applicability: false
+  status: active
   sort_order: 4
+- name: RiserHeight
+  pset: Pset_StairFlightCommon
+  definition:
+    de: Steigungshöhe; mit der Anzahl Steigungen ergibt sie die Höhe des Treppenlaufs.
+    fr: Hauteur de contremarche ; multipliée par le nombre de contremarches, elle donne la hauteur de la volée.
+    it: Altezza dell'alzata; moltiplicata per il numero di alzate dà l'altezza della rampa.
+    en: Riser height; multiplied by the number of risers it gives the height of the flight.
+  datatype: IfcPositiveLengthMeasure
+  unit: m
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-element-based-cost-late
+  - pragmaticbim:workflow/bes-element-based-tendering
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: TreadLength
+  pset: Pset_StairFlightCommon
+  definition:
+    de: Auftrittslänge; bestimmt mit der Steigungshöhe das Steigungsverhältnis.
+    fr: Giron ; détermine avec la hauteur de contremarche le rapport de l'escalier.
+    it: Pedata; determina con l'altezza dell'alzata il rapporto della scala.
+    en: Tread length; together with the riser height it sets the rise-to-going ratio.
+  datatype: IfcPositiveLengthMeasure
+  unit: m
+  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-element-based-cost-late
+  - pragmaticbim:workflow/bes-element-based-tendering
+  is_applicability: false
+  status: active
+  sort_order: 6
 - name: ElementStatus
   pset: ePset_ElementStatus
   definition:
@@ -325,33 +315,33 @@ attributes:
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
   status: active
-  sort_order: 5
+  sort_order: 7
 - name: eBKP
   pset: ePset_Cost
   definition:
     de: |-
-      eBKP-H-Klassifizierung nach SN 506 511 – aus IsExternal sowie Terrainkontakt und geometrischer Lage ableitbar. IsExternal allein reicht für `C01.04` nicht aus.
+      eBKP-H-Klassifizierung nach SN 506 511 – aus der Innen- oder Aussenlage des umgebenden Raums (`Pset_SpaceCommon.IsExternal`) sowie Terrainkontakt und geometrischer Lage ableitbar. Die Raumlage allein reicht für `C01.04` nicht aus.
 
       **Zulässige Werte**
       - `C01.04` — erdverbundene Treppe / Rampe
       - `C04.02` — innen liegende Treppe / Rampe
       - `C04.06` — aussen liegende Treppe / Rampe
     fr: |-
-      Classification eBKP-H selon SN 506 511 – déductible à partir de IsExternal ainsi que du contact avec le terrain et de la situation géométrique. IsExternal seul ne suffit pas pour `C01.04`.
+      Classification eBKP-H selon SN 506 511 – déductible de la situation intérieure ou extérieure du local environnant (`Pset_SpaceCommon.IsExternal`) ainsi que du contact avec le terrain et de la situation géométrique. La situation du local seule ne suffit pas pour `C01.04`.
 
       **Valeurs admises**
       - `C01.04` — escalier / rampe en contact avec le terrain
       - `C04.02` — escalier / rampe intérieur
       - `C04.06` — escalier / rampe extérieur
     it: |-
-      Classificazione eBKP-H secondo SN 506 511 – ricavabile da IsExternal, dal contatto con il terreno e dalla posizione geometrica. IsExternal da solo non è sufficiente per `C01.04`.
+      Classificazione eBKP-H secondo SN 506 511 – ricavabile dalla posizione interna o esterna del locale circostante (`Pset_SpaceCommon.IsExternal`), dal contatto con il terreno e dalla posizione geometrica. La posizione del locale da sola non è sufficiente per `C01.04`.
 
       **Valori ammessi**
       - `C01.04` — scala / rampa a contatto con il terreno
       - `C04.02` — scala / rampa interna
       - `C04.06` — scala / rampa esterna
     en: |-
-      eBKP-H classification according to SN 506 511 – derivable from IsExternal together with terrain contact and geometric location. IsExternal alone is insufficient for `C01.04`.
+      eBKP-H classification according to SN 506 511 – derivable from the interior or exterior location of the surrounding space (`Pset_SpaceCommon.IsExternal`) together with terrain contact and geometric location. The space location alone is insufficient for `C01.04`.
 
       **Allowed values**
       - `C01.04` — ground-connected stair / ramp
@@ -365,56 +355,22 @@ attributes:
   - pragmaticbim:workflow/des-ebkp-h-classification
   is_applicability: false
   status: active
-  sort_order: 6
-- name: Width
-  pset: ePset_Cost
-  definition:
-    de: Laufbreite des modellierten Treppenlaufs.
-    fr: Largeur de la volée modélisée.
-    it: Larghezza della rampa modellata.
-    en: Flight width of the modelled stair flight.
-  datatype: IfcLengthMeasure
-  unit: m
-  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
-  ifc_versions: [ifc2x3, ifc4, ifc4x3]
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-element-based-cost-late
-  - pragmaticbim:workflow/bes-element-based-tendering
-  is_applicability: false
-  status: active
-  sort_order: 7
-- name: Height
-  pset: ePset_Cost
-  definition:
-    de: Höhe der modellierten Treppe.
-    fr: Hauteur de l’escalier modélisé.
-    it: Altezza della scala modellata.
-    en: Height of the modelled stair.
-  datatype: IfcLengthMeasure
-  unit: m
-  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
-  ifc_versions: [ifc2x3, ifc4, ifc4x3]
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-element-based-cost-late
-  - pragmaticbim:workflow/bes-element-based-tendering
-  is_applicability: false
-  status: active
   sort_order: 8
 - name: CalculatedType
   pset: ePset_Cost
   definition:
     de: |-
       Berechneter Typname für Kosten- und Mengengruppierung. Logik `TreppeTypisierung`.
-      Beispiel: `Treppe_Gerade_Beton_B1.20m_H3.20m`
+      Beispiel: `Treppe_Gerade_Beton_16x175_280`
     fr: |-
       Nom de type calculé pour le regroupement des coûts et des quantités. Logique `TreppeTypisierung`.
-      Exemple: `Treppe_Gerade_Beton_B1.20m_H3.20m`
+      Exemple: `Treppe_Gerade_Beton_16x175_280`
     it: |-
       Nome di tipo calcolato per il raggruppamento di costi e quantità. Logica `TreppeTypisierung`.
-      Esempio: `Treppe_Gerade_Beton_B1.20m_H3.20m`
+      Esempio: `Treppe_Gerade_Beton_16x175_280`
     en: |-
       Calculated type name for cost and quantity grouping. Logic `TreppeTypisierung`.
-      Example: `Treppe_Gerade_Beton_B1.20m_H3.20m`
+      Example: `Treppe_Gerade_Beton_16x175_280`
   datatype: IfcLabel
   needed_in_phases: ['32', '33', '41', '51']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
@@ -473,7 +429,7 @@ attributes:
     it: Prezzo unitario specifico del progetto o dello studio per unità della quantità di riferimento, utilizzato per la verifica di plausibilità dei costi del componente.
     en: Project- or office-specific unit price per unit of the reference quantity, used to check component costs for plausibility.
   datatype: IfcMonetaryMeasure
-  unit: CHF/m³
+  unit: CHF/St
   needed_in_phases: ['31', '32', '33', '41']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
@@ -487,10 +443,10 @@ attributes:
 - name: ReferenceQuantity
   pset: ePset_Cost
   definition:
-    de: "Verbindliche Referenzmenge für den Einheitspreis: `Qto_StairBaseQuantities.GrossVolume`."
-    fr: "Quantité de référence faisant foi pour le prix unitaire : `Qto_StairBaseQuantities.GrossVolume`."
-    it: "Quantità di riferimento vincolante per il prezzo unitario: `Qto_StairBaseQuantities.GrossVolume`."
-    en: "Authoritative reference quantity used with UnitPrice: `Qto_StairBaseQuantities.GrossVolume`."
+    de: "Verbindliche Referenzmenge für den Einheitspreis: `Pset_StairFlightCommon.NumberOfRiser` (Preis je Steigung)."
+    fr: "Quantité de référence faisant foi pour le prix unitaire : `Pset_StairFlightCommon.NumberOfRiser` (prix par contremarche)."
+    it: "Quantità di riferimento vincolante per il prezzo unitario: `Pset_StairFlightCommon.NumberOfRiser` (prezzo per alzata)."
+    en: "Authoritative reference quantity used with UnitPrice: `Pset_StairFlightCommon.NumberOfRiser` (price per riser)."
   datatype: IfcLabel
   needed_in_phases: ['31', '32', '33', '41']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
@@ -535,12 +491,12 @@ attributes:
   status: active
   sort_order: 14
 - name: GrossVolume
-  pset: Qto_StairBaseQuantities
+  pset: Qto_StairFlightBaseQuantities
   definition:
-    de: Bruttovolumen der modellierten Treppe.
-    fr: Volume brut de l'escalier modélisé.
-    it: Volume lordo della scala modellata.
-    en: Gross volume of the modelled stair.
+    de: Bruttovolumen des modellierten Treppenlaufs.
+    fr: Volume brut de la volée modélisée.
+    it: Volume lordo della rampa modellata.
+    en: Gross volume of the modelled flight.
   datatype: IfcVolumeMeasure
   unit: m³
   needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']

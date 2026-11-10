@@ -498,12 +498,11 @@ UMBAU_PERIMETER_DEFAULTS: dict[str, Any] = {
 
 # Interior half-turn stair shown across two storeys.
 STAIR_DEFAULTS: dict[str, Any] = {
-    "PredefinedType": "HALF_TURN_STAIR",
+    "PredefinedType": "STRAIGHT",
     "Name": "TR-01",
-    "IsExternal": False,
     "Status": "NEW",
     "eBKP": "C04.02",
-    "CalculatedType": "Treppe_U-Treppe",
+    "CalculatedType": "Treppe_Gerade",
 }
 
 # Simplified temporary guardrail at a balcony edge.
@@ -965,17 +964,35 @@ def load_value_list(value_id: str) -> list[Any]:
     raise ValueError(f"value list {value_id!r} has no values")
 
 
-def active_ifc4_attributes(element: dict[str, Any]) -> list[dict[str, Any]]:
-    """Return active attributes applicable to IFC4 / IFC4X3."""
+def active_attributes(
+    element: dict[str, Any], *, ifc_schema: str = "ifc4"
+) -> list[dict[str, Any]]:
+    """Return active attributes for one IFC schema.
+
+    ``ifc4`` (the default) keeps the historical filter: attributes tagged
+    ``ifc4`` or ``ifc4x3``. ``ifc2x3`` keeps attributes tagged ``ifc2x3``.
+    """
+    schema = ifc_schema.lower()
     result: list[dict[str, Any]] = []
     for attr in element.get("attributes") or []:
         if attr.get("status") != "active":
             continue
-        versions = attr.get("ifc_versions") or []
-        if "ifc4" not in versions and "ifc4x3" not in versions:
-            continue
+        versions = [str(version).lower() for version in (attr.get("ifc_versions") or [])]
+        if schema == "ifc2x3":
+            if "ifc2x3" not in versions:
+                continue
+        elif schema in {"ifc4", "ifc4x3"}:
+            if "ifc4" not in versions and "ifc4x3" not in versions:
+                continue
+        else:
+            raise ValueError(f"unsupported ifc_schema: {ifc_schema!r}")
         result.append(attr)
     return result
+
+
+def active_ifc4_attributes(element: dict[str, Any]) -> list[dict[str, Any]]:
+    """Return active attributes applicable to IFC4 / IFC4X3."""
+    return active_attributes(element, ifc_schema="ifc4")
 
 
 def _coerce_datatype(raw: Any, datatype: str | None) -> Any:
@@ -1073,12 +1090,16 @@ def _default_free_value(
         return "SN-000001"
     if datatype == "IfcBoolean":
         return False
+    if datatype in {"IfcInteger", "IfcCountMeasure"}:
+        return 1
     if datatype in {
         "IfcReal",
         "IfcAreaMeasure",
         "IfcLengthMeasure",
+        "IfcPositiveLengthMeasure",
         "IfcPowerMeasure",
         "IfcThermalTransmittanceMeasure",
+        "IfcVolumeMeasure",
     }:
         return 1.0
     return f"{name}"
@@ -1126,20 +1147,27 @@ def build_element_attributes_from_yaml(
     element_slug: str,
     defaults: dict[str, Any] | None = None,
     geometry: dict[str, float] | None = None,
+    ifc_schema: str = "ifc4",
 ) -> dict[str, Any]:
     """Build entity fields, psets and qtos from an element YAML definition.
 
-    Returns entity attributes plus ``properties`` / ``property_datatypes`` / ``quantities``.
+    Returns entity attributes plus ``properties`` / ``property_datatypes`` /
+    ``quantities``. ``direct`` holds pset-less attributes that are not standard
+    entity fields (``Tag``, ``InteriorOrExteriorSpace``, …) so callers can set
+    them when the target class declares the attribute.
+
+    ``ifc_schema`` defaults to ``ifc4``, which selects IFC4 and IFC4X3 attributes.
     """
     element = load_element(element_slug)
     defaults = defaults or {}
 
     entity: dict[str, Any] = {}
+    direct: dict[str, Any] = {}
     properties: dict[str, dict[str, Any]] = {}
     property_datatypes: dict[str, dict[str, str]] = {}
     quantities: dict[str, dict[str, Any]] = {}
 
-    for attr in active_ifc4_attributes(element):
+    for attr in active_attributes(element, ifc_schema=ifc_schema):
         name = attr["name"]
         value = resolve_attribute_value(
             attr,
@@ -1151,6 +1179,8 @@ def build_element_attributes_from_yaml(
         if pset is None:
             if name in _ENTITY_ATTRS:
                 entity[name] = value
+            else:
+                direct[name] = value
             continue
         if str(pset).startswith("Qto_"):
             quantities.setdefault(pset, {})[name] = value
@@ -1161,6 +1191,7 @@ def build_element_attributes_from_yaml(
 
     return {
         **entity,
+        "direct": direct,
         "properties": properties,
         "property_datatypes": property_datatypes,
         "quantities": quantities,

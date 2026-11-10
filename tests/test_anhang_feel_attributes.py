@@ -84,23 +84,18 @@ TYPING_REQUIREMENTS = {
         "CalculatedType": "ePset_Cost",
     },
     "architecture-column": {
-        "Profilname": "ePset_Cost",
-        "Width": "ePset_Cost",
-        "Height": "ePset_Cost",
         "Length": "Qto_ColumnBaseQuantities",
         "CalculatedType": "ePset_Cost",
     },
     "architecture-beam": {
-        "Profilname": "ePset_Cost",
-        "Width": "ePset_Cost",
-        "Height": "ePset_Cost",
         "Length": "Qto_BeamBaseQuantities",
         "CalculatedType": "ePset_Cost",
     },
     "architecture-stair": {
         "PredefinedType": None,
-        "Width": "ePset_Cost",
-        "Height": "ePset_Cost",
+        "NumberOfRiser": "Pset_StairFlightCommon",
+        "RiserHeight": "Pset_StairFlightCommon",
+        "TreadLength": "Pset_StairFlightCommon",
         "CalculatedType": "ePset_Cost",
     },
     "architecture-door-exterior": {

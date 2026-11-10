@@ -310,12 +310,12 @@ def generate_stair(
 
     lower_flight = _add_product(
         ifc_file,
-        ifc_class="IfcStair",
+        ifc_class="IfcStairFlight",
         name="Unterer Treppenlauf",
         body_context=body_context,
         storey=lower_storey,
         solids=lower_solids,
-        predefined_type="HALF_TURN_STAIR",
+        predefined_type="STRAIGHT",
     )
     landing = _add_product(
         ifc_file,
@@ -335,21 +335,21 @@ def generate_stair(
     )
     upper_flight = _add_product(
         ifc_file,
-        ifc_class="IfcStair",
+        ifc_class="IfcStairFlight",
         name="Oberer Treppenlauf (1.OG)",
         body_context=body_context,
         storey=upper_storey,
         solids=upper_solids,
-        predefined_type="HALF_TURN_STAIR",
+        predefined_type="STRAIGHT",
     )
     copied_lower_flight = _add_product(
         ifc_file,
-        ifc_class="IfcStair",
+        ifc_class="IfcStairFlight",
         name="Unterer Treppenlauf 1.OG–2.OG",
         body_context=body_context,
         storey=upper_storey,
         solids=copied_lower_solids,
-        predefined_type="HALF_TURN_STAIR",
+        predefined_type="STRAIGHT",
     )
     copied_landing = _add_product(
         ifc_file,
@@ -369,12 +369,12 @@ def generate_stair(
     )
     copied_upper_flight = _add_product(
         ifc_file,
-        ifc_class="IfcStair",
+        ifc_class="IfcStairFlight",
         name="Oberer Treppenlauf (2.OG)",
         body_context=body_context,
         storey=second_upper_storey,
         solids=copied_upper_solids,
-        predefined_type="HALF_TURN_STAIR",
+        predefined_type="STRAIGHT",
     )
 
     # One connected L-shaped solid extends below the upper flight and the landing.

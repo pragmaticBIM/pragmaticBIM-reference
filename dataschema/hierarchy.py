@@ -1,4 +1,8 @@
-"""IFC hierarchy tree drawn in the top-left corner of virtual-element pictures."""
+"""IFC hierarchy tree drawn in the top-left corner of element pictures.
+
+Virtual elements highlight their own node; every other element adds a row
+with its IFC class below the storey.
+"""
 
 from __future__ import annotations
 
@@ -26,9 +30,10 @@ _ROWS: tuple[tuple[str, str, int, str | None, bool], ...] = (
     ("site", "IfcSite", 1, "project", False),
     ("building", "IfcBuilding", 2, "site", False),
     ("storey", "IfcBuildingStorey", 3, "building", False),
-    ("system", "IfcSystem", 3, "building", True),
-    ("zone", "IfcZone", 3, "building", True),
+    ("system", "IfcSystem", 1, "project", True),
+    ("zone", "IfcZone", 1, "project", True),
 )
+ELEMENT = "element"
 
 _INK = (30, 30, 30)
 _WHITE = (255, 255, 255)
@@ -48,6 +53,10 @@ _GAP = 14
 _BG_TOL = 6
 # Content moved out of the tree's corner keeps this fraction of the width to the bottom-right edges.
 _EDGE_MARGIN = 0.05
+# Filled fraction of the content's top row or left column above which the picture counts as cropped.
+_CROP_EDGE = 0.4
+# Rows / columns searched for that edge; the crop border is antialiased.
+_CROP_DEPTH = 8
 # Drawn oversampled and scaled down for smooth edges and text.
 _SUPERSAMPLE = 3
 
@@ -61,7 +70,15 @@ def _dashed(draw: ImageDraw.ImageDraw, a: tuple[float, float], b: tuple[float, f
         draw.line([(x0 + (x1 - x0) * t0, y0 + (y1 - y0) * t0), (x0 + (x1 - x0) * t1, y0 + (y1 - y0) * t1)], fill=_INK, width=width)
 
 
-def _panel(active: str, scale: float, accent: tuple[int, int, int]) -> Image.Image:
+def _rows(element: str | None) -> tuple[tuple[str, str, int, str | None, bool], ...]:
+    if element is None:
+        return _ROWS
+    at = next(i for i, row in enumerate(_ROWS) if row[0] == "storey") + 1
+    return (*_ROWS[:at], (ELEMENT, element, 4, "storey", False), *_ROWS[at:])
+
+
+def _panel(active: str, scale: float, accent: tuple[int, int, int], element: str | None = None) -> Image.Image:
+    rows = _rows(element)
     font = _load_font(max(8, round(_FONT * scale)))
     box_h, pitch, indent = _BOX_H * scale, _PITCH * scale, _INDENT * scale
     pad_x, pad = _PAD_X * scale, _PANEL_PAD * scale
@@ -69,7 +86,7 @@ def _panel(active: str, scale: float, accent: tuple[int, int, int]) -> Image.Ima
 
     probe = ImageDraw.Draw(Image.new("RGB", (8, 8)))
     boxes: dict[str, tuple[float, float, float, float]] = {}
-    for row, (key, label, depth, _parent, _dashed_link) in enumerate(_ROWS):
+    for row, (key, label, depth, _parent, _dashed_link) in enumerate(rows):
         x0 = pad + depth * indent
         y0 = pad + row * pitch
         bbox = probe.textbbox((0, 0), label, font=font)
@@ -77,9 +94,9 @@ def _panel(active: str, scale: float, accent: tuple[int, int, int]) -> Image.Ima
     width = max(b[2] for b in boxes.values()) + pad
     height = max(b[3] for b in boxes.values()) + pad
 
-    panel = Image.new("RGB", (round(width), round(height)), PRINT_BG_RGB)
+    panel = Image.new("RGBA", (round(width), round(height)), (0, 0, 0, 0))
     draw = ImageDraw.Draw(panel)
-    for key, _label, _depth, parent, dashed in _ROWS:
+    for key, _label, _depth, parent, dashed in rows:
         if parent is None:
             continue
         px0, _py0, _px1, py1 = boxes[parent]
@@ -93,7 +110,7 @@ def _panel(active: str, scale: float, accent: tuple[int, int, int]) -> Image.Ima
             draw.line([(stem, py1), (stem, mid), (cx0, mid)], fill=_INK, width=line, joint="curve")
     # Light accents (Reference orange) need dark text on the active node.
     active_text = _INK if 0.299 * accent[0] + 0.587 * accent[1] + 0.114 * accent[2] > 160 else _WHITE
-    for key, label, _depth, _parent, _dashed_link in _ROWS:
+    for key, label, _depth, _parent, _dashed_link in rows:
         x0, y0, x1, y1 = boxes[key]
         on = key == active
         draw.rounded_rectangle((x0, y0, x1, y1), radius=4 * scale, fill=accent if on else _WHITE, outline=_INK, width=line)
@@ -101,14 +118,23 @@ def _panel(active: str, scale: float, accent: tuple[int, int, int]) -> Image.Ima
     return panel
 
 
-def _make_room(image: Image.Image, keep_out: tuple[int, int, int, int]) -> Image.Image:
-    """Move the content into the bottom-right margin corner, shrinking it until none lies in ``keep_out``."""
-    arr = np.asarray(image)
-    mask = np.abs(arr.astype(np.int16) - np.asarray(PRINT_BG_RGB, dtype=np.int16)).max(axis=2) > _BG_TOL
+def _make_room(image: Image.Image, keep_out: tuple[int, int, int, int], mask: np.ndarray | None = None) -> Image.Image:
+    """Move the content into the bottom-right margin corner, shrinking it until none lies in ``keep_out``.
+
+    ``mask`` replaces the image's own content mask so pictures of one set move identically.
+    """
+    shared = mask is not None
+    if mask is None:
+        arr = np.asarray(image)
+        mask = np.abs(arr.astype(np.int16) - np.asarray(PRINT_BG_RGB, dtype=np.int16)).max(axis=2) > _BG_TOL
     if not mask.any():
         return image
     ys, xs = np.where(mask)
     cx0, cy0, cx1, cy1 = int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1
+    # Cropped close-ups (straight top or left content edge) would show a hard frame when moved; the panel covers them instead.
+    edge = mask[cy0:cy1, cx0:cx1]
+    if not shared and max(edge[:_CROP_DEPTH].mean(axis=1).max(), edge[:, :_CROP_DEPTH].mean(axis=0).max()) > _CROP_EDGE:
+        return image
     kx0, ky0, kx1, ky1 = keep_out
 
     def clear(s: float, ax: float, ay: float) -> bool:
@@ -131,21 +157,38 @@ def _make_room(image: Image.Image, keep_out: tuple[int, int, int, int]) -> Image
     return out
 
 
-def draw_hierarchy(image: Image.Image, active: str, accent: tuple[int, int, int] = _ACCENT) -> Image.Image:
+def node_for(entity: str) -> tuple[str, str | None]:
+    """``(active node, element label)`` for an IFC class: virtual nodes, otherwise an element below the storey."""
+    if entity in NODE_BY_ENTITY:
+        return NODE_BY_ENTITY[entity], None
+    return ELEMENT, entity
+
+
+def draw_hierarchy(
+    image: Image.Image,
+    active: str,
+    accent: tuple[int, int, int] = _ACCENT,
+    element: str | None = None,
+    mask: np.ndarray | None = None,
+) -> Image.Image:
     """Paste the tree with ``active`` highlighted into the top-left corner of ``image``.
 
-    Content reaching into the corner is scaled down towards the bottom right first.
+    ``element`` adds a row with that label below the storey (active node ``"element"``).
+    Content reaching into the corner is scaled down towards the bottom right first;
+    ``mask`` (content of a whole picture set) makes every picture of the set move the same way.
     """
-    if active not in {row[0] for row in _ROWS}:
+    if active not in {row[0] for row in _rows(element)}:
         raise ValueError(f"unknown hierarchy node {active!r}")
     out = image.convert("RGB")
     scale = out.width / 1024
-    big = _panel(active, scale * _SUPERSAMPLE, accent)
-    panel = big.resize((round(big.width / _SUPERSAMPLE), round(big.height / _SUPERSAMPLE)), Image.Resampling.LANCZOS)
+    big = _panel(active, scale * _SUPERSAMPLE, accent, element)
+    # Premultiplied alpha keeps the transparent surround from bleeding dark fringes into the edges.
+    size = (round(big.width / _SUPERSAMPLE), round(big.height / _SUPERSAMPLE))
+    panel = big.convert("RGBa").resize(size, Image.Resampling.LANCZOS).convert("RGBA")
     margin = round((_MARGIN - _PANEL_PAD) * scale)
     gap = round(_GAP * scale)
-    out = _make_room(out, (0, 0, margin + panel.width + gap, margin + panel.height + gap))
-    out.paste(panel, (margin, margin))
+    out = _make_room(out, (0, 0, margin + panel.width + gap, margin + panel.height + gap), mask)
+    out.paste(panel, (margin, margin), panel)
     return out
 
 
@@ -155,6 +198,7 @@ def apply_hierarchy(
     active: str,
     accent: tuple[int, int, int] = _ACCENT,
     watermark: bool = False,
+    element: str | None = None,
 ) -> None:
     """Draw the tree onto a placed catalog PNG and its CMYK print TIF in place.
 
@@ -162,12 +206,12 @@ def apply_hierarchy(
     """
     with Image.open(png) as im:
         dpi = im.info.get("dpi")
-        drawn = draw_hierarchy(im, active, accent)
+        drawn = draw_hierarchy(im, active, accent, element)
     if watermark:
         drawn = _apply_corner_watermark(drawn)
     drawn.save(png, **({"dpi": dpi} if dpi else {}))
     if tif is None:
         return
     with Image.open(tif) as im:
-        drawn = draw_hierarchy(im.convert("RGB"), active, accent)
+        drawn = draw_hierarchy(im.convert("RGB"), active, accent, element)
     save_print_tiff(drawn, tif)

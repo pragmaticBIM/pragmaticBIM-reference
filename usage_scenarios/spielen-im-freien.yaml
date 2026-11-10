@@ -34,12 +34,12 @@ options:
     it: Parco giochi e giardino
     en: Playground and garden
   room_relationships:
-  - from_room_type: pragmaticbim:room-type/wohnungseingang
+  - from_room_type: pragmaticbim:room-type/eingangshalle
     to_room_type: pragmaticbim:room-type/gartenflaeche
   - from_room_type: pragmaticbim:room-type/gartenflaeche
     to_room_type: pragmaticbim:room-type/spielplatz
   adds:
-  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/eingangshalle
   - pragmaticbim:room-type/gartenflaeche
   - pragmaticbim:room-type/spielplatz
 - id: pragmaticbim:scenario-option/spielen-im-freien-none
@@ -60,8 +60,8 @@ options:
     it: Solo giardino
     en: Garden only
   room_relationships:
-  - from_room_type: pragmaticbim:room-type/wohnungseingang
+  - from_room_type: pragmaticbim:room-type/eingangshalle
     to_room_type: pragmaticbim:room-type/gartenflaeche
   adds:
-  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/eingangshalle
   - pragmaticbim:room-type/gartenflaeche

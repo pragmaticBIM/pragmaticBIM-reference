@@ -584,7 +584,6 @@ SAMPLE_CATALOG: list[dict] = [
         "flight_run": 3.0,
         "landing_depth": 1.0,
         "step_count": 9,
-        "IsExternal": False,
         "camera_padding": 1.8,
         "attach_element": "architecture-stair",
     },

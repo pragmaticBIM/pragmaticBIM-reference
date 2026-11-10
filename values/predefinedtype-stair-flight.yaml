@@ -1,0 +1,44 @@
+id: pragmaticbim:value/predefinedtype-stair-flight
+code: STAIR-FLIGHT-TYPE
+name:
+  de: Treppenlauftyp
+  fr: Type de volée d'escalier
+  it: Tipo di rampa di scala
+  en: Stair flight type
+description:
+  de: PredefinedType für IfcStairFlight im Architekturmodell.
+  fr: PredefinedType pour IfcStairFlight dans le modèle d'architecture.
+  it: PredefinedType per IfcStairFlight nel modello di architettura.
+  en: PredefinedType for IfcStairFlight in the architecture model.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - STRAIGHT
+    - WINDER
+    - SPIRAL
+    - CURVED
+    - FREEFORM
+    - USERDEFINED
+  fr:
+    - STRAIGHT
+    - WINDER
+    - SPIRAL
+    - CURVED
+    - FREEFORM
+    - USERDEFINED
+  it:
+    - STRAIGHT
+    - WINDER
+    - SPIRAL
+    - CURVED
+    - FREEFORM
+    - USERDEFINED
+  en:
+    - STRAIGHT
+    - WINDER
+    - SPIRAL
+    - CURVED
+    - FREEFORM
+    - USERDEFINED

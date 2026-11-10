@@ -40,6 +40,7 @@ options:
     to_room_type: pragmaticbim:room-type/gaestezimmer
   - from_room_type: pragmaticbim:room-type/gaestezimmer
     to_room_type: pragmaticbim:room-type/badezimmer
+  target: pragmaticbim:room-type/wohnung
   adds:
   - pragmaticbim:room-type/wohnungseingang
   - pragmaticbim:room-type/gang
@@ -59,6 +60,7 @@ options:
     to_room_type: pragmaticbim:room-type/gang
   - from_room_type: pragmaticbim:room-type/gang
     to_room_type: pragmaticbim:room-type/wohnzimmer
+  target: pragmaticbim:room-type/wohnung
   adds:
   - pragmaticbim:room-type/wohnungseingang
   - pragmaticbim:room-type/gang
