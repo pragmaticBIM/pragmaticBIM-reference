@@ -282,6 +282,59 @@ def test_room_type_equipment() -> None:
         )
 
 
+NO_ELECTRICAL_POINTS = {
+    # shafts and voids
+    "schacht",
+    "steigzone",
+    "abfallschacht",
+    "luftraum",
+    "technikhohlraum",
+    "installationszwischenraum",
+    # elevators
+    "aufzugszone",
+    "bettenaufzug",
+    "warenaufzug",
+    # roofs and green areas
+    "gruendach",
+    "retentionsflaeche",
+    "wartungsdach",
+    # open site areas
+    "strasse",
+    "gartenflaeche",
+}
+OUTDOOR_WITHOUT_IS_EXTERNAL = {"wintergarten"}
+
+
+def _is_outdoor(room_type: dict[str, Any], configuration: dict[str, Any]) -> bool:
+    slug = room_type["id"].split("/")[-1]
+    if slug in OUTDOOR_WITHOUT_IS_EXTERNAL or slug.endswith("-aussen"):
+        return True
+    return any(
+        preset.get("name") == "IsExternal" and preset.get("value") is True
+        for preset in configuration.get("attribute_presets") or []
+    )
+
+
+def test_rooms_have_outlet_and_light_switch() -> None:
+    room_types = _room_types()
+    unknown = {f"pragmaticbim:room-type/{slug}" for slug in NO_ELECTRICAL_POINTS} - set(room_types)
+    assert not unknown, f"exclusion list names unknown room types {sorted(unknown)}"
+    for room_type, configuration in _configurations():
+        functions = {item["function"]: item for item in configuration.get("equipment") or []}
+        slug = room_type["id"].split("/")[-1]
+        if room_type.get("room_type_kind") != "room" or slug in NO_ELECTRICAL_POINTS:
+            assert not {"power_outlet", "light_switch"} & set(functions), configuration["id"]
+            continue
+        assert "power_outlet" in functions, f"{configuration['id']}: no power_outlet"
+        assert "light_switch" in functions, f"{configuration['id']}: no light_switch"
+        outlet = (
+            "pragmaticbim:component/steckdose-aussen"
+            if _is_outdoor(room_type, configuration)
+            else "pragmaticbim:component/steckdose"
+        )
+        assert outlet in functions["power_outlet"]["components"], f"{configuration['id']}: expected {outlet}"
+
+
 def test_room_type_openings() -> None:
     room_types = _room_types()
     for room_type, configuration in _configurations():

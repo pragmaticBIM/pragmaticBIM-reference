@@ -126,6 +126,25 @@ configurations:
         divisor: 4
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
     status: active
+  - id: pragmaticbim:room-type-equipment/lernraum-default-steckdose
+    sort_order: 2
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/lernraum-default-lichtschalter
+    sort_order: 3
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
+    status: active
   openings:
   - id: pragmaticbim:room-type-opening/lernraum-default-zugang
     sort_order: 1

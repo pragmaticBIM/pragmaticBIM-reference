@@ -94,7 +94,7 @@ Equipment and openings reference components and leave position to the generator.
 
 A quantity can scale with the room: `quantity: {min: 1, per: {quantity: net_floor_area, divisor: 6}}` asks for one item per 6 m² of net floor area, at least one. Repeated fixtures such as urinals and showers carry `placement.axis_spacing_min`.
 
-Circulation, voids, parking and outdoor room types carry no equipment; the rooms they lead into declare their doors.
+Beyond electrical points, circulation, voids, parking and outdoor room types carry no equipment; the rooms they lead into declare their doors. Every room lists at least one socket outlet (one per 10 m²) and one light switch; outdoor rooms use the splash-proof outlet. Shafts, voids, elevators, roofs, green areas and streets have none.
 
 Devices that drive room size but are chosen late (operating tables, imaging, machines, server racks, cooling appliances) are reserved with the Geräteplatz element (`architecture-device-space`); plant rooms use the existing MEP elements (boiler, tank, chiller, air handler, pump, switchboard, transformer, generator, UPS).
 

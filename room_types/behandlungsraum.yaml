@@ -138,6 +138,25 @@ configurations:
     - pragmaticbim:component/waschtisch
     quantity: 1
     status: active
+  - id: pragmaticbim:room-type-equipment/behandlungsraum-default-steckdose
+    sort_order: 4
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/behandlungsraum-default-lichtschalter
+    sort_order: 5
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
+    status: active
   openings:
   - id: pragmaticbim:room-type-opening/behandlungsraum-default-zugang
     sort_order: 1
