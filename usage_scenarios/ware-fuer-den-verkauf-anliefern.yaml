@@ -15,7 +15,9 @@ description:
     orari, superficie di deposito e separazione dai percorsi dei clienti.
   en: Stock arrives daily or weekly and is held until sale. Delivery determines delivery times, storage
     area, and separation from customer routes.
-use: pragmaticbim:use/verkauf
+scope: use
+uses:
+- pragmaticbim:use/verkauf
 tags:
 - logistik
 status: active

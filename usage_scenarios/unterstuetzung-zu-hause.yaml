@@ -17,7 +17,9 @@ description:
     Un percorso senza ostacoli decide se tutti raggiungono l'alloggio e i locali necessari.
   en: Residents who need support live on their own and receive home-care visits. A
     step-free route decides whether both reach the dwelling and the rooms they need.
-use: pragmaticbim:use/wohnen
+scope: unit
+uses:
+- pragmaticbim:use/wohnen
 tags:
 - wohnalltag
 status: active

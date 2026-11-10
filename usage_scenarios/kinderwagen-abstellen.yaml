@@ -15,7 +15,9 @@ description:
     se ingombrano l'alloggio o i percorsi comuni.
   en: Households park strollers and mobility aids every day. The place decides whether they block the
     dwelling or shared circulation.
-use: pragmaticbim:use/wohnen
+scope: use
+uses:
+- pragmaticbim:use/wohnen
 tags:
 - ankommen
 status: active

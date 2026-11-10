@@ -15,7 +15,9 @@ description:
     separazione per sesso e igiene.
   en: Athletes change before and after training. Separate changing rooms determine booking, gender separation,
     and hygiene.
-use: pragmaticbim:use/sport
+scope: use
+uses:
+- pragmaticbim:use/sport
 tags:
 - garderobe
 status: active

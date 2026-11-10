@@ -14,7 +14,9 @@ description:
   it: Il personale e gli ospiti si incontrano per riunioni programmate. La dimensione del gruppo determina
     il tipo e il numero dei locali.
   en: Staff and visitors meet for planned discussions. Group size determines the type and number of rooms.
-use: pragmaticbim:use/arbeit
+scope: use
+uses:
+- pragmaticbim:use/arbeit
 tags:
 - besprechung
 status: active

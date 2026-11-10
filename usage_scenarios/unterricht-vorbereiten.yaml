@@ -15,7 +15,9 @@ description:
     lavoro determina tranquillità, scambio tra colleghi e fabbisogno di superficie.
   en: Teachers prepare lessons, mark work, and coordinate between classes. The workplace determines quiet,
     exchange among staff, and area demand.
-use: pragmaticbim:use/bildung
+scope: use
+uses:
+- pragmaticbim:use/bildung
 tags:
 - lehrpersonen
 status: active

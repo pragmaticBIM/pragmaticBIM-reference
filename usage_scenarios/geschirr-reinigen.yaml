@@ -15,7 +15,9 @@ description:
     ritorno, rumore e separazione tra pulito e sporco.
   en: Used dishes are returned and washed during service. The location determines return routes, noise,
     and separation of clean and used items.
-use: pragmaticbim:use/gastronomie
+scope: use
+uses:
+- pragmaticbim:use/gastronomie
 tags:
 - betrieb
 status: active

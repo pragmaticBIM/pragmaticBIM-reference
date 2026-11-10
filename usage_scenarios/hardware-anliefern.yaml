@@ -15,7 +15,9 @@ description:
     percorsi di trasporto, dimensioni dei portoni e zone di sicurezza.
   en: Servers and spare parts are delivered, unpacked, and installed. Delivery determines transport routes,
     door sizes, and security zones.
-use: pragmaticbim:use/rechenzentrum
+scope: use
+uses:
+- pragmaticbim:use/rechenzentrum
 tags:
 - logistik
 status: active

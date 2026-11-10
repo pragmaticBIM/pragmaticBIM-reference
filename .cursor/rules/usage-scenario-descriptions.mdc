@@ -37,6 +37,18 @@ de: Ein Gästezimmer entscheidet, ob Besuche getrennt vom Haushalt schlafen.
 de: Besuch übernachtet gelegentlich. Ein eigener Schlafplatz entscheidet, ob Gäste getrennt vom Haushalt schlafen.
 ```
 
+## Scope
+
+`scope` states the level at which a project answers the scenario. Every scenario sets it.
+
+- `unit`: answered per unit type (container room type, e.g. Wohnung 3.5, Doppelzimmer). The rooms it adds are unit rooms (`default_scope: unit`). It applies to a unit type when the unit type's use is in `uses`. Examples: Schlafen, Kochen und Essen, Gäste übernachten, In der Beherbergung übernachten.
+- `use`: answered once per use. Everything that is neither `unit` nor `project`, including scenarios whose variants choose between a room in the unit and a shared room in the building or on the site (Wäsche waschen, Abstellen).
+- `project`: answered once for the whole project and shared by all uses in `uses`: Zur Einheit gelangen, and scenarios that several uses need in the same way (Abfall entsorgen, Toiletten benutzen).
+
+A `unit` scenario adds no building or site rooms. An exception needs a reason, e.g. a variant that offers a shared room instead of a room in the unit (Arbeiten von zuhause: Gemeinschaftsbüro), and is listed in `tests/test_usage_scenario_scope.py`.
+
+Every unit type lists exactly one use. A mixed unit such as live-work is a Wohnen unit type with extra rooms from `unit` scenarios (e.g. Arbeiten von zuhause), not a second use.
+
 ## Boundaries
 
 - The use (e.g. `pragmaticbim:use/wohnen`) goes in `uses`, never in `tags`. Tags group scenarios within a use. Only main uses (`use_kind: main`) go there; support uses (Erschliessung, Keller, Technik, Parkierung, Allgemeinfläche) name massing volumes, not scenarios.

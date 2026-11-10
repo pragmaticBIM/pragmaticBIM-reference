@@ -14,7 +14,7 @@ definition:
 room_type_kind: room
 room_name: RN-11-10-03
 activity: O
-default_scope: dwelling
+default_scope: unit
 status: active
 configurations:
 - id: pragmaticbim:room-type-configuration/innenhof-default

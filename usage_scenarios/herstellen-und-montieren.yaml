@@ -15,7 +15,9 @@ description:
     del capannone, carroponti e flusso dei materiali.
   en: Products are made in series or as one-offs. The manufacturing concept determines hall size, crane
     runways, and material flow.
-use: pragmaticbim:use/produktion
+scope: use
+uses:
+- pragmaticbim:use/produktion
 tags:
 - fertigung
 status: active

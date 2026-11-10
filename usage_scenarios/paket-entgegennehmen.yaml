@@ -15,7 +15,9 @@ description:
     decide se possono attendere al riparo.
   en: Parcels arrive even when no one is home. The handover point decides whether
     they can wait in a safe place.
-use: pragmaticbim:use/wohnen
+scope: use
+uses:
+- pragmaticbim:use/wohnen
 tags:
 - zustellung
 status: active

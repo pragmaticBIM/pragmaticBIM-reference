@@ -15,7 +15,9 @@ description:
     tempi di allestimento e superficie utile della palestra.
   en: Mats, goals, and apparatus are put away after training. The location of the store determines set-up
     time and usable hall area.
-use: pragmaticbim:use/sport
+scope: use
+uses:
+- pragmaticbim:use/sport
 tags:
 - betrieb
 status: active

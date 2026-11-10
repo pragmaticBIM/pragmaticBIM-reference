@@ -15,7 +15,9 @@ description:
     e se gli alloggi piccoli sono adatti.
   en: Residents sometimes work from home. A room of its own decides quiet and area,
     and whether small dwellings are suitable.
-use: pragmaticbim:use/wohnen
+scope: unit
+uses:
+- pragmaticbim:use/wohnen
 tags:
 - wohnalltag
 status: active

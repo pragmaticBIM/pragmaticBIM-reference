@@ -15,7 +15,9 @@ description:
     superficie e zone di attesa.
   en: Passengers buy tickets and ask for information. Staffed counters determine staffing, area, and waiting
     zones.
-use: pragmaticbim:use/verkehr
+scope: use
+uses:
+- pragmaticbim:use/verkehr
 tags:
 - service
 status: active

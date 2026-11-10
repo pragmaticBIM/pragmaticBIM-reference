@@ -15,7 +15,9 @@ description:
     tranquillità, riservatezza e fabbisogno di superficie.
   en: Staff perform tasks that require sustained concentration. The workplace concept determines quiet,
     privacy, and area demand.
-use: pragmaticbim:use/arbeit
+scope: use
+uses:
+- pragmaticbim:use/arbeit
 tags:
 - arbeiten
 status: active

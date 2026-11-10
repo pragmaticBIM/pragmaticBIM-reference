@@ -14,6 +14,8 @@ definition:
   it: Volume lordo della distribuzione verticale.
   en: Gross volume of the vertical circulation.
 room_type_kind: container
+uses:
+- pragmaticbim:use/erschliessung
 contains:
 - room_type: pragmaticbim:room-type/treppenhaus
 - room_type: pragmaticbim:room-type/aufzugszone
