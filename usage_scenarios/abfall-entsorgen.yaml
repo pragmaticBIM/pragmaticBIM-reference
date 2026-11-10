@@ -1,26 +1,56 @@
 id: pragmaticbim:usage-scenario/abfall-entsorgen
-code: US-WH-04
-sort_order: 13
+legacy_ids:
+- pragmaticbim:usage-scenario/abfall-entsorgen-arbeit
+- pragmaticbim:usage-scenario/abfall-entsorgen-beherbergung
+- pragmaticbim:usage-scenario/abfall-entsorgen-bildung
+- pragmaticbim:usage-scenario/abfall-entsorgen-gastronomie
+- pragmaticbim:usage-scenario/abfall-entsorgen-gesundheit
+- pragmaticbim:usage-scenario/abfall-entsorgen-labor
+- pragmaticbim:usage-scenario/abfall-entsorgen-logistik
+- pragmaticbim:usage-scenario/abfall-entsorgen-produktion
+- pragmaticbim:usage-scenario/abfall-entsorgen-rechenzentrum
+- pragmaticbim:usage-scenario/abfall-entsorgen-sport
+- pragmaticbim:usage-scenario/abfall-entsorgen-verkauf
+- pragmaticbim:usage-scenario/abfall-entsorgen-verkehr
+- pragmaticbim:usage-scenario/abfall-entsorgen-versammlung
+code: US-GE-03
+sort_order: 3
 name:
   de: Abfall entsorgen
-  fr: Évacuation des déchets
-  it: Conferimento dei rifiuti
-  en: Taking out waste
+  fr: Évacuer les déchets
+  it: Conferire i rifiuti
+  en: Disposing of waste
 description:
-  de: Bewohnende bringen ihren Abfall regelmässig weg. Der Sammelort entscheidet über
-    die Weglänge.
-  fr: Les habitants sortent régulièrement leurs déchets. Le point de collecte décide
-    du trajet.
-  it: Gli abitanti portano via regolarmente i rifiuti. Il punto di raccolta decide
-    il percorso.
-  en: Residents take out their waste regularly. The collection point decides the walking
-    distance.
-use: pragmaticbim:use/wohnen
+  de: Nutzende und der Betrieb bringen ihren Abfall regelmässig weg. Der Sammelort und die
+    getrennten Arten entscheiden über Weglänge, Fläche und Lüftung.
+  fr: Les usagers et l'exploitation évacuent régulièrement leurs déchets. Le point de collecte et
+    les fractions séparées déterminent la longueur du trajet, la surface et la ventilation.
+  it: Gli utenti e l'esercizio conferiscono regolarmente i propri rifiuti. Il punto di raccolta e le
+    frazioni separate determinano lunghezza del percorso, superficie e ventilazione.
+  en: Users and the operation take their waste away regularly. The collection point and the
+    separated fractions determine walking distance, area, and ventilation.
+scope: project
+uses:
+- pragmaticbim:use/arbeit
+- pragmaticbim:use/beherbergung
+- pragmaticbim:use/bildung
+- pragmaticbim:use/gastronomie
+- pragmaticbim:use/gesundheit
+- pragmaticbim:use/labor
+- pragmaticbim:use/logistik
+- pragmaticbim:use/produktion
+- pragmaticbim:use/rechenzentrum
+- pragmaticbim:use/sport
+- pragmaticbim:use/verkauf
+- pragmaticbim:use/verkehr
+- pragmaticbim:use/versammlung
+- pragmaticbim:use/wohnen
 tags:
-- haushalt
+- entsorgung
 status: active
 jurisdiction:
 - general
+allows_multiple: true
 options:
 - id: pragmaticbim:scenario-option/abfall-entsorgen
   sort_order: 1
@@ -29,6 +59,8 @@ options:
     fr: Local dédié
     it: Locale dedicato
     en: Dedicated room
+  uses:
+  - pragmaticbim:use/wohnen
   room_relationships:
   - from_room_type: pragmaticbim:room-type/wohnungseingang
     to_room_type: pragmaticbim:room-type/abfallraum
@@ -43,6 +75,8 @@ options:
     fr: Gaine vide-ordures
     it: Condotto rifiuti
     en: Waste chute
+  uses:
+  - pragmaticbim:use/wohnen
   room_relationships:
   - from_room_type: pragmaticbim:room-type/wohnungseingang
     to_room_type: pragmaticbim:room-type/abfallschacht
@@ -57,6 +91,8 @@ options:
     fr: Aire extérieure de collecte des déchets
     it: Area esterna di raccolta rifiuti
     en: Exterior waste collection area
+  uses:
+  - pragmaticbim:use/wohnen
   room_relationships:
   - from_room_type: pragmaticbim:room-type/wohnungseingang
     to_room_type: pragmaticbim:room-type/abfallsammelplatz-aussen
@@ -71,6 +107,8 @@ options:
     fr: Conteneur enterré
     it: Contenitore interrato
     en: Underground waste container
+  uses:
+  - pragmaticbim:use/wohnen
   room_relationships:
   - from_room_type: pragmaticbim:room-type/wohnungseingang
     to_room_type: pragmaticbim:room-type/unterflurcontainer
@@ -78,3 +116,151 @@ options:
   adds:
   - pragmaticbim:room-type/wohnungseingang
   - pragmaticbim:room-type/unterflurcontainer
+- id: pragmaticbim:scenario-option/abfall-entsorgen-kehricht
+  legacy_ids:
+  - pragmaticbim:scenario-option/abfall-entsorgen-arbeit-kehricht
+  - pragmaticbim:scenario-option/abfall-entsorgen-beherbergung-kehricht
+  - pragmaticbim:scenario-option/abfall-entsorgen-bildung-kehricht
+  - pragmaticbim:scenario-option/abfall-entsorgen-gastronomie-kehricht
+  - pragmaticbim:scenario-option/abfall-entsorgen-gesundheit-kehricht
+  - pragmaticbim:scenario-option/abfall-entsorgen-labor-kehricht
+  - pragmaticbim:scenario-option/abfall-entsorgen-logistik-kehricht
+  - pragmaticbim:scenario-option/abfall-entsorgen-produktion-kehricht
+  - pragmaticbim:scenario-option/abfall-entsorgen-rechenzentrum-kehricht
+  - pragmaticbim:scenario-option/abfall-entsorgen-sport-kehricht
+  - pragmaticbim:scenario-option/abfall-entsorgen-verkauf-kehricht
+  - pragmaticbim:scenario-option/abfall-entsorgen-verkehr-kehricht
+  - pragmaticbim:scenario-option/abfall-entsorgen-versammlung-kehricht
+  sort_order: 5
+  name:
+    de: Kehricht
+    fr: Déchets résiduels
+    it: Rifiuti residui
+    en: Residual waste
+  uses:
+  - pragmaticbim:use/arbeit
+  - pragmaticbim:use/beherbergung
+  - pragmaticbim:use/bildung
+  - pragmaticbim:use/gastronomie
+  - pragmaticbim:use/gesundheit
+  - pragmaticbim:use/labor
+  - pragmaticbim:use/logistik
+  - pragmaticbim:use/produktion
+  - pragmaticbim:use/rechenzentrum
+  - pragmaticbim:use/sport
+  - pragmaticbim:use/verkauf
+  - pragmaticbim:use/verkehr
+  - pragmaticbim:use/versammlung
+  adds:
+  - pragmaticbim:room-type/abfallraum
+- id: pragmaticbim:scenario-option/abfall-entsorgen-papier
+  legacy_ids:
+  - pragmaticbim:scenario-option/abfall-entsorgen-arbeit-papier
+  - pragmaticbim:scenario-option/abfall-entsorgen-beherbergung-papier
+  - pragmaticbim:scenario-option/abfall-entsorgen-bildung-papier
+  - pragmaticbim:scenario-option/abfall-entsorgen-gastronomie-papier
+  - pragmaticbim:scenario-option/abfall-entsorgen-gesundheit-papier
+  - pragmaticbim:scenario-option/abfall-entsorgen-labor-papier
+  - pragmaticbim:scenario-option/abfall-entsorgen-logistik-papier
+  - pragmaticbim:scenario-option/abfall-entsorgen-produktion-papier
+  - pragmaticbim:scenario-option/abfall-entsorgen-rechenzentrum-papier
+  - pragmaticbim:scenario-option/abfall-entsorgen-sport-papier
+  - pragmaticbim:scenario-option/abfall-entsorgen-verkauf-papier
+  - pragmaticbim:scenario-option/abfall-entsorgen-verkehr-papier
+  - pragmaticbim:scenario-option/abfall-entsorgen-versammlung-papier
+  sort_order: 6
+  name:
+    de: Papier und Karton
+    fr: Papier et carton
+    it: Carta e cartone
+    en: Paper and cardboard
+  uses:
+  - pragmaticbim:use/arbeit
+  - pragmaticbim:use/beherbergung
+  - pragmaticbim:use/bildung
+  - pragmaticbim:use/gastronomie
+  - pragmaticbim:use/gesundheit
+  - pragmaticbim:use/labor
+  - pragmaticbim:use/logistik
+  - pragmaticbim:use/produktion
+  - pragmaticbim:use/rechenzentrum
+  - pragmaticbim:use/sport
+  - pragmaticbim:use/verkauf
+  - pragmaticbim:use/verkehr
+  - pragmaticbim:use/versammlung
+  adds:
+  - pragmaticbim:room-type/abfallraum
+- id: pragmaticbim:scenario-option/abfall-entsorgen-glas
+  legacy_ids:
+  - pragmaticbim:scenario-option/abfall-entsorgen-arbeit-glas
+  - pragmaticbim:scenario-option/abfall-entsorgen-beherbergung-glas
+  - pragmaticbim:scenario-option/abfall-entsorgen-bildung-glas
+  - pragmaticbim:scenario-option/abfall-entsorgen-gastronomie-glas
+  - pragmaticbim:scenario-option/abfall-entsorgen-gesundheit-glas
+  - pragmaticbim:scenario-option/abfall-entsorgen-labor-glas
+  - pragmaticbim:scenario-option/abfall-entsorgen-logistik-glas
+  - pragmaticbim:scenario-option/abfall-entsorgen-produktion-glas
+  - pragmaticbim:scenario-option/abfall-entsorgen-rechenzentrum-glas
+  - pragmaticbim:scenario-option/abfall-entsorgen-sport-glas
+  - pragmaticbim:scenario-option/abfall-entsorgen-verkauf-glas
+  - pragmaticbim:scenario-option/abfall-entsorgen-verkehr-glas
+  - pragmaticbim:scenario-option/abfall-entsorgen-versammlung-glas
+  sort_order: 7
+  name:
+    de: Glas
+    fr: Verre
+    it: Vetro
+    en: Glass
+  uses:
+  - pragmaticbim:use/arbeit
+  - pragmaticbim:use/beherbergung
+  - pragmaticbim:use/bildung
+  - pragmaticbim:use/gastronomie
+  - pragmaticbim:use/gesundheit
+  - pragmaticbim:use/labor
+  - pragmaticbim:use/logistik
+  - pragmaticbim:use/produktion
+  - pragmaticbim:use/rechenzentrum
+  - pragmaticbim:use/sport
+  - pragmaticbim:use/verkauf
+  - pragmaticbim:use/verkehr
+  - pragmaticbim:use/versammlung
+  adds:
+  - pragmaticbim:room-type/abfallraum
+- id: pragmaticbim:scenario-option/abfall-entsorgen-pet
+  legacy_ids:
+  - pragmaticbim:scenario-option/abfall-entsorgen-arbeit-pet
+  - pragmaticbim:scenario-option/abfall-entsorgen-beherbergung-pet
+  - pragmaticbim:scenario-option/abfall-entsorgen-bildung-pet
+  - pragmaticbim:scenario-option/abfall-entsorgen-gastronomie-pet
+  - pragmaticbim:scenario-option/abfall-entsorgen-gesundheit-pet
+  - pragmaticbim:scenario-option/abfall-entsorgen-labor-pet
+  - pragmaticbim:scenario-option/abfall-entsorgen-logistik-pet
+  - pragmaticbim:scenario-option/abfall-entsorgen-produktion-pet
+  - pragmaticbim:scenario-option/abfall-entsorgen-rechenzentrum-pet
+  - pragmaticbim:scenario-option/abfall-entsorgen-sport-pet
+  - pragmaticbim:scenario-option/abfall-entsorgen-verkauf-pet
+  - pragmaticbim:scenario-option/abfall-entsorgen-verkehr-pet
+  - pragmaticbim:scenario-option/abfall-entsorgen-versammlung-pet
+  sort_order: 8
+  name:
+    de: PET und Kunststoff
+    fr: PET et plastique
+    it: PET e plastica
+    en: PET and plastic
+  uses:
+  - pragmaticbim:use/arbeit
+  - pragmaticbim:use/beherbergung
+  - pragmaticbim:use/bildung
+  - pragmaticbim:use/gastronomie
+  - pragmaticbim:use/gesundheit
+  - pragmaticbim:use/labor
+  - pragmaticbim:use/logistik
+  - pragmaticbim:use/produktion
+  - pragmaticbim:use/rechenzentrum
+  - pragmaticbim:use/sport
+  - pragmaticbim:use/verkauf
+  - pragmaticbim:use/verkehr
+  - pragmaticbim:use/versammlung
+  adds:
+  - pragmaticbim:room-type/abfallraum

@@ -40,6 +40,8 @@ de: Besuch übernachtet gelegentlich. Ein eigener Schlafplatz entscheidet, ob G�
 ## Boundaries
 
 - The use (e.g. `pragmaticbim:use/wohnen`) goes in `uses`, never in `tags`. Tags group scenarios within a use. Only main uses (`use_kind: main`) go there; support uses (Erschliessung, Keller, Technik, Parkierung, Allgemeinfläche) name massing volumes, not scenarios.
+- A need that several uses share is one scenario with `scope: project` and all those uses in `uses`, not one copy per use. Write its description for any user group. A variant that fits only some uses lists them in its own `uses`. Leave out a use that never has the need instead of answering it with the «kein» variant.
+- When scenarios or variants are merged or renamed, the old ids go to `legacy_ids` on the new scenario or variant, so projects can migrate their answers.
 - Boundary conditions (Wohnungsmix, Finanzierung) are project goals with `is_boundary_condition: true`, not scenarios.
 - Legal requirements (escape routes, lift obligation) are not scenarios.
 - Only access scenarios add access rooms (Treppenhaus, Aufzugszone, Aussentreppe, Warenaufzug, Bettenaufzug): Zur Einheit gelangen and one explicit scenario per main use, tagged `erschliessung` and listed first. State use-specific needs there as variants (e.g. a separate Warenaufzug in Beherbergung, a Bettenaufzug in Gesundheit) instead of deriving them. Other scenarios measure from `wohnungseingang` or `strasse`.
