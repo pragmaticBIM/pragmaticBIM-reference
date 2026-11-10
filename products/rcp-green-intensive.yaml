@@ -1,0 +1,14 @@
+id: pragmaticbim:product/rcp-green-intensive
+sort_order: 10
+status: active
+name:
+  de: Intensives Gruendach
+  fr: Toiture végétalisée intensive
+  it: Tetto verde intensivo
+  en: Intensive green roof
+product_classification:
+  classification_scheme: AbstractRoofCoveringProduct
+  classification_code: RCP-GREEN-INTENSIVE
+tender_text:
+  de: Begrünter und nutzbarer Deckaufbau über einer abgedichteten Decke mit tiefer Substratschicht, die Rasen, Sträucher oder Bäume trägt. Wurzelschutz, Drän- und Wasserspeicherschicht, Substrat, Bepflanzung sowie Wege oder Terrassen werden auf der Abdichtung aufgebaut, in der Regel mit Bewässerung. Geeignet für begehbare Dachgärten und Höfe auf Decken, die für die höhere wassergesättigte Auflast ausgelegt sind, und erfordert regelmässige Pflege.
+  en: Vegetated and usable covering build-up above a waterproofed deck, with a deep substrate layer that carries lawn, shrubs, or trees. Root barrier, drainage and water-storage layers, substrate, planting, and paths or terraces are built up on the membrane, usually with irrigation. Suitable for accessible roof gardens and courtyards on decks designed for the higher saturated dead load, and requires regular maintenance.

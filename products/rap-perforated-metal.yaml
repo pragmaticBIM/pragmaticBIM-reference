@@ -1,0 +1,14 @@
+id: pragmaticbim:product/rap-perforated-metal
+sort_order: 4
+status: active
+name:
+  de: Lochblech- oder Streckmetallgeländer
+  fr: Garde-corps en tôle perforée ou métal déployé
+  it: Parapetto in lamiera forata o metallo stirato
+  en: Perforated or expanded metal railing
+product_classification:
+  classification_scheme: RailingProduct
+  classification_code: RAP-PERFORATED-METAL
+tender_text:
+  de: Absturzsicherung mit Lochblech- oder Streckmetallfüllung in Metallrahmen. Die vorgefertigten Füllelemente werden in den Rahmen eingesetzt, der am Deckenrand oder auf der Brüstung befestigt und anschliessend verzinkt oder beschichtet wird. Geeignet, wo eine halbtransparente, robuste und nicht überkletterbare Füllung mit Winddurchlässigkeit gefordert ist.
+  en: Fall protection with perforated sheet or expanded metal infill panels in a metal frame. The prefabricated panels are set into the frame, which is anchored to the slab edge or parapet and then galvanized or coated. Suitable where a semi-transparent, robust, non-climbable infill with wind permeability is wanted.

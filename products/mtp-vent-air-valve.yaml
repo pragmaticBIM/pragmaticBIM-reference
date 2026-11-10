@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mtp-vent-air-valve
+sort_order: 7
+status: active
+name:
+  de: Zuluft- / Abluftventil oder Diffusor
+  fr: Bouche de soufflage / d'extraction ou diffuseur
+  it: Valvola di immissione / estrazione o diffusore
+  en: Supply / extract air valve or diffuser
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-VENT-AIR-VALVE
+tender_text:
+  de: Führt dem Raum Zuluft zu oder entnimmt Abluft und verteilt den Luftstrom so, dass zugfreie Verhältnisse und die geforderte Luftqualität erreicht werden. Wird in Decke, Wand oder Boden eingebaut und über Anschlusskasten oder flexible Verbindung an das Kanalnetz angeschlossen, wobei der Volumenstrom über ein verstellbares Element oder eine Volumenstromregeleinheit eingestellt wird. Geeignet für Büro-, Wohn- und Besprechungsräume, wobei die Anzahl der Endgeräte aus dem Raumluftvolumenstrom abgeleitet wird und alle Einstellorgane und Sichtflächen für Einregulierung und Reinigung zugänglich bleiben.
+  en: Delivers supply air to the room or removes extract air from it and distributes the air flow so that draught-free conditions and the required air quality are achieved. Fitted in ceiling, wall, or floor and connected to the duct system through a plenum box or flexible connection, with the flow rate set by an adjustable element or a terminal control box. Suitable for offices, dwellings, and meeting rooms, with the number of terminals derived from the room air flow and with all setting devices and visible surfaces accessible for balancing and cleaning.

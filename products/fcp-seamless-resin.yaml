@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fcp-seamless-resin
+sort_order: 2
+status: active
+name:
+  de: Fugenloser Kunstharzboden
+  fr: Sol en résine sans joints
+  it: Pavimento in resina senza giunti
+  en: Seamless resin floor
+product_classification:
+  classification_scheme: AbstractFloorCoveringProduct
+  classification_code: FCP-SEAMLESS-RESIN
+tender_text:
+  de: Fugenlose Nutzschicht, die flüssig auf einen vorbereiteten Unterlagsboden aufgebracht wird und vor Ort aushärtet. Grundierung, Harzschichten sowie optionale Einstreuung oder Versiegelung werden gerollt, gegossen oder gespachtelt und laufen ohne Fugen in Hohlkehlen an den Wänden aus. Geeignet für Räume mit Anforderungen an Hygiene, Chemikalienbeständigkeit oder Reinigbarkeit und für hohe Geh- und Rollbelastung.
+  en: Jointless wearing surface applied in liquid form onto a prepared screed and cured in place. Primer, resin coats, and optional aggregate broadcast or sealer are rolled, poured, or troweled and continue without joints into coving at the walls. Suitable for rooms with hygiene, chemical resistance, or cleanability requirements and for heavy foot and wheeled traffic.

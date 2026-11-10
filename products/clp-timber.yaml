@@ -1,0 +1,14 @@
+id: pragmaticbim:product/clp-timber
+sort_order: 2
+status: active
+name:
+  de: Holzstütze
+  fr: Colonne en bois
+  it: Pilastro in legno
+  en: Timber column
+product_classification:
+  classification_scheme: ColumnProduct
+  classification_code: CLP-TIMBER
+tender_text:
+  de: Vertikales Tragglied aus Vollholz, Brettschichtholz oder Konstruktionsholz, das Decken- und Dachlasten nach unten weiterleitet. Auf Länge vorgefertigt und vor Ort mit Stahlverbindungsmitteln trocken montiert. Geeignet für Holz- und Hybridtragwerke mit sichtbaren Oberflächen, geringem Eigengewicht und kurzer Montagezeit.
+  en: Vertical load-bearing member of solid, glued laminated, or engineered timber transferring floor and roof loads downwards. Prefabricated to length and erected dry on site with steel connectors. Suitable for timber and hybrid structures where visible surfaces, low dead load, and short erection times are required.

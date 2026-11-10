@@ -1,0 +1,14 @@
+id: pragmaticbim:product/rcp-flat-liquid
+sort_order: 3
+status: active
+name:
+  de: Fluessigkunststoff-Flachdach
+  fr: Toiture plate en résine liquide
+  it: Tetto piano in resina liquida
+  en: Liquid-applied flat roof
+product_classification:
+  classification_scheme: AbstractRoofCoveringProduct
+  classification_code: RCP-FLAT-LIQUID
+tender_text:
+  de: Fugenlose Abdichtungsschicht für Flach- und flach geneigte Dächer, die flüssig auf den vorbereiteten Untergrund aufgebracht wird und vor Ort aushärtet. Das Harz wird in mehreren Lagen gerollt, gestrichen oder gespritzt, meist mit eingelegtem Verstärkungsvlies, und läuft ohne Stösse über Aufkanten und Durchdringungen. Geeignet für kleine, geometrisch komplexe Dachflächen, detailreiche Anschlüsse und Sanierungen, bei denen Bahnen nicht zuverlässig verlegt werden können.
+  en: Seamless weatherproofing layer for flat and low-slope roofs, applied in liquid form onto the prepared substrate and cured in place. Resin is rolled, brushed, or sprayed in several coats, usually with an embedded reinforcing fleece, and continues without joints over upstands and penetrations. Suitable for small, geometrically complex roof areas, detail-rich junctions, and refurbishment where sheet membranes cannot be dressed reliably.

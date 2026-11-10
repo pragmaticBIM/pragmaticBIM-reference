@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-special
+sort_order: 7
+status: active
+name:
+  de: Spezialtuer
+  fr: Porte spéciale
+  it: Porta speciale
+  en: Special door system
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-SPECIAL
+tender_text:
+  de: Auftragsbezogen gefertigtes Türprodukt für eine Zugangsöffnung mit Anforderungen über ein übliches Blatt-Zarge-System hinaus, zum Beispiel Karusselleingang, luftdichte oder druckfeste Tür, hochwirksame Schallschutztür, abschirmende Tür oder Schaufenster-Eingangsanlage. Wird als komplette Einheit mit Rahmen, Dichtungen, Antrieb und Steuerung auf Mass hergestellt, in der vorbereiteten Öffnung gesetzt und ausgerichtet und mit ihren Bedien- und Sicherheitsfunktionen in Betrieb genommen. Geeignet, wo die Öffnung Zugang mit einer bestimmten Trennfunktion verbinden muss; geforderte Leistung, Betriebsart und Unterhaltskonzept sind je Fall zu beschreiben.
+  en: Purpose-made door product for an access opening with requirements beyond a standard leaf and frame, for example a revolving entrance, an airtight or pressure-resistant door, a high-performance acoustic door, a shielding door, or a shopfront entrance assembly. Manufactured to order as a complete unit including frame, seals, drive, and control, set and levelled in the prepared opening and commissioned with its operating and safety functions. Suitable where the opening has to combine access with a specific separating duty; the required performance, operating mode, and maintenance regime must be stated per case.

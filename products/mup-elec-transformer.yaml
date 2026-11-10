@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mup-elec-transformer
+sort_order: 1
+status: active
+name:
+  de: Transformator
+  fr: Transformateur
+  it: Trasformatore
+  en: Transformer
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-ELEC-TRANSFORMER
+tender_text:
+  de: Wandelt die einspeisende Mittelspannung auf das für die Gebäudeverteilung erforderliche Niederspannungsniveau und versorgt die Hauptverteilung. Lieferung als werkseitig montierte und geprüfte Einheit, Aufstellung auf lastverteilendem Fundament in einem eigenen Transformatorenraum, Anschluss an Mittelspannungsschaltanlage und Niederspannungsverteilung, Temperatur- und Störzustände an die Gebäudeautomation gemeldet. Geeignet für Gebäude mit eigener Übergabestation; erfordert Transportweg, Freiräume für Kühlluft und Wartung sowie Vorsorge für einen Austausch innerhalb der Nutzungsdauer.
+  en: Converts the incoming medium-voltage supply to the low-voltage level required for building distribution and feeds the main distribution board. Delivered as a factory-assembled and tested unit, set on a load-distributing base in a dedicated transformer room and connected to medium-voltage switchgear and low-voltage distribution, with temperature and fault states reported to building automation. Suitable for buildings with their own supply station; requires a transport route, clearances for cooling air and maintenance, and provision for replacement within the service life.

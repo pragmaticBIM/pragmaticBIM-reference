@@ -20,15 +20,15 @@ values:
   - Stahlbetonträger
   - Anderer oder unbekannter Träger
   fr:
-  - Steel beam
-  - Timber beam
-  - Reinforced concrete beam
-  - Other or unknown beam
+  - Poutre en acier
+  - Poutre en bois
+  - Poutre en béton armé
+  - Poutre autre ou inconnue
   it:
-  - Steel beam
-  - Timber beam
-  - Reinforced concrete beam
-  - Other or unknown beam
+  - Trave in acciaio
+  - Trave in legno
+  - Trave in calcestruzzo armato
+  - Trave altra o sconosciuta
   en:
   - Steel beam
   - Timber beam

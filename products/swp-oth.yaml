@@ -1,0 +1,14 @@
+id: pragmaticbim:product/swp-oth
+sort_order: 11
+status: active
+name:
+  de: Sonstige / unbekannte Wand
+  fr: Mur autre ou inconnu
+  it: Parete altra o sconosciuta
+  en: Other / unknown wall separator
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-OTH
+tender_text:
+  de: Platzhalter für Wandprodukte, deren Bauart zum Zeitpunkt der Ausschreibung noch nicht festgelegt oder nicht klassifiziert ist. Funktionale Anforderungen sind gesondert zu beschreiben. Nur in frühen Planungsphasen oder bei unvollständiger Datenlage verwenden.
+  en: Placeholder for wall products whose construction type is not yet fixed or not classified at tender stage. Functional requirements must be stated separately. Use only in early design stages or where data is incomplete.

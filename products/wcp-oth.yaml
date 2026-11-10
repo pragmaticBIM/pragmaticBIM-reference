@@ -1,0 +1,14 @@
+id: pragmaticbim:product/wcp-oth
+sort_order: 10
+status: active
+name:
+  de: Sonstiger / unbekannter Wandbelag
+  fr: Revêtement mural autre ou inconnu
+  it: Rivestimento murale altro o sconosciuto
+  en: Other / unknown wall covering
+product_classification:
+  classification_scheme: AbstractWallCoveringProduct
+  classification_code: WCP-OTH
+tender_text:
+  de: Platzhalter für innere Wandbeläge, deren Produkttyp zum Zeitpunkt der Ausschreibung noch nicht festgelegt oder nicht klassifiziert ist. Funktionale Anforderungen an Oberflächenqualität, mechanische Beanspruchung, Feuchteverhalten, Akustik und Brandverhalten sind gesondert zu beschreiben. Nur in frühen Planungsphasen oder bei unvollständiger Datenlage verwenden.
+  en: Placeholder for interior wall coverings whose product type is not yet fixed or not classified at tender stage. Functional requirements on surface quality, mechanical loading, moisture behaviour, acoustics, and fire behaviour must be stated separately. Use only in early design stages or where data is incomplete.

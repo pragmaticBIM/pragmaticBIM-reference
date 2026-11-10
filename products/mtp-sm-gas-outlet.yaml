@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mtp-sm-gas-outlet
+sort_order: 20
+status: active
+name:
+  de: Gasentnahmestelle
+  fr: Prise de gaz
+  it: Presa gas
+  en: Gas outlet valve
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-SM-GAS-OUTLET
+tender_text:
+  de: Bildet die Entnahmestelle für Gas am Verbrauchsgerät und ermöglicht das manuelle Absperren der Versorgung am Nutzungsort. Wird an der Wand oder im Möbel montiert und an die Gasleitung angeschlossen, mit Absperrorgan und geprüfter Verbindung zum Gerät über feste Leitung oder zugelassenen Schlauch. Geeignet für Küchen, Labors und Heizzentralen, so angeordnet, dass das Absperrorgan sichtbar und erreichbar bleibt, mit Dichtheitsprüfung des Anschlusses vor Inbetriebnahme der Anlage.
+  en: Forms the draw-off point for gas at the appliance and allows the supply to be shut off manually at the point of use. Mounted on the wall or inside furniture and connected to the gas pipework, with a shut-off device and a tested connection to the appliance by rigid pipe or approved hose. Suitable for kitchens, laboratories, and heating plant rooms, positioned so that the shut-off device stays visible and reachable, with a leak test of the connection before the installation is put into service.

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/swp-prefab-conc
+sort_order: 5
+status: active
+name:
+  de: Element-Wand Beton
+  fr: Mur préfabriqué en béton
+  it: Parete prefabbricata in calcestruzzo
+  en: Prefabricated concrete wall
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-PREFAB-CONC
+tender_text:
+  de: Tragende oder nichttragende Wand aus vorgefertigten Betonelementen. Werkseitig hergestellt, vor Ort montiert und verbunden. Geeignet für Aussen- und Innenwände mit hohem Vorfertigungsgrad.
+  en: Load-bearing or non-load-bearing wall from prefabricated concrete elements. Factory-produced, erected and connected on site. Suitable for exterior and interior walls with a high degree of prefabrication.

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/facp-prefab-modular-timber
+sort_order: 10
+status: active
+name:
+  de: Vorgefertigtes modulares Holzfassaden-System
+  fr: Système de façade modulaire préfabriqué en bois
+  it: Sistema di facciata modulare prefabbricato in legno
+  en: Prefabricated modular timber facade system
+product_classification:
+  classification_scheme: EuropeanFacadeCoveringProduct
+  classification_code: FaCP-PREFAB-MODULAR-TIMBER
+tender_text:
+  de: Nichttragendes Fassadenmodul, werkseitig als Holzrahmenelement mit Dämmung, Luftdichtungsschicht, Bekleidung und häufig bereits eingebauten Fenstern gefertigt. Die Module werden geschosshoch angeliefert, eingehoben und punktweise am bestehenden oder neuen Tragwerk verankert; Fugen werden abgedichtet und Installationen vor Ort angeschlossen. Geeignet für Neubau und Sanierung im bewohnten Zustand, wenn Bauzeit und Störung gering bleiben müssen und die Bestandsgeometrie der Fassade vermessen vorliegt.
+  en: Non-load-bearing facade module manufactured in the factory as a timber-framed element with insulation, air-tight layer, cladding, and often windows already fitted. The modules are delivered storey-high, lifted into place, and anchored at discrete points to the existing or new load-bearing structure, with joints sealed and services connected on site. Suitable for new build and for retrofit of occupied buildings where site time and disruption must stay minimal and the existing facade geometry has been surveyed.

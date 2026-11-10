@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-wood
+sort_order: 1
+status: active
+name:
+  de: Holztuer
+  fr: Porte en bois
+  it: Porta in legno
+  en: Wood door system
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-WOOD
+tender_text:
+  de: Türkonstruktion mit einem Blatt aus Vollholz oder Holzwerkstoffplatte in passender Zarge, die eine Zugangsöffnung in einer Wand oder Trennwand verschliesst. Blatt und Zarge werden werkseitig gefertigt und oberflächenbehandelt, die Zarge wird in der Öffnung befestigt und vermörtelt oder ausgeschäumt, danach wird das Blatt eingehängt und Beschläge, Dichtungen und Bodenanschluss werden eingestellt. Geeignet für innere Zugangsöffnungen mit Anforderungen an Schall-, Rauch- oder Brandabschnittstrennung sowie für geschützte Eingänge; Blattoberfläche und Beschläge müssen der erwarteten Beanspruchung genügen.
+  en: Door assembly with a leaf of solid timber or wood-based board in a matching frame, closing an access opening in a wall or partition. Leaf and frame are produced and finished in the factory, the frame is fixed into the opening and grouted or foamed, then the leaf is hung and hardware, seals, and floor closure are adjusted. Suitable for interior access openings with acoustic, smoke, or fire compartmentation duty and for sheltered entrances; leaf surface and hardware have to withstand the expected traffic.

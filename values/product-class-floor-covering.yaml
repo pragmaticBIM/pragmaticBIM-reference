@@ -28,31 +28,31 @@ values:
   - Doppelboden / Hohlraumboden
   - Sonstiger / unbekannter Bodenbelag
   fr:
-  - Subfloor / leveling layer
-  - Seamless resin floor
-  - Textile carpet
-  - Vinyl / LVT floor
-  - Linoleum
-  - Natural stone flooring
-  - Artificial stone flooring
-  - Ceramic / porcelain tile floor
-  - Parquet / engineered wood floor
-  - Laminate flooring
-  - Raised / access floor
-  - Other / unknown floor covering
+  - Chape / couche de ragréage
+  - Sol en résine sans joints
+  - Moquette textile
+  - Revêtement de sol vinyle / LVT
+  - Linoléum
+  - Revêtement de sol en pierre naturelle
+  - Revêtement de sol en pierre artificielle
+  - Revêtement de sol en céramique / grès cérame
+  - Parquet / parquet multicouche
+  - Sol stratifié
+  - Faux plancher / plancher creux
+  - Revêtement de sol autre ou inconnu
   it:
-  - Subfloor / leveling layer
-  - Seamless resin floor
-  - Textile carpet
-  - Vinyl / LVT floor
+  - Sottofondo / strato di livellamento
+  - Pavimento in resina senza giunti
+  - Moquette tessile
+  - Pavimento in vinile / LVT
   - Linoleum
-  - Natural stone flooring
-  - Artificial stone flooring
-  - Ceramic / porcelain tile floor
-  - Parquet / engineered wood floor
-  - Laminate flooring
-  - Raised / access floor
-  - Other / unknown floor covering
+  - Pavimento in pietra naturale
+  - Pavimento in pietra artificiale
+  - Pavimento in ceramica / gres porcellanato
+  - Parquet / parquet multistrato
+  - Pavimento in laminato
+  - Pavimento sopraelevato / pavimento cavo
+  - Pavimentazione altra o sconosciuta
   en:
   - Subfloor / leveling layer
   - Seamless resin floor

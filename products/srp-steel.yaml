@@ -1,0 +1,14 @@
+id: pragmaticbim:product/srp-steel
+sort_order: 1
+status: active
+name:
+  de: Stahltreppe
+  fr: Escalier en acier
+  it: Scala in acciaio
+  en: Steel stair
+product_classification:
+  classification_scheme: StairProduct
+  classification_code: SRP-STEEL
+tender_text:
+  de: Stahltreppenlauf für die vertikale Erschliessung zwischen Geschossen, inklusive Podeste und Befestigungen an der umgebenden Struktur. Wangen, Stufen aus Blech oder Gitterrost und Podeste werden vorgefertigt, eingehoben und an Wänden und Decken verschraubt oder verschweisst. Geeignet für Flucht-, Technik- und Aussentreppen sowie für Sanierungen mit leichten, schnell montierten Läufen.
+  en: Stair flight of steel for vertical circulation between levels, including landings and fixings to the surrounding structure. Stringers, treads of plate or grating, and landings are prefabricated, lifted into place, and bolted or welded to walls and slabs. Suitable for escape, technical, and external stairs as well as refurbishment where light, quickly erected flights are required.
