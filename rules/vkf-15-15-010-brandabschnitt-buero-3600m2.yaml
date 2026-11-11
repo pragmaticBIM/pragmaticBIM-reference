@@ -1,0 +1,40 @@
+id: pragmaticbim:rule/vkf-15-15-010-brandabschnitt-buero-3600m2
+code: VKF-15-15-010
+sort_order: 19
+name:
+  de: 'Bürobauten: Brandabschnitt höchstens 3600 m²'
+  en: 'Office buildings: fire compartment at most 3600 m²'
+  fr: 'Bâtiments administratifs : compartiment coupe-feu de 3600 m² au plus'
+  it: 'Edifici amministrativi: compartimento tagliafuoco al massimo 3600 m²'
+description:
+  de: 'In Bürobauten umfasst ein Brandabschnitt ohne besonderen Nachweis höchstens 3600 m². Dazu zählen alle Geschosse,
+    die ohne Feuerwiderstand miteinander verbunden sind. Nutzungen, die zum Büro gehören (z. B. Sitzungszimmer,
+    Archive, Serverräume, Teeküchen), dürfen im selben Abschnitt liegen. Noch nicht prüfbar: Brandabschnitte sind
+    im Modell nicht als Zonen abgelegt.'
+  en: 'In office buildings a fire compartment covers at most 3600 m² without special proof. All storeys connected
+    without fire resistance count together. Uses belonging to the office (e.g. meeting rooms, archives, server rooms,
+    kitchenettes) may share the compartment. Not yet checkable: fire compartments are not stored as zones in the
+    model.'
+  fr: 'Dans les bâtiments administratifs, un compartiment coupe-feu couvre au plus 3600 m² sans justification particulière.
+    Tous les étages reliés sans résistance au feu comptent ensemble. Les affectations liées au bureau (p. ex. salles
+    de séance, archives, salles de serveurs, cuisinettes) peuvent partager le compartiment. Pas encore vérifiable
+    : les compartiments ne sont pas enregistrés comme zones dans le modèle.'
+  it: 'Negli edifici amministrativi un compartimento tagliafuoco copre al massimo 3600 m² senza prova particolare.
+    Contano insieme tutti i piani collegati senza resistenza al fuoco. Gli utilizzi legati all''ufficio (p. es.
+    sale riunioni, archivi, sale server, angoli cottura) possono condividere il compartimento. Non ancora verificabile:
+    i compartimenti non sono registrati come zone nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/storey
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 15-15 Brandschutzabstände, Tragwerke, Brandabschnitte (2015)
+  source_page: 14
+  source_quote: VKF 15-15, Ziff. 3.7.4
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'

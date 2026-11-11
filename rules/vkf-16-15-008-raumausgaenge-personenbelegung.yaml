@@ -1,0 +1,42 @@
+id: pragmaticbim:rule/vkf-16-15-008-raumausgaenge-personenbelegung
+code: VKF-16-15-008
+sort_order: 8
+name:
+  de: Raumausgänge nach Personenbelegung
+  en: Room exits by occupancy
+  fr: Sorties de local selon l'occupation
+  it: Uscite dei locali secondo l'occupazione
+description:
+  de: 'Die Zahl und Breite der Ausgänge eines Raums hängt von der Belegung ab: bis 50 Personen ein Ausgang mit 0.90
+    m; bis 100 Personen zwei mit je 0.90 m; bis 200 Personen drei mit je 0.90 m oder zwei mit 0.90 m und 1.20 m;
+    über 200 Personen mehrere mit je mindestens 1.20 m. In Büro-, Gewerbe- und Industriebauten genügen 0.90 m breite
+    Ausgänge unabhängig von der Belegung. Noch nicht prüfbar: die Personenbelegung fehlt im Modell.'
+  en: 'The number and width of a room''s exits depend on its occupancy: up to 50 people one exit of 0.90 m; up to
+    100 people two of 0.90 m each; up to 200 people three of 0.90 m each or two of 0.90 m and 1.20 m; more than
+    200 people several of at least 1.20 m each. In office, commercial and industrial buildings 0.90 m exits are
+    enough whatever the occupancy. Not yet checkable: occupancy is missing in the model.'
+  fr: 'Le nombre et la largeur des sorties d''un local dépendent de l''occupation : jusqu''à 50 personnes une sortie
+    de 0,90 m ; jusqu''à 100 personnes deux de 0,90 m ; jusqu''à 200 personnes trois de 0,90 m ou deux de 0,90 m
+    et 1,20 m ; plus de 200 personnes plusieurs d''au moins 1,20 m. Dans les bâtiments administratifs, artisanaux
+    et industriels, des sorties de 0,90 m suffisent quelle que soit l''occupation. Pas encore vérifiable : l''occupation
+    manque dans le modèle.'
+  it: 'Numero e larghezza delle uscite di un locale dipendono dall''occupazione: fino a 50 persone un''uscita da
+    0,90 m; fino a 100 persone due da 0,90 m; fino a 200 persone tre da 0,90 m o due da 0,90 m e 1,20 m; oltre 200
+    persone più uscite di almeno 1,20 m. In edifici amministrativi, artigianali e industriali bastano uscite da
+    0,90 m indipendentemente dall''occupazione. Non ancora verificabile: l''occupazione manca nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/architecture-door-exterior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 7
+  source_quote: VKF 16-15, Ziff. 2.4.6
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'

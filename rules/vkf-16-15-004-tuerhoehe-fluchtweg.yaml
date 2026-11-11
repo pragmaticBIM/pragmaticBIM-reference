@@ -1,0 +1,73 @@
+id: pragmaticbim:rule/vkf-16-15-004-tuerhoehe-fluchtweg
+code: VKF-16-15-004
+sort_order: 4
+name:
+  de: 'Türen im Fluchtweg: lichte Höhe mindestens 2.00 m'
+  en: 'Doors on escape routes: clear height at least 2.00 m'
+  fr: 'Portes sur les voies d''évacuation : hauteur libre d''au moins 2,00 m'
+  it: 'Porte sulle vie di fuga: altezza libera di almeno 2,00 m'
+description:
+  de: 'Türen in Fluchtwegen brauchen eine freie Durchgangshöhe von 2.00 m; nutzungsbezogene Abweichungen sind möglich.
+    Die Prüfung liest die Gesamthöhe der Tür (IfcDoor.OverallHeight): Liegt schon diese unter 2.00 m, ist auch die
+    lichte Höhe zu klein.'
+  en: 'Doors on escape routes need a clear passage height of 2.00 m; use-specific deviations are possible. The check
+    reads the overall door height (IfcDoor.OverallHeight): if even that is below 2.00 m, the clear height is too
+    small.'
+  fr: 'Les portes sur les voies d''évacuation doivent offrir une hauteur de passage libre de 2,00 m ; des dérogations
+    liées à l''affectation sont possibles. La vérification lit la hauteur totale de la porte (IfcDoor.OverallHeight)
+    : si elle est déjà inférieure à 2,00 m, la hauteur libre est trop faible.'
+  it: 'Le porte sulle vie di fuga richiedono un''altezza di passaggio libera di 2,00 m; sono possibili deroghe legate
+    all''utilizzo. La verifica legge l''altezza complessiva della porta (IfcDoor.OverallHeight): se già questa è
+    inferiore a 2,00 m, anche l''altezza libera è insufficiente.'
+rule_status: shacl_defined
+severity: warning
+applies_to_elements:
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/architecture-door-exterior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 6
+  source_quote: VKF 16-15, Ziff. 2.4.5
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'
+shacl: |-
+  rule:vkf-16-15-004-tuerhoehe-fluchtweg-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] ,
+          [ sh:prefix "ifc" ; sh:namespace "https://w3id.org/ifc/IFC4_ADD2#"^^xsd:anyURI ] .
+
+  rule:vkf-16-15-004-tuerhoehe-fluchtweg a sh:NodeShape ;
+      sh:name "Türen im Fluchtweg: lichte Höhe mindestens 2.00 m"@de ,
+          "Doors on escape routes: clear height at least 2.00 m"@en ;
+      sh:description "Türen in Fluchtwegen brauchen eine freie Durchgangshöhe von 2.00 m; nutzungsbezogene Abweichungen sind möglich. Die Prüfung liest die Gesamthöhe der Tür (IfcDoor.OverallHeight): Liegt schon diese unter 2.00 m, ist auch die lichte Höhe zu klein."@de ,
+          "Doors on escape routes need a clear passage height of 2.00 m; use-specific deviations are possible. The check reads the overall door height (IfcDoor.OverallHeight): if even that is below 2.00 m, the clear height is too small."@en ;
+      sh:severity sh:Warning ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:vkf-16-15-004-tuerhoehe-fluchtweg-prefixes ;
+          sh:select """
+              SELECT DISTINCT ?this WHERE {
+                  ?this pbs:connection_physical_type ifc:IfcDoor .
+                  { ?this pbs:escape_route_next ?next } UNION { ?previous pbs:escape_route_next ?this }
+              }"""
+      ] ;
+      sh:sparql [
+          a sh:SPARQLConstraint ;
+          sh:prefixes rule:vkf-16-15-004-tuerhoehe-fluchtweg-prefixes ;
+          sh:message "Tür {?value} m hoch (Gesamtmass); lichte Höhe von {?min} m nicht möglich."@de ,
+              "Door {?value} m high (overall); a clear height of {?min} m is not possible."@en ;
+          sh:select """
+              SELECT $this ?value ?min WHERE {
+                  $this pbs:metadata ?m .
+                  ?m pbs:metadata_key "IfcDoor.OverallHeight" ; pbs:metadata_value ?raw .
+                  BIND (xsd:decimal(?raw) AS ?size)
+                  BIND (2.00 AS ?min)
+                  FILTER (BOUND(?size) && ?size < ?min)
+                  BIND (ROUND(?size * 100) / 100 AS ?value)
+              }"""
+      ] .

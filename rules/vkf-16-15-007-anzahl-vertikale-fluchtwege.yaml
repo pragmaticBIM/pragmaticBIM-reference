@@ -1,0 +1,40 @@
+id: pragmaticbim:rule/vkf-16-15-007-anzahl-vertikale-fluchtwege
+code: VKF-16-15-007
+sort_order: 7
+name:
+  de: Anzahl Treppen als vertikale Fluchtwege nach Geschossfläche
+  en: Number of stairs as vertical escape routes by floor area
+  fr: Nombre d'escaliers comme voies d'évacuation verticales selon la surface d'étage
+  it: Numero di scale come vie di fuga verticali secondo la superficie di piano
+description:
+  de: 'Hat ein Geschoss keine genügenden ebenerdigen Ausgänge ins Freie, braucht es bis 900 m² Geschossfläche mindestens
+    einen vertikalen Fluchtweg, bei mehr als 900 m² mindestens zwei. Räume für über 100 Personen sind ebenfalls
+    an zwei vertikale Fluchtwege anzuschliessen, falls keine ausreichenden ebenerdigen Ausgänge bestehen. Noch nicht
+    prüfbar: Geschossfläche und Treppen je Geschoss fehlen im Modell oft.'
+  en: 'A storey without sufficient ground-level exits to the outside needs at least one vertical escape route up
+    to 900 m² of floor area and at least two above 900 m². Rooms for more than 100 people also need two vertical
+    escape routes unless sufficient ground-level exits exist. Not yet checkable: floor area and stairs per storey
+    are often missing in the model.'
+  fr: 'Un étage sans sorties suffisantes de plain-pied vers l''extérieur requiert au moins une voie d''évacuation
+    verticale jusqu''à 900 m² de surface d''étage et au moins deux au-delà. Les locaux de plus de 100 personnes
+    doivent aussi être reliés à deux voies verticales, faute de sorties suffisantes de plain-pied. Pas encore vérifiable
+    : la surface d''étage et les escaliers par étage manquent souvent dans le modèle.'
+  it: 'Un piano senza uscite sufficienti a livello del terreno verso l''esterno richiede almeno una via di fuga
+    verticale fino a 900 m² di superficie di piano e almeno due oltre. Anche i locali per più di 100 persone devono
+    essere collegati a due vie verticali, se mancano uscite sufficienti a livello del terreno. Non ancora verificabile:
+    superficie di piano e scale per piano mancano spesso nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/storey
+- pragmaticbim:element/architecture-stair
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 6
+  source_quote: VKF 16-15, Ziff. 2.4.2
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'
