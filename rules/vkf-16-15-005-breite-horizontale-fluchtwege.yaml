@@ -1,0 +1,33 @@
+id: pragmaticbim:rule/vkf-16-15-005-breite-horizontale-fluchtwege
+code: VKF-16-15-005
+sort_order: 5
+name:
+  de: Horizontale Fluchtwege mindestens 1.20 m breit
+  en: Horizontal escape routes at least 1.20 m wide
+  fr: Voies d'évacuation horizontales d'au moins 1,20 m de large
+  it: Vie di fuga orizzontali larghe almeno 1,20 m
+description:
+  de: 'Korridore und andere horizontale Fluchtwege sind wenigstens 1.20 m breit, gemessen zwischen den Wänden oder
+    Geländern. Eine grössere Personenbelegung kann mehr Breite verlangen. Noch nicht prüfbar: das Modell liefert
+    keine Korridorbreite.'
+  en: 'Corridors and other horizontal escape routes are at least 1.20 m wide, measured between walls or railings.
+    A higher occupancy can require more width. Not yet checkable: the model gives no corridor width.'
+  fr: 'Les couloirs et autres voies d''évacuation horizontales mesurent au moins 1,20 m de large, entre murs ou
+    garde-corps. Une occupation plus élevée peut exiger davantage. Pas encore vérifiable : le modèle ne fournit
+    pas la largeur des couloirs.'
+  it: 'Corridoi e altre vie di fuga orizzontali sono larghi almeno 1,20 m, misurati tra pareti o parapetti. Un''occupazione
+    maggiore può richiedere più larghezza. Non ancora verificabile: il modello non fornisce la larghezza dei corridoi.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 6
+  source_quote: VKF 16-15, Ziff. 2.4.5
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'
