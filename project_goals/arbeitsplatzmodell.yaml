@@ -14,21 +14,13 @@ tag:
   en: Workplace
 description:
   de: |-
-    Das Arbeitsplatzmodell und die Zahl der Arbeitsplätze bestimmen die Bürofläche und den Bedarf an Rückzugs- und Besprechungsräumen.
-
-    Ohne diese Festlegung bleibt offen, wie dicht gearbeitet wird. Bürofläche, Rückzugsräume und die Desk-Sharing-Quote lassen sich dann nicht aus dem Bedarf ableiten.
+    Das Arbeitsplatzmodell und die Zahl der Arbeitsplätze bestimmen die Bürofläche, die Desk-Sharing-Quote und den Bedarf an Rückzugs- und Besprechungsräumen.
   fr: |-
-    Le modèle de poste de travail et le nombre de postes déterminent la surface de bureau et le besoin en espaces de retrait et de réunion.
-
-    Sans cette décision, il reste ouvert à quelle densité l'on travaille. La surface de bureau, les espaces de retrait et le taux de desk sharing ne se déduisent alors plus du besoin.
+    Le modèle de poste de travail et le nombre de postes déterminent la surface de bureau, le taux de desk sharing et le besoin en espaces de retrait et de réunion.
   it: |-
-    Il modello di postazione e il numero di postazioni determinano la superficie d'ufficio e il fabbisogno di spazi di concentrazione e riunione.
-
-    Senza questa decisione resta aperto con quale densità si lavora. Superficie d'ufficio, spazi di concentrazione e quota di desk sharing non si ricavano allora dal fabbisogno.
+    Il modello di postazione e il numero di postazioni determinano la superficie d'ufficio, la quota di desk sharing e il fabbisogno di spazi di concentrazione e riunione.
   en: |-
-    The workplace model and the number of workstations determine the office area and the need for retreat and meeting rooms.
-
-    Without this decision it stays open how densely people work. Office area, retreat rooms, and the desk-sharing ratio then cannot be derived from the need.
+    The workplace model and the number of workstations determine the office area, the desk-sharing ratio, and the need for retreat and meeting rooms.
 status: active
 uses:
 - pragmaticbim:use/arbeit

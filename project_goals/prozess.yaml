@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Der Prozess und der Ausstoss bestimmen Hallenhöhe, Lasten, Materialfluss und die Zahl der Arbeitsplätze.
-
-    Ohne diese Festlegung bleiben Lasten, Hallenhöhe und Materialfluss offen. Die Zahl der Arbeitsplätze lässt sich dann nicht aus dem Ausstoss ableiten.
   fr: |-
     Le procédé et la production déterminent la hauteur de la halle, les charges, le flux de matériaux et le nombre de postes de travail.
-
-    Sans cette décision, charges, hauteur de halle et flux de matériaux restent ouverts. Le nombre de postes ne se déduit alors pas de la production.
   it: |-
     Il processo e la produzione determinano altezza del capannone, carichi, flusso dei materiali e numero di postazioni.
-
-    Senza questa decisione carichi, altezza del capannone e flusso dei materiali restano aperti. Il numero di postazioni non si ricava allora dalla produzione.
   en: |-
     The process and the output determine hall height, loads, material flow, and the number of workstations.
-
-    Without this decision loads, hall height, and material flow stay open. The number of workstations then cannot be derived from the output.
 status: active
 uses:
 - pragmaticbim:use/produktion

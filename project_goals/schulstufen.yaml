@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Die Schulstufe und die Zahl der Lernenden bestimmen Klassenzimmer, Spezialräume, Pausenflächen und Fluchtwege.
-
-    Ohne diese Festlegung bleiben Klassenzimmer, Fachräume und Pausenflächen offen. Die Schule wird dann für eine Stufe gebaut, die sie nicht aufnimmt.
   fr: |-
     Le degré scolaire et le nombre d'apprenants déterminent les salles de classe, les salles spéciales, les surfaces de récréation et les voies d'évacuation.
-
-    Sans cette décision, salles de classe, salles spéciales et surfaces de récréation restent ouvertes. L'école est alors construite pour un degré qu'elle n'accueille pas.
   it: |-
     Il livello scolastico e il numero di discenti determinano aule, locali speciali, superfici di ricreazione e vie di fuga.
-
-    Senza questa decisione aule, locali speciali e superfici di ricreazione restano aperti. La scuola viene allora costruita per un livello che non accoglie.
   en: |-
     The school level and the number of learners determine classrooms, specialist rooms, break areas, and escape routes.
-
-    Without this decision classrooms, specialist rooms, and break areas stay open. The school is then built for a level it does not take.
 status: active
 uses:
 - pragmaticbim:use/bildung

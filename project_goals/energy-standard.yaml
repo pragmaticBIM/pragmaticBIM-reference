@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Festgelegt wird, ob das Gebäude das gesetzliche Minimum erfüllt oder einen Standard wie Minergie, Minergie-P oder Minergie-A erreicht. Der Standard bestimmt Aussenwände, Dächer, Fenster und die Luftdichtheit der Gebäudehülle.
-
-    Ohne diese Festlegung werden Wandstärken und Fenster auf ein Ziel ausgelegt, das später verschärft wird. Die Hülle muss dann nachgedämmt und die Grundrisse müssen angepasst werden.
   fr: |-
     Cette condition-cadre détermine si le bâtiment respecte le minimum légal ou atteint un standard tel que Minergie, Minergie-P ou Minergie-A. Le standard détermine les murs extérieurs, les toitures, les fenêtres et l'étanchéité à l'air de l'enveloppe.
-
-    Sans cette définition, l'épaisseur des murs et les fenêtres sont dimensionnées pour un objectif renforcé par la suite. L'enveloppe doit alors être isolée davantage et les plans d'étage adaptés.
   it: |-
     Questa condizione quadro stabilisce se l'edificio rispetta il minimo legale o raggiunge uno standard come Minergie, Minergie-P o Minergie-A. Lo standard determina pareti esterne, tetti, finestre e tenuta all'aria dell'involucro.
-
-    Senza questa definizione, spessori delle pareti e finestre vengono dimensionati per un obiettivo che in seguito viene inasprito. L'involucro deve allora essere isolato ulteriormente e le planimetrie adattate.
   en: |-
     This framework condition sets whether the building meets the legal minimum or reaches a standard such as Minergie, Minergie-P, or Minergie-A. The standard drives exterior walls, roofs, windows, and the airtightness of the envelope.
-
-    Without it, wall thicknesses and windows are designed for a target that is tightened later. The envelope then needs extra insulation and the floor plans have to be adjusted.
 status: active
 is_boundary_condition: true
 comment: 'Kumulativ. Kein Einfluss auf Anwendungsfälle der Nutzung oder Raumtypen; wirkt auf Aussenwände, Dächer, Fenster und Luftdichtheit (ThermalProperty u_value). Die Stufen setzen ThermalTransmittanceMax als Sollwert. Luftdichtheit n50 (air_tightness_n50) gilt für die Gebäudehülle und braucht noch ein Attribut am Gebäude.'

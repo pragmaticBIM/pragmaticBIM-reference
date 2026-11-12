@@ -49,7 +49,7 @@ def test_surrounding_building_element_is_localized_and_linked() -> None:
     assert attributes["ObjectType"]["allowed_values"] == (
         "pragmaticbim:value/objecttype-surrounding-building"
     )
-    assert attributes["EinspracheRisiko"]["pset"] == "Pset_UmgebungCommon"
+    assert attributes["EinspracheRisiko"]["pset"] == "ePset_SurroundingBuilding"
     assert attributes["EinspracheRisiko"]["allowed_values"] == (
         "pragmaticbim:value/objection-risk"
     )
@@ -86,7 +86,7 @@ def test_surrounding_building_generator_creates_three_gross_volumes() -> None:
         assert proxy.PredefinedType == "USERDEFINED"
 
     risks = [
-        get_psets(proxy)["Pset_UmgebungCommon"]["EinspracheRisiko"] for proxy in proxies
+        get_psets(proxy)["ePset_SurroundingBuilding"]["EinspracheRisiko"] for proxy in proxies
     ]
     assert risks == ["HOCH", "MITTEL", "TIEF"]
     assert len(ifc_file.by_type("IfcSlab")) >= 1

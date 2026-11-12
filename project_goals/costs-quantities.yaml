@@ -14,19 +14,13 @@ tag:
   en: Costs
 description:
   de: |-
-    Ziel ist nicht ein bestimmter Betrag, sondern eine verlässliche Kostenprognose. Sie beginnt mit nachvollziehbaren Mengen. Geprüft wird, ob Flächen und Volumen belastbar ermittelt, Bauteile einer Kostenstruktur zugeordnet und Vergabepakete eindeutig abgegrenzt werden können. Ohne diese Prüfung bleiben Kostenschätzungen Meinungen: Mengen stimmen nicht, Schnittstellen gehören niemandem, und Nachträge entstehen an den Übergängen zwischen Planung, Vergabe und Ausführung.
+    Ziel ist nicht ein bestimmter Betrag, sondern eine verlässliche Kostenprognose. Sie beginnt mit nachvollziehbaren Mengen. Geprüft wird, ob Flächen und Volumen belastbar ermittelt, Bauteile einer Kostenstruktur zugeordnet und Vergabepakete eindeutig abgegrenzt werden können.
   fr: |-
     Cet objectif est pertinent lorsque quantités, coûts et adjudications doivent être déduits de manière contraignante à partir du modèle. Il rend visible si les surfaces et volumes sont traçables, si les éléments peuvent être classés pour la structure des coûts et si les lots d'appel d'offres ainsi que les interfaces de coûts entre aménagement de base et aménagement locataire sont clairs.
-
-    Sans cette vérification, les estimations de coûts restent des opinions: les quantités ne correspondent pas, les interfaces n'appartiennent à personne, les avenants naissent aux passages entre planification, adjudication et réalisation.
   it: |-
     Questo obiettivo è rilevante quando quantità, costi e gare devono essere ricavati in modo vincolante dal modello. Rende visibile se superfici e volumi sono ricostruibili, se i componenti possono essere classificati per la struttura dei costi e se i lotti di gara nonché le interfacce di costo tra allestimento di base e allestimento locatario sono chiari.
-
-    Senza questa verifica, le stime di costo restano opinioni: le quantità non coincidono, le interfacce non appartengono a nessuno, le varianti nascono ai passaggi tra progettazione, gara e esecuzione.
   en: |-
     The aim is not a particular figure but a cost forecast you can rely on. It starts with traceable quantities. The check establishes whether areas and volumes can be determined robustly, components can be assigned to a cost structure, and procurement packages can be delineated unambiguously.
-
-    Without that check, cost estimates stay opinions: quantities do not add up, no one owns the interfaces, and change orders appear at the transitions between design, procurement, and construction.
 practice:
   de:
     title: Mehrfamilienhaus in einer Woche zum TU-Angebot

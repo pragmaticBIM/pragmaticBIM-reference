@@ -463,7 +463,7 @@ BUILDING_LAW_PARCEL_DEFAULTS: dict[str, Any] = {
     "Name": "1234",
 }
 
-# Surrounding neighbour building — Name = N###; EinspracheRisiko on Pset_UmgebungCommon
+# Surrounding neighbour building — Name = N###; EinspracheRisiko on ePset_SurroundingBuilding
 SURROUNDING_BUILDING_DEFAULTS: dict[str, Any] = {
     "PredefinedType": "USERDEFINED",
     "ObjectType": "Umgebungsbau",

@@ -1,0 +1,163 @@
+id: pragmaticbim:room-type/lehrpersonen-wc
+code: RT-HY-08
+sort_order: 157
+name:
+  de: Lehrpersonen-WC
+  fr: WC enseignants
+  it: WC docenti
+  en: Teachers' toilet
+definition:
+  de: WC für Lehrpersonen, getrennt von den Lernenden.
+  fr: WC pour les enseignants, séparé des élèves et des étudiants.
+  it: WC per i docenti, separato da allievi e studenti.
+  en: Toilet room for teachers, separate from pupils and students.
+room_type_kind: room
+room_name: RN-04-10-05
+activity: S-HYG-WC-TCH
+default_scope: building
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/lehrpersonen-wc-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-interior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-interior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: false
+  - element: pragmaticbim:element/spaces-interior
+    name: LongName
+    value:
+      de: Lehrpersonen-WC
+      fr: WC enseignants
+      it: WC docenti
+      en: Teachers' toilet
+  - element: pragmaticbim:element/spaces-interior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: NNF
+  - element: pragmaticbim:element/spaces-interior
+    name: NetPlannedArea
+    pset: ePset_SpaceRequirement
+    value: 3
+  - element: pragmaticbim:element/spaces-interior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Plattenbelag
+  - element: pragmaticbim:element/spaces-interior
+    name: WallCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Plattenbelag
+  - element: pragmaticbim:element/spaces-interior
+    name: CeilingCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Metallblech-Deckenbekleidung
+      fr: Metal sheet ceiling
+      it: Metal sheet ceiling
+      en: Metal sheet ceiling
+  - element: pragmaticbim:element/spaces-interior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Office
+  - element: pragmaticbim:element/spaces-interior
+    name: InteriorOrExteriorSpace
+    value: INTERNAL
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-interior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  - element: pragmaticbim:element/spaces-interior
+    name: WinterTemperatureMin
+    pset: ePset_SpaceRequirement
+    value: 20
+  - element: pragmaticbim:element/spaces-interior
+    name: WinterTemperatureMax
+    pset: ePset_SpaceRequirement
+    value: 24
+  - element: pragmaticbim:element/spaces-interior
+    name: SummerTemperatureMin
+    pset: ePset_SpaceRequirement
+    value: 22
+  - element: pragmaticbim:element/spaces-interior
+    name: SummerTemperatureMax
+    pset: ePset_SpaceRequirement
+    value: 26
+  - element: pragmaticbim:element/spaces-interior
+    name: RequiredIlluminance
+    pset: ePset_SpaceRequirement
+    value: 300
+  - element: pragmaticbim:element/spaces-interior
+    name: PeakOccupancy
+    pset: ePset_SpaceRequirement
+    value: 1
+  - element: pragmaticbim:element/spaces-interior
+    name: DailyOperatingHours
+    pset: ePset_SpaceRequirement
+    value: 1
+  - element: pragmaticbim:element/spaces-interior
+    name: OutdoorAirFlowRate
+    pset: ePset_SpaceRequirement
+    value: 30
+  equipment:
+  - id: pragmaticbim:room-type-equipment/lehrpersonen-wc-default-wc
+    sort_order: 1
+    function: toilet
+    components:
+    - pragmaticbim:component/wc-wandhaengend
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/lehrpersonen-wc-default-waschtisch
+    sort_order: 2
+    function: washbasin
+    components:
+    - pragmaticbim:component/waschtisch
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/lehrpersonen-wc-default-steckdose
+    sort_order: 3
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/lehrpersonen-wc-default-lichtschalter
+    sort_order: 4
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/lehrpersonen-wc-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/vorraum
+    quantity: 1
+    status: active
+  status: active

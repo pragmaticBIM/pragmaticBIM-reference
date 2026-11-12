@@ -1,0 +1,88 @@
+id: pragmaticbim:room-type/kinderbecken
+code: RT-OU-09
+sort_order: 162
+name:
+  de: Kinderbecken
+  fr: Bassin pour enfants
+  it: Vasca per bambini
+  en: Children's pool
+definition:
+  de: Flaches Becken im Freien, in dem Kinder das Wasser kennenlernen.
+  fr: Bassin peu profond à l'extérieur, où les enfants se familiarisent avec l'eau.
+  it: Vasca poco profonda all'aperto, dove i bambini prendono confidenza con l'acqua.
+  en: Shallow outdoor pool where children get used to the water.
+room_type_kind: room
+room_name: RN-11-20-05
+activity: O-GRN-REC
+default_scope: site
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/kinderbecken-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-exterior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-exterior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: true
+  - element: pragmaticbim:element/spaces-exterior
+    name: LongName
+    value:
+      de: Kinderbecken
+      fr: Bassin pour enfants
+      it: Vasca per bambini
+      en: Children's Pool
+  - element: pragmaticbim:element/spaces-exterior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: BUF
+  - element: pragmaticbim:element/spaces-exterior
+    name: NetPlannedArea
+    pset: ePset_SpaceRequirement
+    value: 40
+  - element: pragmaticbim:element/spaces-exterior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Beton
+      fr: Concrete
+      it: Concrete
+      en: Concrete
+  - element: pragmaticbim:element/spaces-exterior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-exterior
+    name: InteriorOrExteriorSpace
+    value: EXTERNAL
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-exterior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  equipment:
+  - id: pragmaticbim:room-type-equipment/kinderbecken-default-steckdose-aussen
+    sort_order: 1
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose-aussen
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/kinderbecken-default-lichtschalter
+    sort_order: 2
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
+    status: active
+  status: active

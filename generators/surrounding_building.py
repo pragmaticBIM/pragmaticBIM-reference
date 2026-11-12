@@ -353,10 +353,10 @@ def generate_surrounding_building(
         proxy.ObjectType = object_type
 
         props = {k: dict(v) for k, v in base_props.items()}
-        umg = props.setdefault("Pset_UmgebungCommon", {})
+        umg = props.setdefault("ePset_SurroundingBuilding", {})
         umg["EinspracheRisiko"] = risk
         datatypes = {k: dict(v) for k, v in base_datatypes.items()}
-        umg_dt = datatypes.setdefault("Pset_UmgebungCommon", {})
+        umg_dt = datatypes.setdefault("ePset_SurroundingBuilding", {})
         umg_dt.setdefault("EinspracheRisiko", "IfcLabel")
 
         quantities = {k: dict(v) for k, v in base_quantities.items()}

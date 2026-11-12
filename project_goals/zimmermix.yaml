@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Der Zimmermix entscheidet, welche Gäste das Haus aufnehmen kann. Die Zahl der Zimmer und Betten bestimmt Geschossfläche, Bäder und den Aufwand für die Zimmerbewirtschaftung.
-
-    Ohne diese Festlegung bleibt offen, welche Gäste das Haus aufnimmt. Zimmerzahl, Bäder und der Aufwand für die Bewirtschaftung lassen sich dann nicht aus dem Betrieb ableiten.
   fr: |-
     La répartition des chambres décide quels hôtes l'établissement peut accueillir. Le nombre de chambres et de lits détermine la surface de plancher, les salles de bain et l'effort d'entretien des chambres.
-
-    Sans cette décision, il reste ouvert quels hôtes l'établissement accueille. Le nombre de chambres, les salles de bain et l'effort d'entretien ne se déduisent alors pas de l'exploitation.
   it: |-
     La composizione delle camere decide quali ospiti la struttura può accogliere. Il numero di camere e letti determina superficie di piano, bagni e onere di gestione delle camere.
-
-    Senza questa decisione resta aperto quali ospiti la struttura accoglie. Numero di camere, bagni e onere di gestione non si ricavano allora dall'esercizio.
   en: |-
     The room mix decides which guests the house can take in. The number of rooms and beds determines floor area, bathrooms, and housekeeping effort.
-
-    Without this decision it stays open which guests the house takes. The number of rooms, the bathrooms, and the housekeeping effort then cannot be derived from how the house operates.
 status: active
 uses:
 - pragmaticbim:use/beherbergung

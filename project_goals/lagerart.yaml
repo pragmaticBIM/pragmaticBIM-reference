@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Die Lagerart und die Zahl der Palettenstellplätze bestimmen Hallenhöhe, Regale, Rampen und Fördertechnik.
-
-    Ohne diese Festlegung bleiben Hallenhöhe, Regale und Rampen offen. Die Lagerfläche lässt sich dann nicht auf Paletten, Kommissionierung oder Kühlkette auslegen.
   fr: |-
     Le type d'entrepôt et le nombre d'emplacements de palettes déterminent la hauteur de la halle, les rayonnages, les quais et la manutention.
-
-    Sans cette décision, hauteur de halle, rayonnages et quais restent ouverts. La surface de stockage ne peut alors pas être dimensionnée pour les palettes, la préparation de commandes ou la chaîne du froid.
   it: |-
     Il tipo di deposito e il numero di posti pallet determinano altezza del capannone, scaffalature, rampe e sistemi di movimentazione.
-
-    Senza questa decisione altezza del capannone, scaffalature e rampe restano aperti. La superficie di deposito non può allora essere dimensionata per pallet, commissionamento o catena del freddo.
   en: |-
     The storage type and the number of pallet places determine hall height, racking, docks, and conveyor systems.
-
-    Without this decision hall height, racking, and docks stay open. The storage area then cannot be sized for pallets, order picking, or a cold chain.
 status: active
 uses:
 - pragmaticbim:use/logistik

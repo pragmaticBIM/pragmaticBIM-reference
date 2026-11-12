@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Der Ausbaustand bei Übergabe legt fest, wo der Grundausbau endet und der Mieterausbau beginnt. Davon hängen Kostenschnittstellen und die Gebäudetechnik je Mieteinheit ab.
-
-    Ohne diese Festlegung bleibt offen, wer den Ausbau fertigstellt. Kostenschnittstelle und Gebäudetechnik je Mieteinheit werden dann zu spät oder doppelt bestellt.
   fr: |-
     L'état d'aménagement à la remise fixe où s'arrête l'aménagement de base et où commence l'aménagement locataire. Les interfaces de coûts et les installations techniques par unité locative en dépendent.
-
-    Sans cette décision, il reste ouvert qui termine l'aménagement. L'interface de coûts et les installations techniques par unité locative sont alors commandées trop tard, ou deux fois.
   it: |-
     Lo stato di finitura alla consegna stabilisce dove finisce la finitura di base e dove inizia quella dell'inquilino. Ne dipendono le interfacce dei costi e l'impiantistica per unità locativa.
-
-    Senza questa decisione resta aperto chi completa la finitura. L'interfaccia dei costi e l'impiantistica per unità locativa vengono allora commissionate troppo tardi, o due volte.
   en: |-
     The fit-out state at handover sets where the base build ends and the tenant fit-out begins. Cost interfaces and building services per tenant unit depend on it.
-
-    Without this decision it stays open who finishes the fit-out. The cost interface and the building services per tenant unit are then ordered too late, or twice.
 status: active
 uses:
 - pragmaticbim:use/verkauf

@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Der Fahrzeugmix und die Zahl der Parkplätze bestimmen Rampen, Fahrgassen, Ladeinfrastruktur und Brandschutz.
-
-    Ohne diese Festlegung bleiben Rampen, Fahrgassen und Ladepunkte unbestimmt. Die Parkierung lässt sich dann nicht auf die Fahrzeuge auslegen, die tatsächlich kommen.
   fr: |-
     La répartition des véhicules et le nombre de places déterminent les rampes, les voies de circulation, l'infrastructure de recharge et la protection incendie.
-
-    Sans cette décision, rampes, voies de circulation et points de recharge restent indéterminés. Le stationnement ne peut alors pas être dimensionné pour les véhicules qui arrivent réellement.
   it: |-
     La composizione dei veicoli e il numero di posteggi determinano rampe, corsie, infrastruttura di ricarica e protezione antincendio.
-
-    Senza questa decisione rampe, corsie e punti di ricarica restano indeterminati. Il posteggio non può allora essere dimensionato per i veicoli che arrivano davvero.
   en: |-
     The vehicle mix and the number of parking spaces determine ramps, aisles, charging infrastructure, and fire protection.
-
-    Without this decision ramps, aisles, and charging points stay undefined. Parking then cannot be sized for the vehicles that actually arrive.
 status: active
 uses:
 - pragmaticbim:use/parkierung

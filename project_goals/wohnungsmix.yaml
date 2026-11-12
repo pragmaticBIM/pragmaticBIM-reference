@@ -14,21 +14,13 @@ tag:
   en: Mix
 description:
   de: |-
-    Die angebotenen Zimmerzahlen entscheiden, welche Haushaltsgrössen das Gebäude aufnehmen kann. Die Anzahl je Wohnungstyp folgt im Raumprogramm.
-
-    Ohne diese Festlegung bleibt offen, für wen gebaut wird. Wohnungsgrössen und die daraus folgenden Nebenräume lassen sich im Raumprogramm nicht verlässlich festlegen.
+    Die angebotenen Zimmerzahlen entscheiden, welche Haushaltsgrössen das Gebäude aufnehmen kann. Die Anzahl je Wohnungstyp folgt im Raumprogramm. Aus dem Wohnungsmix folgen die Wohnungsgrössen und die Nebenräume.
   fr: |-
-    Les nombres de pièces proposés décident quelles tailles de ménage le bâtiment peut accueillir. Le nombre par type de logement suit dans le programme des locaux.
-
-    Sans cette décision, il reste ouvert pour qui l'on construit. Les tailles de logement et les locaux annexes qui en découlent ne se fixent pas de façon fiable dans le programme des locaux.
+    Les nombres de pièces proposés décident quelles tailles de ménage le bâtiment peut accueillir. Le nombre par type de logement suit dans le programme des locaux. Les tailles de logement et les locaux annexes découlent du mix de logements.
   it: |-
-    I numeri di locali offerti decidono quali grandezze di nucleo domestico l'edificio può accogliere. Il numero per tipo di alloggio segue nel programma dei locali.
-
-    Senza questa decisione resta aperto per chi si costruisce. Le dimensioni degli alloggi e i locali accessori che ne derivano non si fissano in modo affidabile nel programma dei locali.
+    I numeri di locali offerti decidono quali grandezze di nucleo domestico l'edificio può accogliere. Il numero per tipo di alloggio segue nel programma dei locali. Dal mix di alloggi derivano le dimensioni degli alloggi e i locali accessori.
   en: |-
-    The room counts on offer decide which household sizes the building can house. The number per dwelling type follows in the room programme.
-
-    Without this decision it stays open who the building is for. Dwelling sizes and the ancillary rooms that follow from them cannot be set reliably in the room programme.
+    The room counts on offer decide which household sizes the building can house. The number per dwelling type follows in the room programme. Dwelling sizes and ancillary rooms follow from the dwelling mix.
 status: active
 uses:
 - pragmaticbim:use/wohnen

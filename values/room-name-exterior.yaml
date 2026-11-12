@@ -27,6 +27,7 @@ values:
   - Gartenfläche
   - Spielplatz
   - Beckenfläche
+  - Kinderbecken
   - Retentionsfläche
   - Überdachter Fussweg
   - Portikus
@@ -58,6 +59,7 @@ values:
   - Jardin
   - Place de jeux
   - Aire de bassin
+  - Bassin pour enfants
   - Aire de rétention
   - Passage couvert
   - Portique
@@ -89,6 +91,7 @@ values:
   - Giardino
   - Parco giochi
   - Area vasca
+  - Vasca per bambini
   - Area di ritenzione
   - Passaggio coperto
   - Portico
@@ -120,6 +123,7 @@ values:
   - Garden Area
   - Playground
   - Pool Area
+  - Children's Pool
   - Retention Area
   - Covered Walkway
   - Portico

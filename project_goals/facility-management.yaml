@@ -17,26 +17,18 @@ description:
     Festgelegt wird, wer das Gebäude betreibt und mit welchen Systemen: ob der Betreiber Raum- und Anlagenlisten braucht, bewirtschaftete Objekte im 3D-Modell oder einen Import über COBie. Davon hängt ab, welche Informationen am Projektende übergeben werden müssen.
 
     Dazu gehört auch, was verbaut wurde. Ansprüche kommen oft Jahre nach der Übergabe, nach einem Wasserschaden, einem Brand oder einem Produktrückruf. Wer dann belegen kann, welches Produkt wo eingebaut ist, verhandelt über Fakten statt über Vermutungen.
-
-    Ohne diese Festlegung werden Betriebsdaten am Projektende nacherfasst, oft als kostentreibender Nachtrag. Was verbaut ist, lässt sich später nur noch am offenen Bauteil feststellen.
   fr: |-
     Cette condition-cadre fixe qui exploite le bâtiment et avec quels systèmes: listes de locaux et d'installations, objets gérés dans la maquette 3D ou import COBie. Elle détermine quelles informations doivent être remises à la fin du projet.
 
     Elle couvre aussi ce qui a été mis en œuvre. Les prétentions surviennent souvent des années après la remise, à la suite d'un dégât d'eau, d'un incendie ou d'un rappel de produit. Qui peut alors prouver quel produit est installé à quel endroit négocie sur des faits plutôt que sur des suppositions.
-
-    Sans cette décision, les données d'exploitation sont saisies après coup, souvent par un avenant coûteux. Ce qui a été mis en œuvre ne peut ensuite être constaté qu'en ouvrant l'élément.
   it: |-
     Questa condizione quadro stabilisce chi gestisce l'edificio e con quali sistemi: elenchi di locali e impianti, oggetti gestiti nel modello 3D oppure importazione COBie. Ne dipende quali informazioni devono essere consegnate alla fine del progetto.
 
     Ne fa parte anche ciò che è stato messo in opera. Le pretese emergono spesso anni dopo la consegna, in seguito a un danno d'acqua, a un incendio o al richiamo di un prodotto. Chi allora può dimostrare quale prodotto è installato e dove tratta su fatti anziché su supposizioni.
-
-    Senza questa decisione, i dati di esercizio vengono rilevati a posteriori, spesso come variante costosa. Ciò che è stato messo in opera si può poi accertare solo aprendo il componente.
   en: |-
     This framework condition determines who operates the building and with which systems: space and equipment lists, managed objects in the 3D model, or a COBie import. That decision determines which information must be handed over at the end of the project.
 
     This also covers what was installed. Claims often arise years after handover, after water damage, a fire, or a product recall. Whoever can then show which product is installed where negotiates on facts rather than assumptions.
-
-    Without it, operations data is captured afterwards, often as a costly change order. What was installed can then only be established by opening up the component.
 practice:
   de:
     title: Asbest im Fensterkitt

@@ -56,6 +56,10 @@ values:
   - Damen-WC
   - Barrierefreies WC
   - Allgemeines WC
+  - Lehrpersonen-WC
+  - Lernenden-WC
+  - Besucher-WC
+  - Mitarbeiter-WC
   - Duschraum
   - Umkleideraum
   - Schliessfachraum
@@ -95,6 +99,7 @@ values:
   - Bühne
   - Garderobe
   - Sporthalle
+  - Schwimmhalle
   - Werkstatt
   - Produktionshalle
   - Montagebereich
@@ -185,6 +190,10 @@ values:
   - WC femmes
   - WC sans obstacle
   - WC commun
+  - WC enseignants
+  - WC élèves
+  - WC visiteurs
+  - WC personnel
   - Local de douches
   - Vestiaire
   - Local à casiers
@@ -224,6 +233,7 @@ values:
   - Scène
   - Vestiaire
   - Salle de sport
+  - Piscine couverte
   - Atelier
   - Halle de production
   - Zone de montage
@@ -314,6 +324,10 @@ values:
   - WC donne
   - WC privo di barriere
   - WC comune
+  - WC docenti
+  - WC allievi
+  - WC visitatori
+  - WC personale
   - Locale docce
   - Spogliatoio
   - Locale armadietti
@@ -353,6 +367,7 @@ values:
   - Palco
   - Guardaroba
   - Palestra
+  - Piscina coperta
   - Officina
   - Capannone di produzione
   - Zona di montaggio
@@ -443,6 +458,10 @@ values:
   - Female Toilet
   - Accessible Toilet
   - Unisex Toilet
+  - Teachers' toilet
+  - Students' toilet
+  - Visitor toilet
+  - Staff toilet
   - Shower Room
   - Changing Room
   - Locker Room
@@ -482,6 +501,7 @@ values:
   - Stage
   - Cloakroom
   - Sports Hall
+  - Swimming Hall
   - Workshop
   - Production Hall
   - Assembly Area

@@ -14,21 +14,13 @@ tag:
   en: Hall
 description:
   de: |-
-    Der Hallentyp und die Zahl der Spielfelder, Wasserflächen und Zuschauerplätze bestimmen Spannweiten, Garderoben und Fluchtwege.
-
-    Ohne diese Festlegung bleiben Spannweite, Teilbarkeit und Zuschauerplätze offen. Garderoben und Fluchtwege lassen sich dann nicht aus dem Sportbetrieb ableiten.
+    Der Hallentyp und die Zahl der Spielfelder, Wasserflächen und Zuschauerplätze bestimmen Spannweiten, Teilbarkeit, Garderoben und Fluchtwege.
   fr: |-
-    Le type de salle et le nombre de terrains, de surfaces d'eau et de places pour les spectateurs déterminent les portées, les vestiaires et les voies d'évacuation.
-
-    Sans cette décision, portée, divisibilité et places pour les spectateurs restent ouvertes. Vestiaires et voies d'évacuation ne se déduisent alors pas de l'exploitation sportive.
+    Le type de salle et le nombre de terrains, de surfaces d'eau et de places pour les spectateurs déterminent les portées, la divisibilité, les vestiaires et les voies d'évacuation.
   it: |-
-    Il tipo di palestra e il numero di campi, superfici d'acqua e posti per gli spettatori determinano campate, spogliatoi e vie di fuga.
-
-    Senza questa decisione campata, divisibilità e posti per gli spettatori restano aperti. Spogliatoi e vie di fuga non si ricavano allora dall'uso sportivo.
+    Il tipo di palestra e il numero di campi, superfici d'acqua e posti per gli spettatori determinano campate, divisibilità, spogliatoi e vie di fuga.
   en: |-
-    The hall type and the number of courts, water areas, and spectator places determine spans, changing rooms, and escape routes.
-
-    Without this decision span, divisibility, and spectator places stay open. Changing rooms and escape routes then cannot be derived from how the hall is used for sport.
+    The hall type and the number of courts, water areas, and spectator places determine spans, divisibility, changing rooms, and escape routes.
 status: active
 uses:
 - pragmaticbim:use/sport

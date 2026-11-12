@@ -14,7 +14,7 @@ tag:
   en: Sustainability
 description:
   de: |-
-    Ziel ist, Energie-, Material- und Lebenszyklusziele direkt am aktuellen Planungsstand zu prüfen. Gebäudesimulation und Ökobilanz brauchen dafür dieselben Grundlagen wie Kosten und Planung. Leben sie in einem parallelen Datensatz, bewerten sie einen Entwurf, der längst weiterentwickelt wurde, und Nachweise müssen am Ende von Hand nachgeführt werden. Ohne durchgängige Datengrundlage wird die Prüfung zudem leicht zur Verhandlungssache statt zur Faktenfrage.
+    Ziel ist, Energie-, Material- und Lebenszyklusziele direkt am aktuellen Planungsstand zu prüfen. Gebäudesimulation und Ökobilanz brauchen dafür dieselben Grundlagen wie Kosten und Planung. Leben sie in einem parallelen Datensatz, bewerten sie einen Entwurf, der längst weiterentwickelt wurde, und Nachweise müssen am Ende von Hand nachgeführt werden.
   fr: |-
     Cet objectif rend vérifiables les énoncés énergétiques et de cycle de vie sur le modèle. La simulation du bâtiment et l'écobilan ont besoin des mêmes bases géométriques et matérielles que les coûts et la planification; elles ne doivent pas vivre dans un jeu de données parallèle.
 
@@ -25,8 +25,6 @@ description:
     Aiuta a valutare se gli obiettivi di sostenibilità possono essere misurati sulla progettazione effettiva o se esistono solo come intenzione.
   en: |-
     The aim is to check energy, material, and life-cycle targets directly against the current design status. Building simulation and life-cycle assessment need the same foundations as cost planning and design. If they live in a parallel dataset, they assess a design that has long since moved on, and the evidence has to be brought up to date by hand at the end.
-
-    Without a continuous data basis, the check also slips easily from a question of fact into a matter of negotiation.
 practice:
   de:
     title: Ökobilanz auf der Kostenberechnungstypisierung

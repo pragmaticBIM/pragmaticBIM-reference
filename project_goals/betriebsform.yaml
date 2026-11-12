@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Die Betriebsform und die Zahl der Sitzplätze und Mahlzeiten bestimmen Küche, Ausgabe, Lager und Gastraum.
-
-    Ohne diese Festlegung bleibt offen, ob gekocht, ausgegeben oder nur ausgeliefert wird. Küche, Lager und Gastraum werden dann zu gross oder zu klein bestellt.
   fr: |-
     La forme d'exploitation, le nombre de places assises et de repas déterminent la cuisine, la distribution, le stockage et la salle.
-
-    Sans cette décision, il reste ouvert si l'on cuisine, sert ou seulement livre. Cuisine, stockage et salle sont alors commandés trop grands ou trop petits.
   it: |-
     La forma di gestione, il numero di posti a sedere e di pasti determinano cucina, distribuzione, deposito e sala.
-
-    Senza questa decisione resta aperto se si cucina, si distribuisce o si consegna soltanto. Cucina, deposito e sala vengono allora commissionati troppo grandi o troppo piccoli.
   en: |-
     The service model and the number of seats and meals determine kitchen, serving, storage, and dining room.
-
-    Without this decision it stays open whether food is cooked, served, or only delivered. Kitchen, storage, and dining room are then ordered too large or too small.
 status: active
 uses:
 - pragmaticbim:use/gastronomie

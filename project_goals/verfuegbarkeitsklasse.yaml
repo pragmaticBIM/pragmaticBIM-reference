@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Die Verfügbarkeitsklasse nach EN 50600 und die IT-Last bestimmen Redundanz von Strom und Kühlung, Technikflächen und Wartungswege.
-
-    Ohne diese Festlegung bleiben Redundanz, Technikflächen und Wartungswege offen. Strom und Kühlung werden dann für eine Verfügbarkeit ausgelegt, die der Betrieb nicht braucht oder nicht erreicht.
   fr: |-
     La classe de disponibilité selon EN 50600 et la charge IT déterminent la redondance de l'alimentation et du refroidissement, les surfaces techniques et les accès de maintenance.
-
-    Sans cette décision, redondance, surfaces techniques et accès de maintenance restent ouverts. Alimentation et refroidissement sont alors dimensionnés pour une disponibilité que l'exploitation n'exige pas, ou n'atteint pas.
   it: |-
     La classe di disponibilità secondo EN 50600 e il carico IT determinano ridondanza di alimentazione e raffreddamento, superfici tecniche e percorsi di manutenzione.
-
-    Senza questa decisione ridondanza, superfici tecniche e percorsi di manutenzione restano aperti. Alimentazione e raffreddamento vengono allora dimensionati per una disponibilità che l'esercizio non richiede, o non raggiunge.
   en: |-
     The availability class according to EN 50600 and the IT load determine redundancy of power and cooling, plant areas, and maintenance routes.
-
-    Without this decision redundancy, plant areas, and maintenance routes stay open. Power and cooling are then sized for an availability the operation does not need, or does not reach.
 status: active
 uses:
 - pragmaticbim:use/rechenzentrum

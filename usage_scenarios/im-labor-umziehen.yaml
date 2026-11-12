@@ -1,0 +1,71 @@
+id: pragmaticbim:usage-scenario/im-labor-umziehen
+legacy_ids:
+- pragmaticbim:usage-scenario/labor-betreten
+code: US-LA-07
+sort_order: 5
+name:
+  de: Im Labor umziehen
+  fr: Se changer au laboratoire
+  it: Cambiarsi in laboratorio
+  en: Changing in the laboratory
+description:
+  de: Mitarbeitende ziehen Schutzkleidung an, bevor sie die Laborzone betreten. Die Lage entscheidet über
+    Kontaminationsschutz und die Wege in Laborkleidung.
+  fr: Le personnel enfile une tenue de protection avant d'entrer dans la zone de laboratoire. L'emplacement
+    détermine la protection contre la contamination et les parcours en tenue de laboratoire.
+  it: Il personale indossa indumenti protettivi prima di entrare nella zona di laboratorio. La posizione
+    determina la protezione dalla contaminazione e i percorsi in tenuta da laboratorio.
+  en: Staff put on protective clothing before entering the laboratory zone. The location determines
+    contamination protection and routes in laboratory clothing.
+scope: use
+uses:
+- pragmaticbim:use/labor
+tags:
+- personal
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/im-labor-umziehen-zentral
+  sort_order: 1
+  name:
+    de: Zentrale Umkleide
+    fr: Vestiaire central
+    it: Spogliatoio centrale
+    en: Central changing room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/umkleideraum
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/umkleideraum
+- id: pragmaticbim:scenario-option/im-labor-umziehen-dezentral
+  legacy_ids:
+  - pragmaticbim:scenario-option/labor-betreten-changing
+  sort_order: 2
+  name:
+    de: Dezentrale Umkleide
+    fr: Vestiaire décentralisé
+    it: Spogliatoio decentrato
+    en: Decentralised changing room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/umkleideraum
+    to_room_type: pragmaticbim:room-type/naturwissenschaftslabor
+  adds:
+  - pragmaticbim:room-type/umkleideraum
+  - pragmaticbim:room-type/naturwissenschaftslabor
+- id: pragmaticbim:scenario-option/im-labor-umziehen-dezentral-schleuse
+  legacy_ids:
+  - pragmaticbim:scenario-option/labor-betreten-changing-airlock
+  sort_order: 3
+  name:
+    de: Dezentrale Umkleide mit Schleuse
+    fr: Vestiaire décentralisé avec sas
+    it: Spogliatoio decentrato con chiusa
+    en: Decentralised changing room with airlock
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/umkleideraum
+    to_room_type: pragmaticbim:room-type/schleuse
+  adds:
+  - pragmaticbim:room-type/umkleideraum
+  - pragmaticbim:room-type/schleuse

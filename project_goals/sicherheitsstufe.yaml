@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Die biologische Sicherheitsstufe (BSL) und die Zahl der Laborarbeitsplätze und Abzüge bestimmen Zutritt, Lüftung, Druckstufen und Abwasser.
-
-    Ohne diese Festlegung bleiben Zutritt, Druckstufen und Abwasser offen. Ein Labor wird dann für ein Risiko gebaut, das es nicht beherrscht.
   fr: |-
     Le niveau de sécurité biologique (BSL) et le nombre de postes de laboratoire et de hottes déterminent l'accès, la ventilation, les cascades de pression et les eaux usées.
-
-    Sans cette décision, accès, cascades de pression et eaux usées restent ouverts. Un laboratoire est alors construit pour un risque qu'il ne maîtrise pas.
   it: |-
     Il livello di biosicurezza (BSL) e il numero di postazioni di laboratorio e cappe determinano accesso, ventilazione, cascate di pressione e acque reflue.
-
-    Senza questa decisione accesso, cascate di pressione e acque reflue restano aperti. Un laboratorio viene allora costruito per un rischio che non controlla.
   en: |-
     The biosafety level (BSL) and the number of lab workstations and fume hoods determine access, ventilation, pressure cascades, and wastewater.
-
-    Without this decision access, pressure cascades, and wastewater stay open. A lab is then built for a risk it cannot contain.
 status: active
 uses:
 - pragmaticbim:use/labor

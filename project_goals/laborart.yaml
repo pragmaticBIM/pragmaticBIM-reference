@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Nass- und Trockenlabore unterscheiden sich in Wasser- und Abwasseranschlüssen, Lüftung und Oberflächen.
-
-    Ohne diese Festlegung bleiben Anschlüsse, Lüftung und Oberflächen offen. Ein Nasslabor wird dann wie ein Trockenlabor bestellt, oder umgekehrt.
   fr: |-
     Les laboratoires humides et secs diffèrent par les raccordements d'eau et d'eaux usées, la ventilation et les surfaces.
-
-    Sans cette décision, raccordements, ventilation et surfaces restent ouverts. Un laboratoire humide est alors commandé comme un laboratoire sec, ou l'inverse.
   it: |-
     I laboratori umidi e secchi differiscono per allacciamenti d'acqua e acque reflue, ventilazione e superfici.
-
-    Senza questa decisione allacciamenti, ventilazione e superfici restano aperti. Un laboratorio umido viene allora commissionato come uno secco, o il contrario.
   en: |-
     Wet and dry labs differ in water and drainage connections, ventilation, and surfaces.
-
-    Without this decision connections, ventilation, and surfaces stay open. A wet lab is then ordered like a dry lab, or the other way round.
 status: active
 uses:
 - pragmaticbim:use/labor
