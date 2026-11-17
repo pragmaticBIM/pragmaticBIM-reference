@@ -8,74 +8,74 @@ name:
   en: Provide the basis for steelwork tendering
 description:
   de: |-
-    Lage und Hauptabmessungen von Stahlbauteilen im Modell als prüfbare Grundlage für Mengen und Ausschreibung bereitstellen.
+    Die Bauherrschaft bestellt beim Planungsteam eine Stahlbauteilliste mit Lage und Hauptabmessungen aus dem Modell, damit die Stahlbauausschreibung prüfbare Mengen erhält, ohne dass die Werkstattplanung doppelt bezahlt wird.
 
     **Ausgangslage**
     - Angaben zu Stahlbauteilen werden für die Ausschreibung oft manuell aus Modellen, Plänen und Listen zusammengetragen.
-    - Eine zu frühe Detailmodellierung von Geländern, Anschlüssen und Befestigungen bindet Aufwand, obwohl die genaue Konstruktion meist erst in Detail-, Werkstatt- oder Montageplänen festgelegt wird.
+    - Eine zu frühe Detailmodellierung von Geländern, Anschlüssen und Befestigungen verursacht Planungskosten, obwohl die genaue Konstruktion erst in Detail-, Werkstatt- oder Montageplänen festgelegt wird.
 
     **Ziel & Nutzen**
-    - Eindeutige Bezeichnungen, Lage und ausschreibungsrelevante Hauptabmessungen mit geringem Modellierungsaufwand bereitstellen.
-    - Mengen und Positionen nachvollziehbar prüfen, ohne die Werkstattplanung vorwegzunehmen.
+    - Nur die für Mengen und Ausschreibung nötige Detaillierung bestellen und doppelte Planungskosten vermeiden.
+    - Positionen und Mengen im Leistungsverzeichnis über eindeutige Bezeichnungen auf das Modell zurückführen.
 
     **Ablauf**
-    1. Stahlbauteile mit eindeutiger Bezeichnung, räumlicher Zuordnung und den erforderlichen Hauptabmessungen bereitstellen.
-    2. Modellangaben mit den Ausschreibungs- und Detailplänen abstimmen und fehlende oder widersprüchliche Positionen klären.
-    3. Mengen und Bauteilliste ableiten und mit dem Leistungsverzeichnis abgleichen.
+    1. Umfang der Stahlbauteile, geforderte Bezeichnungen und Hauptabmessungen sowie Abgabetermin festlegen und bei Architektur und Tragwerksplanung bestellen.
+    2. Modell und Bauteilliste einfordern und auf eindeutige Bezeichnungen, fehlende oder widersprüchliche Positionen und Übereinstimmung mit Ausschreibungs- und Detailplänen prüfen.
+    3. Bauteilliste freigeben und als Grundlage für Leistungsverzeichnis und Angebotsvergleich weiterverwenden.
 
     **Lieferergebnis**
     - Abgestimmtes Modell und Bauteilliste als nachvollziehbare Grundlage für Mengen und Ausschreibung.
   fr: |-
-    Mettre à disposition l'emplacement et les dimensions principales des éléments métalliques dans la maquette comme base vérifiable pour les quantités et l'appel d'offres.
+    Le maître d'ouvrage commande à l'équipe de planification une liste des éléments métalliques avec leur emplacement et leurs dimensions principales issue de la maquette, afin que l'appel d'offres de la construction métallique dispose de quantités vérifiables sans payer deux fois les études d'atelier.
 
     **Situation de départ**
     - Les données relatives aux éléments métalliques sont souvent rassemblées manuellement depuis les maquettes, plans et listes pour l'appel d'offres.
-    - Une modélisation détaillée trop précoce des garde-corps, raccords et fixations mobilise des ressources alors que la construction précise n'est généralement définie que dans les plans de détail, d'atelier ou de montage.
+    - Une modélisation détaillée trop précoce des garde-corps, raccords et fixations génère des coûts d'étude alors que la construction précise n'est définie que dans les plans de détail, d'atelier ou de montage.
 
     **Objectif et bénéfice**
-    - Fournir des désignations univoques, l'emplacement et les dimensions principales nécessaires à l'appel d'offres avec un effort de modélisation limité.
-    - Contrôler les quantités et les positions de manière traçable sans anticiper les études d'atelier.
+    - Ne commander que le niveau de détail nécessaire aux quantités et à l'appel d'offres et éviter des coûts d'étude à double.
+    - Rattacher les articles et quantités du descriptif à la maquette au moyen de désignations univoques.
 
     **Déroulement**
-    1. Fournir les éléments métalliques avec une désignation univoque, leur rattachement spatial et les dimensions principales requises.
-    2. Accorder les données de la maquette avec les plans d'appel d'offres et de détail et clarifier les positions manquantes ou contradictoires.
-    3. Déduire les quantités et la liste des éléments et les comparer au descriptif des prestations.
+    1. Définir le périmètre des éléments métalliques, les désignations et dimensions principales requises ainsi que le délai de remise, puis les commander à l'architecture et à l'ingénierie structure.
+    2. Exiger la maquette et la liste des éléments et vérifier l'univocité des désignations, les positions manquantes ou contradictoires et la concordance avec les plans d'appel d'offres et de détail.
+    3. Valider la liste des éléments et la réutiliser comme base pour le descriptif et la comparaison des offres.
 
     **Livrable**
     - Maquette et liste d'éléments coordonnées comme base traçable pour les quantités et l'appel d'offres.
   it: |-
-    Mettere a disposizione nel modello la posizione e le dimensioni principali degli elementi in acciaio come base verificabile per quantità e gara.
+    La committenza ordina al gruppo di progettazione un elenco degli elementi in acciaio con posizione e dimensioni principali ricavato dal modello, affinché la gara della carpenteria metallica disponga di quantità verificabili senza pagare due volte la progettazione d'officina.
 
     **Situazione di partenza**
     - Per la gara, i dati degli elementi in acciaio vengono spesso raccolti manualmente da modelli, piani ed elenchi.
-    - Una modellazione dettagliata troppo precoce di parapetti, raccordi e fissaggi richiede risorse, anche se la costruzione precisa viene generalmente definita solo nei piani di dettaglio, d'officina o di montaggio.
+    - Una modellazione dettagliata troppo precoce di parapetti, raccordi e fissaggi genera costi di progettazione, anche se la costruzione precisa viene definita solo nei piani di dettaglio, d'officina o di montaggio.
 
     **Obiettivo e beneficio**
-    - Fornire denominazioni univoche, posizione e dimensioni principali necessarie alla gara con un impegno di modellazione limitato.
-    - Verificare quantità e posizioni in modo tracciabile senza anticipare la progettazione d'officina.
+    - Ordinare solo il livello di dettaglio necessario per quantità e gara ed evitare costi di progettazione doppi.
+    - Ricondurre posizioni e quantità del capitolato al modello tramite denominazioni univoche.
 
     **Svolgimento**
-    1. Fornire gli elementi in acciaio con una denominazione univoca, l'assegnazione spaziale e le dimensioni principali richieste.
-    2. Coordinare i dati del modello con i piani di gara e di dettaglio e chiarire le posizioni mancanti o contraddittorie.
-    3. Ricavare le quantità e l'elenco degli elementi e confrontarli con il capitolato.
+    1. Definire il perimetro degli elementi in acciaio, le denominazioni e le dimensioni principali richieste e il termine di consegna e ordinarli alla progettazione architettonica e strutturale.
+    2. Richiedere modello ed elenco degli elementi e verificare l'univocità delle denominazioni, le posizioni mancanti o contraddittorie e la concordanza con i piani di gara e di dettaglio.
+    3. Approvare l'elenco degli elementi e riutilizzarlo come base per capitolato e confronto delle offerte.
 
     **Risultato della fornitura**
     - Modello ed elenco degli elementi coordinati come base tracciabile per quantità e gara.
   en: |-
-    Provide the location and principal dimensions of steelwork components in the model as a verifiable basis for quantities and tendering.
+    The client orders from the design team a steelwork component schedule with locations and principal dimensions from the model, so that the steelwork tender has verifiable quantities without paying twice for shop design.
 
     **Starting point**
     - Steelwork information is often compiled manually from models, drawings, and schedules for tendering.
-    - Detailing railings, connections, and fixings too early consumes effort even though the exact construction is usually defined later in detail, shop, or installation drawings.
+    - Detailing railings, connections, and fixings too early adds design cost even though the exact construction is only defined later in detail, shop, or installation drawings.
 
     **Goal & benefit**
-    - Provide unique designations, locations, and tender-relevant principal dimensions with limited modelling effort.
-    - Check quantities and positions traceably without pre-empting shop design.
+    - Order only the level of detail needed for quantities and tendering and avoid paying twice for design.
+    - Trace items and quantities in the bill of quantities back to the model through unique designations.
 
     **Process**
-    1. Provide steelwork components with unique designations, spatial assignment, and the required principal dimensions.
-    2. Coordinate model information with tender and detail drawings and resolve missing or contradictory positions.
-    3. Derive quantities and the component schedule and compare them with the bill of quantities.
+    1. Define the steelwork scope, the required designations and principal dimensions, and the submission date, and order them from the architecture and structural design teams.
+    2. Request the model and component schedule and check for unique designations, missing or contradictory positions, and consistency with tender and detail drawings.
+    3. Approve the component schedule and reuse it as the basis for the bill of quantities and offer comparison.
 
     **Deliverable**
     - Coordinated model and component schedule as a traceable basis for quantities and tendering.

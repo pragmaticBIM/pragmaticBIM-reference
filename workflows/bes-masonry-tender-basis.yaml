@@ -8,81 +8,81 @@ name:
   en: Provide the basis for the masonry tender
 description:
   de: |-
-    Mauerwerkswände im Architekturmodell als prüfbare Grundlage für Mengen und Ausschreibung bereitstellen.
+    Die Bauherrschaft bestellt beim Architekturteam eine prüfbare Typen- und Mengenübersicht der Mauerwerkswände, damit die Mauerwerksausschreibung korrekte Nettoflächen sowie Brand- und Schallschutzanforderungen enthält und Nachträge vermieden werden.
 
     **Ausgangslage**
     - Mauerwerksarten, Wanddicken, Öffnungen sowie Brand- und Schallschutzanforderungen werden für die Ausschreibung oft manuell aus Plänen und Bauteillisten zusammengetragen.
     - Uneinheitliche Typen oder nicht berücksichtigte Öffnungen führen zu falschen Mengen, Rückfragen und Nachträgen.
 
     **Ziel & Nutzen**
-    - Tragende und nichttragende Wände über die Produktklasse eindeutig als Mauerwerk abgrenzen.
-    - Berechnete Wandtypen und Nettoflächen als gemeinsame Mengenbasis verwenden.
-    - Brand- und Schallschutzangaben mit den Fachkonzepten abgestimmt in die Ausschreibungsgrundlage übernehmen.
+    - Mauerwerk eindeutig von Beton- und Trockenbauwänden abgrenzen und damit doppelte oder fehlende Positionen zwischen Vergabepaketen vermeiden.
+    - Nettoflächen mit Öffnungsabzügen ausschreiben statt Bruttoflächen aus Plänen.
+    - Brand- und Schallschutzanforderungen vor der Vergabe mit den Fachkonzepten abgleichen.
 
     **Ablauf**
-    1. Freigegebene Wände mit Produktklasse, berechnetem Typ, Dicke, Nettofläche sowie Brand- und Schallschutzangaben bereitstellen.
-    2. Mauerwerksumfang, Wandtypen, Öffnungsabzüge und Anforderungen auf Vollständigkeit und Widersprüche prüfen.
-    3. Wandflächen nach Typ auswerten und mit Leistungsverzeichnis und Ausschreibungsplänen abstimmen.
+    1. Mauerwerksumfang, geforderte Typ-, Mengen-, Brand- und Schallschutzangaben sowie Abgabetermin festlegen und beim Architekturteam bestellen.
+    2. Übersicht einfordern und auf Abgrenzung des Mauerwerks, Öffnungsabzüge, Widersprüche zu den Fachkonzepten und Übereinstimmung mit den Ausschreibungsplänen prüfen.
+    3. Übersicht freigeben und als Grundlage für Leistungsverzeichnis, Angebotsvergleich und Rechnungsprüfung weiterverwenden.
 
     **Lieferergebnis**
     - Architekturmodell mit eindeutig abgegrenzten Mauerwerkswänden und freigegebenen Typ- und Fachangaben
     - Prüfbare Typen- und Mengenübersicht als Grundlage für die Mauerwerksausschreibung
   fr: |-
-    Mettre à disposition les murs en maçonnerie dans la maquette d'architecture comme base vérifiable pour les quantités et l'appel d'offres.
+    Le maître d'ouvrage commande à l'équipe d'architecture une vue d'ensemble vérifiable des types et quantités des murs en maçonnerie, afin que l'appel d'offres de la maçonnerie contienne des surfaces nettes correctes et les exigences incendie et acoustiques et que les avenants soient évités.
 
     **Situation de départ**
     - Les types de maçonnerie, épaisseurs, ouvertures ainsi que les exigences incendie et acoustiques sont souvent rassemblés manuellement à partir des plans et catalogues d'éléments.
     - Des types incohérents ou des ouvertures non prises en compte entraînent des quantités erronées, des questions et des avenants.
 
     **Objectif et bénéfice**
-    - Délimiter sans ambiguïté les murs porteurs et non porteurs en maçonnerie au moyen de la classe de produit.
-    - Utiliser les types de murs calculés et les surfaces nettes comme base quantitative commune.
-    - Reprendre dans la base d'appel d'offres les indications incendie et acoustiques coordonnées avec les concepts spécialisés.
+    - Délimiter clairement la maçonnerie des murs en béton et des cloisons sèches afin d'éviter les articles à double ou manquants entre lots d'adjudication.
+    - Mettre en soumission des surfaces nettes, ouvertures déduites, plutôt que des surfaces brutes relevées sur plans.
+    - Comparer les exigences incendie et acoustiques avec les concepts spécialisés avant l'adjudication.
 
     **Déroulement**
-    1. Fournir les murs validés avec classe de produit, type calculé, épaisseur, surface nette ainsi qu'indications incendie et acoustiques.
-    2. Contrôler l'exhaustivité et la cohérence du périmètre de maçonnerie, des types de murs, des déductions d'ouvertures et des exigences.
-    3. Quantifier les surfaces de murs par type et les coordonner avec le devis et les plans d'appel d'offres.
+    1. Définir le périmètre de la maçonnerie, les données requises sur les types, les quantités, la protection incendie et l'acoustique ainsi que le délai de remise, puis les commander à l'équipe d'architecture.
+    2. Exiger la vue d'ensemble et vérifier la délimitation de la maçonnerie, les déductions d'ouvertures, l'absence de contradictions avec les concepts spécialisés et la concordance avec les plans d'appel d'offres.
+    3. Valider la vue d'ensemble et la réutiliser comme base pour le descriptif, la comparaison des offres et le contrôle des factures.
 
     **Livrable**
     - Maquette d'architecture avec murs en maçonnerie clairement délimités et indications de type et techniques validées
     - Vue d'ensemble vérifiable des types et quantités comme base pour l'appel d'offres de la maçonnerie
   it: |-
-    Mettere a disposizione nel modello di architettura le pareti in muratura come base verificabile per le quantità e la gara.
+    La committenza ordina allo studio di architettura un quadro verificabile di tipi e quantità delle pareti in muratura, affinché la gara delle opere in muratura contenga superfici nette corrette e i requisiti antincendio e acustici ed evitare varianti.
 
     **Situazione di partenza**
     - Tipi di muratura, spessori, aperture e requisiti antincendio e acustici vengono spesso raccolti manualmente da piani e cataloghi dei componenti.
     - Tipi incoerenti o aperture non considerate causano quantità errate, domande e varianti.
 
     **Obiettivo e beneficio**
-    - Delimitare in modo univoco le pareti portanti e non portanti in muratura mediante la classe di prodotto.
-    - Utilizzare i tipi di parete calcolati e le superfici nette come base quantitativa comune.
-    - Integrare nella base di gara le indicazioni antincendio e acustiche coordinate con i concetti specialistici.
+    - Delimitare chiaramente la muratura dalle pareti in calcestruzzo e dalle costruzioni a secco, evitando posizioni doppie o mancanti tra lotti di aggiudicazione.
+    - Mettere a gara superfici nette con deduzione delle aperture anziché superfici lorde ricavate dai piani.
+    - Confrontare i requisiti antincendio e acustici con i concetti specialistici prima dell'aggiudicazione.
 
     **Svolgimento**
-    1. Fornire le pareti approvate con classe di prodotto, tipo calcolato, spessore, superficie netta e indicazioni antincendio e acustiche.
-    2. Verificare completezza e coerenza del perimetro delle murature, dei tipi di parete, delle deduzioni per aperture e dei requisiti.
-    3. Quantificare le superfici delle pareti per tipo e coordinarle con il capitolato e i piani di gara.
+    1. Definire il perimetro delle murature, i dati richiesti su tipi, quantità, protezione antincendio e acustica e il termine di consegna e ordinarli allo studio di architettura.
+    2. Richiedere il quadro e verificare la delimitazione delle murature, le deduzioni per aperture, l'assenza di contraddizioni con i concetti specialistici e la concordanza con i piani di gara.
+    3. Approvare il quadro e riutilizzarlo come base per capitolato, confronto delle offerte e controllo delle fatture.
 
     **Risultato della fornitura**
     - Modello di architettura con pareti in muratura chiaramente delimitate e indicazioni di tipo e tecniche approvate
     - Quadro verificabile di tipi e quantità come base per la gara delle opere in muratura
   en: |-
-    Provide masonry walls in the architecture model as a verifiable basis for quantities and tendering.
+    The client orders from the architecture team a verifiable overview of masonry wall types and quantities, so that the masonry tender contains correct net areas and fire and acoustic requirements and variations are avoided.
 
     **Starting point**
     - Masonry types, wall thicknesses, openings, and fire and acoustic requirements are often compiled manually from drawings and component schedules.
     - Inconsistent types or openings that are not accounted for lead to incorrect quantities, queries, and variations.
 
     **Goal & benefit**
-    - Delimit load-bearing and non-load-bearing masonry walls unambiguously through the product class.
-    - Use calculated wall types and net areas as a shared quantity basis.
-    - Include fire and acoustic information coordinated with the discipline concepts in the tender basis.
+    - Separate masonry clearly from concrete and drywall partitions and so avoid duplicate or missing items between procurement packages.
+    - Tender net areas with opening deductions instead of gross areas taken from drawings.
+    - Reconcile fire and acoustic requirements with the discipline concepts before award.
 
     **Process**
-    1. Provide approved walls with product class, calculated type, thickness, net area, and fire and acoustic information.
-    2. Check the masonry scope, wall types, opening deductions, and requirements for completeness and contradictions.
-    3. Quantify wall areas by type and coordinate them with the bill of quantities and tender drawings.
+    1. Define the masonry scope, the required type, quantity, fire, and acoustic information, and the submission date, and order them from the architecture team.
+    2. Request the overview and check the masonry delimitation, opening deductions, contradictions with the discipline concepts, and consistency with the tender drawings.
+    3. Approve the overview and reuse it as the basis for the bill of quantities, offer comparison, and invoice checking.
 
     **Deliverable**
     - Architecture model with clearly delimited masonry walls and approved type and discipline information

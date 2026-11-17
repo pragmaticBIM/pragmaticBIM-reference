@@ -2,87 +2,94 @@ id: pragmaticbim:workflow/bes-concrete-tender-from-model
 code: BES-CONCRETE-TENDER
 sort_order: 11
 name:
-  de: Ausschreibung Betonarbeiten ab Modell
-  fr: Appel d'offres travaux en béton à partir du modèle
-  it: Gara lavori in calcestruzzo dal modello
-  en: Concrete works tender from model
+  de: Grundlage für die Betonausschreibung liefern
+  fr: Fournir la base pour l'appel d'offres des travaux en béton
+  it: Fornire la base per la gara delle opere in calcestruzzo
+  en: Provide the basis for the concrete tender
 description:
   de: |-
-    Betonarbeiten im Tragwerksmodell mit ausschreibungsrelevanten Angaben abbilden, damit Mengen und Leistungsverzeichnis aus einer gemeinsamen Grundlage abgeleitet werden können.
+    Die Bauherrschaft bestellt beim Tragwerksplanungsteam ein Modell mit prüfbaren Betonmengen und den ausschreibungsrelevanten Angaben zu Betonsorte, Bewehrung und Oberfläche, damit das Leistungsverzeichnis der Beton- und Stahlbetonarbeiten auf denselben Mengen beruht wie die Planung.
 
     **Ausgangslage**
-    - Mengen und Bauteilangaben für Betonarbeiten werden oft manuell aus Plänen übertragen.
-    - Für NPK-Position 211.5 fehlen im Modell häufig die ausschreibungsrelevanten Eigenschaften zu Bewehrung, Oberfläche und Betonqualität.
+    - Betonmengen und Bauteilangaben werden für die Ausschreibung oft manuell aus Plänen übertragen; Übertragungsfehler führen zu falschen Mengen und Nachträgen.
+    - Für die Beton- und Stahlbetonarbeiten (BKP 211.5) fehlen im Modell häufig Angaben zu Bewehrung, Oberfläche und Betonsorte, sodass sich die Mengen nicht nach Ausschreibungspositionen auswerten lassen.
 
     **Ziel & Nutzen**
-    - Betonbauteile im Tragwerksmodell mit ausschreibungsrelevanten Attributen versehen.
-    - Mengenermittlung und Leistungsverzeichnis direkt aus dem Modell ableiten.
+    - Mengen im Leistungsverzeichnis gegen das Modell prüfen, statt sie erneut ausmessen zu lassen.
+    - Kostentreiber wie Sichtbetonflächen und hohe Bewehrungsgehalte vor der Vergabe sichtbar machen.
 
     **Ablauf**
-    1. Tragwerksmodell mit ausführungsgenauen Betonbauteilen bereitstellen.
-    2. NPK-Eigenschaften je Bauteil im Property Set 211.5 Beton- und Stahlbetonarbeiten erfassen.
-    3. Modell für Mengenermittlung und Ausschreibungsunterlagen exportieren.
+    1. Ausschreibungsumfang, geforderte Angaben zu Betonsorte, Bewehrungsgehalt und Oberfläche sowie Abgabetermin festlegen und beim Tragwerksplanungsteam bestellen.
+    2. Modell und Mengenauszug einfordern und prüfen, ob alle Betonbauteile die geforderten Angaben enthalten und die Mengen mit Ausschreibungsplänen und Kostenvoranschlag übereinstimmen.
+    3. Modell freigeben und die Mengen für Leistungsverzeichnis und Angebotsvergleich weiterverwenden.
 
     **Lieferergebnis**
     - Tragwerksmodell mit prüfbaren Mengen und ausschreibungsrelevanten Angaben zu Beton und Bewehrung.
+    - Mengenauszug nach Betonsorte, Bewehrungsgehalt und Oberfläche als Grundlage für das Leistungsverzeichnis.
   fr: |-
-    Préparer les travaux en béton et béton armé à partir du modèle structurel pour l'appel d'offres.
+    Le maître d'ouvrage commande à l'équipe de planification de la structure une maquette avec des quantités de béton vérifiables et les données utiles à l'appel d'offres sur la sorte de béton, l'armature et la surface, afin que le descriptif des travaux en béton et béton armé repose sur les mêmes quantités que le projet.
 
     **Situation de départ**
-    - Les quantités et données de composants pour les travaux en béton sont souvent reprises manuellement depuis les plans.
-    - Pour la position NPK 211.5, le modèle manque fréquemment des propriétés pertinentes pour l'appel d'offres sur le ferraillage, la surface et la qualité du béton.
+    - Les quantités de béton et les données des éléments sont souvent reprises manuellement depuis les plans ; les erreurs de report entraînent des quantités erronées et des avenants.
+    - Pour les travaux en béton et béton armé (CFC 211.5), la maquette manque souvent des données sur l'armature, la surface et la sorte de béton, de sorte que les quantités ne peuvent pas être évaluées par article d'appel d'offres.
 
     **Objectif et bénéfice**
-    - Attribuer aux éléments en béton du modèle structurel les propriétés pertinentes pour l'appel d'offres.
-    - Déduire le métré et le cahier des charges directement du modèle.
+    - Contrôler les quantités du descriptif par rapport à la maquette au lieu de les faire mesurer à nouveau.
+    - Rendre visibles avant l'adjudication les facteurs de coûts tels que les surfaces en béton apparent et les taux d'armature élevés.
 
     **Déroulement**
-    1. Fournir le modèle structurel avec des éléments en béton conformes à l'exécution.
-    2. Saisir les propriétés NPK par élément dans le jeu de propriétés 211.5 Travaux en béton et béton armé.
-    3. Exporter le modèle pour le métré et les documents d'appel d'offres.
+    1. Définir le périmètre de l'appel d'offres, les données requises sur la sorte de béton, le taux d'armature et la surface ainsi que le délai de remise, puis les commander à l'équipe de planification de la structure.
+    2. Exiger la maquette et l'extrait des quantités, puis vérifier que tous les éléments en béton contiennent les données requises et que les quantités concordent avec les plans d'appel d'offres et le devis estimatif.
+    3. Valider la maquette et réutiliser les quantités pour le descriptif et la comparaison des offres.
 
     **Livrable**
     - Maquette structure avec quantités vérifiables et données sur le béton et les armatures utiles à l'appel d'offres.
+    - Extrait des quantités par sorte de béton, taux d'armature et surface comme base pour le descriptif.
   it: |-
-    Preparare i lavori in calcestruzzo e calcestruzzo armato dal modello strutturale per la gara.
+    La committenza ordina al gruppo di progettazione strutturale un modello con quantità di calcestruzzo verificabili e i dati rilevanti per la gara su sorta di calcestruzzo, armatura e superficie, affinché il capitolato dei lavori in calcestruzzo e calcestruzzo armato si basi sulle stesse quantità del progetto.
 
     **Situazione di partenza**
-    - Quantità e dati dei componenti per i lavori in calcestruzzo vengono spesso trasferiti manualmente dai disegni.
-    - Per la posizione NPK 211.5 nel modello mancano spesso le proprietà rilevanti per la gara su armatura, superficie e qualità del calcestruzzo.
+    - Quantità di calcestruzzo e dati dei componenti vengono spesso trasferiti manualmente dai piani; gli errori di trascrizione causano quantità errate e varianti.
+    - Per i lavori in calcestruzzo e calcestruzzo armato (CCC 211.5) nel modello mancano spesso i dati su armatura, superficie e sorta di calcestruzzo, per cui le quantità non possono essere valutate per posizione di gara.
 
     **Obiettivo e beneficio**
-    - Dotare gli elementi in calcestruzzo del modello strutturale con proprietà rilevanti per la gara.
-    - Ricavare computo metrico e capitolato direttamente dal modello.
+    - Verificare le quantità del capitolato rispetto al modello invece di farle misurare di nuovo.
+    - Rendere visibili prima dell'aggiudicazione i fattori di costo come le superfici in calcestruzzo a vista e i tassi d'armatura elevati.
 
     **Svolgimento**
-    1. Fornire il modello strutturale con elementi in calcestruzzo esecutivi.
-    2. Registrare le proprietà NPK per elemento nel property set 211.5 Lavori in calcestruzzo e calcestruzzo armato.
-    3. Esportare il modello per computo metrico e documenti di gara.
+    1. Definire il perimetro della gara, i dati richiesti su sorta di calcestruzzo, tasso d'armatura e superficie e il termine di consegna e ordinarli al gruppo di progettazione strutturale.
+    2. Richiedere il modello e l'estratto delle quantità e verificare che tutti gli elementi in calcestruzzo contengano i dati richiesti e che le quantità concordino con i piani di gara e il preventivo.
+    3. Approvare il modello e riutilizzare le quantità per il capitolato e il confronto delle offerte.
 
     **Risultato della fornitura**
     - Modello strutturale con quantità verificabili e dati su calcestruzzo e armature rilevanti per la gara.
+    - Estratto delle quantità per sorta di calcestruzzo, tasso d'armatura e superficie come base per il capitolato.
   en: |-
-    Represent concrete works in the structural model with tender-relevant information so that quantities and the specification can be derived from a common basis.
+    The client orders from the structural design team a model with verifiable concrete quantities and the tender-relevant information on concrete grade, reinforcement, and surface, so that the specification for concrete and reinforced concrete works is based on the same quantities as the design.
 
     **Starting point**
-    - Quantities and component data for concrete works are often transferred manually from drawings.
-    - For NPK position 211.5, the model often lacks tender-relevant properties for reinforcement, surface, and concrete quality.
+    - Concrete quantities and component data are often transferred manually from drawings for tendering; transfer errors lead to incorrect quantities and variations.
+    - For concrete and reinforced concrete works (BKP 211.5), the model often lacks information on reinforcement, surface, and concrete grade, so quantities cannot be evaluated by tender item.
 
     **Goal & benefit**
-    - Equip concrete components in the structural model with tender-relevant attributes.
-    - Derive quantity take-off and specification directly from the model.
+    - Check the quantities in the specification against the model instead of having them measured again.
+    - Make cost drivers such as fair-faced concrete surfaces and high reinforcement ratios visible before award.
 
     **Process**
-    1. Provide the structural model with execution-accurate concrete components.
-    2. Capture NPK properties per component in property set 211.5 Concrete and reinforced concrete works.
-    3. Export the model for quantity take-off and tender documents.
+    1. Define the tender scope, the required information on concrete grade, reinforcement ratio, and surface, and the submission date, and order them from the structural design team.
+    2. Request the model and quantity extract and check that every concrete component contains the required information and that quantities match the tender drawings and cost estimate.
+    3. Approve the model and reuse the quantities for the specification and offer comparison.
 
     **Deliverable**
     - Structural model with verifiable quantities and tender-relevant concrete and reinforcement information.
+    - Quantity extract by concrete grade, reinforcement ratio, and surface as the basis for the specification.
 workflow_group: unternehmen
 parent_workflow: pragmaticbim:workflow/bes
 picture_link: null
 status: active
 needed_in_domain:
 - pragmaticbim:domain/structural
-comment: NPK position 211.5 – custom property set for concrete tendering from the structural model.
+comment: >-
+  BKP 211.5 (Beton- und Stahlbetonarbeiten) – custom property set
+  211.5_Beton_und_Stahlbetonarbeiten for concrete tendering from the structural
+  model. The pset is named after the BKP code, not an NPK position.
