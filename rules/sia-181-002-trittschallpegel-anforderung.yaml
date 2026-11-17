@@ -1,0 +1,106 @@
+id: pragmaticbim:rule/sia-181-002-trittschallpegel-anforderung
+code: SIA-181-002
+sort_order: 2
+name:
+  de: Trittschallpegel höchstens beim zulässigen Wert
+  fr: Niveau de bruit de choc au plus à la valeur admissible
+  it: Livello di rumore da calpestio al massimo pari al valore ammesso
+  en: Impact sound level at most the permitted value
+description:
+  de: Der nachgewiesene Trittschallpegel im Raum unter einer Decke liegt nicht über dem höchstzulässigen Wert. Den Höchstwert
+    legt die Bauakustik nach SIA 181 aus Raumpaar und Anforderungsstufe fest. Geprüft werden Decken, die einen Höchstwert
+    und einen nachgewiesenen Pegel tragen.
+  fr: Le niveau de bruit de choc justifié dans le local situé sous une dalle ne dépasse pas la valeur maximale admissible.
+    L'acousticien fixe cette valeur selon SIA 181 à partir de la paire de locaux et du niveau d'exigence. Le contrôle porte
+    sur les dalles qui indiquent une valeur maximale et un niveau justifié.
+  it: Il livello di rumore da calpestio comprovato nel locale sotto una soletta non supera il valore massimo ammesso. L'acustico
+    stabilisce il valore massimo secondo SIA 181 in base alla coppia di locali e al livello di requisiti. La verifica riguarda
+    le solette che riportano un valore massimo e un livello comprovato.
+  en: The verified impact sound level in the room below a slab does not exceed the maximum permitted value. The acoustic consultant
+    sets the maximum under SIA 181 from the room pair and the requirement level. The check covers slabs that carry both a
+    maximum and a verified level.
+rule_status: shacl_defined
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-slab-floor
+performance_property_keys:
+- pbs:acoustic_property_impact_sound_rating_db
+domain: pragmaticbim:domain/building-physics
+jurisdiction:
+- CH
+rule_source:
+  source_document: SIA 181:2020 Schallschutz im Hochbau
+  source_page: null
+  source_quote: null
+  extracted_at: '2026-11-16'
+reviewed_by: null
+reviewed_at: null
+shacl: |-
+  rule:sia-181-002-trittschallpegel-anforderung-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] ,
+          [ sh:prefix "ifc" ; sh:namespace "https://w3id.org/ifc/IFC4_ADD2#"^^xsd:anyURI ] .
+
+  rule:sia-181-002-trittschallpegel-anforderung a sh:NodeShape ;
+      sh:name "Trittschallpegel höchstens beim zulässigen Wert"@de ,
+          "Impact sound level at most the permitted value"@en ;
+      sh:description "Der nachgewiesene Trittschallpegel im Raum unter einer Decke liegt nicht über dem höchstzulässigen Wert. Den Höchstwert legt die Bauakustik nach SIA 181 aus Raumpaar und Anforderungsstufe fest. Geprüft werden Decken, die einen Höchstwert und einen nachgewiesenen Pegel tragen."@de ,
+          "The verified impact sound level in the room below a slab does not exceed the maximum permitted value. The acoustic consultant sets the maximum under SIA 181 from the room pair and the requirement level. The check covers slabs that carry both a maximum and a verified level."@en ;
+      sh:severity sh:Violation ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:sia-181-002-trittschallpegel-anforderung-prefixes ;
+          sh:select """
+              SELECT DISTINCT ?this WHERE {
+                  {
+                      ?this pbs:metadata ?rm .
+                      ?rm pbs:metadata_key ?rk .
+                      FILTER (REGEX(?rk, "^ePset_SlabRequirement[.]ImpactSoundLevelMax$"))
+                  }
+                  UNION
+                  {
+                      ?r a pbs:PerformanceRequirement ;
+                         pbs:applies_to_entities ?this ;
+                         pbs:requirement_property_key "impact_sound_rating_db" .
+                  }
+              }"""
+      ] ;
+      sh:sparql [
+          a sh:SPARQLConstraint ;
+          sh:prefixes rule:sia-181-002-trittschallpegel-anforderung-prefixes ;
+          sh:message "Trittschallpegel {?value} dB über dem zulässigen Wert von {?required} dB."@de ,
+              "Impact sound level {?value} dB above the permitted value of {?required} dB."@en ;
+          sh:select """
+              SELECT $this ?value ?required WHERE {
+                  {
+                      $this pbs:metadata ?rm .
+                      ?rm pbs:metadata_key ?rk ; pbs:metadata_value ?rraw .
+                      FILTER (REGEX(?rk, "^ePset_SlabRequirement[.]ImpactSoundLevelMax$"))
+                      BIND (xsd:decimal(?rraw) AS ?req)
+                  }
+                  UNION
+                  {
+                      ?r a pbs:PerformanceRequirement ;
+                         pbs:applies_to_entities $this ;
+                         pbs:requirement_property_key "impact_sound_rating_db" ;
+                         pbs:target_value_number ?rnum .
+                      BIND (xsd:decimal(?rnum) AS ?req)
+                  }
+                  {
+                      $this pbs:performance_properties ?p .
+                      ?p pbs:property_key pbs:acoustic_property_impact_sound_rating_db ; pbs:property_value_number ?pnum .
+                      BIND (xsd:decimal(?pnum) AS ?act)
+                  }
+                  UNION
+                  {
+                      $this pbs:metadata ?am .
+                      ?am pbs:metadata_key ?ak ; pbs:metadata_value ?araw .
+                      FILTER (REGEX(?ak, "^ePset_Slab[.]ImpactSoundLevel$"))
+                      BIND (xsd:decimal(?araw) AS ?act)
+                  }
+                  FILTER (BOUND(?req) && BOUND(?act) && ?act > ?req)
+                  BIND (STR(?act) AS ?value)
+                  BIND (STR(?req) AS ?required)
+              }"""
+      ] .

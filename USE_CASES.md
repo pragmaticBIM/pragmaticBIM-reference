@@ -1,12 +1,12 @@
 # Use cases
 
-All 135 use cases from `workflows/`, grouped by the 6 top-level categories of the [abstract use case classification](https://schema.pragmaticbim.ch/classification/usecase.html) and by `workflow_group`.
+All 136 use cases from `workflows/`, grouped by the 6 top-level categories of the [abstract use case classification](https://schema.pragmaticbim.ch/classification/usecase.html) and by `workflow_group`.
 
 | Category | Code | Use cases |
 | --- | --- | --- |
 | Ordering (Bestellung) | BES | 31 |
 | Quality assurance (Qualitätssicherung) | QAS | 40 |
-| Design (Planung) | DES | 44 |
+| Design (Planung) | DES | 45 |
 | Construction (Ausführung) | CON | 9 |
 | Handover (Übergabe) | HOV | 6 |
 | Operation (Betrieb) | OPR | 5 |
@@ -183,6 +183,7 @@ All 135 use cases from `workflows/`, grouped by the 6 top-level categories of th
 | DES-MEP-USAGE-AGREEMENT | Visualize the MEP usage agreement room by room | Nutzungsvereinbarung Gebäudetechnik raumweise visualisieren | [`des-mep-usage-agreement-visualization.yaml`](workflows/des-mep-usage-agreement-visualization.yaml) |
 | DES-DRAWINGS | Derive plans from the model | Pläne aus dem Modell ableiten | [`des-drawing-derivation.yaml`](workflows/des-drawing-derivation.yaml) |
 | DES-WALL-REQUIREMENTS | Combine wall requirements from discipline reports | Wandanforderungen aus Fachberichten zusammenführen | [`des-wall-requirements-from-space-use.yaml`](workflows/des-wall-requirements-from-space-use.yaml) |
+| DES-SOUND-SIA181 | Derive SIA 181 sound insulation requirements from room use | Schallschutzanforderungen nach SIA 181 aus Raumnutzungen ableiten | [`des-sound-insulation-sia181.yaml`](workflows/des-sound-insulation-sia181.yaml) |
 | DES-MEP-SCHEM | Develop MEP schematics | Erarbeiten TGA-Schemata | [`des-mep-schematics.yaml`](workflows/des-mep-schematics.yaml) |
 | QAS-EXCL-ZONE | Define exclusion zones | Sperrzonen definieren | [`qas-structural-exclusion-zone-verification.yaml`](workflows/qas-structural-exclusion-zone-verification.yaml) |
 | DES-CRIT-INSERT | Keep critical areas as an insert model | Kritische Bereiche als Einsatzmodell führen | [`des-critical-area-insert-model.yaml`](workflows/des-critical-area-insert-model.yaml) |

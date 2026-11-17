@@ -49,6 +49,7 @@ levels:
   status: active
   activated_workflows:
   - pragmaticbim:workflow/des-building-physics-concept
+  - pragmaticbim:workflow/des-sound-insulation-sia181
   - pragmaticbim:workflow/qas-acoustic-building-physics
   performance_targets:
   - element: pragmaticbim:element/architecture-wall-interior
@@ -84,6 +85,7 @@ levels:
   status: active
   activated_workflows:
   - pragmaticbim:workflow/des-building-physics-concept
+  - pragmaticbim:workflow/des-sound-insulation-sia181
   - pragmaticbim:workflow/qas-acoustic-building-physics
   - pragmaticbim:workflow/des-wall-requirements-from-space-use
   - pragmaticbim:workflow/qas-element-type-performance-verification
@@ -121,6 +123,7 @@ levels:
   status: active
   activated_workflows:
   - pragmaticbim:workflow/des-building-physics-concept
+  - pragmaticbim:workflow/des-sound-insulation-sia181
   - pragmaticbim:workflow/qas-acoustic-building-physics
   - pragmaticbim:workflow/des-wall-requirements-from-space-use
   - pragmaticbim:workflow/qas-element-type-performance-verification

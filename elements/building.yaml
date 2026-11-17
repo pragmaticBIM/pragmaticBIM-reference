@@ -70,6 +70,7 @@ attributes:
     needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
     ifc_versions: [ifc2x3, ifc4, ifc4x3]
     needed_for_workflows:
+      - pragmaticbim:workflow/des-sound-insulation-sia181
       - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
       - pragmaticbim:workflow/qas-award-interface-visualization
       - pragmaticbim:workflow/bes-concrete-tender-from-model

@@ -1,0 +1,112 @@
+id: pragmaticbim:rule/sia-181-003-trennbauteil-mit-anforderung
+code: SIA-181-003
+sort_order: 3
+name:
+  de: Trennbauteile zwischen Nutzungseinheiten mit Schallschutzanforderung
+  fr: Éléments de séparation entre unités d'utilisation avec exigence d'isolation acoustique
+  it: Elementi di separazione tra unità d'uso con requisito di isolamento acustico
+  en: Separating elements between usage units carry a sound insulation requirement
+description:
+  de: Wände, Decken und Türen zwischen Räumen verschiedener Nutzungseinheiten, oder zwischen einer Nutzungseinheit und einem
+    Raum ausserhalb davon wie dem Treppenhaus, brauchen eine Anforderung an die Luftschalldämmung nach SIA 181. Ohne Anforderung
+    lässt sich weder der Schallschutznachweis noch die Prüfung der Bauteile führen. Geprüft werden Bauteile, deren angrenzende
+    Innenräume nicht derselben Nutzungseinheit angehören.
+  fr: Les murs, dalles et portes entre locaux de différentes unités d'utilisation, ou entre une unité d'utilisation et un
+    local situé hors de celle-ci comme la cage d'escalier, ont besoin d'une exigence d'isolation aux bruits aériens selon
+    SIA 181. Sans exigence, ni le justificatif acoustique ni le contrôle des éléments ne sont possibles. Le contrôle porte
+    sur les éléments dont les locaux intérieurs adjacents n'appartiennent pas à la même unité d'utilisation.
+  it: Pareti, solette e porte tra locali di diverse unità d'uso, o tra un'unità d'uso e un locale esterno a essa come il vano
+    scala, necessitano di un requisito di isolamento dai rumori aerei secondo SIA 181. Senza requisito non è possibile né
+    la verifica acustica né il controllo degli elementi. La verifica riguarda gli elementi i cui locali interni adiacenti
+    non appartengono alla stessa unità d'uso.
+  en: Walls, slabs and doors between rooms of different usage units, or between a usage unit and a room outside it such as
+    the stairwell, need an airborne sound insulation requirement under SIA 181. Without a requirement neither the acoustic
+    verification nor the check of the elements is possible. The check covers elements whose adjacent interior spaces do not
+    belong to the same usage unit.
+rule_status: shacl_defined
+severity: warning
+applies_to_elements:
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-wall-interior-loadbearing
+- pragmaticbim:element/architecture-slab-floor
+- pragmaticbim:element/architecture-door-interior
+performance_property_keys:
+- pbs:acoustic_property_airborne_sound_rating_db
+domain: pragmaticbim:domain/building-physics
+jurisdiction:
+- CH
+rule_source:
+  source_document: SIA 181:2020 Schallschutz im Hochbau
+  source_page: null
+  source_quote: null
+  extracted_at: '2026-11-16'
+reviewed_by: null
+reviewed_at: null
+shacl: |-
+  rule:sia-181-003-trennbauteil-mit-anforderung-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] ,
+          [ sh:prefix "ifc" ; sh:namespace "https://w3id.org/ifc/IFC4_ADD2#"^^xsd:anyURI ] .
+
+  rule:sia-181-003-trennbauteil-mit-anforderung a sh:NodeShape ;
+      sh:name "Trennbauteile zwischen Nutzungseinheiten mit Schallschutzanforderung"@de ,
+          "Separating elements between usage units carry a sound insulation requirement"@en ;
+      sh:description "Wände, Decken und Türen zwischen Räumen verschiedener Nutzungseinheiten, oder zwischen einer Nutzungseinheit und einem Raum ausserhalb davon wie dem Treppenhaus, brauchen eine Anforderung an die Luftschalldämmung nach SIA 181. Ohne Anforderung lässt sich weder der Schallschutznachweis noch die Prüfung der Bauteile führen. Geprüft werden Bauteile, deren angrenzende Innenräume nicht derselben Nutzungseinheit angehören."@de ,
+          "Walls, slabs and doors between rooms of different usage units, or between a usage unit and a room outside it such as the stairwell, need an airborne sound insulation requirement under SIA 181. Without a requirement neither the acoustic verification nor the check of the elements is possible. The check covers elements whose adjacent interior spaces do not belong to the same usage unit."@en ;
+      sh:severity sh:Warning ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:sia-181-003-trennbauteil-mit-anforderung-prefixes ;
+          sh:select """
+              SELECT DISTINCT ?this WHERE {
+                  { ?this pbs:separates_spaces ?a , ?b . }
+                  UNION
+                  { ?this pbs:connection_physical_type ifc:IfcDoor ; pbs:connects_spaces ?a , ?b . }
+                  FILTER (?a != ?b)
+                  ?a a pbs:Space .
+                  ?b a pbs:Space .
+                  ?a pbs:metadata ?am . ?am pbs:metadata_key "ePset_Space.UsageUnitReference" ; pbs:metadata_value ?aunit .
+                  OPTIONAL { ?b pbs:metadata ?bm . ?bm pbs:metadata_key "ePset_Space.UsageUnitReference" ; pbs:metadata_value ?bunit . }
+                  FILTER (!BOUND(?bunit) || STR(?aunit) != STR(?bunit))
+                  FILTER NOT EXISTS {
+                      ?a pbs:metadata ?ax .
+                      ?ax pbs:metadata_key "Pset_SpaceCommon.IsExternal" ; pbs:metadata_value ?axv .
+                      FILTER (LCASE(STR(?axv)) = "true")
+                  }
+                  FILTER NOT EXISTS {
+                      ?a pbs:classifications ?ac .
+                      ?ac pbs:classification_uri ?au .
+                      FILTER (STRENDS(STR(?au), "/spaces-exterior"))
+                  }
+                  FILTER NOT EXISTS {
+                      ?b pbs:metadata ?bx .
+                      ?bx pbs:metadata_key "Pset_SpaceCommon.IsExternal" ; pbs:metadata_value ?bxv .
+                      FILTER (LCASE(STR(?bxv)) = "true")
+                  }
+                  FILTER NOT EXISTS {
+                      ?b pbs:classifications ?bc .
+                      ?bc pbs:classification_uri ?bu .
+                      FILTER (STRENDS(STR(?bu), "/spaces-exterior"))
+                  }
+              }"""
+      ] ;
+      sh:sparql [
+          a sh:SPARQLConstraint ;
+          sh:prefixes rule:sia-181-003-trennbauteil-mit-anforderung-prefixes ;
+          sh:message "Trennbauteil zwischen Nutzungseinheiten ohne Anforderung an die Luftschalldämmung."@de ,
+              "Separating element between usage units without an airborne sound insulation requirement."@en ;
+          sh:select """
+              SELECT $this WHERE {
+                  FILTER NOT EXISTS {
+                      $this pbs:metadata ?rm .
+                      ?rm pbs:metadata_key ?rk .
+                      FILTER (REGEX(?rk, "^ePset_(Wall|Slab|Door)Requirement[.]AirborneSoundInsulationMin$"))
+                  }
+                  FILTER NOT EXISTS {
+                      ?r a pbs:PerformanceRequirement ;
+                         pbs:applies_to_entities $this ;
+                         pbs:requirement_property_key "airborne_sound_rating_db" .
+                  }
+              }"""
+      ] .

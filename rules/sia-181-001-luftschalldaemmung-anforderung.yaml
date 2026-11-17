@@ -1,0 +1,119 @@
+id: pragmaticbim:rule/sia-181-001-luftschalldaemmung-anforderung
+code: SIA-181-001
+sort_order: 1
+name:
+  de: Luftschalldämmung erreicht die Anforderung
+  fr: L'isolation aux bruits aériens atteint l'exigence
+  it: L'isolamento dai rumori aerei raggiunge il requisito
+  en: Airborne sound insulation meets the requirement
+description:
+  de: 'Die nachgewiesene Luftschalldämmung einer Wand, Decke, Tür oder eines Aussenbauteils erreicht mindestens den geforderten
+    Wert. Die Anforderung legt die Bauakustik nach SIA 181 fest: zwischen Räumen aus Raumpaar und Anforderungsstufe, bei Aussenbauteilen
+    aus Aussenlärm und Lärmempfindlichkeit. Geprüft werden Bauteile, die eine Anforderung und einen nachgewiesenen Wert tragen;
+    ein fehlender Nachweis ist kein Befund dieser Regel.'
+  fr: 'L''isolation aux bruits aériens justifiée d''un mur, d''une dalle, d''une porte ou d''un élément extérieur atteint
+    au moins la valeur exigée. L''acousticien fixe l''exigence selon SIA 181 : entre locaux à partir de la paire de locaux
+    et du niveau d''exigence, pour les éléments extérieurs à partir du bruit extérieur et de la sensibilité au bruit. Le contrôle
+    porte sur les éléments qui indiquent une exigence et une valeur justifiée ; un justificatif manquant n''est pas un constat
+    de cette règle.'
+  it: 'L''isolamento dai rumori aerei comprovato di una parete, di una soletta, di una porta o di un elemento esterno raggiunge
+    almeno il valore richiesto. L''acustico stabilisce il requisito secondo SIA 181: tra locali in base alla coppia di locali
+    e al livello di requisiti, per gli elementi esterni in base al rumore esterno e alla sensibilità al rumore. La verifica
+    riguarda gli elementi che riportano un requisito e un valore comprovato; una verifica mancante non è un riscontro di questa
+    regola.'
+  en: 'The verified airborne sound insulation of a wall, slab, door or exterior element reaches at least the required value.
+    The acoustic consultant sets the requirement under SIA 181: between rooms from the room pair and the requirement level,
+    for exterior elements from the exterior noise and the noise sensitivity. The check covers elements that carry both a requirement
+    and a verified value; a missing verification is not a finding of this rule.'
+rule_status: shacl_defined
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-wall-interior-loadbearing
+- pragmaticbim:element/architecture-slab-floor
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/architecture-window-exterior
+- pragmaticbim:element/architecture-slab-flat-roof
+- pragmaticbim:element/architecture-door-exterior
+performance_property_keys:
+- pbs:acoustic_property_airborne_sound_rating_db
+domain: pragmaticbim:domain/building-physics
+jurisdiction:
+- CH
+rule_source:
+  source_document: SIA 181:2020 Schallschutz im Hochbau
+  source_page: null
+  source_quote: null
+  extracted_at: '2026-11-16'
+reviewed_by: null
+reviewed_at: null
+shacl: |-
+  rule:sia-181-001-luftschalldaemmung-anforderung-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] ,
+          [ sh:prefix "ifc" ; sh:namespace "https://w3id.org/ifc/IFC4_ADD2#"^^xsd:anyURI ] .
+
+  rule:sia-181-001-luftschalldaemmung-anforderung a sh:NodeShape ;
+      sh:name "Luftschalldämmung erreicht die Anforderung"@de ,
+          "Airborne sound insulation meets the requirement"@en ;
+      sh:description "Die nachgewiesene Luftschalldämmung einer Wand, Decke, Tür oder eines Aussenbauteils erreicht mindestens den geforderten Wert. Die Anforderung legt die Bauakustik nach SIA 181 fest: zwischen Räumen aus Raumpaar und Anforderungsstufe, bei Aussenbauteilen aus Aussenlärm und Lärmempfindlichkeit. Geprüft werden Bauteile, die eine Anforderung und einen nachgewiesenen Wert tragen; ein fehlender Nachweis ist kein Befund dieser Regel."@de ,
+          "The verified airborne sound insulation of a wall, slab, door or exterior element reaches at least the required value. The acoustic consultant sets the requirement under SIA 181: between rooms from the room pair and the requirement level, for exterior elements from the exterior noise and the noise sensitivity. The check covers elements that carry both a requirement and a verified value; a missing verification is not a finding of this rule."@en ;
+      sh:severity sh:Violation ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:sia-181-001-luftschalldaemmung-anforderung-prefixes ;
+          sh:select """
+              SELECT DISTINCT ?this WHERE {
+                  {
+                      ?this pbs:metadata ?rm .
+                      ?rm pbs:metadata_key ?rk .
+                      FILTER (REGEX(?rk, "^ePset_(Wall|Slab|Door|Window)Requirement[.]AirborneSoundInsulationMin$"))
+                  }
+                  UNION
+                  {
+                      ?r a pbs:PerformanceRequirement ;
+                         pbs:applies_to_entities ?this ;
+                         pbs:requirement_property_key "airborne_sound_rating_db" .
+                  }
+              }"""
+      ] ;
+      sh:sparql [
+          a sh:SPARQLConstraint ;
+          sh:prefixes rule:sia-181-001-luftschalldaemmung-anforderung-prefixes ;
+          sh:message "Luftschalldämmung {?value} dB unter der Anforderung von {?required} dB."@de ,
+              "Airborne sound insulation {?value} dB below the requirement of {?required} dB."@en ;
+          sh:select """
+              SELECT $this ?value ?required WHERE {
+                  {
+                      $this pbs:metadata ?rm .
+                      ?rm pbs:metadata_key ?rk ; pbs:metadata_value ?rraw .
+                      FILTER (REGEX(?rk, "^ePset_(Wall|Slab|Door|Window)Requirement[.]AirborneSoundInsulationMin$"))
+                      BIND (xsd:decimal(?rraw) AS ?req)
+                  }
+                  UNION
+                  {
+                      ?r a pbs:PerformanceRequirement ;
+                         pbs:applies_to_entities $this ;
+                         pbs:requirement_property_key "airborne_sound_rating_db" ;
+                         pbs:target_value_number ?rnum .
+                      BIND (xsd:decimal(?rnum) AS ?req)
+                  }
+                  {
+                      $this pbs:performance_properties ?p .
+                      ?p pbs:property_key pbs:acoustic_property_airborne_sound_rating_db ; pbs:property_value_number ?pnum .
+                      BIND (xsd:decimal(?pnum) AS ?act)
+                  }
+                  UNION
+                  {
+                      $this pbs:metadata ?am .
+                      ?am pbs:metadata_key ?ak ; pbs:metadata_value ?araw .
+                      FILTER (REGEX(?ak, "^ePset_(Wall|Slab|Door|Window)[.]AirborneSoundInsulation$"))
+                      BIND (xsd:decimal(?araw) AS ?act)
+                  }
+                  FILTER (BOUND(?req) && BOUND(?act) && ?act < ?req)
+                  BIND (STR(?act) AS ?value)
+                  BIND (STR(?req) AS ?required)
+              }"""
+      ] .
