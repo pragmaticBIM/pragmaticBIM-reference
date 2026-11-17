@@ -20,15 +20,15 @@ values:
   - Stahlbetonstütze
   - Andere oder unbekannte Stütze
   fr:
-  - Steel column
-  - Timber column
-  - Reinforced concrete column
-  - Other or unknown column
+  - Colonne en acier
+  - Colonne en bois
+  - Colonne en béton armé
+  - Colonne autre ou inconnue
   it:
-  - Steel column
-  - Timber column
-  - Reinforced concrete column
-  - Other or unknown column
+  - Pilastro in acciaio
+  - Pilastro in legno
+  - Pilastro in calcestruzzo armato
+  - Pilastro altro o sconosciuto
   en:
   - Steel column
   - Timber column

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/srp-rc
+sort_order: 3
+status: active
+name:
+  de: Stahlbetontreppe
+  fr: Escalier en béton armé
+  it: Scala in calcestruzzo armato
+  en: Reinforced concrete stair
+product_classification:
+  classification_scheme: StairProduct
+  classification_code: SRP-RC
+tender_text:
+  de: Stahlbetontreppenlauf für die vertikale Erschliessung, in der Regel Teil des brandschutztechnisch abgetrennten Fluchtwegs. Vor Ort mit Schalung und Bewehrung betoniert oder als Fertigteillauf geliefert und auf Schallschutzlagern versetzt, die den Körperschall unterbrechen. Geeignet für Fluchttreppenhäuser mit hoher Beanspruchung sowie Anforderungen an Feuerwiderstand und Schallschutz.
+  en: Stair flight of reinforced concrete for vertical circulation, usually part of the fire-separated escape route. Cast in place with formwork and reinforcement or delivered as a precast flight and set on acoustic bearings that interrupt structure-borne sound. Suitable for escape stairwells with heavy wear and requirements on fire resistance and sound insulation.

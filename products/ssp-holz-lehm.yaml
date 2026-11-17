@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ssp-holz-lehm
+sort_order: 7
+status: active
+name:
+  de: Holz-Lehm-Decke
+  fr: Dalle bois-terre crue
+  it: Solaio legno-argilla
+  en: Timber–clay slab / deck
+product_classification:
+  classification_scheme: AbstractSlabSeparatorProduct
+  classification_code: SSP-HOLZ-LEHM
+tender_text:
+  de: Tragendes horizontales Bauteil mit Holzbalken oder Holzrahmen und schwerer Lehmausfachung oder Lehmauflage zwischen oder über den Holzteilen. Als vorgefertigte Elemente hergestellt oder vor Ort verfüllt, wobei der feuchte Lehm verdichtet und vor dem Bodenaufbau getrocknet wird. Geeignet für Geschossdecken mit Anforderungen an zusätzliche Masse für den Schallschutz, Feuchtepufferung und emissionsarme Naturbaustoffe.
+  en: Load-bearing horizontal element with timber joists or a timber frame and a heavy clay infill or topping between or above the timber members. Produced as prefabricated panels or filled on site, with the moist clay compacted and dried before the floor build-up follows. Suitable for floor decks that need added mass for sound insulation, humidity buffering, and low-emission natural materials.

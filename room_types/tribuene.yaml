@@ -5,7 +5,7 @@ name:
   de: Tribüne
   fr: Tribune
   it: Tribuna
-  en: Spectator Stand
+  en: Spectator stand
 definition:
   de: Gestufte Sitz- oder Stehfläche für Zuschauende.
   fr: Gradins assis ou debout pour le public.
@@ -33,7 +33,7 @@ configurations:
       de: Tribüne
       fr: Tribune
       it: Tribuna
-      en: Spectator Stand
+      en: Spectator stand
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon
@@ -87,6 +87,25 @@ configurations:
       min: 1
       max: 6
       default: 2
+    status: active
+  - id: pragmaticbim:room-type-equipment/tribuene-default-steckdose-aussen
+    sort_order: 3
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose-aussen
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/tribuene-default-lichtschalter
+    sort_order: 4
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/tribuene-default-zugang

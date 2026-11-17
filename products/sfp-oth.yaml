@@ -1,0 +1,14 @@
+id: pragmaticbim:product/sfp-oth
+sort_order: 29
+status: active
+name:
+  de: Sonstige / unbekannte Baustelleneinrichtung
+  fr: Installation de chantier autre ou inconnue
+  it: Installazione di cantiere altra o sconosciuta
+  en: Other / unknown site facility
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-OTH
+tender_text:
+  de: Platzhalter fuer Baustelleneinrichtung, deren Art noch nicht festgelegt oder von keinem spezifischen Konzept abgedeckt ist. Die Funktion ist gesondert zu beschreiben. Nur in fruehen Phasen oder bei unvollstaendiger Datenlage verwenden.
+  en: Placeholder for site facilities whose type is not yet fixed or not covered by a specific concept. State the function separately. Use only in early stages or where data is incomplete.

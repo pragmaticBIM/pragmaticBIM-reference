@@ -1,0 +1,14 @@
+id: pragmaticbim:product/sfp-water-conn
+sort_order: 28
+status: active
+name:
+  de: Bauwasseranschluss
+  fr: Raccordement d'eau de chantier
+  it: Allacciamento idrico di cantiere
+  en: Site water connection
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-WATER-CONN
+tender_text:
+  de: Anschluss an die oeffentliche oder eine temporaere Wasserversorgung, mit Zaehler, Absperrung und Verteilung zu Sanitaeranlagen, Reifenwaschanlage und Betonanlage. Gegenstueck zum Baustromverteiler.
+  en: Connection to the public or a temporary water supply, with meter, stop valve, and distribution to sanitary units, the wheel wash, and the concrete plant. Counterpart of the site power distribution board.

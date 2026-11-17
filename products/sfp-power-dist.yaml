@@ -1,0 +1,14 @@
+id: pragmaticbim:product/sfp-power-dist
+sort_order: 27
+status: active
+name:
+  de: Baustromverteiler
+  fr: Tableau électrique de chantier
+  it: Quadro elettrico di cantiere
+  en: Site power distribution board
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-POWER-DIST
+tender_text:
+  de: Baustromverteiler mit Abgaengen, Schutzorganen und Unterverteilung fuer Krane, Container und Werkzeuge. Der Wasseranschluss ist ein eigenes Konzept.
+  en: Site distribution cabinet with outlets, protection, and sub-distribution for cranes, containers, and tools. The water connection is a separate concept.

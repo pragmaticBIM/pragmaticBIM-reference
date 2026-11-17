@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-glass
+sort_order: 5
+status: active
+name:
+  de: Glas- / Verglasungstuer
+  fr: Porte vitrée
+  it: Porta vetrata
+  en: Glazed door system
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-GLASS
+tender_text:
+  de: Türkonstruktion, deren Blatt überwiegend aus Glas besteht, entweder rahmenlos mit Klemmbeschlägen oder in schmalem Metallrahmen, als Dreh-, Schiebe- oder Automatikflügel in einer verglasten Trennwand. Die Scheiben werden werkseitig vorgespannt oder als Verbundsicherheitsglas hergestellt, Bodentürschliesser oder Laufschiene und die umgebende Verglasung werden vor Ort gesetzt und ausgerichtet, danach wird das Blatt eingestellt und die Bedienung in Betrieb genommen. Geeignet für Eingangshallen und innere Öffnungen mit durchgehendem Sichtbezug; die Bedienung muss für alle Nutzenden sicher bleiben und das Glas gefahrloses Durchgehen sowie eine erkennbare Markierung gewährleisten.
+  en: Door assembly whose leaf consists mainly of glass, either frameless with clamped fittings or in a narrow metal frame, operating as a hinged, sliding, or automatic leaf within a glazed screen. Panes are toughened or laminated in the factory, the floor spring or guide rail and the surrounding screen are set and levelled on site, and the leaf is aligned and its operation commissioned. Suitable for entrance halls and interior openings with visual continuity; operation must stay safe for all users and the glass has to provide safe passage and be clearly marked.

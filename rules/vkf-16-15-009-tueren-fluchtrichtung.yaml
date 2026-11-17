@@ -1,0 +1,40 @@
+id: pragmaticbim:rule/vkf-16-15-009-tueren-fluchtrichtung
+code: VKF-16-15-009
+sort_order: 9
+name:
+  de: Türen in Fluchtwegen öffnen in Fluchtrichtung
+  en: Doors on escape routes open in the escape direction
+  fr: Les portes des voies d'évacuation s'ouvrent dans le sens de la fuite
+  it: Le porte delle vie di fuga si aprono nel senso della fuga
+description:
+  de: 'Türen in Fluchtwegen schlagen in Fluchtrichtung auf und lassen sich in dieser Richtung jederzeit rasch und
+    ohne Schlüssel oder Werkzeug öffnen. Bei Räumen für höchstens 20 Personen ist die Aufschlagrichtung frei. Tore
+    und Drehtüren brauchen daneben eine normal aufschlagende Tür. Noch nicht prüfbar: die Fluchtrichtung der Tür
+    ist im Modell nicht abgelegt.'
+  en: 'Doors on escape routes open in the escape direction and can be opened quickly in that direction at any time
+    without a key or tool. For rooms for at most 20 people the swing direction is free. Gates and revolving doors
+    need a normally swinging door next to them. Not yet checkable: the model does not store the escape direction
+    of a door.'
+  fr: 'Les portes des voies d''évacuation s''ouvrent dans le sens de la fuite et peuvent être ouvertes rapidement
+    dans ce sens, à tout moment, sans clé ni outil. Pour les locaux de 20 personnes au plus, le sens d''ouverture
+    est libre. Les portails et portes tournantes exigent à côté une porte battante usuelle. Pas encore vérifiable
+    : le modèle n''indique pas le sens de fuite d''une porte.'
+  it: 'Le porte delle vie di fuga si aprono nel senso della fuga e, in quel senso, si aprono rapidamente in ogni
+    momento senza chiave né attrezzi. Per locali con al massimo 20 persone il senso di apertura è libero. Portoni
+    e porte girevoli richiedono accanto una porta a battente usuale. Non ancora verificabile: il modello non indica
+    il senso di fuga di una porta.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/architecture-door-exterior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 8
+  source_quote: VKF 16-15, Ziff. 2.5.5
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'

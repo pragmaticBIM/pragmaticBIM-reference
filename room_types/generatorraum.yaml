@@ -5,7 +5,7 @@ name:
   de: Generatorraum
   fr: Local du groupe électrogène
   it: Locale gruppo elettrogeno
-  en: Generator Room
+  en: Generator room
 definition:
   de: Raum für Notstromaggregate.
   fr: Local pour les groupes électrogènes de secours.
@@ -33,7 +33,7 @@ configurations:
       de: Generatorraum
       fr: Local du groupe électrogène
       it: Locale gruppo elettrogeno
-      en: Generator Room
+      en: Generator room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -99,6 +99,25 @@ configurations:
     function: plant
     components:
     - pragmaticbim:component/notstromaggregat
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/generatorraum-default-steckdose
+    sort_order: 2
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/generatorraum-default-lichtschalter
+    sort_order: 3
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
     quantity: 1
     status: active
   openings:

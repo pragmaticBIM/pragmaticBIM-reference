@@ -160,7 +160,7 @@ attributes:
   status: active
   sort_order: 3
 - name: EinspracheRisiko
-  pset: Pset_UmgebungCommon
+  pset: ePset_SurroundingBuilding
   definition:
     de: |-
       Einschätzung, wie wahrscheinlich Einwände von diesem Gebäude bzw. Grundstück kommen.

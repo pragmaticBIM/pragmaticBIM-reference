@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ssp-steel-composite
+sort_order: 3
+status: active
+name:
+  de: Stahlverbunddecke
+  fr: Dalle mixte acier-béton
+  it: Solaio misto acciaio-calcestruzzo
+  en: Steel deck / composite slab
+product_classification:
+  classification_scheme: AbstractSlabSeparatorProduct
+  classification_code: SSP-STEEL-COMPOSITE
+tender_text:
+  de: Tragendes horizontales Bauteil, bei dem Stahltrapezprofile oder Stahlträger mit einer Betonplatte zusammenwirken. Das Stahlprofilblech wird als verlorene Schalung auf das Stahltragwerk verlegt und über Kopfbolzendübel schubfest mit dem aufbetonierten Beton verbunden. Geeignet für Geschoss- und Dachdecken mit grossen Spannweiten, geringer Konstruktionshöhe und rascher Montage.
+  en: Load-bearing horizontal element in which profiled steel decking or steel beams act together with a concrete slab. The steel deck is laid as permanent formwork on the steel frame and connected by shear studs to the concrete cast on top. Suitable for floor and roof slabs with long spans, low structural depth, and fast erection.

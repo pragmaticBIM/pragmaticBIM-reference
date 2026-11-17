@@ -19,7 +19,9 @@ description:
   en: Residents cook and eat together every day. A room of its own or part of the
     living room changes the room count, the area, and how far cooking shapes the living
     space.
-use: pragmaticbim:use/wohnen
+scope: unit
+uses:
+- pragmaticbim:use/wohnen
 tags:
 - wohnalltag
 status: active

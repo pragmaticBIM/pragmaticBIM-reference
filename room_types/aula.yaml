@@ -5,7 +5,7 @@ name:
   de: Aula
   fr: Aula
   it: Aula
-  en: Auditorium
+  en: Assembly hall
 definition:
   de: Grosse Versammlungshalle für Veranstaltungen.
   fr: Grande salle de rassemblement pour les manifestations.
@@ -33,7 +33,7 @@ configurations:
       de: Aula
       fr: Aula
       it: Aula
-      en: Auditorium
+      en: Assembly hall
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -135,6 +135,25 @@ configurations:
       min: 1
       max: 6
       default: 2
+    status: active
+  - id: pragmaticbim:room-type-equipment/aula-default-steckdose
+    sort_order: 3
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/aula-default-lichtschalter
+    sort_order: 4
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/aula-default-zugang

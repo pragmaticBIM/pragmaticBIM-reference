@@ -5,7 +5,7 @@ name:
   de: Luftraum
   fr: Volume d'air
   it: Volume d'aria
-  en: Air Space
+  en: Air space
 definition:
   de: Nicht nutzbarer Luftraum im Modell.
   fr: Volume d'air non utilisable dans la maquette.

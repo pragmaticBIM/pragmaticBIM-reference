@@ -15,7 +15,9 @@ description:
     personale e code nel foyer.
   en: Visitors leave coats and bags before the event. The type of storage determines security, staffing,
     and queues in the foyer.
-use: pragmaticbim:use/versammlung
+scope: use
+uses:
+- pragmaticbim:use/versammlung
 tags:
 - ankommen
 status: active

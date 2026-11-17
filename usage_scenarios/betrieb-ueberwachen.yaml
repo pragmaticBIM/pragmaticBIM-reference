@@ -15,7 +15,9 @@ description:
     determina tempi di reazione, postazioni e controllo degli accessi.
   en: Staff monitor the systems and respond to faults. A staffed control room determines response time,
     workstations, and access control.
-use: pragmaticbim:use/rechenzentrum
+scope: use
+uses:
+- pragmaticbim:use/rechenzentrum
 tags:
 - betrieb
 status: active

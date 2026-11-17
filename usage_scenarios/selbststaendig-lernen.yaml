@@ -15,7 +15,9 @@ description:
     sorveglianza e accessibilità.
   en: Learners work alone or in small groups outside lessons. The location determines quiet, supervision,
     and accessibility.
-use: pragmaticbim:use/bildung
+scope: use
+uses:
+- pragmaticbim:use/bildung
 tags:
 - lernen
 status: active
@@ -28,7 +30,7 @@ options:
     de: Lernraum
     fr: Salle d'étude
     it: Aula studio
-    en: Learning room
+    en: Study room
   adds:
   - pragmaticbim:room-type/lernraum
 - id: pragmaticbim:scenario-option/selbststaendig-lernen-library

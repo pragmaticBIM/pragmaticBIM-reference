@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fdp-oth
+sort_order: 9
+status: active
+name:
+  de: Sonstiges / unbekanntes Fundament
+  fr: Fondation autre ou inconnue
+  it: Fondazione altra o sconosciuta
+  en: Other / unknown foundation
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-OTH
+tender_text:
+  de: Platzhalter für Fundamentprodukte, deren System zum Zeitpunkt der Ausschreibung noch nicht festgelegt oder nicht klassifiziert ist. Funktionale Anforderungen wie Tragfähigkeit, Setzungsbegrenzung, Grundwasserverhältnisse und Abdichtung sind gesondert zu beschreiben. Nur in frühen Planungsphasen oder bei unvollständiger Datenlage verwenden.
+  en: Placeholder for foundation products whose system is not yet fixed or not classified at tender stage. Functional requirements such as bearing capacity, settlement limits, groundwater conditions, and sealing must be stated separately. Use only in early design stages or where data is incomplete.

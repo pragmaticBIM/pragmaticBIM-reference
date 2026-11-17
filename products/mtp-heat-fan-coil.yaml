@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mtp-heat-fan-coil
+sort_order: 11
+status: active
+name:
+  de: Geblaesekonvektor (Heizbetrieb)
+  fr: Ventilo-convecteur (mode chauffage)
+  it: Ventilconvettore (modalità riscaldamento)
+  en: Fan coil (heating mode)
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-HEAT-FAN-COIL
+tender_text:
+  de: Erwärmt die Raumluft, indem sie mit einem Ventilator über einen aus der Heizverteilung gespeisten Wärmeübertrager geführt und in den Raum zurückgegeben wird, sodass Heizlasten mit kurzer Reaktionszeit gedeckt werden. Wird sichtbar oder verdeckt an Wand oder Decke oder als Bodengerät montiert und an Heizungsvor- und -rücklauf sowie Strom- und Steuerleitungen angeschlossen, mit raumweiser Regelung von Ventilatorstufe und Wasserdurchsatz. Geeignet für Räume mit hohem oder stark wechselndem Wärmebedarf, wobei Filter, Ventilator und Wärmeübertrager für die Reinigung erreichbar sind und Luft- und Wasserdurchsatz bei der Inbetriebnahme eingestellt werden.
+  en: Heats room air by drawing it with a fan over a heat exchanger fed from the heating distribution and returning it to the space, so that heat loads are covered with a short response time. Mounted exposed or concealed on wall or ceiling or as a floor unit and connected to heating flow and return as well as power and control wiring, with room-wise control of fan stage and water flow. Suitable for rooms with high or strongly varying heat demand, with filter, fan, and heat exchanger reachable for cleaning and with air and water flows set during commissioning.

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/wicp-skylight
+sort_order: 7
+status: active
+name:
+  de: Dachfenster / Oberlicht
+  fr: Fenêtre de toit / lanterneau
+  it: Finestra per tetti / lucernario
+  en: Roof window / skylight
+product_classification:
+  classification_scheme: AbstractWindowConnectorProduct
+  classification_code: WICP-SKYLIGHT
+tender_text:
+  de: Verglastes Öffnungselement in der Dachfläche, als Dachflächenfenster, Flachdachkuppel oder Oberlichtband mit festen oder öffenbaren Flügeln. Wird als werkseitig verglaste Einheit geliefert und auf einem Aufsatzkranz oder im Sparrenfeld montiert und mit Anschlussmanschetten und Blechabschlüssen an Dachabdichtung und Dampfbremse angeschlossen. Geeignet für Belichtung und für Rauch- oder Komfortlüftung von Räumen unter dem Dach; erfordert Schlagregen- und Schneelastsicherheit, sicheren Zugang für die Reinigung und bei Bedarf Absturzsicherung.
+  en: Glazed opening element set into a roof surface, as a pitched roof window, flat-roof dome, or rooflight band with fixed or operable leaves. Delivered as a factory-glazed unit and mounted on an upstand kerb or in the rafter field, connected to the roof waterproofing and vapour barrier with collars and metal flashings. Suitable for daylighting and for smoke or comfort ventilation of rooms under the roof; requires driving-rain and snow-load resistance, safe access for cleaning, and fall protection where needed.

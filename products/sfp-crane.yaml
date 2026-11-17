@@ -1,0 +1,14 @@
+id: pragmaticbim:product/sfp-crane
+sort_order: 1
+status: active
+name:
+  de: Kran
+  fr: Grue
+  it: Gru
+  en: Crane
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-CRANE
+tender_text:
+  de: Die Hebemaschine selbst, einschliesslich Mast oder Traeger, Ausleger, Kabine und Gegengewicht. Der erreichbare Raum, der Standplatz und ein betoniertes Fundament sind eigene Konzepte.
+  en: The lifting machine itself, including mast or carrier, jib or boom, cab, and counterweight. The volume it can reach, the ground it stands on, and a cast foundation are separate concepts.

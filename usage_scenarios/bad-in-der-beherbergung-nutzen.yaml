@@ -15,7 +15,9 @@ description:
     e superficie delle camere.
   en: Guests wash and care for themselves during their stay. Allocation determines privacy, travel, and
     room area.
-use: pragmaticbim:use/beherbergung
+scope: use
+uses:
+- pragmaticbim:use/beherbergung
 tags:
 - aufenthalt
 status: active

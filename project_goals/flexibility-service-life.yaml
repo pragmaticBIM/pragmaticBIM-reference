@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Festgelegt werden die geplante Nutzungsdauer und wie weit Tragwerk, Ausbau und Gebäudetechnik voneinander getrennt sind. Die Festlegung bestimmt Geschosshöhen, Tragraster und Installationszonen.
-
-    Ohne diese Festlegung werden Leitungen in tragende Bauteile eingelegt und Raster auf die erste Nutzung zugeschnitten. Eine spätere Umnutzung wird dann zum Rückbau.
   fr: |-
     Cette condition-cadre fixe la durée d'utilisation prévue et le degré de séparation entre structure porteuse, aménagement et installations techniques. Elle détermine les hauteurs d'étage, la trame porteuse et les zones d'installation.
-
-    Sans cette définition, les conduites sont noyées dans les éléments porteurs et la trame est taillée pour la première utilisation. Un changement d'affectation ultérieur devient alors une déconstruction.
   it: |-
     Questa condizione quadro stabilisce la durata d'utilizzo prevista e il grado di separazione tra struttura portante, finiture e impianti. Determina altezze di piano, maglia strutturale e zone impiantistiche.
-
-    Senza questa definizione, le condotte vengono annegate negli elementi portanti e la maglia viene tagliata sul primo utilizzo. Un successivo cambio di destinazione diventa allora una decostruzione.
   en: |-
     This framework condition sets the design service life and how far structure, fit-out, and building services are separated. It drives storey heights, the structural grid, and installation zones.
-
-    Without it, services are cast into load-bearing components and the grid is tailored to the first use. A later change of use then becomes deconstruction.
 status: active
 is_boundary_condition: true
 comment: 'Kumulativ. Kein Einfluss auf Anwendungsfälle der Nutzung; kann später min_height der Raumtypen beeinflussen. Abgrenzung: PG-15 Umbauhäufigkeit regelt, wie aktuell die Betriebsdaten sein müssen, nicht die bauliche Flexibilität.'

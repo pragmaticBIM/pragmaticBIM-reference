@@ -1,0 +1,14 @@
+id: pragmaticbim:product/wicp-special
+sort_order: 6
+status: active
+name:
+  de: Spezielles lichtdurchlaessiges Bauteil
+  fr: Élément translucide spécial
+  it: Elemento traslucido speciale
+  en: Special transparent opening
+product_classification:
+  classification_scheme: AbstractWindowConnectorProduct
+  classification_code: WICP-SPECIAL
+tender_text:
+  de: Lichtdurchlässiges Öffnungsprodukt, das eine Öffnung ohne herkömmlichen Rahmen und Flügel verschliesst, zum Beispiel als Glasbausteinfeld, transluzentes Paneelfeld, Festverglasung oder verglaste Klappe. Wird als Sonderelement gefertigt oder vor Ort aufgebaut und über einen tragenden Blindrahmen, Bettung und umlaufende Abdichtung an die umgebende Konstruktion angeschlossen. Geeignet, wo Tageslicht ohne öffenbaren Flügel gefordert ist; Anforderungen an Öffnungsverhalten, Stossfestigkeit und Reinigungszugang sind je Fall zu beschreiben.
+  en: Light-transmitting opening product that closes an opening without a conventional frame and sash, for example a glass block field, a translucent panel field, a fixed light, or a glazed hatch. Fabricated as a purpose-made element or built up on site and connected to the surrounding construction with a supporting subframe, bedding, and perimeter seal. Suitable where daylight is required without an operable sash; the requirements for opening behaviour, impact resistance, and cleaning access have to be stated per case.

@@ -5,7 +5,7 @@ name:
   de: Schalterhalle
   fr: Hall des guichets
   it: Atrio biglietteria
-  en: Ticket Hall
+  en: Ticket hall
 definition:
   de: Halle mit Billettschaltern und -automaten im Personenverkehr.
   fr: Hall avec guichets et distributeurs de billets pour le transport de voyageurs.
@@ -33,7 +33,7 @@ configurations:
       de: Schalterhalle
       fr: Hall des guichets
       it: Atrio biglietteria
-      en: Ticket Hall
+      en: Ticket hall
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -113,4 +113,24 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 300
+  equipment:
+  - id: pragmaticbim:room-type-equipment/schalterhalle-default-steckdose
+    sort_order: 1
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/schalterhalle-default-lichtschalter
+    sort_order: 2
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
+    status: active
   status: active

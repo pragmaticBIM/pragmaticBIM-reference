@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mup-ww-lifting-station
+sort_order: 18
+status: active
+name:
+  de: Hebeanlage
+  fr: Station de relevage
+  it: Impianto di sollevamento
+  en: Lifting station
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-WW-LIFTING-STATION
+tender_text:
+  de: Sammelt Abwasser von Entwässerungsstellen unterhalb der Rückstauebene und fördert es über diese Ebene in die Freispiegelentwässerung. Lieferung als werkseitig montierte Einheit mit Sammelbehälter, einer oder mehreren Pumpen, Rückfluss- und Absperrarmaturen sowie Steuerschrank, Aufstellung auf ebener Unterlage in Schacht oder Technikraum, Anschluss an Zulauf, Druckleitung, Lüftung und Stromversorgung, Niveau- und Störmeldungen an die Gebäudeautomation. Geeignet für Sanitärräume, Einstellhallen und Küchenbereiche in Untergeschossen; erfordert einen zugänglichen, entwässerten und belüfteten Aufstellort, geruchsdichten Einbau sowie Zugang für Reinigung, Laufradkontrolle und Pumpentausch.
+  en: Collects wastewater from drainage points below the backflow level and pumps it above that level into the gravity drain. Delivered as a factory-assembled unit with collecting tank, one or more pumps, non-return and isolating fittings, and control cabinet, placed on a level base in a pit or plant room and connected to inflow, pressure pipe, vent, and power supply, with level and fault signals reported to building automation. Suitable for sanitary rooms, parking garages, and kitchen areas in basement levels; requires an accessible, drained and ventilated location, odour-tight installation, and access for cleaning, impeller inspection, and pump replacement.

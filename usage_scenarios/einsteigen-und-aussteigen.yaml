@@ -15,7 +15,9 @@ description:
     marciapiedi determina percorsi di coincidenza, zone di attesa e flussi di persone.
   en: Passengers board and alight trains, trams, or buses at short intervals. The platform layout determines
     transfer routes, waiting zones, and passenger flow.
-use: pragmaticbim:use/verkehr
+scope: use
+uses:
+- pragmaticbim:use/verkehr
 tags:
 - reisen
 status: active

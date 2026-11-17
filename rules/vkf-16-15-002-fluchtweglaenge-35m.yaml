@@ -1,0 +1,73 @@
+id: pragmaticbim:rule/vkf-16-15-002-fluchtweglaenge-35m
+code: VKF-16-15-002
+sort_order: 2
+name:
+  de: Fluchtweg mit nur einem Ausgang höchstens 35 m
+  en: Escape route with a single exit at most 35 m
+  fr: 'Voie d''évacuation avec une seule sortie : 35 m au plus'
+  it: 'Via di fuga con una sola uscita: al massimo 35 m'
+description:
+  de: Gibt es nur einen Ausgang ins Freie oder nur eine Treppe als vertikalen Fluchtweg, ist der Weg von der entferntesten
+    Stelle eines Innenraums auf 35 m beschränkt. Das Modell zeigt nicht, ob ein zweiter, unabhängiger Fluchtweg
+    besteht; deshalb meldet die Prüfung Wege über 35 m als Warnung.
+  en: Where only one exit to the outside or only one stair serves as vertical escape route, the route from the most
+    remote point of an interior space is limited to 35 m. The model does not show whether a second, independent
+    escape route exists, so the check reports routes above 35 m as a warning.
+  fr: S'il n'existe qu'une sortie vers l'extérieur ou un seul escalier comme voie d'évacuation verticale, le trajet
+    depuis le point le plus éloigné d'un local intérieur est limité à 35 m. Le modèle n'indique pas si une deuxième
+    voie indépendante existe ; la vérification signale donc les trajets de plus de 35 m comme avertissement.
+  it: Se esiste una sola uscita verso l'esterno o una sola scala come via di fuga verticale, il percorso dal punto
+    più lontano di un locale interno è limitato a 35 m. Il modello non indica se esiste una seconda via indipendente;
+    la verifica segnala quindi i percorsi oltre 35 m come avviso.
+rule_status: shacl_defined
+severity: warning
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 6
+  source_quote: VKF 16-15, Ziff. 2.4.3
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'
+shacl: |-
+  rule:vkf-16-15-002-fluchtweglaenge-35m-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] .
+
+  rule:vkf-16-15-002-fluchtweglaenge-35m a sh:NodeShape ;
+      sh:name "Fluchtweg mit nur einem Ausgang höchstens 35 m"@de ,
+          "Escape route with a single exit at most 35 m"@en ;
+      sh:description "Gibt es nur einen Ausgang ins Freie oder nur eine Treppe als vertikalen Fluchtweg, ist der Weg von der entferntesten Stelle eines Innenraums auf 35 m beschränkt. Das Modell zeigt nicht, ob ein zweiter, unabhängiger Fluchtweg besteht; deshalb meldet die Prüfung Wege über 35 m als Warnung."@de ,
+          "Where only one exit to the outside or only one stair serves as vertical escape route, the route from the most remote point of an interior space is limited to 35 m. The model does not show whether a second, independent escape route exists, so the check reports routes above 35 m as a warning."@en ;
+      sh:severity sh:Warning ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:vkf-16-15-002-fluchtweglaenge-35m-prefixes ;
+          sh:select """
+              SELECT ?this WHERE {
+                  ?this a pbs:Space .
+                  FILTER NOT EXISTS {
+                      ?this pbs:metadata ?m .
+                      ?m pbs:metadata_key "Pset_SpaceCommon.IsExternal" ; pbs:metadata_value ?x .
+                      FILTER (LCASE(STR(?x)) = "true")
+                  }
+                  FILTER NOT EXISTS {
+                      ?this pbs:classifications ?c .
+                      ?c pbs:classification_uri ?uri .
+                      FILTER (STRENDS(STR(?uri), "/spaces-exterior"))
+                  }
+              }"""
+      ] ;
+      sh:property [
+          sh:path pbs:quantity_values ;
+          sh:or (
+              [ sh:not [ sh:property [ sh:path pbs:quantity_type ; sh:hasValue pbs:quantity_type_escape_route_length ] ] ]
+              [ sh:property [ sh:path pbs:quantity_value ; sh:maxInclusive 35.0 ] ]
+          ) ;
+          sh:message "Fluchtweg über 35 m: nur zulässig mit einem zweiten, getrennten Ausgang oder einer zweiten Treppe."@de ,
+              "Escape route above 35 m: allowed only with a second, separate exit or stair."@en
+      ] .

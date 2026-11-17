@@ -1,0 +1,14 @@
+id: pragmaticbim:product/wicp-pvc
+sort_order: 3
+status: active
+name:
+  de: Kunststoff- / PVC-Fenster
+  fr: Fenêtre en matière synthétique / PVC
+  it: Finestra in materiale sintetico / PVC
+  en: Plastic / PVC window system
+product_classification:
+  classification_scheme: AbstractWindowConnectorProduct
+  classification_code: WICP-PVC
+tender_text:
+  de: Fenstereinheit mit Mehrkammer-Kunststoffprofilen für Rahmen und Flügel und einer Isolierverglasung, die eine Wandöffnung verschliesst. Die Profile werden im Werk verschweisst und innen armiert, verglast und mit Beschlägen versehen, anschliessend in die Laibung eingesetzt, verankert und beidseitig abgedichtet. Geeignet für Fassadenöffnungen mit Anforderungen an Wärme- und Schalltrennung, wenn eine wartungsarme, abwaschbare Oberfläche ohne Anstricherneuerung gefordert ist.
+  en: Window unit with multi-chamber plastic frame and sash profiles and an insulating glazing infill, closing a wall opening. Profiles are welded and internally reinforced in the factory, glazed and fitted with hardware, then set into the reveal, anchored and sealed on both faces. Suitable for facade openings with thermal and acoustic separation duty where a low-maintenance, washable surface without coating renewal is required.

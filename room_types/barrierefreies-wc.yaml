@@ -5,7 +5,7 @@ name:
   de: Barrierefreies WC
   fr: WC sans obstacle
   it: WC privo di barriere
-  en: Accessible Toilet
+  en: Accessible toilet
 definition:
   de: Rollstuhlgängiges WC.
   fr: WC accessible en fauteuil roulant.
@@ -33,7 +33,7 @@ configurations:
       de: Barrierefreies WC
       fr: WC sans obstacle
       it: WC privo di barriere
-      en: Accessible Toilet
+      en: Accessible toilet
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -137,6 +137,25 @@ configurations:
     function: turning
     components:
     - pragmaticbim:component/wendeflaeche
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/barrierefreies-wc-default-steckdose
+    sort_order: 4
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/barrierefreies-wc-default-lichtschalter
+    sort_order: 5
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
     quantity: 1
     status: active
   openings:

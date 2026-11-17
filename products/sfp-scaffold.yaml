@@ -1,0 +1,14 @@
+id: pragmaticbim:product/sfp-scaffold
+sort_order: 26
+status: active
+name:
+  de: Gerüst
+  fr: Échafaudage
+  it: Ponteggio
+  en: Scaffold
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-SCAFFOLD
+tender_text:
+  de: Rahmen- oder Systemgeruest mit Belag, Gelaender und Verankerung am Bauwerk. Es ist eine Arbeitsbuehne, kein Schutzdach ueber dem oeffentlichen Gehweg und kein Bauzaun.
+  en: Frame or system scaffold with platforms, guardrails, and ties to the building. It is a work platform, not a protective canopy over the public footway and not the site fence.

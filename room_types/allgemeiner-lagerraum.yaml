@@ -5,7 +5,7 @@ name:
   de: Allgemeiner Lagerraum
   fr: Dépôt général
   it: Deposito generale
-  en: General Storage
+  en: General storage
 definition:
   de: Raum für allgemeine Materiallagerung.
   fr: Local pour le stockage général de matériel.
@@ -33,7 +33,7 @@ configurations:
       de: Allgemeiner Lagerraum
       fr: Dépôt général
       it: Deposito generale
-      en: General Storage
+      en: General storage
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -104,6 +104,25 @@ configurations:
       per:
         quantity: net_floor_area
         divisor: 6
+    status: active
+  - id: pragmaticbim:room-type-equipment/allgemeiner-lagerraum-default-steckdose
+    sort_order: 2
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/allgemeiner-lagerraum-default-lichtschalter
+    sort_order: 3
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/allgemeiner-lagerraum-default-zugang

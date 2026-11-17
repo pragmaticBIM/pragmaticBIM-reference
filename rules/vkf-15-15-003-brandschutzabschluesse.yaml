@@ -1,0 +1,79 @@
+id: pragmaticbim:rule/vkf-15-15-003-brandschutzabschluesse
+code: VKF-15-15-003
+sort_order: 12
+name:
+  de: Öffnungen in brandabschnittsbildenden Wänden mit Brandschutzabschluss
+  en: Openings in fire compartment walls closed by a fire-rated closure
+  fr: Ouvertures dans les murs formant compartiment avec fermeture coupe-feu
+  it: Aperture nelle pareti di compartimentazione con chiusura tagliafuoco
+description:
+  de: Türen, Fenster und andere Öffnungen in Wänden, die Brandabschnitte bilden, werden mit einem Brandschutzabschluss
+    verschlossen. Gefordert ist in der Regel EI 30; wo die Brandbelastung sehr klein ist (z. B. zwischen Korridor
+    und Treppenhaus), genügt E 30. Geprüft werden Öffnungen in Wänden mit Feuerwiderstand ab 30 Minuten; das Bauteil
+    braucht mindestens E 30.
+  en: Doors, windows and other openings in walls that form fire compartments are closed by a fire-rated closure.
+    EI 30 is the usual requirement; where the fire load is very small (e.g. between corridor and staircase) E 30
+    is enough. The check covers openings in walls with a fire resistance of 30 minutes or more; the element needs
+    at least E 30.
+  fr: Les portes, fenêtres et autres ouvertures dans les murs formant compartiment sont fermées par un élément coupe-feu.
+    L'exigence usuelle est EI 30 ; là où la charge thermique est très faible (p. ex. entre couloir et cage d'escalier),
+    E 30 suffit. La vérification porte sur les ouvertures dans des murs d'au moins 30 minutes de résistance au feu
+    ; l'élément exige au moins E 30.
+  it: Porte, finestre e altre aperture nelle pareti che formano compartimenti sono chiuse da un elemento tagliafuoco.
+    Di regola è richiesto EI 30; dove il carico d'incendio è molto basso (p. es. tra corridoio e vano scala) basta
+    E 30. La verifica riguarda le aperture in pareti con resistenza al fuoco di almeno 30 minuti; l'elemento richiede
+    almeno E 30.
+rule_status: shacl_defined
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/architecture-door-exterior
+- pragmaticbim:element/architecture-window-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 15-15 Brandschutzabstände, Tragwerke, Brandabschnitte (2015)
+  source_page: 9
+  source_quote: VKF 15-15, Ziff. 3.4
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'
+shacl: |-
+  rule:vkf-15-15-003-brandschutzabschluesse-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] ,
+          [ sh:prefix "ifc" ; sh:namespace "https://w3id.org/ifc/IFC4_ADD2#"^^xsd:anyURI ] .
+
+  rule:vkf-15-15-003-brandschutzabschluesse a sh:NodeShape ;
+      sh:name "Öffnungen in brandabschnittsbildenden Wänden mit Brandschutzabschluss"@de ,
+          "Openings in fire compartment walls closed by a fire-rated closure"@en ;
+      sh:description "Türen, Fenster und andere Öffnungen in Wänden, die Brandabschnitte bilden, werden mit einem Brandschutzabschluss verschlossen. Gefordert ist in der Regel EI 30; wo die Brandbelastung sehr klein ist (z. B. zwischen Korridor und Treppenhaus), genügt E 30. Geprüft werden Öffnungen in Wänden mit Feuerwiderstand ab 30 Minuten; das Bauteil braucht mindestens E 30."@de ,
+          "Doors, windows and other openings in walls that form fire compartments are closed by a fire-rated closure. EI 30 is the usual requirement; where the fire load is very small (e.g. between corridor and staircase) E 30 is enough. The check covers openings in walls with a fire resistance of 30 minutes or more; the element needs at least E 30."@en ;
+      sh:severity sh:Violation ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:vkf-15-15-003-brandschutzabschluesse-prefixes ;
+          sh:select """
+              SELECT DISTINCT ?this WHERE {
+                  ?this pbs:connection_physical_type ?type ; pbs:hosted_by ?wall .
+                  FILTER (?type IN (ifc:IfcDoor, ifc:IfcWindow))
+                  ?wall pbs:performance_properties ?f .
+                  ?f pbs:property_key pbs:fire_property_resistance_rating ; pbs:property_value_string ?rating .
+                  FILTER (REGEX(?rating, "^(EI|REI|F)[0-9]+$"))
+                  FILTER (xsd:integer(REPLACE(?rating, "^[A-Z]+", "")) >= 30)
+              }"""
+      ] ;
+      sh:property [
+          sh:path pbs:performance_properties ;
+          sh:qualifiedValueShape [
+              sh:property [ sh:path pbs:property_key ; sh:hasValue pbs:fire_property_resistance_rating ] ;
+              sh:property [ sh:path pbs:property_value_string ; sh:minCount 1 ; sh:in ( "E30" "E60" "E90" "E120" "E180" "E240" "EI30" "EI60" "EI90" "EI120" "EI180" "EI240" "EW30" "EW60" "EW90" "EW120" "EW180" "EW240" "T30" "T60" "T90" "T120" "T180" "T240" "F30" "F60" "F90" "F120" "F180" "F240" ) ]
+          ] ;
+          sh:qualifiedMinCount 1 ;
+          sh:message "Öffnung in brandabschnittsbildender Wand ohne Brandschutzabschluss (mindestens E 30)."@de ,
+              "Opening in a fire compartment wall without a fire-rated closure (at least E 30)."@en
+      ] .

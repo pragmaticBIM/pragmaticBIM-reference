@@ -5,7 +5,7 @@ name:
   de: Abfallschacht
   fr: Gaine vide-ordures
   it: Condotto rifiuti
-  en: Waste Chute
+  en: Waste chute
 definition:
   de: Vertikaler Schacht für den Transport von Siedlungsabfall zu einer zentralen
     Sammelstelle.
@@ -36,7 +36,7 @@ configurations:
       de: Abfallschacht
       fr: Gaine vide-ordures
       it: Condotto rifiuti
-      en: Waste Chute
+      en: Waste chute
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

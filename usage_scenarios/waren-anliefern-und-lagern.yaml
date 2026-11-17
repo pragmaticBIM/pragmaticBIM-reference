@@ -15,7 +15,9 @@ description:
     percorsi, deposito e separazione dagli ospiti.
   en: Goods are regularly delivered and stored before processing. Logistics determine delivery routes,
     storage area, and separation from guests.
-use: pragmaticbim:use/gastronomie
+scope: use
+uses:
+- pragmaticbim:use/gastronomie
 tags:
 - logistik
 status: active

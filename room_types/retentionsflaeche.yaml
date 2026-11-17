@@ -5,7 +5,7 @@ name:
   de: Retentionsfläche
   fr: Aire de rétention
   it: Area di ritenzione
-  en: Retention Area
+  en: Retention area
 definition:
   de: Mehrzweckfläche mit temporärer, geplanter Wasserrückhaltung bei Starkregen.
   fr: Surface polyvalente avec une rétention d'eau temporaire et planifiée en cas
@@ -35,7 +35,7 @@ configurations:
       de: Retentionsfläche
       fr: Aire de rétention
       it: Area di ritenzione
-      en: Retention Area
+      en: Retention area
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

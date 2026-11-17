@@ -15,7 +15,9 @@ description:
     dei posti, flessibilità e altezza.
   en: Audiences attend concerts, lectures, or assemblies. The hall concept determines seating, flexibility,
     and room height.
-use: pragmaticbim:use/versammlung
+scope: use
+uses:
+- pragmaticbim:use/versammlung
 tags:
 - veranstaltung
 status: active

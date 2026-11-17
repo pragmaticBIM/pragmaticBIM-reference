@@ -15,7 +15,9 @@ description:
     se ingombrano l'alloggio o i percorsi comuni.
   en: Households park strollers and mobility aids every day. The place decides whether they block the
     dwelling or shared circulation.
-use: pragmaticbim:use/wohnen
+scope: use
+uses:
+- pragmaticbim:use/wohnen
 tags:
 - ankommen
 status: active
@@ -44,11 +46,10 @@ options:
   - from_room_type: pragmaticbim:room-type/strasse
     to_room_type: pragmaticbim:room-type/kinderwagenraum
   - from_room_type: pragmaticbim:room-type/kinderwagenraum
-    to_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/eingangshalle
   adds:
-  - pragmaticbim:room-type/strasse
   - pragmaticbim:room-type/kinderwagenraum
-  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/eingangshalle
 - id: pragmaticbim:scenario-option/kinderwagen-abstellen-corridor
   sort_order: 2
   name:
@@ -66,10 +67,10 @@ options:
       en: Number of pram spaces
     status: active
   room_relationships:
-  - from_room_type: pragmaticbim:room-type/wohnungseingang
+  - from_room_type: pragmaticbim:room-type/eingangshalle
     to_room_type: pragmaticbim:room-type/flur
   adds:
-  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/eingangshalle
   - pragmaticbim:room-type/flur
 - id: pragmaticbim:scenario-option/kinderwagen-abstellen-none
   sort_order: 3

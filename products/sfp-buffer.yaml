@@ -1,0 +1,14 @@
+id: pragmaticbim:product/sfp-buffer
+sort_order: 13
+status: active
+name:
+  de: Zwischenlager
+  fr: Dépôt intermédiaire
+  it: Deposito intermedio
+  en: Intermediate storage
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-BUFFER
+tender_text:
+  de: Markierte Flaeche, auf der angeliefertes Material wartet, bevor es eingebaut oder weitertransportiert wird. Keine offene Lagerflaeche, kein Magazin und kein Umschlagplatz.
+  en: Marked area where delivered material waits before it is installed or moved on. It is not the open storage yard, not the lockable store, and not the point where vehicles are unloaded.

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fcp-ceramic-tile
+sort_order: 8
+status: active
+name:
+  de: Keramik- / Feinsteinzeug-Bodenbelag
+  fr: Revêtement de sol en céramique / grès cérame
+  it: Pavimento in ceramica / gres porcellanato
+  en: Ceramic / porcelain tile floor
+product_classification:
+  classification_scheme: AbstractFloorCoveringProduct
+  classification_code: FCP-CERAMIC-TILE
+tender_text:
+  de: Nutzschicht aus gebrannten Keramikfliesen auf vorbereitetem Untergrund, die eine harte, wasser- und abriebfeste Gehfläche bildet. Im Dünnbettkleber auf dem Unterlagsboden verlegt, mit verfugten Stössen, Bewegungsfugen und in Nassbereichen mit einer Verbundabdichtung. Geeignet für Bäder, Küchen und stark genutzte Verkehrsflächen mit Anforderungen an Trittsicherheit und Feuchtebeanspruchung.
+  en: Wearing surface from fired ceramic tiles on a prepared substrate, delivering a hard, water-resistant, and abrasion-resistant walking surface. Set in thin-bed adhesive on the screed, with grouted joints, movement joints, and a bonded waterproofing layer in wet areas. Suitable for bathrooms, kitchens, and heavily used circulation areas with demands on slip resistance and moisture exposure.

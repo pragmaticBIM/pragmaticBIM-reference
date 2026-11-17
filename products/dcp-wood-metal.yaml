@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-wood-metal
+sort_order: 3
+status: active
+name:
+  de: Holz-Metall-Tuer
+  fr: Porte bois-métal
+  it: Porta legno-metallo
+  en: Wood–metal composite door
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-WOOD-METAL
+tender_text:
+  de: Türkonstruktion mit Blatt und Rahmen aus Holz auf der Raumseite und Metall-Deckschale oder metallbekleidetem Verbundprofil auf der Wetterseite, die eine Zugangsöffnung in der Gebäudehülle verschliesst. Blatt, Rahmen und Deckschalen werden im Werk zusammengefügt, der Rahmen wird in die Laibung eingesetzt und an die angrenzende Konstruktion abgedichtet, das Blatt auf verstellbaren Bändern mit umlaufenden Dichtungen eingehängt. Geeignet für Eingangs- und Balkonöffnungen, bei denen innen eine Holzoberfläche gewünscht und aussen ein wetterfester, wartungsarmer Abschluss gefordert ist.
+  en: Door assembly with timber leaf and frame on the room side and a metal cover shell or metal-faced composite profile on the weather side, closing an access opening in the building envelope. Leaf, frame, and cover profiles are combined in the factory, the frame is set into the reveal and sealed against the adjoining construction, and the leaf is hung on adjustable hinges with perimeter gaskets. Suitable for entrance and balcony openings where a timber interior surface is wanted and the exterior face has to stay weather-resistant and low-maintenance.

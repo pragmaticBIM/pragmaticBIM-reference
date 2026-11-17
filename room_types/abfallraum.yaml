@@ -5,7 +5,7 @@ name:
   de: Abfallraum
   fr: Local déchets
   it: Locale rifiuti
-  en: Waste Room
+  en: Waste room
 definition:
   de: Raum für das Sammeln und Bereitstellen von Siedlungsabfall.
   fr: Local pour collecter et présenter les déchets ménagers.
@@ -33,7 +33,7 @@ configurations:
       de: Abfallraum
       fr: Local déchets
       it: Locale rifiuti
-      en: Waste Room
+      en: Waste room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -93,6 +93,26 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/abfallraum-default-steckdose
+    sort_order: 1
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/abfallraum-default-lichtschalter
+    sort_order: 2
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
+    status: active
   openings:
   - id: pragmaticbim:room-type-opening/abfallraum-default-zugang
     sort_order: 1

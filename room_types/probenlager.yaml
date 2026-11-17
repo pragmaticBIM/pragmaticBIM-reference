@@ -5,7 +5,7 @@ name:
   de: Probenlager
   fr: Dépôt d'échantillons
   it: Deposito campioni
-  en: Sample Storage
+  en: Sample storage
 definition:
   de: Lager für Labor- oder Materialproben.
   fr: Dépôt pour les échantillons de laboratoire ou de matériaux.
@@ -33,7 +33,7 @@ configurations:
       de: Probenlager
       fr: Dépôt d'échantillons
       it: Deposito campioni
-      en: Sample Storage
+      en: Sample storage
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -115,6 +115,25 @@ configurations:
       per:
         quantity: net_floor_area
         divisor: 4
+    status: active
+  - id: pragmaticbim:room-type-equipment/probenlager-default-steckdose
+    sort_order: 3
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/probenlager-default-lichtschalter
+    sort_order: 4
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/probenlager-default-zugang

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ssp-hbv
+sort_order: 6
+status: active
+name:
+  de: Holz-Beton-Verbunddecke (HBV)
+  fr: Dalle mixte bois-béton
+  it: Solaio misto legno-calcestruzzo
+  en: Timber–concrete composite slab (HBV)
+product_classification:
+  classification_scheme: AbstractSlabSeparatorProduct
+  classification_code: SSP-HBV
+tender_text:
+  de: Tragendes horizontales Bauteil, das eine Holzplatten- oder Rippenkonstruktion mit einer druckübertragenden Betonauflage verbindet. Beide Schichten werden über Kerven, Schrauben oder Verbindungsmittel schubfest gekoppelt, der Beton wird vor Ort eingebracht oder als vorgefertigtes Verbundelement geliefert. Geeignet für Geschossdecken mit grösseren Spannweiten, besserem Schallschutz und höherer Masse als reine Holzdecken.
+  en: Load-bearing horizontal element combining a timber plate or rib structure with a concrete topping that takes the compression forces. Both layers are joined shear-resistant by notches, screws, or connectors, with the concrete cast on site or supplied as a prefabricated composite element. Suitable for floor decks that require longer spans, better acoustic performance, and more mass than a pure timber deck.

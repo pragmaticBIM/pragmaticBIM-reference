@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mtp-ww-wc-outlet
+sort_order: 18
+status: active
+name:
+  de: WC-Ablauf
+  fr: Écoulement WC
+  it: Scarico WC
+  en: WC outlet
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-WW-WC-OUTLET
+tender_text:
+  de: Nimmt den Abgang des WC-Beckens in die Abwasserleitung auf und dichtet den Übergang zwischen Apparat und Leitung wasser- und geruchdicht ab. Wird als waagrechter oder senkrechter Anschluss durch Wand oder Boden ausgebildet, mit Anschlussbogen oder Muffe am Apparateabgang und Abstimmung auf die feste Leitungslage. Geeignet für alle Sanitärräume, wobei die Abgangslage vor dem Schliessen der Wand mit Apparat und Vorwandgestell abgestimmt wird und der Anschluss bei ausgebautem Apparat instand gesetzt werden kann.
+  en: Takes the discharge from the WC pan into the waste water pipework and seals the joint between fixture and pipe against water and odour. Formed as a horizontal or vertical connection through wall or floor, with a connector bend or sleeve fitted to the fixture outlet and aligned with the fixed pipe position. Suitable for all sanitary rooms, with the outlet position coordinated with fixture and prewall frame before the wall is closed and with the connection remaining serviceable once the fixture is removed.

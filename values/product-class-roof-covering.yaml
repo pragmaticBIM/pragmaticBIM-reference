@@ -32,39 +32,39 @@ values:
   - Aufgestaendigtes Photovoltaik-Dach
   - Sonstige / unbekannte Dachbekleidung
   fr:
-  - Built-up / bitumen flat roof
+  - Toiture plate bicouche / bitumineuse
   - Bitumen flat roof insulation layer
   - Bitumen flat roof membrane layer
-  - Single-ply membrane flat roof
+  - Toiture plate monocouche (EPDM / TPO / PVC)
   - Single-ply flat roof insulation layer
   - Single-ply flat roof membrane layer
-  - Liquid-applied flat roof
-  - Metal sheet roof
-  - Clay tile roof
-  - Concrete tile roof
-  - Natural slate roof
-  - Wood shingle / shake roof
-  - Extensive green roof
-  - Intensive green roof
-  - Roof-mounted photovoltaic system
-  - Other / unknown roof covering
+  - Toiture plate en résine liquide
+  - Toiture en tôle
+  - Toiture en tuiles de terre cuite
+  - Toiture en tuiles de béton
+  - Toiture en ardoise naturelle
+  - Toiture en bardeaux de bois
+  - Toiture végétalisée extensive
+  - Toiture végétalisée intensive
+  - Toiture photovoltaïque sur supports
+  - Couverture de toiture autre ou inconnue
   it:
-  - Built-up / bitumen flat roof
+  - Tetto piano multistrato / bituminoso
   - Bitumen flat roof insulation layer
   - Bitumen flat roof membrane layer
-  - Single-ply membrane flat roof
+  - Tetto piano monostrato (EPDM / TPO / PVC)
   - Single-ply flat roof insulation layer
   - Single-ply flat roof membrane layer
-  - Liquid-applied flat roof
-  - Metal sheet roof
-  - Clay tile roof
-  - Concrete tile roof
-  - Natural slate roof
-  - Wood shingle / shake roof
-  - Extensive green roof
-  - Intensive green roof
-  - Roof-mounted photovoltaic system
-  - Other / unknown roof covering
+  - Tetto piano in resina liquida
+  - Copertura in lamiera
+  - Copertura in tegole di laterizio
+  - Copertura in tegole di calcestruzzo
+  - Copertura in ardesia naturale
+  - Copertura in scandole di legno
+  - Tetto verde estensivo
+  - Tetto verde intensivo
+  - Tetto fotovoltaico su supporti
+  - Copertura del tetto altra o sconosciuta
   en:
   - Built-up / bitumen flat roof
   - Bitumen flat roof insulation layer

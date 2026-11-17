@@ -24,23 +24,23 @@ values:
   - Spezialtuer
   - Sonstige / unbekannte Tuer
   fr:
-  - Wood door system
-  - Metal door system
-  - Wood–metal composite door
-  - Plastic / PVC door system
-  - Glazed door system
-  - Gate / industrial door
-  - Special door system
-  - Other / unknown door
+  - Porte en bois
+  - Porte métallique
+  - Porte bois-métal
+  - Porte en matière synthétique / PVC
+  - Porte vitrée
+  - Portail / porte industrielle
+  - Porte spéciale
+  - Porte autre ou inconnue
   it:
-  - Wood door system
-  - Metal door system
-  - Wood–metal composite door
-  - Plastic / PVC door system
-  - Glazed door system
-  - Gate / industrial door
-  - Special door system
-  - Other / unknown door
+  - Porta in legno
+  - Porta metallica
+  - Porta legno-metallo
+  - Porta in materiale sintetico / PVC
+  - Porta vetrata
+  - Portone / porta industriale
+  - Porta speciale
+  - Porta altra o sconosciuta
   en:
   - Wood door system
   - Metal door system

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/srp-oth
+sort_order: 4
+status: active
+name:
+  de: Andere oder unbekannte Treppe
+  fr: Escalier autre ou inconnu
+  it: Scala altra o sconosciuta
+  en: Other or unknown stair
+product_classification:
+  classification_scheme: StairProduct
+  classification_code: SRP-OTH
+tender_text:
+  de: Platzhalter für Treppen, deren Material oder Produkttyp zum Zeitpunkt der Ausschreibung noch nicht festgelegt ist, sowie für Stein- und Verbundtreppen ausserhalb der gelisteten Typen. Geometrie, Nutzung sowie Brand- und Schallschutzanforderungen sind gesondert zu beschreiben. Nur in frühen Planungsphasen oder bei unvollständiger Datenlage verwenden.
+  en: Placeholder for stairs whose material or product type is not yet fixed at tender stage, and for stone or composite stairs outside the listed types. Geometry, use, and fire and acoustic requirements must be stated separately. Use only in early design stages or where data is incomplete.

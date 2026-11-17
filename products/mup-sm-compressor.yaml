@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mup-sm-compressor
+sort_order: 20
+status: active
+name:
+  de: Druckluftkompressor
+  fr: Compresseur d'air comprimé
+  it: Compressore d'aria compressa
+  en: Compressed air compressor
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-SM-COMPRESSOR
+tender_text:
+  de: Erzeugt Druckluft mit dem von den angeschlossenen Verbrauchern geforderten Druck und der geforderten Qualität und hält die Versorgung über einen Behälter auch bei schwankendem Bedarf aufrecht. Lieferung als werkseitig montierte Einheit mit Antrieb, Kühlung, Behälter und Luftaufbereitung auf schwingungsentkoppelter Unterlage in einem belüfteten Technikraum, Anschluss an das Verteilnetz, die Stromversorgung, die Kondensatentwässerung und die Wärmeabfuhr, Lastregelung und Störmeldungen an die Gebäudeautomation. Geeignet für Werkstätten, Labore und Prozessbereiche; erfordert kühle Ansaugluft und Wärmeabfuhr aus dem Raum, Beachtung der Schallübertragung sowie Zugang für Filter-, Öl- und Komponentenservice.
+  en: Generates compressed air at the pressure and quality required by the connected consumers and maintains supply from a receiver against fluctuating demand. Delivered as a factory-assembled unit with drive, cooling, receiver, and air treatment on a vibration-isolated base in a ventilated plant room, connected to the distribution network, power supply, condensate drainage, and heat removal, with load control and fault signals passed to building automation. Suitable for workshops, laboratories, and process areas; requires cool intake air and heat rejection from the room, attention to noise transmission, and access for filter, oil, and component servicing.

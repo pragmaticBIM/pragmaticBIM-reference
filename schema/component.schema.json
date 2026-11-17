@@ -69,6 +69,7 @@
         "medical",
         "device",
         "plant",
+        "electrical",
         "door",
         "window",
         "passage",

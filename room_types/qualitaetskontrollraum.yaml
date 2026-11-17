@@ -5,7 +5,7 @@ name:
   de: Qualitätskontrollraum
   fr: Local de contrôle qualité
   it: Locale controllo qualità
-  en: Quality Control Room
+  en: Quality control room
 definition:
   de: Raum für Prüfung und Qualitätskontrolle.
   fr: Local pour le contrôle et l'assurance qualité.
@@ -33,7 +33,7 @@ configurations:
       de: Qualitätskontrollraum
       fr: Local de contrôle qualité
       it: Locale controllo qualità
-      en: Quality Control Room
+      en: Quality control room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -111,6 +111,25 @@ configurations:
     function: working
     components:
     - pragmaticbim:component/arbeitsplatz-buero
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/qualitaetskontrollraum-default-steckdose
+    sort_order: 3
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/qualitaetskontrollraum-default-lichtschalter
+    sort_order: 4
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
     quantity: 1
     status: active
   openings:

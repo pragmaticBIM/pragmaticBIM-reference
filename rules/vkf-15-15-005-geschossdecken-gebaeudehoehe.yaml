@@ -1,0 +1,108 @@
+id: pragmaticbim:rule/vkf-15-15-005-geschossdecken-gebaeudehoehe
+code: VKF-15-15-005
+sort_order: 14
+name:
+  de: 'Geschossdecken: Feuerwiderstand nach Gebäudehöhe'
+  en: 'Floor slabs: fire resistance by building height'
+  fr: 'Dalles d''étage : résistance au feu selon la hauteur du bâtiment'
+  it: 'Solette di piano: resistenza al fuoco secondo l''altezza dell''edificio'
+description:
+  de: 'Brandabschnittsbildende Geschossdecken brauchen je nach Gebäudehöhe mindestens: geringe Höhe REI 30, mittlere
+    Höhe REI 60, Hochhaus REI 90. Mit Sprinkleranlage gelten: geringe Höhe EI 30, mittlere Höhe REI 30, Hochhaus
+    REI 60. Es sind die tiefsten Werte der Tabellen; andere Nutzungen verlangen teils mehr. Geprüft werden Decken
+    über dem untersten Geschoss, ohne Dach und Bodenplatte. Die Höhenkategorie leitet die Prüfung aus der höchsten
+    Geschosskote ab (über 11 m mittlere Höhe, über 30 m Hochhaus), den Sprinklerschutz aus Pset_BuildingCommon.SprinklerProtection;
+    oberstes Geschoss ist das höchste Geschoss mit Räumen.'
+  en: 'Floor slabs forming fire compartments need at least, by building height: low REI 30, medium REI 60, high-rise
+    REI 90. With sprinklers: low EI 30, medium REI 30, high-rise REI 60. These are the lowest values of the tables;
+    other uses partly require more. The check covers slabs above the lowest storey, without roof and base slab.
+    The check derives the height category from the highest storey elevation (above 11 m medium height, above 30
+    m high-rise) and sprinkler protection from Pset_BuildingCommon.SprinklerProtection; the top storey is the highest
+    storey with spaces.'
+  fr: 'Les dalles d''étage formant compartiment exigent au moins, selon la hauteur : faible hauteur REI 30, hauteur
+    moyenne REI 60, tour REI 90. Avec sprinklers : faible hauteur EI 30, hauteur moyenne REI 30, tour REI 60. Ce
+    sont les valeurs les plus basses des tableaux ; d''autres affectations exigent parfois davantage. La vérification
+    porte sur les dalles au-dessus du niveau le plus bas, sans toiture ni radier. La vérification déduit la catégorie
+    de hauteur de la cote d''étage la plus élevée (plus de 11 m hauteur moyenne, plus de 30 m tour) et la protection
+    sprinkler de Pset_BuildingCommon.SprinklerProtection ; l''étage supérieur est le plus haut étage comportant
+    des locaux.'
+  it: 'Le solette di piano di compartimentazione richiedono almeno, secondo l''altezza: altezza ridotta REI 30,
+    altezza media REI 60, edificio alto REI 90. Con sprinkler: altezza ridotta EI 30, altezza media REI 30, edificio
+    alto REI 60. Sono i valori più bassi delle tabelle; altri utilizzi richiedono talvolta di più. La verifica riguarda
+    le solette sopra il piano più basso, senza tetto né platea. La verifica deduce la categoria d''altezza dalla
+    quota di piano più alta (oltre 11 m altezza media, oltre 30 m edificio alto) e la protezione sprinkler da Pset_BuildingCommon.SprinklerProtection;
+    il piano superiore è il piano più alto con locali.'
+rule_status: shacl_defined
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/structural-slab-floor
+- pragmaticbim:element/architecture-slab-floor
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 15-15 Brandschutzabstände, Tragwerke, Brandabschnitte (2015)
+  source_page: 11
+  source_quote: VKF 15-15, Ziff. 3.7.1
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'
+shacl: |-
+  rule:vkf-15-15-005-geschossdecken-gebaeudehoehe-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] ,
+          [ sh:prefix "ifc" ; sh:namespace "https://w3id.org/ifc/IFC4_ADD2#"^^xsd:anyURI ] .
+
+  rule:vkf-15-15-005-geschossdecken-gebaeudehoehe a sh:NodeShape ;
+      sh:name "Geschossdecken: Feuerwiderstand nach Gebäudehöhe"@de ,
+          "Floor slabs: fire resistance by building height"@en ;
+      sh:description "Brandabschnittsbildende Geschossdecken brauchen je nach Gebäudehöhe mindestens: geringe Höhe REI 30, mittlere Höhe REI 60, Hochhaus REI 90. Mit Sprinkleranlage gelten: geringe Höhe EI 30, mittlere Höhe REI 30, Hochhaus REI 60. Es sind die tiefsten Werte der Tabellen; andere Nutzungen verlangen teils mehr. Geprüft werden Decken über dem untersten Geschoss, ohne Dach und Bodenplatte. Die Höhenkategorie leitet die Prüfung aus der höchsten Geschosskote ab (über 11 m mittlere Höhe, über 30 m Hochhaus), den Sprinklerschutz aus Pset_BuildingCommon.SprinklerProtection; oberstes Geschoss ist das höchste Geschoss mit Räumen."@de ,
+          "Floor slabs forming fire compartments need at least, by building height: low REI 30, medium REI 60, high-rise REI 90. With sprinklers: low EI 30, medium REI 30, high-rise REI 60. These are the lowest values of the tables; other uses partly require more. The check covers slabs above the lowest storey, without roof and base slab. The check derives the height category from the highest storey elevation (above 11 m medium height, above 30 m high-rise) and sprinkler protection from Pset_BuildingCommon.SprinklerProtection; the top storey is the highest storey with spaces."@en ;
+      sh:severity sh:Violation ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:vkf-15-15-005-geschossdecken-gebaeudehoehe-prefixes ;
+          sh:select """
+              SELECT DISTINCT ?this WHERE {
+                  ?this a pbs:SeparatorSlab ; pbs:separator_slab_type <https://w3id.org/ifc/IFC4_ADD2#IfcSlabTypeEnum.FLOOR> .
+              }"""
+      ] ;
+      sh:sparql [
+          a sh:SPARQLConstraint ;
+          sh:prefixes rule:vkf-15-15-005-geschossdecken-gebaeudehoehe-prefixes ;
+          sh:message "Geschossdecke mit Feuerwiderstand {?ratingDe}; erforderlich mindestens {?required} Minuten ({?categoryDe}{?concept})."@de ,
+          "Floor slab with fire resistance {?rating}; required at least {?required} minutes ({?categoryEn}{?concept})."@en ;
+          sh:select """
+              SELECT $this ?rating ?ratingDe ?required ?categoryDe ?categoryEn ?concept WHERE {
+                  $this pbs:parent_level ?level .
+                  ?level pbs:elevation ?elevation .
+                  { SELECT (MAX(?le) AS ?maxElevation) (MIN(?le) AS ?minElevation) WHERE { ?l a pbs:LevelContext ; pbs:elevation ?le } }
+                  OPTIONAL { SELECT (MAX(?se) AS ?topSpaceElevation) WHERE { ?s a pbs:Space ; pbs:parent_level ?sl . ?sl pbs:elevation ?se } }
+                  BIND (EXISTS {
+                      ?b a pbs:BuildingContext ; pbs:metadata ?bm .
+                      ?bm pbs:metadata_key "Pset_BuildingCommon.SprinklerProtection" ; pbs:metadata_value ?bv .
+                      FILTER (LCASE(STR(?bv)) = "true")
+                  } AS ?sprinkler)
+                  BIND (COALESCE(?topSpaceElevation, ?maxElevation) AS ?topStorey)
+                  BIND (IF(?maxElevation > 30, 3, IF(?maxElevation > 11, 2, 1)) AS ?category)
+                  BIND (IF(?category = 3, "Hochhaus", IF(?category = 2, "mittlere Höhe", "geringe Höhe")) AS ?categoryDe)
+                  BIND (IF(?category = 3, "high-rise", IF(?category = 2, "medium height", "low height")) AS ?categoryEn)
+                  BIND (IF(?sprinkler, ", Sprinkler", "") AS ?concept)
+                  BIND (?elevation >= ?topStorey AS ?isTop)
+                  FILTER (?elevation > ?minElevation)
+                  BIND (IF(?category = 3, IF(?sprinkler, 60, 90), IF(?category = 2, IF(?sprinkler, 30, 60), 30)) AS ?required)
+                  FILTER (?required > 0)
+                  OPTIONAL {
+                      $this pbs:performance_properties ?f .
+                      ?f pbs:property_key pbs:fire_property_resistance_rating ; pbs:property_value_string ?r .
+                      FILTER (REGEX(?r, "^(REI|EI|F)[0-9]+$"))
+                  }
+                  BIND (IF(BOUND(?r), xsd:integer(REPLACE(?r, "^[A-Z]+", "")), 0) AS ?minutes)
+                  FILTER (?minutes < ?required)
+                  BIND (COALESCE(?r, "none") AS ?rating)
+                  BIND (COALESCE(?r, "keine Angabe") AS ?ratingDe)
+              }"""
+      ] .

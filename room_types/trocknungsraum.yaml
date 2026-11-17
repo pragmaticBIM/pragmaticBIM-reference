@@ -5,7 +5,7 @@ name:
   de: Trocknungsraum
   fr: Local de séchage
   it: Locale di asciugatura
-  en: Drying Room
+  en: Drying room
 definition:
   de: Raum zum Trocknen der Wäsche, im Unterschied zum Waschraum.
   fr: Local pour le séchage du linge, distinct du local de lavage.
@@ -33,7 +33,7 @@ configurations:
       de: Trocknungsraum
       fr: Local de séchage
       it: Locale di asciugatura
-      en: Drying Room
+      en: Drying room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -113,6 +113,26 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 30
+  equipment:
+  - id: pragmaticbim:room-type-equipment/trocknungsraum-default-steckdose
+    sort_order: 1
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/trocknungsraum-default-lichtschalter
+    sort_order: 2
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
+    status: active
   openings:
   - id: pragmaticbim:room-type-opening/trocknungsraum-default-zugang
     sort_order: 1

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mtp-elec-socket
+sort_order: 1
+status: active
+name:
+  de: Steckdose
+  fr: Prise de courant
+  it: Presa elettrica
+  en: Socket outlet
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-ELEC-SOCKET
+tender_text:
+  de: Stellt einen festen Anschlusspunkt für die Stromversorgung von Geräten am Nutzungsort bereit. Wird auf oder unter Putz in Wand, Boden oder Möbel montiert und an einen Endstromkreis der Elektroverteilung angeschlossen, wobei Erdung und Überstromschutz über die speisende Verteilung erfolgen. Geeignet für alle Raumtypen, wobei Lage, Anzahl und Gruppierung auf die Raumnutzung abgestimmt sind und nach dem Ausbau zugänglich bleiben.
+  en: Provides a fixed connection point for supplying electrical power to appliances and equipment at the point of use. Mounted surface or flush in wall, floor, or furniture and connected to a final circuit of the electrical distribution, with earthing and overcurrent protection provided by the supplying board. Suitable for all room types, with position, quantity, and grouping matched to the intended use of the space and remaining accessible after fit-out.

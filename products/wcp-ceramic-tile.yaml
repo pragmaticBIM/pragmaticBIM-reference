@@ -1,0 +1,14 @@
+id: pragmaticbim:product/wcp-ceramic-tile
+sort_order: 5
+status: active
+name:
+  de: Keramik- / Feinsteinzeug-Wandfliese
+  fr: Carrelage mural en céramique / grès cérame
+  it: Piastrelle murali in ceramica / gres porcellanato
+  en: Ceramic / porcelain wall tile
+product_classification:
+  classification_scheme: AbstractWallCoveringProduct
+  classification_code: WCP-CERAMIC-TILE
+tender_text:
+  de: Feuchtigkeitsbeständige Innenwandoberfläche aus Keramik-, Feinsteinzeug- oder Steingutfliesen auf verputztem, plattenbekleidetem oder betoniertem Untergrund. Im Dünnbettverfahren verklebt und verfugt, mit Verbundabdichtung, Bewegungsfugen und dichten Anschlüssen in Nassbereichen. Geeignet für Bäder, Küchen und hygienesensible Räume mit Anforderungen an Feuchtebeständigkeit, Reinigbarkeit und nichtbrennbare Oberflächen.
+  en: Water-resistant interior wall finish from ceramic, porcelain, or earthenware tiles on a plastered, board, or concrete substrate. Bedded in thin-bed adhesive and grouted, with a bonded sealing layer, movement joints, and sealed connections in wet zones. Suitable for bathrooms, kitchens, and hygiene-sensitive rooms with requirements on moisture resistance, cleanability, and non-combustible surfaces.

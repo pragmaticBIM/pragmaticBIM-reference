@@ -15,7 +15,9 @@ description:
     alloggio ha le proprie macchine o se si va in una lavanderia comune.
   en: Households do laundry regularly. The choice decides whether each dwelling has
     its own machines or the way leads to a communal laundry.
-use: pragmaticbim:use/wohnen
+scope: use
+uses:
+- pragmaticbim:use/wohnen
 tags:
 - haushalt
 status: active
@@ -51,11 +53,11 @@ options:
     it: Lavanderia comune
     en: Communal laundry
   room_relationships:
-  - from_room_type: pragmaticbim:room-type/wohnungseingang
+  - from_room_type: pragmaticbim:room-type/eingangshalle
     to_room_type: pragmaticbim:room-type/gemeinschaftswaschkueche
     max_distance: 30
   adds:
-  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/eingangshalle
   - pragmaticbim:room-type/gemeinschaftswaschkueche
 - id: pragmaticbim:scenario-option/waesche-waschen-utility
   project_goal_levels:

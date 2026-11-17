@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mtp-cool-chilled-ceiling
+sort_order: 13
+status: active
+name:
+  de: Kuehldecke / Kuehlbalken
+  fr: Plafond rafraîchissant / poutre froide
+  it: Soffitto raffrescante / trave fredda
+  en: Chilled ceiling / beam
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-COOL-CHILLED-CEILING
+tender_text:
+  de: Entzieht dem Raum Wärme über gekühlte Flächen im Deckenbereich, weitgehend geräusch- und zugfrei, und arbeitet rein über Strahlung und Konvektion oder durch Primärluft unterstützt. Wird unter der Decke abgehängt oder in den Deckenaufbau integriert und an Kaltwasservor- und -rücklauf mit Absperr- und Einregulierorganen angeschlossen, wobei die Vorlauftemperatur über dem Raumtaupunkt gehalten wird, damit kein Kondensat entsteht. Geeignet für Büros, Besprechungsräume und ähnliche Räume mit mässigen sensiblen Lasten, wobei die Leistung je Einheit aus der verfügbaren Deckenfläche abgeleitet wird und Anschlüsse und Deckenflächen für Einregulierung und Reinigung zugänglich bleiben.
+  en: Removes heat from the room through cooled surfaces at ceiling level, largely without noise and draught, working purely by radiation and convection or supported by primary air. Suspended below the slab or integrated into the ceiling build-up and connected to chilled water flow and return with shut-off and balancing devices, with the supply temperature held above the room dew point so that no condensate forms. Suitable for offices, meeting rooms, and similar spaces with moderate sensible loads, with the output per unit derived from the available ceiling area and with connections and ceiling surfaces accessible for balancing and cleaning.

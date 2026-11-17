@@ -15,7 +15,9 @@ description:
     riservatezza, disturbo dell'assistenza e percorsi nel reparto.
   en: Relatives and friends visit patients during their stay. The visiting location determines privacy,
     disruption of care, and routes through the ward.
-use: pragmaticbim:use/gesundheit
+scope: use
+uses:
+- pragmaticbim:use/gesundheit
 tags:
 - patientenweg
 status: active

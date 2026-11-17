@@ -13,7 +13,9 @@ description:
   it: Gli ospiti fanno colazione durante il soggiorno. L'offerta determina sala, percorsi e orari di esercizio.
   en: Guests have breakfast during their stay. The provision determines dining space, travel, and operating
     hours.
-use: pragmaticbim:use/beherbergung
+scope: use
+uses:
+- pragmaticbim:use/beherbergung
 tags:
 - verpflegung
 status: active

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/swp-masonry
+sort_order: 2
+status: active
+name:
+  de: Mauerwerk-Wand
+  fr: Mur en maçonnerie
+  it: Parete in muratura
+  en: Masonry wall
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-MASONRY
+tender_text:
+  de: Tragende oder nichttragende Wand aus vor Ort vermauerten Ziegel-, Block- oder Natursteinen im Mörtelverband. Einschliesslich monolithischer Dämm-Blocksysteme, die Tragfunktion und Wärmedämmung in einer Schicht vereinen. Geeignet für Aussen- und Innenwände in kleinteiliger, handwerklicher Ausführung.
+  en: Load-bearing or non-load-bearing wall laid on site from brick, block, or natural stone units in mortar. Includes monolithic insulating block systems that combine structure and thermal insulation in a single layer. Suitable for exterior and interior walls built unit by unit in traditional trade work.

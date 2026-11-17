@@ -15,7 +15,9 @@ description:
     di fuga e volume della palestra.
   en: Spectators watch games and competitions on site. A stand determines spectator numbers, escape routes,
     and hall volume.
-use: pragmaticbim:use/sport
+scope: use
+uses:
+- pragmaticbim:use/sport
 tags:
 - publikum
 status: active

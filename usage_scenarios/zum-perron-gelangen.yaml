@@ -15,7 +15,9 @@ description:
     determina tempi di coincidenza, assenza di ostacoli e flussi di persone.
   en: Passengers travel from the hall to the platform with luggage, pushchairs, or wheelchairs. The access
     arrangement determines transfer time, step-free access, and passenger flow.
-use: pragmaticbim:use/verkehr
+scope: use
+uses:
+- pragmaticbim:use/verkehr
 tags:
 - erschliessung
 status: active

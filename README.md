@@ -16,6 +16,42 @@ Configure intensity per project goal instead of ticking a use-case checklist. On
 
 Open it in the [web application](https://elementplan.pragmaticbim.ch), or read, fork, or copy it into your own project.
 
+## Principles
+
+The Reference is opinionated. These rules decide what goes in and what stays out:
+
+1. **No requirement without a consumer.** Every element and attribute is ordered because a workflow needs it. Completeness for its own sake is not a reason.
+2. **Goals drive scope.** Projects set an intensity per project goal. The goals activate workflows, the workflows name the data. Nobody ticks use cases one by one.
+3. **One chain, stable IDs.** Goal → use → workflow → element → attribute. Every entry has a `pragmaticbim:` ID and one place in that chain.
+4. **One source, many outputs.** Contract Excel, PDF reports and IDS come from the same YAML. Nothing is maintained twice.
+5. **Spaces first.** Correctly modelled spaces and openings carry the building. Walls, slabs and quantities are derived from them where possible.
+6. **Type before occurrence.** Data that is the same for every instance belongs to the type.
+7. **Checked like code.** The tests enforce these rules. A change that breaks the chain does not merge.
+
+## Use with AI assistants
+
+The Reference is available as a public MCP server, so Claude, ChatGPT and other MCP clients can answer with its goals, workflows, elements, attributes and room codes, citing stable IDs and catalog links.
+
+Endpoint (Streamable HTTP):
+
+```text
+https://pragmaticbim.ch/mcp
+```
+
+Setup steps for Claude, ChatGPT and other clients: [pragmaticbim.ch/de/mcp](https://pragmaticbim.ch/de/mcp).
+
+| Tool | Returns |
+| --- | --- |
+| `search_catalog` | Entries matching a query and the catalog filters |
+| `get_entry` | One entry with its relations (goal → uses → workflows → elements) |
+| `get_element_attributes` | An element's attributes with type, unit, IFC mapping and the workflows that require them |
+| `resolve_room_code` | Room type for a room code or name |
+| `list_vocabulary` | Allowed filter values (types, areas, goals, categories, uses) |
+
+Example question: *"Which attributes does an interior door need for the door tender, and how do they map to IFC?"*
+
+The server is read-only, needs no account and stores no project data. It serves the released version of this repository, so changes on `main` appear after the next release.
+
 ## What is in this repository
 
 | Folder | Role |
@@ -31,6 +67,7 @@ Open it in the [web application](https://elementplan.pragmaticbim.ch), or read, 
 | `uses/` | Building uses |
 | `usage_scenarios/` | Usage scenarios and their options |
 | `room_types/` | Functional rooms and container types composed with `contains`; configurations order `equipment` and `openings` |
+| `products/` | Product class data sheets: name, tender text and notes per class named in the [data contract](https://schema.pragmaticbim.ch/) |
 | `components/` | Parametric templates for fixtures, built-in and loose furniture, doors, windows and clearances |
 | `schema/` | JSON Schema for components and the room type `equipment` / `openings` extension |
 | `catalog/` / `generators/` / `render/` / `runner.py` | IFC and isometric PNG sample generation ([generators/README.md](generators/README.md)) |
@@ -39,7 +76,7 @@ Open it in the [web application](https://elementplan.pragmaticbim.ch), or read, 
 
 Workflows follow the [abstract use case classification](https://schema.pragmaticbim.ch/classification/usecase.html). Several lean on [abstractBIM](https://www.abstractbim.com/), which derives walls, slabs, and quantities from correctly modelled spaces and openings.
 
-This is a starting point, not a Swiss standard. It does not replace KBOB or federal authority templates.
+The Reference is an opinionated default, not a Swiss standard. Use it as it is, or fork it and change the opinions for your organisation. It does not replace KBOB or federal authority templates.
 
 ## Components, equipment and openings
 
@@ -57,11 +94,31 @@ Equipment and openings reference components and leave position to the generator.
 
 A quantity can scale with the room: `quantity: {min: 1, per: {quantity: net_floor_area, divisor: 6}}` asks for one item per 6 m² of net floor area, at least one. Repeated fixtures such as urinals and showers carry `placement.axis_spacing_min`.
 
-Circulation, voids, parking and outdoor room types carry no equipment; the rooms they lead into declare their doors.
+Beyond electrical points, circulation, voids, parking and outdoor room types carry no equipment; the rooms they lead into declare their doors. Every room lists at least one socket outlet (one per 10 m²) and one light switch; outdoor rooms use the splash-proof outlet. Shafts, voids, elevators, roofs, green areas and streets have none.
 
 Devices that drive room size but are chosen late (operating tables, imaging, machines, server racks, cooling appliances) are reserved with the Geräteplatz element (`architecture-device-space`); plant rooms use the existing MEP elements (boiler, tank, chiller, air handler, pump, switchboard, transformer, generator, UPS).
 
 Dimensions marked "Planungswert" or "SIA 500" in a `comment` still need professional confirmation before release.
+
+## Products
+
+The [pragmatic BIM data contract](https://schema.pragmaticbim.ch/) identifies each product class: notation, short definition, hierarchy, and crosswalks to KBOB, BKP and materials. The Reference describes it in `products/<code>.yaml`: name in four languages, tender text, and optional application notes and media. Element attributes such as the wall product class select from the same classes through `values/product-class-*.yaml`.
+
+| File | Edited by |
+| --- | --- |
+| `products/<code>.yaml` | hand, one data sheet per top concept |
+| `products/_contract-pin.yaml` | hand, the pinned contract commit and the schemes it covers |
+| `products/_names.yaml` | generated, the name index of the pinned contract |
+| `values/product-class-*.yaml` | generated, German and English from the contract, French and Italian from the sheets |
+
+The German and English names on a sheet must match the contract label; the tests check this. To move to a new contract release, check the contract out at the new commit, update `_contract-pin.yaml` and run:
+
+```bash
+pip install rdflib
+python scripts/sync_products.py --contract ../pragmatic-bim-data-contract
+```
+
+After editing sheet names, rebuild the value lists with `python scripts/sync_products.py --values-only`.
 
 ## Contributing
 

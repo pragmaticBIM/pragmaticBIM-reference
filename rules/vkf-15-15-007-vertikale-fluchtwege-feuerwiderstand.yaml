@@ -1,0 +1,40 @@
+id: pragmaticbim:rule/vkf-15-15-007-vertikale-fluchtwege-feuerwiderstand
+code: VKF-15-15-007
+sort_order: 16
+name:
+  de: 'Vertikale Fluchtwege: Feuerwiderstand nach Gebäudehöhe'
+  en: 'Vertical escape routes: fire resistance by building height'
+  fr: 'Voies d''évacuation verticales : résistance au feu selon la hauteur du bâtiment'
+  it: 'Vie di fuga verticali: resistenza al fuoco secondo l''altezza dell''edificio'
+description:
+  de: 'Die Umfassung von Treppenhäusern und anderen vertikalen Fluchtwegen braucht mindestens: geringe Höhe REI
+    30, mittlere Höhe REI 60, Hochhaus REI 90. Diese Werte gelten auch mit Sprinkleranlage; andere Nutzungen verlangen
+    teils mehr. Noch nicht prüfbar: das Modell zeigt nicht, welche Wände ein Treppenhaus umschliessen.'
+  en: 'The enclosure of staircases and other vertical escape routes needs at least: low height REI 30, medium height
+    REI 60, high-rise REI 90. These values apply with sprinklers too; other uses partly require more. Not yet checkable:
+    the model does not show which walls enclose a staircase.'
+  fr: 'L''enveloppe des cages d''escalier et autres voies d''évacuation verticales exige au moins : faible hauteur
+    REI 30, hauteur moyenne REI 60, tour REI 90. Ces valeurs valent aussi avec sprinklers ; d''autres affectations
+    exigent parfois davantage. Pas encore vérifiable : le modèle n''indique pas quels murs entourent une cage d''escalier.'
+  it: 'L''involucro dei vani scala e delle altre vie di fuga verticali richiede almeno: altezza ridotta REI 30,
+    altezza media REI 60, edificio alto REI 90. Questi valori valgono anche con sprinkler; altri utilizzi richiedono
+    talvolta di più. Non ancora verificabile: il modello non indica quali pareti racchiudono un vano scala.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-stair
+- pragmaticbim:element/structural-stair
+- pragmaticbim:element/structural-wall
+- pragmaticbim:element/architecture-wall-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 15-15 Brandschutzabstände, Tragwerke, Brandabschnitte (2015)
+  source_page: 11
+  source_quote: VKF 15-15, Ziff. 3.7.1
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'

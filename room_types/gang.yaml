@@ -14,7 +14,7 @@ definition:
 room_type_kind: room
 room_name: RN-01-20-05
 activity: M-RES
-default_scope: dwelling
+default_scope: unit
 status: active
 configurations:
 - id: pragmaticbim:room-type-configuration/gang-default
@@ -133,6 +133,25 @@ configurations:
     when:
       project_goal_levels:
       - pragmaticbim:project-goal-level/accessibility-wheelchair
+    status: active
+  - id: pragmaticbim:room-type-equipment/gang-default-steckdose
+    sort_order: 3
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/gang-default-lichtschalter
+    sort_order: 4
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/gang-default-zugang

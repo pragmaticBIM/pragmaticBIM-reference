@@ -9,9 +9,10 @@ Sources are keyed by data-schema element id:
 Every picture is rendered in the armasuisse style: red accent, no
 pragmaticBIM engraving or watermark. Elements whose ``entity_ifc4`` is a
 system (IfcDistributionSystem / IfcBuildingSystem) also accent the pipes,
-cables and trays that serve the accented devices. Virtual elements (project,
-site, building, storey, system, zone) get the IFC hierarchy tree in the
-top-left corner with their node highlighted.
+cables and trays that serve the accented devices. Every picture gets the IFC
+hierarchy tree in the top-left corner: virtual elements (project, site,
+building, storey, system, zone) highlight their node, all other elements
+a row with their IFC class below the storey.
 
 arma ids equal to a data-schema id use that source; other arma ids are
 mapped in ``dataschema.arma.ARMA_SOURCES`` (to a data-schema id or straight
@@ -27,9 +28,17 @@ unreferenced picture in the arma media folder.
 in the Reference style (orange accent, engraving and watermark) into
 ``media/images`` and links the print TIF on the Reference element YAML.
 
+``--target bestand`` renders the active elements of
+arma-master-bestandsaufnahme instead: ids are mapped in
+``dataschema.arma_bestand.BESTAND_SOURCES``, and the hoch / mitte / tief
+detail levels use ``dataschema.scenes_lod.LOD_CARDS``. The levels of one
+family are rendered together: orthographic, with one camera, scale and
+framing, so the pictures compare 1:1.
+
     python scripts/render_data_schema_pictures.py --only brenner
     python scripts/render_data_schema_pictures.py --publish --prune
     python scripts/render_data_schema_pictures.py --reference
+    python scripts/render_data_schema_pictures.py --target bestand --only wande-hoch
 """
 
 from __future__ import annotations
@@ -47,12 +56,20 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from dataschema.arma import ARMA_SOURCES  # noqa: E402
-from dataschema.cards import CARDS  # noqa: E402
-from dataschema.hierarchy import NODE_BY_ENTITY, apply_hierarchy  # noqa: E402
-from dataschema.render import render_card  # noqa: E402
+from dataschema.arma_bestand import BESTAND_SOURCES  # noqa: E402
+from dataschema.cards import CARDS as SCHEMA_CARDS  # noqa: E402
+from dataschema.hierarchy import NODE_BY_ENTITY, apply_hierarchy, draw_hierarchy, node_for  # noqa: E402
+from dataschema.render import render_card, render_card_set  # noqa: E402
+from dataschema.scenes_lod import LOD_CARDS, lod_level, lod_set  # noqa: E402
 from runner import SAMPLE_CATALOG, run_catalog  # noqa: E402
 
-ARMA = ROOT.parent / "arma-elementplan-data"
+CARDS = {**SCHEMA_CARDS, **LOD_CARDS}
+# Target repo → (folder, id → source map, only ``status: active`` elements, default draft folder).
+TARGETS = {
+    "data": (ROOT.parent / "arma-elementplan-data", ARMA_SOURCES, False, ROOT / "output" / "data-schema"),
+    "bestand": (ROOT.parent / "arma-master-bestandsaufnahme", BESTAND_SOURCES, True, ROOT / "output" / "bestand-drafts"),
+}
+ARMA, TARGET_SOURCES, ACTIVE_ONLY, _ = TARGETS["data"]
 ARMA_ELEMENTS = ARMA / "elements"
 ARMA_IMAGES = ARMA / "media" / "images"
 REFERENCE_IMAGES = ROOT / "media" / "images"
@@ -156,21 +173,38 @@ def resolve(source: str) -> tuple[str, str]:
     raise KeyError(f"unknown picture source {source!r}")
 
 
+def use_target(name: str) -> Path:
+    """Point the arma paths and source map at ``name``; return its default draft folder."""
+    global ARMA, TARGET_SOURCES, ACTIVE_ONLY, ARMA_ELEMENTS, ARMA_IMAGES
+    ARMA, TARGET_SOURCES, ACTIVE_ONLY, drafts = TARGETS[name]
+    ARMA_ELEMENTS = ARMA / "elements"
+    ARMA_IMAGES = ARMA / "media" / "images"
+    return drafts
+
+
+def is_active(path: Path) -> bool:
+    return re.search(r"^status:\s*active\s*$", path.read_text(encoding="utf-8"), re.MULTILINE) is not None
+
+
 def arma_sources() -> dict[str, str]:
     """arma id → picture source for every arma element that has one."""
     sources: dict[str, str] = {}
     for path in sorted(ARMA_ELEMENTS.glob("*.yaml")):
         arma_id = path.stem
-        if arma_id in ARMA_SOURCES:
-            sources[arma_id] = ARMA_SOURCES[arma_id]
+        if ACTIVE_ONLY and not is_active(path):
+            continue
+        if arma_id in TARGET_SOURCES:
+            sources[arma_id] = TARGET_SOURCES[arma_id]
         elif arma_id in CARDS or arma_id in REUSE:
             sources[arma_id] = arma_id
     return sources
 
 
+_ENTITY_IFC4 = re.compile(r"""^entity_ifc4:\s*['"]?([^'"\s]+)['"]?\s*$""", re.MULTILINE)
+
+
 def entity_ifc4(arma_id: str) -> str | None:
-    text = (ARMA_ELEMENTS / f"{arma_id}.yaml").read_text(encoding="utf-8")
-    match = re.search(r"^entity_ifc4:\s*(\S+)\s*$", text, re.MULTILINE)
+    match = _ENTITY_IFC4.search((ARMA_ELEMENTS / f"{arma_id}.yaml").read_text(encoding="utf-8"))
     return match.group(1) if match else None
 
 
@@ -244,6 +278,33 @@ def source_files(
                 overrides=overrides,
             )
     return rendered[variant]
+
+
+def level_files(
+    family: str,
+    level: str,
+    entity: str | None,
+    work_dir: Path,
+    sets: dict[str, dict[str, tuple[Path, Path]]],
+) -> tuple[Path, Path]:
+    """PNG and print TIF of one detail level; each family is rendered once per run, all levels together."""
+    if family not in sets:
+        decorate = None
+        if entity:
+            node, element = node_for(entity)
+
+            def decorate(image, mask):
+                return draw_hierarchy(image, node, element=element, mask=mask)
+
+        sets[family] = render_card_set(
+            family,
+            lod_set(family),
+            work_dir / "lod",
+            work_dir / "ifc-lod",
+            accent=ARMA_ACCENT,
+            decorate=decorate,
+        )
+    return sets[family][level]
 
 
 def place(arma_id: str, png: Path, tif: Path | None, image_dir: Path) -> tuple[Path, Path | None]:
@@ -331,7 +392,7 @@ def publish_reference(output_dir: Path, wanted: set[str] | None) -> int:
 
 
 def entity_ifc4_of(path: Path) -> str:
-    match = re.search(r"^entity_ifc4:\s*(\S+)\s*$", path.read_text(encoding="utf-8"), re.MULTILINE)
+    match = _ENTITY_IFC4.search(path.read_text(encoding="utf-8"))
     if not match:
         raise ValueError(f"no entity_ifc4 in {path}")
     return match.group(1)
@@ -340,8 +401,9 @@ def entity_ifc4_of(path: Path) -> str:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--only", nargs="*", help="arma element ids (default: all with a source)")
-    parser.add_argument("--output-dir", type=Path, default=ROOT / "output" / "data-schema")
-    parser.add_argument("--publish", action="store_true", help="Write into arma-elementplan-data and link the YAML")
+    parser.add_argument("--target", choices=sorted(TARGETS), default="data", help="arma repo to render (default: data)")
+    parser.add_argument("--output-dir", type=Path, help="Draft folder (default: output/data-schema or output/bestand-drafts)")
+    parser.add_argument("--publish", action="store_true", help="Write into the target repo and link the YAML")
     parser.add_argument("--prune", action="store_true", help="With --publish: delete all unreferenced arma pictures")
     parser.add_argument(
         "--reference",
@@ -349,6 +411,9 @@ def main(argv: list[str] | None = None) -> int:
         help="Render project, site, building and storey into the Reference media folder",
     )
     args = parser.parse_args(argv)
+    drafts = use_target(args.target)
+    if args.output_dir is None:
+        args.output_dir = drafts
 
     if args.reference:
         return publish_reference(args.output_dir, set(args.only) if args.only else None)
@@ -364,6 +429,7 @@ def main(argv: list[str] | None = None) -> int:
     failed: list[str] = []
     replaced: set[str] = set()
     rendered: dict[tuple, tuple[Path, Path]] = {}
+    sets: dict[str, dict[str, tuple[Path, Path]]] = {}
     done = 0
     for arma_id, source in sources.items():
         if wanted is not None and arma_id not in wanted:
@@ -372,22 +438,28 @@ def main(argv: list[str] | None = None) -> int:
             kind, key = resolve(source)
             system = is_system(arma_id)
             serving_runs = arma_id in SERVING_RUNS
-            png, tif = place(
-                arma_id,
-                *source_files(
-                    kind,
-                    key,
-                    system,
-                    args.output_dir,
-                    rendered,
-                    serving_runs,
-                    ENTRY_OVERRIDES.get(arma_id),
-                ),
-                image_dir,
-            )
-            node = NODE_BY_ENTITY.get(entity_ifc4(arma_id) or "")
-            if node:
-                apply_hierarchy(png, tif, node)
+            entity = entity_ifc4(arma_id)
+            lod = lod_level(key) if kind == "card" else None
+            if lod:
+                png, tif = place(arma_id, *level_files(*lod, entity, args.output_dir, sets), image_dir)
+                kind = "level set"
+            else:
+                png, tif = place(
+                    arma_id,
+                    *source_files(
+                        kind,
+                        key,
+                        system,
+                        args.output_dir,
+                        rendered,
+                        serving_runs,
+                        ENTRY_OVERRIDES.get(arma_id),
+                    ),
+                    image_dir,
+                )
+                if entity:
+                    node, element = node_for(entity)
+                    apply_hierarchy(png, tif, node, element=element)
             if args.publish:
                 replaced |= link_element(arma_id, png, tif)
             done += 1

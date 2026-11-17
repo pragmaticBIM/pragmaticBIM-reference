@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mup-sm-gas-regulator
+sort_order: 21
+status: active
+name:
+  de: Gasdruckregler
+  fr: Détendeur de gaz
+  it: Regolatore di pressione del gas
+  en: Gas pressure regulator
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-SM-GAS-REGULATOR
+tender_text:
+  de: Reduziert den Gasdruck der Zuleitung auf den Betriebsdruck der Gebäudeinstallation, hält ihn bei wechselndem Bedarf konstant, erfasst die entnommene Menge und schliesst die Versorgung im Störungsfall ab. Lieferung als werkseitig montierte und geprüfte Station mit Filter, Regler, Sicherheitseinrichtungen und Zähler, Aufstellung in einem eigenen belüfteten Stationsraum oder Schrank an der Hauseinführung, Anschluss an Zu- und Abgangsleitung, Abblaseleitungen ins Freie geführt, Absperr- und Messsignale für die Gebäudeautomation verfügbar. Geeignet für Gebäude mit gasbefeuerten Anlagen oder Prozessverbrauchern; erfordert einen brandabgetrennten, belüfteten Aufstellort mit Zugang von aussen für den Netzbetreiber und Freiraum für Kontrolle und Zählerwechsel.
+  en: Reduces the gas pressure of the supply line to the operating pressure of the building installation, keeps it constant under varying demand, records the quantity taken, and shuts off the supply in case of a fault. Delivered as a factory-assembled and tested station with filter, regulator, safety devices, and meter, placed in a dedicated ventilated station room or cabinet at the service entry and connected to the incoming and outgoing gas lines, with relief lines led to the outside and shut-off and metering signals available to building automation. Suitable for buildings with gas-fired plant or process consumers; requires a fire-separated and ventilated location with access from outside for the network operator and clearance for inspection and meter exchange.

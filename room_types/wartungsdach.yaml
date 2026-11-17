@@ -5,7 +5,7 @@ name:
   de: Wartungsdach
   fr: Toiture d'entretien
   it: Copertura di manutenzione
-  en: Maintenance Roof
+  en: Maintenance roof
 definition:
   de: Begehbares Flachdach nur für Betrieb, Wartung und Inspektion.
   fr: Toiture plate praticable, réservée à l'exploitation, à l'entretien et à l'inspection.
@@ -33,7 +33,7 @@ configurations:
       de: Wartungsdach
       fr: Toiture d'entretien
       it: Copertura di manutenzione
-      en: Maintenance Roof
+      en: Maintenance roof
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

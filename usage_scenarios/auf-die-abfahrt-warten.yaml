@@ -15,7 +15,9 @@ description:
     determinano comfort, protezione dalle intemperie e superficie.
   en: Passengers wait before departure, sometimes with luggage or children. Sheltered waiting areas determine
     comfort, weather protection, and area.
-use: pragmaticbim:use/verkehr
+scope: use
+uses:
+- pragmaticbim:use/verkehr
 tags:
 - warten
 status: active

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/rap-handrail
+sort_order: 8
+status: active
+name:
+  de: Handlauf
+  fr: Main courante
+  it: Corrimano
+  en: Handrail only
+product_classification:
+  classification_scheme: RailingProduct
+  classification_code: RAP-HANDRAIL
+tender_text:
+  de: Handlauf ohne Füllung für Führung und Halt an Treppen, Rampen und Korridoren, wo keine Absturzsicherung mit Füllung erforderlich ist. Mit Konsolen an der Wand oder auf Pfosten montiert, mit durchgehend umgreifbarem Profil und zur Wand zurückgeführten Enden. Geeignet für hindernisfreie Wege und als zweiter Handlauf an Treppen, die bereits über eine Absturzsicherung verfügen.
+  en: Handrail without infill, giving guidance and support along stairs, ramps, and corridors where no fall protection infill is required. Mounted on brackets to the wall or on posts, with a continuously graspable profile and ends returned to the wall. Suitable for barrier-free routes and as a second handrail on stairs that already have fall protection.

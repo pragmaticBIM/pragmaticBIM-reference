@@ -1,0 +1,77 @@
+id: pragmaticbim:rule/vkf-16-15-001-fluchtweglaenge-50m
+code: VKF-16-15-001
+sort_order: 1
+name:
+  de: Fluchtweg bis Ausgang oder Treppe höchstens 50 m
+  en: Escape route to an exit or stair at most 50 m
+  fr: 'Voie d''évacuation jusqu''à une sortie ou un escalier : 50 m au plus'
+  it: 'Via di fuga fino a un''uscita o a una scala: al massimo 50 m'
+description:
+  de: Von keiner Stelle eines Innenraums darf der Weg zum nächsten Ausgang ins Freie oder zur nächsten Treppe (vertikaler
+    Fluchtweg) mehr als 50 m messen. Die 50 m sind nur zulässig, wenn zwei getrennte Ausgänge oder Treppen erreichbar
+    sind; sonst gilt die Grenze von 35 m (VKF-16-15-002). Geprüft wird die aus der Geometrie berechnete Weglänge
+    von der entferntesten Stelle des Raums durch die Türen.
+  en: From no point of an interior space may the route to the nearest exit to the outside or the nearest stair (vertical
+    escape route) exceed 50 m. The 50 m apply only where two separate exits or stairs can be reached; otherwise
+    the 35 m limit applies (VKF-16-15-002). The check reads the route length computed from the geometry, from the
+    most remote point of the space through its doors.
+  fr: Depuis aucun point d'un local intérieur, le trajet jusqu'à la sortie vers l'extérieur ou l'escalier (voie
+    d'évacuation verticale) le plus proche ne doit dépasser 50 m. Les 50 m ne valent que si deux sorties ou escaliers
+    distincts sont accessibles ; sinon, la limite de 35 m s'applique (VKF-16-15-002). La vérification lit la longueur
+    calculée à partir de la géométrie, du point le plus éloigné du local à travers ses portes.
+  it: Da nessun punto di un locale interno il percorso fino all'uscita verso l'esterno o alla scala (via di fuga
+    verticale) più vicina può superare 50 m. I 50 m valgono solo se sono raggiungibili due uscite o scale distinte;
+    altrimenti vale il limite di 35 m (VKF-16-15-002). La verifica legge la lunghezza calcolata dalla geometria,
+    dal punto più lontano del locale attraverso le sue porte.
+rule_status: shacl_defined
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 6
+  source_quote: VKF 16-15, Ziff. 2.4.3
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'
+shacl: |-
+  rule:vkf-16-15-001-fluchtweglaenge-50m-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] .
+
+  rule:vkf-16-15-001-fluchtweglaenge-50m a sh:NodeShape ;
+      sh:name "Fluchtweg bis Ausgang oder Treppe höchstens 50 m"@de ,
+          "Escape route to an exit or stair at most 50 m"@en ;
+      sh:description "Von keiner Stelle eines Innenraums darf der Weg zum nächsten Ausgang ins Freie oder zur nächsten Treppe (vertikaler Fluchtweg) mehr als 50 m messen. Die 50 m sind nur zulässig, wenn zwei getrennte Ausgänge oder Treppen erreichbar sind; sonst gilt die Grenze von 35 m (VKF-16-15-002). Geprüft wird die aus der Geometrie berechnete Weglänge von der entferntesten Stelle des Raums durch die Türen."@de ,
+          "From no point of an interior space may the route to the nearest exit to the outside or the nearest stair (vertical escape route) exceed 50 m. The 50 m apply only where two separate exits or stairs can be reached; otherwise the 35 m limit applies (VKF-16-15-002). The check reads the route length computed from the geometry, from the most remote point of the space through its doors."@en ;
+      sh:severity sh:Violation ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:vkf-16-15-001-fluchtweglaenge-50m-prefixes ;
+          sh:select """
+              SELECT ?this WHERE {
+                  ?this a pbs:Space .
+                  FILTER NOT EXISTS {
+                      ?this pbs:metadata ?m .
+                      ?m pbs:metadata_key "Pset_SpaceCommon.IsExternal" ; pbs:metadata_value ?x .
+                      FILTER (LCASE(STR(?x)) = "true")
+                  }
+                  FILTER NOT EXISTS {
+                      ?this pbs:classifications ?c .
+                      ?c pbs:classification_uri ?uri .
+                      FILTER (STRENDS(STR(?uri), "/spaces-exterior"))
+                  }
+              }"""
+      ] ;
+      sh:property [
+          sh:path pbs:quantity_values ;
+          sh:or (
+              [ sh:not [ sh:property [ sh:path pbs:quantity_type ; sh:hasValue pbs:quantity_type_escape_route_length ] ] ]
+              [ sh:property [ sh:path pbs:quantity_value ; sh:maxInclusive 50.0 ] ]
+          ) ;
+          sh:message "Fluchtweg länger als 50 m bis zum Ausgang oder zur Treppe."@de ,
+              "Escape route longer than 50 m to the exit or stair."@en
+      ] .

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/sfp-batch-plant
+sort_order: 23
+status: active
+name:
+  de: Betonmischanlage
+  fr: Centrale à béton
+  it: Impianto di betonaggio
+  en: Concrete batching plant
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-BATCH-PLANT
+tender_text:
+  de: Mischer, Zuschlagssilos, Zementzufuhr und Steuerung einer Baustellen-Mischanlage. Sie erzeugt den Beton. Die Pumpe, die ihn einbringt, und die Silos, die sie speisen, sind eigene Objekte.
+  en: Mixer, aggregate bins, cement feed, and controls of an on-site batching plant. It produces the concrete. The pump that places it, and the silos that feed it, are separate objects.

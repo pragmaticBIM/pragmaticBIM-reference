@@ -5,7 +5,7 @@ name:
   de: Bettenaufzug
   fr: Ascenseur pour lits
   it: Montalettighe
-  en: Bed Lift
+  en: Bed lift
 definition:
   de: Aufzug für den Transport von Patientinnen und Patienten im Bett.
   fr: Ascenseur pour le transport de patients alités.
@@ -33,7 +33,7 @@ configurations:
       de: Bettenaufzug
       fr: Ascenseur pour lits
       it: Montalettighe
-      en: Bed Lift
+      en: Bed lift
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

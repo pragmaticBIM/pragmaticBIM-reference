@@ -5,7 +5,7 @@ name:
   de: Materialraum
   fr: Local à matériel
   it: Locale materiali
-  en: Supply Room
+  en: Supply room
 definition:
   de: Raum für Verbrauchsmaterial.
   fr: Local pour les consommables.
@@ -33,7 +33,7 @@ configurations:
       de: Materialraum
       fr: Local à matériel
       it: Locale materiali
-      en: Supply Room
+      en: Supply room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -104,6 +104,25 @@ configurations:
       per:
         quantity: net_floor_area
         divisor: 5
+    status: active
+  - id: pragmaticbim:room-type-equipment/materialraum-default-steckdose
+    sort_order: 2
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/materialraum-default-lichtschalter
+    sort_order: 3
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/materialraum-default-zugang

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/swp-curtain-wall
+sort_order: 9
+status: active
+name:
+  de: Vorhangfassade
+  fr: Façade-rideau
+  it: Facciata continua
+  en: Curtain wall / facade system
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-CURTAIN-WALL
+tender_text:
+  de: Nichttragende Aussenwandbekleidung als eigenständiges Tragsystem vor der Gebäudestruktur, mit Verglasungs- und/oder Paneelfeldern. Trägt vertikale Lasten in sich selbst ab und leitet Windlasten in die Gebäudestruktur ein.
+  en: Non-load-bearing exterior wall enclosure as a self-supporting system in front of the building structure, with glazed and/or panel infill fields. Carries its own vertical loads and transfers wind loads into the building structure.

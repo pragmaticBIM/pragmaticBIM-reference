@@ -1,0 +1,98 @@
+id: pragmaticbim:workflow/qas-award-interface-visualization
+code: QAS-AWARD-INTERFACE
+sort_order: 88
+name:
+  de: Vergabeschnittstellen visualisieren
+  fr: Visualiser les interfaces d'adjudication
+  it: Visualizzare le interfacce di aggiudicazione
+  en: Visualize award interfaces
+description:
+  de: |-
+    Vor jedem Ausschreibungsversand prüfen, ob jedes Bauteil genau einem Vergabepaket der vereinbarten Losgliederung zugeordnet ist – vergessene Bauteile und Überschneidungen an den Unternehmerschnittstellen werden sichtbar.
+
+    **Ausgangslage**
+    - Fehler entstehen an den Schnittstellen zwischen Unternehmerlosen; Bauteile ohne Loszuordnung gehen in der Ausschreibung leicht verloren und kommen als Nachträge zurück.
+    - Listen und Leistungsverzeichnisse machen Lücken an den Vergabeschnittstellen schlecht sichtbar.
+
+    **Ziel & Nutzen**
+    - Die Losgliederung vor dem Versand auf Vollständigkeit prüfen: Jedes Architektur- und TGA-Bauteil gehört zu genau einem Vergabepaket.
+    - Farbige Pläne zeigen fehlende Zuordnungen und Überschneidungen an den Schnittstellen, bevor die Unterlagen versandt werden.
+
+    **Ablauf**
+    1. Vergabepakete gemäss der vereinbarten Losgliederung, z. B. nach BKP, an den Architektur- und TGA-Bauteilen setzen.
+    2. Vor dem Versand jedes Ausschreibungspakets das Modell gegen die Losgliederung prüfen: Bauteile ohne Vergabepaket, Pakete ausserhalb der Gliederung und Überschneidungen an den Schnittstellen.
+    3. Lücken bereinigen und die geprüfte Zuordnung zusammen mit dem Ausschreibungspaket dokumentieren.
+
+    **Lieferergebnis**
+    - Architektur- und TGA-Fachmodelle mit eindeutiger Zuordnung der relevanten Bauteile zu den Vergabepaketen.
+    - Prüfbericht je Ausschreibungsversand mit kolorierter Auswertung, offenen Zuordnungslücken und Überschneidungen.
+  fr: |-
+    Avant chaque envoi d'appel d'offres, vérifier que chaque élément est affecté à un seul lot d'adjudication de la structure convenue – les éléments oubliés et les chevauchements aux interfaces entre entreprises deviennent visibles.
+
+    **Situation de départ**
+    - Les erreurs surviennent aux interfaces entre lots d'entreprise ; les éléments sans affectation de lot se perdent facilement dans l'appel d'offres et reviennent sous forme d'avenants.
+    - Listes et cahiers des charges ne permettent pas de voir clairement les lacunes aux interfaces d'adjudication.
+
+    **Objectif et bénéfice**
+    - Vérifier l'exhaustivité de la structure des lots avant l'envoi : chaque élément d'architecture et CVC appartient à un seul lot d'adjudication.
+    - Les plans colorés montrent les affectations manquantes et les chevauchements aux interfaces avant l'envoi des documents.
+
+    **Déroulement**
+    1. Affecter les lots d'adjudication aux éléments d'architecture et CVC selon la structure convenue, p. ex. BKP.
+    2. Avant l'envoi de chaque dossier d'appel d'offres, contrôler la maquette par rapport à la structure des lots : éléments sans lot, lots hors structure et chevauchements aux interfaces.
+    3. Corriger les lacunes et documenter l'affectation contrôlée avec le dossier d'appel d'offres.
+
+    **Livrable**
+    - Maquettes architecture et CVC avec affectation claire des éléments pertinents aux lots d'adjudication.
+    - Rapport de contrôle par envoi d'appel d'offres avec évaluation coloriée, lacunes d'affectation ouvertes et chevauchements.
+  it: |-
+    Prima di ogni invio di gara, verificare che ogni componente sia assegnato a un solo lotto di aggiudicazione della struttura concordata – i componenti dimenticati e le sovrapposizioni alle interfacce tra imprese diventano visibili.
+
+    **Situazione di partenza**
+    - Gli errori nascono alle interfacce tra lotti d'impresa; i componenti senza assegnazione di lotto si perdono facilmente in gara e ritornano come aggiunte.
+    - Elenchi e capitolati rendono poco visibili le lacune alle interfacce di aggiudicazione.
+
+    **Obiettivo e beneficio**
+    - Verificare la completezza della struttura dei lotti prima dell'invio: ogni componente di architettura e impianti appartiene a un solo lotto di aggiudicazione.
+    - Le planimetrie colorate mostrano assegnazioni mancanti e sovrapposizioni alle interfacce prima dell'invio della documentazione.
+
+    **Svolgimento**
+    1. Assegnare i lotti di aggiudicazione ai componenti di architettura e impianti secondo la struttura concordata, ad es. BKP.
+    2. Prima dell'invio di ogni pacchetto di gara, verificare il modello rispetto alla struttura dei lotti: componenti senza lotto, lotti fuori struttura e sovrapposizioni alle interfacce.
+    3. Correggere le lacune e documentare l'assegnazione verificata insieme al pacchetto di gara.
+
+    **Risultato della fornitura**
+    - Modelli di architettura e impianti con assegnazione chiara degli elementi rilevanti ai lotti di aggiudicazione.
+    - Rapporto di verifica per ogni invio di gara con valutazione colorata, lacune di assegnazione aperte e sovrapposizioni.
+  en: |-
+    Before each tender is sent out, check that every component is assigned to exactly one procurement package of the agreed breakdown – forgotten parts and overlaps at contractor interfaces become visible.
+
+    **Starting point**
+    - Errors happen at the interfaces between contractor packages; components without a package assignment are easily lost in the tender and come back as variations.
+    - Lists and specifications make gaps at award interfaces hard to see.
+
+    **Goal & benefit**
+    - Check the package breakdown for completeness before dispatch: every architecture and MEP component belongs to exactly one procurement package.
+    - Coloured plans show missing assignments and overlaps at the interfaces before the documents go out.
+
+    **Process**
+    1. Assign procurement packages to architecture and MEP components according to the agreed breakdown, e.g. by BKP.
+    2. Before each tender package is sent out, check the model against the package breakdown: components without a package, packages outside the breakdown, and overlaps at the interfaces.
+    3. Resolve gaps and document the checked assignment together with the tender package.
+
+    **Deliverable**
+    - Architecture and MEP models with relevant components clearly assigned to procurement packages.
+    - Check report per tender dispatch with a coloured evaluation, open assignment gaps, and overlaps.
+workflow_group: koordination
+parent_workflow: pragmaticbim:workflow/qas
+picture_link:
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: >-
+  Custom property AwardInterface in ePset_Cost (same pset as CostInterface).
+  Allowed values: three-digit BKP contractor packages (CRB), excluding miscellaneous (Übriges).
+  Typical phases 32–41 (design through tender). Checked before each tender dispatch to catch
+  forgotten parts at award interfaces.

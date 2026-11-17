@@ -5,7 +5,7 @@ name:
   de: Gartenfläche
   fr: Jardin
   it: Giardino
-  en: Garden Area
+  en: Garden area
 definition:
   de: Gartenfläche zum Aufenthalt und zur Pflege.
   fr: Surface de jardin pour le séjour et l'entretien.
@@ -33,7 +33,7 @@ configurations:
       de: Gartenfläche
       fr: Jardin
       it: Giardino
-      en: Garden Area
+      en: Garden area
   - element: pragmaticbim:element/spaces-exterior
     name: Reference
     pset: Pset_SpaceCommon

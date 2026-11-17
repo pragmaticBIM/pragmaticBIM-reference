@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mtp-heat-ufh-manifold
+sort_order: 10
+status: active
+name:
+  de: Heizkreisverteiler (FBH)
+  fr: Distributeur de chauffage au sol
+  it: Collettore del riscaldamento a pavimento
+  en: Underfloor heating manifold
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-HEAT-UFH-MANIFOLD
+tender_text:
+  de: Verteilt Heizwasser auf die einzelnen Kreise einer Flächenheizung und führt es zur Verteilung zurück, sodass jeder Kreis einzeln abgesperrt und einreguliert werden kann. Wird in einem Einbau- oder Aufbauschrank im versorgten Geschoss installiert und an die Heizhauptleitung angeschlossen, mit Kreisventilen, Durchflussmessern und Stellantrieben für die raumweise Regelung. Geeignet für Wohn- und Bürobereiche mit Flächenheizung, so angeordnet, dass die Kreislängen im zulässigen Bereich bleiben, und mit dauerhaft zugänglichem Schrank für Einregulierung, Entlüftung und Kennzeichnung der Kreise.
+  en: Distributes heating water to the individual loops of a surface heating system and returns it to the distribution, so that every loop can be shut off and balanced separately. Installed in a recessed or surface cabinet in the served storey and connected to the main heating pipework, with loop valves, flow meters, and actuators for room-wise control. Suitable for dwellings and offices with surface heating, positioned so that loop lengths stay within limits and with the cabinet permanently accessible for balancing, venting, and identification of the loops.

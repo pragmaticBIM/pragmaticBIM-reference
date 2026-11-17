@@ -1,0 +1,107 @@
+id: pragmaticbim:workflow/qas-element-cost-post-calculation
+code: QAS-ELEMENT-COST-POSTCALC
+sort_order: 92
+name:
+  de: Bauteilkosten nachkalkulieren und Einheitspreise zurückführen
+  fr: Établir l'après-calcul des coûts d'éléments et réintégrer les prix unitaires
+  it: Eseguire il consuntivo dei costi dei componenti e riprendere i prezzi unitari
+  en: Post-calculate component costs and feed unit rates back
+description:
+  de: |-
+    Nach der Vergabe und nach der Schlussabrechnung die Einheitspreise der Kostenberechnung gegen Vergabe- und Ist-Kosten je Bauteiltyp prüfen und die geprüften Kennwerte für Folgeprojekte sichern.
+
+    **Ausgangslage**
+    - Leistungsverzeichnisse und Unternehmerabrechnungen fassen Leistungen verschiedener Bauteile zusammen; daraus lassen sich bauteilspezifische Kennwerte nicht direkt ablesen.
+    - Ohne dokumentierte Zuordnung zu Produktklasse, Bauteiltyp und Referenzmenge bleiben Abweichungen zwischen Kostenberechnung, Angebot und Ausführung ungeklärt.
+
+    **Ziel & Nutzen**
+    - Offer-, Vergabe- und Ist-Kosten nachvollziehbar auf Bauteiltypen und Referenzmengen verteilen.
+    - Abweichungen zwischen den Einheitspreisen der Kostenberechnung und den tatsächlich angebotenen und ausgeführten Kosten je Bauteiltyp sichtbar machen und begründen.
+    - Nur geprüfte Einheitspreise in der Kostendatenbank sichern und für frühe sowie detaillierte Kostenberechnungen wiederverwenden.
+
+    **Ablauf**
+    1. Nach jeder Vergabe die freigegebenen Zuordnungen zwischen LV-Positionen, Vergabepaketen, Produktklassen, Bauteiltypen und Referenzmengen mit den Offer- und Vergabekosten bereitstellen und nach der Schlussabrechnung die Ist-Kosten ergänzen.
+    2. Kosten anhand der dokumentierten Mengen- und Leistungsanteile auf die Bauteiltypen verteilen, gegen die Einheitspreise der Kostenberechnung prüfen und Abweichungen klären.
+    3. Geprüfte Einheitspreise mit Kostenstand, enthaltenem Leistungsumfang und Herkunft freigeben und nach Produktklasse und Typ in die Kostendatenbank übernehmen.
+
+    **Lieferergebnis**
+    - Nachkalkulation mit rückverfolgbarer Verteilung der LV- und Ist-Kosten auf Bauteiltypen und begründeten Abweichungen zur Kostenberechnung
+    - Aktualisierte Kostendatenbank mit freigegebenen Einheitspreisen und dokumentiertem Leistungsumfang
+  fr: |-
+    Après l'adjudication et après le décompte final, vérifier les prix unitaires du calcul des coûts par rapport aux coûts d'adjudication et réels par type d'élément et conserver les indicateurs contrôlés pour les projets suivants.
+
+    **Situation de départ**
+    - Les descriptifs et décomptes d'entreprises regroupent les prestations de plusieurs éléments ; les indicateurs propres aux éléments ne peuvent pas en être lus directement.
+    - Sans affectation documentée à la classe de produit, au type d'élément et à la quantité de référence, les écarts entre calcul des coûts, offre et exécution restent inexpliqués.
+
+    **Objectif et bénéfice**
+    - Répartir de manière traçable les coûts d'offre, d'adjudication et réels sur les types d'éléments et les quantités de référence.
+    - Faire apparaître et justifier, par type d'élément, les écarts entre les prix unitaires du calcul des coûts et les coûts effectivement offerts et exécutés.
+    - Conserver uniquement les prix unitaires contrôlés dans la base de données des coûts et les réutiliser pour les calculs initiaux et détaillés.
+
+    **Déroulement**
+    1. Après chaque adjudication, fournir les affectations approuvées entre articles du descriptif, lots d'adjudication, classes de produits, types d'éléments et quantités de référence avec les coûts d'offre et d'adjudication, puis compléter les coûts réels après le décompte final.
+    2. Répartir les coûts sur les types d'éléments selon les parts documentées de quantités et de prestations, les vérifier par rapport aux prix unitaires du calcul des coûts et clarifier les écarts.
+    3. Approuver les prix unitaires contrôlés avec état des prix, prestations comprises et provenance, puis les reprendre dans la base de données par classe de produit et type.
+
+    **Livrable**
+    - Après-calcul avec répartition traçable des coûts du descriptif et des coûts réels sur les types d'éléments et écarts justifiés par rapport au calcul des coûts
+    - Base de données des coûts actualisée avec prix unitaires approuvés et prestations comprises documentées
+  it: |-
+    Dopo l'aggiudicazione e dopo il conteggio finale, verificare i prezzi unitari del calcolo dei costi rispetto ai costi di aggiudicazione ed effettivi per tipo di componente e conservare gli indici verificati per i progetti successivi.
+
+    **Situazione di partenza**
+    - Capitolati e conteggi delle imprese raggruppano prestazioni di diversi componenti; non è quindi possibile ricavarne direttamente indici specifici per componente.
+    - Senza un'assegnazione documentata a classe di prodotto, tipo di componente e quantità di riferimento, gli scostamenti tra calcolo dei costi, offerta ed esecuzione restano inspiegati.
+
+    **Obiettivo e beneficio**
+    - Ripartire in modo tracciabile i costi di offerta, aggiudicazione ed effettivi sui tipi di componente e sulle quantità di riferimento.
+    - Rendere visibili e motivare, per tipo di componente, gli scostamenti tra i prezzi unitari del calcolo dei costi e i costi effettivamente offerti ed eseguiti.
+    - Conservare solo i prezzi unitari verificati nella banca dati dei costi e riutilizzarli per i calcoli iniziali e dettagliati.
+
+    **Svolgimento**
+    1. Dopo ogni aggiudicazione, fornire le assegnazioni approvate tra posizioni del capitolato, lotti di aggiudicazione, classi di prodotto, tipi di componente e quantità di riferimento con i costi di offerta e di aggiudicazione e completare i costi effettivi dopo il conteggio finale.
+    2. Ripartire i costi sui tipi di componente secondo le quote documentate di quantità e prestazioni, verificarli rispetto ai prezzi unitari del calcolo dei costi e chiarire gli scostamenti.
+    3. Approvare i prezzi unitari verificati con base prezzi, prestazioni comprese e provenienza e riprenderli nella banca dati per classe di prodotto e tipo.
+
+    **Risultato della fornitura**
+    - Consuntivo con ripartizione tracciabile dei costi del capitolato e dei costi effettivi sui tipi di componente e scostamenti motivati rispetto al calcolo dei costi
+    - Banca dati dei costi aggiornata con prezzi unitari approvati e prestazioni comprese documentate
+  en: |-
+    After award and after the final account, check the unit rates of the cost calculation against award and actual costs per component type and keep the checked benchmarks for future projects.
+
+    **Starting point**
+    - Specifications and contractor accounts combine work from different components, so component-specific benchmarks cannot be read from them directly.
+    - Without a documented mapping to product class, component type, and reference quantity, variances between cost calculation, bid, and construction remain unexplained.
+
+    **Goal & benefit**
+    - Allocate bid, award, and actual costs traceably to component types and reference quantities.
+    - Show and explain, per component type, the variances between the unit rates of the cost calculation and the costs actually bid and constructed.
+    - Store only checked unit rates in the cost database and reuse them for early and detailed cost calculations.
+
+    **Process**
+    1. After each award, provide approved mappings between specification items, procurement packages, product classes, component types, and reference quantities with the bid and award costs, and add the actual costs after the final account.
+    2. Allocate costs to component types using the documented quantity and scope shares, check them against the unit rates of the cost calculation, and resolve variances.
+    3. Approve checked unit rates with price basis, included scope, and provenance, then transfer them into the cost database by product class and type.
+
+    **Deliverable**
+    - Post-calculation with traceable allocation of specification and actual costs to component types and explained variances from the cost calculation
+    - Updated cost database with approved unit rates and documented included scope
+workflow_group: fachpruefung
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+countries:
+  - CH
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+comment: >-
+  Upstream mapping is produced by BES-ELEMENT-TENDER. Keys:
+  ePset_Cost.ProductClass, ePset_Cost.CalculatedType,
+  ePset_Cost.ReferenceQuantity, and AwardInterface. The many-to-many mapping
+  between specification items and component types, allocation shares, approved
+  rates, price basis, included scope, and provenance live outside IFC in the
+  tender/cost database. The project model carries ePset_Cost.UnitPrice.
+  Produces office rates consumed by DES-ELEMENT-COST-EARLY,
+  DES-ELEMENT-COST-LATE, and QAS-COST-PLAUS.

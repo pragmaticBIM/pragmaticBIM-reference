@@ -1,0 +1,88 @@
+id: pragmaticbim:rule/vkf-15-15-001-tragwerk-untergeschoss
+code: VKF-15-15-001
+sort_order: 10
+name:
+  de: Tragwerk in Untergeschossen mindestens R 60
+  en: Structure in basements at least R 60
+  fr: 'Structure porteuse en sous-sol : au moins R 60'
+  it: 'Struttura portante nei piani interrati: almeno R 60'
+description:
+  de: Tragende Bauteile unter dem Terrain brauchen denselben Feuerwiderstand wie das Tragwerk der Geschosse darüber,
+    auf jeden Fall aber R 60. Einfamilienhäuser samt Untergeschoss und Gebäude mit geringen Abmessungen sind ausgenommen.
+    Geprüft werden tragende Wände, Decken (ohne Bodenplatte), Stützen und Träger auf Geschossen unter ±0.00.
+  en: Load-bearing elements below ground need the same fire resistance as the structure of the storeys above, and
+    in any case R 60. Single-family houses including their basement and buildings of small dimensions are exempt.
+    The check covers load-bearing walls, slabs (without base slab), columns and beams on storeys below ±0.00.
+  fr: Les éléments porteurs sous le terrain exigent la même résistance au feu que la structure des étages supérieurs,
+    mais au moins R 60. Les maisons individuelles avec leur sous-sol et les bâtiments de faibles dimensions en sont
+    exemptés. La vérification porte sur les murs, dalles (sans radier), poteaux et poutres porteurs des niveaux
+    sous ±0.00.
+  it: Gli elementi portanti sotto il terreno richiedono la stessa resistenza al fuoco della struttura dei piani
+    superiori, in ogni caso almeno R 60. Sono escluse le case unifamiliari con il loro piano interrato e gli edifici
+    di dimensioni ridotte. La verifica riguarda pareti, solette (senza platea), pilastri e travi portanti dei piani
+    sotto ±0.00.
+rule_status: shacl_defined
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/structural-wall
+- pragmaticbim:element/structural-column
+- pragmaticbim:element/structural-beam
+- pragmaticbim:element/structural-slab-floor
+- pragmaticbim:element/architecture-wall-interior-loadbearing
+- pragmaticbim:element/architecture-slab-floor
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 15-15 Brandschutzabstände, Tragwerke, Brandabschnitte (2015)
+  source_page: 8
+  source_quote: VKF 15-15, Ziff. 3.2.3
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'
+shacl: |-
+  rule:vkf-15-15-001-tragwerk-untergeschoss-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] ,
+          [ sh:prefix "ifc" ; sh:namespace "https://w3id.org/ifc/IFC4_ADD2#"^^xsd:anyURI ] .
+
+  rule:vkf-15-15-001-tragwerk-untergeschoss a sh:NodeShape ;
+      sh:name "Tragwerk in Untergeschossen mindestens R 60"@de ,
+          "Structure in basements at least R 60"@en ;
+      sh:description "Tragende Bauteile unter dem Terrain brauchen denselben Feuerwiderstand wie das Tragwerk der Geschosse darüber, auf jeden Fall aber R 60. Einfamilienhäuser samt Untergeschoss und Gebäude mit geringen Abmessungen sind ausgenommen. Geprüft werden tragende Wände, Decken (ohne Bodenplatte), Stützen und Träger auf Geschossen unter ±0.00."@de ,
+          "Load-bearing elements below ground need the same fire resistance as the structure of the storeys above, and in any case R 60. Single-family houses including their basement and buildings of small dimensions are exempt. The check covers load-bearing walls, slabs (without base slab), columns and beams on storeys below ±0.00."@en ;
+      sh:severity sh:Violation ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:vkf-15-15-001-tragwerk-untergeschoss-prefixes ;
+          sh:select """
+              SELECT DISTINCT ?this WHERE {
+                  ?this pbs:performance_properties ?lb .
+                  ?lb pbs:property_key pbs:structural_property_load_bearing ; pbs:property_value_boolean true .
+                  {
+                      ?this a pbs:SeparatorWall .
+                  } UNION {
+                      ?this a pbs:SeparatorSlab .
+                      FILTER NOT EXISTS { ?this pbs:separator_slab_type <https://w3id.org/ifc/IFC4_ADD2#IfcSlabTypeEnum.BASESLAB> }
+                  } UNION {
+                      ?this pbs:connection_physical_type ?type .
+                      FILTER (?type IN (ifc:IfcBeam, ifc:IfcColumn))
+                  }
+              }"""
+      ] ;
+      sh:or (
+          [ sh:property [ sh:path ( pbs:parent_level pbs:elevation ) ; sh:minInclusive 0 ] ]
+          [ sh:property [
+              sh:path pbs:performance_properties ;
+              sh:qualifiedValueShape [
+              sh:property [ sh:path pbs:property_key ; sh:hasValue pbs:fire_property_resistance_rating ] ;
+              sh:property [ sh:path pbs:property_value_string ; sh:minCount 1 ; sh:in ( "R60" "R90" "R120" "R180" "R240" "RE60" "RE90" "RE120" "RE180" "RE240" "REI60" "REI90" "REI120" "REI180" "REI240" "F60" "F90" "F120" "F180" "F240" ) ]
+          ] ;
+              sh:qualifiedMinCount 1
+          ] ]
+      ) ;
+      sh:message "Tragendes Bauteil im Untergeschoss ohne Feuerwiderstand von mindestens R 60."@de ,
+          "Load-bearing element in a basement without a fire resistance of at least R 60."@en .

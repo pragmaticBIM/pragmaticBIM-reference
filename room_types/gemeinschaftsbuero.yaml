@@ -5,7 +5,7 @@ name:
   de: Gemeinschaftsbüro
   fr: Bureau communautaire
   it: Ufficio comunitario
-  en: Community Office
+  en: Community office
 definition:
   de: Gemeinsam genutzter Arbeitsraum für Bewohnende ausserhalb der Wohnung.
   fr: Bureau partagé destiné aux habitants, situé hors des logements.
@@ -33,7 +33,7 @@ configurations:
       de: Gemeinschaftsbüro
       fr: Bureau communautaire
       it: Ufficio comunitario
-      en: Community Office
+      en: Community office
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -125,6 +125,25 @@ configurations:
         quantity: net_floor_area
         divisor: 8
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/gemeinschaftsbuero-default-steckdose
+    sort_order: 2
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/gemeinschaftsbuero-default-lichtschalter
+    sort_order: 3
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/gemeinschaftsbuero-default-zugang

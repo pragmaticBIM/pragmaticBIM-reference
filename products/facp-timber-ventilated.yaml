@@ -1,0 +1,14 @@
+id: pragmaticbim:product/facp-timber-ventilated
+sort_order: 5
+status: active
+name:
+  de: Holz-Vorgehängte Fassade
+  fr: Façade ventilée en bois
+  it: Facciata ventilata in legno
+  en: Timber ventilated facade system
+product_classification:
+  classification_scheme: EuropeanFacadeCoveringProduct
+  classification_code: FaCP-TIMBER-VENTILATED
+tender_text:
+  de: Nichttragende Holzbekleidung aus Brettern, Lamellen oder Holzwerkstoffplatten vor der gedämmten Aussenwand. Die Befestigung erfolgt mit sichtbaren oder verdeckten Verbindungsmitteln auf einer Lattung, die allseitige Hinterlüftung und Abtrocknung der Bekleidung sicherstellt. Geeignet für Neubau und Sanierung bei geringem Zusatzgewicht; Oberflächenbehandlung, Hirnholzausbildung und zulässiger Vergrauungsgrad sind festzulegen.
+  en: Non-load-bearing timber cladding of boards, slats, or wood-based panels mounted in front of the insulated exterior wall. Fixing is by visible or concealed fasteners onto a battened sub-frame that ensures rear ventilation and all-round drying of the cladding. Suitable for new build and retrofit at low added dead load; surface treatment, end-grain detailing, and the accepted degree of weathering are to be specified.

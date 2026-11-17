@@ -1,0 +1,14 @@
+id: pragmaticbim:product/rap-timber
+sort_order: 6
+status: active
+name:
+  de: Holzgeländer
+  fr: Garde-corps en bois
+  it: Parapetto in legno
+  en: Timber railing
+product_classification:
+  classification_scheme: RailingProduct
+  classification_code: RAP-TIMBER
+tender_text:
+  de: Absturzsicherung mit Pfosten, Riegeln und Füllung aus Holz als Schutzelement an Decken, Treppen und Balkonen. Die vorgefertigten Holzteile werden mit Stahlverbindungsmitteln an der Struktur befestigt und erhalten eine der Exposition angepasste Oberflächenbehandlung. Geeignet für Innentreppen und gedeckte Aussenbereiche; bewitterte Lagen erfordern wasserableitende und unterhaltsfreundliche Detaillierung.
+  en: Fall protection with posts, rails, and infill of timber, forming the guarding element at floors, stairs, and balconies. Prefabricated timber parts are fixed to the structure with steel connectors and given a surface treatment matched to the exposure. Suitable for interior stairs and sheltered external areas; weathered positions require detailing that drains water and allows maintenance.

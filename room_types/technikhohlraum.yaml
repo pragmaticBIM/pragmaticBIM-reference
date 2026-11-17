@@ -5,7 +5,7 @@ name:
   de: Technikhohlraum
   fr: Vide technique
   it: Vuoto tecnico
-  en: Mechanical Void
+  en: Mechanical void
 definition:
   de: Nicht begehbarer Technikhohlraum.
   fr: Vide technique non accessible.
@@ -33,7 +33,7 @@ configurations:
       de: Technikhohlraum
       fr: Vide technique
       it: Vuoto tecnico
-      en: Mechanical Void
+      en: Mechanical void
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon

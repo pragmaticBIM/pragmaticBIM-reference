@@ -1,0 +1,14 @@
+id: pragmaticbim:product/clp-rc
+sort_order: 3
+status: active
+name:
+  de: Stahlbetonstütze
+  fr: Colonne en béton armé
+  it: Pilastro in calcestruzzo armato
+  en: Reinforced concrete column
+product_classification:
+  classification_scheme: ColumnProduct
+  classification_code: CLP-RC
+tender_text:
+  de: Vertikales Tragglied aus Stahlbeton, das Decken- und Dachlasten in die Fundation weiterleitet. Entweder vor Ort mit Schalung und Bewehrung betoniert oder als Fertigteil geliefert und vergossen. Geeignet für hohe Lasten, inhärenten Feuerwiderstand und in Betondecken integrierte Stützen.
+  en: Vertical load-bearing member of reinforced concrete transferring floor and roof loads to the foundation. Either cast in place with formwork and reinforcement or delivered as a precast element and grouted into position. Suitable for high loads, inherent fire resistance, and columns integrated into concrete floor structures.

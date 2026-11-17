@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mtp-elec-light
+sort_order: 2
+status: active
+name:
+  de: Leuchte
+  fr: Luminaire
+  it: Apparecchio illuminante
+  en: Light fixture
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-ELEC-LIGHT
+tender_text:
+  de: Wandelt elektrische Energie in Licht um und stellt die für die Tätigkeiten im Raum erforderliche Beleuchtungsstärke und Lichtqualität bereit. Wird auf Putz, eingebaut, abgehängt oder auf Schiene montiert und an einen Beleuchtungsstromkreis angeschlossen, mit Steuerung über Schalter, Dimmer oder Präsenz- und Tageslichtsensoren. Geeignet für alle Raumtypen, wobei Anordnung und Abstände auf die Arbeitsbereiche abgestimmt sind und Leuchtmittel, Betriebsgeräte und Abdeckungen für Wartung und Ersatz zugänglich bleiben.
+  en: Converts electrical power into light and delivers the illuminance and light quality required for the activities in the space. Mounted surface, recessed, suspended, or on a track and connected to a lighting circuit, with control by switches, dimmers, or presence and daylight sensors. Suitable for all room types, with layout and spacing matched to the task areas and with lamps, drivers, and diffusers accessible for maintenance and replacement.

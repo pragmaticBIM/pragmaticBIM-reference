@@ -1,0 +1,14 @@
+id: pragmaticbim:product/sfp-office
+sort_order: 14
+status: active
+name:
+  de: Baubüro
+  fr: Bureau de chantier
+  it: Ufficio di cantiere
+  en: Site office
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-OFFICE
+tender_text:
+  de: Container oder temporaeres Gebaeude als Buero, mit Arbeitsplaetzen, Besprechungsraum und Ablage fuer die Baustellenmannschaft. Kein Aufenthaltsraum und keine Sanitaeranlage.
+  en: Container or temporary building fitted as an office, with workstations, meeting space, and document storage for the site team. Not a break room and not sanitary accommodation.

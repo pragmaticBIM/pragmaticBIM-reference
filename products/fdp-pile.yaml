@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fdp-pile
+sort_order: 4
+status: active
+name:
+  de: Pfahlgruendung
+  fr: Fondation sur pieux
+  it: Fondazione su pali
+  en: Driven / bored pile foundation
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-PILE
+tender_text:
+  de: Tiefgründung, die Gebäudelasten durch gering tragfähige obere Bodenschichten über Mantelreibung und Spitzendruck in tragfähige Schichten abträgt. Die Pfähle werden als Fertigteile gerammt oder gebohrt und vor Ort betoniert, anschliessend über Pfahlkopfplatten oder Fundamentbalken zum Anschluss an das Tragwerk verbunden. Geeignet für weiche, aufgefüllte oder grundwasserreiche Baugründe, bei denen Flachgründungen die geforderte Tragfähigkeit oder Setzungsbegrenzung nicht erreichen.
+  en: Deep foundation that carries building loads through weak upper soil layers into load-bearing strata by skin friction and end bearing. Piles are driven as precast units or bored and concreted in place, then tied together by pile caps or ground beams that receive the structure above. Suitable for soft, filled, or high-groundwater sites where shallow foundations cannot achieve the required bearing capacity or settlement limits.

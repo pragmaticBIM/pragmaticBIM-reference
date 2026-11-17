@@ -1,0 +1,14 @@
+id: pragmaticbim:product/bmp-steel
+sort_order: 1
+status: active
+name:
+  de: Stahlträger
+  fr: Poutre en acier
+  it: Trave in acciaio
+  en: Steel beam
+product_classification:
+  classification_scheme: BeamProduct
+  classification_code: BMP-STEEL
+tender_text:
+  de: Horizontales Tragglied aus Stahl, das zwischen Auflagern spannt und Decken- oder Dachlasten in Stützen und Wände einleitet. Im Werk gefertigt und als Unterzug oder Überzug mit geschraubten oder geschweissten Anschlüssen montiert. Geeignet für grosse Spannweiten und geringe Konstruktionshöhen; Korrosions- und Brandschutz richten sich nach Exposition und gefordertem Feuerwiderstand.
+  en: Horizontal load-bearing member of steel spanning between supports and carrying floor or roof loads into columns and walls. Fabricated in the workshop and erected as a downstand or upstand girder with bolted or welded connections. Suitable for long spans and shallow construction depths; corrosion and fire protection follow the exposure and the required fire resistance.

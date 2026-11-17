@@ -14,7 +14,7 @@ tag:
   en: Procurement
 description:
   de: |-
-    Festgelegt wird der Vergabeweg: Planerbeschaffung, Wettbewerb, Design-Build oder IPD. Jeder Weg stellt andere Anforderungen an Grundlagen, Modelle und Angebote. Das Vergabekonzept bestimmt deshalb die erforderlichen Angebotsmodelle und Beurteilungskriterien. Ohne diese Festlegung lassen sich Angebote kaum vergleichen, und Leistungen bleiben vertraglich unscharf.
+    Festgelegt wird der Vergabeweg: Planerbeschaffung, Wettbewerb, Design-Build oder IPD. Jeder Weg stellt andere Anforderungen an Grundlagen, Modelle und Angebote. Das Vergabekonzept bestimmt deshalb die erforderlichen Angebotsmodelle und Beurteilungskriterien.
   fr: |-
     Cette condition-cadre détermine si les prestations d'étude sont adjugées directement, si les solutions sont élaborées dans le cadre d'un concours, si les études et la réalisation sont adjugées conjointement sous forme de prestation conception-réalisation, ou si l'adjudication suit un modèle IPD.
 
@@ -25,8 +25,6 @@ description:
     La strategia di aggiudicazione definisce le basi, i modelli d'offerta e i criteri di valutazione necessari affinché le prestazioni e le offerte siano confrontabili e contrattualmente univoche.
   en: |-
     This framework condition determines the procurement route: engaging designers directly, a competition, design-build, or IPD. Each route places different demands on foundations, models, and bids. The procurement strategy therefore sets the bid models and assessment criteria required.
-
-    Without it, bids are hard to compare and scopes stay contractually vague.
 status: active
 comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
 levels:

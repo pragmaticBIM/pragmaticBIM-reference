@@ -1,0 +1,80 @@
+id: pragmaticbim:rule/vkf-15-15-002-brandabschnitte-untergeschoss
+code: VKF-15-15-002
+sort_order: 11
+name:
+  de: Brandabschnittsbildende Wände und Decken in Untergeschossen mindestens EI 60
+  en: Fire compartment walls and slabs in basements at least EI 60
+  fr: 'Murs et dalles formant compartiment en sous-sol : au moins EI 60'
+  it: 'Pareti e solette di compartimentazione nei piani interrati: almeno EI 60'
+description:
+  de: Wände und Decken, die unter dem Terrain Brandabschnitte bilden, erfüllen die Anforderung der jeweiligen Nutzung,
+    mindestens aber EI 60. Als brandabschnittsbildend gilt in der Prüfung jede Wand oder Decke mit einem angegebenen
+    Feuerwiderstand der Klasse EI, REI oder F.
+  en: Walls and slabs forming fire compartments below ground meet the requirement of their use, and at least EI
+    60. The check treats every wall or slab with a stated fire resistance of class EI, REI or F as forming a compartment.
+  fr: Les murs et dalles formant compartiment coupe-feu sous le terrain satisfont à l'exigence de leur affectation,
+    mais au moins EI 60. La vérification considère comme formant compartiment tout mur ou toute dalle dont la résistance
+    au feu indiquée est de classe EI, REI ou F.
+  it: Pareti e solette che formano compartimenti tagliafuoco sotto il terreno soddisfano il requisito del rispettivo
+    utilizzo, in ogni caso almeno EI 60. La verifica considera di compartimentazione ogni parete o soletta con una
+    resistenza al fuoco indicata di classe EI, REI o F.
+rule_status: shacl_defined
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-wall-interior-loadbearing
+- pragmaticbim:element/structural-wall
+- pragmaticbim:element/architecture-slab-floor
+- pragmaticbim:element/structural-slab-floor
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 15-15 Brandschutzabstände, Tragwerke, Brandabschnitte (2015)
+  source_page: 8
+  source_quote: VKF 15-15, Ziff. 3.3.1
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'
+shacl: |-
+  rule:vkf-15-15-002-brandabschnitte-untergeschoss-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] ,
+          [ sh:prefix "ifc" ; sh:namespace "https://w3id.org/ifc/IFC4_ADD2#"^^xsd:anyURI ] .
+
+  rule:vkf-15-15-002-brandabschnitte-untergeschoss a sh:NodeShape ;
+      sh:name "Brandabschnittsbildende Wände und Decken in Untergeschossen mindestens EI 60"@de ,
+          "Fire compartment walls and slabs in basements at least EI 60"@en ;
+      sh:description "Wände und Decken, die unter dem Terrain Brandabschnitte bilden, erfüllen die Anforderung der jeweiligen Nutzung, mindestens aber EI 60. Als brandabschnittsbildend gilt in der Prüfung jede Wand oder Decke mit einem angegebenen Feuerwiderstand der Klasse EI, REI oder F."@de ,
+          "Walls and slabs forming fire compartments below ground meet the requirement of their use, and at least EI 60. The check treats every wall or slab with a stated fire resistance of class EI, REI or F as forming a compartment."@en ;
+      sh:severity sh:Violation ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:vkf-15-15-002-brandabschnitte-untergeschoss-prefixes ;
+          sh:select """
+              SELECT DISTINCT ?this WHERE {
+                  { ?this a pbs:SeparatorWall } UNION {
+                      ?this a pbs:SeparatorSlab .
+                      FILTER NOT EXISTS { ?this pbs:separator_slab_type <https://w3id.org/ifc/IFC4_ADD2#IfcSlabTypeEnum.BASESLAB> }
+                  }
+                  ?this pbs:performance_properties ?f .
+                  ?f pbs:property_key pbs:fire_property_resistance_rating ; pbs:property_value_string ?rating .
+                  FILTER (REGEX(?rating, "^(EI|REI|F)[0-9]+$"))
+              }"""
+      ] ;
+      sh:or (
+          [ sh:property [ sh:path ( pbs:parent_level pbs:elevation ) ; sh:minInclusive 0 ] ]
+          [ sh:property [
+              sh:path pbs:performance_properties ;
+              sh:qualifiedValueShape [
+              sh:property [ sh:path pbs:property_key ; sh:hasValue pbs:fire_property_resistance_rating ] ;
+              sh:property [ sh:path pbs:property_value_string ; sh:minCount 1 ; sh:in ( "EI60" "EI90" "EI120" "EI180" "EI240" "REI60" "REI90" "REI120" "REI180" "REI240" "F60" "F90" "F120" "F180" "F240" ) ]
+          ] ;
+              sh:qualifiedMinCount 1
+          ] ]
+      ) ;
+      sh:message "Brandabschnittsbildende Wand oder Decke im Untergeschoss unter EI 60."@de ,
+          "Fire compartment wall or slab in a basement below EI 60."@en .

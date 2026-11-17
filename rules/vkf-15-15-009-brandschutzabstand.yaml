@@ -1,0 +1,47 @@
+id: pragmaticbim:rule/vkf-15-15-009-brandschutzabstand
+code: VKF-15-15-009
+sort_order: 18
+name:
+  de: Brandschutzabstand zwischen Gebäuden
+  en: Fire separation distance between buildings
+  fr: Distance de sécurité incendie entre bâtiments
+  it: Distanza di sicurezza antincendio tra edifici
+description:
+  de: 'Zwischen benachbarten Gebäuden, gemessen von Fassade zu Fassade, gilt: 5 m, wenn beide Fassaden aussen aus
+    RF1-Baustoffen bestehen; 7.5 m, wenn eine aussen brennbar ist; 10 m, wenn beide aussen brennbar sind. Zwischen
+    Einfamilienhäusern, Gebäuden geringer Höhe und Gebäuden mittlerer Höhe mit Aussenwänden von mindestens 30 Minuten
+    Feuerwiderstand verkürzen sich die Werte auf 4 m, 5 m und 6 m. Ragen Dachvorsprünge oder Bauteile über 1 m vor,
+    wächst der Abstand um den Überstand. Noch nicht prüfbar: Abstände zu Nachbargebäuden berechnet die Konvertierung
+    nicht.'
+  en: 'Between neighbouring buildings, measured facade to facade: 5 m if both facades are RF1 materials on the outside;
+    7.5 m if one is combustible on the outside; 10 m if both are. Between single-family houses, low buildings and
+    medium-height buildings with external walls of at least 30 minutes fire resistance the values shrink to 4 m,
+    5 m and 6 m. Roof overhangs or elements projecting more than 1 m increase the distance by the excess. Not yet
+    checkable: the conversion does not compute distances to neighbouring buildings.'
+  fr: 'Entre bâtiments voisins, mesurée de façade à façade : 5 m si les deux façades sont en matériaux RF1 côté
+    extérieur ; 7,5 m si l''une est combustible côté extérieur ; 10 m si les deux le sont. Entre maisons individuelles,
+    bâtiments de faible hauteur et bâtiments de hauteur moyenne dont les murs extérieurs ont au moins 30 minutes
+    de résistance au feu, les valeurs se réduisent à 4 m, 5 m et 6 m. Les avant-toits ou éléments en saillie de
+    plus de 1 m augmentent la distance de l''excédent. Pas encore vérifiable : la conversion ne calcule pas les
+    distances aux bâtiments voisins.'
+  it: 'Tra edifici vicini, misurata da facciata a facciata: 5 m se entrambe le facciate sono esternamente in materiali
+    RF1; 7,5 m se una è esternamente combustibile; 10 m se lo sono entrambe. Tra case unifamiliari, edifici di altezza
+    ridotta ed edifici di altezza media con pareti esterne di almeno 30 minuti di resistenza al fuoco i valori scendono
+    a 4 m, 5 m e 6 m. Sporgenze del tetto o elementi aggettanti oltre 1 m aumentano la distanza dell''eccedenza.
+    Non ancora verificabile: la conversione non calcola le distanze dagli edifici vicini.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/building
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/architecture-surrounding-building
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 15-15 Brandschutzabstände, Tragwerke, Brandabschnitte (2015)
+  source_page: 5
+  source_quote: VKF 15-15, Ziff. 2.2
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'

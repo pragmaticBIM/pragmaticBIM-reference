@@ -5,7 +5,7 @@ name:
   de: Computerraum
   fr: Salle informatique
   it: Aula informatica
-  en: Computer Lab
+  en: Computer room
 definition:
   de: Raum mit Computerarbeitsplätzen für Unterricht.
   fr: Local avec des postes informatiques pour l'enseignement.
@@ -33,7 +33,7 @@ configurations:
       de: Computerraum
       fr: Salle informatique
       it: Aula informatica
-      en: Computer Lab
+      en: Computer room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -134,6 +134,25 @@ configurations:
     function: teaching
     components:
     - pragmaticbim:component/wandtafel
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/computerraum-default-steckdose
+    sort_order: 3
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/computerraum-default-lichtschalter
+    sort_order: 4
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
     quantity: 1
     status: active
   openings:

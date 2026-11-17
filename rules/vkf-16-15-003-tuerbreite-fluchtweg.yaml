@@ -1,0 +1,76 @@
+id: pragmaticbim:rule/vkf-16-15-003-tuerbreite-fluchtweg
+code: VKF-16-15-003
+sort_order: 3
+name:
+  de: 'Türen im Fluchtweg: lichte Breite mindestens 0.90 m'
+  en: 'Doors on escape routes: clear width at least 0.90 m'
+  fr: 'Portes sur les voies d''évacuation : largeur libre d''au moins 0,90 m'
+  it: 'Porte sulle vie di fuga: larghezza libera di almeno 0,90 m'
+description:
+  de: 'Eine Tür, durch die ein Fluchtweg führt, braucht eine freie Durchgangsbreite von wenigstens 0.90 m. Je nach
+    Nutzung sind kleinere Masse erlaubt, etwa bei Türen zu Nebenräumen oder zu kleinen Räumen. Die Prüfung liest
+    die Gesamtbreite der Tür (IfcDoor.OverallWidth): Ist schon diese kleiner als 0.90 m, reicht auch die lichte
+    Breite nicht.'
+  en: 'A door that an escape route passes through needs a clear opening width of at least 0.90 m. Depending on the
+    use, smaller sizes are allowed, for example for doors to ancillary or small rooms. The check reads the overall
+    door width (IfcDoor.OverallWidth): if even that is below 0.90 m, the clear width is too small.'
+  fr: 'Une porte traversée par une voie d''évacuation doit offrir une largeur de passage libre d''au moins 0,90
+    m. Selon l''affectation, des dimensions inférieures sont admises, par exemple pour les portes de locaux annexes
+    ou de petits locaux. La vérification lit la largeur totale de la porte (IfcDoor.OverallWidth) : si elle est
+    déjà inférieure à 0,90 m, la largeur libre ne suffit pas non plus.'
+  it: 'Una porta attraversata da una via di fuga richiede una larghezza di passaggio libera di almeno 0,90 m. A
+    seconda dell''utilizzo sono ammesse misure inferiori, ad esempio per porte di locali accessori o piccoli locali.
+    La verifica legge la larghezza complessiva della porta (IfcDoor.OverallWidth): se già questa è inferiore a 0,90
+    m, anche la larghezza libera non basta.'
+rule_status: shacl_defined
+severity: warning
+applies_to_elements:
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/architecture-door-exterior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 6
+  source_quote: VKF 16-15, Ziff. 2.4.5
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'
+shacl: |-
+  rule:vkf-16-15-003-tuerbreite-fluchtweg-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] ,
+          [ sh:prefix "ifc" ; sh:namespace "https://w3id.org/ifc/IFC4_ADD2#"^^xsd:anyURI ] .
+
+  rule:vkf-16-15-003-tuerbreite-fluchtweg a sh:NodeShape ;
+      sh:name "Türen im Fluchtweg: lichte Breite mindestens 0.90 m"@de ,
+          "Doors on escape routes: clear width at least 0.90 m"@en ;
+      sh:description "Eine Tür, durch die ein Fluchtweg führt, braucht eine freie Durchgangsbreite von wenigstens 0.90 m. Je nach Nutzung sind kleinere Masse erlaubt, etwa bei Türen zu Nebenräumen oder zu kleinen Räumen. Die Prüfung liest die Gesamtbreite der Tür (IfcDoor.OverallWidth): Ist schon diese kleiner als 0.90 m, reicht auch die lichte Breite nicht."@de ,
+          "A door that an escape route passes through needs a clear opening width of at least 0.90 m. Depending on the use, smaller sizes are allowed, for example for doors to ancillary or small rooms. The check reads the overall door width (IfcDoor.OverallWidth): if even that is below 0.90 m, the clear width is too small."@en ;
+      sh:severity sh:Warning ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:vkf-16-15-003-tuerbreite-fluchtweg-prefixes ;
+          sh:select """
+              SELECT DISTINCT ?this WHERE {
+                  ?this pbs:connection_physical_type ifc:IfcDoor .
+                  { ?this pbs:escape_route_next ?next } UNION { ?previous pbs:escape_route_next ?this }
+              }"""
+      ] ;
+      sh:sparql [
+          a sh:SPARQLConstraint ;
+          sh:prefixes rule:vkf-16-15-003-tuerbreite-fluchtweg-prefixes ;
+          sh:message "Tür {?value} m breit (Gesamtmass); lichte Breite von mindestens {?min} m nicht möglich."@de ,
+              "Door {?value} m wide (overall); a clear width of at least {?min} m is not possible."@en ;
+          sh:select """
+              SELECT $this ?value ?min WHERE {
+                  $this pbs:metadata ?m .
+                  ?m pbs:metadata_key "IfcDoor.OverallWidth" ; pbs:metadata_value ?raw .
+                  BIND (xsd:decimal(?raw) AS ?size)
+                  BIND (0.90 AS ?min)
+                  FILTER (BOUND(?size) && ?size < ?min)
+                  BIND (ROUND(?size * 100) / 100 AS ?value)
+              }"""
+      ] .

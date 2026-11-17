@@ -15,7 +15,9 @@ description:
     e superficie per gli ospiti.
   en: Guests order and consume food and drink. The service concept determines movement, dwell time, and
     dining area.
-use: pragmaticbim:use/gastronomie
+scope: use
+uses:
+- pragmaticbim:use/gastronomie
 tags:
 - gaeste
 status: active

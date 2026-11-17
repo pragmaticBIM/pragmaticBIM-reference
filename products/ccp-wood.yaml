@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ccp-wood
+sort_order: 4
+status: active
+name:
+  de: Holz-Deckenbekleidung
+  fr: Revêtement de plafond en bois
+  it: Rivestimento di soffitto in legno
+  en: Wood ceiling lining
+product_classification:
+  classification_scheme: AbstractCeilingCoveringProduct
+  classification_code: CCP-WOOD
+tender_text:
+  de: Sichtbare Deckenbekleidung aus Vollholz oder Holzwerkstoffen als Platten, Bretter oder Lamellen unter der tragenden Decke. Mechanisch auf Lattung oder abgehängter Unterkonstruktion befestigt, mit sichtbarer oder verdeckter Befestigung und Akustikvlies hinter perforierten oder gelamellten Flächen. Geeignet für Saal-, Sitzungs- und Schulungsräume mit akustischen und gestalterischen Anforderungen, wobei Brandverhalten und Oberflächenbehandlung des Holzes gesondert festzulegen sind.
+  en: Visible ceiling lining from solid wood or wood-based panels, boards, or slats below the load-bearing slab. Mechanically fixed on battens or a suspended substructure, with visible or concealed fastenings and acoustic fleece behind perforated or slatted surfaces. Suitable for halls, meeting rooms, and educational rooms with acoustic and appearance requirements, where fire behaviour and surface treatment of the wood are specified separately.

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/wcp-natural-stone
+sort_order: 3
+status: active
+name:
+  de: Naturstein-Wandverkleidung
+  fr: Revêtement mural en pierre naturelle
+  it: Rivestimento murale in pietra naturale
+  en: Natural stone wall cladding
+product_classification:
+  classification_scheme: AbstractWallCoveringProduct
+  classification_code: WCP-NATURAL-STONE
+tender_text:
+  de: Hoch beanspruchbare Innenwandverkleidung aus Natursteinplatten oder -fliesen auf tragender Wand oder Vorsatzschale. Bei dünnen Formaten im Kleber- oder Mörtelbett verlegt, bei grossen und schweren Platten mechanisch mit Hinterlüftung verankert, einschliesslich Verfugung und Randabschlüsse. Geeignet für Eingangshallen, Sanitär- und stark genutzte Räume mit Anforderungen an Dauerhaftigkeit, Reinigbarkeit und nichtbrennbare Oberflächen.
+  en: Hard-wearing interior wall cladding from natural stone slabs or tiles on a load-bearing wall or lining. Set in adhesive or mortar for thin formats, or mechanically anchored with a cavity for large and heavy slabs, including jointing and edge details. Suitable for entrance halls, sanitary rooms, and highly used areas with requirements on durability, cleanability, and non-combustible surfaces.

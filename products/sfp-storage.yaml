@@ -1,0 +1,14 @@
+id: pragmaticbim:product/sfp-storage
+sort_order: 10
+status: active
+name:
+  de: Lagerfläche
+  fr: Aire de stockage
+  it: Area di deposito
+  en: Storage area
+product_classification:
+  classification_scheme: SiteFacilityProduct
+  classification_code: SFP-STORAGE
+tender_text:
+  de: Markierte Freiflaeche oder eine ueberdachte, aber offene Bucht fuer Paletten, Schalung, Bewehrung und aehnliches Massenmaterial. Kein Raum und kein Container.
+  en: Marked outdoor surface, or a covered but open bay, for pallets, formwork, reinforcement, and similar bulk material. Not a room and not a container.

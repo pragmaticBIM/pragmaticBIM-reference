@@ -14,13 +14,13 @@ tag:
   en: Security
 description:
   de: |-
-    Festgelegt wird, wie streng Informations- und Gebäudesicherheit wegen kritischer Infrastruktur gehandhabt werden: welche CDE zulässig ist und ob sicherheitskritische Bereiche sowie Gebäudesicherheitsmassnahmen modellbasiert geführt und geprüft werden müssen. Ohne diese Festlegung landen sensible Projektdaten in ungeeigneten Plattformen und sicherheitsrelevante Anforderungen bleiben ungeprüft.
+    Festgelegt wird, wie streng Informations- und Gebäudesicherheit wegen kritischer Infrastruktur gehandhabt werden: welche CDE zulässig ist und ob sicherheitskritische Bereiche sowie Gebäudesicherheitsmassnahmen modellbasiert geführt und geprüft werden müssen.
   fr: |-
-    Cette condition-cadre fixe le degré d'exigence en matière de sécurité de l'information et du bâtiment pour des infrastructures critiques: quelles CDE sont admises et si les zones critiques ainsi que les mesures de sécurité du bâtiment doivent être gérées et contrôlées sur la base de maquettes. Sans cette décision, des données sensibles aboutissent sur des plateformes inadaptées et les exigences de sécurité restent non vérifiées.
+    Cette condition-cadre fixe le degré d'exigence en matière de sécurité de l'information et du bâtiment pour des infrastructures critiques: quelles CDE sont admises et si les zones critiques ainsi que les mesures de sécurité du bâtiment doivent être gérées et contrôlées sur la base de maquettes.
   it: |-
-    Questa condizione quadro stabilisce quanto rigorosamente gestire la sicurezza delle informazioni e dell'edificio in presenza di infrastrutture critiche: quali CDE sono ammessi e se le zone critiche nonché le misure di sicurezza dell'edificio devono essere gestite e verificate sulla base di modelli. Senza questa decisione, dati sensibili finiscono su piattaforme inadatte e i requisiti di sicurezza restano non verificati.
+    Questa condizione quadro stabilisce quanto rigorosamente gestire la sicurezza delle informazioni e dell'edificio in presenza di infrastrutture critiche: quali CDE sono ammessi e se le zone critiche nonché le misure di sicurezza dell'edificio devono essere gestite e verificate sulla base di modelli.
   en: |-
-    This framework condition determines how strictly information and building security are handled for critical infrastructure: which CDEs are allowed and whether security-critical areas and building security measures must be managed and checked on a model basis. Without it, sensitive project data ends up on unsuitable platforms and security requirements remain unchecked.
+    This framework condition determines how strictly information and building security are handled for critical infrastructure: which CDEs are allowed and whether security-critical areas and building security measures must be managed and checked on a model basis.
 status: active
 comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (explizit, nicht kumulativ).'
 levels:

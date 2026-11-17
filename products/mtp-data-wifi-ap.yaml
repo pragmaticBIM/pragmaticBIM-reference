@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mtp-data-wifi-ap
+sort_order: 5
+status: active
+name:
+  de: WLAN-Access-Point
+  fr: Point d'accès WLAN
+  it: Access point WLAN
+  en: WiFi access point
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-DATA-WIFI-AP
+tender_text:
+  de: Stellt die Funknetzabdeckung im versorgten Raum bereit und verbindet mobile Endgeräte mit dem Kabelnetz. Wird an Decke oder Wand montiert, in der Regel über ein einzelnes Datenkabel gespeist, das zugleich die Stromversorgung übernimmt, und zentral über einen Controller verwaltet. Geeignet für Büro-, Unterrichts- und Publikumsbereiche, wobei die Geräteabstände aus der erforderlichen Abdeckung und Endgerätedichte abgeleitet werden und die Montageorte für Ersatz und Umkonfiguration zugänglich bleiben.
+  en: Provides wireless network coverage in the served space and links mobile devices to the cabled network. Mounted on ceiling or wall, normally fed by a single data cable that also carries the power supply, and managed centrally by a controller. Suitable for office, teaching, and public areas, with unit spacing derived from the required coverage and device density and with mounting positions kept accessible for replacement and reconfiguration.

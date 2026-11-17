@@ -19,7 +19,9 @@ description:
   en: Residents sleep in the dwelling every night. A separate room or part of the
     living room decides the room count, the area, and how far sleep stays undisturbed
     by the rest of the home.
-use: pragmaticbim:use/wohnen
+scope: unit
+uses:
+- pragmaticbim:use/wohnen
 tags:
 - wohnalltag
 status: active

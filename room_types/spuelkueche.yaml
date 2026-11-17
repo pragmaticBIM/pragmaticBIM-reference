@@ -5,7 +5,7 @@ name:
   de: Spülküche
   fr: Laverie
   it: Lavaggio stoviglie
-  en: Dishwashing Area
+  en: Dishwashing area
 definition:
   de: Raum für Rückgabe, Reinigung und Bereitstellung von Geschirr.
   fr: Local destiné au retour, au nettoyage et à la mise à disposition de la vaisselle.
@@ -33,7 +33,7 @@ configurations:
       de: Spülküche
       fr: Laverie
       it: Lavaggio stoviglie
-      en: Dishwashing Area
+      en: Dishwashing area
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -130,6 +130,25 @@ configurations:
       min: 1
       max: 4
       default: 2
+    status: active
+  - id: pragmaticbim:room-type-equipment/spuelkueche-default-steckdose
+    sort_order: 3
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/spuelkueche-default-lichtschalter
+    sort_order: 4
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/spuelkueche-default-zugang

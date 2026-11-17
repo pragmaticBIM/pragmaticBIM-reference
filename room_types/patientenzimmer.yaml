@@ -5,7 +5,7 @@ name:
   de: Patientenzimmer
   fr: Chambre de patient
   it: Camera di degenza
-  en: Patient Room
+  en: Patient room
 definition:
   de: Raum für stationäre Pflege.
   fr: Local pour les soins stationnaires.
@@ -33,7 +33,7 @@ configurations:
       de: Patientenzimmer
       fr: Chambre de patient
       it: Camera di degenza
-      en: Patient Room
+      en: Patient room
   - element: pragmaticbim:element/spaces-interior
     name: Reference
     pset: Pset_SpaceCommon
@@ -149,6 +149,25 @@ configurations:
     params:
       width:
         default: 0.8
+    status: active
+  - id: pragmaticbim:room-type-equipment/patientenzimmer-default-steckdose
+    sort_order: 4
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/patientenzimmer-default-lichtschalter
+    sort_order: 5
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/patientenzimmer-default-zugang

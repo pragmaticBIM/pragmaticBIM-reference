@@ -502,7 +502,7 @@ ELEMENT_GENERATORS: dict[str, Callable[[dict[str, Any]], tuple]] = {
     "ARC-CONSTRAINT": generate_planning_constraint,
     "ARC-UMBAU-PER": generate_umbau_perimeter,
     "ARC-STAIR": generate_stair,
-    "IfcStair": generate_stair,
+    "IfcStairFlight": generate_stair,
     "ARC-RAILING": generate_railing,
     "IfcRailing": generate_railing,
     "ARC-SHADING": generate_shading,
@@ -633,7 +633,7 @@ SURROUNDING_BUILDING_TYPES = frozenset({"ARC-UMG-NEIGHBOR"})
 CONSTRUCTION_LOGISTICS_TYPES = frozenset({"ARC-SITE-LOG"})
 PLANNING_CONSTRAINT_TYPES = frozenset({"ARC-CONSTRAINT"})
 UMBAU_PERIMETER_TYPES = frozenset({"ARC-UMBAU-PER"})
-STAIR_TYPES = frozenset({"ARC-STAIR", "IfcStair"})
+STAIR_TYPES = frozenset({"ARC-STAIR", "IfcStairFlight"})
 RAILING_TYPES = frozenset({"ARC-RAILING", "IfcRailing"})
 SHADING_DEVICE_TYPES = frozenset({"ARC-SHADING", "IfcShadingDevice"})
 TREE_TYPES = frozenset({"LAN-TREE"})
@@ -2483,18 +2483,23 @@ def map_stair_params(entry: dict[str, Any]) -> dict[str, Any]:
     landing_width = 2.0 * flight_w + 0.18
     plan_area = 2.0 * flight_w * flight_run + landing_width * landing_d
     geometry = {"area": plan_area, "height": storey_h}
+    flight_entry = {
+        "NumberOfRiser": step_count,
+        "RiserHeight": round(storey_h * 0.5 / step_count, 3),
+        "TreadLength": round(flight_run / step_count, 3),
+        **entry,
+    }
     resolved = build_element_attributes_from_yaml(
-        entry=entry,
+        entry=flight_entry,
         element_slug=STAIR_ELEMENT_SLUG,
         defaults=STAIR_DEFAULTS,
         geometry=geometry,
     )
     quantities = resolved.get("quantities") or {}
-    qto = quantities.setdefault("Qto_StairBaseQuantities", {})
+    qto = quantities.setdefault("Qto_StairFlightBaseQuantities", {})
     qto["GrossVolume"] = round(
-        2.0 * step_count * flight_w * (flight_run / step_count) * tread_t
-        + 2.0 * flight_w * flight_run * waist_t
-        + landing_width * landing_d * tread_t,
+        step_count * flight_w * (flight_run / step_count) * tread_t
+        + flight_w * flight_run * waist_t,
         3,
     )
     resolved["quantities"] = quantities

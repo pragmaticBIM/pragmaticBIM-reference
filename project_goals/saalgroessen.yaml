@@ -14,21 +14,13 @@ tag:
   en: Hall
 description:
   de: |-
-    Die Saalgrössen und die Zahl der Besucherplätze bestimmen Foyer, Fluchtwege, Toiletten und Garderobe.
-
-    Ohne diese Festlegung bleiben Foyer, Toiletten und Garderobe unbestimmt. Parallelveranstaltungen und die Teilung des Saals lassen sich dann nicht bestellen.
+    Die Saalgrössen und die Zahl der Besucherplätze bestimmen Foyer, Fluchtwege, Toiletten und Garderobe. Sie entscheiden auch, ob Parallelveranstaltungen und die Teilung des Saals möglich sind.
   fr: |-
-    Les tailles de salle et le nombre de places pour le public déterminent le foyer, les voies d'évacuation, les toilettes et le vestiaire.
-
-    Sans cette décision, foyer, toilettes et vestiaire restent indéterminés. Les manifestations en parallèle et la division de la salle ne peuvent alors pas être commandées.
+    Les tailles de salle et le nombre de places pour le public déterminent le foyer, les voies d'évacuation, les toilettes et le vestiaire. Elles décident aussi si des manifestations en parallèle et la division de la salle sont possibles.
   it: |-
-    Le dimensioni delle sale e il numero di posti per il pubblico determinano foyer, vie di fuga, servizi igienici e guardaroba.
-
-    Senza questa decisione foyer, servizi igienici e guardaroba restano indeterminati. Eventi in parallelo e suddivisione della sala non possono allora essere commissionati.
+    Le dimensioni delle sale e il numero di posti per il pubblico determinano foyer, vie di fuga, servizi igienici e guardaroba. Decidono anche se sono possibili eventi in parallelo e la suddivisione della sala.
   en: |-
-    Hall sizes and the number of audience places determine foyer, escape routes, toilets, and cloakroom.
-
-    Without this decision foyer, toilets, and cloakroom stay undefined. Parallel events and splitting the hall then cannot be ordered.
+    Hall sizes and the number of audience places determine foyer, escape routes, toilets, and cloakroom. They also decide whether parallel events and splitting the hall are possible.
 status: active
 uses:
 - pragmaticbim:use/versammlung

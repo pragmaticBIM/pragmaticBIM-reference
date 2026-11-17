@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fdp-drainage
+sort_order: 8
+status: active
+name:
+  de: Fundamententwaesserung und -schutz
+  fr: Drainage et protection des fondations
+  it: Drenaggio e protezione delle fondazioni
+  en: Foundation drainage and protection
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-DRAINAGE
+tender_text:
+  de: System, das Wasser aus dem Boden rund um das Fundament sammelt und ableitet und die Abdichtung vor mechanischer Beschädigung schützt. Besteht aus Sickerleitungen in filterstabiler Kiesbettung, Schutz- und Filterschichten oder Dränmatten an der Wand sowie Kontroll- und Ableitungsstellen. Geeignet für Baugründe mit zurückgehaltenem Sickerwasser, bei denen Druck auf die Abdichtung vermieden werden soll.
+  en: System that collects and leads away water from the ground around the foundation and protects the sealing from mechanical damage. Comprises perforated drain pipes in a filter-stable gravel bed, protection and filter layers or drainage composites on the wall, and inspection and discharge points. Suitable for sites with retained seeping water where pressure on the sealing is to be avoided.

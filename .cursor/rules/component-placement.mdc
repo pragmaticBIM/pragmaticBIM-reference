@@ -1,0 +1,59 @@
+---
+description: Placement conventions for component YAML (axes, sides, offsets, openings, parameter references)
+globs: components/*.yaml
+alwaysApply: false
+---
+
+# Component placement (Elementplan)
+
+A generator reads a component in its own local axes. Write `placement`, `parameters`, `clearances` and `connections` so the placed object lands where a planner expects it, without reading generator code. The schema (`elementplan-data-schema`, `ComponentPlacement`) holds the same rules.
+
+## Axes
+
+- The origin is the back-left corner of the component.
+- **Left and right** are as seen standing in front of the component, facing it. A WC with its transfer area on the left has `side: left`, seen from the room.
+- `width` runs along the host wall from left to right, `depth` away from the wall into the room, `height` upwards from the underside.
+- All lengths are metres. A length may instead name one of the component's own `parameters` (`width: depth`); it resolves to the value chosen for the placed instance. Never name a parameter the component does not define.
+
+## Host
+
+| `host` | Means | `edge_kinds` |
+|---|---|---|
+| `floor` | Free-standing; back is the side it faces away from | omit |
+| `wall_face` | Back against one wall | required |
+| `wall_corner` | Back against one wall, one side against a second | required |
+| `wall_opening` | Cuts a wall, belongs to both rooms | required |
+
+- `wall_corner`: `width` runs along the back wall. An L-shaped component adds `width_2` for the leg along the side wall.
+- `wall_opening`: the front is the room that declares the opening. Doors (including gates, passages and French windows) size the opening with `clear_width` and `clear_height`. Windows use `width` and `height`.
+
+## Placement fields
+
+- `side_distance_min`: minimum distance from each side that does not stand against a wall to the nearest perpendicular wall. It has no effect on the wall side of a `wall_corner`.
+- `axis_spacing_min`: minimum distance between the centre lines of two neighbouring placements of the same component id. Use it for repeated fixtures (urinals, showers, washbasin rows).
+- `elevation`: underside above finished floor. Omit it for 0. For a `wall_opening` it is the sill; point it at a `sill_height` parameter when the sill varies.
+- All values are ≥ 0.
+
+## Clearances
+
+- `side` names the side the rectangle touches: `front` (room side), `back` (wall side), `left`, `right`, `swing`.
+- `width` runs along the touched side, `depth` away from it.
+- `offset` shifts the centre along the touched side. Positive is to the right for `front`, `back` and `swing`, towards the front for `left` and `right`. Omit it for a centred clearance.
+- `swing` is the door leaf sweep into the room that declares the opening. Every hinged door has one; sliding doors, gates without a leaf and passages do not.
+- Clearances may overlap each other but not walls or other components.
+
+## Mirroring
+
+A generator may mirror any component left to right. `left` and `right` clearances swap, offsets along `width` change sign, and a `wall_corner` component takes its side wall on the other side. Write one-sided components (WC transfer area, single bed, examination couch) in one hand only; do not add a mirrored copy.
+
+## Connections
+
+- `max_distance_to_shaft`: straight-line plan distance from the component centre to the nearest shaft edge. Give it for `drainage`; omit it for media that run freely (power, cold water).
+
+## Check
+
+```bash
+python ../elementplan-data-schema/scripts/validate_reference.py . components
+```
+
+It rejects negative lengths, malformed parameter names, wall hosts without `edge_kinds`, and lengths that name an unknown parameter.

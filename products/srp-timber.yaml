@@ -1,0 +1,14 @@
+id: pragmaticbim:product/srp-timber
+sort_order: 2
+status: active
+name:
+  de: Holztreppe
+  fr: Escalier en bois
+  it: Scala in legno
+  en: Timber stair
+product_classification:
+  classification_scheme: StairProduct
+  classification_code: SRP-TIMBER
+tender_text:
+  de: Holztreppenlauf aus Vollholz oder Konstruktionsholz für die vertikale Erschliessung zwischen Geschossen. Wangen, Tritt- und Setzstufen werden im Werk vorgefertigt, vor Ort eingebaut und mit einer Oberflächenbehandlung versehen. Geeignet für Innentreppen im Wohnungsbau und in niedrigen Gebäuden mit sichtbaren Holzoberflächen und geringem Eigengewicht.
+  en: Stair flight of solid or engineered timber for vertical circulation between levels. Stringers, treads, and risers are prefabricated in the workshop, fitted on site, and finished with a surface treatment. Suitable for interior stairs in housing and low-rise buildings where visible timber surfaces and low dead load are wanted.

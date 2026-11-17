@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fcp-carpet
+sort_order: 3
+status: active
+name:
+  de: Textiler Teppichbelag
+  fr: Moquette textile
+  it: Moquette tessile
+  en: Textile carpet
+product_classification:
+  classification_scheme: AbstractFloorCoveringProduct
+  classification_code: FCP-CARPET
+tender_text:
+  de: Textile Nutzschicht auf vorbereitetem Unterlagsboden, die eine weiche, schallabsorbierende Gehfläche bildet. Als Bahnenware oder Platten geliefert und vollflächig verklebt, fixiert oder lose auf dem ausgeglichenen Untergrund verlegt, mit geschlossenen Nähten und Randprofilen. Geeignet für Büros, Besprechungsräume und Wohnbereiche mit mittlerer Beanspruchung und Anforderungen an Raumakustik und Gehkomfort.
+  en: Textile wearing surface on a prepared screed or subfloor, delivering a soft, sound-absorbing walking surface. Supplied as broadloom or tiles and fully adhered, tackified, or loose-laid on the levelled substrate, with seams and edge profiles closed. Suitable for offices, meeting rooms, and residential areas with moderate traffic and demands on room acoustics and walking comfort.

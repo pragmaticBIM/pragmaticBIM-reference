@@ -5,7 +5,7 @@ name:
   de: Humusmengen ermitteln
   fr: Déterminer les quantités d'humus
   it: Determinare le quantità di humus
-  en: Determine humus quantities
+  en: Determine topsoil quantities
 description:
   de: |-
     Humus als planbare Schicht abbilden, damit Abtrag, Einbau und Überschussmengen für Kosten und Bauablauf ausgewertet werden können.
@@ -62,21 +62,21 @@ description:
     - Deposito intermedio nel modello logistico
     - Bilancio: scavo = ripristino + deposito + eccedenza
   en: |-
-    Represent humus as a layer that can be designed, so that stripping, reinstatement, and surplus quantities can be evaluated for cost and construction sequencing.
+    Represent topsoil as a layer that can be designed, so that stripping, reinstatement, and surplus quantities can be evaluated for cost and construction sequencing.
 
     **Starting point**
-    - Humus is cost-relevant and must be planned.
+    - Topsoil is cost-relevant and must be planned.
 
     **Goal & benefit**
     - Derive quantities for stripping, reinstatement, intermediate storage, and surplus from the model.
 
     **Process**
-    1. Provide the humus layer for existing, stripping, and reinstatement.
+    1. Provide the topsoil layer for existing, stripping, and reinstatement.
     2. Keep the intermediate stockpile as a site-setup object.
     3. Evaluate quantities for the cost balance.
 
     **Deliverable**
-    - Landscape model with the humus layer
+    - Landscape model with the topsoil layer
     - Intermediate stockpile in the logistics model
     - Balance: stripping = reinstatement + stockpile + surplus
 workflow_group: kosten-mengen

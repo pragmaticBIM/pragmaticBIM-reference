@@ -1,0 +1,14 @@
+id: pragmaticbim:product/facp-prefab-modular-metal
+sort_order: 11
+status: active
+name:
+  de: Vorgefertigtes modulares Metallfassaden-System
+  fr: Système de façade modulaire préfabriqué en métal
+  it: Sistema di facciata modulare prefabbricato in metallo
+  en: Prefabricated modular metal facade system
+product_classification:
+  classification_scheme: EuropeanFacadeCoveringProduct
+  classification_code: FaCP-PREFAB-MODULAR-METAL
+tender_text:
+  de: Nichttragendes Fassadenmodul, werkseitig aus Metallrahmen mit integrierter Dämmung und fertiger Bekleidungsschale montiert. Die Elemente werden geschosshoch vor das Primärtragwerk gesetzt und an Konsolen verankert, die Justierung und thermische Trennung erlauben; die Modulfugen werden mit Dichtprofilen oder Versiegelung geschlossen. Geeignet für Neubau und späteren teilweisen Austausch an hohen Gewerbe-, Industrie- und Technikgebäuden mit Anforderungen an Montagegeschwindigkeit, Masshaltigkeit und wiederholbare Details.
+  en: Non-load-bearing facade module assembled in the factory from metal frames with integrated insulation and a finished cladding face. The units are set storey-high in front of the primary structure and anchored on brackets that allow adjustment and thermal separation, with gasketed or sealed joints between modules. Suitable for new build and later partial replacement on tall commercial, industrial, and technical buildings requiring erection speed, dimensional accuracy, and repeatable details.

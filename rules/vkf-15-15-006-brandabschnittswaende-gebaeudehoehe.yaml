@@ -1,0 +1,110 @@
+id: pragmaticbim:rule/vkf-15-15-006-brandabschnittswaende-gebaeudehoehe
+code: VKF-15-15-006
+sort_order: 15
+name:
+  de: 'Brandabschnittsbildende Wände: Feuerwiderstand nach Gebäudehöhe'
+  en: 'Fire compartment walls: fire resistance by building height'
+  fr: 'Murs formant compartiment : résistance au feu selon la hauteur du bâtiment'
+  it: 'Pareti di compartimentazione: resistenza al fuoco secondo l''altezza dell''edificio'
+description:
+  de: Wände, die Brandabschnitte oder horizontale Fluchtwege abtrennen, brauchen bei geringer und mittlerer Höhe
+    mindestens EI 30, bei Hochhäusern EI 60 (mit Sprinkleranlage EI 30). Es sind die tiefsten Werte der Tabellen;
+    andere Nutzungen verlangen teils mehr. Als brandabschnittsbildend gilt in der Prüfung jede Wand mit einem angegebenen
+    Feuerwiderstand der Klasse EI, REI oder F. Die Höhenkategorie leitet die Prüfung aus der höchsten Geschosskote
+    ab (über 11 m mittlere Höhe, über 30 m Hochhaus), den Sprinklerschutz aus Pset_BuildingCommon.SprinklerProtection;
+    oberstes Geschoss ist das höchste Geschoss mit Räumen.
+  en: Walls separating fire compartments or horizontal escape routes need at least EI 30 at low and medium height
+    and EI 60 in high-rises (EI 30 with sprinklers). These are the lowest values of the tables; other uses partly
+    require more. The check treats every wall with a stated fire resistance of class EI, REI or F as forming a compartment.
+    The check derives the height category from the highest storey elevation (above 11 m medium height, above 30
+    m high-rise) and sprinkler protection from Pset_BuildingCommon.SprinklerProtection; the top storey is the highest
+    storey with spaces.
+  fr: Les murs séparant des compartiments coupe-feu ou des voies d'évacuation horizontales exigent au moins EI 30
+    pour les faibles et moyennes hauteurs et EI 60 dans les tours (EI 30 avec sprinklers). Ce sont les valeurs les
+    plus basses des tableaux ; d'autres affectations exigent parfois davantage. La vérification considère comme
+    formant compartiment tout mur dont la résistance au feu indiquée est de classe EI, REI ou F. La vérification
+    déduit la catégorie de hauteur de la cote d'étage la plus élevée (plus de 11 m hauteur moyenne, plus de 30 m
+    tour) et la protection sprinkler de Pset_BuildingCommon.SprinklerProtection ; l'étage supérieur est le plus
+    haut étage comportant des locaux.
+  it: Le pareti che separano compartimenti tagliafuoco o vie di fuga orizzontali richiedono almeno EI 30 per altezza
+    ridotta e media ed EI 60 negli edifici alti (EI 30 con sprinkler). Sono i valori più bassi delle tabelle; altri
+    utilizzi richiedono talvolta di più. La verifica considera di compartimentazione ogni parete con una resistenza
+    al fuoco indicata di classe EI, REI o F. La verifica deduce la categoria d'altezza dalla quota di piano più
+    alta (oltre 11 m altezza media, oltre 30 m edificio alto) e la protezione sprinkler da Pset_BuildingCommon.SprinklerProtection;
+    il piano superiore è il piano più alto con locali.
+rule_status: shacl_defined
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-wall-interior-loadbearing
+- pragmaticbim:element/structural-wall
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 15-15 Brandschutzabstände, Tragwerke, Brandabschnitte (2015)
+  source_page: 11
+  source_quote: VKF 15-15, Ziff. 3.7.1
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'
+shacl: |-
+  rule:vkf-15-15-006-brandabschnittswaende-gebaeudehoehe-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] ,
+          [ sh:prefix "ifc" ; sh:namespace "https://w3id.org/ifc/IFC4_ADD2#"^^xsd:anyURI ] .
+
+  rule:vkf-15-15-006-brandabschnittswaende-gebaeudehoehe a sh:NodeShape ;
+      sh:name "Brandabschnittsbildende Wände: Feuerwiderstand nach Gebäudehöhe"@de ,
+          "Fire compartment walls: fire resistance by building height"@en ;
+      sh:description "Wände, die Brandabschnitte oder horizontale Fluchtwege abtrennen, brauchen bei geringer und mittlerer Höhe mindestens EI 30, bei Hochhäusern EI 60 (mit Sprinkleranlage EI 30). Es sind die tiefsten Werte der Tabellen; andere Nutzungen verlangen teils mehr. Als brandabschnittsbildend gilt in der Prüfung jede Wand mit einem angegebenen Feuerwiderstand der Klasse EI, REI oder F. Die Höhenkategorie leitet die Prüfung aus der höchsten Geschosskote ab (über 11 m mittlere Höhe, über 30 m Hochhaus), den Sprinklerschutz aus Pset_BuildingCommon.SprinklerProtection; oberstes Geschoss ist das höchste Geschoss mit Räumen."@de ,
+          "Walls separating fire compartments or horizontal escape routes need at least EI 30 at low and medium height and EI 60 in high-rises (EI 30 with sprinklers). These are the lowest values of the tables; other uses partly require more. The check treats every wall with a stated fire resistance of class EI, REI or F as forming a compartment. The check derives the height category from the highest storey elevation (above 11 m medium height, above 30 m high-rise) and sprinkler protection from Pset_BuildingCommon.SprinklerProtection; the top storey is the highest storey with spaces."@en ;
+      sh:severity sh:Violation ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:vkf-15-15-006-brandabschnittswaende-gebaeudehoehe-prefixes ;
+          sh:select """
+              SELECT DISTINCT ?this WHERE {
+                  ?this a pbs:SeparatorWall ; pbs:performance_properties ?f .
+                  ?f pbs:property_key pbs:fire_property_resistance_rating ; pbs:property_value_string ?rating .
+                  FILTER (REGEX(?rating, "^(EI|REI|F)[0-9]+$"))
+              }"""
+      ] ;
+      sh:sparql [
+          a sh:SPARQLConstraint ;
+          sh:prefixes rule:vkf-15-15-006-brandabschnittswaende-gebaeudehoehe-prefixes ;
+          sh:message "Brandabschnittsbildende Wand mit Feuerwiderstand {?ratingDe}; erforderlich mindestens EI {?required} ({?categoryDe}{?concept})."@de ,
+          "Fire compartment wall with fire resistance {?rating}; required at least EI {?required} ({?categoryEn}{?concept})."@en ;
+          sh:select """
+              SELECT $this ?rating ?ratingDe ?required ?categoryDe ?categoryEn ?concept WHERE {
+                  $this pbs:parent_level ?level .
+                  ?level pbs:elevation ?elevation .
+                  { SELECT (MAX(?le) AS ?maxElevation) (MIN(?le) AS ?minElevation) WHERE { ?l a pbs:LevelContext ; pbs:elevation ?le } }
+                  OPTIONAL { SELECT (MAX(?se) AS ?topSpaceElevation) WHERE { ?s a pbs:Space ; pbs:parent_level ?sl . ?sl pbs:elevation ?se } }
+                  BIND (EXISTS {
+                      ?b a pbs:BuildingContext ; pbs:metadata ?bm .
+                      ?bm pbs:metadata_key "Pset_BuildingCommon.SprinklerProtection" ; pbs:metadata_value ?bv .
+                      FILTER (LCASE(STR(?bv)) = "true")
+                  } AS ?sprinkler)
+                  BIND (COALESCE(?topSpaceElevation, ?maxElevation) AS ?topStorey)
+                  BIND (IF(?maxElevation > 30, 3, IF(?maxElevation > 11, 2, 1)) AS ?category)
+                  BIND (IF(?category = 3, "Hochhaus", IF(?category = 2, "mittlere Höhe", "geringe Höhe")) AS ?categoryDe)
+                  BIND (IF(?category = 3, "high-rise", IF(?category = 2, "medium height", "low height")) AS ?categoryEn)
+                  BIND (IF(?sprinkler, ", Sprinkler", "") AS ?concept)
+                  BIND (?elevation >= ?topStorey AS ?isTop)
+                  BIND (IF(?category = 3, IF(?sprinkler, 30, 60), 30) AS ?required)
+                  FILTER (?required > 0)
+                  OPTIONAL {
+                      $this pbs:performance_properties ?f .
+                      ?f pbs:property_key pbs:fire_property_resistance_rating ; pbs:property_value_string ?r .
+                      FILTER (REGEX(?r, "^(EI|REI|F)[0-9]+$"))
+                  }
+                  BIND (IF(BOUND(?r), xsd:integer(REPLACE(?r, "^[A-Z]+", "")), 0) AS ?minutes)
+                  FILTER (?minutes < ?required)
+                  BIND (COALESCE(?r, "none") AS ?rating)
+                  BIND (COALESCE(?r, "keine Angabe") AS ?ratingDe)
+              }"""
+      ] .

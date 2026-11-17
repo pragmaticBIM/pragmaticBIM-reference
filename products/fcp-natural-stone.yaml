@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fcp-natural-stone
+sort_order: 6
+status: active
+name:
+  de: Naturstein-Bodenbelag
+  fr: Revêtement de sol en pierre naturelle
+  it: Pavimento in pietra naturale
+  en: Natural stone flooring
+product_classification:
+  classification_scheme: AbstractFloorCoveringProduct
+  classification_code: FCP-NATURAL-STONE
+tender_text:
+  de: Nutzschicht aus Natursteinplatten oder -fliesen auf vorbereitetem Untergrund, die eine schwere und sehr dauerhafte Gehfläche bildet. Im Mörtelbett oder Dünnbettkleber auf dem Unterlagsboden verlegt, verfugt und durch Schleifen, Polieren oder Imprägnieren fertiggestellt. Geeignet für Eingänge, Verkehrsflächen und repräsentative Räume mit hoher Beanspruchung und erhöht das Eigengewicht des Bodenaufbaus.
+  en: Wearing surface from quarried stone slabs or tiles on a prepared substrate, delivering a heavy and highly durable walking surface. Laid in a mortar bed or thin-bed adhesive on the screed, jointed, and finished by grinding, honing, or sealing. Suitable for entrances, circulation areas, and representative rooms with heavy traffic, and increases the dead load of the floor build-up.

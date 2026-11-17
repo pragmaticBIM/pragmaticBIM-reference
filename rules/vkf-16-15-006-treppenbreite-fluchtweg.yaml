@@ -1,0 +1,37 @@
+id: pragmaticbim:rule/vkf-16-15-006-treppenbreite-fluchtweg
+code: VKF-16-15-006
+sort_order: 6
+name:
+  de: 'Treppen im Fluchtweg: Breite 1.20 m, gewendelt 1.50 m'
+  en: 'Stairs on escape routes: width 1.20 m, winding 1.50 m'
+  fr: 'Escaliers sur les voies d''évacuation : largeur 1,20 m, tournants 1,50 m'
+  it: 'Scale sulle vie di fuga: larghezza 1,20 m, a chiocciola 1,50 m'
+description:
+  de: 'Gerade Treppen samt Podesten sind in Fluchtwegen mindestens 1.20 m breit. Gewendelte Treppen brauchen 1.50
+    m und innen eine Auftrittsbreite von wenigstens 0.15 m. Für einzelne Nutzungen (z. B. Wohnen) sind schmalere
+    Treppen zulässig. Noch nicht prüfbar: die Laufbreite ist im Modell nicht einheitlich abgelegt.'
+  en: 'Straight stairs including landings on escape routes are at least 1.20 m wide. Winding stairs need 1.50 m
+    and an inner tread width of at least 0.15 m. Some uses (e.g. housing) allow narrower stairs. Not yet checkable:
+    the flight width is not stored consistently in the model.'
+  fr: 'Sur les voies d''évacuation, les escaliers droits, paliers compris, mesurent au moins 1,20 m de large. Les
+    escaliers tournants exigent 1,50 m et un giron intérieur d''au moins 0,15 m. Certaines affectations (p. ex.
+    habitation) admettent des escaliers plus étroits. Pas encore vérifiable : la largeur de volée n''est pas enregistrée
+    de manière uniforme dans le modèle.'
+  it: 'Sulle vie di fuga le scale diritte, pianerottoli compresi, sono larghe almeno 1,20 m. Le scale a chiocciola
+    richiedono 1,50 m e una pedata interna di almeno 0,15 m. Alcuni utilizzi (p. es. abitazione) ammettono scale
+    più strette. Non ancora verificabile: la larghezza della rampa non è registrata in modo uniforme nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-stair
+- pragmaticbim:element/structural-stair
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- CH
+rule_source:
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 6
+  source_quote: VKF 16-15, Ziff. 2.4.5
+  extracted_at: '2026-11-11'
+reviewed_by: simon.dilhas@abstract.build
+reviewed_at: '2026-11-11'

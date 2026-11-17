@@ -1,0 +1,14 @@
+id: pragmaticbim:product/clp-oth
+sort_order: 4
+status: active
+name:
+  de: Andere oder unbekannte Stütze
+  fr: Colonne autre ou inconnue
+  it: Pilastro altro o sconosciuto
+  en: Other or unknown column
+product_classification:
+  classification_scheme: ColumnProduct
+  classification_code: CLP-OTH
+tender_text:
+  de: Platzhalter für Stützen, deren Material oder Produkttyp zum Zeitpunkt der Ausschreibung noch nicht festgelegt ist, sowie für Verbund- und Mauerwerksstützen ausserhalb der gelisteten Typen. Tragfunktion, Lasten und geforderter Feuerwiderstand sind gesondert zu beschreiben. Nur in frühen Planungsphasen oder bei unvollständiger Datenlage verwenden.
+  en: Placeholder for columns whose material or product type is not yet fixed at tender stage, and for composite or masonry columns outside the listed types. Structural function, loads, and required fire resistance must be stated separately. Use only in early design stages or where data is incomplete.

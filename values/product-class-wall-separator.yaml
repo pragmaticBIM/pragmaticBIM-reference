@@ -27,29 +27,29 @@ values:
   - Trockenbau- / Elementtrennwand
   - Sonstige / unbekannte Wand
   fr:
-  - In-situ concrete wall
-  - Masonry wall
-  - Rammed earth wall
-  - Lightweight concrete panel (BLT) wall
-  - Prefabricated concrete wall
-  - Steel frame wall
-  - Timber frame wall
-  - Lightweight construction wall
-  - Curtain wall / facade system
-  - Drywall / element partition wall
-  - Other / unknown wall separator
+  - Mur en béton coulé sur place
+  - Mur en maçonnerie
+  - Mur en pisé
+  - Mur en panneaux de béton léger (BLT)
+  - Mur préfabriqué en béton
+  - Mur à ossature métallique
+  - Mur à ossature bois
+  - Mur en construction légère
+  - Façade-rideau
+  - Cloison sèche / cloison modulaire
+  - Mur autre ou inconnu
   it:
-  - In-situ concrete wall
-  - Masonry wall
-  - Rammed earth wall
-  - Lightweight concrete panel (BLT) wall
-  - Prefabricated concrete wall
-  - Steel frame wall
-  - Timber frame wall
-  - Lightweight construction wall
-  - Curtain wall / facade system
-  - Drywall / element partition wall
-  - Other / unknown wall separator
+  - Parete in calcestruzzo gettato in opera
+  - Parete in muratura
+  - Parete in terra cruda battuta
+  - Parete in pannelli di calcestruzzo leggero (BLT)
+  - Parete prefabbricata in calcestruzzo
+  - Parete con struttura in acciaio
+  - Parete con struttura in legno
+  - Parete in costruzione leggera
+  - Facciata continua
+  - Parete a secco / parete divisoria modulare
+  - Parete altra o sconosciuta
   en:
   - In-situ concrete wall
   - Masonry wall

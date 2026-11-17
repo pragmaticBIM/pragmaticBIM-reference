@@ -15,7 +15,9 @@ description:
     attesa, percorsi e riservatezza.
   en: Patients and accompanying people arrive and wait for care. The calling system determines waiting
     area, travel, and privacy.
-use: pragmaticbim:use/gesundheit
+scope: use
+uses:
+- pragmaticbim:use/gesundheit
 tags:
 - patientenweg
 status: active
