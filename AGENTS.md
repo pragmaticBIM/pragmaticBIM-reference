@@ -21,6 +21,10 @@ Labels are the state machine. Only the maintainer sets `agent_ready`.
 - After opening the PR (with `Closes #N`): remove `agent_working`, add `agent_finished`.
 - If the issue is unclear, needs a content or modelling decision, or would require touching a protected path (below): comment on the issue with a concrete question (offer options where possible), remove `agent_working`, add `needs-maintainer`, and stop. Do not guess.
 
+### When the worker workflow runs you
+
+The workflow `.github/workflows/agent-worker.yml` works issues the maintainer labels `queued`, one at a time. It creates the branch, commits, opens the PR against `development` and sets the labels. It does not enable auto-merge: the merge gate decides. You only edit files and run the checks under "Before opening the PR" until they pass. Do not run git or gh, and skip the pickup, label, branch and PR steps above. If you cannot continue (protected path, unclear issue, content or modelling decision), write the reason to `.agent-tmp/blocked.md` and stop; the workflow sets `needs-maintainer` and comments it on the issue. A second model reviews the diff, so make the diff match the issue and nothing else.
+
 ## Branches and pull requests
 
 - Branch from `main`. Name the branch `feature/issue-<number>`, e.g. `feature/issue-42`.
