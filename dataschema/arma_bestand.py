@@ -13,6 +13,7 @@ picture on every level.
 from __future__ import annotations
 
 BESTAND_SOURCES: dict[str, str] = {
+    "luftraum": "luftraum",
     "aussenraum-2": "aussenraum",
     "d01-11-007-evakuationsanlage": "i-025-evakuationsanlage",
     "innenraum-hoch": "innenraum",

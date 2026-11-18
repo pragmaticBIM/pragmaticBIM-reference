@@ -75,7 +75,7 @@ WALL = "wand"
 
 
 def walls(level: str) -> Scene:
-    """hoch: profiled sweeps and V joint; mitte: rectangular sweeps and joint; tief: flat slab without openings."""
+    """hoch: profiled sweeps, V joint and door; mitte: plain solid wall only; tief: flat slab."""
     s = Scene.new("Waende")
     f = s.ifc_file
     length, t, h = 5.0, 0.25, 2.8
@@ -84,15 +84,14 @@ def walls(level: str) -> Scene:
     if level == TIEF:
         s.add("IfcWall", "Wand", [box_solid(f, 0.0, 0.0, 0.0, length, t, h)], keys=(WALL,), predefined_type="SOLIDWALL")
         return s
+    if level == MITTE:
+        # Detailstufe 1: only the wall body — no door, skirting or cornice.
+        s.add("IfcWall", "Wand", [box_solid(f, 0.0, 0.0, 0.0, length, t, h)], keys=(WALL,), predefined_type="SOLIDWALL")
+        return s
     joint = 1.7
-    if level == HOCH:
-        groove = [(joint - 0.045, t + 0.01), (joint, t - 0.04), (joint + 0.045, t + 0.01)]
-        skirting = [(t, 0.0), (t + 0.03, 0.0), (t + 0.03, 0.08), (t + 0.012, 0.13), (t, 0.13)]
-        cornice = [(t, h - 0.2), (t + 0.02, h - 0.17), (t + 0.04, h - 0.1), (t + 0.07, h - 0.06), (t + 0.07, h), (t, h)]
-    else:
-        groove = [(joint - 0.035, t - 0.03), (joint + 0.035, t - 0.03), (joint + 0.035, t + 0.01), (joint - 0.035, t + 0.01)]
-        skirting = [(t, 0.0), (t + 0.03, 0.0), (t + 0.03, 0.12), (t, 0.12)]
-        cornice = [(t, h - 0.14), (t + 0.06, h - 0.14), (t + 0.06, h), (t, h)]
+    groove = [(joint - 0.045, t + 0.01), (joint, t - 0.04), (joint + 0.045, t + 0.01)]
+    skirting = [(t, 0.0), (t + 0.03, 0.0), (t + 0.03, 0.08), (t + 0.012, 0.13), (t, 0.13)]
+    cornice = [(t, h - 0.2), (t + 0.02, h - 0.17), (t + 0.04, h - 0.1), (t + 0.07, h - 0.06), (t + 0.07, h), (t, h)]
     body = _cut(f, box_solid(f, 0.0, 0.0, 0.0, length, t, h), box_solid(f, d0, -0.1, -0.1, d1, t + 0.1, dh), prism(f, groove, -0.1, h + 0.1))
     sweeps = [profile_x(f, skirting, 0.0, d0), profile_x(f, skirting, d1, length), profile_x(f, cornice, 0.0, length)]
     _add(s, "IfcWall", "Wand", [body, *sweeps], keys=(WALL,), predefined_type="SOLIDWALL")
@@ -558,26 +557,56 @@ RAMP = "rampe"
 
 
 def ramps(level: str) -> Scene:
-    """hoch: variable slope with landing, exact thickness; mitte: variable slope, straight soffit; tief: constant slope wedge."""
+    """mitte: variable slope with exact thickness on a continuous floor; hoch: vertical heel on its own
+    footing behind a rinne, separate Bodenplatte, end block resting on a wall; tief: wedge.
+    All hoch parts share one Y range so the side view reads as a single section."""
     s = Scene.new("Rampe")
     f = s.ifc_file
     length, width, rise = 6.0, 1.5, 1.2
-    _floor(s, -1.2, -1.2, length + 0.6, width + 0.6)
-    s.add("IfcSlab", "Podest", [box_solid(f, -1.2, -1.2, 0.0, 0.0, width + 0.6, rise)], predefined_type="LANDING")
-    s.add("IfcWall", "Wand", [box_solid(f, -1.2, -1.2, 0.0, length + 0.6, -1.0, rise + 1.0)], predefined_type="SOLIDWALL")
-    top = [(4.0, 0.45), (2.8, 0.45), (0.0, rise)]
-    (x_land, z_land) = top[0]
+    t = 0.2
+    y0, y1 = 0.0, width
+    s.add("IfcWall", "Wand", [box_solid(f, -1.2, y0 - 0.25, 0.0, length + 1.4, y0 - 0.05, rise + 1.0)], predefined_type="SOLIDWALL")
+    top = [(length, 0.0), (4.0, 0.45), (2.8, 0.45), (0.0, rise)]
     if level == HOCH:
-        t = 0.2
-        start = length - t * (length - x_land) / z_land
-        section = [(length, 0.0), (start, 0.0), *((x, z - t) for x, z in top), *reversed(top)]
+        slab_t, heel_w, wall_t = 0.25, 0.2, 0.25
+        rinne_w, rinne_d = 0.16, 0.12
+        fund_over, fund_t = 0.17, 0.25
+        x_heel = length - heel_w
+        soffit = [(x, z - t) for x, z in top]
+        z_heel = soffit[0][1] + (soffit[1][1] - soffit[0][1]) * heel_w / (length - soffit[1][0])
+        section = [
+            (length, -slab_t),
+            *top,
+            (-wall_t, rise),
+            (-wall_t, rise - t),
+            *reversed(soffit[1:]),
+            (x_heel, z_heel),
+            (x_heel, -slab_t),
+        ]
+        body = profile_y(f, section, y0, y1)
+        x_rinne = length + rinne_w
+        s.add("IfcSlab", "Bodenplatte", [box_solid(f, x_rinne, y0, -slab_t, length + 1.6, y1, 0.0)], predefined_type="BASESLAB")
+        s.add("IfcDistributionChamberElement", "Rinne", [box_solid(f, length, y0, -slab_t, x_rinne, y1, -rinne_d)], predefined_type="TRENCH")
+        s.add(
+            "IfcFooting",
+            "Rampenfundament",
+            [box_solid(f, x_heel - fund_over, y0, -slab_t - fund_t, x_rinne, y1, -slab_t)],
+            predefined_type="STRIP_FOOTING",
+        )
+        s.add("IfcWall", "Auflagerwand", [box_solid(f, -wall_t, y0, -slab_t, 0.0, y1, rise - t)], predefined_type="SOLIDWALL")
     elif level == MITTE:
-        start = length - 0.2 * (length - x_land) / z_land
-        section = [(length, 0.0), (start, 0.0), (0.0, rise - 0.45), *reversed(top)]
+        soffit = [(x, z - t) for x, z in top]
+        section = [soffit[0], *top, *reversed(soffit[1:])]
+        body = profile_y(f, section, y0, y1)
+        s.add("IfcSlab", "Podest", [box_solid(f, -1.2, y0, 0.0, 0.0, y1, rise)], predefined_type="LANDING")
+        _floor(s, -1.2, y0 - 0.2, length + 0.6, y1 + 0.2)
     else:
         start = length - 0.25 * length / rise
         section = [(length, 0.0), (start, 0.0), (0.0, rise - 0.25), (0.0, rise)]
-    s.add("IfcRamp", "Rampe", [profile_y(f, section, 0.0, width)], keys=(RAMP,), predefined_type="STRAIGHT_RUN_RAMP")
+        body = profile_y(f, section, y0, y1)
+        s.add("IfcSlab", "Podest", [box_solid(f, -1.2, y0, 0.0, 0.0, y1, rise)], predefined_type="LANDING")
+        _floor(s, -1.2, y0 - 0.2, length + 0.6, y1 + 0.2)
+    s.add("IfcRamp", "Rampe", [body], keys=(RAMP,), predefined_type="STRAIGHT_RUN_RAMP")
     return s
 
 
