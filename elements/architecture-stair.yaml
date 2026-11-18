@@ -221,7 +221,7 @@ attributes:
   - pragmaticbim:workflow/des-element-based-cost-early
   - pragmaticbim:workflow/des-element-based-cost-late
   - pragmaticbim:workflow/bes-element-based-tendering
-  - pragmaticbim:workflow/bes-element-cost-post-calculation
+  - pragmaticbim:workflow/qas-element-cost-post-calculation
   is_applicability: false
   status: active
   sort_order: 4
