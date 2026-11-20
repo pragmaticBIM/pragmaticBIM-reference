@@ -53,6 +53,30 @@ Each entry writes:
 - Prefer ifcopenshell API helpers over raw entity construction.
 - Attribute names and property datatypes come from the element YAML — do not invent IFC fields.
 
+## Component 2D / 3D geometry
+
+Parametric recipes for placeable components live in `generators/component_geometry/`.
+`representation.plan_symbol` selects the recipe; optional `picture_link` /
+`attachment_link` on the component YAML are **catalog previews** at default
+parameters (not used at place time).
+
+| Path | Role |
+| --- | --- |
+| `generators/component_geometry/` | Recipes (`body` + plan SVG), registry, preview CLI |
+| `generators/room_layout.py` | Places components; writes IFC bodies + optional plan SVG |
+| `generators/placement_api.py` | MCP-ready facade (`get_component`, `place_room_layout`, …) |
+
+Every active component has a dedicated `plan_symbol` recipe (2D SVG + 3D body).
+Unknown symbols still fall back to a footprint box.
+
+```bash
+# Previews only (all components)
+python -m generators.component_geometry.preview --all --output-dir output/components
+
+# Copy to media/ and set picture_link / attachment_link on every component YAML
+python -m generators.component_geometry.preview --all --attach
+```
+
 ## Room layout and placement rules
 
 Equipment and openings of a room-type configuration may carry
@@ -110,10 +134,16 @@ result = generate_room_layout(
     [(0, 0), (4, 0), (4, 3), (0, 3)],
     [OpeningSpec("access", edge=0, offset=0.7), OpeningSpec("daylight", edge=2, offset=2.0)],
     "buero",
+    plan_svg=True,
 )
 result.unplaced, result.issues          # what the generator could not satisfy
+result.plan_svg                         # SVG plan of the same layout
 check_placement_rules(result.ifc_file)  # [] when every rule holds
 ```
+
+MCP-oriented wrapper: `generators.placement_api.place_room_layout` returns
+`ifc_bytes`, `svg`, `unplaced`, and `issues` as plain dicts.
+
 
 CLI: `python -m checks.placement_rules model.ifc [--room-type SPACE=buero]`
 exits with 1 when a required rule is violated.

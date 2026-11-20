@@ -60,4 +60,6 @@ representation:
   body: box
   plan_symbol: kitchen_island
 comment: 'Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: kochinsel-plan.svg
+attachment_link: kochinsel.ifc
 status: active

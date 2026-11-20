@@ -61,4 +61,6 @@ connections:
 representation:
   body: volume
   plan_symbol: device_cooling
+picture_link: geraeteplatz-kuehlgeraet-plan.svg
+attachment_link: geraeteplatz-kuehlgeraet.ifc
 status: active

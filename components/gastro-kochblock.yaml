@@ -62,4 +62,6 @@ representation:
   body: box
   plan_symbol: cooking_line
 comment: 'Gasanschluss je nach Konzept. Arbeitsgang: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: gastro-kochblock-plan.svg
+attachment_link: gastro-kochblock.ifc
 status: active

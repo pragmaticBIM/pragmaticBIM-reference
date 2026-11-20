@@ -1055,6 +1055,7 @@ attributes:
   needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
+  - pragmaticbim:workflow/des-sound-insulation-sia181
   - pragmaticbim:workflow/qas-element-type-performance-verification
   - pragmaticbim:workflow/qas-acoustic-building-physics
   performance_property_key: pbs:acoustic_property_airborne_sound_rating_db
@@ -1078,6 +1079,7 @@ attributes:
   needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
+  - pragmaticbim:workflow/des-sound-insulation-sia181
   - pragmaticbim:workflow/qas-element-type-performance-verification
   - pragmaticbim:workflow/qas-acoustic-building-physics
   performance_property_key: pbs:acoustic_property_impact_sound_rating_db
@@ -1123,6 +1125,7 @@ attributes:
   needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
+  - pragmaticbim:workflow/des-sound-insulation-sia181
   - pragmaticbim:workflow/qas-element-type-performance-verification
   - pragmaticbim:workflow/qas-acoustic-building-physics
   is_applicability: false
@@ -1140,6 +1143,7 @@ attributes:
   needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
+  - pragmaticbim:workflow/des-sound-insulation-sia181
   - pragmaticbim:workflow/qas-element-type-performance-verification
   - pragmaticbim:workflow/qas-acoustic-building-physics
   is_applicability: false

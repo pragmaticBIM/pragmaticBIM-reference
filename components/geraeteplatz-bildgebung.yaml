@@ -53,4 +53,6 @@ representation:
   body: volume
   plan_symbol: device_imaging
 comment: Gewicht und Abschirmung nach Gerätehersteller. Planungswert; vor Freigabe fachlich bestätigen.
+picture_link: geraeteplatz-bildgebung-plan.svg
+attachment_link: geraeteplatz-bildgebung.ifc
 status: active

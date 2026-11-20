@@ -35,4 +35,6 @@ representation:
   plan_symbol: door_sliding
 comment: Daneben braucht die Wand eine freie Länge in Türbreite für den Flügel. Mass nach SIA 500 vor
   Freigabe fachlich bestätigen.
+picture_link: tuer-schiebe-innen-plan.svg
+attachment_link: tuer-schiebe-innen.ifc
 status: active

@@ -68,4 +68,6 @@ representation:
   body: box
   plan_symbol: bed_double
 comment: 'Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: bett-doppel-plan.svg
+attachment_link: bett-doppel.ifc
 status: active

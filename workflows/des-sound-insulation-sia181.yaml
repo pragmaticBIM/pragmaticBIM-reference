@@ -1,0 +1,107 @@
+id: pragmaticbim:workflow/des-sound-insulation-sia181
+code: DES-SOUND-SIA181
+sort_order: 65
+name:
+  de: Schallschutzanforderungen nach SIA 181 aus Raumnutzungen ableiten
+  fr: Déduire les exigences d'isolation acoustique selon SIA 181 de l'utilisation des locaux
+  it: Ricavare i requisiti di isolamento acustico secondo SIA 181 dall'uso dei locali
+  en: Derive SIA 181 sound insulation requirements from room use
+description:
+  de: |-
+    Lärmbelastung und Lärmempfindlichkeit jedes Raums festlegen und daraus die Schallschutzanforderung jedes Trennbauteils ableiten, damit fehlende oder zu tiefe Anforderungen zwischen Nutzungseinheiten vor der Ausschreibung sichtbar werden.
+
+    **Ausgangslage**
+    - Schallschutzanforderungen werden oft pauschal pro Bauteiltyp gesetzt, obwohl sie nach SIA 181 vom Raumpaar abhängen: vom Lärm im sendenden Raum und von der Empfindlichkeit des empfangenden Raums.
+    - Wer die Raumpaare von Hand auswertet, übersieht einzelne Trennbauteile, etwa die Wand zwischen Treppenhaus und Schlafzimmer oder die Wohnungstür, und bemerkt die Lücke erst im Schallschutznachweis oder bei der Abnahmemessung.
+
+    **Ziel & Nutzen**
+    - Jeder Raum trägt seine Lärmbelastung und Lärmempfindlichkeit; die Anforderung je Trennbauteil folgt regelbasiert aus dem Raumpaar und der vereinbarten Anforderungsstufe.
+    - Trennbauteile zwischen Nutzungseinheiten ohne Anforderung und nachgewiesene Werte unter der Anforderung werden je Bauteil ausgewiesen.
+
+    **Ablauf**
+    1. Räume mit Nutzungseinheit, Lärmbelastung und Lärmempfindlichkeit bereitstellen und die Anforderungsstufe aus dem Projektziel Schallschutz übernehmen.
+    2. Anforderungen an Luft- und Trittschall für Wände, Decken und Türen aus dem Raumpaar ableiten, für Aussenbauteile aus Aussenlärm und Lärmempfindlichkeit, und den Bauteilen zuweisen.
+    3. Nachgewiesene Werte gegen die Anforderungen prüfen und Abweichungen mit der Bauakustik bereinigen.
+
+    **Lieferergebnis**
+    - Architekturmodell mit Lärmbelastung und Lärmempfindlichkeit je Raum und Schallschutzanforderung je Trennbauteil, Tür und Aussenbauteil
+    - Prüfbericht mit fehlenden Anforderungen und nicht erreichten Werten
+  fr: |-
+    Définir la charge sonore et la sensibilité au bruit de chaque local et en déduire l'exigence d'isolation acoustique de chaque élément de séparation, afin que les exigences manquantes ou trop basses entre unités d'utilisation apparaissent avant l'appel d'offres.
+
+    **Situation de départ**
+    - Les exigences d'isolation acoustique sont souvent fixées de manière forfaitaire par type d'élément, alors que selon SIA 181 elles dépendent de la paire de locaux : du bruit dans le local émetteur et de la sensibilité du local récepteur.
+    - L'évaluation manuelle des paires de locaux laisse passer certains éléments de séparation, par exemple le mur entre la cage d'escalier et une chambre ou la porte palière, et la lacune n'apparaît que dans le justificatif acoustique ou lors de la mesure de réception.
+
+    **Objectif et bénéfice**
+    - Chaque local indique sa charge sonore et sa sensibilité au bruit ; l'exigence de chaque élément de séparation découle par règle de la paire de locaux et du niveau d'exigence convenu.
+    - Les éléments de séparation entre unités d'utilisation sans exigence et les valeurs justifiées inférieures à l'exigence sont signalés élément par élément.
+
+    **Déroulement**
+    1. Fournir les locaux avec leur unité d'utilisation, leur charge sonore et leur sensibilité au bruit, et reprendre le niveau d'exigence de l'objectif de projet Isolation acoustique.
+    2. Déduire de la paire de locaux les exigences aux bruits aériens et aux bruits de choc pour les murs, dalles et portes, celles des éléments extérieurs du bruit extérieur et de la sensibilité au bruit, et les attribuer aux éléments.
+    3. Contrôler les valeurs justifiées par rapport aux exigences et corriger les écarts avec l'acousticien.
+
+    **Livrable**
+    - Maquette d'architecture avec la charge sonore et la sensibilité au bruit de chaque local et l'exigence d'isolation acoustique de chaque élément de séparation, porte et élément extérieur
+    - Rapport de contrôle indiquant les exigences manquantes et les valeurs non atteintes
+  it: |-
+    Stabilire il carico di rumore e la sensibilità al rumore di ogni locale e ricavarne il requisito di isolamento acustico di ogni elemento di separazione, affinché i requisiti mancanti o troppo bassi tra unità d'uso emergano prima della gara d'appalto.
+
+    **Situazione di partenza**
+    - I requisiti di isolamento acustico vengono spesso fissati in modo forfettario per tipo di elemento, benché secondo SIA 181 dipendano dalla coppia di locali: dal rumore nel locale emittente e dalla sensibilità del locale ricevente.
+    - Chi valuta a mano le coppie di locali tralascia singoli elementi di separazione, per esempio la parete tra vano scala e camera da letto o la porta d'ingresso dell'appartamento, e scopre la lacuna solo nella verifica acustica o nella misurazione di collaudo.
+
+    **Obiettivo e beneficio**
+    - Ogni locale riporta il carico di rumore e la sensibilità al rumore; il requisito di ogni elemento di separazione deriva per regola dalla coppia di locali e dal livello di requisiti concordato.
+    - Gli elementi di separazione tra unità d'uso senza requisito e i valori comprovati inferiori al requisito vengono segnalati elemento per elemento.
+
+    **Svolgimento**
+    1. Fornire i locali con unità d'uso, carico di rumore e sensibilità al rumore e riprendere il livello di requisiti dall'obiettivo di progetto Isolamento acustico.
+    2. Ricavare dalla coppia di locali i requisiti per rumori aerei e da calpestio di pareti, solette e porte, per gli elementi esterni dal rumore esterno e dalla sensibilità al rumore, e attribuirli agli elementi.
+    3. Verificare i valori comprovati rispetto ai requisiti e risolvere gli scostamenti con l'acustico.
+
+    **Risultato della fornitura**
+    - Modello di architettura con carico di rumore e sensibilità al rumore di ogni locale e requisito di isolamento acustico di ogni elemento di separazione, porta ed elemento esterno
+    - Rapporto di verifica con i requisiti mancanti e i valori non raggiunti
+  en: |-
+    Set the noise load and noise sensitivity of every room and derive the sound insulation requirement of every separating element from them, so missing or too low requirements between usage units show up before the tender.
+
+    **Starting point**
+    - Sound insulation requirements are often set as a flat value per element type, although under SIA 181 they depend on the pair of rooms: on the noise in the source room and on the sensitivity of the receiving room.
+    - Evaluating room pairs by hand misses individual separating elements, such as the wall between the stairwell and a bedroom or the apartment entrance door, and the gap only shows up in the acoustic verification or the acceptance measurement.
+
+    **Goal & benefit**
+    - Every room carries its noise load and noise sensitivity; the requirement of each separating element follows by rule from the room pair and the agreed requirement level.
+    - Separating elements between usage units without a requirement, and verified values below the requirement, are reported per element.
+
+    **Process**
+    1. Provide the rooms with usage unit, noise load and noise sensitivity, and take the requirement level from the sound insulation project goal.
+    2. Derive the airborne and impact sound requirements for walls, slabs and doors from the room pair, those for exterior elements from exterior noise and noise sensitivity, and assign them to the elements.
+    3. Check the verified values against the requirements and resolve deviations with the acoustic consultant.
+
+    **Deliverable**
+    - Architecture model with noise load and noise sensitivity per room and a sound insulation requirement per separating element, door and exterior element
+    - Check report listing missing requirements and values not reached
+workflow_group: fachplanung-koordination
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+countries:
+  - CH
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/building-physics
+comment: >-
+  Supplies the room-based inputs that DES-PHYSICS turns into the building
+  physics requirements model; the acoustic consultant stays responsible for the
+  values. Rooms carry NoiseLoad and NoiseSensitivity (ePset_Space)
+  next to UsageUnitReference. Separating elements carry AirborneSoundInsulationMin
+  (Di, De for exterior elements) and, for floor slabs, ImpactSoundLevelMax, each
+  verified by AirborneSoundInsulation and ImpactSoundLevel. The derivation
+  matrix (requirement per noise load, noise sensitivity and requirement level)
+  is not part of the Reference yet: it has to be extracted from the licensed
+  SIA 181 by a person. Rules SIA-181-001 to SIA-181-004 check what is checkable
+  without it. QAS-ACOUSTIC keeps comparing the catalogue value AcousticRating
+  (Rw).

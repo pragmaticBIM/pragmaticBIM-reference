@@ -406,6 +406,19 @@ def test_components_match_json_schema() -> None:
         assert not errors, f"{item['_path'].name}: {errors[0].message} at {list(errors[0].path)}"
 
 
+def test_component_media_links_are_optional() -> None:
+    """picture_link / attachment_link are catalog previews; omit or set both."""
+    validator = _schema_validator("component.schema.json")
+    base = _clean(next(iter(_components().values())))
+    with_links = {
+        **base,
+        "picture_link": "wc-wandhaengend-plan.svg",
+        "attachment_link": "wc-wandhaengend.ifc",
+    }
+    errors = sorted(validator.iter_errors(with_links), key=lambda e: list(e.path))
+    assert not errors, errors[0].message
+
+
 def test_room_type_extensions_match_json_schema() -> None:
     validator = _schema_validator("room-type-equipment.schema.json")
     for _, configuration in _configurations():

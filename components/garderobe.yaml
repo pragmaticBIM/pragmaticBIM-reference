@@ -53,4 +53,6 @@ representation:
   body: box
   plan_symbol: wardrobe
 comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: garderobe-plan.svg
+attachment_link: garderobe.ifc
 status: active

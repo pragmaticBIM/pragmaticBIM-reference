@@ -45,4 +45,6 @@ representation:
   body: volume
   plan_symbol: turning_area
 comment: Darf Freiflächen von Apparaten überlagern, nicht aber Apparate und Wände.
+picture_link: wendeflaeche-plan.svg
+attachment_link: wendeflaeche.ifc
 status: active

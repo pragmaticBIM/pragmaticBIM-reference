@@ -48,4 +48,6 @@ clearances:
 representation:
   body: box
   plan_symbol: filing_cabinet
+picture_link: aktenschrank-plan.svg
+attachment_link: aktenschrank.ifc
 status: active

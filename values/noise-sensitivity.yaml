@@ -1,0 +1,32 @@
+id: pragmaticbim:value/noise-sensitivity
+code: NS
+name:
+  de: Lärmempfindlichkeit
+  fr: Sensibilité au bruit
+  it: Sensibilità al rumore
+  en: Noise sensitivity
+description:
+  de: Lärmempfindlichkeit eines Raums als Empfänger nach SIA 181. Zusammen mit der Lärmbelastung des Nachbarraums oder dem Aussenlärm bestimmt sie die Schallschutzanforderung an das trennende Bauteil.
+  fr: Sensibilité au bruit d'un local en tant que récepteur selon SIA 181. Avec la charge sonore du local voisin ou le bruit extérieur, elle détermine l'exigence d'isolation acoustique de l'élément de séparation.
+  it: Sensibilità al rumore di un locale in quanto ricevente secondo SIA 181. Insieme al carico di rumore del locale adiacente o al rumore esterno determina il requisito di isolamento acustico dell'elemento di separazione.
+  en: Noise sensitivity of a room as the receiver under SIA 181. Together with the noise load of the neighbouring room or the exterior noise it sets the sound insulation requirement of the separating element.
+year: 2026
+norm_reference: SIA 181
+status: active
+values:
+  de:
+    - gering
+    - mittel
+    - hoch
+  fr:
+    - faible
+    - moyenne
+    - élevée
+  it:
+    - bassa
+    - media
+    - alta
+  en:
+    - low
+    - medium
+    - high

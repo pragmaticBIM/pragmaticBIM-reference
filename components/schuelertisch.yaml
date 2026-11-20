@@ -47,4 +47,6 @@ representation:
   plan_symbol: pupil_desk
 comment: Freifläche als Stuhlzone hinter dem Tisch. Höhe nach Schulstufe. Planungswert; vor Freigabe fachlich
   bestätigen.
+picture_link: schuelertisch-plan.svg
+attachment_link: schuelertisch.ifc
 status: active

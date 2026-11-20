@@ -55,4 +55,6 @@ connections:
 representation:
   body: box
   plan_symbol: safety_cabinet
+picture_link: sicherheitsschrank-plan.svg
+attachment_link: sicherheitsschrank.ifc
 status: active
