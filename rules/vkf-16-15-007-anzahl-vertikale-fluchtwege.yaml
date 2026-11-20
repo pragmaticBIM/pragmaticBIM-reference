@@ -32,6 +32,7 @@ domain: pragmaticbim:domain/fire-protection
 jurisdiction:
 - CH
 rule_source:
+  regulation: pragmaticbim:regulation/vkf-16-15-2015
   source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
   source_page: 6
   source_quote: VKF 16-15, Ziff. 2.4.2

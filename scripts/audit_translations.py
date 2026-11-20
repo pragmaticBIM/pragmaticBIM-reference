@@ -32,6 +32,7 @@ DATA_DIRS = (
     "workflows",
     "values",
     "documents",
+    "regulations",
     "models",
     "project_goals",
     "phases",

@@ -29,6 +29,7 @@ domain: pragmaticbim:domain/building-physics
 jurisdiction:
 - CH
 rule_source:
+  regulation: pragmaticbim:regulation/sia-181-2020
   source_document: SIA 181:2020 Schallschutz im Hochbau
   source_page: null
   source_quote: null

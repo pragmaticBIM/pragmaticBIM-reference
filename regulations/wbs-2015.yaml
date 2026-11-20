@@ -1,0 +1,16 @@
+id: pragmaticbim:regulation/wbs-2015
+code: WBS
+edition: '2015'
+name:
+  de: Wohnungs-Bewertungs-System WBS
+  fr: "Système d'évaluation de logements WBS"
+  it: Sistema di valutazione degli alloggi WBS
+  en: Housing evaluation system WBS
+publisher: BWO
+jurisdiction: [CH]
+valid_from: '2015-11-12'
+valid_until: null
+superseded_by: null
+access: free
+url: https://www.bwo.admin.ch/de/wohnungs-bewertungs-system-wbs
+status: active

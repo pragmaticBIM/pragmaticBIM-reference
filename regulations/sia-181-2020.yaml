@@ -1,0 +1,22 @@
+id: pragmaticbim:regulation/sia-181-2020
+code: SIA-181
+edition: '2020'
+name:
+  de: SIA 181 Schallschutz im Hochbau
+  fr: SIA 181 Protection contre le bruit dans le bâtiment
+  it: "SIA 181 Protezione dal rumore nell'edilizia"
+  en: SIA 181 Sound insulation in buildings
+publisher: SIA
+jurisdiction: [CH]
+valid_from: '2020-01-01'
+valid_until: null
+superseded_by: null
+access: licensed
+url: https://shop.sia.ch/
+status: active
+default_for:
+  jurisdictions: [CH]
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/sound-insulation-minimum
+  - pragmaticbim:project-goal-level/sound-insulation-increased
+  - pragmaticbim:project-goal-level/sound-insulation-special
