@@ -31,5 +31,8 @@ options:
     fr: Salle de pause
     it: Sala pausa
     en: Break room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/verkaufsraum
+    to_room_type: pragmaticbim:room-type/pausenraum
   adds:
   - pragmaticbim:room-type/pausenraum
