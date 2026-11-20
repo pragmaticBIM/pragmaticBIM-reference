@@ -69,4 +69,6 @@ representation:
   plan_symbol: care_bed
 comment: 'Medizinische Gase und Rufanlage an der Bettenwand. Freiflächen: Planungswert; vor Freigabe fachlich
   bestätigen.'
+picture_link: pflegebett-plan.svg
+attachment_link: pflegebett.ifc
 status: active

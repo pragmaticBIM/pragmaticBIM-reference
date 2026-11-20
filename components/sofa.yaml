@@ -45,4 +45,6 @@ representation:
   body: box
   plan_symbol: sofa
 comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: sofa-plan.svg
+attachment_link: sofa.ifc
 status: active

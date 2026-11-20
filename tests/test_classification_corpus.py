@@ -47,7 +47,7 @@ def test_ifc4_attribute_filter_is_the_default() -> None:
 
 def test_corpus_has_one_specimen_per_element(corpora) -> None:
     slugs = [slug for slug, _element in iter_elements()]
-    assert len(slugs) == 108
+    assert len(slugs) == 109
     for schema, (_ifc, specimens) in corpora.items():
         assert set(specimens) == set(slugs), schema
 

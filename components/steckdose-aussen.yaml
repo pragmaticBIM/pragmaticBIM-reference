@@ -48,4 +48,6 @@ representation:
   body: box
   plan_symbol: power_outlet_outdoor
 comment: 'Schutzart mindestens IP44; Montagehöhe: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: steckdose-aussen-plan.svg
+attachment_link: steckdose-aussen.ifc
 status: active

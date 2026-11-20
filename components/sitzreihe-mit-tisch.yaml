@@ -45,4 +45,6 @@ representation:
   plan_symbol: seat_row_desk
 comment: Reihenlänge und Reihenabstand nach Brandschutzvorschriften projektbezogen festlegen. Planungswert;
   vor Freigabe fachlich bestätigen.
+picture_link: sitzreihe-mit-tisch-plan.svg
+attachment_link: sitzreihe-mit-tisch.ifc
 status: active

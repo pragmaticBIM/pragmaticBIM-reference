@@ -48,4 +48,6 @@ representation:
   body: box
   plan_symbol: light_switch
 comment: 'Bedienhöhe 0.8–1.1 m nach SIA 500; Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: lichtschalter-plan.svg
+attachment_link: lichtschalter.ifc
 status: active

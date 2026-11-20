@@ -49,4 +49,6 @@ representation:
   body: box
   plan_symbol: bed_single
 comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: bett-einzel-plan.svg
+attachment_link: bett-einzel.ifc
 status: active

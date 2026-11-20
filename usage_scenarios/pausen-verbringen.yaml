@@ -31,6 +31,9 @@ options:
     fr: Salle de pause
     it: Locale pausa
     en: Break room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/buero
+    to_room_type: pragmaticbim:room-type/pausenraum
   adds:
   - pragmaticbim:room-type/pausenraum
 - id: pragmaticbim:scenario-option/pausen-verbringen-cafeteria

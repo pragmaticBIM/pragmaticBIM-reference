@@ -83,4 +83,6 @@ representation:
   plan_symbol: kitchen_run
 comment: 'Geräte (Kochfeld, Backofen, Kühlschrank, Geschirrspüler) liegen in den Schränken und werden
   nicht einzeln modelliert. Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: kuechenzeile-einzeilig-plan.svg
+attachment_link: kuechenzeile-einzeilig.ifc
 status: active

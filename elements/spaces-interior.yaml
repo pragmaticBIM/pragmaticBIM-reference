@@ -1235,6 +1235,7 @@ attributes:
     - pragmaticbim:workflow/bes-room-program-brief
     - pragmaticbim:workflow/des-apartment-schedule
     - pragmaticbim:workflow/des-wall-requirements-from-space-use
+    - pragmaticbim:workflow/des-sound-insulation-sia181
     - pragmaticbim:workflow/bes-design-build-procurement
     - pragmaticbim:workflow/bes-ipd-procurement
     is_applicability: false
@@ -1361,6 +1362,44 @@ attributes:
     is_applicability: false
     status: active
     sort_order: 45
+  - name: NoiseLoad
+    requirement_kind: identification
+    pset: ePset_Space
+    definition:
+      de: Lärmbelastung des Raums als Sender nach SIA 181, abgeleitet aus seiner Nutzung. Bestimmt zusammen mit der Lärmempfindlichkeit des Nachbarraums die Schallschutzanforderung an Wände, Decken und Türen zwischen den Räumen.
+      fr: Charge sonore du local en tant qu'émetteur selon SIA 181, déduite de son utilisation. Avec la sensibilité au bruit du local voisin, elle détermine l'exigence d'isolation acoustique des murs, dalles et portes entre les locaux.
+      it: Carico di rumore del locale in quanto emittente secondo SIA 181, ricavato dal suo uso. Insieme alla sensibilità al rumore del locale adiacente determina il requisito di isolamento acustico di pareti, solette e porte tra i locali.
+      en: Noise load of the room as the source under SIA 181, derived from its use. Together with the noise sensitivity of the neighbouring room it sets the sound insulation requirement of walls, slabs and doors between the rooms.
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/noise-load
+    needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+    - pragmaticbim:workflow/des-sound-insulation-sia181
+    - pragmaticbim:workflow/des-building-physics-concept
+    - pragmaticbim:workflow/des-wall-requirements-from-space-use
+    is_applicability: false
+    status: active
+    sort_order: 56
+  - name: NoiseSensitivity
+    requirement_kind: identification
+    pset: ePset_Space
+    definition:
+      de: Lärmempfindlichkeit des Raums als Empfänger nach SIA 181, abgeleitet aus seiner Nutzung. Bestimmt zusammen mit der Lärmbelastung des Nachbarraums oder dem Aussenlärm die Schallschutzanforderung an die umgebenden Bauteile.
+      fr: Sensibilité au bruit du local en tant que récepteur selon SIA 181, déduite de son utilisation. Avec la charge sonore du local voisin ou le bruit extérieur, elle détermine l'exigence d'isolation acoustique des éléments qui l'entourent.
+      it: Sensibilità al rumore del locale in quanto ricevente secondo SIA 181, ricavata dal suo uso. Insieme al carico di rumore del locale adiacente o al rumore esterno determina il requisito di isolamento acustico degli elementi che lo delimitano.
+      en: Noise sensitivity of the room as the receiver under SIA 181, derived from its use. Together with the noise load of the neighbouring room or the exterior noise it sets the sound insulation requirement of the surrounding elements.
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/noise-sensitivity
+    needed_in_phases: ['31', '32', '33', '41', '51', '52', '53']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+    - pragmaticbim:workflow/des-sound-insulation-sia181
+    - pragmaticbim:workflow/des-building-physics-concept
+    - pragmaticbim:workflow/des-wall-requirements-from-space-use
+    is_applicability: false
+    status: active
+    sort_order: 57
   - name: NetFloorArea
     pset: Qto_SpaceBaseQuantities
     definition:

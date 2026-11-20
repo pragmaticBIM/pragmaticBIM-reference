@@ -49,4 +49,6 @@ representation:
   body: box
   plan_symbol: tank
 comment: Masse nach Fachplanung ersetzen; Planungswert; vor Freigabe fachlich bestätigen.
+picture_link: speicher-plan.svg
+attachment_link: speicher.ifc
 status: active

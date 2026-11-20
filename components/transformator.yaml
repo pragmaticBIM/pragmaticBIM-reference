@@ -48,4 +48,6 @@ representation:
   plan_symbol: transformer
 comment: Abstände nach Netzbetreiber. Masse nach Fachplanung ersetzen; Planungswert; vor Freigabe fachlich
   bestätigen.
+picture_link: transformator-plan.svg
+attachment_link: transformator.ifc
 status: active

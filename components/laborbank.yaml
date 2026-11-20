@@ -62,4 +62,6 @@ representation:
   body: parts
   plan_symbol: lab_bench
 comment: 'Gangbreite zwischen Laborbänken: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: laborbank-plan.svg
+attachment_link: laborbank.ifc
 status: active

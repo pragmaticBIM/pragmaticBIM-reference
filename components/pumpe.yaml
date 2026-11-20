@@ -48,4 +48,6 @@ representation:
   body: box
   plan_symbol: pump
 comment: Masse nach Fachplanung ersetzen; Planungswert; vor Freigabe fachlich bestätigen.
+picture_link: pumpe-plan.svg
+attachment_link: pumpe.ifc
 status: active

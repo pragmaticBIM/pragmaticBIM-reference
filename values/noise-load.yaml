@@ -1,0 +1,36 @@
+id: pragmaticbim:value/noise-load
+code: NL
+name:
+  de: Lärmbelastung
+  fr: Charge sonore
+  it: Carico di rumore
+  en: Noise load
+description:
+  de: Lärmbelastung eines Raums als Sender nach SIA 181. Zusammen mit der Lärmempfindlichkeit des Nachbarraums bestimmt sie die Schallschutzanforderung an das trennende Bauteil.
+  fr: Charge sonore d'un local en tant qu'émetteur selon SIA 181. Avec la sensibilité au bruit du local voisin, elle détermine l'exigence d'isolation acoustique de l'élément de séparation.
+  it: Carico di rumore di un locale in quanto emittente secondo SIA 181. Insieme alla sensibilità al rumore del locale adiacente determina il requisito di isolamento acustico dell'elemento di separazione.
+  en: Noise load of a room as the source under SIA 181. Together with the noise sensitivity of the neighbouring room it sets the sound insulation requirement of the separating element.
+year: 2026
+norm_reference: SIA 181
+status: active
+values:
+  de:
+    - klein
+    - mässig
+    - stark
+    - sehr stark
+  fr:
+    - faible
+    - modérée
+    - forte
+    - très forte
+  it:
+    - debole
+    - moderato
+    - forte
+    - molto forte
+  en:
+    - low
+    - moderate
+    - high
+    - very high

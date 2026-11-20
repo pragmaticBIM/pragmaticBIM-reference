@@ -53,4 +53,6 @@ representation:
   body: box
   plan_symbol: dining_table
 comment: 'Rund 0.60 m Tischbreite pro Platz. Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: esstisch-plan.svg
+attachment_link: esstisch.ifc
 status: active

@@ -1,10 +1,10 @@
 """Lay out one room from its room-type configuration.
 
 Takes a room outline, its openings and a room type, places every equipment item
-the configuration orders and writes the room as IFC with the components'
-box representations. ``required`` placement rules are hard constraints,
-``preferred`` rules are scored; the rule geometry is shared with the checker
-in :mod:`generators.room_rules`.
+the configuration orders and writes the room as IFC with recipe-driven
+component bodies (``representation.plan_symbol``). ``required`` placement
+rules are hard constraints, ``preferred`` rules are scored; the rule geometry
+is shared with the checker in :mod:`generators.room_rules`.
 
 Nothing is dropped silently: an item without a position that meets its
 required rules is listed in :attr:`RoomLayoutResult.unplaced`, and every rule
@@ -26,6 +26,7 @@ from shapely.geometry import LineString
 
 from generators import room_rules as rr
 from generators.base import assign_pset, create_project_shell, get_body_context
+from generators.component_geometry import build_body, build_room_plan
 from generators.parts import (
     add_extruded_product,
     axis_placement_matrix,
@@ -75,6 +76,7 @@ class RoomLayoutResult:
     layout: rr.Layout
     issues: list[rr.RuleResult] = field(default_factory=list)
     unplaced: list[Unplaced] = field(default_factory=list)
+    plan_svg: str | None = None
 
     @property
     def required_issues(self) -> list[rr.RuleResult]:
@@ -443,31 +445,6 @@ def _frame_matrix(frame: rr.Frame, z: float):
     )
 
 
-def _box_product(
-    ifc_file: ifcopenshell.file,
-    body_context,
-    item: rr.Placed,
-    component: dict[str, Any],
-    name: str,
-    language: str,
-):
-    product = create_entity(
-        ifc_file,
-        ifc_class=rr.element_ifc_class(component),
-        name=name,
-        predefined_type=component.get("predefined_type"),
-    )
-    if component.get("object_type"):
-        product.ObjectType = _localized(component["object_type"], language)
-    edit_object_placement(ifc_file, product=product, matrix=_frame_matrix(item.frame, item.z_min))
-    w, d = item.frame.width, item.frame.depth
-    solid = create_extruded_area_solid(ifc_file, [(0.0, 0.0), (w, 0.0), (w, d), (0.0, d)], item.z_max - item.z_min)
-    assign_representation(
-        ifc_file, product=product, representation=create_body_representation(ifc_file, body_context, solid)
-    )
-    return product
-
-
 def _wall_polyline(edge: rr.Edge, thickness: float) -> list[tuple[float, float]]:
     return [
         edge.point_at(-thickness, 0.0),
@@ -522,7 +499,7 @@ def _write_ifc(
         component = rr.component(item.component_id)
         counters[item.component_id] = counters.get(item.component_id, 0) + 1
         name = f"{_localized(component['name'], language)} {counters[item.component_id]}"
-        product = _box_product(ifc_file, body_context, item, component, name, language)
+        product = build_body(ifc_file, body_context, item, component, language=language, name=name)
         if item.kind == "opening":
             edge = room.edges[item.edge_index]
             opening = create_entity(ifc_file, ifc_class="IfcOpeningElement", name=f"Öffnung {name}")
@@ -560,6 +537,8 @@ def generate_room_layout(
     wall_height: float = 2.6,
     language: str = "de",
     project_name: str = "Raumlayout",
+    plan_svg: bool = False,
+    include_clearances: bool = False,
 ) -> RoomLayoutResult:
     """Place the equipment of ``room_type`` in a room and write it as IFC.
 
@@ -567,6 +546,8 @@ def generate_room_layout(
     edge (default: edges with a daylight or outdoor opening are ``exterior``, the
     rest ``interior``). ``selection`` holds the chosen ``project_goal_levels``
     and ``scenario_options`` for ``when``/``unless`` conditions.
+    When ``plan_svg`` is true, ``RoomLayoutResult.plan_svg`` holds a plan drawing
+    of the same layout.
     """
     room_type_data = rr.room_type(room_type)
     config = rr.configuration(room_type_data, configuration_id)
@@ -598,4 +579,5 @@ def generate_room_layout(
         project_name=project_name,
     )
     issues = rr.evaluate_layout(layout, config)
-    return RoomLayoutResult(ifc_file, space, layout, issues, unplaced)
+    svg = build_room_plan(layout, include_clearances=include_clearances) if plan_svg else None
+    return RoomLayoutResult(ifc_file, space, layout, issues, unplaced, plan_svg=svg)

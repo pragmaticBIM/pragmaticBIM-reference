@@ -1,0 +1,103 @@
+id: pragmaticbim:rule/sia-181-004-raum-laermbelastung-laermempfindlichkeit
+code: SIA-181-004
+sort_order: 4
+name:
+  de: Räume an anderen Nutzungseinheiten mit Lärmbelastung und Lärmempfindlichkeit
+  fr: Locaux contigus à d'autres unités d'utilisation avec charge sonore et sensibilité au bruit
+  it: Locali adiacenti ad altre unità d'uso con carico di rumore e sensibilità al rumore
+  en: Rooms next to other usage units carry noise load and noise sensitivity
+description:
+  de: Ein Raum einer Nutzungseinheit, der über eine Wand, Decke oder Tür an einen Raum ausserhalb seiner Einheit grenzt, braucht
+    Lärmbelastung und Lärmempfindlichkeit. Nach SIA 181 hängt die Anforderung an das trennende Bauteil von beiden Werten des
+    Raumpaars ab; fehlt einer, lässt sie sich nicht ableiten.
+  fr: Un local d'une unité d'utilisation qui est contigu, par un mur, une dalle ou une porte, à un local situé hors de son
+    unité a besoin d'une charge sonore et d'une sensibilité au bruit. Selon SIA 181, l'exigence de l'élément de séparation
+    dépend de ces deux valeurs pour la paire de locaux ; s'il en manque une, elle ne peut pas être déduite.
+  it: Un locale di un'unità d'uso che confina, tramite una parete, una soletta o una porta, con un locale esterno alla sua
+    unità necessita del carico di rumore e della sensibilità al rumore. Secondo SIA 181 il requisito dell'elemento di separazione
+    dipende da entrambi i valori della coppia di locali; se ne manca uno, non può essere ricavato.
+  en: A room of a usage unit that adjoins a room outside its unit through a wall, slab or door needs a noise load and a noise
+    sensitivity. Under SIA 181 the requirement of the separating element depends on both values of the room pair; if one is
+    missing, it cannot be derived.
+rule_status: shacl_defined
+severity: warning
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+performance_property_keys: []
+domain: pragmaticbim:domain/building-physics
+jurisdiction:
+- CH
+rule_source:
+  source_document: SIA 181:2020 Schallschutz im Hochbau
+  source_page: null
+  source_quote: null
+  extracted_at: '2026-11-16'
+reviewed_by: null
+reviewed_at: null
+shacl: |-
+  rule:sia-181-004-raum-laermbelastung-laermempfindlichkeit-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] ,
+          [ sh:prefix "ifc" ; sh:namespace "https://w3id.org/ifc/IFC4_ADD2#"^^xsd:anyURI ] .
+
+  rule:sia-181-004-raum-laermbelastung-laermempfindlichkeit a sh:NodeShape ;
+      sh:name "Räume an anderen Nutzungseinheiten mit Lärmbelastung und Lärmempfindlichkeit"@de ,
+          "Rooms next to other usage units carry noise load and noise sensitivity"@en ;
+      sh:description "Ein Raum einer Nutzungseinheit, der über eine Wand, Decke oder Tür an einen Raum ausserhalb seiner Einheit grenzt, braucht Lärmbelastung und Lärmempfindlichkeit. Nach SIA 181 hängt die Anforderung an das trennende Bauteil von beiden Werten des Raumpaars ab; fehlt einer, lässt sie sich nicht ableiten."@de ,
+          "A room of a usage unit that adjoins a room outside its unit through a wall, slab or door needs a noise load and a noise sensitivity. Under SIA 181 the requirement of the separating element depends on both values of the room pair; if one is missing, it cannot be derived."@en ;
+      sh:severity sh:Warning ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:sia-181-004-raum-laermbelastung-laermempfindlichkeit-prefixes ;
+          sh:select """
+              SELECT DISTINCT ?this WHERE {
+                  { ?element pbs:separates_spaces ?a , ?b . }
+                  UNION
+                  { ?element pbs:connection_physical_type ifc:IfcDoor ; pbs:connects_spaces ?a , ?b . }
+                  FILTER (?a != ?b)
+                  ?a a pbs:Space .
+                  ?b a pbs:Space .
+                  ?a pbs:metadata ?am . ?am pbs:metadata_key "ePset_Space.UsageUnitReference" ; pbs:metadata_value ?aunit .
+                  OPTIONAL { ?b pbs:metadata ?bm . ?bm pbs:metadata_key "ePset_Space.UsageUnitReference" ; pbs:metadata_value ?bunit . }
+                  FILTER (!BOUND(?bunit) || STR(?aunit) != STR(?bunit))
+                  FILTER NOT EXISTS {
+                      ?a pbs:metadata ?ax .
+                      ?ax pbs:metadata_key "Pset_SpaceCommon.IsExternal" ; pbs:metadata_value ?axv .
+                      FILTER (LCASE(STR(?axv)) = "true")
+                  }
+                  FILTER NOT EXISTS {
+                      ?a pbs:classifications ?ac .
+                      ?ac pbs:classification_uri ?au .
+                      FILTER (STRENDS(STR(?au), "/spaces-exterior"))
+                  }
+                  FILTER NOT EXISTS {
+                      ?b pbs:metadata ?bx .
+                      ?bx pbs:metadata_key "Pset_SpaceCommon.IsExternal" ; pbs:metadata_value ?bxv .
+                      FILTER (LCASE(STR(?bxv)) = "true")
+                  }
+                  FILTER NOT EXISTS {
+                      ?b pbs:classifications ?bc .
+                      ?bc pbs:classification_uri ?bu .
+                      FILTER (STRENDS(STR(?bu), "/spaces-exterior"))
+                  }
+                  BIND (?a AS ?this)
+              }"""
+      ] ;
+      sh:sparql [
+          a sh:SPARQLConstraint ;
+          sh:prefixes rule:sia-181-004-raum-laermbelastung-laermempfindlichkeit-prefixes ;
+          sh:message "Raum an einer anderen Nutzungseinheit ohne {?missing}."@de ,
+              "Room next to another usage unit without {?missing}."@en ;
+          sh:select """
+              SELECT $this ?missing WHERE {
+                  { BIND ("ePset_Space.NoiseLoad" AS ?key) BIND ("NoiseLoad" AS ?missing) }
+                  UNION
+                  { BIND ("ePset_Space.NoiseSensitivity" AS ?key) BIND ("NoiseSensitivity" AS ?missing) }
+                  FILTER NOT EXISTS {
+                      $this pbs:metadata ?m .
+                      ?m pbs:metadata_key ?key ; pbs:metadata_value ?v .
+                      FILTER (STRLEN(STR(?v)) > 0)
+                  }
+              }"""
+      ] .

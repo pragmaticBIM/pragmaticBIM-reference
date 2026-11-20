@@ -55,4 +55,6 @@ representation:
   body: box
   plan_symbol: washbasin
 comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: waschtisch-plan.svg
+attachment_link: waschtisch.ifc
 status: active

@@ -62,4 +62,6 @@ representation:
   body: box
   plan_symbol: service_counter
 comment: 'Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: ausgabetheke-plan.svg
+attachment_link: ausgabetheke.ifc
 status: active

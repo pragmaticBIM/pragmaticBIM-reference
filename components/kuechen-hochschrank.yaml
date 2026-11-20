@@ -47,4 +47,6 @@ connections:
 representation:
   body: box
   plan_symbol: tall_cabinet
+picture_link: kuechen-hochschrank-plan.svg
+attachment_link: kuechen-hochschrank.ifc
 status: active

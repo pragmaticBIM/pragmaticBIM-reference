@@ -39,4 +39,6 @@ parameters:
 representation:
   body: opening
   plan_symbol: window
+picture_link: fenster-plan.svg
+attachment_link: fenster.ifc
 status: active
