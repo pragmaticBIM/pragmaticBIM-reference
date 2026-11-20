@@ -1,0 +1,162 @@
+id: pragmaticbim:room-type/schwimmhalle
+code: RT-CO-18
+sort_order: 161
+name:
+  de: Schwimmhalle
+  fr: Piscine couverte
+  it: Piscina coperta
+  en: Swimming hall
+definition:
+  de: Halle mit Schwimmbecken für Training, Schulschwimmen und Erholung.
+  fr: Salle avec bassin pour l'entraînement, la natation scolaire et la détente.
+  it: Sala con vasca per allenamento, nuoto scolastico e svago.
+  en: Hall with a pool for training, school swimming, and recreation.
+room_type_kind: room
+room_name: RN-07-50-02
+activity: M-COM
+default_scope: building
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/schwimmhalle-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-interior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-interior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: false
+  - element: pragmaticbim:element/spaces-interior
+    name: LongName
+    value:
+      de: Schwimmhalle
+      fr: Piscine couverte
+      it: Piscina coperta
+      en: Swimming Hall
+  - element: pragmaticbim:element/spaces-interior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: HNF
+  - element: pragmaticbim:element/spaces-interior
+    name: NetPlannedArea
+    pset: ePset_SpaceRequirement
+    value: 500
+  - element: pragmaticbim:element/spaces-interior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Plattenbelag
+  - element: pragmaticbim:element/spaces-interior
+    name: WallCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Holzverkleidung
+  - element: pragmaticbim:element/spaces-interior
+    name: CeilingCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Holz-Deckenbekleidung
+      fr: Revêtement de plafond en bois
+      it: Rivestimento di soffitto in legno
+      en: Wood ceiling lining
+  - element: pragmaticbim:element/spaces-interior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Workshop
+  - element: pragmaticbim:element/spaces-interior
+    name: InteriorOrExteriorSpace
+    value: INTERNAL
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 5.0
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-interior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  - element: pragmaticbim:element/spaces-interior
+    name: WinterTemperatureMin
+    pset: ePset_SpaceRequirement
+    value: 26
+  - element: pragmaticbim:element/spaces-interior
+    name: WinterTemperatureMax
+    pset: ePset_SpaceRequirement
+    value: 30
+  - element: pragmaticbim:element/spaces-interior
+    name: SummerTemperatureMin
+    pset: ePset_SpaceRequirement
+    value: 26
+  - element: pragmaticbim:element/spaces-interior
+    name: SummerTemperatureMax
+    pset: ePset_SpaceRequirement
+    value: 32
+  - element: pragmaticbim:element/spaces-interior
+    name: RequiredIlluminance
+    pset: ePset_SpaceRequirement
+    value: 300
+  - element: pragmaticbim:element/spaces-interior
+    name: PeakOccupancy
+    pset: ePset_SpaceRequirement
+    value: 30
+  - element: pragmaticbim:element/spaces-interior
+    name: DailyOperatingHours
+    pset: ePset_SpaceRequirement
+    value: 12
+  - element: pragmaticbim:element/spaces-interior
+    name: OutdoorAirFlowRate
+    pset: ePset_SpaceRequirement
+    value: 900
+  equipment:
+  - id: pragmaticbim:room-type-equipment/schwimmhalle-default-steckdose
+    sort_order: 1
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+  - id: pragmaticbim:room-type-equipment/schwimmhalle-default-lichtschalter
+    sort_order: 2
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
+    status: active
+  openings:
+  - id: pragmaticbim:room-type-opening/schwimmhalle-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-doppelfluegel-innen
+    connects_to:
+      relationships: incoming
+    quantity:
+      min: 2
+      max: 6
+      default: 2
+    status: active
+  - id: pragmaticbim:room-type-opening/schwimmhalle-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 1
+      default: 1
+    glazing_to_floor_ratio_min: 0.1
+    comment: Mindestanteil Glasfläche nach kantonalem Recht und Arbeitsgesetz; projektbezogen prüfen.
+    status: active
+  status: active

@@ -14,21 +14,13 @@ tag:
   en: Financing
 description:
   de: |-
-    Die Finanzierungsform entscheidet, ob Wohnungen vermietet, einzeln veräussert oder mit dem Gebäude zusammen gehalten werden.
-
-    Ohne diese Festlegung bleibt offen, wem die Wohnungen gehören und wie sie übergeben werden. Erschliessung, Nebenräume und die Schnittstelle zu Verkauf oder Vermietung folgen daraus.
+    Die Finanzierungsform entscheidet, ob Wohnungen vermietet, einzeln veräussert oder mit dem Gebäude zusammen gehalten werden. Davon hängen Erschliessung, Nebenräume und die Schnittstelle zu Verkauf oder Vermietung ab.
   fr: |-
-    Le mode de financement décide si les logements sont loués, vendus à part ou restent liés à l'immeuble.
-
-    Sans cette décision, il reste ouvert à qui appartiennent les logements et comment ils sont remis. Desserte, locaux annexes et l'interface avec la vente ou la location en découlent.
+    Le mode de financement décide si les logements sont loués, vendus à part ou restent liés à l'immeuble. La desserte, les locaux annexes et l'interface avec la vente ou la location en dépendent.
   it: |-
-    La forma di finanziamento decide se gli alloggi si affittano, si vendono singolarmente o restano legati all'edificio.
-
-    Senza questa decisione resta aperto a chi appartengono gli alloggi e come vengono consegnati. Accessi, locali accessori e l'interfaccia con la vendita o la locazione ne derivano.
+    La forma di finanziamento decide se gli alloggi si affittano, si vendono singolarmente o restano legati all'edificio. Ne dipendono accessi, locali accessori e l'interfaccia con la vendita o la locazione.
   en: |-
-    The form of financing decides whether dwellings are let, sold on their own, or held together with the building.
-
-    Without this decision it stays open who owns the dwellings and how they are handed over. Access, ancillary rooms, and the interface to sale or letting follow from that.
+    The form of financing decides whether dwellings are let, sold on their own, or held together with the building. Access, ancillary rooms, and the interface to sale or letting depend on it.
 status: active
 uses:
 - pragmaticbim:use/wohnen

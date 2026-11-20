@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Festgelegt wird der Grenzwert für graue Energie und Treibhausgasemissionen aus der Erstellung, getrennt von der Betriebsenergie. Das Ziel bestimmt die Materialwahl aller Bauteiltypen.
-
-    Ohne diese Festlegung wird die Ökobilanz erst am fertigen Projekt berechnet. Ein überschrittener Grenzwert lässt sich dann nur noch mit teuren Materialwechseln korrigieren.
   fr: |-
     Cette condition-cadre fixe la valeur limite d'énergie grise et d'émissions de gaz à effet de serre liées à la construction, séparément de l'énergie d'exploitation. L'objectif détermine le choix des matériaux pour tous les types d'éléments.
-
-    Sans cette définition, l'écobilan n'est calculé que sur le projet achevé. Une valeur limite dépassée ne peut alors être corrigée que par des changements de matériaux coûteux.
   it: |-
     Questa condizione quadro stabilisce il valore limite di energia grigia e di emissioni di gas serra dovute alla costruzione, separatamente dall'energia d'esercizio. L'obiettivo determina la scelta dei materiali per tutti i tipi di elementi.
-
-    Senza questa definizione, il bilancio ecologico viene calcolato solo sul progetto concluso. Un valore limite superato si può allora correggere solo con costosi cambi di materiale.
   en: |-
     This framework condition sets the limit for grey energy and greenhouse gas emissions from construction, separate from operational energy. The target drives material choice for every component type.
-
-    Without it, the life-cycle assessment is calculated only on the finished design. An exceeded limit can then be corrected only by costly material changes.
 status: active
 is_boundary_condition: true
 comment: 'Kumulativ. Kein Einfluss auf Anwendungsfälle der Nutzung oder Raumtypen; wirkt auf die Materialwahl aller Bauteiltypen (EnvironmentalProperty gwp_embodied). THG-03 aktiviert GlobalWarmingPotentialMax ohne Wert; den Grenzwert setzt die Bauherrschaft. Der Richtwert SIA 390/1 gilt für das ganze Gebäude, nicht je Bauteil.'

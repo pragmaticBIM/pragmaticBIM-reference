@@ -38,6 +38,7 @@ options:
     to_room_type: pragmaticbim:room-type/gang
   - from_room_type: pragmaticbim:room-type/gang
     to_room_type: pragmaticbim:room-type/arbeitszimmer
+  target: pragmaticbim:room-type/wohnung
   adds:
   - pragmaticbim:room-type/wohnungseingang
   - pragmaticbim:room-type/gang
@@ -56,6 +57,7 @@ options:
     to_room_type: pragmaticbim:room-type/gang
   - from_room_type: pragmaticbim:room-type/gang
     to_room_type: pragmaticbim:room-type/wohnzimmer
+  target: pragmaticbim:room-type/wohnung
   adds:
   - pragmaticbim:room-type/wohnungseingang
   - pragmaticbim:room-type/gang
@@ -68,11 +70,11 @@ options:
     it: Ufficio comunitario
     en: Community office
   room_relationships:
-  - from_room_type: pragmaticbim:room-type/wohnungseingang
+  - from_room_type: pragmaticbim:room-type/eingangshalle
     to_room_type: pragmaticbim:room-type/gemeinschaftsbuero
     max_distance: 30
   adds:
-  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/eingangshalle
   - pragmaticbim:room-type/gemeinschaftsbuero
 - id: pragmaticbim:scenario-option/arbeiten-von-zuhause-none
   sort_order: 4

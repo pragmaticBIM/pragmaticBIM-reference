@@ -20,6 +20,7 @@ definition:
     - LoadBearing=TRUE setzen; als vereinfachtes Volumen ohne Bewehrung oder Anschlussdetails modellieren.
     - In der Architekturkonzeption die Abmessungen der konzeptionellen Tragwerksbauteile mit dem Tragwerksplaner abstimmen und im Architekturmodell übernehmen.
     - Geeignetes Material im Autorensystem verwenden und exportieren.
+    - Als Profil exportieren (`IfcMaterialProfileSet`); die Profilbezeichnung steht in `IfcProfileDef.ProfileName`, z. B. HEA200.
   fr: |-
     Permet de vérifier tôt dans l’espace les reprises de charges ponctuelles et évite les conflits avec la subdivision des locaux, la façade et les techniques du bâtiment.
 
@@ -32,6 +33,7 @@ definition:
     - Définir LoadBearing=TRUE ; modéliser comme volume simplifié sans armatures ni raccords de détail.
     - Lors de la conception architecturale, coordonner avec l'ingénieur civil les dimensions des éléments porteurs conceptuels et les reprendre dans le modèle d'architecture.
     - Utiliser et exporter le matériau approprié depuis le logiciel auteur.
+    - Exporter comme profil (`IfcMaterialProfileSet`) ; la désignation du profil figure dans `IfcProfileDef.ProfileName`, p. ex. HEA200.
   it: |-
     Consente di verificare tempestivamente nello spazio la trasmissione puntuale dei carichi ed evita conflitti con la suddivisione dei locali, la facciata e gli impianti.
 
@@ -44,6 +46,7 @@ definition:
     - Impostare LoadBearing=TRUE; modellare come volume semplificato senza armature o giunti di dettaglio.
     - Durante la concezione architettonica, coordinare con l'ingegnere strutturista le dimensioni degli elementi strutturali concettuali e recepirle nel modello architettonico.
     - Usare ed esportare il materiale appropriato dal software di modellazione.
+    - Esportare come profilo (`IfcMaterialProfileSet`); la denominazione del profilo è in `IfcProfileDef.ProfileName`, ad es. HEA200.
   en: |-
     Makes point load transfers spatially verifiable early and prevents conflicts with the spatial layout, facade, and building services.
 
@@ -56,6 +59,7 @@ definition:
     - Set LoadBearing=TRUE; model as a simplified volume without reinforcement or detail connections.
     - During conceptual architectural design, coordinate the dimensions of conceptual structural components with the structural engineer and adopt them in the architecture model.
     - Use and export the appropriate material from the authoring system.
+    - Export as a profile (`IfcMaterialProfileSet`); the profile designation is in `IfcProfileDef.ProfileName`, e.g. HEA200.
 needed_in_domain:
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcColumn
@@ -371,58 +375,6 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 7
-- name: Profilname
-  pset: ePset_Cost
-  definition:
-    de: Profilbezeichnung für den berechneten Typnamen, z. B. HEA200.
-    fr: Désignation du profil pour le nom de type calculé, p. ex. HEA200.
-    it: Denominazione del profilo per il nome del tipo calcolato, ad es. HEA200.
-    en: Profile designation for the calculated type name, e.g. HEA200.
-  datatype: IfcLabel
-  needed_in_phases: ['32', '33', '41', '51']
-  ifc_versions: [ifc2x3, ifc4, ifc4x3]
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-element-based-cost-late
-  - pragmaticbim:workflow/bes-element-based-tendering
-  is_applicability: false
-  status: active
-  sort_order: 8
-- name: Width
-  pset: ePset_Cost
-  definition:
-    de: Breite des modellierten Stützenquerschnitts.
-    fr: Largeur de la section du poteau modélisé.
-    it: Larghezza della sezione della colonna modellata.
-    en: Width of the modelled column cross-section.
-  datatype: IfcLengthMeasure
-  unit: m
-  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
-  ifc_versions: [ifc2x3, ifc4, ifc4x3]
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-circularity
-  - pragmaticbim:workflow/des-element-based-cost-late
-  - pragmaticbim:workflow/bes-element-based-tendering
-  is_applicability: false
-  status: active
-  sort_order: 9
-- name: Height
-  pset: ePset_Cost
-  definition:
-    de: Höhe des modellierten Stützenquerschnitts.
-    fr: Hauteur de la section du poteau modélisé.
-    it: Altezza della sezione della colonna modellata.
-    en: Height of the modelled column cross-section.
-  datatype: IfcLengthMeasure
-  unit: m
-  needed_in_phases: ['31', '32', '33', '41', '51', '52', '53', '61', '62']
-  ifc_versions: [ifc2x3, ifc4, ifc4x3]
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-circularity
-  - pragmaticbim:workflow/des-element-based-cost-late
-  - pragmaticbim:workflow/bes-element-based-tendering
-  is_applicability: false
-  status: active
-  sort_order: 10
 - name: CostInterface
   pset: ePset_Cost
   definition:
@@ -458,7 +410,7 @@ attributes:
   - pragmaticbim:workflow/qas-element-cost-post-calculation
   is_applicability: false
   status: active
-  sort_order: 11
+  sort_order: 8
 - name: FundingApplication
   pset: ePset_Cost
   definition:
@@ -477,7 +429,7 @@ attributes:
   - pragmaticbim:workflow/qas-funding-verification
   is_applicability: false
   status: active
-  sort_order: 12
+  sort_order: 9
 - name: AwardInterface
   pset: ePset_Cost
   definition:
@@ -511,7 +463,7 @@ attributes:
   - pragmaticbim:workflow/qas-element-cost-post-calculation
   is_applicability: false
   status: active
-  sort_order: 13
+  sort_order: 10
 - name: PlanningInterface
   pset: ePset_Cost
   definition:
@@ -543,7 +495,7 @@ attributes:
   - pragmaticbim:workflow/des-planning-interface-visualization
   is_applicability: false
   status: active
-  sort_order: 14
+  sort_order: 11
 - name: BelowTerrain
   pset: ePset_Cost
   definition:
@@ -581,7 +533,7 @@ attributes:
   - pragmaticbim:workflow/bes-element-based-tendering
   is_applicability: false
   status: active
-  sort_order: 15
+  sort_order: 12
 - name: eBKP
   pset: ePset_Cost
   definition:
@@ -618,22 +570,22 @@ attributes:
   - pragmaticbim:workflow/des-circularity
   is_applicability: false
   status: active
-  sort_order: 16
+  sort_order: 13
 - name: CalculatedType
   pset: ePset_Cost
   definition:
     de: |-
       Berechneter Typname für Kosten- und Mengengruppierung. Logik `StuetzeTypisierung`.
-      Beispiel: `Stütze_Stahl_HEA200_200x200_3.20m`
+      Beispiel: `Stütze_Stahl_HEA200_3.20m`
     fr: |-
       Nom de type calculé pour le regroupement des coûts et des quantités. Logique `StuetzeTypisierung`.
-      Exemple: `Stütze_Stahl_HEA200_200x200_3.20m`
+      Exemple: `Stütze_Stahl_HEA200_3.20m`
     it: |-
       Nome di tipo calcolato per il raggruppamento di costi e quantità. Logica `StuetzeTypisierung`.
-      Esempio: `Stütze_Stahl_HEA200_200x200_3.20m`
+      Esempio: `Stütze_Stahl_HEA200_3.20m`
     en: |-
       Calculated type name for cost and quantity grouping. Logic `StuetzeTypisierung`.
-      Example: `Stütze_Stahl_HEA200_200x200_3.20m`
+      Example: `Stütze_Stahl_HEA200_3.20m`
   datatype: IfcLabel
   needed_in_phases: ['32', '33', '41', '51']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
@@ -644,7 +596,7 @@ attributes:
   - pragmaticbim:workflow/qas-element-cost-post-calculation
   is_applicability: false
   status: active
-  sort_order: 17
+  sort_order: 14
 - name: ProductClass
   pset: ePset_Cost
   definition:
@@ -683,7 +635,7 @@ attributes:
   - pragmaticbim:workflow/qas-element-cost-post-calculation
   is_applicability: false
   status: active
-  sort_order: 18
+  sort_order: 15
 - name: UnitPrice
   pset: ePset_Cost
   definition:
@@ -702,7 +654,7 @@ attributes:
   - pragmaticbim:workflow/qas-element-cost-post-calculation
   is_applicability: false
   status: active
-  sort_order: 19
+  sort_order: 16
 - name: ReferenceQuantity
   pset: ePset_Cost
   definition:
@@ -721,7 +673,7 @@ attributes:
   - pragmaticbim:workflow/qas-element-cost-post-calculation
   is_applicability: false
   status: active
-  sort_order: 20
+  sort_order: 17
 - name: Connection
   pset: ePset_Circularity
   definition:
@@ -769,7 +721,7 @@ attributes:
   - pragmaticbim:workflow/des-circularity
   is_applicability: false
   status: active
-  sort_order: 21
+  sort_order: 18
 - name: Accessibility
   pset: ePset_Circularity
   definition:
@@ -817,7 +769,7 @@ attributes:
   - pragmaticbim:workflow/des-circularity
   is_applicability: false
   status: active
-  sort_order: 22
+  sort_order: 19
 - name: Reuse
   pset: ePset_Circularity
   definition:
@@ -833,7 +785,7 @@ attributes:
   - pragmaticbim:workflow/des-circularity
   is_applicability: false
   status: active
-  sort_order: 23
+  sort_order: 20
 - name: MaterialOrProductId
   pset: ePset_Circularity
   definition:
@@ -848,7 +800,7 @@ attributes:
   - pragmaticbim:workflow/des-circularity
   is_applicability: false
   status: active
-  sort_order: 24
+  sort_order: 21
 - name: WasteCodes
   pset: ePset_Circularity
   definition:
@@ -868,7 +820,7 @@ attributes:
   - pragmaticbim:workflow/des-circularity
   is_applicability: false
   status: active
-  sort_order: 25
+  sort_order: 22
 - name: HazardType
   pset: ePset_HazardousMaterial
   definition:
@@ -925,7 +877,7 @@ attributes:
   - pragmaticbim:workflow/qas-hazmat-check
   is_applicability: false
   status: active
-  sort_order: 26
+  sort_order: 23
 - name: RemovalCategory
   pset: ePset_HazardousMaterial
   definition:
@@ -970,7 +922,7 @@ attributes:
   - pragmaticbim:workflow/qas-hazmat-check
   is_applicability: false
   status: active
-  sort_order: 27
+  sort_order: 24
 - name: GlobalTradeItemNumber
   pset: Pset_ManufacturerTypeInformation
   definition:
@@ -987,7 +939,7 @@ attributes:
   - pragmaticbim:workflow/hov-product-pass-serial-number
   is_applicability: false
   status: active
-  sort_order: 28
+  sort_order: 25
 - name: SerialNumber
   pset: Pset_ManufacturerOccurrence
   definition:
@@ -1002,7 +954,7 @@ attributes:
   - pragmaticbim:workflow/hov-product-pass-serial-number
   is_applicability: false
   status: active
-  sort_order: 29
+  sort_order: 26
 - name: GrossVolume
   pset: Qto_ColumnBaseQuantities
   definition:
@@ -1028,7 +980,7 @@ attributes:
   - pragmaticbim:workflow/qas-element-cost-post-calculation
   is_applicability: false
   status: active
-  sort_order: 30
+  sort_order: 27
 - name: Length
   pset: Qto_ColumnBaseQuantities
   definition:
@@ -1046,4 +998,4 @@ attributes:
   - pragmaticbim:workflow/bes-element-based-tendering
   is_applicability: false
   status: active
-  sort_order: 31
+  sort_order: 28

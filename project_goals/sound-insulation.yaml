@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Festgelegt wird, ob die Mindestanforderungen nach SIA 181 gelten oder erhöhte beziehungsweise besondere Anforderungen. Die Festlegung bestimmt Trennwände, Decken und Türen zwischen Wohnungen oder Nutzungseinheiten.
-
-    Ohne diese Festlegung werden Trennbauteile auf das Minimum ausgelegt und erst bei der Vermietung oder im Betrieb beanstandet. Dickere Wände und Decken lassen sich dann nicht mehr einbauen.
   fr: |-
     Cette condition-cadre détermine si les exigences minimales selon SIA 181 s'appliquent ou des exigences accrues ou particulières. Elle détermine les cloisons, les dalles et les portes entre logements ou unités d'utilisation.
-
-    Sans cette définition, les éléments de séparation sont dimensionnés au minimum et ne sont contestés qu'à la location ou en exploitation. Des murs et des dalles plus épais ne peuvent alors plus être réalisés.
   it: |-
     Questa condizione quadro stabilisce se valgono i requisiti minimi secondo SIA 181 o requisiti elevati o particolari. Determina pareti divisorie, solette e porte tra alloggi o unità d'uso.
-
-    Senza questa definizione, gli elementi di separazione vengono dimensionati al minimo e contestati solo alla locazione o in esercizio. Pareti e solette più spesse non si possono allora più realizzare.
   en: |-
     This framework condition sets whether the minimum requirements under SIA 181 apply, or increased or special requirements. It drives partitions, slabs, and doors between dwellings or units.
-
-    Without it, separating components are designed to the minimum and challenged only at letting or in operation. Thicker walls and slabs can then no longer be built.
 status: active
 is_boundary_condition: true
 comment: 'Kumulativ. Kein Einfluss auf Anwendungsfälle der Nutzung oder Raumtypen; wirkt auf Trennwände, Decken und Türen zwischen Einheiten (AcousticProperty airborne_sound_rating_db, impact_sound_rating_db). Die Stufen setzen AirborneSoundInsulationMin und ImpactSoundLevelMax als Sollwert; SLS-03 aktiviert sie ohne Wert.'

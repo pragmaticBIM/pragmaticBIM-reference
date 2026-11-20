@@ -17,13 +17,16 @@ name:
   en: Using the toilets
 description:
   de: Nutzende und Besuchende brauchen während ihres Aufenthalts Toiletten, auch mit Rollstuhl.
-    Die Aufteilung entscheidet über Anzahl, Fläche und wie flexibel die Toiletten belegt werden.
+    Die Aufteilung entscheidet über Anzahl, Fläche, Privatsphäre zwischen den Nutzergruppen und wie
+    flexibel die Toiletten belegt werden.
   fr: Les usagers et les visiteurs ont besoin de toilettes pendant leur présence, y compris en
-    fauteuil roulant. La répartition détermine le nombre, la surface et la flexibilité d'occupation.
+    fauteuil roulant. La répartition détermine le nombre, la surface, l'intimité entre les groupes
+    d'usagers et la flexibilité d'occupation.
   it: Utenti e visitatori hanno bisogno di servizi igienici durante la permanenza, anche in sedia a
-    rotelle. La suddivisione determina numero, superficie e flessibilità d'uso.
+    rotelle. La suddivisione determina numero, superficie, privacy tra i gruppi di utenti e
+    flessibilità d'uso.
   en: Users and visitors need toilets during their stay, including wheelchair users. The split
-    determines number, area, and how flexibly the toilets can be used.
+    determines number, area, privacy between user groups, and how flexibly the toilets can be used.
 scope: project
 uses:
 - pragmaticbim:use/beherbergung
@@ -80,8 +83,34 @@ options:
   adds:
   - pragmaticbim:room-type/allgemeines-wc
   - pragmaticbim:room-type/barrierefreies-wc
-- id: pragmaticbim:scenario-option/toiletten-benutzen-none
+- id: pragmaticbim:scenario-option/toiletten-benutzen-lehrpersonen-lernende
   sort_order: 3
+  name:
+    de: Lehrpersonen-, Lernenden- und barrierefreies WC
+    fr: WC enseignants, élèves et WC sans obstacles
+    it: WC docenti, allievi e WC senza barriere
+    en: Teachers', students', and accessible toilets
+  uses:
+  - pragmaticbim:use/bildung
+  adds:
+  - pragmaticbim:room-type/lehrpersonen-wc
+  - pragmaticbim:room-type/lernenden-wc
+  - pragmaticbim:room-type/barrierefreies-wc
+- id: pragmaticbim:scenario-option/toiletten-benutzen-besucher-mitarbeiter
+  sort_order: 4
+  name:
+    de: Besucher-, Mitarbeiter- und barrierefreies WC
+    fr: WC visiteurs, personnel et WC sans obstacles
+    it: WC visitatori, personale e WC senza barriere
+    en: Visitor, staff, and accessible toilets
+  uses:
+  - pragmaticbim:use/verkauf
+  adds:
+  - pragmaticbim:room-type/besucher-wc
+  - pragmaticbim:room-type/mitarbeiter-wc
+  - pragmaticbim:room-type/barrierefreies-wc
+- id: pragmaticbim:scenario-option/toiletten-benutzen-none
+  sort_order: 5
   name:
     de: Keine eigenen Toiletten
     fr: Pas de toilettes propres

@@ -53,11 +53,11 @@ options:
     it: Lavanderia comune
     en: Communal laundry
   room_relationships:
-  - from_room_type: pragmaticbim:room-type/wohnungseingang
+  - from_room_type: pragmaticbim:room-type/eingangshalle
     to_room_type: pragmaticbim:room-type/gemeinschaftswaschkueche
     max_distance: 30
   adds:
-  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/eingangshalle
   - pragmaticbim:room-type/gemeinschaftswaschkueche
 - id: pragmaticbim:scenario-option/waesche-waschen-utility
   project_goal_levels:

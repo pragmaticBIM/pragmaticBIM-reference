@@ -8,81 +8,77 @@ name:
   en: Provide the basis for the flooring tender
 description:
   de: |-
-    Bodenbeläge, Flächen und Umfang raumweise im Modell führen, damit Mengen und Leistungsverzeichnis zur Planung passen und nicht erneut aus Plänen übertragen werden müssen.
+    Die Bauherrschaft bestellt beim Architekturteam eine raumweise Bodenbelagsliste mit Belagstyp, Fläche und Umfang aus dem Modell, damit die Mengen im Leistungsverzeichnis zur Planung passen und nicht erneut aus Plänen ermittelt werden müssen.
 
     **Ausgangslage**
-    - Bodenbelagsmengen und -typen für die Ausschreibung werden oft manuell aus Plänen und Raumlisten zusammengesucht.
-    - Die Leistungsverzeichnisse (LV) haben oft wenig mit der Planung zu tun; die Mengen werden oft separat für LVs ermittelt.
+    - Bodenbelagsmengen und -typen werden für die Ausschreibung oft manuell aus Plänen und Raumlisten zusammengesucht.
+    - Werden die Mengen für das Leistungsverzeichnis separat ermittelt, laufen Ausschreibung und Planung auseinander; Abweichungen fallen erst bei der Abrechnung auf.
 
     **Ziel & Nutzen**
-    - Pro Innenraum den vorgesehenen Bodenbelag, die Nettogeschossfläche und den Nettoumfang im Modell transparent verwalten.
-    - Raumweise Auswertung als Grundlage für Leistungsverzeichnis und Mengenermittlung der Bodenbelags- und Sockelleistenarbeiten.
-    - Für die Ausführung oder in besonders komplexen Räumen einen separaten Belagstyp als Element modellieren.
+    - Bodenbelags- und Sockelleistenmengen raumweise prüfen und auf die Planung zurückführen.
+    - Dieselbe Mengenbasis für Ausschreibung, Angebotsvergleich und Rechnungsprüfung verwenden.
 
     **Ablauf**
-    1. Innenräume mit Raumnummer und Nutzung im Architekturmodell bereitstellen.
-    2. Bodenbelagstyp (FloorCovering), NetFloorArea und NetPerimeter je Raum erfassen.
-    3. Raumliste nach Belagstyp, Fläche und Umfang für die Ausschreibungsunterlagen ableiten. Tipp: Mit Pivot-Tabellen lassen sich Bodenbeläge pro Raum gruppieren und zu Gesamtmengen zusammenfassen.
+    1. Geforderte raumweise Angaben zu Belagstyp, Nettofläche und Umfang sowie Abgabetermin festlegen und beim Architekturteam bestellen.
+    2. Raumliste und Bodenbelagsübersicht einfordern und auf vollständige Belagszuordnung je Innenraum und Übereinstimmung mit den Ausschreibungsplänen prüfen.
+    3. Übersicht freigeben und als Grundlage für Leistungsverzeichnis, Angebotsvergleich und Rechnungsprüfung weiterverwenden.
 
     **Lieferergebnis**
     - Architekturmodell mit vollständigen Raumangaben zu Nutzung, Bodenbelag, Fläche und Umfang.
     - Raumliste und Bodenbelagsübersicht als prüfbare Ausschreibungsgrundlage.
   fr: |-
-    Tenir dans la maquette, local par local, les revêtements de sol, les surfaces et le périmètre, afin que les quantités et le cahier des charges correspondent au projet et ne doivent pas être repris une nouvelle fois depuis les plans.
+    Le maître d'ouvrage commande à l'équipe d'architecture une liste des revêtements de sol par local, avec type de revêtement, surface et périmètre issus de la maquette, afin que les quantités du descriptif correspondent au projet et ne doivent pas être établies une nouvelle fois depuis les plans.
 
     **Situation de départ**
     - Les quantités et les types de revêtement pour l'appel d'offres sont souvent rassemblés à la main à partir des plans et des listes de locaux.
-    - Les cahiers des charges ont souvent peu de rapport avec le projet ; les quantités sont fréquemment établies à part pour le descriptif.
+    - Lorsque les quantités du descriptif sont établies à part, l'appel d'offres et le projet divergent ; les écarts n'apparaissent qu'au décompte.
 
     **Objectif et bénéfice**
-    - Gérer de façon transparente, pour chaque local intérieur, le revêtement prévu, la surface nette d'étage et le périmètre net dans la maquette.
-    - L'évaluation par local sert de base au cahier des charges et au métré des revêtements de sol et des plinthes.
-    - Pour l'exécution, ou dans les locaux particulièrement complexes, modéliser un type de revêtement distinct comme élément.
+    - Contrôler les quantités de revêtements de sol et de plinthes local par local et les rattacher au projet.
+    - Utiliser la même base de quantités pour l'appel d'offres, la comparaison des offres et le contrôle des factures.
 
     **Déroulement**
-    1. Fournir les locaux intérieurs avec numéro et usage dans le modèle d'architecture.
-    2. Saisir le type de revêtement (FloorCovering), NetFloorArea et NetPerimeter par local.
-    3. Déduire la liste des locaux par type de revêtement, surface et périmètre pour les documents d'appel d'offres. Conseil : un tableau croisé dynamique permet de regrouper les revêtements par local et d'en calculer les quantités totales.
+    1. Définir les données requises par local sur le type de revêtement, la surface nette et le périmètre ainsi que le délai de remise, puis les commander à l'équipe d'architecture.
+    2. Exiger la liste des locaux et la vue d'ensemble des revêtements, puis vérifier l'attribution complète d'un revêtement à chaque local intérieur et la concordance avec les plans d'appel d'offres.
+    3. Valider la vue d'ensemble et la réutiliser comme base pour le descriptif, la comparaison des offres et le contrôle des factures.
 
     **Livrable**
     - Maquette architecture avec données complètes sur l'usage, le revêtement, la surface et le périmètre.
     - Liste des locaux et vue d'ensemble des revêtements comme base vérifiable de l'appel d'offres.
   it: |-
-    Gestire nel modello, locale per locale, pavimentazioni, superfici e perimetro, affinché quantità e capitolato corrispondano al progetto e non debbano essere ripresi di nuovo dai disegni.
+    La committenza ordina allo studio di architettura un elenco delle pavimentazioni per locale con tipo, superficie e perimetro ricavati dal modello, affinché le quantità del capitolato corrispondano al progetto e non debbano essere determinate di nuovo dai piani.
 
     **Situazione di partenza**
     - Quantità e tipi di pavimentazione per la gara vengono spesso raccolti a mano da disegni ed elenchi dei locali.
-    - I capitolati hanno spesso poco a che vedere con il progetto; le quantità vengono spesso determinate a parte per il capitolato.
+    - Se le quantità del capitolato vengono determinate a parte, gara e progetto divergono; gli scostamenti emergono solo in fase di liquidazione.
 
     **Obiettivo e beneficio**
-    - Gestire in modo trasparente, per ogni locale interno, la pavimentazione prevista, la superficie netta di piano e il perimetro netto nel modello.
-    - La valutazione per locale serve da base per il capitolato e il computo metrico dei lavori di pavimentazione e di battiscopa.
-    - Per l'esecuzione, o nei locali particolarmente complessi, modellare un tipo di rivestimento distinto come elemento.
+    - Verificare locale per locale le quantità di pavimentazione e battiscopa e ricondurle al progetto.
+    - Utilizzare la stessa base di quantità per gara, confronto delle offerte e controllo delle fatture.
 
     **Svolgimento**
-    1. Fornire i locali interni con numero e uso nel modello di architettura.
-    2. Registrare il tipo di pavimentazione (FloorCovering), NetFloorArea e NetPerimeter per locale.
-    3. Ricavare l'elenco locali per tipo di pavimentazione, superficie e perimetro per i documenti di gara. Suggerimento: una tabella pivot consente di raggruppare le pavimentazioni per locale e calcolare le quantità complessive.
+    1. Definire i dati richiesti per locale su tipo di pavimentazione, superficie netta e perimetro e il termine di consegna e ordinarli allo studio di architettura.
+    2. Richiedere l'elenco dei locali e il quadro delle pavimentazioni e verificare l'assegnazione completa di una pavimentazione a ogni locale interno e la concordanza con i piani di gara.
+    3. Approvare il quadro e riutilizzarlo come base per capitolato, confronto delle offerte e controllo delle fatture.
 
     **Risultato della fornitura**
     - Modello di architettura con dati completi su uso, pavimentazione, superficie e perimetro.
     - Elenco dei locali e quadro generale delle pavimentazioni come base di gara verificabile.
   en: |-
-    Maintain floor coverings, areas, and perimeter by room in the model so that quantities and the specification correspond to the design and do not have to be transferred from drawings again.
+    The client orders from the architecture team a room-by-room flooring schedule with covering type, area, and perimeter from the model, so that quantities in the specification match the design and do not have to be determined again from drawings.
 
     **Starting point**
     - Flooring quantities and types for tendering are often assembled manually from drawings and room lists.
-    - Specifications often have little connection to the design; quantities are frequently determined separately for them.
+    - When quantities for the specification are determined separately, the tender and the design drift apart; deviations only surface at final account.
 
     **Goal & benefit**
-    - Maintain the intended floor covering, net floor area, and net perimeter per interior space in the model.
-    - Room-by-room evaluation as the basis for the specification and quantity take-off of flooring and skirting works.
-    - For construction or particularly complex rooms, model a separate floor-covering type as an element.
+    - Check flooring and skirting quantities room by room and trace them back to the design.
+    - Use the same quantity basis for tendering, offer comparison, and invoice checking.
 
     **Process**
-    1. Provide interior spaces with room number and use in the architecture model.
-    2. Capture floor covering type (FloorCovering), NetFloorArea, and NetPerimeter per space.
-    3. Derive the room list by covering type, area, and perimeter for the tender documents. Tip: Use a pivot table to group floor coverings by space and calculate aggregate quantities.
+    1. Define the required room-by-room information on covering type, net area, and perimeter, and the submission date, and order them from the architecture team.
+    2. Request the room list and flooring overview and check that every interior space has a covering assigned and that the data is consistent with the tender drawings.
+    3. Approve the overview and reuse it as the basis for the specification, offer comparison, and invoice checking.
 
     **Deliverable**
     - Architecture model with complete space data on use, floor covering, area, and perimeter.
@@ -97,4 +93,6 @@ needed_in_domain:
 comment: >-
   Tender preparation (SIA phase 41). Uses space properties FloorCovering,
   NetFloorArea, and NetPerimeter (skirting) – no modelled IfcCovering FLOORING.
-  For modelled floor build-up see des-flooring-planning.
+  A pivot table groups floor coverings by space into total quantities. For
+  construction or particularly complex rooms, model a separate floor-covering
+  element; for modelled floor build-up see des-flooring-planning.

@@ -1,0 +1,67 @@
+id: pragmaticbim:usage-scenario/im-verkauf-umziehen
+code: US-VK-07
+sort_order: 7
+name:
+  de: Im Verkauf umziehen
+  fr: Se changer dans la vente
+  it: Cambiarsi nella vendita
+  en: Changing in retail
+description:
+  de: Verkaufspersonal zieht vor der Schicht Arbeitskleidung an und Privatkleidung aus, abseits der Kundschaft.
+    Die Lage entscheidet über Wege in Arbeitskleidung und die Zahl der Umkleiden.
+  fr: Le personnel de vente enfile sa tenue de travail et retire ses vêtements privés avant le service, à
+    l'écart de la clientèle. L'emplacement détermine les parcours en tenue de travail et le nombre de
+    vestiaires.
+  it: Il personale di vendita indossa gli indumenti da lavoro e toglie gli abiti privati prima del turno,
+    lontano dalla clientela. La posizione determina i percorsi in tenuta da lavoro e il numero di spogliatoi.
+  en: Retail staff put on work clothes and take off private clothes before the shift, away from customers.
+    The location determines routes in work clothes and the number of changing rooms.
+scope: use
+uses:
+- pragmaticbim:use/verkauf
+tags:
+- personal
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/im-verkauf-umziehen-zentral
+  legacy_ids:
+  - pragmaticbim:scenario-option/pausen-im-verkauf-verbringen-break-changing
+  sort_order: 1
+  name:
+    de: Zentrale Umkleide
+    fr: Vestiaire central
+    it: Spogliatoio centrale
+    en: Central changing room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/umkleideraum
+  adds:
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/umkleideraum
+- id: pragmaticbim:scenario-option/im-verkauf-umziehen-dezentral
+  sort_order: 2
+  name:
+    de: Dezentrale Umkleide
+    fr: Vestiaire décentralisé
+    it: Spogliatoio decentrato
+    en: Decentralised changing room
+  quantity:
+    id: pragmaticbim:quantity/im-verkauf-umziehen-dezentral
+    sort_order: 1
+    name:
+      de: Anzahl Umkleiden
+      fr: Nombre de vestiaires
+      it: Numero di spogliatoi
+      en: Number of changing rooms
+    status: active
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/umkleideraum
+    to_room_type: pragmaticbim:room-type/verkaufsraum
+    max_distance: 15
+  - from_room_type: pragmaticbim:room-type/umkleideraum
+    to_room_type: pragmaticbim:room-type/verkaufsflaeche
+    max_distance: 15
+  adds:
+  - pragmaticbim:room-type/umkleideraum

@@ -231,15 +231,15 @@ def generate_covering(
         interior = not space_params.get("include_balcony_floor_covering")
         if interior:
             space_params["omit_primary_space"] = False
-            space_params["include_neighbor_space"] = False
+            space_params["include_neighbor_space"] = True
             space_params["include_ceiling_slab"] = False
             space_params["include_ceiling_covering"] = False
         ifc_file, space = generate_space(space_params)
         # Interior Bodenaufbau: the neighbour (left) room shows the modelled
-        # build-up, used from tender on; the primary (right) room keeps the
-        # floor data on the space, as in early phases and operation. Two
-        # plates so the joint is visible. The exterior balcony covering stays
-        # one plate.
+        # build-up, used from tender on, with its space standing on it; the
+        # primary (right) room keeps the floor data on the space, as in early
+        # phases and operation. Two plates so the joint is visible. The
+        # exterior balcony covering stays one plate.
         if interior:
             for covering in ifc_file.by_type("IfcCovering"):
                 name = covering.Name or ""
@@ -247,6 +247,7 @@ def generate_covering(
                     remove_product(ifc_file, product=covering)
             _split_interior_floor_coverings(ifc_file)
             dotted.append(space)
+            dotted.extend(s for s in ifc_file.by_type("IfcSpace") if s != space)
         prefer_name = "FloorCovering"
 
     covering = _find_covering_by_type(
