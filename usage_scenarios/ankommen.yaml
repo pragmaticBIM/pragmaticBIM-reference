@@ -35,7 +35,6 @@ options:
   - from_room_type: pragmaticbim:room-type/strasse
     to_room_type: pragmaticbim:room-type/eingangshalle
   adds:
-  - pragmaticbim:room-type/strasse
   - pragmaticbim:room-type/eingangshalle
 - id: pragmaticbim:scenario-option/ankommen-concierge
   sort_order: 2
@@ -50,7 +49,6 @@ options:
   - from_room_type: pragmaticbim:room-type/empfang
     to_room_type: pragmaticbim:room-type/eingangshalle
   adds:
-  - pragmaticbim:room-type/strasse
   - pragmaticbim:room-type/empfang
   - pragmaticbim:room-type/eingangshalle
 - id: pragmaticbim:scenario-option/ankommen-video
@@ -64,5 +62,4 @@ options:
   - from_room_type: pragmaticbim:room-type/strasse
     to_room_type: pragmaticbim:room-type/eingangshalle
   adds:
-  - pragmaticbim:room-type/strasse
   - pragmaticbim:room-type/eingangshalle

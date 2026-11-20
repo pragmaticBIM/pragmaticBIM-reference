@@ -1,0 +1,15 @@
+# Supporting use for massing volumes (circulation), not a reason to build.
+id: pragmaticbim:use/erschliessung
+code: USE-ER
+sort_order: 16
+name:
+  de: Erschliessung
+  fr: Desserte
+  it: Distribuzione
+  en: Circulation
+definition:
+  de: Bruttovolumen der horizontalen und vertikalen Erschliessung.
+  fr: Volume brut de la desserte horizontale et verticale.
+  it: Volume lordo della distribuzione orizzontale e verticale.
+  en: Gross volume of horizontal and vertical circulation.
+status: active

@@ -14,21 +14,13 @@ tag:
   en: Transport
 description:
   de: |-
-    Das Verkehrsmittel und die Reisenden in der Spitzenstunde bestimmen Perronlängen, Wartebereiche, Personenflüsse und Fluchtwege.
-
-    Ohne diese Festlegung bleiben Perrons, Wartebereiche und Personenflüsse offen. Fluchtwege und Zugänge werden dann nicht auf die Spitzenstunde ausgelegt.
+    Das Verkehrsmittel und die Reisenden in der Spitzenstunde bestimmen Perronlängen, Wartebereiche, Personenflüsse, Zugänge und Fluchtwege.
   fr: |-
-    Le moyen de transport et les voyageurs à l'heure de pointe déterminent la longueur des quais, les zones d'attente, les flux de personnes et les voies d'évacuation.
-
-    Sans cette décision, quais, zones d'attente et flux de personnes restent ouverts. Voies d'évacuation et accès ne sont alors pas dimensionnés pour l'heure de pointe.
+    Le moyen de transport et les voyageurs à l'heure de pointe déterminent la longueur des quais, les zones d'attente, les flux de personnes, les accès et les voies d'évacuation.
   it: |-
-    Il mezzo di trasporto e i viaggiatori nell'ora di punta determinano lunghezza dei marciapiedi, zone d'attesa, flussi di persone e vie di fuga.
-
-    Senza questa decisione marciapiedi, zone d'attesa e flussi di persone restano aperti. Vie di fuga e accessi non vengono allora dimensionati per l'ora di punta.
+    Il mezzo di trasporto e i viaggiatori nell'ora di punta determinano lunghezza dei marciapiedi, zone d'attesa, flussi di persone, accessi e vie di fuga.
   en: |-
-    The mode of transport and peak-hour passengers determine platform lengths, waiting areas, passenger flows, and escape routes.
-
-    Without this decision platforms, waiting areas, and passenger flows stay open. Escape routes and access are then not sized for the peak hour.
+    The mode of transport and peak-hour passengers determine platform lengths, waiting areas, passenger flows, access, and escape routes.
 status: active
 uses:
 - pragmaticbim:use/verkehr

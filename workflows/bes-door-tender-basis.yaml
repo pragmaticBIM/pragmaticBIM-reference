@@ -8,78 +8,78 @@ name:
   en: Provide the basis for the door tender
 description:
   de: |-
-    Türangaben im Architekturmodell als prüfbare Grundlage für Mengen und Ausschreibung bereitstellen.
+    Die Bauherrschaft bestellt beim Architekturteam eine prüfbare Türliste aus dem Modell, damit die Türausschreibung vollständige Mengen und Anforderungen enthält und Rückfragen und Nachträge vermieden werden.
 
     **Ausgangslage**
     - Türtypen, Öffnungsmasse, Öffnungsarten, Feuerwiderstand und Schalldämmung werden für die Ausschreibung oft manuell aus Plänen und Türlisten zusammengetragen.
     - Fehlende oder uneinheitliche Türangaben führen zu Rückfragen, falschen Mengen und Nachträgen.
 
     **Ziel & Nutzen**
-    - Türtypen und Öffnungsmasse im Architekturmodell führen; zusätzliche Fachangaben wie Öffnungsart, Feuerwiderstand und Schalldämmung können alternativ in einer über die Türnummer verknüpften Liste nachgeführt werden.
-    - Eine nachvollziehbare Türliste als Grundlage für Mengen und Ausschreibungsunterlagen ableiten.
+    - Vollständige und eindeutige Türangaben ausschreiben und damit Risikozuschläge und Nachträge reduzieren.
+    - Brand- und Schallschutzanforderungen je Tür vor der Vergabe prüfen statt erst bei der Abnahme.
+    - Die Türnummer als gemeinsamen Schlüssel für Ausschreibung, Werkplanung und Abnahme verwenden.
 
     **Ablauf**
-    1. Türen mit eindeutiger Türnummer und räumlicher Zuordnung bereitstellen.
-    2. Türtyp, Aussenbezug, Öffnungsmasse, Öffnungsart, Feuerwiderstand und Schalldämmung im Modell oder in einer verknüpften Liste erfassen.
-    3. Im Team festlegen, wo die Angaben führend gepflegt und wie sie synchronisiert und geprüft werden. Pragmatisch kann dies beispielsweise eine gemeinsam bearbeitete Excel-Datei in SharePoint oder Teams sein.
-    4. Türliste nach berechnetem Bauteiltyp und Abmessungen ableiten und mit den Ausschreibungsplänen abstimmen.
+    1. Erforderliche Türangaben, den führenden Ort der Daten (Modell oder über die Türnummer verknüpfte Liste) und den Abgabetermin festlegen und beim Architekturteam bestellen.
+    2. Türliste einfordern und auf eindeutige Türnummern, vollständige Angaben und Übereinstimmung mit Ausschreibungsplänen, Brandschutz- und Schallschutzkonzept prüfen.
+    3. Türliste freigeben und als Grundlage für Leistungsverzeichnis, Angebotsvergleich und Werkplanung weiterverwenden.
 
     **Lieferergebnis**
     - Architekturmodell und über die Türnummer verknüpfte Türliste mit den erforderlichen Grund- und Fachangaben.
   fr: |-
-    Mettre à disposition les données des portes dans la maquette d'architecture comme base vérifiable pour les quantités et l'appel d'offres.
+    Le maître d'ouvrage commande à l'équipe d'architecture une liste de portes vérifiable issue de la maquette, afin que l'appel d'offres des portes contienne des quantités et des exigences complètes et que les questions et les avenants soient évités.
 
     **Situation de départ**
     - Les types, dimensions d'ouverture, modes d'ouverture, résistances au feu et performances acoustiques sont souvent rassemblés manuellement depuis les plans et listes de portes.
     - Des données manquantes ou incohérentes entraînent des questions, des quantités erronées et des avenants.
 
     **Objectif et bénéfice**
-    - Saisir les types et dimensions d'ouverture dans la maquette d'architecture ; les données techniques complémentaires telles que le mode d'ouverture, la résistance au feu et la performance acoustique peuvent aussi être tenues dans une liste reliée par le numéro de porte.
-    - Déduire une liste de portes traçable comme base pour les quantités et le dossier d'appel d'offres.
+    - Mettre en soumission des données de portes complètes et univoques afin de réduire les suppléments de risque et les avenants.
+    - Contrôler les exigences incendie et acoustiques de chaque porte avant l'adjudication plutôt qu'à la réception.
+    - Utiliser le numéro de porte comme clé commune pour l'appel d'offres, les plans d'atelier et la réception.
 
     **Déroulement**
-    1. Fournir les portes avec un numéro univoque et leur rattachement spatial.
-    2. Saisir le type, le rapport à l'extérieur, les dimensions, le mode d'ouverture, la résistance au feu et la performance acoustique dans la maquette ou dans une liste reliée.
-    3. Définir en équipe où les données de référence sont tenues ainsi que leur synchronisation et leur contrôle. Une solution pragmatique peut être un fichier Excel collaboratif dans SharePoint ou Teams.
-    4. Déduire la liste par type calculé et dimensions et l'accorder avec les plans d'appel d'offres.
+    1. Définir les données de portes requises, l'emplacement de référence des données (maquette ou liste reliée par le numéro de porte) et le délai de remise, puis les commander à l'équipe d'architecture.
+    2. Exiger la liste de portes et vérifier l'unicité des numéros, l'exhaustivité des données et la concordance avec les plans d'appel d'offres et les concepts de protection incendie et d'acoustique.
+    3. Valider la liste de portes et la réutiliser comme base pour le descriptif, la comparaison des offres et les plans d'atelier.
 
     **Livrable**
     - Maquette d'architecture et liste de portes reliée par le numéro de porte avec les données de base et techniques requises.
   it: |-
-    Mettere a disposizione i dati delle porte nel modello di architettura come base verificabile per quantità e gara.
+    La committenza ordina allo studio di architettura un elenco porte verificabile ricavato dal modello, affinché la gara delle porte contenga quantità e requisiti completi ed evitare domande e varianti.
 
     **Situazione di partenza**
     - Tipi, dimensioni, modalità di apertura, resistenza al fuoco e prestazioni acustiche vengono spesso raccolti manualmente da piani ed elenchi porte per la gara.
     - Dati mancanti o incoerenti causano domande, quantità errate e varianti.
 
     **Obiettivo e beneficio**
-    - Gestire tipi e dimensioni nel modello di architettura; i dati specialistici aggiuntivi, come modalità di apertura, resistenza al fuoco e prestazione acustica, possono essere mantenuti anche in un elenco collegato tramite il numero della porta.
-    - Ricavare un elenco porte tracciabile come base per quantità e documenti di gara.
+    - Mettere a gara dati delle porte completi e univoci, riducendo supplementi per rischi e varianti.
+    - Verificare i requisiti antincendio e acustici di ogni porta prima dell'aggiudicazione anziché al collaudo.
+    - Utilizzare il numero della porta come chiave comune per gara, progettazione d'officina e collaudo.
 
     **Svolgimento**
-    1. Fornire le porte con numero univoco e assegnazione spaziale.
-    2. Registrare tipo, rapporto con l'esterno, dimensioni, modalità di apertura, resistenza al fuoco e prestazione acustica nel modello o in un elenco collegato.
-    3. Definire nel team dove vengono gestiti i dati di riferimento e come vengono sincronizzati e verificati. Una soluzione pragmatica può essere un file Excel collaborativo in SharePoint o Teams.
-    4. Ricavare l'elenco per tipo calcolato e dimensioni e coordinarlo con i piani di gara.
+    1. Definire i dati delle porte richiesti, la sede di riferimento dei dati (modello o elenco collegato tramite il numero della porta) e il termine di consegna e ordinarli allo studio di architettura.
+    2. Richiedere l'elenco porte e verificare l'univocità dei numeri, la completezza dei dati e la concordanza con i piani di gara e i concetti antincendio e acustico.
+    3. Approvare l'elenco porte e riutilizzarlo come base per capitolato, confronto delle offerte e progettazione d'officina.
 
     **Risultato della fornitura**
     - Modello di architettura ed elenco porte collegato tramite il numero della porta con i dati di base e specialistici necessari.
   en: |-
-    Provide door information in the architecture model as a verifiable basis for quantities and tendering.
+    The client orders from the architecture team a verifiable door schedule from the model so that the door tender contains complete quantities and requirements and queries and variations are avoided.
 
     **Starting point**
     - Door types, opening dimensions, operation types, fire resistance, and acoustic ratings are often compiled manually from drawings and door schedules.
     - Missing or inconsistent door information leads to queries, incorrect quantities, and variations.
 
     **Goal & benefit**
-    - Maintain door types and opening dimensions in the architecture model; additional specialist information such as operation type, fire resistance, and acoustic rating may instead be maintained in a schedule linked by the door number.
-    - Derive a traceable door schedule as the basis for quantities and tender documents.
+    - Tender complete and unambiguous door information and so reduce risk premiums and variations.
+    - Check fire and acoustic requirements for each door before award rather than at handover.
+    - Use the door number as the shared key for tendering, shop drawings, and handover.
 
     **Process**
-    1. Provide doors with a unique door number and spatial assignment.
-    2. Capture door type, exterior relationship, opening dimensions, operation type, fire resistance, and acoustic rating in the model or in a linked schedule.
-    3. Agree within the team where the authoritative information is maintained and how it is synchronized and checked. A pragmatic solution can be a collaboratively edited Excel file in SharePoint or Teams.
-    4. Derive the schedule by calculated component type and dimensions and coordinate it with the tender drawings.
+    1. Define the required door information, where the data is authoritative (model or a schedule linked by the door number), and the submission date, and order them from the architecture team.
+    2. Request the door schedule and check for unique door numbers, complete information, and consistency with the tender drawings and the fire protection and acoustic concepts.
+    3. Approve the door schedule and reuse it as the basis for the specification, offer comparison, and shop drawings.
 
     **Deliverable**
     - Architecture model and door schedule linked by the door number with the required basic and specialist information.
@@ -90,4 +90,10 @@ status: active
 service_kind: basic
 needed_in_domain:
   - pragmaticbim:domain/architecture
-comment: Tender basis only, not a complete door specification. Technical mappings are defined on the door element attributes.
+comment: >-
+  Tender basis only, not a complete door specification. Technical mappings are
+  defined on the door element attributes. Door type and opening dimensions are
+  kept in the model; specialist information such as operation type, fire
+  resistance, and acoustic rating may instead be kept in a schedule linked by
+  the door number (for example a shared spreadsheet). The schedule is grouped
+  by calculated component type and dimensions.

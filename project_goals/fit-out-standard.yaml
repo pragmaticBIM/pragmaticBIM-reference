@@ -14,7 +14,7 @@ tag:
   en: Fit-out
 description:
   de: |-
-    Festgelegt wird, welche Nutzungen das Gebäude aufnimmt und welcher Ausbaustandard für welche Räume gilt. Diese Festlegung ist die Grundlage, um Räume entsprechend ihrer Nutzung zu planen und die vereinbarten Anforderungen nachvollziehbar zu prüfen. Ohne sie lassen sich Raumprogramm, Möblierbarkeit und Ausbau nicht gegen vereinbarte Anforderungen abgleichen; Abweichungen zeigen sich erst bei der Nutzerabstimmung oder im Betrieb.
+    Festgelegt wird, welche Nutzungen das Gebäude aufnimmt und welcher Ausbaustandard für welche Räume gilt. Diese Festlegung ist die Grundlage, um Räume entsprechend ihrer Nutzung zu planen und die vereinbarten Anforderungen nachvollziehbar zu prüfen.
   fr: |-
     Cet objectif détermine la profondeur de planification et de justification des locaux. Il va du programme des locaux structuré et de l'obtention des plans à partir du modèle jusqu'à l'agencement, les portes, la façade, les plans de plafonds et le mobilier, et jusqu'aux visualisations pour les conventions d'utilisation.
 
@@ -25,8 +25,6 @@ description:
     Aiuta a valutare se un locale non è solo disegnato, ma utilizzabile, arredabile e allineato alle prescrizioni convenute per i locali speciali.
   en: |-
     This framework condition determines which uses the building accommodates and which fit-out standard applies to which spaces. It is the basis for designing spaces to suit their use and for checking the agreed requirements traceably.
-
-    Without it, the room programme, whether spaces can actually be furnished, and the fit-out cannot be reconciled against the agreed requirements; deviations surface only during user consultation or in operation.
 status: active
 comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
 levels:

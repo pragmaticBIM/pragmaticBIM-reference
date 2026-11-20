@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Die Abzugsdichte bestimmt Abluftmenge, Schächte und die Tiefe der Laborarbeitsplätze.
-
-    Ohne diese Festlegung bleiben Abluft und Labortiefe offen. Das Labor wird dann mit zu vielen Abzügen gebaut, oder mit zu wenigen.
   fr: |-
     La densité de hottes détermine le débit d'air extrait, les gaines et la profondeur des postes de laboratoire.
-
-    Sans cette décision, air extrait et profondeur du laboratoire restent ouverts. Le laboratoire est alors construit avec trop de hottes, ou avec trop peu.
   it: |-
     La densità di cappe determina la portata d'aria estratta, i cavedi e la profondità delle postazioni di laboratorio.
-
-    Senza questa decisione aria estratta e profondità del laboratorio restano aperti. Il laboratorio viene allora costruito con troppe cappe, o con troppo poche.
   en: |-
     Fume hood density determines extract airflow, shafts, and how deep the lab workstations are.
-
-    Without this decision extract air and lab depth stay open. The lab is then built with too many fume hoods, or with too few.
 status: active
 uses:
 - pragmaticbim:use/labor

@@ -1,4 +1,8 @@
 id: pragmaticbim:usage-scenario/zur-einheit-gelangen
+legacy_ids:
+- pragmaticbim:usage-scenario/zum-arbeitsplatz-gelangen
+- pragmaticbim:usage-scenario/zum-unterricht-gelangen
+- pragmaticbim:usage-scenario/zur-sportanlage-gelangen
 code: US-GE-01
 sort_order: 1
 name:
@@ -38,6 +42,10 @@ jurisdiction:
 - general
 options:
 - id: pragmaticbim:scenario-option/zur-einheit-gelangen-stair
+  legacy_ids:
+  - pragmaticbim:scenario-option/zum-arbeitsplatz-gelangen-stair
+  - pragmaticbim:scenario-option/zum-unterricht-gelangen-stair
+  - pragmaticbim:scenario-option/zur-sportanlage-gelangen-stair
   sort_order: 1
   name:
     de: Treppenhaus
@@ -47,10 +55,17 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/eingangshalle
     to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/treppenhaus
+    to_room_type: pragmaticbim:room-type/flur
   adds:
   - pragmaticbim:room-type/eingangshalle
   - pragmaticbim:room-type/treppenhaus
+  - pragmaticbim:room-type/flur
 - id: pragmaticbim:scenario-option/zur-einheit-gelangen-stair-elevator
+  legacy_ids:
+  - pragmaticbim:scenario-option/zum-arbeitsplatz-gelangen-stair-elevator
+  - pragmaticbim:scenario-option/zum-unterricht-gelangen-stair-elevator
+  - pragmaticbim:scenario-option/zur-sportanlage-gelangen-stair-elevator
   project_goal_levels:
   - pragmaticbim:project-goal-level/permit-medium
   sort_order: 2
@@ -62,9 +77,14 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/eingangshalle
     to_room_type: pragmaticbim:room-type/treppenhaus
+  - from_room_type: pragmaticbim:room-type/treppenhaus
+    to_room_type: pragmaticbim:room-type/flur
   - from_room_type: pragmaticbim:room-type/eingangshalle
     to_room_type: pragmaticbim:room-type/aufzugszone
+  - from_room_type: pragmaticbim:room-type/aufzugszone
+    to_room_type: pragmaticbim:room-type/flur
   adds:
   - pragmaticbim:room-type/eingangshalle
   - pragmaticbim:room-type/treppenhaus
   - pragmaticbim:room-type/aufzugszone
+  - pragmaticbim:room-type/flur

@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Das Sortiment und die Verkaufsfläche bestimmen Kühlung, Anlieferung, Lager und Hygieneanforderungen.
-
-    Ohne diese Festlegung bleiben Kühlung, Anlieferung und Hygiene offen. Die Verkaufsfläche wird dann für Waren gebaut, die sie nicht aufnehmen kann.
   fr: |-
     L'assortiment et la surface de vente déterminent la réfrigération, la livraison, le stockage et les exigences d'hygiène.
-
-    Sans cette décision, réfrigération, livraison et hygiène restent ouvertes. La surface de vente est alors construite pour des marchandises qu'elle ne peut pas accueillir.
   it: |-
     L'assortimento e la superficie di vendita determinano refrigerazione, fornitura, deposito e requisiti igienici.
-
-    Senza questa decisione refrigerazione, fornitura e igiene restano aperti. La superficie di vendita viene allora costruita per merci che non può accogliere.
   en: |-
     The product range and the sales area determine refrigeration, deliveries, storage, and hygiene requirements.
-
-    Without this decision refrigeration, deliveries, and hygiene stay open. The sales area is then built for goods it cannot hold.
 status: active
 uses:
 - pragmaticbim:use/verkauf

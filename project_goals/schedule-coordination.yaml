@@ -14,7 +14,7 @@ tag:
   en: Schedule
 description:
   de: |-
-    Ziel ist nicht ein bestimmtes Datum, sondern ein Terminplan, der hält. Terminsicherheit entsteht durch rechtzeitige Koordination. Dazu gehören die räumliche Abstimmung zwischen Architektur, Tragwerk und Gebäudetechnik, verbindliche Aussparungen und Koordinationszonen sowie später ausführungsnahe Nachweise. Ohne diese Koordination werden Konflikte erst auf der Baustelle sichtbar, wo jede Lösung Zeit kostet.
+    Ziel ist nicht ein bestimmtes Datum, sondern ein Terminplan, der hält. Terminsicherheit entsteht durch rechtzeitige Koordination. Dazu gehören die räumliche Abstimmung zwischen Architektur, Tragwerk und Gebäudetechnik, verbindliche Aussparungen und Koordinationszonen sowie später ausführungsnahe Nachweise.
   fr: |-
     Cet objectif concerne la coordination qui protège le délai. L'alignement spatial entre architecture, structure et techniques du bâtiment, les réservations contraignantes, les zones de coordination et plus tard les preuves proches de l'exécution empêchent que les conflits n'apparaissent que sur le chantier.
 
@@ -25,8 +25,6 @@ description:
     Aiuta a valutare se il programma poggia su interfacce chiarite e un coordinamento verificabile, o sulla speranza.
   en: |-
     The aim is not a particular date but a schedule that holds. Schedule certainty comes from coordinating in good time. That means spatial coordination between architecture, structural engineering, and building services, binding openings and coordination zones, and later construction-level verification.
-
-    Without that coordination, conflicts surface only on site, where every solution costs time.
 practice:
   de:
     title: Hochhaus ohne Gerüst

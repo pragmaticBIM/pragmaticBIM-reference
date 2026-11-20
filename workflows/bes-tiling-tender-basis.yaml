@@ -8,81 +8,77 @@ name:
   en: Provide the basis for the tiling tender
 description:
   de: |-
-    Plattenbeläge an Böden und Wänden raumweise als prüfbare Grundlage für Mengen und Ausschreibung bereitstellen.
+    Die Bauherrschaft bestellt beim Architekturteam eine raumweise Mengenübersicht der Boden- und Wandplatten aus dem Modell, damit Ausschreibung und Rechnungsprüfung auf derselben nachvollziehbaren Mengenbasis beruhen.
 
     **Ausgangslage**
     - Boden- und Wandplatten werden für die Ausschreibung oft manuell aus Raumlisten und Plänen zusammengestellt.
     - Doppelte Mengenermittlungen für Ausschreibung und Rechnungsprüfung verursachen Aufwand und führen zu nicht nachvollziehbaren Abweichungen.
 
     **Ziel & Nutzen**
-    - Boden- und Wandbelagstyp sowie Nettoflächen je Raum gemeinsam auswerten.
-    - Öffnungen über die Nettowandfläche berücksichtigen und eine vereinbarte Modellunschärfe bewusst akzeptieren.
-    - Bei geometrisch anspruchsvollen Bereichen separate Boden- oder Wandbekleidungen für eine genauere Mengenermittlung modellieren.
+    - Doppelte Mengenermittlung für Ausschreibung und Rechnungsprüfung vermeiden.
+    - Die zulässige Mengentoleranz vorab vereinbaren und Abweichungen bei der Abrechnung daran messen.
 
     **Ablauf**
-    1. Innenräume mit Raumnummer, Boden- und Wandbelag sowie Netto-Boden- und Nettowandfläche bereitstellen.
-    2. Räume mit Plattenbelägen filtern, Flächen und Öffnungsabzüge prüfen und bei ungenügender Genauigkeit separate Bekleidungselemente modellieren.
-    3. Mengen nach Belagsart und Raum auswerten und mit Leistungsverzeichnis und Ausschreibungsplänen abstimmen.
+    1. Geforderte raumweise Angaben zu Boden- und Wandbelag und Nettoflächen, die zulässige Mengentoleranz sowie Abgabetermin festlegen und beim Architekturteam bestellen.
+    2. Mengenübersicht einfordern und auf vollständige Belagszuordnung, plausible Öffnungsabzüge und Einhaltung der Toleranz in geometrisch anspruchsvollen Räumen prüfen.
+    3. Übersicht freigeben und als gemeinsame Grundlage für Leistungsverzeichnis, Angebotsvergleich und Rechnungsprüfung weiterverwenden.
 
     **Lieferergebnis**
     - Architekturmodell mit raumbezogenen Boden- und Wandbelägen sowie prüfbaren Nettoflächen
     - Mengenübersicht nach Belagsart und Raum als Grundlage für Ausschreibung und Rechnungsprüfung
   fr: |-
-    Mettre à disposition les carrelages de sols et de murs par local comme base vérifiable pour les quantités et l'appel d'offres.
+    Le maître d'ouvrage commande à l'équipe d'architecture une vue d'ensemble des quantités de carrelage de sols et de murs par local issue de la maquette, afin que l'appel d'offres et le contrôle des factures reposent sur la même base de quantités traçable.
 
     **Situation de départ**
     - Les carrelages de sols et de murs sont souvent rassemblés manuellement à partir des listes de locaux et des plans pour l'appel d'offres.
     - Des métrés distincts pour l'appel d'offres et le contrôle des factures génèrent du travail et des écarts difficiles à retracer.
 
     **Objectif et bénéfice**
-    - Quantifier ensemble le type de revêtement de sol et de mur ainsi que les surfaces nettes de chaque local.
-    - Tenir compte des ouvertures au moyen de la surface murale nette et accepter consciemment l'imprécision convenue de la maquette.
-    - Modéliser des revêtements de sol ou de mur distincts pour les zones géométriquement complexes qui exigent un métré plus précis.
+    - Éviter des métrés à double pour l'appel d'offres et le contrôle des factures.
+    - Convenir à l'avance de la tolérance admise sur les quantités et mesurer les écarts au décompte par rapport à celle-ci.
 
     **Déroulement**
-    1. Fournir les locaux intérieurs avec numéro, revêtements de sol et de mur ainsi que surfaces nettes de sol et de mur.
-    2. Filtrer les locaux avec carrelage, contrôler les surfaces et les déductions d'ouvertures et, si la précision est insuffisante, modéliser des revêtements distincts.
-    3. Quantifier par type de revêtement et par local, puis coordonner les résultats avec le devis et les plans d'appel d'offres.
+    1. Définir les données requises par local sur les revêtements de sol et de mur et les surfaces nettes, la tolérance admise sur les quantités ainsi que le délai de remise, puis les commander à l'équipe d'architecture.
+    2. Exiger la vue d'ensemble des quantités et vérifier l'attribution complète des revêtements, la plausibilité des déductions d'ouvertures et le respect de la tolérance dans les locaux géométriquement complexes.
+    3. Valider la vue d'ensemble et la réutiliser comme base commune pour le descriptif, la comparaison des offres et le contrôle des factures.
 
     **Livrable**
     - Maquette d'architecture avec revêtements de sol et de mur par local et surfaces nettes vérifiables
     - Vue d'ensemble des quantités par type de revêtement et local comme base pour l'appel d'offres et le contrôle des factures
   it: |-
-    Mettere a disposizione i rivestimenti in piastrelle di pavimenti e pareti per locale come base verificabile per le quantità e la gara.
+    La committenza ordina allo studio di architettura un quadro delle quantità delle piastrelle di pavimenti e pareti per locale ricavato dal modello, affinché gara e controllo delle fatture si basino sulla stessa base di quantità tracciabile.
 
     **Situazione di partenza**
     - I rivestimenti in piastrelle di pavimenti e pareti vengono spesso raccolti manualmente da elenchi locali e piani per la gara.
     - Computi separati per la gara e il controllo delle fatture generano lavoro e scostamenti difficili da ricostruire.
 
     **Obiettivo e beneficio**
-    - Quantificare insieme il tipo di rivestimento di pavimento e parete e le superfici nette di ogni locale.
-    - Considerare le aperture mediante la superficie netta delle pareti e accettare consapevolmente l'imprecisione concordata del modello.
-    - Modellare rivestimenti separati di pavimenti o pareti per le zone geometricamente complesse che richiedono quantità più precise.
+    - Evitare computi doppi per la gara e il controllo delle fatture.
+    - Concordare in anticipo la tolleranza ammessa sulle quantità e misurare su di essa gli scostamenti in fase di liquidazione.
 
     **Svolgimento**
-    1. Fornire gli spazi interni con numero, rivestimenti di pavimento e parete e superfici nette di pavimento e parete.
-    2. Filtrare gli spazi con piastrelle, verificare superfici e deduzioni per aperture e, se la precisione è insufficiente, modellare rivestimenti separati.
-    3. Quantificare per tipo di rivestimento e locale, quindi coordinare i risultati con il capitolato e i piani di gara.
+    1. Definire i dati richiesti per locale su rivestimenti di pavimento e parete e superfici nette, la tolleranza ammessa sulle quantità e il termine di consegna e ordinarli allo studio di architettura.
+    2. Richiedere il quadro delle quantità e verificare l'assegnazione completa dei rivestimenti, la plausibilità delle deduzioni per aperture e il rispetto della tolleranza nei locali geometricamente complessi.
+    3. Approvare il quadro e riutilizzarlo come base comune per capitolato, confronto delle offerte e controllo delle fatture.
 
     **Risultato della fornitura**
     - Modello di architettura con rivestimenti di pavimento e parete per locale e superfici nette verificabili
     - Quadro delle quantità per tipo di rivestimento e locale come base per la gara e il controllo delle fatture
   en: |-
-    Provide floor and wall tiling by space as a verifiable basis for quantities and tendering.
+    The client orders from the architecture team a room-by-room quantity overview of floor and wall tiling from the model, so that tendering and invoice checking rest on the same traceable quantity basis.
 
     **Starting point**
     - Floor and wall tiling is often compiled manually from room lists and drawings for tendering.
     - Separate quantity take-offs for tendering and invoice checking create extra work and discrepancies that are difficult to trace.
 
     **Goal & benefit**
-    - Evaluate floor and wall finish types together with the net areas of each space.
-    - Account for openings through the net wall area and consciously accept the agreed model uncertainty.
-    - Model separate floor or wall coverings for geometrically complex areas that require more accurate quantities.
+    - Avoid separate quantity take-offs for tendering and invoice checking.
+    - Agree the permitted quantity tolerance in advance and measure deviations at final account against it.
 
     **Process**
-    1. Provide interior spaces with room number, floor and wall finishes, and net floor and wall areas.
-    2. Filter spaces with tiling, check areas and opening deductions, and model separate covering elements where accuracy is insufficient.
-    3. Quantify by finish type and space, then coordinate the results with the bill of quantities and tender drawings.
+    1. Define the required room-by-room information on floor and wall finishes and net areas, the permitted quantity tolerance, and the submission date, and order them from the architecture team.
+    2. Request the quantity overview and check for complete finish assignment, plausible opening deductions, and compliance with the tolerance in geometrically complex rooms.
+    3. Approve the overview and reuse it as the shared basis for the bill of quantities, offer comparison, and invoice checking.
 
     **Deliverable**
     - Architecture model with floor and wall finishes by space and verifiable net areas

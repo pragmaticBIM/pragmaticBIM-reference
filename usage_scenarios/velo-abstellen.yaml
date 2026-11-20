@@ -43,11 +43,11 @@ options:
       en: Number of bicycle spaces
     status: active
   room_relationships:
-  - from_room_type: pragmaticbim:room-type/wohnungseingang
+  - from_room_type: pragmaticbim:room-type/eingangshalle
     to_room_type: pragmaticbim:room-type/parkplatz-velo-innen
     max_distance: 30
   adds:
-  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/eingangshalle
   - pragmaticbim:room-type/parkplatz-velo-innen
 - id: pragmaticbim:scenario-option/velo-abstellen-exterior
   project_goal_levels:
@@ -68,11 +68,11 @@ options:
       en: Number of bicycle spaces
     status: active
   room_relationships:
-  - from_room_type: pragmaticbim:room-type/wohnungseingang
+  - from_room_type: pragmaticbim:room-type/eingangshalle
     to_room_type: pragmaticbim:room-type/parkplatz-velo-aussen
     max_distance: 30
   adds:
-  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/eingangshalle
   - pragmaticbim:room-type/parkplatz-velo-aussen
 - id: pragmaticbim:scenario-option/velo-abstellen-none
   sort_order: 3

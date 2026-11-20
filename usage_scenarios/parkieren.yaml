@@ -46,12 +46,11 @@ options:
   - from_room_type: pragmaticbim:room-type/strasse
     to_room_type: pragmaticbim:room-type/parkplatz-pkw-innen
   - from_room_type: pragmaticbim:room-type/parkplatz-pkw-innen
-    to_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/eingangshalle
     max_distance: 40
   adds:
-  - pragmaticbim:room-type/strasse
   - pragmaticbim:room-type/parkplatz-pkw-innen
-  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/eingangshalle
 - id: pragmaticbim:scenario-option/parkieren-exterior
   project_goal_levels:
   - pragmaticbim:project-goal-level/fit-out-standard
@@ -74,12 +73,11 @@ options:
   - from_room_type: pragmaticbim:room-type/strasse
     to_room_type: pragmaticbim:room-type/parkplatz-pkw-aussen
   - from_room_type: pragmaticbim:room-type/parkplatz-pkw-aussen
-    to_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/eingangshalle
     max_distance: 40
   adds:
-  - pragmaticbim:room-type/strasse
   - pragmaticbim:room-type/parkplatz-pkw-aussen
-  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/eingangshalle
 - id: pragmaticbim:scenario-option/parkieren-external
   sort_order: 3
   name:

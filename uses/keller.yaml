@@ -1,0 +1,15 @@
+# Supporting use for massing volumes (basement), not a reason to build.
+id: pragmaticbim:use/keller
+code: USE-KL
+sort_order: 17
+name:
+  de: Keller
+  fr: Sous-sol
+  it: Interrato
+  en: Basement
+definition:
+  de: Bruttovolumen des Kellers mit Abteilen und Erschliessung.
+  fr: Volume brut du sous-sol avec compartiments et desserte.
+  it: Volume lordo dell'interrato con scomparti e distribuzione.
+  en: Gross volume of the basement with compartments and circulation.
+status: active

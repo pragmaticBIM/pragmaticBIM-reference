@@ -7,14 +7,14 @@ name:
   it: Nuotare
   en: Swimming
 description:
-  de: Schwimmende trainieren, lernen schwimmen oder erholen sich im Wasser. Das Becken entscheidet über
-    Technikflächen, Aufsicht und Garderoben.
-  fr: Les nageurs s'entraînent, apprennent à nager ou se détendent dans l'eau. Le bassin détermine les
-    surfaces techniques, la surveillance et les vestiaires.
-  it: I nuotatori si allenano, imparano a nuotare o si rilassano in acqua. La vasca determina superfici
-    tecniche, sorveglianza e spogliatoi.
-  en: Swimmers train, learn to swim, or relax in the water. The pool determines plant area, supervision,
-    and changing facilities.
+  de: Schwimmende trainieren, lernen schwimmen oder erholen sich im Wasser. Lage und Wassertiefe entscheiden
+    über Hülle, Technikfläche und Aufsicht.
+  fr: Les nageurs s'entraînent, apprennent à nager ou se détendent dans l'eau. L'emplacement et la profondeur
+    de l'eau déterminent l'enveloppe, la surface technique et la surveillance.
+  it: I nuotatori si allenano, imparano a nuotare o si rilassano in acqua. Posizione e profondità dell'acqua
+    determinano involucro, superficie tecnica e sorveglianza.
+  en: Swimmers train, learn to swim, or relax in the water. Location and water depth determine the enclosure,
+    plant area, and supervision.
 scope: use
 uses:
 - pragmaticbim:use/sport
@@ -24,25 +24,37 @@ status: active
 jurisdiction:
 - general
 options:
-- id: pragmaticbim:scenario-option/schwimmen-pool
+- id: pragmaticbim:scenario-option/schwimmen-aussen
+  legacy_ids:
+  - pragmaticbim:scenario-option/schwimmen-pool
+  - pragmaticbim:scenario-option/schwimmen-pool-changing
   sort_order: 1
   name:
-    de: Becken
-    fr: Bassin
-    it: Vasca
-    en: Pool
+    de: Aussen
+    fr: Extérieur
+    it: Esterno
+    en: Outdoor
   adds:
   - pragmaticbim:room-type/beckenflaeche
-- id: pragmaticbim:scenario-option/schwimmen-pool-changing
+- id: pragmaticbim:scenario-option/schwimmen-innen
   sort_order: 2
   name:
-    de: Becken mit Umkleide
-    fr: Bassin avec vestiaire
-    it: Vasca con spogliatoio
-    en: Pool with changing room
+    de: Innen
+    fr: Intérieur
+    it: Interno
+    en: Indoor
   room_relationships:
-  - from_room_type: pragmaticbim:room-type/umkleideraum
-    to_room_type: pragmaticbim:room-type/beckenflaeche
+  - from_room_type: pragmaticbim:room-type/eingangshalle
+    to_room_type: pragmaticbim:room-type/schwimmhalle
   adds:
-  - pragmaticbim:room-type/umkleideraum
-  - pragmaticbim:room-type/beckenflaeche
+  - pragmaticbim:room-type/eingangshalle
+  - pragmaticbim:room-type/schwimmhalle
+- id: pragmaticbim:scenario-option/schwimmen-kinderbecken
+  sort_order: 3
+  name:
+    de: Kinderbecken
+    fr: Bassin pour enfants
+    it: Vasca per bambini
+    en: Children's pool
+  adds:
+  - pragmaticbim:room-type/kinderbecken

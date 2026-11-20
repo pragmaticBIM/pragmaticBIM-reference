@@ -35,11 +35,10 @@ options:
   - from_room_type: pragmaticbim:room-type/strasse
     to_room_type: pragmaticbim:room-type/postraum
   - from_room_type: pragmaticbim:room-type/postraum
-    to_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/eingangshalle
   adds:
-  - pragmaticbim:room-type/strasse
   - pragmaticbim:room-type/postraum
-  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/eingangshalle
 - id: pragmaticbim:scenario-option/post-anlieferung-exterior
   project_goal_levels:
   - pragmaticbim:project-goal-level/fit-out-standard
@@ -53,5 +52,4 @@ options:
   - from_room_type: pragmaticbim:room-type/strasse
     to_room_type: pragmaticbim:room-type/briefkasten-paketfachanlage-aussen
   adds:
-  - pragmaticbim:room-type/strasse
   - pragmaticbim:room-type/briefkasten-paketfachanlage-aussen

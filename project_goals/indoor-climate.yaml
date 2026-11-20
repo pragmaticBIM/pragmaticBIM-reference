@@ -14,21 +14,13 @@ tag:
   en: Climate
 description:
   de: |-
-    Festgelegt wird, ob Räume nur beheizt, zusätzlich gekühlt oder in Temperatur und Feuchte geregelt werden. Die Festlegung bestimmt die Raumtypen mit ihren Sollwerten und die Gebäudetechnik. Sie gehört zu den teuersten Entscheiden der Bauherrschaft.
-
-    Ohne diese Festlegung werden Technikflächen, Schächte und Deckenhöhen für ein Raumklima ausgelegt, das sich später ändert. Nachträglich eingebaute Kühlung oder Befeuchtung braucht Platz, den das Projekt nicht mehr hat.
+    Festgelegt wird, ob Räume nur beheizt, zusätzlich gekühlt oder in Temperatur und Feuchte geregelt werden. Die Festlegung bestimmt die Raumtypen mit ihren Sollwerten, die Gebäudetechnik und damit Technikflächen, Schächte und Deckenhöhen. Sie gehört zu den teuersten Entscheiden der Bauherrschaft.
   fr: |-
-    Cette condition-cadre détermine si les locaux sont seulement chauffés, également refroidis ou régulés en température et en humidité. Elle détermine les types de locaux avec leurs valeurs de consigne et les installations techniques. Elle fait partie des décisions les plus coûteuses du maître d'ouvrage.
-
-    Sans cette définition, les surfaces techniques, les gaines et les hauteurs d'étage sont dimensionnées pour un climat intérieur qui change par la suite. Un refroidissement ou une humidification ajoutés après coup demandent une place dont le projet ne dispose plus.
+    Cette condition-cadre détermine si les locaux sont seulement chauffés, également refroidis ou régulés en température et en humidité. Elle détermine les types de locaux avec leurs valeurs de consigne, les installations techniques et donc les surfaces techniques, les gaines et les hauteurs d'étage. Elle fait partie des décisions les plus coûteuses du maître d'ouvrage.
   it: |-
-    Questa condizione quadro stabilisce se i locali vengono solo riscaldati, anche raffrescati o regolati in temperatura e umidità. Determina i tipi di locali con i loro valori nominali e gli impianti. È una delle decisioni più costose del committente.
-
-    Senza questa definizione, superfici tecniche, cavedi e altezze di piano vengono dimensionati per un clima interno che in seguito cambia. Un raffrescamento o un'umidificazione aggiunti a posteriori richiedono uno spazio che il progetto non ha più.
+    Questa condizione quadro stabilisce se i locali vengono solo riscaldati, anche raffrescati o regolati in temperatura e umidità. Determina i tipi di locali con i loro valori nominali, gli impianti e quindi superfici tecniche, cavedi e altezze di piano. È una delle decisioni più costose del committente.
   en: |-
-    This framework condition sets whether spaces are only heated, also cooled, or controlled for temperature and humidity. It drives the room types with their target values and the building services. It is one of the most expensive decisions the client makes.
-
-    Without it, plant areas, shafts, and storey heights are designed for an indoor climate that changes later. Cooling or humidification added afterwards needs space the design no longer has.
+    This framework condition sets whether spaces are only heated, also cooled, or controlled for temperature and humidity. It drives the room types with their target values, the building services, and with them plant areas, shafts, and storey heights. It is one of the most expensive decisions the client makes.
 status: active
 is_boundary_condition: true
 comment: 'Kumulativ. Einfluss auf Raumtypen: Sollwerte SummerTemperatureMax und RelativeHumidity* sowie die Grösse von hlk-zentralraum und kaelteraum hängen von der Stufe ab. Raumtyp-Konfigurationen über project_goal_levels verknüpfen ist offen. Die Stufen setzen die Sollwerte am Innenraum über performance_targets.'

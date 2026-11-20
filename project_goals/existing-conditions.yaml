@@ -14,7 +14,7 @@ tag:
   en: Existing
 description:
   de: |-
-    Festgelegt wird, welche Bestandsgrundlagen beschafft werden: nur Lagebezug und Gelände, zusätzlich Gebäudekörper und Rohbau oder Rohbau, Ausbau und TGA. Die Bestellung definiert das erwartete Ergebnis und begrenzt Aufnahme und Modellierung auf den projektrelevanten Umfang. Ohne diese Festlegung wird entweder zu wenig aufgenommen und später teuer nachgemessen, oder der Bestand wird vollständig modelliert, obwohl nur ein Teil davon gebraucht wird.
+    Festgelegt wird, welche Bestandsgrundlagen beschafft werden: nur Lagebezug und Gelände, zusätzlich Gebäudekörper und Rohbau oder Rohbau, Ausbau und TGA. Die Bestellung definiert das erwartete Ergebnis und begrenzt Aufnahme und Modellierung auf den projektrelevanten Umfang.
   fr: |-
     Cette condition-cadre détermine quelles bases de l’existant sont commandées: référentiel spatial et terrain, en plus bâtiment et gros œuvre, ou gros œuvre, aménagements et installations techniques.
 
@@ -25,8 +25,6 @@ description:
     L’incarico definisce il risultato atteso e limita rilievo e modellazione all’estensione pertinente per il progetto.
   en: |-
     This framework condition determines which existing-condition information is procured: spatial reference and terrain only; those plus the building mass and structural shell; or structural shell, fit-out, and MEP. The brief defines the expected result and limits surveying and modelling to the scope the project actually needs.
-
-    Without it, either too little is surveyed and has to be measured again later at cost, or the existing fabric is modelled in full when only part of it is needed.
 status: active
 comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ). Aufwandstiefe projektspezifisch.'
 levels:

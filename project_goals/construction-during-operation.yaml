@@ -14,21 +14,13 @@ tag:
   en: Operation
 description:
   de: |-
-    Festgelegt wird, ob das Gebäude während der Bauarbeiten genutzt wird. Die Festlegung bestimmt Etappierung, Provisorien und Baulogistik. Bei der Erneuerung von Schulen, Spitälern und Bürobauten ist sie entscheidend.
-
-    Ohne diese Festlegung wird das Projekt für eine leere Baustelle geplant. Etappen, Ersatzflächen und getrennte Wege für Betrieb und Baustelle kommen dann erst bei der Ausführung dazu.
+    Festgelegt wird, ob das Gebäude während der Bauarbeiten genutzt wird. Die Festlegung bestimmt Etappierung, Provisorien, Ersatzflächen und die Baulogistik mit getrennten Wegen für Betrieb und Baustelle. Bei der Erneuerung von Schulen, Spitälern und Bürobauten ist sie entscheidend.
   fr: |-
-    Cette condition-cadre détermine si le bâtiment est utilisé pendant les travaux. Elle détermine l'étapage, les installations provisoires et la logistique de chantier. Elle est décisive pour la rénovation d'écoles, d'hôpitaux et d'immeubles de bureaux.
-
-    Sans cette définition, le projet est planifié pour un chantier vide. Étapes, surfaces de remplacement et cheminements séparés pour l'exploitation et le chantier ne s'ajoutent alors qu'à la réalisation.
+    Cette condition-cadre détermine si le bâtiment est utilisé pendant les travaux. Elle détermine l'étapage, les installations provisoires, les surfaces de remplacement et la logistique de chantier avec des cheminements séparés pour l'exploitation et le chantier. Elle est décisive pour la rénovation d'écoles, d'hôpitaux et d'immeubles de bureaux.
   it: |-
-    Questa condizione quadro stabilisce se l'edificio viene utilizzato durante i lavori. Determina tappe, provvisori e logistica di cantiere. È decisiva per il rinnovo di scuole, ospedali ed edifici per uffici.
-
-    Senza questa definizione, il progetto viene pianificato per un cantiere vuoto. Tappe, superfici sostitutive e percorsi separati per esercizio e cantiere si aggiungono allora solo in fase di esecuzione.
+    Questa condizione quadro stabilisce se l'edificio viene utilizzato durante i lavori. Determina tappe, provvisori, superfici sostitutive e logistica di cantiere con percorsi separati per esercizio e cantiere. È decisiva per il rinnovo di scuole, ospedali ed edifici per uffici.
   en: |-
-    This framework condition sets whether the building stays in use during construction. It drives phasing, temporary measures, and site logistics. It is decisive when renovating schools, hospitals, and offices.
-
-    Without it, the project is planned for an empty site. Phases, decant space, and separate routes for operation and construction are then added only during construction.
+    This framework condition sets whether the building stays in use during construction. It drives phasing, temporary measures, decant space, and site logistics with separate routes for operation and construction. It is decisive when renovating schools, hospitals, and offices.
 status: active
 is_boundary_condition: true
 comment: 'Kumulativ. Kein Einfluss auf Raumtypen; Provisorien und Etappierung sind die Wirkung, nicht neue Räume. Vor allem bei Umbauten relevant (PG-06 Arbeiten im Bestand).'

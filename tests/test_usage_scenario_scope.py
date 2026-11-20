@@ -11,12 +11,13 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SCOPES = {"project", "use", "unit"}
-ROOM_SCOPES = {"site", "building", "unit"}
+ROOM_SCOPES = {"site", "building", "dwelling"}
 
-# Rooms a `unit` scenario may add although their default scope is not `unit`, keyed by option id.
+# Rooms a `unit` scenario may add although their default scope is not `dwelling`, keyed by option id.
 UNIT_SCENARIO_EXCEPTIONS: dict[str, set[str]] = {
     # The variant offers a shared office in the building instead of a room in the unit.
     "pragmaticbim:scenario-option/arbeiten-von-zuhause-community-office": {
+        "pragmaticbim:room-type/eingangshalle",
         "pragmaticbim:room-type/gemeinschaftsbuero",
     },
     # Hotelzimmer is the main room of every Beherbergung unit type.
@@ -85,8 +86,8 @@ def test_unit_scenario_adds_only_unit_rooms(scenario: dict[str, Any]) -> None:
         allowed = UNIT_SCENARIO_EXCEPTIONS.get(option["id"], set())
         for room in option.get("adds") or []:
             scope = _room_types()[room].get("default_scope")
-            assert scope == "unit" or room in allowed, (
-                f"{option['id']}: adds {room} with scope {scope!r}; a unit scenario adds unit rooms only"
+            assert scope == "dwelling" or room in allowed, (
+                f"{option['id']}: adds {room} with scope {scope!r}; a unit scenario adds dwelling rooms only"
             )
 
 
@@ -102,7 +103,7 @@ def test_unit_scenario_exceptions_are_current() -> None:
         added = set(options[option_id].get("adds") or [])
         for room in rooms:
             assert room in added, f"{option_id}: exception for {room}, which the option does not add"
-            assert _room_types()[room].get("default_scope") != "unit", f"{option_id}: {room} needs no exception"
+            assert _room_types()[room].get("default_scope") != "dwelling", f"{option_id}: {room} needs no exception"
 
 
 def test_unit_types_have_exactly_one_use() -> None:

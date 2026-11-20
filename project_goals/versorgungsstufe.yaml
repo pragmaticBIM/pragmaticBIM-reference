@@ -15,20 +15,12 @@ tag:
 description:
   de: |-
     Die Versorgungsstufe und die Zahl der Betten, Behandlungsplätze und OP-Säle bestimmen Pflegestationen, Diagnostik, Technik und Logistik.
-
-    Ohne diese Festlegung bleiben Pflegestationen, Diagnostik und OP-Säle offen. Das Haus wird dann für eine Versorgung gebaut, die es nicht leistet.
   fr: |-
     Le niveau de soins et le nombre de lits, de places de traitement et de salles d'opération déterminent les unités de soins, le diagnostic, la technique et la logistique.
-
-    Sans cette décision, unités de soins, diagnostic et salles d'opération restent ouverts. Le bâtiment est alors construit pour un niveau de soins qu'il ne fournit pas.
   it: |-
     Il livello di cura e il numero di letti, posti di trattamento e sale operatorie determinano reparti di degenza, diagnostica, impianti e logistica.
-
-    Senza questa decisione reparti di degenza, diagnostica e sale operatorie restano aperti. L'edificio viene allora costruito per un livello di cura che non eroga.
   en: |-
     The level of care and the number of beds, treatment places, and operating theatres determine wards, diagnostics, building services, and logistics.
-
-    Without this decision wards, diagnostics, and operating theatres stay open. The building is then built for a level of care it does not provide.
 status: active
 uses:
 - pragmaticbim:use/gesundheit

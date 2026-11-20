@@ -65,8 +65,8 @@ HATCH_INSET = 0.06
 HATCH_FRAME_WIDTH = 0.04
 HATCH_FRAME_DROP = 0.02
 HATCH_FLAP_THICKNESS = 0.03
-# Opening angle of the flap from the closed position, degrees.
-HATCH_OPEN_ANGLE = 105.0
+# Opening angle of the flap below the closed position, degrees.
+HATCH_OPEN_ANGLE = 75.0
 
 
 def _find_partition_wall(ifc_file: ifcopenshell.file) -> ifcopenshell.entity_instance:
@@ -441,7 +441,8 @@ def _add_suspended_ceiling_with_hatch(
     )
 
     # Frame lining the cut plus the opened flap, hinged on the camera-far
-    # edge (low Y) and standing up in the plenum so it reads from above.
+    # edge (low Y) and hanging down into the room, tilted toward the camera
+    # so it reads through the opening from above.
     panel = create_entity(ifc_file, ifc_class="IfcDoor", name="RO-01", predefined_type="TRAPDOOR")
     assign_container(ifc_file, relating_structure=storey, products=[panel])
     frame_z0 = finish_ceiling_height - HATCH_FRAME_DROP
@@ -462,9 +463,9 @@ def _add_suspended_ceiling_with_hatch(
         ifc_file,
         rect_polyline(0.0, 0.0, flap_len, HATCH_FLAP_THICKNESS),
         (hx1 - hx0) - 2.0 * HATCH_INSET,
-        origin=(hx0 + HATCH_INSET, hy0 + t, finish_ceiling_height + CEILING_COVERING_THICKNESS),
+        origin=(hx0 + HATCH_INSET, hy0 + t, frame_z0),
         axis=(1.0, 0.0, 0.0),
-        ref_direction=(0.0, math.cos(angle), math.sin(angle)),
+        ref_direction=(0.0, math.cos(angle), -math.sin(angle)),
     )
     assign_representation(
         ifc_file,
