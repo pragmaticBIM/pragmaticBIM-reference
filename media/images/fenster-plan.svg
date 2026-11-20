@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="150.0mm" height="160.0mm" viewBox="0 0 1.5000 1.6000">
+<g transform="translate(0.1500 1.4500) scale(1 -1)">
+<line x1="0.0" y1="0.0" x2="1.2" y2="0.0" fill="none" stroke="#1a1a1a" stroke-width="0.02" />
+<line x1="0.0" y1="0.04" x2="1.2" y2="0.04" fill="none" stroke="#1a1a1a" stroke-width="0.012" />
+<line x1="0.6" y1="0.0" x2="0.6" y2="0.04" fill="none" stroke="#1a1a1a" stroke-width="0.01" />
+</g>
+</svg>

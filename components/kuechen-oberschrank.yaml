@@ -50,4 +50,6 @@ parameters:
 representation:
   body: box
   plan_symbol: wall_cabinet
+picture_link: kuechen-oberschrank-plan.svg
+attachment_link: kuechen-oberschrank.ifc
 status: active

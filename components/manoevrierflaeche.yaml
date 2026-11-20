@@ -45,4 +45,6 @@ representation:
   body: volume
   plan_symbol: manoeuvring_area
 comment: Darf Freiflächen von Apparaten überlagern, nicht aber Apparate und Wände.
+picture_link: manoevrierflaeche-plan.svg
+attachment_link: manoevrierflaeche.ifc
 status: active

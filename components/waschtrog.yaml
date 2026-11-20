@@ -54,4 +54,6 @@ connections:
 representation:
   body: box
   plan_symbol: utility_sink
+picture_link: waschtrog-plan.svg
+attachment_link: waschtrog.ifc
 status: active

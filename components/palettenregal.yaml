@@ -52,4 +52,6 @@ representation:
   body: box
   plan_symbol: pallet_rack
 comment: Gangbreite nach Staplertyp; Planungswert; vor Freigabe fachlich bestätigen.
+picture_link: palettenregal-plan.svg
+attachment_link: palettenregal.ifc
 status: active

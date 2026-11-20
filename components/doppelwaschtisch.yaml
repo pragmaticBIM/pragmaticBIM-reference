@@ -55,4 +55,6 @@ representation:
   body: box
   plan_symbol: washbasin_double
 comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: doppelwaschtisch-plan.svg
+attachment_link: doppelwaschtisch.ifc
 status: active

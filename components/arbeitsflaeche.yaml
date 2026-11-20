@@ -56,4 +56,6 @@ connections:
 representation:
   body: box
   plan_symbol: worktop
+picture_link: arbeitsflaeche-plan.svg
+attachment_link: arbeitsflaeche.ifc
 status: active

@@ -56,4 +56,6 @@ connections:
 representation:
   body: volume
   plan_symbol: device_medical
+picture_link: geraeteplatz-medizingeraet-plan.svg
+attachment_link: geraeteplatz-medizingeraet.ifc
 status: active

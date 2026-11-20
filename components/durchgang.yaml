@@ -33,4 +33,6 @@ parameters:
 representation:
   body: opening
   plan_symbol: passage
+picture_link: durchgang-plan.svg
+attachment_link: durchgang.ifc
 status: active

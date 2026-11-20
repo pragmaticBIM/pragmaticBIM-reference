@@ -56,4 +56,6 @@ representation:
   body: box
   plan_symbol: workbench
 comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: werkbank-plan.svg
+attachment_link: werkbank.ifc
 status: active

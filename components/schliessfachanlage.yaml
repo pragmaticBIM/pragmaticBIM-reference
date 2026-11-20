@@ -55,4 +55,6 @@ representation:
   body: box
   plan_symbol: lockers
 comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: schliessfachanlage-plan.svg
+attachment_link: schliessfachanlage.ifc
 status: active

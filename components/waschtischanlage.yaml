@@ -55,4 +55,6 @@ representation:
   body: box
   plan_symbol: washbasin_row
 comment: 'Rund 0.60 m Plattenlänge pro Becken. Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: waschtischanlage-plan.svg
+attachment_link: waschtischanlage.ifc
 status: active
