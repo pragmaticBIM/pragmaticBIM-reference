@@ -60,4 +60,6 @@ representation:
   body: box
   plan_symbol: lab_bench_island
 comment: 'Gangbreite: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: laborbank-mittel-plan.svg
+attachment_link: laborbank-mittel.ifc
 status: active

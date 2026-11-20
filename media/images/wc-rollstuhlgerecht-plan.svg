@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="68.0mm" height="138.0mm" viewBox="0 0 0.6800 1.3800">
+<g transform="translate(0.1500 1.2300) scale(1 -1)">
+<rect x="0.0" y="0.0" width="0.38" height="0.14" fill="#e8e8e8" stroke="#1a1a1a" stroke-width="0.012" />
+<ellipse cx="0.19" cy="0.42" rx="0.1444" ry="0.23519999999999996" fill="#f5f5f5" stroke="#1a1a1a" stroke-width="0.012" />
+<rect x="-0.02" y="-0.02" width="0.42" height="0.74" fill="none" stroke="#1a1a1a" stroke-width="0.008" stroke-dasharray="0.04 0.02" />
+</g>
+</svg>

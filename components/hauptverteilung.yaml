@@ -52,4 +52,6 @@ representation:
   body: box
   plan_symbol: switchboard
 comment: Bediengang nach Starkstromverordnung; Planungswert; vor Freigabe fachlich bestätigen.
+picture_link: hauptverteilung-plan.svg
+attachment_link: hauptverteilung.ifc
 status: active

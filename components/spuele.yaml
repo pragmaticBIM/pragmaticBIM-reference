@@ -46,4 +46,6 @@ connections:
 representation:
   body: box
   plan_symbol: kitchen_sink
+picture_link: spuele-plan.svg
+attachment_link: spuele.ifc
 status: active

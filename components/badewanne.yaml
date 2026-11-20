@@ -54,4 +54,6 @@ representation:
   body: box
   plan_symbol: bathtub
 comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: badewanne-plan.svg
+attachment_link: badewanne.ifc
 status: active

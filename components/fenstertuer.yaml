@@ -43,4 +43,6 @@ representation:
   body: opening
   plan_symbol: door_swing
 comment: Schwelle hindernisfrei ausbilden. Mass nach SIA 500 vor Freigabe fachlich bestätigen.
+picture_link: fenstertuer-plan.svg
+attachment_link: fenstertuer.ifc
 status: active

@@ -65,4 +65,6 @@ representation:
   body: volume
   plan_symbol: server_rack
 comment: Gänge nach Kühlkonzept (Kalt- und Warmgang). Planungswert; vor Freigabe fachlich bestätigen.
+picture_link: serverschrank-plan.svg
+attachment_link: serverschrank.ifc
 status: active

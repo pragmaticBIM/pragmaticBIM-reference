@@ -48,4 +48,6 @@ clearances:
 representation:
   body: box
   plan_symbol: shelf
+picture_link: regal-plan.svg
+attachment_link: regal.ifc
 status: active

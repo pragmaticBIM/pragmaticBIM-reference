@@ -46,4 +46,6 @@ representation:
   plan_symbol: chair_row
 comment: Rund 0.50 m Reihenbreite pro Platz. Durchgang und Reihenlänge nach Brandschutzvorschriften projektbezogen
   festlegen.
+picture_link: stuhlreihe-plan.svg
+attachment_link: stuhlreihe.ifc
 status: active

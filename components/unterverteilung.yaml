@@ -52,4 +52,6 @@ connections:
 representation:
   body: box
   plan_symbol: distribution_board
+picture_link: unterverteilung-plan.svg
+attachment_link: unterverteilung.ifc
 status: active

@@ -51,4 +51,6 @@ representation:
   plan_symbol: air_handler
 comment: Bedienseite in Gerätetiefe für Filterzug. Masse nach Fachplanung ersetzen; Planungswert; vor
   Freigabe fachlich bestätigen.
+picture_link: lueftungsgeraet-plan.svg
+attachment_link: lueftungsgeraet.ifc
 status: active

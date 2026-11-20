@@ -49,4 +49,6 @@ representation:
   body: box
   plan_symbol: desk
 comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: schreibtisch-plan.svg
+attachment_link: schreibtisch.ifc
 status: active

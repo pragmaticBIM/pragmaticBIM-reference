@@ -54,4 +54,6 @@ representation:
   body: box
   plan_symbol: wardrobe
 comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: einbauschrank-plan.svg
+attachment_link: einbauschrank.ifc
 status: active

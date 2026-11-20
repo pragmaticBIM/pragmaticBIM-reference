@@ -1,0 +1,31 @@
+name: Notify homepage
+
+# On each published release (not a pre-release), tell the homepage to re-sync
+# the Reference. Listener: simondilhas/homepages_abstract
+# .github/workflows/sync-reference.yml (event_type: reference-released).
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  dispatch:
+    if: github.event.release.prerelease == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger reference sync on the homepage
+        env:
+          GH_TOKEN: ${{ secrets.HOMEPAGE_DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::Secret HOMEPAGE_DISPATCH_TOKEN is missing; the homepage was not notified."
+            exit 1
+          fi
+          gh api repos/simondilhas/homepages_abstract/dispatches \
+            -f event_type=reference-released \
+            -f "client_payload[repository]=${{ github.repository }}" \
+            -f "client_payload[ref]=${{ github.event.release.tag_name }}" \
+            -f "client_payload[sha]=${{ github.sha }}"

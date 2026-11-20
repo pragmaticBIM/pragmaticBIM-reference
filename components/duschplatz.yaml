@@ -53,4 +53,6 @@ representation:
   body: box
   plan_symbol: shower
 comment: 'Achsabstand und Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+picture_link: duschplatz-plan.svg
+attachment_link: duschplatz.ifc
 status: active
