@@ -1,0 +1,13 @@
+# VKF 15-15 Ziff. 3.2.3: basement column R 30 < R 60
+
+@prefix pbs: <https://schema.pragmaticbim.ch/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc: <https://w3id.org/ifc/IFC4_ADD2#> .
+@prefix ex: <https://schema.pragmaticbim.ch/ex/> .
+
+ex:level a pbs:LevelContext ; pbs:elevation -3.0 .
+ex:focus a pbs:SeparatorWall ;
+  pbs:parent_level ex:level ;
+  pbs:performance_properties
+    [ pbs:property_key pbs:structural_property_load_bearing ; pbs:property_value_boolean true ] ,
+    [ pbs:property_key pbs:fire_property_resistance_rating ; pbs:property_value_string "R30" ] .
