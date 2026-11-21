@@ -1,5 +1,5 @@
 # Example caller for pragmaticBIM/pragmaticBIM-reference. Generated from templates/agent-worker.yml.
-# PRs go to `development`; `main` is promoted by the maintainer (MERGE_POLICY.md).
+# PRs go to `main` (MERGE_POLICY.md).
 # AGENTS.md says agents must not enable auto-merge: the merge gate decides. So merge_mode is none:
 # the worker opens the PR and leaves the merge to the gate. Human label is the repo's `needs-maintainer`.
 # check_cmd is the repo's own "before opening the PR" list: pytest and the translation audit.
@@ -26,7 +26,7 @@ name: Agent worker
 
 on:
   push:
-    branches: [development]
+    branches: [main]
   issues:
     types: [labeled, closed]
   schedule:
@@ -101,7 +101,7 @@ jobs:
           issue: ${{ needs.pick.outputs.issue }}
           worker_model: ${{ env.WORKER_MODEL }}
           review_model: ${{ env.REVIEW_MODEL }}
-          base_branch: development
+          base_branch: main
           check_cmd: python -m pytest -q && python scripts/audit_translations.py --gaps --lint --placeholders
           instruction_files: AGENTS.md CONTRIBUTING.md MERGE_POLICY.md
           merge_mode: none

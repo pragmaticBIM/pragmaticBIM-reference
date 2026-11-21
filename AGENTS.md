@@ -23,7 +23,7 @@ Labels are the state machine. Only the maintainer sets `agent_ready`.
 
 ### When the worker workflow runs you
 
-The workflow `.github/workflows/agent-worker.yml` works issues the maintainer labels `queued`, one at a time. It creates the branch, commits, opens the PR against `development` and sets the labels. It does not enable auto-merge: the merge gate decides. You only edit files and run the checks under "Before opening the PR" until they pass. Do not run git or gh, and skip the pickup, label, branch and PR steps above. If you cannot continue (protected path, unclear issue, content or modelling decision), write the reason to `.agent-tmp/blocked.md` and stop; the workflow sets `needs-maintainer` and comments it on the issue. A second model reviews the diff, so make the diff match the issue and nothing else.
+The workflow `.github/workflows/agent-worker.yml` works issues the maintainer labels `queued`, one at a time. It creates the branch, commits, opens the PR against `main` and sets the labels. It does not enable auto-merge: the merge gate decides. You only edit files and run the checks under "Before opening the PR" until they pass. Do not run git or gh, and skip the pickup, label, branch and PR steps above. If you cannot continue (protected path, unclear issue, content or modelling decision), write the reason to `.agent-tmp/blocked.md` and stop; the workflow sets `needs-maintainer` and comments it on the issue. A second model reviews the diff, so make the diff match the issue and nothing else.
 
 ## Branches and pull requests
 
