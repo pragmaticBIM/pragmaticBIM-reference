@@ -180,7 +180,7 @@ configurations:
       value:
         min: 0.3
         max: 0.3
-      severity: required
+      severity: preferred
       source:
         kind: default
         note: Planungswert; vor Freigabe fachlich bestätigen
@@ -197,13 +197,12 @@ configurations:
       target:
         equipment_function: working
       distance:
-        max: 1.0
+        max: 0.5
       scope: each_target
-      severity: required
+      severity: preferred
       source:
         kind: default
         note: Planungswert; vor Freigabe fachlich bestätigen
-      comment: Abstand zum Arbeitsplatz als Planungswert vor Freigabe fachlich bestätigen.
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
     status: active
   - id: pragmaticbim:room-type-equipment/buero-default-lichtschalter
