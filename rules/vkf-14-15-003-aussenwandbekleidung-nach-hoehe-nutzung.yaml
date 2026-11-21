@@ -1,0 +1,54 @@
+id: pragmaticbim:rule/vkf-14-15-003-aussenwandbekleidung-nach-hoehe-nutzung
+code: VKF-14-15-003
+sort_order: 38
+name:
+  de: 'Aussenwandbekleidungssysteme: Brandverhalten nach Gebäudehöhe und Nutzung'
+  en: 'External wall cladding systems: reaction to fire by building height and use'
+  fr: 'Systèmes de revêtement de façade : comportement au feu selon la hauteur et l''affectation'
+  it: 'Sistemi di rivestimento di facciata: comportamento al fuoco secondo altezza e utilizzo'
+description:
+  de: 'Die geforderte Brandverhaltensgruppe von Aussenwandbekleidungssystemen steigt mit der Gebäudehöhe. Bei geringer Höhe
+    genügen für übrige Nutzungen im Regelfall RF3-Baustoffe, bei Beherbergungsbetrieben bleibt die Dämmschicht RF1. Bei
+    mittlerer Höhe genügt für übrige Nutzungen mit baulichem Konzept RF2; in VKF-anerkannten oder gleichwertigen Konstruktionen
+    ist RF3 zulässig. Hochhäuser verlangen RF1. Die Tabelle unterscheidet zudem das klassifizierte System, die Bekleidung,
+    die Dämm- oder Zwischenschicht und Lichtbänder sowie bauliches und Löschanlagenkonzept. Noch nicht prüfbar: das Modell
+    führt die Brandverhaltensgruppe (RF1–RF4, cr) der Baustoffe nicht.'
+  en: 'The required reaction-to-fire group of external wall cladding systems rises with building height. In low buildings,
+    RF3 materials generally suffice for other uses, while for accommodation the insulation layer stays RF1. In medium-height
+    buildings, other uses with a structural concept need RF2; RF3 is allowed in VKF-recognized or equivalent constructions.
+    High-rise buildings require RF1. The table also distinguishes the classified system, the cladding, the insulation or
+    intermediate layer and light bands, as well as structural and extinguishing-system concepts. Not yet checkable: the
+    model does not carry the reaction-to-fire group (RF1–RF4, cr) of materials.'
+  fr: 'Le groupe de comportement au feu exigé pour les systèmes de revêtement de façade augmente avec la hauteur du bâtiment.
+    En faible hauteur, des matériaux RF3 suffisent en général pour les autres affectations, tandis que pour l''hébergement
+    la couche isolante reste RF1. En moyenne hauteur, les autres affectations avec concept constructif exigent RF2 ; RF3
+    est admis dans les constructions reconnues par l''AEAI ou équivalentes. Les tours exigent RF1. Le tableau distingue
+    en outre le système classifié, le revêtement, la couche isolante ou intermédiaire et les bandeaux vitrés, ainsi que
+    le concept constructif et le concept à installation d''extinction. Pas encore vérifiable : le modèle ne porte pas le
+    groupe de comportement au feu (RF1–RF4, cr) des matériaux.'
+  it: 'Il gruppo di comportamento al fuoco richiesto per i sistemi di rivestimento di facciata aumenta con l''altezza dell''edificio.
+    Con altezza ridotta bastano di regola materiali RF3 per gli altri utilizzi, mentre per le strutture ricettive lo strato
+    isolante resta RF1. Con altezza media gli altri utilizzi con concetto costruttivo richiedono RF2; RF3 è ammesso in costruzioni
+    riconosciute dall''AICAA o equivalenti. Gli edifici alti richiedono RF1. La tabella distingue inoltre sistema classificato,
+    rivestimento, strato isolante o intermedio e finestre a nastro, nonché concetto costruttivo e concetto a impianto di
+    spegnimento. Non ancora verificabile: il modello non riporta il gruppo di comportamento al fuoco (RF1–RF4, cr) dei materiali.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/architecture-wall-cladding-exterior
+- pragmaticbim:element/architecture-window-exterior
+- pragmaticbim:element/building
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-14-15-2015
+  source_document: VKF-Brandschutzrichtlinie 14-15 Verwendung von Baustoffen (2015)
+  source_page: 7
+  source_quote: VKF 14-15, Ziff. 3.2.8
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

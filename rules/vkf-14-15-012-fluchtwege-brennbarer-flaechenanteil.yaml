@@ -1,0 +1,49 @@
+id: pragmaticbim:rule/vkf-14-15-012-fluchtwege-brennbarer-flaechenanteil
+code: VKF-14-15-012
+sort_order: 47
+name:
+  de: 'Fluchtwege: brennbarer Flächenanteil höchstens 10 %'
+  en: 'Escape routes: combustible area share at most 10 %'
+  fr: 'Voies d''évacuation : part de surface combustible de 10 % au plus'
+  it: 'Vie di fuga: quota di superficie combustibile al massimo 10 %'
+description:
+  de: 'In Fluchtwegen darf der Flächenanteil brennbarer Materialien wie Flächenleuchten, Pinnwände, Bekleidungen oder Geländerfüllungen
+    pro Geschoss höchstens 10 % der Treppenhausgrundfläche bzw. der Grundfläche des horizontalen Fluchtwegs betragen. Teilflächen
+    sind höchstens 2 m² gross und halten untereinander mindestens 2 m Abstand. Türen, Fenster, Handläufe und einzelne lineare
+    tragende Holzbauteile zählen nicht mit. Noch nicht prüfbar: das Modell führt die Brandverhaltensgruppe (RF1–RF4, cr)
+    der Baustoffe nicht.'
+  en: 'In escape routes, the area share of combustible materials such as luminous panels, pin boards, linings or balustrade
+    infills is at most 10 % of the stairwell floor area per storey or of the floor area of the horizontal escape route.
+    Partial areas are at most 2 m² and keep at least 2 m distance from each other. Doors, windows, handrails and individual
+    linear load-bearing timber components are not counted. Not yet checkable: the model does not carry the reaction-to-fire
+    group (RF1–RF4, cr) of materials.'
+  fr: 'Dans les voies d''évacuation, la part de surface de matériaux combustibles tels que luminaires plats, panneaux d''affichage,
+    revêtements ou remplissages de garde-corps ne dépasse pas, par niveau, 10 % de la surface de la cage d''escalier ou
+    de la voie d''évacuation horizontale. Les surfaces partielles font au plus 2 m² et sont distantes d''au moins 2 m entre
+    elles. Portes, fenêtres, mains courantes et éléments porteurs linéaires isolés en bois ne comptent pas. Pas encore vérifiable
+    : le modèle ne porte pas le groupe de comportement au feu (RF1–RF4, cr) des matériaux.'
+  it: 'Nelle vie di fuga la quota di superficie di materiali combustibili come lampade a superficie, bacheche, rivestimenti
+    o riempimenti di parapetti non supera per piano il 10 % della superficie del vano scala o della via di fuga orizzontale.
+    Le superfici parziali misurano al massimo 2 m² e distano tra loro almeno 2 m. Porte, finestre, corrimano e singoli elementi
+    portanti lineari in legno non sono conteggiati. Non ancora verificabile: il modello non riporta il gruppo di comportamento
+    al fuoco (RF1–RF4, cr) dei materiali.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-wall-cladding-interior
+- pragmaticbim:element/architecture-railing
+- pragmaticbim:element/mep-light-fixture
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-14-15-2015
+  source_document: VKF-Brandschutzrichtlinie 14-15 Verwendung von Baustoffen (2015)
+  source_page: 10
+  source_quote: VKF 14-15, Ziff. 4.2 Fussnote 2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

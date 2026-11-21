@@ -1,0 +1,44 @@
+id: pragmaticbim:rule/vkf-14-15-001-hochhaus-aussenwand-rf1
+code: VKF-14-15-001
+sort_order: 36
+name:
+  de: 'Hochhäuser: Aussenwand und Bekleidungssystem aus RF1-Baustoffen'
+  en: 'High-rise buildings: external wall and cladding system made of RF1 materials'
+  fr: 'Tours : mur extérieur et système de revêtement en matériaux RF1'
+  it: 'Edifici alti: parete esterna e sistema di rivestimento in materiali RF1'
+description:
+  de: 'Aussenwand und Aussenwandbekleidungssystem von Hochhäusern bestehen aus RF1-Baustoffen. Ausgenommen sind Kunststoffdübel,
+    punktuelle Rückverankerungen von Dämmungen und flächenmässig nicht relevante Bauteile wie Anschlussfugen oder Dichtungen.
+    Bei Lichtbändern genügt mit Löschanlagenkonzept RF2. Noch nicht prüfbar: das Modell führt die Brandverhaltensgruppe
+    (RF1–RF4, cr) der Baustoffe nicht.'
+  en: 'The external wall and the external wall cladding system of high-rise buildings are made of RF1 materials. Exceptions
+    are plastic anchors, point back-anchorages of insulation and components of negligible area such as joints or seals.
+    With an extinguishing-system concept, RF2 suffices for light bands. Not yet checkable: the model does not carry the
+    reaction-to-fire group (RF1–RF4, cr) of materials.'
+  fr: 'Le mur extérieur et le système de revêtement de façade des tours sont en matériaux RF1. Sont exceptés les chevilles
+    en plastique, les ancrages ponctuels de l''isolation et les éléments de surface négligeable tels que joints ou garnitures.
+    Pour les bandeaux vitrés, RF2 suffit avec un concept à installation d''extinction. Pas encore vérifiable : le modèle
+    ne porte pas le groupe de comportement au feu (RF1–RF4, cr) des matériaux.'
+  it: 'La parete esterna e il sistema di rivestimento di facciata degli edifici alti sono in materiali RF1. Sono esclusi
+    i tasselli in plastica, gli ancoraggi puntuali dell''isolamento e gli elementi di superficie irrilevante come giunti
+    o guarnizioni. Per le finestre a nastro basta RF2 con concetto a impianto di spegnimento. Non ancora verificabile: il
+    modello non riporta il gruppo di comportamento al fuoco (RF1–RF4, cr) dei materiali.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/architecture-wall-cladding-exterior
+- pragmaticbim:element/building
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-14-15-2015
+  source_document: VKF-Brandschutzrichtlinie 14-15 Verwendung von Baustoffen (2015)
+  source_page: 5
+  source_quote: VKF 14-15, Ziff. 3.1.2 Abs. 1 und 3.2.8
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

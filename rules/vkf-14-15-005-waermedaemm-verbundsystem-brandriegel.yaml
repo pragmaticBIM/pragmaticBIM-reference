@@ -1,0 +1,46 @@
+id: pragmaticbim:rule/vkf-14-15-005-waermedaemm-verbundsystem-brandriegel
+code: VKF-14-15-005
+sort_order: 40
+name:
+  de: 'Verputzte Aussendämmung mit brennbarem Dämmstoff: Brandriegel pro Geschoss'
+  en: 'Rendered external insulation with combustible insulant: fire barrier at every storey'
+  fr: 'Isolation périphérique crépie à isolant combustible : barrière coupe-feu à chaque niveau'
+  it: 'Isolamento a cappotto con isolante combustibile: barriera tagliafuoco a ogni piano'
+description:
+  de: 'Wärmedämm-Verbundsysteme mit brennbarem Dämmstoff an Gebäuden mittlerer Höhe sind eine VKF-anerkannte oder gleichwertige
+    Konstruktion oder haben in jedem Geschoss einen umlaufenden Brandriegel aus RF1-Baustoff mit Schmelztemperatur ab 1000
+    °C und mindestens 0.2 m Höhe. Geklebte Dämmungen brauchen ausser bei Brandriegeln nicht anerkannter Konstruktionen keine
+    mechanische Sicherung. Noch nicht prüfbar: das Modell führt die Brandverhaltensgruppe (RF1–RF4, cr) der Baustoffe nicht.'
+  en: 'External thermal insulation composite systems with a combustible insulant on medium-height buildings are a VKF-recognized
+    or equivalent construction, or have a circumferential fire barrier made of an RF1 material with a melting point of at
+    least 1000 °C and at least 0.2 m high at every storey. Bonded insulation needs no mechanical fixing, except for the
+    fire barriers of non-recognized constructions. Not yet checkable: the model does not carry the reaction-to-fire group
+    (RF1–RF4, cr) of materials.'
+  fr: 'Les systèmes d''isolation thermique composites par l''extérieur à isolant combustible sur les bâtiments de hauteur
+    moyenne sont une construction reconnue par l''AEAI ou équivalente, ou comportent à chaque niveau une barrière coupe-feu
+    périphérique en matériau RF1 de point de fusion d''au moins 1000 °C et d''au moins 0,2 m de hauteur. L''isolation collée
+    n''exige pas de fixation mécanique, sauf pour les barrières coupe-feu de constructions non reconnues. Pas encore vérifiable
+    : le modèle ne porte pas le groupe de comportement au feu (RF1–RF4, cr) des matériaux.'
+  it: 'I sistemi compositi di isolamento termico a cappotto con isolante combustibile su edifici di altezza media sono una
+    costruzione riconosciuta dall''AICAA o equivalente, oppure hanno a ogni piano una barriera tagliafuoco perimetrale in
+    materiale RF1 con temperatura di fusione di almeno 1000 °C e altezza di almeno 0,2 m. L''isolamento incollato non richiede
+    fissaggio meccanico, salvo per le barriere tagliafuoco di costruzioni non riconosciute. Non ancora verificabile: il
+    modello non riporta il gruppo di comportamento al fuoco (RF1–RF4, cr) dei materiali.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/architecture-wall-cladding-exterior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-14-15-2015
+  source_document: VKF-Brandschutzrichtlinie 14-15 Verwendung von Baustoffen (2015)
+  source_page: 6
+  source_quote: VKF 14-15, Ziff. 3.2.2 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

@@ -1,0 +1,43 @@
+id: pragmaticbim:rule/vkf-14-15-004-mittlere-hoehe-brandausbreitung-zwei-geschosse
+code: VKF-14-15-004
+sort_order: 39
+name:
+  de: 'Mittlere Höhe: brennbare Fassade unterteilen, Brandausbreitung höchstens zwei Geschosse'
+  en: 'Medium height: subdivide combustible facade, fire spread at most two storeys'
+  fr: 'Hauteur moyenne : subdiviser la façade combustible, propagation de deux niveaux au plus'
+  it: 'Altezza media: suddividere la facciata combustibile, propagazione al massimo di due piani'
+description:
+  de: 'Bei Gebäuden mittlerer Höhe mit brennbarer Aussenwandbekleidung oder Wärmedämmung wird die Fassade konstruktiv so
+    unterteilt, dass sich ein Brand bis zum Löschangriff der Feuerwehr höchstens zwei Geschosse über das Brandgeschoss hinaus
+    ausbreitet. Die Feuerwehr muss die Fassadenflächen für den Löscheinsatz erreichen können. Noch nicht prüfbar: das Modell
+    führt die Brandverhaltensgruppe (RF1–RF4, cr) der Baustoffe nicht.'
+  en: 'In medium-height buildings with combustible external wall cladding or thermal insulation, the facade is subdivided
+    structurally so that a fire spreads at most two storeys above the storey of origin before the fire brigade attacks.
+    The fire brigade must be able to reach the facade surfaces for firefighting. Not yet checkable: the model does not carry
+    the reaction-to-fire group (RF1–RF4, cr) of materials.'
+  fr: 'Dans les bâtiments de hauteur moyenne à revêtement de façade ou isolation thermique combustible, la façade est subdivisée
+    par la construction de sorte qu''un incendie ne se propage pas de plus de deux niveaux au-dessus de l''étage sinistré
+    avant l''intervention des pompiers. Les pompiers doivent pouvoir accéder aux surfaces de façade pour l''extinction.
+    Pas encore vérifiable : le modèle ne porte pas le groupe de comportement au feu (RF1–RF4, cr) des matériaux.'
+  it: 'Negli edifici di altezza media con rivestimento di facciata o isolamento termico combustibile, la facciata è suddivisa
+    costruttivamente in modo che l''incendio non si propaghi oltre due piani sopra il piano d''origine prima dell''intervento
+    dei pompieri. I pompieri devono poter raggiungere le superfici di facciata per lo spegnimento. Non ancora verificabile:
+    il modello non riporta il gruppo di comportamento al fuoco (RF1–RF4, cr) dei materiali.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/architecture-wall-cladding-exterior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-14-15-2015
+  source_document: VKF-Brandschutzrichtlinie 14-15 Verwendung von Baustoffen (2015)
+  source_page: 5
+  source_quote: VKF 14-15, Ziff. 3.1.1 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

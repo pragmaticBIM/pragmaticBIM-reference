@@ -1,0 +1,50 @@
+id: pragmaticbim:rule/vkf-14-15-009-kritisches-verhalten-innen-nicht-anwendbar
+code: VKF-14-15-009
+sort_order: 44
+name:
+  de: Baustoffe mit kritischem Verhalten (cr) innen grundsätzlich nicht anwendbar
+  en: Materials with critical behaviour (cr) generally not usable indoors
+  fr: Matériaux à comportement critique (cr) en principe inutilisables à l'intérieur
+  it: Materiali a comportamento critico (cr) di norma non utilizzabili all'interno
+description:
+  de: 'Baustoffe mit kritischem Verhalten (cr) sind im Innern von Bauten grundsätzlich nicht anwendbar. Ausgenommen sind
+    Kabel, einlagige Membranfassaden und Baustoffe unter hohlraumfreier Bekleidung mit Mindeststärke 0.5 mm (RF1), 3 mm
+    (RF2) bzw. 5 mm (RF3). RF4-Baustoffe sind nur hohlraumfrei und allseitig K 30 gekapselt zulässig, mit Ausnahmen für
+    Dämmschutzschichten, Dampfbremsen, Kaschierungen und dünne Rohrisolations-Ummantelungen. Noch nicht prüfbar: das Modell
+    führt die Brandverhaltensgruppe (RF1–RF4, cr) der Baustoffe nicht.'
+  en: 'Materials with critical behaviour (cr) are generally not usable inside buildings. Exceptions are cables, single-layer
+    membrane facades and materials under a void-free covering with a minimum thickness of 0.5 mm (RF1), 3 mm (RF2) or 5
+    mm (RF3). RF4 materials are permitted only void-free and encapsulated on all sides K 30, with exceptions for protective
+    insulation layers, vapour barriers, laminations and thin pipe-insulation sheathing. Not yet checkable: the model does
+    not carry the reaction-to-fire group (RF1–RF4, cr) of materials.'
+  fr: 'Les matériaux à comportement critique (cr) ne sont en principe pas utilisables à l''intérieur des constructions.
+    Sont exceptés les câbles, les façades membranes monocouches et les matériaux sous un revêtement sans vide d''épaisseur
+    minimale 0,5 mm (RF1), 3 mm (RF2) ou 5 mm (RF3). Les matériaux RF4 ne sont admis que sans vide et encapsulés de tous
+    côtés K 30, avec des exceptions pour les couches de protection de l''isolation, les freins-vapeur, les contrecollages
+    et les fines gaines d''isolation de tuyaux. Pas encore vérifiable : le modèle ne porte pas le groupe de comportement
+    au feu (RF1–RF4, cr) des matériaux.'
+  it: 'I materiali a comportamento critico (cr) all''interno delle costruzioni non sono di norma utilizzabili. Sono esclusi
+    i cavi, le facciate a membrana monostrato e i materiali sotto un rivestimento senza vuoti di spessore minimo 0,5 mm
+    (RF1), 3 mm (RF2) o 5 mm (RF3). I materiali RF4 sono ammessi solo senza vuoti e incapsulati su ogni lato K 30, con eccezioni
+    per strati di protezione dell''isolamento, freni al vapore, accoppiamenti e sottili guaine di isolamento dei tubi. Non
+    ancora verificabile: il modello non riporta il gruppo di comportamento al fuoco (RF1–RF4, cr) dei materiali.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-wall-cladding-interior
+- pragmaticbim:element/architecture-ceiling-suspended
+- pragmaticbim:element/architecture-floor-covering
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-14-15-2015
+  source_document: VKF-Brandschutzrichtlinie 14-15 Verwendung von Baustoffen (2015)
+  source_page: 4
+  source_quote: VKF 14-15, Ziff. 2 Abs. 2–3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
