@@ -39,6 +39,8 @@ def _load_dir(folder: str) -> list[dict[str, Any]]:
     for path in sorted((REPO_ROOT / folder).glob("*.yaml")):
         data = yaml.safe_load(path.read_text(encoding="utf-8"))
         assert isinstance(data, dict), path
+        if not str(data.get("id") or "").startswith("pragmaticbim:regulation/"):
+            continue
         data["_path"] = path
         items.append(data)
     return items
