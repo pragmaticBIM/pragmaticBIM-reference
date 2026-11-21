@@ -54,7 +54,7 @@ def test_rules_name_the_missing_material_property_in_every_language() -> None:
     for path, rule in _rules():
         for lang in LANGS:
             assert "RF1" in rule["description"][lang], f"{path}: {lang}"
-        # No reaction-to-fire attribute exists on the graph yet (follow-up issue), so no rule claims a key.
+        # The rules stay text-only (reviewed) until the data contract maps RF-only values (#121), so no rule claims a key.
         assert "performance_property_keys" not in rule, path
 
 
@@ -63,3 +63,74 @@ def test_rules_apply_to_existing_elements() -> None:
     for path, rule in _rules():
         for ref in rule["applies_to_elements"]:
             assert ref.removeprefix("pragmaticbim:element/") in elements, f"{path}: {ref}"
+
+
+RF_ELEMENTS = (
+    "architecture-wall-cladding-exterior",
+    "architecture-wall-cladding-interior",
+    "architecture-floor-covering",
+    "architecture-ceiling-suspended",
+    "architecture-wall-exterior",
+    "architecture-wall-interior",
+)
+RF_KEY = "pbs:fire_property_reaction_to_fire"
+
+
+def _element(slug: str) -> dict:
+    return yaml.safe_load((REPO_ROOT / "elements" / f"{slug}.yaml").read_text(encoding="utf-8"))
+
+
+def _attr(element: dict, name: str) -> dict:
+    matches = [a for a in element["attributes"] if a["name"] == name]
+    assert len(matches) == 1, name
+    return matches[0]
+
+
+def test_reaction_to_fire_value_list_has_rf1_to_rf4_in_four_languages() -> None:
+    data = yaml.safe_load((REPO_ROOT / "values" / "reaction-to-fire.yaml").read_text(encoding="utf-8"))
+    assert data["id"] == "pragmaticbim:value/reaction-to-fire"
+    assert data["status"] == "active"
+    for lang in LANGS:
+        assert data["values"][lang] == ["RF1", "RF2", "RF3", "RF4"], lang
+        assert str(data["name"].get(lang) or "").strip(), lang
+        description = str(data["description"].get(lang) or "")
+        assert "14-15" in description, lang
+        assert "cr" in description, lang
+
+
+def test_reaction_to_fire_attributes_resolve_on_lining_and_covering_elements() -> None:
+    elements = {p.stem for p in (REPO_ROOT / "elements").glob("*.yaml")}
+    for slug in RF_ELEMENTS:
+        assert slug in elements, slug
+        element = _element(slug)
+        delivered = _attr(element, "ReactionToFire")
+        required = _attr(element, "ReactionToFireRequired")
+        for attribute in (delivered, required):
+            assert attribute["allowed_values"] == "pragmaticbim:value/reaction-to-fire", slug
+            assert attribute["datatype"] == "IfcLabel", slug
+            for lang in LANGS:
+                assert "RF1" in attribute["definition"][lang], f"{slug}: {lang}"
+                assert "`cr`" in attribute["definition"][lang], f"{slug}: {lang}"
+        assert "performance_property_key" not in delivered, slug
+        assert required["performance_property_key"] == RF_KEY, slug
+        assert required["requirement_kind"] == "performance", slug
+        assert required["target_operator"] == "maximum", slug
+        assert required["verified_by"] == {"name": "ReactionToFire", "pset": delivered["pset"]}, slug
+        assert (REPO_ROOT / "values" / "reaction-to-fire.yaml").is_file()
+
+
+def test_every_element_in_the_rules_that_hold_a_lining_layer_allows_rf() -> None:
+    """The lining and covering elements named by the 14-15 rules carry the RF attribute."""
+    named = {
+        ref.removeprefix("pragmaticbim:element/")
+        for _, rule in _rules()
+        for ref in rule["applies_to_elements"]
+    }
+    for slug in (
+        "architecture-wall-cladding-exterior",
+        "architecture-wall-cladding-interior",
+        "architecture-floor-covering",
+        "architecture-ceiling-suspended",
+    ):
+        assert slug in named, slug
+        assert slug in RF_ELEMENTS, slug

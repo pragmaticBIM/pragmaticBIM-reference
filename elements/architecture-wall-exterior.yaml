@@ -1158,3 +1158,122 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 35
+- name: ReactionToFire
+  pset: ePset_ReactionToFire
+  definition:
+    de: |-
+      Brandverhaltensgruppe (RF) des Bauteils beziehungsweise seiner Oberflächenschicht gemäss VKF-Brandschutzvorschriften. Grundlage für die Prüfung der Brandschutzrichtlinie VKF 14-15 an Bekleidungen, Belägen und Decken.
+
+      **Zulässige Werte**
+      - `RF1` — kein Brandbeitrag
+      - `RF2` — geringer Brandbeitrag
+      - `RF3` — zulässiger Brandbeitrag
+      - `RF4` — unzulässiger Brandbeitrag
+
+      **Hinweis**
+      - Das Kennzeichen kritisches Brandverhalten (`cr`) ist noch kein Wert dieser Liste.
+    fr: |-
+      Groupe de comportement au feu (RF) de l'élément ou de sa couche de surface selon les prescriptions de protection incendie AEAI. Base de vérification de la directive AEAI 14-15 pour les revêtements, sols et plafonds.
+
+      **Valeurs admises**
+      - `RF1` — aucune contribution à l'incendie
+      - `RF2` — contribution faible
+      - `RF3` — contribution admissible
+      - `RF4` — contribution inadmissible
+
+      **Remarque**
+      - Le critère de comportement critique (`cr`) n'est pas encore une valeur de cette liste.
+    it: |-
+      Gruppo di reazione al fuoco (RF) del componente o del suo strato superficiale secondo le prescrizioni antincendio AICAA. Base per la verifica della direttiva AICAA 14-15 su rivestimenti, pavimenti e controsoffiti.
+
+      **Valori ammessi**
+      - `RF1` — nessun contributo all'incendio
+      - `RF2` — contributo ridotto
+      - `RF3` — contributo ammissibile
+      - `RF4` — contributo inammissibile
+
+      **Nota**
+      - Il criterio del comportamento critico (`cr`) non è ancora un valore di questo elenco.
+    en: |-
+      Reaction-to-fire group (RF) of the component or its surface layer under the VKF fire protection regulations. Basis for checking VKF 14-15 on claddings, coverings and ceilings.
+
+      **Allowed values**
+      - `RF1` — no contribution to fire
+      - `RF2` — low contribution
+      - `RF3` — acceptable contribution
+      - `RF4` — unacceptable contribution
+
+      **Note**
+      - The critical behaviour flag (`cr`) is not yet a value of this list.
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/reaction-to-fire
+  needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 36
+- name: ReactionToFireRequired
+  requirement_kind: performance
+  pset: ePset_WallRequirement
+  definition:
+    de: |-
+      Geforderte Brandverhaltensgruppe (schlechteste noch zulässige Gruppe) des Bauteils gemäss VKF 14-15. Sollwert für den Vergleich mit ReactionToFire.
+
+      **Zulässige Werte**
+      - `RF1` — kein Brandbeitrag
+      - `RF2` — geringer Brandbeitrag
+      - `RF3` — zulässiger Brandbeitrag
+      - `RF4` — unzulässiger Brandbeitrag
+
+      **Hinweis**
+      - RF1 ist die beste Gruppe: erfüllt ist die Anforderung, wenn die gelieferte Gruppe gleich oder besser ist. Das Kennzeichen `cr` ist noch kein Wert dieser Liste.
+    fr: |-
+      Groupe de comportement au feu exigé (le moins bon encore admis) de l'élément selon AEAI 14-15. Valeur cible comparée à ReactionToFire.
+
+      **Valeurs admises**
+      - `RF1` — aucune contribution à l'incendie
+      - `RF2` — contribution faible
+      - `RF3` — contribution admissible
+      - `RF4` — contribution inadmissible
+
+      **Remarque**
+      - RF1 est le meilleur groupe : l'exigence est remplie si le groupe livré est égal ou meilleur. Le critère `cr` n'est pas encore une valeur de cette liste.
+    it: |-
+      Gruppo di reazione al fuoco richiesto (il meno favorevole ancora ammesso) del componente secondo AICAA 14-15. Valore obiettivo confrontato con ReactionToFire.
+
+      **Valori ammessi**
+      - `RF1` — nessun contributo all'incendio
+      - `RF2` — contributo ridotto
+      - `RF3` — contributo ammissibile
+      - `RF4` — contributo inammissibile
+
+      **Nota**
+      - RF1 è il gruppo migliore: il requisito è soddisfatto se il gruppo fornito è uguale o migliore. Il criterio `cr` non è ancora un valore di questo elenco.
+    en: |-
+      Required reaction-to-fire group (the worst group still permitted) of the component under VKF 14-15. Target value compared with ReactionToFire.
+
+      **Allowed values**
+      - `RF1` — no contribution to fire
+      - `RF2` — low contribution
+      - `RF3` — acceptable contribution
+      - `RF4` — unacceptable contribution
+
+      **Note**
+      - RF1 is the best group: the requirement is met when the delivered group is equal or better. The `cr` flag is not yet a value of this list.
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/reaction-to-fire
+  needed_in_phases: ['32', '33', '41', '51', '52', '53', '61', '62']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-element-type-performance-verification
+  - pragmaticbim:workflow/qas-fire-protection
+  performance_property_key: pbs:fire_property_reaction_to_fire
+  target_operator: maximum
+  verified_by:
+    name: ReactionToFire
+    pset: ePset_ReactionToFire
+  is_applicability: false
+  status: active
+  sort_order: 37
