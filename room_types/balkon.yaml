@@ -83,6 +83,16 @@ configurations:
         divisor: 10
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/balkon-default-steckdose-aussen-hoehe
+      relation: elevation
+      value:
+        min: 0.3
+        max: 0.3
+      severity: preferred
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
   - id: pragmaticbim:room-type-equipment/balkon-default-lichtschalter
     sort_order: 2
     function: light_switch
@@ -90,6 +100,17 @@ configurations:
     - pragmaticbim:component/lichtschalter
     quantity: 1
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/balkon-default-lichtschalter-hoehe
+      relation: elevation
+      value:
+        min: 0.9
+        max: 1.1
+      severity: required
+      source:
+        kind: norm
+        reference: SIA 500:2009, 7.4
+        note: Höhe Bedienelemente
   openings:
   - id: pragmaticbim:room-type-opening/balkon-default-zugang
     sort_order: 1
@@ -169,6 +190,16 @@ configurations:
         divisor: 10
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/balkon-medium-steckdose-aussen-hoehe
+      relation: elevation
+      value:
+        min: 0.3
+        max: 0.3
+      severity: preferred
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
   - id: pragmaticbim:room-type-equipment/balkon-medium-lichtschalter
     sort_order: 2
     function: light_switch
@@ -176,6 +207,17 @@ configurations:
     - pragmaticbim:component/lichtschalter
     quantity: 1
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/balkon-medium-lichtschalter-hoehe
+      relation: elevation
+      value:
+        min: 0.9
+        max: 1.1
+      severity: required
+      source:
+        kind: norm
+        reference: SIA 500:2009, 7.4
+        note: Höhe Bedienelemente
   openings:
   - id: pragmaticbim:room-type-opening/balkon-medium-zugang
     sort_order: 1
@@ -255,6 +297,16 @@ configurations:
         divisor: 10
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/balkon-large-steckdose-aussen-hoehe
+      relation: elevation
+      value:
+        min: 0.3
+        max: 0.3
+      severity: preferred
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
   - id: pragmaticbim:room-type-equipment/balkon-large-lichtschalter
     sort_order: 2
     function: light_switch
@@ -262,6 +314,17 @@ configurations:
     - pragmaticbim:component/lichtschalter
     quantity: 1
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/balkon-large-lichtschalter-hoehe
+      relation: elevation
+      value:
+        min: 0.9
+        max: 1.1
+      severity: required
+      source:
+        kind: norm
+        reference: SIA 500:2009, 7.4
+        note: Höhe Bedienelemente
   openings:
   - id: pragmaticbim:room-type-opening/balkon-large-zugang
     sort_order: 1
