@@ -1,0 +1,43 @@
+id: pragmaticbim:rule/wbs-2015-004-moeblierbarkeit-zimmer
+code: WBS-2015-004
+sort_order: 4
+name:
+  de: Zimmer bieten WBS-konforme Bettstellungen
+  fr: Les pièces offrent des emplacements de lit conformes au WBS
+  it: I locali offrono postazioni letto conformi al WBS
+  en: Rooms provide WBS-compliant bed positions
+description:
+  de: 'Pro Zimmer ist mindestens eine Bettstellung nach WBS-Bettmodul möglich: Einzelbett
+    1.00 × 2.00 m oder Doppelbett 1.80 × 2.00 m mit seitlichen Zugängen von je 0.60 m sowie
+    Schwenkfreiheit der Zimmertür. Die Anzahl möglicher Stellungen je Zimmer richtet sich
+    nach Grundriss und Grundausstattung. Noch nicht prüfbar als SHACL: Bettmodule, Türschwenk
+    und Kollisionsprüfung mit Einbauten fehlen als modellweite Kenngrössen.'
+  fr: 'Chaque pièce permet au moins un emplacement de lit selon le module lit WBS : lit simple
+    1,00 × 2,00 m ou lit double 1,80 × 2,00 m avec accès latéraux de 0,60 m et battement
+    libre de la porte. Le nombre d''emplacements possibles dépend du plan et de l''équipement
+    de base. Pas encore vérifiable en SHACL : modules lit, battement de porte et collisions
+    avec les aménagements manquent comme grandeurs modèle.'
+  it: 'Per ogni locale è possibile almeno una postazione letto secondo il modulo letto WBS:
+    letto singolo 1,00 × 2,00 m o matrimoniale 1,80 × 2,00 m con accessi laterali da 0,60 m
+    e battente libero della porta. Il numero di postazioni dipende dalla pianta e dalla dotazione
+    di base. Non ancora verificabile in SHACL: moduli letto, battente porta e collisioni con
+    arredi mancano come grandezze di modello.'
+  en: 'Each room allows at least one bed position per the WBS bed module: single 1.00 × 2.00 m
+    or double 1.80 × 2.00 m with 0.60 m side clearances and free door swing. How many positions
+    fit per room follows the layout and Grundausstattung. Not yet checkable as SHACL: bed
+    modules, door swing, and fit-out collision checks are not model-wide quantities yet.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/architecture
+jurisdiction:
+- CH
+rule_source:
+  regulation: pragmaticbim:regulation/wbs-2015
+  source_document: WBS 2015 Beilagen, Kriterienkatalog / K18 Möblierbarkeit Zimmer
+  source_page: null
+  source_quote: WBS 2015, K18; Bettmodul Grundausstattung
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

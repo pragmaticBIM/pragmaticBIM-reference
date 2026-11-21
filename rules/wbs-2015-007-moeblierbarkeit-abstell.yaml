@@ -1,0 +1,42 @@
+id: pragmaticbim:rule/wbs-2015-007-moeblierbarkeit-abstell
+code: WBS-2015-007
+sort_order: 7
+name:
+  de: Abstell- und Kochbereich bieten WBS-Schrankmodule
+  fr: Dégagements et cuisine offrent des modules d'armoire WBS
+  it: Ripostigli e cucina offrono moduli armadio WBS
+  en: Storage and kitchen areas provide WBS wardrobe modules
+description:
+  de: 'Im Abstell- und Kochbereich stehen zusätzliche Schrankmodule der Grundausstattung zur
+    Verfügung (2 bis 7 Module je Zimmerzahl, Schrankmodul 0.60 × 0.60 × 1.80 m mit 0.90 m
+    Bedienfläche vor der Front). Noch nicht prüfbar als SHACL: Anzahl und Stellflächen der
+    Schrankmodule je Wohnungseinheit sowie die Bedienungszonen fehlen als aggregierte
+    Kenngrössen.'
+  fr: 'Dans le dégagement et la cuisine, des modules d''armoire supplémentaires de l''équipement
+    de base sont prévus (2 à 7 modules selon le nombre de pièces, module 0,60 × 0,60 × 1,80 m
+    avec 0,90 m de service devant). Pas encore vérifiable en SHACL : nombre et emplacements
+    des modules d''armoire par unité de logement et zones de service manquent comme grandeurs
+    agrégées.'
+  it: 'Nel ripostiglio e in cucina sono previsti moduli di armadio aggiuntivi della dotazione
+    di base (da 2 a 7 moduli secondo il numero di locali, modulo 0,60 × 0,60 × 1,80 m con
+    0,90 m di fascia operativa frontale). Non ancora verificabile in SHACL: numero e aree dei
+    moduli armadio per unità abitativa e fasce di servizio mancano come grandezze aggregate.'
+  en: 'Storage and kitchen zones provide additional wardrobe modules from Grundausstattung (2
+    to 7 modules by room count, wardrobe module 0.60 × 0.60 × 1.80 m with 0.90 m front service
+    clearance). Not yet checkable as SHACL: module count and footprints per dwelling unit and
+    service zones are not aggregated quantities yet.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/architecture
+jurisdiction:
+- CH
+rule_source:
+  regulation: pragmaticbim:regulation/wbs-2015
+  source_document: WBS 2015 Beilagen, Grundausstattung / K21 Möblierbarkeit Abstellbereich
+  source_page: null
+  source_quote: WBS 2015, K21; Schrankmodul Grundausstattung
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

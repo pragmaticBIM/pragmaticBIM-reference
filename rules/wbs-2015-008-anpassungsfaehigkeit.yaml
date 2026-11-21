@@ -1,0 +1,42 @@
+id: pragmaticbim:rule/wbs-2015-008-anpassungsfaehigkeit
+code: WBS-2015-008
+sort_order: 8
+name:
+  de: Wohnungsgrundriss ist nachträglich anpassbar
+  fr: Le plan du logement est adaptable ultérieurement
+  it: La pianta dell'alloggio è adattabile in un secondo tempo
+  en: Apartment layout is adaptable after completion
+description:
+  de: 'Nichttragende Innenwände der Wohnung sind so geplant, dass sie nachträglich entfernt
+    oder ergänzt werden können, um veränderbare Wohnungsgrundrisse zu ermöglichen. Die Beurteilung
+    betrifft die Trennwände zwischen Wohnräumen, nicht tragende Kernstrukturen. Noch nicht
+    prüfbar als SHACL: Klassifikation tragend / nichttragend und Demontierbarkeit von Wänden
+    fehlen als modellweite Kenngrössen.'
+  fr: 'Les cloisons intérieures non portantes du logement sont conçues pour être retirées ou
+    ajoutées ultérieurement afin de permettre des plans évolutifs. L''appréciation porte sur
+    les parois entre pièces de vie, pas sur la structure porteuse. Pas encore vérifiable en
+    SHACL : classification porteur / non porteur et démontabilité des parois manquent comme
+    grandeurs modèle.'
+  it: 'Le pareti interne non portanti dell''alloggio sono progettate per essere rimosse o
+    aggiunte in seguito, consentendo piante modificabili. La valutazione riguarda le pareti tra
+    ambienti abitativi, non la struttura portante. Non ancora verificabile in SHACL: classificazione
+    portante / non portante e smontabilità delle pareti mancano come grandezze di modello.'
+  en: 'Non-load-bearing interior walls of the dwelling are planned so they can be removed or
+    added later to enable adaptable layouts. Assessment covers partitions between living spaces,
+    not the load-bearing core. Not yet checkable as SHACL: load-bearing vs non-load-bearing
+    classification and wall demountability are not model-wide quantities yet.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/architecture
+jurisdiction:
+- CH
+rule_source:
+  regulation: pragmaticbim:regulation/wbs-2015
+  source_document: WBS 2015 Beilagen, Kriterienkatalog / K22 Anpassungsfähigkeit privater Raum
+  source_page: null
+  source_quote: WBS 2015, K22
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

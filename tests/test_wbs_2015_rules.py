@@ -1,4 +1,4 @@
-"""WBS 2015 apartment area rules (issue #110)."""
+"""WBS 2015 apartment rules (issues #110, #111)."""
 
 from __future__ import annotations
 
@@ -13,6 +13,15 @@ LANGS = ("de", "fr", "it", "en")
 RULE_SLUGS = (
     "wbs-2015-001-nettowohnflaeche",
     "wbs-2015-002-zimmergroesse",
+    "wbs-2015-003-vielfaeltige-nutzbarkeit",
+    "wbs-2015-004-moeblierbarkeit-zimmer",
+    "wbs-2015-005-koch-essbereich",
+    "wbs-2015-006-ausstattung-sanitaer",
+    "wbs-2015-007-moeblierbarkeit-abstell",
+    "wbs-2015-008-anpassungsfaehigkeit",
+    "wbs-2015-009-privater-aussenbereich",
+    "wbs-2015-010-uebergaenge-innen-aussen",
+    "wbs-2015-011-private-abstellraeume",
 )
 
 
@@ -30,7 +39,7 @@ def test_wbs_2015_area_rules_are_localized_reviewed() -> None:
         assert rule["rule_status"] == "reviewed"
         assert rule["reviewed_by"] in (None, "")
         assert rule["rule_source"]["regulation"] == "pragmaticbim:regulation/wbs-2015"
-        assert "K1" in (rule["rule_source"].get("source_quote") or "")
+        assert "WBS 2015" in (rule["rule_source"].get("source_quote") or "")
         for field in ("name", "description"):
             block = rule[field]
             for lang in LANGS:

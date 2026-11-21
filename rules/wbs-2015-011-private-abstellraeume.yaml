@@ -1,0 +1,43 @@
+id: pragmaticbim:rule/wbs-2015-011-private-abstellraeume
+code: WBS-2015-011
+sort_order: 11
+name:
+  de: Private Abstellräume ausserhalb der Wohnung sind zugeordnet
+  fr: Locaux de rangement privés hors logement sont rattachés
+  it: Depositi privati fuori dall'alloggio sono assegnati
+  en: Private storage rooms outside the dwelling are assigned
+description:
+  de: 'Der Wohnungseinheit sind private Abstellräme ausserhalb der eigentlichen Wohnfläche klar
+    zugeordnet (Keller, Estrich, Reduit), analog zur Abstellfläche der Grundausstattung. Geprüft
+    wird die Zuordnung und Nutzbarkeit dieser Räume über die gleiche UsageUnitReference. Noch
+    nicht prüfbar als SHACL: Keller-, Estrich- und Reduiträume je Wohnungseinheit fehlen als
+    aggregierte Kenngrössen.'
+  fr: 'Des locaux de rangement privés hors surface habitable sont clairement rattachés à l''unité
+    de logement (cave, grenier, cellier), sur le modèle des surfaces de rangement de l''équipement
+    de base. On vérifie le rattachement et l''usage via la même UsageUnitReference. Pas encore
+    vérifiable en SHACL : caves, greniers et celliers par unité de logement manquent comme
+    grandeurs agrégées.'
+  it: 'All''unità abitativa sono chiaramente assegnati locali di deposito fuori dalla superficie
+    abitativa (cantina, sottotetto, ripostiglio), in linea con le superfici di stoccaggio della
+    dotazione di base. Si verifica l''assegnazione e l''uso tramite la stessa UsageUnitReference.
+    Non ancora verificabile in SHACL: cantine, sottotetti e ripostigli per unità abitativa
+    mancano come grandezze aggregate.'
+  en: 'Private storage rooms outside the net dwelling floor area are clearly assigned to the
+    dwelling unit (cellar, attic, locker), in line with Grundausstattung storage areas. Check
+    assignment and usability via the same UsageUnitReference. Not yet checkable as SHACL: cellar,
+    attic, and locker spaces per dwelling unit are not aggregated quantities yet.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/architecture
+jurisdiction:
+- CH
+rule_source:
+  regulation: pragmaticbim:regulation/wbs-2015
+  source_document: WBS 2015 Beilagen, Grundausstattung / K25 Private Abstellräume ausserhalb Wohnung
+  source_page: null
+  source_quote: WBS 2015, K25; Abstellflächen Grundausstattung
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

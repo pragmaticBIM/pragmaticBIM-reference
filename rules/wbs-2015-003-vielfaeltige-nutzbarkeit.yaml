@@ -1,0 +1,47 @@
+id: pragmaticbim:rule/wbs-2015-003-vielfaeltige-nutzbarkeit
+code: WBS-2015-003
+sort_order: 3
+name:
+  de: Zimmer ermöglichen vielfältige Einrichtung nach WBS-Flächenmodul
+  fr: Les pièces permettent un aménagement varié selon le module de surface WBS
+  it: I locali consentono un arredo vario secondo il modulo di superficie WBS
+  en: Rooms allow varied furnishing per the WBS area module
+description:
+  de: 'Habitable Zimmer bieten genügend freie Bodenfläche und sinnvolle Tür- und Fensterlagen,
+    damit das WBS-Flächenmodul für vielfältige Einrichtung (Wohn- und Schlafbereich, ohne
+    feste Nutzungsvorgabe) Platz findet. Die Beurteilung orientiert sich an Leitmöbeln wie
+    Sofa und Tischstellungen neben den Mindestflächen der Grundausstattung. Noch nicht prüfbar
+    als SHACL: Tür- und Fensterlagen, freie Flächenmodule und flexible Nutzungszonen fehlen
+    als modellweite Kenngrössen.'
+  fr: 'Les pièces habitables offrent assez de surface libre et des positions de portes et
+    fenêtres adaptées pour que le module de surface WBS pour des aménagements variés (séjour
+    et couchage sans usage imposé) trouve place. L''appréciation s''appuie sur des meubles
+    directeurs (canapé, zones table) et les surfaces minimales de l''équipement de base. Pas
+    encore vérifiable en SHACL : positions des ouvertures, modules de surface libre et zones
+    d''usage flexibles manquent comme grandeurs modèle.'
+  it: 'I locali abitabili offrono sufficiente superficie libera e posizioni sensate di porte
+    e finestre affinché il modulo di superficie WBS per arredi diversi (zona giorno e notte
+    senza uso imposto) trovi posto. La valutazione si orienta a mobili guida (divano, zone
+    tavolo) e alle superfici minime della dotazione di base. Non ancora verificabile in SHACL:
+    posizioni delle aperture, moduli di superficie libera e zone d''uso flessibili mancano
+    come grandezze di modello.'
+  en: 'Habitable rooms provide enough clear floor area and sensible door and window positions
+    so the WBS area module for varied furnishing (living and sleeping without fixed use) fits.
+    Assessment follows lead furniture such as sofa and table zones alongside Grundausstattung
+    minima. Not yet checkable as SHACL: opening positions, clear area modules, and flexible
+    use zones are not model-wide quantities yet.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/architecture
+jurisdiction:
+- CH
+rule_source:
+  regulation: pragmaticbim:regulation/wbs-2015
+  source_document: WBS 2015 Beilagen, Kriterienkatalog / K17 Vielfältige Nutzbarkeit
+  source_page: null
+  source_quote: WBS 2015, K17
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
