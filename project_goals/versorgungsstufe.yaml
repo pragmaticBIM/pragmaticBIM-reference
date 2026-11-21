@@ -36,7 +36,7 @@ levels:
     it: Acuto
     en: Acute care
   description:
-    de: Akutspital mit Notfall, Operationen und Intensivpflege.
+    de: Spital mit Notfall, OP und Intensivpflege.
     fr: Hôpital de soins aigus avec urgences, opérations et soins intensifs.
     it: Ospedale acuto con pronto soccorso, interventi e cure intense.
     en: Acute hospital with emergency, surgery, and intensive care.
@@ -67,7 +67,7 @@ levels:
     en: Long-term care
   description:
     de: Pflegeheim für längere Aufenthalte.
-    fr: Établissement médico-social pour des séjours prolongés.
+    fr: Établissement médico-social de long séjour.
     it: Casa di cura per soggiorni prolungati.
     en: Care home for longer stays.
   status: active

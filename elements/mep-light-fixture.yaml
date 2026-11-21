@@ -210,7 +210,7 @@ attributes:
   pset: ePset_Cost
   definition:
     de: |-
-      Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
+      Kostenschnittstelle: Grund- oder Mieterausbau.
 
       **Zulässige Werte**
       - `GAB` — Grundausbau (Bauherr / Vermieter)
@@ -228,7 +228,7 @@ attributes:
       - `GAB` — allestimento di base (committente / locatore)
       - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`
     en: |-
-      Cost interface of the component – base building or tenant fit-out.
+      Cost interface: base building or tenant fit-out.
 
       **Allowed values**
       - `GAB` — base building (client / landlord)

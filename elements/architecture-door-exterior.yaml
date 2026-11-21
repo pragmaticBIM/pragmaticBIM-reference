@@ -492,10 +492,10 @@ attributes:
 - name: CostInterface
   pset: ePset_Cost
   definition:
-    de: "Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.\n\n**Zulässige Werte**\n- `GAB` — Grundausbau (Bauherr / Vermieter)\n- `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_MieterA`"
+    de: "Kostenschnittstelle: Grund- oder Mieterausbau.\n\n**Zulässige Werte**\n- `GAB` — Grundausbau (Bauherr / Vermieter)\n- `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_MieterA`"
     fr: "Interface de coûts de l'élément – aménagement de base ou aménagement locataire.\n\n**Valeurs admises**\n- `GAB` — aménagement de base (maître d'ouvrage / bailleur)\n- `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_MieterA`"
     it: "Interfaccia di costo del componente – allestimento di base o allestimento locatario.\n\n**Valori ammessi**\n- `GAB` — allestimento di base (committente / locatore)\n- `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`"
-    en: "Cost interface of the component – base building or tenant fit-out.\n\n**Allowed values**\n- `GAB` — base building (client / landlord)\n- `MAB_{TenantName}` — tenant fit-out, e.g. `MAB_TenantA`"
+    en: "Cost interface: base building or tenant fit-out.\n\n**Allowed values**\n- `GAB` — base building (client / landlord)\n- `MAB_{TenantName}` — tenant fit-out, e.g. `MAB_TenantA`"
   datatype: IfcLabel
   needed_in_phases:
   - '32'
@@ -720,7 +720,7 @@ attributes:
     de: 'Verbindliche Referenzmenge für den Einheitspreis: `Qto_DoorBaseQuantities.Area`.'
     fr: 'Quantité de référence faisant foi pour le prix unitaire : `Qto_DoorBaseQuantities.Area`.'
     it: 'Quantità di riferimento vincolante per il prezzo unitario: `Qto_DoorBaseQuantities.Area`.'
-    en: 'Authoritative reference quantity used with UnitPrice: `Qto_DoorBaseQuantities.Area`.'
+    en: '`Qto_DoorBaseQuantities.Area` is the authoritative reference quantity for UnitPrice.'
   datatype: IfcLabel
   needed_in_phases:
   - '31'

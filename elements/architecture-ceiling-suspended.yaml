@@ -256,7 +256,7 @@ attributes:
   pset: ePset_Cost
   definition:
     de: |-
-      Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
+      Kostenschnittstelle: Grund- oder Mieterausbau.
 
       **Zulässige Werte**
       - `GAB` — Grundausbau (Bauherr / Vermieter)
@@ -274,7 +274,7 @@ attributes:
       - `GAB` — allestimento di base (committente / locatore)
       - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`
     en: |-
-      Cost interface of the component – base building or tenant fit-out.
+      Cost interface: base building or tenant fit-out.
 
       **Allowed values**
       - `GAB` — base building (client / landlord)
@@ -504,7 +504,7 @@ attributes:
     de: "Verbindliche Referenzmenge für den Einheitspreis: `Qto_CoveringBaseQuantities.NetArea`."
     fr: "Quantité de référence faisant foi pour le prix unitaire : `Qto_CoveringBaseQuantities.NetArea`."
     it: "Quantità di riferimento vincolante per il prezzo unitario: `Qto_CoveringBaseQuantities.NetArea`."
-    en: "Authoritative reference quantity used with UnitPrice: `Qto_CoveringBaseQuantities.NetArea`."
+    en: "`Qto_CoveringBaseQuantities.NetArea` is the authoritative reference quantity for UnitPrice."
   datatype: IfcLabel
   needed_in_phases: ['31', '32', '33', '41']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]

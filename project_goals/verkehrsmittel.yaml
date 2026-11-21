@@ -67,7 +67,7 @@ levels:
     en: Air
   description:
     de: Flughafen mit Kontrollen und Gates.
-    fr: Aéroport avec contrôles et portes d'embarquement.
+    fr: Aéroport, contrôles, portes d'embarquement.
     it: Aeroporto con controlli e gate.
     en: Airport with checks and gates.
   status: active
