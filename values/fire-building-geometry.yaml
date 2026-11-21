@@ -1,0 +1,62 @@
+id: pragmaticbim:value/fire-building-geometry
+code: FIRE-BUILDING-GEOMETRY
+name:
+  de: Gebäudegeometrie (Brandschutz)
+  fr: Géométrie du bâtiment (protection incendie)
+  it: Geometria del fabbricato (protezione antincendio)
+  en: Building geometry class (fire protection)
+description:
+  de: 'Gebäudekategorien nach Gesamthöhe und Abmessungen gemäss VKF 10-15, Begriff «Gebäudegeometrie»: geringe Höhe bis 11
+    m, mittlere Höhe bis 30 m, Hochhaus über 30 m Gesamthöhe. Gebäude mit geringen Abmessungen sind Gebäude geringer Höhe
+    mit höchstens 2 Geschossen über und 1 unter Terrain, höchstens 600 m² Geschossflächensumme, ohne Schlafnutzung (ausser
+    einer Wohnung) und ohne Kinderkrippe. Nebenbauten sind eingeschossige Bauten bis 150 m² Grundfläche ohne dauernden Aufenthalt,
+    offene Feuerstellen und gefährliche Stoffe in massgebender Menge. Die beiden letzten Werte überlappen mit den Höhenklassen;
+    die Höhe selbst bleibt das Mass Gesamthöhe.'
+  fr: 'Catégories de bâtiments selon la hauteur totale et les dimensions, d''après AEAI 10-15, terme « Géométrie du bâtiment
+    » : faible hauteur jusqu''à 11 m, moyenne hauteur jusqu''à 30 m, bâtiment élevé au-delà de 30 m de hauteur totale. Les
+    bâtiments de taille réduite sont des bâtiments de faible hauteur avec au plus 2 niveaux hors terre et 1 niveau souterrain,
+    600 m² de surface de plancher au plus, sans usage pour dormir (sauf un appartement) et sans crèche. Les bâtiments annexes
+    sont des constructions de plain-pied jusqu''à 150 m² sans séjour durable, foyer ouvert ni matières dangereuses en quantité
+    significative. Les deux dernières valeurs recoupent les classes de hauteur ; la hauteur elle-même reste la mesure de la
+    hauteur totale.'
+  it: 'Categorie di edifici secondo altezza complessiva e dimensioni, secondo AICAA 10-15, termine «Geometria del fabbricato»:
+    altezza ridotta fino a 11 m, altezza media fino a 30 m, edificio alto oltre 30 m di altezza complessiva. I fabbricati
+    di piccole dimensioni sono fabbricati di altezza ridotta con al massimo 2 piani fuori terra e 1 interrato, al massimo
+    600 m² di somma delle superfici dei piani, senza uso per pernottamento (salvo un appartamento) e senza asilo nido. Le
+    costruzioni annesse sono costruzioni a un piano fino a 150 m² senza soggiorno permanente, focolari aperti né sostanze
+    pericolose in quantità significative. Gli ultimi due valori si sovrappongono alle classi di altezza; l''altezza resta
+    la misura dell''altezza complessiva.'
+  en: 'Building categories by overall height and size under VKF 10-15, term ''building geometry'': low height up to 11 m,
+    medium height up to 30 m, high-rise above 30 m overall height. Small buildings are low-height buildings with at most 2
+    storeys above and 1 below ground, at most 600 m² total floor area, no sleeping use (except one dwelling) and no day nursery.
+    Ancillary buildings are single-storey buildings up to 150 m² footprint without permanent occupancy, open fireplaces or
+    hazardous substances in significant quantity. The last two values overlap with the height classes; the height itself stays
+    the overall height measure.'
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+  - Gebäude geringer Höhe
+  - Gebäude mittlerer Höhe
+  - Hochhaus
+  - Gebäude mit geringen Abmessungen
+  - Nebenbaute
+  fr:
+  - Bâtiment de faible hauteur
+  - Bâtiment de moyenne hauteur
+  - Bâtiment élevé
+  - Bâtiment de taille réduite
+  - Bâtiment annexe
+  it:
+  - Fabbricato di altezza ridotta
+  - Fabbricato di altezza media
+  - Edificio alto
+  - Fabbricato di piccole dimensioni
+  - Costruzione annessa
+  en:
+  - Low-rise building
+  - Medium-rise building
+  - High-rise building
+  - Small building
+  - Ancillary building

@@ -1,0 +1,45 @@
+id: pragmaticbim:value/fire-storage-separation
+code: FIRE-STORAGE-SEPARATION
+name:
+  de: Lagerungsart nach Stoffseparierung
+  fr: Mode de séparation des matières stockées
+  it: Modalità di separazione dello stoccaggio
+  en: Storage separation mode
+description:
+  de: 'Arten der Stoffseparierung nach VKF 10-15: Zusammenlagerung (Waren unterschiedlicher Gefahrenklassen im gleichen Brandabschnitt),
+    Getrenntlagerung (unterschiedliche Waren im gleichen Brandabschnitt unter zusätzlichen Bedingungen wie Schutzabständen,
+    Trennwänden, Gittern oder Auffangwannen) und Separatlagerung (unterschiedliche Waren in getrennten Brandabschnitten).
+    Die Anforderungen je Stoffpaarung regelt VKF 26-15.'
+  fr: 'Modes de séparation des matières selon AEAI 10-15 : entreposage commun (marchandises de classes de danger différentes
+    dans le même compartiment), séparation des matières stockées (marchandises différentes dans le même compartiment avec
+    règles supplémentaires telles que distances de sécurité, cloisons, grillages ou bacs de rétention) et stockage séparé
+    (marchandises différentes dans des compartiments distincts). Les exigences par paire de matières sont fixées par AEAI
+    26-15.'
+  it: 'Modalità di separazione secondo AICAA 10-15: stoccaggio collettivo (merci di classi di pericolosità diverse nello stesso
+    compartimento), stoccaggio differenziato (merci diverse nello stesso compartimento con condizioni aggiuntive come distanze
+    di protezione, pareti o reti separatorie o vasche di contenimento) e stoccaggio separato (merci diverse in compartimenti
+    distinti). I requisiti per ogni abbinamento di sostanze sono fissati da AICAA 26-15.'
+  en: 'Substance separation modes under VKF 10-15: joint storage (goods of different hazard classes in the same fire compartment),
+    segregated storage (different goods in the same fire compartment under extra conditions such as protective distances,
+    partitions, grilles or collecting trays) and separate storage (different goods in separate fire compartments). VKF 26-15
+    sets the requirements per pair of substances.'
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+  - Zusammenlagerung
+  - Getrenntlagerung
+  - Separatlagerung
+  fr:
+  - Entreposage commun
+  - Séparation des matières stockées
+  - Stockage séparé
+  it:
+  - Stoccaggio collettivo
+  - Stoccaggio differenziato
+  - Stoccaggio separato
+  en:
+  - Joint storage
+  - Segregated storage
+  - Separate storage

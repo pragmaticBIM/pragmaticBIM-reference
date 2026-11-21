@@ -1,0 +1,54 @@
+id: pragmaticbim:value/fire-storage-type
+code: FIRE-STORAGE-TYPE
+name:
+  de: Lagerart (Brandschutz)
+  fr: Type de stockage (protection incendie)
+  it: Tipo di stoccaggio (protezione antincendio)
+  en: Storage type (fire protection)
+description:
+  de: 'Lagerarten nach VKF 10-15: Blocklager (Ware gestapelt ohne nennenswerte seitliche Zwischenräume), Regallager (Ware
+    auf Paletten oder Regalböden in Regalen), Hochregallager (Regallager mit Regalgassen und Lagerhöhe über 7.50 m), Behälterlager
+    (Ware in stapelbaren Lagerhilfen ohne seitlichen Abstand) und Schüttgutlager (lose Schüttung). Als Lager gilt das Aufbewahren
+    von Mengen über dem Tagesbedarf in Behältern und Gebinden.'
+  fr: 'Types de stockage selon AEAI 10-15 : stockage en lots (marchandise empilée sans espacements latéraux notables), entrepôt
+    à rayonnages (marchandise sur palettes ou étagères), entrepôt à hauts rayonnages (rayonnages avec allées et hauteur de
+    stockage supérieure à 7,50 m), entrepôt de récipients (marchandise dans des supports superposables sans espacement latéral)
+    et stockage en vrac (marchandises non conditionnées). Est un entrepôt le stockage dans des récipients ou fûts de quantités
+    dépassant les besoins journaliers.'
+  it: 'Tipi di stoccaggio secondo AICAA 10-15: deposito a blocchi (merce accatastata senza spazi laterali rilevanti), stoccaggio
+    in scaffalature (merce su bancali o ripiani), deposito a scaffalature alte (scaffali con corsie e altezza di stoccaggio
+    superiore a 7.50 m), stoccaggio di contenitori (merce in supporti accatastabili senza distanza laterale) e stoccaggio
+    di prodotti ammassati (deposito alla rinfusa). È un deposito lo stoccaggio in contenitori o fusti di quantità superiori
+    al fabbisogno giornaliero.'
+  en: 'Storage types under VKF 10-15: block storage (goods stacked without notable lateral gaps), rack storage (goods on pallets
+    or shelves in racks), high-bay rack storage (racks with aisles and storage height above 7.50 m), container storage (goods
+    in stackable carriers without lateral spacing) and bulk storage (loose heaps). Storage means keeping quantities above
+    the day''s need in containers and drums.'
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+  - Blocklager
+  - Regallager
+  - Hochregallager
+  - Behälterlager
+  - Schüttgutlager
+  fr:
+  - Stockage en lots
+  - Entrepôt à rayonnages
+  - Entrepôt à hauts rayonnages
+  - Entrepôt de récipients
+  - Stockage en vrac
+  it:
+  - Deposito a blocchi
+  - Stoccaggio in scaffalature
+  - Deposito a scaffalature alte
+  - Stoccaggio di contenitori
+  - Stoccaggio di prodotti ammassati
+  en:
+  - Block storage
+  - Rack storage
+  - High-bay rack storage
+  - Container storage
+  - Bulk storage

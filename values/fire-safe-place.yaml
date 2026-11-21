@@ -1,0 +1,39 @@
+id: pragmaticbim:value/fire-safe-place
+code: FIRE-SAFE-PLACE
+name:
+  de: Sicherer Ort (Brandschutz)
+  fr: Lieu sûr (protection incendie)
+  it: Luogo sicuro (protezione antincendio)
+  en: Safe place (fire protection)
+description:
+  de: 'Arten des sicheren Ortes nach VKF 10-15: im Freien, wo sich Personen ohne Beeinträchtigung durch Brand oder andere
+    Gefahren aufhalten können, und im Gebäude, ein über Flucht- und Rettungswege erschlossener, als Brandabschnitt ausgebildeter
+    Bereich mit direktem Zugang zum vertikalen Fluchtweg, in dem Flüchtende bis zur Rettung vor Rauch, Hitze und Flammen geschützt
+    bleiben.'
+  fr: 'Types de lieu sûr selon AEAI 10-15 : à l''air libre, où les personnes peuvent séjourner sans être affectées par l''incendie
+    ou d''autres dangers, et dans le bâtiment, une zone desservie par les voies d''évacuation et de sauvetage, formée comme
+    compartiment coupe-feu avec accès direct à la voie d''évacuation verticale, où les personnes en fuite restent protégées
+    de la fumée, de la chaleur et des flammes jusqu''au sauvetage.'
+  it: 'Tipi di luogo sicuro secondo AICAA 10-15: all''aperto, dove le persone possono sostare senza essere esposte all''incendio
+    o ad altri pericoli, e nel fabbricato, un''area accessibile dalle vie di fuga e di soccorso, realizzata come compartimento
+    con accesso diretto alla via di fuga verticale, in cui le persone in pericolo restano protette da fumo, calore e fiamme
+    fino al salvataggio.'
+  en: 'Types of safe place under VKF 10-15: outdoors, where people can stay without being affected by fire or other hazards,
+    and in the building, an area reached by escape and rescue routes, built as a fire compartment with direct access to the
+    vertical escape route, where people fleeing stay protected from smoke, heat and flames until rescued.'
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+  - Sicherer Ort im Freien
+  - Sicherer Ort im Gebäude
+  fr:
+  - Lieu sûr à l'air libre
+  - Lieu sûr dans le bâtiment
+  it:
+  - Luogo sicuro all'aperto
+  - Luogo sicuro nel fabbricato
+  en:
+  - Safe place outdoors
+  - Safe place in the building
