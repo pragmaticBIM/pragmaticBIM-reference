@@ -40,7 +40,7 @@ def run(p=None, files=DATA, labels=(), reviews=(), threads=0, checks="success", 
 # --- config ---------------------------------------------------------------
 
 def test_config_is_valid():
-    assert CFG.base_branch == "development"
+    assert CFG.base_branch == "main"
     assert CFG.merge_mode == "auto_merge"
     assert CFG.maintainer in CFG.trusted_authors
 
@@ -94,7 +94,7 @@ def test_fork_escalates():
 
 
 def test_other_base_escalates():
-    assert run(pr(base="main")).action == "escalate"
+    assert run(pr(base="development")).action == "escalate"
 
 
 def test_schema_change_escalates():

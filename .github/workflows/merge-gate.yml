@@ -5,12 +5,12 @@ name: Merge gate
 # Logic: .github/scripts/merge_gate.py (same script in every pragmaticBIM repo).
 #
 # Security: pull_request_target and status run with write access. The job
-# checks out the protected development branch only and never runs PR code.
+# checks out the protected main branch only and never runs PR code.
 
 on:
   pull_request_target:
     types: [opened, reopened, synchronize, ready_for_review, labeled, unlabeled]
-    branches: [development]
+    branches: [main]
   status: # an "ai-review" status was posted (only used when require_ai_review is on)
 
 permissions:
@@ -33,7 +33,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: development
+          ref: main
           sparse-checkout: .github/scripts
           persist-credentials: false
       - uses: actions/setup-python@v5

@@ -23,15 +23,15 @@ Labels are the state machine. Only the maintainer sets `agent_ready`.
 
 ## Branches and pull requests
 
-- Branch from `development`. Name the branch `feature/issue-<number>`, e.g. `feature/issue-42`.
-- One issue = one PR, opened against `development`. The PR description contains `Closes #<number>`.
-- Never push to `development` or `main` directly. `main` is the released state; only the maintainer promotes `development` to `main`.
+- Branch from `main`. Name the branch `feature/issue-<number>`, e.g. `feature/issue-42`.
+- One issue = one PR, opened against `main`. The PR description contains `Closes #<number>`.
+- Never push to `main` directly. Everyone works through pull requests.
 - Do not enable auto-merge yourself. The merge gate decides (see MERGE_POLICY.md); a PR it escalates waits for the maintainer.
 
 ## Interactive sessions (no issue number)
 
-- If the current branch is not `development` or `main`, stay on it: commit there, no new branch, no new PR.
-- On `development` or `main`, ask for a branch name before changing anything.
+- If the current branch is not `main`, stay on it: commit there, no new branch, no new PR.
+- On `main`, ask for a branch name before changing anything.
 - Push only when asked. Open the PR only when asked.
 - Commit only your own changes: stage explicit files, never `git add -A`.
 
