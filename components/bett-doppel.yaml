@@ -67,7 +67,8 @@ clearances:
 representation:
   body: box
   plan_symbol: bed_double
-comment: 'Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+comment: 'WBS 2015 Beilagen, Bettmodul K18: Liegefläche 1.80 × 2.00 m, seitliche Zugänge
+  0.60 m für Möblierbarkeitsprüfungen.'
 picture_link: bett-doppel-plan.svg
 attachment_link: bett-doppel.ifc
 status: active

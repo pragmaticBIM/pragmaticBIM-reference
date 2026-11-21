@@ -38,7 +38,7 @@ parameters:
     unit: m
   height:
     default: 2.3
-    min: 2.1
+    min: 1.8
     max: 2.6
     unit: m
 clearances:
@@ -53,7 +53,8 @@ clearances:
 representation:
   body: box
   plan_symbol: wardrobe
-comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+comment: 'WBS 2015 Beilagen, Schrankmodul K21: Grundmodul 0.60 × 0.60 × 1.80 m mit Bedienfläche
+  0.90 m; Defaultbreite 1.80 m entspricht drei Modulen, raumhohe Ausführung 2.30 m.'
 picture_link: einbauschrank-plan.svg
 attachment_link: einbauschrank.ifc
 status: active

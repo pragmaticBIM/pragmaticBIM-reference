@@ -128,7 +128,9 @@ configurations:
     quantity: 1
     params:
       width:
-        min: 3.0
+        min: 3.3
+        default: 3.3
+    comment: WBS 2015 Grundausstattung Kochbereich, 5.5 Module × 0.60 m (3–4-Zimmer-Band).
     status: active
   - id: pragmaticbim:room-type-equipment/kueche-default-kochinsel
     sort_order: 2
@@ -378,9 +380,10 @@ configurations:
     quantity: 1
     params:
       width:
-        default: 2.4
-        min: 2.4
+        default: 2.7
+        min: 2.7
         max: 3.0
+    comment: WBS 2015 Grundausstattung Kochbereich, 4.5 Module × 0.60 m (1–2-Zimmer-Band).
     status: active
   - id: pragmaticbim:room-type-equipment/kueche-small-steckdose
     sort_order: 2

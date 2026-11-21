@@ -27,7 +27,7 @@ placement:
   - exterior
 parameters:
   width:
-    default: 3.0
+    default: 3.3
     min: 2.4
     max: 4.8
     unit: m
@@ -81,8 +81,9 @@ parts:
 representation:
   body: parts
   plan_symbol: kitchen_run
-comment: 'Geräte (Kochfeld, Backofen, Kühlschrank, Geschirrspüler) liegen in den Schränken und werden
-  nicht einzeln modelliert. Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+comment: 'WBS 2015 Grundausstattung Kochbereich: 0.60 m pro Modul, Bedienfläche 1.20 m
+  (Default 3.30 m = 5.5 Module). Geräte (Kochfeld, Backofen, Kühlschrank, Geschirrspüler)
+  liegen in den Schränken und werden nicht einzeln modelliert.'
 picture_link: kuechenzeile-einzeilig-plan.svg
 attachment_link: kuechenzeile-einzeilig.ifc
 status: active

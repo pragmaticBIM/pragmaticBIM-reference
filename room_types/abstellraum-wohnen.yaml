@@ -114,18 +114,34 @@ configurations:
     pset: ePset_SpaceRequirement
     value: 30
   equipment:
-  - id: pragmaticbim:room-type-equipment/abstellraum-wohnen-default-regal
+  - id: pragmaticbim:room-type-equipment/abstellraum-wohnen-default-schrankmodule
     sort_order: 1
+    function: storage
+    components:
+    - pragmaticbim:component/einbauschrank
+    quantity:
+      min: 2
+      max: 7
+      default: 3
+    params:
+      width:
+        default: 0.6
+        min: 0.6
+        max: 1.8
+    comment: WBS 2015 Grundausstattung Abstellbereich, Schrankmodul K21 (Anzahl nach Wohnungsgrösse).
+    status: active
+  - id: pragmaticbim:room-type-equipment/abstellraum-wohnen-default-regal
+    sort_order: 2
     function: storage
     components:
     - pragmaticbim:component/regal
     quantity:
-      min: 1
+      min: 0
       max: 4
-      default: 2
+      default: 0
     status: active
   - id: pragmaticbim:room-type-equipment/abstellraum-wohnen-default-steckdose
-    sort_order: 2
+    sort_order: 3
     function: power_outlet
     components:
     - pragmaticbim:component/steckdose
@@ -155,7 +171,7 @@ configurations:
         kind: default
         note: Planungswert; vor Freigabe fachlich bestätigen
   - id: pragmaticbim:room-type-equipment/abstellraum-wohnen-default-lichtschalter
-    sort_order: 3
+    sort_order: 4
     function: light_switch
     components:
     - pragmaticbim:component/lichtschalter
