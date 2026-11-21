@@ -7,14 +7,11 @@ name:
   it: Loggia
   en: Loggia
 definition:
-  de: Zurückgesetzter offener Aussenraum im Gebäudevolumen, im Unterschied zum auskragenden
-    Balkon.
-  fr: Espace extérieur ouvert en retrait dans le volume du bâtiment, distinct du balcon
-    en porte-à-faux.
-  it: Spazio esterno aperto arretrato nel volume dell'edificio, distinto dal balcone
-    a sbalzo.
-  en: Recessed open outdoor room inside the building volume, distinct from a projecting
-    balcony.
+  de: Zurückgesetzter offener Aussenraum im Gebäudevolumen, im Unterschied zum auskragenden Balkon.
+  fr: Espace extérieur ouvert en retrait dans le volume du bâtiment, distinct du balcon en 
+    porte-à-faux.
+  it: Spazio esterno aperto arretrato nel volume dell'edificio, distinto dal balcone a sbalzo.
+  en: Recessed open outdoor room inside the building volume, distinct from a projecting balcony.
 room_type_kind: room
 room_name: RN-11-10-09
 activity: O
@@ -82,6 +79,16 @@ configurations:
         divisor: 10
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/loggia-default-steckdose-aussen-hoehe
+      relation: elevation
+      value:
+        min: 0.3
+        max: 0.3
+      severity: preferred
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
   - id: pragmaticbim:room-type-equipment/loggia-default-lichtschalter
     sort_order: 2
     function: light_switch
@@ -89,6 +96,17 @@ configurations:
     - pragmaticbim:component/lichtschalter
     quantity: 1
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/loggia-default-lichtschalter-hoehe
+      relation: elevation
+      value:
+        min: 0.9
+        max: 1.1
+      severity: required
+      source:
+        kind: norm
+        reference: SIA 500:2009, 7.4
+        note: Höhe Bedienelemente
   openings:
   - id: pragmaticbim:room-type-opening/loggia-default-zugang
     sort_order: 1
