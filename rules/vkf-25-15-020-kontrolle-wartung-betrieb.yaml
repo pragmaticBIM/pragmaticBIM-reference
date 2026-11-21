@@ -1,0 +1,44 @@
+id: pragmaticbim:rule/vkf-25-15-020-kontrolle-wartung-betrieb
+code: VKF-25-15-020
+sort_order: 106
+name:
+  de: Reinigung, Kontrolle und Wartung von Lüftungsanlagen und Brandschutzklappen
+  en: Cleaning, inspection and maintenance of ventilation systems and fire dampers
+  fr: Nettoyage, contrôle et entretien des installations de ventilation et des clapets coupe-feu
+  it: Pulizia, controllo e manutenzione di impianti di ventilazione e serrande tagliafuoco
+description:
+  de: Lufttechnische Anlagen werden so gereinigt und unterhalten, dass sie stets betriebsbereit sind und keine Brandgefahr
+    entsteht. Brandschutzklappen und Brandfallsteuerungen werden periodisch kontrolliert. Eigentümer oder Betreiber sind für
+    Unterhalt und Betriebsbereitschaft verantwortlich. Dies ist ein Betriebsprozess; das Modell führt keinen Kontroll- oder
+    Wartungsstand.
+  en: Ventilation systems are cleaned and maintained so that they are always ready for operation and no fire hazard arises.
+    Fire dampers and fire-case controls are inspected periodically. Owners or operators are responsible for maintenance and
+    operational readiness. This is an operating process; the model keeps no inspection or maintenance status.
+  fr: Les installations de ventilation sont nettoyées et entretenues de façon à être toujours en état de fonctionner et à
+    ne pas créer de danger d'incendie. Les clapets coupe-feu et commandes en cas d'incendie sont contrôlés périodiquement.
+    Le propriétaire ou l'exploitant est responsable de l'entretien et de la disponibilité. C'est un processus d'exploitation
+    ; le modèle ne tient pas d'état de contrôle ou d'entretien.
+  it: Gli impianti di ventilazione sono puliti e mantenuti in modo da essere sempre pronti all'uso e da non creare pericolo
+    d'incendio. Le serrande tagliafuoco e i comandi in caso d'incendio sono controllati periodicamente. Il proprietario o
+    il gestore è responsabile della manutenzione e della prontezza operativa. È un processo d'esercizio; il modello non tiene
+    uno stato di controllo o manutenzione.
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-damper
+- pragmaticbim:element/mep-unitary-equipment
+- pragmaticbim:element/mep-fan
+- pragmaticbim:element/mep-schematic-duct
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-25-15-2015
+  source_document: VKF-Brandschutzrichtlinie 25-15 Lufttechnische Anlagen (2015)
+  source_page: 11
+  source_quote: VKF 25-15, Ziff. 3.9, 5 und 6
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

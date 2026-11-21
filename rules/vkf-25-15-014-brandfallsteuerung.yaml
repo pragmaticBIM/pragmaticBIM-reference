@@ -1,0 +1,47 @@
+id: pragmaticbim:rule/vkf-25-15-014-brandfallsteuerung
+code: VKF-25-15-014
+sort_order: 100
+name:
+  de: 'Brandfallsteuerung: Anlage schaltet bei Alarm selbsttätig aus, sonst Handausschaltung'
+  en: 'Fire-case control: system switches off automatically on alarm, otherwise manual switch-off'
+  fr: 'Commande en cas d''incendie : arrêt automatique de l''installation, sinon arrêt manuel'
+  it: 'Comando in caso d''incendio: spegnimento automatico dell''impianto, altrimenti spegnimento manuale'
+description:
+  de: 'Lufttechnische Anlagen schalten sich selbsttätig aus, wenn Brandmelde- oder Löschanlagen, Kanalrauchmelder oder die
+    thermische Auslösung von Brandschutzklappen ansprechen. Fehlen solche Einrichtungen, müssen die Anlagen an leicht zugänglicher
+    Stelle von Hand ausgeschaltet werden können. Noch nicht prüfbar: das Modell enthält die Steuerlogik und die Verknüpfung
+    von Melder, Anlage und Handschalter nicht.'
+  en: 'Ventilation systems switch off automatically when fire detection or extinguishing systems, duct smoke detectors or
+    the thermal release of fire dampers respond. Where such devices are missing, the systems can be switched off by hand at
+    an easily accessible place. Not yet checkable: the model holds neither the control logic nor the link between detector,
+    system and manual switch.'
+  fr: 'Les installations de ventilation s''arrêtent automatiquement lorsque les installations de détection ou d''extinction,
+    les détecteurs de fumée de gaine ou le déclenchement thermique des clapets coupe-feu réagissent. En leur absence, les
+    installations peuvent être arrêtées manuellement en un endroit facilement accessible. Pas encore vérifiable : le modèle
+    ne contient ni la logique de commande ni le lien entre détecteur, installation et interrupteur manuel.'
+  it: 'Gli impianti di ventilazione si spengono automaticamente quando intervengono impianti di rivelazione o spegnimento,
+    rilevatori di fumo da canale o lo sgancio termico delle serrande tagliafuoco. In loro assenza gli impianti possono essere
+    spenti a mano in un punto facilmente accessibile. Non ancora verificabile: il modello non contiene né la logica di comando
+    né il collegamento tra rilevatore, impianto e interruttore manuale.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-unitary-equipment
+- pragmaticbim:element/mep-fan
+- pragmaticbim:element/mep-sensor
+- pragmaticbim:element/mep-alarm
+- pragmaticbim:element/mep-switching-device
+- pragmaticbim:element/mep-actuator
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-25-15-2015
+  source_document: VKF-Brandschutzrichtlinie 25-15 Lufttechnische Anlagen (2015)
+  source_page: 8
+  source_quote: VKF 25-15, Ziff. 3.10 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

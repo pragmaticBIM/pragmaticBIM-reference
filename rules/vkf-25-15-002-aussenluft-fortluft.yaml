@@ -1,0 +1,51 @@
+id: pragmaticbim:rule/vkf-25-15-002-aussenluft-fortluft
+code: VKF-25-15-002
+sort_order: 88
+name:
+  de: 'Aussenluft und Fortluft: sichere Entnahme und Ausmündung'
+  en: 'Outdoor air and exhaust air: safe intake and discharge'
+  fr: 'Air extérieur et air rejeté : prise et rejet sûrs'
+  it: 'Aria esterna e aria espulsa: presa e scarico sicuri'
+description:
+  de: 'Aussenluft wird direkt im Freien so entnommen, dass keine brennbaren Gase und Dämpfe angesaugt werden. Fortluftleitungen
+    münden so ins Freie, dass austretende Brandgase und Flammen die Umgebung nicht gefährden und nicht in den Bereich der
+    Aussenluftöffnung gelangen. Statt direkt ins Freie darf auch über Räume mit unverschliessbaren Öffnungen nach aussen geführt
+    werden, wenn dort eine Brandschutzklappe mit Kanalrauchmelder eingebaut ist. Noch nicht prüfbar: das Modell enthält keine
+    Lage von Aussenluft- und Fortluftöffnungen mit Abstand zueinander.'
+  en: 'Outdoor air is taken directly from the open so that no combustible gases or vapours are drawn in. Exhaust-air ducts
+    discharge to the open so that escaping fire gases and flames do not endanger the surroundings and cannot reach the outdoor-air
+    intake. Instead of going directly outside, air may also pass through rooms with permanently open openings to the outside,
+    provided a fire damper with a duct smoke detector is installed there. Not yet checkable: the model does not hold the position
+    of outdoor-air and exhaust-air openings or their distance to each other.'
+  fr: 'L''air extérieur est prélevé directement à l''air libre de manière à ne pas aspirer de gaz ni de vapeurs combustibles.
+    Les conduits d''air rejeté débouchent à l''air libre de façon que les gaz de combustion et les flammes ne menacent pas
+    les environs et n''atteignent pas la prise d''air extérieur. Au lieu de passer directement à l''extérieur, l''air peut
+    aussi transiter par des locaux dotés d''ouvertures non obturables vers l''extérieur, si un clapet coupe-feu avec détecteur
+    de fumée de gaine y est installé. Pas encore vérifiable : le modèle ne contient pas la position des ouvertures d''air
+    extérieur et d''air rejeté ni leur distance.'
+  it: 'L''aria esterna è prelevata direttamente all''aperto in modo da non aspirare gas né vapori combustibili. I condotti
+    dell''aria espulsa sboccano all''aperto in modo che i gas di combustione e le fiamme non mettano in pericolo l''ambiente
+    circostante e non raggiungano la presa d''aria esterna. Invece che direttamente all''esterno, l''aria può passare anche
+    attraverso locali con aperture non chiudibili verso l''esterno, se vi è installata una serranda tagliafuoco con rilevatore
+    di fumo da canale. Non ancora verificabile: il modello non contiene la posizione delle aperture di aria esterna e di aria
+    espulsa né la loro distanza.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-schematic-duct
+- pragmaticbim:element/mep-air-terminal
+- pragmaticbim:element/mep-damper
+- pragmaticbim:element/mep-sensor
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-25-15-2015
+  source_document: VKF-Brandschutzrichtlinie 25-15 Lufttechnische Anlagen (2015)
+  source_page: 5
+  source_quote: VKF 25-15, Ziff. 3.2 und 3.3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

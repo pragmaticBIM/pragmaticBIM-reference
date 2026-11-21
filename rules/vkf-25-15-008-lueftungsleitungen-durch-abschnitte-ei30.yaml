@@ -1,0 +1,53 @@
+id: pragmaticbim:rule/vkf-25-15-008-lueftungsleitungen-durch-abschnitte-ei30
+code: VKF-25-15-008
+sort_order: 94
+name:
+  de: 'Öffnungslose Leitungen durch andere Abschnitte: EI 30 oder Brandschutzklappen'
+  en: 'Ducts without openings through other sections: EI 30 or fire dampers'
+  fr: 'Conduits sans ouvertures traversant d''autres sections : EI 30 ou clapets coupe-feu'
+  it: 'Condotti senza aperture che attraversano altre sezioni: EI 30 o serrande tagliafuoco'
+description:
+  de: 'Lüftungsleitungen, die öffnungslos durch andere Brand- oder Lüftungsabschnitte führen oder deren Austrittsöffnungen
+    im Geschoss darüber oder darunter liegen, sind mit EI 30 auszuführen oder zu bekleiden. In Schleusen und vertikalen Fluchtwegen
+    gilt der Feuerwiderstand der nutzungsbezogenen Brandabschnittsbildung, mindestens EI 30. Bei Lüftungsabschnitten können
+    stattdessen Brandschutzklappen eingebaut werden. Installationsschächte dürfen nicht als Lüftungsleitungen dienen. Noch
+    nicht prüfbar: das Modell zeigt weder, durch welche Abschnitte eine Leitung führt, noch deren Feuerwiderstand oder Bekleidung.'
+  en: 'Ventilation ducts that run without openings through other fire or ventilation sections, or whose outlets are on the
+    storey above or below, are built or clad with EI 30. In airlocks and vertical escape routes the fire resistance of the
+    use-related compartmentation applies, at least EI 30. For ventilation sections, fire dampers may be installed instead.
+    Installation shafts must not serve as ventilation ducts. Not yet checkable: the model shows neither which sections a duct
+    passes through nor its fire resistance or cladding.'
+  fr: 'Les conduits de ventilation qui traversent sans ouvertures d''autres compartiments ou sections de ventilation, ou dont
+    les bouches sont à l''étage supérieur ou inférieur, sont réalisés ou habillés en EI 30. Dans les sas et voies d''évacuation
+    verticales, la résistance au feu de la compartimentation liée à l''affectation s''applique, au moins EI 30. Pour les sections
+    de ventilation, on peut installer des clapets coupe-feu à la place. Les gaines techniques ne servent pas de conduits de
+    ventilation. Pas encore vérifiable : le modèle n''indique ni quelles sections un conduit traverse ni sa résistance au
+    feu ou son habillage.'
+  it: 'I condotti di ventilazione che attraversano senza aperture altri compartimenti o sezioni di ventilazione, o le cui
+    bocche si trovano al piano superiore o inferiore, sono realizzati o rivestiti EI 30. Nei filtri e nelle vie di fuga verticali
+    vale la resistenza al fuoco della compartimentazione legata all''utilizzo, almeno EI 30. Per le sezioni di ventilazione
+    si possono installare invece serrande tagliafuoco. I cavedi impiantistici non servono come condotti di ventilazione. Non
+    ancora verificabile: il modello non indica né quali sezioni attraversa un condotto né la sua resistenza al fuoco o il
+    suo rivestimento.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-schematic-duct
+- pragmaticbim:element/architecture-installation-path
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/structural-wall
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-25-15-2015
+  source_document: VKF-Brandschutzrichtlinie 25-15 Lufttechnische Anlagen (2015)
+  source_page: 7
+  source_quote: VKF 25-15, Ziff. 3.7.6 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

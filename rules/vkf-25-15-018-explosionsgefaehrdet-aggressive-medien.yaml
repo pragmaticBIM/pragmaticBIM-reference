@@ -1,0 +1,54 @@
+id: pragmaticbim:rule/vkf-25-15-018-explosionsgefaehrdet-aggressive-medien
+code: VKF-25-15-018
+sort_order: 104
+name:
+  de: Anlagen für explosionsgefährdete Bereiche und aggressive Medien
+  en: Systems for explosion-hazard areas and aggressive media
+  fr: Installations pour zones à risque d'explosion et milieux agressifs
+  it: Impianti per aree a rischio di esplosione e mezzi aggressivi
+description:
+  de: 'Anlagen für feuer- und explosionsgefährdete Bereiche haben separate Aggregate und Leitungen; stehen die Aggregate in
+    einem anderen Bereich, kommen sie in einen eigenen Raum mit dem Feuerwiderstand der Brandabschnittsbildung, mindestens
+    EI 60. Aussen und bei Dachdurchführungen halten die Leitungen 0.2 m Abstand zu brennbarem Material; Ventilatoren nahe
+    der Ausblasstelle erzeugen keine Funken. Bei aggressiven Medien genügt für luftführende Teile mindestens RF2; brennbare
+    Leitungen liegen aussen am Gebäude oder in Schächten mit EI 60 aus RF1 (dauerwärmebeständig). Noch nicht prüfbar: explosionsgefährdete
+    Bereiche und aggressive Medien sind nicht als Raumeigenschaft modelliert.'
+  en: 'Systems for fire and explosion hazard areas have separate units and ducts; if the units stand in another area they
+    go in their own room with the fire resistance of the compartmentation, at least EI 60. Outside and at roof penetrations
+    the ducts keep 0.2 m from combustible material; fans near the discharge point produce no sparks. For aggressive media
+    at least RF2 is enough for air-carrying parts; combustible ducts run outside the building or in shafts of EI 60 made of
+    RF1 (heat-resistant). Not yet checkable: explosion-hazard areas and aggressive media are not modelled as a room property.'
+  fr: 'Les installations pour zones à risque d''incendie et d''explosion ont des centrales et conduits séparés ; si les centrales
+    sont dans une autre zone, elles sont dans un local propre ayant la résistance au feu de la compartimentation, au moins
+    EI 60. À l''extérieur et aux traversées de toiture, les conduits respectent 0.2 m par rapport aux matériaux combustibles
+    ; les ventilateurs près du point de rejet ne produisent pas d''étincelles. Pour les milieux agressifs, RF2 au moins suffit
+    pour les éléments véhiculant l''air ; les conduits combustibles sont à l''extérieur du bâtiment ou dans des gaines EI
+    60 en RF1 (résistantes à la chaleur durable). Pas encore vérifiable : les zones à risque d''explosion et les milieux agressifs
+    ne sont pas modélisés comme propriété de local.'
+  it: 'Gli impianti per aree a rischio d''incendio e di esplosione hanno centrali e condotti separati; se le centrali sono
+    in un''altra area, stanno in un locale proprio con la resistenza al fuoco della compartimentazione, almeno EI 60. All''esterno
+    e agli attraversamenti del tetto i condotti mantengono 0.2 m dai materiali combustibili; i ventilatori vicino al punto
+    di scarico non producono scintille. Per i mezzi aggressivi basta almeno RF2 per le parti che veicolano l''aria; i condotti
+    combustibili corrono all''esterno dell''edificio o in cavedi EI 60 in RF1 (resistente al calore). Non ancora verificabile:
+    le aree a rischio di esplosione e i mezzi aggressivi non sono modellati come proprietà del locale.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-schematic-duct
+- pragmaticbim:element/mep-fan
+- pragmaticbim:element/mep-unitary-equipment
+- pragmaticbim:element/architecture-installation-path
+- pragmaticbim:element/architecture-wall-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-25-15-2015
+  source_document: VKF-Brandschutzrichtlinie 25-15 Lufttechnische Anlagen (2015)
+  source_page: 10
+  source_quote: VKF 25-15, Ziff. 4.3.2 und 4.3.3 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

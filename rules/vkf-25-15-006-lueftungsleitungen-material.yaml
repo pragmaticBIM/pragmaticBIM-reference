@@ -1,0 +1,54 @@
+id: pragmaticbim:rule/vkf-25-15-006-lueftungsleitungen-material
+code: VKF-25-15-006
+sort_order: 92
+name:
+  de: Lüftungsleitungen aus RF1, Ausnahmen mindestens RF3
+  en: Ventilation ducts of RF1, exceptions at least RF3
+  fr: Conduits de ventilation en RF1, exceptions au moins RF3
+  it: Condotti di ventilazione in RF1, eccezioni almeno RF3
+description:
+  de: 'Lüftungsleitungen, Lüftungsdecken und -böden bestehen aus Baustoffen der RF1. Mindestens RF3 genügt innerhalb des Brandabschnitts
+    versorgter Lüftungsabschnitte in Büro-, Schul- und Wohnnutzungseinheiten, für Lüftungsdecken und -böden innerhalb eines
+    Brandabschnitts, für einbetonierte Leitungen und für Erdregister. Flexible Leitungen sind mindestens RF3 und innerhalb
+    eines Brandabschnitts ohne Längenbeschränkung zulässig, soweit sie nur dessen Belüftung dienen; RF1-Leitungen sind für
+    Apparateanschlüsse im Aufstellungsraum auf 2 m beschränkt, RF3-Leitungen für Luftauslässe auf 2 m, für örtliche Absaugungen
+    auf 4 m. Noch nicht prüfbar: Leitungen tragen kein Brandverhalten, und Lüftungsabschnitte sowie flexible Längen sind nicht
+    modelliert.'
+  en: 'Ventilation ducts, ventilation ceilings and floors are made of RF1 materials. At least RF3 is enough within the fire
+    compartment of ventilation sections in office, school and dwelling units, for ventilation ceilings and floors within one
+    compartment, for ducts cast in concrete and for earth registers. Flexible ducts are at least RF3 and allowed without length
+    limit within one fire compartment as long as they only ventilate it; RF1 flexible ducts are limited to 2 m for equipment
+    connections in the equipment room, RF3 ones to 2 m for air outlets and 4 m for local extraction. Not yet checkable: ducts
+    carry no reaction to fire, and ventilation sections and flexible lengths are not modelled.'
+  fr: 'Les conduits, plafonds et planchers de ventilation sont en matériaux RF1. RF3 au moins suffit à l''intérieur du compartiment
+    des sections de ventilation des unités d''usage de bureaux, d''écoles et de logements, pour les plafonds et planchers
+    de ventilation à l''intérieur d''un compartiment, pour les conduits bétonnés et pour les échangeurs géothermiques. Les
+    conduits flexibles sont au moins RF3 et admis sans limite de longueur dans un compartiment tant qu''ils servent uniquement
+    à le ventiler ; les conduits flexibles RF1 sont limités à 2 m pour les raccords d''appareils dans le local, ceux en RF3
+    à 2 m pour les bouches d''air et 4 m pour les aspirations locales. Pas encore vérifiable : les conduits n''ont pas de
+    comportement au feu et les sections de ventilation ainsi que les longueurs flexibles ne sont pas modélisées.'
+  it: 'Condotti, controsoffitti e pavimenti di ventilazione sono in materiali RF1. Basta almeno RF3 all''interno del compartimento
+    delle sezioni di ventilazione di unità d''uso per uffici, scuole e abitazioni, per controsoffitti e pavimenti di ventilazione
+    all''interno di un compartimento, per condotti inglobati nel calcestruzzo e per scambiatori geotermici. I condotti flessibili
+    sono almeno RF3 e ammessi senza limite di lunghezza all''interno di un compartimento finché servono solo alla sua ventilazione;
+    i condotti flessibili RF1 sono limitati a 2 m per i collegamenti agli apparecchi nel locale, quelli RF3 a 2 m per le bocchette
+    e 4 m per le aspirazioni locali. Non ancora verificabile: i condotti non hanno una reazione al fuoco e le sezioni di ventilazione
+    e le lunghezze flessibili non sono modellate.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-schematic-duct
+- pragmaticbim:element/mep-air-terminal
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-25-15-2015
+  source_document: VKF-Brandschutzrichtlinie 25-15 Lufttechnische Anlagen (2015)
+  source_page: 6
+  source_quote: VKF 25-15, Ziff. 3.7.1 und 3.7.2 Abs. 1–4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
