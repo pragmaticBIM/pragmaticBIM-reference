@@ -1,0 +1,52 @@
+id: pragmaticbim:value/fire-rating-r
+code: FIRE-RATING-R
+name:
+  de: Feuerwiderstand R (Tragfähigkeit)
+  fr: Résistance au feu R (stabilité)
+  it: Resistenza al fuoco R (capacità portante)
+  en: Fire rating R (load-bearing)
+description:
+  de: Klassen R 30 bis R 240 für tragende Bauteile ohne raumabschliessende Funktion und ohne Wärmedämmung, insbesondere Stützen
+    und Träger (VKF 13-15, Ziff. 3.1.7); die Zahl ist die Feuerwiderstandsdauer in Minuten. Erweitert die Liste `fire-rating-r-rei`,
+    die nur R 30 bis R 90 enthält.
+  fr: Classes R 30 à R 240 pour les éléments porteurs sans fonction de compartimentage ni isolation thermique, notamment poteaux
+    et poutres (AEAI 13-15, ch. 3.1.7) ; le nombre est la durée de résistance au feu en minutes. Étend la liste `fire-rating-r-rei`,
+    qui ne contient que R 30 à R 90.
+  it: Classi da R 30 a R 240 per elementi portanti senza funzione di compartimentazione né isolamento termico, in particolare
+    pilastri e travi (AICAA 13-15, cifra 3.1.7); il numero è la durata di resistenza al fuoco in minuti. Estende l'elenco
+    `fire-rating-r-rei`, che contiene solo da R 30 a R 90.
+  en: Classes R 30 to R 240 for load-bearing components without separating function and without insulation, in particular
+    columns and beams (VKF 13-15, Ziff. 3.1.7); the number is the fire resistance duration in minutes. Extends the list `fire-rating-r-rei`,
+    which holds only R 30 to R 90.
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+  - R 30
+  - R 60
+  - R 90
+  - R 120
+  - R 180
+  - R 240
+  fr:
+  - R 30
+  - R 60
+  - R 90
+  - R 120
+  - R 180
+  - R 240
+  it:
+  - R 30
+  - R 60
+  - R 90
+  - R 120
+  - R 180
+  - R 240
+  en:
+  - R 30
+  - R 60
+  - R 90
+  - R 120
+  - R 180
+  - R 240

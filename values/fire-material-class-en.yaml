@@ -1,0 +1,68 @@
+id: pragmaticbim:value/fire-material-class-en
+code: FIRE-MATERIAL-CLASS-EN
+name:
+  de: Brandverhalten von Baustoffen nach EN (Euroklasse)
+  fr: Réaction au feu des matériaux selon EN (Euroclasse)
+  it: Reazione al fuoco dei materiali secondo EN (Euroclasse)
+  en: Reaction to fire of building materials under EN (Euroclass)
+description:
+  de: 'Brandverhaltensklassen A1, A2, B, C, D, E und F für Baustoffe nach SN EN 13501-1 (VKF 13-15, Ziff. 2.2.2 und 2.4.1).
+    Der Beitrag zum Brand nimmt von A1 nach E zu; F erreicht E nicht und ist als Baustoff nicht zugelassen. Zuordnung zu den
+    Brandverhaltensgruppen RF: A1 und die Klassen A2, B und C mit Rauchentwicklung s1 oder s2 und Abtropfen d0 oder d1 gehören
+    zu RF1; A2, B und C mit höherer Rauchentwicklung oder stärkerem Abtropfen zu RF2; D zu RF3; E zu RF4; F ist kein Baustoff.
+    Für einzelne Kombinationen gilt zusätzlich das Kennzeichen cr (kritisches Verhalten). Die Werte ersetzen die Liste RF1
+    bis RF4 nicht (`reaction-to-fire`), sondern ergänzen sie.'
+  fr: 'Classes de réaction au feu A1, A2, B, C, D, E et F pour matériaux selon SN EN 13501-1 (AEAI 13-15, ch. 2.2.2 et 2.4.1).
+    La contribution à l''incendie augmente de A1 à E ; F n''atteint pas E et n''est pas admise comme matériau de construction.
+    Attribution aux groupes RF : A1 et les classes A2, B et C avec production de fumée s1 ou s2 et gouttelettes d0 ou d1 relèvent
+    de RF1 ; A2, B et C avec plus de fumée ou de gouttelettes de RF2 ; D de RF3 ; E de RF4 ; F n''est pas un matériau de construction.
+    Pour certaines combinaisons, le critère cr (comportement critique) s''ajoute. Ces valeurs ne remplacent pas la liste RF1
+    à RF4 (`reaction-to-fire`), elles la complètent.'
+  it: 'Classi di reazione al fuoco A1, A2, B, C, D, E e F per i materiali secondo SN EN 13501-1 (AICAA 13-15, cifre 2.2.2
+    e 2.4.1). Il contributo all''incendio aumenta da A1 a E; F non raggiunge E e non è ammessa come materiale da costruzione.
+    Assegnazione ai gruppi RF: A1 e le classi A2, B e C con sviluppo di fumo s1 o s2 e gocciolamento d0 o d1 appartengono
+    a RF1; A2, B e C con più fumo o gocciolamento a RF2; D a RF3; E a RF4; F non è un materiale da costruzione. Per alcune
+    combinazioni si aggiunge il criterio cr (comportamento critico). Questi valori non sostituiscono l''elenco RF1–RF4 (`reaction-to-fire`),
+    lo completano.'
+  en: 'Reaction-to-fire classes A1, A2, B, C, D, E and F for building materials under SN EN 13501-1 (VKF 13-15, Ziff. 2.2.2
+    and 2.4.1). Contribution to fire increases from A1 to E; F does not reach E and is not permitted as a building material.
+    Assignment to the RF groups: A1 and classes A2, B and C with smoke s1 or s2 and droplets d0 or d1 belong to RF1; A2, B
+    and C with more smoke or dripping to RF2; D to RF3; E to RF4; F is not a building material. For some combinations the
+    cr flag (critical behaviour) applies in addition. The values do not replace the RF1 to RF4 list (`reaction-to-fire`) but
+    complement it.'
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+  - A1
+  - A2
+  - B
+  - C
+  - D
+  - E
+  - F
+  fr:
+  - A1
+  - A2
+  - B
+  - C
+  - D
+  - E
+  - F
+  it:
+  - A1
+  - A2
+  - B
+  - C
+  - D
+  - E
+  - F
+  en:
+  - A1
+  - A2
+  - B
+  - C
+  - D
+  - E
+  - F
