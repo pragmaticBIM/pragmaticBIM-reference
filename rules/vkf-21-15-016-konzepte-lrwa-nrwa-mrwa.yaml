@@ -1,0 +1,58 @@
+id: pragmaticbim:rule/vkf-21-15-016-konzepte-lrwa-nrwa-mrwa
+code: VKF-21-15-016
+sort_order: 122
+name:
+  de: 'Konzepte: Feuerwehrlüfter bis 1. UG, natürliche Anlagen nicht unter Terrain, Absaugung unter der Decke'
+  en: 'Concepts: fire-brigade fans down to the 1st basement, natural systems not below ground, extraction under the ceiling'
+  fr: 'Concepts : ventilateurs des sapeurs-pompiers jusqu''au 1er sous-sol, installations naturelles pas en sous-sol, aspiration
+    sous le plafond'
+  it: 'Concetti: ventilatori dei pompieri fino al 1° interrato, impianti naturali non sotto terra, aspirazione sotto il soffitto'
+description:
+  de: 'Die Entrauchung mit Feuerwehrlüftern setzt Einsatzkräfte innert 15 Minuten ab Alarm voraus, braucht neben den Abströmöffnungen
+    Einblasöffnungen für das Aufstellen der Lüfter und ist unter Terrain nur bis zum 1. Untergeschoss zulässig, sofern die
+    Zuluft nicht auf gleicher Ebene vom Freien kommt. Natürliche Anlagen funktionieren unabhängig von der Witterung und dürfen
+    nicht unter Terrain eingebaut werden, ausser bei direkter Zuluft vom Freien (Hanglage). Bei maschinellen Anlagen liegen
+    die Absaugstellen unter der Decke und sind auf die Nachströmöffnungen abgestimmt. Noch nicht prüfbar: das Modell enthält
+    keine Rauch- und Wärmeabzugsanlage als System und keine Zuordnung zu Brandabschnitten.'
+  en: 'Smoke clearance with fire-brigade fans assumes response forces on site within 15 minutes of the alarm, needs inlet
+    openings for setting up the fans in addition to the exhaust openings, and below ground is permitted only down to the 1st
+    basement unless supply air comes from outdoors on the same level. Natural systems work regardless of weather and must
+    not be built below ground, except with direct supply air from outdoors (hillside). In mechanical systems the extraction
+    points sit under the ceiling and are matched to the inflow openings. Not yet checkable: the model holds no smoke and heat
+    exhaust system and no assignment of one to fire compartments.'
+  fr: 'Le désenfumage par ventilateurs des sapeurs-pompiers suppose des moyens d''intervention sur place dans les 15 minutes
+    suivant l''alarme, exige des ouvertures d''insufflation pour installer les ventilateurs en plus des ouvertures d''évacuation
+    et n''est admis en sous-sol que jusqu''au 1er sous-sol, sauf si l''air d''amenée vient de l''extérieur au même niveau.
+    Les installations naturelles fonctionnent indépendamment de la météo et ne peuvent être installées en sous-sol, sauf amenée
+    d''air directe de l''extérieur (terrain en pente). Pour les installations mécaniques, les points d''aspiration sont sous
+    le plafond et adaptés aux ouvertures d''amenée. Pas encore vérifiable : le modèle ne contient aucune installation d''évacuation
+    de fumée et de chaleur ni affectation à des compartiments.'
+  it: 'L''evacuazione con ventilatori dei pompieri presuppone mezzi d''intervento sul posto entro 15 minuti dall''allarme,
+    richiede aperture di immissione per collocare i ventilatori oltre alle aperture di evacuazione ed è ammessa sotto terra
+    solo fino al 1° piano interrato, salvo che l''aria di mandata provenga dall''esterno allo stesso livello. Gli impianti
+    naturali funzionano indipendentemente dal tempo e non possono essere installati sotto terra, salvo mandata diretta dall''esterno
+    (terreno in pendenza). Negli impianti meccanici i punti di aspirazione stanno sotto il soffitto e sono adeguati alle aperture
+    di afflusso. Non ancora verificabile: il modello non contiene alcun impianto di evacuazione di fumo e calore né l''assegnazione
+    a compartimenti.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/mep-fan
+- pragmaticbim:element/architecture-window-exterior
+- pragmaticbim:element/architecture-door-exterior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-21-15-2015
+  source_document: VKF-Brandschutzrichtlinie 21-15 Rauch- und Wärmeabzugsanlagen (2015)
+  source_page: 11
+  source_quote: VKF 21-15, Ziff. 5.1.1–5.1.3, 5.2 Abs. 2–3 und 5.3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

@@ -1,0 +1,53 @@
+id: pragmaticbim:rule/vkf-21-15-001-notwendigkeit-nach-nutzung
+code: VKF-21-15-001
+sort_order: 107
+name:
+  de: Rauch- und Wärmeabzug nach Nutzung, Lage und Brandabschnittsfläche
+  en: Smoke and heat exhaust by use, position and fire-compartment area
+  fr: Évacuation de fumée et de chaleur selon l'affectation, la situation et la surface du compartiment
+  it: Evacuazione di fumo e calore secondo utilizzo, posizione e superficie del compartimento
+description:
+  de: 'Je nach Personenbelegung, Geschosszahl, Bauart, Lage und Nutzung sind Brandabschnitte mit einer ausreichend bemessenen
+    Rauch- und Wärmeabzugsanlage auszurüsten. Eine Tabelle legt für Industrie-, Gewerbe- und Lagerräume, Büros, Parkings,
+    Räume mit grosser Personenbelegung, Verkaufsräume, Atrien und Hochregallager Flächen- oder Personenschwellen fest, ab
+    denen die Anlage notwendig wird; Löschanlagen heben die Schwellen an. Offene Parkings über Terrain brauchen keine Anlage.
+    Noch nicht prüfbar: das Modell enthält keine Rauch- und Wärmeabzugsanlage als System und keine Zuordnung zu Brandabschnitten.'
+  en: 'Depending on occupancy, number of storeys, construction type, position and use, fire compartments must be equipped
+    with an adequately sized smoke and heat exhaust system. A table sets area or occupancy thresholds for industrial, commercial
+    and storage rooms, offices, car parks, rooms with large occupancy, sales rooms, atria and high-bay warehouses, above which
+    the system becomes necessary; fire-extinguishing systems raise the thresholds. Open car parks above ground need no system.
+    Not yet checkable: the model holds no smoke and heat exhaust system and no assignment of one to fire compartments.'
+  fr: 'Selon la charge d''occupation, le nombre d''étages, le mode de construction, la situation et l''affectation, les compartiments
+    sont équipés d''une installation d''évacuation de fumée et de chaleur suffisamment dimensionnée. Un tableau fixe, pour
+    les locaux industriels, artisanaux et de stockage, les bureaux, les parkings, les locaux à forte occupation, les surfaces
+    de vente, les atriums et les entrepôts à rayonnages hauts, des seuils de surface ou de personnes à partir desquels l''installation
+    est nécessaire ; les installations d''extinction relèvent ces seuils. Les parkings ouverts hors sol n''en ont pas besoin.
+    Pas encore vérifiable : le modèle ne contient aucune installation d''évacuation de fumée et de chaleur ni affectation
+    à des compartiments.'
+  it: 'In funzione dell''occupazione, del numero di piani, del tipo di costruzione, della posizione e dell''utilizzo, i compartimenti
+    sono dotati di un impianto di evacuazione di fumo e calore adeguatamente dimensionato. Una tabella fissa, per locali industriali,
+    artigianali e di deposito, uffici, autorimesse, locali con grande occupazione, superfici di vendita, atri e magazzini
+    a scaffalature alte, soglie di superficie o di persone oltre le quali l''impianto è necessario; gli impianti di estinzione
+    innalzano le soglie. Le autorimesse aperte fuori terra non ne hanno bisogno. Non ancora verificabile: il modello non contiene
+    alcun impianto di evacuazione di fumo e calore né l''assegnazione a compartimenti.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/mep-fan
+- pragmaticbim:element/mep-damper
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-21-15-2015
+  source_document: VKF-Brandschutzrichtlinie 21-15 Rauch- und Wärmeabzugsanlagen (2015)
+  source_page: 5
+  source_quote: VKF 21-15, Ziff. 3.1 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

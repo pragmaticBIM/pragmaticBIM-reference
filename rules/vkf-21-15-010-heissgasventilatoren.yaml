@@ -1,0 +1,55 @@
+id: pragmaticbim:rule/vkf-21-15-010-heissgasventilatoren
+code: VKF-21-15-010
+sort_order: 116
+name:
+  de: 'Heissgasventilatoren: Temperaturbeständigkeit und Aufstellraum mindestens EI 30'
+  en: 'Hot-gas fans: temperature resistance and installation room of at least EI 30'
+  fr: 'Ventilateurs de gaz chauds : tenue en température et local d''installation au moins EI 30'
+  it: 'Ventilatori per gas caldi: resistenza alla temperatura e locale di installazione almeno EI 30'
+description:
+  de: 'Für die Abführung der Rauchgase kommen geeignete Heissgasventilatoren zum Einsatz, die über die nötige Einsatzdauer
+    mindestens 400 °C aushalten, in Brandabschnitten mit Wasserlöschanlage und in vertikalen Fluchtwegen mindestens 200 °C.
+    Bei höheren erwarteten Temperaturen wird in Absprache mit der Brandschutzbehörde erhöht. Ausser im zu entrauchenden Raum
+    oder im Freien stehen sie in einem separaten Raum mit dem Feuerwiderstand der nutzungsbezogenen Brandabschnittsbildung,
+    mindestens EI 30. Noch nicht prüfbar: das Modell weist die Funktionsdauer der Anlageteile und den Feuerwiderstand der
+    Umfassung nicht aus.'
+  en: 'Suitable hot-gas fans are used to extract the smoke gases; they withstand at least 400 °C for the required operating
+    time, in compartments with a water-based extinguishing system and in vertical escape routes at least 200 °C. If higher
+    temperatures are expected, the value is raised in agreement with the fire protection authority. Except in the room to
+    be cleared or outdoors, they stand in a separate room with the fire resistance of the use-related compartmentation, at
+    least EI 30. Not yet checkable: the model does not show the functional duration of plant parts or the fire resistance
+    of the enclosure.'
+  fr: 'Pour l''évacuation des fumées, on emploie des ventilateurs de gaz chauds appropriés, qui supportent au moins 400 °C
+    pendant la durée d''emploi requise, au moins 200 °C dans les compartiments avec installation d''extinction à eau et dans
+    les voies d''évacuation verticales. Si des températures plus élevées sont attendues, l''exigence est relevée en accord
+    avec l''autorité de protection incendie. Sauf dans le local à désenfumer ou à l''extérieur, ils sont installés dans un
+    local séparé avec la résistance au feu de la compartimentation liée à l''affectation, au moins EI 30. Pas encore vérifiable
+    : le modèle n''indique pas la durée de fonctionnement des éléments d''installation ni la résistance au feu de l''enveloppe.'
+  it: 'Per l''evacuazione dei fumi si impiegano ventilatori per gas caldi idonei, che resistono per la durata d''impiego richiesta
+    ad almeno 400 °C, ad almeno 200 °C nei compartimenti con impianto di estinzione ad acqua e nelle vie di fuga verticali.
+    Se si attendono temperature più alte, il requisito è aumentato d''intesa con l''autorità di protezione antincendio. Salvo
+    che nel locale da evacuare o all''aperto, sono installati in un locale separato con la resistenza al fuoco della compartimentazione
+    legata all''utilizzo, almeno EI 30. Non ancora verificabile: il modello non indica la durata di funzionamento delle parti
+    d''impianto né la resistenza al fuoco dell''involucro.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fan
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-door-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-21-15-2015
+  source_document: VKF-Brandschutzrichtlinie 21-15 Rauch- und Wärmeabzugsanlagen (2015)
+  source_page: 9
+  source_quote: VKF 21-15, Ziff. 4.3 Abs. 1–3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

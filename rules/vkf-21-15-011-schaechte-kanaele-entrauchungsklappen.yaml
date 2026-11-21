@@ -1,0 +1,54 @@
+id: pragmaticbim:rule/vkf-21-15-011-schaechte-kanaele-entrauchungsklappen
+code: VKF-21-15-011
+sort_order: 117
+name:
+  de: 'Entrauchungskanäle und -klappen: Feuerwiderstand des durchquerten Brandabschnitts, Klappen mindestens EI 30'
+  en: 'Smoke-extraction ducts and dampers: fire resistance of the crossed compartment, dampers at least EI 30'
+  fr: 'Conduits et clapets de désenfumage : résistance au feu du compartiment traversé, clapets au moins EI 30'
+  it: 'Condotti e serrande di evacuazione fumi: resistenza al fuoco del compartimento attraversato, serrande almeno EI 30'
+description:
+  de: 'Schächte und Kanäle halten den erwarteten Beanspruchungen stand und verhindern beim Abführen heisser Brandgase die
+    Brand- und Rauchausbreitung; Längenausdehnung wird mit Fixpunkten und Kompensatoren aufgenommen, Kunststoffdübel sind
+    für Abströmkanäle nicht zulässig. Wo sie durch andere Brandabschnitte führen, haben sie den dort geforderten Feuerwiderstand.
+    Entrauchungsklappen für die selektive Ansteuerung haben den Feuerwiderstand der nutzungsbezogenen Brandabschnittsbildung,
+    mindestens EI 30. Noch nicht prüfbar: das Modell weist die Funktionsdauer der Anlageteile und den Feuerwiderstand der
+    Umfassung nicht aus.'
+  en: 'Shafts and ducts withstand the expected stresses and prevent fire and smoke spread when hot fire gases are extracted;
+    length expansion is taken up by fixed points and compensators, and plastic anchors are not permitted for exhaust ducts.
+    Where they pass through other fire compartments they have the fire resistance required there. Smoke-extraction dampers
+    for selective control have the fire resistance of the use-related compartmentation, at least EI 30. Not yet checkable:
+    the model does not show the functional duration of plant parts or the fire resistance of the enclosure.'
+  fr: 'Les gaines et conduits résistent aux sollicitations prévues et empêchent la propagation du feu et de la fumée lors
+    de l''évacuation de gaz chauds ; la dilatation en longueur est reprise par des points fixes et des compensateurs, les
+    chevilles en plastique sont interdites pour les conduits d''évacuation. Là où ils traversent d''autres compartiments,
+    ils ont la résistance au feu exigée pour ceux-ci. Les clapets de désenfumage pour la commande sélective ont la résistance
+    au feu de la compartimentation liée à l''affectation, au moins EI 30. Pas encore vérifiable : le modèle n''indique pas
+    la durée de fonctionnement des éléments d''installation ni la résistance au feu de l''enveloppe.'
+  it: 'Pozzetti e condotti resistono alle sollecitazioni previste e impediscono la propagazione di fuoco e fumo durante l''evacuazione
+    di gas caldi; la dilatazione in lunghezza è assorbita da punti fissi e compensatori, i tasselli di plastica non sono ammessi
+    per i condotti di evacuazione. Dove attraversano altri compartimenti hanno la resistenza al fuoco richiesta lì. Le serrande
+    di evacuazione fumi per il comando selettivo hanno la resistenza al fuoco della compartimentazione legata all''utilizzo,
+    almeno EI 30. Non ancora verificabile: il modello non indica la durata di funzionamento delle parti d''impianto né la
+    resistenza al fuoco dell''involucro.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-schematic-duct
+- pragmaticbim:element/mep-damper
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/structural-slab-floor
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-21-15-2015
+  source_document: VKF-Brandschutzrichtlinie 21-15 Rauch- und Wärmeabzugsanlagen (2015)
+  source_page: 9
+  source_quote: VKF 21-15, Ziff. 4.4 Abs. 1–2 und 4.5
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

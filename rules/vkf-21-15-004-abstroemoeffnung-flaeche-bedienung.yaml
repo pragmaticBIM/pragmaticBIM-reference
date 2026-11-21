@@ -1,0 +1,44 @@
+id: pragmaticbim:rule/vkf-21-15-004-abstroemoeffnung-flaeche-bedienung
+code: VKF-21-15-004
+sort_order: 110
+name:
+  de: 'Abströmöffnung am Treppenraum: 0.5 m² frei, von der Eingangsebene bedienbar'
+  en: 'Stairwell exhaust opening: 0.5 m² free, operable from the entrance level'
+  fr: 'Ouverture d''évacuation de la cage d''escalier : 0.5 m² libre, commandable depuis le niveau d''entrée'
+  it: 'Apertura di evacuazione del vano scale: 0.5 m² libera, azionabile dal piano d''ingresso'
+description:
+  de: 'Die freie geometrische Lüftungsfläche der Abströmöffnung am vertikalen Fluchtweg beträgt mindestens 0.5 m². Sie lässt
+    sich von der Eingangsebene aus in Betrieb setzen, und die Betriebsbereitschaft besteht auch bei Stromausfall. Noch nicht
+    prüfbar: das Modell weist weder Abströmöffnungen noch deren freie geometrische Fläche am Treppenraum aus.'
+  en: 'The free geometric ventilation area of the exhaust opening at a vertical escape route is at least 0.5 m². It can be
+    put into operation from the entrance level, and it stays operational during a power failure. Not yet checkable: the model
+    shows neither exhaust openings nor their free geometric area at the stairwell.'
+  fr: 'La surface de ventilation géométrique libre de l''ouverture d''évacuation d''une voie d''évacuation verticale est d''au
+    moins 0.5 m². Elle peut être mise en service depuis le niveau d''entrée et reste opérationnelle en cas de coupure de courant.
+    Pas encore vérifiable : le modèle n''indique ni ouvertures d''évacuation ni leur surface géométrique libre à la cage d''escalier.'
+  it: 'La superficie di ventilazione geometrica libera dell''apertura di evacuazione di una via di fuga verticale è di almeno
+    0.5 m². Può essere messa in funzione dal piano d''ingresso e resta operativa anche in caso di interruzione dell''alimentazione.
+    Non ancora verificabile: il modello non indica né aperture di evacuazione né la loro superficie geometrica libera al vano
+    scale.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-stair
+- pragmaticbim:element/structural-stair
+- pragmaticbim:element/architecture-window-exterior
+- pragmaticbim:element/mep-actuator
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-21-15-2015
+  source_document: VKF-Brandschutzrichtlinie 21-15 Rauch- und Wärmeabzugsanlagen (2015)
+  source_page: 7
+  source_quote: VKF 21-15, Ziff. 3.3.1 Abs. 3–4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
