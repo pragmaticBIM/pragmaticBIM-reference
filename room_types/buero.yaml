@@ -132,17 +132,11 @@ configurations:
       distance:
         max: 3.0
       severity: preferred
-      source:
-        kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     - id: pragmaticbim:placement-rule/buero-default-arbeitsplatz-tuer-frei
       relation: not_in_clearance_of
       target:
         opening_function: access
       severity: required
-      source:
-        kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
     status: active
   - id: pragmaticbim:room-type-equipment/buero-default-aktenschrank
@@ -160,9 +154,6 @@ configurations:
       target:
         opening_function: daylight
       severity: preferred
-      source:
-        kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     status: active
   - id: pragmaticbim:room-type-equipment/buero-default-steckdose
     sort_order: 3
@@ -181,17 +172,11 @@ configurations:
         min: 0.3
         max: 0.3
       severity: required
-      source:
-        kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     - id: pragmaticbim:placement-rule/buero-default-steckdose-tuer-frei
       relation: not_in_clearance_of
       target:
         opening_function: access
       severity: required
-      source:
-        kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     - id: pragmaticbim:placement-rule/buero-default-steckdose-arbeitsplatz
       relation: next_to
       target:
@@ -200,9 +185,6 @@ configurations:
         max: 1.0
       scope: each_target
       severity: required
-      source:
-        kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
       comment: Abstand zum Arbeitsplatz als Planungswert vor Freigabe fachlich bestätigen.
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
     status: active
@@ -221,9 +203,6 @@ configurations:
       distance:
         max: 0.3
       severity: required
-      source:
-        kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
       variants:
       - relation: next_to
         target:
@@ -239,10 +218,6 @@ configurations:
         min: 0.9
         max: 1.1
       severity: required
-      source:
-        kind: norm
-        reference: SIA 500:2009, 7.4
-        note: Höhe Bedienelemente
     status: active
   openings:
   - id: pragmaticbim:room-type-opening/buero-default-zugang
@@ -263,9 +238,6 @@ configurations:
       target:
         edge_kind: exterior
       severity: required
-      source:
-        kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     status: active
   - id: pragmaticbim:room-type-opening/buero-default-fenster
     sort_order: 2
@@ -284,9 +256,6 @@ configurations:
       target:
         edge_kind: exterior
       severity: required
-      source:
-        kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     comment: Mindestanteil Glasfläche nach kantonalem Recht und Arbeitsgesetz; projektbezogen prüfen.
     status: active
   status: active

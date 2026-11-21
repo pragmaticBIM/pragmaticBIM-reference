@@ -438,8 +438,6 @@ class RuleResult:
     expected: str
     message: str
     space: str | None = None
-    source_kind: str | None = None
-    source_reference: str | None = None
 
 
 def _range_badness(value: float, bounds: dict[str, float] | None) -> float:
@@ -688,7 +686,6 @@ def evaluate_layout(
             for element, outcome in pairs:
                 if outcome.ok and not include_passed:
                     continue
-                source = rule.get("source") or {}
                 results.append(
                     RuleResult(
                         rule_id=rule["id"],
@@ -701,8 +698,6 @@ def evaluate_layout(
                         expected=expected_text(rule),
                         message=_message(rule, outcome, element),
                         space=layout.key,
-                        source_kind=source.get("kind"),
-                        source_reference=source.get("reference"),
                     )
                 )
     return results

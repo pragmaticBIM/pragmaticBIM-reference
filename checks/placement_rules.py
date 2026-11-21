@@ -330,13 +330,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     results = check_placement_rules(args.model, _parse_room_types(args.room_type))
     for result in results:
-        source = result.source_kind or "-"
-        if result.source_reference:
-            source = f"{source}:{result.source_reference}"
-        print(
-            f"{result.severity:9} [{source}] {result.rule_id} {result.element} "
-            f"measured={result.measured} {result.message}"
-        )
+        print(f"{result.severity:9} {result.rule_id} {result.element} measured={result.measured} {result.message}")
     return 1 if any(r.severity == "required" for r in results) else 0
 
 

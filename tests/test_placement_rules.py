@@ -75,45 +75,6 @@ def test_buero_has_rules_on_every_entry() -> None:
         assert entry.get("placement_rules"), f"{entry['id']} has no placement rules"
 
 
-def test_every_placement_rule_has_a_source() -> None:
-    for _, config in _configurations():
-        for _, entry in rr.configuration_entries(config):
-            for rule in entry.get("placement_rules") or []:
-                source = rule.get("source")
-                assert isinstance(source, dict), rule["id"]
-                assert source.get("kind") in {"norm", "owner", "project", "default"}, rule["id"]
-                if source["kind"] == "norm":
-                    assert str(source.get("reference") or "").strip(), rule["id"]
-
-
-def test_buero_switch_height_is_norm_sia_500() -> None:
-    config = rr.configuration(rr.room_type(BUERO))
-    switch = next(e for _, e in rr.configuration_entries(config) if e["id"] == SWITCH_ENTRY)
-    height = next(r for r in switch["placement_rules"] if r["id"].endswith("lichtschalter-hoehe"))
-    assert height["source"]["kind"] == "norm"
-    assert "SIA 500" in height["source"]["reference"]
-
-
-def test_norm_source_without_reference_fails_schema() -> None:
-    import jsonschema
-    from pathlib import Path
-
-    import json
-
-    schema = json.loads(
-        (Path(__file__).resolve().parents[1] / "schema" / "room-type-equipment.schema.json").read_text(
-            encoding="utf-8"
-        )
-    )
-    # Resolve local $defs only: validate a single placementRule via allOf pieces is hard;
-    # use the placementRuleSource def directly.
-    source_schema = schema["$defs"]["placementRuleSource"]
-    validator = jsonschema.Draft202012Validator(source_schema)
-    assert list(validator.iter_errors({"kind": "norm"}))
-    assert not list(validator.iter_errors({"kind": "norm", "reference": "SIA 500:2009, 7.4"}))
-    assert not list(validator.iter_errors({"kind": "default"}))
-
-
 # ── Shared evaluation: one positive and one negative case per relation ───────
 
 ROOM = rr.Room([(0, 0), (4, 0), (4, 3), (0, 3)], ["interior", "interior", "exterior", "interior"])
