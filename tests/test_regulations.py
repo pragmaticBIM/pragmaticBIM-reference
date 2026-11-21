@@ -24,6 +24,7 @@ REQUIRED_FIELDS = (
 EXPECTED_IDS = {
     "pragmaticbim:regulation/vkf-15-15-2015",
     "pragmaticbim:regulation/vkf-16-15-2015",
+    "pragmaticbim:regulation/vkf-23-15-2015",
     "pragmaticbim:regulation/sia-181-2020",
     "pragmaticbim:regulation/sia-500-2009",
     "pragmaticbim:regulation/sia-416-2003",
@@ -87,6 +88,7 @@ def test_vkf_and_sia181_rules_link_their_regulation() -> None:
     expected = {
         "vkf-15-15": "pragmaticbim:regulation/vkf-15-15-2015",
         "vkf-16-15": "pragmaticbim:regulation/vkf-16-15-2015",
+        "vkf-23-15": "pragmaticbim:regulation/vkf-23-15-2015",
         "sia-181": "pragmaticbim:regulation/sia-181-2020",
     }
     for path in sorted((REPO_ROOT / "rules").glob("*.yaml")):
@@ -99,3 +101,19 @@ def test_vkf_and_sia181_rules_link_their_regulation() -> None:
             continue
         rule = yaml.safe_load(path.read_text(encoding="utf-8"))
         assert rule["rule_source"]["regulation"] == regulation_id, path
+
+
+def test_vkf_23_15_lift_rules_are_localized_and_cite_clauses() -> None:
+    rule_paths = sorted((REPO_ROOT / "rules").glob("vkf-23-15-*.yaml"))
+    assert len(rule_paths) >= 3
+    for path in rule_paths:
+        rule = yaml.safe_load(path.read_text(encoding="utf-8"))
+        assert rule["rule_source"]["regulation"] == "pragmaticbim:regulation/vkf-23-15-2015", path
+        assert rule["rule_source"]["source_quote"].startswith("VKF 23-15, Ziff."), path
+        assert rule["rule_status"] == "reviewed", path
+        assert rule["reviewed_by"] in (None, ""), path
+        assert rule["reviewed_at"] in (None, ""), path
+        assert rule["jurisdiction"] == ["ch"], path
+        for field in ("name", "description"):
+            for lang in LANGS:
+                assert str(rule[field].get(lang) or "").strip(), f"{path}: {field}.{lang}"
