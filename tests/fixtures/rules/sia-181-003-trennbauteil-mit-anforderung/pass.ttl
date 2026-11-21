@@ -1,0 +1,14 @@
+@prefix pbs: <https://schema.pragmaticbim.ch/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc: <https://w3id.org/ifc/IFC4_ADD2#> .
+@prefix ex: <https://schema.pragmaticbim.ch/ex/> .
+
+ex:spaceA a pbs:Space ;
+  pbs:metadata [ pbs:metadata_key "ePset_Space.UsageUnitReference" ; pbs:metadata_value "WE-A" ] .
+ex:spaceB a pbs:Space ;
+  pbs:metadata [ pbs:metadata_key "ePset_Space.UsageUnitReference" ; pbs:metadata_value "WE-B" ] .
+ex:focus pbs:separates_spaces ex:spaceA , ex:spaceB ;
+  pbs:metadata [
+    pbs:metadata_key "ePset_WallRequirement.AirborneSoundInsulationMin" ;
+    pbs:metadata_value "52"
+  ] .

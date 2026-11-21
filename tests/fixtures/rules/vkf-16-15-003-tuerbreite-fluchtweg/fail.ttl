@@ -1,0 +1,11 @@
+# VKF 16-15 Ziff. 2.4.5: escape-route door OverallWidth 0.80 < 0.90
+
+@prefix pbs: <https://schema.pragmaticbim.ch/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc: <https://w3id.org/ifc/IFC4_ADD2#> .
+@prefix ex: <https://schema.pragmaticbim.ch/ex/> .
+
+ex:next a pbs:Space .
+ex:focus pbs:connection_physical_type ifc:IfcDoor ;
+  pbs:escape_route_next ex:next ;
+  pbs:metadata [ pbs:metadata_key "IfcDoor.OverallWidth" ; pbs:metadata_value "0.80" ] .

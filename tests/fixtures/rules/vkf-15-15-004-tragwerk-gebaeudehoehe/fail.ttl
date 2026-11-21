@@ -1,0 +1,19 @@
+# VKF 15-15 Ziff. 3.7.1: medium-height building, load-bearing wall R30 < R60
+
+@prefix pbs: <https://schema.pragmaticbim.ch/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc: <https://w3id.org/ifc/IFC4_ADD2#> .
+@prefix ex: <https://schema.pragmaticbim.ch/ex/> .
+
+ex:building a pbs:BuildingContext .
+ex:l0 a pbs:LevelContext ; pbs:elevation 0.0 .
+ex:l1 a pbs:LevelContext ; pbs:elevation 3.0 .
+ex:l2 a pbs:LevelContext ; pbs:elevation 6.0 .
+ex:l3 a pbs:LevelContext ; pbs:elevation 9.0 .
+ex:l4 a pbs:LevelContext ; pbs:elevation 12.0 .
+ex:space a pbs:Space ; pbs:parent_level ex:l4 .
+ex:focus a pbs:SeparatorWall ;
+  pbs:parent_level ex:l1 ;
+  pbs:performance_properties
+    [ pbs:property_key pbs:structural_property_load_bearing ; pbs:property_value_boolean true ] ,
+    [ pbs:property_key pbs:fire_property_resistance_rating ; pbs:property_value_string "R30" ] .
