@@ -1,0 +1,15 @@
+# SIA 181: impact sound 58 dB above max 53 dB
+
+@prefix pbs: <https://schema.pragmaticbim.ch/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc: <https://w3id.org/ifc/IFC4_ADD2#> .
+@prefix ex: <https://schema.pragmaticbim.ch/ex/> .
+
+ex:focus pbs:metadata [
+    pbs:metadata_key "ePset_SlabRequirement.ImpactSoundLevelMax" ;
+    pbs:metadata_value "53"
+  ] ;
+  pbs:performance_properties [
+    pbs:property_key pbs:acoustic_property_impact_sound_rating_db ;
+    pbs:property_value_number 58
+  ] .
