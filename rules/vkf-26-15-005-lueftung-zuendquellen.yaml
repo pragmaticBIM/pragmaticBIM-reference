@@ -1,0 +1,56 @@
+id: pragmaticbim:rule/vkf-26-15-005-lueftung-zuendquellen
+code: VKF-26-15-005
+sort_order: 189
+name:
+  de: Lüftung gefährlicher Konzentrationen; Ventilatoren und Zündquellen in gefährdeten Zonen
+  en: Ventilation of hazardous concentrations; fans and ignition sources in hazard zones
+  fr: Ventilation des concentrations dangereuses ; ventilateurs et sources d'inflammation dans les zones à risque
+  it: Ventilazione di concentrazioni pericolose; ventilatori e fonti di innesco nelle zone a rischio
+description:
+  de: 'Räume oder Zonen, in denen sich brennbare Gase, Dämpfe, Nebel oder Stäube gefährlich anreichern können, werden natürlich
+    oder künstlich ausreichend gelüftet. Ventilatoren samt Antrieb in explosionsgefährdeten Zonen oder in Abluftleitungen
+    dürfen keine wirksame Zündquelle sein. In feuer- und explosionsgefährdeten Räumen und Zonen werden Zündquellen (Flammen,
+    Glut, heisse Oberflächen, elektrische, mechanische und elektrostatische Funken) vermieden oder durch Schutzmassnahmen
+    ausgeschlossen. Noch nicht prüfbar: das Modell weist Stoffklassierung, Lagermenge, Lagerart und Lagerort gefährlicher
+    Stoffe nicht aus.'
+  en: 'Rooms or zones where combustible gases, vapours, mists or dusts can accumulate dangerously are ventilated naturally
+    or artificially to a sufficient extent. Fans and their drives in explosion-hazard zones or in exhaust ducts must not become
+    effective ignition sources. In rooms and zones with fire or explosion hazard, ignition sources (flames, embers, hot surfaces,
+    electrical, mechanical and electrostatic sparks) are avoided or excluded by protective measures. Not yet checkable: the
+    model does not show substance classification, stored quantity, type and location of hazardous substances.'
+  fr: 'Les locaux ou zones où des gaz, vapeurs, brouillards ou poussières combustibles peuvent s''accumuler dangereusement
+    sont suffisamment ventilés, naturellement ou artificiellement. Les ventilateurs et leurs entraînements en zones explosibles
+    ou dans les conduites d''extraction ne doivent pas devenir une source d''inflammation efficace. Dans les locaux et zones
+    à risque d''incendie ou d''explosion, les sources d''inflammation (flammes, braises, surfaces chaudes, étincelles électriques,
+    mécaniques et électrostatiques) sont évitées ou exclues par des mesures de protection. Pas encore vérifiable : le modèle
+    n''indique ni la classification des substances, ni la quantité stockée, ni le mode et le lieu de stockage des substances
+    dangereuses.'
+  it: 'I locali o le zone in cui gas, vapori, nebbie o polveri combustibili possono accumularsi in modo pericoloso sono ventilati
+    a sufficienza, naturalmente o artificialmente. Ventilatori e relativi azionamenti in zone a rischio di esplosione o in
+    condotte di estrazione non devono diventare una fonte di innesco efficace. In locali e zone a rischio d''incendio o d''esplosione
+    le fonti di innesco (fiamme, braci, superfici calde, scintille elettriche, meccaniche ed elettrostatiche) sono evitate
+    o escluse con misure di protezione. Non ancora verificabile: il modello non indica classificazione delle sostanze, quantità
+    stoccata né tipo e luogo di stoccaggio delle sostanze pericolose.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fan
+- pragmaticbim:element/mep-schematic-duct
+- pragmaticbim:element/mep-electric-distribution-board
+- pragmaticbim:element/mep-light-fixture
+- pragmaticbim:element/spaces-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 7
+  source_quote: VKF 26-15, Ziff. 3.5.1 und 3.5.2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

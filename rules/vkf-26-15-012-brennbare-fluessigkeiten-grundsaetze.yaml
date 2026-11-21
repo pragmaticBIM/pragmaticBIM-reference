@@ -1,0 +1,60 @@
+id: pragmaticbim:rule/vkf-26-15-012-brennbare-fluessigkeiten-grundsaetze
+code: VKF-26-15-012
+sort_order: 196
+name:
+  de: 'Brennbare Flüssigkeiten: Ausbreitung verhindern, Dämpfe nicht in tiefere Räume, Flammpunkt ≤ 23 °C nur in zulässigen
+    Behältern'
+  en: 'Combustible liquids: prevent spreading, vapours not into lower rooms, flash point ≤ 23 °C only in permitted containers'
+  fr: 'Liquides combustibles : empêcher l''épandage, vapeurs pas vers les locaux inférieurs, point d''éclair ≤ 23 °C seulement
+    en récipients admis'
+  it: 'Liquidi combustibili: impedire la diffusione, vapori non nei locali inferiori, punto d''infiammabilità ≤ 23 °C solo
+    in contenitori ammessi'
+description:
+  de: 'Ausfliessende brennbare Flüssigkeiten dürfen sich nicht ausbreiten (z. B. erhöhte Türschwellen, Abflussrinnen, Abscheider,
+    Tropfgefässe), und ihre Dämpfe dürfen nicht in tiefer liegende Räume, Kanalisationen, Schächte oder Gruben gelangen. Erwärmungseinrichtungen
+    sind thermisch abgesichert; mit offener Flamme oder ungeschützten Wärmequellen wird nicht erwärmt. Flüssigkeiten mit Flammpunkt
+    bis 23 °C lagern in Gebinden oder Kleintanks, in druckstossfesten Metalltanks mit gewölbten Böden (4 bar geprüft) oder
+    in vertikalen zylindrischen Stahltanks mit flachem Boden. Noch nicht prüfbar: das Modell weist Flammpunkt, Lagervolumen,
+    Behälterart und Feuerwiderstand des Lagerraums nicht aus.'
+  en: 'Leaking combustible liquids must not spread (e.g. raised door thresholds, drainage channels, separators, drip trays),
+    and their vapours must not reach lower rooms, sewers, shafts or pits. Heating devices are thermally secured; no heating
+    with open flames or unprotected heat sources. Liquids with a flash point up to 23 °C are stored in containers or small
+    tanks, in pressure-shock-resistant metal tanks with domed ends (tested at 4 bar) or in vertical cylindrical steel tanks
+    with flat bottoms. Not yet checkable: the model does not show flash point, stored volume, container type and fire resistance
+    of the storage room.'
+  fr: 'Les liquides combustibles qui s''écoulent ne doivent pas s''étendre (p. ex. seuils surélevés, caniveaux, séparateurs,
+    bacs d''égouttage) et leurs vapeurs ne doivent pas atteindre des locaux situés plus bas, canalisations, puits ou fosses.
+    Les dispositifs de chauffage sont protégés thermiquement ; aucun chauffage à flamme nue ou source de chaleur non protégée.
+    Les liquides de point d''éclair jusqu''à 23 °C sont stockés en emballages ou petites citernes, en citernes métalliques
+    résistant aux coups de bélier à fonds bombés (essai à 4 bar) ou en citernes verticales cylindriques en acier à fond plat.
+    Pas encore vérifiable : le modèle n''indique ni le point d''éclair, ni le volume stocké, ni le type de récipient, ni la
+    résistance au feu du local de stockage.'
+  it: 'I liquidi combustibili che fuoriescono non devono diffondersi (p. es. soglie sopraelevate, canalette, separatori, vaschette)
+    e i loro vapori non devono raggiungere locali più bassi, canalizzazioni, pozzi o fosse. I dispositivi di riscaldamento
+    sono protetti termicamente; nessun riscaldamento con fiamma libera o fonti di calore non protette. I liquidi con punto
+    d''infiammabilità fino a 23 °C sono stoccati in contenitori o piccoli serbatoi, in serbatoi metallici resistenti ai colpi
+    di pressione con fondi bombati (provati a 4 bar) o in serbatoi verticali cilindrici in acciaio a fondo piatto. Non ancora
+    verificabile: il modello non indica punto d''infiammabilità, volume stoccato, tipo di contenitore né resistenza al fuoco
+    del locale di stoccaggio.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-tank
+- pragmaticbim:element/mep-pump
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/spaces-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 9
+  source_quote: VKF 26-15, Ziff. 5.1 Abs. 1–3 und 5
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

@@ -1,0 +1,63 @@
+id: pragmaticbim:rule/vkf-26-15-027-pyrotechnik-verkauf-im-freien
+code: VKF-26-15-027
+sort_order: 211
+name:
+  de: 'Verkauf pyrotechnischer Gegenstände im Freien: Tagesbedarf, höchstens 300 kg, 5 m zu Fassaden und Fluchtausgängen'
+  en: 'Outdoor sale of pyrotechnic articles: day''s stock, at most 300 kg, 5 m to facades and escape exits'
+  fr: 'Vente d''articles pyrotechniques en plein air : besoin journalier, 300 kg au plus, 5 m des façades et issues de secours'
+  it: 'Vendita di articoli pirotecnici all''aperto: fabbisogno giornaliero, al massimo 300 kg, 5 m da facciate e uscite di
+    sicurezza'
+description:
+  de: 'Im Freien übersteigt der Vorrat den Tagesbedarf nicht; ausserhalb der Öffnungszeiten lagert er im Nachtlager. Am Verkaufsstand
+    liegen höchstens 300 kg brutto. Zu Fassaden ohne Feuerwiderstand gilt ein Abstand von mindestens 5 m, sonst sind Schutzmassnahmen
+    nötig (z. B. Abdeckungen mindestens EI 60). Die Ware ist vor Sonneneinstrahlung, Sammellinseneffekten und Wärmestrahlung
+    von Leuchten und Heizkörpern geschützt; Kunststofffolien als Abdeckung sind nicht erlaubt. In der Nähe gefährlicher Stoffe
+    (z. B. Tankstellen) ist der Verkauf nur mit Zustimmung der Brandschutzbehörde und besonderen Massnahmen zulässig (z. B.
+    15 m zu Zapfsäulen). In Läden unter 200 m² ist der Verkauf im Bereich der Schaufenster zulässig. Zu Fluchtausgängen sind
+    mindestens 5 m einzuhalten. Noch nicht prüfbar: das Modell weist Kategorie, Bruttomenge, Lagerart und Verkaufsfläche pyrotechnischer
+    Gegenstände nicht aus.'
+  en: 'Outdoors the stock does not exceed the day''s need; outside opening hours it is kept in the night store. At most 300
+    kg gross are at the sales stand. To facades without fire resistance a distance of at least 5 m applies, otherwise protective
+    measures are needed (e.g. covers of at least EI 60). The goods are protected from sunlight, lens effects and heat radiation
+    from lamps and heaters; plastic film covers are not allowed. Near hazardous substances (e.g. petrol stations) sale is
+    allowed only with the fire protection authority''s consent and special measures (e.g. 15 m to pumps). In shops under 200
+    m² sale in the shop window area is allowed. At least 5 m to escape exits must be kept. Not yet checkable: the model does
+    not show category, gross mass, storage type and sales area of pyrotechnic articles.'
+  fr: 'En plein air, le stock ne dépasse pas le besoin journalier ; hors des heures d''ouverture, il est entreposé dans le
+    dépôt de nuit. Au stand, 300 kg brut au plus sont présents. Vers les façades sans résistance au feu, une distance d''au
+    moins 5 m s''applique, sinon des mesures de protection sont nécessaires (p. ex. recouvrements au moins EI 60). La marchandise
+    est protégée du rayonnement solaire, des effets de lentille et du rayonnement thermique des lampes et radiateurs ; les
+    films plastiques comme couverture sont interdits. À proximité de substances dangereuses (p. ex. stations-service), la
+    vente n''est admise qu''avec l''accord de l''autorité et des mesures particulières (p. ex. 15 m des pompes). Dans les
+    magasins de moins de 200 m², la vente dans la zone des vitrines est admise. Au moins 5 m vers les issues de secours doivent
+    être respectés. Pas encore vérifiable : le modèle n''indique ni la catégorie, ni la masse brute, ni le mode de stockage,
+    ni la surface de vente des articles pyrotechniques.'
+  it: 'All''aperto la scorta non supera il fabbisogno giornaliero; fuori dagli orari di apertura è conservata nel deposito
+    notturno. Al banco ci sono al massimo 300 kg lordi. Verso facciate senza resistenza al fuoco vale una distanza di almeno
+    5 m, altrimenti servono misure di protezione (p. es. coperture almeno EI 60). La merce è protetta da irraggiamento solare,
+    effetti lente e irraggiamento termico di lampade e radiatori; le pellicole di plastica come copertura non sono ammesse.
+    In prossimità di sostanze pericolose (p. es. distributori di carburante) la vendita è ammessa solo con il consenso dell''autorità
+    e misure particolari (p. es. 15 m dalle colonnine). Nei negozi sotto 200 m² la vendita nella zona delle vetrine è ammessa.
+    Verso le uscite di sicurezza vanno rispettati almeno 5 m. Non ancora verificabile: il modello non indica categoria, massa
+    lorda, tipo di stoccaggio né superficie di vendita degli articoli pirotecnici.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-exterior
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/architecture-door-exterior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 17
+  source_quote: VKF 26-15, Ziff. 11.3.3 Abs. 1–7
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

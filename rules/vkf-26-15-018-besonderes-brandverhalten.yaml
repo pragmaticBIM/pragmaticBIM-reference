@@ -1,0 +1,50 @@
+id: pragmaticbim:rule/vkf-26-15-018-besonderes-brandverhalten
+code: VKF-26-15-018
+sort_order: 202
+name:
+  de: 'Stoffe mit besonderem Brandverhalten: geschlossene RF1-Behälter, trocken, Vorrat über Bedarf separat und gekennzeichnet'
+  en: 'Substances with special fire behaviour: closed RF1 containers, dry, stock above need in a separate marked room'
+  fr: 'Substances au comportement au feu particulier : récipients fermés RF1, au sec, réserve au-delà du besoin dans un local
+    séparé signalé'
+  it: 'Sostanze con comportamento al fuoco particolare: contenitori chiusi RF1, all''asciutto, scorta oltre il fabbisogno
+    in locale separato segnalato'
+description:
+  de: 'Selbstentzündliche Stoffe lagern in geschlossenen Behältern aus RF1 unter Luftabschluss, in Inertatmosphäre oder unter
+    regelmässiger Temperaturkontrolle. Stoffe, die mit Wasser brennbare Gase bilden, werden trocken aufbewahrt und vor Nässe
+    geschützt; Vorräte über dem Bedarf des ungehinderten Arbeitsablaufs kommen in separate, entsprechend ausgebaute und gekennzeichnete
+    Räume. Noch nicht prüfbar: das Modell weist Stoffklassierung, Lagermenge, Lagerart und Lagerort gefährlicher Stoffe nicht
+    aus.'
+  en: 'Self-igniting substances are kept in closed RF1 containers excluding air, in an inert atmosphere or under regular temperature
+    monitoring. Substances that form combustible gases with water are kept dry and protected from moisture; stocks above what
+    an undisturbed workflow needs go into separate, suitably built and marked rooms. Not yet checkable: the model does not
+    show substance classification, stored quantity, type and location of hazardous substances.'
+  fr: 'Les substances auto-inflammables sont conservées dans des récipients fermés en RF1 à l''abri de l''air, en atmosphère
+    inerte ou sous contrôle régulier de la température. Les substances qui dégagent des gaz combustibles au contact de l''eau
+    sont conservées au sec et protégées de l''humidité ; les réserves dépassant le besoin d''un déroulement de travail sans
+    entrave vont dans des locaux séparés, adaptés et signalés. Pas encore vérifiable : le modèle n''indique ni la classification
+    des substances, ni la quantité stockée, ni le mode et le lieu de stockage des substances dangereuses.'
+  it: 'Le sostanze autoinfiammabili sono conservate in contenitori chiusi in RF1 al riparo dall''aria, in atmosfera inerte
+    o con controllo regolare della temperatura. Le sostanze che a contatto con l''acqua sviluppano gas combustibili sono conservate
+    all''asciutto e protette dall''umidità; le scorte oltre il fabbisogno di un flusso di lavoro senza intralci vanno in locali
+    separati, adeguati e segnalati. Non ancora verificabile: il modello non indica classificazione delle sostanze, quantità
+    stoccata né tipo e luogo di stoccaggio delle sostanze pericolose.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-wall-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 12
+  source_quote: VKF 26-15, Ziff. 7 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

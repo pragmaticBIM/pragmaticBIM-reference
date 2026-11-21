@@ -1,0 +1,51 @@
+id: pragmaticbim:rule/vkf-26-15-013-lagerraeume-tankraeume-tueren-einstieg
+code: VKF-26-15-013
+sort_order: 197
+name:
+  de: 'Lagerräume für brennbare Flüssigkeiten: EI 30-Türen, Einstiegsöffnung mindestens 0.7 × 1 m mit EI 30-Deckel'
+  en: 'Storage rooms for combustible liquids: EI 30 doors, access opening at least 0.7 × 1 m with an EI 30 cover'
+  fr: 'Locaux de stockage de liquides combustibles : portes EI 30, ouverture d''accès d''au moins 0.7 × 1 m avec couvercle
+    EI 30'
+  it: 'Locali di stoccaggio di liquidi combustibili: porte EI 30, apertura d''accesso di almeno 0.7 × 1 m con coperchio EI
+    30'
+description:
+  de: 'Lagerräume für brennbare Flüssigkeiten sind gegen andere Räume mit EI 30-Türen abgeschlossen. Als Zugang zu Tankräumen
+    dienen Einstiegsöffnungen von mindestens 0.7 × 1 m, die mit EI 30-Deckeln verschlossen werden. Heizöl bis 4''000 l in
+    Kleintanks oder 8''000 l in Stahltanks darf in separaten Heizräumen EI 60 lagern. Noch nicht prüfbar: das Modell weist
+    Flammpunkt, Lagervolumen, Behälterart und Feuerwiderstand des Lagerraums nicht aus.'
+  en: 'Storage rooms for combustible liquids are closed off from other rooms with EI 30 doors. Access to tank rooms is by
+    openings of at least 0.7 × 1 m, closed with EI 30 covers. Heating oil up to 4,000 l in small tanks or 8,000 l in steel
+    tanks may be stored in separate boiler rooms EI 60. Not yet checkable: the model does not show flash point, stored volume,
+    container type and fire resistance of the storage room.'
+  fr: 'Les locaux de stockage de liquides combustibles sont fermés par rapport aux autres locaux par des portes EI 30. L''accès
+    aux locaux de citernes se fait par des ouvertures d''au moins 0.7 × 1 m fermées par des couvercles EI 30. Le mazout jusqu''à
+    4''000 l en petites citernes ou 8''000 l en citernes en acier peut être stocké dans des locaux de chauffe séparés EI 60.
+    Pas encore vérifiable : le modèle n''indique ni le point d''éclair, ni le volume stocké, ni le type de récipient, ni la
+    résistance au feu du local de stockage.'
+  it: 'I locali di stoccaggio di liquidi combustibili sono separati dagli altri locali con porte EI 30. L''accesso ai locali
+    serbatoi avviene tramite aperture di almeno 0.7 × 1 m chiuse con coperchi EI 30. L''olio combustibile fino a 4''000 l
+    in piccoli serbatoi o 8''000 l in serbatoi di acciaio può essere stoccato in locali caldaia separati EI 60. Non ancora
+    verificabile: il modello non indica punto d''infiammabilità, volume stoccato, tipo di contenitore né resistenza al fuoco
+    del locale di stoccaggio.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/architecture-opening-void
+- pragmaticbim:element/mep-tank
+- pragmaticbim:element/spaces-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 10
+  source_quote: VKF 26-15, Ziff. 5.2.1 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

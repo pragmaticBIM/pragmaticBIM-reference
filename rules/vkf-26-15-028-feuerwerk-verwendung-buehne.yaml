@@ -1,0 +1,66 @@
+id: pragmaticbim:rule/vkf-26-15-028-feuerwerk-verwendung-buehne
+code: VKF-26-15-028
+sort_order: 212
+name:
+  de: 'Feuerwerk: nicht im Innern von Bauten; Bühnenfeuerwerk nur in bezeichneten Bereichen, Vorrat höchstens 50 kg im Raum
+    EI 30'
+  en: 'Fireworks: not inside buildings; stage pyrotechnics only in designated areas, stock at most 50 kg in a room EI 30'
+  fr: 'Feux d''artifice : pas à l''intérieur des bâtiments ; pyrotechnie de scène seulement dans des zones désignées, stock
+    50 kg au plus en local EI 30'
+  it: 'Fuochi d''artificio: non all''interno di edifici; pirotecnica di scena solo in aree designate, scorta al massimo 50
+    kg in locale EI 30'
+description:
+  de: 'Feuerwerkskörper zu Vergnügungszwecken dürfen nicht im Innern von Bauten und Anlagen abgebrannt werden; Kategorie 4
+    ist dem gewerblichen Gebrauch durch Fachkundige vorbehalten. Bühnenfeuerwerk der Kategorien T1 und T2 ist in geeigneten,
+    bezeichneten Bereichen (z. B. Bühnen) mit Zustimmung der Behörde möglich, gemäss Gebrauchsanweisung, für die Anwendung
+    (innen oder aussen) klassiert und durch Fachpersonen mit Ausweis. Es wird vor der Vorführung geplant, unter Berücksichtigung
+    der Umgebung (Raumhöhe, Abstände zu brennbarem Material) mit instruiertem Löschpersonal erprobt und der Behörde zur Abnahme
+    gemeldet. Vor Ort lagert es in abschliessbaren RF1-Behältern in Räumen EI 30 mit EI 30-Türen, Vorrat höchstens 50 kg brutto;
+    die Räume dürfen bei geringem Brandrisiko anderen Zwecken dienen. Noch nicht prüfbar: das Modell weist Kategorie, Bruttomenge,
+    Lagerart und Verkaufsfläche pyrotechnischer Gegenstände nicht aus.'
+  en: 'Fireworks for entertainment must not be set off inside buildings and installations; category 4 is reserved for commercial
+    use by qualified persons. Stage pyrotechnics of categories T1 and T2 is possible in suitable, designated areas (e.g. stages)
+    with the authority''s consent, per its instructions, classified for the application (indoor or outdoor) and used by qualified
+    persons with a licence. It is planned before the show, tested with instructed extinguishing staff taking the surroundings
+    into account (room height, distances to combustible material) and reported to the authority for acceptance. On site it
+    is stored in lockable RF1 containers in rooms EI 30 with EI 30 doors, stock at most 50 kg gross; with low fire risk the
+    rooms may serve other purposes. Not yet checkable: the model does not show category, gross mass, storage type and sales
+    area of pyrotechnic articles.'
+  fr: 'Les articles de feu d''artifice de divertissement ne doivent pas être tirés à l''intérieur de bâtiments et installations
+    ; la catégorie 4 est réservée à l''usage professionnel par des personnes qualifiées. La pyrotechnie de scène des catégories
+    T1 et T2 est possible dans des zones appropriées et désignées (p. ex. scènes) avec l''accord de l''autorité, selon le
+    mode d''emploi, classée pour l''application (intérieur ou extérieur) et utilisée par des personnes qualifiées titulaires
+    d''un permis. Elle est planifiée avant le spectacle, testée avec du personnel d''extinction instruit en tenant compte
+    de l''environnement (hauteur du local, distances aux matériaux combustibles) et annoncée à l''autorité pour réception.
+    Sur place, elle est stockée dans des conteneurs RF1 verrouillables dans des locaux EI 30 avec portes EI 30, stock de 50
+    kg brut au plus ; en cas de faible risque, les locaux peuvent servir à d''autres fins. Pas encore vérifiable : le modèle
+    n''indique ni la catégorie, ni la masse brute, ni le mode de stockage, ni la surface de vente des articles pyrotechniques.'
+  it: 'I fuochi d''artificio di intrattenimento non devono essere accesi all''interno di edifici e impianti; la categoria
+    4 è riservata all''uso professionale da persone qualificate. La pirotecnica di scena delle categorie T1 e T2 è possibile
+    in aree idonee e designate (p. es. palcoscenici) con il consenso dell''autorità, secondo le istruzioni d''uso, classificata
+    per l''applicazione (interno o esterno) e usata da persone qualificate con permesso. È pianificata prima dello spettacolo,
+    provata con personale di estinzione istruito tenendo conto dell''ambiente (altezza del locale, distanze da materiale combustibile)
+    e annunciata all''autorità per il collaudo. In loco è conservata in contenitori RF1 chiudibili a chiave in locali EI 30
+    con porte EI 30, scorta al massimo 50 kg lordi; con basso rischio d''incendio i locali possono servire ad altri scopi.
+    Non ancora verificabile: il modello non indica categoria, massa lorda, tipo di stoccaggio né superficie di vendita degli
+    articoli pirotecnici.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-door-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 18
+  source_quote: VKF 26-15, Ziff. 11.1.3 und 11.4 Abs. 1–7
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

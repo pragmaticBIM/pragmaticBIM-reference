@@ -1,0 +1,56 @@
+id: pragmaticbim:rule/vkf-26-15-004-druckentlastung-brandabschnitt
+code: VKF-26-15-004
+sort_order: 188
+name:
+  de: 'Feuer- und explosionsgefährdete Räume: Zonen, Druckentlastung und Brandabschnitt; Lagerräume als Brandabschnitte'
+  en: 'Rooms at fire or explosion risk: zones, pressure relief and fire compartment; storage rooms as fire compartments'
+  fr: 'Locaux à risque d''incendie ou d''explosion : zones, décharge de pression et compartiment ; locaux de stockage en compartiments'
+  it: 'Locali a rischio d''incendio o d''esplosione: zone, scarico di pressione e compartimento; locali di stoccaggio come
+    compartimenti'
+description:
+  de: 'Räume werden nach Feuer- und Explosionsgefahr klassiert und in Zonen eingeteilt; massgebend sind Art, Menge, Häufigkeit
+    und Dauer brennbarer Gase, Stäube oder Dämpfe. Feuer- oder explosionsgefährdete Räume haben Druckentlastungseinrichtungen
+    (z. B. leichte Aussenwand) oder gleichwertige Massnahmen und sind als Brandabschnitte ausgeführt; die Entlastungsflächen
+    dürfen die Umgebung nicht unverhältnismässig gefährden. Lagerräume für gefährliche Stoffe sind Brandabschnitte und werden,
+    wo nötig, geschützt oder überwacht. Noch nicht prüfbar: das Modell weist Stoffklassierung, Lagermenge, Lagerart und Lagerort
+    gefährlicher Stoffe nicht aus.'
+  en: 'Rooms are classified by fire and explosion hazard and divided into zones; type, quantity, frequency and duration of
+    combustible gases, dusts or vapours decide. Rooms with fire or explosion hazard have pressure relief (e.g. a light exterior
+    wall) or equivalent measures and are built as fire compartments; relief areas must not endanger the surroundings disproportionately.
+    Storage rooms for hazardous substances are fire compartments and, where needed, protected or monitored. Not yet checkable:
+    the model does not show substance classification, stored quantity, type and location of hazardous substances.'
+  fr: 'Les locaux sont classés selon le danger d''incendie et d''explosion et répartis en zones ; le type, la quantité, la
+    fréquence et la durée de présence de gaz, poussières ou vapeurs combustibles sont déterminants. Les locaux à risque d''incendie
+    ou d''explosion disposent d''une décharge de pression (p. ex. paroi extérieure légère) ou de mesures équivalentes et forment
+    des compartiments ; les surfaces de décharge ne doivent pas mettre en danger l''environnement de façon disproportionnée.
+    Les locaux de stockage de substances dangereuses sont des compartiments et, si nécessaire, protégés ou surveillés. Pas
+    encore vérifiable : le modèle n''indique ni la classification des substances, ni la quantité stockée, ni le mode et le
+    lieu de stockage des substances dangereuses.'
+  it: 'I locali sono classificati secondo il pericolo d''incendio e d''esplosione e suddivisi in zone; sono determinanti tipo,
+    quantità, frequenza e durata di gas, polveri o vapori combustibili. I locali a rischio d''incendio o d''esplosione hanno
+    scarico di pressione (p. es. parete esterna leggera) o misure equivalenti e sono realizzati come compartimenti; le superfici
+    di scarico non devono mettere in pericolo l''ambiente in modo sproporzionato. I locali di stoccaggio di sostanze pericolose
+    sono compartimenti e, dove necessario, protetti o sorvegliati. Non ancora verificabile: il modello non indica classificazione
+    delle sostanze, quantità stoccata né tipo e luogo di stoccaggio delle sostanze pericolose.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-window-exterior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 7
+  source_quote: VKF 26-15, Ziff. 3.3 und 3.4 Abs. 1–3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
