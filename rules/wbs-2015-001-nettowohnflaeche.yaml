@@ -1,0 +1,48 @@
+id: pragmaticbim:rule/wbs-2015-001-nettowohnflaeche
+code: WBS-2015-001
+sort_order: 1
+name:
+  de: Nettowohnfläche erreicht die WBS-Grundausstattung
+  fr: La surface habitable nette atteint l'équipement de base WBS
+  it: La superficie abitabile netta raggiunge la dotazione di base WBS
+  en: Net living area meets the WBS minimum fit-out
+description:
+  de: 'Die Nettowohnfläche einer Wohnung (begehbare Bodenflächen ab 1.50 m Raumhöhe,
+    WBS-Glossar) erreicht mindestens den Wert der Grundausstattung für die Zimmerzahl:
+    30 / 45 / 60 / 80 / 100 / 120 / 140 m² für 1 bis 7 Zimmer. Geprüft wird die Summe
+    der Nettoflächen aller Räume derselben UsageUnitReference. Noch nicht prüfbar als
+    SHACL: das Modell aggregiert die Nettowohnfläche je Wohnungseinheit nicht als eigene
+    Kenngrösse.'
+  fr: 'La surface habitable nette d''un logement (surfaces au sol praticables dès 1,50 m
+    de hauteur sous plafond, glossaire WBS) atteint au moins la valeur de l''équipement
+    de base pour le nombre de pièces : 30 / 45 / 60 / 80 / 100 / 120 / 140 m² pour 1 à
+    7 pièces. On additionne les surfaces nettes de tous les locaux portant la même
+    UsageUnitReference. Pas encore vérifiable en SHACL : le modèle n''agrège pas la
+    surface habitable nette par unité de logement.'
+  it: 'La superficie abitabile netta di un alloggio (pavimenti percorribili da 1,50 m
+    di altezza, glossario WBS) raggiunge almeno il valore della dotazione di base per
+    il numero di locali: 30 / 45 / 60 / 80 / 100 / 120 / 140 m² per 1–7 locali. Si
+    sommano le superfici nette di tutti i locali con la stessa UsageUnitReference. Non
+    ancora verificabile in SHACL: il modello non aggrega la superficie abitabile netta
+    per unità abitativa.'
+  en: 'The net living floor area of a dwelling (walkable floor areas from 1.50 m room
+    height, WBS glossary) reaches at least the Grundausstattung value for the room
+    count: 30 / 45 / 60 / 80 / 100 / 120 / 140 m² for 1 to 7 rooms. Sum the net areas
+    of all spaces that share the same UsageUnitReference. Not yet checkable as SHACL:
+    the model does not aggregate net living area per dwelling unit.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/spaces-gross-volume
+domain: pragmaticbim:domain/architecture
+jurisdiction:
+- CH
+rule_source:
+  regulation: pragmaticbim:regulation/wbs-2015
+  source_document: WBS 2015 Beilagen, Grundausstattung / K15 Nettowohnfläche
+  source_page: null
+  source_quote: WBS 2015, K15; Grundausstattung Nettowohnfläche
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

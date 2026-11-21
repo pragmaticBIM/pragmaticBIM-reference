@@ -94,4 +94,5 @@ status: active
 service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Schematic IfcFurniture (IFC4+) or IfcFurnishingElement (IFC2x3) with real footprint for clash/fit checks against interior spaces and building. Distinct from des-furniture-planning (layout lists) and qas-special-room-user-coordination (informal sketches).
+comment: >-
+  Schematic IfcFurniture (IFC4+) or IfcFurnishingElement (IFC2x3) with real footprint for clash/fit checks against interior spaces and building. Distinct from des-furniture-planning (layout lists) and qas-special-room-user-coordination (informal sketches). Apartment area minima via rules wbs-2015-001 (K15) and wbs-2015-002 (K16).

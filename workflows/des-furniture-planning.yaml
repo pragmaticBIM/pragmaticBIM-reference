@@ -79,4 +79,5 @@ status: active
 service_kind: special
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Formal furniture planning on proper interior spaces. Distinct from qas-special-room-user-coordination (informal sketches) and qas-furnishability-verification (fit/clash proof). Requires clean space assignment.
+comment: >-
+  Formal furniture planning on proper interior spaces. Distinct from qas-special-room-user-coordination (informal sketches) and qas-furnishability-verification (fit/clash proof). Requires clean space assignment. WBS 2015 apartment size context via rules wbs-2015-001 and wbs-2015-002.

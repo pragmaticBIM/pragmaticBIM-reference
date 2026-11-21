@@ -1,0 +1,51 @@
+id: pragmaticbim:rule/wbs-2015-002-zimmergroesse
+code: WBS-2015-002
+sort_order: 2
+name:
+  de: Zimmer erreichen die WBS-Mindestflächen
+  fr: Les pièces atteignent les surfaces minimales WBS
+  it: I locali raggiungono le superfici minime WBS
+  en: Rooms meet the WBS minimum areas
+description:
+  de: 'Habitable Zimmer einer Wohnung erreichen die Mindestflächen der Grundausstattung:
+    Hauptzimmer wenigstens 14 m², übrige Zimmer wenigstens 10 m² (WBS 2015 Beilagen).
+    Zusätzliche Flächenangebote (Erker, Nischen, begehbare Zonen) zählen zur Beurteilung
+    von K16, sind aber keine Ersatzflächen für die Zimmerminima. Geprüft wird NetPlannedArea
+    bzw. die gemessene Nettofläche je Raum mit Wohnnutzung. Noch nicht prüfbar als SHACL:
+    die Unterscheidung Hauptzimmer / übriges Zimmer und die Aggregation zusätzlicher
+    Flächenangebote fehlen als modellweite Kenngrössen.'
+  fr: 'Les pièces habitables d''un logement atteignent les surfaces minimales de l''équipement
+    de base : pièce principale au moins 14 m², autres pièces au moins 10 m² (annexes
+    WBS 2015). Les surfaces complémentaires (bow-windows, niches, zones praticables)
+    entrent dans l''appréciation de K16, mais ne remplacent pas les minima de pièce.
+    On lit NetPlannedArea ou la surface nette mesurée par local à usage d''habitation.
+    Pas encore vérifiable en SHACL : la distinction pièce principale / autre pièce et
+    l''agrégation des surfaces complémentaires manquent comme grandeurs modèle.'
+  it: 'I locali abitabili di un alloggio raggiungono le superfici minime della dotazione
+    di base: locale principale almeno 14 m², altri locali almeno 10 m² (allegati WBS
+    2015). Le superfici aggiuntive (bow-window, nicchie, zone percorribili) contano
+    per K16 ma non sostituiscono i minimi di locale. Si legge NetPlannedArea o la
+    superficie netta misurata per locale a uso abitativo. Non ancora verificabile in
+    SHACL: mancano come grandezze di modello la distinzione locale principale / altro
+    locale e l''aggregazione delle superfici aggiuntive.'
+  en: 'Habitable rooms of a dwelling meet the Grundausstattung minima: main rooms at
+    least 14 m², other rooms at least 10 m² (WBS 2015 annex). Additional area offers
+    (bays, niches, walkable zones) count toward K16 but do not replace the room minima.
+    Check NetPlannedArea or the measured net area per residential space. Not yet
+    checkable as SHACL: distinguishing main vs other rooms and aggregating additional
+    area offers are not model-wide quantities yet.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/architecture
+jurisdiction:
+- CH
+rule_source:
+  regulation: pragmaticbim:regulation/wbs-2015
+  source_document: WBS 2015 Beilagen, Grundausstattung / K16 Zimmergrösse und zusätzliches Flächenangebot
+  source_page: null
+  source_quote: WBS 2015, K16; Grundausstattung Zimmerflächen
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
