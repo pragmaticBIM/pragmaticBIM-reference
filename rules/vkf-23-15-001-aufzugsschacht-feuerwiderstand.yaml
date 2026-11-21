@@ -1,0 +1,53 @@
+id: pragmaticbim:rule/vkf-23-15-001-aufzugsschacht-feuerwiderstand
+code: VKF-23-15-001
+sort_order: 20
+name:
+  de: Aufzugsschacht über mehrere Brandabschnitte mit Feuerwiderstand
+  en: Lift shaft linking several fire compartments with fire resistance
+  fr: Gaine d'ascenseur reliant plusieurs compartiments avec résistance au feu
+  it: Vano ascensore che collega più compartimenti con resistenza al fuoco
+description:
+  de: 'Verbindet ein Aufzug mehrere Brandabschnitte, liegt er in einem Schacht, dessen Umfassung den Feuerwiderstand
+    der nutzungsbezogenen Brandabschnittsbildung erreicht, mindestens aber EI 30. Die Schachtwände reichen bis zur
+    Dachhaut; endet der Schacht darunter, wird er oben gleich feuerwiderstandsfähig abgeschlossen. Verbindet der
+    Aufzug keine Brandabschnitte (z. B. im vertikalen Fluchtweg oder als Panoramaaufzug im Atrium), werden keine
+    Feuerwiderstandsanforderungen an den Schacht gestellt. Noch nicht prüfbar: das Modell zeigt nicht, welche
+    Wände einen Aufzugsschacht bilden und welche Brandabschnitte er verbindet.'
+  en: 'Where a lift links several fire compartments, it sits in a shaft whose enclosure matches the fire resistance
+    of the use-related compartmentation, but at least EI 30. The shaft walls run up to the roof skin; if the shaft
+    ends below, its top closure has the same fire resistance. Where the lift links no compartments (e.g. in a
+    vertical escape route or as a panoramic lift in an atrium), no fire resistance is required of the shaft.
+    Not yet checkable: the model does not show which walls form a lift shaft and which compartments it links.'
+  fr: 'Lorsqu''un ascenseur relie plusieurs compartiments coupe-feu, il se trouve dans une gaine dont l''enveloppe
+    atteint la résistance au feu de la compartimentation liée à l''affectation, au moins EI 30. Les parois de
+    la gaine montent jusqu''à la couverture de toiture ; si la gaine s''arrête plus bas, sa fermeture supérieure
+    a la même résistance au feu. Si l''ascenseur ne relie aucun compartiment (p. ex. dans une voie d''évacuation
+    verticale ou en ascenseur panoramique dans un atrium), aucune résistance au feu n''est exigée pour la gaine.
+    Pas encore vérifiable : le modèle n''indique pas quels murs forment une gaine d''ascenseur ni quels compartiments
+    elle relie.'
+  it: 'Se un ascensore collega più compartimenti antincendio, si trova in un vano il cui involucro raggiunge la
+    resistenza al fuoco della compartimentazione legata all''utilizzo, almeno EI 30. Le pareti del vano arrivano
+    fino al manto di copertura; se il vano termina più in basso, la chiusura superiore ha la stessa resistenza
+    al fuoco. Se l''ascensore non collega compartimenti (p. es. in una via di fuga verticale o come ascensore
+    panoramico in un atrio), al vano non è richiesta alcuna resistenza al fuoco. Non ancora verificabile: il modello
+    non indica quali pareti formano un vano ascensore e quali compartimenti collega.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/structural-wall
+- pragmaticbim:element/architecture-wall-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-23-15-2015
+  source_document: VKF-Brandschutzrichtlinie 23-15 Beförderungsanlagen (2015)
+  source_page: 4
+  source_quote: VKF 23-15, Ziff. 3.1 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
