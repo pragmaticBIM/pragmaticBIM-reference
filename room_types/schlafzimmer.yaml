@@ -120,6 +120,7 @@ configurations:
     components:
     - pragmaticbim:component/bett-doppel
     quantity: 1
+    comment: WBS 2015 Bettmodul K18, Doppelbettstellung.
     status: active
   - id: pragmaticbim:room-type-equipment/schlafzimmer-default-einbauschrank
     sort_order: 2
@@ -131,6 +132,7 @@ configurations:
       width:
         default: 1.8
         min: 1.2
+    comment: WBS 2015 Schrankmodul K21; 1.80 m = drei Module.
     status: active
   - id: pragmaticbim:room-type-equipment/schlafzimmer-default-wendeflaeche
     sort_order: 3

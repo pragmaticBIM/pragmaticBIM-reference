@@ -22,7 +22,7 @@ placement:
   - exterior
 parameters:
   width:
-    default: 0.9
+    default: 1.0
     min: 0.9
     max: 1.2
     unit: m
@@ -48,7 +48,8 @@ clearances:
 representation:
   body: box
   plan_symbol: bed_single
-comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+comment: 'WBS 2015 Beilagen, Bettmodul K18: Einzelbettstellung ca. 1.00 × 2.00 m, einseitiger
+  Zugang 0.60 m.'
 picture_link: bett-einzel-plan.svg
 attachment_link: bett-einzel.ifc
 status: active

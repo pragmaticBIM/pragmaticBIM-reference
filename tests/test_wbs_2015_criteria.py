@@ -45,3 +45,32 @@ def test_wbs_2015_criteria_inventory() -> None:
     assessment = sum(1 for item in criteria if item["checkability"] == "assessment_only")
     assert assessment == 6, "K1–K6 should be assessment-only (location context)"
     assert any(item["checkability"] == "model_checkable" for item in criteria)
+
+
+def test_wbs_2015_grundausstattung_and_furniture_crosswalk() -> None:
+    data = _load()
+    fit = data["grundausstattung"]
+    assert fit["module_width_m"] == 0.6
+    by_rooms = {row["rooms"]: row for row in fit["by_rooms"]}
+    assert set(by_rooms) == {1, 2, 3, 4, 5, 6, 7}
+    assert by_rooms[4]["net_living_area_m2"] == 80
+    assert by_rooms[4]["kitchen_modules"] == 5.5
+    assert by_rooms[4]["dining_module_m"] == {"width": 2.4, "depth": 2.7}
+    assert by_rooms[4]["storage_modules"] == 4
+
+    mapped = {row["room_type"]: row["wbs_rooms"] for row in fit["dwelling_size_map"]}
+    assert mapped["pragmaticbim:room-type/wohnung-3-5"] == 3
+    for room_type in mapped:
+        path = REPO_ROOT / "room_types" / f"{room_type.rsplit('/', 1)[-1]}.yaml"
+        assert path.is_file(), room_type
+
+    crosswalk = data["component_furniture_crosswalk"]["items"]
+    by_component = {item["component"]: item for item in crosswalk}
+    assert by_component["pragmaticbim:component/bett-einzel"]["parameters_default_m"]["width"] == 1.0
+    assert by_component["pragmaticbim:component/kuechenzeile-einzeilig"]["match"] == "aligned"
+    for item in crosswalk:
+        if item["match"] == "not_applicable":
+            continue
+        assert item["match"] == "aligned", item["component"]
+        slug = item["component"].rsplit("/", 1)[-1]
+        assert (REPO_ROOT / "components" / f"{slug}.yaml").is_file()

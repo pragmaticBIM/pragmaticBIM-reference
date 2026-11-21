@@ -20,7 +20,7 @@ parameters:
   width:
     default: 1.6
     min: 0.8
-    max: 2.8
+    max: 4.2
     unit: m
   depth:
     default: 0.9
@@ -52,7 +52,9 @@ clearances:
 representation:
   body: box
   plan_symbol: dining_table
-comment: 'Rund 0.60 m Tischbreite pro Platz. Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+comment: 'WBS 2015 Beilagen, Tischmodul K19: Essbereich inkl. Stuhlzone nach Wohnungsgrösse
+  (z. B. 1.80 × 2.70 m bei 3 Zimmern). Tischkörper plus Freiflächen 0.80 m zielen auf
+  diese Bandbreite; ca. 0.60 m Tischbreite pro Platz.'
 picture_link: esstisch-plan.svg
 attachment_link: esstisch.ifc
 status: active

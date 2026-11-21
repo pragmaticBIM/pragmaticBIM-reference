@@ -124,6 +124,8 @@ configurations:
       width:
         default: 1.8
         min: 1.4
+        max: 2.4
+    comment: WBS 2015 Tischmodul K19; Default zielt auf 3–4-Zimmer-Band inkl. Stuhlzone.
     status: active
   - id: pragmaticbim:room-type-equipment/esszimmer-default-steckdose
     sort_order: 2

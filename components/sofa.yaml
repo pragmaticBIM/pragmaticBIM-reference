@@ -44,7 +44,8 @@ clearances:
 representation:
   body: box
   plan_symbol: sofa
-comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
+comment: 'Kein WBS-Schablonenmodul; Leitmöbel für Möblierbarkeit Wohnbereich (K17-Kontext).
+  Freifläche vorn 1.00 m als Planungswert.'
 picture_link: sofa-plan.svg
 attachment_link: sofa.ifc
 status: active
