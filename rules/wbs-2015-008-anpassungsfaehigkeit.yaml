@@ -31,7 +31,7 @@ applies_to_elements:
 - pragmaticbim:element/spaces-interior
 domain: pragmaticbim:domain/architecture
 jurisdiction:
-- CH
+- ch
 rule_source:
   regulation: pragmaticbim:regulation/wbs-2015
   source_document: WBS 2015 Beilagen, Kriterienkatalog / K22 Anpassungsfähigkeit privater Raum

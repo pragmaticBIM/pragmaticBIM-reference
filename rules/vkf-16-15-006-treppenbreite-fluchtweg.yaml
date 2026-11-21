@@ -27,7 +27,9 @@ applies_to_elements:
 - pragmaticbim:element/structural-stair
 domain: pragmaticbim:domain/fire-protection
 jurisdiction:
-- CH
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
 rule_source:
   regulation: pragmaticbim:regulation/vkf-16-15-2015
   source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)

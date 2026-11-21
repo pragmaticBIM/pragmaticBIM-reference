@@ -27,7 +27,7 @@ performance_property_keys:
 - pbs:acoustic_property_impact_sound_rating_db
 domain: pragmaticbim:domain/building-physics
 jurisdiction:
-- CH
+- ch
 rule_source:
   regulation: pragmaticbim:regulation/sia-181-2020
   source_document: SIA 181:2020 Schallschutz im Hochbau
