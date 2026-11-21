@@ -1,0 +1,46 @@
+id: pragmaticbim:rule/vkf-18-15-007-gehweglinie-40m
+code: VKF-18-15-007
+sort_order: 130
+name:
+  de: 'Löschgeräte: Gehweglinie zum nächsten Gerät höchstens 40 m'
+  en: 'Extinguishers: walking line to the nearest device at most 40 m'
+  fr: 'Extincteurs : cheminement jusqu''à l''appareil le plus proche d''au plus 40 m'
+  it: 'Estintori: percorso fino all''apparecchio più vicino al massimo 40 m'
+description:
+  de: 'Löschgeräte sind so verteilt, dass ein Brand an jeder Stelle bekämpft werden kann; die Gehweglinie zum nächsten Löschgerät
+    beträgt höchstens 40 m. In Bereichen mit besonderen Brandgefahren kommen an geeigneten Stellen zusätzliche Geräte hinzu.
+    Noch nicht prüfbar: das Modell weist Löschgeräte und Wasserlöschposten nur als Gerät mit Lage aus, ohne Löschmittel, Löschvermögen
+    und Gehweglinie.'
+  en: 'Extinguishers are distributed so that a fire can be fought at any point; the walking line to the nearest extinguisher
+    is at most 40 m. In areas with particular fire hazards, additional devices are installed at suitable places. Not yet checkable:
+    the model shows extinguishers and hose reels only as a device with location, without extinguishing agent, rating or walking
+    distance.'
+  fr: 'Les extincteurs sont répartis de façon à pouvoir combattre un incendie en tout point ; le cheminement jusqu''à l''extincteur
+    le plus proche ne dépasse pas 40 m. Dans les zones à danger d''incendie particulier, des appareils supplémentaires sont
+    installés en des endroits appropriés. Pas encore vérifiable : le modèle ne montre les extincteurs et postes d''eau d''extinction
+    que comme appareil avec position, sans agent extincteur, pouvoir extincteur ni distance de cheminement.'
+  it: 'Gli estintori sono distribuiti in modo da poter combattere un incendio in ogni punto; il percorso fino all''estintore
+    più vicino non supera 40 m. Nelle zone con pericoli d''incendio particolari sono installati apparecchi supplementari in
+    punti idonei. Non ancora verificabile: il modello mostra estintori e posti d''acqua antincendio solo come apparecchio
+    con posizione, senza agente estinguente, potere estinguente né percorso di marcia.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fire-suppression-terminal
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-door-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-18-15-2015
+  source_document: VKF-Brandschutzrichtlinie 18-15 Löscheinrichtungen (2015)
+  source_page: 5
+  source_quote: VKF 18-15, Ziff. 3.1.2 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

@@ -1,0 +1,50 @@
+id: pragmaticbim:rule/vkf-18-15-005-vertikale-fluchtwege-sicherheitstreppenhaus
+code: VKF-18-15-005
+sort_order: 128
+name:
+  de: Löschgeräte in vertikalen Fluchtwegen nur unter Bedingungen, Wasserlöschposten nicht in Sicherheitstreppenhäusern
+  en: Extinguishers in vertical escape routes only under conditions, hose reels not in safety stairwells
+  fr: Extincteurs dans les voies d'évacuation verticales sous conditions, postes d'eau pas dans les cages de sécurité
+  it: Estintori nelle vie di fuga verticali solo a condizioni, posti d'acqua non nei vani scale di sicurezza
+description:
+  de: 'Löschgeräte dürfen in vertikalen Fluchtwegen stehen, wenn zwischen vertikalen und horizontalen Fluchtwegen Brandschutzabschlüsse
+    fehlen, etwa bei Büro- und Schulbauten bis 900 m² Bruttogeschossfläche, oder wenn mehrere Räume direkt vom vertikalen
+    Fluchtweg erschlossen werden. Wasserlöschposten in Sicherheitstreppenhäusern sind nicht erlaubt. Noch nicht prüfbar: das
+    Modell weist Löschgeräte und Wasserlöschposten nur als Gerät mit Lage aus, ohne Löschmittel, Löschvermögen und Gehweglinie.'
+  en: 'Extinguishers may stand in vertical escape routes if there are no fire doors between vertical and horizontal escape
+    routes, for example in office and school buildings up to 900 m² gross floor area, or if several rooms are accessed directly
+    from the vertical escape route. Hose reels in safety stairwells are not allowed. Not yet checkable: the model shows extinguishers
+    and hose reels only as a device with location, without extinguishing agent, rating or walking distance.'
+  fr: 'Les extincteurs peuvent se trouver dans les voies d''évacuation verticales si aucune fermeture coupe-feu ne sépare
+    voies verticales et horizontales, par exemple dans les bâtiments de bureaux et d''écoles jusqu''à 900 m² de surface de
+    plancher brute, ou si plusieurs locaux sont desservis directement depuis la voie verticale. Les postes d''eau d''extinction
+    dans les cages d''escalier de sécurité ne sont pas admis. Pas encore vérifiable : le modèle ne montre les extincteurs
+    et postes d''eau d''extinction que comme appareil avec position, sans agent extincteur, pouvoir extincteur ni distance
+    de cheminement.'
+  it: 'Gli estintori possono stare nelle vie di fuga verticali se mancano chiusure tagliafuoco tra vie verticali e orizzontali,
+    ad esempio in edifici per uffici e scuole fino a 900 m² di superficie lorda di piano, o se più locali sono serviti direttamente
+    dalla via di fuga verticale. I posti d''acqua antincendio nei vani scale di sicurezza non sono ammessi. Non ancora verificabile:
+    il modello mostra estintori e posti d''acqua antincendio solo come apparecchio con posizione, senza agente estinguente,
+    potere estinguente né percorso di marcia.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fire-suppression-terminal
+- pragmaticbim:element/architecture-stair
+- pragmaticbim:element/structural-stair
+- pragmaticbim:element/architecture-door-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-18-15-2015
+  source_document: VKF-Brandschutzrichtlinie 18-15 Löscheinrichtungen (2015)
+  source_page: 5
+  source_quote: VKF 18-15, Ziff. 3.1.1 Abs. 4–5
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

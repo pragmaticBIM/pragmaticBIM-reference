@@ -1,0 +1,44 @@
+id: pragmaticbim:rule/vkf-18-15-013-ausloesung-kuehl-loeschanlagen
+code: VKF-18-15-013
+sort_order: 136
+name:
+  de: Auslösung spezieller Löschanlagen selbsttätig oder von Hand, mit Signal und internem Alarm
+  en: Release of special extinguishing systems automatic or manual, with signal and internal alarm
+  fr: Déclenchement des installations spéciales automatique ou manuel, avec signal et alarme interne
+  it: Attivazione degli impianti speciali automatica o manuale, con segnale e allarme interno
+description:
+  de: 'Kühl- oder Löschmittel kann selbsttätig oder von Hand eingesetzt werden. Anlagen mit selbsttätiger Auslösung sind zusätzlich
+    von Hand betätigbar. Das selbsttätige Ansprechen wird signalisiert und löst einen internen Alarm aus. Noch nicht prüfbar:
+    das Modell enthält keine Trocken- oder Kühllöschanlage mit Flutungsbereichen, Warn- und Auslöseeinrichtungen.'
+  en: 'Cooling or extinguishing agent can be released automatically or by hand. Systems with automatic release can also be
+    operated by hand. Automatic activation is signalled and triggers an internal alarm. Not yet checkable: the model holds
+    no dry or cooling extinguishing system with flooding zones, warning and release devices.'
+  fr: 'L''agent de refroidissement ou d''extinction peut être libéré automatiquement ou à la main. Les installations à déclenchement
+    automatique peuvent aussi être actionnées à la main. La mise en action automatique est signalée et déclenche une alarme
+    interne. Pas encore vérifiable : le modèle ne contient aucune installation d''extinction à agent gazeux ou de refroidissement
+    avec zones d''inondation, dispositifs d''alarme et de déclenchement.'
+  it: 'L''agente di raffreddamento o estinguente può essere rilasciato automaticamente o a mano. Gli impianti ad attivazione
+    automatica possono essere azionati anche a mano. L''intervento automatico è segnalato e fa scattare un allarme interno.
+    Non ancora verificabile: il modello non contiene alcun impianto di estinzione a secco o di raffreddamento con zone di
+    saturazione, dispositivi di avviso e di attivazione.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-actuator
+- pragmaticbim:element/mep-alarm
+- pragmaticbim:element/mep-sensor
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-18-15-2015
+  source_document: VKF-Brandschutzrichtlinie 18-15 Löscheinrichtungen (2015)
+  source_page: 6
+  source_quote: VKF 18-15, Ziff. 3.3.4 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

@@ -1,0 +1,48 @@
+id: pragmaticbim:rule/vkf-18-15-010-loeschleitungen-hochhaeuser
+code: VKF-18-15-010
+sort_order: 133
+name:
+  de: 'Hochhäuser: Löschleitungen mit Innenhydranten (mindestens DN 80) oder Druckverstärkungsanschluss'
+  en: 'High-rise buildings: fire-fighting risers with interior hydrants (at least DN 80) or pressure-boosting connection'
+  fr: 'Immeubles de grande hauteur : colonnes d''extinction avec hydrants intérieurs (au moins DN 80) ou raccord de surpression'
+  it: 'Edifici alti: colonne montanti con idranti interni (almeno DN 80) o attacco di sovrapressione'
+description:
+  de: 'Hochhäuser erhalten Löscheinrichtungen wie nasse oder trockene Löschleitungen, Wasserlöschposten mit Innenhydranten
+    (Anschlussleitung mindestens DN 80) oder Druckverstärkungsanschlüsse. Die Anforderungen werden fallweise mit der Brandschutzbehörde
+    festgelegt. Noch nicht prüfbar: das Modell weist Nennweite, Werkstoff, Brandverhalten, Ruhedruck und Wasserleistung der
+    Löschleitung nicht aus.'
+  en: 'High-rise buildings are equipped with fire-fighting installations such as wet or dry risers, hose reels with interior
+    hydrants (supply line at least DN 80) or pressure-boosting connections. The requirements are set case by case with the
+    fire protection authority. Not yet checkable: the model does not show nominal size, material, reaction to fire, static
+    pressure and flow of the fire-fighting pipe.'
+  fr: 'Les immeubles de grande hauteur sont équipés d''installations d''extinction telles que colonnes humides ou sèches,
+    postes d''eau avec hydrants intérieurs (conduite de raccordement au moins DN 80) ou raccords de surpression. Les exigences
+    sont fixées au cas par cas avec l''autorité de protection incendie. Pas encore vérifiable : le modèle n''indique pas le
+    diamètre nominal, le matériau, le comportement au feu, la pression statique ni le débit de la conduite d''extinction.'
+  it: 'Gli edifici alti sono dotati di installazioni antincendio quali colonne montanti a umido o a secco, posti d''acqua
+    con idranti interni (tubazione di allacciamento almeno DN 80) o attacchi di sovrapressione. I requisiti sono stabiliti
+    caso per caso con l''autorità di protezione antincendio. Non ancora verificabile: il modello non indica diametro nominale,
+    materiale, reazione al fuoco, pressione statica e portata della tubazione antincendio.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fire-suppression-terminal
+- pragmaticbim:element/mep-schematic-pipe
+- pragmaticbim:element/mep-valve
+- pragmaticbim:element/mep-pump
+- pragmaticbim:element/building
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-18-15-2015
+  source_document: VKF-Brandschutzrichtlinie 18-15 Löscheinrichtungen (2015)
+  source_page: 5
+  source_quote: VKF 18-15, Ziff. 3.2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
