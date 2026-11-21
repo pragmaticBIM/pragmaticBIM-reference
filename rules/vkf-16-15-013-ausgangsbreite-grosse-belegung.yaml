@@ -1,0 +1,44 @@
+id: pragmaticbim:rule/vkf-16-15-013-ausgangsbreite-grosse-belegung
+code: VKF-16-15-013
+sort_order: 69
+name:
+  de: 'Ausgangsbreite bei über 200 Personen: 0.6 m je 100 bzw. je 60 Personen'
+  en: 'Exit width above 200 people: 0.6 m per 100 or per 60 people'
+  fr: 'Largeur des sorties au-delà de 200 personnes : 0,6 m par 100 ou par 60 personnes'
+  it: 'Larghezza delle uscite oltre 200 persone: 0,6 m ogni 100 o ogni 60 persone'
+description:
+  de: 'Bei einer Belegung von mehr als 200 Personen müssen die Ausgänge zusammen mindestens 0.6 m Breite je 100 Personen aufweisen,
+    wenn der Weg ebenerdig ins Freie führt, und mindestens 0.6 m je 60 Personen, wenn er über Treppen führt. Beispiel aus
+    dem Anhang: 400 Personen über Treppen ergeben 4.0 m Gesamtbreite. Noch nicht prüfbar: die Personenbelegung ist im Modell
+    nicht typisiert abgelegt.'
+  en: 'With an occupancy above 200 people, the exits together must be at least 0.6 m wide per 100 people where the route leads
+    outside at ground level, and at least 0.6 m per 60 people where it leads over stairs. Example from the appendix: 400 people
+    over stairs give 4.0 m total width. Not yet checkable: occupancy is not stored as a typed value in the model.'
+  fr: 'Pour une occupation de plus de 200 personnes, les sorties doivent présenter ensemble une largeur d''au moins 0,6 m
+    par 100 personnes si le trajet mène à l''extérieur de plain-pied, et d''au moins 0,6 m par 60 personnes s''il passe par
+    des escaliers. Exemple de l''annexe : 400 personnes par des escaliers donnent une largeur totale de 4,0 m. Pas encore
+    vérifiable : l''occupation n''est pas enregistrée comme valeur typée dans le modèle.'
+  it: 'Con un''occupazione superiore a 200 persone le uscite devono avere insieme una larghezza di almeno 0,6 m ogni 100 persone
+    se il percorso porta all''esterno a livello del terreno e di almeno 0,6 m ogni 60 persone se passa per scale. Esempio
+    dell''allegato: 400 persone tramite scale danno una larghezza totale di 4,0 m. Non ancora verificabile: l''occupazione
+    non è registrata come valore tipizzato nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/architecture-door-exterior
+- pragmaticbim:element/architecture-stair
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-16-15-2015
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 7
+  source_quote: VKF 16-15, Ziff. 2.4.7
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

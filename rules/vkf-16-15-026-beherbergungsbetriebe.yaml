@@ -1,0 +1,73 @@
+id: pragmaticbim:rule/vkf-16-15-026-beherbergungsbetriebe
+code: VKF-16-15-026
+sort_order: 82
+name:
+  de: 'Beherbergungsbetriebe: horizontale Evakuierung, Hotelzimmertüren, Empfang'
+  en: 'Accommodation: horizontal evacuation, hotel room doors, reception'
+  fr: 'Établissements d''hébergement : évacuation horizontale, portes de chambres, réception'
+  it: 'Aziende di alloggio: evacuazione orizzontale, porte delle camere, reception'
+description:
+  de: 'In Bettengeschossen von Beherbergungsbetrieben [a], in denen kranke, pflegebedürftige oder auf fremde Hilfe angewiesene
+    Personen untergebracht sind, werden die horizontalen Fluchtwege so unterteilt, dass zusammen mit den Patientenzimmern
+    mindestens zwei voneinander unabhängige Brandabschnitte für eine horizontale Evakuierung entstehen. Empfangsbüros, die
+    mit EI 60 abgetrennt sind, genügen gegen vertikale Fluchtwege mit EI 30 und gegen horizontale mit einem Abschluss aus
+    RF1; Türen erhalten Selbstschliesser. Zimmer dürfen zu einer Wohneinheit zusammengefasst werden, wenn die Fluchtwege über
+    eine gemeinsame Vorzone führen und höchstens 20 m bis in einen horizontalen oder vertikalen Fluchtweg messen. Bei Beherbergungsbetrieben
+    [b] und [c] dürfen Empfangstheken, die mit EI 30 abgetrennt sind, in horizontalen Rettungswegen stehen. Hotelzimmertüren
+    sind mindestens 0.8 m breit und müssen nicht in Fluchtrichtung öffnen; an Türen innerhalb von Hotelsuiten gibt es keine
+    Anforderungen. Bei [c] müssen Hauseingangstüren nicht in Fluchtrichtung öffnen, und gewendelte Treppen mit 1.2 m Breite
+    und mindestens 0.1 m innerer Auftrittsbreite sind zulässig. Noch nicht prüfbar: Beherbergungsklasse, Brandabschnitte und
+    Türaufschlag fehlen im Modell oft.'
+  en: 'On bed floors of accommodation [a] where sick, care-dependent or assistance-dependent people are housed, the horizontal
+    escape routes are subdivided so that, together with the patient rooms, at least two independent fire compartments allow
+    horizontal evacuation. Reception offices separated with EI 60 need only EI 30 towards vertical escape routes and an RF1
+    separation towards horizontal ones; doors get self-closers. Rooms may be combined into one unit if the escape routes lead
+    through a shared anteroom and measure at most 20 m to a horizontal or vertical escape route. In accommodation [b] and
+    [c], reception counters separated with EI 30 may stand in horizontal rescue routes. Hotel room doors are at least 0.8
+    m wide and need not open in the escape direction; doors within hotel suites have no requirements. In [c], building entrance
+    doors need not open in the escape direction, and winding stairs 1.2 m wide with an inner tread width of at least 0.1 m
+    are allowed. Not yet checkable: accommodation class, fire compartments and door swing are often missing in the model.'
+  fr: 'Aux étages de chambres des établissements d''hébergement [a], où sont logées des personnes malades, nécessitant des
+    soins ou dépendant d''une aide, les voies d''évacuation horizontales sont subdivisées de façon à former, avec les chambres
+    de patients, au moins deux compartiments coupe-feu indépendants permettant l''évacuation horizontale. Les bureaux de réception
+    séparés par EI 60 se contentent d''EI 30 vers les voies verticales et d''une fermeture en RF1 vers les voies horizontales
+    ; les portes sont équipées de ferme-portes. Des chambres peuvent être réunies en une unité si les voies d''évacuation
+    passent par un vestibule commun et mesurent 20 m au plus jusqu''à une voie horizontale ou verticale. Pour les établissements
+    [b] et [c], les comptoirs de réception séparés par EI 30 peuvent se trouver dans des voies de sauvetage horizontales.
+    Les portes de chambres d''hôtel ont au moins 0,8 m de large et ne s''ouvrent pas nécessairement dans le sens de la fuite
+    ; aucune exigence ne vise les portes à l''intérieur des suites. Pour [c], les portes d''entrée de l''immeuble ne s''ouvrent
+    pas nécessairement dans le sens de la fuite et les escaliers tournants de 1,2 m avec giron intérieur d''au moins 0,1 m
+    sont admis. Pas encore vérifiable : la classe d''hébergement, les compartiments et le sens d''ouverture des portes manquent
+    souvent dans le modèle.'
+  it: 'Ai piani con letti delle aziende di alloggio [a], dove sono ospitate persone malate, bisognose di cure o dipendenti
+    da aiuto altrui, le vie di fuga orizzontali sono suddivise in modo da formare, insieme alle camere dei pazienti, almeno
+    due compartimenti antincendio indipendenti che consentono l''evacuazione orizzontale. Gli uffici di ricevimento separati
+    con EI 60 si accontentano di EI 30 verso le vie verticali e di una chiusura in RF1 verso quelle orizzontali; le porte
+    hanno chiudiporta. Più camere possono essere riunite in un''unità se le vie di fuga passano per un''anticamera comune
+    e misurano al massimo 20 m fino a una via orizzontale o verticale. Nelle aziende [b] e [c] i banconi di ricevimento separati
+    con EI 30 possono trovarsi nelle vie di salvataggio orizzontali. Le porte delle camere d''albergo sono larghe almeno 0,8
+    m e non devono aprirsi nel senso di fuga; per le porte all''interno delle suite non vi sono requisiti. In [c] le porte
+    d''ingresso dell''edificio non devono aprirsi nel senso di fuga e sono ammesse scale a chiocciola larghe 1,2 m con pedata
+    interna di almeno 0,1 m. Non ancora verificabile: classe di alloggio, compartimenti e senso di apertura delle porte mancano
+    spesso nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/building
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/architecture-stair
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-16-15-2015
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 12
+  source_quote: VKF 16-15, Ziff. 3.6.1–3.6.2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

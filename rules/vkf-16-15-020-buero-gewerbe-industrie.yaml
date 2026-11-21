@@ -1,0 +1,65 @@
+id: pragmaticbim:rule/vkf-16-15-020-buero-gewerbe-industrie
+code: VKF-16-15-020
+sort_order: 76
+name:
+  de: 'Büro, Gewerbe und Industrie: Erleichterungen und Türmasse'
+  en: 'Office, trade and industry: relaxations and door dimensions'
+  fr: 'Bureaux, artisanat et industrie : allégements et dimensions des portes'
+  it: 'Uffici, artigianato e industria: agevolazioni e dimensioni delle porte'
+description:
+  de: 'In Bürobauten geringer Höhe kann auf Brandschutzabschlüsse zwischen horizontalen und vertikalen Fluchtwegen verzichtet
+    werden, wenn die Geschossfläche je vertikalem Fluchtweg höchstens 900 m² beträgt, die horizontalen Fluchtwege feuerwiderstandsfähig
+    unterteilt sind und sie den vertikalen in Material, Feuerwiderstand und Aktivierungsgefahr entsprechen. Gewendelte Treppen
+    mit 1.2 m Breite und mindestens 0.1 m innerer Auftrittsbreite sind bei geringer Höhe zulässig; innerhalb der Nutzungseinheit
+    gibt es keine Treppenanforderungen. Für Türen gilt in Betrieben, die der Verordnung 4 zum Arbeitsgesetz unterstehen, diese
+    Verordnung. Für nicht unterstellte Betriebe darf das lichte Durchgangsmass von Türen zu Räumen mit höchstens 20 Personen
+    auf 0.8 m sinken; bis 6 Personen sind Schiebetüren möglich. Der Fluchtweg innerhalb der Nutzungseinheit darf über höchstens
+    einen angrenzenden Raum führen. Noch nicht prüfbar: Gebäudehöhe, Unterstellung unter ArGV 4 und Personenbelegung fehlen
+    im Modell.'
+  en: 'In office buildings of low height, fire separations between horizontal and vertical escape routes may be omitted if
+    the floor area per vertical escape route is at most 900 m², the horizontal escape routes are subdivided with fire resistance
+    and match the vertical ones in material, fire resistance and risk of activation. Winding stairs 1.2 m wide with an inner
+    tread width of at least 0.1 m are allowed for low buildings; within the use unit there are no stair requirements. For
+    doors, businesses subject to Ordinance 4 to the Labour Act follow that ordinance. For businesses not subject to it, the
+    clear passage of doors to rooms for at most 20 people may drop to 0.8 m; up to 6 people, sliding doors are possible. The
+    escape route within the use unit may lead through at most one adjoining room. Not yet checkable: building height, subjection
+    to ArGV 4 and occupancy are missing in the model.'
+  fr: 'Dans les bâtiments de bureaux de faible hauteur, on peut renoncer aux fermetures coupe-feu entre voies d''évacuation
+    horizontales et verticales si la surface d''étage par voie verticale ne dépasse pas 900 m², si les voies horizontales
+    sont subdivisées avec résistance au feu et correspondent aux voies verticales par le matériau, la résistance au feu et
+    le risque d''activation. Les escaliers tournants de 1,2 m de large avec un giron intérieur d''au moins 0,1 m sont admis
+    pour une faible hauteur ; à l''intérieur de l''unité d''utilisation, aucune exigence ne vise les escaliers. Pour les portes,
+    les entreprises soumises à l''ordonnance 4 relative à la loi sur le travail appliquent cette ordonnance. Pour les entreprises
+    non soumises, le passage libre des portes de locaux de 20 personnes au plus peut descendre à 0,8 m ; jusqu''à 6 personnes,
+    les portes coulissantes sont possibles. La voie d''évacuation à l''intérieur de l''unité d''utilisation peut traverser
+    au plus un local voisin. Pas encore vérifiable : la hauteur du bâtiment, l''assujettissement à l''OLT 4 et l''occupation
+    manquent dans le modèle.'
+  it: 'Negli edifici per uffici di altezza ridotta si può rinunciare alle chiusure antincendio tra vie di fuga orizzontali
+    e verticali se la superficie di piano per via verticale non supera 900 m², se le vie orizzontali sono suddivise con resistenza
+    al fuoco e corrispondono a quelle verticali per materiale, resistenza al fuoco e rischio di attivazione. Per altezza ridotta
+    sono ammesse scale a chiocciola larghe 1,2 m con pedata interna di almeno 0,1 m; all''interno dell''unità d''utilizzo
+    non vi sono requisiti per le scale. Per le porte, le aziende soggette all''ordinanza 4 concernente la legge sul lavoro
+    applicano tale ordinanza. Per le aziende non soggette, il passaggio libero delle porte di locali con al massimo 20 persone
+    può scendere a 0,8 m; fino a 6 persone sono possibili porte scorrevoli. La via di fuga all''interno dell''unità d''utilizzo
+    può attraversare al massimo un locale adiacente. Non ancora verificabile: altezza dell''edificio, assoggettamento all''OLL
+    4 e occupazione mancano nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/building
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-stair
+- pragmaticbim:element/architecture-door-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-16-15-2015
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 9
+  source_quote: VKF 16-15, Ziff. 3.3.1–3.3.4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

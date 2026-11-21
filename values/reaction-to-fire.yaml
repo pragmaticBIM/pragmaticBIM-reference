@@ -1,0 +1,40 @@
+id: pragmaticbim:value/reaction-to-fire
+code: REACTION-TO-FIRE
+name:
+  de: Brandverhaltensgruppe RF
+  fr: Groupe de comportement au feu RF
+  it: Gruppo di reazione al fuoco RF
+  en: Reaction-to-fire group RF
+description:
+  de: |-
+    Brandverhaltensgruppen RF1 bis RF4 für Baustoffe und Bauteilschichten gemäss VKF-Brandschutzvorschriften (VKF 13-15 Baustoffe und Bauteile; Anwendung in VKF 14-15, Ziff. 3.1.2, 3.2.2 und 3.2.8). Die Gruppe beschreibt den Beitrag des Baustoffs zum Brand: RF1 keiner, RF2 gering, RF3 zulässig, RF4 unzulässig. Das Kennzeichen cr (kritisches Brandverhalten) ergänzt die Gruppe und verschärft die Anforderungen; es ist noch kein Wert dieser Liste, bis die Abbildung im Datenvertrag geklärt ist.
+  fr: |-
+    Groupes de comportement au feu RF1 à RF4 pour matériaux et couches d'éléments selon les prescriptions de protection incendie AEAI (AEAI 13-15 Matériaux et éléments de construction ; application dans AEAI 14-15, ch. 3.1.2, 3.2.2 et 3.2.8). Le groupe décrit la contribution du matériau à l'incendie : RF1 aucune, RF2 faible, RF3 admissible, RF4 inadmissible. Le critère cr (comportement critique) complète le groupe et durcit les exigences ; il n'est pas encore une valeur de cette liste, tant que sa représentation dans le contrat de données n'est pas arrêtée.
+  it: |-
+    Gruppi di reazione al fuoco da RF1 a RF4 per materiali e strati di componenti secondo le prescrizioni antincendio AICAA (AICAA 13-15 Materiali e componenti; applicazione in AICAA 14-15, cifre 3.1.2, 3.2.2 e 3.2.8). Il gruppo descrive il contributo del materiale all'incendio: RF1 nessuno, RF2 ridotto, RF3 ammissibile, RF4 inammissibile. Il criterio cr (comportamento critico) completa il gruppo e inasprisce i requisiti; non è ancora un valore di questo elenco, finché la sua rappresentazione nel contratto dati non è definita.
+  en: |-
+    Reaction-to-fire groups RF1 to RF4 for materials and component layers under the VKF fire protection regulations (VKF 13-15 building materials and components; applied in VKF 14-15, Ziff. 3.1.2, 3.2.2 and 3.2.8). The group describes the material's contribution to fire: RF1 none, RF2 low, RF3 acceptable, RF4 unacceptable. The cr flag (critical behaviour) supplements the group and tightens the requirements; it is not yet a value of this list until its mapping in the data contract is settled.
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+    - RF1
+    - RF2
+    - RF3
+    - RF4
+  fr:
+    - RF1
+    - RF2
+    - RF3
+    - RF4
+  it:
+    - RF1
+    - RF2
+    - RF3
+    - RF4
+  en:
+    - RF1
+    - RF2
+    - RF3
+    - RF4

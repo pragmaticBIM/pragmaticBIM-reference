@@ -1,0 +1,51 @@
+id: pragmaticbim:rule/vkf-16-15-018-gebaeude-geringe-abmessungen
+code: VKF-16-15-018
+sort_order: 74
+name:
+  de: 'Gebäude mit geringen Abmessungen: 35 m Fluchtweg, schmalere Treppen'
+  en: 'Buildings with small dimensions: 35 m escape route, narrower stairs'
+  fr: 'Bâtiments de petites dimensions : 35 m de voie d''évacuation, escaliers plus étroits'
+  it: 'Edifici di piccole dimensioni: via di fuga di 35 m, scale più strette'
+description:
+  de: 'In Gebäuden mit geringen Abmessungen beträgt der Fluchtweg bis an einen sicheren Ort im Freien höchstens 35 m und darf
+    innerhalb der Nutzungseinheit über mehrere Räume führen. Treppen, die mehrere Nutzungseinheiten erschliessen, dürfen bei
+    Wohnen, Büro, Schule, Gewerbe und Landwirtschaft angepasst werden: geradläufige Treppen mit 0.9 m Breite, gewendelte Treppen
+    mit 1.2 m Breite bei mindestens 0.1 m innerer Auftrittsbreite. Für Treppen innerhalb der Nutzungseinheit gelten die nutzungsbezogenen
+    Anforderungen. Noch nicht prüfbar: ob ein Gebäude als gering abmessend gilt und die Laufbreite der Treppen fehlen im Modell.'
+  en: 'In buildings with small dimensions the escape route to a safe place outside is at most 35 m and may lead through several
+    rooms within the use unit. Stairs serving several use units may be adapted for housing, office, school, trade and agriculture:
+    straight stairs 0.9 m wide, winding stairs 1.2 m wide with an inner tread width of at least 0.1 m. For stairs within the
+    use unit the use-specific requirements apply. Not yet checkable: whether a building counts as small and the flight width
+    of stairs are missing in the model.'
+  fr: 'Dans les bâtiments de petites dimensions, la voie d''évacuation jusqu''à un lieu sûr à l''extérieur mesure 35 m au
+    plus et peut traverser plusieurs locaux de l''unité d''utilisation. Les escaliers desservant plusieurs unités d''utilisation
+    peuvent être adaptés pour l''habitation, les bureaux, les écoles, l''artisanat et l''agriculture : escaliers droits de
+    0,9 m de large, escaliers tournants de 1,2 m avec un giron intérieur d''au moins 0,1 m. Pour les escaliers à l''intérieur
+    de l''unité d''utilisation, les exigences propres à l''affectation s''appliquent. Pas encore vérifiable : le classement
+    d''un bâtiment comme de petites dimensions et la largeur de volée des escaliers manquent dans le modèle.'
+  it: 'Negli edifici di piccole dimensioni la via di fuga fino a un luogo sicuro all''esterno misura al massimo 35 m e può
+    attraversare più locali dell''unità d''utilizzo. Le scale che servono più unità d''utilizzo possono essere adattate per
+    abitazione, ufficio, scuola, artigianato e agricoltura: scale diritte larghe 0,9 m, scale a chiocciola larghe 1,2 m con
+    pedata interna di almeno 0,1 m. Per le scale all''interno dell''unità d''utilizzo valgono i requisiti specifici dell''utilizzo.
+    Non ancora verificabile: la classificazione di un edificio come di piccole dimensioni e la larghezza delle rampe mancano
+    nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/building
+- pragmaticbim:element/architecture-stair
+- pragmaticbim:element/structural-stair
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-16-15-2015
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 8
+  source_quote: VKF 16-15, Ziff. 3.1
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
