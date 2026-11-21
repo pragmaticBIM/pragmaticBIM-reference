@@ -1,0 +1,16 @@
+@prefix pbs: <https://schema.pragmaticbim.ch/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc: <https://w3id.org/ifc/IFC4_ADD2#> .
+@prefix ex: <https://schema.pragmaticbim.ch/ex/> .
+
+ex:element pbs:separates_spaces ex:focus , ex:other .
+ex:focus a pbs:Space ;
+  pbs:metadata
+    [ pbs:metadata_key "ePset_Space.UsageUnitReference" ; pbs:metadata_value "WE-A" ] ,
+    [ pbs:metadata_key "ePset_Space.NoiseLoad" ; pbs:metadata_value "mittel" ] ,
+    [ pbs:metadata_key "ePset_Space.NoiseSensitivity" ; pbs:metadata_value "mittel" ] .
+ex:other a pbs:Space ;
+  pbs:metadata
+    [ pbs:metadata_key "ePset_Space.UsageUnitReference" ; pbs:metadata_value "WE-B" ] ,
+    [ pbs:metadata_key "ePset_Space.NoiseLoad" ; pbs:metadata_value "mittel" ] ,
+    [ pbs:metadata_key "ePset_Space.NoiseSensitivity" ; pbs:metadata_value "mittel" ] .
