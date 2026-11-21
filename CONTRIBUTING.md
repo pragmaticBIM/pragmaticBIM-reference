@@ -38,6 +38,15 @@ Keep requirements lean: no requirement without a benefit, as little as possible,
 
 One file per regulation edition under `regulations/`. Fields: `id`, `code`, `edition`, multilingual `name`, `publisher`, `jurisdiction`, `valid_from`, `valid_until`, `superseded_by`, `access` (`free` or `licensed`), `url`, optional `default_for` (jurisdictions, project goal levels, domains). Do not copy norm text; paraphrase requirements in rules and cite the clause.
 
+## SHACL rules
+
+Every rule with `rule_status: shacl_defined` needs two fixture graphs under `tests/fixtures/rules/{rule-slug}/`:
+
+- `pass.ttl` — a minimal `pbs:` graph that must conform (0 validation results)
+- `fail.ttl` — a minimal graph that must produce at least one result on `https://schema.pragmaticbim.ch/ex/focus`, with a leading comment naming the clause it violates (e.g. `# VKF 15-15 Ziff. 3.2.3: basement column R 30 < R 60`)
+
+`tests/test_rule_shacl.py` runs pySHACL on both. A new SHACL rule without fixtures fails CI.
+
 ## Writing style
 
 Descriptions are maintained in German, English, French, and Italian. The rules under [`.cursor/rules/`](.cursor/rules/) describe the structure of element, attribute, workflow, document, and usage scenario descriptions and the style per language.
