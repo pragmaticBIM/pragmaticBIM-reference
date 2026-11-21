@@ -1,0 +1,70 @@
+# Pinned copy of the `skos:notation` values of the data contract schemes that benchmark
+# ranges may name (tests/test_benchmarks.py). Refresh when the contract adds metrics or ratios.
+# Test setup: if a sibling checkout ../pragmatic-bim-data-contract exists, the test also checks
+# that every pinned notation is still defined there.
+repository: https://github.com/pragmaticBIM/pragmatic-bim-data-contract
+commit: b550acf672ac8543af9d95445858297a1163e895
+schemes:
+  - path: abstract-metric-definition/building-metrics.skos.ttl
+    notations:
+      - total_gross_floor_area
+      - total_gross_floor_area_above_ground
+      - total_gross_floor_area_below_ground
+      - total_net_floor_area
+      - total_net_floor_area_above_ground
+      - total_net_floor_area_below_ground
+      - total_construction_floor_area
+      - total_construction_floor_area_above_ground
+      - total_construction_floor_area_below_ground
+      - total_exterior_floor_area
+      - total_main_usable_area
+      - total_main_usable_area_above_ground
+      - total_main_usable_area_below_ground
+      - total_secondary_usable_area
+      - total_secondary_usable_area_above_ground
+      - total_secondary_usable_area_below_ground
+      - total_circulation_area
+      - total_circulation_area_above_ground
+      - total_circulation_area_below_ground
+      - total_technical_area
+      - total_technical_area_above_ground
+      - total_technical_area_below_ground
+      - total_gross_building_volume
+      - total_gross_building_volume_above_ground
+      - total_gross_building_volume_below_ground
+      - total_net_building_volume
+      - total_net_building_volume_above_ground
+      - total_net_building_volume_below_ground
+      - total_vertical_facade_area
+      - total_vertical_facade_area_above_ground
+      - total_vertical_facade_area_below_ground
+      - total_exterior_window_area
+      - total_exterior_window_area_above_ground
+      - total_exterior_window_area_below_ground
+      - total_exterior_door_area
+      - total_exterior_door_area_above_ground
+      - total_exterior_door_area_below_ground
+      - total_roof_area
+      - total_roof_area_above_ground
+      - total_roof_area_below_ground
+      - total_soffit_area
+      - total_soffit_area_above_ground
+      - total_soffit_area_below_ground
+      - total_envelope_area
+      - total_storey_count
+      - total_storey_count_above_ground
+      - total_storey_count_below_ground
+  - path: abstract-ratio-definition/building-ratios.skos.ttl
+    notations:
+      - ratio_building_volume_to_gross_floor_area
+      - ratio_building_volume_to_gross_floor_area_above_ground
+      - ratio_window_area_to_gross_floor_area
+      - ratio_window_area_to_gross_floor_area_above_ground
+      - ratio_facade_area_to_gross_volume
+      - ratio_facade_area_to_gross_floor_area
+      - ratio_construction_floor_area_to_gross_floor_area
+      - ratio_envelope_area_to_gross_floor_area
+      - ratio_main_usable_area_to_gross_floor_area
+      - ratio_circulation_area_to_gross_floor_area
+      - ratio_envelope_area_to_gross_volume
+      - ratio_envelope_area_to_energy_reference_area

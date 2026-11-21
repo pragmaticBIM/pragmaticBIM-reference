@@ -1,0 +1,41 @@
+id: pragmaticbim:benchmark/buero
+use: pragmaticbim:use/arbeit
+name:
+  de: Richtwerte Büro
+  fr: Valeurs indicatives bureau
+  it: Valori indicativi ufficio
+  en: Benchmarks office
+ranges:
+- metric: ratio_main_usable_area_to_gross_floor_area
+  min: 0.55
+  max: 0.68
+  target: 0.62
+  comment:
+    de: Annahme, noch keine veröffentlichte Quelle. Von Fachperson zu bestätigen.
+    fr: Hypothèse, pas encore de source publiée. À confirmer par un spécialiste.
+    it: Ipotesi, nessuna fonte pubblicata finora. Da confermare da uno specialista.
+    en: Assumption, no published source yet. To be confirmed by a professional.
+- metric: ratio_circulation_area_to_gross_floor_area
+  min: 0.12
+  max: 0.22
+  target: 0.17
+  comment:
+    de: Annahme, noch keine veröffentlichte Quelle. Von Fachperson zu bestätigen.
+    fr: Hypothèse, pas encore de source publiée. À confirmer par un spécialiste.
+    it: Ipotesi, nessuna fonte pubblicata finora. Da confermare da uno specialista.
+    en: Assumption, no published source yet. To be confirmed by a professional.
+- metric: ratio_envelope_area_to_gross_volume
+  max: 0.5
+  comment:
+    de: Annahme, noch keine veröffentlichte Quelle. Von Fachperson zu bestätigen.
+    fr: Hypothèse, pas encore de source publiée. À confirmer par un spécialiste.
+    it: Ipotesi, nessuna fonte pubblicata finora. Da confermare da uno specialista.
+    en: Assumption, no published source yet. To be confirmed by a professional.
+- metric: ratio_envelope_area_to_energy_reference_area
+  max: 1.4
+  comment:
+    de: Annahme, noch keine veröffentlichte Quelle. Von Fachperson zu bestätigen.
+    fr: Hypothèse, pas encore de source publiée. À confirmer par un spécialiste.
+    it: Ipotesi, nessuna fonte pubblicata finora. Da confermare da uno specialista.
+    en: Assumption, no published source yet. To be confirmed by a professional.
+status: active

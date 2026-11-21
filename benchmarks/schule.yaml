@@ -1,0 +1,41 @@
+id: pragmaticbim:benchmark/schule
+use: pragmaticbim:use/bildung
+name:
+  de: Richtwerte Schule
+  fr: Valeurs indicatives école
+  it: Valori indicativi scuola
+  en: Benchmarks school
+ranges:
+- metric: ratio_main_usable_area_to_gross_floor_area
+  min: 0.45
+  max: 0.58
+  target: 0.52
+  comment:
+    de: Annahme, noch keine veröffentlichte Quelle. Von Fachperson zu bestätigen.
+    fr: Hypothèse, pas encore de source publiée. À confirmer par un spécialiste.
+    it: Ipotesi, nessuna fonte pubblicata finora. Da confermare da uno specialista.
+    en: Assumption, no published source yet. To be confirmed by a professional.
+- metric: ratio_circulation_area_to_gross_floor_area
+  min: 0.2
+  max: 0.32
+  target: 0.26
+  comment:
+    de: Annahme, noch keine veröffentlichte Quelle. Von Fachperson zu bestätigen.
+    fr: Hypothèse, pas encore de source publiée. À confirmer par un spécialiste.
+    it: Ipotesi, nessuna fonte pubblicata finora. Da confermare da uno specialista.
+    en: Assumption, no published source yet. To be confirmed by a professional.
+- metric: ratio_envelope_area_to_gross_volume
+  max: 0.5
+  comment:
+    de: Annahme, noch keine veröffentlichte Quelle. Von Fachperson zu bestätigen.
+    fr: Hypothèse, pas encore de source publiée. À confirmer par un spécialiste.
+    it: Ipotesi, nessuna fonte pubblicata finora. Da confermare da uno specialista.
+    en: Assumption, no published source yet. To be confirmed by a professional.
+- metric: ratio_envelope_area_to_energy_reference_area
+  max: 1.3
+  comment:
+    de: Annahme, noch keine veröffentlichte Quelle. Von Fachperson zu bestätigen.
+    fr: Hypothèse, pas encore de source publiée. À confirmer par un spécialiste.
+    it: Ipotesi, nessuna fonte pubblicata finora. Da confermare da uno specialista.
+    en: Assumption, no published source yet. To be confirmed by a professional.
+status: active
