@@ -1,0 +1,50 @@
+id: pragmaticbim:rule/vkf-23-15-002-aufzugsschachttueren-feuerwiderstand
+code: VKF-23-15-002
+sort_order: 21
+name:
+  de: 'Aufzugsschachttüren: Feuerwiderstand nach Lage und Gebäudeart'
+  en: 'Lift landing doors: fire resistance by location and building type'
+  fr: 'Portes palières d''ascenseur : résistance au feu selon la situation et le type de bâtiment'
+  it: 'Porte di piano dell''ascensore: resistenza al fuoco secondo posizione e tipo di edificio'
+description:
+  de: 'Aufzugsschachttüren bestehen aus Baustoffen der Brandverhaltensgruppe RF1. Führen sie unmittelbar in eine
+    Nutzungseinheit, brauchen sie E 30, bei grosser Brandbelastung (über 1000 MJ/m² in den Räumen) E 60. Die Schachtfront
+    hat den gleichen Feuerwiderstand wie die zugehörigen Türen. In Hochhäusern sind die Schachttüren E 30 und münden
+    nicht direkt in Sicherheitstreppenhäuser. Noch nicht prüfbar: das Modell zeigt nicht, ob eine Aufzugstür direkt
+    in eine Nutzungseinheit führt; die Brandbelastung der Räume ist nicht abgelegt.'
+  en: 'Lift landing doors are made of RF1 building materials. Where they open directly into a usage unit, they need
+    E 30, or E 60 under a high fire load (above 1000 MJ/m² in the rooms). The shaft front has the same fire resistance
+    as its doors. In high-rise buildings the landing doors are E 30 and do not open directly into safety staircases.
+    Not yet checkable: the model does not show whether a lift door leads directly into a usage unit; the fire load
+    of the rooms is not stored.'
+  fr: 'Les portes palières d''ascenseur sont en matériaux du groupe de comportement au feu RF1. Si elles donnent
+    directement dans une unité d''utilisation, elles exigent E 30, ou E 60 en cas de charge thermique élevée (plus
+    de 1000 MJ/m² dans les locaux). La façade de gaine a la même résistance au feu que ses portes. Dans les tours,
+    les portes palières sont E 30 et ne débouchent pas directement dans des cages d''escalier de sécurité. Pas
+    encore vérifiable : le modèle n''indique pas si une porte d''ascenseur donne directement dans une unité d''utilisation
+    ; la charge thermique des locaux n''est pas renseignée.'
+  it: 'Le porte di piano dell''ascensore sono realizzate con materiali del gruppo di comportamento al fuoco RF1.
+    Se danno direttamente in un''unità d''uso, richiedono E 30, oppure E 60 in caso di elevato carico d''incendio
+    (oltre 1000 MJ/m² nei locali). Il fronte del vano ha la stessa resistenza al fuoco delle sue porte. Negli
+    edifici alti le porte di piano sono E 30 e non sboccano direttamente in scale di sicurezza. Non ancora verificabile:
+    il modello non indica se una porta d''ascensore dà direttamente in un''unità d''uso; il carico d''incendio
+    dei locali non è registrato.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-door-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-23-15-2015
+  source_document: VKF-Brandschutzrichtlinie 23-15 Beförderungsanlagen (2015)
+  source_page: 5
+  source_quote: VKF 23-15, Ziff. 3.4 Abs. 1–2 und 4; Ziff. 3.8 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

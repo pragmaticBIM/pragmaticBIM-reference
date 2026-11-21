@@ -1,0 +1,48 @@
+id: pragmaticbim:rule/vkf-23-15-003-feuerwehraufzug-schacht-und-tueren
+code: VKF-23-15-003
+sort_order: 22
+name:
+  de: 'Feuerwehraufzug: Schacht, Schleuse und Schachttüren'
+  en: 'Fire-fighting lift: shaft, lobby and landing doors'
+  fr: 'Ascenseur pompiers : gaine, sas et portes palières'
+  it: 'Ascensore antincendio: vano, filtro e porte di piano'
+description:
+  de: 'Der Zugang zum Feuerwehraufzug erfolgt in allen Geschossen nur über Schleusen. Schacht und Schleusen haben
+    Feuerwiderstand EI 90, feuerwiderstandsfähige Abschlüsse und Rauchschutz-Druckanlage. Die Schachttüren erreichen
+    E 60, sind mindestens 0.8 m breit und nicht abschliessbar. Die Schleuse misst mindestens 2.4 × 2.4 m. Noch
+    nicht prüfbar: das Modell kennzeichnet weder Feuerwehraufzüge noch ihre Schleusen und Schachtwände.'
+  en: 'Access to the fire-fighting lift is on every floor only through lobbies. Shaft and lobbies have fire resistance
+    EI 90, fire-resistant closures and a smoke-control pressurisation system. The landing doors reach E 60, are
+    at least 0.8 m wide and cannot be locked. The lobby measures at least 2.4 × 2.4 m. Not yet checkable: the model
+    identifies neither fire-fighting lifts nor their lobbies and shaft walls.'
+  fr: 'L''accès à l''ascenseur pompiers se fait à tous les étages uniquement par des sas. La gaine et les sas ont
+    une résistance au feu EI 90, des fermetures résistant au feu et une installation de surpression de protection
+    contre la fumée. Les portes palières atteignent E 60, ont une largeur libre d''au moins 0,8 m et ne peuvent
+    pas être verrouillées. Le sas mesure au moins 2,4 × 2,4 m. Pas encore vérifiable : le modèle n''identifie
+    ni les ascenseurs pompiers ni leurs sas et parois de gaine.'
+  it: 'L''accesso all''ascensore antincendio avviene a tutti i piani solo tramite filtri. Vano e filtri hanno resistenza
+    al fuoco EI 90, chiusure resistenti al fuoco e impianto di sovrapressione antifumo. Le porte di piano raggiungono
+    E 60, hanno una larghezza libera di almeno 0,8 m e non sono chiudibili a chiave. Il filtro misura almeno 2,4 × 2,4
+    m. Non ancora verificabile: il modello non identifica né gli ascensori antincendio né i loro filtri e pareti
+    del vano.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/structural-wall
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-door-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-23-15-2015
+  source_document: VKF-Brandschutzrichtlinie 23-15 Beförderungsanlagen (2015)
+  source_page: 7
+  source_quote: VKF 23-15, Ziff. 4.3 Abs. 1–3; Ziff. 4.4 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
