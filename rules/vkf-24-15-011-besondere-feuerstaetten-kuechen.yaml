@@ -1,0 +1,57 @@
+id: pragmaticbim:rule/vkf-24-15-011-besondere-feuerstaetten-kuechen
+code: VKF-24-15-011
+sort_order: 176
+name:
+  de: Cheminées, Kachelöfen, Pelletsfeuerungen, gewerbliche Küchen und Kochherde
+  en: Fireplaces, tiled stoves, pellet firing units, commercial kitchens and cookers
+  fr: Cheminées, poêles en catelles, chauffages à granulés, cuisines professionnelles et cuisinières
+  it: Camini, stufe in maiolica, caldaie a pellet, cucine professionali e fornelli
+description:
+  de: 'Für Cheminées gelten die Angaben der Leistungserklärung oder VKF-Technischen Auskunft. Kachel- und Speicheröfen halten
+    seitlich, hinten und oben 0.2 m und zur Einfeuerung 0.5 m Abstand zu Brennbarem und haben Reinigungsöffnungen. Gewerbliche
+    Küchen sind gegen angrenzende Brandabschnitte mit dem Wert der Brandabschnittsbildung, mindestens EI 30, abgetrennt; bei
+    offener Verbindung zum Restaurant braucht es Deckenschürzen aus RF1 oder Hauben mit Löscheinrichtung. Wände hinter Gasherden
+    sind EI 30 aus RF1 und mindestens 60 mm dick. Noch nicht prüfbar: das Modell weist Oberflächentemperatur, Brennbarkeit
+    der Umgebung und Sicherheitsabstände nicht aus.'
+  en: 'For fireplaces the information of the declaration of performance or VKF technical information applies. Tiled and storage
+    stoves keep 0.2 m at the sides, back and top and 0.5 m at the firing opening from combustibles and have cleaning openings.
+    Commercial kitchens are separated from adjoining compartments with the compartmentation value, at least EI 30; with an
+    open connection to the restaurant, ceiling skirts of RF1 or hoods with extinguishing equipment are needed. Walls behind
+    gas cookers are EI 30 of RF1 and at least 60 mm thick. Not yet checkable: the model does not show surface temperature,
+    combustibility of surroundings and clearances.'
+  fr: 'Pour les cheminées, les indications de la déclaration des performances ou du renseignement technique de l''AEAI font
+    foi. Les poêles en catelles et à accumulation respectent 0.2 m latéralement, à l''arrière et au-dessus et 0.5 m devant
+    le foyer par rapport aux combustibles et comportent des ouvertures de nettoyage. Les cuisines professionnelles sont séparées
+    des compartiments voisins avec la valeur de compartimentation, au moins EI 30 ; en cas de liaison ouverte avec le restaurant,
+    des écrans de plafond en RF1 ou des hottes avec dispositif d''extinction sont requis. Les parois derrière les cuisinières
+    à gaz sont EI 30 en RF1 et épaisses d''au moins 60 mm. Pas encore vérifiable : le modèle n''indique ni la température
+    de surface, ni la combustibilité de l''environnement, ni les distances de sécurité.'
+  it: 'Per i camini valgono le indicazioni della dichiarazione di prestazione o dell''informazione tecnica AICAA. Le stufe
+    in maiolica e ad accumulo mantengono 0.2 m ai lati, dietro e sopra e 0.5 m davanti al focolare dai combustibili e hanno
+    aperture di pulizia. Le cucine professionali sono separate dai compartimenti adiacenti con il valore di compartimentazione,
+    almeno EI 30; con collegamento aperto al ristorante servono grembiuli a soffitto in RF1 o cappe con dispositivo di estinzione.
+    Le pareti dietro i fornelli a gas sono EI 30 in RF1 e spesse almeno 60 mm. Non ancora verificabile: il modello non indica
+    temperatura superficiale, combustibilità dell''ambiente né distanze di sicurezza.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-boiler
+- pragmaticbim:element/mep-unitary-equipment
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-built-in-furniture
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-24-15-2015
+  source_document: VKF-Brandschutzrichtlinie 24-15 Wärmetechnische Anlagen (2015)
+  source_page: 8
+  source_quote: VKF 24-15, Ziff. 4.1–4.5
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

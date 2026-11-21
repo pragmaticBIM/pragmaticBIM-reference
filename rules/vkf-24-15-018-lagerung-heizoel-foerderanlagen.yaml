@@ -1,0 +1,59 @@
+id: pragmaticbim:rule/vkf-24-15-018-lagerung-heizoel-foerderanlagen
+code: VKF-24-15-018
+sort_order: 183
+name:
+  de: 'Heizöl: bis 4''000 l Kleintanks oder 8''000 l Stahltanks im Heizraum EI 60, Förderanlagen nicht in Fluchtwegen'
+  en: 'Heating oil: up to 4,000 l small tanks or 8,000 l steel tanks in a boiler room EI 60, delivery systems not in escape
+    routes'
+  fr: 'Mazout : jusqu''à 4''000 l en petites citernes ou 8''000 l en citernes en acier dans un local de chauffe EI 60, installations
+    de transfert pas dans les voies d''évacuation'
+  it: 'Olio combustibile: fino a 4''000 l in piccoli serbatoi o 8''000 l in serbatoi di acciaio in un locale caldaia EI 60,
+    impianti di trasferimento non nelle vie di fuga'
+description:
+  de: 'In separaten Heizräumen mit EI 60 darf Heizöl bis 4''000 l in Kleintanks oder bis 8''000 l in Stahltanks lagern; zusätzlich
+    gilt die Richtlinie Gefährliche Stoffe. Zwischen- und Betriebsbehälter sowie Förderpumpen stehen nicht in Fluchtwegen,
+    Behälter im Dachraum haben eine Thermosicherung bei über 70 °C, und Öl erwärmt sich nicht über 50 °C. Ölleitungen aus
+    brennbarem Material führen ausserhalb von Tank- und Aufstellraum in RF1-Schutzrohren, durch andere Brandabschnitte zusätzlich
+    mit EI 30 bekleidet. Noch nicht prüfbar: das Modell weist Brennstoffart, Lagermenge und Tankvolumen nicht aus.'
+  en: 'In separate boiler rooms with EI 60, heating oil up to 4,000 l in small tanks or up to 8,000 l in steel tanks may be
+    stored; the directive on hazardous substances applies in addition. Intermediate and service tanks and delivery pumps are
+    not placed in escape routes, tanks in the roof space have a thermal cut-off above 70 °C, and the oil does not warm above
+    50 °C. Oil pipes of combustible material run outside the tank or installation room in RF1 protective tubes, through other
+    compartments additionally clad with EI 30. Not yet checkable: the model does not show fuel type, stored quantity and tank
+    volume.'
+  fr: 'Dans des locaux de chauffe séparés EI 60, du mazout jusqu''à 4''000 l en petites citernes ou 8''000 l en citernes en
+    acier peut être stocké ; la directive sur les substances dangereuses s''applique en plus. Réservoirs intermédiaires et
+    de service et pompes de transfert ne se trouvent pas dans les voies d''évacuation, les réservoirs en combles ont une sécurité
+    thermique au-dessus de 70 °C et l''huile ne s''échauffe pas au-delà de 50 °C. Les conduites d''huile en matériau combustible
+    passent hors du local de citerne ou d''installation dans des tubes de protection RF1, à travers d''autres compartiments
+    en plus revêtues EI 30. Pas encore vérifiable : le modèle n''indique ni le type de combustible, ni la quantité stockée,
+    ni le volume des citernes.'
+  it: 'In locali caldaia separati EI 60 può essere stoccato olio combustibile fino a 4''000 l in piccoli serbatoi o fino a
+    8''000 l in serbatoi di acciaio; vale inoltre la direttiva sulle sostanze pericolose. Serbatoi intermedi e di servizio
+    e pompe di trasferimento non stanno nelle vie di fuga, i serbatoi nel sottotetto hanno una sicurezza termica oltre 70
+    °C e l''olio non si scalda oltre 50 °C. Le tubazioni dell''olio in materiale combustibile corrono fuori dal locale serbatoi
+    o di installazione in tubi protettivi RF1, attraverso altri compartimenti inoltre rivestite EI 30. Non ancora verificabile:
+    il modello non indica tipo di combustibile, quantità stoccata né volume dei serbatoi.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-tank
+- pragmaticbim:element/mep-pump
+- pragmaticbim:element/mep-schematic-pipe
+- pragmaticbim:element/mep-valve
+- pragmaticbim:element/spaces-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-24-15-2015
+  source_document: VKF-Brandschutzrichtlinie 24-15 Wärmetechnische Anlagen (2015)
+  source_page: 16
+  source_quote: VKF 24-15, Ziff. 6.4 Abs. 1–2 und 6.5.1–6.5.3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

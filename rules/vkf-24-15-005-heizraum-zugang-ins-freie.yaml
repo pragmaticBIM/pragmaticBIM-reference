@@ -1,0 +1,48 @@
+id: pragmaticbim:rule/vkf-24-15-005-heizraum-zugang-ins-freie
+code: VKF-24-15-005
+sort_order: 170
+name:
+  de: 'Heizraum mit direktem Zugang vom Freien: über 1''200 kW im EG oder tiefer, über 600 kW ab 2. UG'
+  en: 'Boiler room with direct access from outdoors: above 1,200 kW on ground floor or lower, above 600 kW from 2nd basement'
+  fr: 'Local de chauffe avec accès direct depuis l''extérieur : plus de 1''200 kW au rez ou plus bas, plus de 600 kW dès le
+    2e sous-sol'
+  it: 'Locale caldaia con accesso diretto dall''esterno: oltre 1''200 kW al piano terra o più in basso, oltre 600 kW dal 2°
+    interrato'
+description:
+  de: 'Heizräume im Erdgeschoss oder tiefer für Anlagen über 1''200 kW Nennwärmeleistung sowie Heizräume im zweiten Untergeschoss
+    oder tiefer für Anlagen über 600 kW erhalten einen direkten Zugang vom Freien. Noch nicht prüfbar: das Modell weist Nennwärmeleistung,
+    Brennstoff, Aufstellungsart und Feuerwiderstand des Heizraums nicht aus.'
+  en: 'Boiler rooms on the ground floor or lower for plants above 1,200 kW nominal heat output, and boiler rooms on the second
+    basement or lower for plants above 600 kW, get direct access from outdoors. Not yet checkable: the model does not show
+    nominal heat output, fuel, type of installation and fire resistance of the boiler room.'
+  fr: 'Les locaux de chauffe au rez-de-chaussée ou plus bas pour des installations de plus de 1''200 kW de puissance calorifique
+    nominale, ainsi que ceux au deuxième sous-sol ou plus bas pour plus de 600 kW, reçoivent un accès direct depuis l''extérieur.
+    Pas encore vérifiable : le modèle n''indique pas la puissance calorifique nominale, le combustible, le mode d''installation
+    ni la résistance au feu du local de chauffe.'
+  it: 'I locali caldaia al piano terra o più in basso per impianti oltre 1''200 kW di potenza termica nominale, nonché quelli
+    al secondo interrato o più in basso per oltre 600 kW, ricevono un accesso diretto dall''esterno. Non ancora verificabile:
+    il modello non indica potenza termica nominale, combustibile, tipo di installazione né resistenza al fuoco del locale
+    caldaia.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-boiler
+- pragmaticbim:element/mep-schematic-equipment-space
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-door-exterior
+- pragmaticbim:element/architecture-door-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-24-15-2015
+  source_document: VKF-Brandschutzrichtlinie 24-15 Wärmetechnische Anlagen (2015)
+  source_page: 6
+  source_quote: VKF 24-15, Ziff. 3.3 Abs. 2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

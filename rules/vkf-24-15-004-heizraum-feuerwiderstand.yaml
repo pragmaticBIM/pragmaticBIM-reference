@@ -1,0 +1,56 @@
+id: pragmaticbim:rule/vkf-24-15-004-heizraum-feuerwiderstand
+code: VKF-24-15-004
+sort_order: 169
+name:
+  de: 'Heizraum in Gebäuden mit mehreren Brandabschnitten: EI 30 bis 70 kW, EI 60 darüber, Türen EI 30'
+  en: 'Boiler room in buildings with several compartments: EI 30 up to 70 kW, EI 60 above, doors EI 30'
+  fr: 'Local de chauffe dans les bâtiments à plusieurs compartiments : EI 30 jusqu''à 70 kW, EI 60 au-delà, portes EI 30'
+  it: 'Locale caldaia in edifici con più compartimenti: EI 30 fino a 70 kW, EI 60 oltre, porte EI 30'
+description:
+  de: 'Feuerungsaggregate stehen in separaten Heizräumen. Deren Feuerwiderstand richtet sich nach der gesamten Nennwärmeleistung:
+    bis 70 kW der nutzungsbezogene Brandabschnittswert, mindestens EI 30; darüber mindestens EI 60. Türen sind EI 30 und bei
+    mehr als 70 kW in Fluchtrichtung öffnend. Bei bis zu 70 kW und geringem Brandrisiko darf der Raum auch anderen Zwecken
+    dienen. Dasselbe gilt für nicht elektrisch betriebene Wärmepumpen, stationäre Verbrennungsmotoren und Wärmekraftkopplungsanlagen.
+    Noch nicht prüfbar: das Modell weist Nennwärmeleistung, Brennstoff, Aufstellungsart und Feuerwiderstand des Heizraums
+    nicht aus.'
+  en: 'Firing units stand in separate boiler rooms. Their fire resistance depends on the total nominal heat output: up to
+    70 kW the use-related compartment value, at least EI 30; above that at least EI 60. Doors are EI 30 and, above 70 kW,
+    open in the direction of escape. Up to 70 kW and with low fire risk the room may also serve other purposes. The same applies
+    to non-electric heat pumps, stationary combustion engines and combined heat and power plants. Not yet checkable: the model
+    does not show nominal heat output, fuel, type of installation and fire resistance of the boiler room.'
+  fr: 'Les foyers sont installés dans des locaux de chauffe séparés. Leur résistance au feu dépend de la puissance calorifique
+    nominale totale : jusqu''à 70 kW la valeur de compartimentation liée à l''affectation, au moins EI 30 ; au-delà au moins
+    EI 60. Les portes sont EI 30 et, au-delà de 70 kW, s''ouvrent dans le sens de l''évacuation. Jusqu''à 70 kW et à faible
+    risque, le local peut servir à d''autres usages. Il en va de même pour les pompes à chaleur non électriques, moteurs à
+    combustion stationnaires et installations de couplage chaleur-force. Pas encore vérifiable : le modèle n''indique pas
+    la puissance calorifique nominale, le combustible, le mode d''installation ni la résistance au feu du local de chauffe.'
+  it: 'I focolari stanno in locali caldaia separati. La loro resistenza al fuoco dipende dalla potenza termica nominale totale:
+    fino a 70 kW il valore di compartimentazione legato all''utilizzo, almeno EI 30; oltre almeno EI 60. Le porte sono EI
+    30 e, oltre 70 kW, si aprono nel senso della fuga. Fino a 70 kW e con basso rischio il locale può servire anche ad altri
+    scopi. Lo stesso vale per pompe di calore non elettriche, motori a combustione stazionari e impianti di cogenerazione.
+    Non ancora verificabile: il modello non indica potenza termica nominale, combustibile, tipo di installazione né resistenza
+    al fuoco del locale caldaia.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-boiler
+- pragmaticbim:element/mep-heat-exchanger
+- pragmaticbim:element/mep-schematic-equipment-space
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-door-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-24-15-2015
+  source_document: VKF-Brandschutzrichtlinie 24-15 Wärmetechnische Anlagen (2015)
+  source_page: 6
+  source_quote: VKF 24-15, Ziff. 3.1 Abs. 1–3, 3.3 Abs. 1 und 3, und 4.8 Abs. 1
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

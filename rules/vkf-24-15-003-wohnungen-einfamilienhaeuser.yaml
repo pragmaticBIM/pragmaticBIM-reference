@@ -1,0 +1,51 @@
+id: pragmaticbim:rule/vkf-24-15-003-wohnungen-einfamilienhaeuser
+code: VKF-24-15-003
+sort_order: 168
+name:
+  de: 'Einfamilienhäuser und Wohnungen: Feuerungen für feste Brennstoffe im Raum mit EI 30'
+  en: 'Single-family houses and flats: solid-fuel firing units in a room with EI 30'
+  fr: 'Maisons individuelles et logements : foyers à combustible solide dans un local EI 30'
+  it: 'Case unifamiliari e appartamenti: focolari a combustibile solido in un locale EI 30'
+description:
+  de: 'Für flüssige und gasförmige Brennstoffe sind Bauart und Ausbau des Aufstellraums beliebig. Feuerungsaggregate für feste
+    Brennstoffe, die auch den Raum beheizen, dürfen in ständig benutzten Räumen wie Küche oder Wohnzimmer stehen; sonst brauchen
+    sie einen Raum mit dem Feuerwiderstand der nutzungsbezogenen Brandabschnittsbildung, mindestens EI 30, mit Türen EI 30.
+    Bei geringem Brandrisiko darf der Aufstellraum auch anderweitig genutzt werden. Noch nicht prüfbar: das Modell weist Nennwärmeleistung,
+    Brennstoff, Aufstellungsart und Feuerwiderstand des Heizraums nicht aus.'
+  en: 'For liquid and gaseous fuels the construction and finish of the installation room are unrestricted. Solid-fuel units
+    that also heat the room may stand in permanently used rooms such as kitchen or living room; otherwise they need a room
+    with the fire resistance of the use-related compartmentation, at least EI 30, with EI 30 doors. With low fire risk the
+    installation room may also serve other purposes. Not yet checkable: the model does not show nominal heat output, fuel,
+    type of installation and fire resistance of the boiler room.'
+  fr: 'Pour les combustibles liquides et gazeux, le mode de construction et l''aménagement du local sont libres. Les foyers
+    à combustible solide qui chauffent aussi le local peuvent se trouver dans des locaux utilisés en permanence comme cuisine
+    ou séjour ; sinon ils exigent un local avec la résistance au feu de la compartimentation liée à l''affectation, au moins
+    EI 30, avec portes EI 30. En cas de risque faible, le local peut servir à d''autres usages. Pas encore vérifiable : le
+    modèle n''indique pas la puissance calorifique nominale, le combustible, le mode d''installation ni la résistance au feu
+    du local de chauffe.'
+  it: 'Per combustibili liquidi e gassosi tipo di costruzione e finitura del locale sono liberi. I focolari a combustibile
+    solido che riscaldano anche il locale possono stare in locali usati in permanenza come cucina o soggiorno; altrimenti
+    richiedono un locale con la resistenza al fuoco della compartimentazione legata all''utilizzo, almeno EI 30, con porte
+    EI 30. Con rischio d''incendio basso il locale può servire anche ad altri scopi. Non ancora verificabile: il modello non
+    indica potenza termica nominale, combustibile, tipo di installazione né resistenza al fuoco del locale caldaia.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-boiler
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-door-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-24-15-2015
+  source_document: VKF-Brandschutzrichtlinie 24-15 Wärmetechnische Anlagen (2015)
+  source_page: 6
+  source_quote: VKF 24-15, Ziff. 3.2 Abs. 1–4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

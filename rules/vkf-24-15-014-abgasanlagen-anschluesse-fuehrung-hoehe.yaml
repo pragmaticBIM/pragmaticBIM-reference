@@ -1,0 +1,58 @@
+id: pragmaticbim:rule/vkf-24-15-014-abgasanlagen-anschluesse-fuehrung-hoehe
+code: VKF-24-15-014
+sort_order: 179
+name:
+  de: 'Abgasanlagen: Anschlüsse, durchgehende Führung und Mindesthöhe über Dach'
+  en: 'Flue systems: connections, continuous routing and minimum height above roof'
+  fr: 'Installations d''évacuation : raccordements, tracé continu et hauteur minimale au-dessus du toit'
+  it: 'Impianti di scarico fumi: allacci, percorso continuo e altezza minima sopra il tetto'
+description:
+  de: 'Angeschlossen werden nur Aggregate, die im Normalbetrieb keine für die Anlage unzulässig heissen Abgase erzeugen; Verbindungsrohre
+    münden im selben Geschoss und Brandabschnitt. Gemeinsame Züge im Unterdruck sind bis vier Anschlüsse und 70 kW Gesamtleistung
+    zulässig; Aggregate über 70 kW, offene Feuerstätten und Überdruckaggregate brauchen separate Züge. Abgasanlagen führen
+    durchgehend, wenn möglich vertikal, über Dach: 1 m bei Austritt in der Dachfläche, 0.5 m am First oder auf nicht begehbaren
+    Flachdächern, 2 m auf begehbaren Flachdächern; bei unter 3 m Abstand zu höheren Gebäudeteilen bis über diese. Noch nicht
+    prüfbar: das Modell enthält keine Abgasanlage mit Klassierung, Führung, Mindesthöhe über Dach und Sicherheitsabstand.'
+  en: 'Only units that in normal operation do not produce flue gases hotter than the system allows are connected; connecting
+    pipes enter in the same storey and fire compartment. Common flues under negative pressure are allowed for up to four connections
+    and 70 kW total output; units above 70 kW, open fireplaces and positive-pressure units need separate flues. Flues run
+    continuously, if possible vertically, above the roof: 1 m for discharge in the roof surface, 0.5 m at the ridge or on
+    non-accessible flat roofs, 2 m on accessible flat roofs; with less than 3 m distance to higher building parts, up above
+    them. Not yet checkable: the model holds no flue system with classification, routing, minimum height above roof and clearance.'
+  fr: 'Seuls sont raccordés les appareils qui, en fonctionnement normal, ne produisent pas des gaz plus chauds que ne le permet
+    l''installation ; les tuyaux de raccordement débouchent dans le même étage et compartiment. Les conduits communs en dépression
+    sont admis jusqu''à quatre raccordements et 70 kW de puissance totale ; appareils de plus de 70 kW, foyers ouverts et
+    appareils en surpression exigent des conduits séparés. Les conduits sont continus, si possible verticaux, au-dessus du
+    toit : 1 m pour une sortie dans la surface du toit, 0.5 m au faîte ou sur toitures plates non accessibles, 2 m sur toitures
+    plates accessibles ; à moins de 3 m de parties de bâtiment plus hautes, jusqu''au-dessus de celles-ci. Pas encore vérifiable
+    : le modèle ne contient aucune installation d''évacuation des gaz avec classification, tracé, hauteur minimale au-dessus
+    du toit ni distance de sécurité.'
+  it: 'Si allacciano solo apparecchi che in esercizio normale non producono fumi più caldi di quanto l''impianto consenta;
+    i tubi di raccordo sboccano nello stesso piano e compartimento. Le canne comuni in depressione sono ammesse fino a quattro
+    allacci e 70 kW di potenza totale; apparecchi oltre 70 kW, focolari aperti e apparecchi in sovrappressione richiedono
+    canne separate. Gli impianti sono continui, possibilmente verticali, sopra il tetto: 1 m con sbocco nella falda, 0.5 m
+    al colmo o su tetti piani non praticabili, 2 m su tetti piani praticabili; con meno di 3 m di distanza da parti di edificio
+    più alte, fin sopra queste. Non ancora verificabile: il modello non contiene alcun impianto di scarico fumi con classificazione,
+    percorso, altezza minima sopra il tetto né distanza di sicurezza.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-boiler
+- pragmaticbim:element/mep-schematic-duct
+- pragmaticbim:element/architecture-roof-pitched
+- pragmaticbim:element/architecture-slab-flat-roof
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-24-15-2015
+  source_document: VKF-Brandschutzrichtlinie 24-15 Wärmetechnische Anlagen (2015)
+  source_page: 11
+  source_quote: VKF 24-15, Ziff. 5.5.1–5.5.3, 5.6 und 5.7 Abs. 1–3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

@@ -1,0 +1,37 @@
+id: pragmaticbim:rule/vkf-24-15-019-betriebsbereitschaft-wartung
+code: VKF-24-15-019
+sort_order: 184
+name:
+  de: Betriebsbereitschaft und Wartung der wärmetechnischen Anlagen
+  en: Operational readiness and maintenance of heating plant
+  fr: Disponibilité et entretien des installations thermiques
+  it: Prontezza all'esercizio e manutenzione degli impianti termici
+description:
+  de: Eigentum oder Betrieb der Anlage sorgen dafür, dass wärmetechnische Anlagen bestimmungsgemäss unterhalten und jederzeit
+    betriebsbereit sind.
+  en: Owners or operators ensure that heating plant is maintained as intended and is ready for operation at all times.
+  fr: Les propriétaires ou exploitants veillent à ce que les installations thermiques soient entretenues conformément et prêtes
+    à fonctionner en tout temps.
+  it: Proprietà o gestione assicurano che gli impianti termici siano mantenuti come previsto e pronti all'esercizio in ogni
+    momento.
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-boiler
+- pragmaticbim:element/mep-pump
+- pragmaticbim:element/mep-valve
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-24-15-2015
+  source_document: VKF-Brandschutzrichtlinie 24-15 Wärmetechnische Anlagen (2015)
+  source_page: 16
+  source_quote: VKF 24-15, Ziff. 7
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
