@@ -1,0 +1,42 @@
+id: pragmaticbim:rule/vkf-14-15-007-doppelfassaden-kastenfenster
+code: VKF-14-15-007
+sort_order: 42
+name:
+  de: Doppelfassaden aus RF1, keine geschossübergreifenden Kastenfenster
+  en: Double-skin facades made of RF1, no storey-spanning box windows
+  fr: Doubles façades en RF1, pas de fenêtres à caisson sur plusieurs niveaux
+  it: Doppie facciate in RF1, nessuna finestra a cassone su più piani
+description:
+  de: 'Geschossübergreifende Doppelfassaden bestehen aus RF1-Baustoffen; brennbare lineare Fensterprofile sind zulässig,
+    und mit zusätzlichen Massnahmen sind brennbare Baustoffe möglich. Geschossübergreifende Kastenfenster sind nicht zulässig.
+    Noch nicht prüfbar: das Modell führt die Brandverhaltensgruppe (RF1–RF4, cr) der Baustoffe nicht.'
+  en: 'Storey-spanning double-skin facades are made of RF1 materials; combustible linear window profiles are allowed, and
+    with additional measures combustible materials are possible. Storey-spanning box windows are not allowed. Not yet checkable:
+    the model does not carry the reaction-to-fire group (RF1–RF4, cr) of materials.'
+  fr: 'Les doubles façades sur plusieurs niveaux sont en matériaux RF1 ; les profilés de fenêtre linéaires combustibles
+    sont admis, et des matériaux combustibles sont possibles moyennant des mesures supplémentaires. Les fenêtres à caisson
+    sur plusieurs niveaux ne sont pas admises. Pas encore vérifiable : le modèle ne porte pas le groupe de comportement
+    au feu (RF1–RF4, cr) des matériaux.'
+  it: 'Le doppie facciate estese su più piani sono in materiali RF1; i profili lineari combustibili delle finestre sono
+    ammessi e con misure supplementari sono possibili materiali combustibili. Le finestre a cassone estese su più piani
+    non sono ammesse. Non ancora verificabile: il modello non riporta il gruppo di comportamento al fuoco (RF1–RF4, cr)
+    dei materiali.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/architecture-wall-cladding-exterior
+- pragmaticbim:element/architecture-window-exterior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-14-15-2015
+  source_document: VKF-Brandschutzrichtlinie 14-15 Verwendung von Baustoffen (2015)
+  source_page: 6
+  source_quote: VKF 14-15, Ziff. 3.2.4 und 3.2.5
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

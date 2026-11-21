@@ -1,0 +1,40 @@
+id: pragmaticbim:rule/vkf-14-15-002-hochhaus-kapselung-k60
+code: VKF-14-15-002
+sort_order: 37
+name:
+  de: 'Hochhäuser: Aussenwand mit brennbaren Schichten allseitig K 60 gekapselt'
+  en: 'High-rise buildings: external wall with combustible layers encapsulated on all sides K 60'
+  fr: 'Tours : mur extérieur à couches combustibles encapsulé de tous côtés K 60'
+  it: 'Edifici alti: parete esterna con strati combustibili incapsulata su ogni lato K 60'
+description:
+  de: 'Besteht eine Hochhaus-Aussenwand aus Einzelschichten mit brennbaren Baustoffen, gilt sie als Ganzes als RF1, wenn
+    sie allseitig mit K 60–RF1 gekapselt ist. Die Zwischenräume werden mit RF1-Baustoffen hohlraumfrei gefüllt. Noch nicht
+    prüfbar: das Modell führt die Brandverhaltensgruppe (RF1–RF4, cr) der Baustoffe nicht.'
+  en: 'Where a high-rise external wall consists of single layers containing combustible materials, it counts as RF1 as a
+    whole if it is encapsulated on all sides with K 60–RF1. The gaps are filled without voids with RF1 materials. Not yet
+    checkable: the model does not carry the reaction-to-fire group (RF1–RF4, cr) of materials.'
+  fr: 'Si le mur extérieur d''une tour se compose de couches contenant des matériaux combustibles, il est assimilé dans
+    son ensemble à RF1 lorsqu''il est encapsulé de tous côtés avec K 60–RF1. Les espaces intermédiaires sont remplis sans
+    vide de matériaux RF1. Pas encore vérifiable : le modèle ne porte pas le groupe de comportement au feu (RF1–RF4, cr)
+    des matériaux.'
+  it: 'Se la parete esterna di un edificio alto è composta da strati singoli con materiali combustibili, nel complesso è
+    assimilata a RF1 quando è incapsulata su ogni lato con K 60–RF1. Gli interspazi sono riempiti senza vuoti con materiali
+    RF1. Non ancora verificabile: il modello non riporta il gruppo di comportamento al fuoco (RF1–RF4, cr) dei materiali.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/architecture-wall-cladding-exterior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-14-15-2015
+  source_document: VKF-Brandschutzrichtlinie 14-15 Verwendung von Baustoffen (2015)
+  source_page: 5
+  source_quote: VKF 14-15, Ziff. 3.1.2 Abs. 2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

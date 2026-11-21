@@ -22,6 +22,7 @@ REQUIRED_FIELDS = (
     "url",
 )
 EXPECTED_IDS = {
+    "pragmaticbim:regulation/vkf-14-15-2015",
     "pragmaticbim:regulation/vkf-15-15-2015",
     "pragmaticbim:regulation/vkf-16-15-2015",
     "pragmaticbim:regulation/vkf-23-15-2015",
@@ -86,6 +87,7 @@ def test_superseded_by_and_rule_regulations_resolve() -> None:
 
 def test_vkf_and_sia181_rules_link_their_regulation() -> None:
     expected = {
+        "vkf-14-15": "pragmaticbim:regulation/vkf-14-15-2015",
         "vkf-15-15": "pragmaticbim:regulation/vkf-15-15-2015",
         "vkf-16-15": "pragmaticbim:regulation/vkf-16-15-2015",
         "vkf-23-15": "pragmaticbim:regulation/vkf-23-15-2015",

@@ -1,0 +1,54 @@
+id: pragmaticbim:rule/vkf-14-15-011-fluchtwege-horizontal-brandverhalten
+code: VKF-14-15-011
+sort_order: 46
+name:
+  de: 'Horizontale Fluchtwege: Brandverhalten von Bekleidungen'
+  en: 'Horizontal escape routes: reaction to fire of linings'
+  fr: 'Voies d''évacuation horizontales : comportement au feu des revêtements'
+  it: 'Vie di fuga orizzontali: comportamento al fuoco di rivestimenti'
+description:
+  de: 'In horizontalen Fluchtwegen von Gebäuden geringer und mittlerer Höhe bestehen mit baulichem Konzept Wand- und Deckenbekleidungen
+    sowie klassifizierte Systeme aus RF1-Baustoffen, mit Löschanlagenkonzept aus RF2; Deckenbespannungen sind RF1 bzw. RF2,
+    bei Höhe über 5 m über begehbaren Flächen eine Gruppe niedriger. Bodenbeläge sind RF3. Feuerwiderstandsfähige Wände,
+    Decken und Stützen in Beherbergungsbetrieben bestehen aus RF1. Fehlt ein Brandschutzabschluss zwischen horizontalem
+    und vertikalem Fluchtweg, gelten die Anforderungen der vertikalen Fluchtwege. Hochhäuser verlangen RF1. Noch nicht prüfbar:
+    das Modell führt die Brandverhaltensgruppe (RF1–RF4, cr) der Baustoffe nicht.'
+  en: 'In horizontal escape routes of low and medium-height buildings, wall and ceiling linings and classified systems are
+    made of RF1 materials with a structural concept and of RF2 with an extinguishing-system concept; stretched ceilings
+    are RF1 or RF2, one group lower where more than 5 m above walkable areas. Floor coverings are RF3. Fire-resistant walls,
+    floors and columns in accommodation are made of RF1. Where there is no fire-rated closure between a horizontal and a
+    vertical escape route, the requirements of vertical escape routes apply. High-rise buildings require RF1. Not yet checkable:
+    the model does not carry the reaction-to-fire group (RF1–RF4, cr) of materials.'
+  fr: 'Dans les voies d''évacuation horizontales des bâtiments de faible et moyenne hauteur, les revêtements muraux et de
+    plafond et les systèmes classifiés sont en matériaux RF1 avec concept constructif et RF2 avec concept à installation
+    d''extinction ; les plafonds tendus sont RF1 ou RF2, un groupe de moins au-delà de 5 m au-dessus des surfaces praticables.
+    Les revêtements de sol sont RF3. Les murs, planchers et supports résistant au feu des établissements d''hébergement
+    sont en RF1. S''il n''y a pas de fermeture coupe-feu entre la voie horizontale et la voie verticale, les exigences des
+    voies verticales s''appliquent. Les tours exigent RF1. Pas encore vérifiable : le modèle ne porte pas le groupe de comportement
+    au feu (RF1–RF4, cr) des matériaux.'
+  it: 'Nelle vie di fuga orizzontali di edifici di altezza ridotta e media i rivestimenti di pareti e soffitti e i sistemi
+    classificati sono in RF1 con concetto costruttivo e in RF2 con concetto a impianto di spegnimento; i controsoffitti
+    tesi sono RF1 o RF2, un gruppo inferiore oltre 5 m sopra le superfici calpestabili. Le pavimentazioni sono RF3. Pareti,
+    solai e pilastri resistenti al fuoco nelle strutture ricettive sono in RF1. Se manca una chiusura tagliafuoco tra via
+    di fuga orizzontale e verticale valgono i requisiti delle vie verticali. Gli edifici alti richiedono RF1. Non ancora
+    verificabile: il modello non riporta il gruppo di comportamento al fuoco (RF1–RF4, cr) dei materiali.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-wall-cladding-interior
+- pragmaticbim:element/architecture-ceiling-suspended
+- pragmaticbim:element/architecture-floor-covering
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-14-15-2015
+  source_document: VKF-Brandschutzrichtlinie 14-15 Verwendung von Baustoffen (2015)
+  source_page: 10
+  source_quote: VKF 14-15, Ziff. 4.2 (horizontale Fluchtwege) und 4.1 Abs. 3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

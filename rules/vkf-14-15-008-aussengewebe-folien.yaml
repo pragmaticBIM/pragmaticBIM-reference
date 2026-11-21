@@ -1,0 +1,56 @@
+id: pragmaticbim:rule/vkf-14-15-008-aussengewebe-folien
+code: VKF-14-15-008
+sort_order: 43
+name:
+  de: 'Aussen angebrachte Gewebe und Folien: Brandverhalten, Abstand und Lage'
+  en: 'External fabrics and films: reaction to fire, distance and position'
+  fr: 'Toiles et films posés à l''extérieur : comportement au feu, distance et position'
+  it: 'Teli e pellicole applicati all''esterno: comportamento al fuoco, distanza e posizione'
+description:
+  de: 'Aussen angebrachte Gewebe und Folien bestehen mindestens aus RF2-Baustoffen, an Fassaden mit RF1-Aussenschicht mindestens
+    aus RF3. Brennbare Gewebe und Folien kommen nur vor öffnungslosen Fassadenbereichen und festverglasten Fenstern in Frage
+    und halten zu öffenbaren Fenstern in Breite und Höhe mindestens 0.9 m Abstand. Sie beginnen erst ab dem ersten Obergeschoss,
+    bei Gebäuden geringer Höhe ab dem Erdgeschoss. Vor und über Fluchtwegen braucht es besondere Schutzmassnahmen, und die
+    Rauch- und Wärmeabzugsanlagen dürfen nicht beeinträchtigt werden. Bei Hochhäusern legt die Brandschutzbehörde die Massnahmen
+    fest. Noch nicht prüfbar: das Modell führt die Brandverhaltensgruppe (RF1–RF4, cr) der Baustoffe nicht.'
+  en: 'Fabrics and films fixed on the outside are made of at least RF2 materials, on facades with an RF1 outer layer at
+    least RF3. Combustible fabrics and films are only possible in front of facade areas without openings and fixed glazing,
+    and keep at least 0.9 m distance in width and height from openable windows. They start only from the first upper floor,
+    or from the ground floor on low buildings. In front of and above escape routes special protective measures are needed,
+    and smoke and heat exhaust systems must not be impaired. On high-rise buildings the fire authority sets the measures.
+    Not yet checkable: the model does not carry the reaction-to-fire group (RF1–RF4, cr) of materials.'
+  fr: 'Les toiles et films posés à l''extérieur sont en matériaux RF2 au moins, et RF3 au moins sur les façades à couche
+    extérieure RF1. Les toiles et films combustibles ne sont possibles que devant des parties de façade sans ouvertures
+    et des vitrages fixes, et respectent une distance d''au moins 0,9 m en largeur et en hauteur par rapport aux fenêtres
+    ouvrantes. Ils ne commencent qu''à partir du premier étage, ou du rez-de-chaussée pour les bâtiments de faible hauteur.
+    Devant et au-dessus des voies d''évacuation, des mesures de protection particulières sont nécessaires, et les installations
+    d''évacuation de fumée et de chaleur ne doivent pas être entravées. Pour les tours, l''autorité de protection incendie
+    fixe les mesures. Pas encore vérifiable : le modèle ne porte pas le groupe de comportement au feu (RF1–RF4, cr) des
+    matériaux.'
+  it: 'I teli e le pellicole applicati all''esterno sono in materiali almeno RF2, sulle facciate con strato esterno RF1
+    almeno RF3. Teli e pellicole combustibili sono possibili solo davanti a parti di facciata senza aperture e a vetrate
+    fisse e mantengono una distanza di almeno 0,9 m in larghezza e altezza dalle finestre apribili. Iniziano solo dal primo
+    piano, per edifici di altezza ridotta dal piano terra. Davanti e sopra le vie di fuga servono misure di protezione particolari
+    e gli impianti di evacuazione di fumo e calore non devono essere compromessi. Per gli edifici alti le misure sono stabilite
+    dall''autorità antincendio. Non ancora verificabile: il modello non riporta il gruppo di comportamento al fuoco (RF1–RF4,
+    cr) dei materiali.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/architecture-wall-cladding-exterior
+- pragmaticbim:element/architecture-window-exterior
+- pragmaticbim:element/architecture-shading-device
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-14-15-2015
+  source_document: VKF-Brandschutzrichtlinie 14-15 Verwendung von Baustoffen (2015)
+  source_page: 6
+  source_quote: VKF 14-15, Ziff. 3.2.7 Abs. 1–5 und 7
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

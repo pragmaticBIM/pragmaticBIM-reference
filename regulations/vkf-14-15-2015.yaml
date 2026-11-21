@@ -1,0 +1,22 @@
+id: pragmaticbim:regulation/vkf-14-15-2015
+code: VKF-14-15
+edition: '2015'
+name:
+  de: Brandschutzrichtlinie 14-15 Verwendung von Baustoffen
+  fr: Directive de protection incendie 14-15 Utilisation des matériaux de construction
+  it: Direttiva di protezione antincendio 14-15 Impiego di materiali da costruzione
+  en: Fire protection directive 14-15 Use of building materials
+publisher: VKF
+jurisdiction:
+- CH
+valid_from: '2015-01-01'
+valid_until: null
+superseded_by: null
+access: free
+url: https://www.bsvonline.ch/de/brandschutzvorschriften/archiv-bsv-2015
+status: active
+default_for:
+  jurisdictions:
+  - CH
+  domains:
+  - pragmaticbim:domain/fire-protection
