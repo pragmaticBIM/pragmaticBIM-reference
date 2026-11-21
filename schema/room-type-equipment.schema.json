@@ -538,13 +538,60 @@
         "outside"
       ]
     },
+    "placementRuleSource": {
+      "description": "Where a placement rule comes from: norm, owner standard, project decision, or common-practice default.",
+      "type": "object",
+      "required": [
+        "kind"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "norm",
+            "owner",
+            "project",
+            "default"
+          ]
+        },
+        "reference": {
+          "description": "Document and clause for kind norm; optional for owner/project.",
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "norm"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "reference"
+            ]
+          }
+        }
+      ]
+    },
     "placementRule": {
       "description": "Where an item belongs in the room. The generator treats required rules as hard constraints and scores preferred rules; the checker reports both.",
       "type": "object",
       "required": [
         "id",
         "relation",
-        "severity"
+        "severity",
+        "source"
       ],
       "additionalProperties": false,
       "properties": {
@@ -591,6 +638,9 @@
           "items": {
             "$ref": "#/$defs/placementVariant"
           }
+        },
+        "source": {
+          "$ref": "#/$defs/placementRuleSource"
         },
         "comment": {
           "type": "string"
