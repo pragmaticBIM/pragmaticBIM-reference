@@ -1,0 +1,16 @@
+id: pragmaticbim:regulation/sia-500-2009
+code: SIA-500
+edition: '2009'
+name:
+  de: SIA 500 Hindernisfreie Bauten
+  fr: SIA 500 Constructions sans obstacles
+  it: SIA 500 Costruzioni senza ostacoli
+  en: SIA 500 Obstacle-free buildings
+publisher: SIA
+jurisdiction: [CH]
+valid_from: '2009-01-01'
+valid_until: null
+superseded_by: null
+access: licensed
+url: https://shop.sia.ch/normenwerk/architekt/sia%20500/d/D/Product
+status: active

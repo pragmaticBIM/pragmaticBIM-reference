@@ -1,0 +1,16 @@
+id: pragmaticbim:regulation/ifc-4x3-add2
+code: IFC-4X3
+edition: 4.3 ADD2
+name:
+  de: Industry Foundation Classes IFC4.3 ADD2
+  fr: Industry Foundation Classes IFC4.3 ADD2
+  it: Industry Foundation Classes IFC4.3 ADD2
+  en: Industry Foundation Classes IFC4.3 ADD2
+publisher: buildingSMART
+jurisdiction: []
+valid_from: '2024-04-01'
+valid_until: null
+superseded_by: null
+access: free
+url: https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications/
+status: active

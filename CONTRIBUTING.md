@@ -29,6 +29,15 @@ You can also edit in the [web application](https://elementplan.pragmaticbim.ch):
 
 Keep requirements lean: no requirement without a benefit, as little as possible, as much as necessary.
 
+## Catalogue folders
+
+| Folder | Role |
+| --- | --- |
+| `documents/` | Project deliverables (plans, schedules, contracts) |
+| `regulations/` | Norms and directives by edition; rules link via `rule_source.regulation` |
+
+One file per regulation edition under `regulations/`. Fields: `id`, `code`, `edition`, multilingual `name`, `publisher`, `jurisdiction`, `valid_from`, `valid_until`, `superseded_by`, `access` (`free` or `licensed`), `url`, optional `default_for` (jurisdictions, project goal levels, domains). Do not copy norm text; paraphrase requirements in rules and cite the clause.
+
 ## Writing style
 
 Descriptions are maintained in German, English, French, and Italian. The rules under [`.cursor/rules/`](.cursor/rules/) describe the structure of element, attribute, workflow, document, and usage scenario descriptions and the style per language.

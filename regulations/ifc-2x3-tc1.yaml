@@ -1,0 +1,16 @@
+id: pragmaticbim:regulation/ifc-2x3-tc1
+code: IFC-2X3
+edition: 2x3 TC1
+name:
+  de: Industry Foundation Classes IFC2x3 TC1
+  fr: Industry Foundation Classes IFC2x3 TC1
+  it: Industry Foundation Classes IFC2x3 TC1
+  en: Industry Foundation Classes IFC2x3 TC1
+publisher: buildingSMART
+jurisdiction: []
+valid_from: '2007-07-01'
+valid_until: null
+superseded_by: null
+access: free
+url: https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications/
+status: active

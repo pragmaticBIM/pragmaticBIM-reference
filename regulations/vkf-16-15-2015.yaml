@@ -1,0 +1,19 @@
+id: pragmaticbim:regulation/vkf-16-15-2015
+code: VKF-16-15
+edition: '2015'
+name:
+  de: Brandschutzrichtlinie 16-15 Flucht- und Rettungswege
+  fr: Directive de protection incendie 16-15 Voies d'évacuation et de sauvetage
+  it: Direttiva di protezione antincendio 16-15 Vie di fuga e di salvataggio
+  en: Fire protection directive 16-15 Escape and rescue routes
+publisher: VKF
+jurisdiction: [CH]
+valid_from: '2015-01-01'
+valid_until: null
+superseded_by: null
+access: free
+url: https://www.bsvonline.ch/de/brandschutzvorschriften/archiv-bsv-2015
+status: active
+default_for:
+  jurisdictions: [CH]
+  domains: [pragmaticbim:domain/fire-protection]
