@@ -7,12 +7,12 @@ name:
   it: Lavanderia comune
   en: Communal laundry
 definition:
-  de: Gemeinsame Waschküche mehrerer Wohneinheiten, im Unterschied zur Waschküche
-    innerhalb einer Wohnung.
-  fr: Buanderie commune à plusieurs logements, distincte de la buanderie à l'intérieur
-    d'un logement.
-  it: Lavanderia comune di più unità abitative, distinta dalla lavanderia all'interno
-    di un alloggio.
+  de: Gemeinsame Waschküche mehrerer Wohneinheiten, im Unterschied zur Waschküche innerhalb einer 
+    Wohnung.
+  fr: Buanderie commune à plusieurs logements, distincte de la buanderie à l'intérieur d'un 
+    logement.
+  it: Lavanderia comune di più unità abitative, distinta dalla lavanderia all'interno di un 
+    alloggio.
   en: Shared laundry for several dwellings, distinct from the laundry inside one dwelling.
 room_type_kind: room
 room_name: RN-01-20-10
@@ -156,6 +156,35 @@ configurations:
         divisor: 10
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/gemeinschaftswaschkueche-default-steckdose-hoehe
+      relation: elevation
+      value:
+        min: 0.3
+        max: 0.3
+      severity: preferred
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
+    - id: pragmaticbim:placement-rule/gemeinschaftswaschkueche-default-steckdose-tuer-frei
+      relation: not_in_clearance_of
+      target:
+        opening_function: access
+      severity: required
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
+    - id: pragmaticbim:placement-rule/gemeinschaftswaschkueche-default-steckdose-laundry
+      relation: next_to
+      target:
+        equipment_function: laundry
+      distance:
+        max: 0.5
+      scope: each_target
+      severity: preferred
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
   - id: pragmaticbim:room-type-equipment/gemeinschaftswaschkueche-default-lichtschalter
     sort_order: 5
     function: light_switch
@@ -163,6 +192,37 @@ configurations:
     - pragmaticbim:component/lichtschalter
     quantity: 1
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/gemeinschaftswaschkueche-default-lichtschalter-tuer
+      relation: next_to
+      target:
+        opening_function: access
+      side: latch_side
+      distance:
+        max: 0.3
+      severity: required
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
+      variants:
+      - relation: next_to
+        target:
+          opening_function: access
+        side: latch_side
+        distance:
+          max: 0.3
+        room_side: outside
+        comment: Schalter ausserhalb des Raums neben der Tür.
+    - id: pragmaticbim:placement-rule/gemeinschaftswaschkueche-default-lichtschalter-hoehe
+      relation: elevation
+      value:
+        min: 0.9
+        max: 1.1
+      severity: required
+      source:
+        kind: norm
+        reference: SIA 500:2009, 7.4
+        note: Höhe Bedienelemente
   openings:
   - id: pragmaticbim:room-type-opening/gemeinschaftswaschkueche-default-zugang
     sort_order: 1
