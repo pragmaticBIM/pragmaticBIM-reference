@@ -1,0 +1,28 @@
+id: pragmaticbim:value/objecttype-escape-sign
+code: OBJ-ESCAPE-SIGN
+name:
+  de: ObjectType Rettungszeichen
+  fr: ObjectType signal de sauvetage
+  it: ObjectType segnale di salvataggio
+  en: ObjectType escape sign
+description:
+  de: ObjectType für ein Rettungszeichen oder einen Richtungsanzeiger zur Kennzeichnung von Ausgängen und Fluchtwegen.
+  fr: ObjectType pour un signal de sauvetage ou un indicateur de direction signalant sorties et voies d'évacuation.
+  it: ObjectType per un segnale di salvataggio o un indicatore di direzione che segnala uscite e vie di fuga.
+  en: ObjectType for an escape sign or direction indicator that marks exits and escape routes.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - Rettungszeichen
+    - Richtungsanzeiger
+  fr:
+    - Signal de sauvetage
+    - Indicateur de direction
+  it:
+    - Segnale di salvataggio
+    - Indicatore di direzione
+  en:
+    - Escape sign
+    - Direction indicator

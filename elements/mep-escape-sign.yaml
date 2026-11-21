@@ -1,0 +1,263 @@
+id: pragmaticbim:element/mep-escape-sign
+code: MEP-ESCAPE-SIGN
+sort_order: 112
+status: active
+name:
+  de: Rettungszeichen
+  fr: Signal de sauvetage
+  it: Segnale di salvataggio
+  en: Escape sign
+definition:
+  de: |-
+    Macht Ausgänge und Fluchtrichtungen im Modell sichtbar, damit Brandschutz- und Elektroplanung Kennzeichnung, Beleuchtungsart und Speisung gemeinsam prüfen.
+
+    **Beschreibung**
+    - Rettungszeichen oder Richtungsanzeiger, der einen Ausgang oder eine Fluchtrichtung kennzeichnet.
+    - Je nach Beleuchtungsart beleuchtet über die Sicherheitsbeleuchtung, hinterleuchtet oder nachleuchtend.
+
+    **Modellierungshinweis**
+    - Als vereinfachten Proxy-Körper in der Grösse des Zeichens modellieren und quer zur Fluchtrichtung ausrichten.
+    - ObjectType = Rettungszeichen oder Richtungsanzeiger setzen; Beleuchtungsart und Montagehöhe angeben.
+    - Dem zugehörigen Geschoss und dem Raum zuweisen, in dem das Zeichen sichtbar ist.
+  fr: |-
+    Rend visibles dans la maquette les sorties et les directions d'évacuation, afin que la protection incendie et l'électricité vérifient ensemble la signalisation, le type d'éclairage et l'alimentation.
+
+    **Description**
+    - Signal de sauvetage ou indicateur de direction qui signale une sortie ou une direction d'évacuation.
+    - Selon le type d'éclairage, éclairé par l'éclairage de sécurité, rétroéclairé ou luminescent.
+
+    **Directives de modélisation**
+    - Modéliser comme corps proxy simplifié aux dimensions du signal et l'orienter transversalement à la direction d'évacuation.
+    - Définir ObjectType = Signal de sauvetage ou Indicateur de direction; indiquer le type d'éclairage et la hauteur de pose.
+    - Rattacher à l'étage et au local dans lequel le signal est visible.
+  it: |-
+    Rende visibili nel modello uscite e direzioni di fuga, così che protezione antincendio e impianti elettrici verifichino insieme segnalazione, tipo di illuminazione e alimentazione.
+
+    **Descrizione**
+    - Segnale di salvataggio o indicatore di direzione che segnala un'uscita o una direzione di fuga.
+    - A seconda del tipo di illuminazione, illuminato dall'illuminazione di sicurezza, retroilluminato o fotoluminescente.
+
+    **Direttive di modellazione**
+    - Modellare come corpo proxy semplificato con le dimensioni del segnale e orientarlo trasversalmente alla direzione di fuga.
+    - Impostare ObjectType = Segnale di salvataggio o Indicatore di direzione; indicare tipo di illuminazione e altezza di posa.
+    - Assegnare al piano e al locale in cui il segnale è visibile.
+  en: |-
+    Makes exits and escape directions visible in the model so fire protection and electrical design can check marking, lighting type, and supply together.
+
+    **Description**
+    - Escape sign or direction indicator that marks an exit or an escape direction.
+    - Depending on the lighting type, lit by the safety lighting, backlit, or afterglow.
+
+    **Modelling guidelines**
+    - Model as a simplified proxy body at the size of the sign and orient it across the escape direction.
+    - Set ObjectType = Escape sign or Direction indicator; state the lighting type and mounting height.
+    - Assign to the matching storey and to the room in which the sign is visible.
+needed_in_domain:
+- pragmaticbim:domain/fire-protection
+- pragmaticbim:domain/mep
+# IFC mapping: IfcBuildingElementProxy with PredefinedType USERDEFINED and ObjectType,
+# the same pattern as architecture-fire-acoustic-seal. A dedicated entity (IfcSign in
+# IFC4.3) is not used until the data contract fixes the mapping (#123).
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND (ObjectType=Rettungszeichen OR ObjectType=Richtungsanzeiger)) OR (entity_ifc2x3=IfcBuildingElementProxy AND (ObjectType=Rettungszeichen OR ObjectType=Richtungsanzeiger))
+  fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND (ObjectType="Signal de sauvetage" OR ObjectType="Indicateur de direction")) OR (entity_ifc2x3=IfcBuildingElementProxy AND (ObjectType="Signal de sauvetage" OR ObjectType="Indicateur de direction"))
+  it: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND (ObjectType="Segnale di salvataggio" OR ObjectType="Indicatore di direzione")) OR (entity_ifc2x3=IfcBuildingElementProxy AND (ObjectType="Segnale di salvataggio" OR ObjectType="Indicatore di direzione"))
+  en: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND (ObjectType="Escape sign" OR ObjectType="Direction indicator")) OR (entity_ifc2x3=IfcBuildingElementProxy AND (ObjectType="Escape sign" OR ObjectType="Direction indicator"))
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: |-
+      Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+      **Zulässige Werte**
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art
+    fr: |-
+      Identifie le proxy comme type défini par l'utilisateur.
+
+      **Valeurs admises**
+      - `USERDEFINED` — type défini par l'utilisateur; ObjectType précise la nature
+    it: |-
+      Identifica il proxy come tipo definito dall'utente.
+
+      **Valori ammessi**
+      - `USERDEFINED` — tipo definito dall'utente; ObjectType precisa il tipo
+    en: |-
+      Marks the proxy as a user-defined type.
+
+      **Allowed values**
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases: ['32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: |-
+      Art des Zeichens.
+
+      **Zulässige Werte**
+      - `Rettungszeichen`
+      - `Richtungsanzeiger`
+    fr: |-
+      Type de signal.
+
+      **Valeurs admises**
+      - `Signal de sauvetage`
+      - `Indicateur de direction`
+    it: |-
+      Tipo di segnale.
+
+      **Valori ammessi**
+      - `Segnale di salvataggio`
+      - `Indicatore di direzione`
+    en: |-
+      Kind of sign.
+
+      **Allowed values**
+      - `Escape sign`
+      - `Direction indicator`
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-escape-sign
+  needed_in_phases: ['32', '33', '41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: Reference
+  pset: Pset_BuildingElementProxyCommon
+  definition:
+    de: Eindeutige Referenz des Zeichens für Brandschutzkonzept, Abnahme und Betrieb.
+    fr: Référence univoque du signal pour le concept de protection incendie, la réception et l'exploitation.
+    it: Riferimento univoco del segnale per concetto antincendio, collaudo ed esercizio.
+    en: Unambiguous sign reference for the fire protection concept, acceptance, and operation.
+  datatype: IfcIdentifier
+  needed_in_phases: ['41', '51', '52', '53']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: LightingType
+  pset: ePset_EscapeSign
+  definition:
+    de: |-
+      Beleuchtungsart des Zeichens (VKF 17-15, Ziff. 3.1.5).
+
+      **Zulässige Werte**
+      - `ILLUMINATED` — beleuchtet über die Sicherheitsbeleuchtung
+      - `BACKLIT` — hinterleuchtet
+      - `AFTERGLOW` — nachleuchtend
+    fr: |-
+      Type d'éclairage du signal (VKF 17-15, Ziff. 3.1.5).
+
+      **Valeurs admises**
+      - `ILLUMINATED` — éclairé par l'éclairage de sécurité
+      - `BACKLIT` — rétroéclairé
+      - `AFTERGLOW` — luminescent
+    it: |-
+      Tipo di illuminazione del segnale (VKF 17-15, Ziff. 3.1.5).
+
+      **Valori ammessi**
+      - `ILLUMINATED` — illuminato dall'illuminazione di sicurezza
+      - `BACKLIT` — retroilluminato
+      - `AFTERGLOW` — fotoluminescente
+    en: |-
+      Lighting type of the sign (VKF 17-15, Ziff. 3.1.5).
+
+      **Allowed values**
+      - `ILLUMINATED` — lit by the safety lighting
+      - `BACKLIT` — backlit
+      - `AFTERGLOW` — afterglow
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/escape-sign-lighting-type
+  needed_in_phases: ['32', '33', '41', '51', '52']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: SupplyType
+  pset: ePset_EscapeSign
+  definition:
+    de: |-
+      Sicherheitsstromquelle von beleuchteten und hinterleuchteten Zeichen (VKF 17-15, Ziff. 3.1.5). Bei nachleuchtenden Zeichen leer lassen.
+
+      **Zulässige Werte**
+      - `SINGLE_BATTERY` — Einzelbatterie
+      - `CENTRAL_BATTERY` — Zentralbatterie
+      - `GENERATOR` — Notstromgruppe
+    fr: |-
+      Source d'alimentation de sécurité des signaux éclairés et rétroéclairés (VKF 17-15, Ziff. 3.1.5). Laisser vide pour les signaux luminescents.
+
+      **Valeurs admises**
+      - `SINGLE_BATTERY` — batterie individuelle
+      - `CENTRAL_BATTERY` — batterie centrale
+      - `GENERATOR` — groupe électrogène de secours
+    it: |-
+      Fonte di alimentazione di sicurezza dei segnali illuminati e retroilluminati (VKF 17-15, Ziff. 3.1.5). Lasciare vuoto per i segnali fotoluminescenti.
+
+      **Valori ammessi**
+      - `SINGLE_BATTERY` — batteria singola
+      - `CENTRAL_BATTERY` — batteria centrale
+      - `GENERATOR` — gruppo elettrogeno di emergenza
+    en: |-
+      Safety power source of lit and backlit signs (VKF 17-15, Ziff. 3.1.5). Leave empty for afterglow signs.
+
+      **Allowed values**
+      - `SINGLE_BATTERY` — single battery
+      - `CENTRAL_BATTERY` — central battery
+      - `GENERATOR` — generator
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/safety-lighting-supply-type
+  needed_in_phases: ['32', '33', '41', '51', '52']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: MountingHeight
+  pset: ePset_EscapeSign
+  definition:
+    de: Montagehöhe der Zeichenunterkante über dem Fertigboden [m] (VKF 17-15, Ziff. 3.1.2).
+    fr: Hauteur de pose du bord inférieur du signal au-dessus du sol fini [m] (VKF 17-15, Ziff. 3.1.2).
+    it: Altezza di posa del bordo inferiore del segnale sopra il pavimento finito [m] (VKF 17-15, Ziff. 3.1.2).
+    en: Mounting height of the lower edge of the sign above the finished floor [m] (VKF 17-15, Ziff. 3.1.2).
+  datatype: IfcReal
+  unit: m
+  needed_in_phases: ['41', '51', '52']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: DatasheetLink
+  pset: ePset_ProductData
+  definition:
+    de: Link (URI) zum Produktdatenblatt.
+    fr: Lien (URI) vers la fiche technique du produit.
+    it: Link (URI) alla scheda tecnica del prodotto.
+    en: Link (URI) to the product datasheet.
+  datatype: IfcURIReference
+  needed_in_phases: ['51', '52', '53']
+  ifc_versions: [ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 7

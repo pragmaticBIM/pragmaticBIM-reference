@@ -423,3 +423,130 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 13
+# Safety lighting planning attributes (VKF 17-15, #123). Meant for PredefinedType SECURITYLIGHTING.
+# performance_property_key and target_operator are not set: the data contract has no
+# safety-lighting keys yet. Add them when the contract defines them (#123 remainder).
+- name: SafetyRatedDuration
+  pset: ePset_SafetyLighting
+  definition:
+    de: Nennbetriebsdauer der Sicherheitsleuchte bei Ausfall der normalen Beleuchtung [min] (VKF 17-15, Ziff. 3.2.1).
+    fr: Durée de fonctionnement nominale du luminaire de sécurité en cas de défaillance de l'éclairage normal [min] (VKF 17-15, Ziff. 3.2.1).
+    it: Durata di funzionamento nominale dell'apparecchio di sicurezza in caso di guasto dell'illuminazione normale [min] (VKF 17-15, Ziff. 3.2.1).
+    en: Rated operating time of the safety luminaire when the normal lighting fails [min] (VKF 17-15, Ziff. 3.2.1).
+  datatype: IfcReal
+  unit: min
+  needed_in_phases: ['32', '33', '41', '51', '52']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 14
+- name: SafetyStartUpTime
+  pset: ePset_SafetyLighting
+  definition:
+    de: Zeit bis zum Betrieb der Sicherheitsleuchte nach Störung der allgemeinen Stromversorgung [s] (VKF 17-15, Ziff. 3.2.2).
+    fr: Temps jusqu'au fonctionnement du luminaire de sécurité après une panne de l'alimentation générale [s] (VKF 17-15, Ziff. 3.2.2).
+    it: Tempo fino al funzionamento dell'apparecchio di sicurezza dopo un guasto dell'alimentazione generale [s] (VKF 17-15, Ziff. 3.2.2).
+    en: Time until the safety luminaire operates after a failure of the general power supply [s] (VKF 17-15, Ziff. 3.2.2).
+  datatype: IfcReal
+  unit: s
+  needed_in_phases: ['32', '33', '41', '51', '52']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 15
+- name: SafetySupplyType
+  pset: ePset_SafetyLighting
+  definition:
+    de: |-
+      Sicherheitsstromquelle der Sicherheitsleuchte (VKF 17-15, Ziff. 3.2.2, 3.3).
+
+      **Zulässige Werte**
+      - `SINGLE_BATTERY` — Einzelbatterie
+      - `CENTRAL_BATTERY` — Zentralbatterie
+      - `GENERATOR` — Notstromgruppe
+    fr: |-
+      Source d'alimentation de sécurité du luminaire de sécurité (VKF 17-15, Ziff. 3.2.2, 3.3).
+
+      **Valeurs admises**
+      - `SINGLE_BATTERY` — batterie individuelle
+      - `CENTRAL_BATTERY` — batterie centrale
+      - `GENERATOR` — groupe électrogène de secours
+    it: |-
+      Fonte di alimentazione di sicurezza dell'apparecchio di sicurezza (VKF 17-15, Ziff. 3.2.2, 3.3).
+
+      **Valori ammessi**
+      - `SINGLE_BATTERY` — batteria singola
+      - `CENTRAL_BATTERY` — batteria centrale
+      - `GENERATOR` — gruppo elettrogeno di emergenza
+    en: |-
+      Safety power source of the safety luminaire (VKF 17-15, Ziff. 3.2.2, 3.3).
+
+      **Allowed values**
+      - `SINGLE_BATTERY` — single battery
+      - `CENTRAL_BATTERY` — central battery
+      - `GENERATOR` — generator
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/safety-lighting-supply-type
+  needed_in_phases: ['32', '33', '41', '51', '52']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 16
+- name: SafetyFloorIlluminance
+  pset: ePset_SafetyLighting
+  definition:
+    de: Geplante Beleuchtungsstärke der Sicherheitsbeleuchtung auf dem Boden des Fluchtwegs [lx] (VKF 17-15, Ziff. 3.2.4).
+    fr: Éclairement prévu de l'éclairage de sécurité au sol de la voie d'évacuation [lx] (VKF 17-15, Ziff. 3.2.4).
+    it: Illuminamento previsto dell'illuminazione di sicurezza sul pavimento della via di fuga [lx] (VKF 17-15, Ziff. 3.2.4).
+    en: Planned illuminance of the safety lighting at floor level of the escape route [lx] (VKF 17-15, Ziff. 3.2.4).
+  datatype: IfcReal
+  unit: lx
+  needed_in_phases: ['32', '33', '41', '51', '52']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 17
+- name: SafetyNotSwitchable
+  pset: ePset_SafetyLighting
+  definition:
+    de: |-
+      Kennzeichnet, ob die Sicherheitsleuchte weder durch einen Hauptschalter noch durch den Schalter der Raumbeleuchtung abgeschaltet werden kann (VKF 17-15, Ziff. 3.2.2).
+
+      **Zulässige Werte**
+      - `TRUE` — nicht abschaltbar
+      - `FALSE` — abschaltbar
+    fr: |-
+      Indique si le luminaire de sécurité ne peut être éteint ni par un interrupteur général ni par l'interrupteur de l'éclairage du local (VKF 17-15, Ziff. 3.2.2).
+
+      **Valeurs admises**
+      - `TRUE` — non commutable
+      - `FALSE` — commutable
+    it: |-
+      Indica se l'apparecchio di sicurezza non può essere spento né da un interruttore generale né dall'interruttore dell'illuminazione del locale (VKF 17-15, Ziff. 3.2.2).
+
+      **Valori ammessi**
+      - `TRUE` — non commutabile
+      - `FALSE` — commutabile
+    en: |-
+      Marks whether the safety luminaire cannot be switched off by a main switch or by the room lighting switch (VKF 17-15, Ziff. 3.2.2).
+
+      **Allowed values**
+      - `TRUE` — not switchable
+      - `FALSE` — switchable
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean
+  needed_in_phases: ['32', '33', '41', '51', '52']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 18

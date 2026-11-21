@@ -1,0 +1,32 @@
+id: pragmaticbim:value/escape-sign-lighting-type
+code: ESCAPE-SIGN-LIGHTING
+name:
+  de: Beleuchtungsart Rettungszeichen
+  fr: Type d'éclairage des signaux de sauvetage
+  it: Tipo di illuminazione dei segnali di salvataggio
+  en: Escape sign lighting type
+description:
+  de: Beleuchtungsart eines Rettungszeichens (VKF 17-15, Ziff. 3.1.5).
+  fr: Type d'éclairage d'un signal de sauvetage (VKF 17-15, Ziff. 3.1.5).
+  it: Tipo di illuminazione di un segnale di salvataggio (VKF 17-15, Ziff. 3.1.5).
+  en: Lighting type of an escape sign (VKF 17-15, Ziff. 3.1.5).
+year: 2026
+norm_reference: VKF 17-15
+status: active
+values:
+  de:
+    - ILLUMINATED
+    - BACKLIT
+    - AFTERGLOW
+  fr:
+    - ILLUMINATED
+    - BACKLIT
+    - AFTERGLOW
+  it:
+    - ILLUMINATED
+    - BACKLIT
+    - AFTERGLOW
+  en:
+    - ILLUMINATED
+    - BACKLIT
+    - AFTERGLOW
