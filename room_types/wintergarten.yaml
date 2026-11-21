@@ -7,14 +7,14 @@ name:
   it: Giardino d'inverno
   en: Winter garden
 definition:
-  de: Geschlossener verglaster Wohnraum, im Unterschied zu offenen Aussenplattformen
-    wie Balkon, Terrasse und Innenhof.
-  fr: Pièce de séjour fermée et vitrée, distincte des plateformes extérieures ouvertes
-    telles que balcon, terrasse et cour.
-  it: Locale di soggiorno chiuso e vetrato, distinto dalle piattaforme esterne aperte
-    come balcone, terrazza e corte.
-  en: Closed glazed living room, distinct from open outdoor platforms such as balcony,
-    terrace, and patio.
+  de: Geschlossener verglaster Wohnraum, im Unterschied zu offenen Aussenplattformen wie Balkon, 
+    Terrasse und Innenhof.
+  fr: Pièce de séjour fermée et vitrée, distincte des plateformes extérieures ouvertes telles que 
+    balcon, terrasse et cour.
+  it: Locale di soggiorno chiuso e vetrato, distinto dalle piattaforme esterne aperte come balcone, 
+    terrazza e corte.
+  en: Closed glazed living room, distinct from open outdoor platforms such as balcony, terrace, and 
+    patio.
 room_type_kind: room
 room_name: RN-01-10-06
 activity: M-RES
@@ -130,6 +130,16 @@ configurations:
         divisor: 10
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/wintergarten-default-steckdose-aussen-hoehe
+      relation: elevation
+      value:
+        min: 0.3
+        max: 0.3
+      severity: preferred
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
   - id: pragmaticbim:room-type-equipment/wintergarten-default-lichtschalter
     sort_order: 2
     function: light_switch
@@ -137,6 +147,17 @@ configurations:
     - pragmaticbim:component/lichtschalter
     quantity: 1
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/wintergarten-default-lichtschalter-hoehe
+      relation: elevation
+      value:
+        min: 0.9
+        max: 1.1
+      severity: required
+      source:
+        kind: norm
+        reference: SIA 500:2009, 7.4
+        note: Höhe Bedienelemente
   openings:
   - id: pragmaticbim:room-type-opening/wintergarten-default-zugang
     sort_order: 1
@@ -160,7 +181,7 @@ configurations:
       min: 1
       default: 1
     glazing_to_floor_ratio_min: 0.1
-    comment: Mindestanteil Glasfläche nach kantonalem Recht, häufig 1/10 der Bodenfläche; projektbezogen
-      prüfen.
+    comment: Mindestanteil Glasfläche nach kantonalem Recht, häufig 1/10 der Bodenfläche; 
+      projektbezogen prüfen.
     status: active
   status: active
