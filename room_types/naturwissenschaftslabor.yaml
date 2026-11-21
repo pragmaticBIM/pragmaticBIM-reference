@@ -163,6 +163,35 @@ configurations:
         divisor: 10
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/naturwissenschaftslabor-default-steckdose-hoehe
+      relation: elevation
+      value:
+        min: 0.3
+        max: 0.3
+      severity: preferred
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
+    - id: pragmaticbim:placement-rule/naturwissenschaftslabor-default-steckdose-tuer-frei
+      relation: not_in_clearance_of
+      target:
+        opening_function: access
+      severity: required
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
+    - id: pragmaticbim:placement-rule/naturwissenschaftslabor-default-steckdose-lab-work
+      relation: next_to
+      target:
+        equipment_function: lab_work
+      distance:
+        max: 0.5
+      scope: each_target
+      severity: preferred
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
   - id: pragmaticbim:room-type-equipment/naturwissenschaftslabor-default-lichtschalter
     sort_order: 6
     function: light_switch
@@ -170,6 +199,37 @@ configurations:
     - pragmaticbim:component/lichtschalter
     quantity: 1
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/naturwissenschaftslabor-default-lichtschalter-tuer
+      relation: next_to
+      target:
+        opening_function: access
+      side: latch_side
+      distance:
+        max: 0.3
+      severity: required
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
+      variants:
+      - relation: next_to
+        target:
+          opening_function: access
+        side: latch_side
+        distance:
+          max: 0.3
+        room_side: outside
+        comment: Schalter ausserhalb des Raums neben der Tür.
+    - id: pragmaticbim:placement-rule/naturwissenschaftslabor-default-lichtschalter-hoehe
+      relation: elevation
+      value:
+        min: 0.9
+        max: 1.1
+      severity: required
+      source:
+        kind: norm
+        reference: SIA 500:2009, 7.4
+        note: Höhe Bedienelemente
   openings:
   - id: pragmaticbim:room-type-opening/naturwissenschaftslabor-default-zugang
     sort_order: 1
@@ -191,6 +251,7 @@ configurations:
       min: 1
       default: 1
     glazing_to_floor_ratio_min: 0.1
-    comment: Mindestanteil Glasfläche nach kantonalem Recht und Arbeitsgesetz; projektbezogen prüfen.
+    comment: Mindestanteil Glasfläche nach kantonalem Recht und Arbeitsgesetz; projektbezogen 
+      prüfen.
     status: active
   status: active
