@@ -1,0 +1,47 @@
+id: pragmaticbim:rule/vkf-17-15-015-abnahmepruefung-sicherheitsanlagen
+code: VKF-17-15-015
+sort_order: 65
+name:
+  de: Abnahmeprüfung von Sicherheitsbeleuchtung und Sicherheitsstromversorgung
+  en: Acceptance test of safety lighting and safety power supply
+  fr: Contrôle de réception de l'éclairage et de l'alimentation de sécurité
+  it: Collaudo di illuminazione e alimentazione di sicurezza
+description:
+  de: Komplexe Projekte für Sicherheitsbeleuchtung und Stromversorgung für Sicherheitszwecke samt Kennzeichnung der Fluchtwege
+    werden auf Verlangen der Brandschutzbehörde vor Ausführungsbeginn zur Genehmigung eingereicht. Nach der Erstellung,
+    bei wesentlichen Erweiterungen und Änderungen werden die Anlagen abgenommen und die Prüfung dokumentiert. Dies ist ein
+    Prozessschritt der Übergabe; im Modell ist der Prüfstand der Anlagen nicht geführt.
+  en: Complex projects for safety lighting and power supply for safety purposes, including escape-route marking, are submitted
+    for approval before construction starts when the fire authority requests it. After completion, and after major extensions
+    and changes, the installations are accepted and the test is documented. This is a handover process step; the model does
+    not track the test status of installations.
+  fr: Les projets complexes d'éclairage de sécurité et d'alimentation de sécurité, signalisation des voies d'évacuation
+    comprise, sont soumis pour approbation avant le début des travaux à la demande de l'autorité de protection incendie.
+    Après leur réalisation, ainsi qu'après des extensions et modifications importantes, les installations sont soumises
+    à un contrôle de réception et celui-ci est documenté. C'est une étape de processus de la remise ; le modèle ne suit
+    pas l'état des contrôles des installations.
+  it: I progetti complessi di illuminazione di sicurezza e di alimentazione di sicurezza, compresa la segnalazione delle
+    vie di fuga, sono presentati per approvazione prima dell'inizio dei lavori su richiesta dell'autorità antincendio. Dopo
+    la realizzazione, come dopo ampliamenti e modifiche rilevanti, gli impianti sono sottoposti a collaudo e la verifica
+    è documentata. È una fase di processo della consegna; il modello non tiene traccia dello stato di collaudo degli impianti.
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-light-fixture
+- pragmaticbim:element/mep-electric-generator
+- pragmaticbim:element/mep-ups
+- pragmaticbim:element/mep-electric-distribution-board
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-17-15-2015
+  source_document: VKF-Brandschutzrichtlinie 17-15 Kennzeichnung von Fluchtwegen, Sicherheitsbeleuchtung, Sicherheitsstromversorgung
+    (2015)
+  source_page: 8
+  source_quote: VKF 17-15, Ziff. 4.1 und 4.2 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

@@ -1,0 +1,43 @@
+id: pragmaticbim:rule/vkf-17-15-003-notwendigkeit-parking
+code: VKF-17-15-003
+sort_order: 53
+name:
+  de: 'Parkings: Sicherheitsbeleuchtung auch im Raum, z. B. in Fahrgassen'
+  en: 'Car parks: safety lighting also in the room, e.g. in driving lanes'
+  fr: 'Parkings : éclairage de sécurité aussi dans le local, p. ex. dans les allées de circulation'
+  it: 'Parcheggi: illuminazione di sicurezza anche nel locale, p. es. nelle corsie di marcia'
+description:
+  de: 'In Parkings werden Ausgänge und Fluchtwege mit sicherheitsbeleuchteten Rettungszeichen gekennzeichnet und die Fluchtwege
+    mit Sicherheitsbeleuchtung ausgerüstet. Auch die Fluchtwege im Parkraum selbst, etwa entlang der Fahrgassen, erhalten
+    eine Sicherheitsbeleuchtung. Noch nicht prüfbar: das Modell zeigt nicht, welche Teile des Parkraums Fluchtweg sind.'
+  en: 'In car parks, exits and escape routes are marked with escape signs on safety lighting and the escape routes are fitted
+    with safety lighting. The escape routes within the parking area itself, for example along the driving lanes, also get
+    safety lighting. Not yet checkable: the model does not show which parts of the parking area are escape routes.'
+  fr: 'Dans les parkings, les sorties et voies d''évacuation sont signalées par des signaux de sauvetage éclairés en sécurité
+    et les voies d''évacuation sont équipées d''un éclairage de sécurité. Les voies d''évacuation dans le parking lui-même,
+    p. ex. le long des allées de circulation, reçoivent aussi un éclairage de sécurité. Pas encore vérifiable : le modèle
+    n''indique pas quelles parties du parking sont des voies d''évacuation.'
+  it: 'Nei parcheggi uscite e vie di fuga sono segnalate con segnali di salvataggio dotati di illuminazione di sicurezza
+    e le vie di fuga sono dotate di illuminazione di sicurezza. Anche le vie di fuga nell''area di parcheggio stessa, p.
+    es. lungo le corsie di marcia, ricevono un''illuminazione di sicurezza. Non ancora verificabile: il modello non indica
+    quali parti del parcheggio sono vie di fuga.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-light-fixture
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/spaces-parking
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-17-15-2015
+  source_document: VKF-Brandschutzrichtlinie 17-15 Kennzeichnung von Fluchtwegen, Sicherheitsbeleuchtung, Sicherheitsstromversorgung
+    (2015)
+  source_page: 4
+  source_quote: VKF 17-15, Ziff. 2.2.3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

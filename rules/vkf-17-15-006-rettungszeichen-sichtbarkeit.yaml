@@ -1,0 +1,43 @@
+id: pragmaticbim:rule/vkf-17-15-006-rettungszeichen-sichtbarkeit
+code: VKF-17-15-006
+sort_order: 56
+name:
+  de: 'Rettungszeichen: Sichtbarkeit nicht beeinträchtigen, kein irreführendes Grün'
+  en: 'Escape signs: visibility not impaired, no confusing green'
+  fr: 'Signaux de sauvetage : visibilité préservée, pas de vert prêtant à confusion'
+  it: 'Segnali di salvataggio: visibilità non compromessa, nessun verde fuorviante'
+description:
+  de: 'Dekorationen, Reklamen und andere Einrichtungen beeinträchtigen die Sicht auf Rettungszeichen nicht. Andere beleuchtete
+    Zeichen, Beschriftungen und Spiegel lenken nicht ab und führen nicht zu Verwechslungen. Grün wird für andere Zwecke
+    nicht so verwendet, dass es mit Rettungszeichen verwechselt werden kann. Noch nicht prüfbar: Rettungszeichen, Reklamen
+    und Farben sind im Modell nicht abgebildet.'
+  en: 'Decorations, advertising and other fittings do not impair the view of escape signs. Other illuminated signs, inscriptions
+    and mirrors do not distract or cause confusion. Green is not used for other purposes in a way that could be mistaken
+    for escape signs. Not yet checkable: escape signs, advertising and colours are not represented in the model.'
+  fr: 'Décorations, publicités et autres équipements ne gênent pas la visibilité des signaux de sauvetage. D''autres signaux
+    lumineux, inscriptions et miroirs ne distraient pas et ne prêtent pas à confusion. Le vert n''est pas utilisé à d''autres
+    fins de manière à être confondu avec les signaux de sauvetage. Pas encore vérifiable : signaux de sauvetage, publicités
+    et couleurs ne sont pas représentés dans le modèle.'
+  it: 'Decorazioni, pubblicità e altri arredi non compromettono la visibilità dei segnali di salvataggio. Altri segnali
+    luminosi, scritte e specchi non distraggono né creano confusione. Il verde non è usato per altri scopi in modo tale
+    da essere confuso con i segnali di salvataggio. Non ancora verificabile: segnali di salvataggio, pubblicità e colori
+    non sono rappresentati nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-wall-cladding-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-17-15-2015
+  source_document: VKF-Brandschutzrichtlinie 17-15 Kennzeichnung von Fluchtwegen, Sicherheitsbeleuchtung, Sicherheitsstromversorgung
+    (2015)
+  source_page: 5
+  source_quote: VKF 17-15, Ziff. 3.1.3 Abs. 1–3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

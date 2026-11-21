@@ -25,6 +25,7 @@ EXPECTED_IDS = {
     "pragmaticbim:regulation/vkf-14-15-2015",
     "pragmaticbim:regulation/vkf-15-15-2015",
     "pragmaticbim:regulation/vkf-16-15-2015",
+    "pragmaticbim:regulation/vkf-17-15-2015",
     "pragmaticbim:regulation/vkf-23-15-2015",
     "pragmaticbim:regulation/sia-181-2020",
     "pragmaticbim:regulation/sia-500-2009",
@@ -90,6 +91,7 @@ def test_vkf_and_sia181_rules_link_their_regulation() -> None:
         "vkf-14-15": "pragmaticbim:regulation/vkf-14-15-2015",
         "vkf-15-15": "pragmaticbim:regulation/vkf-15-15-2015",
         "vkf-16-15": "pragmaticbim:regulation/vkf-16-15-2015",
+        "vkf-17-15": "pragmaticbim:regulation/vkf-17-15-2015",
         "vkf-23-15": "pragmaticbim:regulation/vkf-23-15-2015",
         "sia-181": "pragmaticbim:regulation/sia-181-2020",
     }

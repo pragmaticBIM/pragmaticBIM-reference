@@ -1,0 +1,24 @@
+id: pragmaticbim:regulation/vkf-17-15-2015
+code: VKF-17-15
+edition: '2015'
+name:
+  de: Brandschutzrichtlinie 17-15 Kennzeichnung von Fluchtwegen, Sicherheitsbeleuchtung, Sicherheitsstromversorgung
+  fr: Directive de protection incendie 17-15 Signalisation des voies d'évacuation, éclairage de sécurité, alimentation de
+    sécurité
+  it: Direttiva di protezione antincendio 17-15 Segnalazione delle vie di fuga, illuminazione di sicurezza, alimentazione
+    di sicurezza
+  en: Fire protection directive 17-15 Escape route marking, safety lighting, safety power supply
+publisher: VKF
+jurisdiction:
+- CH
+valid_from: '2015-01-01'
+valid_until: null
+superseded_by: null
+access: free
+url: https://www.bsvonline.ch/de/brandschutzvorschriften/archiv-bsv-2015
+status: active
+default_for:
+  jurisdictions:
+  - CH
+  domains:
+  - pragmaticbim:domain/fire-protection

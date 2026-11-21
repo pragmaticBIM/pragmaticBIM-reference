@@ -1,0 +1,54 @@
+id: pragmaticbim:rule/vkf-17-15-009-sicherheitsbeleuchtung-dauer-schaltung
+code: VKF-17-15-009
+sort_order: 59
+name:
+  de: 'Sicherheitsbeleuchtung: mindestens 30 Minuten, wirksam nach 15 Sekunden, nicht abschaltbar'
+  en: 'Safety lighting: at least 30 minutes, effective after 15 seconds, not switchable'
+  fr: 'Éclairage de sécurité : au moins 30 minutes, effectif après 15 secondes, non commutable'
+  it: 'Illuminazione di sicurezza: almeno 30 minuti, efficace dopo 15 secondi, non spegnibile'
+description:
+  de: 'Die Sicherheitsbeleuchtung wird bei Ausfall der normalen Beleuchtung rechtzeitig wirksam und leuchtet mindestens
+    30 Minuten; bei Störung der allgemeinen Stromversorgung ist sie spätestens nach 15 Sekunden in Betrieb. Weder ein Hauptschalter
+    noch der Schalter der Raumbeleuchtung beeinflusst sie, und Leuchten mit Einzelakku haben keinen Schalter, der ihre Funktion
+    unterbricht. Zentrale Systeme sind in voneinander unabhängige Gruppen unterteilt, die sich bei Fehlern nicht beeinflussen.
+    Sicherheitsleuchten, Schalt- und Verteilkästen und Stromkreise sind als solche bezeichnet. Noch nicht prüfbar: das Modell
+    trägt Betriebsdauer, Anlaufzeit und Schaltung der Leuchten nicht.'
+  en: 'Safety lighting takes effect in time when the normal lighting fails and lasts at least 30 minutes; if the general
+    power supply fails, it is operating after 15 seconds at the latest. Neither a main switch nor the room lighting switch
+    affects it, and luminaires with a single battery have no switch that would interrupt their function. Central systems
+    are divided into mutually independent groups that do not affect each other in the event of faults. Safety luminaires,
+    switch and distribution boxes and circuits are labelled as such. Not yet checkable: the model carries neither duration,
+    start-up time nor switching of luminaires.'
+  fr: 'L''éclairage de sécurité devient efficace à temps en cas de défaillance de l''éclairage normal et dure au moins 30
+    minutes ; en cas de panne de l''alimentation générale, il fonctionne au plus tard après 15 secondes. Ni un interrupteur
+    général ni l''interrupteur de l''éclairage du local ne l''influencent, et les luminaires à batterie individuelle n''ont
+    pas d''interrupteur pouvant interrompre leur fonction. Les systèmes centraux sont divisés en groupes indépendants qui
+    ne s''influencent pas en cas de défaut. Les luminaires de sécurité, coffrets de commande et de distribution et circuits
+    sont désignés comme tels. Pas encore vérifiable : le modèle ne porte ni la durée, ni le temps de démarrage, ni la commande
+    des luminaires.'
+  it: 'L''illuminazione di sicurezza entra in funzione in tempo in caso di guasto dell''illuminazione normale e dura almeno
+    30 minuti; in caso di guasto dell''alimentazione generale è in funzione al più tardi dopo 15 secondi. Né un interruttore
+    generale né l''interruttore dell''illuminazione del locale la influenzano e gli apparecchi con batteria singola non
+    hanno interruttori che ne interrompano la funzione. I sistemi centrali sono suddivisi in gruppi indipendenti che non
+    si influenzano in caso di guasto. Apparecchi di sicurezza, quadri di comando e distribuzione e circuiti sono contrassegnati
+    come tali. Non ancora verificabile: il modello non riporta durata, tempo di avviamento e comando degli apparecchi.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-light-fixture
+- pragmaticbim:element/mep-switching-device
+- pragmaticbim:element/mep-electric-distribution-board
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-17-15-2015
+  source_document: VKF-Brandschutzrichtlinie 17-15 Kennzeichnung von Fluchtwegen, Sicherheitsbeleuchtung, Sicherheitsstromversorgung
+    (2015)
+  source_page: 6
+  source_quote: VKF 17-15, Ziff. 3.2.1 Abs. 2–3; Ziff. 3.2.2 Abs. 1–6
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

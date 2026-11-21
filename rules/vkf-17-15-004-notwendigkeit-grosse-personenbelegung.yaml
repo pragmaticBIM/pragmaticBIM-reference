@@ -1,0 +1,43 @@
+id: pragmaticbim:rule/vkf-17-15-004-notwendigkeit-grosse-personenbelegung
+code: VKF-17-15-004
+sort_order: 54
+name:
+  de: 'Räume mit grosser Personenbelegung, Verkaufsgeschäfte: Dauerbeleuchtung der Zeichen'
+  en: 'Rooms with large occupancy, shops: signs lit continuously'
+  fr: 'Locaux à grande occupation, magasins : signaux éclairés en permanence'
+  it: 'Locali con grande affollamento, negozi: segnali illuminati in modo permanente'
+description:
+  de: 'In Räumen mit grosser Personenbelegung und in Verkaufsgeschäften werden Ausgänge und Fluchtwege mit sicherheitsbeleuchteten
+    Rettungszeichen gekennzeichnet. Deren Beleuchtung bleibt eingeschaltet, solange sich Personen im Raum aufhalten. Sowohl
+    die Räume als auch die Fluchtwege erhalten eine Sicherheitsbeleuchtung. Noch nicht prüfbar: das Modell zeigt weder die
+    Betriebsart der Zeichenbeleuchtung noch die Personenbelegung.'
+  en: 'In rooms with large occupancy and in shops, exits and escape routes are marked with escape signs on safety lighting.
+    Their lighting stays on as long as people are in the room. Both the rooms and the escape routes get safety lighting.
+    Not yet checkable: the model shows neither the operating mode of the sign lighting nor the occupancy.'
+  fr: 'Dans les locaux à grande occupation et dans les magasins, les sorties et voies d''évacuation sont signalées par des
+    signaux de sauvetage éclairés en sécurité. Leur éclairage reste allumé tant que des personnes sont présentes dans le
+    local. Les locaux comme les voies d''évacuation reçoivent un éclairage de sécurité. Pas encore vérifiable : le modèle
+    n''indique ni le mode de fonctionnement de l''éclairage des signaux ni l''occupation.'
+  it: 'Nei locali con grande affollamento e nei negozi uscite e vie di fuga sono segnalate con segnali di salvataggio dotati
+    di illuminazione di sicurezza. La loro illuminazione resta accesa finché nel locale ci sono persone. Sia i locali sia
+    le vie di fuga ricevono un''illuminazione di sicurezza. Non ancora verificabile: il modello non indica né la modalità
+    di funzionamento dell''illuminazione dei segnali né l''affollamento.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-light-fixture
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-17-15-2015
+  source_document: VKF-Brandschutzrichtlinie 17-15 Kennzeichnung von Fluchtwegen, Sicherheitsbeleuchtung, Sicherheitsstromversorgung
+    (2015)
+  source_page: 4
+  source_quote: VKF 17-15, Ziff. 2.2.4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

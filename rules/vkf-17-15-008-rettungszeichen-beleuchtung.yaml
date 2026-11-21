@@ -1,0 +1,47 @@
+id: pragmaticbim:rule/vkf-17-15-008-rettungszeichen-beleuchtung
+code: VKF-17-15-008
+sort_order: 58
+name:
+  de: 'Beleuchtung von Rettungszeichen: Sicherheitsbeleuchtung, nachleuchtend, Sicherheitsstrom'
+  en: 'Lighting of escape signs: safety lighting, afterglow, safety power supply'
+  fr: 'Éclairage des signaux de sauvetage : éclairage de sécurité, luminescents, alimentation de sécurité'
+  it: 'Illuminazione dei segnali di salvataggio: illuminazione di sicurezza, fotoluminescenti, alimentazione di sicurezza'
+description:
+  de: 'Wird eine Beleuchtung der Rettungszeichen verlangt, ist sie als Sicherheitsbeleuchtung ausgeführt. Unbeleuchtete
+    und nicht hinterleuchtete Zeichen sind nachleuchtend. In Räumen ohne Tageslicht oder mit Verdunkelung kommen sicherheitsbeleuchtete
+    Zeichen zum Einsatz. Beleuchtete und hinterleuchtete Zeichen in Bereitschafts- oder Dauerschaltung werden bei Ausfall
+    der normalen Beleuchtung aus einer Sicherheitsstromversorgung gespeist. Noch nicht prüfbar: das Modell weist Zeichentyp,
+    Tageslicht und Speisung nicht aus.'
+  en: 'Where lighting of escape signs is required, it is provided as safety lighting. Signs that are neither lit nor backlit
+    are photoluminescent. In rooms without daylight or that can be darkened, signs on safety lighting are used. Lit and
+    backlit signs in standby or continuous mode are fed from a safety power supply if the normal lighting fails. Not yet
+    checkable: the model shows neither sign type, daylight nor supply.'
+  fr: 'Lorsqu''un éclairage des signaux de sauvetage est exigé, il est réalisé comme éclairage de sécurité. Les signaux
+    ni éclairés ni rétroéclairés sont luminescents. Dans les locaux sans lumière du jour ou obscurcissables, on utilise
+    des signaux éclairés en sécurité. Les signaux éclairés et rétroéclairés en veille ou en service permanent sont alimentés
+    par une alimentation de sécurité en cas de défaillance de l''éclairage normal. Pas encore vérifiable : le modèle n''indique
+    ni le type de signal, ni la lumière du jour, ni l''alimentation.'
+  it: 'Quando è richiesta l''illuminazione dei segnali di salvataggio, essa è realizzata come illuminazione di sicurezza.
+    I segnali né illuminati né retroilluminati sono fotoluminescenti. Nei locali senza luce naturale o oscurabili si usano
+    segnali con illuminazione di sicurezza. I segnali illuminati e retroilluminati in modalità di attesa o permanente sono
+    alimentati da un''alimentazione di sicurezza in caso di guasto dell''illuminazione normale. Non ancora verificabile:
+    il modello non indica tipo di segnale, luce naturale e alimentazione.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-light-fixture
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-17-15-2015
+  source_document: VKF-Brandschutzrichtlinie 17-15 Kennzeichnung von Fluchtwegen, Sicherheitsbeleuchtung, Sicherheitsstromversorgung
+    (2015)
+  source_page: 5
+  source_quote: VKF 17-15, Ziff. 3.1.5 Abs. 1–4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

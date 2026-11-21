@@ -1,0 +1,50 @@
+id: pragmaticbim:rule/vkf-17-15-014-verteilnetz-sicherheitszwecke
+code: VKF-17-15-014
+sort_order: 64
+name:
+  de: 'Verteilnetz für Sicherheitszwecke: eigene Stromkreise, Funktionserhalt, Trennung'
+  en: 'Distribution network for safety purposes: separate circuits, functional endurance, separation'
+  fr: 'Réseau de distribution de sécurité : circuits séparés, maintien de fonction, séparation'
+  it: 'Rete di distribuzione di sicurezza: circuiti separati, mantenimento della funzione, separazione'
+description:
+  de: 'Stromkreise für Sicherheitszwecke werden unabhängig von anderen Stromkreisen verlegt. Das Verteilnetz ist so gegen
+    Brandeinwirkung geschützt, dass der Funktionserhalt der vorgesehenen Betriebsdauer der angeschlossenen Verbraucher entspricht.
+    Überstromschutz, Schalter, Klemmen und Verdrahtung der Sicherheitsstromversorgung sind von den Stockwerkverteilungen
+    der allgemeinen Versorgung feuerwiderstandsfähig getrennt. Noch nicht prüfbar: das Modell bildet Stromkreise und Kabelwege
+    mit Funktionserhalt nicht ab.'
+  en: 'Circuits for safety purposes are laid independently of other circuits. The distribution network is protected against
+    fire so that functional endurance matches the intended operating time of the connected consumers. Overcurrent protection,
+    switches, terminals and wiring of the safety power supply are separated with fire resistance from the floor distribution
+    boards of the general supply. Not yet checkable: the model does not represent circuits and cable routes with functional
+    endurance.'
+  fr: 'Les circuits de sécurité sont posés indépendamment des autres circuits. Le réseau de distribution est protégé contre
+    l''action du feu de sorte que le maintien de fonction corresponde à la durée de fonctionnement prévue des consommateurs
+    raccordés. La protection contre les surintensités, les interrupteurs, les bornes et le câblage de l''alimentation de
+    sécurité sont séparés par une résistance au feu des distributions d''étage de l''alimentation générale. Pas encore vérifiable
+    : le modèle ne représente pas les circuits et chemins de câbles avec maintien de fonction.'
+  it: 'I circuiti di sicurezza sono posati indipendentemente dagli altri circuiti. La rete di distribuzione è protetta dall''azione
+    del fuoco in modo che il mantenimento della funzione corrisponda alla durata di funzionamento prevista delle utenze
+    collegate. Protezione da sovracorrente, interruttori, morsetti e cablaggio dell''alimentazione di sicurezza sono separati
+    con resistenza al fuoco dalle distribuzioni di piano dell''alimentazione generale. Non ancora verificabile: il modello
+    non rappresenta circuiti e percorsi dei cavi con mantenimento della funzione.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-electric-generator
+- pragmaticbim:element/mep-ups
+- pragmaticbim:element/mep-electric-distribution-board
+- pragmaticbim:element/architecture-installation-path
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-17-15-2015
+  source_document: VKF-Brandschutzrichtlinie 17-15 Kennzeichnung von Fluchtwegen, Sicherheitsbeleuchtung, Sicherheitsstromversorgung
+    (2015)
+  source_page: 7
+  source_quote: VKF 17-15, Ziff. 3.3.4 Abs. 1–3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
