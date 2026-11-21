@@ -1,0 +1,49 @@
+id: pragmaticbim:rule/vkf-18-15-009-wasserloeschposten-zuleitung-druck
+code: VKF-18-15-009
+sort_order: 132
+name:
+  de: 'Zuleitung Wasserlöschposten: mindestens DN 32 in RF1, 3 bar Ruhedruck, 16 l/min'
+  en: 'Hose-reel supply line: at least DN 32 in RF1, 3 bar static pressure, 16 l/min'
+  fr: 'Conduite d''alimentation des postes d''eau : au moins DN 32 en RF1, 3 bar de pression statique, 16 l/min'
+  it: 'Tubazione di alimentazione dei posti d''acqua: almeno DN 32 in RF1, 3 bar di pressione statica, 16 l/min'
+description:
+  de: 'Die Zuleitung zum Wasserlöschposten hat mindestens DN 32 und besteht aus Baustoffen der Brandverhaltensgruppe RF1;
+    brennbare Leitungen liegen unter Putz mit Feuerwiderstand EI 30 oder sind gleichwertig geschützt. Vor dem Wasserlöschposten
+    herrscht ein Ruhedruck von 3 bar, die Wasserleistung beträgt mindestens 16 l/min. Noch nicht prüfbar: das Modell weist
+    Nennweite, Werkstoff, Brandverhalten, Ruhedruck und Wasserleistung der Löschleitung nicht aus.'
+  en: 'The supply line to a hose reel is at least DN 32 and made of materials of reaction-to-fire group RF1; combustible pipes
+    are laid under plaster with fire resistance EI 30 or equally protected. A static pressure of 3 bar prevails at the hose
+    reel and the flow is at least 16 l/min. Not yet checkable: the model does not show nominal size, material, reaction to
+    fire, static pressure and flow of the fire-fighting pipe.'
+  fr: 'La conduite d''alimentation du poste d''eau a au moins DN 32 et est en matériaux du groupe de comportement au feu RF1
+    ; les conduites combustibles sont posées sous crépi avec résistance au feu EI 30 ou protégées de façon équivalente. Une
+    pression statique de 3 bar règne devant le poste et le débit est d''au moins 16 l/min. Pas encore vérifiable : le modèle
+    n''indique pas le diamètre nominal, le matériau, le comportement au feu, la pression statique ni le débit de la conduite
+    d''extinction.'
+  it: 'La tubazione di alimentazione del posto d''acqua ha almeno DN 32 ed è di materiali del gruppo di reazione al fuoco
+    RF1; le tubazioni combustibili sono posate sotto intonaco con resistenza al fuoco EI 30 o protette in modo equivalente.
+    Davanti al posto d''acqua vige una pressione statica di 3 bar e la portata è di almeno 16 l/min. Non ancora verificabile:
+    il modello non indica diametro nominale, materiale, reazione al fuoco, pressione statica e portata della tubazione antincendio.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fire-suppression-terminal
+- pragmaticbim:element/mep-schematic-pipe
+- pragmaticbim:element/mep-valve
+- pragmaticbim:element/mep-pump
+- pragmaticbim:element/mep-tank
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-18-15-2015
+  source_document: VKF-Brandschutzrichtlinie 18-15 Löscheinrichtungen (2015)
+  source_page: 5
+  source_quote: VKF 18-15, Ziff. 3.1.3 Abs. 4–5
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

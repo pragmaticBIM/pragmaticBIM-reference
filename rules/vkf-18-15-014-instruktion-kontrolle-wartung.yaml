@@ -1,0 +1,48 @@
+id: pragmaticbim:rule/vkf-18-15-014-instruktion-kontrolle-wartung
+code: VKF-18-15-014
+sort_order: 137
+name:
+  de: Instruktion, Projekt, Abnahme, periodische Kontrolle und Wartung
+  en: Instruction, project, acceptance, periodic inspection and maintenance
+  fr: Instruction, projet, réception, contrôle périodique et entretien
+  it: Istruzione, progetto, collaudo, controllo periodico e manutenzione
+description:
+  de: Betriebsverantwortliche instruieren das Personal in der Handhabung von Löschgeräten und speziellen Anlagen. Projekte
+    von Trocken- und Kühllöschanlagen gehen auf Verlangen vor Ausführungsbeginn zur Genehmigung, die Anlagen werden abgenommen
+    und periodisch kontrolliert. Eigentum oder Betrieb halten alle Löscheinrichtungen betriebsbereit, erfassen Auslieferung,
+    Nachfüllung und Instandhaltung dauerhaft und warten Handfeuerlöscher nach Herstellerangaben.
+  en: Persons responsible for a business instruct staff in the handling of extinguishers and special systems. Projects for
+    dry and cooling extinguishing systems are submitted for approval before construction starts when required, and the systems
+    are accepted and inspected periodically. Owners or operators keep all extinguishing equipment ready for use, record delivery,
+    refilling and servicing permanently, and service portable extinguishers according to the manufacturer.
+  fr: Les responsables d'une exploitation instruisent le personnel à la manipulation des extincteurs et des installations
+    spéciales. Les projets d'installations d'extinction à gaz et de refroidissement sont soumis à approbation avant le début
+    des travaux sur demande, les installations sont réceptionnées et contrôlées périodiquement. Les propriétaires ou exploitants
+    maintiennent tous les moyens d'extinction opérationnels, consignent durablement livraison, remplissage et entretien et
+    entretiennent les extincteurs portatifs selon le fabricant.
+  it: I responsabili di un'azienda istruiscono il personale nell'uso di estintori e impianti speciali. I progetti di impianti
+    di estinzione a secco e di raffreddamento sono presentati su richiesta per l'approvazione prima dell'inizio dei lavori,
+    gli impianti sono collaudati e controllati periodicamente. Proprietà o gestione mantengono pronti all'uso tutti i mezzi
+    di estinzione, registrano in modo duraturo consegna, ricarica e manutenzione e curano gli estintori portatili secondo
+    il costruttore.
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fire-suppression-terminal
+- pragmaticbim:element/mep-tank
+- pragmaticbim:element/mep-valve
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-18-15-2015
+  source_document: VKF-Brandschutzrichtlinie 18-15 Löscheinrichtungen (2015)
+  source_page: 6
+  source_quote: VKF 18-15, Ziff. 4, 5.1–5.3 und 6 Abs. 1–3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

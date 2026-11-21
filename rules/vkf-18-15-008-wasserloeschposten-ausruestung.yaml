@@ -1,0 +1,50 @@
+id: pragmaticbim:rule/vkf-18-15-008-wasserloeschposten-ausruestung
+code: VKF-18-15-008
+sort_order: 131
+name:
+  de: 'Wasserlöschposten: Ventil mindestens DN 32, formbeständiger Schlauch bis 40 m mit Strahlrohr'
+  en: 'Hose reels: valve of at least DN 32, form-stable hose up to 40 m with nozzle'
+  fr: 'Postes d''eau d''extinction : vanne au moins DN 32, tuyau semi-rigide jusqu''à 40 m avec lance'
+  it: 'Posti d''acqua antincendio: valvola almeno DN 32, tubo formstabile fino a 40 m con lancia'
+description:
+  de: 'Ein Wasserlöschposten besteht aus einem Absperrventil mit Anschluss von mindestens DN 32, einer beweglichen Verbindung
+    zum schwenkbaren Haspel und einem formbeständigen Gummischlauch mit abstellbarem Strahlrohr für Voll- und Sprühstrahl.
+    In besonderen Fällen, etwa bei Landwirtschaftsbauten, ersetzt eine gleichwertige Einrichtung den Haspel. Betriebsdruck
+    folgt anerkannten Normen; die Schlauchlänge beträgt höchstens 40 m. Noch nicht prüfbar: das Modell weist Nennweite, Werkstoff,
+    Brandverhalten, Ruhedruck und Wasserleistung der Löschleitung nicht aus.'
+  en: 'A hose reel consists of a shut-off valve with a connection of at least DN 32, a movable connection to the swivelling
+    reel, and a form-stable rubber hose with a shut-off nozzle for jet and spray. In special cases, such as agricultural buildings,
+    an equivalent device may replace the reel. Operating pressure follows recognised standards; the hose is at most 40 m long.
+    Not yet checkable: the model does not show nominal size, material, reaction to fire, static pressure and flow of the fire-fighting
+    pipe.'
+  fr: 'Un poste d''eau d''extinction comprend une vanne d''arrêt avec raccord d''au moins DN 32, une liaison mobile vers le
+    dévidoir pivotant et un tuyau en caoutchouc semi-rigide avec lance à fermeture pour jet plein et jet diffusé. Dans des
+    cas particuliers, par exemple les bâtiments agricoles, un dispositif équivalent remplace le dévidoir. La pression de service
+    suit les normes reconnues ; le tuyau mesure au plus 40 m. Pas encore vérifiable : le modèle n''indique pas le diamètre
+    nominal, le matériau, le comportement au feu, la pression statique ni le débit de la conduite d''extinction.'
+  it: 'Un posto d''acqua antincendio è composto da una valvola di intercettazione con attacco di almeno DN 32, un collegamento
+    mobile al naspo orientabile e un tubo di gomma formstabile con lancia chiudibile per getto pieno e frazionato. In casi
+    particolari, ad esempio negli edifici agricoli, un dispositivo equivalente può sostituire il naspo. La pressione d''esercizio
+    segue le norme riconosciute; il tubo è lungo al massimo 40 m. Non ancora verificabile: il modello non indica diametro
+    nominale, materiale, reazione al fuoco, pressione statica e portata della tubazione antincendio.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fire-suppression-terminal
+- pragmaticbim:element/mep-valve
+- pragmaticbim:element/mep-schematic-pipe
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-18-15-2015
+  source_document: VKF-Brandschutzrichtlinie 18-15 Löscheinrichtungen (2015)
+  source_page: 5
+  source_quote: VKF 18-15, Ziff. 3.1.3 Abs. 1–3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

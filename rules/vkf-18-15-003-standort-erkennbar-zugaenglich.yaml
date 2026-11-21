@@ -1,0 +1,46 @@
+id: pragmaticbim:rule/vkf-18-15-003-standort-erkennbar-zugaenglich
+code: VKF-18-15-003
+sort_order: 126
+name:
+  de: Löschgeräte und Löschleitungen gut erkennbar, leicht zugänglich und gekennzeichnet
+  en: Extinguishers and fire-fighting pipes clearly visible, easily accessible and marked
+  fr: Extincteurs et conduites d'extinction bien visibles, facilement accessibles et signalés
+  it: Estintori e tubazioni antincendio ben visibili, facilmente accessibili e segnalati
+description:
+  de: 'Löschgeräte und Löschleitungen sind gut erkennbar und leicht zugänglich; wo nötig, kennzeichnen Markierungen oder Hinweistafeln
+    den Standort. Sie lassen sich jederzeit ohne fremde Hilfsmittel rasch und einfach in Betrieb nehmen und zweckmässig einsetzen.
+    Noch nicht prüfbar: das Modell weist Löschgeräte und Wasserlöschposten nur als Gerät mit Lage aus, ohne Löschmittel, Löschvermögen
+    und Gehweglinie.'
+  en: 'Extinguishers and fire-fighting pipes are clearly visible and easily accessible; where needed, markings or signs identify
+    the location. They can be put into operation quickly and simply at any time without outside aids and used as intended.
+    Not yet checkable: the model shows extinguishers and hose reels only as a device with location, without extinguishing
+    agent, rating or walking distance.'
+  fr: 'Les extincteurs et conduites d''extinction sont bien visibles et facilement accessibles ; si nécessaire, des marquages
+    ou panneaux indiquent l''emplacement. Ils peuvent à tout moment être mis en service rapidement et simplement sans moyens
+    extérieurs et utilisés de façon appropriée. Pas encore vérifiable : le modèle ne montre les extincteurs et postes d''eau
+    d''extinction que comme appareil avec position, sans agent extincteur, pouvoir extincteur ni distance de cheminement.'
+  it: 'Estintori e tubazioni antincendio sono ben visibili e facilmente accessibili; ove necessario, segnaletica o cartelli
+    indicano l''ubicazione. Possono essere messi in funzione in ogni momento in modo rapido e semplice senza mezzi esterni
+    e usati in modo appropriato. Non ancora verificabile: il modello mostra estintori e posti d''acqua antincendio solo come
+    apparecchio con posizione, senza agente estinguente, potere estinguente né percorso di marcia.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fire-suppression-terminal
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/mep-schematic-pipe
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-18-15-2015
+  source_document: VKF-Brandschutzrichtlinie 18-15 Löscheinrichtungen (2015)
+  source_page: 4
+  source_quote: VKF 18-15, Ziff. 3.1.1 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
