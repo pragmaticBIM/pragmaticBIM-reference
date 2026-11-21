@@ -1,0 +1,46 @@
+id: pragmaticbim:rule/vkf-21-15-017-kontrollen-betrieb-wartung
+code: VKF-21-15-017
+sort_order: 123
+name:
+  de: Projektprüfung, Abnahme, periodische Kontrolle und Wartung
+  en: Project review, acceptance, periodic inspection and maintenance
+  fr: Examen du projet, réception, contrôle périodique et entretien
+  it: Esame del progetto, collaudo, controllo periodico e manutenzione
+description:
+  de: Auf Verlangen der Brandschutzbehörde werden Projekte rechtzeitig zur Genehmigung eingereicht. Anlagen mit Leistungsnachweis
+    werden nach Vorliegen eines Installationsattests abgenommen, ebenso Erweiterungen und wesentliche Änderungen. Alle Anlagen
+    werden periodisch kontrolliert, wobei der Turnus von Anlageart und geschütztem Objekt abhängt. Eigentum oder Betrieb sorgen
+    für bestimmungsgemässen Unterhalt und jederzeitige Betriebsbereitschaft.
+  en: On request of the fire protection authority, projects are submitted for approval in good time. Systems with performance
+    proof are accepted after an installation certificate exists, as are extensions and substantial changes. All systems are
+    inspected periodically, with the interval depending on system type and protected object. Owners or operators ensure proper
+    maintenance and constant readiness.
+  fr: À la demande de l'autorité de protection incendie, les projets sont soumis à temps pour approbation. Les installations
+    avec preuve de performance sont réceptionnées après remise d'une attestation d'installation, de même que les extensions
+    et modifications importantes. Toutes les installations sont contrôlées périodiquement, le rythme dépendant du type d'installation
+    et de l'objet protégé. Les propriétaires ou exploitants veillent à l'entretien conforme et à la disponibilité permanente.
+  it: Su richiesta dell'autorità di protezione antincendio, i progetti sono presentati per tempo per l'approvazione. Gli impianti
+    con prova di prestazione sono collaudati dopo la presentazione di un attestato di installazione, come anche ampliamenti
+    e modifiche sostanziali. Tutti gli impianti sono controllati periodicamente, con cadenza dipendente dal tipo di impianto
+    e dall'oggetto protetto. Proprietà o gestione garantiscono la manutenzione conforme e la costante prontezza.
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fan
+- pragmaticbim:element/mep-damper
+- pragmaticbim:element/mep-actuator
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-21-15-2015
+  source_document: VKF-Brandschutzrichtlinie 21-15 Rauch- und Wärmeabzugsanlagen (2015)
+  source_page: 11
+  source_quote: VKF 21-15, Ziff. 6.1–6.3 und 7
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

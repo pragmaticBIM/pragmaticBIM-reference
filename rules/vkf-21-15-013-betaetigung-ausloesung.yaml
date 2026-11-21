@@ -1,0 +1,57 @@
+id: pragmaticbim:rule/vkf-21-15-013-betaetigung-ausloesung
+code: VKF-21-15-013
+sort_order: 119
+name:
+  de: 'Betätigung und Auslösung: Handauslösung an sicherem Standort, automatische Auslösung bei Leistungsnachweis'
+  en: 'Operation and triggering: manual release at a safe location, automatic release with performance proof'
+  fr: 'Commande et déclenchement : déclenchement manuel en lieu sûr, automatique avec preuve de performance'
+  it: 'Azionamento e attivazione: comando manuale in luogo sicuro, attivazione automatica con prova di prestazione'
+description:
+  de: 'Anlagen lassen sich von einem im Brandfall sicheren Standort von Hand in Betrieb setzen; an den Bedienstellen sind
+    Betrieb, Störung und ausser Betrieb erkennbar. Die Brandschutzbehörde kann zusätzlich eine automatische Auslösung verlangen.
+    Anlagen mit Leistungsnachweis starten automatisch, für den Personenschutz über eine Brandmeldeanlage, für den Sachwertschutz
+    auch über eine Sprinkleranlage, und sind von der Feuerwehr von Hand ein- und ausschaltbar. Fehlen Brandmelde- und Sprinkleranlage,
+    sichern Brandmelder mindestens im betroffenen Brandabschnitt die Ansteuerung. Noch nicht prüfbar: das Modell enthält keine
+    Auslöse- und Bedienstellen der Anlage und keine Stromquelle für Sicherheitszwecke.'
+  en: 'Systems can be started by hand from a location that is safe in case of fire; the control points show operating, fault
+    and out-of-service states. The fire protection authority can additionally require automatic release. Systems with performance
+    proof start automatically, for protection of people through a fire alarm system, for protection of property also through
+    a sprinkler system, and can be switched on and off by hand by the fire brigade. Where neither a fire alarm nor a sprinkler
+    system exists, fire detectors cover at least the affected compartment to ensure activation. Not yet checkable: the model
+    holds no trigger and control points of the system and no power source for safety purposes.'
+  fr: 'Les installations peuvent être mises en service à la main depuis un lieu sûr en cas d''incendie ; aux postes de commande,
+    les états de service, de dérangement et d''arrêt sont reconnaissables. L''autorité de protection incendie peut exiger
+    en plus un déclenchement automatique. Les installations avec preuve de performance démarrent automatiquement, pour la
+    protection des personnes par une installation de détection d''incendie, pour la protection des biens aussi par une installation
+    sprinkler, et peuvent être enclenchées et arrêtées à la main par les sapeurs-pompiers. Sans détection ni sprinkler, des
+    détecteurs couvrant au moins le compartiment concerné assurent la commande. Pas encore vérifiable : le modèle ne contient
+    ni points de déclenchement et de commande de l''installation ni source d''énergie de sécurité.'
+  it: 'Gli impianti possono essere messi in funzione a mano da un luogo sicuro in caso d''incendio; ai posti di comando sono
+    riconoscibili gli stati di esercizio, guasto e fuori servizio. L''autorità di protezione antincendio può richiedere in
+    più l''attivazione automatica. Gli impianti con prova di prestazione partono automaticamente, per la protezione delle
+    persone tramite un impianto di rivelazione incendio, per la protezione dei beni anche tramite sprinkler, e possono essere
+    accesi e spenti a mano dai pompieri. Senza rivelazione né sprinkler, rivelatori che coprono almeno il compartimento interessato
+    garantiscono il comando. Non ancora verificabile: il modello non contiene punti di attivazione e comando dell''impianto
+    né una fonte di energia di sicurezza.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-actuator
+- pragmaticbim:element/mep-alarm
+- pragmaticbim:element/mep-sensor
+- pragmaticbim:element/mep-fan
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-21-15-2015
+  source_document: VKF-Brandschutzrichtlinie 21-15 Rauch- und Wärmeabzugsanlagen (2015)
+  source_page: 10
+  source_quote: VKF 21-15, Ziff. 4.7 Abs. 1–4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

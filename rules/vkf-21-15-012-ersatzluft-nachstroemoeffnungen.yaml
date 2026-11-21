@@ -1,0 +1,53 @@
+id: pragmaticbim:rule/vkf-21-15-012-ersatzluft-nachstroemoeffnungen
+code: VKF-21-15-012
+sort_order: 118
+name:
+  de: 'Ersatzluft: Nachströmöffnungen in Bodennähe, auf Abzugsöffnungen abgestimmt'
+  en: 'Make-up air: inflow openings near the floor, matched to the exhaust openings'
+  fr: 'Air de remplacement : ouvertures d''amenée près du sol, adaptées aux ouvertures d''évacuation'
+  it: 'Aria di rimpiazzo: aperture di afflusso vicino al pavimento, adeguate alle aperture di evacuazione'
+description:
+  de: 'Der Einbau einer Rauch- und Wärmeabzugsanlage setzt voraus, dass die nötige Ersatzluft nachströmen kann. Nachströmöffnungen,
+    etwa Fassadenöffnungen, Türen, Tore oder Fenster, liegen in Bodennähe und sind auf Abzugsöffnungen und Abluftmengen abgestimmt.
+    Bei maschinellen Anlagen ohne Leistungsnachweis sind Nachströmgeschwindigkeiten bis etwa 3 m/s zulässig, und die Druckverhältnisse
+    dürfen das Öffnen von Fluchttüren nicht behindern. Noch nicht prüfbar: das Modell enthält keine Rauch- und Wärmeabzugsanlage
+    als System und keine Zuordnung zu Brandabschnitten.'
+  en: 'Installing a smoke and heat exhaust system requires that the make-up air needed for effective extraction can flow in.
+    Inflow openings, such as façade openings, doors, gates or windows, are placed near the floor and matched to exhaust openings
+    and extract volumes. For mechanical systems without performance proof, inflow velocities up to about 3 m/s are permitted,
+    and the pressure conditions must not impair passage through escape doors. Not yet checkable: the model holds no smoke
+    and heat exhaust system and no assignment of one to fire compartments.'
+  fr: 'La pose d''une installation d''évacuation de fumée et de chaleur suppose que l''air de remplacement nécessaire puisse
+    affluer. Les ouvertures d''amenée, par exemple en façade, portes, portails ou fenêtres, sont placées près du sol et adaptées
+    aux ouvertures d''évacuation et aux débits d''extraction. Pour les installations mécaniques sans preuve de performance,
+    des vitesses d''amenée jusqu''à env. 3 m/s sont admises, et les pressions ne doivent pas gêner le passage par les portes
+    d''évacuation. Pas encore vérifiable : le modèle ne contient aucune installation d''évacuation de fumée et de chaleur
+    ni affectation à des compartiments.'
+  it: 'L''installazione di un impianto di evacuazione di fumo e calore presuppone che possa affluire l''aria di rimpiazzo
+    necessaria. Le aperture di afflusso, ad esempio in facciata, porte, portoni o finestre, sono collocate vicino al pavimento
+    e adeguate alle aperture di evacuazione e alle portate estratte. Per gli impianti meccanici senza prova di prestazione
+    sono ammesse velocità di afflusso fino a circa 3 m/s e le pressioni non devono ostacolare il passaggio dalle porte di
+    fuga. Non ancora verificabile: il modello non contiene alcun impianto di evacuazione di fumo e calore né l''assegnazione
+    a compartimenti.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-window-exterior
+- pragmaticbim:element/architecture-door-exterior
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/mep-fan
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-21-15-2015
+  source_document: VKF-Brandschutzrichtlinie 21-15 Rauch- und Wärmeabzugsanlagen (2015)
+  source_page: 9
+  source_quote: VKF 21-15, Ziff. 4.6 Abs. 1–3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

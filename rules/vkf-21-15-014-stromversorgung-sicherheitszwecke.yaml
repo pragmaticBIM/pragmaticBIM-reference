@@ -1,0 +1,44 @@
+id: pragmaticbim:rule/vkf-21-15-014-stromversorgung-sicherheitszwecke
+code: VKF-21-15-014
+sort_order: 120
+name:
+  de: Stromversorgung für Sicherheitszwecke unabhängig vom allgemeinen Netz
+  en: Power supply for safety purposes independent of the general supply
+  fr: Alimentation de sécurité indépendante du réseau général
+  it: Alimentazione di sicurezza indipendente dalla rete generale
+description:
+  de: 'Rauch- und Wärmeabzugsanlagen und Rauchschutz-Druckanlagen werden an geeignete Stromquellen angeschlossen, die von
+    der allgemeinen Stromversorgung unabhängig sind. Noch nicht prüfbar: das Modell enthält keine Auslöse- und Bedienstellen
+    der Anlage und keine Stromquelle für Sicherheitszwecke.'
+  en: 'Smoke and heat exhaust systems and smoke-protection pressurization systems are connected to suitable power sources
+    that are independent of the general power supply. Not yet checkable: the model holds no trigger and control points of
+    the system and no power source for safety purposes.'
+  fr: 'Les installations d''évacuation de fumée et de chaleur et les installations de surpression sont raccordées à des sources
+    d''énergie appropriées, indépendantes de l''alimentation générale. Pas encore vérifiable : le modèle ne contient ni points
+    de déclenchement et de commande de l''installation ni source d''énergie de sécurité.'
+  it: 'Gli impianti di evacuazione di fumo e calore e gli impianti di pressurizzazione sono collegati a fonti di energia idonee,
+    indipendenti dall''alimentazione generale. Non ancora verificabile: il modello non contiene punti di attivazione e comando
+    dell''impianto né una fonte di energia di sicurezza.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fan
+- pragmaticbim:element/mep-damper
+- pragmaticbim:element/mep-electric-distribution-board
+- pragmaticbim:element/mep-electric-generator
+- pragmaticbim:element/mep-ups
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-21-15-2015
+  source_document: VKF-Brandschutzrichtlinie 21-15 Rauch- und Wärmeabzugsanlagen (2015)
+  source_page: 10
+  source_quote: VKF 21-15, Ziff. 4.9
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

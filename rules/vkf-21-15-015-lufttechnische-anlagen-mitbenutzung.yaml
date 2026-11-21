@@ -1,0 +1,43 @@
+id: pragmaticbim:rule/vkf-21-15-015-lufttechnische-anlagen-mitbenutzung
+code: VKF-21-15-015
+sort_order: 121
+name:
+  de: Mitbenutzung lufttechnischer Anlagen nur bei erfüllten RWA-Anforderungen
+  en: Use of ventilation systems for smoke extraction only if RWA requirements are met
+  fr: Utilisation d'installations de ventilation seulement si les exigences RWA sont remplies
+  it: Uso di impianti di ventilazione solo se i requisiti RWA sono soddisfatti
+description:
+  de: 'Lüftungs- und Klimaanlagen dürfen für den Rauch- und Wärmeabzug nur mitbenutzt werden, wenn die betroffenen Anlageteile
+    die Anforderungen an Rauch- und Wärmeabzugsanlagen erfüllen. Noch nicht prüfbar: das Modell enthält keine Rauch- und Wärmeabzugsanlage
+    als System und keine Zuordnung zu Brandabschnitten.'
+  en: 'Ventilation and air-conditioning systems may be used for smoke and heat extraction only if the affected plant parts
+    meet the requirements for smoke and heat exhaust systems. Not yet checkable: the model holds no smoke and heat exhaust
+    system and no assignment of one to fire compartments.'
+  fr: 'Les installations de ventilation et de climatisation ne peuvent servir à l''évacuation de fumée et de chaleur que si
+    les éléments concernés remplissent les exigences applicables à ces installations. Pas encore vérifiable : le modèle ne
+    contient aucune installation d''évacuation de fumée et de chaleur ni affectation à des compartiments.'
+  it: 'Gli impianti di ventilazione e climatizzazione possono servire all''evacuazione di fumo e calore solo se le parti interessate
+    soddisfano i requisiti per tali impianti. Non ancora verificabile: il modello non contiene alcun impianto di evacuazione
+    di fumo e calore né l''assegnazione a compartimenti.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fan
+- pragmaticbim:element/mep-damper
+- pragmaticbim:element/mep-schematic-duct
+- pragmaticbim:element/mep-unitary-equipment
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-21-15-2015
+  source_document: VKF-Brandschutzrichtlinie 21-15 Rauch- und Wärmeabzugsanlagen (2015)
+  source_page: 10
+  source_quote: VKF 21-15, Ziff. 4.10
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
