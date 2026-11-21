@@ -26,7 +26,7 @@ applies_to_elements:
 performance_property_keys: []
 domain: pragmaticbim:domain/building-physics
 jurisdiction:
-- CH
+- ch
 rule_source:
   regulation: pragmaticbim:regulation/sia-181-2020
   source_document: SIA 181:2020 Schallschutz im Hochbau

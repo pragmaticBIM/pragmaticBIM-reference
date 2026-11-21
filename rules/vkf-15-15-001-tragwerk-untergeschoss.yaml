@@ -34,7 +34,9 @@ performance_property_keys:
 - pbs:fire_property_resistance_rating
 domain: pragmaticbim:domain/fire-protection
 jurisdiction:
-- CH
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
 rule_source:
   regulation: pragmaticbim:regulation/vkf-15-15-2015
   source_document: VKF-Brandschutzrichtlinie 15-15 Brandschutzabstände, Tragwerke, Brandabschnitte (2015)
