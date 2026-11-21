@@ -11,10 +11,14 @@ definition:
   fr: Logement générique sans subdivision supplémentaire.
   it: Unità abitativa generica senza ulteriore suddivisione.
   en: Generic residential unit space when not subdivided further.
-room_type_kind: room
-room_name: RN-01-30-03
-activity: M-RES
-default_scope: dwelling
+room_type_kind: container
+uses:
+- pragmaticbim:use/wohnen
+contains:
+- room_type: pragmaticbim:room-type/wohnungseingang
+- room_type: pragmaticbim:room-type/wohnzimmer
+- room_type: pragmaticbim:room-type/kueche
+- room_type: pragmaticbim:room-type/badezimmer
 status: active
 configurations:
 - id: pragmaticbim:room-type-configuration/wohneinheit-default
@@ -113,24 +117,4 @@ configurations:
     name: OutdoorAirFlowRate
     pset: ePset_SpaceRequirement
     value: 120
-  equipment:
-  - id: pragmaticbim:room-type-equipment/wohneinheit-default-steckdose
-    sort_order: 1
-    function: power_outlet
-    components:
-    - pragmaticbim:component/steckdose
-    quantity:
-      min: 1
-      per:
-        quantity: net_floor_area
-        divisor: 10
-    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
-    status: active
-  - id: pragmaticbim:room-type-equipment/wohneinheit-default-lichtschalter
-    sort_order: 2
-    function: light_switch
-    components:
-    - pragmaticbim:component/lichtschalter
-    quantity: 1
-    status: active
   status: active
