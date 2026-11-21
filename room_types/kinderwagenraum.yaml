@@ -7,12 +7,11 @@ name:
   it: Locale passeggini
   en: Stroller room
 definition:
-  de: Abstellraum für Kinderwagen und Mobilitätshilfen an der Eingangshalle, ausserhalb
-    des Fluchtwegs.
-  fr: Local pour poussettes et aides à la mobilité, attenant au hall d'entrée, hors
-    du chemin de fuite.
-  it: Locale per passeggini e ausili alla mobilità, attiguo all'atrio, fuori dal percorso
-    di fuga.
+  de: Abstellraum für Kinderwagen und Mobilitätshilfen an der Eingangshalle, ausserhalb des 
+    Fluchtwegs.
+  fr: Local pour poussettes et aides à la mobilité, attenant au hall d'entrée, hors du chemin de 
+    fuite.
+  it: Locale per passeggini e ausili alla mobilità, attiguo all'atrio, fuori dal percorso di fuga.
   en: Store for strollers and mobility aids off the lobby, off the escape route.
 room_type_kind: room
 room_name: RN-10-10-06
@@ -109,6 +108,24 @@ configurations:
         divisor: 10
     comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/kinderwagenraum-default-steckdose-hoehe
+      relation: elevation
+      value:
+        min: 0.3
+        max: 0.3
+      severity: preferred
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
+    - id: pragmaticbim:placement-rule/kinderwagenraum-default-steckdose-tuer-frei
+      relation: not_in_clearance_of
+      target:
+        opening_function: access
+      severity: required
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
   - id: pragmaticbim:room-type-equipment/kinderwagenraum-default-lichtschalter
     sort_order: 2
     function: light_switch
@@ -116,6 +133,37 @@ configurations:
     - pragmaticbim:component/lichtschalter
     quantity: 1
     status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/kinderwagenraum-default-lichtschalter-tuer
+      relation: next_to
+      target:
+        opening_function: access
+      side: latch_side
+      distance:
+        max: 0.3
+      severity: required
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
+      variants:
+      - relation: next_to
+        target:
+          opening_function: access
+        side: latch_side
+        distance:
+          max: 0.3
+        room_side: outside
+        comment: Schalter ausserhalb des Raums neben der Tür.
+    - id: pragmaticbim:placement-rule/kinderwagenraum-default-lichtschalter-hoehe
+      relation: elevation
+      value:
+        min: 0.9
+        max: 1.1
+      severity: required
+      source:
+        kind: norm
+        reference: SIA 500:2009, 7.4
+        note: Höhe Bedienelemente
   openings:
   - id: pragmaticbim:room-type-opening/kinderwagenraum-default-zugang
     sort_order: 1
