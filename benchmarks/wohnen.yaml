@@ -1,0 +1,41 @@
+id: pragmaticbim:benchmark/wohnen
+use: pragmaticbim:use/wohnen
+name:
+  de: Richtwerte Wohnen
+  fr: Valeurs indicatives habitation
+  it: Valori indicativi abitazione
+  en: Benchmarks housing
+ranges:
+- metric: ratio_main_usable_area_to_gross_floor_area
+  min: 0.6
+  max: 0.7
+  target: 0.65
+  comment:
+    de: Annahme, noch keine veröffentlichte Quelle. Von Fachperson zu bestätigen.
+    fr: Hypothèse, pas encore de source publiée. À confirmer par un spécialiste.
+    it: Ipotesi, nessuna fonte pubblicata finora. Da confermare da uno specialista.
+    en: Assumption, no published source yet. To be confirmed by a professional.
+- metric: ratio_circulation_area_to_gross_floor_area
+  min: 0.1
+  max: 0.2
+  target: 0.15
+  comment:
+    de: Annahme, noch keine veröffentlichte Quelle. Von Fachperson zu bestätigen.
+    fr: Hypothèse, pas encore de source publiée. À confirmer par un spécialiste.
+    it: Ipotesi, nessuna fonte pubblicata finora. Da confermare da uno specialista.
+    en: Assumption, no published source yet. To be confirmed by a professional.
+- metric: ratio_envelope_area_to_gross_volume
+  max: 0.6
+  comment:
+    de: Annahme, noch keine veröffentlichte Quelle. Von Fachperson zu bestätigen.
+    fr: Hypothèse, pas encore de source publiée. À confirmer par un spécialiste.
+    it: Ipotesi, nessuna fonte pubblicata finora. Da confermare da uno specialista.
+    en: Assumption, no published source yet. To be confirmed by a professional.
+- metric: ratio_envelope_area_to_energy_reference_area
+  max: 1.3
+  comment:
+    de: Annahme, noch keine veröffentlichte Quelle. Von Fachperson zu bestätigen.
+    fr: Hypothèse, pas encore de source publiée. À confirmer par un spécialiste.
+    it: Ipotesi, nessuna fonte pubblicata finora. Da confermare da uno specialista.
+    en: Assumption, no published source yet. To be confirmed by a professional.
+status: active
