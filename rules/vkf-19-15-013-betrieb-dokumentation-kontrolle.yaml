@@ -1,0 +1,48 @@
+id: pragmaticbim:rule/vkf-19-15-013-betrieb-dokumentation-kontrolle
+code: VKF-19-15-013
+sort_order: 165
+name:
+  de: Fachfirma, Dokumentation, Ausserbetriebsetzung, Projekt, Abnahme, Kontrolle und Generalüberholung
+  en: Specialist firm, documentation, switch-off, project, acceptance, inspection and general overhaul
+  fr: Entreprise spécialisée, documentation, mise hors service, projet, réception, contrôle et révision générale
+  it: Ditta specializzata, documentazione, messa fuori servizio, progetto, collaudo, controllo e revisione generale
+description:
+  de: Sprinkleranlagen werden von VKF-anerkannten Fachfirmen geplant, eingebaut und unterhalten und bei Änderungen, Erweiterungen
+    oder Umnutzungen angepasst. In der Zentrale liegen Anlagedokumentation und Kontrollbuch, beim Feuerwehrzugang Orientierungspläne.
+    Anlagen werden grundsätzlich nicht ausser Betrieb gesetzt, längere Unterbrüche sind zu melden. Projekte, Abnahme, periodische
+    Kontrolle und Generalüberholung folgen den Vorgaben der Richtlinie; Eigentum oder Betrieb halten die Anlage betriebsbereit.
+  en: Sprinkler systems are planned, installed and maintained by VKF-recognised specialist firms and adapted on changes, extensions
+    or changes of use. The control room holds the system documentation and a logbook, the fire-brigade access holds orientation
+    plans. Systems are in principle not switched off; longer interruptions must be reported. Projects, acceptance, periodic
+    inspection and general overhaul follow the directive; owners or operators keep the system ready for operation.
+  fr: Les installations sprinkler sont planifiées, installées et entretenues par des entreprises spécialisées reconnues par
+    l'AEAI et adaptées en cas de transformation, d'agrandissement ou de changement d'affectation. La centrale contient la
+    documentation de l'installation et le registre de contrôle, l'accès des pompiers les plans d'orientation. Les installations
+    ne sont en principe pas mises hors service, les interruptions prolongées sont annoncées. Projets, réception, contrôle
+    périodique et révision générale suivent la directive ; propriétaires ou exploitants maintiennent l'installation opérationnelle.
+  it: Gli impianti sprinkler sono pianificati, installati e mantenuti da ditte specializzate riconosciute dall'AICAA e adeguati
+    in caso di modifiche, ampliamenti o cambi d'uso. Nella centrale stanno la documentazione dell'impianto e il registro di
+    controllo, all'accesso dei pompieri i piani di orientamento. Gli impianti di principio non sono messi fuori servizio,
+    le interruzioni prolungate vanno annunciate. Progetti, collaudo, controllo periodico e revisione generale seguono la direttiva;
+    proprietà o gestione mantengono l'impianto pronto all'uso.
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fire-suppression-terminal
+- pragmaticbim:element/mep-valve
+- pragmaticbim:element/mep-pump
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-19-15-2015
+  source_document: VKF-Brandschutzrichtlinie 19-15 Sprinkleranlagen (2015)
+  source_page: 9
+  source_quote: VKF 19-15, Ziff. 4.1–4.5, 5.1–5.4 und 6
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

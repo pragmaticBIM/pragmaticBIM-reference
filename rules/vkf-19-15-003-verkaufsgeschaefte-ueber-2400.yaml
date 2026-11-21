@@ -1,0 +1,42 @@
+id: pragmaticbim:rule/vkf-19-15-003-verkaufsgeschaefte-ueber-2400
+code: VKF-19-15-003
+sort_order: 155
+name:
+  de: 'Verkaufsgeschäfte über 2''400 m² Brandabschnittsfläche: Sprinkler samt Lager- und Betriebsräumen'
+  en: 'Shops above 2,400 m² compartment area: sprinklers including adjoining storage and service rooms'
+  fr: 'Commerces de plus de 2''400 m² de compartiment : sprinkler y compris locaux de stockage et d''exploitation attenants'
+  it: 'Negozi oltre 2''400 m² di compartimento: sprinkler compresi i locali di deposito e di servizio adiacenti'
+description:
+  de: 'Verkaufsgeschäfte mit mehr als 2''400 m² Brandabschnittsfläche, einschliesslich der angrenzenden Lager- und Betriebsräume,
+    werden mit Sprinkleranlagen geschützt und mit Handfeuermeldern ergänzt. Noch nicht prüfbar: das Modell weist Nutzung,
+    Personenbelegung, Geschosszahl und Brandabschnittsgrösse je Brandabschnitt nicht aus.'
+  en: 'Shops with more than 2,400 m² compartment area, including the adjoining storage and service rooms, are protected by
+    sprinkler systems and supplemented with manual call points. Not yet checkable: the model does not show use, occupancy,
+    number of storeys and compartment size per fire compartment.'
+  fr: 'Les commerces de plus de 2''400 m² de surface de compartiment, y compris les locaux de stockage et d''exploitation
+    attenants, sont protégés par des installations sprinkler et complétés par des avertisseurs manuels. Pas encore vérifiable
+    : le modèle n''indique pas l''affectation, la charge d''occupation, le nombre d''étages ni la taille du compartiment.'
+  it: 'I negozi con più di 2''400 m² di superficie di compartimento, compresi i locali di deposito e di servizio adiacenti,
+    sono protetti da impianti sprinkler e integrati da pulsanti manuali. Non ancora verificabile: il modello non indica utilizzo,
+    occupazione, numero di piani e dimensione del compartimento.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fire-suppression-terminal
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/building
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-19-15-2015
+  source_document: VKF-Brandschutzrichtlinie 19-15 Sprinkleranlagen (2015)
+  source_page: 4
+  source_quote: VKF 19-15, Ziff. 2.2.2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

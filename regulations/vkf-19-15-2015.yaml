@@ -1,0 +1,22 @@
+id: pragmaticbim:regulation/vkf-19-15-2015
+code: VKF-19-15
+edition: '2015'
+name:
+  de: Brandschutzrichtlinie 19-15 Sprinkleranlagen
+  fr: Directive de protection incendie 19-15 Installations sprinkler
+  it: Direttiva di protezione antincendio 19-15 Impianti sprinkler
+  en: Fire protection directive 19-15 Sprinkler systems
+publisher: VKF
+jurisdiction:
+- CH
+valid_from: '2015-01-01'
+valid_until: null
+superseded_by: null
+access: free
+url: https://www.bsvonline.ch/de/brandschutzvorschriften/archiv-bsv-2015
+status: active
+default_for:
+  jurisdictions:
+  - CH
+  domains:
+  - pragmaticbim:domain/fire-protection

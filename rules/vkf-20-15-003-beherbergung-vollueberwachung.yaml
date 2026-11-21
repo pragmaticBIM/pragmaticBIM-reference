@@ -1,0 +1,47 @@
+id: pragmaticbim:rule/vkf-20-15-003-beherbergung-vollueberwachung
+code: VKF-20-15-003
+sort_order: 140
+name:
+  de: 'Beherbergungsbetriebe: Brandmeldeanlage mit Vollüberwachung nach Kategorie, Geschosszahl und Personenzahl'
+  en: 'Accommodation: fire alarm system with full monitoring by category, number of storeys and persons'
+  fr: 'Hébergement : détection incendie avec surveillance totale selon catégorie, étages et nombre de personnes'
+  it: 'Alloggio: rivelazione incendio con sorveglianza totale secondo categoria, piani e numero di persone'
+description:
+  de: 'In Beherbergungsbetrieben der Kategorie a ist eine Brandmeldeanlage mit Vollüberwachung erforderlich. In den Kategorien
+    b und c gilt dies bei zwei Geschossen und mehr als 50 beherbergten Personen sowie bei drei oder mehr Geschossen und mehr
+    als 30 beherbergten Personen; bei Gebäuden geringer Höhe mit Löschanlagenkonzept kann darauf verzichtet werden. Noch nicht
+    prüfbar: das Modell weist Nutzung, Personenbelegung, Geschosszahl und Brandabschnittsgrösse je Brandabschnitt nicht aus.'
+  en: 'In accommodation of category a a fire alarm system with full monitoring is required. In categories b and c this applies
+    for two storeys and more than 50 accommodated persons, and for three or more storeys and more than 30 accommodated persons;
+    for low-rise buildings with an extinguishing-system concept it can be omitted. Not yet checkable: the model does not show
+    use, occupancy, number of storeys and compartment size per fire compartment.'
+  fr: 'Dans les établissements d''hébergement de catégorie a, une détection incendie avec surveillance totale est exigée.
+    Dans les catégories b et c, cela vaut pour deux niveaux et plus de 50 personnes hébergées, ainsi que pour trois niveaux
+    ou plus et plus de 30 personnes hébergées ; pour les bâtiments de faible hauteur avec un concept d''installations d''extinction,
+    on peut y renoncer. Pas encore vérifiable : le modèle n''indique pas l''affectation, la charge d''occupation, le nombre
+    d''étages ni la taille du compartiment.'
+  it: 'Negli esercizi di alloggio di categoria a è richiesta una rivelazione incendio con sorveglianza totale. Nelle categorie
+    b e c ciò vale per due piani e più di 50 persone alloggiate, nonché per tre o più piani e più di 30 persone alloggiate;
+    per edifici di altezza ridotta con un concetto di impianti di estinzione si può rinunciarvi. Non ancora verificabile:
+    il modello non indica utilizzo, occupazione, numero di piani e dimensione del compartimento.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-alarm
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/building
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-20-15-2015
+  source_document: VKF-Brandschutzrichtlinie 20-15 Brandmeldeanlagen (2015)
+  source_page: 4
+  source_quote: VKF 20-15, Ziff. 2.2.2 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

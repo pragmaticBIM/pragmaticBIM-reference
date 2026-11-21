@@ -1,0 +1,39 @@
+id: pragmaticbim:rule/vkf-19-15-005-grosse-personenbelegung
+code: VKF-19-15-005
+sort_order: 157
+name:
+  de: 'Räume mit grosser Personenbelegung: Sprinkler auf Verlangen'
+  en: 'Rooms with large occupancy: sprinklers on request'
+  fr: 'Locaux à forte occupation : sprinkler sur demande'
+  it: 'Locali con grande occupazione: sprinkler su richiesta'
+description:
+  de: 'In Bauten und Anlagen mit Räumen mit grosser Personenbelegung kann die Brandschutzbehörde Sprinkleranlagen verlangen.
+    Noch nicht prüfbar: das Modell weist Nutzung, Personenbelegung, Geschosszahl und Brandabschnittsgrösse je Brandabschnitt
+    nicht aus.'
+  en: 'In buildings and installations with rooms of large occupancy the fire protection authority can require sprinkler systems.
+    Not yet checkable: the model does not show use, occupancy, number of storeys and compartment size per fire compartment.'
+  fr: 'Dans les bâtiments et installations comportant des locaux à forte occupation, l''autorité de protection incendie peut
+    exiger des installations sprinkler. Pas encore vérifiable : le modèle n''indique pas l''affectation, la charge d''occupation,
+    le nombre d''étages ni la taille du compartiment.'
+  it: 'In edifici e impianti con locali a grande occupazione l''autorità di protezione antincendio può richiedere impianti
+    sprinkler. Non ancora verificabile: il modello non indica utilizzo, occupazione, numero di piani e dimensione del compartimento.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fire-suppression-terminal
+- pragmaticbim:element/spaces-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-19-15-2015
+  source_document: VKF-Brandschutzrichtlinie 19-15 Sprinkleranlagen (2015)
+  source_page: 4
+  source_quote: VKF 19-15, Ziff. 2.2.3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

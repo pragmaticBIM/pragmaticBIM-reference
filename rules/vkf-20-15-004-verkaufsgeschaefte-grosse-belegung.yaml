@@ -1,0 +1,47 @@
+id: pragmaticbim:rule/vkf-20-15-004-verkaufsgeschaefte-grosse-belegung
+code: VKF-20-15-004
+sort_order: 141
+name:
+  de: 'Verkaufsgeschäfte: Handfeuermelder zur Sprinkleranlage; grosse Personenbelegung auf Verlangen'
+  en: 'Shops: manual call points added to the sprinkler system; large occupancy on request'
+  fr: 'Commerces : avertisseurs manuels en complément des sprinklers ; forte occupation sur demande'
+  it: 'Negozi: pulsanti manuali ad integrazione dello sprinkler; grande occupazione su richiesta'
+description:
+  de: 'In Verkaufsgeschäften wird die Sprinkleranlage mit Handfeuermeldern ergänzt; in Teilbereichen oder einzelnen Räumen
+    ist eine Brandmeldeanlage einzubauen, sofern sie zur Ansteuerung technischer Brandschutzeinrichtungen nötig ist. Bei Räumen
+    mit grosser Personenbelegung kann die Brandschutzbehörde eine Brandmeldeanlage verlangen. Noch nicht prüfbar: das Modell
+    weist Nutzung, Personenbelegung, Geschosszahl und Brandabschnittsgrösse je Brandabschnitt nicht aus.'
+  en: 'In shops the sprinkler system is supplemented with manual call points; in sub-areas or individual rooms a fire alarm
+    system is installed where needed to activate technical fire protection equipment. For rooms with large occupancy the fire
+    protection authority can require a fire alarm system. Not yet checkable: the model does not show use, occupancy, number
+    of storeys and compartment size per fire compartment.'
+  fr: 'Dans les commerces, l''installation sprinkler est complétée par des avertisseurs manuels ; dans des parties ou locaux
+    isolés, une détection incendie est installée si elle est nécessaire à la commande d''équipements techniques de protection
+    incendie. Pour les locaux à forte occupation, l''autorité de protection incendie peut exiger une détection incendie. Pas
+    encore vérifiable : le modèle n''indique pas l''affectation, la charge d''occupation, le nombre d''étages ni la taille
+    du compartiment.'
+  it: 'Nei negozi l''impianto sprinkler è integrato da pulsanti manuali; in parti o singoli locali si installa una rivelazione
+    incendio se necessaria per l''attivazione di dispositivi tecnici antincendio. Per i locali con grande occupazione l''autorità
+    di protezione antincendio può richiedere una rivelazione incendio. Non ancora verificabile: il modello non indica utilizzo,
+    occupazione, numero di piani e dimensione del compartimento.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-alarm
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/mep-fire-suppression-terminal
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-20-15-2015
+  source_document: VKF-Brandschutzrichtlinie 20-15 Brandmeldeanlagen (2015)
+  source_page: 5
+  source_quote: VKF 20-15, Ziff. 2.2.3 und 2.2.4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
