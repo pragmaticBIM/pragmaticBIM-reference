@@ -222,7 +222,7 @@ attributes:
   pset: Pset_BeamCommon
   definition:
     de: |-
-      Feuerwiderstandsklasse des Trägers gemäss Brandschutzkonzept.
+      Feuerwiderstandsklasse des Trägers gemäss Brandschutzkonzept des Projekts.
 
       **Zulässige Werte**
       - `R 30` — Tragfähigkeit 30 min
@@ -288,7 +288,7 @@ attributes:
   pset: ePset_Cost
   definition:
     de: |-
-      Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
+      Kostenschnittstelle: Grund- oder Mieterausbau.
 
       **Zulässige Werte**
       - `GAB` — Grundausbau (Bauherr / Vermieter)
@@ -306,7 +306,7 @@ attributes:
       - `GAB` — allestimento di base (committente / locatore)
       - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`
     en: |-
-      Cost interface of the component – base building or tenant fit-out.
+      Cost interface: base building or tenant fit-out.
 
       **Allowed values**
       - `GAB` — base building (client / landlord)
@@ -409,7 +409,7 @@ attributes:
   pset: ePset_Cost
   definition:
     de: |-
-      eBKP-H-Klassifizierung nach SN 506 511 gemäss CRB-IFC-Regelsatz.
+      eBKP-H-Klassifizierung gemäss CRB-IFC-Regelsatz nach SN 506 511.
 
       **Zulässige Werte**
       - `C04.01` — Geschossdecke
@@ -527,7 +527,7 @@ attributes:
     de: "Verbindliche Referenzmenge für den Einheitspreis: `Qto_BeamBaseQuantities.Length`."
     fr: "Quantité de référence faisant foi pour le prix unitaire : `Qto_BeamBaseQuantities.Length`."
     it: "Quantità di riferimento vincolante per il prezzo unitario: `Qto_BeamBaseQuantities.Length`."
-    en: "Authoritative reference quantity used with UnitPrice: `Qto_BeamBaseQuantities.Length`."
+    en: "`Qto_BeamBaseQuantities.Length` is the authoritative reference quantity for UnitPrice."
   datatype: IfcLabel
   needed_in_phases: ['31', '32', '33', '41']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]

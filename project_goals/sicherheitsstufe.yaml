@@ -81,8 +81,8 @@ levels:
     it: BSL 4
     en: BSL 4
   description:
-    de: Hohes Risiko; vollständig abgeschlossener Laborbereich.
-    fr: Risque élevé; zone de laboratoire entièrement confinée.
+    de: Hohes Risiko; abgeschlossenes Labor.
+    fr: Risque élevé; laboratoire entièrement clos.
     it: Rischio elevato; area di laboratorio completamente confinata.
     en: High risk; fully contained laboratory area.
   status: active

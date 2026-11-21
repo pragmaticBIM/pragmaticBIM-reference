@@ -105,7 +105,7 @@ attributes:
   pset: null
   definition:
     de: |-
-      Kennzeichnet den Raum als geschossweise Bruttogeschossfläche.
+      Kennzeichnet den Raum als Bruttogeschossfläche je Geschoss.
 
       **Zulässige Werte**
       - `GFA` — Bruttogeschossfläche einschliesslich Konstruktionsflächen und Gebäudehülle
