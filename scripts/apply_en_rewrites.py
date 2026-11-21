@@ -39,6 +39,7 @@ DATA_DIRS = (
     "project_goals",
     "phases",
     "domains",
+    "solution_dimensions",
 )
 
 EN_KEY_RE = re.compile(r"^(\s*)(-\s+)?en:(\s*)(.*)$")

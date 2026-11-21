@@ -1,0 +1,70 @@
+id: pragmaticbim:solution-dimension/schachtstrategie
+code: SD-04
+sort_order: 4
+name:
+  de: Schachtstrategie
+  fr: Stratégie des gaines
+  it: Strategia dei cavedi
+  en: Shaft strategy
+description:
+  de: Lage der vertikalen Installationsschächte.
+  fr: Position des gaines techniques verticales.
+  it: Posizione dei cavedi tecnici verticali.
+  en: Location of vertical service shafts.
+status: active
+scope: building
+step: access
+allows_multiple: false
+options:
+- id: pragmaticbim:solution-option/schacht-keine
+  code: SH-00
+  sort_order: 0
+  name:
+    de: Keine
+    fr: Aucune
+    it: Nessuna
+    en: None
+  status: active
+  exclusive: true
+- id: pragmaticbim:solution-option/schacht-zentral-kern
+  code: SH-01
+  sort_order: 1
+  name:
+    de: zentral am Kern
+    fr: centrales au noyau
+    it: centrali al nucleo
+    en: central at the core
+  status: active
+  description:
+    de: Schächte gebündelt am Erschliessungskern.
+    fr: Gaines regroupées au noyau de desserte.
+    it: Cavedi raggruppati al nucleo di accesso.
+    en: Shafts bundled at the access core.
+- id: pragmaticbim:solution-option/schacht-dezentral-einheit
+  code: SH-02
+  sort_order: 2
+  name:
+    de: dezentral je Einheit
+    fr: décentrales par unité
+    it: decentrati per unità
+    en: decentralised per unit
+  status: active
+  description:
+    de: Eigene Schächte innerhalb oder an jeder Einheit.
+    fr: Gaines propres à l'intérieur ou auprès de chaque unité.
+    it: Cavedi propri all'interno o presso ogni unità.
+    en: Dedicated shafts inside or at each unit.
+- id: pragmaticbim:solution-option/schacht-fassade
+  code: SH-03
+  sort_order: 3
+  name:
+    de: an der Fassade
+    fr: en façade
+    it: in facciata
+    en: on the façade
+  status: active
+  description:
+    de: Schächte an oder in der Fassadenebene.
+    fr: Gaines sur ou dans le plan de façade.
+    it: Cavedi sul o nel piano di facciata.
+    en: Shafts on or in the façade plane.

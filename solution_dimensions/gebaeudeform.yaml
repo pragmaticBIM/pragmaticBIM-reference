@@ -1,0 +1,140 @@
+id: pragmaticbim:solution-dimension/gebaeudeform
+code: SD-01
+sort_order: 1
+name:
+  de: Gebäudeform
+  fr: Forme du bâtiment
+  it: Forma dell'edificio
+  en: Building form
+description:
+  de: Grundrissfigur des Gebäudes im Situationsplan.
+  fr: Figure en plan du bâtiment dans le plan de situation.
+  it: Figura in pianta dell'edificio nel piano di situazione.
+  en: Plan figure of the building on the site plan.
+status: active
+scope: building
+step: form
+allows_multiple: false
+options:
+- id: pragmaticbim:solution-option/gebaeudeform-keine
+  code: GF-00
+  sort_order: 0
+  name:
+    de: Keine
+    fr: Aucune
+    it: Nessuna
+    en: None
+  status: active
+  exclusive: true
+- id: pragmaticbim:solution-option/gebaeudeform-riegel
+  code: GF-01
+  sort_order: 1
+  name:
+    de: Riegel
+    fr: Barre
+    it: Barra
+    en: Bar
+  status: active
+  description:
+    de: Länglicher Baukörper mit parallelen Fassaden.
+    fr: Corps de bâtiment allongé à façades parallèles.
+    it: Corpo di fabbrica allungato con facciate parallele.
+    en: Elongated volume with parallel façades.
+  parameters:
+  - jurisdiction: general
+    values:
+      min_depth:
+        value: 10.0
+      max_depth:
+        value: 16.0
+  comment: Depth range as early-phase assumption; confirm per project.
+- id: pragmaticbim:solution-option/gebaeudeform-punkt
+  code: GF-02
+  sort_order: 2
+  name:
+    de: Punkt
+    fr: Point
+    it: Punto
+    en: Point
+  status: active
+  description:
+    de: Kompakter, turmartiger oder freistehender Baukörper.
+    fr: Corps de bâtiment compact, en tour ou isolé.
+    it: Corpo di fabbrica compatto, a torre o isolato.
+    en: Compact, tower-like or freestanding volume.
+  parameters:
+  - jurisdiction: general
+    values:
+      min_depth:
+        value: 12.0
+      max_depth:
+        value: 28.0
+  comment: Depth range as early-phase assumption; confirm per project.
+- id: pragmaticbim:solution-option/gebaeudeform-winkel
+  code: GF-03
+  sort_order: 3
+  name:
+    de: Winkel
+    fr: Angle
+    it: Angolo
+    en: L-shape
+  status: active
+  description:
+    de: Zwei Flügel in einem Winkel.
+    fr: Deux ailes formant un angle.
+    it: Due ali che formano un angolo.
+    en: Two wings meeting at an angle.
+  parameters:
+  - jurisdiction: general
+    values:
+      min_depth:
+        value: 10.0
+      max_depth:
+        value: 16.0
+  comment: Depth range as early-phase assumption; confirm per project.
+- id: pragmaticbim:solution-option/gebaeudeform-kamm
+  code: GF-04
+  sort_order: 4
+  name:
+    de: Kamm
+    fr: Peigne
+    it: Pettine
+    en: Comb
+  status: active
+  description:
+    de: Hauptkörper mit mehreren parallelen Seitenflügeln.
+    fr: Corps principal avec plusieurs ailes latérales parallèles.
+    it: Corpo principale con più ali laterali parallele.
+    en: Main block with several parallel side wings.
+  parameters:
+  - jurisdiction: general
+    values:
+      min_depth:
+        value: 10.0
+      max_depth:
+        value: 16.0
+  comment: Depth range as early-phase assumption; confirm per project.
+- id: pragmaticbim:solution-option/gebaeudeform-hofbau
+  code: GF-05
+  sort_order: 5
+  name:
+    de: Hofbau / Atrium
+    fr: Bâtiment à cour / atrium
+    it: Edificio a corte / atrio
+    en: Courtyard / atrium
+  status: active
+  description:
+    de: Baukörper um einen Innenhof oder ein Atrium.
+    fr: Corps de bâtiment autour d'une cour intérieure ou d'un atrium.
+    it: Corpo di fabbrica intorno a una corte interna o a un atrio.
+    en: Volume arranged around an inner courtyard or atrium.
+  parameters:
+  - jurisdiction: general
+    values:
+      min_depth:
+        value: 10.0
+      max_depth:
+        value: 16.0
+      min_courtyard_width:
+        value: 12.0
+  comment: Depth and courtyard width as early-phase assumption; confirm per project.

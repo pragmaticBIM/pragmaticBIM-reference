@@ -1,0 +1,94 @@
+id: pragmaticbim:solution-dimension/achsraster
+code: SD-07
+sort_order: 7
+name:
+  de: Achsraster
+  fr: Trame d'axes
+  it: Maglia d'assi
+  en: Axis grid
+description:
+  de: Achsabstände für die Gebäudeform.
+  fr: Entraxes pour la forme du bâtiment.
+  it: Interassi per la forma dell'edificio.
+  en: Axis spacing for the building form.
+status: active
+scope: building
+step: grid
+allows_multiple: false
+options:
+- id: pragmaticbim:solution-option/achsraster-keine
+  code: AX-00
+  sort_order: 0
+  name:
+    de: Keine
+    fr: Aucune
+    it: Nessuna
+    en: None
+  status: active
+  exclusive: true
+- id: pragmaticbim:solution-option/achsraster-6-25
+  code: AX-01
+  sort_order: 1
+  name:
+    de: 6.25 m
+    fr: 6.25 m
+    it: 6.25 m
+    en: 6.25 m
+  status: active
+  description:
+    de: Achsabstand 6.25 m in beiden Richtungen.
+    fr: Entraxe 6.25 m dans les deux directions.
+    it: Interasse 6.25 m in entrambe le direzioni.
+    en: 6.25 m axis spacing in both directions.
+  parameters:
+  - jurisdiction: general
+    values:
+      axis_x:
+        value: 6.25
+      axis_y:
+        value: 6.25
+- id: pragmaticbim:solution-option/achsraster-7-5
+  code: AX-02
+  sort_order: 2
+  name:
+    de: 7.5 m
+    fr: 7.5 m
+    it: 7.5 m
+    en: 7.5 m
+  status: active
+  description:
+    de: Achsabstand 7.5 m in beiden Richtungen.
+    fr: Entraxe 7.5 m dans les deux directions.
+    it: Interasse 7.5 m in entrambe le direzioni.
+    en: 7.5 m axis spacing in both directions.
+  parameters:
+  - jurisdiction: general
+    values:
+      axis_x:
+        value: 7.5
+      axis_y:
+        value: 7.5
+- id: pragmaticbim:solution-option/achsraster-8-75
+  code: AX-03
+  sort_order: 3
+  name:
+    de: 8.75 m
+    fr: 8.75 m
+    it: 8.75 m
+    en: 8.75 m
+  status: active
+  description:
+    de: Achsabstand 8.75 m in beiden Richtungen.
+    fr: Entraxe 8.75 m dans les deux directions.
+    it: Interasse 8.75 m in entrambe le direzioni.
+    en: 8.75 m axis spacing in both directions.
+  excludes:
+  - pragmaticbim:solution-option/tragsystem-schottenbau
+  parameters:
+  - jurisdiction: general
+    values:
+      axis_x:
+        value: 8.75
+      axis_y:
+        value: 8.75
+  comment: Excluded with Schottenbau because that option's assumed max_span is 7.5 m.
