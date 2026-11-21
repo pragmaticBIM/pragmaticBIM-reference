@@ -1,0 +1,32 @@
+id: pragmaticbim:value/safety-lighting-supply-type
+code: SAFETY-LIGHTING-SUPPLY
+name:
+  de: Speisung Sicherheitsbeleuchtung
+  fr: Alimentation de l'éclairage de sécurité
+  it: Alimentazione dell'illuminazione di sicurezza
+  en: Safety lighting supply type
+description:
+  de: Art der Sicherheitsstromquelle einer Sicherheitsleuchte oder eines sicherheitsbeleuchteten Zeichens (VKF 17-15, Ziff. 3.2.2, 3.3).
+  fr: Type de source d'alimentation de sécurité d'un luminaire de sécurité ou d'un signal éclairé en sécurité (VKF 17-15, Ziff. 3.2.2, 3.3).
+  it: Tipo di fonte di alimentazione di sicurezza di un apparecchio di sicurezza o di un segnale con illuminazione di sicurezza (VKF 17-15, Ziff. 3.2.2, 3.3).
+  en: Kind of safety power source of a safety luminaire or a sign on safety lighting (VKF 17-15, Ziff. 3.2.2, 3.3).
+year: 2026
+norm_reference: VKF 17-15
+status: active
+values:
+  de:
+    - SINGLE_BATTERY
+    - CENTRAL_BATTERY
+    - GENERATOR
+  fr:
+    - SINGLE_BATTERY
+    - CENTRAL_BATTERY
+    - GENERATOR
+  it:
+    - SINGLE_BATTERY
+    - CENTRAL_BATTERY
+    - GENERATOR
+  en:
+    - SINGLE_BATTERY
+    - CENTRAL_BATTERY
+    - GENERATOR

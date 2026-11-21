@@ -27,6 +27,7 @@ KEY_ENUMS = (
 # without the sibling data-contract repository.
 PINNED_KEYS = {
     "pbs:fire_property_resistance_rating",
+    "pbs:fire_property_reaction_to_fire",
     "pbs:thermal_property_u_value",
     "pbs:acoustic_property_airborne_sound_rating_db",
     "pbs:acoustic_property_impact_sound_rating_db",
