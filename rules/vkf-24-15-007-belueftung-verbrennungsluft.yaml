@@ -1,0 +1,54 @@
+id: pragmaticbim:rule/vkf-24-15-007-belueftung-verbrennungsluft
+code: VKF-24-15-007
+sort_order: 172
+name:
+  de: 'Belüftung und Verbrennungsluft: Zufuhr vom Freien, Öffnungen nicht verschliessbar'
+  en: 'Ventilation and combustion air: supply from outdoors, openings not closable'
+  fr: 'Ventilation et air de combustion : amenée depuis l''extérieur, ouvertures non obturables'
+  it: 'Ventilazione e aria di combustione: afflusso dall''esterno, aperture non chiudibili'
+description:
+  de: 'Raumluftabhängige Feuerungsaggregate stehen nur in belüfteten Räumen, und die Verbrennungsluft muss vom Freien zugeführt
+    werden. Verbrennungsluftöffnungen dürfen nicht verschlossen werden, ausser eine Sicherheitseinrichtung lässt den Betrieb
+    nur bei offenem Verschluss zu. Raumluft absaugende Anlagen wie Küchenabluft oder Wäschetrockner dürfen den sicheren Betrieb
+    nicht beeinträchtigen. Raumluftunabhängige Aggregate mit Luft-Abgas-System brauchen keine Luftöffnungen. Noch nicht prüfbar:
+    das Modell weist Nennwärmeleistung, Brennstoff, Aufstellungsart und Feuerwiderstand des Heizraums nicht aus.'
+  en: 'Room-air-dependent firing units stand only in ventilated rooms, and combustion air must be supplied from outdoors.
+    Combustion-air openings must not be closed unless a safety device allows operation only with the closure open. Systems
+    that extract room air, such as kitchen extract or tumble dryers, must not impair safe operation. Room-air-independent
+    units with an air-flue system need no air openings. Not yet checkable: the model does not show nominal heat output, fuel,
+    type of installation and fire resistance of the boiler room.'
+  fr: 'Les foyers dépendants de l''air ambiant ne s''installent que dans des locaux ventilés et l''air de combustion doit
+    venir de l''extérieur. Les ouvertures d''air de combustion ne doivent pas être fermées, sauf si un dispositif de sécurité
+    n''autorise le fonctionnement qu''avec fermeture ouverte. Les installations aspirant l''air ambiant, comme la hotte de
+    cuisine ou le sèche-linge, ne doivent pas compromettre le fonctionnement sûr. Les appareils indépendants de l''air ambiant
+    avec système air-fumées n''exigent pas d''ouvertures d''air. Pas encore vérifiable : le modèle n''indique pas la puissance
+    calorifique nominale, le combustible, le mode d''installation ni la résistance au feu du local de chauffe.'
+  it: 'I focolari dipendenti dall''aria ambiente stanno solo in locali ventilati e l''aria di combustione deve provenire dall''esterno.
+    Le aperture dell''aria di combustione non devono essere chiuse, salvo che un dispositivo di sicurezza consenta l''esercizio
+    solo a chiusura aperta. Gli impianti che aspirano aria ambiente, come cappa di cucina o asciugatrice, non devono compromettere
+    l''esercizio sicuro. Gli apparecchi indipendenti dall''aria ambiente con sistema aria-fumi non richiedono aperture d''aria.
+    Non ancora verificabile: il modello non indica potenza termica nominale, combustibile, tipo di installazione né resistenza
+    al fuoco del locale caldaia.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-boiler
+- pragmaticbim:element/mep-fan
+- pragmaticbim:element/architecture-window-exterior
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/spaces-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-24-15-2015
+  source_document: VKF-Brandschutzrichtlinie 24-15 Wärmetechnische Anlagen (2015)
+  source_page: 7
+  source_quote: VKF 24-15, Ziff. 3.5 Abs. 1–5
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

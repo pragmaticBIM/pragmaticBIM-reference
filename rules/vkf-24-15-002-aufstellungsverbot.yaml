@@ -1,0 +1,45 @@
+id: pragmaticbim:rule/vkf-24-15-002-aufstellungsverbot
+code: VKF-24-15-002
+sort_order: 167
+name:
+  de: Aufstellungsverbot für Wärmeerzeuger in Fluchtwegen, explosionsgefährdeten Räumen und Räumen mit grosser Brandbelastung
+  en: Ban on installing heat generators in escape routes, explosion-hazard rooms and rooms with high fire load
+  fr: Interdiction d'installer des générateurs de chaleur dans les voies d'évacuation, locaux explosifs et locaux à forte
+    charge calorifique
+  it: Divieto di installare generatori di calore in vie di fuga, locali a rischio di esplosione e locali con alto carico d'incendio
+description:
+  de: 'Wärmeerzeugungsaggregate dürfen nicht in Fluchtwegen, in feuer- oder explosionsgefährdeten Räumen und Zonen sowie in
+    Räumen mit grosser und sehr grosser Brandbelastung aufgestellt werden. Noch nicht prüfbar: das Modell weist Nennwärmeleistung,
+    Brennstoff, Aufstellungsart und Feuerwiderstand des Heizraums nicht aus.'
+  en: 'Heat generators must not be installed in escape routes, in rooms and zones with fire or explosion hazard, or in rooms
+    with large and very large fire load. Not yet checkable: the model does not show nominal heat output, fuel, type of installation
+    and fire resistance of the boiler room.'
+  fr: 'Les générateurs de chaleur ne doivent pas être installés dans les voies d''évacuation, dans les locaux et zones présentant
+    un danger d''incendie ou d''explosion, ni dans les locaux à charge calorifique grande ou très grande. Pas encore vérifiable
+    : le modèle n''indique pas la puissance calorifique nominale, le combustible, le mode d''installation ni la résistance
+    au feu du local de chauffe.'
+  it: 'I generatori di calore non devono essere installati in vie di fuga, in locali e zone con pericolo d''incendio o di
+    esplosione né in locali con carico d''incendio grande o molto grande. Non ancora verificabile: il modello non indica potenza
+    termica nominale, combustibile, tipo di installazione né resistenza al fuoco del locale caldaia.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-boiler
+- pragmaticbim:element/mep-heat-exchanger
+- pragmaticbim:element/mep-unitary-equipment
+- pragmaticbim:element/spaces-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-24-15-2015
+  source_document: VKF-Brandschutzrichtlinie 24-15 Wärmetechnische Anlagen (2015)
+  source_page: 5
+  source_quote: VKF 24-15, Ziff. 2.3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

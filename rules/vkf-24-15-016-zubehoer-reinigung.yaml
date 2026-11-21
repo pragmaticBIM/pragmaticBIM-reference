@@ -1,0 +1,52 @@
+id: pragmaticbim:rule/vkf-24-15-016-zubehoer-reinigung
+code: VKF-24-15-016
+sort_order: 181
+name:
+  de: Explosionsklappen, Abgasventilatoren und Reinigungsöffnungen
+  en: Explosion flaps, flue fans and cleaning openings
+  fr: Clapets d'explosion, ventilateurs de fumées et ouvertures de nettoyage
+  it: Serrande antiscoppio, ventilatori fumi e aperture di pulizia
+description:
+  de: 'Bei Brennstoffen, die zu Verpuffungen neigen, etwa feinkörniger Kohle oder Holzspänen, gehören Explosionsklappen in
+    die Abgasanlage, im Heizraum nahe der Verbindungsrohreinführung und mindestens im Querschnitt der Abgasanlage. Abgasventilatoren
+    erzeugen nur dann Überdruck, wenn die Anlage dafür anerkannt ist. Abgasanlagen haben Öffnungen für Kontrolle und Reinigung,
+    Zubehör ist dafür leicht entfernbar; in feuer- oder explosionsgefährdeten Räumen sind solche Öffnungen nicht zulässig.
+    Noch nicht prüfbar: das Modell enthält keine Abgasanlage mit Klassierung, Führung, Mindesthöhe über Dach und Sicherheitsabstand.'
+  en: 'For fuels prone to deflagration, such as fine-grained coal or wood chips, explosion flaps belong in the flue system,
+    in the boiler room close to the connecting pipe entry and at least the cross-section of the flue. Flue fans create positive
+    pressure only if the system is approved for it. Flue systems have openings for inspection and cleaning, accessories can
+    be removed easily; in rooms with fire or explosion hazard such openings are not permitted. Not yet checkable: the model
+    holds no flue system with classification, routing, minimum height above roof and clearance.'
+  fr: 'Pour les combustibles enclins aux déflagrations, comme le charbon fin ou les copeaux de bois, des clapets d''explosion
+    sont posés dans l''installation, dans le local de chauffe près de l''entrée du tuyau de raccordement et au moins de la
+    section du conduit. Les ventilateurs de fumées ne créent une surpression que si l''installation y est reconnue. Les conduits
+    ont des ouvertures de contrôle et de nettoyage, les accessoires sont facilement démontables ; dans les locaux à danger
+    d''incendie ou d''explosion, de telles ouvertures ne sont pas admises. Pas encore vérifiable : le modèle ne contient aucune
+    installation d''évacuation des gaz avec classification, tracé, hauteur minimale au-dessus du toit ni distance de sécurité.'
+  it: 'Per combustibili inclini a deflagrazioni, come carbone fine o trucioli di legno, nell''impianto vanno serrande antiscoppio,
+    nel locale caldaia vicino all''ingresso del tubo di raccordo e almeno della sezione dell''impianto. I ventilatori fumi
+    creano sovrappressione solo se l''impianto è riconosciuto per questo. Gli impianti hanno aperture per controllo e pulizia,
+    gli accessori sono facilmente rimovibili; nei locali a pericolo d''incendio o d''esplosione tali aperture non sono ammesse.
+    Non ancora verificabile: il modello non contiene alcun impianto di scarico fumi con classificazione, percorso, altezza
+    minima sopra il tetto né distanza di sicurezza.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-schematic-duct
+- pragmaticbim:element/mep-fan
+- pragmaticbim:element/mep-boiler
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-24-15-2015
+  source_document: VKF-Brandschutzrichtlinie 24-15 Wärmetechnische Anlagen (2015)
+  source_page: 15
+  source_quote: VKF 24-15, Ziff. 5.9.1–5.9.3 und 5.10 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

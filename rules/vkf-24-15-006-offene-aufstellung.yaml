@@ -1,0 +1,47 @@
+id: pragmaticbim:rule/vkf-24-15-006-offene-aufstellung
+code: VKF-24-15-006
+sort_order: 171
+name:
+  de: Offene Aufstellung in eingeschossigen Hallen und Gewerbebauten bei kleiner Brandbelastung
+  en: Open installation in single-storey halls and commercial buildings with low fire load
+  fr: Installation ouverte dans les halles à un niveau et bâtiments artisanaux à faible charge calorifique
+  it: Installazione aperta in capannoni a un piano ed edifici artigianali con basso carico d'incendio
+description:
+  de: 'In eingeschossigen Hallen und mehrgeschossigen Industrie- und Gewerbebauten mit nutzungsbezogenen Brandabschnitten
+    dürfen Feuerungsaggregate beliebiger Leistung offen stehen, sofern der Betrieb es erfordert, die Sicherheitsabstände eingehalten
+    sind und die Brandbelastung im Raum klein ist. Noch nicht prüfbar: das Modell weist Nennwärmeleistung, Brennstoff, Aufstellungsart
+    und Feuerwiderstand des Heizraums nicht aus.'
+  en: 'In single-storey halls and multi-storey industrial and commercial buildings with use-related compartments, firing units
+    of any output may stand openly if operation requires it, the clearances are kept and the fire load in the room is low.
+    Not yet checkable: the model does not show nominal heat output, fuel, type of installation and fire resistance of the
+    boiler room.'
+  fr: 'Dans les halles à un niveau et les bâtiments industriels et artisanaux à plusieurs niveaux avec compartiments liés
+    à l''affectation, des foyers de toute puissance peuvent être installés ouvertement si l''exploitation l''exige, que les
+    distances de sécurité sont respectées et que la charge calorifique du local est faible. Pas encore vérifiable : le modèle
+    n''indique pas la puissance calorifique nominale, le combustible, le mode d''installation ni la résistance au feu du local
+    de chauffe.'
+  it: 'In capannoni a un piano ed edifici industriali e artigianali a più piani con compartimenti legati all''utilizzo, focolari
+    di qualsiasi potenza possono stare a vista se l''esercizio lo richiede, le distanze di sicurezza sono rispettate e il
+    carico d''incendio nel locale è basso. Non ancora verificabile: il modello non indica potenza termica nominale, combustibile,
+    tipo di installazione né resistenza al fuoco del locale caldaia.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-boiler
+- pragmaticbim:element/mep-unitary-equipment
+- pragmaticbim:element/spaces-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-24-15-2015
+  source_document: VKF-Brandschutzrichtlinie 24-15 Wärmetechnische Anlagen (2015)
+  source_page: 7
+  source_quote: VKF 24-15, Ziff. 3.4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
