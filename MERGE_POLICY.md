@@ -1,17 +1,16 @@
 # Merge policy
 
-How a change reaches `development` and then `main`: who may merge, when a pull request merges on its own, and when a person decides.
+How a change reaches `main`: who may merge, when a pull request merges on its own, and when a person decides.
 
 ## Branches
 
 | Branch | Role | Who merges |
 | --- | --- | --- |
-| `development` | target of every pull request, including the web application and coding agents | the merge gate (auto-merge) or the maintainer |
-| `main` | released state | maintainer only, by a promotion pull request from `development` |
+| `main` | target of every pull request and the released state | the merge gate (auto-merge) or the maintainer |
 
-Nobody pushes directly to either branch. Everyone, including the web application and coding agents, works through pull requests from a branch or fork into `development`.
+Nobody pushes directly to `main`. Everyone, including the web application and coding agents, works through pull requests from a branch or fork into `main`.
 
-`development` is protected:
+`main` is protected:
 
 | Rule | Setting |
 | --- | --- |
@@ -21,15 +20,6 @@ Nobody pushes directly to either branch. Everyone, including the web application
 | Applies to admins | yes |
 | Force push, deletion | blocked |
 | Merge method for auto-merge | squash |
-
-`main` is protected:
-
-| Rule | Setting |
-| --- | --- |
-| Pull request required | yes, from `development` only |
-| Required checks | `tests` |
-| Who can merge | maintainer only, no auto-merge |
-| Force push, deletion | blocked |
 
 ## Review flow
 
@@ -89,5 +79,5 @@ Escalate by hand (set `needs-maintainer`) when:
 - Gate rules: `.github/scripts/merge_gate.py`, tested in `tests/test_merge_gate.py`. The same script runs in every pragmaticBIM repository; only the JSON differs.
 - Automatic review requests: `.github/CODEOWNERS`
 - Optional AI review: set `require_ai_review` to `true` and have the reviewer post a commit status named `ai-review` (`success` or `failure`) on the PR head.
-- Optional secret `AUTOMERGE_TOKEN`: fine-grained token of the maintainer, this repository only, *Contents* and *Pull requests* read/write. It can enable auto-merge on `development` only, since `main` requires the maintainer. With it the gate switches auto-merge on by itself; without it the gate labels `automerge-ready` and the maintainer clicks *Enable auto-merge*.
+- Optional secret `AUTOMERGE_TOKEN`: fine-grained token of the maintainer, this repository only, *Contents* and *Pull requests* read/write. It can enable auto-merge on `main`. With it the gate switches auto-merge on by itself; without it the gate labels `automerge-ready` and the maintainer clicks *Enable auto-merge*.
 - Secret `HOMEPAGE_DISPATCH_TOKEN` (required for release → website sync): fine-grained token of the maintainer with access to `simondilhas/homepages_abstract`, *Contents* read and *Actions* write (or a classic PAT with `repo`). Used by `.github/workflows/notify-homepage.yml` to send `repository_dispatch` (`reference-released`) when a non-prerelease GitHub Release is published. Without it the notify job fails and the homepage must be synced by hand or via its daily cron.
