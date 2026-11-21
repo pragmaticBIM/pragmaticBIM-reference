@@ -1,0 +1,294 @@
+# WBS 2015 criteria inventory (paraphrased). Criterion numbers only; no copied table text.
+# Publisher source: https://www.bwo.admin.ch/de/kriterienkatalog (edition 2015).
+id: pragmaticbim:inventory/wbs-2015-criteria
+regulation: pragmaticbim:regulation/wbs-2015
+edition: '2015'
+source_url: https://www.bwo.admin.ch/de/kriterienkatalog
+checkability_values:
+  - model_checkable
+  - partly_checkable
+  - assessment_only
+criteria:
+  - id: K1
+    code: wohnungsangebot
+    area: wohnstandort
+    measures:
+      de: Vielfältiges Wohnungsangebot und passendes Raumprogramm als Mehrwert für das Quartier.
+      fr: Offre de logements variée et programme spatial adapté comme valeur ajoutée pour le quartier.
+      it: Offerta abitativa diversificata e programma spaziale adeguato come valore aggiunto per il quartiere.
+      en: Diverse housing offer and fitting space programme as added value for the neighbourhood.
+    checkability: assessment_only
+  - id: K2
+    code: ergaenzende-nutzungen
+    area: wohnstandort
+    measures:
+      de: Öffentliche und halböffentliche Dienstleistungen sowie ergänzende Nutzungen im Quartierskontext.
+      fr: Services publics et semi-publics ainsi que usages complémentaires dans le contexte du quartier.
+      it: Servizi pubblici e semipubblici e usi complementari nel contesto del quartiere.
+      en: Public and semi-public services and complementary uses in the neighbourhood context.
+    checkability: assessment_only
+  - id: K3
+    code: mobilitaet-und-verkehr
+    area: wohnstandort
+    measures:
+      de: Anbindung an ÖV und Carsharing sowie starke Rolle des Langsamverkehrs statt Autoabhängigkeit.
+      fr: Desserte TC et autopartage et rôle fort de la mobilité douce plutôt que la dépendance à la voiture.
+      it: Collegamento a TP e car-sharing e ruolo forte della mobilità dolce invece della dipendenza dall'auto.
+      en: Links to public transport and car sharing and a strong role for active mobility instead of car dependence.
+    checkability: assessment_only
+  - id: K4
+    code: raeumliche-anbindung
+    area: wohnstandort
+    measures:
+      de: Städtebauliche Einbindung, Volumenanordnung und Zwischenräume für Quartiervernetzung.
+      fr: Intégration urbanistique, agencement des volumes et espaces intermédiaires pour mailler le quartier.
+      it: Integrazione urbanistica, disposizione dei volumi e spazi intermedi per collegare il quartiere.
+      en: Urban integration, volume layout and in-between spaces that connect the neighbourhood.
+    checkability: assessment_only
+  - id: K5
+    code: grossflaechiges-freiraumangebot
+    area: wohnstandort
+    measures:
+      de: Grossflächige Freiräume mit Aufenthalts-, Spiel- und Erholungsqualität und Quartieranschluss.
+      fr: Grands espaces libres avec qualité de séjour, de jeu et de détente et raccordement au quartier.
+      it: Ampi spazi aperti con qualità di sosta, gioco e riposo e collegamento al quartiere.
+      en: Large open spaces with stay, play and recreation quality and links to the neighbourhood.
+    checkability: assessment_only
+  - id: K6
+    code: partizipation
+    area: wohnstandort
+    measures:
+      de: Einbezug von Bewohnerschaft, Nachbarschaft und Quartierakteuren in Planung und Bewirtschaftung.
+      fr: Participation des habitants, du voisinage et des acteurs du quartier en planification et gestion.
+      it: Coinvolgimento di residenti, vicinato e attori del quartiere in pianificazione e gestione.
+      en: Involvement of residents, neighbours and neighbourhood actors in planning and management.
+    checkability: assessment_only
+  - id: K7
+    code: langsamverkehr
+    area: wohnanlage
+    measures:
+      de: Sichere, attraktive Fuss- und Velowegführung vom öffentlichen Raum zu Eingängen und Veloabstellplätzen.
+      fr: Cheminements piétons et vélos sûrs et attractifs de l'espace public aux entrées et aux places à vélos.
+      it: Percorsi pedonali e ciclabili sicuri e gradevoli dallo spazio pubblico a ingressi e posti bici.
+      en: Safe, attractive pedestrian and cycle routes from the public realm to entrances and cycle parking.
+    checkability: partly_checkable
+  - id: K8
+    code: gemeinsamer-aussenbereich
+    area: wohnanlage
+    measures:
+      de: Gemeinsame Aussenflächen für Aufenthalt und Spiel, differenziert nach Nutzungszonen.
+      fr: Surfaces extérieures communes pour séjour et jeu, différenciées par zones d'usage.
+      it: Superfici esterne comuni per sosta e gioco, differenziate per zone d'uso.
+      en: Shared outdoor areas for staying and playing, differentiated by use zones.
+    checkability: partly_checkable
+  - id: K9
+    code: motorisierter-individualverkehr
+    area: wohnanlage
+    measures:
+      de: Anordnung und Gestaltung von Parkplätzen ohne Beeinträchtigung von Eingängen und Langsamverkehr.
+      fr: Disposition et conception des places de stationnement sans gêner les entrées et la mobilité douce.
+      it: Disposizione e forma dei posti auto senza ostacolare ingressi e mobilità dolce.
+      en: Layout and design of car parking without hindering entrances and active mobility.
+    checkability: partly_checkable
+  - id: K10
+    code: hauseingangszone-wohnungszugaenge
+    area: wohnanlage
+    measures:
+      de: "Hauseingänge und Wege zu den Wohnungen: Übersichtlichkeit, Wetter- und Lichtsituation, Hindernisfreiheit."
+      fr: "Entrées et accès aux logements : clarté, protection météo et lumière, accessibilité sans obstacles."
+      it: "Ingressi e percorsi agli alloggi: chiarezza, protezione meteo e luce, assenza di ostacoli."
+      en: "Building entrances and routes to dwellings: clarity, weather and light, barrier-free access."
+    checkability: partly_checkable
+  - id: K11
+    code: gemeinsame-abstellraeume
+    area: wohnanlage
+    measures:
+      de: Gemeinsame Abstell- und Lagerräume für Bewohnerbedarf ausserhalb der Wohnung.
+      fr: Locaux communs de rangement et de stockage pour les besoins des habitants hors logement.
+      it: Locali comuni di deposito e magazzino per le esigenze dei residenti fuori dall'alloggio.
+      en: Shared storage rooms for residents' needs outside the dwelling.
+    checkability: partly_checkable
+  - id: K12
+    code: mehrzweck-gemeinschaftsraeume
+    area: wohnanlage
+    measures:
+      de: Mehrzweck- und Gemeinschaftsräume für Treffen, Arbeit und Freizeit in der Anlage.
+      fr: Locaux polyvalents et communautaires pour rencontres, travail et loisirs dans l'ensemble.
+      it: Locali polivalenti e comunitari per incontri, lavoro e tempo libero nel complesso.
+      en: Multipurpose and community rooms for meeting, work and leisure on the development.
+    checkability: partly_checkable
+  - id: K13
+    code: wasch-trocknungsraeume
+    area: wohnanlage
+    measures:
+      de: Gemeinschaftliche Wasch- und Trocknungsmöglichkeiten für die Bewohnerschaft.
+      fr: Possibilités collectives de lavage et de séchage pour les habitants.
+      it: Possibilità collettive di lavaggio e asciugatura per i residenti.
+      en: Shared laundry and drying facilities for residents.
+    checkability: partly_checkable
+  - id: K14
+    code: veraenderbares-raumangebot
+    area: wohnanlage
+    measures:
+      de: Flexibel nutzbare oder teilbare Raumangebote in der Wohnanlage über die Grundausstattung hinaus.
+      fr: Offre spatiale modulable ou divisible dans l'ensemble au-delà de l'équipement de base.
+      it: Offerta di spazi flessibili o divisibili nel complesso oltre l'allestimento di base.
+      en: Flexibly usable or divisible space offer in the development beyond base fit-out.
+    checkability: partly_checkable
+  - id: K15
+    code: nettowohnflaeche
+    area: wohnung
+    measures:
+      de: Angemessene Nettowohnfläche nach WBS-Glossar (begehbare Bodenflächen ab 1.50 m Raumhöhe).
+      fr: Surface habitable nette adéquate selon le glossaire WBS (surfaces au sol praticables dès 1,50 m).
+      it: Superficie abitabile netta adeguata secondo il glossario WBS (pavimenti percorribili da 1,50 m).
+      en: Adequate net living floor area per WBS glossary (walkable floor areas from 1.50 m room height).
+    checkability: model_checkable
+  - id: K16
+    code: zimmergroesse-zusaetzliche-flaechen
+    area: wohnung
+    measures:
+      de: Mindestgrössen der Zimmer und zusätzliche Flächenangebote je nach Wohnungstypologie.
+      fr: Tailles minimales des pièces et surfaces complémentaires selon le type de logement.
+      it: Dimensioni minime delle stanze e superfici aggiuntive secondo la tipologia dell'alloggio.
+      en: Minimum room sizes and additional area offers by apartment type.
+    checkability: model_checkable
+  - id: K17
+    code: vielfaeltige-nutzbarkeit
+    area: wohnung
+    measures:
+      de: Zimmer, in denen das WBS-Flächenmodul für vielfältige Einrichtung Platz findet (Tür-/Fensterlage).
+      fr: Pièces où le module de surface WBS pour des aménagements variés trouve place (portes et fenêtres).
+      it: Stanze in cui il modulo di superficie WBS per arredi diversi trova posto (porte e finestre).
+      en: Rooms where the WBS area module for varied furnishing fits (door and window positions).
+    checkability: partly_checkable
+  - id: K18
+    code: moeblierbarkeit-zimmer
+    area: wohnung
+    measures:
+      de: Anzahl möglicher Bettstellungen pro Zimmer (Bettmodul) inklusive Zugangs- und Schwenkfreiheit.
+      fr: Nombre d'emplacements de lit possibles par pièce (module lit) avec dégagements et battement des portes.
+      it: Numero di postazioni letto possibili per stanza (modulo letto) con spazi di manovra e battente porte.
+      en: Count of possible bed positions per room (bed module) including clearance and door swing.
+    checkability: partly_checkable
+  - id: K19
+    code: koch-essbereich
+    area: wohnung
+    measures:
+      de: Verhältnis von Koch- und Essbereich, Möblierbarkeit mit Tischmodul und Durchgangsbreiten.
+      fr: Rapport entre cuisine et coin repas, aménagement avec module table et largeurs de passage.
+      it: Rapporto tra cucina e zona pranzo, arredabilità con modulo tavolo e larghezze di passaggio.
+      en: Relation of kitchen and dining area, furnishability with table module and passage widths.
+    checkability: partly_checkable
+  - id: K20
+    code: ausstattung-sanitaerbereich
+    area: wohnung
+    measures:
+      de: Anzahl und Ausstattung der Sanitärräume; mindestens ein hindernisfreier Raum nach SIA 500.
+      fr: Nombre et équipement des locaux sanitaires; au moins un local sans obstacle selon SIA 500.
+      it: Numero e dotazione dei locali sanitari; almeno uno senza ostacoli secondo SIA 500.
+      en: Number and fit-out of sanitary rooms; at least one barrier-free room per SIA 500.
+    checkability: partly_checkable
+  - id: K21
+    code: moeblierbarkeit-abstellbereich
+    area: wohnung
+    measures:
+      de: Zusätzliche Schrankmodule mit Bedienungsflächen im Abstell- und Kochbereich.
+      fr: Modules d'armoire supplémentaires avec surfaces de service dans le dégagement et la cuisine.
+      it: Moduli di armadio aggiuntivi con superfici di servizio nel ripostiglio e in cucina.
+      en: Additional wardrobe modules with service clearances in storage and kitchen areas.
+    checkability: partly_checkable
+  - id: K22
+    code: anpassungsfaehigkeit-privater-raum
+    area: wohnung
+    measures:
+      de: Nachträglich entfernbare oder ergänzbare nichttragende Wände für veränderbare Wohnungsgrundrisse.
+      fr: Parois non portantes démontables ou ajoutables pour plans de logement évolutifs.
+      it: Pareti non portanti rimovibili o aggiungibili per piante abitative modificabili.
+      en: Removable or addable non-load-bearing walls for adaptable apartment layouts.
+    checkability: partly_checkable
+  - id: K23
+    code: privater-aussenbereich
+    area: wohnung
+    measures:
+      de: Privat nutzbare Aussenflächen der Wohnung (Balkon, Terrasse, Garten, Loggia).
+      fr: Surfaces extérieures à usage privé du logement (balcon, terrasse, jardin, loggia).
+      it: Superfici esterne a uso privato dell'alloggio (balcone, terrazza, giardino, loggia).
+      en: Privately usable outdoor areas of the dwelling (balcony, terrace, garden, loggia).
+    checkability: partly_checkable
+  - id: K24
+    code: uebergaenge-innen-aussen
+    area: wohnung
+    measures:
+      de: Qualität der Übergänge zwischen Wohnräumen und privatem Aussenbereich.
+      fr: Qualité des transitions entre pièces de vie et espace extérieur privé.
+      it: Qualità dei passaggi tra ambienti abitativi e spazio esterno privato.
+      en: Quality of transitions between living spaces and private outdoor area.
+    checkability: partly_checkable
+  - id: K25
+    code: private-abstellraeume-ausserhalb-wohnung
+    area: wohnung
+    measures:
+      de: Private Abstellräume ausserhalb der Wohnung, aber klar der Wohnung zugeordnet (Keller, Estrich).
+      fr: Locaux de rangement privés hors logement mais clairement rattachés au logement (cave, grenier).
+      it: Locali di deposito privati fuori dall'alloggio ma chiaramente assegnati (cantina, sottotetto).
+      en: Private storage rooms outside the dwelling but clearly assigned to it (cellar, attic).
+    checkability: partly_checkable
+
+# Crosswalk: existing furniture/kitchen components vs WBS 1:100 annex modules (Beilagen).
+# Values are planning defaults in components/*.yaml; not yet cited to WBS in component comments.
+component_furniture_crosswalk:
+  note:
+    de: Erste Gegenüberstellung; Komponentenkommentare unverändert. Details in Folge-PRs (#73).
+    en: Initial crosswalk; component comments unchanged. Details in follow-up PRs (#73).
+  wbs_reference: WBS 2015 furniture annex modules (Bett-, Tisch-, Schrankmodul); BWO Kriterienkatalog.
+  items:
+    - component: pragmaticbim:component/bett-doppel
+      wbs_module: Bettmodul Doppelbett (ca. 200 × 210 cm, seitliche Zugänge)
+      parameters_default_m: {width: 1.8, depth: 2.0}
+      clearance_default_m: {sides: 0.6}
+      match: follow_up
+      remark:
+        en: Default width 1.80 m vs WBS module ~2.00 m; side clearances 0.60 m align with 90 cm access principle but need formal WBS mapping.
+    - component: pragmaticbim:component/bett-einzel
+      wbs_module: Bettmodul Einzelbett (ca. 100 × 210 cm)
+      parameters_default_m: {width: 0.9, depth: 2.0}
+      clearance_default_m: {side: 0.6}
+      match: mostly_aligned
+      remark:
+        en: Width and depth match common WBS single-bed module; only one side clearance modelled (mirror convention).
+    - component: pragmaticbim:component/einbauschrank
+      wbs_module: Schrankmodul (60 × 60 × 180 cm, 90 cm Bedienfläche)
+      parameters_default_m: {width: 0.6, depth: 0.6, height: 2.3}
+      clearance_default_m: {front: 0.9}
+      match: mostly_aligned
+      remark:
+        en: Footprint and front clearance match Schrankmodul; default height 2.30 m exceeds WBS 1.80 m exemplar (acceptable for full-height built-ins).
+    - component: pragmaticbim:component/garderobe
+      wbs_module: Schrankmodul / entrance storage
+      parameters_default_m: {width: 1.2, depth: 0.45, height: 2.3}
+      clearance_default_m: {front: 0.9}
+      match: follow_up
+      remark:
+        en: Depth 0.45 m and variable width; compare to WBS 60 cm module grid and entrance-specific annex drawings.
+    - component: pragmaticbim:component/kuechenzeile-einzeilig
+      wbs_module: Kochbereich / Grundausstattung Küchenlänge
+      parameters_default_m: {width: 3.0, depth: 0.6}
+      clearance_default_m: {front: 1.2, manoeuvre: 1.4}
+      match: mostly_aligned
+      remark:
+        en: Work zone depth 0.60 m and 1.20 m front clearance align with WBS kitchen planning bands; Grundausstattung length per apartment size still open.
+    - component: pragmaticbim:component/esstisch
+      wbs_module: Tischmodul Koch- und Essbereich (grössenabhängig)
+      parameters_default_m: {width: 1.6, depth: 0.9}
+      clearance_default_m: {front: 0.8, back: 0.8}
+      match: follow_up
+      remark:
+        en: Table module dimensions vary by room count; defaults approximate 4-room exemplar but need per-typology table modules.
+    - component: pragmaticbim:component/sofa
+      wbs_module: Flächenmodul Wohnbereich (Sitzgruppe)
+      parameters_default_m: {width: 2.2, depth: 0.9}
+      clearance_default_m: {front: 1.0}
+      match: follow_up
+      remark:
+        en: No dedicated WBS sofa module; sofa used as living-zone anchor for furnishability checks (K17/K18 context).
