@@ -193,7 +193,7 @@ attributes:
     pset: ePset_FireStopping
     definition:
       de: |-
-        Feuerwiderstandsklasse des Brandschotts gemäss Brandschutzkonzept.
+        Feuerwiderstandsklasse des Brandschotts gemäss Brandschutzkonzept des Projekts.
 
         **Zulässige Werte**
         - `EI 30` — Raumabschluss und Wärmedämmung 30 min

@@ -148,7 +148,7 @@ attributes:
 - name: Reference
   pset: Pset_WallCommon
   definition:
-    de: Referenzbezeichnung der tragenden Innenwand gemäss Bauteilkatalog.
+    de: Referenzbezeichnung gemäss Bauteilkatalog.
     fr: Référence du mur intérieur porteur selon le catalogue des éléments.
     it: Riferimento della parete interna portante secondo il catalogo componenti.
     en: Load-bearing interior wall reference according to the component catalogue.
@@ -204,7 +204,7 @@ attributes:
   pset: Pset_WallCommon
   definition:
     de: |-
-      Kennzeichnet die Wand als tragendes Bauteil im Architekturmodell.
+      Kennzeichnet die Wand als tragend.
 
       **Zulässige Werte**
       - `TRUE` — tragendes Bauteil
@@ -451,7 +451,7 @@ attributes:
   pset: ePset_Cost
   definition:
     de: |-
-      Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
+      Kostenschnittstelle: Grund- oder Mieterausbau.
 
       **Zulässige Werte**
       - `GAB` — Grundausbau (Bauherr / Vermieter)
@@ -469,7 +469,7 @@ attributes:
       - `GAB` — allestimento di base (committente / locatore)
       - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`
     en: |-
-      Cost interface of the component – base building or tenant fit-out.
+      Cost interface: base building or tenant fit-out.
 
       **Allowed values**
       - `GAB` — base building (client / landlord)
@@ -733,7 +733,7 @@ attributes:
     de: "Verbindliche Referenzmenge für den Einheitspreis: `Qto_WallBaseQuantities.NetSideArea`."
     fr: "Quantité de référence faisant foi pour le prix unitaire : `Qto_WallBaseQuantities.NetSideArea`."
     it: "Quantità di riferimento vincolante per il prezzo unitario: `Qto_WallBaseQuantities.NetSideArea`."
-    en: "Authoritative reference quantity used with UnitPrice: `Qto_WallBaseQuantities.NetSideArea`."
+    en: "`Qto_WallBaseQuantities.NetSideArea` is the authoritative reference quantity for UnitPrice."
   datatype: IfcLabel
   needed_in_phases: ['31', '32', '33', '41']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
@@ -1146,7 +1146,7 @@ attributes:
   requirement_kind: performance
   pset: ePset_WallRequirement
   definition:
-    de: Höchstzulässige Treibhausgasemissionen der Erstellung [kg CO₂-eq/m²] je Quadratmeter Bauteilfläche gemäss Treibhausgasziel. Sollwert für den Vergleich mit GlobalWarmingPotential.
+    de: Höchstzulässige Treibhausgasemissionen der Erstellung [kg CO₂-eq/m²] je m² Bauteilfläche gemäss Treibhausgasziel. Mit GlobalWarmingPotential verglichener Sollwert.
     fr: Émissions de gaz à effet de serre maximales admissibles de la construction [kg CO₂-eq/m²] par mètre carré de surface d'élément selon l'objectif de gaz à effet de serre. Valeur cible comparée à GlobalWarmingPotential.
     it: Emissioni di gas serra massime ammesse della costruzione [kg CO₂-eq/m²] per metro quadrato di superficie del componente secondo l'obiettivo di gas serra. Valore obiettivo confrontato con GlobalWarmingPotential.
     en: Maximum permitted greenhouse gas emissions from construction [kg CO₂-eq/m²] per square metre of component area under the greenhouse gas target. Target value compared with GlobalWarmingPotential.
@@ -1187,7 +1187,7 @@ attributes:
 - name: GlobalWarmingPotential
   pset: ePset_Wall
   definition:
-    de: Treibhausgasemissionen der Erstellung [kg CO₂-eq/m²] je Quadratmeter Bauteilfläche, berechnet aus dem Aufbau und den KBOB-Ökobilanzdaten.
+    de: Treibhausgasemissionen der Erstellung [kg CO₂-eq/m²] je Quadratmeter Bauteilfläche, berechnet aus den KBOB-Ökobilanzdaten und dem Aufbau.
     fr: Émissions de gaz à effet de serre de la construction [kg CO₂-eq/m²] par mètre carré de surface d'élément, calculées à partir de la composition et des données d'écobilan KBOB.
     it: Emissioni di gas serra della costruzione [kg CO₂-eq/m²] per metro quadrato di superficie del componente, calcolate dalla stratigrafia e dai dati di ecobilancio KBOB.
     en: Greenhouse gas emissions from construction [kg CO₂-eq/m²] per square metre of component area, calculated from the build-up and KBOB life-cycle data.

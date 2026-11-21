@@ -245,7 +245,7 @@ attributes:
 - name: TreadLength
   pset: Pset_StairFlightCommon
   definition:
-    de: Auftrittslänge; bestimmt mit der Steigungshöhe das Steigungsverhältnis.
+    de: Auftrittslänge; bestimmt mit der Steigungshöhe das Steigungsverhältnis der Treppe.
     fr: Giron ; détermine avec la hauteur de contremarche le rapport de l'escalier.
     it: Pedata; determina con l'altezza dell'alzata il rapporto della scala.
     en: Tread length; together with the riser height it sets the rise-to-going ratio.

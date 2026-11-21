@@ -67,7 +67,7 @@ levels:
     en: Class 3
   description:
     de: Hohe Verfügbarkeit, Wartung ohne Unterbruch.
-    fr: Disponibilité élevée, maintenance sans interruption.
+    fr: Disponibilité élevée, maintenance sans arrêt.
     it: Disponibilità alta, manutenzione senza interruzione.
     en: High availability, maintenance without interruption.
   status: active

@@ -135,7 +135,7 @@ attributes:
   pset: Pset_RailingCommon
   definition:
     de: |-
-      Bauteilstatus für permanente und temporäre Absturzsicherungen.
+      Bauteilstatus der Absturzsicherung, permanent oder temporär.
 
       **Zulässige Werte**
       - `NEW` — Neubau
@@ -198,7 +198,7 @@ attributes:
   pset: ePset_ElementStatus
   definition:
     de: |-
-      Bauteilstatus für permanente und temporäre Absturzsicherungen.
+      Bauteilstatus der Absturzsicherung, permanent oder temporär.
 
       **Zulässige Werte**
       - `NEW` — Neubau
@@ -313,7 +313,7 @@ attributes:
     de: "Verbindliche Referenzmenge für den Einheitspreis: `Qto_RailingBaseQuantities.Length`."
     fr: "Quantité de référence faisant foi pour le prix unitaire : `Qto_RailingBaseQuantities.Length`."
     it: "Quantità di riferimento vincolante per il prezzo unitario: `Qto_RailingBaseQuantities.Length`."
-    en: "Authoritative reference quantity used with UnitPrice: `Qto_RailingBaseQuantities.Length`."
+    en: "`Qto_RailingBaseQuantities.Length` is the authoritative reference quantity for UnitPrice."
   datatype: IfcLabel
   needed_in_phases: ['31', '32', '33', '41']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
