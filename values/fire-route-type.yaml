@@ -1,0 +1,49 @@
+id: pragmaticbim:value/fire-route-type
+code: FIRE-ROUTE-TYPE
+name:
+  de: Weg im Brandfall
+  fr: Voie en cas d'incendie
+  it: Via in caso d'incendio
+  en: Route in case of fire
+description:
+  de: 'Wegarten nach VKF 10-15: Fluchtweg (kürzester Weg für Personen von einer beliebigen Stelle zu einem sicheren Ort),
+    Rettungsweg (kürzester Einsatzweg für Feuerwehr und Rettungskräfte; Fluchtwege können als Rettungswege dienen), Fluchtstrasse
+    (horizontaler Fluchtweg in Verkaufsgeschäften mit direkt ins Freie führenden Ausgängen an beiden Enden) und Hauptverkehrsweg
+    (horizontaler Fluchtweg in Verkaufsgeschäften, der mehrere Verkehrswege zusammenführt).'
+  fr: 'Types de voies selon AEAI 10-15 : voie d''évacuation (chemin le plus court pour les personnes, de n''importe quel endroit
+    vers un lieu sûr), voie de sauvetage (chemin le plus court pour les sapeurs-pompiers et équipes de sauvetage ; les voies
+    d''évacuation peuvent en servir), allée de fuite (voie d''évacuation horizontale dans les grands magasins avec issues
+    directes vers l''extérieur aux deux extrémités) et voie de circulation principale (voie d''évacuation horizontale dans
+    les grands magasins réunissant plusieurs voies de circulation).'
+  it: 'Tipi di vie secondo AICAA 10-15: via di fuga (percorso più breve per le persone da un punto qualsiasi a un luogo sicuro),
+    via di soccorso (percorso più breve per pompieri e forze di soccorso; le vie di fuga possono servire come vie di soccorso),
+    viale di fuga (via di fuga orizzontale nei negozi di vendita con uscite dirette all''aperto alle due estremità) e via
+    di circolazione principale (via di fuga orizzontale nei negozi di vendita che raggruppa più vie di circolazione).'
+  en: 'Route types under VKF 10-15: escape route (shortest path for people from any point to a safe place), rescue route (shortest
+    access path for the fire brigade and rescue services; escape routes can serve as rescue routes), escape street (horizontal
+    escape route in shops with exits leading directly outdoors at both ends) and main traffic route (horizontal escape route
+    in shops that joins several traffic routes).'
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+  - Fluchtweg
+  - Rettungsweg
+  - Fluchtstrasse
+  - Hauptverkehrsweg
+  fr:
+  - Voie d'évacuation
+  - Voie de sauvetage
+  - Allée de fuite
+  - Voie de circulation principale
+  it:
+  - Via di fuga
+  - Via di soccorso
+  - Viale di fuga
+  - Via di circolazione principale
+  en:
+  - Escape route
+  - Rescue route
+  - Escape street
+  - Main traffic route
