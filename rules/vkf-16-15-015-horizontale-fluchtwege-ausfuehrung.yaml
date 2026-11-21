@@ -1,0 +1,50 @@
+id: pragmaticbim:rule/vkf-16-15-015-horizontale-fluchtwege-ausfuehrung
+code: VKF-16-15-015
+sort_order: 71
+name:
+  de: 'Horizontale Fluchtwege: bis zum vertikalen Weg, ab 50 m unterteilt'
+  en: 'Horizontal escape routes: lead to the vertical route, subdivided above 50 m'
+  fr: 'Voies d''évacuation horizontales : jusqu''à la voie verticale, subdivisées au-delà de 50 m'
+  it: 'Vie di fuga orizzontali: fino alla via verticale, suddivise oltre 50 m'
+description:
+  de: 'Horizontale Fluchtwege führen bis zu einem vertikalen Fluchtweg oder an einen sicheren Ort im Freien. Sind sie länger
+    als 50 m, werden sie durch Brandschutzabschlüsse so unterteilt, dass ähnlich lange Fluchtwege entstehen. Einbauschränke
+    sind zulässig, wenn ihre dem Fluchtweg zugewandten Oberflächen aus Baustoffen der RF1 bestehen. Fehlt zwischen horizontalem
+    und vertikalem Fluchtweg ein Brandschutzabschluss, gelten im horizontalen Fluchtweg dieselben Anforderungen wie im vertikalen.
+    Noch nicht prüfbar: Brandschutzabschlüsse und Brandverhalten der Oberflächen sind im Modell nicht durchgängig angegeben.'
+  en: 'Horizontal escape routes lead to a vertical escape route or to a safe place outside. If they are longer than 50 m,
+    fire separations divide them so that escape routes of similar length result. Built-in cupboards are allowed if their surfaces
+    facing the escape route consist of RF1 materials. Where there is no fire separation between the horizontal and the vertical
+    escape route, the horizontal route must meet the same requirements as the vertical one. Not yet checkable: fire separations
+    and the reaction to fire of surfaces are not consistently given in the model.'
+  fr: 'Les voies d''évacuation horizontales mènent jusqu''à une voie verticale ou à un lieu sûr à l''extérieur. Au-delà de
+    50 m, elles sont subdivisées par des fermetures coupe-feu de manière à obtenir des trajets de longueur comparable. Les
+    armoires encastrées sont admises si leurs surfaces tournées vers la voie d''évacuation sont en matériaux RF1. S''il n''y
+    a pas de fermeture coupe-feu entre la voie horizontale et la voie verticale, la voie horizontale doit satisfaire aux mêmes
+    exigences que la verticale. Pas encore vérifiable : les fermetures coupe-feu et le comportement au feu des surfaces ne
+    sont pas indiqués de façon suivie dans le modèle.'
+  it: 'Le vie di fuga orizzontali conducono fino a una via di fuga verticale o a un luogo sicuro all''esterno. Se superano
+    i 50 m, vengono suddivise con chiusure antincendio in modo da ottenere percorsi di lunghezza simile. Gli armadi a muro
+    sono ammessi se le superfici rivolte verso la via di fuga sono di materiali RF1. Se tra la via orizzontale e quella verticale
+    manca una chiusura antincendio, la via orizzontale deve soddisfare gli stessi requisiti di quella verticale. Non ancora
+    verificabile: chiusure antincendio e comportamento al fuoco delle superfici non sono indicati in modo continuo nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/architecture-built-in-furniture
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-16-15-2015
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 7
+  source_quote: VKF 16-15, Ziff. 2.5.3; Ziff. 2.1 Abs. 2; Ziff. 2.4.1 Abs. 4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

@@ -1,0 +1,45 @@
+id: pragmaticbim:rule/vkf-16-15-030-atrien-innenhoefe
+code: VKF-16-15-030
+sort_order: 86
+name:
+  de: 'Atrien und Innenhöfe: Fluchtwege nur mit Rauch- und Wärmeabzug nach Nachweis'
+  en: 'Atria and inner courtyards: escape routes only with smoke and heat exhaust, verified'
+  fr: 'Atriums et cours intérieures : voies d''évacuation seulement avec évacuation de fumée et de chaleur justifiée'
+  it: 'Atri e corti interne: vie di fuga solo con evacuazione di fumo e calore dimostrata'
+description:
+  de: 'Fluchtwege über Atrien und Innenhöfe sind zulässig, wenn Rauch- und Wärmeabzugsanlagen mit einem Nachweis die sichere
+    Begehbarkeit gewährleisten. Für weitere Brandschutzanforderungen an Bauten mit Atrien verweist der Anhang auf die VKF-Brandschutzerläuterung
+    zu Bauten mit Atrien und Innenhöfen. Noch nicht prüfbar: Rauch- und Wärmeabzug sowie der Nachweis sind im Modell nicht
+    abgebildet.'
+  en: 'Escape routes across atria and inner courtyards are allowed if smoke and heat exhaust systems ensure safe walkability,
+    shown by a verification. For further fire protection requirements for buildings with atria, the appendix refers to the
+    VKF fire protection explanation on buildings with atria and inner courtyards. Not yet checkable: smoke and heat exhaust
+    and the verification are not represented in the model.'
+  fr: 'Les voies d''évacuation passant par des atriums et des cours intérieures sont admises si des installations d''évacuation
+    de fumée et de chaleur garantissent, preuve à l''appui, un cheminement sûr. Pour les autres exigences de protection incendie
+    applicables aux bâtiments à atrium, l''annexe renvoie à l''explication de protection incendie AEAI sur les bâtiments avec
+    atriums et cours intérieures. Pas encore vérifiable : l''évacuation de fumée et de chaleur ainsi que la preuve ne sont
+    pas représentées dans le modèle.'
+  it: 'Le vie di fuga attraverso atri e corti interne sono ammesse se impianti di evacuazione di fumo e calore garantiscono,
+    con dimostrazione, un percorso sicuro. Per ulteriori requisiti di protezione antincendio per edifici con atri l''allegato
+    rimanda alla spiegazione di protezione antincendio AICAA sugli edifici con atri e corti interne. Non ancora verificabile:
+    evacuazione di fumo e calore e la relativa dimostrazione non sono rappresentate nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-luftraum
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/building
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-16-15-2015
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 13
+  source_quote: VKF 16-15, Ziff. 3.10 (inkl. Anhang)
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
