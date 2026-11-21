@@ -7,10 +7,10 @@ name:
   it: Orinatoio
   en: Urinal
 definition:
-  de: Urinal an der Wand; der Achsabstand bestimmt, wie viele in eine Herrentoilette passen.
-  fr: Urinoir mural; l'entraxe détermine combien en contiennent les toilettes hommes.
-  it: Orinatoio a parete; l'interasse determina quanti ne entrano nei servizi uomini.
-  en: Wall-hung urinal; the axis spacing sets how many fit in a men's toilet.
+  de: Urinal an der Wand. Der Achsabstand zu Nachbarurinalen steht in der Fixture-Spacing-Matrix.
+  fr: Urinoir mural. L'entraxe vers les urinoirs voisins figure dans la matrice d'espacement.
+  it: Orinatoio a parete. L'interasse verso gli orinatoi vicini è nella matrice di distanze.
+  en: Wall-hung urinal. Axis spacing to neighbouring urinals is in the fixture spacing matrix.
 element: pragmaticbim:element/mep-sanitary-terminal
 predefined_type: URINAL
 category: sanitary
@@ -21,7 +21,6 @@ placement:
   - shaft
   - exterior
   side_distance_min: 0.25
-  axis_spacing_min: 0.7
 parameters:
   width:
     default: 0.4

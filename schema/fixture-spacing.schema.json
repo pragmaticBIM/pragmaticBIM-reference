@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.pragmaticbim.ch/fixture-spacing.schema.json",
+  "title": "Fixture spacing matrix",
+  "description": "Minimum distances between sanitary (and similar) fixtures by equipment function. Solution-neutral: edge or axis distance only, no fixed positions.",
+  "type": "object",
+  "required": [
+    "id",
+    "pairs"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "const": "pragmaticbim:rule/fixture-spacing"
+    },
+    "pairs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/pair"
+      }
+    }
+  },
+  "$defs": {
+    "equipmentFunction": {
+      "type": "string",
+      "enum": [
+        "toilet",
+        "washbasin",
+        "bathing",
+        "urinal",
+        "kitchen",
+        "laundry"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "kind"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "norm",
+            "owner",
+            "project",
+            "default"
+          ]
+        },
+        "reference": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "norm"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "reference"
+            ]
+          }
+        }
+      ]
+    },
+    "pair": {
+      "type": "object",
+      "required": [
+        "between",
+        "distance",
+        "measure",
+        "source"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "between": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "$ref": "#/$defs/equipmentFunction"
+          }
+        },
+        "distance": {
+          "type": "object",
+          "required": [
+            "min"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "min": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        },
+        "measure": {
+          "type": "string",
+          "enum": [
+            "edge",
+            "axis"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        }
+      }
+    }
+  }
+}

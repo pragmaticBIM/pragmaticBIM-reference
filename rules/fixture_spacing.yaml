@@ -1,0 +1,30 @@
+id: pragmaticbim:rule/fixture-spacing
+pairs:
+  - between: [toilet, washbasin]
+    distance: {min: 0.20}
+    measure: edge
+    source: {kind: default, note: Planungswert; VDI 6000 Blatt 1 prüfen}
+  - between: [toilet, bathing]
+    distance: {min: 0.20}
+    measure: edge
+    source: {kind: default, note: Planungswert; VDI 6000 Blatt 1 prüfen}
+  - between: [toilet, urinal]
+    distance: {min: 0.25}
+    measure: edge
+    source: {kind: default, note: Planungswert}
+  - between: [washbasin, bathing]
+    distance: {min: 0.20}
+    measure: edge
+    source: {kind: default, note: Planungswert}
+  - between: [washbasin, washbasin]
+    distance: {min: 0.20}
+    measure: edge
+    source: {kind: default, note: Planungswert}
+  - between: [urinal, washbasin]
+    distance: {min: 0.25}
+    measure: edge
+    source: {kind: default, note: Planungswert}
+  - between: [urinal, urinal]
+    distance: {min: 0.70}
+    measure: axis
+    source: {kind: default, note: Aus axis_spacing_min am Urinal übernommen}
