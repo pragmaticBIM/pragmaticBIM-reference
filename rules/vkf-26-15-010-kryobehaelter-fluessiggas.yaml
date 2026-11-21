@@ -1,0 +1,52 @@
+id: pragmaticbim:rule/vkf-26-15-010-kryobehaelter-fluessiggas
+code: VKF-26-15-010
+sort_order: 194
+name:
+  de: Kryobehälter im Freien mit 5 m Schutzbereich EI 60; Flüssiggas nicht in Untergeschossen
+  en: Cryogenic tanks outdoors with a 5 m protected zone EI 60; liquefied petroleum gas not in basements
+  fr: Réservoirs cryogéniques à l'extérieur avec zone de protection de 5 m EI 60 ; gaz liquéfié pas en sous-sol
+  it: Serbatoi criogenici all'aperto con zona di protezione di 5 m EI 60; gas liquefatto non nei piani interrati
+description:
+  de: 'Kryobehälter (vakuumisolierte Behälter für tiefkalt verflüssigte oxidierende oder erstickende Gase) stehen im Freien
+    und nicht in Vertiefungen. Im Umkreis von 5 m um Kryobehälter mit oxidierenden Gasen sind Gebäudefassaden öffnungslos,
+    standfest und mindestens EI 60 aus Baustoffen der RF1, und es liegen keine brennbaren Materialien; eine geeignete Schirmmauer
+    kann den Abstand verringern. Flüssiggas (LPG) wird nicht in Untergeschossen gelagert. Noch nicht prüfbar: das Modell weist
+    Gasart, Flaschenvolumen, Lagermenge und Standort der Gaslager nicht aus.'
+  en: 'Cryogenic tanks (vacuum-insulated tanks for deep-cooled liquefied oxidising or asphyxiant gases) stand outdoors and
+    not in depressions. Within 5 m of cryogenic tanks with oxidising gases, building facades are free of openings, stable
+    and at least EI 60 of RF1 materials, and no combustible materials are present; a suitable screen wall can reduce the distance.
+    Liquefied petroleum gas (LPG) is not stored in basement storeys. Not yet checkable: the model does not show gas type,
+    cylinder volume, stored quantity and location of gas storage.'
+  fr: 'Les réservoirs cryogéniques (réservoirs isolés sous vide pour gaz comburants ou asphyxiants liquéfiés à basse température)
+    sont installés à l''extérieur et pas dans des dépressions. Dans un rayon de 5 m autour des réservoirs de gaz comburants,
+    les façades sont sans ouverture, stables et au moins EI 60 en matériaux RF1, et aucun matériau combustible n''est présent
+    ; un mur écran approprié peut réduire la distance. Le gaz liquéfié (GPL) n''est pas stocké en sous-sol. Pas encore vérifiable
+    : le modèle n''indique ni le type de gaz, ni le volume des bouteilles, ni la quantité stockée, ni l''emplacement des dépôts
+    de gaz.'
+  it: 'I serbatoi criogenici (serbatoi isolati sotto vuoto per gas comburenti o asfissianti liquefatti a bassa temperatura)
+    stanno all''aperto e non in avvallamenti. Entro 5 m dai serbatoi con gas comburenti le facciate sono prive di aperture,
+    stabili e almeno EI 60 in materiali RF1 e non vi sono materiali combustibili; un idoneo muro schermo può ridurre la distanza.
+    Il gas liquefatto (GPL) non è stoccato nei piani interrati. Non ancora verificabile: il modello non indica tipo di gas,
+    volume delle bombole, quantità stoccata né ubicazione dei depositi di gas.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-tank
+- pragmaticbim:element/spaces-exterior
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/storey
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 9
+  source_quote: VKF 26-15, Ziff. 4.2 Abs. 1–3 und 4.3 Abs. 1
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

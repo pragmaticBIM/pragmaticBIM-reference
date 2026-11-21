@@ -1,0 +1,63 @@
+id: pragmaticbim:rule/vkf-26-15-026-pyrotechnik-verkauf-gebaeude
+code: VKF-26-15-026
+sort_order: 210
+name:
+  de: 'Verkauf pyrotechnischer Gegenstände in Gebäuden: nicht in Untergeschossen, Vorrat höchstens 30 kg, Verkaufsstand nicht
+    an Fluchtwegen'
+  en: 'Sale of pyrotechnic articles in buildings: not in basements, stock at most 30 kg, sales stand not at escape routes'
+  fr: 'Vente d''articles pyrotechniques dans les bâtiments : pas en sous-sol, stock de 30 kg au plus, stand pas sur les voies
+    d''évacuation'
+  it: 'Vendita di articoli pirotecnici negli edifici: non nei piani interrati, scorta al massimo 30 kg, banco non sulle vie
+    di fuga'
+description:
+  de: 'Die verkaufsverantwortliche Person überblickt den Ausstellungsbereich von ihrem Arbeitsplatz aus; im Umkreis von 2
+    m um den Stand gilt Rauchverbot mit gut sichtbarem Anschlag, und ein Handfeuerlöscher (Wasser, Sprüh- oder Luftschaum)
+    steht bereit. In Gebäuden ist der Verkauf nicht erlaubt in eingeschossigen Verkaufsräumen über 1''000 m², in mehrgeschossigen,
+    offen verbundenen Verkaufsgeschäften und in Untergeschossen. Der Vorrat im Verkaufsraum beträgt höchstens 30 kg brutto,
+    getrennt von anderen feuergefährlichen Stoffen in geschlossenen, für Kunden unzugänglichen Behältern. Der Stand steht
+    nicht vor Ein- und Ausgängen oder Fluchtwegen. Im Schaufenster sind nur gekennzeichnete Attrappen zulässig. Noch nicht
+    prüfbar: das Modell weist Kategorie, Bruttomenge, Lagerart und Verkaufsfläche pyrotechnischer Gegenstände nicht aus.'
+  en: 'The person responsible for sales oversees the display area from their workplace; within 2 m of the stand smoking is
+    banned with a clearly visible sign, and a portable extinguisher (water, spray or air foam) is ready. In buildings, sale
+    is not allowed in single-storey sales rooms over 1,000 m², in multi-storey, openly connected shops and in basement storeys.
+    Stock in the sales room is at most 30 kg gross, kept apart from other flammable substances in closed containers inaccessible
+    to customers. The stand is not placed in front of entrances and exits or escape routes. In shop windows only marked dummies
+    are allowed. Not yet checkable: the model does not show category, gross mass, storage type and sales area of pyrotechnic
+    articles.'
+  fr: 'La personne responsable de la vente a une vue d''ensemble de la zone d''exposition depuis son poste ; dans un rayon
+    de 2 m autour du stand, il est interdit de fumer, avec un avis bien visible, et un extincteur portatif (eau, mousse à
+    pulvérisation ou à air) est prêt. Dans les bâtiments, la vente n''est pas admise dans les surfaces de vente de plain-pied
+    de plus de 1''000 m², dans les magasins sur plusieurs niveaux reliés ouvertement et en sous-sol. Le stock dans le local
+    de vente est de 30 kg brut au plus, séparé des autres substances inflammables dans des récipients fermés inaccessibles
+    aux clients. Le stand n''est pas placé devant des entrées ou sorties ni sur des voies d''évacuation. En vitrine, seuls
+    des factices marqués sont admis. Pas encore vérifiable : le modèle n''indique ni la catégorie, ni la masse brute, ni le
+    mode de stockage, ni la surface de vente des articles pyrotechniques.'
+  it: 'La persona responsabile della vendita ha una visione completa dell''area espositiva dalla sua postazione; entro 2 m
+    dal banco vale il divieto di fumare con cartello ben visibile e un estintore portatile (acqua, schiuma spray o ad aria)
+    è pronto. Negli edifici la vendita non è ammessa in locali di vendita a un piano oltre 1''000 m², in negozi su più piani
+    collegati apertamente e nei piani interrati. La scorta nel locale di vendita è al massimo 30 kg lordi, separata da altre
+    sostanze infiammabili in contenitori chiusi non accessibili ai clienti. Il banco non è collocato davanti a entrate e uscite
+    né su vie di fuga. In vetrina sono ammessi solo finti prodotti contrassegnati. Non ancora verificabile: il modello non
+    indica categoria, massa lorda, tipo di stoccaggio né superficie di vendita degli articoli pirotecnici.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/storey
+- pragmaticbim:element/spaces-gross-volume
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 16
+  source_quote: VKF 26-15, Ziff. 11.3.1 Abs. 4–6 und 11.3.2 Abs. 1–4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

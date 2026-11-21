@@ -1,0 +1,66 @@
+id: pragmaticbim:rule/vkf-26-15-023-pyrotechnik-lager-allgemein
+code: VKF-26-15-023
+sort_order: 207
+name:
+  de: 'Lager pyrotechnischer Gegenstände: kühl und trocken, abgeschlossen, EI 30-Türen in Fluchtrichtung, Löscheinrichtung
+    am Zugang'
+  en: 'Stores of pyrotechnic articles: cool and dry, locked, EI 30 doors opening in escape direction, extinguishing equipment
+    at the entrance'
+  fr: 'Dépôts d''articles pyrotechniques : frais et secs, fermés à clé, portes EI 30 s''ouvrant dans le sens de la fuite,
+    moyens d''extinction à l''accès'
+  it: 'Depositi di articoli pirotecnici: freschi e asciutti, chiusi a chiave, porte EI 30 apribili nel verso di fuga, mezzi
+    di estinzione all''accesso'
+description:
+  de: 'Pyrotechnische Gegenstände bleiben in Versand- und Verpackungseinheiten. Lagerräume sind kühl, trocken, gut belüftet
+    und möglichst gleichbleibend temperiert. Elektrische Einrichtungen sind ortsfest und nach den anerkannten Regeln für feuergefährdete
+    Räume gebaut. Zutritt haben nur dort beschäftigte Personen, und die Räume werden beim Verlassen abgeschlossen. Rauchen
+    und offenes Feuer sind verboten, mit gut sichtbarem Hinweis. Bei den Zugängen stehen geeignete Löscheinrichtungen. Türen
+    gegen das Gebäudeinnere sind EI 30 und öffnen in Fluchtrichtung. Polizei und Feuerwehr kennen Standort und Art des Lagergutes.
+    Grosslager (über 300 kg brutto) liegen nicht in einer Wohnzone und sind gegen Blitzschlag geschützt. Noch nicht prüfbar:
+    das Modell weist Kategorie, Bruttomenge, Lagerart und Verkaufsfläche pyrotechnischer Gegenstände nicht aus.'
+  en: 'Pyrotechnic articles stay in their shipping and packaging units. Storage rooms are cool, dry, well ventilated and kept
+    at as constant a temperature as possible. Electrical equipment is fixed and built to the recognised rules for rooms at
+    fire risk. Only persons working there have access, and the rooms are locked when left. Smoking and open fire are prohibited,
+    with a clearly visible sign. Suitable extinguishing equipment is provided at the entrances. Doors to the building interior
+    are EI 30 and open in the escape direction. Police and fire brigade know location and type of the stored goods. Large
+    stores (over 300 kg gross) are not located in a residential zone and are protected against lightning. Not yet checkable:
+    the model does not show category, gross mass, storage type and sales area of pyrotechnic articles.'
+  fr: 'Les articles pyrotechniques restent dans leurs unités d''expédition et d''emballage. Les locaux de stockage sont frais,
+    secs, bien ventilés et à température aussi constante que possible. Les installations électriques sont fixes et réalisées
+    selon les règles reconnues pour locaux à risque d''incendie. Seules les personnes qui y travaillent y ont accès et les
+    locaux sont fermés à clé en les quittant. Fumer et le feu ouvert sont interdits, avec un avis bien visible. Des moyens
+    d''extinction appropriés se trouvent aux accès. Les portes vers l''intérieur du bâtiment sont EI 30 et s''ouvrent dans
+    le sens de la fuite. La police et les sapeurs-pompiers connaissent l''emplacement et le type des marchandises. Les grands
+    dépôts (plus de 300 kg brut) ne se trouvent pas en zone d''habitation et sont protégés contre la foudre. Pas encore vérifiable
+    : le modèle n''indique ni la catégorie, ni la masse brute, ni le mode de stockage, ni la surface de vente des articles
+    pyrotechniques.'
+  it: 'Gli articoli pirotecnici restano nelle unità di spedizione e imballaggio. I locali di stoccaggio sono freschi, asciutti,
+    ben ventilati e a temperatura il più possibile costante. Gli impianti elettrici sono fissi e realizzati secondo le regole
+    riconosciute per locali a rischio d''incendio. Accedono solo le persone che vi lavorano e i locali sono chiusi a chiave
+    all''uscita. Fumare e usare fuoco libero sono vietati, con avviso ben visibile. Presso gli accessi vi sono mezzi di estinzione
+    idonei. Le porte verso l''interno dell''edificio sono EI 30 e si aprono nel verso di fuga. Polizia e pompieri conoscono
+    ubicazione e tipo della merce. I grandi depositi (oltre 300 kg lordi) non si trovano in zona residenziale e sono protetti
+    contro i fulmini. Non ancora verificabile: il modello non indica categoria, massa lorda, tipo di stoccaggio né superficie
+    di vendita degli articoli pirotecnici.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/mep-light-fixture
+- pragmaticbim:element/mep-fire-suppression-terminal
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 15
+  source_quote: VKF 26-15, Ziff. 11.2.1 Abs. 1–11
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

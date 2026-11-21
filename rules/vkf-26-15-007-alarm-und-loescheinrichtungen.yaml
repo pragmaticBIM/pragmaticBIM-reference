@@ -1,0 +1,47 @@
+id: pragmaticbim:rule/vkf-26-15-007-alarm-und-loescheinrichtungen
+code: VKF-26-15-007
+sort_order: 191
+name:
+  de: Löscheinrichtungen in gefährdeten Bauten; Brandmelde-, Gaswarn- oder Löschanlagen nach Bedarf
+  en: Extinguishing equipment in hazard buildings; fire alarm, gas warning or extinguishing systems as needed
+  fr: Moyens d'extinction dans les bâtiments à risque ; détection incendie, alarme gaz ou extinction selon les besoins
+  it: Mezzi di estinzione negli edifici a rischio; rivelazione incendio, allarme gas o impianti di estinzione se necessario
+description:
+  de: 'In Bauten und Anlagen mit feuer- oder explosionsgefährdeten Räumen oder Zonen werden an zweckmässigen Stellen und in
+    ausreichender Zahl geeignete Löscheinrichtungen installiert. Verlangen es die Verhältnisse, kommen Brandmeldeanlagen,
+    Gaswarnanlagen oder Löschanlagen hinzu. Noch nicht prüfbar: das Modell weist Stoffklassierung, Lagermenge, Lagerart und
+    Lagerort gefährlicher Stoffe nicht aus.'
+  en: 'In buildings and plant with rooms or zones at fire or explosion risk, suitable extinguishing equipment is installed
+    at suitable places and in sufficient number. Where conditions require it, fire alarm systems, gas warning systems or extinguishing
+    systems are added. Not yet checkable: the model does not show substance classification, stored quantity, type and location
+    of hazardous substances.'
+  fr: 'Dans les bâtiments et installations avec locaux ou zones à risque d''incendie ou d''explosion, des moyens d''extinction
+    appropriés sont installés aux endroits adéquats et en nombre suffisant. Si les circonstances l''exigent, des installations
+    de détection incendie, d''alarme gaz ou d''extinction s''y ajoutent. Pas encore vérifiable : le modèle n''indique ni la
+    classification des substances, ni la quantité stockée, ni le mode et le lieu de stockage des substances dangereuses.'
+  it: 'In edifici e impianti con locali o zone a rischio d''incendio o d''esplosione sono installati mezzi di estinzione idonei
+    in punti adeguati e in numero sufficiente. Se le circostanze lo richiedono si aggiungono impianti di rivelazione incendio,
+    allarme gas o estinzione. Non ancora verificabile: il modello non indica classificazione delle sostanze, quantità stoccata
+    né tipo e luogo di stoccaggio delle sostanze pericolose.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fire-suppression-terminal
+- pragmaticbim:element/mep-alarm
+- pragmaticbim:element/mep-sensor
+- pragmaticbim:element/spaces-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 8
+  source_quote: VKF 26-15, Ziff. 3.5.4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

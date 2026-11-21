@@ -1,0 +1,57 @@
+id: pragmaticbim:rule/vkf-26-15-019-reifenlager-allgemein-freiluft
+code: VKF-26-15-019
+sort_order: 203
+name:
+  de: 'Reifenlager im Freien: Fläche 2''400 bzw. 4''800 m², Abschnitte 100 m² mit 10 m Abstand, 10 m zu Gebäuden'
+  en: 'Open-air tyre stores: area 2,400 or 4,800 m², sections of 100 m² with 10 m spacing, 10 m to buildings'
+  fr: 'Dépôts de pneus à l''extérieur : surface 2''400 ou 4''800 m², sections de 100 m² espacées de 10 m, 10 m des bâtiments'
+  it: 'Depositi di pneumatici all''aperto: superficie 2''400 o 4''800 m², sezioni di 100 m² distanziate di 10 m, 10 m dagli
+    edifici'
+description:
+  de: 'Bis 1 t oder weniger als 10 m² Lagerfläche gelten keine Anforderungen. Lager sind gegen unbefugten Zutritt geschützt,
+    und es bestehen Brandschutz- und Feuerwehreinsatzpläne. Als Lager im Freien gelten Freiluftlager und solche mit Dach ohne
+    seitliche Wände. Die höchste Lagerfläche beträgt 2''400 m² (überdacht) oder 4''800 m² (Freiluft), unterteilt in Lagerabschnitte
+    zu höchstens 100 m². Zwischen Abschnitten gilt ein Abstand von mindestens 10 m oder eine standfeste Schirmmauer REI 90.
+    Lager im Freien haben ausreichend Hydranten; zu Gebäuden beträgt der Abstand ohne weitere Massnahmen 10 m. Noch nicht
+    prüfbar: das Modell weist Lagermenge, Lagerfläche und Lagerart von Reifen und Folgeprodukten nicht aus.'
+  en: 'Up to 1 t or less than 10 m² of storage area, no requirements apply. Stores are protected against unauthorised access,
+    and fire protection and fire brigade intervention plans exist. Outdoor stores are open-air stores and stores with a roof
+    without side walls. The maximum storage area is 2,400 m² (roofed) or 4,800 m² (open air), divided into storage sections
+    of at most 100 m². Between sections a distance of at least 10 m or a stable screen wall REI 90 applies. Outdoor stores
+    have sufficient hydrants; the distance to buildings is 10 m without further measures. Not yet checkable: the model does
+    not show stored mass, storage area and storage type of tyres and derived products.'
+  fr: 'Jusqu''à 1 t ou moins de 10 m² de surface de stockage, aucune exigence ne s''applique. Les dépôts sont protégés contre
+    l''accès non autorisé et des plans de protection incendie et d''intervention des sapeurs-pompiers existent. Sont des dépôts
+    extérieurs les dépôts à ciel ouvert et ceux avec toit sans parois latérales. La surface maximale est de 2''400 m² (couvert)
+    ou 4''800 m² (à ciel ouvert), subdivisée en sections de 100 m² au plus. Entre sections, une distance d''au moins 10 m
+    ou un mur écran stable REI 90 s''applique. Les dépôts extérieurs disposent de suffisamment de bornes hydrantes ; la distance
+    aux bâtiments est de 10 m sans autre mesure. Pas encore vérifiable : le modèle n''indique ni la quantité, ni la surface,
+    ni le mode de stockage des pneus et produits dérivés.'
+  it: 'Fino a 1 t o meno di 10 m² di superficie di stoccaggio non valgono requisiti. I depositi sono protetti dall''accesso
+    non autorizzato ed esistono piani antincendio e d''intervento dei pompieri. Sono depositi all''aperto quelli senza protezione
+    dalle intemperie e quelli con copertura senza pareti laterali. La superficie massima è 2''400 m² (coperti) o 4''800 m²
+    (scoperti), suddivisa in sezioni di al massimo 100 m². Tra le sezioni vale una distanza di almeno 10 m o un muro schermo
+    stabile REI 90. I depositi all''aperto dispongono di idranti sufficienti; la distanza dagli edifici è 10 m senza altre
+    misure. Non ancora verificabile: il modello non indica quantità, superficie né tipo di stoccaggio di pneumatici e prodotti
+    derivati.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-exterior
+- pragmaticbim:element/building
+- pragmaticbim:element/landscape-retention
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 12
+  source_quote: VKF 26-15, Ziff. 8.1 Abs. 1–4 und 8.2 Abs. 1–6
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

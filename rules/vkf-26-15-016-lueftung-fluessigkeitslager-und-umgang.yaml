@@ -1,0 +1,67 @@
+id: pragmaticbim:rule/vkf-26-15-016-lueftung-fluessigkeitslager-und-umgang
+code: VKF-26-15-016
+sort_order: 200
+name:
+  de: 'Lüftung bei leicht brennbaren Flüssigkeiten: natürliche Öffnungen 20 cm² je m², künstlich 3- bis 5-facher, beim Umgang
+    10-facher Luftwechsel'
+  en: 'Ventilation for highly flammable liquids: natural openings 20 cm² per m², artificial 3 to 5 air changes, 10 during
+    handling'
+  fr: 'Ventilation pour liquides facilement inflammables : ouvertures naturelles de 20 cm² par m², artificielle 3 à 5 renouvellements,
+    10 lors de la manipulation'
+  it: 'Ventilazione per liquidi facilmente infiammabili: aperture naturali 20 cm² per m², artificiale 3–5 ricambi d''aria,
+    10 durante la manipolazione'
+description:
+  de: 'Natürlich ausreichend gelüftet sind Lagerräume über dem Erdboden mit mindestens zwei gegenüberliegenden, nicht verschliessbaren
+    Öffnungen ins Freie, eine davon höchstens 0.1 m über Boden, je mindestens 20 cm² pro m² Bodenfläche. Andere Räume (z.
+    B. Unterflurräume) werden künstlich entlüftet: 3- bis 5-facher Luftwechsel pro Stunde mit Absaugstellen höchstens 0.1
+    m über Boden. Intermittierender Betrieb nach Zeitschaltung muss beim Betreten und beim Betrieb zwangsläufig einschalten;
+    bei Steuerung durch eine Gaswarnanlage kann auf Dauer- oder intermittierende Lüftung verzichtet werden. Beim Umgang ohne
+    geschlossenes System oder Absaugung gilt ein 10-facher Luftwechsel pro Stunde, Absaugung ebenfalls höchstens 0.1 m über
+    Boden. Noch nicht prüfbar: das Modell weist Flammpunkt, Lagervolumen, Behälterart und Feuerwiderstand des Lagerraums nicht
+    aus.'
+  en: 'Storage rooms count as sufficiently naturally ventilated when above ground with at least two opposite non-closable
+    openings to the outside, one of them at most 0.1 m above the floor, each at least 20 cm² per m² of floor area. Other rooms
+    (e.g. below-ground rooms) are ventilated artificially: 3 to 5 air changes per hour with extraction points at most 0.1
+    m above the floor. Intermittent operation by timer must switch on automatically when the room is entered and when equipment
+    runs; if a gas warning system controls it, continuous or intermittent ventilation can be omitted. For handling without
+    a closed system or extraction, 10 air changes per hour apply, with extraction also at most 0.1 m above the floor. Not
+    yet checkable: the model does not show flash point, stored volume, container type and fire resistance of the storage room.'
+  fr: 'Sont suffisamment ventilés naturellement les locaux de stockage au-dessus du sol avec au moins deux ouvertures opposées
+    non obturables vers l''extérieur, dont une au plus à 0.1 m du sol, chacune d''au moins 20 cm² par m² de surface au sol.
+    Les autres locaux (p. ex. en sous-sol) sont ventilés artificiellement : 3 à 5 renouvellements d''air par heure avec points
+    d''aspiration au plus à 0.1 m du sol. Le fonctionnement intermittent par minuterie doit s''enclencher d''office à l''entrée
+    et lors de l''exploitation ; s''il est commandé par une installation d''alarme gaz, la ventilation permanente ou intermittente
+    peut être omise. Pour la manipulation sans système fermé ni aspiration, 10 renouvellements d''air par heure s''appliquent,
+    aspiration aussi au plus à 0.1 m du sol. Pas encore vérifiable : le modèle n''indique ni le point d''éclair, ni le volume
+    stocké, ni le type de récipient, ni la résistance au feu du local de stockage.'
+  it: 'Sono sufficientemente ventilati in modo naturale i locali di stoccaggio fuori terra con almeno due aperture opposte
+    non chiudibili verso l''esterno, una delle quali al massimo a 0.1 m dal pavimento, ciascuna di almeno 20 cm² per m² di
+    superficie. Gli altri locali (p. es. interrati) sono ventilati artificialmente: 3–5 ricambi d''aria all''ora con punti
+    di aspirazione al massimo a 0.1 m dal pavimento. Il funzionamento intermittente a timer deve inserirsi d''obbligo all''ingresso
+    e durante l''esercizio; se comandato da un impianto di allarme gas si può rinunciare alla ventilazione continua o intermittente.
+    Per la manipolazione senza sistema chiuso né aspirazione valgono 10 ricambi d''aria all''ora, aspirazione anch''essa al
+    massimo a 0.1 m dal pavimento. Non ancora verificabile: il modello non indica punto d''infiammabilità, volume stoccato,
+    tipo di contenitore né resistenza al fuoco del locale di stoccaggio.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fan
+- pragmaticbim:element/mep-schematic-duct
+- pragmaticbim:element/mep-sensor
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-window-exterior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 11
+  source_quote: VKF 26-15, Ziff. 5.2.4 Abs. 1–5 und 5.4 Abs. 1–3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

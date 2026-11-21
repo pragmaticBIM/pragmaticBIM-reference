@@ -1,0 +1,56 @@
+id: pragmaticbim:rule/vkf-26-15-020-reifenlager-gebaeude
+code: VKF-26-15-020
+sort_order: 204
+name:
+  de: 'Reifenlager in Gebäuden: an Aussenwand, EI 60 bis 60 t/600 m², darüber EI 90 mit Sprinkleranlage und Schaum'
+  en: 'Tyre stores in buildings: on an exterior wall, EI 60 up to 60 t/600 m², above that EI 90 with sprinklers and foam'
+  fr: 'Dépôts de pneus dans les bâtiments : en façade, EI 60 jusqu''à 60 t/600 m², au-delà EI 90 avec sprinklers et mousse'
+  it: 'Depositi di pneumatici negli edifici: a parete esterna, EI 60 fino a 60 t/600 m², oltre EI 90 con sprinkler e schiuma'
+description:
+  de: 'Lager liegen an einer Aussenwand und haben direkt ins Freie führende Ausräumöffnungen von mindestens 2 × 2 m. Bis 100
+    m² darf das Lager in der Nutzungseinheit ohne feuerwiderstandsfähige Abtrennung stehen. Bis 60 t oder 600 m² ist es als
+    Brandabschnitt EI 60 abgetrennt und hat eine Rauch- und Wärmeabzugsanlage. Darüber ist es Brandabschnitt EI 90 mit Rauch-
+    und Wärmeabzugskonzept zur Genehmigung und mit Sprinkleranlage mit filmbildendem Schaummittel. Je Brandabschnitt lagern
+    höchstens 240 t bei 2''400 m² Abschnittsgrösse. Noch nicht prüfbar: das Modell weist Lagermenge, Lagerfläche und Lagerart
+    von Reifen und Folgeprodukten nicht aus.'
+  en: 'Stores are on an exterior wall and have clearing openings of at least 2 × 2 m leading directly outdoors. Up to 100
+    m² the store may stand in the usage unit without fire-resistant separation. Up to 60 t or 600 m² it is separated as a
+    fire compartment EI 60 and has smoke and heat exhaust. Above that it is a fire compartment EI 90 with a smoke and heat
+    exhaust concept for approval and a sprinkler system with film-forming foam agent. At most 240 t are stored per compartment
+    at a compartment size of 2,400 m². Not yet checkable: the model does not show stored mass, storage area and storage type
+    of tyres and derived products.'
+  fr: 'Les dépôts sont situés en façade et ont des ouvertures de dégagement d''au moins 2 × 2 m donnant directement sur l''extérieur.
+    Jusqu''à 100 m², le dépôt peut se trouver dans l''unité d''utilisation sans séparation résistant au feu. Jusqu''à 60 t
+    ou 600 m², il est séparé en compartiment EI 60 et dispose d''une installation d''évacuation de fumée et de chaleur. Au-delà,
+    c''est un compartiment EI 90 avec concept d''évacuation de fumée et de chaleur soumis à approbation et installation sprinkler
+    avec émulseur filmogène. Au plus 240 t sont stockées par compartiment pour une taille de 2''400 m². Pas encore vérifiable
+    : le modèle n''indique ni la quantité, ni la surface, ni le mode de stockage des pneus et produits dérivés.'
+  it: 'I depositi sono su una parete esterna e hanno aperture di sgombero di almeno 2 × 2 m direttamente verso l''esterno.
+    Fino a 100 m² il deposito può stare nell''unità d''uso senza separazione resistente al fuoco. Fino a 60 t o 600 m² è separato
+    come compartimento EI 60 e ha un impianto di evacuazione fumo e calore. Oltre è compartimento EI 90 con concetto di evacuazione
+    fumo e calore da approvare e impianto sprinkler con schiumogeno filmogeno. Per compartimento si stoccano al massimo 240
+    t con compartimento di 2''400 m². Non ancora verificabile: il modello non indica quantità, superficie né tipo di stoccaggio
+    di pneumatici e prodotti derivati.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/architecture-door-exterior
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/mep-fire-suppression-terminal
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 13
+  source_quote: VKF 26-15, Ziff. 8.3 Abs. 1–6
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

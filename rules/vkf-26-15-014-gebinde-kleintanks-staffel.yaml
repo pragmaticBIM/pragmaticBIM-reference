@@ -1,0 +1,63 @@
+id: pragmaticbim:rule/vkf-26-15-014-gebinde-kleintanks-staffel
+code: VKF-26-15-014
+sort_order: 198
+name:
+  de: 'Gebinde und Kleintanks: Anforderung an Raum oder Schrank nach Lagermenge (25 l bis über 2''000 l) und Flammpunkt'
+  en: 'Containers and small tanks: requirement for room or cabinet by stored quantity (25 l to over 2,000 l) and flash point'
+  fr: 'Emballages et petites citernes : exigence pour le local ou l''armoire selon la quantité (25 l à plus de 2''000 l) et
+    le point d''éclair'
+  it: 'Contenitori e piccoli serbatoi: requisito per locale o armadio secondo quantità (da 25 l a oltre 2''000 l) e punto
+    d''infiammabilità'
+description:
+  de: 'Für brennbare Flüssigkeiten mit Flammpunkt bis 60 °C gilt je Brandabschnitt: bis 25 l Raum beliebiger Bauart; 26–100
+    l RF1-Schrank mit Auffangwanne und Kennzeichnung; 101–450 l Raum EI 30 mit geringem Brandrisiko; 451–2''000 l Raum EI
+    60 ohne zusätzliche Brandlasten; über 2''000 l Raum EI 90 ohne zusätzliche Brandlasten. Bei Flammpunkt über 60 °C: bis
+    25 l beliebig; 26–450 l RF1-Schrank mit Auffangwanne und Kennzeichnung; 451–2''000 l Raum EI 30 mit geringem Brandrisiko;
+    über 2''000 l Raum EI 60 ohne zusätzliche Brandlasten. Statt eines Raumes ist ein Schrank nach SN EN 14470-1 mit entsprechendem
+    Feuerwiderstand möglich. Noch nicht prüfbar: das Modell weist Flammpunkt, Lagervolumen, Behälterart und Feuerwiderstand
+    des Lagerraums nicht aus.'
+  en: 'For combustible liquids with a flash point up to 60 °C, per compartment: up to 25 l a room of any construction; 26–100
+    l an RF1 cabinet with collecting tray and marking; 101–450 l a room EI 30 with low fire risk; 451–2,000 l a room EI 60
+    without additional fire loads; above 2,000 l a room EI 90 without additional fire loads. For a flash point above 60 °C:
+    up to 25 l any; 26–450 l an RF1 cabinet with collecting tray and marking; 451–2,000 l a room EI 30 with low fire risk;
+    above 2,000 l a room EI 60 without additional fire loads. A cabinet to SN EN 14470-1 with matching fire resistance can
+    replace a room. Not yet checkable: the model does not show flash point, stored volume, container type and fire resistance
+    of the storage room.'
+  fr: 'Pour les liquides combustibles de point d''éclair jusqu''à 60 °C, par compartiment : jusqu''à 25 l local de toute construction
+    ; 26–100 l armoire RF1 avec bac de rétention et marquage ; 101–450 l local EI 30 à faible risque d''incendie ; 451–2''000
+    l local EI 60 sans charges calorifiques supplémentaires ; plus de 2''000 l local EI 90 sans charges calorifiques supplémentaires.
+    Pour un point d''éclair supérieur à 60 °C : jusqu''à 25 l libre ; 26–450 l armoire RF1 avec bac de rétention et marquage
+    ; 451–2''000 l local EI 30 à faible risque d''incendie ; plus de 2''000 l local EI 60 sans charges calorifiques supplémentaires.
+    Une armoire selon SN EN 14470-1 de résistance au feu correspondante peut remplacer un local. Pas encore vérifiable : le
+    modèle n''indique ni le point d''éclair, ni le volume stocké, ni le type de récipient, ni la résistance au feu du local
+    de stockage.'
+  it: 'Per liquidi combustibili con punto d''infiammabilità fino a 60 °C, per compartimento: fino a 25 l locale di qualsiasi
+    costruzione; 26–100 l armadio RF1 con vasca di raccolta e marcatura; 101–450 l locale EI 30 a basso rischio d''incendio;
+    451–2''000 l locale EI 60 senza carichi d''incendio aggiuntivi; oltre 2''000 l locale EI 90 senza carichi d''incendio
+    aggiuntivi. Con punto d''infiammabilità oltre 60 °C: fino a 25 l libero; 26–450 l armadio RF1 con vasca di raccolta e
+    marcatura; 451–2''000 l locale EI 30 a basso rischio d''incendio; oltre 2''000 l locale EI 60 senza carichi d''incendio
+    aggiuntivi. Un armadio secondo SN EN 14470-1 con resistenza al fuoco corrispondente può sostituire un locale. Non ancora
+    verificabile: il modello non indica punto d''infiammabilità, volume stoccato, tipo di contenitore né resistenza al fuoco
+    del locale di stoccaggio.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/mep-tank
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 10
+  source_quote: VKF 26-15, Ziff. 5.2.2 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

@@ -1,0 +1,66 @@
+id: pragmaticbim:rule/vkf-26-15-024-pyrotechnik-lager-mengenstaffel
+code: VKF-26-15-024
+sort_order: 208
+name:
+  de: 'Pyrotechnik-Lager nach Menge: bis 50 kg EI 30, bis 300 kg EI 60, bis 1''000 kg an Aussenwand, darüber freistehend mit
+    20 m Abstand'
+  en: 'Pyrotechnic stores by quantity: up to 50 kg EI 30, up to 300 kg EI 60, up to 1,000 kg on an exterior wall, above that
+    free-standing with 20 m distance'
+  fr: 'Dépôts pyrotechniques selon la quantité : jusqu''à 50 kg EI 30, 300 kg EI 60, 1''000 kg en façade, au-delà isolé à
+    20 m'
+  it: 'Depositi pirotecnici per quantità: fino a 50 kg EI 30, 300 kg EI 60, 1''000 kg a parete esterna, oltre isolato a 20
+    m'
+description:
+  de: 'Bis 50 kg brutto (vorübergehend, höchstens 1 Monat) sind Räume mit EI 30 auszubauen und dürfen bei geringem Brandrisiko
+    anderen Zwecken dienen. Bis 300 kg brutto sind Räume EI 60 ohne andere Nutzung nötig. Bis 1''000 kg brutto liegen die
+    Räume an einer Aussenwand (Druckentlastung) eines alleinstehenden Baus aus RF1, nicht überbaut, ohne andere Nutzung, in
+    RF1-Konstruktion; ein- oder angebaute Räume und Dachräume sind öffnungslos EI 90 aus RF1 abgetrennt, und angrenzende Gebäudeteile
+    haben weder besondere Brandgefahr noch grosse Personenbelegung. Über 1''000 kg brutto gehören in alleinstehende, eingeschossige,
+    nur dafür genutzte RF1-Bauten mit mindestens 20 m Schutzabstand; mehr bei grossen Mengen oder riskanten Nachbarn, durch
+    Risikoanalyse genehmigt. Noch nicht prüfbar: das Modell weist Kategorie, Bruttomenge, Lagerart und Verkaufsfläche pyrotechnischer
+    Gegenstände nicht aus.'
+  en: 'Up to 50 kg gross (temporary, at most 1 month) rooms are built EI 30 and, with low fire risk, may serve other purposes.
+    Up to 300 kg gross, rooms EI 60 without other use are needed. Up to 1,000 kg gross the rooms are on an exterior wall (pressure
+    relief) of a free-standing RF1 building, not built over, without other use, of RF1 construction; built-in or attached
+    rooms and rooftop rooms are separated without openings by EI 90 of RF1, and adjoining building parts have neither special
+    fire hazard nor high occupancy. Above 1,000 kg gross belong in free-standing, single-storey, dedicated RF1 buildings with
+    at least 20 m protective distance; more for large quantities or risky neighbours, approved by risk analysis. Not yet checkable:
+    the model does not show category, gross mass, storage type and sales area of pyrotechnic articles.'
+  fr: 'Jusqu''à 50 kg brut (temporairement, au plus 1 mois), les locaux sont réalisés EI 30 et peuvent, si le risque est faible,
+    servir à d''autres fins. Jusqu''à 300 kg brut, des locaux EI 60 sans autre usage sont nécessaires. Jusqu''à 1''000 kg
+    brut, les locaux se trouvent en façade (décharge de pression) d''un bâtiment isolé en RF1, non surbâtis, sans autre usage,
+    en construction RF1 ; les locaux intégrés ou accolés et ceux en toiture sont séparés sans ouverture par EI 90 en RF1,
+    et les parties de bâtiment voisines n''ont ni danger d''incendie particulier ni forte occupation. Au-delà de 1''000 kg
+    brut, bâtiments isolés de plain-pied à usage exclusif en RF1 avec au moins 20 m de distance de protection ; plus en cas
+    de grandes quantités ou de voisins à risque, approuvé par analyse de risque. Pas encore vérifiable : le modèle n''indique
+    ni la catégorie, ni la masse brute, ni le mode de stockage, ni la surface de vente des articles pyrotechniques.'
+  it: 'Fino a 50 kg lordi (temporaneamente, al massimo 1 mese) i locali sono realizzati EI 30 e, con basso rischio d''incendio,
+    possono servire ad altri scopi. Fino a 300 kg lordi servono locali EI 60 senza altro uso. Fino a 1''000 kg lordi i locali
+    stanno a parete esterna (scarico di pressione) di un edificio isolato in RF1, non sormontati, senza altro uso, in costruzione
+    RF1; i locali integrati o addossati e quelli in copertura sono separati senza aperture con EI 90 in RF1 e le parti di
+    edificio adiacenti non presentano né pericolo d''incendio particolare né grande affollamento. Oltre 1''000 kg lordi vanno
+    in edifici isolati a un piano a uso esclusivo in RF1 con almeno 20 m di distanza di protezione; di più per grandi quantità
+    o vicini a rischio, approvato con analisi del rischio. Non ancora verificabile: il modello non indica categoria, massa
+    lorda, tipo di stoccaggio né superficie di vendita degli articoli pirotecnici.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/building
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 15
+  source_quote: VKF 26-15, Ziff. 11.2.2–11.2.5
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

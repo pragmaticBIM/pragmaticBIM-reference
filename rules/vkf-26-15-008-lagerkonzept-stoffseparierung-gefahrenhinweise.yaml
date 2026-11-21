@@ -1,0 +1,61 @@
+id: pragmaticbim:rule/vkf-26-15-008-lagerkonzept-stoffseparierung-gefahrenhinweise
+code: VKF-26-15-008
+sort_order: 192
+name:
+  de: Lagerkonzept, Stoffseparierung in getrennten Brandabschnitten und Gefahrenhinweise
+  en: Storage concept, substance segregation in separate fire compartments and hazard signs
+  fr: Concept de stockage, séparation des substances en compartiments distincts et signalisation des dangers
+  it: Concetto di stoccaggio, separazione delle sostanze in compartimenti distinti e segnalazione dei pericoli
+description:
+  de: 'Für Lager mit gefährlichen Stoffen wird ein Lagerkonzept erstellt (Lagerliste, Lagerort, -art und -behältnis, bauliche,
+    technische und organisatorische Massnahmen). Stoffe, die gefährlich miteinander reagieren können, solche mit besonderem
+    Brandverhalten oder solche, die im Brandfall Personen gefährden, kommen in getrennte, entsprechend ausgebaute Brandabschnitte;
+    bei Stoffen verschiedener Gefahrklassen im selben Raum richten sich die Massnahmen nach dem gefährlichsten Produkt. Der
+    Anhang erlaubt bis 1''000 kg bzw. l im selben Brandabschnitt Zusammen-, Getrennt- oder Separatlagerung je nach Stoffpaarung;
+    Getrenntlagerung heisst Schirmmauer mindestens EI 60 oder 2.5 m Abstand. Auf Brand- und Explosionsgefahr und Rauchverbot
+    ist gut sichtbar hinzuweisen. Noch nicht prüfbar: das Modell weist Stoffklassierung, Lagermenge, Lagerart und Lagerort
+    gefährlicher Stoffe nicht aus.'
+  en: 'A storage concept is drawn up for stores with hazardous substances (inventory, location, type and container, structural,
+    technical and organisational measures). Substances that can react dangerously with each other, those with special fire
+    behaviour or those that endanger people in a fire go into separate, suitably built fire compartments; for substances of
+    different hazard classes in the same room, measures follow the most hazardous product. The annex allows, up to 1,000 kg
+    or l in the same compartment, storing together, apart or separately depending on the pair of substances; storing apart
+    means a screen wall of at least EI 60 or 2.5 m distance. Fire and explosion hazard and the smoking ban are signed visibly.
+    Not yet checkable: the model does not show substance classification, stored quantity, type and location of hazardous substances.'
+  fr: 'Un concept de stockage est établi pour les dépôts de substances dangereuses (liste, emplacement, type et récipient,
+    mesures constructives, techniques et organisationnelles). Les substances pouvant réagir dangereusement entre elles, celles
+    au comportement au feu particulier ou dangereuses pour les personnes en cas d''incendie vont dans des compartiments distincts
+    et adaptés ; pour des substances de classes de danger différentes dans le même local, les mesures suivent le produit le
+    plus dangereux. L''annexe admet, jusqu''à 1''000 kg ou l dans le même compartiment, un stockage commun, séparé ou à part
+    selon la paire de substances ; séparé signifie mur écran au moins EI 60 ou 2.5 m de distance. Le danger d''incendie et
+    d''explosion et l''interdiction de fumer sont signalés de façon bien visible. Pas encore vérifiable : le modèle n''indique
+    ni la classification des substances, ni la quantité stockée, ni le mode et le lieu de stockage des substances dangereuses.'
+  it: 'Per i depositi con sostanze pericolose è redatto un concetto di stoccaggio (elenco, ubicazione, tipo e contenitore,
+    misure edilizie, tecniche e organizzative). Le sostanze che possono reagire pericolosamente tra loro, quelle con comportamento
+    al fuoco particolare o che mettono in pericolo le persone in caso d''incendio vanno in compartimenti separati e adeguati;
+    per sostanze di classi di pericolo diverse nello stesso locale le misure seguono il prodotto più pericoloso. L''allegato
+    ammette, fino a 1''000 kg o l nello stesso compartimento, stoccaggio insieme, separato o a parte secondo l''abbinamento
+    di sostanze; separato significa muro schermo almeno EI 60 o 2.5 m di distanza. Pericolo d''incendio e d''esplosione e
+    divieto di fumare sono segnalati in modo ben visibile. Non ancora verificabile: il modello non indica classificazione
+    delle sostanze, quantità stoccata né tipo e luogo di stoccaggio delle sostanze pericolose.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/architecture-door-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-26-15-2015
+  source_document: VKF-Brandschutzrichtlinie 26-15 Gefährliche Stoffe (2015)
+  source_page: 8
+  source_quote: VKF 26-15, Ziff. 3.6.1–3.6.3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
