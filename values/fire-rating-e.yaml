@@ -1,0 +1,50 @@
+id: pragmaticbim:value/fire-rating-e
+code: FIRE-RATING-E
+name:
+  de: Feuerwiderstand E (Raumabschluss)
+  fr: Résistance au feu E (étanchéité)
+  it: Resistenza al fuoco E (tenuta)
+  en: Fire rating E (integrity)
+description:
+  de: Klassen E 30 bis E 240 für nichttragende, raumabschliessende Bauteile ohne Wärmedämmung (VKF 13-15, Ziff. 3.1.10 Abs.
+    2); die Zahl ist die Feuerwiderstandsdauer in Minuten. Erweitert die Einzelklasse E 30 der Liste `fire-rating`.
+  fr: Classes E 30 à E 240 pour les éléments non porteurs avec fonction de compartimentage sans isolation thermique (AEAI
+    13-15, ch. 3.1.10 al. 2) ; le nombre est la durée de résistance au feu en minutes. Étend la classe unique E 30 de la liste
+    `fire-rating`.
+  it: Classi da E 30 a E 240 per elementi non portanti con funzione di compartimentazione senza isolamento termico (AICAA
+    13-15, cifra 3.1.10 cpv. 2); il numero è la durata di resistenza al fuoco in minuti. Estende la singola classe E 30 dell'elenco
+    `fire-rating`.
+  en: Classes E 30 to E 240 for non-load-bearing separating components without insulation (VKF 13-15, Ziff. 3.1.10 para. 2);
+    the number is the fire resistance duration in minutes. Extends the single class E 30 of the list `fire-rating`.
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+  - E 30
+  - E 60
+  - E 90
+  - E 120
+  - E 180
+  - E 240
+  fr:
+  - E 30
+  - E 60
+  - E 90
+  - E 120
+  - E 180
+  - E 240
+  it:
+  - E 30
+  - E 60
+  - E 90
+  - E 120
+  - E 180
+  - E 240
+  en:
+  - E 30
+  - E 60
+  - E 90
+  - E 120
+  - E 180
+  - E 240

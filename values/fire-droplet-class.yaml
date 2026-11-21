@@ -1,0 +1,38 @@
+id: pragmaticbim:value/fire-droplet-class
+code: FIRE-DROPLET-CLASS
+name:
+  de: Brennendes Abtropfen d nach EN
+  fr: Gouttelettes enflammées d selon EN
+  it: Gocciolamento incandescente d secondo EN
+  en: Burning droplets d under EN
+description:
+  de: Zusatzklassen d0, d1 und d2 zum brennenden Abtropfen oder Abfallen für Baustoffe der Klassen A2, B, C und D nach SN
+    EN 13501-1 (VKF 13-15, Ziff. 2.2.4); für Klasse E gilt nur d2. Die Stärke des Abtropfens nimmt von d0 nach d2 zu.
+  fr: Classes supplémentaires d0, d1 et d2 pour les gouttelettes ou particules enflammées des matériaux des classes A2, B,
+    C et D selon SN EN 13501-1 (AEAI 13-15, ch. 2.2.4) ; pour la classe E seule d2 s'applique. L'intensité augmente de d0
+    à d2.
+  it: Classi supplementari d0, d1 e d2 per il gocciolamento o la caduta di frammenti incandescenti dei materiali delle classi
+    A2, B, C e D secondo SN EN 13501-1 (AICAA 13-15, cifra 2.2.4); per la classe E vale solo d2. L'intensità aumenta da d0
+    a d2.
+  en: Additional classes d0, d1 and d2 for burning droplets or falling parts of materials of classes A2, B, C and D under
+    SN EN 13501-1 (VKF 13-15, Ziff. 2.2.4); only d2 applies to class E. Intensity increases from d0 to d2.
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+  - d0
+  - d1
+  - d2
+  fr:
+  - d0
+  - d1
+  - d2
+  it:
+  - d0
+  - d1
+  - d2
+  en:
+  - d0
+  - d1
+  - d2

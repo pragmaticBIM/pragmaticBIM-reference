@@ -1,0 +1,64 @@
+id: pragmaticbim:value/fire-rating-vkf-f
+code: FIRE-RATING-VKF-F
+name:
+  de: Feuerwiderstand F nach VKF
+  fr: Résistance au feu F selon AEAI
+  it: Resistenza al fuoco F secondo AICAA
+  en: Fire rating F under VKF
+description:
+  de: VKF-Klassen F 30 bis F 240 für tragende und raumabschliessende Bauteile wie Stützen, Träger, Wände und Decken (VKF 13-15,
+    Ziff. 3.2.2). F 90 und höher bestehen aus Baustoffen der RF1. Für Holzbauteile ohne Nichtentflammbarkeit gelten F 30 bb
+    und F 60 bb. Die Klassen stammen aus der früheren VKF-Klassierung; für die Zuordnung zu den EN-Klassen R, REI, E und EI
+    dient das Schweizerische Brandschutzregister (Ziff. 3.4).
+  fr: Classes AEAI F 30 à F 240 pour éléments porteurs et compartimentants comme poteaux, poutres, murs et planchers (AEAI
+    13-15, ch. 3.2.2). F 90 et plus sont en matériaux RF1. Pour les éléments en bois sans incombustibilité s'appliquent F
+    30 bb et F 60 bb. Les classes viennent de l'ancienne classification AEAI ; l'attribution aux classes EN R, REI, E et EI
+    se fait par le Registre suisse de protection incendie (ch. 3.4).
+  it: Classi AICAA da F 30 a F 240 per elementi portanti e di compartimentazione come pilastri, travi, pareti e solai (AICAA
+    13-15, cifra 3.2.2). F 90 e superiori sono in materiali RF1. Per elementi in legno senza incombustibilità valgono F 30
+    bb e F 60 bb. Le classi derivano dalla precedente classificazione AICAA; l'assegnazione alle classi EN R, REI, E ed EI
+    avviene tramite il Registro svizzero della protezione antincendio (cifra 3.4).
+  en: VKF classes F 30 to F 240 for load-bearing and separating components such as columns, beams, walls and floors (VKF 13-15,
+    Ziff. 3.2.2). F 90 and higher are made of RF1 materials. For timber components without non-ignitability, F 30 bb and F
+    60 bb apply. The classes come from the earlier VKF classification; the Swiss fire protection register maps them to the
+    EN classes R, REI, E and EI (Ziff. 3.4).
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+  - F 30
+  - F 60
+  - F 90
+  - F 120
+  - F 180
+  - F 240
+  - F 30 bb
+  - F 60 bb
+  fr:
+  - F 30
+  - F 60
+  - F 90
+  - F 120
+  - F 180
+  - F 240
+  - F 30 bb
+  - F 60 bb
+  it:
+  - F 30
+  - F 60
+  - F 90
+  - F 120
+  - F 180
+  - F 240
+  - F 30 bb
+  - F 60 bb
+  en:
+  - F 30
+  - F 60
+  - F 90
+  - F 120
+  - F 180
+  - F 240
+  - F 30 bb
+  - F 60 bb

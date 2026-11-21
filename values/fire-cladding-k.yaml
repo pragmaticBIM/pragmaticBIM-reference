@@ -1,0 +1,36 @@
+id: pragmaticbim:value/fire-cladding-k
+code: FIRE-CLADDING-K
+name:
+  de: Brandschutzfunktion K (Bekleidungen)
+  fr: Fonction de protection K (revêtements)
+  it: Funzione di protezione K (rivestimenti)
+  en: Fire protection function K (claddings)
+description:
+  de: 'Klassen K 30 und K 60 für Bekleidungen (VKF 13-15, Ziff. 3.1.1 Abs. 3 und 3.1.11): K beschreibt die Fähigkeit einer
+    Wand- oder Deckenbekleidung, das dahinterliegende Material für die festgelegte Zeit vor Entzündung, Verkohlung und anderen
+    Schäden zu schützen. Die Kapselung zum Erreichen von RF1 verlangt mindestens K 30–RF1 (Ziff. 2.1 Abs. 4).'
+  fr: 'Classes K 30 et K 60 pour les revêtements (AEAI 13-15, ch. 3.1.1 al. 3 et 3.1.11) : K décrit la capacité d''un revêtement
+    de mur ou de plafond à protéger le matériau situé derrière contre l''inflammation, la carbonisation et d''autres dommages
+    pendant la durée fixée. L''enveloppement pour atteindre RF1 exige au moins K 30–RF1 (ch. 2.1 al. 4).'
+  it: 'Classi K 30 e K 60 per i rivestimenti (AICAA 13-15, cifre 3.1.1 cpv. 3 e 3.1.11): K descrive la capacità di un rivestimento
+    di parete o soffitto di proteggere il materiale retrostante da accensione, carbonizzazione e altri danni per la durata
+    stabilita. L''incapsulamento per ottenere RF1 richiede almeno K 30–RF1 (cifra 2.1 cpv. 4).'
+  en: 'Classes K 30 and K 60 for claddings (VKF 13-15, Ziff. 3.1.1 para. 3 and 3.1.11): K describes the ability of a wall
+    or ceiling cladding to protect the material behind it from ignition, charring and other damage for the stated time. Encapsulation
+    to reach RF1 requires at least K 30–RF1 (Ziff. 2.1 para. 4).'
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+  - K 30
+  - K 60
+  fr:
+  - K 30
+  - K 60
+  it:
+  - K 30
+  - K 60
+  en:
+  - K 30
+  - K 60

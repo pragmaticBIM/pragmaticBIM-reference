@@ -1,0 +1,36 @@
+id: pragmaticbim:value/fire-smoke-class
+code: FIRE-SMOKE-CLASS
+name:
+  de: Rauchentwicklung s nach EN
+  fr: Production de fumée s selon EN
+  it: Sviluppo di fumo s secondo EN
+  en: Smoke production s under EN
+description:
+  de: Zusatzklassen s1, s2 und s3 zur Rauchentwicklung für Baustoffe der Klassen A2, B, C und D nach SN EN 13501-1 (VKF 13-15,
+    Ziff. 2.2.3). Die Rauchentwicklung nimmt von s1 nach s3 zu.
+  fr: Classes supplémentaires s1, s2 et s3 pour la production de fumée des matériaux des classes A2, B, C et D selon SN EN
+    13501-1 (AEAI 13-15, ch. 2.2.3). La production de fumée augmente de s1 à s3.
+  it: Classi supplementari s1, s2 e s3 per lo sviluppo di fumo dei materiali delle classi A2, B, C e D secondo SN EN 13501-1
+    (AICAA 13-15, cifra 2.2.3). Lo sviluppo di fumo aumenta da s1 a s3.
+  en: Additional classes s1, s2 and s3 for smoke production of materials of classes A2, B, C and D under SN EN 13501-1 (VKF
+    13-15, Ziff. 2.2.3). Smoke production increases from s1 to s3.
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+  - s1
+  - s2
+  - s3
+  fr:
+  - s1
+  - s2
+  - s3
+  it:
+  - s1
+  - s2
+  - s3
+  en:
+  - s1
+  - s2
+  - s3
