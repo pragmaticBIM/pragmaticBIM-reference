@@ -1,0 +1,47 @@
+id: pragmaticbim:rule/vkf-17-15-010-sicherheitsleuchten-anordnung
+code: VKF-17-15-010
+sort_order: 60
+name:
+  de: 'Sicherheitsleuchten: Bodenzone und Weg ins Freie ausleuchten'
+  en: 'Safety luminaires: light the floor zone and the route to the open air'
+  fr: 'Luminaires de sécurité : éclairer la zone du sol et le chemin vers l''extérieur'
+  it: 'Apparecchi di sicurezza: illuminare la zona del pavimento e il percorso verso l''esterno'
+description:
+  de: 'In Flucht- und Rettungswegen leuchtet die Sicherheitsbeleuchtung insbesondere die Bodenzone und den Weg zum Ausgang
+    ins Freie ausreichend aus. Sicherheitsleuchten in geringer Höhe über dem Boden haben einen bruchfesten Schutz. Tragbare
+    Sicherheitsleuchten sind nur in Räumen zulässig, die ausschliesslich Betriebspersonal betritt, und werden danach am
+    vorgesehenen Ort geladen. Noch nicht prüfbar: das Modell weist nicht aus, welche Leuchten Sicherheitsleuchten sind und
+    wie sie zum Fluchtweg liegen.'
+  en: 'In escape and rescue routes, safety lighting adequately lights in particular the floor zone and the way to the exit
+    to the open air. Safety luminaires mounted low above the floor have an unbreakable guard. Portable safety luminaires
+    are allowed only in rooms entered exclusively by operating staff, and are recharged afterwards at the intended place.
+    Not yet checkable: the model does not show which luminaires are safety luminaires or how they relate to the escape route.'
+  fr: 'Dans les voies d''évacuation et de sauvetage, l''éclairage de sécurité éclaire suffisamment en particulier la zone
+    du sol et le chemin vers la sortie donnant sur l''extérieur. Les luminaires de sécurité placés à faible hauteur au-dessus
+    du sol ont une protection incassable. Les luminaires de sécurité portables ne sont admis que dans des locaux n''accueillant
+    que du personnel d''exploitation, et sont rechargés ensuite à l''endroit prévu. Pas encore vérifiable : le modèle n''indique
+    pas quels luminaires sont de sécurité ni leur position par rapport à la voie d''évacuation.'
+  it: 'Nelle vie di fuga e di salvataggio l''illuminazione di sicurezza illumina a sufficienza in particolare la zona del
+    pavimento e il percorso verso l''uscita all''esterno. Gli apparecchi di sicurezza collocati a bassa altezza dal pavimento
+    hanno una protezione infrangibile. Gli apparecchi di sicurezza portatili sono ammessi solo in locali frequentati esclusivamente
+    dal personale di esercizio e vengono poi ricaricati nel luogo previsto. Non ancora verificabile: il modello non indica
+    quali apparecchi sono di sicurezza né la loro posizione rispetto alla via di fuga.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-light-fixture
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-17-15-2015
+  source_document: VKF-Brandschutzrichtlinie 17-15 Kennzeichnung von Fluchtwegen, Sicherheitsbeleuchtung, Sicherheitsstromversorgung
+    (2015)
+  source_page: 6
+  source_quote: VKF 17-15, Ziff. 3.2.3 Abs. 1–3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

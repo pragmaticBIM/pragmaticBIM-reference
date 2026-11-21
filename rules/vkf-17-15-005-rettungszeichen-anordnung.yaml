@@ -1,0 +1,50 @@
+id: pragmaticbim:rule/vkf-17-15-005-rettungszeichen-anordnung
+code: VKF-17-15-005
+sort_order: 55
+name:
+  de: 'Rettungszeichen: Richtungsanzeiger, Sichtbarkeit und Höhe quer zur Fluchtrichtung'
+  en: 'Escape signs: direction indicators, visibility and height across the escape direction'
+  fr: 'Signaux de sauvetage : indicateurs de direction, visibilité et hauteur transversale'
+  it: 'Segnali di salvataggio: indicatori di direzione, visibilità e altezza trasversale'
+description:
+  de: 'Die Fluchtrichtung wird mit Richtungsanzeigern gekennzeichnet, wenn sie nicht sofort ersichtlich ist oder ortsunkundige
+    Personen anwesend sind, etwa bei Richtungsänderungen. Nicht sofort erkennbare oder nur im Notfall benutzte Ausgänge
+    werden gekennzeichnet. Von jedem Standort eines Raumes ist mindestens ein Rettungszeichen sichtbar, die Zeichen sind
+    im Gebäude einheitlich ausgeführt und stehen quer zur Fluchtrichtung auf Türsturzhöhe. Noch nicht prüfbar: das Modell
+    enthält keine Rettungszeichen.'
+  en: 'The escape direction is marked with direction indicators if it is not immediately obvious or if people unfamiliar
+    with the premises are present, for example at changes of direction. Exits that are not immediately recognizable or are
+    used only in emergencies are marked. At least one escape sign is visible from every position in a room, the signs are
+    uniform throughout the building and are mounted across the escape direction at door-lintel height. Not yet checkable:
+    the model contains no escape signs.'
+  fr: 'La direction d''évacuation est signalée par des indicateurs de direction lorsqu''elle n''est pas immédiatement évidente
+    ou que des personnes ne connaissant pas les lieux sont présentes, p. ex. aux changements de direction. Les sorties pas
+    immédiatement reconnaissables ou utilisées seulement en cas d''urgence sont signalées. De chaque emplacement d''un local,
+    au moins un signal de sauvetage est visible ; les signaux sont uniformes dans tout le bâtiment et placés transversalement
+    à la direction d''évacuation à hauteur du linteau de porte. Pas encore vérifiable : le modèle ne contient pas de signaux
+    de sauvetage.'
+  it: 'La direzione di fuga è segnalata con indicatori di direzione se non è immediatamente evidente o se sono presenti
+    persone che non conoscono i luoghi, p. es. nei cambi di direzione. Le uscite non immediatamente riconoscibili o usate
+    solo in emergenza sono segnalate. Da ogni punto di un locale è visibile almeno un segnale di salvataggio; i segnali
+    sono uniformi in tutto l''edificio e collocati trasversalmente alla direzione di fuga all''altezza dell''architrave
+    della porta. Non ancora verificabile: il modello non contiene segnali di salvataggio.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/architecture-door-exterior
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-17-15-2015
+  source_document: VKF-Brandschutzrichtlinie 17-15 Kennzeichnung von Fluchtwegen, Sicherheitsbeleuchtung, Sicherheitsstromversorgung
+    (2015)
+  source_page: 5
+  source_quote: VKF 17-15, Ziff. 3.1.2 Abs. 1–5
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

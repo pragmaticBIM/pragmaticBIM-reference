@@ -1,0 +1,43 @@
+id: pragmaticbim:rule/vkf-17-15-001-notwendigkeit-buero-schule-hochhaus
+code: VKF-17-15-001
+sort_order: 51
+name:
+  de: 'Büro, Gewerbe, Schule, Hochhaus: Rettungszeichen und Sicherheitsbeleuchtung'
+  en: 'Offices, trade, schools, high-rise: escape signs and safety lighting'
+  fr: 'Bureaux, artisanat, écoles, tours : signaux de sauvetage et éclairage de sécurité'
+  it: 'Uffici, industria, scuole, edifici alti: segnali di salvataggio e illuminazione di sicurezza'
+description:
+  de: 'In Büro-, Industrie- und Gewerbebauten, Schulbauten, unterirdischen Schutzbauten und Hochhäusern werden Ausgänge
+    und Fluchtwege mit Rettungszeichen gekennzeichnet, und in den Fluchtwegen wird eine Sicherheitsbeleuchtung installiert.
+    Noch nicht prüfbar: das Modell kennt weder Rettungszeichen als Elemente noch die Zuordnung von Leuchten zu Fluchtwegen.'
+  en: 'In office, industrial and trade buildings, school buildings, underground protective structures and high-rise buildings,
+    exits and escape routes are marked with escape signs, and safety lighting is installed in the escape routes. Not yet
+    checkable: the model has neither escape signs as elements nor the assignment of luminaires to escape routes.'
+  fr: 'Dans les bâtiments administratifs, industriels et artisanaux, les bâtiments scolaires, les abris souterrains et les
+    tours, les sorties et voies d''évacuation sont signalées par des signaux de sauvetage, et un éclairage de sécurité est
+    installé dans les voies d''évacuation. Pas encore vérifiable : le modèle ne connaît ni les signaux de sauvetage comme
+    éléments ni l''affectation des luminaires aux voies d''évacuation.'
+  it: 'Negli edifici per uffici, industriali e artigianali, negli edifici scolastici, nelle costruzioni protette sotterranee
+    e negli edifici alti uscite e vie di fuga sono segnalate con segnali di salvataggio e nelle vie di fuga è installata
+    un''illuminazione di sicurezza. Non ancora verificabile: il modello non conosce né i segnali di salvataggio come elementi
+    né l''assegnazione degli apparecchi alle vie di fuga.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-light-fixture
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-door-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-17-15-2015
+  source_document: VKF-Brandschutzrichtlinie 17-15 Kennzeichnung von Fluchtwegen, Sicherheitsbeleuchtung, Sicherheitsstromversorgung
+    (2015)
+  source_page: 4
+  source_quote: VKF 17-15, Ziff. 2.2.1
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

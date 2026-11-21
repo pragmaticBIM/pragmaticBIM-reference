@@ -1,0 +1,56 @@
+id: pragmaticbim:rule/vkf-17-15-013-stromquellen-standort-feuerwiderstand
+code: VKF-17-15-013
+sort_order: 63
+name:
+  de: 'Stromquellen für Sicherheitszwecke: Aufstellungsraum mindestens EI 30, Trennung EI 60'
+  en: 'Safety power sources: installation room at least EI 30, separation EI 60'
+  fr: 'Sources d''énergie de sécurité : local d''installation au moins EI 30, séparation EI 60'
+  it: 'Fonti di alimentazione di sicurezza: locale di installazione almeno EI 30, separazione EI 60'
+description:
+  de: 'Stromquellen für Sicherheitszwecke und ihre Steuerungen sind ortsfest in Räumen mit kleinem Brandrisiko untergebracht.
+    Der Aufstellungsraum erreicht den Feuerwiderstand des Tragwerks bzw. der Brandabschnitte, mindestens aber EI 30; die
+    Türen sind EI 30. Gegenüber den Verteilanlagen der allgemeinen Stromversorgung ist mit EI 60 abgetrennt. Akkus dürfen
+    in nicht feuergefährdeten Räumen stehen und erhalten einen Schutzkasten EI 30; bei nicht wartungsfreien Akkus wird der
+    Deckenbereich ausreichend belüftet. Noch nicht prüfbar: das Modell zeigt nicht, welche Räume Sicherheitsstromquellen
+    enthalten.'
+  en: 'Power sources for safety purposes and their controls are installed in fixed positions in rooms with a low fire risk.
+    The installation room matches the fire resistance of the structure or the fire compartments, but at least EI 30; the
+    doors are EI 30. It is separated from the distribution boards of the general power supply with EI 60. Batteries may
+    stand in rooms without fire hazard and get a protective box EI 30; for batteries that are not maintenance-free the ceiling
+    area is adequately ventilated. Not yet checkable: the model does not show which rooms contain safety power sources.'
+  fr: 'Les sources d''énergie de sécurité et leurs commandes sont installées à demeure dans des locaux à faible risque d''incendie.
+    Le local d''installation atteint la résistance au feu de la structure porteuse ou des compartiments, au moins EI 30
+    ; les portes sont EI 30. Une séparation EI 60 est prévue par rapport aux tableaux de distribution de l''alimentation
+    générale. Les accus peuvent être placés dans des locaux sans danger d''incendie et reçoivent un coffret de protection
+    EI 30 ; pour les accus non étanches, la zone de plafond est suffisamment ventilée. Pas encore vérifiable : le modèle
+    n''indique pas quels locaux contiennent des sources de sécurité.'
+  it: 'Le fonti di alimentazione di sicurezza e i loro comandi sono installati in modo fisso in locali con basso rischio
+    d''incendio. Il locale di installazione raggiunge la resistenza al fuoco della struttura portante o dei compartimenti,
+    almeno EI 30; le porte sono EI 30. Rispetto ai quadri di distribuzione dell''alimentazione generale è prevista una separazione
+    EI 60. Gli accumulatori possono essere collocati in locali non a rischio d''incendio e ricevono un contenitore di protezione
+    EI 30; per accumulatori non esenti da manutenzione la zona del soffitto è ventilata a sufficienza. Non ancora verificabile:
+    il modello non indica quali locali contengono fonti di alimentazione di sicurezza.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-electric-generator
+- pragmaticbim:element/mep-ups
+- pragmaticbim:element/mep-electric-distribution-board
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/structural-wall
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-17-15-2015
+  source_document: VKF-Brandschutzrichtlinie 17-15 Kennzeichnung von Fluchtwegen, Sicherheitsbeleuchtung, Sicherheitsstromversorgung
+    (2015)
+  source_page: 7
+  source_quote: VKF 17-15, Ziff. 3.3.3 Abs. 1–5
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

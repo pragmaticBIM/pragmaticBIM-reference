@@ -1,0 +1,45 @@
+id: pragmaticbim:rule/vkf-17-15-002-notwendigkeit-beherbergung
+code: VKF-17-15-002
+sort_order: 52
+name:
+  de: 'Beherbergungsbetriebe: sicherheitsbeleuchtete Rettungszeichen und Sicherheitsbeleuchtung'
+  en: 'Accommodation: illuminated escape signs on safety lighting and safety lighting'
+  fr: 'Établissements d''hébergement : signaux de sauvetage éclairés en sécurité et éclairage de sécurité'
+  it: 'Strutture ricettive: segnali di salvataggio con illuminazione di sicurezza e illuminazione di sicurezza'
+description:
+  de: 'In Beherbergungsbetrieben werden Ausgänge und Fluchtwege mit sicherheitsbeleuchteten Rettungszeichen gekennzeichnet,
+    und in den Fluchtwegen wird eine Sicherheitsbeleuchtung installiert. Bei abgelegenen Beherbergungsbetrieben (z. B. Berghütten)
+    entscheidet die Brandschutzbehörde über die Notwendigkeit. Noch nicht prüfbar: das Modell weist weder die Betriebsart
+    noch die Beleuchtungsart der Rettungszeichen aus.'
+  en: 'In accommodation facilities, exits and escape routes are marked with escape signs on safety lighting, and safety
+    lighting is installed in the escape routes. For remote accommodation facilities (e.g. mountain huts) the fire authority
+    decides whether it is needed. Not yet checkable: the model shows neither the type of facility nor the lighting type
+    of the escape signs.'
+  fr: 'Dans les établissements d''hébergement, les sorties et voies d''évacuation sont signalées par des signaux de sauvetage
+    éclairés en sécurité, et un éclairage de sécurité est installé dans les voies d''évacuation. Pour les établissements
+    d''hébergement isolés (p. ex. cabanes de montagne), l''autorité de protection incendie décide de la nécessité. Pas encore
+    vérifiable : le modèle n''indique ni le type d''établissement ni le type d''éclairage des signaux de sauvetage.'
+  it: 'Nelle strutture ricettive uscite e vie di fuga sono segnalate con segnali di salvataggio dotati di illuminazione
+    di sicurezza e nelle vie di fuga è installata un''illuminazione di sicurezza. Per le strutture ricettive isolate (p.
+    es. rifugi di montagna) l''autorità antincendio decide sulla necessità. Non ancora verificabile: il modello non indica
+    né il tipo di struttura né il tipo di illuminazione dei segnali di salvataggio.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-light-fixture
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-door-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-17-15-2015
+  source_document: VKF-Brandschutzrichtlinie 17-15 Kennzeichnung von Fluchtwegen, Sicherheitsbeleuchtung, Sicherheitsstromversorgung
+    (2015)
+  source_page: 4
+  source_quote: VKF 17-15, Ziff. 2.2.2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
