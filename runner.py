@@ -65,6 +65,8 @@ from catalog.mapping import (
     map_entry_params,
 )
 from catalog.sample_data import SAMPLE_CATALOG
+from generators import room_rules
+from generators.room_type_picture import generate_room_type_picture, write_room_type_picture
 from render.engrave_specs import engrave_kwargs_for
 from render.isometric import PRINT_DPI, PRINT_RESOLUTION, render_isometric
 import ifcopenshell.util.element as element_util
@@ -840,6 +842,45 @@ def run_catalog(
     return succeeded, failed, failed_ids
 
 
+def run_room_types(
+    output_dir: Path,
+    *,
+    only: str | None = None,
+) -> tuple[int, int, list[str]]:
+    """Write IFC, annotated plan and isometric PNG for every room-type configuration.
+
+    Output goes to ``output_dir`` (``output/room_types`` by default). Nothing is
+    attached to the room-type YAML or ``media/``; that step is not wired yet.
+    """
+    succeeded = 0
+    failed = 0
+    failed_ids: list[str] = []
+    for room_type in room_rules.room_types().values():
+        slug = room_type["id"].rsplit("/", 1)[-1]
+        if only and slug != only:
+            continue
+        for config in room_type.get("configurations") or []:
+            if config.get("status", "active") != "active":
+                continue
+            config_id = config["id"]
+            try:
+                picture = generate_room_type_picture(slug, config_id)
+                written = write_room_type_picture(picture, output_dir)
+                violated = sum(1 for r in picture.rule_results if not r.ok)
+                print(
+                    f"OK  {picture.name} -> {', '.join(path.name for path in written.values())}"
+                    f"  [rules {len(picture.rule_results) - violated}/{len(picture.rule_results)} met"
+                    f", unplaced {len(picture.unplaced)}]"
+                )
+                succeeded += 1
+            except Exception as exc:
+                failed += 1
+                failed_ids.append(config_id)
+                print(f"FAIL {config_id}: {exc}", file=sys.stderr)
+                traceback.print_exc(file=sys.stderr)
+    return succeeded, failed, failed_ids
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         description="Generate IFC + isometric PNG for catalog elements."
@@ -872,7 +913,36 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Write drafts to --output-dir only; leave media/ and element YAML untouched",
     )
+    parser.add_argument(
+        "--room-types",
+        action="store_true",
+        help="Generate room-type pictures (IFC, plan SVG/PNG, isometric PNG) into {output-dir}/room_types",
+    )
+    parser.add_argument(
+        "--only-room-type",
+        type=str,
+        default=None,
+        help="Generate the room-type pictures of one room-type slug only (e.g. buero)",
+    )
     args = parser.parse_args(argv)
+
+    if args.room_types or args.only_room_type:
+        if args.only_room_type:
+            try:
+                room_rules.room_type(args.only_room_type)
+            except KeyError:
+                print(f"No room type with slug {args.only_room_type!r}", file=sys.stderr)
+                return 1
+        succeeded, failed, failed_ids = run_room_types(
+            args.output_dir / "room_types", only=args.only_room_type
+        )
+        print()
+        print("=== Summary ===")
+        print(f"Succeeded: {succeeded}")
+        print(f"Failed:    {failed}")
+        if failed_ids:
+            print(f"Failed ids: {', '.join(failed_ids)}")
+        return 1 if failed else 0
 
     catalog = SAMPLE_CATALOG
     if args.cover_iso:

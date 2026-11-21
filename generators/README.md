@@ -64,6 +64,8 @@ parameters (not used at place time).
 | --- | --- |
 | `generators/component_geometry/` | Recipes (`body` + plan SVG), registry, preview CLI |
 | `generators/room_layout.py` | Places components; writes IFC bodies + optional plan SVG |
+| `generators/sample_room.py` | Sample room (outline + openings) for a room-type configuration |
+| `generators/room_type_picture.py` | Room-type picture set: IFC with `Bewegungsfläche` proxies, annotated plan, isometric (`runner.py --room-types`) |
 | `generators/placement_api.py` | MCP-ready facade (`get_component`, `place_room_layout`, …) |
 
 Every active component has a dedicated `plan_symbol` recipe (2D SVG + 3D body).
