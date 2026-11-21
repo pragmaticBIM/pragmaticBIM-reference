@@ -1,0 +1,50 @@
+id: pragmaticbim:rule/vkf-16-15-011-vertikale-fluchtwege-ins-freie
+code: VKF-16-15-011
+sort_order: 67
+name:
+  de: Vertikale Fluchtwege führen unabhängig ins Freie und sind nicht versetzt
+  en: Vertical escape routes lead independently to the outside and are not offset
+  fr: Les voies d'évacuation verticales mènent indépendamment à l'extérieur et ne sont pas décalées
+  it: Le vie di fuga verticali portano indipendentemente all'esterno e non sono sfalsate
+description:
+  de: 'Vertikale Fluchtwege (z. B. Treppenanlagen) führen bis an einen sicheren Ort im Freien. Sind mehrere vorhanden, führen
+    sie unabhängig voneinander dorthin. Treppen und Podeste sind sicher begehbar auszuführen, und ein vertikaler Fluchtweg
+    darf nicht geschossweise versetzt sein. Als Orientierung nennt der Anhang eine lichte Durchgangshöhe von mindestens 2.1
+    m sowie Zwischenpodeste bei Richtungswechseln, nach höchstens 20 Stufen und mindestens bei jedem Geschoss. Noch nicht
+    prüfbar: Unabhängigkeit der Wege, Versatz und Stufengeometrie sind im Modell nicht durchgängig abgebildet.'
+  en: 'Vertical escape routes (e.g. stair systems) lead to a safe place outside. Where there are several, they lead there
+    independently of each other. Stairs and landings are built to be safely walkable, and a vertical escape route must not
+    be offset from storey to storey. As guidance, the appendix gives a clear headroom of at least 2.1 m and intermediate landings
+    at changes of direction, after at most 20 steps and at least at every storey. Not yet checkable: independence of routes,
+    offsets and step geometry are not consistently represented in the model.'
+  fr: 'Les voies d''évacuation verticales (p. ex. cages d''escalier) mènent jusqu''à un lieu sûr à l''extérieur. S''il y en
+    a plusieurs, elles y mènent indépendamment les unes des autres. Les escaliers et paliers sont réalisés de façon à pouvoir
+    être parcourus en sécurité, et une voie verticale ne doit pas être décalée d''un étage à l''autre. À titre indicatif,
+    l''annexe cite une hauteur libre d''au moins 2,1 m ainsi que des paliers intermédiaires aux changements de direction,
+    après 20 marches au plus et au moins à chaque étage. Pas encore vérifiable : l''indépendance des voies, les décalages
+    et la géométrie des marches ne sont pas représentés de manière suivie dans le modèle.'
+  it: 'Le vie di fuga verticali (p. es. vani scale) conducono fino a un luogo sicuro all''esterno. Se sono più d''una, vi
+    conducono indipendentemente l''una dall''altra. Scale e pianerottoli sono eseguiti in modo da poter essere percorsi in
+    sicurezza e una via verticale non deve essere sfalsata da un piano all''altro. A titolo indicativo l''allegato indica
+    un''altezza libera di almeno 2,1 m e pianerottoli intermedi ai cambi di direzione, dopo al massimo 20 gradini e almeno
+    a ogni piano. Non ancora verificabile: indipendenza dei percorsi, sfalsamenti e geometria dei gradini non sono rappresentati
+    in modo continuo nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-stair
+- pragmaticbim:element/structural-stair
+- pragmaticbim:element/storey
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-16-15-2015
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 5
+  source_quote: VKF 16-15, Ziff. 2.4.1 Abs. 2–3; Ziff. 2.5.1 (inkl. Anhang)
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

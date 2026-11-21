@@ -1,0 +1,45 @@
+id: pragmaticbim:rule/vkf-16-15-012-fluchtweglaenge-nutzungseinheit-35m
+code: VKF-16-15-012
+sort_order: 68
+name:
+  de: Fluchtweg in der Nutzungseinheit höchstens 35 m
+  en: Escape route within the use unit at most 35 m
+  fr: 'Voie d''évacuation dans l''unité d''utilisation : 35 m au plus'
+  it: 'Via di fuga nell''unità d''utilizzo: al massimo 35 m'
+description:
+  de: 'Innerhalb einer Nutzungseinheit darf der Fluchtweg höchstens 35 m messen. Führen die Ausgänge nicht innerhalb dieser
+    35 m direkt ins Freie oder in einen vertikalen Fluchtweg, braucht es dazwischen einen horizontalen Fluchtweg (z. B. einen
+    Korridor mit Feuerwiderstand oder einen Laubengang). Bei überhohen Räumen kann die Brandschutzbehörde bis 50 m zulassen,
+    wenn mehrere Fluchtrichtungen bestehen. Noch nicht prüfbar: Nutzungseinheiten sind im Modell nicht eindeutig ausgewiesen.'
+  en: 'Within a use unit the escape route may measure at most 35 m. If the exits do not lead directly outside or into a vertical
+    escape route within these 35 m, a horizontal escape route is needed in between (e.g. a corridor with fire resistance or
+    an access balcony). For very high rooms the fire protection authority may allow up to 50 m if several escape directions
+    are available. Not yet checkable: use units are not clearly identified in the model.'
+  fr: 'Dans une unité d''utilisation, la voie d''évacuation mesure 35 m au plus. Si les sorties ne mènent pas, dans ces 35
+    m, directement à l''extérieur ou dans une voie d''évacuation verticale, une voie horizontale est nécessaire entre les
+    deux (p. ex. un couloir résistant au feu ou une coursive). Pour les locaux très hauts, l''autorité de protection incendie
+    peut admettre jusqu''à 50 m si plusieurs directions de fuite existent. Pas encore vérifiable : les unités d''utilisation
+    ne sont pas clairement identifiées dans le modèle.'
+  it: 'All''interno di un''unità d''utilizzo la via di fuga misura al massimo 35 m. Se le uscite non conducono, entro questi
+    35 m, direttamente all''esterno o in una via di fuga verticale, è necessaria nel mezzo una via di fuga orizzontale (p.
+    es. un corridoio con resistenza al fuoco o un ballatoio). Per locali molto alti l''autorità di protezione antincendio
+    può ammettere fino a 50 m se esistono più direzioni di fuga. Non ancora verificabile: le unità d''utilizzo non sono identificate
+    chiaramente nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/storey
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-16-15-2015
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 6
+  source_quote: VKF 16-15, Ziff. 2.4.4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

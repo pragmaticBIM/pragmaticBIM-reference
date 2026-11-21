@@ -1,0 +1,58 @@
+id: pragmaticbim:rule/vkf-16-15-016-laubengaenge
+code: VKF-16-15-016
+sort_order: 72
+name:
+  de: 'Laubengänge: offen, aus RF1, bis zum vertikalen Fluchtweg'
+  en: 'Access balconies: open, made of RF1, leading to the vertical escape route'
+  fr: 'Coursives : ouvertes, en RF1, jusqu''à la voie d''évacuation verticale'
+  it: 'Ballatoi: aperti, in RF1, fino alla via di fuga verticale'
+description:
+  de: 'Laubengänge führen bis zu vertikalen Fluchtwegen und bestehen aus Baustoffen der RF1; lineare tragende Bauteile dürfen
+    brennbar sein. Sie sind mindestens zur Hälfte ständig gegen das Freie offen, mit gleichmässig verteilten, unverschliessbaren
+    Öffnungen. An Türen und Fenster werden keine Feuerwiderstandsanforderungen gestellt, die horizontale Fluchtweglänge gilt
+    weiterhin. Führt der Laubengang nur zu einem vertikalen Fluchtweg, haben die Laufflächen 30 Minuten Feuerwiderstand und
+    schliessen feuerwiderstandsfähig an die Aussenwand an; die Aussenwandbekleidung besteht aus RF1. Führt er an beiden Enden
+    zu vertikalen Fluchtwegen, entfallen die Anforderungen an den Feuerwiderstand der Konstruktion, und die Bekleidung darf
+    brennbar sein. Noch nicht prüfbar: Offenheit und Laufflächenaufbau sind im Modell nicht ausgewiesen.'
+  en: 'Access balconies lead to vertical escape routes and consist of RF1 materials; linear load-bearing members may be combustible.
+    They are permanently open to the outside for at least half, with evenly distributed openings that cannot be closed. No
+    fire resistance is required for doors and windows, and the horizontal escape route length still applies. If the access
+    balcony leads to only one vertical escape route, its walking surfaces have 30 minutes of fire resistance and connect to
+    the external wall with fire resistance; the external wall cladding consists of RF1. If it leads to vertical escape routes
+    at both ends, the fire resistance requirements for the construction fall away and the cladding may be combustible. Not
+    yet checkable: openness and walking surface build-up are not recorded in the model.'
+  fr: 'Les coursives mènent jusqu''aux voies d''évacuation verticales et sont en matériaux RF1 ; les éléments porteurs linéaires
+    peuvent être combustibles. Elles sont ouvertes en permanence sur l''extérieur pour au moins moitié, avec des ouvertures
+    réparties régulièrement et non fermables. Aucune exigence de résistance au feu ne s''applique aux portes et fenêtres,
+    et la longueur de la voie d''évacuation horizontale reste à respecter. Si la coursive ne mène qu''à une voie verticale,
+    ses surfaces de circulation ont une résistance au feu de 30 minutes et se raccordent à la paroi extérieure avec résistance
+    au feu ; le revêtement de façade est en RF1. Si elle mène aux deux extrémités à des voies verticales, les exigences de
+    résistance au feu de la construction tombent et le revêtement peut être combustible. Pas encore vérifiable : l''ouverture
+    et la composition des surfaces de circulation ne figurent pas dans le modèle.'
+  it: 'I ballatoi conducono fino alle vie di fuga verticali e sono di materiali RF1; gli elementi portanti lineari possono
+    essere combustibili. Sono permanentemente aperti verso l''esterno almeno per metà, con aperture distribuite uniformemente
+    e non chiudibili. Per porte e finestre non si richiede resistenza al fuoco e la lunghezza della via di fuga orizzontale
+    resta da rispettare. Se il ballatoio conduce a una sola via verticale, le superfici di calpestio hanno 30 minuti di resistenza
+    al fuoco e si raccordano con resistenza al fuoco alla parete esterna; il rivestimento della parete esterna è in RF1. Se
+    conduce a vie verticali a entrambe le estremità, decadono i requisiti di resistenza al fuoco della costruzione e il rivestimento
+    può essere combustibile. Non ancora verificabile: apertura e stratigrafia delle superfici di calpestio non sono indicate
+    nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-slab-balcony
+- pragmaticbim:element/architecture-railing
+- pragmaticbim:element/architecture-wall-exterior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-16-15-2015
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 8
+  source_quote: VKF 16-15, Ziff. 2.5.4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

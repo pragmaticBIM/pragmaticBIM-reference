@@ -1,0 +1,53 @@
+id: pragmaticbim:rule/vkf-16-15-014-aussentreppen
+code: VKF-16-15-014
+sort_order: 70
+name:
+  de: 'Aussentreppen: Begriff und geschützte Aussenwände'
+  en: 'External stairs: definition and protected external walls'
+  fr: 'Escaliers extérieurs : définition et parois extérieures protégées'
+  it: 'Scale esterne: definizione e pareti esterne protette'
+description:
+  de: 'Als Aussentreppe gilt eine Treppenanlage, wenn ihr Grundriss weniger als zur Hälfte von Gebäudeaussenwänden umschlossen
+    ist und der ans Freie grenzende Fassadenanteil zur Hälfte ständig offen ist, mit gleichmässig verteilten, unverschliessbaren
+    Öffnungen. Aussentreppen sind so anzuordnen, dass ein Brand im oder am Bau die Benutzenden nicht gefährdet. Die angrenzenden
+    Aussenwände haben Feuerwiderstand EI 30 (Verglasungen und Türen E 30) oder bestehen aus Baustoffen der RF1. Ab 1.2 m Abstand
+    zur Fassade können die Anforderungen angemessen reduziert werden. Noch nicht prüfbar: Offenheit der Treppenanlage und
+    Abstand zur Fassade sind im Modell nicht ausgewiesen.'
+  en: 'A stair system counts as an external stair if less than half of its plan area is enclosed by external building walls
+    and half of the facade portion bordering the outside is permanently open, with evenly distributed openings that cannot
+    be closed. External stairs are placed so that a fire in or on the building does not endanger users. The adjoining external
+    walls have fire resistance EI 30 (glazing and doors E 30) or consist of RF1 materials. From 1.2 m distance to the facade
+    the requirements may be reduced appropriately. Not yet checkable: openness of the stair system and distance to the facade
+    are not recorded in the model.'
+  fr: 'Un escalier est considéré comme extérieur si son plan est enclos par des murs extérieurs sur moins de la moitié et
+    si la part de façade donnant sur l''extérieur est ouverte en permanence pour moitié, avec des ouvertures réparties régulièrement
+    et non fermables. Les escaliers extérieurs sont placés de manière qu''un incendie dans ou sur le bâtiment ne mette pas
+    les usagers en danger. Les parois extérieures voisines ont une résistance au feu EI 30 (vitrages et portes E 30) ou sont
+    en matériaux RF1. À partir de 1,2 m de distance à la façade, les exigences peuvent être réduites de manière appropriée.
+    Pas encore vérifiable : l''ouverture de l''escalier et la distance à la façade ne figurent pas dans le modèle.'
+  it: 'Una scala è considerata esterna se la sua pianta è racchiusa da pareti esterne per meno della metà e la parte di facciata
+    affacciata all''esterno è permanentemente aperta per metà, con aperture distribuite uniformemente e non chiudibili. Le
+    scale esterne sono disposte in modo che un incendio nell''edificio o sull''edificio non metta in pericolo gli utenti.
+    Le pareti esterne adiacenti hanno resistenza al fuoco EI 30 (vetrate e porte E 30) o sono di materiali RF1. Da 1,2 m di
+    distanza dalla facciata i requisiti possono essere ridotti in modo adeguato. Non ancora verificabile: l''apertura della
+    scala e la distanza dalla facciata non sono indicate nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-stair
+- pragmaticbim:element/structural-stair
+- pragmaticbim:element/architecture-wall-exterior
+- pragmaticbim:element/architecture-door-exterior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-16-15-2015
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 7
+  source_quote: VKF 16-15, Ziff. 2.5.2 (inkl. Anhang)
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

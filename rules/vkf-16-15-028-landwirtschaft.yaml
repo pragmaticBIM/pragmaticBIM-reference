@@ -1,0 +1,47 @@
+id: pragmaticbim:rule/vkf-16-15-028-landwirtschaft
+code: VKF-16-15-028
+sort_order: 84
+name:
+  de: 'Landwirtschaft: zwei Ausgänge bei Ställen über 200 m²'
+  en: 'Agriculture: two exits for stables above 200 m²'
+  fr: 'Agriculture : deux sorties pour les étables de plus de 200 m²'
+  it: 'Agricoltura: due uscite per stalle oltre 200 m²'
+description:
+  de: 'Ställe mit mehr als 200 m² Grundfläche brauchen mindestens zwei zweckmässig angeordnete, genügend gross bemessene Ausgänge,
+    über die auch Nutztiere evakuiert werden können. Die Türen schlagen in Fluchtrichtung auf. Innerhalb der Nutzungseinheit
+    werden keine Treppenanforderungen gestellt, und Türen innerhalb der Nutzungseinheit sind von den Breiten- und Aufschlagregeln
+    ausgenommen. Noch nicht prüfbar: Stallnutzung und Türaufschlag sind im Modell nicht typisiert.'
+  en: 'Stables with a floor area above 200 m² need at least two suitably placed, sufficiently large exits through which livestock
+    can also be evacuated. The doors open in the escape direction. Within the use unit there are no stair requirements, and
+    doors within the use unit are exempt from the width and swing rules. Not yet checkable: stable use and door swing are
+    not typed in the model.'
+  fr: 'Les étables de plus de 200 m² de surface au sol requièrent au moins deux sorties judicieusement placées et suffisamment
+    grandes, par lesquelles le bétail peut aussi être évacué. Les portes s''ouvrent dans le sens de la fuite. À l''intérieur
+    de l''unité d''utilisation, aucune exigence ne vise les escaliers, et les portes de l''unité sont exemptées des règles
+    de largeur et de sens d''ouverture. Pas encore vérifiable : l''usage comme étable et le sens d''ouverture des portes ne
+    sont pas typés dans le modèle.'
+  it: 'Le stalle con superficie superiore a 200 m² richiedono almeno due uscite disposte in modo appropriato e sufficientemente
+    grandi, attraverso cui si possano evacuare anche gli animali da reddito. Le porte si aprono nel senso di fuga. All''interno
+    dell''unità d''utilizzo non vi sono requisiti per le scale e le porte dell''unità sono esentate dalle regole su larghezza
+    e senso di apertura. Non ancora verificabile: utilizzo come stalla e senso di apertura delle porte non sono tipizzati
+    nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/building
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-door-exterior
+- pragmaticbim:element/architecture-door-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-16-15-2015
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 12
+  source_quote: VKF 16-15, Ziff. 3.8
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
