@@ -1,0 +1,51 @@
+id: pragmaticbim:rule/vkf-20-15-015-projekt-betrieb-kontrolle
+code: VKF-20-15-015
+sort_order: 152
+name:
+  de: Fachfirma, Dokumentation, Ausserbetriebsetzung, Projekt, Abnahme, Kontrolle und Beurteilung nach 15 Jahren
+  en: Specialist firm, documentation, switch-off, project, acceptance, inspection and review after 15 years
+  fr: Entreprise spécialisée, documentation, mise hors service, projet, réception, contrôle et évaluation après 15 ans
+  it: Ditta specializzata, documentazione, messa fuori servizio, progetto, collaudo, controllo e valutazione dopo 15 anni
+description:
+  de: Brandmeldeanlagen werden von VKF-anerkannten Fachfirmen geplant, eingebaut und unterhalten, mit Komponenten, für die
+    eine Leistungserklärung oder VKF-Technische Auskunft vorliegt. Orientierungspläne am Feuerwehrzugang und ein Kontrollbuch
+    bei der Zentrale sind zu führen. Anlagen werden grundsätzlich nicht ausser Betrieb gesetzt; längere Unterbrüche sind zu
+    melden, Stilllegung braucht Bewilligung. Projekte (über 10 Melder oder 600 m²) werden vor Ausführung eingereicht, die
+    Anlagen abgenommen, periodisch kontrolliert und nach 15 Jahren beurteilt; Eigentum oder Betrieb halten sie betriebsbereit.
+  en: Fire alarm systems are planned, installed and maintained by VKF-recognised specialist firms, with components covered
+    by a declaration of performance or VKF technical information. Orientation plans at the fire-brigade access and a logbook
+    at the control panel are kept. Systems are in principle not switched off; longer interruptions must be reported and decommissioning
+    needs approval. Projects (over 10 detectors or 600 m²) are submitted before execution, the systems are accepted, inspected
+    periodically and reviewed after 15 years; owners or operators keep them ready for operation.
+  fr: Les installations de détection incendie sont planifiées, installées et entretenues par des entreprises spécialisées
+    reconnues par l'AEAI, avec des composants couverts par une déclaration des performances ou un renseignement technique
+    de l'AEAI. Des plans d'orientation à l'accès des pompiers et un registre de contrôle à la centrale sont tenus. Les installations
+    ne sont en principe pas mises hors service ; les interruptions prolongées sont annoncées et l'arrêt définitif exige une
+    autorisation. Les projets (plus de 10 détecteurs ou 600 m²) sont soumis avant l'exécution, les installations réceptionnées,
+    contrôlées périodiquement et évaluées après 15 ans ; propriétaires ou exploitants les maintiennent opérationnelles.
+  it: Gli impianti di rivelazione incendio sono pianificati, installati e mantenuti da ditte specializzate riconosciute dall'AICAA,
+    con componenti coperti da una dichiarazione di prestazione o da un'informazione tecnica AICAA. Si tengono piani di orientamento
+    all'accesso dei pompieri e un registro di controllo presso la centrale. Gli impianti di principio non sono messi fuori
+    servizio; interruzioni prolungate vanno annunciate e la dismissione richiede un'autorizzazione. I progetti (oltre 10 rivelatori
+    o 600 m²) sono presentati prima dell'esecuzione, gli impianti collaudati, controllati periodicamente e valutati dopo 15
+    anni; proprietà o gestione li mantengono pronti all'uso.
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-alarm
+- pragmaticbim:element/mep-electric-distribution-board
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-20-15-2015
+  source_document: VKF-Brandschutzrichtlinie 20-15 Brandmeldeanlagen (2015)
+  source_page: 9
+  source_quote: VKF 20-15, Ziff. 3.8, 3.10, 3.11, 4.1–4.5 und 5
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

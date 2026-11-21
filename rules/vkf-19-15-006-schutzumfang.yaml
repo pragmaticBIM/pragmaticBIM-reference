@@ -1,0 +1,55 @@
+id: pragmaticbim:rule/vkf-19-15-006-schutzumfang
+code: VKF-19-15-006
+sort_order: 158
+name:
+  de: 'Schutzumfang: Vollschutz, Teilschutz über ganze Brandabschnitte, Anbauten und Überdachungen'
+  en: 'Protected extent: full protection, partial protection over whole compartments, annexes and canopies'
+  fr: 'Étendue de protection : protection totale, protection partielle sur des compartiments entiers, annexes et auvents'
+  it: 'Estensione della protezione: protezione totale, parziale su interi compartimenti, annessi e tettoie'
+description:
+  de: 'Sprinkleranlagen sollen als Vollschutz ausgelegt werden und erfassen die gesamten Bauten und Anlagen, ausser ausdrücklich
+    befreiten, feuerwiderstandsfähig abgetrennten Räumen. Ein Teilschutz deckt mindestens einen ganzen Brandabschnitt ab.
+    Anbauten und Überdachungen sind einzubeziehen, wenn sie als Lager genutzt oder zum Abstellen von Fahrzeugen und Containern
+    dienen und die Abtrennung zu angrenzenden Nutzungen zu wenig Feuerwiderstand hat. Wo Sprinkler technisch nicht möglich
+    sind, etwa in hohen Räumen, gelten Ersatzmassnahmen in Absprache mit der Behörde. Noch nicht prüfbar: das Modell enthält
+    keine Sprinkleranlage als System mit Schutzumfang, Kontrollstation und Wasserversorgung.'
+  en: 'Sprinkler systems should be designed as full protection and cover entire buildings and installations, except expressly
+    exempted rooms separated with fire resistance. Partial protection covers at least one whole fire compartment. Annexes
+    and canopies are included if they are used for storage or for parking vehicles and containers and their separation from
+    adjoining uses has insufficient fire resistance. Where sprinklers are technically impossible, for example in high rooms,
+    alternative measures apply in agreement with the authority. Not yet checkable: the model holds no sprinkler system with
+    protected extent, control station and water supply.'
+  fr: 'Les installations sprinkler doivent être conçues en protection totale et couvrent tout le bâtiment, sauf les locaux
+    expressément exemptés et séparés par des éléments résistant au feu. Une protection partielle couvre au moins un compartiment
+    entier. Les annexes et auvents sont inclus s''ils servent au stockage ou au stationnement de véhicules et conteneurs et
+    que leur séparation des affectations voisines a une résistance au feu insuffisante. Là où les sprinklers sont techniquement
+    impossibles, par exemple dans les locaux hauts, des mesures de remplacement s''appliquent en accord avec l''autorité.
+    Pas encore vérifiable : le modèle ne contient aucune installation sprinkler avec étendue de protection, poste de contrôle
+    ni alimentation en eau.'
+  it: 'Gli impianti sprinkler vanno concepiti con protezione totale e coprono l''intero edificio, salvo i locali espressamente
+    esentati e separati con resistenza al fuoco. Una protezione parziale copre almeno un intero compartimento. Annessi e tettoie
+    sono inclusi se usati come deposito o per il parcheggio di veicoli e container e se la separazione dagli utilizzi adiacenti
+    ha resistenza al fuoco insufficiente. Dove gli sprinkler sono tecnicamente impossibili, ad esempio in locali alti, valgono
+    misure sostitutive d''intesa con l''autorità. Non ancora verificabile: il modello non contiene alcun impianto sprinkler
+    con estensione di protezione, stazione di controllo e alimentazione idrica.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-fire-suppression-terminal
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-roof-pitched
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-19-15-2015
+  source_document: VKF-Brandschutzrichtlinie 19-15 Sprinkleranlagen (2015)
+  source_page: 5
+  source_quote: VKF 19-15, Ziff. 3.2.1 Abs. 1–4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

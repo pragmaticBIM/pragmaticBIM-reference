@@ -1,0 +1,22 @@
+id: pragmaticbim:regulation/vkf-20-15-2015
+code: VKF-20-15
+edition: '2015'
+name:
+  de: Brandschutzrichtlinie 20-15 Brandmeldeanlagen
+  fr: Directive de protection incendie 20-15 Installations de détection d'incendie
+  it: Direttiva di protezione antincendio 20-15 Impianti di rivelazione d'incendio
+  en: Fire protection directive 20-15 Fire alarm systems
+publisher: VKF
+jurisdiction:
+- CH
+valid_from: '2015-01-01'
+valid_until: null
+superseded_by: null
+access: free
+url: https://www.bsvonline.ch/de/brandschutzvorschriften/archiv-bsv-2015
+status: active
+default_for:
+  jurisdictions:
+  - CH
+  domains:
+  - pragmaticbim:domain/fire-protection

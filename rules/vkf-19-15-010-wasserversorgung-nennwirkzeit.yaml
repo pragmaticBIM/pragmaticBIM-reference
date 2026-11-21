@@ -1,0 +1,59 @@
+id: pragmaticbim:rule/vkf-19-15-010-wasserversorgung-nennwirkzeit
+code: VKF-19-15-010
+sort_order: 162
+name:
+  de: 'Wasserversorgung: zuverlässig, Anschluss an öffentliches Netz oder eigene Versorgung, Nennwirkzeit 45 bis 90 Minuten'
+  en: 'Water supply: reliable, connection to public network or own supply, nominal operating time 45 to 90 minutes'
+  fr: 'Alimentation en eau : fiable, raccordement au réseau public ou alimentation propre, durée d''action nominale de 45
+    à 90 minutes'
+  it: 'Alimentazione idrica: affidabile, allacciamento alla rete pubblica o fonte propria, durata d''azione nominale da 45
+    a 90 minuti'
+description:
+  de: 'Die Sprinkleranlage setzt eine leistungsfähige, zuverlässige Wasserversorgung mit der verlangten Anschlussleistung
+    und den nötigen Druckverhältnissen voraus. Sie hängt grundsätzlich am öffentlichen Netz; reicht dessen Leistung samt Reserve
+    für die Feuerwehr nicht, braucht es eine betriebseigene, kombinierte oder unabhängige Versorgung. Störungen werden wo
+    nötig überwacht. Die Nennwirkzeit beträgt bei 15 Minuten Aufgebot und Ausrücken 45 Minuten bis 600 m², je nach Fläche
+    und Raumhöhe bis 60 Minuten, bei Hochhäusern bis 100 m Höhe 90 Minuten. Noch nicht prüfbar: das Modell enthält keine Sprinkleranlage
+    als System mit Schutzumfang, Kontrollstation und Wasserversorgung.'
+  en: 'The sprinkler system requires a powerful, reliable water supply with the required connection capacity and pressure.
+    It is connected to the public network in principle; if its capacity including the reserve for the fire brigade is insufficient,
+    an own, combined or independent supply is needed. Faults are monitored where needed. With 15 minutes call-out and turn-out,
+    the nominal operating time is 45 minutes up to 600 m², up to 60 minutes depending on area and room height, and 90 minutes
+    for high-rise buildings up to 100 m. Not yet checkable: the model holds no sprinkler system with protected extent, control
+    station and water supply.'
+  fr: 'L''installation sprinkler suppose une alimentation en eau performante et fiable avec le débit de raccordement exigé
+    et les pressions nécessaires. Elle est en principe raccordée au réseau public ; si sa capacité, réserve des sapeurs-pompiers
+    comprise, ne suffit pas, une alimentation propre, combinée ou indépendante est requise. Les dérangements sont surveillés
+    si nécessaire. Avec 15 minutes d''alerte et de départ, la durée d''action nominale est de 45 minutes jusqu''à 600 m²,
+    jusqu''à 60 minutes selon la surface et la hauteur, et de 90 minutes pour les tours jusqu''à 100 m. Pas encore vérifiable
+    : le modèle ne contient aucune installation sprinkler avec étendue de protection, poste de contrôle ni alimentation en
+    eau.'
+  it: 'L''impianto sprinkler presuppone un''alimentazione idrica efficiente e affidabile con la portata di allacciamento richiesta
+    e le pressioni necessarie. È di principio allacciato alla rete pubblica; se la sua capacità, compresa la riserva per i
+    pompieri, non basta, occorre un''alimentazione propria, combinata o indipendente. I guasti sono sorvegliati ove necessario.
+    Con 15 minuti di allarme e partenza la durata d''azione nominale è di 45 minuti fino a 600 m², fino a 60 minuti secondo
+    superficie e altezza del locale, e di 90 minuti per edifici alti fino a 100 m. Non ancora verificabile: il modello non
+    contiene alcun impianto sprinkler con estensione di protezione, stazione di controllo e alimentazione idrica.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-tank
+- pragmaticbim:element/mep-pump
+- pragmaticbim:element/mep-valve
+- pragmaticbim:element/mep-schematic-pipe
+- pragmaticbim:element/building
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-19-15-2015
+  source_document: VKF-Brandschutzrichtlinie 19-15 Sprinkleranlagen (2015)
+  source_page: 7
+  source_quote: VKF 19-15, Ziff. 3.5 Abs. 1–5
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

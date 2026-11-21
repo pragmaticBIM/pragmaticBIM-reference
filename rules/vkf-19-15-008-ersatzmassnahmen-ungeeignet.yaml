@@ -1,0 +1,55 @@
+id: pragmaticbim:rule/vkf-19-15-008-ersatzmassnahmen-ungeeignet
+code: VKF-19-15-008
+sort_order: 160
+name:
+  de: 'Wasser ungeeignet: Ersatzmassnahmen mit gleichwertigem Schutz im Brandschutzkonzept'
+  en: 'Water unsuitable: substitute measures with equivalent protection in the fire protection concept'
+  fr: 'Eau inadaptée : mesures de remplacement avec protection équivalente dans le concept de protection incendie'
+  it: 'Acqua non idonea: misure sostitutive con protezione equivalente nel concetto di protezione antincendio'
+description:
+  de: 'Wo Wasser kein geeignetes Löschmittel ist, etwa bei Silos mit quellfähigem Inhalt, Industrieöfen und Bädern mit Gefahrenerhöhung,
+    Stoffen die mit Wasser brennbare Gase bilden oder sonstigen gefährdeten Bereichen, werden im Einvernehmen mit der Brandschutzbehörde
+    Ersatzmassnahmen mit gleichwertigem Schutz getroffen, etwa Inertisierung, Gaslöschanlage, Schutzhaube oder Abtrennung
+    als Brandabschnitt. Bei Trockenanlagen und Zusatzmitteln darf die Ausströmverzögerung die Löschwirkung über die Nennwirkzeit
+    nicht schmälern. Noch nicht prüfbar: das Modell weist Brandabschnitte, Raumarten, Brandbelastung und Feuerwiderstand der
+    Sprinklerzentrale nicht aus.'
+  en: 'Where water is not a suitable extinguishing agent, for example for silos with swelling contents, industrial furnaces
+    and baths with increased hazard, substances that form combustible gases with water, or other endangered areas, substitute
+    measures with equivalent protection are taken in agreement with the fire protection authority, such as inerting, gas extinguishing
+    system, protective hood or separation as a fire compartment. For dry systems and additives, the discharge delay must not
+    reduce the extinguishing effect over the nominal operating time. Not yet checkable: the model does not show fire compartments,
+    room types, fire load and fire resistance of the sprinkler control room.'
+  fr: 'Là où l''eau n''est pas un agent extincteur approprié, par exemple pour les silos à contenu gonflant, fours industriels
+    et bains avec aggravation du danger, substances formant des gaz combustibles au contact de l''eau ou autres zones menacées,
+    des mesures de remplacement offrant une protection équivalente sont prises en accord avec l''autorité de protection incendie,
+    telles que l''inertage, une installation d''extinction à gaz, une hotte de protection ou la séparation en compartiment.
+    Pour les installations sèches et les additifs, le retard d''écoulement ne doit pas réduire l''effet extincteur sur la
+    durée d''action nominale. Pas encore vérifiable : le modèle n''indique pas les compartiments, types de locaux, charges
+    calorifiques ni résistance au feu du local de la centrale sprinkler.'
+  it: 'Dove l''acqua non è un agente estinguente idoneo, ad esempio per silos con contenuto rigonfiabile, forni industriali
+    e bagni con aumento del pericolo, sostanze che con l''acqua formano gas combustibili o altre zone a rischio, si adottano
+    d''intesa con l''autorità di protezione antincendio misure sostitutive con protezione equivalente, come inertizzazione,
+    impianto di estinzione a gas, cappa di protezione o separazione come compartimento. Per impianti a secco e additivi il
+    ritardo di erogazione non deve ridurre l''effetto estinguente sulla durata d''azione nominale. Non ancora verificabile:
+    il modello non indica compartimenti, tipi di locale, carico d''incendio né resistenza al fuoco del locale centrale sprinkler.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/mep-tank
+- pragmaticbim:element/mep-fire-suppression-terminal
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-19-15-2015
+  source_document: VKF-Brandschutzrichtlinie 19-15 Sprinkleranlagen (2015)
+  source_page: 6
+  source_quote: VKF 19-15, Ziff. 3.2.3 Abs. 1–2 und 3.3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

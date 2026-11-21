@@ -1,0 +1,49 @@
+id: pragmaticbim:rule/vkf-20-15-009-brandfallsteuerungen
+code: VKF-20-15-009
+sort_order: 146
+name:
+  de: 'Brandfallsteuerungen: Ansteuerung von Brandschutzeinrichtungen, dokumentiert und geprüft'
+  en: 'Fire-mode controls: activation of fire protection equipment, documented and tested'
+  fr: 'Commandes en cas d''incendie : commande d''équipements de protection incendie, documentées et contrôlées'
+  it: 'Comandi in caso d''incendio: attivazione di dispositivi antincendio, documentati e verificati'
+description:
+  de: 'Die Brandmeldeanlage kann Brandschutzabschlüsse, Rauch- und Wärmeabzugsanlagen, Beförderungsanlagen und Lüftungsanlagen
+    auslösen. Bei selektiven Brandfallsteuerungen erfolgt die Auslösung in der Regel nicht über Handfeuermelder, was im Brandschutzkonzept
+    zu berücksichtigen ist. Brandfallsteuerungen werden dokumentiert und geprüft. Noch nicht prüfbar: das Modell enthält keine
+    Brandmeldezentrale, kein Feuerwehrbedienteil und keine Brandfallsteuerung als System.'
+  en: 'The fire alarm system can trigger fire doors and shutters, smoke and heat exhaust systems, transport systems and ventilation
+    systems. For selective fire-mode controls the trigger is as a rule not by manual call points, which is considered in the
+    fire protection concept. Fire-mode controls are documented and tested. Not yet checkable: the model holds no fire alarm
+    control panel, no fire-brigade control unit and no fire-mode control as a system.'
+  fr: 'L''installation de détection peut déclencher des fermetures coupe-feu, des installations d''évacuation de fumée et
+    de chaleur, des installations de transport et de ventilation. Pour les commandes sélectives, le déclenchement ne se fait
+    en règle générale pas par avertisseurs manuels, ce que le concept de protection incendie prend en compte. Les commandes
+    en cas d''incendie sont documentées et contrôlées. Pas encore vérifiable : le modèle ne contient ni centrale de détection
+    incendie, ni tableau de commande pour les sapeurs-pompiers, ni commande en cas d''incendie comme système.'
+  it: 'L''impianto di rivelazione può attivare chiusure tagliafuoco, impianti di evacuazione di fumo e calore, impianti di
+    trasporto e di ventilazione. Nei comandi selettivi l''attivazione non avviene di regola tramite pulsanti manuali, il che
+    va considerato nel concetto di protezione antincendio. I comandi antincendio sono documentati e verificati. Non ancora
+    verificabile: il modello non contiene alcuna centrale di rivelazione incendio, unità di comando per i pompieri né comando
+    antincendio come sistema.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-alarm
+- pragmaticbim:element/mep-actuator
+- pragmaticbim:element/mep-damper
+- pragmaticbim:element/mep-fan
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-20-15-2015
+  source_document: VKF-Brandschutzrichtlinie 20-15 Brandmeldeanlagen (2015)
+  source_page: 7
+  source_quote: VKF 20-15, Ziff. 3.4.3 Abs. 5–7
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

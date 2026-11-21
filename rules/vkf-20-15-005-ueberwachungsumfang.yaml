@@ -1,0 +1,49 @@
+id: pragmaticbim:rule/vkf-20-15-005-ueberwachungsumfang
+code: VKF-20-15-005
+sort_order: 142
+name:
+  de: 'Überwachungsumfang: Vollüberwachung, Teilüberwachung über ganze Brandabschnitte'
+  en: 'Monitoring extent: full monitoring, partial monitoring over whole fire compartments'
+  fr: 'Étendue de surveillance : surveillance totale, surveillance partielle sur des compartiments entiers'
+  it: 'Estensione della sorveglianza: sorveglianza totale, parziale su interi compartimenti'
+description:
+  de: 'Brandmeldeanlagen sollen als Vollüberwachung ausgelegt werden und erfassen dann die gesamten Bauten und Anlagen, ausser
+    ausdrücklich befreiten, feuerwiderstandsfähig abgetrennten Räumen. Eine Teilüberwachung erfasst mindestens die Fluchtwege
+    und Räume mit erhöhtem Brandrisiko und erstreckt sich immer über einen ganzen Brandabschnitt; die Brandschutzbehörde kann
+    sie auf weitere Brandabschnitte ausdehnen. Noch nicht prüfbar: das Modell enthält Melder nur als Gerät mit Lage, ohne
+    Meldergruppe, Überwachungsumfang, Montagehöhe und Anlagesystem.'
+  en: 'Fire alarm systems should be designed as full monitoring and then cover entire buildings and installations, except
+    expressly exempted rooms separated with fire resistance. Partial monitoring covers at least the escape routes and rooms
+    with increased fire risk and always extends over a whole fire compartment; the fire protection authority can extend it
+    to further compartments. Not yet checkable: the model holds detectors only as a device with location, without detector
+    zone, monitored extent, mounting height and system.'
+  fr: 'Les installations de détection incendie doivent être conçues en surveillance totale et couvrent alors tout le bâtiment,
+    sauf les locaux expressément exemptés et séparés par des éléments résistant au feu. Une surveillance partielle couvre
+    au moins les voies d''évacuation et les locaux à risque accru et s''étend toujours sur un compartiment entier ; l''autorité
+    de protection incendie peut l''étendre à d''autres compartiments. Pas encore vérifiable : le modèle ne contient les détecteurs
+    que comme appareil avec position, sans zone de détection, étendue surveillée, hauteur de montage ni système.'
+  it: 'Gli impianti di rivelazione incendio vanno concepiti con sorveglianza totale e coprono allora l''intero edificio, salvo
+    i locali espressamente esentati e separati con resistenza al fuoco. Una sorveglianza parziale copre almeno le vie di fuga
+    e i locali a rischio accresciuto e si estende sempre su un intero compartimento; l''autorità di protezione antincendio
+    può estenderla ad altri compartimenti. Non ancora verificabile: il modello contiene i rivelatori solo come apparecchio
+    con posizione, senza zona di rivelazione, estensione sorvegliata, altezza di montaggio né sistema.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-alarm
+- pragmaticbim:element/spaces-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-20-15-2015
+  source_document: VKF-Brandschutzrichtlinie 20-15 Brandmeldeanlagen (2015)
+  source_page: 5
+  source_quote: VKF 20-15, Ziff. 3.2.1 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

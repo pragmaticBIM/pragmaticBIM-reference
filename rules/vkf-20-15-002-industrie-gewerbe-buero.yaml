@@ -1,0 +1,46 @@
+id: pragmaticbim:rule/vkf-20-15-002-industrie-gewerbe-buero
+code: VKF-20-15-002
+sort_order: 139
+name:
+  de: 'Industrie, Gewerbe, Büro: Überwachung bei überschrittenen Brandabschnitten, Schwelbränden oder Wasserverbot'
+  en: 'Industry, commerce, offices: monitoring when compartments are exceeded, smouldering fires or ban on water'
+  fr: 'Industrie, artisanat, bureaux : surveillance si compartiments dépassés, feux couvants ou eau interdite'
+  it: 'Industria, artigianato, uffici: sorveglianza con compartimenti superati, incendi covanti o divieto d''acqua'
+description:
+  de: 'Bei Industrie-, Gewerbe- und Bürobauten kann die Brandschutzbehörde eine Überwachung verlangen, wenn die zulässigen
+    Brandabschnittsgrössen überschritten werden und die Anlage für die aktuelle Nutzung sinnvoll ist, wenn langsam anlaufende
+    Brände wie Schwelbrände zu erwarten sind oder wenn Wasser nicht als Löschmittel dienen darf. Noch nicht prüfbar: das Modell
+    weist Nutzung, Personenbelegung, Geschosszahl und Brandabschnittsgrösse je Brandabschnitt nicht aus.'
+  en: 'For industrial, commercial and office buildings the fire protection authority can require monitoring if the permitted
+    compartment sizes are exceeded and the system makes sense for the current use, if slowly developing fires such as smouldering
+    fires are expected, or if water must not be used as extinguishing agent. Not yet checkable: the model does not show use,
+    occupancy, number of storeys and compartment size per fire compartment.'
+  fr: 'Pour les bâtiments industriels, artisanaux et de bureaux, l''autorité de protection incendie peut exiger une surveillance
+    si les tailles de compartiment admises sont dépassées et que l''installation est judicieuse pour l''affectation actuelle,
+    si des feux à développement lent comme les feux couvants sont attendus ou si l''eau ne peut pas servir d''agent extincteur.
+    Pas encore vérifiable : le modèle n''indique pas l''affectation, la charge d''occupation, le nombre d''étages ni la taille
+    du compartiment.'
+  it: 'Per edifici industriali, artigianali e per uffici l''autorità di protezione antincendio può richiedere la sorveglianza
+    se le dimensioni ammesse dei compartimenti sono superate e l''impianto è sensato per l''utilizzo attuale, se si attendono
+    incendi a sviluppo lento come quelli covanti o se l''acqua non può servire da agente estinguente. Non ancora verificabile:
+    il modello non indica utilizzo, occupazione, numero di piani e dimensione del compartimento.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-alarm
+- pragmaticbim:element/spaces-interior
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-20-15-2015
+  source_document: VKF-Brandschutzrichtlinie 20-15 Brandmeldeanlagen (2015)
+  source_page: 4
+  source_quote: VKF 20-15, Ziff. 2.2.1
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

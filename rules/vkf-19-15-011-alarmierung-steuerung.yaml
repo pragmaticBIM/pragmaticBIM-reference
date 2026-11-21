@@ -1,0 +1,55 @@
+id: pragmaticbim:rule/vkf-19-15-011-alarmierung-steuerung
+code: VKF-19-15-011
+sort_order: 163
+name:
+  de: 'Alarmierung und Ansteuerung: unverzögerter interner und externer Alarm über Brandmeldeanlage'
+  en: 'Alerting and control: undelayed internal and external alarm via the fire alarm system'
+  fr: 'Alarme et commande : alarme interne et externe sans temporisation via la détection incendie'
+  it: 'Allarme e comando: allarme interno ed esterno senza ritardo tramite la rivelazione incendio'
+description:
+  de: 'Jedes Ansprechen löst unverzögert einen internen und einen externen Alarm aus; der externe geht über eine VKF-anerkannte
+    Brandmeldeanlage an die öffentliche Feuermeldestelle. Störungen werden optisch und akustisch signalisiert und an eine
+    ständig besetzte Stelle weitergeleitet. Die Sprinkleranlage darf Brandschutzeinrichtungen auslösen, die nicht der Personensicherheit
+    dienen; Strömungsmelder dienen nur der Signalisation, nicht der Auslösung von Brandfallsteuerungen. Brandfallsteuerungen
+    werden dokumentiert und geprüft. Noch nicht prüfbar: das Modell enthält keine Sprinkleranlage als System mit Schutzumfang,
+    Kontrollstation und Wasserversorgung.'
+  en: 'Every response triggers an internal and an external alarm without delay; the external one goes via a VKF-recognised
+    fire alarm system to the public fire alarm receiving point. Faults are signalled visually and audibly and forwarded to
+    a permanently staffed point. The sprinkler system may trigger fire protection equipment that does not serve life safety;
+    flow switches serve only for signalling, not for triggering fire-mode controls. Fire-mode controls are documented and
+    tested. Not yet checkable: the model holds no sprinkler system with protected extent, control station and water supply.'
+  fr: 'Chaque déclenchement provoque sans retard une alarme interne et externe ; l''alarme externe passe par une installation
+    de détection incendie reconnue par l''AEAI jusqu''à la centrale d''appel d''incendie publique. Les dérangements sont signalés
+    optiquement et acoustiquement et transmis à un poste occupé en permanence. L''installation sprinkler peut déclencher des
+    équipements de protection incendie qui ne servent pas à la sécurité des personnes ; les détecteurs de débit ne servent
+    qu''à la signalisation, pas au déclenchement de commandes en cas d''incendie. Ces commandes sont documentées et contrôlées.
+    Pas encore vérifiable : le modèle ne contient aucune installation sprinkler avec étendue de protection, poste de contrôle
+    ni alimentation en eau.'
+  it: 'Ogni intervento provoca senza ritardo un allarme interno ed esterno; quello esterno passa tramite un impianto di rivelazione
+    incendio riconosciuto dall''AICAA al centro pubblico di segnalazione incendi. I guasti sono segnalati otticamente e acusticamente
+    e inoltrati a un posto presidiato in permanenza. L''impianto sprinkler può attivare dispositivi antincendio che non servono
+    alla sicurezza delle persone; i flussostati servono solo alla segnalazione, non all''attivazione di comandi antincendio.
+    I comandi antincendio sono documentati e verificati. Non ancora verificabile: il modello non contiene alcun impianto sprinkler
+    con estensione di protezione, stazione di controllo e alimentazione idrica.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-alarm
+- pragmaticbim:element/mep-actuator
+- pragmaticbim:element/mep-sensor
+- pragmaticbim:element/mep-valve
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-19-15-2015
+  source_document: VKF-Brandschutzrichtlinie 19-15 Sprinkleranlagen (2015)
+  source_page: 8
+  source_quote: VKF 19-15, Ziff. 3.6.1 Abs. 1–4 und 3.6.2 Abs. 1–8
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
