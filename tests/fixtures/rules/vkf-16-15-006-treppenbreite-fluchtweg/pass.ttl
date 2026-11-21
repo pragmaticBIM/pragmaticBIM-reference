@@ -1,0 +1,9 @@
+@prefix pbs: <https://schema.pragmaticbim.ch/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc: <https://w3id.org/ifc/IFC4_ADD2#> .
+@prefix ex: <https://schema.pragmaticbim.ch/ex/> .
+
+ex:focus a pbs:PhysicalElement ;
+  pbs:quantity_values
+    [ pbs:quantity_type pbs:quantity_type_clear_width ; pbs:quantity_value 1.50 ] ,
+    [ pbs:quantity_type pbs:quantity_type_tread_length_at_inner_side ; pbs:quantity_value 0.15 ] .
