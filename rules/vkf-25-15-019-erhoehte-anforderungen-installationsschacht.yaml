@@ -1,0 +1,51 @@
+id: pragmaticbim:rule/vkf-25-15-019-erhoehte-anforderungen-installationsschacht
+code: VKF-25-15-019
+sort_order: 105
+name:
+  de: 'Leitungen mit erhöhten Anforderungen im Installationsschacht: Trennung EI 30'
+  en: 'Ducts with increased requirements in an installation shaft: separation EI 30'
+  fr: 'Conduits à exigences accrues dans une gaine technique : séparation EI 30'
+  it: 'Condotti con requisiti elevati in un cavedio impiantistico: separazione EI 30'
+description:
+  de: 'Mehrere Lüftungsleitungen von Anlagen mit erhöhten Anforderungen (Ziff. 4.3.1 bis 4.3.3) im selben Installationsschacht
+    werden geschoss- und brandabschnittsweise durch eine 30-Minuten-Brandschutzplatte aus RF1 getrennt; RF1-Leitungen können
+    stattdessen einzeln mit EI 30 aus RF1 bekleidet werden. Von anderen Installationen im Schacht sind sie ebenfalls mit einer
+    solchen Platte abgetrennt. Mehrere brennbare Leitungen im selben Schacht brauchen keine Trennung, wenn dort Sprühflut-
+    oder Sprinklerdüsen montiert sind. Noch nicht prüfbar: das Modell zeigt nicht, welche Leitungen im selben Schacht liegen
+    und wie sie getrennt sind.'
+  en: 'Several ventilation ducts of systems with increased requirements (clauses 4.3.1 to 4.3.3) in the same installation
+    shaft are separated storey by storey and compartment by compartment with a 30-minute fire protection board of RF1; RF1
+    ducts may instead be clad individually with EI 30 of RF1. From other installations in the shaft they are likewise separated
+    with such a board. Several combustible ducts in the same shaft need no separation if deluge or sprinkler nozzles are installed
+    in the shaft. Not yet checkable: the model does not show which ducts share a shaft or how they are separated.'
+  fr: 'Plusieurs conduits d''installations à exigences accrues (chiffres 4.3.1 à 4.3.3) dans la même gaine technique sont
+    séparés par niveau et par compartiment au moyen d''une plaque de protection incendie de 30 minutes en RF1 ; les conduits
+    RF1 peuvent à la place être habillés individuellement en EI 30 en RF1. Des autres installations de la gaine, ils sont
+    séparés par une telle plaque. Plusieurs conduits combustibles dans la même gaine n''exigent pas de séparation si des buses
+    de déluge ou de sprinkler y sont installées. Pas encore vérifiable : le modèle n''indique pas quels conduits partagent
+    une gaine ni comment ils sont séparés.'
+  it: 'Più condotti di impianti con requisiti elevati (numeri 4.3.1–4.3.3) nello stesso cavedio impiantistico sono separati
+    piano per piano e compartimento per compartimento con una lastra antincendio da 30 minuti in RF1; i condotti RF1 possono
+    invece essere rivestiti singolarmente EI 30 in RF1. Dalle altre installazioni del cavedio sono separati con una tale lastra.
+    Più condotti combustibili nello stesso cavedio non richiedono separazione se nel cavedio sono montati ugelli a diluvio
+    o sprinkler. Non ancora verificabile: il modello non indica quali condotti condividono un cavedio né come sono separati.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-schematic-duct
+- pragmaticbim:element/architecture-installation-path
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-25-15-2015
+  source_document: VKF-Brandschutzrichtlinie 25-15 Lufttechnische Anlagen (2015)
+  source_page: 11
+  source_quote: VKF 25-15, Ziff. 4.3.4 Abs. 1–3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

@@ -1,0 +1,37 @@
+id: pragmaticbim:rule/vkf-25-15-003-filter-schalldaempfer-rf3
+code: VKF-25-15-003
+sort_order: 89
+name:
+  de: Filter und Schalldämpfer mindestens RF3, Filterflüssigkeit Flammpunkt über 160 °C
+  en: Filters and silencers at least RF3, filter liquid with flash point above 160 °C
+  fr: Filtres et silencieux au moins RF3, liquide de filtre avec point d'éclair supérieur à 160 °C
+  it: Filtri e silenziatori almeno RF3, liquido filtrante con punto di infiammabilità superiore a 160 °C
+description:
+  de: 'Filter und Schalldämpfer bestehen mindestens aus Baustoffen der RF3. Filterflüssigkeiten haben einen Flammpunkt über
+    160 °C. Noch nicht prüfbar: Filter und Schalldämpfer sind im Modell keine eigenen Elemente und tragen kein Brandverhalten.'
+  en: 'Filters and silencers are made of at least RF3 materials. Filter liquids have a flash point above 160 °C. Not yet checkable:
+    filters and silencers are not separate elements in the model and carry no reaction to fire.'
+  fr: 'Les filtres et silencieux sont réalisés au moins en matériaux RF3. Les liquides de filtre ont un point d''éclair supérieur
+    à 160 °C. Pas encore vérifiable : les filtres et silencieux ne sont pas des éléments propres du modèle et n''ont pas de
+    comportement au feu.'
+  it: 'Filtri e silenziatori sono realizzati almeno con materiali RF3. I liquidi filtranti hanno un punto di infiammabilità
+    superiore a 160 °C. Non ancora verificabile: filtri e silenziatori non sono elementi propri del modello e non hanno una
+    reazione al fuoco.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-unitary-equipment
+- pragmaticbim:element/mep-schematic-duct
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-25-15-2015
+  source_document: VKF-Brandschutzrichtlinie 25-15 Lufttechnische Anlagen (2015)
+  source_page: 5
+  source_quote: VKF 25-15, Ziff. 3.4 Abs. 1–2
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

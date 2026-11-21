@@ -1,0 +1,47 @@
+id: pragmaticbim:rule/vkf-25-15-017-erhoehte-lufttemperatur
+code: VKF-25-15-017
+sort_order: 103
+name:
+  de: 'Anlagen mit Lufttemperatur über 85 °C: RF1-Leitungen und Sicherheitsabstände'
+  en: 'Systems with air temperature above 85 °C: RF1 ducts and safety distances'
+  fr: 'Installations avec température d''air supérieure à 85 °C : conduits RF1 et distances de sécurité'
+  it: 'Impianti con temperatura dell''aria superiore a 85 °C: condotti RF1 e distanze di sicurezza'
+description:
+  de: 'Bei Lufttemperaturen über 85 °C bestehen die Lüftungsleitungen aus RF1 (dauerwärmebeständig) und halten zu brennbarem
+    Material Abstand: 0.1 m bis 100 °C, 0.2 m bis 200 °C, 0.4 m bis 400 °C. Mit einer 30-Minuten-Bekleidung aus RF1 (dauerwärmebeständig)
+    halbieren sich die Abstände. Die Abluft von Pizza-, Aufback- und Backöfen wird an eine dafür ausgelegte Anlage angeschlossen.
+    Noch nicht prüfbar: Lufttemperatur der Anlage und Abstand zu brennbaren Bauteilen sind im Modell nicht geführt.'
+  en: 'At air temperatures above 85 °C the ventilation ducts are RF1 (heat-resistant) and keep a distance to combustible material:
+    0.1 m up to 100 °C, 0.2 m up to 200 °C, 0.4 m up to 400 °C. With a 30-minute cladding of RF1 (heat-resistant) the distances
+    are halved. The exhaust of pizza, baking and bake-off ovens is connected to a system designed for the raised temperature.
+    Not yet checkable: the air temperature of the system and the distance to combustible components are not held in the model.'
+  fr: 'Pour des températures d''air supérieures à 85 °C, les conduits sont en RF1 (résistants à la chaleur durable) et respectent
+    une distance par rapport aux matériaux combustibles : 0.1 m jusqu''à 100 °C, 0.2 m jusqu''à 200 °C, 0.4 m jusqu''à 400
+    °C. Avec un habillage de 30 minutes en RF1 (résistant à la chaleur durable), les distances sont réduites de moitié. L''air
+    rejeté des fours à pizza, de cuisson et de remise en température est raccordé à une installation conçue pour la température
+    élevée. Pas encore vérifiable : la température d''air de l''installation et la distance aux éléments combustibles ne sont
+    pas gérées dans le modèle.'
+  it: 'Per temperature dell''aria superiori a 85 °C i condotti sono in RF1 (resistenti al calore) e mantengono una distanza
+    dai materiali combustibili: 0.1 m fino a 100 °C, 0.2 m fino a 200 °C, 0.4 m fino a 400 °C. Con un rivestimento da 30 minuti
+    in RF1 (resistente al calore) le distanze si dimezzano. L''aria di scarico dei forni per pizza, da cottura e per rigenerazione
+    è collegata a un impianto concepito per la temperatura elevata. Non ancora verificabile: la temperatura dell''aria dell''impianto
+    e la distanza dagli elementi combustibili non sono gestite nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-schematic-duct
+- pragmaticbim:element/mep-fan
+- pragmaticbim:element/mep-unitary-equipment
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-25-15-2015
+  source_document: VKF-Brandschutzrichtlinie 25-15 Lufttechnische Anlagen (2015)
+  source_page: 10
+  source_quote: VKF 25-15, Ziff. 4.3.1 Abs. 1–3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

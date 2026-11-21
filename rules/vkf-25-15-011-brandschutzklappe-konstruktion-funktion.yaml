@@ -1,0 +1,56 @@
+id: pragmaticbim:rule/vkf-25-15-011-brandschutzklappe-konstruktion-funktion
+code: VKF-25-15-011
+sort_order: 97
+name:
+  de: 'Brandschutzklappen: mindestens EI 30-S, Antrieb, thermische Auslösung, selbsttätiges Schliessen'
+  en: 'Fire dampers: at least EI 30-S, actuator, thermal release, self-closing'
+  fr: 'Clapets coupe-feu : au moins EI 30-S, moteur, déclenchement thermique, fermeture automatique'
+  it: 'Serrande tagliafuoco: almeno EI 30-S, attuatore, sgancio termico, chiusura automatica'
+description:
+  de: 'Brandschutzklappen verhindern die Ausbreitung von Feuer und Rauch über lufttechnische Anlagen und haben mindestens
+    EI 30-S. Sie sind nach Leistungserklärung oder VKF-Technischer Auskunft sowie Herstellerangaben befestigt, von aussen
+    kontrollierbar und zugänglich. Jede Klappe hat einen Antrieb und eine thermische Auslösevorrichtung und schliesst selbsttätig
+    beim Ausschalten der Anlage, beim Ansprechen der thermischen Auslösung und beim Antriebsausfall. Sie dienen nicht als
+    Regulierklappen. Absperrvorrichtungen haben keinen Antrieb für wiederholtes Öffnen und Schliessen. Noch nicht prüfbar:
+    Klappen tragen keine Feuerwiderstandsklasse mit Rauchdichtheit, keine Stellung im Brandfall und keinen Antriebs- oder
+    Auslösetyp.'
+  en: 'Fire dampers prevent fire and smoke from spreading through ventilation systems and are rated at least EI 30-S. They
+    are fixed according to the declaration of performance or VKF technical information and the manufacturer''s instructions,
+    and are accessible and inspectable from outside. Each damper has an actuator and a thermal release device and closes by
+    itself when the system is switched off, when the thermal release responds and when the actuator fails. They are not used
+    as control dampers. Shut-off devices have no actuator for repeated opening and closing. Not yet checkable: dampers carry
+    no fire resistance class with smoke tightness, no fail-safe position and no actuator or release type.'
+  fr: 'Les clapets coupe-feu empêchent la propagation du feu et de la fumée par les installations de ventilation et ont au
+    moins EI 30-S. Ils sont fixés selon la déclaration des performances ou le renseignement technique de l''AEAI et les indications
+    du fabricant, contrôlables et accessibles de l''extérieur. Chaque clapet a un moteur et un déclencheur thermique et se
+    ferme automatiquement à l''arrêt de l''installation, au déclenchement thermique et en cas de défaillance du moteur. Ils
+    ne servent pas de clapets de réglage. Les dispositifs d''obturation n''ont pas de moteur permettant des ouvertures et
+    fermetures répétées. Pas encore vérifiable : les clapets n''ont pas de classe de résistance au feu avec étanchéité aux
+    fumées, ni position de sécurité, ni type de moteur ou de déclencheur.'
+  it: 'Le serrande tagliafuoco impediscono la propagazione di fuoco e fumo attraverso gli impianti di ventilazione e hanno
+    almeno EI 30-S. Sono fissate secondo la dichiarazione di prestazione o l''informazione tecnica AICAA e le indicazioni
+    del produttore, controllabili e accessibili dall''esterno. Ogni serranda ha un attuatore e un dispositivo di sgancio termico
+    e si chiude automaticamente allo spegnimento dell''impianto, all''intervento dello sgancio termico e in caso di guasto
+    dell''attuatore. Non servono come serrande di regolazione. I dispositivi di intercettazione non hanno un attuatore per
+    aperture e chiusure ripetute. Non ancora verificabile: le serrande non hanno una classe di resistenza al fuoco con tenuta
+    al fumo, né posizione di sicurezza, né tipo di attuatore o sgancio.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-damper
+- pragmaticbim:element/mep-actuator
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-25-15-2015
+  source_document: VKF-Brandschutzrichtlinie 25-15 Lufttechnische Anlagen (2015)
+  source_page: 7
+  source_quote: VKF 25-15, Ziff. 3.8.1 Abs. 1–7
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

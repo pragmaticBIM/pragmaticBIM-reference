@@ -27,6 +27,7 @@ EXPECTED_IDS = {
     "pragmaticbim:regulation/vkf-16-15-2015",
     "pragmaticbim:regulation/vkf-17-15-2015",
     "pragmaticbim:regulation/vkf-23-15-2015",
+    "pragmaticbim:regulation/vkf-25-15-2015",
     "pragmaticbim:regulation/sia-181-2020",
     "pragmaticbim:regulation/sia-500-2009",
     "pragmaticbim:regulation/sia-416-2003",
@@ -93,6 +94,7 @@ def test_vkf_and_sia181_rules_link_their_regulation() -> None:
         "vkf-16-15": "pragmaticbim:regulation/vkf-16-15-2015",
         "vkf-17-15": "pragmaticbim:regulation/vkf-17-15-2015",
         "vkf-23-15": "pragmaticbim:regulation/vkf-23-15-2015",
+        "vkf-25-15": "pragmaticbim:regulation/vkf-25-15-2015",
         "sia-181": "pragmaticbim:regulation/sia-181-2020",
     }
     for path in sorted((REPO_ROOT / "rules").glob("*.yaml")):

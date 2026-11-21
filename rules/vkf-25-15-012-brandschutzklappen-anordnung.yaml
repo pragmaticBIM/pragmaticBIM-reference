@@ -1,0 +1,53 @@
+id: pragmaticbim:rule/vkf-25-15-012-brandschutzklappen-anordnung
+code: VKF-25-15-012
+sort_order: 98
+name:
+  de: Brandschutzklappen an Durchtrittsstellen durch Brandabschnitte und Lüftungsabschnitte
+  en: Fire dampers where ducts cross fire compartments and ventilation sections
+  fr: Clapets coupe-feu aux traversées de compartiments et de sections de ventilation
+  it: Serrande tagliafuoco agli attraversamenti di compartimenti e sezioni di ventilazione
+description:
+  de: 'Brandschutzklappen werden dort angeordnet, wo Lüftungsleitungen durch Brandmauern, brandabschnittsbildende Wände und
+    Decken führen, und wo öffnungslose Leitungen durch andere Lüftungsabschnitte laufen, ohne selbst den nötigen Feuerwiderstand
+    zu haben. Absperrvorrichtungen dürfen geforderte Brandschutzklappen nicht ersetzen; ihr Einsatz richtet sich nach Leistungserklärung
+    oder VKF-Technischer Auskunft. Noch nicht prüfbar: das Modell enthält keine Kreuzung von Leitung und brandabschnittsbildendem
+    Bauteil und keine Zuordnung der Klappe zu dieser Stelle.'
+  en: 'Fire dampers are placed where ventilation ducts pass through fire walls and compartment-forming walls and floors, and
+    where ducts without openings run through other ventilation sections without having the required fire resistance themselves.
+    Shut-off devices must not replace required fire dampers; their use follows the declaration of performance or VKF technical
+    information. Not yet checkable: the model holds no crossing of duct and compartment-forming component and no assignment
+    of a damper to that spot.'
+  fr: 'Les clapets coupe-feu sont placés là où les conduits traversent des murs coupe-feu et des murs et planchers de compartimentage,
+    ainsi que là où des conduits sans ouvertures traversent d''autres sections de ventilation sans avoir eux-mêmes la résistance
+    au feu requise. Les dispositifs d''obturation ne remplacent pas les clapets coupe-feu exigés ; leur emploi suit la déclaration
+    des performances ou le renseignement technique de l''AEAI. Pas encore vérifiable : le modèle ne contient aucun croisement
+    conduit/élément de compartimentage ni affectation d''un clapet à cet endroit.'
+  it: 'Le serrande tagliafuoco sono collocate dove i condotti attraversano muri tagliafuoco e pareti e solai di compartimentazione,
+    e dove condotti senza aperture attraversano altre sezioni di ventilazione senza avere essi stessi la resistenza al fuoco
+    richiesta. I dispositivi di intercettazione non sostituiscono le serrande tagliafuoco richieste; il loro impiego segue
+    la dichiarazione di prestazione o l''informazione tecnica AICAA. Non ancora verificabile: il modello non contiene alcun
+    incrocio tra condotto ed elemento di compartimentazione né l''assegnazione di una serranda a quel punto.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-damper
+- pragmaticbim:element/mep-schematic-duct
+- pragmaticbim:element/structural-wall
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/structural-slab-floor
+- pragmaticbim:element/architecture-slab-floor
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-25-15-2015
+  source_document: VKF-Brandschutzrichtlinie 25-15 Lufttechnische Anlagen (2015)
+  source_page: 8
+  source_quote: VKF 25-15, Ziff. 3.8.2 Abs. 1, 3–4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

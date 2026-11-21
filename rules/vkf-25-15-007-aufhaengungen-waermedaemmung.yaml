@@ -1,0 +1,45 @@
+id: pragmaticbim:rule/vkf-25-15-007-aufhaengungen-waermedaemmung
+code: VKF-25-15-007
+sort_order: 93
+name:
+  de: Aufhängungen und Wärmedämmung von Lüftungsleitungen
+  en: Hangers and thermal insulation of ventilation ducts
+  fr: Suspentes et isolation thermique des conduits de ventilation
+  it: Sospensioni e isolamento termico dei condotti di ventilazione
+description:
+  de: 'Aufhängungen und Befestigungen von RF1-Leitungen bestehen ebenfalls aus RF1 (ausgenommen Schwingungsdämpfer u. ä.)
+    und halten die Leitung während der geforderten Feuerwiderstandsdauer sicher. Wärmedämmschichten von RF1-Leitungen sind
+    RF1; Aussenluftleitungen dürfen mindestens RF3 (cr) sein, wenn sie allseitig mit mindestens 0.5 mm RF1 abgedeckt sind.
+    Dämmschichten brennbarer Leitungen dürfen mindestens RF3 sein. Noch nicht prüfbar: Aufhängungen und Dämmschichten sind
+    im Modell nicht als eigene Elemente mit Brandverhalten geführt.'
+  en: 'Hangers and fixings of RF1 ducts are also RF1 (except vibration dampers and the like) and hold the duct securely for
+    the required fire resistance duration. Thermal insulation of RF1 ducts is RF1; outdoor-air ducts may use at least RF3
+    (cr) if covered on all sides with at least 0.5 mm of RF1. Insulation of combustible ducts may be at least RF3. Not yet
+    checkable: hangers and insulation layers are not held in the model as separate elements with reaction to fire.'
+  fr: 'Les suspentes et fixations des conduits RF1 sont aussi en RF1 (sauf amortisseurs de vibrations et similaires) et maintiennent
+    le conduit en sécurité pendant la durée de résistance au feu exigée. L''isolation thermique des conduits RF1 est en RF1
+    ; les conduits d''air extérieur peuvent être au moins RF3 (cr) s''ils sont recouverts de tous côtés d''au moins 0.5 mm
+    de RF1. L''isolation des conduits combustibles peut être au moins RF3. Pas encore vérifiable : les suspentes et couches
+    d''isolation ne sont pas gérées dans le modèle comme éléments propres avec comportement au feu.'
+  it: 'Sospensioni e fissaggi dei condotti RF1 sono anch''essi RF1 (esclusi antivibranti e simili) e tengono il condotto in
+    sicurezza per la durata di resistenza al fuoco richiesta. L''isolamento termico dei condotti RF1 è RF1; i condotti dell''aria
+    esterna possono essere almeno RF3 (cr) se coperti su tutti i lati con almeno 0.5 mm di RF1. L''isolamento dei condotti
+    combustibili può essere almeno RF3. Non ancora verificabile: sospensioni e strati isolanti non sono gestiti nel modello
+    come elementi propri con reazione al fuoco.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-schematic-duct
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-25-15-2015
+  source_document: VKF-Brandschutzrichtlinie 25-15 Lufttechnische Anlagen (2015)
+  source_page: 6
+  source_quote: VKF 25-15, Ziff. 3.7.3 und 3.7.4
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

@@ -1,0 +1,53 @@
+id: pragmaticbim:rule/vkf-25-15-013-brandschutzklappen-verzicht
+code: VKF-25-15-013
+sort_order: 99
+name:
+  de: 'Verzicht auf Brandschutzklappen: zulässige Ausnahmen'
+  en: 'Omitting fire dampers: permitted exceptions'
+  fr: 'Renoncer aux clapets coupe-feu : exceptions admises'
+  it: 'Rinuncia alle serrande tagliafuoco: eccezioni ammesse'
+description:
+  de: 'Auf Brandschutzklappen kann verzichtet werden, wenn Brandabschnitte baulich zu Lüftungsabschnitten zusammengefasst
+    werden können; bei Büro- und Schulbauten bis 1''200 m² Lüftungsabschnittsfläche; bei Beherbergungsbetrieben und Wohnbauten
+    bis 600 m²; bei Lüftungen von Nasszellen; bei separater Leitungsführung bis zur Lüftungszentrale; in Hochhäusern bei Nasszellen-
+    und Wohnungsküchenlüftungen mit höchstens 5 angeschlossenen Geschossen je Steigkanal; sowie zwischen Lüftungszentralen
+    und Installationsschächten. Noch nicht prüfbar: Lüftungsabschnittsfläche, Steigkanal-Geschosse und Leitungsführung bis
+    zur Zentrale sind im Modell nicht abgeleitet.'
+  en: 'Fire dampers can be omitted where fire compartments can be combined structurally into ventilation sections; in office
+    and school buildings with a ventilation-section area up to 1,200 m²; in accommodation and residential buildings up to
+    600 m²; for ventilation of wet cells; with separate duct routing up to the ventilation plant room; in high-rise buildings
+    for wet-cell and dwelling-kitchen ventilation with no more than 5 connected storeys per riser; and between ventilation
+    plant rooms and installation shafts. Not yet checkable: ventilation-section area, storeys per riser and duct routing to
+    the plant room are not derived in the model.'
+  fr: 'On peut renoncer aux clapets coupe-feu si des compartiments peuvent être regroupés par construction en sections de
+    ventilation ; dans les bâtiments de bureaux et d''écoles jusqu''à 1''200 m² de surface de section ; dans les établissements
+    d''hébergement et les bâtiments d''habitation jusqu''à 600 m² ; pour la ventilation des locaux sanitaires ; en cas de
+    conduits séparés jusqu''à la centrale de ventilation ; dans les tours pour la ventilation des locaux sanitaires et cuisines
+    de logements avec au plus 5 niveaux raccordés par colonne ; ainsi qu''entre centrales de ventilation et gaines techniques.
+    Pas encore vérifiable : la surface de section de ventilation, les niveaux par colonne et le tracé jusqu''à la centrale
+    ne sont pas dérivés dans le modèle.'
+  it: 'Si può rinunciare alle serrande tagliafuoco se i compartimenti possono essere raggruppati costruttivamente in sezioni
+    di ventilazione; negli edifici per uffici e scuole fino a 1''200 m² di superficie della sezione; nelle strutture ricettive
+    e negli edifici abitativi fino a 600 m²; per la ventilazione dei locali umidi; con condotti separati fino alla centrale
+    di ventilazione; negli edifici alti per la ventilazione di locali umidi e cucine di abitazioni con al massimo 5 piani
+    collegati per colonna; nonché tra centrali di ventilazione e cavedi impiantistici. Non ancora verificabile: superficie
+    della sezione di ventilazione, piani per colonna e tracciato fino alla centrale non sono derivati nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-damper
+- pragmaticbim:element/mep-schematic-duct
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-25-15-2015
+  source_document: VKF-Brandschutzrichtlinie 25-15 Lufttechnische Anlagen (2015)
+  source_page: 8
+  source_quote: VKF 25-15, Ziff. 3.8.2 Abs. 2 Bst. a–g
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

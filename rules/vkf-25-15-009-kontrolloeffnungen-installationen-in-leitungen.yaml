@@ -1,0 +1,46 @@
+id: pragmaticbim:rule/vkf-25-15-009-kontrolloeffnungen-installationen-in-leitungen
+code: VKF-25-15-009
+sort_order: 95
+name:
+  de: Kontroll- und Reinigungsöffnungen; keine fremden Installationen in Lüftungsleitungen
+  en: Inspection and cleaning openings; no foreign installations in ventilation ducts
+  fr: Ouvertures de contrôle et de nettoyage ; pas d'installations étrangères dans les conduits
+  it: Aperture di controllo e pulizia; nessuna installazione estranea nei condotti
+description:
+  de: 'Lüftungsleitungen sind so angeordnet und mit Öffnungen versehen, dass sie kontrolliert und gereinigt werden können.
+    In Lüftungsleitungen und luftführenden Schächten (ausser Lüftungsdecken und -böden) dürfen nur der Anlage dienende Teile
+    installiert sein. Lufttechnische Anlagen, ausser solchen mit erhöhter Lufttemperatur, brauchen keine Sicherheitsabstände
+    zu brennbarem Material. Noch nicht prüfbar: Revisionsöffnungen und Fremdinstallationen in Leitungen sind im Modell nicht
+    geführt.'
+  en: 'Ventilation ducts are arranged and fitted with openings so that they can be inspected and cleaned. Only parts that
+    serve the system may be installed in ventilation ducts and air-carrying shafts (except ventilation ceilings and floors).
+    Ventilation systems, other than those with raised air temperature, need no safety distance to combustible material. Not
+    yet checkable: inspection openings and foreign installations inside ducts are not held in the model.'
+  fr: 'Les conduits de ventilation sont disposés et dotés d''ouvertures de façon à pouvoir être contrôlés et nettoyés. Seuls
+    des éléments propres à l''installation peuvent être installés dans les conduits et gaines véhiculant l''air (hors plafonds
+    et planchers de ventilation). Les installations de ventilation, hors celles à température d''air élevée, n''exigent pas
+    de distance de sécurité par rapport aux matériaux combustibles. Pas encore vérifiable : les ouvertures de contrôle et
+    les installations étrangères dans les conduits ne sont pas gérées dans le modèle.'
+  it: 'I condotti di ventilazione sono disposti e dotati di aperture in modo da poter essere controllati e puliti. Nei condotti
+    e nei cavedi che veicolano l''aria (esclusi controsoffitti e pavimenti di ventilazione) possono essere installate solo
+    parti al servizio dell''impianto. Gli impianti di ventilazione, esclusi quelli con temperatura dell''aria elevata, non
+    richiedono distanze di sicurezza dai materiali combustibili. Non ancora verificabile: le aperture di ispezione e le installazioni
+    estranee nei condotti non sono gestite nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/mep-schematic-duct
+- pragmaticbim:element/architecture-installation-path
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-25-15-2015
+  source_document: VKF-Brandschutzrichtlinie 25-15 Lufttechnische Anlagen (2015)
+  source_page: 7
+  source_quote: VKF 25-15, Ziff. 3.7.5, 3.7.7 und 3.7.9
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
