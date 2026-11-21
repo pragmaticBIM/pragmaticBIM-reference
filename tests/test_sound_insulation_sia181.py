@@ -94,7 +94,7 @@ def test_rules_are_localized_and_carry_shacl() -> None:
         assert rule["id"] == f"pragmaticbim:rule/{slug}"
         assert rule["rule_status"] == "shacl_defined"
         assert rule["domain"] == "pragmaticbim:domain/building-physics"
-        assert rule["jurisdiction"] == ["CH"]
+        assert rule["jurisdiction"] == ["ch"]
         for field in ("name", "description"):
             assert all(str(rule[field].get(lang) or "").strip() for lang in LANGS)
         assert f"rule:{slug} a sh:NodeShape" in rule["shacl"]
