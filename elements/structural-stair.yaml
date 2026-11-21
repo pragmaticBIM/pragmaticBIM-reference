@@ -403,3 +403,39 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 9
+# IFC mapping and quantity_type for this value await the data contract (#125); the pset below is a planning placeholder, not a contract key.
+- name: ClearWidth
+  pset: ePset_Stair
+  definition:
+    de: Lichte nutzbare Breite der Treppenläufe; Grundlage, um die Laufbreite im Fluchtweg zu prüfen.
+    fr: Largeur libre utilisable des volées de l'escalier ; base pour vérifier la largeur de volée sur une voie d'évacuation.
+    it: Larghezza libera utilizzabile delle rampe della scala; base per verificare la larghezza della rampa su una via di fuga.
+    en: Clear usable width of the stair flights; basis for checking the flight width on an escape route.
+  datatype: IfcPositiveLengthMeasure
+  unit: m
+  needed_in_phases: ['31', '32', '33', '41']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-building-permit
+  - pragmaticbim:workflow/des-fire-protection-concept
+  is_applicability: false
+  status: active
+  sort_order: 10
+# IFC mapping and quantity_type for this value await the data contract (#125); the pset below is a planning placeholder, not a contract key.
+- name: TreadLengthAtInnerSide
+  pset: ePset_Stair
+  definition:
+    de: Auftrittslänge am inneren Rand der gewendelten Treppenläufe; nur bei gewendelten Treppen angeben.
+    fr: Giron au bord intérieur des volées balancées de l'escalier ; à renseigner uniquement pour les escaliers balancés.
+    it: Pedata sul bordo interno delle rampe con gradini a ventaglio della scala; da indicare solo per tali scale.
+    en: Tread length at the inner edge of the winder flights of the stair; give it for winding stairs only.
+  datatype: IfcPositiveLengthMeasure
+  unit: m
+  needed_in_phases: ['31', '32', '33', '41']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-building-permit
+  - pragmaticbim:workflow/des-fire-protection-concept
+  is_applicability: false
+  status: active
+  sort_order: 11

@@ -513,3 +513,39 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 15
+# IFC mapping and quantity_type for this value await the data contract (#125); the pset below is a planning placeholder, not a contract key.
+- name: ClearWidth
+  pset: ePset_StairFlight
+  definition:
+    de: Lichte nutzbare Breite des Treppenlaufs; Grundlage, um die Laufbreite im Fluchtweg zu prüfen.
+    fr: Largeur libre utilisable de la volée ; base pour vérifier la largeur de volée sur une voie d'évacuation.
+    it: Larghezza libera utilizzabile della rampa; base per verificare la larghezza della rampa su una via di fuga.
+    en: Clear usable width of the flight; basis for checking the flight width on an escape route.
+  datatype: IfcPositiveLengthMeasure
+  unit: m
+  needed_in_phases: ['31', '32', '33', '41']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-building-permit
+  - pragmaticbim:workflow/des-fire-protection-concept
+  is_applicability: false
+  status: active
+  sort_order: 16
+# IFC mapping for this value awaits the data contract (#125); Pset_StairFlightCommon.TreadLengthAtInnerSide is the IFC property, the contract mapping is still open.
+- name: TreadLengthAtInnerSide
+  pset: Pset_StairFlightCommon
+  definition:
+    de: Auftrittslänge am inneren Rand eines gewendelten Treppenlaufs; nur bei gewendelten Läufen angeben.
+    fr: Giron au bord intérieur d'une volée balancée ; à renseigner uniquement pour les volées balancées.
+    it: Pedata sul bordo interno di una rampa con gradini a ventaglio; da indicare solo per tali rampe.
+    en: Tread length at the inner edge of a winder flight; give it for winder flights only.
+  datatype: IfcPositiveLengthMeasure
+  unit: m
+  needed_in_phases: ['31', '32', '33', '41']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-building-permit
+  - pragmaticbim:workflow/des-fire-protection-concept
+  is_applicability: false
+  status: active
+  sort_order: 17

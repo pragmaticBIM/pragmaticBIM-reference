@@ -1652,3 +1652,21 @@ attributes:
     is_applicability: false
     status: active
     sort_order: 55
+  # IFC mapping and quantity_type for this value await the data contract (#125); planning attribute only, no contract key. Differs from MinClearWidth, the briefed requirement.
+  - name: EscapeRouteClearWidth
+    pset: ePset_Space
+    definition:
+      de: Geplante lichte Breite des horizontalen Fluchtwegs im Raum, an der engsten Stelle; nur für Räume angeben, die Teil eines Fluchtwegs sind (z. B. Korridor).
+      fr: Largeur libre prévue de la voie d'évacuation horizontale dans le local, à l'endroit le plus étroit ; à renseigner uniquement pour les locaux faisant partie d'une voie d'évacuation (p. ex. corridor).
+      it: Larghezza libera prevista della via di fuga orizzontale nel locale, nel punto più stretto; da indicare solo per i locali che fanno parte di una via di fuga (p. es. corridoio).
+      en: Planned clear width of the horizontal escape route in the space, at its narrowest point; give it only for spaces on an escape route (e.g. corridor).
+    datatype: IfcLengthMeasure
+    unit: m
+    needed_in_phases: ['31', '32', '33', '41']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+    - pragmaticbim:workflow/des-building-permit
+    - pragmaticbim:workflow/des-fire-protection-concept
+    is_applicability: false
+    status: active
+    sort_order: 58
