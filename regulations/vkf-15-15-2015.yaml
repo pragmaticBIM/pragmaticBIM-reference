@@ -1,0 +1,21 @@
+id: pragmaticbim:regulation/vkf-15-15-2015
+code: VKF-15-15
+edition: '2015'
+name:
+  de: Brandschutzrichtlinie 15-15 Brandschutzabstände, Tragwerke, Brandabschnitte
+  fr: Directive de protection incendie 15-15 Distances de sécurité incendie, structures porteuses, compartiments
+    coupe-feu
+  it: Direttiva di protezione antincendio 15-15 Distanze di sicurezza antincendio, strutture portanti,
+    compartimenti
+  en: Fire protection directive 15-15 Fire safety distances, load-bearing structures, fire compartments
+publisher: VKF
+jurisdiction: [CH]
+valid_from: '2015-01-01'
+valid_until: null
+superseded_by: null
+access: free
+url: https://www.bsvonline.ch/de/brandschutzvorschriften/archiv-bsv-2015
+status: active
+default_for:
+  jurisdictions: [CH]
+  domains: [pragmaticbim:domain/fire-protection]

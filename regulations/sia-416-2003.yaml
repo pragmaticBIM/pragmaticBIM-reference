@@ -1,0 +1,16 @@
+id: pragmaticbim:regulation/sia-416-2003
+code: SIA-416
+edition: '2003'
+name:
+  de: SIA 416 Flächen und Volumen von Gebäuden
+  fr: SIA 416 Surfaces et volumes des bâtiments
+  it: SIA 416 Superfici e volumi di edifici
+  en: SIA 416 Areas and volumes of buildings
+publisher: SIA
+jurisdiction: [CH]
+valid_from: '2003-10-01'
+valid_until: null
+superseded_by: null
+access: licensed
+url: https://shop.sia.ch/416_2003_dfi/product
+status: active
