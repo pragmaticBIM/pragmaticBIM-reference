@@ -37,6 +37,7 @@ DATA_DIRS = (
     "project_goals",
     "phases",
     "domains",
+    "solution_dimensions",
 )
 
 # Oxford British English: British word stock, -ize endings.

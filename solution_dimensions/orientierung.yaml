@@ -1,0 +1,75 @@
+id: pragmaticbim:solution-dimension/orientierung
+code: SD-08
+sort_order: 8
+name:
+  de: Orientierung
+  fr: Orientation
+  it: Orientamento
+  en: Orientation
+description:
+  de: Wie die Einheit zu Fassade und Licht steht.
+  fr: Comment l'unité se dispose par rapport à la façade et à la lumière.
+  it: Come l'unità si dispone rispetto a facciata e luce.
+  en: How the unit faces the façade and daylight.
+status: active
+scope: unit
+step: spaces
+uses:
+- pragmaticbim:use/wohnen
+allows_multiple: false
+options:
+- id: pragmaticbim:solution-option/orientierung-keine
+  code: OR-00
+  sort_order: 0
+  name:
+    de: Keine
+    fr: Aucune
+    it: Nessuna
+    en: None
+  status: active
+  exclusive: true
+- id: pragmaticbim:solution-option/orientierung-einseitig
+  code: OR-01
+  sort_order: 1
+  name:
+    de: einseitig
+    fr: unilatérale
+    it: unilaterale
+    en: single-aspect
+  status: active
+  description:
+    de: Öffnungen und Wohnräume zu einer Fassade.
+    fr: Ouvertures et pièces de séjour vers une seule façade.
+    it: Aperture e ambienti soggiorno verso una sola facciata.
+    en: Openings and living rooms to one façade.
+- id: pragmaticbim:solution-option/orientierung-durchgesteckt
+  code: OR-02
+  sort_order: 2
+  name:
+    de: durchgesteckt
+    fr: traversante
+    it: passante
+    en: dual-aspect
+  status: active
+  description:
+    de: Wohnräume zu gegenüberliegenden Fassaden.
+    fr: Pièces de séjour vers des façades opposées.
+    it: Ambienti soggiorno verso facciate opposte.
+    en: Living rooms to opposite façades.
+  excludes:
+  - pragmaticbim:solution-option/erschliessung-mittelgang
+  comment: Incompatible with Mittelgang (Zweibünder).
+- id: pragmaticbim:solution-option/orientierung-ueber-eck
+  code: OR-03
+  sort_order: 3
+  name:
+    de: über Eck
+    fr: en angle
+    it: d'angolo
+    en: corner
+  status: active
+  description:
+    de: Wohnräume zu zwei aneinanderstossenden Fassaden.
+    fr: Pièces de séjour vers deux façades adjacentes.
+    it: Ambienti soggiorno verso due facciate adiacenti.
+    en: Living rooms to two adjoining façades.

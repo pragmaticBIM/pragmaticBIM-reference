@@ -1,0 +1,124 @@
+id: pragmaticbim:solution-dimension/bauweise
+code: SD-05
+sort_order: 5
+name:
+  de: Bauweise
+  fr: Mode constructif
+  it: Sistema costruttivo
+  en: Construction
+description:
+  de: Konstruktive Bauweise und typische Wandstärken für Achs- und Netzumrisse.
+  fr: Mode constructif et épaisseurs de paroi typiques pour les contours d'axes et nets.
+  it: Sistema costruttivo e spessori tipici di parete per contorni d'asse e netti.
+  en: Construction method and typical wall thicknesses for axis and net outlines.
+status: active
+scope: building
+step: grid
+allows_multiple: false
+comment: 'No exclusive None option: every building has a construction method.'
+options:
+- id: pragmaticbim:solution-option/bauweise-massivbau
+  code: BW-01
+  sort_order: 1
+  name:
+    de: Massivbau
+    fr: Construction massive
+    it: Costruzione massiccia
+    en: Solid construction
+  status: active
+  description:
+    de: Massive Wände und Decken, typisch Beton oder Mauerwerk.
+    fr: Parois et planchers massifs, typiquement béton ou maçonnerie.
+    it: Pareti e solai massicci, tipicamente calcestruzzo o muratura.
+    en: Solid walls and slabs, typically concrete or masonry.
+  parameters:
+  - jurisdiction: general
+    values:
+      wall_exterior:
+        value: 0.45
+      wall_party_wall:
+        value: 0.25
+      wall_interior:
+        value: 0.12
+      wall_shaft:
+        value: 0.15
+  comment: Typical early-phase build-ups as assumption (exterior incl. insulation 0.45, party wall 0.25,
+    interior 0.12, shaft 0.15).
+- id: pragmaticbim:solution-option/bauweise-holzbau
+  code: BW-02
+  sort_order: 2
+  name:
+    de: Holzbau
+    fr: Construction bois
+    it: Costruzione in legno
+    en: Timber
+  status: active
+  description:
+    de: Tragende und raumbildende Bauteile vorwiegend in Holz.
+    fr: Éléments porteurs et de séparation principalement en bois.
+    it: Elementi portanti e di separazione prevalentemente in legno.
+    en: Load-bearing and enclosing parts predominantly in timber.
+  parameters:
+  - jurisdiction: general
+    values:
+      wall_exterior:
+        value: 0.4
+      wall_party_wall:
+        value: 0.3
+      wall_interior:
+        value: 0.14
+      wall_shaft:
+        value: 0.16
+  comment: Typical early-phase timber build-ups as assumption.
+- id: pragmaticbim:solution-option/bauweise-hybrid
+  code: BW-03
+  sort_order: 3
+  name:
+    de: Hybrid (Holz-Beton)
+    fr: Hybride (bois-béton)
+    it: Ibrido (legno-calcestruzzo)
+    en: Hybrid (timber-concrete)
+  status: active
+  description:
+    de: Kombinierte Holz- und Betonbauteile.
+    fr: Éléments combinés en bois et en béton.
+    it: Elementi combinati in legno e calcestruzzo.
+    en: Combined timber and concrete parts.
+  parameters:
+  - jurisdiction: general
+    values:
+      wall_exterior:
+        value: 0.42
+      wall_party_wall:
+        value: 0.28
+      wall_interior:
+        value: 0.12
+      wall_shaft:
+        value: 0.15
+  comment: Typical early-phase hybrid build-ups as assumption.
+- id: pragmaticbim:solution-option/bauweise-stahl-leichtbau
+  code: BW-04
+  sort_order: 4
+  name:
+    de: Stahl / Skelett mit Leichtbau
+    fr: Acier / ossature légère
+    it: Acciaio / scheletro leggero
+    en: Steel / light frame
+  status: active
+  description:
+    de: Stahlskelett mit leichten Ausfachungen.
+    fr: Ossature acier avec remplissages légers.
+    it: Scheletro in acciaio con tamponamenti leggeri.
+    en: Steel frame with light infill.
+  parameters:
+  - jurisdiction: general
+    values:
+      wall_exterior:
+        value: 0.35
+      wall_party_wall:
+        value: 0.22
+      wall_interior:
+        value: 0.1
+      wall_shaft:
+        value: 0.12
+  comment: Typical early-phase steel/light-frame build-ups as assumption.

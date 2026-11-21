@@ -1,0 +1,212 @@
+id: pragmaticbim:solution-dimension/erschliessungstyp
+code: SD-02
+sort_order: 2
+name:
+  de: Erschliessungstyp
+  fr: Type d'accès
+  it: Tipo di accesso
+  en: Access typology
+description:
+  de: Wie die Einheiten horizontal und vertikal erschlossen werden.
+  fr: Comment les unités sont desservies horizontalement et verticalement.
+  it: Come le unità sono servite in orizzontale e in verticale.
+  en: How units are reached horizontally and vertically.
+status: active
+scope: building
+step: access
+uses:
+- pragmaticbim:use/wohnen
+allows_multiple: false
+options:
+- id: pragmaticbim:solution-option/erschliessung-keine
+  code: ACC-00
+  sort_order: 0
+  name:
+    de: Keine
+    fr: Aucun
+    it: Nessuno
+    en: None
+  status: active
+  exclusive: true
+- id: pragmaticbim:solution-option/erschliessung-zweispaenner
+  code: ACC-01
+  sort_order: 1
+  name:
+    de: Zweispänner
+    fr: Deux logements par palier
+    it: Due alloggi per pianerottolo
+    en: Two units per landing
+  status: active
+  description:
+    de: Zwei Einheiten je Kern und Geschoss.
+    fr: Deux unités par noyau et par étage.
+    it: Due unità per nucleo e per piano.
+    en: Two units per core and storey.
+  parameters:
+  - jurisdiction: general
+    values:
+      min_depth:
+        value: 10.0
+      max_depth:
+        value: 14.0
+      max_units_per_core_per_level:
+        value: 2.0
+  comment: Depth and unit count as early-phase assumption.
+- id: pragmaticbim:solution-option/erschliessung-dreispaenner
+  code: ACC-02
+  sort_order: 2
+  name:
+    de: Dreispänner
+    fr: Trois logements par palier
+    it: Tre alloggi per pianerottolo
+    en: Three units per landing
+  status: active
+  description:
+    de: Drei Einheiten je Kern und Geschoss.
+    fr: Trois unités par noyau et par étage.
+    it: Tre unità per nucleo e per piano.
+    en: Three units per core and storey.
+  parameters:
+  - jurisdiction: general
+    values:
+      min_depth:
+        value: 12.0
+      max_depth:
+        value: 16.0
+      max_units_per_core_per_level:
+        value: 3.0
+  comment: Depth and unit count as early-phase assumption.
+- id: pragmaticbim:solution-option/erschliessung-vierspaenner
+  code: ACC-03
+  sort_order: 3
+  name:
+    de: Vierspänner
+    fr: Quatre logements par palier
+    it: Quattro alloggi per pianerottolo
+    en: Four units per landing
+  status: active
+  description:
+    de: Vier Einheiten je Kern und Geschoss.
+    fr: Quatre unités par noyau et par étage.
+    it: Quattro unità per nucleo e per piano.
+    en: Four units per core and storey.
+  parameters:
+  - jurisdiction: general
+    values:
+      min_depth:
+        value: 14.0
+      max_depth:
+        value: 18.0
+      max_units_per_core_per_level:
+        value: 4.0
+  comment: Depth and unit count as early-phase assumption.
+- id: pragmaticbim:solution-option/erschliessung-mittelgang
+  code: ACC-04
+  sort_order: 4
+  name:
+    de: Mittelgang (Zweibünder)
+    fr: Couloir central (double bande)
+    it: Corridoio centrale (doppia fascia)
+    en: Central corridor (double-loaded)
+  status: active
+  description:
+    de: Einheiten beidseits eines inneren Gangs.
+    fr: Unités de part et d'autre d'un couloir intérieur.
+    it: Unità su entrambi i lati di un corridoio interno.
+    en: Units on both sides of an internal corridor.
+  parameters:
+  - jurisdiction: general
+    values:
+      min_depth:
+        value: 14.0
+      max_depth:
+        value: 20.0
+      max_units_per_core_per_level:
+        value: 8.0
+  comment: Depth and unit count as early-phase assumption. Escape distance left open until a VKF extraction
+    is available.
+- id: pragmaticbim:solution-option/erschliessung-laubengang
+  code: ACC-05
+  sort_order: 5
+  name:
+    de: Laubengang
+    fr: Coursive
+    it: Ballatoio
+    en: Access gallery
+  status: active
+  description:
+    de: Einheiten einseitig an einem äusseren Laubengang.
+    fr: Unités d'un seul côté d'une coursive extérieure.
+    it: Unità su un solo lato di un ballatoio esterno.
+    en: Units on one side of an external gallery.
+  parameters:
+  - jurisdiction: general
+    values:
+      min_depth:
+        value: 8.0
+      max_depth:
+        value: 12.0
+      max_units_per_core_per_level:
+        value: 6.0
+  comment: Depth and unit count as early-phase assumption. Escape distance left open until a VKF extraction
+    is available.
+- id: pragmaticbim:solution-option/erschliessung-hof-galerie
+  code: ACC-06
+  sort_order: 6
+  name:
+    de: Hof mit Galerie
+    fr: Cour avec galerie
+    it: Corte con galleria
+    en: Courtyard with gallery
+  status: active
+  description:
+    de: Erschliessung über Galerien am Innenhof.
+    fr: Desserte par des galeries sur la cour intérieure.
+    it: Accesso tramite gallerie sulla corte interna.
+    en: Access via galleries on the inner courtyard.
+  excludes:
+  - pragmaticbim:solution-option/gebaeudeform-riegel
+  - pragmaticbim:solution-option/gebaeudeform-punkt
+  - pragmaticbim:solution-option/gebaeudeform-winkel
+  - pragmaticbim:solution-option/gebaeudeform-kamm
+  - pragmaticbim:solution-option/gebaeudeform-keine
+  parameters:
+  - jurisdiction: general
+    values:
+      min_depth:
+        value: 10.0
+      max_depth:
+        value: 14.0
+      max_units_per_core_per_level:
+        value: 8.0
+  comment: Only compatible with Gebäudeform Hofbau / Atrium. Depth as early-phase assumption.
+- id: pragmaticbim:solution-option/erschliessung-ring-kern
+  code: ACC-07
+  sort_order: 7
+  name:
+    de: Ring um Kern
+    fr: Anneau autour du noyau
+    it: Anello intorno al nucleo
+    en: Ring around core
+  status: active
+  description:
+    de: Einheiten ringförmig um einen zentralen Kern.
+    fr: Unités en anneau autour d'un noyau central.
+    it: Unità ad anello intorno a un nucleo centrale.
+    en: Units in a ring around a central core.
+  excludes:
+  - pragmaticbim:solution-option/gebaeudeform-riegel
+  - pragmaticbim:solution-option/gebaeudeform-winkel
+  - pragmaticbim:solution-option/gebaeudeform-kamm
+  - pragmaticbim:solution-option/gebaeudeform-hofbau
+  - pragmaticbim:solution-option/gebaeudeform-keine
+  parameters:
+  - jurisdiction: general
+    values:
+      min_depth:
+        value: 12.0
+      max_depth:
+        value: 18.0
+      max_units_per_core_per_level:
+        value: 6.0
+  comment: Only compatible with Gebäudeform Punkt. Depth as early-phase assumption.

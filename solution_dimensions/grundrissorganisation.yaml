@@ -1,0 +1,86 @@
+id: pragmaticbim:solution-dimension/grundrissorganisation
+code: SD-09
+sort_order: 9
+name:
+  de: Grundrissorganisation
+  fr: Organisation du plan
+  it: Organizzazione della pianta
+  en: Plan organization
+description:
+  de: Interne Organisation der Räume in der Einheit.
+  fr: Organisation interne des pièces dans l'unité.
+  it: Organizzazione interna degli ambienti nell'unità.
+  en: Internal organization of rooms in the unit.
+status: active
+scope: unit
+step: spaces
+uses:
+- pragmaticbim:use/wohnen
+allows_multiple: false
+options:
+- id: pragmaticbim:solution-option/grundriss-keine
+  code: PO-00
+  sort_order: 0
+  name:
+    de: Keine
+    fr: Aucune
+    it: Nessuna
+    en: None
+  status: active
+  exclusive: true
+- id: pragmaticbim:solution-option/grundriss-korridor
+  code: PO-01
+  sort_order: 1
+  name:
+    de: Korridor
+    fr: Couloir
+    it: Corridoio
+    en: Corridor
+  status: active
+  description:
+    de: Räume entlang eines inneren Erschliessungskorridors.
+    fr: Pièces le long d'un couloir de desserte intérieur.
+    it: Ambienti lungo un corridoio di distribuzione interno.
+    en: Rooms along an internal circulation corridor.
+- id: pragmaticbim:solution-option/grundriss-zentralraum
+  code: PO-02
+  sort_order: 2
+  name:
+    de: Zentralraum (Halle)
+    fr: Pièce centrale (halle)
+    it: Ambiente centrale (hall)
+    en: Central hall
+  status: active
+  description:
+    de: Räume um einen zentralen Wohn- oder Verteilerraum.
+    fr: Pièces autour d'un séjour ou d'un espace de distribution central.
+    it: Ambienti intorno a un soggiorno o spazio di distribuzione centrale.
+    en: Rooms around a central living or distribution space.
+- id: pragmaticbim:solution-option/grundriss-raumfolge
+  code: PO-03
+  sort_order: 3
+  name:
+    de: Raumfolge
+    fr: Enfilade
+    it: Sequenza di ambienti
+    en: Enfilade
+  status: active
+  description:
+    de: Aneinandergereihte Räume ohne durchgehenden Korridor.
+    fr: Pièces en enfilade sans couloir continu.
+    it: Ambienti in sequenza senza corridoio continuo.
+    en: Rooms in sequence without a continuous corridor.
+- id: pragmaticbim:solution-option/grundriss-offen
+  code: PO-04
+  sort_order: 4
+  name:
+    de: offen / fliessend
+    fr: ouvert / fluide
+    it: aperto / fluido
+    en: open / flowing
+  status: active
+  description:
+    de: Fliessende Übergänge zwischen den Hauptwohnräumen.
+    fr: Transitions fluides entre les pièces de séjour principales.
+    it: Passaggi fluidi tra gli ambienti soggiorno principali.
+    en: Flowing transitions between the main living rooms.

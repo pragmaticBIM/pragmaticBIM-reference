@@ -1,0 +1,88 @@
+id: pragmaticbim:solution-dimension/tragsystem
+code: SD-03
+sort_order: 3
+name:
+  de: Tragsystem
+  fr: Système porteur
+  it: Sistema portante
+  en: Structural system
+description:
+  de: Primäres Tragwerk und typische Spannweite.
+  fr: Structure porteuse primaire et portée typique.
+  it: Struttura portante primaria e luce tipica.
+  en: Primary structure and typical span.
+status: active
+scope: building
+step: grid
+allows_multiple: false
+options:
+- id: pragmaticbim:solution-option/tragsystem-keine
+  code: STR-00
+  sort_order: 0
+  name:
+    de: Keine
+    fr: Aucun
+    it: Nessuno
+    en: None
+  status: active
+  exclusive: true
+- id: pragmaticbim:solution-option/tragsystem-schottenbau
+  code: STR-01
+  sort_order: 1
+  name:
+    de: Schottenbau
+    fr: Refends transversaux
+    it: Setti trasversali
+    en: Cross-wall construction
+  status: active
+  description:
+    de: Tragende Querwände in regelmässigem Abstand.
+    fr: Murs porteurs transversaux à intervalle régulier.
+    it: Murature portanti trasversali a passo regolare.
+    en: Load-bearing cross walls at a regular spacing.
+  parameters:
+  - jurisdiction: general
+    values:
+      max_span:
+        value: 7.5
+  comment: max_span as early-phase assumption for residential cross-wall layouts.
+- id: pragmaticbim:solution-option/tragsystem-skelett
+  code: STR-02
+  sort_order: 2
+  name:
+    de: Skelett (Stützen)
+    fr: Ossature (poteaux)
+    it: Scheletro (pilastri)
+    en: Frame (columns)
+  status: active
+  description:
+    de: Stützen und Träger ohne tragende Querwände.
+    fr: Poteaux et poutres sans refends porteurs.
+    it: Pilastri e travi senza setti portanti.
+    en: Columns and beams without load-bearing cross walls.
+  parameters:
+  - jurisdiction: general
+    values:
+      max_span:
+        value: 8.75
+  comment: max_span as early-phase assumption for early-phase frames.
+- id: pragmaticbim:solution-option/tragsystem-mischbau
+  code: STR-03
+  sort_order: 3
+  name:
+    de: Mischbau
+    fr: Système mixte
+    it: Sistema misto
+    en: Mixed system
+  status: active
+  description:
+    de: Kombination aus Schotten und Skelett.
+    fr: Combinaison de refends et d'ossature.
+    it: Combinazione di setti e scheletro.
+    en: Combination of cross walls and frame.
+  parameters:
+  - jurisdiction: general
+    values:
+      max_span:
+        value: 8.75
+  comment: max_span as early-phase assumption.

@@ -1,0 +1,66 @@
+id: pragmaticbim:solution-dimension/ausbauraster
+code: SD-06
+sort_order: 6
+name:
+  de: Ausbauraster
+  fr: Trame d'aménagement
+  it: Modulo di finitura
+  en: Fit-out module
+description:
+  de: Grundmodul für Ausbau und Achsraster.
+  fr: Module de base pour l'aménagement et la trame d'axes.
+  it: Modulo di base per le finiture e la maglia d'assi.
+  en: Base module for fit-out and the axis grid.
+status: active
+scope: building
+step: grid
+allows_multiple: false
+options:
+- id: pragmaticbim:solution-option/ausbauraster-keine
+  code: AR-00
+  sort_order: 0
+  name:
+    de: Keine
+    fr: Aucune
+    it: Nessuna
+    en: None
+  status: active
+  exclusive: true
+- id: pragmaticbim:solution-option/ausbauraster-62-5
+  code: AR-01
+  sort_order: 1
+  name:
+    de: 62.5 cm
+    fr: 62.5 cm
+    it: 62.5 cm
+    en: 62.5 cm
+  status: active
+  description:
+    de: Modul 0.625 m.
+    fr: Module 0.625 m.
+    it: Modulo 0.625 m.
+    en: 0.625 m module.
+  parameters:
+  - jurisdiction: general
+    values:
+      module:
+        value: 0.625
+- id: pragmaticbim:solution-option/ausbauraster-1-25
+  code: AR-02
+  sort_order: 2
+  name:
+    de: 1.25 m
+    fr: 1.25 m
+    it: 1.25 m
+    en: 1.25 m
+  status: active
+  description:
+    de: Modul 1.25 m.
+    fr: Module 1.25 m.
+    it: Modulo 1.25 m.
+    en: 1.25 m module.
+  parameters:
+  - jurisdiction: general
+    values:
+      module:
+        value: 1.25
