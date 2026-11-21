@@ -8,16 +8,18 @@ name:
   it: Vie di fuga orizzontali larghe almeno 1,20 m
 description:
   de: 'Korridore und andere horizontale Fluchtwege sind wenigstens 1.20 m breit, gemessen zwischen den Wänden oder
-    Geländern. Eine grössere Personenbelegung kann mehr Breite verlangen. Noch nicht prüfbar: das Modell liefert
-    keine Korridorbreite.'
+    Geländern. Eine grössere Personenbelegung kann mehr Breite verlangen. Geprüft wird die geplante lichte Fluchtwegbreite
+    des Raums (quantity_type_escape_route_clear_width).'
   en: 'Corridors and other horizontal escape routes are at least 1.20 m wide, measured between walls or railings.
-    A higher occupancy can require more width. Not yet checkable: the model gives no corridor width.'
+    A higher occupancy can require more width. The check reads the planned clear escape-route width of the space
+    (quantity_type_escape_route_clear_width).'
   fr: 'Les couloirs et autres voies d''évacuation horizontales mesurent au moins 1,20 m de large, entre murs ou
-    garde-corps. Une occupation plus élevée peut exiger davantage. Pas encore vérifiable : le modèle ne fournit
-    pas la largeur des couloirs.'
+    garde-corps. Une occupation plus élevée peut exiger davantage. La vérification lit la largeur libre prévue de
+    la voie d''évacuation du local (quantity_type_escape_route_clear_width).'
   it: 'Corridoi e altre vie di fuga orizzontali sono larghi almeno 1,20 m, misurati tra pareti o parapetti. Un''occupazione
-    maggiore può richiedere più larghezza. Non ancora verificabile: il modello non fornisce la larghezza dei corridoi.'
-rule_status: reviewed
+    maggiore può richiedere più larghezza. La verifica legge la larghezza libera prevista della via di fuga del locale
+    (quantity_type_escape_route_clear_width).'
+rule_status: shacl_defined
 severity: violation
 applies_to_elements:
 - pragmaticbim:element/spaces-interior
@@ -34,3 +36,37 @@ rule_source:
   extracted_at: '2026-11-11'
 reviewed_by: simon.dilhas@abstract.build
 reviewed_at: '2026-11-11'
+shacl: |-
+  rule:vkf-16-15-005-breite-horizontale-fluchtwege-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] .
+
+  rule:vkf-16-15-005-breite-horizontale-fluchtwege a sh:NodeShape ;
+      sh:name "Horizontale Fluchtwege mindestens 1.20 m breit"@de ,
+          "Horizontal escape routes at least 1.20 m wide"@en ;
+      sh:description "Korridore und andere horizontale Fluchtwege sind wenigstens 1.20 m breit, gemessen zwischen den Wänden oder Geländern. Eine grössere Personenbelegung kann mehr Breite verlangen. Geprüft wird die geplante lichte Fluchtwegbreite des Raums (quantity_type_escape_route_clear_width)."@de ,
+          "Corridors and other horizontal escape routes are at least 1.20 m wide, measured between walls or railings. A higher occupancy can require more width. The check reads the planned clear escape-route width of the space (quantity_type_escape_route_clear_width)."@en ;
+      sh:severity sh:Violation ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:vkf-16-15-005-breite-horizontale-fluchtwege-prefixes ;
+          sh:select """
+              SELECT DISTINCT ?this WHERE {
+                  ?this a pbs:Space .
+                  {
+                      { ?this pbs:escape_route_next ?next } UNION { ?previous pbs:escape_route_next ?this }
+                  }
+                  ?this pbs:quantity_values ?qv .
+                  ?qv pbs:quantity_type pbs:quantity_type_escape_route_clear_width .
+              }"""
+      ] ;
+      sh:property [
+          sh:path pbs:quantity_values ;
+          sh:or (
+              [ sh:not [ sh:property [ sh:path pbs:quantity_type ; sh:hasValue pbs:quantity_type_escape_route_clear_width ] ] ]
+              [ sh:property [ sh:path pbs:quantity_value ; sh:minInclusive 1.20 ] ]
+          ) ;
+          sh:message "Horizontaler Fluchtweg schmaler als 1.20 m."@de ,
+              "Horizontal escape route narrower than 1.20 m."@en
+      ] .

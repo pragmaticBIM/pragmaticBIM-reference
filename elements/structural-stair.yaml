@@ -403,7 +403,6 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 9
-# IFC mapping and quantity_type for this value await the data contract (#125); the pset below is a planning placeholder, not a contract key.
 - name: ClearWidth
   pset: ePset_Stair
   definition:
@@ -418,10 +417,10 @@ attributes:
   needed_for_workflows:
   - pragmaticbim:workflow/des-building-permit
   - pragmaticbim:workflow/des-fire-protection-concept
+  quantity_type: pbs:quantity_type_clear_width
   is_applicability: false
   status: active
   sort_order: 10
-# IFC mapping and quantity_type for this value await the data contract (#125); the pset below is a planning placeholder, not a contract key.
 - name: TreadLengthAtInnerSide
   pset: ePset_Stair
   definition:
@@ -436,6 +435,7 @@ attributes:
   needed_for_workflows:
   - pragmaticbim:workflow/des-building-permit
   - pragmaticbim:workflow/des-fire-protection-concept
+  quantity_type: pbs:quantity_type_tread_length_at_inner_side
   is_applicability: false
   status: active
   sort_order: 11

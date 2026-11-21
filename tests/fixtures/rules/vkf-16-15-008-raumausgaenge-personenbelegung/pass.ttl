@@ -1,0 +1,13 @@
+@prefix pbs: <https://schema.pragmaticbim.ch/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc: <https://w3id.org/ifc/IFC4_ADD2#> .
+@prefix ex: <https://schema.pragmaticbim.ch/ex/> .
+
+ex:focus a pbs:Space ;
+  pbs:performance_properties [
+    pbs:property_key pbs:indoor_environment_peak_occupancy ;
+    pbs:property_value_number 40
+  ] .
+ex:door1 pbs:connection_physical_type ifc:IfcDoor ;
+  pbs:connects_spaces ex:focus ;
+  pbs:metadata [ pbs:metadata_key "IfcDoor.OverallWidth" ; pbs:metadata_value "0.95" ] .

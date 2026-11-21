@@ -1,0 +1,13 @@
+# VKF 16-15 Ziff. 2.4.5: horizontal escape route clear width 1.00 < 1.20
+
+@prefix pbs: <https://schema.pragmaticbim.ch/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <https://schema.pragmaticbim.ch/ex/> .
+
+ex:next a pbs:Space .
+ex:focus a pbs:Space ;
+  pbs:escape_route_next ex:next ;
+  pbs:quantity_values [
+    pbs:quantity_type pbs:quantity_type_escape_route_clear_width ;
+    pbs:quantity_value 1.00
+  ] .

@@ -8,22 +8,26 @@ name:
   it: Le porte delle vie di fuga si aprono nel senso della fuga
 description:
   de: 'Türen in Fluchtwegen schlagen in Fluchtrichtung auf und lassen sich in dieser Richtung jederzeit rasch und
-    ohne Schlüssel oder Werkzeug öffnen. Bei Räumen für höchstens 20 Personen ist die Aufschlagrichtung frei. Tore
-    und Drehtüren brauchen daneben eine normal aufschlagende Tür. Noch nicht prüfbar: die Fluchtrichtung der Tür
-    ist im Modell nicht abgelegt.'
+    ohne Schlüssel oder Werkzeug öffnen. Bei Räumen für höchstens 20 Personen ist die Aufschlagrichtung frei; die
+    Prüfung gilt nur, wenn ein angeschlossener Raum PeakOccupancy über 20 hat oder keine Belegung trägt. Tore und
+    Drehtüren brauchen daneben eine normal aufschlagende Tür; das prüft die Regel nicht. Geprüft wird opens_in_escape_direction
+    an Türen auf dem Fluchtweg.'
   en: 'Doors on escape routes open in the escape direction and can be opened quickly in that direction at any time
-    without a key or tool. For rooms for at most 20 people the swing direction is free. Gates and revolving doors
-    need a normally swinging door next to them. Not yet checkable: the model does not store the escape direction
-    of a door.'
+    without a key or tool. For rooms for at most 20 people the swing direction is free; the check applies only when
+    a connected space has PeakOccupancy above 20 or no occupancy is set. Gates and revolving doors need a normally
+    swinging door next to them; that is outside this check. The check reads opens_in_escape_direction on doors on
+    the escape route.'
   fr: 'Les portes des voies d''évacuation s''ouvrent dans le sens de la fuite et peuvent être ouvertes rapidement
     dans ce sens, à tout moment, sans clé ni outil. Pour les locaux de 20 personnes au plus, le sens d''ouverture
-    est libre. Les portails et portes tournantes exigent à côté une porte battante usuelle. Pas encore vérifiable
-    : le modèle n''indique pas le sens de fuite d''une porte.'
+    est libre ; la vérification s''applique seulement si un local relié a un PeakOccupancy supérieur à 20 ou si
+    aucune occupation n''est renseignée. Les portails et portes tournantes exigent à côté une porte battante usuelle ;
+    cela n''est pas vérifié ici. La vérification lit opens_in_escape_direction sur les portes de la voie d''évacuation.'
   it: 'Le porte delle vie di fuga si aprono nel senso della fuga e, in quel senso, si aprono rapidamente in ogni
-    momento senza chiave né attrezzi. Per locali con al massimo 20 persone il senso di apertura è libero. Portoni
-    e porte girevoli richiedono accanto una porta a battente usuale. Non ancora verificabile: il modello non indica
-    il senso di fuga di una porta.'
-rule_status: reviewed
+    momento senza chiave né attrezzi. Per locali con al massimo 20 persone il senso di apertura è libero; la verifica
+    vale solo se un locale collegato ha PeakOccupancy superiore a 20 o se l''occupazione non è indicata. Portoni
+    e porte girevoli richiedono accanto una porta a battente usuale; ciò non è verificato qui. La verifica legge
+    opens_in_escape_direction sulle porte della via di fuga.'
+rule_status: shacl_defined
 severity: violation
 applies_to_elements:
 - pragmaticbim:element/architecture-door-interior
@@ -41,3 +45,51 @@ rule_source:
   extracted_at: '2026-11-11'
 reviewed_by: simon.dilhas@abstract.build
 reviewed_at: '2026-11-11'
+shacl: |-
+  rule:vkf-16-15-009-tueren-fluchtrichtung-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] ,
+          [ sh:prefix "ifc" ; sh:namespace "https://w3id.org/ifc/IFC4_ADD2#"^^xsd:anyURI ] .
+
+  rule:vkf-16-15-009-tueren-fluchtrichtung a sh:NodeShape ;
+      sh:name "Türen in Fluchtwegen öffnen in Fluchtrichtung"@de ,
+          "Doors on escape routes open in the escape direction"@en ;
+      sh:description "Türen in Fluchtwegen schlagen in Fluchtrichtung auf und lassen sich in dieser Richtung jederzeit rasch und ohne Schlüssel oder Werkzeug öffnen. Bei Räumen für höchstens 20 Personen ist die Aufschlagrichtung frei; die Prüfung gilt nur, wenn ein angeschlossener Raum PeakOccupancy über 20 hat oder keine Belegung trägt. Tore und Drehtüren brauchen daneben eine normal aufschlagende Tür; das prüft die Regel nicht. Geprüft wird opens_in_escape_direction an Türen auf dem Fluchtweg."@de ,
+          "Doors on escape routes open in the escape direction and can be opened quickly in that direction at any time without a key or tool. For rooms for at most 20 people the swing direction is free; the check applies only when a connected space has PeakOccupancy above 20 or no occupancy is set. Gates and revolving doors need a normally swinging door next to them; that is outside this check. The check reads opens_in_escape_direction on doors on the escape route."@en ;
+      sh:severity sh:Violation ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:vkf-16-15-009-tueren-fluchtrichtung-prefixes ;
+          sh:select """
+              SELECT DISTINCT ?this WHERE {
+                  ?this pbs:connection_physical_type ifc:IfcDoor .
+                  { ?this pbs:escape_route_next ?next } UNION { ?previous pbs:escape_route_next ?this }
+                  ?this pbs:opens_in_escape_direction ?dir .
+                  FILTER NOT EXISTS {
+                      ?this pbs:connects_spaces ?space .
+                      ?space pbs:performance_properties ?p .
+                      ?p pbs:property_key pbs:indoor_environment_peak_occupancy ;
+                         pbs:property_value_number ?occ .
+                      FILTER (xsd:decimal(?occ) <= 20)
+                      FILTER NOT EXISTS {
+                          ?this pbs:connects_spaces ?other .
+                          ?other pbs:performance_properties ?op .
+                          ?op pbs:property_key pbs:indoor_environment_peak_occupancy ;
+                              pbs:property_value_number ?oocc .
+                          FILTER (xsd:decimal(?oocc) > 20)
+                      }
+                  }
+              }"""
+      ] ;
+      sh:sparql [
+          a sh:SPARQLConstraint ;
+          sh:prefixes rule:vkf-16-15-009-tueren-fluchtrichtung-prefixes ;
+          sh:message "Tür öffnet nicht in Fluchtrichtung."@de ,
+              "Door does not open in the escape direction."@en ;
+          sh:select """
+              SELECT $this WHERE {
+                  $this pbs:opens_in_escape_direction ?dir .
+                  FILTER (?dir = false)
+              }"""
+      ] .
