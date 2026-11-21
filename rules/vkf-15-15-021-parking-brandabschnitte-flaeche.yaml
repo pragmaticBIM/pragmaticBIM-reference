@@ -1,0 +1,50 @@
+id: pragmaticbim:rule/vkf-15-15-021-parking-brandabschnitte-flaeche
+code: VKF-15-15-021
+sort_order: 33
+name:
+  de: 'Parkings: Brandabschnitte 4800 m² bzw. 2400 m²'
+  en: 'Car parks: fire compartments of 4800 m² or 2400 m²'
+  fr: 'Parkings : compartiments coupe-feu de 4800 m² ou 2400 m²'
+  it: 'Parcheggi: compartimenti antincendio di 4800 m² o 2400 m²'
+description:
+  de: 'Parkings bilden eigene Brandabschnitte. Bei Parkings unter Terrain und bei geschlossenen oberirdischen Parkings beträgt
+    die zulässige Brandabschnittsfläche 4800 m², wenn das Parking eingeschossig ist oder die Geschosse eigene Brandabschnitte
+    bilden. Stehen die Geschosse offen miteinander in Verbindung, sind es 2400 m². Mit Löschanlage verdoppeln sich die Flächen.
+    Bei teilweise offenen Parkings (mindestens 25 % unverschliessbare Öffnungen in den Umfassungswänden) darf die ohne Brandabschnittsbildung
+    verbundene Fläche je Geschoss 9600 m² nicht übersteigen. Noch nicht prüfbar: das Modell weist Brandabschnitte und offene
+    Wandanteile nicht aus.'
+  en: 'Car parks form their own fire compartments. For underground car parks and closed above-ground car parks the permitted
+    compartment area is 4800 m² if the car park has one storey or the storeys form separate compartments. Where the storeys
+    are openly connected, it is 2400 m². With an extinguishing system the areas double. For partly open car parks (at least
+    25 % non-closable openings in the enclosing walls) the area connected per storey without compartmentation must not exceed
+    9600 m². Not yet checkable: the model identifies neither fire compartments nor open wall proportions.'
+  fr: 'Les parkings forment leurs propres compartiments coupe-feu. Pour les parkings souterrains et les parkings fermés
+    hors sol, la surface admissible d''un compartiment est de 4800 m² si le parking est de plain-pied ou si les niveaux
+    forment des compartiments distincts. Si les niveaux communiquent librement, elle est de 2400 m². Avec une installation
+    d''extinction, les surfaces doublent. Pour les parkings partiellement ouverts (au moins 25 % d''ouvertures non fermables
+    dans les parois périphériques), la surface reliée par niveau sans compartimentage ne dépasse pas 9600 m². Pas encore
+    vérifiable : le modèle ne désigne ni les compartiments ni les proportions de parois ouvertes.'
+  it: 'I parcheggi formano compartimenti antincendio propri. Per i parcheggi interrati e i parcheggi chiusi fuori terra
+    la superficie ammessa del compartimento è 4800 m², se il parcheggio è a un solo piano o se i piani formano compartimenti
+    separati. Se i piani comunicano apertamente è 2400 m². Con un impianto di spegnimento le superfici raddoppiano. Per
+    i parcheggi parzialmente aperti (almeno il 25 % di aperture non chiudibili nelle pareti perimetrali) la superficie collegata
+    per piano senza compartimentazione non supera 9600 m². Non ancora verificabile: il modello non indica né i compartimenti
+    né le quote di pareti aperte.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-parking
+- pragmaticbim:element/storey
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-15-15-2015
+  source_document: VKF-Brandschutzrichtlinie 15-15 Brandschutzabstände, Tragwerke, Brandabschnitte (2015)
+  source_page: 15
+  source_quote: VKF 15-15, Ziff. 3.7.11 Abs. 1–3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

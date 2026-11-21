@@ -1,0 +1,45 @@
+id: pragmaticbim:rule/vkf-15-15-019-schule-brandabschnitte
+code: VKF-15-15-019
+sort_order: 31
+name:
+  de: 'Schulbauten: Brandabschnitt höchstens 3600 m², Spezialräume eigenständig'
+  en: 'School buildings: fire compartment at most 3600 m², special rooms separate'
+  fr: 'Bâtiments scolaires : compartiment coupe-feu de 3600 m² au plus, locaux spéciaux distincts'
+  it: 'Edifici scolastici: compartimento al massimo 3600 m², locali speciali separati'
+description:
+  de: 'Schulbetrieb und zugehörige Nutzungen sowie die Turnhalle mit ihren Nebenräumen dürfen je in einem Brandabschnitt
+    zusammengefasst werden. Ohne besonderen Nachweis umfasst die zusammenhängende Brandabschnittsfläche höchstens 3600 m²;
+    sie rechnet alle ohne Feuerwiderstand verbundenen Geschosse ein. Spezialräume wie Schulküche, Cafeteria, Werk- und Laborräume
+    bilden eigene Brandabschnitte. Noch nicht prüfbar: das Modell weist Brandabschnitte nicht aus.'
+  en: 'School operations and associated uses, as well as the gymnasium with its ancillary rooms, may each be combined in
+    one fire compartment. Without special proof the contiguous compartment area is at most 3600 m²; it includes all storeys
+    connected without fire resistance. Special rooms such as school kitchen, cafeteria, workshops and laboratories form
+    their own fire compartments. Not yet checkable: the model does not identify fire compartments.'
+  fr: 'L''exploitation scolaire et les affectations associées, ainsi que la salle de gymnastique et ses locaux annexes,
+    peuvent chacune être regroupées dans un compartiment coupe-feu. Sans justification particulière, la surface contiguë
+    d''un compartiment ne dépasse pas 3600 m² ; elle comprend tous les niveaux reliés sans résistance au feu. Les locaux
+    spéciaux tels que cuisine scolaire, cafétéria, ateliers et laboratoires forment leurs propres compartiments. Pas encore
+    vérifiable : le modèle ne désigne pas les compartiments coupe-feu.'
+  it: 'L''attività scolastica e gli utilizzi associati, come pure la palestra con i suoi locali annessi, possono essere
+    riuniti ciascuno in un compartimento antincendio. Senza prova particolare, la superficie contigua del compartimento
+    è al massimo 3600 m²; include tutti i piani collegati senza resistenza al fuoco. I locali speciali come cucina scolastica,
+    caffetteria, laboratori e officine formano compartimenti propri. Non ancora verificabile: il modello non indica i compartimenti
+    antincendio.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/storey
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-15-15-2015
+  source_document: VKF-Brandschutzrichtlinie 15-15 Brandschutzabstände, Tragwerke, Brandabschnitte (2015)
+  source_page: 15
+  source_quote: VKF 15-15, Ziff. 3.7.6 Abs. 1–5
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

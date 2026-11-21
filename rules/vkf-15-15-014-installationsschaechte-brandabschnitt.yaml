@@ -1,0 +1,51 @@
+id: pragmaticbim:rule/vkf-15-15-014-installationsschaechte-brandabschnitt
+code: VKF-15-15-014
+sort_order: 26
+name:
+  de: 'Installationsschächte über mehrere Geschosse: brandabschnittsbildend, mindestens EI 30'
+  en: 'Installation shafts over several storeys: compartment-forming, at least EI 30'
+  fr: 'Gaines techniques sur plusieurs niveaux : compartimentantes, au moins EI 30'
+  it: 'Cavedi impiantistici su più piani: compartimentanti, almeno EI 30'
+description:
+  de: 'Haustechnische Leitungen über mehrere Geschosse werden grundsätzlich in Installationsschächten geführt, die selbst
+    Brandabschnitte bilden. Die Schachtumfassung erreicht den Feuerwiderstand der nutzungsbezogenen Brandabschnittsbildung,
+    mindestens aber EI 30. Auf einen Schacht kann verzichten, wer die Leitungen geschossweise durch Decken mit Durchführungen
+    nach Ziff. 3.5 führt oder VKF-anerkannte Wandsysteme verwendet. Noch nicht prüfbar: das Modell zeigt nicht, welche Bauteile
+    einen Schacht umfassen.'
+  en: 'Building-services lines running over several storeys are in principle routed in installation shafts that themselves
+    form fire compartments. The shaft enclosure matches the fire resistance of the use-related compartmentation, but at
+    least EI 30. A shaft can be omitted where lines pass storey by storey through floors with penetrations made as in clause
+    3.5 or run in VKF-recognized wall systems. Not yet checkable: the model does not show which components enclose a shaft.'
+  fr: 'Les conduites des installations techniques sur plusieurs niveaux sont en principe guidées dans des gaines formant
+    elles-mêmes des compartiments coupe-feu. L''enveloppe de la gaine atteint la résistance au feu de la compartimentation
+    liée à l''affectation, au moins EI 30. On peut renoncer à la gaine si les conduites traversent les planchers niveau
+    par niveau avec des traversées selon le chiffre 3.5, ou si elles passent dans des systèmes de parois reconnus par l''AEAI.
+    Pas encore vérifiable : le modèle n''indique pas quels éléments entourent une gaine.'
+  it: 'Le condutture degli impianti tecnici su più piani sono di norma guidate in cavedi che formano essi stessi compartimenti
+    antincendio. L''involucro del cavedio raggiunge la resistenza al fuoco della compartimentazione legata all''utilizzo,
+    almeno EI 30. Si può rinunciare al cavedio se le condutture attraversano i solai piano per piano con passaggi eseguiti
+    secondo il numero 3.5 oppure corrono in sistemi di parete riconosciuti dall''AICAA. Non ancora verificabile: il modello
+    non indica quali elementi racchiudono un cavedio.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/architecture-installation-path
+- pragmaticbim:element/structural-wall
+- pragmaticbim:element/architecture-wall-interior
+- pragmaticbim:element/structural-slab-floor
+- pragmaticbim:element/architecture-slab-floor
+performance_property_keys:
+- pbs:fire_property_resistance_rating
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-15-15-2015
+  source_document: VKF-Brandschutzrichtlinie 15-15 Brandschutzabstände, Tragwerke, Brandabschnitte (2015)
+  source_page: 9
+  source_quote: VKF 15-15, Ziff. 3.6.1
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
