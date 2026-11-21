@@ -1,0 +1,52 @@
+id: pragmaticbim:rule/vkf-16-15-023-personenbelegung-raumausgaenge
+code: VKF-16-15-023
+sort_order: 79
+name:
+  de: Personenbelegung festhalten, Raumausgänge direkt in Fluchtwege
+  en: Record occupancy, room exits directly onto escape routes
+  fr: Fixer l'occupation, sorties de locaux directement sur les voies d'évacuation
+  it: Fissare l'occupazione, uscite dei locali direttamente sulle vie di fuga
+description:
+  de: 'Die massgebende Personenbelegung bestimmt Anzahl und Bemessung der Fluchtwege und ist schriftlich und verbindlich festzuhalten.
+    Fehlen verbindliche Angaben (z. B. Bestuhlungspläne), gelten flächenbezogene Annahmen, die objektspezifisch angepasst
+    werden können. Anzahl und Breite der Raumausgänge richten sich nach dieser Belegung. Mindestens zwei Drittel der erforderlichen
+    Ausgangsbreite führen direkt in horizontale oder vertikale Fluchtwege; höchstens ein Drittel darf über eine anders genutzte
+    Zone (z. B. Foyer, Warteraum) führen, sofern die Breite betrieblich freigehalten wird. Noch nicht prüfbar: Personenbelegung
+    und Zonennutzung sind im Modell nicht typisiert abgelegt.'
+  en: 'The decisive occupancy determines the number and dimensions of escape routes and is to be recorded in writing and bindingly.
+    Where no binding data exist (e.g. seating plans), area-based assumptions apply and may be adapted to the project. The
+    number and width of room exits follow this occupancy. At least two thirds of the required exit width lead directly onto
+    horizontal or vertical escape routes; at most one third may lead through an otherwise used zone (e.g. foyer, waiting room),
+    provided the width is kept clear in operation. Not yet checkable: occupancy and zone use are not stored as typed values
+    in the model.'
+  fr: 'L''occupation déterminante fixe le nombre et le dimensionnement des voies d''évacuation et doit être consignée par
+    écrit de manière contraignante. À défaut de données contraignantes (p. ex. plans de places assises), on se base sur des
+    hypothèses liées à la surface, adaptables au projet. Le nombre et la largeur des sorties de locaux découlent de cette
+    occupation. Au moins deux tiers de la largeur de sortie requise mènent directement à des voies d''évacuation horizontales
+    ou verticales ; un tiers au plus peut passer par une zone à autre usage (p. ex. foyer, salle d''attente), pour autant
+    que la largeur soit maintenue libre en exploitation. Pas encore vérifiable : l''occupation et l''usage des zones ne sont
+    pas enregistrés comme valeurs typées dans le modèle.'
+  it: 'L''occupazione determinante stabilisce numero e dimensionamento delle vie di fuga e va fissata per iscritto in modo
+    vincolante. In assenza di dati vincolanti (p. es. piani dei posti a sedere) valgono ipotesi basate sulla superficie, adattabili
+    al progetto. Numero e larghezza delle uscite dei locali dipendono da tale occupazione. Almeno due terzi della larghezza
+    di uscita richiesta conducono direttamente a vie di fuga orizzontali o verticali; al massimo un terzo può passare attraverso
+    una zona con altro utilizzo (p. es. foyer, sala d''attesa), a condizione che la larghezza sia mantenuta libera nell''esercizio.
+    Non ancora verificabile: occupazione e utilizzo delle zone non sono registrati come valori tipizzati nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/spaces-interior
+- pragmaticbim:element/architecture-door-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-16-15-2015
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 11
+  source_quote: VKF 16-15, Ziff. 3.5.2–3.5.3
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null

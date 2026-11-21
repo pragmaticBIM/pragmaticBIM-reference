@@ -1,0 +1,53 @@
+id: pragmaticbim:rule/vkf-16-15-025-bestuhlung-grosse-personenbelegung
+code: VKF-16-15-025
+sort_order: 81
+name:
+  de: 'Bestuhlung: Durchgang 0.45 m, höchstens 32 bzw. 16 Sitze je Reihe'
+  en: 'Seating: passage 0.45 m, at most 32 or 16 seats per row'
+  fr: 'Sièges : passage de 0,45 m, 32 ou 16 sièges par rangée au plus'
+  it: 'Posti a sedere: passaggio 0,45 m, al massimo 32 o 16 posti per fila'
+description:
+  de: 'In Räumen mit grosser Personenbelegung werden Sitzplätze in Reihen angeordnet und durch Zwischengänge unterbrochen,
+    sodass die Ausgänge möglichst direkt erreichbar sind. Der freie Durchgang zwischen Sitzreihen beträgt mindestens 0.45
+    m, Verkehrswege sind mindestens 1.2 m breit. Eine Reihe mit Zugang von zwei Seiten hat höchstens 32 Sitze, bei Zugang
+    von nur einer Seite höchstens 16. Die Bestuhlung wird wenn möglich am Boden befestigt, sonst werden die Stühle einer Reihe
+    unlösbar verbunden. Stühle in Verkehrswegen sind verboten, Klappsitze an Verkehrswegen klappen selbsttätig hoch. Noch
+    nicht prüfbar: Sitzreihen und Sitzanzahl sind im Modell nicht strukturiert abgelegt.'
+  en: 'In rooms with large occupancy, seats are arranged in rows and interrupted by aisles so that the exits can be reached
+    as directly as possible. The free passage between rows is at least 0.45 m, and circulation routes are at least 1.2 m wide.
+    A row accessible from two sides has at most 32 seats, a row accessible from one side only at most 16. Seating is fixed
+    to the floor where possible; otherwise the chairs of a row are linked so the audience cannot detach them. Chairs in circulation
+    routes are prohibited, and folding seats along circulation routes fold up automatically. Not yet checkable: seat rows
+    and seat counts are not stored in a structured way in the model.'
+  fr: 'Dans les locaux à grande occupation, les places assises sont disposées en rangées et interrompues par des allées, de
+    façon que les sorties soient accessibles le plus directement possible. Le passage libre entre les rangées est d''au moins
+    0,45 m et les voies de circulation ont au moins 1,2 m de large. Une rangée accessible des deux côtés compte 32 sièges
+    au plus, une rangée accessible d''un seul côté 16 au plus. Les sièges sont fixés au sol si possible ; sinon, les chaises
+    d''une rangée sont reliées de manière que le public ne puisse pas les détacher. Les chaises dans les voies de circulation
+    sont interdites, et les strapontins le long des voies de circulation se relèvent automatiquement. Pas encore vérifiable
+    : les rangées et le nombre de sièges ne sont pas enregistrés de façon structurée dans le modèle.'
+  it: 'Nei locali con grande occupazione i posti a sedere sono disposti in file e interrotti da corridoi, in modo che le uscite
+    siano raggiungibili nel modo più diretto possibile. Il passaggio libero tra le file è di almeno 0,45 m e i percorsi sono
+    larghi almeno 1,2 m. Una fila accessibile da due lati ha al massimo 32 posti, una fila accessibile da un solo lato al
+    massimo 16. I sedili sono fissati al pavimento, se possibile; altrimenti le sedie di una fila sono collegate in modo che
+    il pubblico non possa staccarle. Le sedie nei percorsi sono vietate e i sedili ribaltabili lungo i percorsi si sollevano
+    automaticamente. Non ancora verificabile: file e numero di posti non sono registrati in modo strutturato nel modello.'
+rule_status: reviewed
+severity: violation
+applies_to_elements:
+- pragmaticbim:element/furniture
+- pragmaticbim:element/architecture-built-in-furniture
+- pragmaticbim:element/spaces-interior
+domain: pragmaticbim:domain/fire-protection
+jurisdiction:
+- ch
+edition: '2015'
+valid_from: '2015-01-01'
+rule_source:
+  regulation: pragmaticbim:regulation/vkf-16-15-2015
+  source_document: VKF-Brandschutzrichtlinie 16-15 Flucht- und Rettungswege (2015)
+  source_page: 11
+  source_quote: VKF 16-15, Ziff. 3.5.5
+  extracted_at: '2026-11-21'
+reviewed_by: null
+reviewed_at: null
