@@ -1,0 +1,12 @@
+@prefix pbs: <https://schema.pragmaticbim.ch/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc: <https://w3id.org/ifc/IFC4_ADD2#> .
+@prefix ex: <https://schema.pragmaticbim.ch/ex/> .
+
+ex:wall a pbs:SeparatorWall ;
+  pbs:performance_properties
+    [ pbs:property_key pbs:fire_property_resistance_rating ; pbs:property_value_string "EI60" ] .
+ex:focus pbs:connection_physical_type ifc:IfcDoor ;
+  pbs:hosted_by ex:wall ;
+  pbs:performance_properties
+    [ pbs:property_key pbs:fire_property_resistance_rating ; pbs:property_value_string "EI30" ] .

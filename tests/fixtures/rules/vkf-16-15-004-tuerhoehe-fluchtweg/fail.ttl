@@ -1,0 +1,11 @@
+# VKF 16-15 Ziff. 2.4.5: escape-route door OverallHeight 1.90 < 2.00
+
+@prefix pbs: <https://schema.pragmaticbim.ch/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc: <https://w3id.org/ifc/IFC4_ADD2#> .
+@prefix ex: <https://schema.pragmaticbim.ch/ex/> .
+
+ex:next a pbs:Space .
+ex:focus pbs:connection_physical_type ifc:IfcDoor ;
+  pbs:escape_route_next ex:next ;
+  pbs:metadata [ pbs:metadata_key "IfcDoor.OverallHeight" ; pbs:metadata_value "1.90" ] .
