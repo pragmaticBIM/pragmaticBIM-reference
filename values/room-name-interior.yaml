@@ -29,7 +29,6 @@ values:
   - Wohnungseingang
   - Abstellraum Wohnen
   - Kellerabteil
-  - Entree
   - Gemeinschaftswaschküche
   - Trocknungsraum
   - Wohneinheit
@@ -163,7 +162,6 @@ values:
   - Entrée du logement
   - Débarras du logement
   - Compartiment de cave
-  - Entrée
   - Buanderie commune
   - Local de séchage
   - Logement
@@ -297,7 +295,6 @@ values:
   - Ingresso dell'alloggio
   - Ripostiglio dell'alloggio
   - Comparto cantina
-  - Entrata
   - Lavanderia comune
   - Locale di asciugatura
   - Alloggio
@@ -431,7 +428,6 @@ values:
   - Residential Entry
   - Residential Closet
   - Cellar Compartment
-  - Entrance Hall
   - Communal Laundry
   - Drying Room
   - Apartment Unit
