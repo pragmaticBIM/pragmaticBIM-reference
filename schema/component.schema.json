@@ -230,7 +230,7 @@
           }
         },
         "side_distance_min": {
-          "description": "Minimum distance from the component's side to a perpendicular wall, in metres.",
+          "description": "Minimum clear distance from the fixture body to a side wall only, in metres. Distances between two fixtures live in rules/fixture_spacing.yaml.",
           "type": "number",
           "minimum": 0
         },
@@ -239,7 +239,7 @@
           "$ref": "#/$defs/length"
         },
         "axis_spacing_min": {
-          "description": "Minimum distance between the axes of two neighbouring components of the same kind, in metres (WC, urinal and shower rows).",
+          "description": "Deprecated for new fixtures: prefer rules/fixture_spacing.yaml. Minimum axis distance between neighbouring instances of the same component, in metres.",
           "type": "number",
           "minimum": 0
         }
