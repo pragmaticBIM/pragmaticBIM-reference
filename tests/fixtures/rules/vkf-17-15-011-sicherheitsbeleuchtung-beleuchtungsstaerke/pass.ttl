@@ -1,0 +1,9 @@
+@prefix pbs: <https://schema.pragmaticbim.ch/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <https://schema.pragmaticbim.ch/ex/> .
+
+ex:focus a pbs:Equipment ;
+  pbs:performance_properties [
+    pbs:property_key pbs:fire_property_safety_floor_illuminance ;
+    pbs:property_value_number 1.0
+  ] .

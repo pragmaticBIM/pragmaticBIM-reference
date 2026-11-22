@@ -1,0 +1,15 @@
+@prefix pbs: <https://schema.pragmaticbim.ch/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <https://schema.pragmaticbim.ch/ex/> .
+
+ex:focus a pbs:Equipment ;
+  pbs:performance_properties [
+    pbs:property_key pbs:fire_property_safety_rated_duration ;
+    pbs:property_value_number 30
+  ] , [
+    pbs:property_key pbs:fire_property_safety_start_up_time ;
+    pbs:property_value_number 15
+  ] , [
+    pbs:property_key pbs:fire_property_safety_not_switchable ;
+    pbs:property_value_boolean true
+  ] .
