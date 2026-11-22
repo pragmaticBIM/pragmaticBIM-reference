@@ -51,6 +51,9 @@ shacl: |-
           sh:select """
               SELECT DISTINCT ?this WHERE {
                   ?this a pbs:Equipment .
+                  ?this pbs:classifications ?c .
+                  ?c pbs:classification_uri ?uri .
+                  FILTER (STRENDS(STR(?uri), "/mep-light-fixture"))
                   ?this pbs:performance_properties ?p .
                   ?p pbs:property_key pbs:fire_property_safety_floor_illuminance ;
                      pbs:property_value_number ?lx .
