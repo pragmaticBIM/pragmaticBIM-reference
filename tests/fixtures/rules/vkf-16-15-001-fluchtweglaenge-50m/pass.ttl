@@ -3,8 +3,13 @@
 @prefix ifc: <https://w3id.org/ifc/IFC4_ADD2#> .
 @prefix ex: <https://schema.pragmaticbim.ch/ex/> .
 
-ex:focus a pbs:Space ;
+ex:focus a pbs:Space .
+
+ex:escape_length a pbs:DerivedMeasurement ;
+  pbs:applies_to_entities ex:focus , ex:first_door ;
   pbs:quantity_values [
     pbs:quantity_type pbs:quantity_type_escape_route_length ;
     pbs:quantity_value 40.0
   ] .
+
+ex:first_door a pbs:ConnectionPhysical .

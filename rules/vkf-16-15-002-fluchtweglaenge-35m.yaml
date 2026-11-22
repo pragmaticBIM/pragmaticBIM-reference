@@ -65,12 +65,18 @@ shacl: |-
                   }
               }"""
       ] ;
-      sh:property [
-          sh:path pbs:quantity_values ;
-          sh:or (
-              [ sh:not [ sh:property [ sh:path pbs:quantity_type ; sh:hasValue pbs:quantity_type_escape_route_length ] ] ]
-              [ sh:property [ sh:path pbs:quantity_value ; sh:maxInclusive 35.0 ] ]
-          ) ;
+      sh:sparql [
+          a sh:SPARQLConstraint ;
+          sh:prefixes rule:vkf-16-15-002-fluchtweglaenge-35m-prefixes ;
           sh:message "Fluchtweg über 35 m: nur zulässig mit einem zweiten, getrennten Ausgang oder einer zweiten Treppe."@de ,
-              "Escape route above 35 m: allowed only with a second, separate exit or stair."@en
+              "Escape route above 35 m: allowed only with a second, separate exit or stair."@en ;
+          sh:select """
+              SELECT $this WHERE {
+                  ?m a pbs:DerivedMeasurement ;
+                     pbs:applies_to_entities $this ;
+                     pbs:quantity_values ?qv .
+                  ?qv pbs:quantity_type pbs:quantity_type_escape_route_length ;
+                      pbs:quantity_value ?value .
+                  FILTER (?value > 35.0)
+              }"""
       ] .
