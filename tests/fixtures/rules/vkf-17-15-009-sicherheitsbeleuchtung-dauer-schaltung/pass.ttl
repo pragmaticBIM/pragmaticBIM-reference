@@ -3,6 +3,9 @@
 @prefix ex: <https://schema.pragmaticbim.ch/ex/> .
 
 ex:focus a pbs:Equipment ;
+  pbs:classifications [
+    pbs:classification_uri "https://pragmaticbim.ch/id/element/mep-light-fixture"
+  ] ;
   pbs:performance_properties [
     pbs:property_key pbs:fire_property_safety_rated_duration ;
     pbs:property_value_number 30

@@ -77,7 +77,10 @@ shacl: |-
                   FILTER NOT EXISTS {
                       $this pbs:contained_entities ?eq .
                       ?eq a pbs:Equipment ;
+                          pbs:classifications ?c ;
                           pbs:performance_properties ?p .
+                      ?c pbs:classification_uri ?uri .
+                      FILTER (STRENDS(STR(?uri), "/mep-light-fixture"))
                       ?p pbs:property_key ?k .
                       FILTER (?k IN (
                           pbs:fire_property_safety_rated_duration ,
