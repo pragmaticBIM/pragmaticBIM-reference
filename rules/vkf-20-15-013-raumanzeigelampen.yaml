@@ -10,23 +10,18 @@ description:
   de: 'Damit die Feuerwehr den Brandherd rasch ermitteln kann, werden bei den Zugängen zu überwachten Räumen sowie bei Hohlböden
     und Hohldecken Anzeigelampen installiert, auf mindestens 1.7 m über Boden. Ausnahmen gelten bei ständig besetzten Betrieben
     mit Lotsendienst, bei Bettengeschossen mit beschrifteten Zimmern und bei einzelnen Räumen über 400 m² mit eigener Meldergruppe
-    und beschrifteten Zugängen. Noch nicht prüfbar: das Modell enthält Melder nur als Gerät mit Lage, ohne Meldergruppe, Überwachungsumfang,
-    Montagehöhe und Anlagesystem.'
+    und beschrifteten Zugängen.'
   en: 'So that the fire brigade can quickly locate the fire, indicator lamps are installed at entrances to monitored rooms
     and at raised floors and hollow ceilings, at least 1.7 m above floor. Exceptions apply to permanently staffed premises
     with a guiding service, to bedroom storeys with labelled rooms, and to single rooms over 400 m² with their own detector
-    zone and labelled access. Not yet checkable: the model holds detectors only as a device with location, without detector
-    zone, monitored extent, mounting height and system.'
+    zone and labelled access.'
   fr: 'Pour que les sapeurs-pompiers localisent rapidement le foyer, des voyants sont installés aux accès des locaux surveillés
     ainsi qu''aux planchers et plafonds creux, à au moins 1.7 m du sol. Des exceptions valent pour les exploitations occupées
     en permanence avec service de guidage, les étages de chambres avec locaux étiquetés et les locaux isolés de plus de 400
-    m² avec zone propre et accès étiquetés. Pas encore vérifiable : le modèle ne contient les détecteurs que comme appareil
-    avec position, sans zone de détection, étendue surveillée, hauteur de montage ni système.'
+    m² avec zone propre et accès étiquetés.'
   it: 'Perché i pompieri possano individuare rapidamente il focolaio, agli accessi dei locali sorvegliati e presso pavimenti
     e soffitti cavi sono installate spie, ad almeno 1.7 m dal pavimento. Valgono eccezioni per aziende presidiate in permanenza
-    con servizio di guida, piani con camere etichettate e singoli locali oltre 400 m² con zona propria e accessi etichettati.
-    Non ancora verificabile: il modello contiene i rivelatori solo come apparecchio con posizione, senza zona di rivelazione,
-    estensione sorvegliata, altezza di montaggio né sistema.'
+    con servizio di guida, piani con camere etichettate e singoli locali oltre 400 m² con zona propria e accessi etichettati.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -7,14 +7,10 @@ name:
   fr: 'Éclairage de sécurité dans les voies d''évacuation : au moins 1 lux'
   it: 'Illuminazione di sicurezza nelle vie di fuga: almeno 1 lux'
 description:
-  de: 'Die Beleuchtungsstärke der Sicherheitsbeleuchtung in Fluchtwegen beträgt mindestens 1 Lux. Noch nicht prüfbar: das
-    Modell trägt keine Beleuchtungsstärke für Leuchten oder Fluchtwege.'
-  en: 'The illuminance of safety lighting in escape routes is at least 1 lux. Not yet checkable: the model carries no illuminance
-    for luminaires or escape routes.'
-  fr: 'L''éclairement de l''éclairage de sécurité dans les voies d''évacuation est d''au moins 1 lux. Pas encore vérifiable
-    : le modèle ne porte pas d''éclairement pour les luminaires ou les voies d''évacuation.'
-  it: 'L''illuminamento dell''illuminazione di sicurezza nelle vie di fuga è di almeno 1 lux. Non ancora verificabile: il
-    modello non riporta l''illuminamento per apparecchi o vie di fuga.'
+  de: 'Die Beleuchtungsstärke der Sicherheitsbeleuchtung in Fluchtwegen beträgt mindestens 1 Lux.'
+  en: 'The illuminance of safety lighting in escape routes is at least 1 lux.'
+  fr: 'L''éclairement de l''éclairage de sécurité dans les voies d''évacuation est d''au moins 1 lux.'
+  it: 'L''illuminamento dell''illuminazione di sicurezza nelle vie di fuga è di almeno 1 lux.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -10,25 +10,20 @@ description:
   de: 'Bei Brennstoffen, die zu Verpuffungen neigen, etwa feinkörniger Kohle oder Holzspänen, gehören Explosionsklappen in
     die Abgasanlage, im Heizraum nahe der Verbindungsrohreinführung und mindestens im Querschnitt der Abgasanlage. Abgasventilatoren
     erzeugen nur dann Überdruck, wenn die Anlage dafür anerkannt ist. Abgasanlagen haben Öffnungen für Kontrolle und Reinigung,
-    Zubehör ist dafür leicht entfernbar; in feuer- oder explosionsgefährdeten Räumen sind solche Öffnungen nicht zulässig.
-    Noch nicht prüfbar: das Modell enthält keine Abgasanlage mit Klassierung, Führung, Mindesthöhe über Dach und Sicherheitsabstand.'
+    Zubehör ist dafür leicht entfernbar; in feuer- oder explosionsgefährdeten Räumen sind solche Öffnungen nicht zulässig.'
   en: 'For fuels prone to deflagration, such as fine-grained coal or wood chips, explosion flaps belong in the flue system,
     in the boiler room close to the connecting pipe entry and at least the cross-section of the flue. Flue fans create positive
     pressure only if the system is approved for it. Flue systems have openings for inspection and cleaning, accessories can
-    be removed easily; in rooms with fire or explosion hazard such openings are not permitted. Not yet checkable: the model
-    holds no flue system with classification, routing, minimum height above roof and clearance.'
+    be removed easily; in rooms with fire or explosion hazard such openings are not permitted.'
   fr: 'Pour les combustibles enclins aux déflagrations, comme le charbon fin ou les copeaux de bois, des clapets d''explosion
     sont posés dans l''installation, dans le local de chauffe près de l''entrée du tuyau de raccordement et au moins de la
     section du conduit. Les ventilateurs de fumées ne créent une surpression que si l''installation y est reconnue. Les conduits
     ont des ouvertures de contrôle et de nettoyage, les accessoires sont facilement démontables ; dans les locaux à danger
-    d''incendie ou d''explosion, de telles ouvertures ne sont pas admises. Pas encore vérifiable : le modèle ne contient aucune
-    installation d''évacuation des gaz avec classification, tracé, hauteur minimale au-dessus du toit ni distance de sécurité.'
+    d''incendie ou d''explosion, de telles ouvertures ne sont pas admises.'
   it: 'Per combustibili inclini a deflagrazioni, come carbone fine o trucioli di legno, nell''impianto vanno serrande antiscoppio,
     nel locale caldaia vicino all''ingresso del tubo di raccordo e almeno della sezione dell''impianto. I ventilatori fumi
     creano sovrappressione solo se l''impianto è riconosciuto per questo. Gli impianti hanno aperture per controllo e pulizia,
-    gli accessori sono facilmente rimovibili; nei locali a pericolo d''incendio o d''esplosione tali aperture non sono ammesse.
-    Non ancora verificabile: il modello non contiene alcun impianto di scarico fumi con classificazione, percorso, altezza
-    minima sopra il tetto né distanza di sicurezza.'
+    gli accessori sono facilmente rimovibili; nei locali a pericolo d''incendio o d''esplosione tali aperture non sono ammesse.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

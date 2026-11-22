@@ -10,22 +10,19 @@ description:
   de: 'Hinterlüftete Fassaden an Gebäuden mittlerer Höhe, deren Bekleidung oder Dämmung im Hinterlüftungsbereich brennbar
     ist, sind VKF-anerkannte oder gleichwertige Konstruktionen. An Gebäuden geringer und mittlerer Höhe genügen stabförmige
     Unterkonstruktionen aus RF3-Baustoffen. Punktuelle Befestigungen und Rückverankerungen innerhalb der Dämmung bestehen
-    bei allen Gebäudehöhen mindestens aus RF2-Baustoffen. Noch nicht prüfbar: das Modell führt die Brandverhaltensgruppe
-    (RF1–RF4, cr) der Baustoffe nicht.'
+    bei allen Gebäudehöhen mindestens aus RF2-Baustoffen.'
   en: 'Ventilated facades on medium-height buildings whose cladding or insulation in the ventilated cavity is combustible
     are VKF-recognized or equivalent constructions. On low and medium-height buildings, rod-shaped substructures made of
     RF3 materials suffice. Point fixings and back-anchorages inside the insulation are made of at least RF2 materials at
-    all building heights. Not yet checkable: the model does not carry the reaction-to-fire group (RF1–RF4, cr) of materials.'
+    all building heights.'
   fr: 'Les façades ventilées de bâtiments de hauteur moyenne dont le revêtement ou l''isolation dans la lame d''air est
     combustible sont des constructions reconnues par l''AEAI ou équivalentes. Sur les bâtiments de faible et moyenne hauteur,
     des sous-constructions linéaires en matériaux RF3 suffisent. Les fixations ponctuelles et ancrages dans l''isolation
-    sont en matériaux RF2 au moins, à toutes les hauteurs de bâtiment. Pas encore vérifiable : le modèle ne porte pas le
-    groupe de comportement au feu (RF1–RF4, cr) des matériaux.'
+    sont en matériaux RF2 au moins, à toutes les hauteurs de bâtiment.'
   it: 'Le facciate ventilate di edifici di altezza media, il cui rivestimento o isolamento nell''intercapedine è combustibile,
     sono costruzioni riconosciute dall''AICAA o equivalenti. Su edifici di altezza ridotta e media bastano sottostrutture
     lineari in materiali RF3. I fissaggi puntuali e gli ancoraggi all''interno dell''isolamento sono in materiali almeno
-    RF2 a tutte le altezze. Non ancora verificabile: il modello non riporta il gruppo di comportamento al fuoco (RF1–RF4,
-    cr) dei materiali.'
+    RF2 a tutte le altezze.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

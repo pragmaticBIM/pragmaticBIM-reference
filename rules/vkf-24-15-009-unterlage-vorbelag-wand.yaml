@@ -11,27 +11,21 @@ description:
     einzeln gefertigte Aggregate wie Kachelöfen auf einer 0.12 m dicken Platte aus Stein, Beton oder Gleichwertigem. Vor Aggregaten
     für feste Brennstoffe liegt ein dauerwärmebeständiger RF1-Bodenbelag, der 0.4 m vor die Beschickungsöffnung reicht. Wände
     dahinter bestehen über die ganze Raumhöhe und seitlich 0.2 m über das Aggregat hinaus aus dauerwärmebeständigem RF1; an
-    einzeln gefertigte Aggregate angebaute Wände sind 0.12 m dick. Noch nicht prüfbar: das Modell weist Oberflächentemperatur,
-    Brennbarkeit der Umgebung und Sicherheitsabstände nicht aus.'
+    einzeln gefertigte Aggregate angebaute Wände sind 0.12 m dick.'
   en: 'On combustible floor constructions firing units stand on a base plate of heat-resistant RF1, individually made units
     such as tiled stoves on a 0.12 m thick slab of stone, concrete or equivalent. In front of solid-fuel units lies a heat-resistant
     RF1 floor covering extending 0.4 m in front of the loading opening. Walls behind are made of heat-resistant RF1 over the
-    full room height and 0.2 m beyond the unit at the sides; walls adjoining individually made units are 0.12 m thick. Not
-    yet checkable: the model does not show surface temperature, combustibility of surroundings and clearances.'
+    full room height and 0.2 m beyond the unit at the sides; walls adjoining individually made units are 0.12 m thick.'
   fr: 'Sur des planchers combustibles, les foyers reposent sur une plaque de base en RF1 résistant à la chaleur, les appareils
     fabriqués individuellement comme les poêles en catelles sur une dalle de 0.12 m en pierre, béton ou équivalent. Devant
     les appareils à combustible solide se trouve un revêtement de sol en RF1 résistant à la chaleur, qui dépasse de 0.4 m
     l''ouverture de chargement. Les parois derrière sont en RF1 résistant à la chaleur sur toute la hauteur du local et 0.2
-    m au-delà de l''appareil latéralement ; celles contre des appareils fabriqués individuellement ont 0.12 m d''épaisseur.
-    Pas encore vérifiable : le modèle n''indique ni la température de surface, ni la combustibilité de l''environnement, ni
-    les distances de sécurité.'
+    m au-delà de l''appareil latéralement ; celles contre des appareils fabriqués individuellement ont 0.12 m d''épaisseur.'
   it: 'Su strutture di pavimento combustibili i focolari poggiano su una piastra di base in RF1 resistente al calore, quelli
     costruiti singolarmente come le stufe in maiolica su una lastra di 0.12 m in pietra, calcestruzzo o equivalente. Davanti
     ai focolari a combustibile solido c''è un rivestimento del pavimento in RF1 resistente al calore che sporge di 0.4 m davanti
     all''apertura di caricamento. Le pareti dietro sono in RF1 resistente al calore per tutta l''altezza del locale e 0.2
-    m oltre l''apparecchio lateralmente; quelle addossate ad apparecchi costruiti singolarmente hanno 0.12 m di spessore.
-    Non ancora verificabile: il modello non indica temperatura superficiale, combustibilità dell''ambiente né distanze di
-    sicurezza.'
+    m oltre l''apparecchio lateralmente; quelle addossate ad apparecchi costruiti singolarmente hanno 0.12 m di spessore.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

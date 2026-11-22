@@ -10,24 +10,21 @@ description:
   de: 'Türen in Rettungswegen müssen die Einsatzkräfte von aussen öffnen können. Automatische Schiebe- und Drehtüren sind
     in Fluchtwegen zulässig, wenn sie die Flucht jederzeit sicherstellen und für diesen Einsatz geeignet sind. Bei Schnelllauftoren
     genügt es, wenn sie sich in Fluchtrichtung von Hand ohne Hilfsmittel rasch und sicher öffnen lassen. Für abgeschlossene
-    Fluchttüren verweist der Anhang im Normalfall auf Notausgangs- oder Paniktürverschlüsse nach SN EN 179 bzw. SN EN 1125.
-    Noch nicht prüfbar: Antriebsart und Beschlag der Türen sind im Modell nicht typisiert.'
+    Fluchttüren verweist der Anhang im Normalfall auf Notausgangs- oder Paniktürverschlüsse nach SN EN 179 bzw. SN EN 1125.'
   en: 'Doors on rescue routes must be openable from outside by the emergency services. Automatic sliding and revolving doors
     are allowed on escape routes if they ensure escape at all times and are suitable for this use. For high-speed doors it
     is enough if they can be opened quickly and safely by hand in the escape direction without aids. For locked escape doors
-    the appendix normally refers to emergency exit or panic exit devices under SN EN 179 or SN EN 1125. Not yet checkable:
-    drive type and hardware of doors are not typed in the model.'
+    the appendix normally refers to emergency exit or panic exit devices under SN EN 179 or SN EN 1125.'
   fr: 'Les portes des voies de sauvetage doivent pouvoir être ouvertes de l''extérieur par les forces d''intervention. Les
     portes coulissantes et tournantes automatiques sont admises sur les voies d''évacuation si elles garantissent la fuite
     à tout moment et conviennent à cet usage. Pour les portails rapides, il suffit qu''ils puissent être ouverts à la main,
     rapidement et en sécurité, dans le sens de la fuite sans moyen auxiliaire. Pour les portes d''évacuation verrouillées,
-    l''annexe renvoie normalement à des fermetures de sortie de secours ou antipanique selon SN EN 179 ou SN EN 1125. Pas
-    encore vérifiable : le mode d''entraînement et la quincaillerie des portes ne sont pas typés dans le modèle.'
+    l''annexe renvoie normalement à des fermetures de sortie de secours ou antipanique selon SN EN 179 ou SN EN 1125.'
   it: 'Le porte delle vie di salvataggio devono poter essere aperte dall''esterno dalle forze d''intervento. Le porte scorrevoli
     e girevoli automatiche sono ammesse sulle vie di fuga se garantiscono la fuga in ogni momento e sono idonee a tale impiego.
     Per i portoni rapidi basta che si possano aprire a mano, rapidamente e in sicurezza, nel senso di fuga senza mezzi ausiliari.
     Per le porte di fuga chiuse a chiave l''allegato rimanda normalmente a chiusure per uscite di emergenza o antipanico secondo
-    SN EN 179 o SN EN 1125. Non ancora verificabile: tipo di azionamento e ferramenta delle porte non sono tipizzati nel modello.'
+    SN EN 179 o SN EN 1125.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

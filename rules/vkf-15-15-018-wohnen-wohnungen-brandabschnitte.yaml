@@ -8,19 +8,15 @@ name:
   it: 'Abitazione: appartamenti come compartimenti antincendio separati'
 description:
   de: 'Wohnungen werden als eigene Brandabschnitte ausgebildet. Bei Einfamilienhäusern samt Untergeschossen und zugehöriger
-    Einliegerwohnung gelten keine Anforderungen an den Feuerwiderstand von Tragwerk, Wänden und Decken. Noch nicht prüfbar:
-    das Modell zeigt nicht, welche Wände und Decken eine Wohnung als Brandabschnitt umschliessen.'
+    Einliegerwohnung gelten keine Anforderungen an den Feuerwiderstand von Tragwerk, Wänden und Decken.'
   en: 'Dwellings are built as separate fire compartments. For single-family houses including their basements and an associated
-    granny flat, no fire resistance is required of structure, walls and floors. Not yet checkable: the model does not show
-    which walls and floors enclose a dwelling as a fire compartment.'
+    granny flat, no fire resistance is required of structure, walls and floors.'
   fr: 'Les logements sont réalisés en compartiments coupe-feu distincts. Pour les maisons individuelles, sous-sols et logement
     indépendant attenant compris, aucune exigence de résistance au feu n''est posée à la structure porteuse, aux murs et
-    aux planchers. Pas encore vérifiable : le modèle n''indique pas quels murs et planchers enferment un logement en compartiment
-    coupe-feu.'
+    aux planchers.'
   it: 'Gli appartamenti sono realizzati come compartimenti antincendio separati. Per le case unifamiliari, scantinati e
     appartamento indipendente annesso compresi, non sono posti requisiti di resistenza al fuoco a struttura portante, pareti
-    e solai. Non ancora verificabile: il modello non indica quali pareti e solai racchiudono un appartamento come compartimento
-    antincendio.'
+    e solai.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

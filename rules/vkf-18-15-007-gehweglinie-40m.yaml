@@ -8,21 +8,15 @@ name:
   it: 'Estintori: percorso fino all''apparecchio più vicino al massimo 40 m'
 description:
   de: 'Löschgeräte sind so verteilt, dass ein Brand an jeder Stelle bekämpft werden kann; die Gehweglinie zum nächsten Löschgerät
-    beträgt höchstens 40 m. In Bereichen mit besonderen Brandgefahren kommen an geeigneten Stellen zusätzliche Geräte hinzu.
-    Noch nicht prüfbar: das Modell weist Löschgeräte und Wasserlöschposten nur als Gerät mit Lage aus, ohne Löschmittel, Löschvermögen
-    und Gehweglinie.'
+    beträgt höchstens 40 m. In Bereichen mit besonderen Brandgefahren kommen an geeigneten Stellen zusätzliche Geräte hinzu.'
   en: 'Extinguishers are distributed so that a fire can be fought at any point; the walking line to the nearest extinguisher
-    is at most 40 m. In areas with particular fire hazards, additional devices are installed at suitable places. Not yet checkable:
-    the model shows extinguishers and hose reels only as a device with location, without extinguishing agent, rating or walking
-    distance.'
+    is at most 40 m. In areas with particular fire hazards, additional devices are installed at suitable places.'
   fr: 'Les extincteurs sont répartis de façon à pouvoir combattre un incendie en tout point ; le cheminement jusqu''à l''extincteur
     le plus proche ne dépasse pas 40 m. Dans les zones à danger d''incendie particulier, des appareils supplémentaires sont
-    installés en des endroits appropriés. Pas encore vérifiable : le modèle ne montre les extincteurs et postes d''eau d''extinction
-    que comme appareil avec position, sans agent extincteur, pouvoir extincteur ni distance de cheminement.'
+    installés en des endroits appropriés.'
   it: 'Gli estintori sono distribuiti in modo da poter combattere un incendio in ogni punto; il percorso fino all''estintore
     più vicino non supera 40 m. Nelle zone con pericoli d''incendio particolari sono installati apparecchi supplementari in
-    punti idonei. Non ancora verificabile: il modello mostra estintori e posti d''acqua antincendio solo come apparecchio
-    con posizione, senza agente estinguente, potere estinguente né percorso di marcia.'
+    punti idonei.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

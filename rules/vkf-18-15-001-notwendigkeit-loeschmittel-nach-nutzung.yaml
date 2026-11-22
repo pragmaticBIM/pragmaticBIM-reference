@@ -11,26 +11,23 @@ description:
     Zahl, Art und Anordnung hängen von Belegung, Bauart, Lage, Ausdehnung und Nutzung ab. Eine Tabelle im Anhang legt je Nutzung
     fest, wo Wasserlöschposten und Handfeuerlöscher erforderlich oder empfohlen sind, etwa bei Beherbergung, Verkaufsgeschäften
     über 1''200 m², grosser Personenbelegung und Gewerbe über 1''200 m²; als Richtwert gilt ein Handfeuerlöscher je 600 m²
-    Grundfläche. Noch nicht prüfbar: das Modell weist Nutzung, Personenbelegung und gewerbliche Fläche je Brandabschnitt nicht
-    aus.'
+    Grundfläche.'
   en: 'Buildings and installations with particular hazards are equipped with suitable, adequately sized means for first-response
     firefighting; number, type and arrangement depend on occupancy, construction, position, extent and use. A table in the
     annex sets per use where hose reels and portable extinguishers are required or recommended, for example for accommodation,
     shops above 1,200 m², large occupancy and commercial use above 1,200 m²; as a guide, one portable extinguisher per 600
-    m² floor area applies. Not yet checkable: the model does not show use, occupancy and commercial floor area per fire compartment.'
+    m² floor area applies.'
   fr: 'Les bâtiments et installations présentant des dangers particuliers sont équipés de moyens appropriés et suffisamment
     dimensionnés pour la première intervention ; nombre, type et disposition dépendent de l''occupation, du mode de construction,
     de la situation, de l''étendue et de l''affectation. Un tableau en annexe indique par affectation où les postes d''eau
     d''extinction et extincteurs portatifs sont exigés ou recommandés, par exemple pour l''hébergement, les commerces de plus
     de 1''200 m², les fortes occupations et l''artisanat de plus de 1''200 m² ; comme valeur indicative, un extincteur portatif
-    par 600 m² de surface. Pas encore vérifiable : le modèle n''indique pas l''affectation, la charge d''occupation ni la
-    surface commerciale par compartiment.'
+    par 600 m² de surface.'
   it: 'Gli edifici e gli impianti con pericoli particolari sono dotati di mezzi idonei e adeguatamente dimensionati per il
     primo intervento; numero, tipo e disposizione dipendono da occupazione, costruzione, posizione, estensione e utilizzo.
     Una tabella in allegato stabilisce per utilizzo dove posti d''acqua antincendio ed estintori portatili sono richiesti
     o raccomandati, ad esempio per alloggio, negozi oltre 1''200 m², grande occupazione e attività commerciali oltre 1''200
-    m²; come valore indicativo vale un estintore portatile ogni 600 m² di superficie. Non ancora verificabile: il modello
-    non indica utilizzo, occupazione e superficie commerciale per compartimento.'
+    m²; come valore indicativo vale un estintore portatile ogni 600 m² di superficie.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

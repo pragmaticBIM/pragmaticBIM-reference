@@ -12,28 +12,24 @@ description:
     Einblasöffnungen für das Aufstellen der Lüfter und ist unter Terrain nur bis zum 1. Untergeschoss zulässig, sofern die
     Zuluft nicht auf gleicher Ebene vom Freien kommt. Natürliche Anlagen funktionieren unabhängig von der Witterung und dürfen
     nicht unter Terrain eingebaut werden, ausser bei direkter Zuluft vom Freien (Hanglage). Bei maschinellen Anlagen liegen
-    die Absaugstellen unter der Decke und sind auf die Nachströmöffnungen abgestimmt. Noch nicht prüfbar: das Modell enthält
-    keine Rauch- und Wärmeabzugsanlage als System und keine Zuordnung zu Brandabschnitten.'
+    die Absaugstellen unter der Decke und sind auf die Nachströmöffnungen abgestimmt.'
   en: 'Smoke clearance with fire-brigade fans assumes response forces on site within 15 minutes of the alarm, needs inlet
     openings for setting up the fans in addition to the exhaust openings, and below ground is permitted only down to the 1st
     basement unless supply air comes from outdoors on the same level. Natural systems work regardless of weather and must
     not be built below ground, except with direct supply air from outdoors (hillside). In mechanical systems the extraction
-    points sit under the ceiling and are matched to the inflow openings. Not yet checkable: the model holds no smoke and heat
-    exhaust system and no assignment of one to fire compartments.'
+    points sit under the ceiling and are matched to the inflow openings.'
   fr: 'Le désenfumage par ventilateurs des sapeurs-pompiers suppose des moyens d''intervention sur place dans les 15 minutes
     suivant l''alarme, exige des ouvertures d''insufflation pour installer les ventilateurs en plus des ouvertures d''évacuation
     et n''est admis en sous-sol que jusqu''au 1er sous-sol, sauf si l''air d''amenée vient de l''extérieur au même niveau.
     Les installations naturelles fonctionnent indépendamment de la météo et ne peuvent être installées en sous-sol, sauf amenée
     d''air directe de l''extérieur (terrain en pente). Pour les installations mécaniques, les points d''aspiration sont sous
-    le plafond et adaptés aux ouvertures d''amenée. Pas encore vérifiable : le modèle ne contient aucune installation d''évacuation
-    de fumée et de chaleur ni affectation à des compartiments.'
+    le plafond et adaptés aux ouvertures d''amenée.'
   it: 'L''evacuazione con ventilatori dei pompieri presuppone mezzi d''intervento sul posto entro 15 minuti dall''allarme,
     richiede aperture di immissione per collocare i ventilatori oltre alle aperture di evacuazione ed è ammessa sotto terra
     solo fino al 1° piano interrato, salvo che l''aria di mandata provenga dall''esterno allo stesso livello. Gli impianti
     naturali funzionano indipendentemente dal tempo e non possono essere installati sotto terra, salvo mandata diretta dall''esterno
     (terreno in pendenza). Negli impianti meccanici i punti di aspirazione stanno sotto il soffitto e sono adeguati alle aperture
-    di afflusso. Non ancora verificabile: il modello non contiene alcun impianto di evacuazione di fumo e calore né l''assegnazione
-    a compartimenti.'
+    di afflusso.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

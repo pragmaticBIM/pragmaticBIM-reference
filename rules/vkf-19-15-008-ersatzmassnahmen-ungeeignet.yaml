@@ -11,27 +11,23 @@ description:
     Stoffen die mit Wasser brennbare Gase bilden oder sonstigen gefährdeten Bereichen, werden im Einvernehmen mit der Brandschutzbehörde
     Ersatzmassnahmen mit gleichwertigem Schutz getroffen, etwa Inertisierung, Gaslöschanlage, Schutzhaube oder Abtrennung
     als Brandabschnitt. Bei Trockenanlagen und Zusatzmitteln darf die Ausströmverzögerung die Löschwirkung über die Nennwirkzeit
-    nicht schmälern. Noch nicht prüfbar: das Modell weist Brandabschnitte, Raumarten, Brandbelastung und Feuerwiderstand der
-    Sprinklerzentrale nicht aus.'
+    nicht schmälern.'
   en: 'Where water is not a suitable extinguishing agent, for example for silos with swelling contents, industrial furnaces
     and baths with increased hazard, substances that form combustible gases with water, or other endangered areas, substitute
     measures with equivalent protection are taken in agreement with the fire protection authority, such as inerting, gas extinguishing
     system, protective hood or separation as a fire compartment. For dry systems and additives, the discharge delay must not
-    reduce the extinguishing effect over the nominal operating time. Not yet checkable: the model does not show fire compartments,
-    room types, fire load and fire resistance of the sprinkler control room.'
+    reduce the extinguishing effect over the nominal operating time.'
   fr: 'Là où l''eau n''est pas un agent extincteur approprié, par exemple pour les silos à contenu gonflant, fours industriels
     et bains avec aggravation du danger, substances formant des gaz combustibles au contact de l''eau ou autres zones menacées,
     des mesures de remplacement offrant une protection équivalente sont prises en accord avec l''autorité de protection incendie,
     telles que l''inertage, une installation d''extinction à gaz, une hotte de protection ou la séparation en compartiment.
     Pour les installations sèches et les additifs, le retard d''écoulement ne doit pas réduire l''effet extincteur sur la
-    durée d''action nominale. Pas encore vérifiable : le modèle n''indique pas les compartiments, types de locaux, charges
-    calorifiques ni résistance au feu du local de la centrale sprinkler.'
+    durée d''action nominale.'
   it: 'Dove l''acqua non è un agente estinguente idoneo, ad esempio per silos con contenuto rigonfiabile, forni industriali
     e bagni con aumento del pericolo, sostanze che con l''acqua formano gas combustibili o altre zone a rischio, si adottano
     d''intesa con l''autorità di protezione antincendio misure sostitutive con protezione equivalente, come inertizzazione,
     impianto di estinzione a gas, cappa di protezione o separazione come compartimento. Per impianti a secco e additivi il
-    ritardo di erogazione non deve ridurre l''effetto estinguente sulla durata d''azione nominale. Non ancora verificabile:
-    il modello non indica compartimenti, tipi di locale, carico d''incendio né resistenza al fuoco del locale centrale sprinkler.'
+    ritardo di erogazione non deve ridurre l''effetto estinguente sulla durata d''azione nominale.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

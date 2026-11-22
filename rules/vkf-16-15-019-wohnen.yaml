@@ -14,8 +14,7 @@ description:
     zulässig. Erschliesst eine Treppe höchstens ein Ober- und ein Untergeschoss, genügen geradläufig 0.9 m. Innerhalb der
     Wohnung gibt es keine Treppenanforderungen, und wohnungsinterne Türen sind von den Breiten- und Aufschlagregeln ausgenommen.
     Wohnungseingangstüren müssen nicht in Fluchtrichtung öffnen, Hauseingangstüren nur bei höchstens 10 erschlossenen Wohneinheiten.
-    Der Fluchtweg darf innerhalb der Nutzungseinheit über mehrere Räume führen. Noch nicht prüfbar: Gebäudehöhenklasse, Wohneinheiten
-    und Brandschutzabschlüsse fehlen im Modell oft.'
+    Der Fluchtweg darf innerhalb der Nutzungseinheit über mehrere Räume führen.'
   en: 'In residential buildings of low and medium height, fire separations between horizontal and vertical escape routes may
     be omitted if the floor area per vertical escape route is at most 900 m², the horizontal escape routes between vertical
     ones are subdivided with fire resistance, and they match the vertical ones in material, fire resistance and risk of activation.
@@ -23,8 +22,7 @@ description:
     at most one upper and one lower storey, straight stairs of 0.9 m suffice. Within the dwelling there are no stair requirements,
     and doors inside the dwelling are exempt from the width and swing rules. Dwelling entrance doors need not open in the
     escape direction; building entrance doors need not either if they serve at most 10 dwellings. The escape route may lead
-    through several rooms within the use unit. Not yet checkable: building height class, dwelling units and fire separations
-    are often missing in the model.'
+    through several rooms within the use unit.'
   fr: 'Dans les bâtiments d''habitation de faible et moyenne hauteur, on peut renoncer aux fermetures coupe-feu entre voies
     d''évacuation horizontales et verticales si la surface d''étage par voie verticale ne dépasse pas 900 m², si les voies
     horizontales entre voies verticales sont subdivisées avec résistance au feu et si elles correspondent aux voies verticales
@@ -33,8 +31,7 @@ description:
     et un étage inférieur, 0,9 m suffit pour un escalier droit. À l''intérieur du logement, aucune exigence ne vise les escaliers,
     et les portes internes au logement sont exemptées des règles de largeur et de sens d''ouverture. Les portes d''entrée
     de logement ne s''ouvrent pas nécessairement dans le sens de la fuite ; celles de l''immeuble non plus, si elles desservent
-    10 logements au plus. La voie d''évacuation peut traverser plusieurs locaux de l''unité d''utilisation. Pas encore vérifiable
-    : la classe de hauteur, les logements et les fermetures coupe-feu manquent souvent dans le modèle.'
+    10 logements au plus. La voie d''évacuation peut traverser plusieurs locaux de l''unité d''utilisation.'
   it: 'Negli edifici d''abitazione di altezza ridotta e media si può rinunciare alle chiusure antincendio tra vie di fuga
     orizzontali e verticali se la superficie di piano per via verticale non supera 900 m², se le vie orizzontali tra vie verticali
     sono suddivise con resistenza al fuoco e se corrispondono a quelle verticali per materiale, resistenza al fuoco e rischio
@@ -42,8 +39,7 @@ description:
     una scala serve al massimo un piano superiore e uno inferiore, per le scale diritte bastano 0,9 m. All''interno dell''abitazione
     non vi sono requisiti per le scale e le porte interne all''abitazione sono esentate dalle regole su larghezza e senso
     di apertura. Le porte d''ingresso degli appartamenti non devono aprirsi nel senso di fuga; quelle d''ingresso dell''edificio
-    nemmeno, se servono al massimo 10 unità abitative. La via di fuga può attraversare più locali dell''unità d''utilizzo.
-    Non ancora verificabile: classe di altezza, unità abitative e chiusure antincendio mancano spesso nel modello.'
+    nemmeno, se servono al massimo 10 unità abitative. La via di fuga può attraversare più locali dell''unità d''utilizzo.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

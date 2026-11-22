@@ -11,22 +11,16 @@ name:
 description:
   de: 'Lagerräume für brennbare Flüssigkeiten sind gegen andere Räume mit EI 30-Türen abgeschlossen. Als Zugang zu Tankräumen
     dienen Einstiegsöffnungen von mindestens 0.7 × 1 m, die mit EI 30-Deckeln verschlossen werden. Heizöl bis 4''000 l in
-    Kleintanks oder 8''000 l in Stahltanks darf in separaten Heizräumen EI 60 lagern. Noch nicht prüfbar: das Modell weist
-    Flammpunkt, Lagervolumen, Behälterart und Feuerwiderstand des Lagerraums nicht aus.'
+    Kleintanks oder 8''000 l in Stahltanks darf in separaten Heizräumen EI 60 lagern.'
   en: 'Storage rooms for combustible liquids are closed off from other rooms with EI 30 doors. Access to tank rooms is by
     openings of at least 0.7 × 1 m, closed with EI 30 covers. Heating oil up to 4,000 l in small tanks or 8,000 l in steel
-    tanks may be stored in separate boiler rooms EI 60. Not yet checkable: the model does not show flash point, stored volume,
-    container type and fire resistance of the storage room.'
+    tanks may be stored in separate boiler rooms EI 60.'
   fr: 'Les locaux de stockage de liquides combustibles sont fermés par rapport aux autres locaux par des portes EI 30. L''accès
     aux locaux de citernes se fait par des ouvertures d''au moins 0.7 × 1 m fermées par des couvercles EI 30. Le mazout jusqu''à
-    4''000 l en petites citernes ou 8''000 l en citernes en acier peut être stocké dans des locaux de chauffe séparés EI 60.
-    Pas encore vérifiable : le modèle n''indique ni le point d''éclair, ni le volume stocké, ni le type de récipient, ni la
-    résistance au feu du local de stockage.'
+    4''000 l en petites citernes ou 8''000 l en citernes en acier peut être stocké dans des locaux de chauffe séparés EI 60.'
   it: 'I locali di stoccaggio di liquidi combustibili sono separati dagli altri locali con porte EI 30. L''accesso ai locali
     serbatoi avviene tramite aperture di almeno 0.7 × 1 m chiuse con coperchi EI 30. L''olio combustibile fino a 4''000 l
-    in piccoli serbatoi o 8''000 l in serbatoi di acciaio può essere stoccato in locali caldaia separati EI 60. Non ancora
-    verificabile: il modello non indica punto d''infiammabilità, volume stoccato, tipo di contenitore né resistenza al fuoco
-    del locale di stoccaggio.'
+    in piccoli serbatoi o 8''000 l in serbatoi di acciaio può essere stoccato in locali caldaia separati EI 60.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

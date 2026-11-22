@@ -14,16 +14,14 @@ description:
     Der Fluchtweg innerhalb des Geschosses oder der Nutzungseinheit darf über höchstens einen angrenzenden Raum führen (z.
     B. Schulzimmer, Gruppenraum, Turnhalle, Garderobe). In Kindertagesstätten sind Fluchtwege über Räume der Nutzungseinheit
     höchstens 20 m lang, Türen innerhalb der Nutzungseinheit sind von den Breiten- und Aufschlagregeln ausgenommen, und Schlafräume
-    auf Zwischengeschossen oder Galerien werden durch horizontale und vertikale Fluchtwege erschlossen. Noch nicht prüfbar:
-    Schulnutzung, Gebäudehöhe und Brandschutzabschlüsse fehlen im Modell oft.'
+    auf Zwischengeschossen oder Galerien werden durch horizontale und vertikale Fluchtwege erschlossen.'
   en: 'In school buildings of low height, fire separations between horizontal and vertical escape routes may be omitted if
     the floor area per vertical escape route is at most 900 m², the horizontal escape routes are subdivided with fire resistance
     and match the vertical ones in material, fire resistance and risk of activation; open cloakrooms with hooks and fixed
     benches are excepted. Within the use unit there are no stair requirements. The escape route within the storey or use unit
     may lead through at most one adjoining room (e.g. classroom, group room, gymnasium, cloakroom). In day-care centres, escape
     routes through rooms of the use unit are at most 20 m long, doors within the use unit are exempt from the width and swing
-    rules, and sleeping rooms on mezzanines or galleries are served by horizontal and vertical escape routes. Not yet checkable:
-    school use, building height and fire separations are often missing in the model.'
+    rules, and sleeping rooms on mezzanines or galleries are served by horizontal and vertical escape routes.'
   fr: 'Dans les bâtiments scolaires de faible hauteur, on peut renoncer aux fermetures coupe-feu entre voies d''évacuation
     horizontales et verticales si la surface d''étage par voie verticale ne dépasse pas 900 m², si les voies horizontales
     sont subdivisées avec résistance au feu et correspondent aux voies verticales par le matériau, la résistance au feu et
@@ -32,8 +30,7 @@ description:
     d''utilisation peut traverser au plus un local voisin (p. ex. salle de classe, salle de groupe, salle de gymnastique,
     vestiaire). Dans les crèches, les voies d''évacuation passant par des locaux de l''unité d''utilisation mesurent 20 m
     au plus, les portes à l''intérieur de l''unité d''utilisation sont exemptées des règles de largeur et de sens d''ouverture,
-    et les dortoirs sur niveaux intermédiaires ou galeries sont desservis par des voies horizontales et verticales. Pas encore
-    vérifiable : l''usage scolaire, la hauteur du bâtiment et les fermetures coupe-feu manquent souvent dans le modèle.'
+    et les dortoirs sur niveaux intermédiaires ou galeries sont desservis par des voies horizontales et verticales.'
   it: 'Negli edifici scolastici di altezza ridotta si può rinunciare alle chiusure antincendio tra vie di fuga orizzontali
     e verticali se la superficie di piano per via verticale non supera 900 m², se le vie orizzontali sono suddivise con resistenza
     al fuoco e corrispondono a quelle verticali per materiale, resistenza al fuoco e rischio di attivazione; sono escluse
@@ -41,8 +38,7 @@ description:
     La via di fuga all''interno del piano o dell''unità d''utilizzo può attraversare al massimo un locale adiacente (p. es.
     aula, locale di gruppo, palestra, guardaroba). Negli asili nido le vie di fuga che attraversano locali dell''unità d''utilizzo
     sono lunghe al massimo 20 m, le porte all''interno dell''unità d''utilizzo sono esentate dalle regole su larghezza e senso
-    di apertura e i dormitori su piani intermedi o gallerie sono serviti da vie di fuga orizzontali e verticali. Non ancora
-    verificabile: utilizzo scolastico, altezza dell''edificio e chiusure antincendio mancano spesso nel modello.'
+    di apertura e i dormitori su piani intermedi o gallerie sono serviti da vie di fuga orizzontali e verticali.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -9,20 +9,16 @@ name:
 description:
   de: 'Lufttechnische Anlagen schalten sich selbsttätig aus, wenn Brandmelde- oder Löschanlagen, Kanalrauchmelder oder die
     thermische Auslösung von Brandschutzklappen ansprechen. Fehlen solche Einrichtungen, müssen die Anlagen an leicht zugänglicher
-    Stelle von Hand ausgeschaltet werden können. Noch nicht prüfbar: das Modell enthält die Steuerlogik und die Verknüpfung
-    von Melder, Anlage und Handschalter nicht.'
+    Stelle von Hand ausgeschaltet werden können.'
   en: 'Ventilation systems switch off automatically when fire detection or extinguishing systems, duct smoke detectors or
     the thermal release of fire dampers respond. Where such devices are missing, the systems can be switched off by hand at
-    an easily accessible place. Not yet checkable: the model holds neither the control logic nor the link between detector,
-    system and manual switch.'
+    an easily accessible place.'
   fr: 'Les installations de ventilation s''arrêtent automatiquement lorsque les installations de détection ou d''extinction,
     les détecteurs de fumée de gaine ou le déclenchement thermique des clapets coupe-feu réagissent. En leur absence, les
-    installations peuvent être arrêtées manuellement en un endroit facilement accessible. Pas encore vérifiable : le modèle
-    ne contient ni la logique de commande ni le lien entre détecteur, installation et interrupteur manuel.'
+    installations peuvent être arrêtées manuellement en un endroit facilement accessible.'
   it: 'Gli impianti di ventilazione si spengono automaticamente quando intervengono impianti di rivelazione o spegnimento,
     rilevatori di fumo da canale o lo sgancio termico delle serrande tagliafuoco. In loro assenza gli impianti possono essere
-    spenti a mano in un punto facilmente accessibile. Non ancora verificabile: il modello non contiene né la logica di comando
-    né il collegamento tra rilevatore, impianto e interruttore manuale.'
+    spenti a mano in un punto facilmente accessibile.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

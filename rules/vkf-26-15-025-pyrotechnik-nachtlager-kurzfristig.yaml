@@ -12,27 +12,23 @@ description:
     Feuerwerkskörper der Kategorien 1 bis 3 dürfen bis 1''000 kg brutto in freistehenden, nur dafür genutzten RF1-Containern
     lagern. Zwischen Container und Gebäude sowie zwischen Containern gilt ein Sicherheitsabstand von mindestens 5 m bis 300
     kg und 10 m bis 1''000 kg; wird er unterschritten, steht eine Schirmmauer EI 60. Grossfeuerwerk wird kurzfristig in Räumen
-    nach 11.2.3 oder in freistehenden, vor Sonne geschützten RF1-Bauten (z. B. Container) bereitgehalten. Noch nicht prüfbar:
-    das Modell weist Kategorie, Bruttomenge, Lagerart und Verkaufsfläche pyrotechnischer Gegenstände nicht aus.'
+    nach 11.2.3 oder in freistehenden, vor Sonne geschützten RF1-Bauten (z. B. Container) bereitgehalten.'
   en: 'The day''s stock from outdoor sales is kept outside opening hours in storage rooms under 11.2.1 to 11.2.5. Fireworks
     of categories 1 to 3 may be stored up to 1,000 kg gross in free-standing, dedicated RF1 containers. Between container
     and building and between containers a safety distance of at least 5 m up to 300 kg and 10 m up to 1,000 kg applies; where
     undercut, an EI 60 screen wall is built. Large fireworks are held briefly in rooms under 11.2.3 or in free-standing RF1
-    buildings shielded from sun (e.g. containers). Not yet checkable: the model does not show category, gross mass, storage
-    type and sales area of pyrotechnic articles.'
+    buildings shielded from sun (e.g. containers).'
   fr: 'Le besoin journalier de la vente en plein air est entreposé hors des heures d''ouverture dans des locaux selon 11.2.1
     à 11.2.5. Les articles de feu d''artifice des catégories 1 à 3 peuvent être stockés jusqu''à 1''000 kg brut dans des conteneurs
     RF1 isolés à usage exclusif. Entre conteneur et bâtiment ainsi qu''entre conteneurs, une distance de sécurité d''au moins
     5 m jusqu''à 300 kg et 10 m jusqu''à 1''000 kg s''applique ; si elle n''est pas respectée, un mur écran EI 60 est érigé.
     Les grands feux d''artifice sont conservés brièvement dans des locaux selon 11.2.3 ou dans des bâtiments RF1 isolés à
-    l''abri du soleil (p. ex. conteneurs). Pas encore vérifiable : le modèle n''indique ni la catégorie, ni la masse brute,
-    ni le mode de stockage, ni la surface de vente des articles pyrotechniques.'
+    l''abri du soleil (p. ex. conteneurs).'
   it: 'Il fabbisogno giornaliero della vendita all''aperto è conservato fuori dagli orari di apertura in locali secondo 11.2.1–11.2.5.
     I fuochi d''artificio delle categorie 1–3 possono essere conservati fino a 1''000 kg lordi in container RF1 isolati a
     uso esclusivo. Tra container ed edificio e tra container vale una distanza di sicurezza di almeno 5 m fino a 300 kg e
     10 m fino a 1''000 kg; se non rispettata si erige un muro schermo EI 60. I grandi fuochi d''artificio sono tenuti per
-    breve tempo in locali secondo 11.2.3 o in edifici RF1 isolati e riparati dal sole (p. es. container). Non ancora verificabile:
-    il modello non indica categoria, massa lorda, tipo di stoccaggio né superficie di vendita degli articoli pirotecnici.'
+    breve tempo in locali secondo 11.2.3 o in edifici RF1 isolati e riparati dal sole (p. es. container).'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

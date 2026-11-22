@@ -10,22 +10,18 @@ description:
   de: 'Wird eine Beleuchtung der Rettungszeichen verlangt, ist sie als Sicherheitsbeleuchtung ausgeführt. Unbeleuchtete
     und nicht hinterleuchtete Zeichen sind nachleuchtend. In Räumen ohne Tageslicht oder mit Verdunkelung kommen sicherheitsbeleuchtete
     Zeichen zum Einsatz. Beleuchtete und hinterleuchtete Zeichen in Bereitschafts- oder Dauerschaltung werden bei Ausfall
-    der normalen Beleuchtung aus einer Sicherheitsstromversorgung gespeist. Noch nicht prüfbar: das Modell weist Zeichentyp,
-    Tageslicht und Speisung nicht aus.'
+    der normalen Beleuchtung aus einer Sicherheitsstromversorgung gespeist.'
   en: 'Where lighting of escape signs is required, it is provided as safety lighting. Signs that are neither lit nor backlit
     are photoluminescent. In rooms without daylight or that can be darkened, signs on safety lighting are used. Lit and
-    backlit signs in standby or continuous mode are fed from a safety power supply if the normal lighting fails. Not yet
-    checkable: the model shows neither sign type, daylight nor supply.'
+    backlit signs in standby or continuous mode are fed from a safety power supply if the normal lighting fails.'
   fr: 'Lorsqu''un éclairage des signaux de sauvetage est exigé, il est réalisé comme éclairage de sécurité. Les signaux
     ni éclairés ni rétroéclairés sont luminescents. Dans les locaux sans lumière du jour ou obscurcissables, on utilise
     des signaux éclairés en sécurité. Les signaux éclairés et rétroéclairés en veille ou en service permanent sont alimentés
-    par une alimentation de sécurité en cas de défaillance de l''éclairage normal. Pas encore vérifiable : le modèle n''indique
-    ni le type de signal, ni la lumière du jour, ni l''alimentation.'
+    par une alimentation de sécurité en cas de défaillance de l''éclairage normal.'
   it: 'Quando è richiesta l''illuminazione dei segnali di salvataggio, essa è realizzata come illuminazione di sicurezza.
     I segnali né illuminati né retroilluminati sono fotoluminescenti. Nei locali senza luce naturale o oscurabili si usano
     segnali con illuminazione di sicurezza. I segnali illuminati e retroilluminati in modalità di attesa o permanente sono
-    alimentati da un''alimentazione di sicurezza in caso di guasto dell''illuminazione normale. Non ancora verificabile:
-    il modello non indica tipo di segnale, luce naturale e alimentazione.'
+    alimentati da un''alimentazione di sicurezza in caso di guasto dell''illuminazione normale.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

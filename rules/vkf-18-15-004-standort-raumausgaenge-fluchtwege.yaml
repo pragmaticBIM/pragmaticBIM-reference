@@ -8,19 +8,13 @@ name:
   it: Estintori vicino alle uscite dei locali che fungono da via di fuga o nelle vie di fuga
 description:
   de: 'Innerhalb von Brandabschnitten stehen Löschgeräte in unmittelbarer Nähe von Raumausgängen, die als Fluchtweg dienen,
-    oder in Fluchtwegen wie Korridoren und Vorplätzen. Noch nicht prüfbar: das Modell weist Löschgeräte und Wasserlöschposten
-    nur als Gerät mit Lage aus, ohne Löschmittel, Löschvermögen und Gehweglinie.'
+    oder in Fluchtwegen wie Korridoren und Vorplätzen.'
   en: 'Within fire compartments, extinguishers are placed in the immediate vicinity of room exits that serve as escape routes,
-    or in escape routes such as corridors and forecourts. Not yet checkable: the model shows extinguishers and hose reels
-    only as a device with location, without extinguishing agent, rating or walking distance.'
+    or in escape routes such as corridors and forecourts.'
   fr: 'Dans les compartiments, les extincteurs sont placés à proximité immédiate des sorties de locaux servant de voie d''évacuation
-    ou dans les voies d''évacuation telles que corridors et parvis. Pas encore vérifiable : le modèle ne montre les extincteurs
-    et postes d''eau d''extinction que comme appareil avec position, sans agent extincteur, pouvoir extincteur ni distance
-    de cheminement.'
+    ou dans les voies d''évacuation telles que corridors et parvis.'
   it: 'All''interno dei compartimenti gli estintori sono collocati in prossimità immediata delle uscite dei locali che fungono
-    da via di fuga o nelle vie di fuga come corridoi e piazzali. Non ancora verificabile: il modello mostra estintori e posti
-    d''acqua antincendio solo come apparecchio con posizione, senza agente estinguente, potere estinguente né percorso di
-    marcia.'
+    da via di fuga o nelle vie di fuga come corridoi e piazzali.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

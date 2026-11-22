@@ -11,25 +11,22 @@ description:
     die zulässige Brandabschnittsfläche 4800 m², wenn das Parking eingeschossig ist oder die Geschosse eigene Brandabschnitte
     bilden. Stehen die Geschosse offen miteinander in Verbindung, sind es 2400 m². Mit Löschanlage verdoppeln sich die Flächen.
     Bei teilweise offenen Parkings (mindestens 25 % unverschliessbare Öffnungen in den Umfassungswänden) darf die ohne Brandabschnittsbildung
-    verbundene Fläche je Geschoss 9600 m² nicht übersteigen. Noch nicht prüfbar: das Modell weist Brandabschnitte und offene
-    Wandanteile nicht aus.'
+    verbundene Fläche je Geschoss 9600 m² nicht übersteigen.'
   en: 'Car parks form their own fire compartments. For underground car parks and closed above-ground car parks the permitted
     compartment area is 4800 m² if the car park has one storey or the storeys form separate compartments. Where the storeys
     are openly connected, it is 2400 m². With an extinguishing system the areas double. For partly open car parks (at least
     25 % non-closable openings in the enclosing walls) the area connected per storey without compartmentation must not exceed
-    9600 m². Not yet checkable: the model identifies neither fire compartments nor open wall proportions.'
+    9600 m².'
   fr: 'Les parkings forment leurs propres compartiments coupe-feu. Pour les parkings souterrains et les parkings fermés
     hors sol, la surface admissible d''un compartiment est de 4800 m² si le parking est de plain-pied ou si les niveaux
     forment des compartiments distincts. Si les niveaux communiquent librement, elle est de 2400 m². Avec une installation
     d''extinction, les surfaces doublent. Pour les parkings partiellement ouverts (au moins 25 % d''ouvertures non fermables
-    dans les parois périphériques), la surface reliée par niveau sans compartimentage ne dépasse pas 9600 m². Pas encore
-    vérifiable : le modèle ne désigne ni les compartiments ni les proportions de parois ouvertes.'
+    dans les parois périphériques), la surface reliée par niveau sans compartimentage ne dépasse pas 9600 m².'
   it: 'I parcheggi formano compartimenti antincendio propri. Per i parcheggi interrati e i parcheggi chiusi fuori terra
     la superficie ammessa del compartimento è 4800 m², se il parcheggio è a un solo piano o se i piani formano compartimenti
     separati. Se i piani comunicano apertamente è 2400 m². Con un impianto di spegnimento le superfici raddoppiano. Per
     i parcheggi parzialmente aperti (almeno il 25 % di aperture non chiudibili nelle pareti perimetrali) la superficie collegata
-    per piano senza compartimentazione non supera 9600 m². Non ancora verificabile: il modello non indica né i compartimenti
-    né le quote di pareti aperte.'
+    per piano senza compartimentazione non supera 9600 m².'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

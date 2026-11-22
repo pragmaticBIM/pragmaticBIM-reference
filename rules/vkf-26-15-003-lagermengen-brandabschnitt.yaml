@@ -13,30 +13,26 @@ description:
     Regallagerung mit automatischer Sprinkleranlage und Schaumzumischung). Mit Wasser reagierende Stoffe: 50 t und 200 t,
     mit Sprinkleranlage keine Erhöhung. Brennbare Flüssigkeiten und Feststoffe ohne Klassierung sowie schwächer oxidierende
     Stoffe: 100 t, 400 t und 2''400 t. Die Werte entsprechen zugleich der höchsten Brandabschnittsgrösse in m²; unter 1''000
-    kg/m² darf sie höchstens verdoppelt werden. Bei Mischlagerung gilt in der Regel die Menge des gefährlichsten Stoffes.
-    Noch nicht prüfbar: das Modell weist Stoffklassierung, Lagermenge, Lagerart und Lagerort gefährlicher Stoffe nicht aus.'
+    kg/m² darf sie höchstens verdoppelt werden. Bei Mischlagerung gilt in der Regel die Menge des gefährlichsten Stoffes.'
   en: 'Maximum quantities in tonnes per fire compartment depend on substance classification. For highly flammable, oxidising
     and self-igniting substances: 50 t without fire alarm or sprinklers, 200 t with a fire alarm, 600 t with sprinklers (2,400
     t for rack storage with automatic sprinklers and foam admixture). Substances reacting with water: 50 t and 200 t, no increase
     with sprinklers. Combustible liquids and solids without classification and weaker oxidisers: 100 t, 400 t and 2,400 t.
     The values also give the maximum compartment size in m²; below 1,000 kg/m² it may at most be doubled. For mixed storage,
-    the quantity for the most hazardous substance generally applies. Not yet checkable: the model does not show substance
-    classification, stored quantity, type and location of hazardous substances.'
+    the quantity for the most hazardous substance generally applies.'
   fr: 'Par compartiment, des quantités maximales en tonnes s''appliquent selon la classification. Pour les substances très
     inflammables, comburantes et pyrophoriques : 50 t sans détection ni sprinklers, 200 t avec détection incendie, 600 t avec
     sprinklers (2''400 t en stockage sur rayonnages avec sprinklers automatiques et adjonction de mousse). Substances réagissant
     à l''eau : 50 t et 200 t, sans augmentation avec sprinklers. Liquides et solides combustibles non classés et comburants
     plus faibles : 100 t, 400 t et 2''400 t. Les valeurs donnent aussi la taille maximale du compartiment en m² ; en dessous
     de 1''000 kg/m², elle peut au plus être doublée. En cas de stockage mixte, la quantité de la substance la plus dangereuse
-    s''applique en général. Pas encore vérifiable : le modèle n''indique ni la classification des substances, ni la quantité
-    stockée, ni le mode et le lieu de stockage des substances dangereuses.'
+    s''applique en général.'
   it: 'Per compartimento valgono quantità massime in tonnellate secondo la classificazione. Per sostanze molto infiammabili,
     comburenti e piroforiche: 50 t senza rivelazione o sprinkler, 200 t con rivelazione incendio, 600 t con sprinkler (2''400
     t per stoccaggio a scaffali con sprinkler automatici e aggiunta di schiuma). Sostanze che reagiscono con l''acqua: 50
     t e 200 t, nessun aumento con sprinkler. Liquidi e solidi combustibili senza classificazione e comburenti più deboli:
     100 t, 400 t e 2''400 t. I valori indicano anche la dimensione massima del compartimento in m²; sotto 1''000 kg/m² può
-    al massimo raddoppiare. Nello stoccaggio misto vale di regola la quantità della sostanza più pericolosa. Non ancora verificabile:
-    il modello non indica classificazione delle sostanze, quantità stoccata né tipo e luogo di stoccaggio delle sostanze pericolose.'
+    al massimo raddoppiare. Nello stoccaggio misto vale di regola la quantità della sostanza più pericolosa.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

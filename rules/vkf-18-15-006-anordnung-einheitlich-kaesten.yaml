@@ -8,21 +8,14 @@ name:
   it: Disposizione uniforme, collocazione aperta o cassetta senza indebolire la resistenza al fuoco
 description:
   de: 'Bei ähnlichen Grundrissen und Raumeinteilungen werden Löschgeräte möglichst einheitlich angeordnet. Sie stehen offen
-    oder in separaten Kästen; Unterputzkästen dürfen den Feuerwiderstand brandabschnittsbildender Wände nicht schwächen. Noch
-    nicht prüfbar: das Modell weist Löschgeräte und Wasserlöschposten nur als Gerät mit Lage aus, ohne Löschmittel, Löschvermögen
-    und Gehweglinie.'
+    oder in separaten Kästen; Unterputzkästen dürfen den Feuerwiderstand brandabschnittsbildender Wände nicht schwächen.'
   en: 'With similar floor plans and room layouts, extinguishers are arranged as uniformly as possible. They stand in the open
-    or in separate cabinets; recessed cabinets must not weaken the fire resistance of compartment-forming walls. Not yet checkable:
-    the model shows extinguishers and hose reels only as a device with location, without extinguishing agent, rating or walking
-    distance.'
+    or in separate cabinets; recessed cabinets must not weaken the fire resistance of compartment-forming walls.'
   fr: 'Pour des plans et subdivisions semblables, les extincteurs sont disposés de façon aussi uniforme que possible. Ils
     sont placés à découvert ou dans des armoires séparées ; les armoires encastrées ne doivent pas affaiblir la résistance
-    au feu des murs de compartimentage. Pas encore vérifiable : le modèle ne montre les extincteurs et postes d''eau d''extinction
-    que comme appareil avec position, sans agent extincteur, pouvoir extincteur ni distance de cheminement.'
+    au feu des murs de compartimentage.'
   it: 'Con piante e suddivisioni simili gli estintori sono disposti il più possibile in modo uniforme. Sono collocati a vista
-    o in cassette separate; le cassette incassate non devono indebolire la resistenza al fuoco delle pareti di compartimentazione.
-    Non ancora verificabile: il modello mostra estintori e posti d''acqua antincendio solo come apparecchio con posizione,
-    senza agente estinguente, potere estinguente né percorso di marcia.'
+    o in cassette separate; le cassette incassate non devono indebolire la resistenza al fuoco delle pareti di compartimentazione.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

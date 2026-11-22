@@ -8,18 +8,13 @@ name:
   it: 'Apertura di evacuazione del vano scale: 0.5 m² libera, azionabile dal piano d''ingresso'
 description:
   de: 'Die freie geometrische Lüftungsfläche der Abströmöffnung am vertikalen Fluchtweg beträgt mindestens 0.5 m². Sie lässt
-    sich von der Eingangsebene aus in Betrieb setzen, und die Betriebsbereitschaft besteht auch bei Stromausfall. Noch nicht
-    prüfbar: das Modell weist weder Abströmöffnungen noch deren freie geometrische Fläche am Treppenraum aus.'
+    sich von der Eingangsebene aus in Betrieb setzen, und die Betriebsbereitschaft besteht auch bei Stromausfall.'
   en: 'The free geometric ventilation area of the exhaust opening at a vertical escape route is at least 0.5 m². It can be
-    put into operation from the entrance level, and it stays operational during a power failure. Not yet checkable: the model
-    shows neither exhaust openings nor their free geometric area at the stairwell.'
+    put into operation from the entrance level, and it stays operational during a power failure.'
   fr: 'La surface de ventilation géométrique libre de l''ouverture d''évacuation d''une voie d''évacuation verticale est d''au
-    moins 0.5 m². Elle peut être mise en service depuis le niveau d''entrée et reste opérationnelle en cas de coupure de courant.
-    Pas encore vérifiable : le modèle n''indique ni ouvertures d''évacuation ni leur surface géométrique libre à la cage d''escalier.'
+    moins 0.5 m². Elle peut être mise en service depuis le niveau d''entrée et reste opérationnelle en cas de coupure de courant.'
   it: 'La superficie di ventilazione geometrica libera dell''apertura di evacuazione di una via di fuga verticale è di almeno
-    0.5 m². Può essere messa in funzione dal piano d''ingresso e resta operativa anche in caso di interruzione dell''alimentazione.
-    Non ancora verificabile: il modello non indica né aperture di evacuazione né la loro superficie geometrica libera al vano
-    scale.'
+    0.5 m². Può essere messa in funzione dal piano d''ingresso e resta operativa anche in caso di interruzione dell''alimentazione.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

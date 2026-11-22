@@ -10,19 +10,13 @@ name:
     interrato'
 description:
   de: 'Heizräume im Erdgeschoss oder tiefer für Anlagen über 1''200 kW Nennwärmeleistung sowie Heizräume im zweiten Untergeschoss
-    oder tiefer für Anlagen über 600 kW erhalten einen direkten Zugang vom Freien. Noch nicht prüfbar: das Modell weist Nennwärmeleistung,
-    Brennstoff, Aufstellungsart und Feuerwiderstand des Heizraums nicht aus.'
+    oder tiefer für Anlagen über 600 kW erhalten einen direkten Zugang vom Freien.'
   en: 'Boiler rooms on the ground floor or lower for plants above 1,200 kW nominal heat output, and boiler rooms on the second
-    basement or lower for plants above 600 kW, get direct access from outdoors. Not yet checkable: the model does not show
-    nominal heat output, fuel, type of installation and fire resistance of the boiler room.'
+    basement or lower for plants above 600 kW, get direct access from outdoors.'
   fr: 'Les locaux de chauffe au rez-de-chaussée ou plus bas pour des installations de plus de 1''200 kW de puissance calorifique
-    nominale, ainsi que ceux au deuxième sous-sol ou plus bas pour plus de 600 kW, reçoivent un accès direct depuis l''extérieur.
-    Pas encore vérifiable : le modèle n''indique pas la puissance calorifique nominale, le combustible, le mode d''installation
-    ni la résistance au feu du local de chauffe.'
+    nominale, ainsi que ceux au deuxième sous-sol ou plus bas pour plus de 600 kW, reçoivent un accès direct depuis l''extérieur.'
   it: 'I locali caldaia al piano terra o più in basso per impianti oltre 1''200 kW di potenza termica nominale, nonché quelli
-    al secondo interrato o più in basso per oltre 600 kW, ricevono un accesso diretto dall''esterno. Non ancora verificabile:
-    il modello non indica potenza termica nominale, combustibile, tipo di installazione né resistenza al fuoco del locale
-    caldaia.'
+    al secondo interrato o più in basso per oltre 600 kW, ricevono un accesso diretto dall''esterno.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

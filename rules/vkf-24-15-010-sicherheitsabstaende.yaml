@@ -12,26 +12,22 @@ description:
     Auskunft, sonst 0.1 m bei Oberflächentemperaturen bis 100 °C, 0.2 m bis 200 °C und 0.4 m bis 400 °C. Bei offenem oder
     verglastem Feuerraum gelten im Strahlungsbereich 0.8 m, bei gerichteter Wärmestrahlung 2 m. Die Abstände gelten auch zu
     nicht dauerwärmebeständigem oder weniger als 60 mm dickem RF1; mit hinterlüftetem Strahlungsschutz, Brandschutzplatte
-    oder 60 mm dicker Wand dürfen sie halbiert werden. Noch nicht prüfbar: das Modell weist Oberflächentemperatur, Brennbarkeit
-    der Umgebung und Sicherheitsabstände nicht aus.'
+    oder 60 mm dicker Wand dürfen sie halbiert werden.'
   en: 'Adequate clearances apply to all combustible materials, as given in the declaration of performance or VKF technical
     information, otherwise 0.1 m for surface temperatures up to 100 °C, 0.2 m up to 200 °C and 0.4 m up to 400 °C. For open
     or glazed fireboxes 0.8 m applies in the radiation zone, and 2 m for directed heat radiation. The distances also apply
     to RF1 that is not heat-resistant or thinner than 60 mm; with a back-ventilated radiation shield, fire protection board
-    or 60 mm thick wall they may be halved. Not yet checkable: the model does not show surface temperature, combustibility
-    of surroundings and clearances.'
+    or 60 mm thick wall they may be halved.'
   fr: 'Des distances de sécurité suffisantes s''appliquent à tous les matériaux combustibles, selon la déclaration des performances
     ou le renseignement technique de l''AEAI, sinon 0.1 m pour des températures de surface jusqu''à 100 °C, 0.2 m jusqu''à
     200 °C et 0.4 m jusqu''à 400 °C. Pour un foyer ouvert ou vitré, 0.8 m dans la zone de rayonnement, 2 m pour un rayonnement
     dirigé. Les distances valent aussi pour du RF1 non résistant à la chaleur ou de moins de 60 mm ; avec un écran de rayonnement
-    ventilé, une plaque de protection incendie ou une paroi de 60 mm, elles peuvent être réduites de moitié. Pas encore vérifiable
-    : le modèle n''indique ni la température de surface, ni la combustibilité de l''environnement, ni les distances de sécurité.'
+    ventilé, une plaque de protection incendie ou une paroi de 60 mm, elles peuvent être réduites de moitié.'
   it: 'Verso tutti i materiali combustibili valgono distanze di sicurezza adeguate, secondo dichiarazione di prestazione o
     informazione tecnica AICAA, altrimenti 0.1 m per temperature superficiali fino a 100 °C, 0.2 m fino a 200 °C e 0.4 m fino
     a 400 °C. Con focolare aperto o vetrato valgono 0.8 m nella zona di irraggiamento, 2 m per irraggiamento diretto. Le distanze
     valgono anche verso RF1 non resistente al calore o di spessore inferiore a 60 mm; con schermo di irraggiamento ventilato,
-    lastra antincendio o parete di 60 mm possono essere dimezzate. Non ancora verificabile: il modello non indica temperatura
-    superficiale, combustibilità dell''ambiente né distanze di sicurezza.'
+    lastra antincendio o parete di 60 mm possono essere dimezzate.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

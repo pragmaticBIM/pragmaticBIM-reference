@@ -9,23 +9,16 @@ name:
 description:
   de: 'Der Wohnungseinheit sind private Abstellräme ausserhalb der eigentlichen Wohnfläche klar
     zugeordnet (Keller, Estrich, Reduit), analog zur Abstellfläche der Grundausstattung. Geprüft
-    wird die Zuordnung und Nutzbarkeit dieser Räume über die gleiche UsageUnitReference. Noch
-    nicht prüfbar als SHACL: Keller-, Estrich- und Reduiträume je Wohnungseinheit fehlen als
-    aggregierte Kenngrössen.'
+    wird die Zuordnung und Nutzbarkeit dieser Räume über die gleiche UsageUnitReference.'
   fr: 'Des locaux de rangement privés hors surface habitable sont clairement rattachés à l''unité
     de logement (cave, grenier, cellier), sur le modèle des surfaces de rangement de l''équipement
-    de base. On vérifie le rattachement et l''usage via la même UsageUnitReference. Pas encore
-    vérifiable en SHACL : caves, greniers et celliers par unité de logement manquent comme
-    grandeurs agrégées.'
+    de base. On vérifie le rattachement et l''usage via la même UsageUnitReference.'
   it: 'All''unità abitativa sono chiaramente assegnati locali di deposito fuori dalla superficie
     abitativa (cantina, sottotetto, ripostiglio), in linea con le superfici di stoccaggio della
-    dotazione di base. Si verifica l''assegnazione e l''uso tramite la stessa UsageUnitReference.
-    Non ancora verificabile in SHACL: cantine, sottotetti e ripostigli per unità abitativa
-    mancano come grandezze aggregate.'
+    dotazione di base. Si verifica l''assegnazione e l''uso tramite la stessa UsageUnitReference.'
   en: 'Private storage rooms outside the net dwelling floor area are clearly assigned to the
     dwelling unit (cellar, attic, locker), in line with Grundausstattung storage areas. Check
-    assignment and usability via the same UsageUnitReference. Not yet checkable as SHACL: cellar,
-    attic, and locker spaces per dwelling unit are not aggregated quantities yet.'
+    assignment and usability via the same UsageUnitReference.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

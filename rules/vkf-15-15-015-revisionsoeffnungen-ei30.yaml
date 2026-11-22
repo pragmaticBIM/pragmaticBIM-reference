@@ -8,18 +8,14 @@ name:
   it: 'Aperture di ispezione dei cavedi impiantistici: chiusura EI 30'
 description:
   de: 'Revisionsöffnungen in Installationsschächten werden mit Brandschutzabschlüssen EI 30 verschlossen. In Bauten geringer
-    und mittlerer Höhe genügen Revisionsdeckel RF1, wenn der Schacht geschossweise unterteilt oder ausgefüllt ist. Noch
-    nicht prüfbar: Revisionsöffnungen sind im Modell nicht als eigene Elemente an Schächten geführt.'
+    und mittlerer Höhe genügen Revisionsdeckel RF1, wenn der Schacht geschossweise unterteilt oder ausgefüllt ist.'
   en: 'Inspection openings in installation shafts are closed with fire-rated closures EI 30. In low and medium-height buildings
-    RF1 inspection covers are sufficient where the shaft is subdivided or filled storey by storey. Not yet checkable: inspection
-    openings are not modelled as separate elements on shafts.'
+    RF1 inspection covers are sufficient where the shaft is subdivided or filled storey by storey.'
   fr: 'Les ouvertures de révision des gaines techniques sont fermées par des fermetures coupe-feu EI 30. Dans les bâtiments
     de faible et moyenne hauteur, des couvercles de révision RF1 suffisent si la gaine est subdivisée ou remplie niveau
-    par niveau. Pas encore vérifiable : les ouvertures de révision ne sont pas modélisées comme éléments distincts sur les
-    gaines.'
+    par niveau.'
   it: 'Le aperture di ispezione dei cavedi impiantistici sono chiuse con chiusure tagliafuoco EI 30. Negli edifici di altezza
-    ridotta e media bastano coperchi di ispezione RF1 se il cavedio è suddiviso o riempito piano per piano. Non ancora verificabile:
-    le aperture di ispezione non sono modellate come elementi propri sui cavedi.'
+    ridotta e media bastano coperchi di ispezione RF1 se il cavedio è suddiviso o riempito piano per piano.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

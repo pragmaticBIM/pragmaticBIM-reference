@@ -10,22 +10,17 @@ description:
   de: 'Druckgaspackungen (Spraydosen, Aerosolpackungen) lagern in Räumen mit geringem Brandrisiko, örtlich getrennt vom übrigen
     Lagergut, und werden so aufbewahrt und verwendet, dass sie sich nicht über 50 °C erwärmen. Über 100 l stehen sie hinter
     einem Gitterabschluss (z. B. Palette mit Aufsetzgitter, Gitterbox). Räume mit Druckgaspackungen mit brennbarem Treibgas
-    oder Inhalt sind gelüftet. Noch nicht prüfbar: das Modell weist Gasart, Flaschenvolumen, Lagermenge und Standort der Gaslager
-    nicht aus.'
+    oder Inhalt sind gelüftet.'
   en: 'Aerosol packs (spray cans) are stored in rooms with low fire risk, locally separated from other stored goods, and kept
     and used so that they do not warm above 50 °C. Above 100 l they stand behind a grille (e.g. pallet with cage frame, mesh
-    box). Rooms with aerosol packs with flammable propellant or content are ventilated. Not yet checkable: the model does
-    not show gas type, cylinder volume, stored quantity and location of gas storage.'
+    box). Rooms with aerosol packs with flammable propellant or content are ventilated.'
   fr: 'Les générateurs d''aérosols sont stockés dans des locaux à faible risque d''incendie, séparés localement des autres
     marchandises, et conservés et utilisés de façon à ne pas dépasser 50 °C. Au-delà de 100 l, ils se trouvent derrière une
     grille (p. ex. palette avec rehausse grillagée, box grillagé). Les locaux avec générateurs d''aérosols à gaz propulseur
-    ou contenu inflammable sont ventilés. Pas encore vérifiable : le modèle n''indique ni le type de gaz, ni le volume des
-    bouteilles, ni la quantité stockée, ni l''emplacement des dépôts de gaz.'
+    ou contenu inflammable sont ventilés.'
   it: 'Le confezioni sotto pressione (bombolette spray) sono stoccate in locali a basso rischio d''incendio, separate localmente
     dalla altra merce, e conservate e usate in modo da non superare 50 °C. Oltre 100 l stanno dietro una griglia (p. es. pallet
-    con sovrastruttura a rete, gabbia). I locali con confezioni con propellente o contenuto infiammabile sono ventilati. Non
-    ancora verificabile: il modello non indica tipo di gas, volume delle bombole, quantità stoccata né ubicazione dei depositi
-    di gas.'
+    con sovrastruttura a rete, gabbia). I locali con confezioni con propellente o contenuto infiammabile sono ventilati.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

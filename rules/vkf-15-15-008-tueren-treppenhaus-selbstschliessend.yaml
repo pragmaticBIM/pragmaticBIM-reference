@@ -9,19 +9,17 @@ name:
 description:
   de: 'Türen, die in ein Treppenhaus oder einen anderen vertikalen Fluchtweg führen, haben einen Türschliesser.
     Nicht betroffen sind Wohnungstüren, Türen von Schulzimmern, Einzelbüros und Technikräumen. Werden Brand- oder
-    Rauchschutztüren im Betrieb offen gehalten, brauchen sie eine automatische Schliessung im Brandfall. Noch nicht
-    prüfbar: der Türschliesser ist im Modell nicht abgelegt.'
+    Rauchschutztüren im Betrieb offen gehalten, brauchen sie eine automatische Schliessung im Brandfall.'
   en: 'Doors leading into a staircase or another vertical escape route have a door closer. Apartment doors and doors
     of classrooms, single offices and plant rooms are not affected. Fire or smoke doors held open in operation need
-    automatic closing in case of fire. Not yet checkable: the model does not store the door closer.'
+    automatic closing in case of fire.'
   fr: 'Les portes donnant sur une cage d''escalier ou une autre voie d''évacuation verticale sont munies d''un ferme-porte.
     Ne sont pas concernées les portes de logements, de salles de classe, de bureaux individuels et de locaux techniques.
     Les portes coupe-feu ou pare-fumée maintenues ouvertes en exploitation exigent une fermeture automatique en
-    cas d''incendie. Pas encore vérifiable : le modèle n''indique pas le ferme-porte.'
+    cas d''incendie.'
   it: 'Le porte che danno su un vano scala o su un''altra via di fuga verticale hanno un chiudiporta. Non sono interessate
     le porte di appartamenti, aule, uffici singoli e locali tecnici. Le porte tagliafuoco o tagliafumo tenute aperte
-    durante l''esercizio richiedono una chiusura automatica in caso d''incendio. Non ancora verificabile: il modello
-    non indica il chiudiporta.'
+    durante l''esercizio richiedono una chiusura automatica in caso d''incendio.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

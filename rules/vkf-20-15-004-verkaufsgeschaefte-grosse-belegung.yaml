@@ -9,21 +9,16 @@ name:
 description:
   de: 'In Verkaufsgeschäften wird die Sprinkleranlage mit Handfeuermeldern ergänzt; in Teilbereichen oder einzelnen Räumen
     ist eine Brandmeldeanlage einzubauen, sofern sie zur Ansteuerung technischer Brandschutzeinrichtungen nötig ist. Bei Räumen
-    mit grosser Personenbelegung kann die Brandschutzbehörde eine Brandmeldeanlage verlangen. Noch nicht prüfbar: das Modell
-    weist Nutzung, Personenbelegung, Geschosszahl und Brandabschnittsgrösse je Brandabschnitt nicht aus.'
+    mit grosser Personenbelegung kann die Brandschutzbehörde eine Brandmeldeanlage verlangen.'
   en: 'In shops the sprinkler system is supplemented with manual call points; in sub-areas or individual rooms a fire alarm
     system is installed where needed to activate technical fire protection equipment. For rooms with large occupancy the fire
-    protection authority can require a fire alarm system. Not yet checkable: the model does not show use, occupancy, number
-    of storeys and compartment size per fire compartment.'
+    protection authority can require a fire alarm system.'
   fr: 'Dans les commerces, l''installation sprinkler est complétée par des avertisseurs manuels ; dans des parties ou locaux
     isolés, une détection incendie est installée si elle est nécessaire à la commande d''équipements techniques de protection
-    incendie. Pour les locaux à forte occupation, l''autorité de protection incendie peut exiger une détection incendie. Pas
-    encore vérifiable : le modèle n''indique pas l''affectation, la charge d''occupation, le nombre d''étages ni la taille
-    du compartiment.'
+    incendie. Pour les locaux à forte occupation, l''autorité de protection incendie peut exiger une détection incendie.'
   it: 'Nei negozi l''impianto sprinkler è integrato da pulsanti manuali; in parti o singoli locali si installa una rivelazione
     incendio se necessaria per l''attivazione di dispositivi tecnici antincendio. Per i locali con grande occupazione l''autorità
-    di protezione antincendio può richiedere una rivelazione incendio. Non ancora verificabile: il modello non indica utilizzo,
-    occupazione, numero di piani e dimensione del compartimento.'
+    di protezione antincendio può richiedere una rivelazione incendio.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

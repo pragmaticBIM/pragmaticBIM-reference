@@ -11,26 +11,21 @@ description:
     wird. Vertikale Fluchtwege, Licht-, Aufzugs- und Installationsschächte sowie turmartige Aufbauten bilden eine gemeinsame
     Meldergruppe. Melder in Zwischenräumen über Unterdecken, unter Doppelböden und in Kanälen erhalten eigene Gruppen oder
     sind einem Teilbereich erkennbar zugeordnet; Handfeuermelder in Fluchtwegen über mehr als zwei Untergeschosse bilden getrennte
-    Gruppen für unten und oben. Noch nicht prüfbar: das Modell enthält Melder nur als Gerät mit Lage, ohne Meldergruppe, Überwachungsumfang,
-    Montagehöhe und Anlagesystem.'
+    Gruppen für unten und oben.'
   en: 'The entire monitored area is divided into detector zones so that the fire location is shown quickly and unambiguously.
     Vertical escape routes, light, lift and installation shafts and tower-like structures form one common detector zone. Detectors
     in voids above suspended ceilings, below raised floors and in ducts get their own zones or can be identified with a sub-area;
-    manual call points in escape routes over more than two basements form separate zones for below and above. Not yet checkable:
-    the model holds detectors only as a device with location, without detector zone, monitored extent, mounting height and
-    system.'
+    manual call points in escape routes over more than two basements form separate zones for below and above.'
   fr: 'Toute la zone surveillée est divisée en zones de détection, de sorte que le foyer soit indiqué rapidement et sans ambiguïté.
     Les voies d''évacuation verticales, gaines de lumière, d''ascenseur et techniques ainsi que les structures en tour forment
     une zone commune. Les détecteurs dans les vides sous faux plafonds, sous planchers surélevés et dans les conduits ont
     leurs propres zones ou sont attribuables à une partie ; les avertisseurs manuels dans les voies d''évacuation sur plus
-    de deux sous-sols forment des zones séparées pour le bas et le haut. Pas encore vérifiable : le modèle ne contient les
-    détecteurs que comme appareil avec position, sans zone de détection, étendue surveillée, hauteur de montage ni système.'
+    de deux sous-sols forment des zones séparées pour le bas et le haut.'
   it: 'L''intera area sorvegliata è suddivisa in zone di rivelazione, in modo che il punto d''incendio sia indicato rapidamente
     e senza equivoci. Vie di fuga verticali, cavedi di luce, ascensore e tecnici nonché strutture a torre formano una zona
     comune. I rivelatori nelle intercapedini sopra controsoffitti, sotto pavimenti sopraelevati e nei condotti hanno zone
     proprie o sono attribuibili a una parte; i pulsanti manuali nelle vie di fuga su più di due piani interrati formano zone
-    separate per il basso e l''alto. Non ancora verificabile: il modello contiene i rivelatori solo come apparecchio con posizione,
-    senza zona di rivelazione, estensione sorvegliata, altezza di montaggio né sistema.'
+    separate per il basso e l''alto.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

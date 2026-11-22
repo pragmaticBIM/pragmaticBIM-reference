@@ -10,24 +10,19 @@ description:
   de: 'Für Anlagen ohne Leistungsnachweis legt die Richtlinie je Nutzung, Lage und Fläche fest, welche Anlageart zulässig
     ist: Entrauchung mit Lüftern der Feuerwehr, maschinelle oder natürliche Anlage. Die Dimensionierung folgt Luftwechselraten
     je Raumhöhe oder Zu- und Abluftflächen in Prozent der Brandabschnittsfläche. In Untergeschossen und bei Atrien mit Fluchtweg
-    gelten Einschränkungen oder Ausschlüsse. Noch nicht prüfbar: das Modell enthält keine Rauch- und Wärmeabzugsanlage als
-    System und keine Zuordnung zu Brandabschnitten.'
+    gelten Einschränkungen oder Ausschlüsse.'
   en: 'For systems without performance proof the directive sets, per use, position and area, which system type is permitted:
     smoke clearance with fire-brigade fans, mechanical or natural systems. Sizing follows air-change rates by room height
     or supply and exhaust areas as a percentage of the compartment area. Restrictions or exclusions apply in basements and
-    for atria with an escape route. Not yet checkable: the model holds no smoke and heat exhaust system and no assignment
-    of one to fire compartments.'
+    for atria with an escape route.'
   fr: 'Pour les installations sans preuve de performance, la directive fixe, par affectation, situation et surface, le type
     d''installation admis : désenfumage par ventilateurs des sapeurs-pompiers, installation mécanique ou naturelle. Le dimensionnement
     suit des taux de renouvellement d''air selon la hauteur du local ou des surfaces d''amenée et d''évacuation en pourcentage
-    de la surface du compartiment. Des restrictions ou exclusions s''appliquent aux sous-sols et aux atriums avec voie d''évacuation.
-    Pas encore vérifiable : le modèle ne contient aucune installation d''évacuation de fumée et de chaleur ni affectation
-    à des compartiments.'
+    de la surface du compartiment. Des restrictions ou exclusions s''appliquent aux sous-sols et aux atriums avec voie d''évacuation.'
   it: 'Per gli impianti senza prova di prestazione la direttiva stabilisce, per utilizzo, posizione e superficie, quale tipo
     di impianto è ammesso: evacuazione con ventilatori dei pompieri, impianto meccanico o naturale. Il dimensionamento segue
     tassi di ricambio d''aria secondo l''altezza del locale o superfici di immissione ed evacuazione in percentuale della
-    superficie del compartimento. Per i piani interrati e gli atri con via di fuga valgono limitazioni o esclusioni. Non ancora
-    verificabile: il modello non contiene alcun impianto di evacuazione di fumo e calore né l''assegnazione a compartimenti.'
+    superficie del compartimento. Per i piani interrati e gli atri con via di fuga valgono limitazioni o esclusioni.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

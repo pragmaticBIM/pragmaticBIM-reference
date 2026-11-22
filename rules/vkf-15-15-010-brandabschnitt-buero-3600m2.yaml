@@ -9,20 +9,16 @@ name:
 description:
   de: 'In Bürobauten umfasst ein Brandabschnitt ohne besonderen Nachweis höchstens 3600 m². Dazu zählen alle Geschosse,
     die ohne Feuerwiderstand miteinander verbunden sind. Nutzungen, die zum Büro gehören (z. B. Sitzungszimmer,
-    Archive, Serverräume, Teeküchen), dürfen im selben Abschnitt liegen. Noch nicht prüfbar: Brandabschnitte sind
-    im Modell nicht als Zonen abgelegt.'
+    Archive, Serverräume, Teeküchen), dürfen im selben Abschnitt liegen.'
   en: 'In office buildings a fire compartment covers at most 3600 m² without special proof. All storeys connected
     without fire resistance count together. Uses belonging to the office (e.g. meeting rooms, archives, server rooms,
-    kitchenettes) may share the compartment. Not yet checkable: fire compartments are not stored as zones in the
-    model.'
+    kitchenettes) may share the compartment.'
   fr: 'Dans les bâtiments administratifs, un compartiment coupe-feu couvre au plus 3600 m² sans justification particulière.
     Tous les étages reliés sans résistance au feu comptent ensemble. Les affectations liées au bureau (p. ex. salles
-    de séance, archives, salles de serveurs, cuisinettes) peuvent partager le compartiment. Pas encore vérifiable
-    : les compartiments ne sont pas enregistrés comme zones dans le modèle.'
+    de séance, archives, salles de serveurs, cuisinettes) peuvent partager le compartiment.'
   it: 'Negli edifici amministrativi un compartimento tagliafuoco copre al massimo 3600 m² senza prova particolare.
     Contano insieme tutti i piani collegati senza resistenza al fuoco. Gli utilizzi legati all''ufficio (p. es.
-    sale riunioni, archivi, sale server, angoli cottura) possono condividere il compartimento. Non ancora verificabile:
-    i compartimenti non sono registrati come zone nel modello.'
+    sale riunioni, archivi, sale server, angoli cottura) possono condividere il compartimento.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

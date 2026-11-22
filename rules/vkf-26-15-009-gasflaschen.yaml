@@ -12,27 +12,22 @@ description:
     mit leicht brennbaren oder selbstentzündlichen Stoffen gelagert. In Fluchtwegen werden sie weder angeschlossen noch gelagert;
     Räume mit angeschlossenen oder gelagerten Flaschen sind ausreichend gelüftet. Ab 200 l Flaschenvolumen stehen sie im Freien,
     in einem separaten Brandabschnitt ohne zusätzliche Brandlasten oder in Schränken nach SN EN 14470-2, die mindestens den
-    Feuerwiderstand des Brandabschnitts erreichen. Noch nicht prüfbar: das Modell weist Gasart, Flaschenvolumen, Lagermenge
-    und Standort der Gaslager nicht aus.'
+    Feuerwiderstand des Brandabschnitts erreichen.'
   en: 'Gas cylinders are protected against excessive heating, mechanical damage and falling over and are not stored together
     with highly flammable or self-igniting substances. In escape routes they are neither connected nor stored; rooms with
     connected or stored cylinders are sufficiently ventilated. From 200 l cylinder volume they stand outdoors, in a separate
     fire compartment without additional fire loads, or in cabinets to SN EN 14470-2 that reach at least the fire resistance
-    of the compartment. Not yet checkable: the model does not show gas type, cylinder volume, stored quantity and location
-    of gas storage.'
+    of the compartment.'
   fr: 'Les bouteilles de gaz sont protégées contre un échauffement excessif, les dommages mécaniques et le renversement et
     ne sont pas stockées avec des substances facilement inflammables ou auto-inflammables. Dans les voies d''évacuation, elles
     ne sont ni raccordées ni stockées ; les locaux avec bouteilles raccordées ou stockées sont suffisamment ventilés. Dès
     200 l de volume de bouteilles, elles se trouvent à l''extérieur, dans un compartiment séparé sans charges calorifiques
-    supplémentaires ou dans des armoires selon SN EN 14470-2 atteignant au moins la résistance au feu du compartiment. Pas
-    encore vérifiable : le modèle n''indique ni le type de gaz, ni le volume des bouteilles, ni la quantité stockée, ni l''emplacement
-    des dépôts de gaz.'
+    supplémentaires ou dans des armoires selon SN EN 14470-2 atteignant au moins la résistance au feu du compartiment.'
   it: 'Le bombole di gas sono protette da riscaldamento eccessivo, danni meccanici e ribaltamento e non sono stoccate con
     sostanze facilmente infiammabili o autoinfiammabili. Nelle vie di fuga non sono né collegate né stoccate; i locali con
     bombole collegate o stoccate sono ventilati a sufficienza. Da 200 l di volume delle bombole stanno all''aperto, in un
     compartimento separato senza carichi d''incendio aggiuntivi o in armadi secondo SN EN 14470-2 che raggiungono almeno la
-    resistenza al fuoco del compartimento. Non ancora verificabile: il modello non indica tipo di gas, volume delle bombole,
-    quantità stoccata né ubicazione dei depositi di gas.'
+    resistenza al fuoco del compartimento.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

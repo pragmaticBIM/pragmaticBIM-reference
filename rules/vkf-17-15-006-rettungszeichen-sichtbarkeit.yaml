@@ -9,19 +9,16 @@ name:
 description:
   de: 'Dekorationen, Reklamen und andere Einrichtungen beeinträchtigen die Sicht auf Rettungszeichen nicht. Andere beleuchtete
     Zeichen, Beschriftungen und Spiegel lenken nicht ab und führen nicht zu Verwechslungen. Grün wird für andere Zwecke
-    nicht so verwendet, dass es mit Rettungszeichen verwechselt werden kann. Noch nicht prüfbar: Rettungszeichen, Reklamen
-    und Farben sind im Modell nicht abgebildet.'
+    nicht so verwendet, dass es mit Rettungszeichen verwechselt werden kann.'
   en: 'Decorations, advertising and other fittings do not impair the view of escape signs. Other illuminated signs, inscriptions
     and mirrors do not distract or cause confusion. Green is not used for other purposes in a way that could be mistaken
-    for escape signs. Not yet checkable: escape signs, advertising and colours are not represented in the model.'
+    for escape signs.'
   fr: 'Décorations, publicités et autres équipements ne gênent pas la visibilité des signaux de sauvetage. D''autres signaux
     lumineux, inscriptions et miroirs ne distraient pas et ne prêtent pas à confusion. Le vert n''est pas utilisé à d''autres
-    fins de manière à être confondu avec les signaux de sauvetage. Pas encore vérifiable : signaux de sauvetage, publicités
-    et couleurs ne sont pas représentés dans le modèle.'
+    fins de manière à être confondu avec les signaux de sauvetage.'
   it: 'Decorazioni, pubblicità e altri arredi non compromettono la visibilità dei segnali di salvataggio. Altri segnali
     luminosi, scritte e specchi non distraggono né creano confusione. Il verde non è usato per altri scopi in modo tale
-    da essere confuso con i segnali di salvataggio. Non ancora verificabile: segnali di salvataggio, pubblicità e colori
-    non sono rappresentati nel modello.'
+    da essere confuso con i segnali di salvataggio.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -10,25 +10,19 @@ description:
   de: 'Brandmeldezentralen und Fernsignaltableaus stehen an einem sicheren, leicht zugänglichen Standort; der Brandabschnitt
     der Zentrale wird überwacht. Mehrere Bereichszentralen am gleichen Ort kommen in einen separaten Raum mit dem Feuerwiderstand
     der nutzungsbezogenen Brandabschnittsbildung, mindestens EI 30, mit Türen EI 30; weitere Sicherheits-, Klein- und Niederspannungs-
-    sowie Telekommunikationseinrichtungen dürfen dort stehen. Noch nicht prüfbar: das Modell enthält keine Brandmeldezentrale,
-    kein Feuerwehrbedienteil und keine Brandfallsteuerung als System.'
+    sowie Telekommunikationseinrichtungen dürfen dort stehen.'
   en: 'Fire alarm control panels and remote indicating panels stand at a safe, easily accessible location; the fire compartment
     of the panel is monitored. Several area panels at the same place go into a separate room with the fire resistance of the
     use-related compartmentation, at least EI 30, with EI 30 doors; further safety, small, low-voltage and telecommunication
-    equipment may be housed there. Not yet checkable: the model holds no fire alarm control panel, no fire-brigade control
-    unit and no fire-mode control as a system.'
+    equipment may be housed there.'
   fr: 'Les centrales de détection incendie et tableaux de signalisation à distance sont placés en un lieu sûr et facilement
     accessible ; le compartiment de la centrale est surveillé. Plusieurs centrales de zone au même endroit sont installées
     dans un local séparé avec la résistance au feu de la compartimentation liée à l''affectation, au moins EI 30, avec portes
-    EI 30 ; d''autres équipements de sécurité, à courant faible, basse tension et de télécommunication peuvent s''y trouver.
-    Pas encore vérifiable : le modèle ne contient ni centrale de détection incendie, ni tableau de commande pour les sapeurs-pompiers,
-    ni commande en cas d''incendie comme système.'
+    EI 30 ; d''autres équipements de sécurité, à courant faible, basse tension et de télécommunication peuvent s''y trouver.'
   it: 'Le centrali di rivelazione incendio e i quadri di segnalazione a distanza stanno in un luogo sicuro e facilmente accessibile;
     il compartimento della centrale è sorvegliato. Più centrali di zona nello stesso luogo sono collocate in un locale separato
     con la resistenza al fuoco della compartimentazione legata all''utilizzo, almeno EI 30, con porte EI 30; vi possono stare
-    altre apparecchiature di sicurezza, a bassa e bassissima tensione e di telecomunicazione. Non ancora verificabile: il
-    modello non contiene alcuna centrale di rivelazione incendio, unità di comando per i pompieri né comando antincendio come
-    sistema.'
+    altre apparecchiature di sicurezza, a bassa e bassissima tensione e di telecomunicazione.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

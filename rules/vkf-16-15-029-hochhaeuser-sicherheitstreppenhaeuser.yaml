@@ -12,30 +12,26 @@ description:
     einem Sicherheitstreppenhaus aus zugänglich sein. Innenliegende Sicherheitstreppenhäuser werden auf jedem Geschoss über
     eine unmittelbar vorgelagerte Schleuse mit Grundrissmassen von mindestens 1.2 m × 2.4 m betreten, deren Türen selbstschliessend
     sind. Bei Erschliessung über ständig ins Freie offene Vorplätze oder Gänge braucht es keine Schleuse. Mit Feuerwehraufzug
-    muss die Schleuse oder der Vorplatz davor gemäss Anhang mindestens 2.4 m × 2.4 m messen. Noch nicht prüfbar: Hochhauseigenschaft,
-    Druckanlage und Schleusenabmessungen fehlen im Modell.'
+    muss die Schleuse oder der Vorplatz davor gemäss Anhang mindestens 2.4 m × 2.4 m messen.'
   en: 'In high-rise buildings, storeys above ground are served by safety stairwells. These are vertical escape routes specially
     protected against the entry of smoke and fire (pressurized smoke control system). The roof must be accessible from a safety
     stairwell. Internal safety stairwells are entered on every storey through an airlock directly in front with a plan size
     of at least 1.2 m × 2.4 m, whose doors are self-closing. No airlock is needed where access is through forecourts or corridors
     permanently open to the outside. With a firefighters'' lift, the airlock or forecourt in front of it must, according to
-    the appendix, measure at least 2.4 m × 2.4 m. Not yet checkable: high-rise status, pressurization system and airlock dimensions
-    are missing in the model.'
+    the appendix, measure at least 2.4 m × 2.4 m.'
   fr: 'Dans les immeubles de grande hauteur, les étages hors sol sont desservis par des cages d''escalier de sécurité. Il
     s''agit de voies d''évacuation verticales particulièrement protégées contre la pénétration de fumée et de feu (installation
     de surpression). La toiture doit être accessible depuis une cage d''escalier de sécurité. Les cages d''escalier de sécurité
     intérieures s''abordent à chaque étage par un sas situé immédiatement devant, d''au moins 1,2 m × 2,4 m en plan, dont
     les portes sont à fermeture automatique. Un accès par des parvis ou couloirs en permanence ouverts sur l''extérieur ne
     nécessite pas de sas. Avec un ascenseur pompiers, le sas ou le parvis devant celui-ci doit, selon l''annexe, mesurer au
-    moins 2,4 m × 2,4 m. Pas encore vérifiable : la qualité d''immeuble de grande hauteur, la surpression et les dimensions
-    des sas manquent dans le modèle.'
+    moins 2,4 m × 2,4 m.'
   it: 'Negli edifici alti i piani fuori terra sono serviti da vani scale di sicurezza. Si tratta di vie di fuga verticali
     particolarmente protette contro l''ingresso di fumo e fuoco (impianto di sovrapressione). Il tetto deve essere accessibile
     da un vano scale di sicurezza. I vani scale di sicurezza interni si raggiungono a ogni piano tramite un filtro posto immediatamente
     davanti, con dimensioni in pianta di almeno 1,2 m × 2,4 m, le cui porte sono a chiusura automatica. Se l''accesso avviene
     tramite piazzali o corridoi permanentemente aperti verso l''esterno, non serve il filtro. Con un ascensore antincendio
-    il filtro o il piazzale davanti a esso deve, secondo l''allegato, misurare almeno 2,4 m × 2,4 m. Non ancora verificabile:
-    qualifica di edificio alto, sovrapressione e dimensioni dei filtri mancano nel modello.'
+    il filtro o il piazzale davanti a esso deve, secondo l''allegato, misurare almeno 2,4 m × 2,4 m.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

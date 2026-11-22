@@ -11,27 +11,23 @@ description:
     Fehlen verbindliche Angaben (z. B. Bestuhlungspläne), gelten flächenbezogene Annahmen, die objektspezifisch angepasst
     werden können. Anzahl und Breite der Raumausgänge richten sich nach dieser Belegung. Mindestens zwei Drittel der erforderlichen
     Ausgangsbreite führen direkt in horizontale oder vertikale Fluchtwege; höchstens ein Drittel darf über eine anders genutzte
-    Zone (z. B. Foyer, Warteraum) führen, sofern die Breite betrieblich freigehalten wird. Noch nicht prüfbar: Personenbelegung
-    und Zonennutzung sind im Modell nicht typisiert abgelegt.'
+    Zone (z. B. Foyer, Warteraum) führen, sofern die Breite betrieblich freigehalten wird.'
   en: 'The decisive occupancy determines the number and dimensions of escape routes and is to be recorded in writing and bindingly.
     Where no binding data exist (e.g. seating plans), area-based assumptions apply and may be adapted to the project. The
     number and width of room exits follow this occupancy. At least two thirds of the required exit width lead directly onto
     horizontal or vertical escape routes; at most one third may lead through an otherwise used zone (e.g. foyer, waiting room),
-    provided the width is kept clear in operation. Not yet checkable: occupancy and zone use are not stored as typed values
-    in the model.'
+    provided the width is kept clear in operation.'
   fr: 'L''occupation déterminante fixe le nombre et le dimensionnement des voies d''évacuation et doit être consignée par
     écrit de manière contraignante. À défaut de données contraignantes (p. ex. plans de places assises), on se base sur des
     hypothèses liées à la surface, adaptables au projet. Le nombre et la largeur des sorties de locaux découlent de cette
     occupation. Au moins deux tiers de la largeur de sortie requise mènent directement à des voies d''évacuation horizontales
     ou verticales ; un tiers au plus peut passer par une zone à autre usage (p. ex. foyer, salle d''attente), pour autant
-    que la largeur soit maintenue libre en exploitation. Pas encore vérifiable : l''occupation et l''usage des zones ne sont
-    pas enregistrés comme valeurs typées dans le modèle.'
+    que la largeur soit maintenue libre en exploitation.'
   it: 'L''occupazione determinante stabilisce numero e dimensionamento delle vie di fuga e va fissata per iscritto in modo
     vincolante. In assenza di dati vincolanti (p. es. piani dei posti a sedere) valgono ipotesi basate sulla superficie, adattabili
     al progetto. Numero e larghezza delle uscite dei locali dipendono da tale occupazione. Almeno due terzi della larghezza
     di uscita richiesta conducono direttamente a vie di fuga orizzontali o verticali; al massimo un terzo può passare attraverso
-    una zona con altro utilizzo (p. es. foyer, sala d''attesa), a condizione che la larghezza sia mantenuta libera nell''esercizio.
-    Non ancora verificabile: occupazione e utilizzo delle zone non sono registrati come valori tipizzati nel modello.'
+    una zona con altro utilizzo (p. es. foyer, sala d''attesa), a condizione che la larghezza sia mantenuta libera nell''esercizio.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

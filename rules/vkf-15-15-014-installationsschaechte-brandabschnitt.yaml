@@ -10,22 +10,19 @@ description:
   de: 'Haustechnische Leitungen über mehrere Geschosse werden grundsätzlich in Installationsschächten geführt, die selbst
     Brandabschnitte bilden. Die Schachtumfassung erreicht den Feuerwiderstand der nutzungsbezogenen Brandabschnittsbildung,
     mindestens aber EI 30. Auf einen Schacht kann verzichten, wer die Leitungen geschossweise durch Decken mit Durchführungen
-    nach Ziff. 3.5 führt oder VKF-anerkannte Wandsysteme verwendet. Noch nicht prüfbar: das Modell zeigt nicht, welche Bauteile
-    einen Schacht umfassen.'
+    nach Ziff. 3.5 führt oder VKF-anerkannte Wandsysteme verwendet.'
   en: 'Building-services lines running over several storeys are in principle routed in installation shafts that themselves
     form fire compartments. The shaft enclosure matches the fire resistance of the use-related compartmentation, but at
     least EI 30. A shaft can be omitted where lines pass storey by storey through floors with penetrations made as in clause
-    3.5 or run in VKF-recognized wall systems. Not yet checkable: the model does not show which components enclose a shaft.'
+    3.5 or run in VKF-recognized wall systems.'
   fr: 'Les conduites des installations techniques sur plusieurs niveaux sont en principe guidées dans des gaines formant
     elles-mêmes des compartiments coupe-feu. L''enveloppe de la gaine atteint la résistance au feu de la compartimentation
     liée à l''affectation, au moins EI 30. On peut renoncer à la gaine si les conduites traversent les planchers niveau
-    par niveau avec des traversées selon le chiffre 3.5, ou si elles passent dans des systèmes de parois reconnus par l''AEAI.
-    Pas encore vérifiable : le modèle n''indique pas quels éléments entourent une gaine.'
+    par niveau avec des traversées selon le chiffre 3.5, ou si elles passent dans des systèmes de parois reconnus par l''AEAI.'
   it: 'Le condutture degli impianti tecnici su più piani sono di norma guidate in cavedi che formano essi stessi compartimenti
     antincendio. L''involucro del cavedio raggiunge la resistenza al fuoco della compartimentazione legata all''utilizzo,
     almeno EI 30. Si può rinunciare al cavedio se le condutture attraversano i solai piano per piano con passaggi eseguiti
-    secondo il numero 3.5 oppure corrono in sistemi di parete riconosciuti dall''AICAA. Non ancora verificabile: il modello
-    non indica quali elementi racchiudono un cavedio.'
+    secondo il numero 3.5 oppure corrono in sistemi di parete riconosciuti dall''AICAA.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

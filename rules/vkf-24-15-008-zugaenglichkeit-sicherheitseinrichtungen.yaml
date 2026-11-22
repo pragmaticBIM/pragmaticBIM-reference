@@ -11,30 +11,24 @@ description:
     unterbrechen die Brennstoffzufuhr und verhindern Überhitzung, Flammenrückschlag, Überdruck und andere Gefahren, auch bei
     Stromausfall; bei Wasserheizungen sind es etwa Ausdehnungsgefässe, Sicherheitsventile und Sicherheitstemperaturbegrenzer.
     Absperreinrichtungen für Verbrennungsluft oder Abgasweg dürfen nur bei stillstehendem Aggregat schliessen, motorische
-    öffnen bei Ausfall selbsttätig, Drosseln schliessen nie dicht, und die Stellung ist von aussen sichtbar. Noch nicht prüfbar:
-    das Modell weist Nennwärmeleistung, Brennstoff, Aufstellungsart und Feuerwiderstand des Heizraums nicht aus.'
+    öffnen bei Ausfall selbsttätig, Drosseln schliessen nie dicht, und die Stellung ist von aussen sichtbar.'
   en: 'Units and flue system are easily accessible for operation, maintenance and cleaning at all times. Safety devices interrupt
     the fuel supply and prevent overheating, flashback, overpressure and other hazards, also during a power failure; for water
     heating systems these are expansion vessels, safety valves and safety temperature limiters. Shut-off devices for combustion
     air or flue path may close only while the unit is stopped, motorised ones open automatically on failure, throttles never
-    close tight, and the position is visible from outside. Not yet checkable: the model does not show nominal heat output,
-    fuel, type of installation and fire resistance of the boiler room.'
+    close tight, and the position is visible from outside.'
   fr: 'Les appareils et l''installation d''évacuation sont en tout temps facilement accessibles pour la commande, l''entretien
     et le nettoyage. Les dispositifs de sécurité interrompent l''alimentation en combustible et empêchent surchauffe, retour
     de flamme, surpression et autres dangers, même en cas de coupure de courant ; pour les chauffages à eau, ce sont p. ex.
     vases d''expansion, soupapes de sécurité et limiteurs de température de sécurité. Les organes d''obturation de l''air
     de combustion ou du circuit des fumées ne ferment que si l''appareil est à l''arrêt, les motorisés s''ouvrent seuls en
-    cas de défaillance, les clapets de réglage ne ferment jamais hermétiquement et la position est visible de l''extérieur.
-    Pas encore vérifiable : le modèle n''indique pas la puissance calorifique nominale, le combustible, le mode d''installation
-    ni la résistance au feu du local de chauffe.'
+    cas de défaillance, les clapets de réglage ne ferment jamais hermétiquement et la position est visible de l''extérieur.'
   it: 'Apparecchi e impianto di scarico sono in ogni momento facilmente accessibili per conduzione, manutenzione e pulizia.
     I dispositivi di sicurezza interrompono l''alimentazione di combustibile e impediscono surriscaldamento, ritorno di fiamma,
     sovrappressione e altri pericoli, anche in caso di interruzione dell''alimentazione; negli impianti ad acqua sono ad esempio
     vasi di espansione, valvole di sicurezza e limitatori di temperatura di sicurezza. Gli organi di intercettazione dell''aria
     di combustione o del percorso fumi chiudono solo ad apparecchio fermo, quelli motorizzati si aprono da soli in caso di
-    guasto, le serrande di regolazione non chiudono mai a tenuta e la posizione è visibile dall''esterno. Non ancora verificabile:
-    il modello non indica potenza termica nominale, combustibile, tipo di installazione né resistenza al fuoco del locale
-    caldaia.'
+    guasto, le serrande di regolazione non chiudono mai a tenuta e la posizione è visibile dall''esterno.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

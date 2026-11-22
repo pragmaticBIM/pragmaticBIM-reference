@@ -10,21 +10,18 @@ description:
   de: 'Anlagen, die mehrere Lüftungsabschnitte (lüftungstechnisch zusammengefasste Brandabschnitte) versorgen, haben am Abluftanschluss
     eine Rauchauslöseeinrichtung. Beim Ansprechen schaltet sie die Anlage aus und schliesst die Brandschutzklappen. Darauf
     kann verzichtet werden, wenn die Räume mit einer Brandmeldeanlage überwacht sind und die Lüftungsanlage eine Brandfallsteuerung
-    hat. Noch nicht prüfbar: das Modell verknüpft Rauchauslöseeinrichtungen, Lüftungsabschnitte und Brandmeldeanlage nicht.'
+    hat.'
   en: 'Systems that serve several ventilation sections (fire compartments combined for ventilation purposes) have a smoke
     trigger device at the extract connection. When it responds, it switches the system off and closes the fire dampers. This
-    can be omitted where the rooms are monitored by a fire detection system and the ventilation system has a fire-case control.
-    Not yet checkable: the model does not link smoke trigger devices, ventilation sections and the fire detection system.'
+    can be omitted where the rooms are monitored by a fire detection system and the ventilation system has a fire-case control.'
   fr: 'Les installations qui desservent plusieurs sections de ventilation (compartiments regroupés pour la ventilation) ont
     un dispositif de déclenchement par fumée au raccordement d''air repris. À son déclenchement, il arrête l''installation
     et ferme les clapets coupe-feu. On peut y renoncer si les locaux sont surveillés par une installation de détection d''incendie
-    et si la ventilation dispose d''une commande en cas d''incendie. Pas encore vérifiable : le modèle ne relie pas les dispositifs
-    de déclenchement par fumée, les sections de ventilation et la détection d''incendie.'
+    et si la ventilation dispose d''une commande en cas d''incendie.'
   it: 'Gli impianti che servono più sezioni di ventilazione (compartimenti raggruppati ai fini della ventilazione) hanno un
     dispositivo di attivazione a fumo al collegamento dell''aria di ripresa. Intervenendo, spegne l''impianto e chiude le
     serrande tagliafuoco. Se ne può fare a meno quando i locali sono sorvegliati da un impianto di rivelazione incendi e l''impianto
-    di ventilazione ha un comando in caso d''incendio. Non ancora verificabile: il modello non collega dispositivi di attivazione
-    a fumo, sezioni di ventilazione e rivelazione incendi.'
+    di ventilazione ha un comando in caso d''incendio.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

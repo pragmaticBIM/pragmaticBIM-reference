@@ -10,25 +10,20 @@ description:
   de: 'Wärmetechnische Anlagen werden so ausgeführt und aufgestellt, dass sie gefahrlos betrieben werden und Schäden im Störungsfall
     begrenzt bleiben; sie genügen in allen Teilen den thermischen, chemischen und mechanischen Beanspruchungen. Die Brandschutzbehörde
     entscheidet über Brandschutzprodukte anhand von Leistungserklärungen, Prüfnachweisen oder dem VKF-Brandschutzregister;
-    wo VKF-Anerkennungen nötig sind, bleibt ein dauerhafter, leicht erkennbarer Hinweis auch nach dem Einbau sichtbar. Noch
-    nicht prüfbar: das Modell weist Nennwärmeleistung, Brennstoff, Aufstellungsart und Feuerwiderstand des Heizraums nicht
-    aus.'
+    wo VKF-Anerkennungen nötig sind, bleibt ein dauerhafter, leicht erkennbarer Hinweis auch nach dem Einbau sichtbar.'
   en: 'Heating plant is built and installed so that it operates safely and damage in case of a fault stays limited; all parts
     withstand the thermal, chemical and mechanical stresses. The fire protection authority decides on fire protection products
     based on declarations of performance, test evidence or the VKF fire protection register; where VKF approvals are needed,
-    a permanent, easily recognisable marking stays visible after installation. Not yet checkable: the model does not show
-    nominal heat output, fuel, type of installation and fire resistance of the boiler room.'
+    a permanent, easily recognisable marking stays visible after installation.'
   fr: 'Les installations thermiques sont réalisées et installées de façon à fonctionner sans danger et à limiter les dommages
     en cas de défaut ; toutes leurs parties résistent aux sollicitations thermiques, chimiques et mécaniques. L''autorité
     de protection incendie décide des produits de protection incendie sur la base de déclarations des performances, d''attestations
     d''essai ou du registre AEAI ; là où des reconnaissances AEAI sont nécessaires, un marquage durable et facilement reconnaissable
-    reste visible après la pose. Pas encore vérifiable : le modèle n''indique pas la puissance calorifique nominale, le combustible,
-    le mode d''installation ni la résistance au feu du local de chauffe.'
+    reste visible après la pose.'
   it: 'Gli impianti termici sono realizzati e installati in modo da funzionare senza pericolo e da limitare i danni in caso
     di guasto; tutte le parti resistono alle sollecitazioni termiche, chimiche e meccaniche. L''autorità di protezione antincendio
     decide sui prodotti antincendio in base a dichiarazioni di prestazione, prove o registro AICAA; dove servono riconoscimenti
-    AICAA, una marcatura permanente e ben riconoscibile resta visibile dopo l''installazione. Non ancora verificabile: il
-    modello non indica potenza termica nominale, combustibile, tipo di installazione né resistenza al fuoco del locale caldaia.'
+    AICAA, una marcatura permanente e ben riconoscibile resta visibile dopo l''installazione.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

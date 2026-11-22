@@ -11,26 +11,22 @@ description:
     m² darf das Lager in der Nutzungseinheit ohne feuerwiderstandsfähige Abtrennung stehen. Bis 60 t oder 600 m² ist es als
     Brandabschnitt EI 60 abgetrennt und hat eine Rauch- und Wärmeabzugsanlage. Darüber ist es Brandabschnitt EI 90 mit Rauch-
     und Wärmeabzugskonzept zur Genehmigung und mit Sprinkleranlage mit filmbildendem Schaummittel. Je Brandabschnitt lagern
-    höchstens 240 t bei 2''400 m² Abschnittsgrösse. Noch nicht prüfbar: das Modell weist Lagermenge, Lagerfläche und Lagerart
-    von Reifen und Folgeprodukten nicht aus.'
+    höchstens 240 t bei 2''400 m² Abschnittsgrösse.'
   en: 'Stores are on an exterior wall and have clearing openings of at least 2 × 2 m leading directly outdoors. Up to 100
     m² the store may stand in the usage unit without fire-resistant separation. Up to 60 t or 600 m² it is separated as a
     fire compartment EI 60 and has smoke and heat exhaust. Above that it is a fire compartment EI 90 with a smoke and heat
     exhaust concept for approval and a sprinkler system with film-forming foam agent. At most 240 t are stored per compartment
-    at a compartment size of 2,400 m². Not yet checkable: the model does not show stored mass, storage area and storage type
-    of tyres and derived products.'
+    at a compartment size of 2,400 m².'
   fr: 'Les dépôts sont situés en façade et ont des ouvertures de dégagement d''au moins 2 × 2 m donnant directement sur l''extérieur.
     Jusqu''à 100 m², le dépôt peut se trouver dans l''unité d''utilisation sans séparation résistant au feu. Jusqu''à 60 t
     ou 600 m², il est séparé en compartiment EI 60 et dispose d''une installation d''évacuation de fumée et de chaleur. Au-delà,
     c''est un compartiment EI 90 avec concept d''évacuation de fumée et de chaleur soumis à approbation et installation sprinkler
-    avec émulseur filmogène. Au plus 240 t sont stockées par compartiment pour une taille de 2''400 m². Pas encore vérifiable
-    : le modèle n''indique ni la quantité, ni la surface, ni le mode de stockage des pneus et produits dérivés.'
+    avec émulseur filmogène. Au plus 240 t sont stockées par compartiment pour une taille de 2''400 m².'
   it: 'I depositi sono su una parete esterna e hanno aperture di sgombero di almeno 2 × 2 m direttamente verso l''esterno.
     Fino a 100 m² il deposito può stare nell''unità d''uso senza separazione resistente al fuoco. Fino a 60 t o 600 m² è separato
     come compartimento EI 60 e ha un impianto di evacuazione fumo e calore. Oltre è compartimento EI 90 con concetto di evacuazione
     fumo e calore da approvare e impianto sprinkler con schiumogeno filmogeno. Per compartimento si stoccano al massimo 240
-    t con compartimento di 2''400 m². Non ancora verificabile: il modello non indica quantità, superficie né tipo di stoccaggio
-    di pneumatici e prodotti derivati.'
+    t con compartimento di 2''400 m².'
 rule_status: reviewed
 severity: violation
 applies_to_elements:
