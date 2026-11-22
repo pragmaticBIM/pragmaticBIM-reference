@@ -10,24 +10,24 @@ description:
   de: 'Die Zahl und Breite der Ausgänge eines Raums hängt von der Belegung ab: bis 50 Personen ein Ausgang mit 0.90
     m; bis 100 Personen zwei mit je 0.90 m; bis 200 Personen drei mit je 0.90 m oder zwei mit 0.90 m und 1.20 m;
     über 200 Personen mehrere mit je mindestens 1.20 m. In Büro-, Gewerbe- und Industriebauten genügen 0.90 m breite
-    Ausgänge unabhängig von der Belegung. Prüfbarer Teil: peak_occupancy über 50 verlangt mindestens zwei Türen
-    mit Gesamtbreite ≥ 0.90 m, die den Raum verbinden oder auf der Fluchtwegkette liegen.'
+    Ausgänge unabhängig von der Belegung; diese Nutzung ausnahme prüft die Regel nicht. Geprüft wird PeakOccupancy
+    (indoor_environment_peak_occupancy) und die OverallWidth der an den Raum anschliessenden Türen.'
   en: 'The number and width of a room''s exits depend on its occupancy: up to 50 people one exit of 0.90 m; up to
     100 people two of 0.90 m each; up to 200 people three of 0.90 m each or two of 0.90 m and 1.20 m; more than
     200 people several of at least 1.20 m each. In office, commercial and industrial buildings 0.90 m exits are
-    enough whatever the occupancy. Checkable part: peak_occupancy over 50 requires at least two doors of overall
-    width ≥ 0.90 m that connect the space or lie on its escape-route chain.'
+    enough whatever the occupancy; that use exception is outside this check. The check reads PeakOccupancy
+    (indoor_environment_peak_occupancy) and the OverallWidth of doors connecting the space.'
   fr: 'Le nombre et la largeur des sorties d''un local dépendent de l''occupation : jusqu''à 50 personnes une sortie
     de 0,90 m ; jusqu''à 100 personnes deux de 0,90 m ; jusqu''à 200 personnes trois de 0,90 m ou deux de 0,90 m
     et 1,20 m ; plus de 200 personnes plusieurs d''au moins 1,20 m. Dans les bâtiments administratifs, artisanaux
-    et industriels, des sorties de 0,90 m suffisent quelle que soit l''occupation. Partie vérifiable : peak_occupancy
-    supérieur à 50 exige au moins deux portes de largeur totale ≥ 0,90 m reliant le local ou situées sur sa chaîne
-    d''évacuation.'
+    et industriels, des sorties de 0,90 m suffisent quelle que soit l''occupation ; cette exception d''affectation
+    n''est pas vérifiée ici. La vérification lit le PeakOccupancy (indoor_environment_peak_occupancy) et l''OverallWidth
+    des portes reliées au local.'
   it: 'Numero e larghezza delle uscite di un locale dipendono dall''occupazione: fino a 50 persone un''uscita da
     0,90 m; fino a 100 persone due da 0,90 m; fino a 200 persone tre da 0,90 m o due da 0,90 m e 1,20 m; oltre 200
     persone più uscite di almeno 1,20 m. In edifici amministrativi, artigianali e industriali bastano uscite da
-    0,90 m indipendentemente dall''occupazione. Parte verificabile: peak_occupancy oltre 50 richiede almeno due
-    porte di larghezza complessiva ≥ 0,90 m che collegano il locale o stanno sulla catena di fuga.'
+    0,90 m indipendentemente dall''occupazione; tale eccezione d''uso non è verificata qui. La verifica legge il
+    PeakOccupancy (indoor_environment_peak_occupancy) e l''OverallWidth delle porte collegate al locale.'
 rule_status: shacl_defined
 severity: violation
 applies_to_elements:
@@ -57,43 +57,56 @@ shacl: |-
   rule:vkf-16-15-008-raumausgaenge-personenbelegung a sh:NodeShape ;
       sh:name "Raumausgänge nach Personenbelegung"@de ,
           "Room exits by occupancy"@en ;
-      sh:description "Die Zahl und Breite der Ausgänge eines Raums hängt von der Belegung ab. Prüfbarer Teil: peak_occupancy über 50 verlangt mindestens zwei Türen mit Gesamtbreite ≥ 0.90 m."@de ,
-          "The number and width of a room's exits depend on its occupancy. Checkable part: peak_occupancy over 50 requires at least two doors of overall width ≥ 0.90 m."@en ;
+      sh:description "Die Zahl und Breite der Ausgänge eines Raums hängt von der Belegung ab: bis 50 Personen ein Ausgang mit 0.90 m; bis 100 Personen zwei mit je 0.90 m; bis 200 Personen drei mit je 0.90 m oder zwei mit 0.90 m und 1.20 m; über 200 Personen mehrere mit je mindestens 1.20 m. In Büro-, Gewerbe- und Industriebauten genügen 0.90 m breite Ausgänge unabhängig von der Belegung; diese Nutzung ausnahme prüft die Regel nicht. Geprüft wird PeakOccupancy (indoor_environment_peak_occupancy) und die OverallWidth der an den Raum anschliessenden Türen."@de ,
+          "The number and width of a room's exits depend on its occupancy: up to 50 people one exit of 0.90 m; up to 100 people two of 0.90 m each; up to 200 people three of 0.90 m each or two of 0.90 m and 1.20 m; more than 200 people several of at least 1.20 m each. In office, commercial and industrial buildings 0.90 m exits are enough whatever the occupancy; that use exception is outside this check. The check reads PeakOccupancy (indoor_environment_peak_occupancy) and the OverallWidth of doors connecting the space."@en ;
       sh:severity sh:Violation ;
       sh:target [
           a sh:SPARQLTarget ;
           sh:prefixes rule:vkf-16-15-008-raumausgaenge-personenbelegung-prefixes ;
           sh:select """
               SELECT DISTINCT ?this WHERE {
-                  ?this a pbs:Space ;
-                        pbs:performance_properties ?p .
+                  ?this a pbs:Space .
+                  ?this pbs:performance_properties ?p .
                   ?p pbs:property_key pbs:indoor_environment_peak_occupancy ;
-                     pbs:property_value_number ?n .
-                  FILTER (xsd:decimal(?n) > 50)
+                     pbs:property_value_number ?occ .
+                  FILTER (xsd:decimal(?occ) > 0)
               }"""
       ] ;
       sh:sparql [
           a sh:SPARQLConstraint ;
           sh:prefixes rule:vkf-16-15-008-raumausgaenge-personenbelegung-prefixes ;
-          sh:message "Raum mit mehr als 50 Personen ohne zwei Ausgänge von mindestens 0.90 m."@de ,
-              "Space with more than 50 people without two exits of at least 0.90 m."@en ;
+          sh:message "Raum mit {?occ} Personen: {?exits} Ausgang/Ausgänge (min. Breite {?minw} m); nötig {?needed} mit mindestens {?minWidth} m."@de ,
+              "Space with {?occ} people: {?exits} exit(s) (min width {?minw} m); need {?needed} of at least {?minWidth} m."@en ;
           sh:select """
-              SELECT $this WHERE {
-                  FILTER NOT EXISTS {
-                      ?d1 pbs:connection_physical_type ifc:IfcDoor .
-                      ?d2 pbs:connection_physical_type ifc:IfcDoor .
-                      FILTER (?d1 != ?d2)
-                      {
-                          { $this pbs:escape_route_next ?d1 } UNION { ?d1 pbs:connects_spaces $this }
-                      }
-                      {
-                          { $this pbs:escape_route_next ?d2 } UNION { ?d2 pbs:connects_spaces $this }
-                      }
-                      ?d1 pbs:metadata ?m1 .
-                      ?m1 pbs:metadata_key "IfcDoor.OverallWidth" ; pbs:metadata_value ?w1raw .
-                      ?d2 pbs:metadata ?m2 .
-                      ?m2 pbs:metadata_key "IfcDoor.OverallWidth" ; pbs:metadata_value ?w2raw .
-                      FILTER (xsd:decimal(?w1raw) >= 0.90 && xsd:decimal(?w2raw) >= 0.90)
+              SELECT $this ?occ ?exits ?minw ?needed ?minWidth WHERE {
+                  $this a pbs:Space ;
+                      pbs:performance_properties ?p .
+                  ?p pbs:property_key pbs:indoor_environment_peak_occupancy ;
+                     pbs:property_value_number ?occRaw .
+                  BIND (xsd:decimal(?occRaw) AS ?occ)
+                  {
+                      SELECT $this (COUNT(DISTINCT ?door) AS ?exitCount) (MIN(?w) AS ?minDoorWidth) WHERE {
+                          ?door pbs:connection_physical_type ifc:IfcDoor ;
+                              pbs:connects_spaces $this ;
+                              pbs:metadata ?m .
+                          ?m pbs:metadata_key "IfcDoor.OverallWidth" ;
+                             pbs:metadata_value ?raw .
+                          BIND (xsd:decimal(?raw) AS ?w)
+                          FILTER (BOUND(?w))
+                      } GROUP BY $this
                   }
+                  BIND (xsd:integer(?exitCount) AS ?exits)
+                  BIND (xsd:decimal(?minDoorWidth) AS ?minw)
+                  BIND (
+                      IF(?occ > 200, 2,
+                        IF(?occ > 100, 3,
+                          IF(?occ > 50, 2, 1)))
+                      AS ?needed)
+                  BIND (IF(?occ > 200, 1.20, 0.90) AS ?minWidth)
+                  FILTER (
+                      ?exits < ?needed
+                      || !BOUND(?minw)
+                      || ?minw < ?minWidth
+                  )
               }"""
       ] .

@@ -403,7 +403,6 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 9
-# Mapped in pragmatic-bim-data-contract#13 / #14 to pbs:quantity_type_clear_width.
 - name: ClearWidth
   pset: ePset_Stair
   definition:
@@ -413,16 +412,15 @@ attributes:
     en: Clear usable width of the stair flights; basis for checking the flight width on an escape route.
   datatype: IfcPositiveLengthMeasure
   unit: m
-  quantity_type: pbs:quantity_type_clear_width
   needed_in_phases: ['31', '32', '33', '41']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-building-permit
   - pragmaticbim:workflow/des-fire-protection-concept
+  quantity_type: pbs:quantity_type_clear_width
   is_applicability: false
   status: active
   sort_order: 10
-# Mapped in pragmatic-bim-data-contract#13 / #14 to pbs:quantity_type_tread_length_at_inner_side.
 - name: TreadLengthAtInnerSide
   pset: ePset_Stair
   definition:
@@ -432,12 +430,12 @@ attributes:
     en: Tread length at the inner edge of the winder flights of the stair; give it for winding stairs only.
   datatype: IfcPositiveLengthMeasure
   unit: m
-  quantity_type: pbs:quantity_type_tread_length_at_inner_side
   needed_in_phases: ['31', '32', '33', '41']
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/des-building-permit
   - pragmaticbim:workflow/des-fire-protection-concept
+  quantity_type: pbs:quantity_type_tread_length_at_inner_side
   is_applicability: false
   status: active
   sort_order: 11

@@ -1,17 +1,14 @@
-# VKF 16-15 Ziff. 2.4.2: space for >100 people with only one stair on the storey
+# VKF 16-15 Ziff. 2.4.2: storey area 1200 m² with only one stair; at least two required
 
 @prefix pbs: <https://schema.pragmaticbim.ch/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ifc: <https://w3id.org/ifc/IFC4_ADD2#> .
 @prefix ex: <https://schema.pragmaticbim.ch/ex/> .
 
-ex:level a pbs:LevelContext .
-ex:stair1 a pbs:PhysicalElement ;
-  pbs:parent_level ex:level ;
-  pbs:quantity_values [ pbs:quantity_type pbs:quantity_type_clear_width ; pbs:quantity_value 1.20 ] .
-ex:focus a pbs:Space ;
-  pbs:parent_level ex:level ;
-  pbs:performance_properties [
-    pbs:property_key pbs:indoor_environment_peak_occupancy ;
-    pbs:property_value_number 120
+ex:focus a pbs:LevelContext ;
+  pbs:quantity_values [
+    pbs:quantity_type ifc:IfcQuantityArea ;
+    pbs:quantity_value 1200.0
   ] .
+ex:stair1 pbs:connection_physical_type ifc:IfcStair ;
+  pbs:parent_level ex:focus .

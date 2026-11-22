@@ -3,7 +3,10 @@
 @prefix ifc: <https://w3id.org/ifc/IFC4_ADD2#> .
 @prefix ex: <https://schema.pragmaticbim.ch/ex/> .
 
-ex:focus a pbs:PhysicalElement ;
-  pbs:quantity_values
-    [ pbs:quantity_type pbs:quantity_type_clear_width ; pbs:quantity_value 1.50 ] ,
-    [ pbs:quantity_type pbs:quantity_type_tread_length_at_inner_side ; pbs:quantity_value 0.15 ] .
+ex:next a pbs:Space .
+ex:focus pbs:connection_physical_type ifc:IfcStair ;
+  pbs:escape_route_next ex:next ;
+  pbs:quantity_values [
+    pbs:quantity_type pbs:quantity_type_clear_width ;
+    pbs:quantity_value 1.25
+  ] .

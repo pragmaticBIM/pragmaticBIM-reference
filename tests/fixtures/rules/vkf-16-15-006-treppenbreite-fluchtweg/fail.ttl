@@ -1,11 +1,14 @@
-# VKF 16-15 Ziff. 2.4.5: winder stair clear width 1.20 m < 1.50 m
+# VKF 16-15 Ziff. 2.4.5: straight escape-route stair clear width 1.00 < 1.20
 
 @prefix pbs: <https://schema.pragmaticbim.ch/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ifc: <https://w3id.org/ifc/IFC4_ADD2#> .
 @prefix ex: <https://schema.pragmaticbim.ch/ex/> .
 
-ex:focus a pbs:PhysicalElement ;
-  pbs:quantity_values
-    [ pbs:quantity_type pbs:quantity_type_clear_width ; pbs:quantity_value 1.20 ] ,
-    [ pbs:quantity_type pbs:quantity_type_tread_length_at_inner_side ; pbs:quantity_value 0.15 ] .
+ex:next a pbs:Space .
+ex:focus pbs:connection_physical_type ifc:IfcStair ;
+  pbs:escape_route_next ex:next ;
+  pbs:quantity_values [
+    pbs:quantity_type pbs:quantity_type_clear_width ;
+    pbs:quantity_value 1.00
+  ] .

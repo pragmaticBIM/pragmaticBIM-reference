@@ -9,20 +9,21 @@ name:
 description:
   de: 'Gerade Treppen samt Podesten sind in Fluchtwegen mindestens 1.20 m breit. Gewendelte Treppen brauchen 1.50
     m und innen eine Auftrittsbreite von wenigstens 0.15 m. Für einzelne Nutzungen (z. B. Wohnen) sind schmalere
-    Treppen zulässig. Geprüft wird quantity_type_clear_width; gilt ein quantity_type_tread_length_at_inner_side,
-    wird die Treppe als gewendelt behandelt.'
+    Treppen zulässig; diese Ausnahmen prüft die Regel nicht. Geprüft wird die lichte Laufbreite (quantity_type_clear_width)
+    und bei gewendelten Läufen die innere Auftrittslänge (quantity_type_tread_length_at_inner_side).'
   en: 'Straight stairs including landings on escape routes are at least 1.20 m wide. Winding stairs need 1.50 m
-    and an inner tread width of at least 0.15 m. Some uses (e.g. housing) allow narrower stairs. The check reads
-    quantity_type_clear_width; when quantity_type_tread_length_at_inner_side is present the stair is treated as
-    a winder.'
+    and an inner tread width of at least 0.15 m. Some uses (e.g. housing) allow narrower stairs; those exceptions
+    are outside this check. The check reads the clear flight width (quantity_type_clear_width) and, for winders,
+    the inner tread length (quantity_type_tread_length_at_inner_side).'
   fr: 'Sur les voies d''évacuation, les escaliers droits, paliers compris, mesurent au moins 1,20 m de large. Les
     escaliers tournants exigent 1,50 m et un giron intérieur d''au moins 0,15 m. Certaines affectations (p. ex.
-    habitation) admettent des escaliers plus étroits. La vérification lit quantity_type_clear_width ; si
-    quantity_type_tread_length_at_inner_side est présent, l''escalier est traité comme tournant.'
+    habitation) admettent des escaliers plus étroits ; ces exceptions ne sont pas vérifiées ici. La vérification
+    lit la largeur libre de volée (quantity_type_clear_width) et, pour les volées balancées, le giron intérieur
+    (quantity_type_tread_length_at_inner_side).'
   it: 'Sulle vie di fuga le scale diritte, pianerottoli compresi, sono larghe almeno 1,20 m. Le scale a chiocciola
     richiedono 1,50 m e una pedata interna di almeno 0,15 m. Alcuni utilizzi (p. es. abitazione) ammettono scale
-    più strette. La verifica legge quantity_type_clear_width; se è presente quantity_type_tread_length_at_inner_side
-    la scala è trattata come a ventaglio.'
+    più strette; tali eccezioni non sono verificate qui. La verifica legge la larghezza libera della rampa
+    (quantity_type_clear_width) e, per le rampe a ventaglio, la pedata interna (quantity_type_tread_length_at_inner_side).'
 rule_status: shacl_defined
 severity: violation
 applies_to_elements:
@@ -45,53 +46,63 @@ shacl: |-
   rule:vkf-16-15-006-treppenbreite-fluchtweg-prefixes
       sh:declare
           [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
-          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] .
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] ,
+          [ sh:prefix "ifc" ; sh:namespace "https://w3id.org/ifc/IFC4_ADD2#"^^xsd:anyURI ] .
 
   rule:vkf-16-15-006-treppenbreite-fluchtweg a sh:NodeShape ;
       sh:name "Treppen im Fluchtweg: Breite 1.20 m, gewendelt 1.50 m"@de ,
           "Stairs on escape routes: width 1.20 m, winding 1.50 m"@en ;
-      sh:description "Gerade Treppen samt Podesten sind in Fluchtwegen mindestens 1.20 m breit. Gewendelte Treppen brauchen 1.50 m und innen eine Auftrittsbreite von wenigstens 0.15 m. Für einzelne Nutzungen (z. B. Wohnen) sind schmalere Treppen zulässig. Geprüft wird quantity_type_clear_width; gilt ein quantity_type_tread_length_at_inner_side, wird die Treppe als gewendelt behandelt."@de ,
-          "Straight stairs including landings on escape routes are at least 1.20 m wide. Winding stairs need 1.50 m and an inner tread width of at least 0.15 m. Some uses (e.g. housing) allow narrower stairs. The check reads quantity_type_clear_width; when quantity_type_tread_length_at_inner_side is present the stair is treated as a winder."@en ;
+      sh:description "Gerade Treppen samt Podesten sind in Fluchtwegen mindestens 1.20 m breit. Gewendelte Treppen brauchen 1.50 m und innen eine Auftrittsbreite von wenigstens 0.15 m. Für einzelne Nutzungen (z. B. Wohnen) sind schmalere Treppen zulässig; diese Ausnahmen prüft die Regel nicht. Geprüft wird die lichte Laufbreite (quantity_type_clear_width) und bei gewendelten Läufen die innere Auftrittslänge (quantity_type_tread_length_at_inner_side)."@de ,
+          "Straight stairs including landings on escape routes are at least 1.20 m wide. Winding stairs need 1.50 m and an inner tread width of at least 0.15 m. Some uses (e.g. housing) allow narrower stairs; those exceptions are outside this check. The check reads the clear flight width (quantity_type_clear_width) and, for winders, the inner tread length (quantity_type_tread_length_at_inner_side)."@en ;
       sh:severity sh:Violation ;
       sh:target [
           a sh:SPARQLTarget ;
           sh:prefixes rule:vkf-16-15-006-treppenbreite-fluchtweg-prefixes ;
           sh:select """
               SELECT DISTINCT ?this WHERE {
-                  ?this pbs:quantity_values ?q .
-                  ?q pbs:quantity_type pbs:quantity_type_clear_width .
+                  ?this pbs:connection_physical_type ?t .
+                  FILTER (?t = ifc:IfcStair || ?t = ifc:IfcStairFlight)
+                  {
+                      { ?this pbs:escape_route_next ?next } UNION { ?previous pbs:escape_route_next ?this }
+                  }
+                  ?this pbs:quantity_values ?qv .
+                  ?qv pbs:quantity_type pbs:quantity_type_clear_width .
               }"""
       ] ;
       sh:sparql [
           a sh:SPARQLConstraint ;
           sh:prefixes rule:vkf-16-15-006-treppenbreite-fluchtweg-prefixes ;
-          sh:message "Treppenbreite {?value} m unter dem Minimum von {?min} m."@de ,
-              "Stair width {?value} m below the minimum of {?min} m."@en ;
+          sh:message "Treppe {?value} m breit; Mindestbreite {?min} m nicht erreicht."@de ,
+              "Stair {?value} m wide; minimum width {?min} m not met."@en ;
           sh:select """
               SELECT $this ?value ?min WHERE {
-                  $this pbs:quantity_values ?q .
-                  ?q pbs:quantity_type pbs:quantity_type_clear_width ; pbs:quantity_value ?w .
+                  $this pbs:quantity_values ?qv .
+                  ?qv pbs:quantity_type pbs:quantity_type_clear_width ;
+                      pbs:quantity_value ?raw .
+                  BIND (xsd:decimal(?raw) AS ?width)
                   OPTIONAL {
-                      $this pbs:quantity_values ?t .
-                      ?t pbs:quantity_type pbs:quantity_type_tread_length_at_inner_side ;
-                         pbs:quantity_value ?tread .
+                      $this pbs:quantity_values ?tv .
+                      ?tv pbs:quantity_type pbs:quantity_type_tread_length_at_inner_side ;
+                          pbs:quantity_value ?treadRaw .
+                      BIND (xsd:decimal(?treadRaw) AS ?tread)
                   }
                   BIND (IF(BOUND(?tread), 1.50, 1.20) AS ?min)
-                  FILTER (xsd:decimal(?w) < ?min)
-                  BIND (ROUND(xsd:decimal(?w) * 100) / 100 AS ?value)
+                  FILTER (BOUND(?width) && ?width < ?min)
+                  BIND (ROUND(?width * 100) / 100 AS ?value)
               }"""
       ] ;
       sh:sparql [
           a sh:SPARQLConstraint ;
           sh:prefixes rule:vkf-16-15-006-treppenbreite-fluchtweg-prefixes ;
-          sh:message "Innere Auftrittsbreite {?value} m unter 0.15 m."@de ,
-              "Inner tread length {?value} m below 0.15 m."@en ;
+          sh:message "Gewendelte Treppe: innere Auftrittsbreite {?value} m, mindestens 0.15 m nötig."@de ,
+              "Winding stair: inner tread width {?value} m, at least 0.15 m required."@en ;
           sh:select """
               SELECT $this ?value WHERE {
-                  $this pbs:quantity_values ?t .
-                  ?t pbs:quantity_type pbs:quantity_type_tread_length_at_inner_side ;
-                     pbs:quantity_value ?tread .
-                  FILTER (xsd:decimal(?tread) < 0.15)
-                  BIND (ROUND(xsd:decimal(?tread) * 100) / 100 AS ?value)
+                  $this pbs:quantity_values ?tv .
+                  ?tv pbs:quantity_type pbs:quantity_type_tread_length_at_inner_side ;
+                      pbs:quantity_value ?treadRaw .
+                  BIND (xsd:decimal(?treadRaw) AS ?tread)
+                  FILTER (BOUND(?tread) && ?tread < 0.15)
+                  BIND (ROUND(?tread * 100) / 100 AS ?value)
               }"""
       ] .
