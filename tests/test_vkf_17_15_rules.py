@@ -34,13 +34,21 @@ def test_rules_cover_signs_lighting_and_power() -> None:
         assert f"Ziff. {clause}" in quotes, clause
 
 
+SHACL_RULES = {
+    "vkf-17-15-009-sicherheitsbeleuchtung-dauer-schaltung.yaml",
+    "vkf-17-15-010-sicherheitsleuchten-anordnung.yaml",
+    "vkf-17-15-011-sicherheitsbeleuchtung-beleuchtungsstaerke.yaml",
+}
+
+
 def test_rules_are_localized_cited_and_unreviewed() -> None:
     rules = _rules()
     assert len(rules) >= 15
     for path, rule in rules:
         assert rule["rule_source"]["regulation"] == REGULATION_ID, path
         assert rule["rule_source"]["source_quote"].startswith("VKF 17-15, Ziff. "), path
-        assert rule["rule_status"] == "reviewed", path
+        expected = "shacl_defined" if path.name in SHACL_RULES else "reviewed"
+        assert rule["rule_status"] == expected, path
         assert rule["reviewed_by"] in (None, ""), path
         assert rule["reviewed_at"] in (None, ""), path
         assert rule["jurisdiction"] == ["ch"], path

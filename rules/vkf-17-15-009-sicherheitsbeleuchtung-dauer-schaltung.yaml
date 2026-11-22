@@ -9,32 +9,28 @@ name:
 description:
   de: 'Die Sicherheitsbeleuchtung wird bei Ausfall der normalen Beleuchtung rechtzeitig wirksam und leuchtet mindestens
     30 Minuten; bei Störung der allgemeinen Stromversorgung ist sie spätestens nach 15 Sekunden in Betrieb. Weder ein Hauptschalter
-    noch der Schalter der Raumbeleuchtung beeinflusst sie, und Leuchten mit Einzelakku haben keinen Schalter, der ihre Funktion
-    unterbricht. Zentrale Systeme sind in voneinander unabhängige Gruppen unterteilt, die sich bei Fehlern nicht beeinflussen.
-    Sicherheitsleuchten, Schalt- und Verteilkästen und Stromkreise sind als solche bezeichnet.'
+    noch der Schalter der Raumbeleuchtung beeinflusst sie. Geprüft werden SafetyRatedDuration (>= 30 min), SafetyStartUpTime
+    (<= 15 s) und SafetyNotSwitchable an Leuchten mit ePset_SafetyLighting. Nicht geprüft: unabhängige Gruppen zentraler
+    Systeme und die Kennzeichnung von Schalt- und Verteilkästen.'
   en: 'Safety lighting takes effect in time when the normal lighting fails and lasts at least 30 minutes; if the general
     power supply fails, it is operating after 15 seconds at the latest. Neither a main switch nor the room lighting switch
-    affects it, and luminaires with a single battery have no switch that would interrupt their function. Central systems
-    are divided into mutually independent groups that do not affect each other in the event of faults. Safety luminaires,
-    switch and distribution boxes and circuits are labelled as such.'
+    affects it. The check reads SafetyRatedDuration (>= 30 min), SafetyStartUpTime (<= 15 s) and SafetyNotSwitchable on
+    luminaires with ePset_SafetyLighting. Not checked: mutually independent groups of central systems or labelling of switch
+    and distribution boxes.'
   fr: 'L''éclairage de sécurité devient efficace à temps en cas de défaillance de l''éclairage normal et dure au moins 30
     minutes ; en cas de panne de l''alimentation générale, il fonctionne au plus tard après 15 secondes. Ni un interrupteur
-    général ni l''interrupteur de l''éclairage du local ne l''influencent, et les luminaires à batterie individuelle n''ont
-    pas d''interrupteur pouvant interrompre leur fonction. Les systèmes centraux sont divisés en groupes indépendants qui
-    ne s''influencent pas en cas de défaut. Les luminaires de sécurité, coffrets de commande et de distribution et circuits
-    sont désignés comme tels.'
+    général ni l''interrupteur de l''éclairage du local ne l''influencent. La vérification lit SafetyRatedDuration (>= 30
+    min), SafetyStartUpTime (<= 15 s) et SafetyNotSwitchable sur les luminaires avec ePset_SafetyLighting. Non vérifié :
+    groupes indépendants des systèmes centraux et désignation des coffrets.'
   it: 'L''illuminazione di sicurezza entra in funzione in tempo in caso di guasto dell''illuminazione normale e dura almeno
     30 minuti; in caso di guasto dell''alimentazione generale è in funzione al più tardi dopo 15 secondi. Né un interruttore
-    generale né l''interruttore dell''illuminazione del locale la influenzano e gli apparecchi con batteria singola non
-    hanno interruttori che ne interrompano la funzione. I sistemi centrali sono suddivisi in gruppi indipendenti che non
-    si influenzano in caso di guasto. Apparecchi di sicurezza, quadri di comando e distribuzione e circuiti sono contrassegnati
-    come tali.'
-rule_status: reviewed
+    generale né l''interruttore dell''illuminazione del locale la influenzano. La verifica legge SafetyRatedDuration (>=
+    30 min), SafetyStartUpTime (<= 15 s) e SafetyNotSwitchable sugli apparecchi con ePset_SafetyLighting. Non verificato:
+    gruppi indipendenti dei sistemi centrali e contrassegno dei quadri.'
+rule_status: shacl_defined
 severity: violation
 applies_to_elements:
 - pragmaticbim:element/mep-light-fixture
-- pragmaticbim:element/mep-switching-device
-- pragmaticbim:element/mep-electric-distribution-board
 domain: pragmaticbim:domain/fire-protection
 jurisdiction:
 - ch
@@ -49,3 +45,55 @@ rule_source:
   extracted_at: '2026-11-21'
 reviewed_by: null
 reviewed_at: null
+shacl: |-
+  rule:vkf-17-15-009-sicherheitsbeleuchtung-dauer-schaltung-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] .
+
+  rule:vkf-17-15-009-sicherheitsbeleuchtung-dauer-schaltung a sh:NodeShape ;
+      sh:name "Sicherheitsbeleuchtung: mindestens 30 Minuten, wirksam nach 15 Sekunden, nicht abschaltbar"@de ,
+          "Safety lighting: at least 30 minutes, effective after 15 seconds, not switchable"@en ;
+      sh:description "Die Sicherheitsbeleuchtung wird bei Ausfall der normalen Beleuchtung rechtzeitig wirksam und leuchtet mindestens 30 Minuten; bei Störung der allgemeinen Stromversorgung ist sie spätestens nach 15 Sekunden in Betrieb. Weder ein Hauptschalter noch der Schalter der Raumbeleuchtung beeinflusst sie. Geprüft werden SafetyRatedDuration (>= 30 min), SafetyStartUpTime (<= 15 s) und SafetyNotSwitchable an Leuchten mit ePset_SafetyLighting. Nicht geprüft: unabhängige Gruppen zentraler Systeme und die Kennzeichnung von Schalt- und Verteilkästen."@de ,
+          "Safety lighting takes effect in time when the normal lighting fails and lasts at least 30 minutes; if the general power supply fails, it is operating after 15 seconds at the latest. Neither a main switch nor the room lighting switch affects it. The check reads SafetyRatedDuration (>= 30 min), SafetyStartUpTime (<= 15 s) and SafetyNotSwitchable on luminaires with ePset_SafetyLighting. Not checked: mutually independent groups of central systems or labelling of switch and distribution boxes."@en ;
+      sh:severity sh:Violation ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:vkf-17-15-009-sicherheitsbeleuchtung-dauer-schaltung-prefixes ;
+          sh:select """
+              SELECT DISTINCT ?this WHERE {
+                  ?this a pbs:Equipment .
+                  ?this pbs:performance_properties ?p .
+                  ?p pbs:property_key ?k .
+                  FILTER (?k IN (
+                      pbs:fire_property_safety_rated_duration ,
+                      pbs:fire_property_safety_start_up_time ,
+                      pbs:fire_property_safety_not_switchable
+                  ))
+              }"""
+      ] ;
+      sh:sparql [
+          a sh:SPARQLConstraint ;
+          sh:prefixes rule:vkf-17-15-009-sicherheitsbeleuchtung-dauer-schaltung-prefixes ;
+          sh:message "Sicherheitsleuchte: Betriebsdauer unter 30 min, Anlaufzeit über 15 s oder abschaltbar."@de ,
+              "Safety luminaire: duration under 30 min, start-up over 15 s, or switchable."@en ;
+          sh:select """
+              SELECT $this WHERE {
+                  {
+                      $this pbs:performance_properties ?p .
+                      ?p pbs:property_key pbs:fire_property_safety_rated_duration ;
+                         pbs:property_value_number ?d .
+                      FILTER (xsd:decimal(?d) < 30)
+                  } UNION {
+                      $this pbs:performance_properties ?p .
+                      ?p pbs:property_key pbs:fire_property_safety_start_up_time ;
+                         pbs:property_value_number ?t .
+                      FILTER (xsd:decimal(?t) > 15)
+                  } UNION {
+                      $this pbs:performance_properties ?p .
+                      ?p pbs:property_key pbs:fire_property_safety_not_switchable ;
+                         pbs:property_value_boolean ?b .
+                      FILTER (?b = false)
+                  }
+              }"""
+      ] .

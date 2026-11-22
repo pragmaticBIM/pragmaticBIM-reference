@@ -8,21 +8,22 @@ name:
   it: 'Apparecchi di sicurezza: illuminare la zona del pavimento e il percorso verso l''esterno'
 description:
   de: 'In Flucht- und Rettungswegen leuchtet die Sicherheitsbeleuchtung insbesondere die Bodenzone und den Weg zum Ausgang
-    ins Freie ausreichend aus. Sicherheitsleuchten in geringer Höhe über dem Boden haben einen bruchfesten Schutz. Tragbare
-    Sicherheitsleuchten sind nur in Räumen zulässig, die ausschliesslich Betriebspersonal betritt, und werden danach am
-    vorgesehenen Ort geladen.'
+    ins Freie ausreichend aus. Geprüft wird, dass Räume mit EscapeRouteRole HORIZONTAL oder VERTICAL mindestens eine Leuchte
+    mit SafetyRatedDuration oder SafetyFloorIlluminance enthalten. Nicht geprüft: bruchfester Schutz bei geringer Montagehöhe
+    und tragbare Sicherheitsleuchten.'
   en: 'In escape and rescue routes, safety lighting adequately lights in particular the floor zone and the way to the exit
-    to the open air. Safety luminaires mounted low above the floor have an unbreakable guard. Portable safety luminaires
-    are allowed only in rooms entered exclusively by operating staff, and are recharged afterwards at the intended place.'
+    to the open air. The check requires spaces with EscapeRouteRole HORIZONTAL or VERTICAL to contain at least one luminaire
+    with SafetyRatedDuration or SafetyFloorIlluminance. Not checked: unbreakable guards on low luminaires or portable safety
+    luminaires.'
   fr: 'Dans les voies d''évacuation et de sauvetage, l''éclairage de sécurité éclaire suffisamment en particulier la zone
-    du sol et le chemin vers la sortie donnant sur l''extérieur. Les luminaires de sécurité placés à faible hauteur au-dessus
-    du sol ont une protection incassable. Les luminaires de sécurité portables ne sont admis que dans des locaux n''accueillant
-    que du personnel d''exploitation, et sont rechargés ensuite à l''endroit prévu.'
+    du sol et le chemin vers la sortie donnant sur l''extérieur. La vérification exige que les locaux avec EscapeRouteRole
+    HORIZONTAL ou VERTICAL contiennent au moins un luminaire avec SafetyRatedDuration ou SafetyFloorIlluminance. Non vérifié
+    : protection incassable des luminaires bas et luminaires portables.'
   it: 'Nelle vie di fuga e di salvataggio l''illuminazione di sicurezza illumina a sufficienza in particolare la zona del
-    pavimento e il percorso verso l''uscita all''esterno. Gli apparecchi di sicurezza collocati a bassa altezza dal pavimento
-    hanno una protezione infrangibile. Gli apparecchi di sicurezza portatili sono ammessi solo in locali frequentati esclusivamente
-    dal personale di esercizio e vengono poi ricaricati nel luogo previsto.'
-rule_status: reviewed
+    pavimento e il percorso verso l''uscita all''esterno. La verifica richiede che i locali con EscapeRouteRole HORIZONTAL
+    o VERTICAL contengano almeno un apparecchio con SafetyRatedDuration o SafetyFloorIlluminance. Non verificato: protezione
+    infrangibile degli apparecchi bassi e apparecchi portatili.'
+rule_status: shacl_defined
 severity: violation
 applies_to_elements:
 - pragmaticbim:element/mep-light-fixture
@@ -41,3 +42,47 @@ rule_source:
   extracted_at: '2026-11-21'
 reviewed_by: null
 reviewed_at: null
+shacl: |-
+  rule:vkf-17-15-010-sicherheitsleuchten-anordnung-prefixes
+      sh:declare
+          [ sh:prefix "pbs" ; sh:namespace "https://schema.pragmaticbim.ch/"^^xsd:anyURI ] ,
+          [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] .
+
+  rule:vkf-17-15-010-sicherheitsleuchten-anordnung a sh:NodeShape ;
+      sh:name "Sicherheitsleuchten: Bodenzone und Weg ins Freie ausleuchten"@de ,
+          "Safety luminaires: light the floor zone and the route to the open air"@en ;
+      sh:description "In Flucht- und Rettungswegen leuchtet die Sicherheitsbeleuchtung insbesondere die Bodenzone und den Weg zum Ausgang ins Freie ausreichend aus. Geprüft wird, dass Räume mit EscapeRouteRole HORIZONTAL oder VERTICAL mindestens eine Leuchte mit SafetyRatedDuration oder SafetyFloorIlluminance enthalten. Nicht geprüft: bruchfester Schutz bei geringer Montagehöhe und tragbare Sicherheitsleuchten."@de ,
+          "In escape and rescue routes, safety lighting adequately lights in particular the floor zone and the way to the exit to the open air. The check requires spaces with EscapeRouteRole HORIZONTAL or VERTICAL to contain at least one luminaire with SafetyRatedDuration or SafetyFloorIlluminance. Not checked: unbreakable guards on low luminaires or portable safety luminaires."@en ;
+      sh:severity sh:Violation ;
+      sh:target [
+          a sh:SPARQLTarget ;
+          sh:prefixes rule:vkf-17-15-010-sicherheitsleuchten-anordnung-prefixes ;
+          sh:select """
+              SELECT DISTINCT ?this WHERE {
+                  ?this a pbs:Space .
+                  ?this pbs:escape_route_role ?role .
+                  FILTER (?role IN (
+                      pbs:escape_route_role_horizontal ,
+                      pbs:escape_route_role_vertical
+                  ))
+              }"""
+      ] ;
+      sh:sparql [
+          a sh:SPARQLConstraint ;
+          sh:prefixes rule:vkf-17-15-010-sicherheitsleuchten-anordnung-prefixes ;
+          sh:message "Fluchtwegraum ohne Sicherheitsleuchte."@de ,
+              "Escape-route space without a safety luminaire."@en ;
+          sh:select """
+              SELECT $this WHERE {
+                  FILTER NOT EXISTS {
+                      $this pbs:contained_entities ?eq .
+                      ?eq a pbs:Equipment ;
+                          pbs:performance_properties ?p .
+                      ?p pbs:property_key ?k .
+                      FILTER (?k IN (
+                          pbs:fire_property_safety_rated_duration ,
+                          pbs:fire_property_safety_floor_illuminance
+                      ))
+                  }
+              }"""
+      ] .

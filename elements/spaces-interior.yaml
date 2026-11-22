@@ -1671,3 +1671,45 @@ attributes:
     is_applicability: false
     status: active
     sort_order: 58
+  - name: EscapeRouteRole
+    pset: ePset_Space
+    definition:
+      de: |-
+        Rolle des Raums auf dem Fluchtweg (VKF 16-15 / 17-15). Nur für Räume setzen, die Teil eines Fluchtwegs sind.
+
+        **Zulässige Werte**
+        - `HORIZONTAL` — horizontaler Fluchtweg
+        - `VERTICAL` — vertikaler Fluchtweg
+        - `EXIT` — Ausgang ins Freie
+      fr: |-
+        Rôle du local sur la voie d'évacuation (AEAI 16-15 / 17-15). À renseigner uniquement pour les locaux faisant partie d'une voie d'évacuation.
+
+        **Valeurs admises**
+        - `HORIZONTAL` — voie d'évacuation horizontale
+        - `VERTICAL` — voie d'évacuation verticale
+        - `EXIT` — sortie vers l'extérieur
+      it: |-
+        Ruolo del locale sulla via di fuga (AICAA 16-15 / 17-15). Da indicare solo per i locali che fanno parte di una via di fuga.
+
+        **Valori ammessi**
+        - `HORIZONTAL` — via di fuga orizzontale
+        - `VERTICAL` — via di fuga verticale
+        - `EXIT` — uscita all'aperto
+      en: |-
+        Role of the space on an escape route (VKF 16-15 / 17-15). Set only on spaces that belong to an escape route.
+
+        **Allowed values**
+        - `HORIZONTAL` — horizontal escape route
+        - `VERTICAL` — vertical escape route
+        - `EXIT` — exit to the open air
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/escape-route-role
+    needed_in_phases: ['31', '32', '33', '41']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+    - pragmaticbim:workflow/des-building-permit
+    - pragmaticbim:workflow/des-fire-protection-concept
+    - pragmaticbim:workflow/qas-fire-protection
+    is_applicability: false
+    status: active
+    sort_order: 59

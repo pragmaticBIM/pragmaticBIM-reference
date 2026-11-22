@@ -1,0 +1,36 @@
+id: pragmaticbim:value/escape-route-role
+code: ESCAPE-ROUTE-ROLE
+name:
+  de: Rolle im Fluchtweg
+  fr: Rôle dans la voie d'évacuation
+  it: Ruolo nella via di fuga
+  en: Escape-route role
+description:
+  de: 'Rolle eines Raums auf dem Fluchtweg (VKF 16-15 / 17-15): horizontaler Fluchtweg, vertikaler Fluchtweg oder Ausgang
+    ins Freie. Nur für Räume setzen, die Teil eines Fluchtwegs sind.'
+  fr: 'Rôle d''un local sur la voie d''évacuation (AEAI 16-15 / 17-15) : voie d''évacuation horizontale, verticale ou sortie
+    vers l''extérieur. À renseigner uniquement pour les locaux faisant partie d''une voie d''évacuation.'
+  it: 'Ruolo di un locale sulla via di fuga (AICAA 16-15 / 17-15): via di fuga orizzontale, verticale o uscita all''aperto.
+    Da indicare solo per i locali che fanno parte di una via di fuga.'
+  en: 'Role of a space on an escape route (VKF 16-15 / 17-15): horizontal escape route, vertical escape route, or exit to
+    the open air. Set only on spaces that belong to an escape route.'
+year: 2026
+norm_reference: VKF 16-15 / 17-15
+status: active
+values:
+  de:
+  - HORIZONTAL
+  - VERTICAL
+  - EXIT
+  fr:
+  - HORIZONTAL
+  - VERTICAL
+  - EXIT
+  it:
+  - HORIZONTAL
+  - VERTICAL
+  - EXIT
+  en:
+  - HORIZONTAL
+  - VERTICAL
+  - EXIT

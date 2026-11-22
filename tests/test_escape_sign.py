@@ -139,11 +139,19 @@ def test_existing_light_fixture_attributes_are_unchanged() -> None:
     ]
 
 
-def test_vkf_17_15_rules_stay_text_only() -> None:
-    """17-15 rules stay text-only until the contract facts exist (#123 remainder)."""
+SHACL_RULES = {
+    "vkf-17-15-009-sicherheitsbeleuchtung-dauer-schaltung.yaml",
+    "vkf-17-15-010-sicherheitsleuchten-anordnung.yaml",
+    "vkf-17-15-011-sicherheitsbeleuchtung-beleuchtungsstaerke.yaml",
+}
+
+
+def test_vkf_17_15_checkable_rules_are_shacl_defined() -> None:
+    """Rules 009–011 are SHACL; the rest stay text-only until more contract facts exist."""
     for path in sorted((REPO_ROOT / "rules").glob("vkf-17-15-*.yaml")):
         rule = yaml.safe_load(path.read_text(encoding="utf-8"))
-        assert rule["rule_status"] == "reviewed", path.name
+        expected = "shacl_defined" if path.name in SHACL_RULES else "reviewed"
+        assert rule["rule_status"] == expected, path.name
 
 
 def _all_tokens(slug: str) -> list[str]:
