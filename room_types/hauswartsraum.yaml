@@ -1,0 +1,189 @@
+id: pragmaticbim:room-type/hauswartsraum
+code: RT-WH-46
+sort_order: 163
+name:
+  de: Hauswartsraum
+  fr: Local de conciergerie
+  it: Locale del custode
+  en: "Caretaker's room"
+definition:
+  de: Eigener Raum der Hauswartung für Reinigung und Unterhalt, mit Spülbecken.
+  fr: Local propre de conciergerie pour le nettoyage et l'entretien, avec évier.
+  it: Locale proprio di custodia per pulizia e manutenzione, con lavello.
+  en: Dedicated caretaker room for cleaning and maintenance, with a sink.
+room_type_kind: room
+room_name: RN-10-10-08
+activity: S-STO-GEN
+default_scope: building
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/hauswartsraum-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-interior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-interior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: false
+  - element: pragmaticbim:element/spaces-interior
+    name: LongName
+    value:
+      de: Hauswartsraum
+      fr: Local de conciergerie
+      it: Locale del custode
+      en: "Caretaker's room"
+  - element: pragmaticbim:element/spaces-interior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: NNF
+  - element: pragmaticbim:element/spaces-interior
+    name: NetPlannedArea
+    pset: ePset_SpaceRequirement
+    value: 6
+  - element: pragmaticbim:element/spaces-interior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Plattenbelag
+  - element: pragmaticbim:element/spaces-interior
+    name: WallCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Anstrich
+  - element: pragmaticbim:element/spaces-interior
+    name: CeilingCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Sonstige / unbekannte Deckenbekleidung
+      fr: Other / unknown ceiling covering
+      it: Other / unknown ceiling covering
+      en: Other / unknown ceiling covering
+  - element: pragmaticbim:element/spaces-interior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Workshop
+  - element: pragmaticbim:element/spaces-interior
+    name: InteriorOrExteriorSpace
+    value: INTERNAL
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 5.0
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 4.0
+  - element: pragmaticbim:element/spaces-interior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Eingeschränkt
+      fr: Restreint
+      it: Ristretto
+      en: Restricted
+  - element: pragmaticbim:element/spaces-interior
+    name: PeakOccupancy
+    pset: ePset_SpaceRequirement
+    value: 1
+  - element: pragmaticbim:element/spaces-interior
+    name: DailyOperatingHours
+    pset: ePset_SpaceRequirement
+    value: 2
+  - element: pragmaticbim:element/spaces-interior
+    name: OutdoorAirFlowRate
+    pset: ePset_SpaceRequirement
+    value: 30
+  equipment:
+  - id: pragmaticbim:room-type-equipment/hauswartsraum-default-spuelbecken
+    sort_order: 1
+    function: utility_sink
+    components:
+    - pragmaticbim:component/waschtrog
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/hauswartsraum-default-regal
+    sort_order: 2
+    function: storage
+    components:
+    - pragmaticbim:component/regal
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/hauswartsraum-default-steckdose
+    sort_order: 3
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche.
+    status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/hauswartsraum-default-steckdose-hoehe
+      relation: elevation
+      value:
+        min: 0.3
+        max: 0.3
+      severity: preferred
+      source:
+        kind: default
+    - id: pragmaticbim:placement-rule/hauswartsraum-default-steckdose-tuer-frei
+      relation: not_in_clearance_of
+      target:
+        opening_function: access
+      severity: required
+      source:
+        kind: default
+  - id: pragmaticbim:room-type-equipment/hauswartsraum-default-lichtschalter
+    sort_order: 4
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
+    status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/hauswartsraum-default-lichtschalter-tuer
+      relation: next_to
+      target:
+        opening_function: access
+      side: latch_side
+      distance:
+        max: 0.3
+      severity: required
+      source:
+        kind: default
+      variants:
+      - relation: next_to
+        target:
+          opening_function: access
+        side: latch_side
+        distance:
+          max: 0.3
+        room_side: outside
+        comment: Schalter ausserhalb des Raums neben der Tür.
+    - id: pragmaticbim:placement-rule/hauswartsraum-default-lichtschalter-hoehe
+      relation: elevation
+      value:
+        min: 0.9
+        max: 1.1
+      severity: required
+      source:
+        kind: norm
+        reference: SIA 500:2009, 7.4
+        note: Höhe Bedienelemente
+  openings:
+  - id: pragmaticbim:room-type-opening/hauswartsraum-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    connects_to:
+      room_types:
+      - pragmaticbim:room-type/flur
+      - pragmaticbim:room-type/eingangshalle
+      - pragmaticbim:room-type/vorraum
+    quantity: 1
+    status: active
+  status: active

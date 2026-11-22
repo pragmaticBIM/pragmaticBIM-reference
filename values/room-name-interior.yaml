@@ -129,6 +129,7 @@ values:
   - Gerätelager
   - Annahmelager
   - Hauswarteschrank
+  - Hauswartsraum
   - Kinderwagenraum
   - Archivraum
   - Postraum
@@ -262,6 +263,7 @@ values:
   - Dépôt d'appareils
   - Dépôt de réception
   - Placard de conciergerie
+  - Local de conciergerie
   - Local à poussettes
   - Archives
   - Local courrier
@@ -395,6 +397,7 @@ values:
   - Deposito apparecchi
   - Deposito di ricezione
   - Armadio del custode
+  - Locale del custode
   - Locale passeggini
   - Archivio
   - Locale posta
@@ -528,6 +531,7 @@ values:
   - Equipment Storage
   - Unloading Storage
   - Janitor Closet
+  - Janitor Room
   - Stroller Room
   - Archive Room
   - Mail Room
