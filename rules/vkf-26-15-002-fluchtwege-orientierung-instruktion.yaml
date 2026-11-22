@@ -13,26 +13,21 @@ description:
     noch vor Ein- und Ausgängen aufbewahrt werden. Der Betreiber sorgt dafür, dass vor Ort jederzeit erkennbar ist, welche
     Stoffe in welcher Menge wo lagern, instruiert das Personal über Brandgefahren, Verhalten im Brandfall und Alarmierung
     und stellt sicher, dass es Löschgeräte einsetzen kann. Führen Nutzungs-, Lagergut- oder Mengenänderungen zu höherem Risiko,
-    werden die Massnahmen angepasst. Noch nicht prüfbar: das Modell weist Stoffklassierung, Lagermenge, Lagerart und Lagerort
-    gefährlicher Stoffe nicht aus.'
+    werden die Massnahmen angepasst.'
   en: 'Hazardous substances must not be kept in passages or drive-throughs, in horizontal or vertical escape routes, or in
     front of entrances and exits. The operator ensures that type, quantity and location of substances are recognisable on
     site at all times, instructs staff on fire hazards, behaviour in a fire and alerting, and ensures they can use extinguishing
-    equipment. If changes of use, stored goods or quantity raise the risk, the measures are adapted. Not yet checkable: the
-    model does not show substance classification, stored quantity, type and location of hazardous substances.'
+    equipment. If changes of use, stored goods or quantity raise the risk, the measures are adapted.'
   fr: 'Les substances dangereuses ne doivent être entreposées ni dans les passages ou passages carrossables, ni dans les voies
     d''évacuation horizontales et verticales, ni devant les entrées et sorties. L''exploitant veille à ce que le type, la
     quantité et l''emplacement des substances soient reconnaissables sur place en tout temps, instruit le personnel sur les
     dangers d''incendie, le comportement en cas d''incendie et l''alarme, et s''assure qu''il sait utiliser les moyens d''extinction.
-    Si des changements d''affectation, de marchandises ou de quantités augmentent le risque, les mesures sont adaptées. Pas
-    encore vérifiable : le modèle n''indique ni la classification des substances, ni la quantité stockée, ni le mode et le
-    lieu de stockage des substances dangereuses.'
+    Si des changements d''affectation, de marchandises ou de quantités augmentent le risque, les mesures sont adaptées.'
   it: 'Le sostanze pericolose non devono essere conservate in passaggi o transiti carrabili, in vie di fuga orizzontali e
     verticali né davanti a entrate e uscite. Il gestore assicura che tipo, quantità e ubicazione delle sostanze siano riconoscibili
     sul posto in ogni momento, istruisce il personale su pericoli d''incendio, comportamento in caso d''incendio e allarme
     e garantisce che sappia usare i mezzi di estinzione. Se cambiamenti di destinazione, merce o quantità aumentano il rischio,
-    le misure sono adeguate. Non ancora verificabile: il modello non indica classificazione delle sostanze, quantità stoccata
-    né tipo e luogo di stoccaggio delle sostanze pericolose.'
+    le misure sono adeguate.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

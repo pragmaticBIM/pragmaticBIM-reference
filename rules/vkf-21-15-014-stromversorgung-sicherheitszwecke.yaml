@@ -8,17 +8,13 @@ name:
   it: Alimentazione di sicurezza indipendente dalla rete generale
 description:
   de: 'Rauch- und Wärmeabzugsanlagen und Rauchschutz-Druckanlagen werden an geeignete Stromquellen angeschlossen, die von
-    der allgemeinen Stromversorgung unabhängig sind. Noch nicht prüfbar: das Modell enthält keine Auslöse- und Bedienstellen
-    der Anlage und keine Stromquelle für Sicherheitszwecke.'
+    der allgemeinen Stromversorgung unabhängig sind.'
   en: 'Smoke and heat exhaust systems and smoke-protection pressurization systems are connected to suitable power sources
-    that are independent of the general power supply. Not yet checkable: the model holds no trigger and control points of
-    the system and no power source for safety purposes.'
+    that are independent of the general power supply.'
   fr: 'Les installations d''évacuation de fumée et de chaleur et les installations de surpression sont raccordées à des sources
-    d''énergie appropriées, indépendantes de l''alimentation générale. Pas encore vérifiable : le modèle ne contient ni points
-    de déclenchement et de commande de l''installation ni source d''énergie de sécurité.'
+    d''énergie appropriées, indépendantes de l''alimentation générale.'
   it: 'Gli impianti di evacuazione di fumo e calore e gli impianti di pressurizzazione sono collegati a fonti di energia idonee,
-    indipendenti dall''alimentazione generale. Non ancora verificabile: il modello non contiene punti di attivazione e comando
-    dell''impianto né una fonte di energia di sicurezza.'
+    indipendenti dall''alimentazione generale.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

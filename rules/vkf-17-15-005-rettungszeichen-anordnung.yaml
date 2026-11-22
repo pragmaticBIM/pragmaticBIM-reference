@@ -10,24 +10,21 @@ description:
   de: 'Die Fluchtrichtung wird mit Richtungsanzeigern gekennzeichnet, wenn sie nicht sofort ersichtlich ist oder ortsunkundige
     Personen anwesend sind, etwa bei Richtungsänderungen. Nicht sofort erkennbare oder nur im Notfall benutzte Ausgänge
     werden gekennzeichnet. Von jedem Standort eines Raumes ist mindestens ein Rettungszeichen sichtbar, die Zeichen sind
-    im Gebäude einheitlich ausgeführt und stehen quer zur Fluchtrichtung auf Türsturzhöhe. Noch nicht prüfbar: das Modell
-    enthält keine Rettungszeichen.'
+    im Gebäude einheitlich ausgeführt und stehen quer zur Fluchtrichtung auf Türsturzhöhe.'
   en: 'The escape direction is marked with direction indicators if it is not immediately obvious or if people unfamiliar
     with the premises are present, for example at changes of direction. Exits that are not immediately recognizable or are
     used only in emergencies are marked. At least one escape sign is visible from every position in a room, the signs are
-    uniform throughout the building and are mounted across the escape direction at door-lintel height. Not yet checkable:
-    the model contains no escape signs.'
+    uniform throughout the building and are mounted across the escape direction at door-lintel height.'
   fr: 'La direction d''évacuation est signalée par des indicateurs de direction lorsqu''elle n''est pas immédiatement évidente
     ou que des personnes ne connaissant pas les lieux sont présentes, p. ex. aux changements de direction. Les sorties pas
     immédiatement reconnaissables ou utilisées seulement en cas d''urgence sont signalées. De chaque emplacement d''un local,
     au moins un signal de sauvetage est visible ; les signaux sont uniformes dans tout le bâtiment et placés transversalement
-    à la direction d''évacuation à hauteur du linteau de porte. Pas encore vérifiable : le modèle ne contient pas de signaux
-    de sauvetage.'
+    à la direction d''évacuation à hauteur du linteau de porte.'
   it: 'La direzione di fuga è segnalata con indicatori di direzione se non è immediatamente evidente o se sono presenti
     persone che non conoscono i luoghi, p. es. nei cambi di direzione. Le uscite non immediatamente riconoscibili o usate
     solo in emergenza sono segnalate. Da ogni punto di un locale è visibile almeno un segnale di salvataggio; i segnali
     sono uniformi in tutto l''edificio e collocati trasversalmente alla direzione di fuga all''altezza dell''architrave
-    della porta. Non ancora verificabile: il modello non contiene segnali di salvataggio.'
+    della porta.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

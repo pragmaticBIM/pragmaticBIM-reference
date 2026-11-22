@@ -11,27 +11,23 @@ description:
     seitlich, hinten und oben 0.2 m und zur Einfeuerung 0.5 m Abstand zu Brennbarem und haben Reinigungsöffnungen. Gewerbliche
     Küchen sind gegen angrenzende Brandabschnitte mit dem Wert der Brandabschnittsbildung, mindestens EI 30, abgetrennt; bei
     offener Verbindung zum Restaurant braucht es Deckenschürzen aus RF1 oder Hauben mit Löscheinrichtung. Wände hinter Gasherden
-    sind EI 30 aus RF1 und mindestens 60 mm dick. Noch nicht prüfbar: das Modell weist Oberflächentemperatur, Brennbarkeit
-    der Umgebung und Sicherheitsabstände nicht aus.'
+    sind EI 30 aus RF1 und mindestens 60 mm dick.'
   en: 'For fireplaces the information of the declaration of performance or VKF technical information applies. Tiled and storage
     stoves keep 0.2 m at the sides, back and top and 0.5 m at the firing opening from combustibles and have cleaning openings.
     Commercial kitchens are separated from adjoining compartments with the compartmentation value, at least EI 30; with an
     open connection to the restaurant, ceiling skirts of RF1 or hoods with extinguishing equipment are needed. Walls behind
-    gas cookers are EI 30 of RF1 and at least 60 mm thick. Not yet checkable: the model does not show surface temperature,
-    combustibility of surroundings and clearances.'
+    gas cookers are EI 30 of RF1 and at least 60 mm thick.'
   fr: 'Pour les cheminées, les indications de la déclaration des performances ou du renseignement technique de l''AEAI font
     foi. Les poêles en catelles et à accumulation respectent 0.2 m latéralement, à l''arrière et au-dessus et 0.5 m devant
     le foyer par rapport aux combustibles et comportent des ouvertures de nettoyage. Les cuisines professionnelles sont séparées
     des compartiments voisins avec la valeur de compartimentation, au moins EI 30 ; en cas de liaison ouverte avec le restaurant,
     des écrans de plafond en RF1 ou des hottes avec dispositif d''extinction sont requis. Les parois derrière les cuisinières
-    à gaz sont EI 30 en RF1 et épaisses d''au moins 60 mm. Pas encore vérifiable : le modèle n''indique ni la température
-    de surface, ni la combustibilité de l''environnement, ni les distances de sécurité.'
+    à gaz sont EI 30 en RF1 et épaisses d''au moins 60 mm.'
   it: 'Per i camini valgono le indicazioni della dichiarazione di prestazione o dell''informazione tecnica AICAA. Le stufe
     in maiolica e ad accumulo mantengono 0.2 m ai lati, dietro e sopra e 0.5 m davanti al focolare dai combustibili e hanno
     aperture di pulizia. Le cucine professionali sono separate dai compartimenti adiacenti con il valore di compartimentazione,
     almeno EI 30; con collegamento aperto al ristorante servono grembiuli a soffitto in RF1 o cappe con dispositivo di estinzione.
-    Le pareti dietro i fornelli a gas sono EI 30 in RF1 e spesse almeno 60 mm. Non ancora verificabile: il modello non indica
-    temperatura superficiale, combustibilità dell''ambiente né distanze di sicurezza.'
+    Le pareti dietro i fornelli a gas sono EI 30 in RF1 e spesse almeno 60 mm.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

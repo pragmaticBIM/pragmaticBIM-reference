@@ -10,21 +10,19 @@ description:
   de: 'Schulbetrieb und zugehörige Nutzungen sowie die Turnhalle mit ihren Nebenräumen dürfen je in einem Brandabschnitt
     zusammengefasst werden. Ohne besonderen Nachweis umfasst die zusammenhängende Brandabschnittsfläche höchstens 3600 m²;
     sie rechnet alle ohne Feuerwiderstand verbundenen Geschosse ein. Spezialräume wie Schulküche, Cafeteria, Werk- und Laborräume
-    bilden eigene Brandabschnitte. Noch nicht prüfbar: das Modell weist Brandabschnitte nicht aus.'
+    bilden eigene Brandabschnitte.'
   en: 'School operations and associated uses, as well as the gymnasium with its ancillary rooms, may each be combined in
     one fire compartment. Without special proof the contiguous compartment area is at most 3600 m²; it includes all storeys
     connected without fire resistance. Special rooms such as school kitchen, cafeteria, workshops and laboratories form
-    their own fire compartments. Not yet checkable: the model does not identify fire compartments.'
+    their own fire compartments.'
   fr: 'L''exploitation scolaire et les affectations associées, ainsi que la salle de gymnastique et ses locaux annexes,
     peuvent chacune être regroupées dans un compartiment coupe-feu. Sans justification particulière, la surface contiguë
     d''un compartiment ne dépasse pas 3600 m² ; elle comprend tous les niveaux reliés sans résistance au feu. Les locaux
-    spéciaux tels que cuisine scolaire, cafétéria, ateliers et laboratoires forment leurs propres compartiments. Pas encore
-    vérifiable : le modèle ne désigne pas les compartiments coupe-feu.'
+    spéciaux tels que cuisine scolaire, cafétéria, ateliers et laboratoires forment leurs propres compartiments.'
   it: 'L''attività scolastica e gli utilizzi associati, come pure la palestra con i suoi locali annessi, possono essere
     riuniti ciascuno in un compartimento antincendio. Senza prova particolare, la superficie contigua del compartimento
     è al massimo 3600 m²; include tutti i piani collegati senza resistenza al fuoco. I locali speciali come cucina scolastica,
-    caffetteria, laboratori e officine formano compartimenti propri. Non ancora verificabile: il modello non indica i compartimenti
-    antincendio.'
+    caffetteria, laboratori e officine formano compartimenti propri.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -187,7 +187,6 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-fire-protection
-  performance_property_key: pbs:fire_property_escape_sign_lighting_type
   is_applicability: false
   status: active
   sort_order: 4
@@ -228,7 +227,6 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-fire-protection
-  performance_property_key: pbs:fire_property_escape_sign_supply_type
   is_applicability: false
   status: active
   sort_order: 5
@@ -245,8 +243,6 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-fire-protection
-  performance_property_key: pbs:fire_property_escape_sign_mounting_height
-  target_operator: minimum
   is_applicability: false
   status: active
   sort_order: 6

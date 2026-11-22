@@ -10,23 +10,19 @@ description:
   de: 'Die Anlage entspricht dem Stand der Technik und ist so beschaffen, bemessen und unterhalten, dass sie jederzeit wirksam
     und betriebsbereit ist. Alle Anlageteile bestehen aus geeigneten Werkstoffen und halten den Beanspruchungen stand; ihr
     Funktionserhalt reicht für die Feuerwiderstandsdauer der nutzungsbezogenen Brandabschnittsbildung, mindestens aber 30
-    Minuten. Daraus folgen keine erhöhten Anforderungen an Tragwerk und Brandabschnittsbildung. Noch nicht prüfbar: das Modell
-    weist die Funktionsdauer der Anlageteile und den Feuerwiderstand der Umfassung nicht aus.'
+    Minuten. Daraus folgen keine erhöhten Anforderungen an Tragwerk und Brandabschnittsbildung.'
   en: 'The system follows the state of the art and is built, sized and maintained so that it is effective and ready for operation
     at all times. All plant parts are made of suitable materials and withstand the stresses; their functional integrity lasts
     for the fire resistance period of the use-related compartmentation, but at least 30 minutes. This does not raise the requirements
-    for the structure or the compartmentation. Not yet checkable: the model does not show the functional duration of plant
-    parts or the fire resistance of the enclosure.'
+    for the structure or the compartmentation.'
   fr: 'L''installation correspond à l''état de la technique et est conçue, dimensionnée et entretenue pour être efficace et
     opérationnelle à tout moment. Tous les éléments sont en matériaux appropriés et résistent aux sollicitations ; leur maintien
     de fonction couvre la durée de résistance au feu de la compartimentation liée à l''affectation, mais au moins 30 minutes.
-    Il n''en découle aucune exigence accrue pour la structure ni la compartimentation. Pas encore vérifiable : le modèle n''indique
-    pas la durée de fonctionnement des éléments d''installation ni la résistance au feu de l''enveloppe.'
+    Il n''en découle aucune exigence accrue pour la structure ni la compartimentation.'
   it: 'L''impianto corrisponde allo stato della tecnica ed è concepito, dimensionato e mantenuto in modo da essere efficace
     e pronto all''uso in ogni momento. Tutte le parti sono di materiali idonei e resistono alle sollecitazioni; il loro mantenimento
     della funzione copre la durata di resistenza al fuoco della compartimentazione legata all''utilizzo, ma almeno 30 minuti.
-    Ne derivano nessuna esigenza maggiore per struttura e compartimentazione. Non ancora verificabile: il modello non indica
-    la durata di funzionamento delle parti d''impianto né la resistenza al fuoco dell''involucro.'
+    Ne derivano nessuna esigenza maggiore per struttura e compartimentazione.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -10,26 +10,21 @@ description:
   de: 'Der Schutzumfang spezieller Trocken- und Kühllöschanlagen beschränkt sich auf einzelne Räume, Bereiche und Einrichtungen.
     Anordnung und Bemessung gewährleisten wirksame Kühlung oder Löschwirkung; Druckentlastungsöffnungen sind einzubauen, grosse
     Bereiche werden unterteilt. Löschmittelmenge, Leitungs- und Verteilsystem sichern Konzentration, Flutungs- und Einwirkzeit;
-    Flutungsbereiche sind möglichst klein und einzeln bemessen, der grösste Bedarf ist massgebend. Noch nicht prüfbar: das
-    Modell enthält keine Trocken- oder Kühllöschanlage mit Flutungsbereichen, Warn- und Auslöseeinrichtungen.'
+    Flutungsbereiche sind möglichst klein und einzeln bemessen, der grösste Bedarf ist massgebend.'
   en: 'The scope of special dry and cooling extinguishing systems is limited to individual rooms, areas and equipment. Arrangement
     and sizing ensure effective cooling or extinguishing effect; pressure-relief openings are installed and large areas are
     subdivided. Agent quantity, pipe and distribution system secure concentration, flooding and exposure time; flooding zones
-    are kept as small as possible and sized individually, with the largest demand governing. Not yet checkable: the model
-    holds no dry or cooling extinguishing system with flooding zones, warning and release devices.'
+    are kept as small as possible and sized individually, with the largest demand governing.'
   fr: 'L''étendue des installations spéciales d''extinction à gaz et de refroidissement se limite à des locaux, zones et équipements
     isolés. Disposition et dimensionnement garantissent un refroidissement ou un effet extincteur efficace ; des ouvertures
     de décharge de pression sont prévues et les grandes zones sont subdivisées. Quantité d''agent, réseau de conduites et
     de distribution assurent concentration, temps d''inondation et temps d''action ; les zones d''inondation sont aussi petites
-    que possible et dimensionnées individuellement, le besoin le plus élevé étant déterminant. Pas encore vérifiable : le
-    modèle ne contient aucune installation d''extinction à agent gazeux ou de refroidissement avec zones d''inondation, dispositifs
-    d''alarme et de déclenchement.'
+    que possible et dimensionnées individuellement, le besoin le plus élevé étant déterminant.'
   it: 'L''ambito degli impianti speciali di estinzione a secco e di raffreddamento si limita a singoli locali, zone e attrezzature.
     Disposizione e dimensionamento garantiscono un raffreddamento o un effetto estinguente efficaci; si prevedono aperture
     di scarico della pressione e le zone grandi sono suddivise. Quantità di agente, rete di tubazioni e distribuzione assicurano
     concentrazione, tempo di saturazione e di azione; le zone di saturazione sono il più piccole possibile e dimensionate
-    singolarmente, determinante è il fabbisogno maggiore. Non ancora verificabile: il modello non contiene alcun impianto
-    di estinzione a secco o di raffreddamento con zone di saturazione, dispositivi di avviso e di attivazione.'
+    singolarmente, determinante è il fabbisogno maggiore.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

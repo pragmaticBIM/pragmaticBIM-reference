@@ -16,15 +16,13 @@ description:
     sicher begrenzen. Explosive Stoffe, Stoffe mit besonderem Brandverhalten und Druckgasflaschen mit brennbarem oder giftigem
     Gas sind ausgeschlossen. Batterieladestationen und Folienschrumpfgeräte gibt es nur mit Brandabschnittsbildung zum Lager.
     Lagerschluchten sind Brandabschnitte; mehrere dürfen zusammengefasst werden, wenn Grundfläche 600 m² und Raumvolumen 12''000
-    m³ nicht überschritten werden. Noch nicht prüfbar: das Modell weist Stoffklassierung, Lagermenge, Lagerart und Lagerort
-    gefährlicher Stoffe nicht aus.'
+    m³ nicht überschritten werden.'
   en: 'High-bay racking is protected with automatic extinguishing systems. For liquids with a flash point up to 60 °C the
     storage height is at most 18 m; areas with highly flammable liquids are ventilated artificially, sized for a room height
     of 3 m, and such liquids are stored only if structural and fire-fighting additional measures reliably limit fire spread.
     Explosive substances, substances with special fire behaviour and gas cylinders with combustible or toxic gas are excluded.
     Battery charging stations and film shrink equipment are allowed only with fire compartment separation from the store.
-    Storage aisles are fire compartments; several may be combined if floor area 600 m² and room volume 12,000 m³ are not exceeded.
-    Not yet checkable: the model does not show substance classification, stored quantity, type and location of hazardous substances.'
+    Storage aisles are fire compartments; several may be combined if floor area 600 m² and room volume 12,000 m³ are not exceeded.'
   fr: 'Les entrepôts à rayonnages hauts sont protégés par des installations d''extinction automatiques. Pour les liquides
     de point d''éclair jusqu''à 60 °C, la hauteur de stockage est de 18 m au plus ; les zones avec liquides facilement inflammables
     sont ventilées artificiellement, dimensionnées pour une hauteur de local de 3 m, et ces liquides ne sont stockés que si
@@ -32,16 +30,14 @@ description:
     au comportement au feu particulier et les bouteilles de gaz combustible ou toxique sont exclues. Les stations de charge
     de batteries et appareils de rétraction de film ne sont admis qu''avec compartimentage par rapport à l''entrepôt. Les
     allées de stockage forment des compartiments ; plusieurs peuvent être regroupées si 600 m² de surface et 12''000 m³ de
-    volume ne sont pas dépassés. Pas encore vérifiable : le modèle n''indique ni la classification des substances, ni la quantité
-    stockée, ni le mode et le lieu de stockage des substances dangereuses.'
+    volume ne sont pas dépassés.'
   it: 'I magazzini a scaffalature alte sono protetti con impianti di estinzione automatici. Per liquidi con punto d''infiammabilità
     fino a 60 °C l''altezza di stoccaggio è al massimo 18 m; le zone con liquidi facilmente infiammabili sono ventilate artificialmente,
     dimensionate per un''altezza del locale di 3 m, e tali liquidi sono stoccati solo se misure edilizie e di estinzione supplementari
     limitano con sicurezza la propagazione dell''incendio. Sono esclusi sostanze esplosive, sostanze con comportamento al
     fuoco particolare e bombole di gas combustibile o tossico. Stazioni di ricarica batterie e apparecchi per film termoretraibile
     sono ammessi solo con compartimentazione rispetto al magazzino. Le corsie di stoccaggio sono compartimenti; più corsie
-    possono essere riunite se non si superano 600 m² di superficie e 12''000 m³ di volume. Non ancora verificabile: il modello
-    non indica classificazione delle sostanze, quantità stoccata né tipo e luogo di stoccaggio delle sostanze pericolose.'
+    possono essere riunite se non si superano 600 m² di superficie e 12''000 m³ di volume.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -9,21 +9,17 @@ name:
 description:
   de: 'Durchbrüche und Leitungsdurchführungen in Wänden und Decken, die Brandabschnitte bilden, werden feuerwiderstandsfähig
     verschlossen; die Abschottung hält mindestens 30 Minuten. Die Aussparung wird unter Berücksichtigung der Wärmedehnung
-    entweder dicht mit RF1-Baustoffen gefüllt oder mit einem VKF-anerkannten Abschottungssystem EI 30 verschlossen. Noch
-    nicht prüfbar: das Modell verknüpft Durchführungen und Abschottungen nicht durchgehend mit den durchdrungenen Bauteilen.'
+    entweder dicht mit RF1-Baustoffen gefüllt oder mit einem VKF-anerkannten Abschottungssystem EI 30 verschlossen.'
   en: 'Openings and service penetrations in walls and floors that form fire compartments are closed with fire resistance;
     the firestop holds for at least 30 minutes. Allowing for thermal expansion, the recess is either filled tightly with
-    RF1 materials or closed with a VKF-recognized firestop system rated EI 30. Not yet checkable: the model does not consistently
-    link penetrations and firestops to the components they pass through.'
+    RF1 materials or closed with a VKF-recognized firestop system rated EI 30.'
   fr: 'Les ouvertures et traversées d''installations dans les murs et planchers formant des compartiments coupe-feu sont
     obturées avec résistance au feu ; l''obturation tient au moins 30 minutes. En tenant compte de la dilatation thermique,
     l''évidement est soit comblé de manière étanche avec des matériaux RF1, soit fermé par un système d''obturation reconnu
-    par l''AEAI de résistance EI 30. Pas encore vérifiable : le modèle ne relie pas systématiquement les traversées et obturations
-    aux éléments traversés.'
+    par l''AEAI de résistance EI 30.'
   it: 'Le aperture e i passaggi di impianti in pareti e solai che formano compartimenti antincendio sono chiusi con resistenza
     al fuoco; la sigillatura tiene almeno 30 minuti. Tenendo conto della dilatazione termica, il vano è riempito a tenuta
-    con materiali RF1 oppure chiuso con un sistema di sigillatura riconosciuto dall''AICAA di resistenza EI 30. Non ancora
-    verificabile: il modello non collega in modo uniforme passaggi e sigillature agli elementi attraversati.'
+    con materiali RF1 oppure chiuso con un sistema di sigillatura riconosciuto dall''AICAA di resistenza EI 30.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

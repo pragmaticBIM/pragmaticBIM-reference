@@ -9,25 +9,18 @@ name:
 description:
   de: 'Die Wohnung führt die Sanitärräume der Grundausstattung (1 bis 3 Räume je Zimmerzahl,
     planerisch mindestens 3.8 m² pro Sanitärmodul). Mindestens ein Sanitärraum ist nach den
-    Anforderungen an behindertengerechte Bauten (SIA 500, paraphrasiert) hindernisfrei nutzbar.
-    Noch nicht prüfbar als SHACL: Zuordnung Sanitärräume zur Wohnungseinheit, Flächen je Modul
-    und Nachweis der hindernisfreien Ausstattung fehlen als modellweite Kenngrössen.'
+    Anforderungen an behindertengerechte Bauten (SIA 500, paraphrasiert) hindernisfrei nutzbar.'
   fr: 'Le logement compte les locaux sanitaires de l''équipement de base (1 à 3 locaux selon
     le nombre de pièces, au moins 3,8 m² par module sanitaire en planification). Au moins un
     local est utilisable sans obstacle selon les exigences pour bâtiments accessibles (SIA 500,
-    paraphrasé). Pas encore vérifiable en SHACL : rattachement des locaux sanitaires à l''unité,
-    surfaces par module et preuve d''équipement sans obstacle manquent comme grandeurs modèle.'
+    paraphrasé).'
   it: 'L''alloggio dispone dei locali sanitari della dotazione di base (da 1 a 3 locali secondo
     il numero di stanze, almeno 3,8 m² per modulo sanitario in pianificazione). Almeno un locale
     è utilizzabile senza ostacoli secondo le prescrizioni per edifici accessibili (SIA 500,
-    parafrasato). Non ancora verificabile in SHACL: assegnazione dei locali sanitari all''unità,
-    superfici per modulo e prova dell''allestimento senza ostacoli mancano come grandezze di
-    modello.'
+    parafrasato).'
   en: 'The dwelling provides the sanitary rooms from Grundausstattung (1 to 3 rooms by apartment
     size, at least 3.8 m² per sanitary module in planning). At least one sanitary room is
-    usable without barriers per accessibility building requirements (SIA 500, paraphrased).
-    Not yet checkable as SHACL: sanitary room assignment to the dwelling unit, area per module,
-    and barrier-free fit-out evidence are not model-wide quantities yet.'
+    usable without barriers per accessibility building requirements (SIA 500, paraphrased).'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

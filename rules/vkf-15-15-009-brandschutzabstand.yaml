@@ -11,24 +11,20 @@ description:
     RF1-Baustoffen bestehen; 7.5 m, wenn eine aussen brennbar ist; 10 m, wenn beide aussen brennbar sind. Zwischen
     Einfamilienhäusern, Gebäuden geringer Höhe und Gebäuden mittlerer Höhe mit Aussenwänden von mindestens 30 Minuten
     Feuerwiderstand verkürzen sich die Werte auf 4 m, 5 m und 6 m. Ragen Dachvorsprünge oder Bauteile über 1 m vor,
-    wächst der Abstand um den Überstand. Noch nicht prüfbar: Abstände zu Nachbargebäuden berechnet die Konvertierung
-    nicht.'
+    wächst der Abstand um den Überstand.'
   en: 'Between neighbouring buildings, measured facade to facade: 5 m if both facades are RF1 materials on the outside;
     7.5 m if one is combustible on the outside; 10 m if both are. Between single-family houses, low buildings and
     medium-height buildings with external walls of at least 30 minutes fire resistance the values shrink to 4 m,
-    5 m and 6 m. Roof overhangs or elements projecting more than 1 m increase the distance by the excess. Not yet
-    checkable: the conversion does not compute distances to neighbouring buildings.'
+    5 m and 6 m. Roof overhangs or elements projecting more than 1 m increase the distance by the excess.'
   fr: 'Entre bâtiments voisins, mesurée de façade à façade : 5 m si les deux façades sont en matériaux RF1 côté
     extérieur ; 7,5 m si l''une est combustible côté extérieur ; 10 m si les deux le sont. Entre maisons individuelles,
     bâtiments de faible hauteur et bâtiments de hauteur moyenne dont les murs extérieurs ont au moins 30 minutes
     de résistance au feu, les valeurs se réduisent à 4 m, 5 m et 6 m. Les avant-toits ou éléments en saillie de
-    plus de 1 m augmentent la distance de l''excédent. Pas encore vérifiable : la conversion ne calcule pas les
-    distances aux bâtiments voisins.'
+    plus de 1 m augmentent la distance de l''excédent.'
   it: 'Tra edifici vicini, misurata da facciata a facciata: 5 m se entrambe le facciate sono esternamente in materiali
     RF1; 7,5 m se una è esternamente combustibile; 10 m se lo sono entrambe. Tra case unifamiliari, edifici di altezza
     ridotta ed edifici di altezza media con pareti esterne di almeno 30 minuti di resistenza al fuoco i valori scendono
-    a 4 m, 5 m e 6 m. Sporgenze del tetto o elementi aggettanti oltre 1 m aumentano la distanza dell''eccedenza.
-    Non ancora verificabile: la conversione non calcola le distanze dagli edifici vicini.'
+    a 4 m, 5 m e 6 m. Sporgenze del tetto o elementi aggettanti oltre 1 m aumentano la distanza dell''eccedenza.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

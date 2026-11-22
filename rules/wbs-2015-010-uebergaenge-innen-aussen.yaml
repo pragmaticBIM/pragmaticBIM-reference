@@ -10,23 +10,18 @@ description:
   de: 'Die Übergänge zwischen Wohnräumen und dem privaten Aussenbereich (Türen, Fenster, Schiebeelemente,
     Niveausprünge, Wetterschutz) ermöglichen komfortables und sicheres Innen-Aussen-Leben ohne
     störende Hindernisse. Schwellen, Laufwege und Zugänge sind auf die Nutzung der Aussenfläche
-    abgestimmt. Noch nicht prüfbar als SHACL: Übergangsqualität, Schwellenhöhen und barrierefreie
-    Zugänge zum Aussenraum fehlen als modellweite Kenngrössen.'
+    abgestimmt.'
   fr: 'Les transitions entre pièces de vie et l''espace extérieur privé (portes, fenêtres,
     éléments coulissants, dénivelés, protection météo) permettent une vie intérieur-extérieur
     confortable et sûre sans obstacles gênants. Seuils, cheminements et accès sont adaptés à
-    l''usage de la surface extérieure. Pas encore vérifiable en SHACL : qualité des transitions,
-    hauteurs de seuil et accès sans obstacle vers l''extérieur manquent comme grandeurs modèle.'
+    l''usage de la surface extérieure.'
   it: 'I passaggi tra ambienti abitativi e lo spazio esterno privato (porte, finestre, elementi
     scorrevoli, dislivelli, protezione meteo) consentono una vita interno-esterno comoda e sicura
     senza ostacoli disturbanti. Soglie, percorsi e accessi sono allineati all''uso della superficie
-    esterna. Non ancora verificabile in SHACL: qualità dei passaggi, altezze soglia e accessi
-    senza ostacoli all''esterno mancano come grandezze di modello.'
+    esterna.'
   en: 'Transitions between living spaces and the private outdoor area (doors, windows, sliders,
     level changes, weather protection) enable comfortable, safe indoor-outdoor use without
-    disruptive barriers. Thresholds, paths, and accesses match how the outdoor area is used.
-    Not yet checkable as SHACL: transition quality, threshold heights, and barrier-free outdoor
-    access are not model-wide quantities yet.'
+    disruptive barriers. Thresholds, paths, and accesses match how the outdoor area is used.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

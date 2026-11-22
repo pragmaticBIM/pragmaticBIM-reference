@@ -12,27 +12,24 @@ description:
     Treppen- und Podestkonstruktionen aus RF1-Baustoffen; Bodenbeläge sind mindestens RF2. In Gebäuden geringer Höhe ist
     jeweils die nächstniedrigere Gruppe zulässig, bei Bodenbelägen und Treppen. Wände und Decken ohne Feuerwiderstand sowie
     Dämmschichten sind mit Brandschutzplatten EI 30 aus RF1 zu bekleiden, wenn sie brennbar sind. Hochhäuser verlangen in
-    allen Fluchtwegen RF1. Noch nicht prüfbar: das Modell führt die Brandverhaltensgruppe (RF1–RF4, cr) der Baustoffe nicht.'
+    allen Fluchtwegen RF1.'
   en: 'In vertical escape routes (stairwells) of low and medium-height buildings with a structural concept, walls and floors
     with fire resistance, wall and ceiling linings, classified systems, stretched ceilings and stair and landing structures
     are made of RF1 materials; floor coverings are at least RF2. In low buildings the next lower group is allowed for floor
     coverings and stairs. Walls and floors without fire resistance and insulation layers are clad with RF1 fire protection
-    boards of 30 minutes where they are combustible. High-rise buildings require RF1 in all escape routes. Not yet checkable:
-    the model does not carry the reaction-to-fire group (RF1–RF4, cr) of materials.'
+    boards of 30 minutes where they are combustible. High-rise buildings require RF1 in all escape routes.'
   fr: 'Dans les voies d''évacuation verticales (cages d''escalier) des bâtiments de faible et moyenne hauteur avec concept
     constructif, les murs et planchers résistant au feu, les revêtements muraux et de plafond, les systèmes classifiés,
     les plafonds tendus ainsi que les structures d''escaliers et de paliers sont en matériaux RF1 ; les revêtements de sol
     sont au moins RF2. En faible hauteur, le groupe immédiatement inférieur est admis pour les revêtements de sol et les
     escaliers. Les murs et planchers sans exigence de résistance au feu et les couches isolantes combustibles sont revêtus
-    de panneaux coupe-feu de 30 minutes en RF1. Les tours exigent RF1 dans toutes les voies d''évacuation. Pas encore vérifiable
-    : le modèle ne porte pas le groupe de comportement au feu (RF1–RF4, cr) des matériaux.'
+    de panneaux coupe-feu de 30 minutes en RF1. Les tours exigent RF1 dans toutes les voies d''évacuation.'
   it: 'Nelle vie di fuga verticali (vani scala) di edifici di altezza ridotta e media con concetto costruttivo, pareti e
     solai con resistenza al fuoco, rivestimenti di pareti e soffitti, sistemi classificati, controsoffitti tesi e strutture
     di scale e pianerottoli sono in materiali RF1; le pavimentazioni sono almeno RF2. Negli edifici di altezza ridotta è
     ammesso il gruppo immediatamente inferiore per pavimentazioni e scale. Pareti e solai senza resistenza al fuoco e strati
     isolanti, se combustibili, sono rivestiti con lastre antincendio da 30 minuti in RF1. Gli edifici alti richiedono RF1
-    in tutte le vie di fuga. Non ancora verificabile: il modello non riporta il gruppo di comportamento al fuoco (RF1–RF4,
-    cr) dei materiali.'
+    in tutte le vie di fuga.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

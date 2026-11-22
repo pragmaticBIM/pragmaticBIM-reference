@@ -9,22 +9,18 @@ name:
 description:
   de: 'Zapfsäulen für Benzin stehen ausserhalb von Bauten und Anlagen und halten 3 m Abstand zu diesen ein. Der Abstand darf
     kleiner sein, wenn die Gebäudewand im Bereich von 3 m beidseitig und 1 m über der Zapfsäule EI 60 und öffnungslos ist.
-    Bei den Zapfsäulen hängen dauerhafte, gut sichtbare Rauchverbotstafeln, und geeignete Handfeuerlöscher sind aufgestellt.
-    Noch nicht prüfbar: das Modell weist Stoffklassierung, Lagermenge, Lagerart und Lagerort gefährlicher Stoffe nicht aus.'
+    Bei den Zapfsäulen hängen dauerhafte, gut sichtbare Rauchverbotstafeln, und geeignete Handfeuerlöscher sind aufgestellt.'
   en: 'Petrol pumps stand outside buildings and installations and keep 3 m distance from them. The distance may be smaller
     if the building wall within 3 m on both sides and 1 m above the pump is EI 60 and without openings. Permanent, clearly
-    visible no-smoking signs are fixed at the pumps, and suitable portable extinguishers are provided. Not yet checkable:
-    the model does not show substance classification, stored quantity, type and location of hazardous substances.'
+    visible no-smoking signs are fixed at the pumps, and suitable portable extinguishers are provided.'
   fr: 'Les pompes à essence sont placées hors des bâtiments et installations et respectent 3 m de distance par rapport à ceux-ci.
     La distance peut être réduite si la paroi du bâtiment est EI 60 et sans ouverture sur 3 m de chaque côté et 1 m au-dessus
     de la pompe. Des panneaux d''interdiction de fumer durables et bien visibles sont posés aux pompes et des extincteurs
-    portatifs appropriés sont mis en place. Pas encore vérifiable : le modèle n''indique ni la classification des substances,
-    ni la quantité stockée, ni le mode et le lieu de stockage des substances dangereuses.'
+    portatifs appropriés sont mis en place.'
   it: 'Le colonnine di benzina stanno fuori da edifici e impianti e rispettano 3 m di distanza da essi. La distanza può essere
     ridotta se la parete dell''edificio nella zona di 3 m su entrambi i lati e 1 m sopra la colonnina è EI 60 e senza aperture.
     Presso le colonnine sono apposti cartelli di divieto di fumare durevoli e ben visibili e sono collocati estintori portatili
-    idonei. Non ancora verificabile: il modello non indica classificazione delle sostanze, quantità stoccata né tipo e luogo
-    di stoccaggio delle sostanze pericolose.'
+    idonei.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

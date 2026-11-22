@@ -10,23 +10,19 @@ description:
   de: 'Melder für Sonderanwendungen kommen zum Einsatz, wo punktförmige Melder wegen Umgebungseinflüssen oder Raumverhältnissen
     nicht oder nur beschränkt taugen, etwa im Freien, in Kabeltunneln, hohen Hallen, unzugänglichen Hohlräumen, Laborkapellen,
     Silos oder bei schützenswerten Kulturgütern. Sie brauchen die Einwilligung der Brandschutzbehörde und sind in der Anmeldung
-    aufzuführen und zu begründen. Noch nicht prüfbar: das Modell enthält Melder nur als Gerät mit Lage, ohne Meldergruppe,
-    Überwachungsumfang, Montagehöhe und Anlagesystem.'
+    aufzuführen und zu begründen.'
   en: 'Detectors for special applications are used where point detectors are unsuitable or only partly suitable because of
     environmental influences or room conditions, for example outdoors, in cable tunnels, high halls, inaccessible voids, fume
     cupboards, silos or heritage buildings. They need the consent of the fire protection authority and are listed and justified
-    in the notification. Not yet checkable: the model holds detectors only as a device with location, without detector zone,
-    monitored extent, mounting height and system.'
+    in the notification.'
   fr: 'Les détecteurs pour applications spéciales s''emploient là où les détecteurs ponctuels ne conviennent pas ou peu en
     raison de l''environnement ou des locaux, par exemple à l''extérieur, dans les tunnels de câbles, halles hautes, vides
     inaccessibles, hottes de laboratoire, silos ou biens culturels dignes de protection. Ils exigent l''accord de l''autorité
-    de protection incendie et sont listés et justifiés dans l''annonce. Pas encore vérifiable : le modèle ne contient les
-    détecteurs que comme appareil avec position, sans zone de détection, étendue surveillée, hauteur de montage ni système.'
+    de protection incendie et sont listés et justifiés dans l''annonce.'
   it: 'I rivelatori per applicazioni speciali sono impiegati dove quelli puntiformi non sono idonei o lo sono solo in parte
     a causa dell''ambiente o dei locali, ad esempio all''aperto, in gallerie per cavi, capannoni alti, intercapedini inaccessibili,
     cappe di laboratorio, silos o beni culturali da proteggere. Richiedono il consenso dell''autorità di protezione antincendio
-    e sono elencati e motivati nella notifica. Non ancora verificabile: il modello contiene i rivelatori solo come apparecchio
-    con posizione, senza zona di rivelazione, estensione sorvegliata, altezza di montaggio né sistema.'
+    e sono elencati e motivati nella notifica.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -10,22 +10,19 @@ description:
   de: 'Vertikale Fluchtwege erhalten zuoberst direkt ins Freie führende Abströmöffnungen: in Gebäuden geringer und mittlerer
     Höhe bei Beherbergung, grosser Personenbelegung und Verkaufsgeschäften, in Gebäuden mittlerer Höhe bei Wohn-, Büro-, Industrie-,
     Gewerbe- und Schulbauten sowie Parkings, sofern nicht jedes Geschoss ins Freie führende Lüftungsflügel mit mindestens
-    0.3 m² geometrischer Fläche hat. Noch nicht prüfbar: das Modell weist weder Abströmöffnungen noch deren freie geometrische
-    Fläche am Treppenraum aus.'
+    0.3 m² geometrischer Fläche hat.'
   en: 'Vertical escape routes get exhaust openings at the top leading directly outdoors: in low and medium-height buildings
     for accommodation, large occupancy and shops, in medium-height buildings for residential, office, industrial, commercial
     and school buildings and car parks, unless every storey has ventilation sashes to the outdoors with at least 0.3 m² geometric
-    area. Not yet checkable: the model shows neither exhaust openings nor their free geometric area at the stairwell.'
+    area.'
   fr: 'Les voies d''évacuation verticales reçoivent en partie haute des ouvertures d''évacuation donnant directement sur l''extérieur
     : dans les bâtiments de faible et moyenne hauteur pour l''hébergement, les fortes occupations et les commerces, dans les
     bâtiments de moyenne hauteur pour l''habitat, les bureaux, l''industrie, l''artisanat, les écoles et les parkings, sauf
-    si chaque étage a des ouvrants de ventilation vers l''extérieur d''au moins 0.3 m² de surface géométrique. Pas encore
-    vérifiable : le modèle n''indique ni ouvertures d''évacuation ni leur surface géométrique libre à la cage d''escalier.'
+    si chaque étage a des ouvrants de ventilation vers l''extérieur d''au moins 0.3 m² de surface géométrique.'
   it: 'Le vie di fuga verticali ricevono in alto aperture di evacuazione che danno direttamente all''esterno: negli edifici
     di altezza ridotta e media per alloggio, grande occupazione e negozi, negli edifici di altezza media per abitazioni, uffici,
     industria, artigianato, scuole e autorimesse, salvo che ogni piano abbia battenti di ventilazione verso l''esterno di
-    almeno 0.3 m² di superficie geometrica. Non ancora verificabile: il modello non indica né aperture di evacuazione né la
-    loro superficie geometrica libera al vano scale.'
+    almeno 0.3 m² di superficie geometrica.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

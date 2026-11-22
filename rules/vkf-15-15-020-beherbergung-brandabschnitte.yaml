@@ -8,17 +8,14 @@ name:
   it: 'Strutture ricettive: camere e locali tecnici come compartimenti antincendio'
 description:
   de: 'In Beherbergungsbetrieben werden Gäste-, Insassen-, Patienten- und Personalzimmer, betriebstechnische Räume, Untersuchungs-,
-    Behandlungs- und Laborbereiche sowie technische Räume je als Brandabschnitte ausgebildet. Noch nicht prüfbar: das Modell
-    weist Brandabschnitte nicht aus.'
+    Behandlungs- und Laborbereiche sowie technische Räume je als Brandabschnitte ausgebildet.'
   en: 'In accommodation facilities, guest, inmate, patient and staff rooms, operational technical rooms, examination, treatment
-    and laboratory areas, and technical rooms are each built as fire compartments. Not yet checkable: the model does not
-    identify fire compartments.'
+    and laboratory areas, and technical rooms are each built as fire compartments.'
   fr: 'Dans les établissements d''hébergement, les chambres d''hôtes, de détenus, de patients et de personnel, les locaux
     d''exploitation technique, les zones d''examen, de traitement et de laboratoire ainsi que les locaux techniques sont
-    chacun réalisés en compartiments coupe-feu. Pas encore vérifiable : le modèle ne désigne pas les compartiments coupe-feu.'
+    chacun réalisés en compartiments coupe-feu.'
   it: 'Nelle strutture ricettive le camere per ospiti, detenuti, pazienti e personale, i locali tecnici di esercizio, le
-    aree di visita, cura e laboratorio nonché i locali tecnici sono realizzati ciascuno come compartimenti antincendio.
-    Non ancora verificabile: il modello non indica i compartimenti antincendio.'
+    aree di visita, cura e laboratorio nonché i locali tecnici sono realizzati ciascuno come compartimenti antincendio.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

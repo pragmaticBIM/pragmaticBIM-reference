@@ -10,22 +10,18 @@ description:
   de: 'Vertikale Fluchtwege von Gebäuden mit drei oder mehr Untergeschossen erhalten eine Spüllüftung. Das Brandschutzkonzept
     legt fest, wie viele Fluchtwege durchspült werden; jede Nutzungseinheit erreicht den durchspülten Fluchtweg über einen
     sicheren horizontalen Zugang. Die Frischluft wird auf der Zugangsebene der Feuerwehr zugeführt und spült zusammen mit
-    der untersten Abströmöffnung den ganzen Fluchtweg durch. Noch nicht prüfbar: das Modell weist weder Abströmöffnungen noch
-    deren freie geometrische Fläche am Treppenraum aus.'
+    der untersten Abströmöffnung den ganzen Fluchtweg durch.'
   en: 'Vertical escape routes of buildings with three or more basements get purge ventilation. The fire protection concept
     sets how many escape routes are purged; every use unit reaches the purged escape route by a safe horizontal access. Fresh
-    air enters at the fire brigade access level and, together with the lowest exhaust opening, purges the whole escape route.
-    Not yet checkable: the model shows neither exhaust openings nor their free geometric area at the stairwell.'
+    air enters at the fire brigade access level and, together with the lowest exhaust opening, purges the whole escape route.'
   fr: 'Les voies d''évacuation verticales des bâtiments de trois sous-sols ou plus reçoivent une ventilation de balayage.
     Le concept de protection incendie fixe combien de voies sont balayées ; chaque unité d''utilisation atteint la voie balayée
     par un accès horizontal sûr. L''air frais est amené au niveau d''accès des sapeurs-pompiers et balaie, avec l''ouverture
-    d''évacuation la plus basse, toute la voie d''évacuation. Pas encore vérifiable : le modèle n''indique ni ouvertures d''évacuation
-    ni leur surface géométrique libre à la cage d''escalier.'
+    d''évacuation la plus basse, toute la voie d''évacuation.'
   it: 'Le vie di fuga verticali degli edifici con tre o più piani interrati ricevono una ventilazione di lavaggio. Il concetto
     di protezione antincendio stabilisce quante vie di fuga sono lavate; ogni unità d''uso raggiunge la via lavata tramite
     un accesso orizzontale sicuro. L''aria fresca entra al livello di accesso dei pompieri e, con l''apertura di evacuazione
-    più bassa, lava l''intera via di fuga. Non ancora verificabile: il modello non indica né aperture di evacuazione né la
-    loro superficie geometrica libera al vano scale.'
+    più bassa, lava l''intera via di fuga.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

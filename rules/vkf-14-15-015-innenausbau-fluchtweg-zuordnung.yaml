@@ -8,19 +8,15 @@ name:
   it: 'Locali di evacuazione, filtri e zone di anticamera: assimilazione alle vie di fuga'
 description:
   de: 'Bezüglich Materialisierung gelten Evakuierungsräume als vertikale Fluchtwege, ausser Patientenzimmer und horizontale
-    Fluchtwege in Beherbergungsbetrieben. Schleusen gelten als vertikale Fluchtwege, Vorzonen als horizontale. Noch nicht
-    prüfbar: das Modell führt die Brandverhaltensgruppe (RF1–RF4, cr) der Baustoffe nicht.'
+    Fluchtwege in Beherbergungsbetrieben. Schleusen gelten als vertikale Fluchtwege, Vorzonen als horizontale.'
   en: 'For materials, evacuation rooms count as vertical escape routes, except patient rooms and horizontal escape routes
-    in accommodation. Airlocks count as vertical escape routes, anterooms as horizontal ones. Not yet checkable: the model
-    does not carry the reaction-to-fire group (RF1–RF4, cr) of materials.'
+    in accommodation. Airlocks count as vertical escape routes, anterooms as horizontal ones.'
   fr: 'Pour les matériaux, les locaux d''évacuation sont assimilés à des voies d''évacuation verticales, sauf les chambres
     de patients et les voies d''évacuation horizontales des établissements d''hébergement. Les sas sont assimilés à des
-    voies verticales, les zones préalables à des voies horizontales. Pas encore vérifiable : le modèle ne porte pas le groupe
-    de comportement au feu (RF1–RF4, cr) des matériaux.'
+    voies verticales, les zones préalables à des voies horizontales.'
   it: 'Per i materiali i locali di evacuazione sono assimilati a vie di fuga verticali, tranne le camere dei pazienti e
     le vie di fuga orizzontali nelle strutture ricettive. I filtri sono assimilati a vie di fuga verticali, le zone di anticamera
-    a vie orizzontali. Non ancora verificabile: il modello non riporta il gruppo di comportamento al fuoco (RF1–RF4, cr)
-    dei materiali.'
+    a vie orizzontali.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

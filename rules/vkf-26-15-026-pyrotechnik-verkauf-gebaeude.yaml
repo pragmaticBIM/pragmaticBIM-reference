@@ -15,30 +15,26 @@ description:
     steht bereit. In Gebäuden ist der Verkauf nicht erlaubt in eingeschossigen Verkaufsräumen über 1''000 m², in mehrgeschossigen,
     offen verbundenen Verkaufsgeschäften und in Untergeschossen. Der Vorrat im Verkaufsraum beträgt höchstens 30 kg brutto,
     getrennt von anderen feuergefährlichen Stoffen in geschlossenen, für Kunden unzugänglichen Behältern. Der Stand steht
-    nicht vor Ein- und Ausgängen oder Fluchtwegen. Im Schaufenster sind nur gekennzeichnete Attrappen zulässig. Noch nicht
-    prüfbar: das Modell weist Kategorie, Bruttomenge, Lagerart und Verkaufsfläche pyrotechnischer Gegenstände nicht aus.'
+    nicht vor Ein- und Ausgängen oder Fluchtwegen. Im Schaufenster sind nur gekennzeichnete Attrappen zulässig.'
   en: 'The person responsible for sales oversees the display area from their workplace; within 2 m of the stand smoking is
     banned with a clearly visible sign, and a portable extinguisher (water, spray or air foam) is ready. In buildings, sale
     is not allowed in single-storey sales rooms over 1,000 m², in multi-storey, openly connected shops and in basement storeys.
     Stock in the sales room is at most 30 kg gross, kept apart from other flammable substances in closed containers inaccessible
     to customers. The stand is not placed in front of entrances and exits or escape routes. In shop windows only marked dummies
-    are allowed. Not yet checkable: the model does not show category, gross mass, storage type and sales area of pyrotechnic
-    articles.'
+    are allowed.'
   fr: 'La personne responsable de la vente a une vue d''ensemble de la zone d''exposition depuis son poste ; dans un rayon
     de 2 m autour du stand, il est interdit de fumer, avec un avis bien visible, et un extincteur portatif (eau, mousse à
     pulvérisation ou à air) est prêt. Dans les bâtiments, la vente n''est pas admise dans les surfaces de vente de plain-pied
     de plus de 1''000 m², dans les magasins sur plusieurs niveaux reliés ouvertement et en sous-sol. Le stock dans le local
     de vente est de 30 kg brut au plus, séparé des autres substances inflammables dans des récipients fermés inaccessibles
     aux clients. Le stand n''est pas placé devant des entrées ou sorties ni sur des voies d''évacuation. En vitrine, seuls
-    des factices marqués sont admis. Pas encore vérifiable : le modèle n''indique ni la catégorie, ni la masse brute, ni le
-    mode de stockage, ni la surface de vente des articles pyrotechniques.'
+    des factices marqués sont admis.'
   it: 'La persona responsabile della vendita ha una visione completa dell''area espositiva dalla sua postazione; entro 2 m
     dal banco vale il divieto di fumare con cartello ben visibile e un estintore portatile (acqua, schiuma spray o ad aria)
     è pronto. Negli edifici la vendita non è ammessa in locali di vendita a un piano oltre 1''000 m², in negozi su più piani
     collegati apertamente e nei piani interrati. La scorta nel locale di vendita è al massimo 30 kg lordi, separata da altre
     sostanze infiammabili in contenitori chiusi non accessibili ai clienti. Il banco non è collocato davanti a entrate e uscite
-    né su vie di fuga. In vetrina sono ammessi solo finti prodotti contrassegnati. Non ancora verificabile: il modello non
-    indica categoria, massa lorda, tipo di stoccaggio né superficie di vendita degli articoli pirotecnici.'
+    né su vie di fuga. In vetrina sono ammessi solo finti prodotti contrassegnati.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

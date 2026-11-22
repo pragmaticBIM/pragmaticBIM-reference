@@ -10,24 +10,21 @@ description:
   de: 'Je nach Personenbelegung und Nutzung werden Bauten, Anlagen oder Brandabschnitte mit einer ausreichend bemessenen Sprinkleranlage
     ausgerüstet. Sie kann bei der Festlegung des Feuerwiderstands von Tragwerken, brandabschnittsbildenden Wänden und Decken
     sowie bei der zulässigen Brandabschnittsgrösse berücksichtigt werden. Besondere Bauten wie Hochhäuser, Hochregallager,
-    Atrien, Doppelfassaden, Verkehrsanlagen und Messehallen schützt sie auf Verlangen der Brandschutzbehörde. Noch nicht prüfbar:
-    das Modell weist Nutzung, Personenbelegung, Geschosszahl und Brandabschnittsgrösse je Brandabschnitt nicht aus.'
+    Atrien, Doppelfassaden, Verkehrsanlagen und Messehallen schützt sie auf Verlangen der Brandschutzbehörde.'
   en: 'Depending on occupancy and use, buildings, installations or fire compartments are equipped with an adequately sized
     sprinkler system. It can be taken into account when setting the fire resistance of structures and compartment-forming
     walls and floors and the permitted compartment size. Special buildings such as high-rises, high-bay warehouses, atria,
-    double façades, transport facilities and exhibition halls are protected by it on request of the fire protection authority.
-    Not yet checkable: the model does not show use, occupancy, number of storeys and compartment size per fire compartment.'
+    double façades, transport facilities and exhibition halls are protected by it on request of the fire protection authority.'
   fr: 'Selon l''occupation et l''affectation, les bâtiments, installations ou compartiments sont équipés d''une installation
     sprinkler suffisamment dimensionnée. Elle peut être prise en compte pour fixer la résistance au feu des structures porteuses,
     des murs et planchers de compartimentage et la taille admise des compartiments. Les bâtiments particuliers tels que tours,
     entrepôts à rayonnages hauts, atriums, doubles façades, ouvrages de transport et halles d''exposition sont protégés sur
-    demande de l''autorité de protection incendie. Pas encore vérifiable : le modèle n''indique pas l''affectation, la charge
-    d''occupation, le nombre d''étages ni la taille du compartiment.'
+    demande de l''autorité de protection incendie.'
   it: 'In funzione di occupazione e utilizzo, edifici, impianti o compartimenti sono dotati di un impianto sprinkler adeguatamente
     dimensionato. Può essere considerato nel fissare la resistenza al fuoco di strutture portanti, pareti e solai di compartimentazione
     e la dimensione ammessa dei compartimenti. Gli edifici particolari come edifici alti, magazzini a scaffalature alte, atri,
     doppie facciate, impianti di trasporto e padiglioni fieristici sono protetti su richiesta dell''autorità di protezione
-    antincendio. Non ancora verificabile: il modello non indica utilizzo, occupazione, numero di piani e dimensione del compartimento.'
+    antincendio.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

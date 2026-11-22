@@ -9,21 +9,16 @@ name:
 description:
   de: 'Feuerwehrbedien- und Anzeigeteile von Anlagen mit mehr als einer Meldergruppe stehen an einem sicheren, für die Feuerwehr
     leicht zugänglichen Standort im Flucht- und Rettungsweg oder am Feuerwehrzugang. Die Betriebszustandsanzeige befindet
-    sich in unmittelbarer Nähe, und der ungehinderte Zugang ist gewährleistet. Noch nicht prüfbar: das Modell enthält keine
-    Brandmeldezentrale, kein Feuerwehrbedienteil und keine Brandfallsteuerung als System.'
+    sich in unmittelbarer Nähe, und der ungehinderte Zugang ist gewährleistet.'
   en: 'Fire-brigade control and indicating units of systems with more than one detector zone stand at a safe location that
     is easily accessible for the fire brigade, in the escape route or at the fire-brigade access. The operating-state indication
-    is in the immediate vicinity, and unobstructed access is ensured. Not yet checkable: the model holds no fire alarm control
-    panel, no fire-brigade control unit and no fire-mode control as a system.'
+    is in the immediate vicinity, and unobstructed access is ensured.'
   fr: 'Les tableaux de commande et d''affichage pour les sapeurs-pompiers des installations de plus d''une zone de détection
     sont placés en un lieu sûr, facilement accessible aux sapeurs-pompiers, dans la voie d''évacuation ou à l''accès des pompiers.
-    L''indication de l''état de service est à proximité immédiate et l''accès sans entrave est garanti. Pas encore vérifiable
-    : le modèle ne contient ni centrale de détection incendie, ni tableau de commande pour les sapeurs-pompiers, ni commande
-    en cas d''incendie comme système.'
+    L''indication de l''état de service est à proximité immédiate et l''accès sans entrave est garanti.'
   it: 'Le unità di comando e indicazione per i pompieri di impianti con più di una zona di rivelazione stanno in un luogo
     sicuro, facilmente accessibile ai pompieri, nella via di fuga o all''accesso dei pompieri. L''indicazione dello stato
-    di esercizio è nelle immediate vicinanze e l''accesso senza ostacoli è garantito. Non ancora verificabile: il modello
-    non contiene alcuna centrale di rivelazione incendio, unità di comando per i pompieri né comando antincendio come sistema.'
+    di esercizio è nelle immediate vicinanze e l''accesso senza ostacoli è garantito.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

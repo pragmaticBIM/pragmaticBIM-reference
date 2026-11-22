@@ -7,16 +7,12 @@ name:
   fr: 'Locaux à forte occupation : sprinkler sur demande'
   it: 'Locali con grande occupazione: sprinkler su richiesta'
 description:
-  de: 'In Bauten und Anlagen mit Räumen mit grosser Personenbelegung kann die Brandschutzbehörde Sprinkleranlagen verlangen.
-    Noch nicht prüfbar: das Modell weist Nutzung, Personenbelegung, Geschosszahl und Brandabschnittsgrösse je Brandabschnitt
-    nicht aus.'
-  en: 'In buildings and installations with rooms of large occupancy the fire protection authority can require sprinkler systems.
-    Not yet checkable: the model does not show use, occupancy, number of storeys and compartment size per fire compartment.'
+  de: 'In Bauten und Anlagen mit Räumen mit grosser Personenbelegung kann die Brandschutzbehörde Sprinkleranlagen verlangen.'
+  en: 'In buildings and installations with rooms of large occupancy the fire protection authority can require sprinkler systems.'
   fr: 'Dans les bâtiments et installations comportant des locaux à forte occupation, l''autorité de protection incendie peut
-    exiger des installations sprinkler. Pas encore vérifiable : le modèle n''indique pas l''affectation, la charge d''occupation,
-    le nombre d''étages ni la taille du compartiment.'
+    exiger des installations sprinkler.'
   it: 'In edifici e impianti con locali a grande occupazione l''autorità di protezione antincendio può richiedere impianti
-    sprinkler. Non ancora verificabile: il modello non indica utilizzo, occupazione, numero di piani e dimensione del compartimento.'
+    sprinkler.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

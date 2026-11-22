@@ -9,19 +9,16 @@ name:
 description:
   de: 'Rettungszeichen sind dauerhaft ausgeführt und gross genug, um leicht erkennbar zu sein; die nötige Grösse richtet
     sich nach der Entfernung, aus der die Bedeutung noch klar sein muss. Nach anerkannten Normen sind sie rechteckig oder
-    quadratisch, mit weissen Pfeilen und Symbolen auf grünem Grund. Noch nicht prüfbar: Grösse und Gestaltung von Zeichen
-    sind im Modell nicht abgebildet.'
+    quadratisch, mit weissen Pfeilen und Symbolen auf grünem Grund.'
   en: 'Escape signs are durable and large enough to be easily recognizable; the required size depends on the distance from
     which the meaning must still be clear. According to recognized standards they are rectangular or square, with white
-    arrows and symbols on a green ground. Not yet checkable: size and design of signs are not represented in the model.'
+    arrows and symbols on a green ground.'
   fr: 'Les signaux de sauvetage sont durables et assez grands pour être facilement reconnaissables ; la taille requise dépend
     de la distance à laquelle leur signification doit rester claire. Selon les normes reconnues, ils sont rectangulaires
-    ou carrés, avec flèches et symboles blancs sur fond vert. Pas encore vérifiable : la taille et la forme des signaux
-    ne sont pas représentées dans le modèle.'
+    ou carrés, avec flèches et symboles blancs sur fond vert.'
   it: 'I segnali di salvataggio sono durevoli e abbastanza grandi da essere facilmente riconoscibili; la dimensione richiesta
     dipende dalla distanza da cui il significato deve restare chiaro. Secondo le norme riconosciute sono rettangolari o
-    quadrati, con frecce e simboli bianchi su fondo verde. Non ancora verificabile: dimensione e forma dei segnali non sono
-    rappresentate nel modello.'
+    quadrati, con frecce e simboli bianchi su fondo verde.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

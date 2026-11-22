@@ -17,31 +17,27 @@ description:
     m über Boden. Intermittierender Betrieb nach Zeitschaltung muss beim Betreten und beim Betrieb zwangsläufig einschalten;
     bei Steuerung durch eine Gaswarnanlage kann auf Dauer- oder intermittierende Lüftung verzichtet werden. Beim Umgang ohne
     geschlossenes System oder Absaugung gilt ein 10-facher Luftwechsel pro Stunde, Absaugung ebenfalls höchstens 0.1 m über
-    Boden. Noch nicht prüfbar: das Modell weist Flammpunkt, Lagervolumen, Behälterart und Feuerwiderstand des Lagerraums nicht
-    aus.'
+    Boden.'
   en: 'Storage rooms count as sufficiently naturally ventilated when above ground with at least two opposite non-closable
     openings to the outside, one of them at most 0.1 m above the floor, each at least 20 cm² per m² of floor area. Other rooms
     (e.g. below-ground rooms) are ventilated artificially: 3 to 5 air changes per hour with extraction points at most 0.1
     m above the floor. Intermittent operation by timer must switch on automatically when the room is entered and when equipment
     runs; if a gas warning system controls it, continuous or intermittent ventilation can be omitted. For handling without
-    a closed system or extraction, 10 air changes per hour apply, with extraction also at most 0.1 m above the floor. Not
-    yet checkable: the model does not show flash point, stored volume, container type and fire resistance of the storage room.'
+    a closed system or extraction, 10 air changes per hour apply, with extraction also at most 0.1 m above the floor.'
   fr: 'Sont suffisamment ventilés naturellement les locaux de stockage au-dessus du sol avec au moins deux ouvertures opposées
     non obturables vers l''extérieur, dont une au plus à 0.1 m du sol, chacune d''au moins 20 cm² par m² de surface au sol.
     Les autres locaux (p. ex. en sous-sol) sont ventilés artificiellement : 3 à 5 renouvellements d''air par heure avec points
     d''aspiration au plus à 0.1 m du sol. Le fonctionnement intermittent par minuterie doit s''enclencher d''office à l''entrée
     et lors de l''exploitation ; s''il est commandé par une installation d''alarme gaz, la ventilation permanente ou intermittente
     peut être omise. Pour la manipulation sans système fermé ni aspiration, 10 renouvellements d''air par heure s''appliquent,
-    aspiration aussi au plus à 0.1 m du sol. Pas encore vérifiable : le modèle n''indique ni le point d''éclair, ni le volume
-    stocké, ni le type de récipient, ni la résistance au feu du local de stockage.'
+    aspiration aussi au plus à 0.1 m du sol.'
   it: 'Sono sufficientemente ventilati in modo naturale i locali di stoccaggio fuori terra con almeno due aperture opposte
     non chiudibili verso l''esterno, una delle quali al massimo a 0.1 m dal pavimento, ciascuna di almeno 20 cm² per m² di
     superficie. Gli altri locali (p. es. interrati) sono ventilati artificialmente: 3–5 ricambi d''aria all''ora con punti
     di aspirazione al massimo a 0.1 m dal pavimento. Il funzionamento intermittente a timer deve inserirsi d''obbligo all''ingresso
     e durante l''esercizio; se comandato da un impianto di allarme gas si può rinunciare alla ventilazione continua o intermittente.
     Per la manipolazione senza sistema chiuso né aspirazione valgono 10 ricambi d''aria all''ora, aspirazione anch''essa al
-    massimo a 0.1 m dal pavimento. Non ancora verificabile: il modello non indica punto d''infiammabilità, volume stoccato,
-    tipo di contenitore né resistenza al fuoco del locale di stoccaggio.'
+    massimo a 0.1 m dal pavimento.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

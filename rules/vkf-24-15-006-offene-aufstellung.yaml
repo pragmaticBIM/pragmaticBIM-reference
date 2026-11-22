@@ -9,21 +9,15 @@ name:
 description:
   de: 'In eingeschossigen Hallen und mehrgeschossigen Industrie- und Gewerbebauten mit nutzungsbezogenen Brandabschnitten
     dürfen Feuerungsaggregate beliebiger Leistung offen stehen, sofern der Betrieb es erfordert, die Sicherheitsabstände eingehalten
-    sind und die Brandbelastung im Raum klein ist. Noch nicht prüfbar: das Modell weist Nennwärmeleistung, Brennstoff, Aufstellungsart
-    und Feuerwiderstand des Heizraums nicht aus.'
+    sind und die Brandbelastung im Raum klein ist.'
   en: 'In single-storey halls and multi-storey industrial and commercial buildings with use-related compartments, firing units
-    of any output may stand openly if operation requires it, the clearances are kept and the fire load in the room is low.
-    Not yet checkable: the model does not show nominal heat output, fuel, type of installation and fire resistance of the
-    boiler room.'
+    of any output may stand openly if operation requires it, the clearances are kept and the fire load in the room is low.'
   fr: 'Dans les halles à un niveau et les bâtiments industriels et artisanaux à plusieurs niveaux avec compartiments liés
     à l''affectation, des foyers de toute puissance peuvent être installés ouvertement si l''exploitation l''exige, que les
-    distances de sécurité sont respectées et que la charge calorifique du local est faible. Pas encore vérifiable : le modèle
-    n''indique pas la puissance calorifique nominale, le combustible, le mode d''installation ni la résistance au feu du local
-    de chauffe.'
+    distances de sécurité sont respectées et que la charge calorifique du local est faible.'
   it: 'In capannoni a un piano ed edifici industriali e artigianali a più piani con compartimenti legati all''utilizzo, focolari
     di qualsiasi potenza possono stare a vista se l''esercizio lo richiede, le distanze di sicurezza sono rispettate e il
-    carico d''incendio nel locale è basso. Non ancora verificabile: il modello non indica potenza termica nominale, combustibile,
-    tipo di installazione né resistenza al fuoco del locale caldaia.'
+    carico d''incendio nel locale è basso.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

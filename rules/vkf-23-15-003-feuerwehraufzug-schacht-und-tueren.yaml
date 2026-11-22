@@ -9,22 +9,18 @@ name:
 description:
   de: 'Der Zugang zum Feuerwehraufzug erfolgt in allen Geschossen nur über Schleusen. Schacht und Schleusen haben
     Feuerwiderstand EI 90, feuerwiderstandsfähige Abschlüsse und Rauchschutz-Druckanlage. Die Schachttüren erreichen
-    E 60, sind mindestens 0.8 m breit und nicht abschliessbar. Die Schleuse misst mindestens 2.4 × 2.4 m. Noch
-    nicht prüfbar: das Modell kennzeichnet weder Feuerwehraufzüge noch ihre Schleusen und Schachtwände.'
+    E 60, sind mindestens 0.8 m breit und nicht abschliessbar. Die Schleuse misst mindestens 2.4 × 2.4 m.'
   en: 'Access to the fire-fighting lift is on every floor only through lobbies. Shaft and lobbies have fire resistance
     EI 90, fire-resistant closures and a smoke-control pressurisation system. The landing doors reach E 60, are
-    at least 0.8 m wide and cannot be locked. The lobby measures at least 2.4 × 2.4 m. Not yet checkable: the model
-    identifies neither fire-fighting lifts nor their lobbies and shaft walls.'
+    at least 0.8 m wide and cannot be locked. The lobby measures at least 2.4 × 2.4 m.'
   fr: 'L''accès à l''ascenseur pompiers se fait à tous les étages uniquement par des sas. La gaine et les sas ont
     une résistance au feu EI 90, des fermetures résistant au feu et une installation de surpression de protection
     contre la fumée. Les portes palières atteignent E 60, ont une largeur libre d''au moins 0,8 m et ne peuvent
-    pas être verrouillées. Le sas mesure au moins 2,4 × 2,4 m. Pas encore vérifiable : le modèle n''identifie
-    ni les ascenseurs pompiers ni leurs sas et parois de gaine.'
+    pas être verrouillées. Le sas mesure au moins 2,4 × 2,4 m.'
   it: 'L''accesso all''ascensore antincendio avviene a tutti i piani solo tramite filtri. Vano e filtri hanno resistenza
     al fuoco EI 90, chiusure resistenti al fuoco e impianto di sovrapressione antifumo. Le porte di piano raggiungono
     E 60, hanno una larghezza libera di almeno 0,8 m e non sono chiudibili a chiave. Il filtro misura almeno 2,4 × 2,4
-    m. Non ancora verificabile: il modello non identifica né gli ascensori antincendio né i loro filtri e pareti
-    del vano.'
+    m.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

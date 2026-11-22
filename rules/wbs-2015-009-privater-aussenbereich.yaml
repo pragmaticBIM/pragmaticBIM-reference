@@ -9,21 +9,16 @@ name:
 description:
   de: 'Der Wohnung sind privat nutzbare Aussenflächen zugeordnet (Balkon, Terrasse, Garten,
     Loggia) mit mindestens der Grundausstattung je Zimmerzahl (3 bis 6 m²). Geprüft wird die
-    der UsageUnitReference zugeordnete Aussenfläche. Noch nicht prüfbar als SHACL: private
-    Aussenflächen je Wohnungseinheit und Nutzungstyp werden nicht aggregiert.'
+    der UsageUnitReference zugeordnete Aussenfläche.'
   fr: 'Des surfaces extérieures à usage privé (balcon, terrasse, jardin, loggia) sont rattachées
     au logement avec au moins l''équipement de base selon le nombre de pièces (3 à 6 m²). On
-    additionne les surfaces extérieures liées à la même UsageUnitReference. Pas encore vérifiable
-    en SHACL : surfaces extérieures privées par unité de logement et type d''usage ne sont pas
-    agrégées.'
+    additionne les surfaces extérieures liées à la même UsageUnitReference.'
   it: 'All''alloggio sono assegnate superfici esterne a uso privato (balcone, terrazza, giardino,
     loggia) con almeno la dotazione di base per numero di locali (da 3 a 6 m²). Si sommano le
-    superfici esterne con la stessa UsageUnitReference. Non ancora verificabile in SHACL: superfici
-    esterne private per unità abitativa e tipologia d''uso non sono aggregate.'
+    superfici esterne con la stessa UsageUnitReference.'
   en: 'The dwelling has privately usable outdoor areas (balcony, terrace, garden, loggia) at
     least at Grundausstattung levels by room count (3 to 6 m²). Sum outdoor areas tied to the
-    same UsageUnitReference. Not yet checkable as SHACL: private outdoor area per dwelling unit
-    and use type is not aggregated.'
+    same UsageUnitReference.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

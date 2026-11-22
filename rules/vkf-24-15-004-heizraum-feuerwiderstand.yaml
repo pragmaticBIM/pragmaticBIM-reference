@@ -10,26 +10,20 @@ description:
   de: 'Feuerungsaggregate stehen in separaten Heizräumen. Deren Feuerwiderstand richtet sich nach der gesamten Nennwärmeleistung:
     bis 70 kW der nutzungsbezogene Brandabschnittswert, mindestens EI 30; darüber mindestens EI 60. Türen sind EI 30 und bei
     mehr als 70 kW in Fluchtrichtung öffnend. Bei bis zu 70 kW und geringem Brandrisiko darf der Raum auch anderen Zwecken
-    dienen. Dasselbe gilt für nicht elektrisch betriebene Wärmepumpen, stationäre Verbrennungsmotoren und Wärmekraftkopplungsanlagen.
-    Noch nicht prüfbar: das Modell weist Nennwärmeleistung, Brennstoff, Aufstellungsart und Feuerwiderstand des Heizraums
-    nicht aus.'
+    dienen. Dasselbe gilt für nicht elektrisch betriebene Wärmepumpen, stationäre Verbrennungsmotoren und Wärmekraftkopplungsanlagen.'
   en: 'Firing units stand in separate boiler rooms. Their fire resistance depends on the total nominal heat output: up to
     70 kW the use-related compartment value, at least EI 30; above that at least EI 60. Doors are EI 30 and, above 70 kW,
     open in the direction of escape. Up to 70 kW and with low fire risk the room may also serve other purposes. The same applies
-    to non-electric heat pumps, stationary combustion engines and combined heat and power plants. Not yet checkable: the model
-    does not show nominal heat output, fuel, type of installation and fire resistance of the boiler room.'
+    to non-electric heat pumps, stationary combustion engines and combined heat and power plants.'
   fr: 'Les foyers sont installés dans des locaux de chauffe séparés. Leur résistance au feu dépend de la puissance calorifique
     nominale totale : jusqu''à 70 kW la valeur de compartimentation liée à l''affectation, au moins EI 30 ; au-delà au moins
     EI 60. Les portes sont EI 30 et, au-delà de 70 kW, s''ouvrent dans le sens de l''évacuation. Jusqu''à 70 kW et à faible
     risque, le local peut servir à d''autres usages. Il en va de même pour les pompes à chaleur non électriques, moteurs à
-    combustion stationnaires et installations de couplage chaleur-force. Pas encore vérifiable : le modèle n''indique pas
-    la puissance calorifique nominale, le combustible, le mode d''installation ni la résistance au feu du local de chauffe.'
+    combustion stationnaires et installations de couplage chaleur-force.'
   it: 'I focolari stanno in locali caldaia separati. La loro resistenza al fuoco dipende dalla potenza termica nominale totale:
     fino a 70 kW il valore di compartimentazione legato all''utilizzo, almeno EI 30; oltre almeno EI 60. Le porte sono EI
     30 e, oltre 70 kW, si aprono nel senso della fuga. Fino a 70 kW e con basso rischio il locale può servire anche ad altri
-    scopi. Lo stesso vale per pompe di calore non elettriche, motori a combustione stazionari e impianti di cogenerazione.
-    Non ancora verificabile: il modello non indica potenza termica nominale, combustibile, tipo di installazione né resistenza
-    al fuoco del locale caldaia.'
+    scopi. Lo stesso vale per pompe di calore non elettriche, motori a combustione stazionari e impianti di cogenerazione.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

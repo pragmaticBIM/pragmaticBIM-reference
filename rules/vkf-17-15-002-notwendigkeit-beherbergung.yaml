@@ -9,20 +9,16 @@ name:
 description:
   de: 'In Beherbergungsbetrieben werden Ausgänge und Fluchtwege mit sicherheitsbeleuchteten Rettungszeichen gekennzeichnet,
     und in den Fluchtwegen wird eine Sicherheitsbeleuchtung installiert. Bei abgelegenen Beherbergungsbetrieben (z. B. Berghütten)
-    entscheidet die Brandschutzbehörde über die Notwendigkeit. Noch nicht prüfbar: das Modell weist weder die Betriebsart
-    noch die Beleuchtungsart der Rettungszeichen aus.'
+    entscheidet die Brandschutzbehörde über die Notwendigkeit.'
   en: 'In accommodation facilities, exits and escape routes are marked with escape signs on safety lighting, and safety
     lighting is installed in the escape routes. For remote accommodation facilities (e.g. mountain huts) the fire authority
-    decides whether it is needed. Not yet checkable: the model shows neither the type of facility nor the lighting type
-    of the escape signs.'
+    decides whether it is needed.'
   fr: 'Dans les établissements d''hébergement, les sorties et voies d''évacuation sont signalées par des signaux de sauvetage
     éclairés en sécurité, et un éclairage de sécurité est installé dans les voies d''évacuation. Pour les établissements
-    d''hébergement isolés (p. ex. cabanes de montagne), l''autorité de protection incendie décide de la nécessité. Pas encore
-    vérifiable : le modèle n''indique ni le type d''établissement ni le type d''éclairage des signaux de sauvetage.'
+    d''hébergement isolés (p. ex. cabanes de montagne), l''autorité de protection incendie décide de la nécessité.'
   it: 'Nelle strutture ricettive uscite e vie di fuga sono segnalate con segnali di salvataggio dotati di illuminazione
     di sicurezza e nelle vie di fuga è installata un''illuminazione di sicurezza. Per le strutture ricettive isolate (p.
-    es. rifugi di montagna) l''autorità antincendio decide sulla necessità. Non ancora verificabile: il modello non indica
-    né il tipo di struttura né il tipo di illuminazione dei segnali di salvataggio.'
+    es. rifugi di montagna) l''autorità antincendio decide sulla necessità.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -9,21 +9,17 @@ name:
 description:
   de: 'In Beherbergungsbetrieben der Kategorie a ist eine Brandmeldeanlage mit Vollüberwachung erforderlich. In den Kategorien
     b und c gilt dies bei zwei Geschossen und mehr als 50 beherbergten Personen sowie bei drei oder mehr Geschossen und mehr
-    als 30 beherbergten Personen; bei Gebäuden geringer Höhe mit Löschanlagenkonzept kann darauf verzichtet werden. Noch nicht
-    prüfbar: das Modell weist Nutzung, Personenbelegung, Geschosszahl und Brandabschnittsgrösse je Brandabschnitt nicht aus.'
+    als 30 beherbergten Personen; bei Gebäuden geringer Höhe mit Löschanlagenkonzept kann darauf verzichtet werden.'
   en: 'In accommodation of category a a fire alarm system with full monitoring is required. In categories b and c this applies
     for two storeys and more than 50 accommodated persons, and for three or more storeys and more than 30 accommodated persons;
-    for low-rise buildings with an extinguishing-system concept it can be omitted. Not yet checkable: the model does not show
-    use, occupancy, number of storeys and compartment size per fire compartment.'
+    for low-rise buildings with an extinguishing-system concept it can be omitted.'
   fr: 'Dans les établissements d''hébergement de catégorie a, une détection incendie avec surveillance totale est exigée.
     Dans les catégories b et c, cela vaut pour deux niveaux et plus de 50 personnes hébergées, ainsi que pour trois niveaux
     ou plus et plus de 30 personnes hébergées ; pour les bâtiments de faible hauteur avec un concept d''installations d''extinction,
-    on peut y renoncer. Pas encore vérifiable : le modèle n''indique pas l''affectation, la charge d''occupation, le nombre
-    d''étages ni la taille du compartiment.'
+    on peut y renoncer.'
   it: 'Negli esercizi di alloggio di categoria a è richiesta una rivelazione incendio con sorveglianza totale. Nelle categorie
     b e c ciò vale per due piani e più di 50 persone alloggiate, nonché per tre o più piani e più di 30 persone alloggiate;
-    per edifici di altezza ridotta con un concetto di impianti di estinzione si può rinunciarvi. Non ancora verificabile:
-    il modello non indica utilizzo, occupazione, numero di piani e dimensione del compartimento.'
+    per edifici di altezza ridotta con un concetto di impianti di estinzione si può rinunciarvi.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

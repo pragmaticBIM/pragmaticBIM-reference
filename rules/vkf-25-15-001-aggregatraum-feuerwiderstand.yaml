@@ -10,22 +10,18 @@ description:
   de: 'Aggregate, die mehrere Lüftungsabschnitte versorgen, stehen in einem separaten Raum. Dessen Umfassung erreicht den
     Feuerwiderstand der nutzungsbezogenen Brandabschnittsbildung, mindestens aber EI 30; die Türen sind ebenfalls EI 30. Aggregate
     für nur einen Lüftungsabschnitt dürfen beliebig aufgestellt werden, Luftaufbereitungsapparate für Einraumlüftungen auch
-    im belüfteten Raum. Noch nicht prüfbar: das Modell weist Lüftungsabschnitte und die von einem Aggregat versorgten Brandabschnitte
-    nicht aus.'
+    im belüfteten Raum.'
   en: 'Units that serve several ventilation sections are installed in a separate room. Its enclosure matches the fire resistance
     of the use-related compartmentation, but at least EI 30; the doors are also EI 30. Units serving only one ventilation
-    section may be placed freely, and air-treatment units for single-room ventilation may stand in the room they ventilate.
-    Not yet checkable: the model does not show ventilation sections or which fire compartments a unit supplies.'
+    section may be placed freely, and air-treatment units for single-room ventilation may stand in the room they ventilate.'
   fr: 'Les centrales qui desservent plusieurs sections de ventilation sont installées dans un local séparé. Son enveloppe
     atteint la résistance au feu de la compartimentation liée à l''affectation, au moins EI 30 ; les portes sont également
     EI 30. Les centrales d''une seule section de ventilation peuvent être placées librement, et les appareils de traitement
-    d''air pour la ventilation d''un seul local peuvent se trouver dans le local ventilé. Pas encore vérifiable : le modèle
-    n''indique pas les sections de ventilation ni les compartiments desservis par une centrale.'
+    d''air pour la ventilation d''un seul local peuvent se trouver dans le local ventilé.'
   it: 'Le centrali che servono più sezioni di ventilazione sono installate in un locale separato. Il suo involucro raggiunge
     la resistenza al fuoco della compartimentazione legata all''utilizzo, almeno EI 30; anche le porte sono EI 30. Le centrali
     di una sola sezione di ventilazione possono essere collocate liberamente e gli apparecchi di trattamento dell''aria per
-    la ventilazione di un solo locale possono stare nel locale ventilato. Non ancora verificabile: il modello non indica le
-    sezioni di ventilazione né i compartimenti serviti da una centrale.'
+    la ventilazione di un solo locale possono stare nel locale ventilato.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

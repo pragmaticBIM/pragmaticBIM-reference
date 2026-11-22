@@ -9,20 +9,16 @@ name:
 description:
   de: 'Bei Gebäuden mittlerer Höhe mit brennbarer Aussenwandbekleidung oder Wärmedämmung wird die Fassade konstruktiv so
     unterteilt, dass sich ein Brand bis zum Löschangriff der Feuerwehr höchstens zwei Geschosse über das Brandgeschoss hinaus
-    ausbreitet. Die Feuerwehr muss die Fassadenflächen für den Löscheinsatz erreichen können. Noch nicht prüfbar: das Modell
-    führt die Brandverhaltensgruppe (RF1–RF4, cr) der Baustoffe nicht.'
+    ausbreitet. Die Feuerwehr muss die Fassadenflächen für den Löscheinsatz erreichen können.'
   en: 'In medium-height buildings with combustible external wall cladding or thermal insulation, the facade is subdivided
     structurally so that a fire spreads at most two storeys above the storey of origin before the fire brigade attacks.
-    The fire brigade must be able to reach the facade surfaces for firefighting. Not yet checkable: the model does not carry
-    the reaction-to-fire group (RF1–RF4, cr) of materials.'
+    The fire brigade must be able to reach the facade surfaces for firefighting.'
   fr: 'Dans les bâtiments de hauteur moyenne à revêtement de façade ou isolation thermique combustible, la façade est subdivisée
     par la construction de sorte qu''un incendie ne se propage pas de plus de deux niveaux au-dessus de l''étage sinistré
-    avant l''intervention des pompiers. Les pompiers doivent pouvoir accéder aux surfaces de façade pour l''extinction.
-    Pas encore vérifiable : le modèle ne porte pas le groupe de comportement au feu (RF1–RF4, cr) des matériaux.'
+    avant l''intervention des pompiers. Les pompiers doivent pouvoir accéder aux surfaces de façade pour l''extinction.'
   it: 'Negli edifici di altezza media con rivestimento di facciata o isolamento termico combustibile, la facciata è suddivisa
     costruttivamente in modo che l''incendio non si propaghi oltre due piani sopra il piano d''origine prima dell''intervento
-    dei pompieri. I pompieri devono poter raggiungere le superfici di facciata per lo spegnimento. Non ancora verificabile:
-    il modello non riporta il gruppo di comportamento al fuoco (RF1–RF4, cr) dei materiali.'
+    dei pompieri. I pompieri devono poter raggiungere le superfici di facciata per lo spegnimento.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

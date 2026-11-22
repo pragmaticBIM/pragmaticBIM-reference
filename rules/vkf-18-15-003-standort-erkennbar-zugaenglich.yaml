@@ -8,21 +8,15 @@ name:
   it: Estintori e tubazioni antincendio ben visibili, facilmente accessibili e segnalati
 description:
   de: 'Löschgeräte und Löschleitungen sind gut erkennbar und leicht zugänglich; wo nötig, kennzeichnen Markierungen oder Hinweistafeln
-    den Standort. Sie lassen sich jederzeit ohne fremde Hilfsmittel rasch und einfach in Betrieb nehmen und zweckmässig einsetzen.
-    Noch nicht prüfbar: das Modell weist Löschgeräte und Wasserlöschposten nur als Gerät mit Lage aus, ohne Löschmittel, Löschvermögen
-    und Gehweglinie.'
+    den Standort. Sie lassen sich jederzeit ohne fremde Hilfsmittel rasch und einfach in Betrieb nehmen und zweckmässig einsetzen.'
   en: 'Extinguishers and fire-fighting pipes are clearly visible and easily accessible; where needed, markings or signs identify
-    the location. They can be put into operation quickly and simply at any time without outside aids and used as intended.
-    Not yet checkable: the model shows extinguishers and hose reels only as a device with location, without extinguishing
-    agent, rating or walking distance.'
+    the location. They can be put into operation quickly and simply at any time without outside aids and used as intended.'
   fr: 'Les extincteurs et conduites d''extinction sont bien visibles et facilement accessibles ; si nécessaire, des marquages
     ou panneaux indiquent l''emplacement. Ils peuvent à tout moment être mis en service rapidement et simplement sans moyens
-    extérieurs et utilisés de façon appropriée. Pas encore vérifiable : le modèle ne montre les extincteurs et postes d''eau
-    d''extinction que comme appareil avec position, sans agent extincteur, pouvoir extincteur ni distance de cheminement.'
+    extérieurs et utilisés de façon appropriée.'
   it: 'Estintori e tubazioni antincendio sono ben visibili e facilmente accessibili; ove necessario, segnaletica o cartelli
     indicano l''ubicazione. Possono essere messi in funzione in ogni momento in modo rapido e semplice senza mezzi esterni
-    e usati in modo appropriato. Non ancora verificabile: il modello mostra estintori e posti d''acqua antincendio solo come
-    apparecchio con posizione, senza agente estinguente, potere estinguente né percorso di marcia.'
+    e usati in modo appropriato.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

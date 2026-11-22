@@ -9,22 +9,19 @@ name:
 description:
   de: 'Räume für Transformatoren werden als eigene Brandabschnitte ausgebildet. Ihre Umfassung erreicht den Feuerwiderstand
     der nutzungsbezogenen Brandabschnittsbildung, mindestens aber EI 60. Zu- und Abluftöffnungen führen direkt ins Freie.
-    Für andere technische Räume richten sich Bauart und Feuerwiderstand nach Anlagenart, Brandgefahr und Tragwerk des Gebäudes.
-    Noch nicht prüfbar: das Modell weist Brandabschnitte und Lüftungsöffnungen der Räume nicht aus.'
+    Für andere technische Räume richten sich Bauart und Feuerwiderstand nach Anlagenart, Brandgefahr und Tragwerk des Gebäudes.'
   en: 'Rooms for transformers are built as separate fire compartments. Their enclosure matches the fire resistance of the
     use-related compartmentation, but at least EI 60. Supply and exhaust air openings lead directly to the open air. For
     other technical rooms, construction type and fire resistance depend on the type of plant, the fire hazard and the building
-    structure. Not yet checkable: the model does not identify fire compartments or ventilation openings of these rooms.'
+    structure.'
   fr: 'Les locaux de transformateurs sont réalisés en compartiments coupe-feu distincts. Leur enveloppe atteint la résistance
     au feu de la compartimentation liée à l''affectation, au moins EI 60. Les ouvertures d''amenée et d''évacuation d''air
     donnent directement sur l''extérieur. Pour les autres locaux techniques, le mode de construction et la résistance au
-    feu dépendent du type d''installation, du danger d''incendie et de la structure porteuse du bâtiment. Pas encore vérifiable
-    : le modèle ne désigne ni les compartiments ni les ouvertures de ventilation de ces locaux.'
+    feu dépendent du type d''installation, du danger d''incendie et de la structure porteuse du bâtiment.'
   it: 'I locali per trasformatori sono realizzati come compartimenti antincendio separati. Il loro involucro raggiunge la
     resistenza al fuoco della compartimentazione legata all''utilizzo, almeno EI 60. Le aperture di immissione ed espulsione
     dell''aria portano direttamente all''esterno. Per gli altri locali tecnici, tipo di costruzione e resistenza al fuoco
-    dipendono dal tipo di impianto, dal pericolo d''incendio e dalla struttura portante dell''edificio. Non ancora verificabile:
-    il modello non indica né i compartimenti né le aperture di ventilazione di questi locali.'
+    dipendono dal tipo di impianto, dal pericolo d''incendio e dalla struttura portante dell''edificio.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

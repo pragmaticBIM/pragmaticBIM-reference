@@ -1,0 +1,30 @@
+# Pinned copy of the `QuantityType` enum of the data contract
+# (contract/entity_schema_enums.yaml): key and `meaning` IRI. Rules and element attributes
+# may only use the `pbs:quantity_type_*` meanings listed here (tests/test_contract_quantity_types.py).
+# Refresh when the contract adds or renames quantity types.
+# Test setup: if a sibling checkout ../pragmatic-bim-data-contract exists, the test also checks
+# that this list matches the enum there.
+repository: https://github.com/pragmaticBIM/pragmatic-bim-data-contract
+commit: 4321ed5b4442c0788e52d99c6a7ff5f7577f5da2
+path: contract/entity_schema_enums.yaml
+enum: QuantityType
+quantity_types:
+  area_net_horizontal: ifcowl:IfcQuantityArea
+  area_gross_horizontal: ifcowl:IfcQuantityArea
+  area_net_vertical: ifcowl:IfcQuantityArea
+  area_gross_vertical: ifcowl:IfcQuantityArea
+  volume_net: ifcowl:IfcQuantityVolume
+  volume_gross: ifcowl:IfcQuantityVolume
+  length: ifcowl:IfcQuantityLength
+  width: ifcowl:IfcQuantityLength
+  height: ifcowl:IfcQuantityLength
+  perimeter: ifcowl:IfcQuantityLength
+  count: pbs:quantity_type_count
+  ratio: pbs:quantity_type_ratio
+  height_above_walking_surface: pbs:quantity_type_height_above_walking_surface
+  area_glazed: pbs:quantity_type_area_glazed
+  glazing_ratio: pbs:quantity_type_glazing_ratio
+  escape_route_length: pbs:quantity_type_escape_route_length
+  clear_width: pbs:quantity_type_clear_width
+  tread_length_at_inner_side: pbs:quantity_type_tread_length_at_inner_side
+  escape_route_clear_width: pbs:quantity_type_escape_route_clear_width

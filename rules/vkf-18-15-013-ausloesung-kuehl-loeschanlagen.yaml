@@ -8,19 +8,14 @@ name:
   it: Attivazione degli impianti speciali automatica o manuale, con segnale e allarme interno
 description:
   de: 'Kühl- oder Löschmittel kann selbsttätig oder von Hand eingesetzt werden. Anlagen mit selbsttätiger Auslösung sind zusätzlich
-    von Hand betätigbar. Das selbsttätige Ansprechen wird signalisiert und löst einen internen Alarm aus. Noch nicht prüfbar:
-    das Modell enthält keine Trocken- oder Kühllöschanlage mit Flutungsbereichen, Warn- und Auslöseeinrichtungen.'
+    von Hand betätigbar. Das selbsttätige Ansprechen wird signalisiert und löst einen internen Alarm aus.'
   en: 'Cooling or extinguishing agent can be released automatically or by hand. Systems with automatic release can also be
-    operated by hand. Automatic activation is signalled and triggers an internal alarm. Not yet checkable: the model holds
-    no dry or cooling extinguishing system with flooding zones, warning and release devices.'
+    operated by hand. Automatic activation is signalled and triggers an internal alarm.'
   fr: 'L''agent de refroidissement ou d''extinction peut être libéré automatiquement ou à la main. Les installations à déclenchement
     automatique peuvent aussi être actionnées à la main. La mise en action automatique est signalée et déclenche une alarme
-    interne. Pas encore vérifiable : le modèle ne contient aucune installation d''extinction à agent gazeux ou de refroidissement
-    avec zones d''inondation, dispositifs d''alarme et de déclenchement.'
+    interne.'
   it: 'L''agente di raffreddamento o estinguente può essere rilasciato automaticamente o a mano. Gli impianti ad attivazione
-    automatica possono essere azionati anche a mano. L''intervento automatico è segnalato e fa scattare un allarme interno.
-    Non ancora verificabile: il modello non contiene alcun impianto di estinzione a secco o di raffreddamento con zone di
-    saturazione, dispositivi di avviso e di attivazione.'
+    automatica possono essere azionati anche a mano. L''intervento automatico è segnalato e fa scattare un allarme interno.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

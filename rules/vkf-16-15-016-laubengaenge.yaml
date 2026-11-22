@@ -13,30 +13,27 @@ description:
     weiterhin. Führt der Laubengang nur zu einem vertikalen Fluchtweg, haben die Laufflächen 30 Minuten Feuerwiderstand und
     schliessen feuerwiderstandsfähig an die Aussenwand an; die Aussenwandbekleidung besteht aus RF1. Führt er an beiden Enden
     zu vertikalen Fluchtwegen, entfallen die Anforderungen an den Feuerwiderstand der Konstruktion, und die Bekleidung darf
-    brennbar sein. Noch nicht prüfbar: Offenheit und Laufflächenaufbau sind im Modell nicht ausgewiesen.'
+    brennbar sein.'
   en: 'Access balconies lead to vertical escape routes and consist of RF1 materials; linear load-bearing members may be combustible.
     They are permanently open to the outside for at least half, with evenly distributed openings that cannot be closed. No
     fire resistance is required for doors and windows, and the horizontal escape route length still applies. If the access
     balcony leads to only one vertical escape route, its walking surfaces have 30 minutes of fire resistance and connect to
     the external wall with fire resistance; the external wall cladding consists of RF1. If it leads to vertical escape routes
-    at both ends, the fire resistance requirements for the construction fall away and the cladding may be combustible. Not
-    yet checkable: openness and walking surface build-up are not recorded in the model.'
+    at both ends, the fire resistance requirements for the construction fall away and the cladding may be combustible.'
   fr: 'Les coursives mènent jusqu''aux voies d''évacuation verticales et sont en matériaux RF1 ; les éléments porteurs linéaires
     peuvent être combustibles. Elles sont ouvertes en permanence sur l''extérieur pour au moins moitié, avec des ouvertures
     réparties régulièrement et non fermables. Aucune exigence de résistance au feu ne s''applique aux portes et fenêtres,
     et la longueur de la voie d''évacuation horizontale reste à respecter. Si la coursive ne mène qu''à une voie verticale,
     ses surfaces de circulation ont une résistance au feu de 30 minutes et se raccordent à la paroi extérieure avec résistance
     au feu ; le revêtement de façade est en RF1. Si elle mène aux deux extrémités à des voies verticales, les exigences de
-    résistance au feu de la construction tombent et le revêtement peut être combustible. Pas encore vérifiable : l''ouverture
-    et la composition des surfaces de circulation ne figurent pas dans le modèle.'
+    résistance au feu de la construction tombent et le revêtement peut être combustible.'
   it: 'I ballatoi conducono fino alle vie di fuga verticali e sono di materiali RF1; gli elementi portanti lineari possono
     essere combustibili. Sono permanentemente aperti verso l''esterno almeno per metà, con aperture distribuite uniformemente
     e non chiudibili. Per porte e finestre non si richiede resistenza al fuoco e la lunghezza della via di fuga orizzontale
     resta da rispettare. Se il ballatoio conduce a una sola via verticale, le superfici di calpestio hanno 30 minuti di resistenza
     al fuoco e si raccordano con resistenza al fuoco alla parete esterna; il rivestimento della parete esterna è in RF1. Se
     conduce a vie verticali a entrambe le estremità, decadono i requisiti di resistenza al fuoco della costruzione e il rivestimento
-    può essere combustibile. Non ancora verificabile: apertura e stratigrafia delle superfici di calpestio non sono indicate
-    nel modello.'
+    può essere combustibile.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

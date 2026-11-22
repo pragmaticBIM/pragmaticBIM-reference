@@ -9,20 +9,17 @@ name:
 description:
   de: 'Wo für Innenwände, Decken und Böden RF1 gefordert ist, sind raumseitig brennbare Beschichtungen wie Anstriche, Tapeten
     oder Furniere bis 1.5 mm Dicke zulässig. Wo RF1 oder RF2 gefordert ist, dürfen lineare Unterkonstruktionen wie Lattenroste
-    aus RF3 bestehen, sofern die Sichtseite eine geschlossene Schicht der geforderten Gruppe aufweist. Noch nicht prüfbar:
-    das Modell führt die Brandverhaltensgruppe (RF1–RF4, cr) der Baustoffe nicht.'
+    aus RF3 bestehen, sofern die Sichtseite eine geschlossene Schicht der geforderten Gruppe aufweist.'
   en: 'Where RF1 is required for interior walls, floors and ceilings, combustible coatings such as paint, wallpaper or veneer
     up to 1.5 mm thick are allowed on the room side. Where RF1 or RF2 is required, linear substructures such as battens
-    may be RF3, provided the visible side has a closed layer of the required group. Not yet checkable: the model does not
-    carry the reaction-to-fire group (RF1–RF4, cr) of materials.'
+    may be RF3, provided the visible side has a closed layer of the required group.'
   fr: 'Là où RF1 est exigé pour les murs, plafonds et sols intérieurs, des couches combustibles telles que peintures, papiers
     peints ou placages jusqu''à 1,5 mm d''épaisseur sont admises côté local. Là où RF1 ou RF2 est exigé, les sous-constructions
     linéaires telles que lattis peuvent être en RF3, pour autant que la face visible présente une couche fermée du groupe
-    exigé. Pas encore vérifiable : le modèle ne porte pas le groupe de comportement au feu (RF1–RF4, cr) des matériaux.'
+    exigé.'
   it: 'Dove per pareti, soffitti e pavimenti interni è richiesto RF1, sul lato del locale sono ammessi rivestimenti combustibili
     come pitture, carte da parati o impiallacciature fino a 1,5 mm di spessore. Dove è richiesto RF1 o RF2, sottostrutture
-    lineari come listellature possono essere in RF3, purché il lato a vista presenti uno strato chiuso del gruppo richiesto.
-    Non ancora verificabile: il modello non riporta il gruppo di comportamento al fuoco (RF1–RF4, cr) dei materiali.'
+    lineari come listellature possono essere in RF3, purché il lato a vista presenti uno strato chiuso del gruppo richiesto.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -11,23 +11,19 @@ description:
   de: 'Unterirdische Einstellräume brauchen Sprinkler ab 4''800 m² Brandabschnittsfläche je Geschoss, bei mehrgeschossigen
     mit offenen Verbindungen ab 2''400 m². Oberirdische geschlossene Einstellräume brauchen sie ab 4''800 m², teilweise offene
     (Umfassung mit 25 % unverschliessbaren Öffnungen) ab 9''600 m² je Geschoss. Anlagen mit mechanischem Kompaktparkieren
-    für mehr als 50 Fahrzeuge brauchen immer eine Sprinkleranlage. Noch nicht prüfbar: das Modell weist Nutzung, Personenbelegung,
-    Geschosszahl und Brandabschnittsgrösse je Brandabschnitt nicht aus.'
+    für mehr als 50 Fahrzeuge brauchen immer eine Sprinkleranlage.'
   en: 'Underground garages need sprinklers from 4,800 m² compartment area per storey, multi-storey ones with open connections
     from 2,400 m². Closed above-ground garages need them from 4,800 m², partly open ones (enclosure with 25 % non-closable
     openings) from 9,600 m² per storey. Installations with mechanical compact parking for more than 50 vehicles always need
-    a sprinkler system. Not yet checkable: the model does not show use, occupancy, number of storeys and compartment size
-    per fire compartment.'
+    a sprinkler system.'
   fr: 'Les garages souterrains exigent des sprinklers dès 4''800 m² de compartiment par étage, ceux à plusieurs niveaux avec
     liaisons ouvertes dès 2''400 m². Les garages fermés hors sol les exigent dès 4''800 m², les garages partiellement ouverts
     (enveloppe avec 25 % d''ouvertures non obturables) dès 9''600 m² par étage. Les installations de stationnement compact
-    mécanique pour plus de 50 véhicules exigent toujours une installation sprinkler. Pas encore vérifiable : le modèle n''indique
-    pas l''affectation, la charge d''occupation, le nombre d''étages ni la taille du compartiment.'
+    mécanique pour plus de 50 véhicules exigent toujours une installation sprinkler.'
   it: 'Le autorimesse interrate richiedono sprinkler da 4''800 m² di compartimento per piano, quelle a più piani con collegamenti
     aperti da 2''400 m². Quelle chiuse fuori terra li richiedono da 4''800 m², quelle parzialmente aperte (involucro con 25
     % di aperture non chiudibili) da 9''600 m² per piano. Gli impianti di parcheggio compatto meccanico per più di 50 veicoli
-    richiedono sempre un impianto sprinkler. Non ancora verificabile: il modello non indica utilizzo, occupazione, numero
-    di piani e dimensione del compartimento.'
+    richiedono sempre un impianto sprinkler.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

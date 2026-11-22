@@ -8,15 +8,12 @@ name:
   it: Filtri e silenziatori almeno RF3, liquido filtrante con punto di infiammabilità superiore a 160 °C
 description:
   de: 'Filter und Schalldämpfer bestehen mindestens aus Baustoffen der RF3. Filterflüssigkeiten haben einen Flammpunkt über
-    160 °C. Noch nicht prüfbar: Filter und Schalldämpfer sind im Modell keine eigenen Elemente und tragen kein Brandverhalten.'
-  en: 'Filters and silencers are made of at least RF3 materials. Filter liquids have a flash point above 160 °C. Not yet checkable:
-    filters and silencers are not separate elements in the model and carry no reaction to fire.'
+    160 °C.'
+  en: 'Filters and silencers are made of at least RF3 materials. Filter liquids have a flash point above 160 °C.'
   fr: 'Les filtres et silencieux sont réalisés au moins en matériaux RF3. Les liquides de filtre ont un point d''éclair supérieur
-    à 160 °C. Pas encore vérifiable : les filtres et silencieux ne sont pas des éléments propres du modèle et n''ont pas de
-    comportement au feu.'
+    à 160 °C.'
   it: 'Filtri e silenziatori sono realizzati almeno con materiali RF3. I liquidi filtranti hanno un punto di infiammabilità
-    superiore a 160 °C. Non ancora verificabile: filtri e silenziatori non sono elementi propri del modello e non hanno una
-    reazione al fuoco.'
+    superiore a 160 °C.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

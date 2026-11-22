@@ -9,20 +9,16 @@ name:
 description:
   de: 'Abgasanlagen, Lüftungskanäle mit erhöhten Brandschutzanforderungen und ähnliche Leitungen werden im gemeinsamen Schacht
     untereinander und gegen die übrigen Installationen mit 30 Minuten Feuerwiderstand aus RF1-Baustoffen abgetrennt, z.
-    B. mit Brandschutzplatten. Noch nicht prüfbar: das Modell zeigt weder die Schachtinhalte noch die Trennschichten zwischen
-    den Leitungen.'
+    B. mit Brandschutzplatten.'
   en: 'Flue systems, ventilation ducts with enhanced fire protection requirements and similar lines are separated from each
     other and from the other installations in the same shaft with 30 minutes of fire resistance made of RF1 materials, e.g.
-    fire protection boards. Not yet checkable: the model shows neither the contents of a shaft nor the separating layers
-    between the lines.'
+    fire protection boards.'
   fr: 'Les conduits de fumée, les canaux de ventilation à exigences accrues de protection incendie et les conduites semblables
     sont séparés entre eux et des autres installations d''une même gaine par 30 minutes de résistance au feu en matériaux
-    RF1, p. ex. des panneaux coupe-feu. Pas encore vérifiable : le modèle n''indique ni le contenu des gaines ni les séparations
-    entre les conduites.'
+    RF1, p. ex. des panneaux coupe-feu.'
   it: 'Gli impianti di scarico fumi, i canali di ventilazione con requisiti antincendio elevati e condutture simili sono
     separati tra loro e dalle altre installazioni dello stesso cavedio con 30 minuti di resistenza al fuoco in materiali
-    RF1, p. es. lastre antincendio. Non ancora verificabile: il modello non mostra né il contenuto dei cavedi né le separazioni
-    tra le condutture.'
+    RF1, p. es. lastre antincendio.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

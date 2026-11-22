@@ -12,28 +12,24 @@ description:
     und es bestehen Brandschutz- und Feuerwehreinsatzpläne. Als Lager im Freien gelten Freiluftlager und solche mit Dach ohne
     seitliche Wände. Die höchste Lagerfläche beträgt 2''400 m² (überdacht) oder 4''800 m² (Freiluft), unterteilt in Lagerabschnitte
     zu höchstens 100 m². Zwischen Abschnitten gilt ein Abstand von mindestens 10 m oder eine standfeste Schirmmauer REI 90.
-    Lager im Freien haben ausreichend Hydranten; zu Gebäuden beträgt der Abstand ohne weitere Massnahmen 10 m. Noch nicht
-    prüfbar: das Modell weist Lagermenge, Lagerfläche und Lagerart von Reifen und Folgeprodukten nicht aus.'
+    Lager im Freien haben ausreichend Hydranten; zu Gebäuden beträgt der Abstand ohne weitere Massnahmen 10 m.'
   en: 'Up to 1 t or less than 10 m² of storage area, no requirements apply. Stores are protected against unauthorised access,
     and fire protection and fire brigade intervention plans exist. Outdoor stores are open-air stores and stores with a roof
     without side walls. The maximum storage area is 2,400 m² (roofed) or 4,800 m² (open air), divided into storage sections
     of at most 100 m². Between sections a distance of at least 10 m or a stable screen wall REI 90 applies. Outdoor stores
-    have sufficient hydrants; the distance to buildings is 10 m without further measures. Not yet checkable: the model does
-    not show stored mass, storage area and storage type of tyres and derived products.'
+    have sufficient hydrants; the distance to buildings is 10 m without further measures.'
   fr: 'Jusqu''à 1 t ou moins de 10 m² de surface de stockage, aucune exigence ne s''applique. Les dépôts sont protégés contre
     l''accès non autorisé et des plans de protection incendie et d''intervention des sapeurs-pompiers existent. Sont des dépôts
     extérieurs les dépôts à ciel ouvert et ceux avec toit sans parois latérales. La surface maximale est de 2''400 m² (couvert)
     ou 4''800 m² (à ciel ouvert), subdivisée en sections de 100 m² au plus. Entre sections, une distance d''au moins 10 m
     ou un mur écran stable REI 90 s''applique. Les dépôts extérieurs disposent de suffisamment de bornes hydrantes ; la distance
-    aux bâtiments est de 10 m sans autre mesure. Pas encore vérifiable : le modèle n''indique ni la quantité, ni la surface,
-    ni le mode de stockage des pneus et produits dérivés.'
+    aux bâtiments est de 10 m sans autre mesure.'
   it: 'Fino a 1 t o meno di 10 m² di superficie di stoccaggio non valgono requisiti. I depositi sono protetti dall''accesso
     non autorizzato ed esistono piani antincendio e d''intervento dei pompieri. Sono depositi all''aperto quelli senza protezione
     dalle intemperie e quelli con copertura senza pareti laterali. La superficie massima è 2''400 m² (coperti) o 4''800 m²
     (scoperti), suddivisa in sezioni di al massimo 100 m². Tra le sezioni vale una distanza di almeno 10 m o un muro schermo
     stabile REI 90. I depositi all''aperto dispongono di idranti sufficienti; la distanza dagli edifici è 10 m senza altre
-    misure. Non ancora verificabile: il modello non indica quantità, superficie né tipo di stoccaggio di pneumatici e prodotti
-    derivati.'
+    misure.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

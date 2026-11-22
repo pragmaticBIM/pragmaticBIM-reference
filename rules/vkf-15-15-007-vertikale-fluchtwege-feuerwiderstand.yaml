@@ -9,16 +9,15 @@ name:
 description:
   de: 'Die Umfassung von Treppenhäusern und anderen vertikalen Fluchtwegen braucht mindestens: geringe Höhe REI
     30, mittlere Höhe REI 60, Hochhaus REI 90. Diese Werte gelten auch mit Sprinkleranlage; andere Nutzungen verlangen
-    teils mehr. Noch nicht prüfbar: das Modell zeigt nicht, welche Wände ein Treppenhaus umschliessen.'
+    teils mehr.'
   en: 'The enclosure of staircases and other vertical escape routes needs at least: low height REI 30, medium height
-    REI 60, high-rise REI 90. These values apply with sprinklers too; other uses partly require more. Not yet checkable:
-    the model does not show which walls enclose a staircase.'
+    REI 60, high-rise REI 90. These values apply with sprinklers too; other uses partly require more.'
   fr: 'L''enveloppe des cages d''escalier et autres voies d''évacuation verticales exige au moins : faible hauteur
     REI 30, hauteur moyenne REI 60, tour REI 90. Ces valeurs valent aussi avec sprinklers ; d''autres affectations
-    exigent parfois davantage. Pas encore vérifiable : le modèle n''indique pas quels murs entourent une cage d''escalier.'
+    exigent parfois davantage.'
   it: 'L''involucro dei vani scala e delle altre vie di fuga verticali richiede almeno: altezza ridotta REI 30,
     altezza media REI 60, edificio alto REI 90. Questi valori valgono anche con sprinkler; altri utilizzi richiedono
-    talvolta di più. Non ancora verificabile: il modello non indica quali pareti racchiudono un vano scala.'
+    talvolta di più.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

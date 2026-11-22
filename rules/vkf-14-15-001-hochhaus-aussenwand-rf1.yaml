@@ -9,20 +9,16 @@ name:
 description:
   de: 'Aussenwand und Aussenwandbekleidungssystem von Hochhäusern bestehen aus RF1-Baustoffen. Ausgenommen sind Kunststoffdübel,
     punktuelle Rückverankerungen von Dämmungen und flächenmässig nicht relevante Bauteile wie Anschlussfugen oder Dichtungen.
-    Bei Lichtbändern genügt mit Löschanlagenkonzept RF2. Noch nicht prüfbar: das Modell führt die Brandverhaltensgruppe
-    (RF1–RF4, cr) der Baustoffe nicht.'
+    Bei Lichtbändern genügt mit Löschanlagenkonzept RF2.'
   en: 'The external wall and the external wall cladding system of high-rise buildings are made of RF1 materials. Exceptions
     are plastic anchors, point back-anchorages of insulation and components of negligible area such as joints or seals.
-    With an extinguishing-system concept, RF2 suffices for light bands. Not yet checkable: the model does not carry the
-    reaction-to-fire group (RF1–RF4, cr) of materials.'
+    With an extinguishing-system concept, RF2 suffices for light bands.'
   fr: 'Le mur extérieur et le système de revêtement de façade des tours sont en matériaux RF1. Sont exceptés les chevilles
     en plastique, les ancrages ponctuels de l''isolation et les éléments de surface négligeable tels que joints ou garnitures.
-    Pour les bandeaux vitrés, RF2 suffit avec un concept à installation d''extinction. Pas encore vérifiable : le modèle
-    ne porte pas le groupe de comportement au feu (RF1–RF4, cr) des matériaux.'
+    Pour les bandeaux vitrés, RF2 suffit avec un concept à installation d''extinction.'
   it: 'La parete esterna e il sistema di rivestimento di facciata degli edifici alti sono in materiali RF1. Sono esclusi
     i tasselli in plastica, gli ancoraggi puntuali dell''isolamento e gli elementi di superficie irrilevante come giunti
-    o guarnizioni. Per le finestre a nastro basta RF2 con concetto a impianto di spegnimento. Non ancora verificabile: il
-    modello non riporta il gruppo di comportamento al fuoco (RF1–RF4, cr) dei materiali.'
+    o guarnizioni. Per le finestre a nastro basta RF2 con concetto a impianto di spegnimento.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

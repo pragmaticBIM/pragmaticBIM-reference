@@ -11,27 +11,23 @@ description:
     Verkehrswege sind mindestens 1.2 m, Hauptverkehrswege mindestens 1.8 m breit. Wo mehrere Hauptverkehrswege zusammenführen,
     braucht es Fluchtstrassen von mindestens 3.6 m Breite, die an beiden Enden direkt ins Freie führende Ausgänge mit gleicher
     Türbreite aufweisen. Die Strecke in der Fluchtstrasse zählt nicht zur Gesamtfluchtweglänge. Mündet aus einem Raum nur
-    ein Fluchtweg in die Fluchtstrasse, gilt in der Nutzungseinheit höchstens 20 m. Noch nicht prüfbar: Verkehrswege, Hauptverkehrswege
-    und Fluchtstrassen sind im Modell nicht als solche ausgewiesen.'
+    ein Fluchtweg in die Fluchtstrasse, gilt in der Nutzungseinheit höchstens 20 m.'
   en: 'Shops must have circulation routes serving escape; where they merge, main circulation routes arise. Circulation routes
     are at least 1.2 m wide and main routes at least 1.8 m. Where several main routes merge, escape streets at least 3.6 m
     wide are needed, with exits at both ends leading directly outside and having the same door width as the street. The distance
     within the escape street is not counted towards the total escape route length. If a room has only one escape route opening
-    onto the escape street, the escape route within the use unit is limited to 20 m. Not yet checkable: circulation routes,
-    main routes and escape streets are not identified as such in the model.'
+    onto the escape street, the escape route within the use unit is limited to 20 m.'
   fr: 'Les commerces comportent des voies de circulation servant à la fuite ; là où elles se rejoignent, on crée des voies
     principales. Les voies de circulation ont au moins 1,2 m de large et les voies principales au moins 1,8 m. Là où plusieurs
     voies principales se rejoignent, il faut des rues de fuite d''au moins 3,6 m de large, dotées aux deux extrémités de sorties
     menant directement à l''extérieur et de même largeur de porte que la rue. Le tronçon dans la rue de fuite n''entre pas
     dans la longueur totale de la voie d''évacuation. Si un local n''a qu''une voie d''évacuation débouchant sur la rue de
-    fuite, la voie dans l''unité d''utilisation est limitée à 20 m. Pas encore vérifiable : les voies de circulation, voies
-    principales et rues de fuite ne sont pas désignées comme telles dans le modèle.'
+    fuite, la voie dans l''unité d''utilisation est limitée à 20 m.'
   it: 'Nei negozi vanno previsti percorsi destinati alla fuga; dove confluiscono si formano percorsi principali. I percorsi
     sono larghi almeno 1,2 m e quelli principali almeno 1,8 m. Dove confluiscono più percorsi principali servono strade di
     fuga larghe almeno 3,6 m, con uscite a entrambe le estremità che portano direttamente all''esterno e con la stessa larghezza
     di porta della strada. Il tratto nella strada di fuga non conta nella lunghezza complessiva della via di fuga. Se da un
-    locale parte una sola via di fuga che sbocca nella strada di fuga, nell''unità d''utilizzo il limite è 20 m. Non ancora
-    verificabile: percorsi, percorsi principali e strade di fuga non sono identificati come tali nel modello.'
+    locale parte una sola via di fuga che sbocca nella strada di fuga, nell''unità d''utilizzo il limite è 20 m.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

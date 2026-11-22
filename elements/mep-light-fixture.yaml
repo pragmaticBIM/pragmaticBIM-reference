@@ -423,7 +423,9 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 13
-# Safety lighting planning attributes (VKF 17-15). Meant for PredefinedType SECURITYLIGHTING.
+# Safety lighting planning attributes (VKF 17-15, #123). Meant for PredefinedType SECURITYLIGHTING.
+# performance_property_key and target_operator are not set: the data contract has no
+# safety-lighting keys yet. Add them when the contract defines them (#123 remainder).
 - name: SafetyRatedDuration
   pset: ePset_SafetyLighting
   definition:
@@ -437,8 +439,6 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-fire-protection
-  performance_property_key: pbs:fire_property_safety_rated_duration
-  target_operator: minimum
   is_applicability: false
   status: active
   sort_order: 14
@@ -455,8 +455,6 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-fire-protection
-  performance_property_key: pbs:fire_property_safety_start_up_time
-  target_operator: maximum
   is_applicability: false
   status: active
   sort_order: 15
@@ -497,7 +495,6 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-fire-protection
-  performance_property_key: pbs:fire_property_safety_supply_type
   is_applicability: false
   status: active
   sort_order: 16
@@ -514,8 +511,6 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-fire-protection
-  performance_property_key: pbs:fire_property_safety_floor_illuminance
-  target_operator: minimum
   is_applicability: false
   status: active
   sort_order: 17
@@ -552,8 +547,6 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/qas-fire-protection
-  performance_property_key: pbs:fire_property_safety_not_switchable
-  target_operator: equals
   is_applicability: false
   status: active
   sort_order: 18

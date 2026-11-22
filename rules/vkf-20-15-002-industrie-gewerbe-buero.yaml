@@ -9,21 +9,16 @@ name:
 description:
   de: 'Bei Industrie-, Gewerbe- und Bürobauten kann die Brandschutzbehörde eine Überwachung verlangen, wenn die zulässigen
     Brandabschnittsgrössen überschritten werden und die Anlage für die aktuelle Nutzung sinnvoll ist, wenn langsam anlaufende
-    Brände wie Schwelbrände zu erwarten sind oder wenn Wasser nicht als Löschmittel dienen darf. Noch nicht prüfbar: das Modell
-    weist Nutzung, Personenbelegung, Geschosszahl und Brandabschnittsgrösse je Brandabschnitt nicht aus.'
+    Brände wie Schwelbrände zu erwarten sind oder wenn Wasser nicht als Löschmittel dienen darf.'
   en: 'For industrial, commercial and office buildings the fire protection authority can require monitoring if the permitted
     compartment sizes are exceeded and the system makes sense for the current use, if slowly developing fires such as smouldering
-    fires are expected, or if water must not be used as extinguishing agent. Not yet checkable: the model does not show use,
-    occupancy, number of storeys and compartment size per fire compartment.'
+    fires are expected, or if water must not be used as extinguishing agent.'
   fr: 'Pour les bâtiments industriels, artisanaux et de bureaux, l''autorité de protection incendie peut exiger une surveillance
     si les tailles de compartiment admises sont dépassées et que l''installation est judicieuse pour l''affectation actuelle,
-    si des feux à développement lent comme les feux couvants sont attendus ou si l''eau ne peut pas servir d''agent extincteur.
-    Pas encore vérifiable : le modèle n''indique pas l''affectation, la charge d''occupation, le nombre d''étages ni la taille
-    du compartiment.'
+    si des feux à développement lent comme les feux couvants sont attendus ou si l''eau ne peut pas servir d''agent extincteur.'
   it: 'Per edifici industriali, artigianali e per uffici l''autorità di protezione antincendio può richiedere la sorveglianza
     se le dimensioni ammesse dei compartimenti sono superate e l''impianto è sensato per l''utilizzo attuale, se si attendono
-    incendi a sviluppo lento come quelli covanti o se l''acqua non può servire da agente estinguente. Non ancora verificabile:
-    il modello non indica utilizzo, occupazione, numero di piani e dimensione del compartimento.'
+    incendi a sviluppo lento come quelli covanti o se l''acqua non può servire da agente estinguente.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

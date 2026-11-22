@@ -13,31 +13,27 @@ description:
     bei Stoffen verschiedener Gefahrklassen im selben Raum richten sich die Massnahmen nach dem gefährlichsten Produkt. Der
     Anhang erlaubt bis 1''000 kg bzw. l im selben Brandabschnitt Zusammen-, Getrennt- oder Separatlagerung je nach Stoffpaarung;
     Getrenntlagerung heisst Schirmmauer mindestens EI 60 oder 2.5 m Abstand. Auf Brand- und Explosionsgefahr und Rauchverbot
-    ist gut sichtbar hinzuweisen. Noch nicht prüfbar: das Modell weist Stoffklassierung, Lagermenge, Lagerart und Lagerort
-    gefährlicher Stoffe nicht aus.'
+    ist gut sichtbar hinzuweisen.'
   en: 'A storage concept is drawn up for stores with hazardous substances (inventory, location, type and container, structural,
     technical and organisational measures). Substances that can react dangerously with each other, those with special fire
     behaviour or those that endanger people in a fire go into separate, suitably built fire compartments; for substances of
     different hazard classes in the same room, measures follow the most hazardous product. The annex allows, up to 1,000 kg
     or l in the same compartment, storing together, apart or separately depending on the pair of substances; storing apart
-    means a screen wall of at least EI 60 or 2.5 m distance. Fire and explosion hazard and the smoking ban are signed visibly.
-    Not yet checkable: the model does not show substance classification, stored quantity, type and location of hazardous substances.'
+    means a screen wall of at least EI 60 or 2.5 m distance. Fire and explosion hazard and the smoking ban are signed visibly.'
   fr: 'Un concept de stockage est établi pour les dépôts de substances dangereuses (liste, emplacement, type et récipient,
     mesures constructives, techniques et organisationnelles). Les substances pouvant réagir dangereusement entre elles, celles
     au comportement au feu particulier ou dangereuses pour les personnes en cas d''incendie vont dans des compartiments distincts
     et adaptés ; pour des substances de classes de danger différentes dans le même local, les mesures suivent le produit le
     plus dangereux. L''annexe admet, jusqu''à 1''000 kg ou l dans le même compartiment, un stockage commun, séparé ou à part
     selon la paire de substances ; séparé signifie mur écran au moins EI 60 ou 2.5 m de distance. Le danger d''incendie et
-    d''explosion et l''interdiction de fumer sont signalés de façon bien visible. Pas encore vérifiable : le modèle n''indique
-    ni la classification des substances, ni la quantité stockée, ni le mode et le lieu de stockage des substances dangereuses.'
+    d''explosion et l''interdiction de fumer sont signalés de façon bien visible.'
   it: 'Per i depositi con sostanze pericolose è redatto un concetto di stoccaggio (elenco, ubicazione, tipo e contenitore,
     misure edilizie, tecniche e organizzative). Le sostanze che possono reagire pericolosamente tra loro, quelle con comportamento
     al fuoco particolare o che mettono in pericolo le persone in caso d''incendio vanno in compartimenti separati e adeguati;
     per sostanze di classi di pericolo diverse nello stesso locale le misure seguono il prodotto più pericoloso. L''allegato
     ammette, fino a 1''000 kg o l nello stesso compartimento, stoccaggio insieme, separato o a parte secondo l''abbinamento
     di sostanze; separato significa muro schermo almeno EI 60 o 2.5 m di distanza. Pericolo d''incendio e d''esplosione e
-    divieto di fumare sono segnalati in modo ben visibile. Non ancora verificabile: il modello non indica classificazione
-    delle sostanze, quantità stoccata né tipo e luogo di stoccaggio delle sostanze pericolose.'
+    divieto di fumare sono segnalati in modo ben visibile.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

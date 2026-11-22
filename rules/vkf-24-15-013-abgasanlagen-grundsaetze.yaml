@@ -11,28 +11,23 @@ description:
     werden nur System-Abgasanlagen aus dauerwärmebeständigen Bauprodukten und geeigneten Werkstoffen; Wärmedämmstoffe sind
     RF1. Die Anlagen werden nach Temperatur, Druck, Kondensat- und Korrosionsbeständigkeit, Russbrandbeständigkeit, Abstand
     zu Brennbarem, Wärmedurchlasswiderstand und Feuerwiderstand klassiert und gut sichtbar mit diesen Kriterien, Druckklasse,
-    Reinigungsart, Hersteller und Installationsfirma gekennzeichnet. Noch nicht prüfbar: das Modell enthält keine Abgasanlage
-    mit Klassierung, Führung, Mindesthöhe über Dach und Sicherheitsabstand.'
+    Reinigungsart, Hersteller und Installationsfirma gekennzeichnet.'
   en: 'Flue systems and connecting pipes discharge the flue gases safely, can be cleaned and create no fire hazard. Only system
     flues made of heat-resistant construction products and suitable materials are used; thermal insulation is RF1. The systems
     are classified by temperature, pressure, condensate and corrosion resistance, soot-fire resistance, distance to combustibles,
     thermal resistance and fire resistance, and are clearly marked with these criteria, pressure class, cleaning method, manufacturer
-    and installer. Not yet checkable: the model holds no flue system with classification, routing, minimum height above roof
-    and clearance.'
+    and installer.'
   fr: 'Les installations d''évacuation des gaz et tuyaux de raccordement évacuent les gaz sans danger, se nettoient et ne
     créent pas de danger d''incendie. Seuls des systèmes d''évacuation en produits de construction résistant à la chaleur
     et en matériaux appropriés sont utilisés ; les isolants thermiques sont RF1. Les installations sont classées selon température,
     pression, résistance au condensat et à la corrosion, résistance au feu de suie, distance aux combustibles, résistance
     thermique et résistance au feu, et marquées de façon bien visible avec ces critères, la classe de pression, le mode de
-    nettoyage, le fabricant et l''installateur. Pas encore vérifiable : le modèle ne contient aucune installation d''évacuation
-    des gaz avec classification, tracé, hauteur minimale au-dessus du toit ni distance de sécurité.'
+    nettoyage, le fabricant et l''installateur.'
   it: 'Gli impianti di scarico fumi e i tubi di raccordo scaricano i fumi senza pericolo, sono pulibili e non creano pericolo
     d''incendio. Si usano solo sistemi di scarico fumi in prodotti da costruzione resistenti al calore e materiali idonei;
     gli isolanti termici sono RF1. Gli impianti sono classificati per temperatura, pressione, resistenza a condensa e corrosione,
     resistenza al fuoco di fuliggine, distanza dai combustibili, resistenza termica e resistenza al fuoco e marcati ben visibilmente
-    con questi criteri, classe di pressione, tipo di pulizia, costruttore e installatore. Non ancora verificabile: il modello
-    non contiene alcun impianto di scarico fumi con classificazione, percorso, altezza minima sopra il tetto né distanza di
-    sicurezza.'
+    con questi criteri, classe di pressione, tipo di pulizia, costruttore e installatore.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:
