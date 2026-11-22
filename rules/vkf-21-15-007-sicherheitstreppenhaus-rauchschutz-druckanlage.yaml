@@ -11,24 +11,21 @@ description:
     erreichbar sind, erhalten eine Rauchschutz-Druckanlage. Im Treppenraum herrscht höherer Überdruck als in der Schleuse.
     Die geschützten Bereiche sind eigene Brandabschnitte; die Anlage startet über Brandmelder selbsttätig, ist von Hand ein-
     und ausschaltbar und wirkt bei Handauslösung nur im Spülbetrieb. Für Aufzugsschächte der Feuerwehr ist ein Leistungsnachweis
-    nötig. Noch nicht prüfbar: das Modell enthält keine Auslöse- und Bedienstellen der Anlage und keine Stromquelle für Sicherheitszwecke.'
+    nötig.'
   en: 'Stair enclosures of safety stairwells that are not reached on every storey through permanently open access balconies
     or forecourts get a smoke-protection pressurization system. The stair enclosure holds a higher overpressure than the lock.
     The protected areas are separate fire compartments; the system starts automatically on fire detectors, can be switched
-    on and off by hand and acts only in purge mode when started by hand. Fire-brigade lift shafts need a performance proof.
-    Not yet checkable: the model holds no trigger and control points of the system and no power source for safety purposes.'
+    on and off by hand and acts only in purge mode when started by hand. Fire-brigade lift shafts need a performance proof.'
   fr: 'Les cages de sécurité qui ne sont pas accessibles à chaque étage par des coursives ou parvis constamment ouverts sur
     l''extérieur reçoivent une installation de surpression. La cage est à une surpression plus élevée que le sas. Les zones
     protégées forment des compartiments distincts ; l''installation démarre seule sur détecteurs d''incendie, peut être enclenchée
     et arrêtée à la main et n''agit qu''en mode balayage en cas de commande manuelle. Les gaines d''ascenseur des sapeurs-pompiers
-    exigent une preuve de performance. Pas encore vérifiable : le modèle ne contient ni points de déclenchement et de commande
-    de l''installation ni source d''énergie de sécurité.'
+    exigent une preuve de performance.'
   it: 'I vani scale di sicurezza non raggiungibili a ogni piano tramite ballatoi o piazzali costantemente aperti verso l''esterno
     ricevono un impianto di pressurizzazione. Nel vano vige una sovrappressione maggiore che nella camera di compensazione.
     Le zone protette sono compartimenti separati; l''impianto parte da solo su rivelatori d''incendio, può essere acceso e
     spento a mano e con comando manuale agisce solo in modalità lavaggio. Per i vani degli ascensori dei pompieri serve una
-    prova di prestazione. Non ancora verificabile: il modello non contiene punti di attivazione e comando dell''impianto né
-    una fonte di energia di sicurezza.'
+    prova di prestazione.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

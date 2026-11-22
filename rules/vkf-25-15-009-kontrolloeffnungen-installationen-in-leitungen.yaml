@@ -10,22 +10,18 @@ description:
   de: 'Lüftungsleitungen sind so angeordnet und mit Öffnungen versehen, dass sie kontrolliert und gereinigt werden können.
     In Lüftungsleitungen und luftführenden Schächten (ausser Lüftungsdecken und -böden) dürfen nur der Anlage dienende Teile
     installiert sein. Lufttechnische Anlagen, ausser solchen mit erhöhter Lufttemperatur, brauchen keine Sicherheitsabstände
-    zu brennbarem Material. Noch nicht prüfbar: Revisionsöffnungen und Fremdinstallationen in Leitungen sind im Modell nicht
-    geführt.'
+    zu brennbarem Material.'
   en: 'Ventilation ducts are arranged and fitted with openings so that they can be inspected and cleaned. Only parts that
     serve the system may be installed in ventilation ducts and air-carrying shafts (except ventilation ceilings and floors).
-    Ventilation systems, other than those with raised air temperature, need no safety distance to combustible material. Not
-    yet checkable: inspection openings and foreign installations inside ducts are not held in the model.'
+    Ventilation systems, other than those with raised air temperature, need no safety distance to combustible material.'
   fr: 'Les conduits de ventilation sont disposés et dotés d''ouvertures de façon à pouvoir être contrôlés et nettoyés. Seuls
     des éléments propres à l''installation peuvent être installés dans les conduits et gaines véhiculant l''air (hors plafonds
     et planchers de ventilation). Les installations de ventilation, hors celles à température d''air élevée, n''exigent pas
-    de distance de sécurité par rapport aux matériaux combustibles. Pas encore vérifiable : les ouvertures de contrôle et
-    les installations étrangères dans les conduits ne sont pas gérées dans le modèle.'
+    de distance de sécurité par rapport aux matériaux combustibles.'
   it: 'I condotti di ventilazione sono disposti e dotati di aperture in modo da poter essere controllati e puliti. Nei condotti
     e nei cavedi che veicolano l''aria (esclusi controsoffitti e pavimenti di ventilazione) possono essere installate solo
     parti al servizio dell''impianto. Gli impianti di ventilazione, esclusi quelli con temperatura dell''aria elevata, non
-    richiedono distanze di sicurezza dai materiali combustibili. Non ancora verificabile: le aperture di ispezione e le installazioni
-    estranee nei condotti non sono gestite nel modello.'
+    richiedono distanze di sicurezza dai materiali combustibili.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -9,19 +9,15 @@ name:
 description:
   de: 'In Räumen mit grosser Personenbelegung und in Verkaufsgeschäften werden Ausgänge und Fluchtwege mit sicherheitsbeleuchteten
     Rettungszeichen gekennzeichnet. Deren Beleuchtung bleibt eingeschaltet, solange sich Personen im Raum aufhalten. Sowohl
-    die Räume als auch die Fluchtwege erhalten eine Sicherheitsbeleuchtung. Noch nicht prüfbar: das Modell zeigt weder die
-    Betriebsart der Zeichenbeleuchtung noch die Personenbelegung.'
+    die Räume als auch die Fluchtwege erhalten eine Sicherheitsbeleuchtung.'
   en: 'In rooms with large occupancy and in shops, exits and escape routes are marked with escape signs on safety lighting.
-    Their lighting stays on as long as people are in the room. Both the rooms and the escape routes get safety lighting.
-    Not yet checkable: the model shows neither the operating mode of the sign lighting nor the occupancy.'
+    Their lighting stays on as long as people are in the room. Both the rooms and the escape routes get safety lighting.'
   fr: 'Dans les locaux à grande occupation et dans les magasins, les sorties et voies d''évacuation sont signalées par des
     signaux de sauvetage éclairés en sécurité. Leur éclairage reste allumé tant que des personnes sont présentes dans le
-    local. Les locaux comme les voies d''évacuation reçoivent un éclairage de sécurité. Pas encore vérifiable : le modèle
-    n''indique ni le mode de fonctionnement de l''éclairage des signaux ni l''occupation.'
+    local. Les locaux comme les voies d''évacuation reçoivent un éclairage de sécurité.'
   it: 'Nei locali con grande affollamento e nei negozi uscite e vie di fuga sono segnalate con segnali di salvataggio dotati
     di illuminazione di sicurezza. La loro illuminazione resta accesa finché nel locale ci sono persone. Sia i locali sia
-    le vie di fuga ricevono un''illuminazione di sicurezza. Non ancora verificabile: il modello non indica né la modalità
-    di funzionamento dell''illuminazione dei segnali né l''affollamento.'
+    le vie di fuga ricevono un''illuminazione di sicurezza.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

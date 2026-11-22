@@ -11,25 +11,22 @@ description:
     m², sind feuerwiderstandsfähige Schleusen oder Vorplätze zu erstellen. Der Feuerwiderstand der Schleusen entspricht dem
     des Tragwerks, mindestens aber EI 30. Die Türen der Schleusen zum vertikalen oder horizontalen Fluchtweg sind mit E 30
     selbstschliessend auszuführen. Der Anhang hält fest, dass abgeschlossene Zugänge von Parkings zu vertikalen Fluchtwegen
-    (z. B. bei Wohnbauten) nicht als Fluchtweg anrechenbar sind. Noch nicht prüfbar: Brandabschnittsflächen und Schleusen
-    sind im Modell nicht ausgewiesen.'
+    (z. B. bei Wohnbauten) nicht als Fluchtweg anrechenbar sind.'
   en: 'If exits of a parking area lead into a vertical escape route and the fire compartment area exceeds 1200 m², fire-resistant
     airlocks or forecourts are to be provided. The fire resistance of the airlocks matches that of the load-bearing structure
     but is at least EI 30. The airlock doors to the vertical or horizontal escape route are to be self-closing with E 30.
     The appendix notes that locked accesses from car parks to vertical escape routes (e.g. in residential buildings) do not
-    count as escape routes. Not yet checkable: fire compartment areas and airlocks are not identified in the model.'
+    count as escape routes.'
   fr: 'Si les sorties d''un local de stationnement mènent dans une voie d''évacuation verticale et que la surface du compartiment
     dépasse 1200 m², il faut réaliser des sas ou parvis résistants au feu. La résistance au feu des sas correspond à celle
     de la structure porteuse, mais atteint au moins EI 30. Les portes des sas donnant sur la voie verticale ou horizontale
     sont à fermeture automatique en E 30. L''annexe précise que les accès verrouillés des parkings aux voies verticales (p.
-    ex. dans les immeubles d''habitation) ne comptent pas comme voies d''évacuation. Pas encore vérifiable : les surfaces
-    de compartiment et les sas ne sont pas désignés dans le modèle.'
+    ex. dans les immeubles d''habitation) ne comptent pas comme voies d''évacuation.'
   it: 'Se le uscite di un locale di parcheggio conducono in una via di fuga verticale e la superficie del compartimento supera
     1200 m², vanno realizzati filtri o piazzali resistenti al fuoco. La resistenza al fuoco dei filtri corrisponde a quella
     della struttura portante, ma è almeno EI 30. Le porte dei filtri verso la via verticale o orizzontale sono a chiusura
     automatica in E 30. L''allegato precisa che gli accessi chiusi a chiave dai parcheggi alle vie verticali (p. es. negli
-    edifici d''abitazione) non contano come vie di fuga. Non ancora verificabile: superfici dei compartimenti e filtri non
-    sono indicati nel modello.'
+    edifici d''abitazione) non contano come vie di fuga.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

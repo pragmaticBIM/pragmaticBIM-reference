@@ -13,30 +13,27 @@ description:
     Abluftleitungen EI 30 oder mehr (wie die Brandabschnittsbildung). Ventilatoren stehen in einem eigenen Raum mit mindestens
     EI 60; bei grossen Abluftmengen (über 4''000 bzw. 12''000 m³/h) gelten getrennte Anlagen und Räume. Küchenabluftleitungen
     im Installationsschacht werden mit einer 30-Minuten-Brandschutzplatte aus RF1 voneinander und von anderen Installationen
-    getrennt. Noch nicht prüfbar: Abluftmenge, Küchenart und Fettabscheider sind im Modell nicht erfasst.'
+    getrennt.'
   en: 'Kitchen extract ducts are RF1 (heat-resistant) and have a grease separator or filter near the extraction point. In
     residential buildings RF1 is enough for hood extract; after the hood and before heat recovery a VKF-recognised shut-off
     device is installed. Commercial kitchens have separate units and ducts; outside the kitchen the extract ducts are EI 30
     or more (matching the compartmentation). Fans stand in their own room of at least EI 60; for large extract volumes (above
     4,000 or 12,000 m³/h) separate systems and rooms apply. Kitchen extract ducts in an installation shaft are separated from
-    each other and from other installations with a 30-minute fire protection board of RF1. Not yet checkable: extract volume,
-    kitchen type and grease separators are not captured in the model.'
+    each other and from other installations with a 30-minute fire protection board of RF1.'
   fr: 'Les conduits d''air repris de cuisine sont en RF1 (résistants à la chaleur durable) et ont un séparateur ou filtre
     à graisse près du point d''aspiration. Dans les bâtiments d''habitation, RF1 suffit pour la hotte ; après la hotte et
     avant la récupération de chaleur, un dispositif d''obturation reconnu par l''AEAI est installé. Les cuisines professionnelles
     ont des centrales et conduits séparés ; hors de la cuisine, les conduits sont EI 30 ou plus (comme la compartimentation).
     Les ventilateurs sont dans un local propre d''au moins EI 60 ; pour de grands débits (au-delà de 4''000 ou 12''000 m³/h),
     installations et locaux séparés. Dans une gaine technique, les conduits d''air repris de cuisine sont séparés entre eux
-    et des autres installations par une plaque de protection incendie de 30 minutes en RF1. Pas encore vérifiable : le débit
-    d''air repris, le type de cuisine et les séparateurs de graisse ne sont pas saisis dans le modèle.'
+    et des autres installations par une plaque de protection incendie de 30 minutes en RF1.'
   it: 'I condotti di scarico delle cucine sono in RF1 (resistenti al calore) e hanno un separatore o filtro di grasso vicino
     al punto di aspirazione. Negli edifici abitativi basta RF1 per la cappa; dopo la cappa e prima del recupero di calore
     è installato un dispositivo di intercettazione riconosciuto dall''AICAA. Le cucine professionali hanno centrali e condotti
     separati; fuori dalla cucina i condotti sono EI 30 o più (come la compartimentazione). I ventilatori stanno in un locale
     proprio di almeno EI 60; per grandi portate (oltre 4''000 o 12''000 m³/h) valgono impianti e locali separati. In un cavedio
     impiantistico i condotti di scarico delle cucine sono separati tra loro e dalle altre installazioni con una lastra antincendio
-    da 30 minuti in RF1. Non ancora verificabile: portata di scarico, tipo di cucina e separatori di grasso non sono rilevati
-    nel modello.'
+    da 30 minuti in RF1.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -8,19 +8,15 @@ name:
   it: Tenere le vie di fuga sempre libere e usarle solo per la circolazione
 description:
   de: 'Fluchtwege und Rettungswege dürfen als normale Verkehrswege dienen, müssen aber jederzeit frei und sicher benutzbar
-    bleiben. Ausserhalb der Nutzungseinheit dürfen sie keinem anderen Zweck dienen, etwa als Lager- oder Aufenthaltsfläche.
-    Noch nicht prüfbar: Möblierung und Lagergut im Fluchtweg sind im Modell nicht eindeutig einer Nutzung zugeordnet.'
+    bleiben. Ausserhalb der Nutzungseinheit dürfen sie keinem anderen Zweck dienen, etwa als Lager- oder Aufenthaltsfläche.'
   en: 'Escape and rescue routes may serve as ordinary circulation routes but must stay clear and safely usable at all times.
-    Outside the use unit they must not serve any other purpose, for example as storage or waiting areas. Not yet checkable:
-    furniture and stored goods in an escape route are not clearly assigned to a use in the model.'
+    Outside the use unit they must not serve any other purpose, for example as storage or waiting areas.'
   fr: 'Les voies d''évacuation et de sauvetage peuvent servir de voies de circulation usuelles, mais elles restent libres
     et utilisables en toute sécurité à tout moment. En dehors de l''unité d''utilisation, elles ne servent à aucun autre usage,
-    par exemple de dépôt ou de zone d''attente. Pas encore vérifiable : le mobilier et les objets entreposés dans une voie
-    d''évacuation ne sont pas clairement rattachés à un usage dans le modèle.'
+    par exemple de dépôt ou de zone d''attente.'
   it: 'Le vie di fuga e di salvataggio possono servire da normali vie di circolazione, ma restano libere e utilizzabili in
     sicurezza in ogni momento. Al di fuori dell''unità d''utilizzo non servono ad altri scopi, per esempio come deposito o
-    zona di attesa. Non ancora verificabile: arredi e merci depositate in una via di fuga non sono assegnati chiaramente a
-    un utilizzo nel modello.'
+    zona di attesa.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -10,24 +10,20 @@ description:
   de: 'Abströmöffnungen liegen so, dass eine wirksame Entrauchung ohne Gefahr für Personen und Gebäude möglich ist, und zwar
     an der höchsten Stelle des Raumes, etwa im Dach oder im Decken- bzw. Dachbereich der Fassaden. Lassen sie sich nicht im
     Dach einbauen, werden sie gleichmässig auf zwei möglichst gegenüberliegende Fassaden verteilt. Einzelne Öffnungen der
-    Entrauchung mit Feuerwehrlüftern messen mindestens 0.5 m² bei mindestens 0.1 m Öffnungsweite. Noch nicht prüfbar: das
-    Modell enthält keine Rauch- und Wärmeabzugsanlage als System und keine Zuordnung zu Brandabschnitten.'
+    Entrauchung mit Feuerwehrlüftern messen mindestens 0.5 m² bei mindestens 0.1 m Öffnungsweite.'
   en: 'Exhaust openings are placed so that effective smoke clearance is possible without danger to people and buildings, at
     the highest point of the room, for example in the roof or in the ceiling or roof zone of the façades. If they cannot be
     built into the roof, they are distributed evenly over two façades that are as far as possible opposite each other. Individual
-    openings for clearance with fire-brigade fans measure at least 0.5 m² with at least 0.1 m opening width. Not yet checkable:
-    the model holds no smoke and heat exhaust system and no assignment of one to fire compartments.'
+    openings for clearance with fire-brigade fans measure at least 0.5 m² with at least 0.1 m opening width.'
   fr: 'Les ouvertures d''évacuation sont placées de façon à permettre un désenfumage efficace sans danger pour les personnes
     et le bâtiment, au point le plus haut du local, par exemple dans le toit ou en zone plafond ou toiture des façades. Si
     elles ne peuvent pas être prévues en toiture, elles sont réparties régulièrement sur deux façades si possible opposées.
     Chaque ouverture pour le désenfumage par ventilateurs des sapeurs-pompiers mesure au moins 0.5 m² pour une largeur d''au
-    moins 0.1 m. Pas encore vérifiable : le modèle ne contient aucune installation d''évacuation de fumée et de chaleur ni
-    affectation à des compartiments.'
+    moins 0.1 m.'
   it: 'Le aperture di evacuazione sono collocate in modo da consentire un''evacuazione efficace senza pericolo per persone
     ed edificio, nel punto più alto del locale, ad esempio nel tetto o nella zona soffitto o tetto delle facciate. Se non
     possono essere inserite nel tetto, sono distribuite uniformemente su due facciate possibilmente opposte. Le singole aperture
-    per l''evacuazione con ventilatori dei pompieri misurano almeno 0.5 m² con larghezza minima di 0.1 m. Non ancora verificabile:
-    il modello non contiene alcun impianto di evacuazione di fumo e calore né l''assegnazione a compartimenti.'
+    per l''evacuazione con ventilatori dei pompieri misurano almeno 0.5 m² con larghezza minima di 0.1 m.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

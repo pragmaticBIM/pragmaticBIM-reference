@@ -10,23 +10,19 @@ description:
   de: 'Fluchtwege ersetzen keine Lüftungsleitungen für offene Luftführung. Brandabschnittsbildende Fluchtwege werden grundsätzlich
     getrennt von anderen lufttechnischen Anlagen belüftet; sonst gehören Brandschutzklappen in die brandabschnittsbildenden
     Wände, mit geschossweiser Unterteilung, separaten Leitungen oder separaten Anlagen. Die Klappen haben Kanalrauchmelder
-    oder sind an eine bestehende Brandmeldeanlage angeschlossen. Noch nicht prüfbar: das Modell weist nicht aus, welche Lüftungsanlage
-    einen Fluchtweg belüftet oder durchquert.'
+    oder sind an eine bestehende Brandmeldeanlage angeschlossen.'
   en: 'Escape routes do not replace ventilation ducts for open air routing. Compartment-forming escape routes are in principle
     ventilated separately from other ventilation systems; otherwise fire dampers belong in the compartment-forming walls,
     with storey-by-storey subdivision, separate ducts or separate systems. The dampers have duct smoke detectors or are connected
-    to an existing fire detection system. Not yet checkable: the model does not show which ventilation system serves or crosses
-    an escape route.'
+    to an existing fire detection system.'
   fr: 'Les voies d''évacuation ne remplacent pas des conduits de ventilation pour une circulation d''air ouverte. Les voies
     d''évacuation formant un compartiment sont en principe ventilées séparément des autres installations ; sinon des clapets
     coupe-feu sont installés dans les parois de compartimentage, avec subdivision par niveau, conduits séparés ou installations
-    séparées. Les clapets ont des détecteurs de fumée de gaine ou sont raccordés à une détection d''incendie existante. Pas
-    encore vérifiable : le modèle n''indique pas quelle installation de ventilation dessert ou traverse une voie d''évacuation.'
+    séparées. Les clapets ont des détecteurs de fumée de gaine ou sont raccordés à une détection d''incendie existante.'
   it: 'Le vie di fuga non sostituiscono i condotti di ventilazione per un passaggio d''aria aperto. Le vie di fuga che formano
     un compartimento sono di norma ventilate separatamente dagli altri impianti; altrimenti le serrande tagliafuoco vanno
     nelle pareti di compartimentazione, con suddivisione per piano, condotti separati o impianti separati. Le serrande hanno
-    rilevatori di fumo da canale o sono collegate a un impianto di rivelazione incendi esistente. Non ancora verificabile:
-    il modello non indica quale impianto di ventilazione serve o attraversa una via di fuga.'
+    rilevatori di fumo da canale o sono collegate a un impianto di rivelazione incendi esistente.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

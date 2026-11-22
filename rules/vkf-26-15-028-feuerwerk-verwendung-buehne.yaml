@@ -16,16 +16,14 @@ description:
     (innen oder aussen) klassiert und durch Fachpersonen mit Ausweis. Es wird vor der Vorführung geplant, unter Berücksichtigung
     der Umgebung (Raumhöhe, Abstände zu brennbarem Material) mit instruiertem Löschpersonal erprobt und der Behörde zur Abnahme
     gemeldet. Vor Ort lagert es in abschliessbaren RF1-Behältern in Räumen EI 30 mit EI 30-Türen, Vorrat höchstens 50 kg brutto;
-    die Räume dürfen bei geringem Brandrisiko anderen Zwecken dienen. Noch nicht prüfbar: das Modell weist Kategorie, Bruttomenge,
-    Lagerart und Verkaufsfläche pyrotechnischer Gegenstände nicht aus.'
+    die Räume dürfen bei geringem Brandrisiko anderen Zwecken dienen.'
   en: 'Fireworks for entertainment must not be set off inside buildings and installations; category 4 is reserved for commercial
     use by qualified persons. Stage pyrotechnics of categories T1 and T2 is possible in suitable, designated areas (e.g. stages)
     with the authority''s consent, per its instructions, classified for the application (indoor or outdoor) and used by qualified
     persons with a licence. It is planned before the show, tested with instructed extinguishing staff taking the surroundings
     into account (room height, distances to combustible material) and reported to the authority for acceptance. On site it
     is stored in lockable RF1 containers in rooms EI 30 with EI 30 doors, stock at most 50 kg gross; with low fire risk the
-    rooms may serve other purposes. Not yet checkable: the model does not show category, gross mass, storage type and sales
-    area of pyrotechnic articles.'
+    rooms may serve other purposes.'
   fr: 'Les articles de feu d''artifice de divertissement ne doivent pas être tirés à l''intérieur de bâtiments et installations
     ; la catégorie 4 est réservée à l''usage professionnel par des personnes qualifiées. La pyrotechnie de scène des catégories
     T1 et T2 est possible dans des zones appropriées et désignées (p. ex. scènes) avec l''accord de l''autorité, selon le
@@ -33,17 +31,14 @@ description:
     d''un permis. Elle est planifiée avant le spectacle, testée avec du personnel d''extinction instruit en tenant compte
     de l''environnement (hauteur du local, distances aux matériaux combustibles) et annoncée à l''autorité pour réception.
     Sur place, elle est stockée dans des conteneurs RF1 verrouillables dans des locaux EI 30 avec portes EI 30, stock de 50
-    kg brut au plus ; en cas de faible risque, les locaux peuvent servir à d''autres fins. Pas encore vérifiable : le modèle
-    n''indique ni la catégorie, ni la masse brute, ni le mode de stockage, ni la surface de vente des articles pyrotechniques.'
+    kg brut au plus ; en cas de faible risque, les locaux peuvent servir à d''autres fins.'
   it: 'I fuochi d''artificio di intrattenimento non devono essere accesi all''interno di edifici e impianti; la categoria
     4 è riservata all''uso professionale da persone qualificate. La pirotecnica di scena delle categorie T1 e T2 è possibile
     in aree idonee e designate (p. es. palcoscenici) con il consenso dell''autorità, secondo le istruzioni d''uso, classificata
     per l''applicazione (interno o esterno) e usata da persone qualificate con permesso. È pianificata prima dello spettacolo,
     provata con personale di estinzione istruito tenendo conto dell''ambiente (altezza del locale, distanze da materiale combustibile)
     e annunciata all''autorità per il collaudo. In loco è conservata in contenitori RF1 chiudibili a chiave in locali EI 30
-    con porte EI 30, scorta al massimo 50 kg lordi; con basso rischio d''incendio i locali possono servire ad altri scopi.
-    Non ancora verificabile: il modello non indica categoria, massa lorda, tipo di stoccaggio né superficie di vendita degli
-    articoli pirotecnici.'
+    con porte EI 30, scorta al massimo 50 kg lordi; con basso rischio d''incendio i locali possono servire ad altri scopi.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

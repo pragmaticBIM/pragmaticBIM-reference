@@ -15,32 +15,28 @@ description:
     gelten als brennbar ohne Klassierung. Schutzmassnahmen richten sich nach Lage, Art und Menge der Stoffe, Arbeitsverfahren
     und Betriebseinrichtungen, auch für geleerte ungereinigte Behälter. Behälter müssen mechanisch, thermisch und chemisch
     genügen. Für die Lagerung ist der Brandschutzbehörde vor Baubeginn ein Brandschutzkonzept zur Genehmigung einzureichen;
-    bei besonders grosser Gefahr gelten risikogerechte Schutzkonzepte, z. B. freistehende eingeschossige nicht brennbare Bauten.
-    Noch nicht prüfbar: das Modell weist Stoffklassierung, Lagermenge, Lagerart und Lagerort gefährlicher Stoffe nicht aus.'
+    bei besonders grosser Gefahr gelten risikogerechte Schutzkonzepte, z. B. freistehende eingeschossige nicht brennbare Bauten.'
   en: 'The directive covers storage and handling of hazardous substances and preparations from 100 kg, unless other quantities
     are named. Substances are classified under the GHS, pyrotechnics under explosives law; diesel and heating oil count as
     combustible without classification. Protective measures depend on location, type and quantity of the substances, work
     processes and plant, including emptied uncleaned containers. Containers must withstand mechanical, thermal and chemical
     loads. For storage, a fire protection concept goes to the fire protection authority for approval before construction starts;
     where the hazard is especially large, risk-based protection concepts apply, e.g. free-standing single-storey non-combustible
-    buildings. Not yet checkable: the model does not show substance classification, stored quantity, type and location of
-    hazardous substances.'
+    buildings.'
   fr: 'La directive s''applique au stockage et à la manipulation de substances et préparations dangereuses dès 100 kg, sauf
     si d''autres quantités sont citées. Les substances sont classées selon le SGH, la pyrotechnie selon le droit des explosifs
     ; le diesel et le mazout sont traités comme combustibles non classés. Les mesures dépendent de la situation, du type et
     de la quantité des substances, des procédés et des équipements, y compris les récipients vidés non nettoyés. Les récipients
     doivent résister aux sollicitations mécaniques, thermiques et chimiques. Pour le stockage, un concept de protection incendie
     est soumis à l''autorité avant le début des travaux ; en cas de danger particulièrement grand, des concepts fondés sur
-    le risque s''appliquent, p. ex. bâtiments isolés de plain-pied non combustibles. Pas encore vérifiable : le modèle n''indique
-    ni la classification des substances, ni la quantité stockée, ni le mode et le lieu de stockage des substances dangereuses.'
+    le risque s''appliquent, p. ex. bâtiments isolés de plain-pied non combustibles.'
   it: 'La direttiva si applica allo stoccaggio e alla manipolazione di sostanze e preparati pericolosi da 100 kg, salvo altre
     quantità indicate. Le sostanze sono classificate secondo il GHS, la pirotecnica secondo il diritto sugli esplosivi; diesel
     e olio combustibile sono trattati come combustibili senza classificazione. Le misure dipendono da ubicazione, tipo e quantità
     delle sostanze, processi e impianti, inclusi i contenitori svuotati non puliti. I contenitori devono resistere a sollecitazioni
     meccaniche, termiche e chimiche. Per lo stoccaggio un concetto antincendio va presentato all''autorità per approvazione
     prima dell''inizio dei lavori; in caso di pericolo particolarmente grande valgono concetti basati sul rischio, p. es.
-    edifici isolati a un piano non combustibili. Non ancora verificabile: il modello non indica classificazione delle sostanze,
-    quantità stoccata né tipo e luogo di stoccaggio delle sostanze pericolose.'
+    edifici isolati a un piano non combustibili.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -10,24 +10,21 @@ description:
   de: 'Eine Stromversorgung für Sicherheitszwecke ist nötig für die Sicherheitsbeleuchtung von Räumen, Fluchtwegen und Rettungszeichen
     sowie für Brandschutzeinrichtungen wie Sprinklerpumpen und Feuerwehraufzüge. Sie nutzt von der normalen Versorgung unabhängige
     Quellen: Akkus, Stromerzeugungsaggregate mit unabhängigem Antrieb oder eine zusätzliche, unabhängige und gesicherte
-    Einspeisung. Für Fluchtwegkennzeichnung und Sicherheitsbeleuchtung ist die zusätzliche Einspeisung nicht erlaubt. Noch
-    nicht prüfbar: das Modell zeigt nicht, welche Verbraucher woran hängen.'
+    Einspeisung. Für Fluchtwegkennzeichnung und Sicherheitsbeleuchtung ist die zusätzliche Einspeisung nicht erlaubt.'
   en: 'A power supply for safety purposes is needed for the safety lighting of rooms, escape routes and escape signs, and
     for fire protection installations such as sprinkler pumps and fire-brigade lifts. It uses sources independent of the
     normal supply: batteries, generating sets with an independent drive, or an additional, independent and secured feed.
-    For escape-route marking and safety lighting, the additional feed is not allowed. Not yet checkable: the model does
-    not show which consumers are connected to what.'
+    For escape-route marking and safety lighting, the additional feed is not allowed.'
   fr: 'Une alimentation de sécurité est nécessaire pour l''éclairage de sécurité des locaux, des voies d''évacuation et
     des signaux de sauvetage ainsi que pour les installations de protection incendie telles que pompes de sprinklers et
     ascenseurs pour pompiers. Elle utilise des sources indépendantes de l''alimentation normale : accus, groupes électrogènes
     à entraînement indépendant, ou une alimentation supplémentaire indépendante et sûre. Pour la signalisation des voies
-    d''évacuation et l''éclairage de sécurité, l''alimentation supplémentaire n''est pas admise. Pas encore vérifiable :
-    le modèle n''indique pas quels consommateurs sont raccordés à quoi.'
+    d''évacuation et l''éclairage de sécurité, l''alimentation supplémentaire n''est pas admise.'
   it: 'Un''alimentazione di sicurezza è necessaria per l''illuminazione di sicurezza di locali, vie di fuga e segnali di
     salvataggio nonché per impianti antincendio come pompe sprinkler e ascensori dei pompieri. Utilizza fonti indipendenti
     dall''alimentazione normale: accumulatori, gruppi elettrogeni con azionamento indipendente o un''alimentazione supplementare
     indipendente e garantita. Per la segnalazione delle vie di fuga e l''illuminazione di sicurezza l''alimentazione supplementare
-    non è ammessa. Non ancora verificabile: il modello non indica quali utenze sono collegate a cosa.'
+    non è ammessa.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

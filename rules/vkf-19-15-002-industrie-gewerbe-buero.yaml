@@ -13,22 +13,18 @@ description:
   de: 'Bei Industrie-, Gewerbe- und Bürobauten kann die Brandschutzbehörde eine Sprinkleranlage verlangen, wenn die zulässigen
     Brandabschnittsgrössen überschritten werden und die Anlage für die Nutzung sinnvoll ist, wenn schnell anlaufende Brände
     zu erwarten sind, die Aktivierungsgefahr gross ist, mit gefährlichen Stoffen umgegangen wird oder die Brandbelastung sehr
-    hoch ist. Noch nicht prüfbar: das Modell weist Nutzung, Personenbelegung, Geschosszahl und Brandabschnittsgrösse je Brandabschnitt
-    nicht aus.'
+    hoch ist.'
   en: 'For industrial, commercial and office buildings the fire protection authority can require a sprinkler system if the
     permitted compartment sizes are exceeded and the system makes sense for the use, if fast-developing fires are expected,
-    the ignition hazard is high, hazardous substances are handled or stored, or the fire load is very high. Not yet checkable:
-    the model does not show use, occupancy, number of storeys and compartment size per fire compartment.'
+    the ignition hazard is high, hazardous substances are handled or stored, or the fire load is very high.'
   fr: 'Pour les bâtiments industriels, artisanaux et de bureaux, l''autorité de protection incendie peut exiger une installation
     sprinkler si les tailles de compartiment admises sont dépassées et que l''installation est judicieuse, si des feux à développement
     rapide sont attendus, si le risque d''activation est grand, si des substances dangereuses sont manipulées ou stockées
-    ou si la charge calorifique est très élevée. Pas encore vérifiable : le modèle n''indique pas l''affectation, la charge
-    d''occupation, le nombre d''étages ni la taille du compartiment.'
+    ou si la charge calorifique est très élevée.'
   it: 'Per edifici industriali, artigianali e per uffici l''autorità di protezione antincendio può richiedere un impianto
     sprinkler se le dimensioni ammesse dei compartimenti sono superate e l''impianto è sensato per l''utilizzo, se si attendono
     incendi a sviluppo rapido, il pericolo di attivazione è grande, si maneggiano o stoccano sostanze pericolose o il carico
-    d''incendio è molto alto. Non ancora verificabile: il modello non indica utilizzo, occupazione, numero di piani e dimensione
-    del compartimento.'
+    d''incendio è molto alto.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

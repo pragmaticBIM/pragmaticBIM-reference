@@ -16,8 +16,7 @@ description:
     [b] und [c] dürfen Empfangstheken, die mit EI 30 abgetrennt sind, in horizontalen Rettungswegen stehen. Hotelzimmertüren
     sind mindestens 0.8 m breit und müssen nicht in Fluchtrichtung öffnen; an Türen innerhalb von Hotelsuiten gibt es keine
     Anforderungen. Bei [c] müssen Hauseingangstüren nicht in Fluchtrichtung öffnen, und gewendelte Treppen mit 1.2 m Breite
-    und mindestens 0.1 m innerer Auftrittsbreite sind zulässig. Noch nicht prüfbar: Beherbergungsklasse, Brandabschnitte und
-    Türaufschlag fehlen im Modell oft.'
+    und mindestens 0.1 m innerer Auftrittsbreite sind zulässig.'
   en: 'On bed floors of accommodation [a] where sick, care-dependent or assistance-dependent people are housed, the horizontal
     escape routes are subdivided so that, together with the patient rooms, at least two independent fire compartments allow
     horizontal evacuation. Reception offices separated with EI 60 need only EI 30 towards vertical escape routes and an RF1
@@ -26,7 +25,7 @@ description:
     [c], reception counters separated with EI 30 may stand in horizontal rescue routes. Hotel room doors are at least 0.8
     m wide and need not open in the escape direction; doors within hotel suites have no requirements. In [c], building entrance
     doors need not open in the escape direction, and winding stairs 1.2 m wide with an inner tread width of at least 0.1 m
-    are allowed. Not yet checkable: accommodation class, fire compartments and door swing are often missing in the model.'
+    are allowed.'
   fr: 'Aux étages de chambres des établissements d''hébergement [a], où sont logées des personnes malades, nécessitant des
     soins ou dépendant d''une aide, les voies d''évacuation horizontales sont subdivisées de façon à former, avec les chambres
     de patients, au moins deux compartiments coupe-feu indépendants permettant l''évacuation horizontale. Les bureaux de réception
@@ -37,8 +36,7 @@ description:
     Les portes de chambres d''hôtel ont au moins 0,8 m de large et ne s''ouvrent pas nécessairement dans le sens de la fuite
     ; aucune exigence ne vise les portes à l''intérieur des suites. Pour [c], les portes d''entrée de l''immeuble ne s''ouvrent
     pas nécessairement dans le sens de la fuite et les escaliers tournants de 1,2 m avec giron intérieur d''au moins 0,1 m
-    sont admis. Pas encore vérifiable : la classe d''hébergement, les compartiments et le sens d''ouverture des portes manquent
-    souvent dans le modèle.'
+    sont admis.'
   it: 'Ai piani con letti delle aziende di alloggio [a], dove sono ospitate persone malate, bisognose di cure o dipendenti
     da aiuto altrui, le vie di fuga orizzontali sono suddivise in modo da formare, insieme alle camere dei pazienti, almeno
     due compartimenti antincendio indipendenti che consentono l''evacuazione orizzontale. Gli uffici di ricevimento separati
@@ -48,8 +46,7 @@ description:
     con EI 30 possono trovarsi nelle vie di salvataggio orizzontali. Le porte delle camere d''albergo sono larghe almeno 0,8
     m e non devono aprirsi nel senso di fuga; per le porte all''interno delle suite non vi sono requisiti. In [c] le porte
     d''ingresso dell''edificio non devono aprirsi nel senso di fuga e sono ammesse scale a chiocciola larghe 1,2 m con pedata
-    interna di almeno 0,1 m. Non ancora verificabile: classe di alloggio, compartimenti e senso di apertura delle porte mancano
-    spesso nel modello.'
+    interna di almeno 0,1 m.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

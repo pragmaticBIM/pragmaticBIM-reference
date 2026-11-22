@@ -9,22 +9,17 @@ name:
 description:
   de: 'Trockenlöschanlagen erhalten Warn- und Verzögerungseinrichtungen, wenn eine Flutung Personen gefährden kann. Die Vorwarnzeit
     zwischen Alarmsignal und Freigabe des Löschmittels reicht aus, um den Flutungsbereich von jeder Stelle aus sicher zu verlassen.
-    Zugangstüren zu geschützten Räumen sind selbstschliessend und tragen einen Gefahrenhinweis. Noch nicht prüfbar: das Modell
-    enthält keine Trocken- oder Kühllöschanlage mit Flutungsbereichen, Warn- und Auslöseeinrichtungen.'
+    Zugangstüren zu geschützten Räumen sind selbstschliessend und tragen einen Gefahrenhinweis.'
   en: 'Dry extinguishing systems get warning and delay devices if flooding can endanger people. The pre-warning time between
     the alarm signal and release of the agent is long enough to leave the flooding zone safely from any point. Access doors
-    to protected rooms are self-closing and carry a danger sign. Not yet checkable: the model holds no dry or cooling extinguishing
-    system with flooding zones, warning and release devices.'
+    to protected rooms are self-closing and carry a danger sign.'
   fr: 'Les installations d''extinction à gaz reçoivent des dispositifs d''alarme et de temporisation si l''inondation peut
     mettre des personnes en danger. Le délai de préalarme entre le signal et la libération de l''agent suffit pour quitter
     sans risque la zone depuis n''importe quel point. Les portes d''accès aux locaux protégés se ferment automatiquement et
-    portent un avertissement de danger. Pas encore vérifiable : le modèle ne contient aucune installation d''extinction à
-    agent gazeux ou de refroidissement avec zones d''inondation, dispositifs d''alarme et de déclenchement.'
+    portent un avertissement de danger.'
   it: 'Gli impianti di estinzione a secco ricevono dispositivi di avviso e di ritardo se la saturazione può mettere in pericolo
     persone. Il tempo di preallarme tra il segnale e il rilascio dell''agente basta per lasciare in sicurezza la zona da ogni
-    punto. Le porte di accesso ai locali protetti sono autochiudenti e recano un segnale di pericolo. Non ancora verificabile:
-    il modello non contiene alcun impianto di estinzione a secco o di raffreddamento con zone di saturazione, dispositivi
-    di avviso e di attivazione.'
+    punto. Le porte di accesso ai locali protetti sono autochiudenti e recano un segnale di pericolo.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

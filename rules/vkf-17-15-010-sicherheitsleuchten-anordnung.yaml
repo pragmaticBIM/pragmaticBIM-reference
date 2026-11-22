@@ -10,22 +10,18 @@ description:
   de: 'In Flucht- und Rettungswegen leuchtet die Sicherheitsbeleuchtung insbesondere die Bodenzone und den Weg zum Ausgang
     ins Freie ausreichend aus. Sicherheitsleuchten in geringer Höhe über dem Boden haben einen bruchfesten Schutz. Tragbare
     Sicherheitsleuchten sind nur in Räumen zulässig, die ausschliesslich Betriebspersonal betritt, und werden danach am
-    vorgesehenen Ort geladen. Noch nicht prüfbar: das Modell weist nicht aus, welche Leuchten Sicherheitsleuchten sind und
-    wie sie zum Fluchtweg liegen.'
+    vorgesehenen Ort geladen.'
   en: 'In escape and rescue routes, safety lighting adequately lights in particular the floor zone and the way to the exit
     to the open air. Safety luminaires mounted low above the floor have an unbreakable guard. Portable safety luminaires
-    are allowed only in rooms entered exclusively by operating staff, and are recharged afterwards at the intended place.
-    Not yet checkable: the model does not show which luminaires are safety luminaires or how they relate to the escape route.'
+    are allowed only in rooms entered exclusively by operating staff, and are recharged afterwards at the intended place.'
   fr: 'Dans les voies d''évacuation et de sauvetage, l''éclairage de sécurité éclaire suffisamment en particulier la zone
     du sol et le chemin vers la sortie donnant sur l''extérieur. Les luminaires de sécurité placés à faible hauteur au-dessus
     du sol ont une protection incassable. Les luminaires de sécurité portables ne sont admis que dans des locaux n''accueillant
-    que du personnel d''exploitation, et sont rechargés ensuite à l''endroit prévu. Pas encore vérifiable : le modèle n''indique
-    pas quels luminaires sont de sécurité ni leur position par rapport à la voie d''évacuation.'
+    que du personnel d''exploitation, et sont rechargés ensuite à l''endroit prévu.'
   it: 'Nelle vie di fuga e di salvataggio l''illuminazione di sicurezza illumina a sufficienza in particolare la zona del
     pavimento e il percorso verso l''uscita all''esterno. Gli apparecchi di sicurezza collocati a bassa altezza dal pavimento
     hanno una protezione infrangibile. Gli apparecchi di sicurezza portatili sono ammessi solo in locali frequentati esclusivamente
-    dal personale di esercizio e vengono poi ricaricati nel luogo previsto. Non ancora verificabile: il modello non indica
-    quali apparecchi sono di sicurezza né la loro posizione rispetto alla via di fuga.'
+    dal personale di esercizio e vengono poi ricaricati nel luogo previsto.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

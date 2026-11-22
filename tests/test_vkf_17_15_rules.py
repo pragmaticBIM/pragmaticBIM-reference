@@ -50,7 +50,7 @@ def test_rules_are_localized_cited_and_unreviewed() -> None:
                 assert str(rule[field].get(lang) or "").strip(), f"{path}: {field}.{lang}"
 
 
-def test_rules_state_what_is_not_checkable_in_every_language() -> None:
+def test_rules_do_not_carry_not_checkable_notes() -> None:
     markers = {
         "de": "Noch nicht prüfbar",
         "en": "Not yet checkable",
@@ -58,10 +58,8 @@ def test_rules_state_what_is_not_checkable_in_every_language() -> None:
         "it": "Non ancora verificabile",
     }
     for path, rule in _rules():
-        if path.name.startswith("vkf-17-15-015"):
-            continue  # process step, no model-checkable fact
         for lang, marker in markers.items():
-            assert marker in rule["description"][lang], f"{path}: {lang}"
+            assert marker not in " ".join(rule["description"][lang].split()), f"{path}: {lang}"
 
 
 def test_rules_apply_to_existing_elements() -> None:

@@ -10,25 +10,21 @@ description:
   de: 'Im Aufstellraum darf nur ein Tagesverbrauch lagern, abgeschirmt vom Aggregat; grössere Mengen kommen in andere Räume
     oder ins Freie. In Einfamilienhäusern sind Holz oder Kohle bis 5 m³ in Räumen beliebiger Bauart erlaubt. Ein- oder angebaute
     Lagerräume sind mit EI 60 abgetrennt. In separaten Heizräumen mit EI 60 dürfen bis 10 m³ hinter einer Abschrankung mit
-    1 m Abstand zum Aggregat liegen. Leicht Entzündbares zum Anfeuern lagert nur in verschlossenen RF1-Behältern. Noch nicht
-    prüfbar: das Modell weist Brennstoffart, Lagermenge und Tankvolumen nicht aus.'
+    1 m Abstand zum Aggregat liegen. Leicht Entzündbares zum Anfeuern lagert nur in verschlossenen RF1-Behältern.'
   en: 'Only a day''s consumption may be stored in the installation room, shielded from the unit; larger quantities go into
     other rooms or outdoors. In single-family houses wood or coal up to 5 m³ is allowed in rooms of any construction. Built-in
     or attached storage rooms are separated with EI 60. In separate boiler rooms with EI 60, up to 10 m³ may be kept behind
-    a barrier 1 m from the unit. Easily ignitable kindling is stored only in closed RF1 containers. Not yet checkable: the
-    model does not show fuel type, stored quantity and tank volume.'
+    a barrier 1 m from the unit. Easily ignitable kindling is stored only in closed RF1 containers.'
   fr: 'Seule une consommation journalière peut être stockée dans le local d''installation, à l''abri de l''appareil ; les
     quantités plus grandes vont dans d''autres locaux ou à l''extérieur. Dans les maisons individuelles, bois ou charbon jusqu''à
     5 m³ sont admis dans des locaux de toute construction. Les dépôts intégrés ou accolés sont séparés par EI 60. Dans des
     locaux de chauffe séparés EI 60, jusqu''à 10 m³ peuvent être entreposés derrière une barrière à 1 m de l''appareil. Le
-    matériau facilement inflammable pour allumer n''est conservé que dans des récipients fermés en RF1. Pas encore vérifiable
-    : le modèle n''indique ni le type de combustible, ni la quantité stockée, ni le volume des citernes.'
+    matériau facilement inflammable pour allumer n''est conservé que dans des récipients fermés en RF1.'
   it: 'Nel locale di installazione può essere stoccato solo il consumo di un giorno, schermato dall''apparecchio; quantità
     maggiori vanno in altri locali o all''aperto. Nelle case unifamiliari legna o carbone fino a 5 m³ sono ammessi in locali
     di qualsiasi costruzione. I depositi integrati o addossati sono separati con EI 60. In locali caldaia separati EI 60 possono
     stare fino a 10 m³ dietro una barriera a 1 m dall''apparecchio. Il materiale facilmente infiammabile per l''accensione
-    è conservato solo in contenitori chiusi in RF1. Non ancora verificabile: il modello non indica tipo di combustibile, quantità
-    stoccata né volume dei serbatoi.'
+    è conservato solo in contenitori chiusi in RF1.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

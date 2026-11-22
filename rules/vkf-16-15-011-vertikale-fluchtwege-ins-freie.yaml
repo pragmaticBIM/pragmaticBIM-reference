@@ -10,25 +10,21 @@ description:
   de: 'Vertikale Fluchtwege (z. B. Treppenanlagen) führen bis an einen sicheren Ort im Freien. Sind mehrere vorhanden, führen
     sie unabhängig voneinander dorthin. Treppen und Podeste sind sicher begehbar auszuführen, und ein vertikaler Fluchtweg
     darf nicht geschossweise versetzt sein. Als Orientierung nennt der Anhang eine lichte Durchgangshöhe von mindestens 2.1
-    m sowie Zwischenpodeste bei Richtungswechseln, nach höchstens 20 Stufen und mindestens bei jedem Geschoss. Noch nicht
-    prüfbar: Unabhängigkeit der Wege, Versatz und Stufengeometrie sind im Modell nicht durchgängig abgebildet.'
+    m sowie Zwischenpodeste bei Richtungswechseln, nach höchstens 20 Stufen und mindestens bei jedem Geschoss.'
   en: 'Vertical escape routes (e.g. stair systems) lead to a safe place outside. Where there are several, they lead there
     independently of each other. Stairs and landings are built to be safely walkable, and a vertical escape route must not
     be offset from storey to storey. As guidance, the appendix gives a clear headroom of at least 2.1 m and intermediate landings
-    at changes of direction, after at most 20 steps and at least at every storey. Not yet checkable: independence of routes,
-    offsets and step geometry are not consistently represented in the model.'
+    at changes of direction, after at most 20 steps and at least at every storey.'
   fr: 'Les voies d''évacuation verticales (p. ex. cages d''escalier) mènent jusqu''à un lieu sûr à l''extérieur. S''il y en
     a plusieurs, elles y mènent indépendamment les unes des autres. Les escaliers et paliers sont réalisés de façon à pouvoir
     être parcourus en sécurité, et une voie verticale ne doit pas être décalée d''un étage à l''autre. À titre indicatif,
     l''annexe cite une hauteur libre d''au moins 2,1 m ainsi que des paliers intermédiaires aux changements de direction,
-    après 20 marches au plus et au moins à chaque étage. Pas encore vérifiable : l''indépendance des voies, les décalages
-    et la géométrie des marches ne sont pas représentés de manière suivie dans le modèle.'
+    après 20 marches au plus et au moins à chaque étage.'
   it: 'Le vie di fuga verticali (p. es. vani scale) conducono fino a un luogo sicuro all''esterno. Se sono più d''una, vi
     conducono indipendentemente l''una dall''altra. Scale e pianerottoli sono eseguiti in modo da poter essere percorsi in
     sicurezza e una via verticale non deve essere sfalsata da un piano all''altro. A titolo indicativo l''allegato indica
     un''altezza libera di almeno 2,1 m e pianerottoli intermedi ai cambi di direzione, dopo al massimo 20 gradini e almeno
-    a ogni piano. Non ancora verificabile: indipendenza dei percorsi, sfalsamenti e geometria dei gradini non sono rappresentati
-    in modo continuo nel modello.'
+    a ogni piano.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

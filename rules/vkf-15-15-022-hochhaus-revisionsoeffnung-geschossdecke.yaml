@@ -9,20 +9,16 @@ name:
 description:
   de: 'In Hochhäusern werden auf jedem Geschoss am Anschluss der Geschossdecke an die Aussenwand Massnahmen gegen die Brandausdehnung
     getroffen; bei Löschanlagen-Vollschutz entfallen sie. Revisionsöffnungen von Installationsschächten liegen nicht in
-    Sicherheitstreppenhäusern. Noch nicht prüfbar: das Modell zeigt weder die Brandausdehnungssperren am Deckenrand noch
-    die Lage der Revisionsöffnungen.'
+    Sicherheitstreppenhäusern.'
   en: 'In high-rise buildings, measures against fire spread are taken at every storey where the floor slab meets the external
     wall; they are not needed where full extinguishing-system protection is provided. Inspection openings of installation
-    shafts are not located in safety stairwells. Not yet checkable: the model shows neither the fire-spread barriers at
-    the slab edge nor the location of inspection openings.'
+    shafts are not located in safety stairwells.'
   fr: 'Dans les tours, des mesures limitant la propagation du feu sont prises à chaque niveau à la jonction du plancher
     et du mur extérieur ; elles ne sont pas nécessaires avec une protection intégrale par installation d''extinction. Les
-    ouvertures de révision des gaines techniques ne se trouvent pas dans les cages d''escalier de sécurité. Pas encore vérifiable
-    : le modèle n''indique ni les barrières contre la propagation au bord de dalle ni l''emplacement des ouvertures de révision.'
+    ouvertures de révision des gaines techniques ne se trouvent pas dans les cages d''escalier de sécurité.'
   it: 'Negli edifici alti a ogni piano, nel raccordo tra solaio e parete esterna, sono adottate misure contro la propagazione
     dell''incendio; con protezione integrale mediante impianto di spegnimento non sono necessarie. Le aperture di ispezione
-    dei cavedi impiantistici non si trovano nei vani scala di sicurezza. Non ancora verificabile: il modello non mostra
-    né le barriere contro la propagazione al bordo del solaio né la posizione delle aperture di ispezione.'
+    dei cavedi impiantistici non si trovano nei vani scala di sicurezza.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

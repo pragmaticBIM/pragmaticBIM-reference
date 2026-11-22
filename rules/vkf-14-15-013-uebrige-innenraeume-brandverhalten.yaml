@@ -12,27 +12,24 @@ description:
     RF1, mit Löschanlagenkonzept RF2. Wände und Decken ohne Feuerwiderstandsanforderung dürfen RF3 sein. In Hochhäusern
     verlangen Wände und Decken mit Feuerwiderstand sowie klassifizierte Systeme in Beherbergungsbetrieben und Räumen mit
     grosser Personenbelegung RF1 beim baulichen Konzept. Fest montierte Sitzgelegenheiten in Räumen mit grosser Personenbelegung
-    bestehen aus RF2. Noch nicht prüfbar: das Modell führt die Brandverhaltensgruppe (RF1–RF4, cr) der Baustoffe nicht.'
+    bestehen aus RF2.'
   en: 'In interior rooms outside escape routes, RF3 materials generally suffice in low and medium-height buildings. Exceptions:
     in accommodation and rooms with large occupancy, stretched ceilings are RF1 with a structural concept and RF2 with an
     extinguishing-system concept. Walls and floors without fire-resistance requirement may be RF3. In high-rise buildings,
     walls and floors with fire resistance and classified systems in accommodation and rooms with large occupancy require
-    RF1 under the structural concept. Fixed seating in rooms with large occupancy is made of RF2. Not yet checkable: the
-    model does not carry the reaction-to-fire group (RF1–RF4, cr) of materials.'
+    RF1 under the structural concept. Fixed seating in rooms with large occupancy is made of RF2.'
   fr: 'Dans les locaux intérieurs hors voies d''évacuation, des matériaux RF3 suffisent en général dans les bâtiments de
     faible et moyenne hauteur. Exceptions : dans les établissements d''hébergement et les locaux à grande occupation, les
     plafonds tendus sont RF1 avec concept constructif et RF2 avec concept à installation d''extinction. Les murs et planchers
     sans exigence de résistance au feu peuvent être RF3. Dans les tours, les murs et planchers résistant au feu et les systèmes
     classifiés des établissements d''hébergement et des locaux à grande occupation exigent RF1 avec concept constructif.
-    Les sièges fixes des locaux à grande occupation sont en RF2. Pas encore vérifiable : le modèle ne porte pas le groupe
-    de comportement au feu (RF1–RF4, cr) des matériaux.'
+    Les sièges fixes des locaux à grande occupation sont en RF2.'
   it: 'Nei locali interni fuori dalle vie di fuga, negli edifici di altezza ridotta e media bastano di regola materiali
     RF3. Eccezioni: nelle strutture ricettive e nei locali con grande affollamento i controsoffitti tesi sono RF1 con concetto
     costruttivo e RF2 con concetto a impianto di spegnimento. Pareti e solai senza requisito di resistenza al fuoco possono
     essere RF3. Negli edifici alti pareti e solai con resistenza al fuoco e sistemi classificati nelle strutture ricettive
     e nei locali con grande affollamento richiedono RF1 con concetto costruttivo. I posti a sedere fissi nei locali con
-    grande affollamento sono in RF2. Non ancora verificabile: il modello non riporta il gruppo di comportamento al fuoco
-    (RF1–RF4, cr) dei materiali.'
+    grande affollamento sono in RF2.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

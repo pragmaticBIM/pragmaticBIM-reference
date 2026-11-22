@@ -11,27 +11,22 @@ description:
     Ausschaltungen und Störungen werden optisch und akustisch signalisiert und an eine ständig besetzte Stelle weitergeleitet.
     Eine Anwesenheits- oder Erkundungsverzögerung ist nur bei anwesender Alarmorganisation mit mindestens zwei instruierten
     Personen zulässig, höchstens 3 Minuten (Anwesenheit) bzw. 5 Minuten (Erkundung), nur manuell aktivierbar und mindestens
-    täglich selbsttätig rückgestellt. Noch nicht prüfbar: das Modell enthält keine Brandmeldezentrale, kein Feuerwehrbedienteil
-    und keine Brandfallsteuerung als System.'
+    täglich selbsttätig rückgestellt.'
   en: 'Every response triggers an internal and an external alarm; the external one goes directly to the public fire alarm
     receiving point. Switch-offs and faults are signalled visually and audibly and forwarded to a permanently staffed point.
     A presence or investigation delay is allowed only while an alarm organisation with at least two instructed persons is
     present, at most 3 minutes (presence) or 5 minutes (investigation), can only be activated manually and is reset automatically
-    at least daily. Not yet checkable: the model holds no fire alarm control panel, no fire-brigade control unit and no fire-mode
-    control as a system.'
+    at least daily.'
   fr: 'Chaque déclenchement provoque une alarme interne et externe ; l''alarme externe va directement à la centrale d''appel
     d''incendie publique. Les mises hors service et dérangements sont signalés optiquement et acoustiquement et transmis à
     un poste occupé en permanence. Une temporisation de présence ou de reconnaissance n''est admise qu''en présence d''une
     organisation d''alarme avec au moins deux personnes instruites, au plus 3 minutes (présence) resp. 5 minutes (reconnaissance),
-    activable seulement manuellement et remise automatiquement à zéro au moins une fois par jour. Pas encore vérifiable :
-    le modèle ne contient ni centrale de détection incendie, ni tableau de commande pour les sapeurs-pompiers, ni commande
-    en cas d''incendie comme système.'
+    activable seulement manuellement et remise automatiquement à zéro au moins une fois par jour.'
   it: 'Ogni intervento provoca un allarme interno ed esterno; quello esterno va direttamente al centro pubblico di segnalazione
     incendi. Disinserimenti e guasti sono segnalati otticamente e acusticamente e inoltrati a un posto presidiato in permanenza.
     Un ritardo di presenza o di ricognizione è ammesso solo con organizzazione d''allarme presente con almeno due persone
     istruite, al massimo 3 minuti (presenza) risp. 5 minuti (ricognizione), attivabile solo manualmente e ripristinato automaticamente
-    almeno una volta al giorno. Non ancora verificabile: il modello non contiene alcuna centrale di rivelazione incendio,
-    unità di comando per i pompieri né comando antincendio come sistema.'
+    almeno una volta al giorno.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

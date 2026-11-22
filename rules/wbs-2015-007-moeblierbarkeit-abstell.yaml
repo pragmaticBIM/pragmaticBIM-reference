@@ -9,22 +9,16 @@ name:
 description:
   de: 'Im Abstell- und Kochbereich stehen zusätzliche Schrankmodule der Grundausstattung zur
     Verfügung (2 bis 7 Module je Zimmerzahl, Schrankmodul 0.60 × 0.60 × 1.80 m mit 0.90 m
-    Bedienfläche vor der Front). Noch nicht prüfbar als SHACL: Anzahl und Stellflächen der
-    Schrankmodule je Wohnungseinheit sowie die Bedienungszonen fehlen als aggregierte
-    Kenngrössen.'
+    Bedienfläche vor der Front).'
   fr: 'Dans le dégagement et la cuisine, des modules d''armoire supplémentaires de l''équipement
     de base sont prévus (2 à 7 modules selon le nombre de pièces, module 0,60 × 0,60 × 1,80 m
-    avec 0,90 m de service devant). Pas encore vérifiable en SHACL : nombre et emplacements
-    des modules d''armoire par unité de logement et zones de service manquent comme grandeurs
-    agrégées.'
+    avec 0,90 m de service devant).'
   it: 'Nel ripostiglio e in cucina sono previsti moduli di armadio aggiuntivi della dotazione
     di base (da 2 a 7 moduli secondo il numero di locali, modulo 0,60 × 0,60 × 1,80 m con
-    0,90 m di fascia operativa frontale). Non ancora verificabile in SHACL: numero e aree dei
-    moduli armadio per unità abitativa e fasce di servizio mancano come grandezze aggregate.'
+    0,90 m di fascia operativa frontale).'
   en: 'Storage and kitchen zones provide additional wardrobe modules from Grundausstattung (2
     to 7 modules by room count, wardrobe module 0.60 × 0.60 × 1.80 m with 0.90 m front service
-    clearance). Not yet checkable as SHACL: module count and footprints per dwelling unit and
-    service zones are not aggregated quantities yet.'
+    clearance).'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

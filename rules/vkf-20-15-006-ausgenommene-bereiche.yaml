@@ -11,26 +11,22 @@ description:
     brennbare Vorräte, Aufzugsschächte mit separatem Maschinenraum, brandabschnittsweise abgetrennte Wohnbereiche, Kühlräume
     bis 50, 200 bzw. 600 m² je nach Dämmung und Abtrennung, Öltankräume EI 60 bis 150 m², Bereiche unter Galerien bis 3 m
     Breite oder 30 m² sowie Zwischenräume über Unterdecken und unter Doppelböden bei geringer Brandbelastung oder geringer
-    Höhe (unter 0.15 m bzw. 0.2 m). Noch nicht prüfbar: das Modell weist Installationsschächte, Zwischenräume, Brandbelastung
-    und Kühlräume nicht mit den nötigen Kennwerten aus.'
+    Höhe (unter 0.15 m bzw. 0.2 m).'
   en: 'Exemptions are possible, among others, for installation shafts that are inaccessible or free of ignition hazards, wet
     rooms without combustible stock, lift shafts with a separate machine room, residential areas separated as a fire compartment,
     cold rooms up to 50, 200 or 600 m² depending on insulation and separation, oil tank rooms EI 60 up to 150 m², areas under
     galleries up to 3 m wide or 30 m², and voids above suspended ceilings and below raised floors with low fire load or low
-    height (below 0.15 m or 0.2 m). Not yet checkable: the model does not give installation shafts, voids, fire load and cold
-    rooms the necessary characteristic values.'
+    height (below 0.15 m or 0.2 m).'
   fr: 'Peuvent notamment être exemptés : gaines techniques inaccessibles ou sans risque d''activation, locaux humides sans
     stocks combustibles, gaines d''ascenseur avec local de machines séparé, zones d''habitation séparées en compartiment,
     chambres froides jusqu''à 50, 200 ou 600 m² selon l''isolation et la séparation, locaux de citernes à mazout EI 60 jusqu''à
     150 m², zones sous galeries jusqu''à 3 m de large ou 30 m² ainsi que vides sous faux plafonds et planchers surélevés à
-    faible charge calorifique ou faible hauteur (moins de 0.15 m resp. 0.2 m). Pas encore vérifiable : le modèle ne donne
-    pas aux gaines, vides, charges calorifiques et chambres froides les valeurs caractéristiques nécessaires.'
+    faible charge calorifique ou faible hauteur (moins de 0.15 m resp. 0.2 m).'
   it: 'Possono essere esentati tra l''altro cavedi tecnici inaccessibili o privi di rischio di attivazione, locali umidi senza
     scorte combustibili, vani ascensore con locale macchine separato, zone abitative separate come compartimento, celle frigorifere
     fino a 50, 200 o 600 m² secondo isolamento e separazione, locali cisterne di olio EI 60 fino a 150 m², zone sotto ballatoi
     fino a 3 m di larghezza o 30 m² nonché intercapedini sopra controsoffitti e sotto pavimenti sopraelevati con basso carico
-    d''incendio o altezza ridotta (meno di 0.15 m risp. 0.2 m). Non ancora verificabile: il modello non fornisce a cavedi,
-    intercapedini, carico d''incendio e celle frigorifere i valori caratteristici necessari.'
+    d''incendio o altezza ridotta (meno di 0.15 m risp. 0.2 m).'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

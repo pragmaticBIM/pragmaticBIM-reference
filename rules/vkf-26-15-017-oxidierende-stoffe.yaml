@@ -12,30 +12,26 @@ description:
     Brandabschnitt mindestens EI 60 aus RF1 nötig (Zusammenlagerung mit nicht brennbaren Materialien zulässig, ersatzweise
     Schrank EI 60 aus RF1 nach SN EN 14470-1). Starke Oxidationsmittel (Kategorie 1) stehen nicht auf Holzpaletten. Im Freien
     beträgt der Abstand zwischen Lagerabschnitten und zu Gebäuden mindestens 5 m, entfallend bei standfester Schirmmauer mindestens
-    EI 60 aus RF1. Abfälle werden sorgfältig entsorgt und kommen nicht mit brennbaren Abfällen in Berührung. Noch nicht prüfbar:
-    das Modell weist Stoffklassierung, Lagermenge, Lagerart und Lagerort gefährlicher Stoffe nicht aus.'
+    EI 60 aus RF1. Abfälle werden sorgfältig entsorgt und kommen nicht mit brennbaren Abfällen in Berührung.'
   en: 'Oxidisers may be stored with other hazardous substances in the same compartment up to 100 kg in total, if 2.5 m distance
     to combustible materials is kept or partition walls EI 30 of RF1 are installed. From 100 kg a separate fire compartment
     of at least EI 60 of RF1 is needed (joint storage with non-combustible materials allowed; a cabinet EI 60 of RF1 to SN
     EN 14470-1 may replace the room). Strong oxidisers (category 1) are not stored on wooden pallets. Outdoors, the distance
     between storage sections and to buildings is at least 5 m, omitted with a stable screen wall of at least EI 60 of RF1.
-    Waste is disposed of carefully and kept away from combustible waste. Not yet checkable: the model does not show substance
-    classification, stored quantity, type and location of hazardous substances.'
+    Waste is disposed of carefully and kept away from combustible waste.'
   fr: 'Les comburants peuvent être stockés jusqu''à 100 kg au total avec d''autres substances dangereuses dans le même compartiment
     si 2.5 m de distance aux matériaux combustibles sont respectés ou des cloisons EI 30 en RF1 posées. Dès 100 kg, un compartiment
     propre au moins EI 60 en RF1 est nécessaire (stockage commun avec matériaux non combustibles admis ; une armoire EI 60
     en RF1 selon SN EN 14470-1 peut remplacer le local). Les comburants forts (catégorie 1) ne sont pas stockés sur palettes
     en bois. À l''extérieur, la distance entre sections de stockage et vers les bâtiments est d''au moins 5 m, supprimée avec
     un mur écran stable au moins EI 60 en RF1. Les déchets sont éliminés avec soin et n''entrent pas en contact avec des déchets
-    combustibles. Pas encore vérifiable : le modèle n''indique ni la classification des substances, ni la quantité stockée,
-    ni le mode et le lieu de stockage des substances dangereuses.'
+    combustibles.'
   it: 'I comburenti possono essere stoccati fino a 100 kg complessivi con altre sostanze pericolose nello stesso compartimento
     se è rispettata una distanza di 2.5 m dai materiali combustibili o sono posate pareti divisorie EI 30 in RF1. Da 100 kg
     serve un compartimento proprio almeno EI 60 in RF1 (stoccaggio comune con materiali non combustibili ammesso; un armadio
     EI 60 in RF1 secondo SN EN 14470-1 può sostituire il locale). I comburenti forti (categoria 1) non stanno su pallet di
     legno. All''aperto la distanza tra sezioni di stoccaggio e verso edifici è di almeno 5 m, esclusa con muro schermo stabile
-    almeno EI 60 in RF1. I rifiuti sono smaltiti con cura e non entrano in contatto con rifiuti combustibili. Non ancora verificabile:
-    il modello non indica classificazione delle sostanze, quantità stoccata né tipo e luogo di stoccaggio delle sostanze pericolose.'
+    almeno EI 60 in RF1. I rifiuti sono smaltiti con cura e non entrano in contatto con rifiuti combustibili.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

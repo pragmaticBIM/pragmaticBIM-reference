@@ -9,25 +9,18 @@ name:
 description:
   de: 'Koch- und Essbereich der Wohnung erlauben die Grundausstattung: Küchenzeile in 0.60-m-Modulen
     mit Bedienfläche, Tischmodul mit Stuhlzone grössenabhängig (z. B. 1.6 × 1.6 m bei 1 Zimmer
-    bis 4.2 × 2.7 m bei 7 Zimmern) und Durchgangsbreiten von mindestens 0.90 m. Noch nicht
-    prüfbar als SHACL: Küchenmodulanzahl, Tischmodulabmessungen und Durchgangsachsen je
-    Wohnungseinheit fehlen als aggregierte Kenngrössen.'
+    bis 4.2 × 2.7 m bei 7 Zimmern) und Durchgangsbreiten von mindestens 0.90 m.'
   fr: 'La cuisine et le coin repas du logement permettent l''équipement de base : ligne de cuisine
     en modules de 0,60 m avec bande de service, module table avec zone chaises selon la taille
     (p. ex. 1,6 × 1,6 m pour 1 pièce jusqu''à 4,2 × 2,7 m pour 7 pièces) et largeurs de passage
-    d''au moins 0,90 m. Pas encore vérifiable en SHACL : nombre de modules cuisine, dimensions
-    du module table et axes de circulation par unité de logement manquent comme grandeurs
-    agrégées.'
+    d''au moins 0,90 m.'
   it: 'Cucina e zona pranzo dell''alloggio consentono la dotazione di base: cucina a moduli
     da 0,60 m con fascia operativa, modulo tavolo con zona sedie in funzione della dimensione
     (es. 1,6 × 1,6 m per 1 locale fino a 4,2 × 2,7 m per 7 locali) e passaggi di almeno
-    0,90 m. Non ancora verificabile in SHACL: numero moduli cucina, dimensioni modulo tavolo
-    e assi di passaggio per unità abitativa mancano come grandezze aggregate.'
+    0,90 m.'
   en: 'The dwelling kitchen and dining zone allow the Grundausstattung: kitchen run in 0.60 m
     modules with an operating band, table module with chair zone by size (e.g. 1.6 × 1.6 m
-    for 1 room up to 4.2 × 2.7 m for 7 rooms), and passage widths of at least 0.90 m. Not yet
-    checkable as SHACL: kitchen module count, table module dimensions, and circulation axes
-    per dwelling unit are not aggregated quantities yet.'
+    for 1 room up to 4.2 × 2.7 m for 7 rooms), and passage widths of at least 0.90 m.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

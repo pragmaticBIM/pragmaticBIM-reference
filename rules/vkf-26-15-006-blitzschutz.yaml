@@ -13,28 +13,24 @@ description:
     450 kg netto keine Massnahmen, bis 1''000 kg Erdung oder Potenzialausgleich leitender Teile, darüber ein Blitzschutzsystem.
     Brennbare Flüssigkeiten mit Flammpunkt bis 60 °C: bis 450 l nichts, bis 2''000 l Erdung oder Potenzialausgleich, darüber
     ein Blitzschutzsystem. Gebäude mit Reifenlager über 60 t oder 600 m² und Grosslager pyrotechnischer Gegenstände über 300
-    kg sind gegen Blitzschlag geschützt. Noch nicht prüfbar: das Modell weist Stoffklassierung, Lagermenge, Lagerart und Lagerort
-    gefährlicher Stoffe nicht aus.'
+    kg sind gegen Blitzschlag geschützt.'
   en: 'Buildings and plant holding hazardous substances are protected against ignition by lightning. Combustible gases: up
     to 450 kg net no measures, up to 1,000 kg earthing or equipotential bonding of conductive parts, above that a lightning
     protection system. Combustible liquids with a flash point up to 60 °C: up to 450 l nothing, up to 2,000 l earthing or
     equipotential bonding, above that a lightning protection system. Buildings with a tyre store above 60 t or 600 m² and
-    large stores of pyrotechnic articles above 300 kg are protected against lightning. Not yet checkable: the model does not
-    show substance classification, stored quantity, type and location of hazardous substances.'
+    large stores of pyrotechnic articles above 300 kg are protected against lightning.'
   fr: 'Les bâtiments et installations contenant des substances dangereuses sont protégés contre le risque d''inflammation
     par la foudre. Gaz combustibles : jusqu''à 450 kg net aucune mesure, jusqu''à 1''000 kg mise à la terre ou liaison équipotentielle
     des parties conductrices, au-delà un système de protection contre la foudre. Liquides combustibles de point d''éclair
     jusqu''à 60 °C : jusqu''à 450 l rien, jusqu''à 2''000 l mise à la terre ou liaison équipotentielle, au-delà un système
     de protection contre la foudre. Les bâtiments avec dépôt de pneus de plus de 60 t ou 600 m² et les grands dépôts d''articles
-    pyrotechniques de plus de 300 kg sont protégés contre la foudre. Pas encore vérifiable : le modèle n''indique ni la classification
-    des substances, ni la quantité stockée, ni le mode et le lieu de stockage des substances dangereuses.'
+    pyrotechniques de plus de 300 kg sont protégés contre la foudre.'
   it: 'Edifici e impianti con sostanze pericolose sono protetti contro il rischio d''innesco da fulmine. Gas combustibili:
     fino a 450 kg netti nessuna misura, fino a 1''000 kg messa a terra o collegamento equipotenziale delle parti conduttrici,
     oltre un sistema di protezione contro i fulmini. Liquidi combustibili con punto d''infiammabilità fino a 60 °C: fino a
     450 l nulla, fino a 2''000 l messa a terra o collegamento equipotenziale, oltre un sistema di protezione contro i fulmini.
     Gli edifici con deposito di pneumatici oltre 60 t o 600 m² e i grandi depositi di articoli pirotecnici oltre 300 kg sono
-    protetti contro i fulmini. Non ancora verificabile: il modello non indica classificazione delle sostanze, quantità stoccata
-    né tipo e luogo di stoccaggio delle sostanze pericolose.'
+    protetti contro i fulmini.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -10,23 +10,19 @@ description:
   de: 'Handfeuermelder werden in Fluchtwegen, etwa bei Ausgängen, Durchgängen, vertikalen Fluchtwegen und Löschgeräten, und
     in besonders gefährdeten Bereichen gut sichtbar angebracht. Sie sind nicht mit Lichtschaltern oder Liftknöpfen zu verwechseln,
     vor mechanischer Beschädigung geschützt und etwa 1.5 m hoch montiert; bei zu erwartendem Missbrauch ist ein plombierbarer,
-    transparenter Deckel möglich. Noch nicht prüfbar: das Modell enthält Melder nur als Gerät mit Lage, ohne Meldergruppe,
-    Überwachungsumfang, Montagehöhe und Anlagesystem.'
+    transparenter Deckel möglich.'
   en: 'Manual call points are fitted clearly visibly in escape routes, for example at exits, passages, vertical escape routes
     and extinguishers, and in particularly hazardous areas. They cannot be mistaken for light switches or lift buttons, are
     protected from mechanical damage and are mounted about 1.5 m high; where misuse is expected a sealable transparent cover
-    is possible. Not yet checkable: the model holds detectors only as a device with location, without detector zone, monitored
-    extent, mounting height and system.'
+    is possible.'
   fr: 'Les avertisseurs manuels sont placés bien visibles dans les voies d''évacuation, par exemple près des sorties, passages,
     voies verticales et extincteurs, et dans les zones particulièrement exposées. Ils ne peuvent pas être confondus avec des
     interrupteurs ou boutons d''ascenseur, sont protégés contre les dommages mécaniques et montés à env. 1.5 m de hauteur
-    ; en cas d''abus prévisible, un couvercle transparent plombable est possible. Pas encore vérifiable : le modèle ne contient
-    les détecteurs que comme appareil avec position, sans zone de détection, étendue surveillée, hauteur de montage ni système.'
+    ; en cas d''abus prévisible, un couvercle transparent plombable est possible.'
   it: 'I pulsanti manuali sono collocati ben visibili nelle vie di fuga, ad esempio presso uscite, passaggi, vie di fuga verticali
     ed estintori, e nelle zone particolarmente a rischio. Non possono essere confusi con interruttori della luce o pulsanti
     dell''ascensore, sono protetti da danni meccanici e montati a circa 1.5 m di altezza; dove si prevede un uso improprio
-    è possibile un coperchio trasparente piombabile. Non ancora verificabile: il modello contiene i rivelatori solo come apparecchio
-    con posizione, senza zona di rivelazione, estensione sorvegliata, altezza di montaggio né sistema.'
+    è possibile un coperchio trasparente piombabile.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

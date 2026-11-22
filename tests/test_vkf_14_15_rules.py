@@ -50,10 +50,8 @@ def test_rules_are_localized_cited_and_unreviewed() -> None:
                 assert str(rule[field].get(lang) or "").strip(), f"{path}: {field}.{lang}"
 
 
-def test_rules_name_the_missing_material_property_in_every_language() -> None:
+def test_rules_claim_no_performance_property_keys() -> None:
     for path, rule in _rules():
-        for lang in LANGS:
-            assert "RF1" in rule["description"][lang], f"{path}: {lang}"
         # The rules stay text-only (reviewed) until the data contract maps RF-only values (#121), so no rule claims a key.
         assert "performance_property_keys" not in rule, path
 

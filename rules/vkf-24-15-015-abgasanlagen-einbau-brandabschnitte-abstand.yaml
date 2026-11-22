@@ -13,28 +13,23 @@ description:
     RF1 oder stecken in einem solchen Brandschutzelement, in Einfamilienhäusern und Wohnungen EI 30; horizontal gilt der Feuerwiderstand
     des Brandabschnitts. Im gemeinsamen Schacht trennt eine EI 30-Platte brennbare von RF1-Abgasanlagen. Zu Brennbarem gilt
     ein Sicherheitsabstand, so dass angrenzende Stoffe höchstens 85 °C erreichen; Durchführungen durch brennbare Konstruktionen
-    werden mit RF1 ausgefüllt. Verbindungsrohre liegen nicht verdeckt. Noch nicht prüfbar: das Modell enthält keine Abgasanlage
-    mit Klassierung, Führung, Mindesthöhe über Dach und Sicherheitsabstand.'
+    werden mit RF1 ausgefüllt. Verbindungsrohre liegen nicht verdeckt.'
   en: 'Flue systems running vertically through several compartments have EI 60 of heat-resistant RF1 outside the installation
     room or sit in such a fire protection element, in single-family houses and flats EI 30; horizontally the fire resistance
     of the compartment applies. In a shared shaft an EI 30 board separates combustible from RF1 flue systems. A clearance
     to combustibles applies so that adjoining materials reach at most 85 °C; penetrations through combustible constructions
-    are filled with RF1. Connecting pipes are not concealed. Not yet checkable: the model holds no flue system with classification,
-    routing, minimum height above roof and clearance.'
+    are filled with RF1. Connecting pipes are not concealed.'
   fr: 'Les conduits qui traversent verticalement plusieurs compartiments ont EI 60 en RF1 résistant à la chaleur hors du local
     d''installation ou sont placés dans un tel élément de protection incendie, dans les maisons individuelles et logements
     EI 30 ; à l''horizontale, la résistance au feu du compartiment s''applique. Dans une gaine commune, une plaque EI 30 sépare
     les conduits combustibles de ceux en RF1. Une distance de sécurité aux combustibles garantit que les matériaux voisins
     n''atteignent que 85 °C au plus ; les traversées de constructions combustibles sont remplies en RF1. Les tuyaux de raccordement
-    ne sont pas dissimulés. Pas encore vérifiable : le modèle ne contient aucune installation d''évacuation des gaz avec classification,
-    tracé, hauteur minimale au-dessus du toit ni distance de sécurité.'
+    ne sont pas dissimulés.'
   it: 'Gli impianti che attraversano verticalmente più compartimenti hanno EI 60 in RF1 resistente al calore fuori dal locale
     di installazione o stanno in un simile elemento antincendio, in case unifamiliari e appartamenti EI 30; in orizzontale
     vale la resistenza al fuoco del compartimento. In un cavedio comune una lastra EI 30 separa gli impianti combustibili
     da quelli in RF1. Verso i combustibili vale una distanza di sicurezza tale che i materiali adiacenti raggiungano al massimo
-    85 °C; i passaggi attraverso costruzioni combustibili sono riempiti con RF1. I tubi di raccordo non sono nascosti. Non
-    ancora verificabile: il modello non contiene alcun impianto di scarico fumi con classificazione, percorso, altezza minima
-    sopra il tetto né distanza di sicurezza.'
+    85 °C; i passaggi attraverso costruzioni combustibili sono riempiti con RF1. I tubi di raccordo non sono nascosti.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

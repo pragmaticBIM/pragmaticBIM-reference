@@ -12,31 +12,27 @@ description:
     für nur einen Brand- oder Lüftungsabschnitt dürfen mindestens RF3 sein; Dämmstoffe mindestens RF3 (cr), allseitig mindestens
     0.5 mm dick mit RF1 abgedeckt. Nach Lufterhitzern mit Heizflächen über 150 °C schaltet ein Sicherheitstemperaturbegrenzer
     im Abstand von höchstens 1 m bei 85 °C Lufttemperatur ab; direkt beheizte und elektrische Lufterhitzer haben zwei voneinander
-    unabhängige Sicherheitseinrichtungen und über 3 kW einen Ventilatornachlauf von mindestens 60 Sekunden. Noch nicht prüfbar:
-    Baustoffklasse der Geräte und Sicherheitseinrichtungen (Begrenzer, Wächter) sind im Modell nicht geführt.'
+    unabhängige Sicherheitseinrichtungen und über 3 kW einen Ventilatornachlauf von mindestens 60 Sekunden.'
   en: 'Fans (except parts of no fire-safety significance) and air-treatment units with their built-in parts (air heaters,
     coolers, heat recovery, humidifiers) are made of RF1 materials. Small fans, small built-in parts and heat recovery serving
     only one compartment or ventilation section may be at least RF3; insulation at least RF3 (cr), covered on all sides with
     at least 0.5 mm of RF1. Downstream of air heaters with heating surfaces above 150 °C, a safety temperature limiter within
     at most 1 m switches off at an air temperature of 85 °C; directly fired and electric air heaters have two independent
-    safety devices and, above 3 kW, a fan overrun of at least 60 seconds. Not yet checkable: the material class of units and
-    the safety devices (limiters, monitors) are not held in the model.'
+    safety devices and, above 3 kW, a fan overrun of at least 60 seconds.'
   fr: 'Les ventilateurs (hors parties sans importance pour la protection incendie) et les appareils de traitement d''air avec
     leurs composants (réchauffeurs, refroidisseurs, récupération de chaleur, humidificateurs) sont en matériaux RF1. Les petits
     ventilateurs, petits composants et récupérateurs ne desservant qu''un compartiment ou une section de ventilation peuvent
     être au moins RF3 ; l''isolation au moins RF3 (cr), recouverte de tous côtés d''au moins 0.5 mm de RF1. Après les réchauffeurs
     dont les surfaces de chauffe dépassent 150 °C, un limiteur de température de sécurité placé à 1 m au plus coupe à 85 °C
     d''air ; les réchauffeurs à chauffage direct et électriques ont deux dispositifs de sécurité indépendants et, au-delà
-    de 3 kW, une post-ventilation d''au moins 60 secondes. Pas encore vérifiable : la classe des matériaux des appareils et
-    les dispositifs de sécurité (limiteurs, contrôleurs) ne sont pas gérés dans le modèle.'
+    de 3 kW, une post-ventilation d''au moins 60 secondes.'
   it: 'I ventilatori (esclusi i componenti irrilevanti per la protezione antincendio) e gli apparecchi di trattamento dell''aria
     con i loro componenti (riscaldatori, raffreddatori, recupero di calore, umidificatori) sono in materiali RF1. Piccoli
     ventilatori, piccoli componenti e recuperatori che servono una sola sezione di compartimento o di ventilazione possono
     essere almeno RF3; l''isolante almeno RF3 (cr), coperto su tutti i lati con almeno 0.5 mm di RF1. Dopo i riscaldatori
     con superfici riscaldanti oltre 150 °C un limitatore di temperatura di sicurezza entro 1 m spegne a 85 °C dell''aria;
     i riscaldatori a fuoco diretto ed elettrici hanno due dispositivi di sicurezza indipendenti e, oltre 3 kW, un funzionamento
-    residuo del ventilatore di almeno 60 secondi. Non ancora verificabile: la classe dei materiali degli apparecchi e i dispositivi
-    di sicurezza (limitatori, sorveglianti) non sono gestiti nel modello.'
+    residuo del ventilatore di almeno 60 secondi.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

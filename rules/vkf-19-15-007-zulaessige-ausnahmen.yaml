@@ -11,27 +11,23 @@ description:
     Brandgefahr als eigenem Brandabschnitt, Kleinräumen bis 4 m², Kühlräumen bis 50, 200 bzw. 600 m² je nach Dämmung und Abtrennung,
     Kriechkellern ohne Brandbelastung, feuerwiderstandsfähig abgetrennten vertikalen Fluchtwegen, Aufzugsschächten, Zwischenräumen
     über Unterdecken oder unter Doppelböden bei geringer Brandbelastung oder Höhe (unter 0.3 m bzw. 0.35 m) und Zwischenklimazonen
-    von Doppelfassaden. Noch nicht prüfbar: das Modell weist Brandabschnitte, Raumarten, Brandbelastung und Feuerwiderstand
-    der Sprinklerzentrale nicht aus.'
+    von Doppelfassaden.'
   en: 'Sprinklers can be omitted, among others, in wet rooms without combustible stock, technical rooms with low fire hazard
     as a separate compartment, small rooms up to 4 m², cold rooms up to 50, 200 or 600 m² depending on insulation and separation,
     crawl spaces without fire load, vertical escape routes separated with fire resistance, lift shafts, voids above suspended
     ceilings or below raised floors with low fire load or height (below 0.3 m or 0.35 m) and intermediate climate zones of
-    double façades. Not yet checkable: the model does not show fire compartments, room types, fire load and fire resistance
-    of the sprinkler control room.'
+    double façades.'
   fr: 'On peut renoncer aux sprinklers notamment dans les locaux humides sans stocks combustibles, les locaux techniques à
     faible danger d''incendie formant un compartiment propre, les petits locaux jusqu''à 4 m², les chambres froides jusqu''à
     50, 200 ou 600 m² selon l''isolation et la séparation, les vides sanitaires sans charge calorifique, les voies d''évacuation
     verticales séparées par des éléments résistant au feu, les gaines d''ascenseur, les vides sous faux plafonds ou planchers
     surélevés à faible charge calorifique ou hauteur (moins de 0.3 m resp. 0.35 m) et les zones climatiques intermédiaires
-    des doubles façades. Pas encore vérifiable : le modèle n''indique pas les compartiments, types de locaux, charges calorifiques
-    ni résistance au feu du local de la centrale sprinkler.'
+    des doubles façades.'
   it: 'Si può rinunciare agli sprinkler tra l''altro in locali umidi senza scorte combustibili, locali tecnici a basso pericolo
     d''incendio come compartimento proprio, piccoli locali fino a 4 m², celle frigorifere fino a 50, 200 o 600 m² secondo
     isolamento e separazione, vespai senza carico d''incendio, vie di fuga verticali separate con resistenza al fuoco, vani
     ascensore, intercapedini sopra controsoffitti o sotto pavimenti sopraelevati con basso carico d''incendio o altezza ridotta
-    (meno di 0.3 m risp. 0.35 m) e zone climatiche intermedie delle doppie facciate. Non ancora verificabile: il modello non
-    indica compartimenti, tipi di locale, carico d''incendio né resistenza al fuoco del locale centrale sprinkler.'
+    (meno di 0.3 m risp. 0.35 m) e zone climatiche intermedie delle doppie facciate.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

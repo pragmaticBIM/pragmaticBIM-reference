@@ -9,18 +9,15 @@ name:
 description:
   de: 'Brennbare Wärmedämmungen an Installationen werden dort, wo die Leitung eine Wand oder Decke durchdringt, die einen
     Brandabschnitt bildet, mit RF1-Material unterbrochen. Bei geprüften und anerkannten Bauteilen gelten die Angaben der
-    VKF-Anerkennung. Noch nicht prüfbar: Dämmung und Dämmmaterial von Leitungen sind im Modell nicht abgebildet.'
+    VKF-Anerkennung.'
   en: 'Combustible thermal insulation on services is interrupted with RF1 material where the service passes through a wall
-    or floor that forms a fire compartment. For tested and recognized components the VKF recognition applies. Not yet checkable:
-    pipe insulation and its material are not represented in the model.'
+    or floor that forms a fire compartment. For tested and recognized components the VKF recognition applies.'
   fr: 'L''isolation thermique combustible des installations est interrompue par un matériau RF1 là où la conduite traverse
     un mur ou un plancher formant un compartiment coupe-feu. Pour les éléments testés et reconnus, les indications de la
-    reconnaissance AEAI font foi. Pas encore vérifiable : l''isolation des conduites et son matériau ne sont pas représentés
-    dans le modèle.'
+    reconnaissance AEAI font foi.'
   it: 'L''isolamento termico combustibile degli impianti è interrotto con materiale RF1 dove la tubazione attraversa una
     parete o un solaio che forma un compartimento antincendio. Per elementi collaudati e riconosciuti valgono le indicazioni
-    del riconoscimento AICAA. Non ancora verificabile: l''isolamento delle tubazioni e il suo materiale non sono rappresentati
-    nel modello.'
+    del riconoscimento AICAA.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

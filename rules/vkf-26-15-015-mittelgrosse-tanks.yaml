@@ -11,24 +11,19 @@ name:
 description:
   de: 'Im Raum EI 90 ohne zusätzliche Brandlasten dürfen höchstens 10''000 l brennbare Flüssigkeiten mit Flammpunkt bis 60
     °C lagern; dazu sind besondere Schutzmassnahmen nötig (z. B. mechanische Lüftung, Löschanlage, Gasmeldeanlage). Im Raum
-    EI 60 ohne zusätzliche Brandlasten dürfen höchstens 250''000 l brennbare Flüssigkeiten mit Flammpunkt über 60 °C lagern.
-    Noch nicht prüfbar: das Modell weist Flammpunkt, Lagervolumen, Behälterart und Feuerwiderstand des Lagerraums nicht aus.'
+    EI 60 ohne zusätzliche Brandlasten dürfen höchstens 250''000 l brennbare Flüssigkeiten mit Flammpunkt über 60 °C lagern.'
   en: 'In a room EI 90 without additional fire loads, at most 10,000 l of combustible liquids with a flash point up to 60
     °C may be stored; special protective measures are needed (e.g. mechanical ventilation, extinguishing system, gas detection).
     In a room EI 60 without additional fire loads, at most 250,000 l of combustible liquids with a flash point above 60 °C
-    may be stored. Not yet checkable: the model does not show flash point, stored volume, container type and fire resistance
-    of the storage room.'
+    may be stored.'
   fr: 'Dans un local EI 90 sans charges calorifiques supplémentaires, au plus 10''000 l de liquides combustibles de point
     d''éclair jusqu''à 60 °C peuvent être stockés ; des mesures de protection particulières sont nécessaires (p. ex. ventilation
     mécanique, installation d''extinction, détection de gaz). Dans un local EI 60 sans charges calorifiques supplémentaires,
-    au plus 250''000 l de liquides combustibles de point d''éclair supérieur à 60 °C peuvent être stockés. Pas encore vérifiable
-    : le modèle n''indique ni le point d''éclair, ni le volume stocké, ni le type de récipient, ni la résistance au feu du
-    local de stockage.'
+    au plus 250''000 l de liquides combustibles de point d''éclair supérieur à 60 °C peuvent être stockés.'
   it: 'In un locale EI 90 senza carichi d''incendio aggiuntivi possono essere stoccati al massimo 10''000 l di liquidi combustibili
     con punto d''infiammabilità fino a 60 °C; servono misure di protezione particolari (p. es. ventilazione meccanica, impianto
     di estinzione, rivelazione gas). In un locale EI 60 senza carichi d''incendio aggiuntivi possono essere stoccati al massimo
-    250''000 l di liquidi combustibili con punto d''infiammabilità superiore a 60 °C. Non ancora verificabile: il modello
-    non indica punto d''infiammabilità, volume stoccato, tipo di contenitore né resistenza al fuoco del locale di stoccaggio.'
+    250''000 l di liquidi combustibili con punto d''infiammabilità superiore a 60 °C.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

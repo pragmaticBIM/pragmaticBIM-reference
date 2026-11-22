@@ -11,27 +11,23 @@ description:
     verschlossen. Auf die Unterteilung kann verzichtet werden, wenn oben eine ins Freie führende, ständig offene oder von
     einem sicheren Ort aus zu öffnende Rauch- und Wärmeabzugsöffnung von 5 % des Schachtquerschnitts besteht, wenn der Schacht
     hohlraumfrei mit RF1-Baustoffen gefüllt ist (in Bauten geringer und mittlerer Höhe ohne besondere Installationen genügen
-    nicht schmelzende RF2-Baustoffe) oder wenn nur Leitungen aus RF1-Baustoffen vorhanden sind. Noch nicht prüfbar: Schachtabschlüsse,
-    -füllungen und Leitungsmaterial sind im Modell nicht abgebildet.'
+    nicht schmelzende RF2-Baustoffe) oder wenn nur Leitungen aus RF1-Baustoffen vorhanden sind.'
   en: 'In installation shafts that are closed at the top, the recesses for lines are closed with RF1 materials at every
     storey. The subdivision can be omitted if there is a smoke and heat vent of 5 % of the shaft cross-section at the top
     leading to the open air that is permanently open or can be opened from a safe place, if the shaft is filled without
     voids with RF1 materials (in low and medium-height buildings without special installations non-melting RF2 materials
-    suffice), or if only lines made of RF1 materials are present. Not yet checkable: shaft closures, fillings and line materials
-    are not represented in the model.'
+    suffice), or if only lines made of RF1 materials are present.'
   fr: 'Dans les gaines techniques fermées en partie haute, les évidements pour les conduites sont obturés avec des matériaux
     RF1 à chaque niveau. On peut renoncer à la subdivision s''il existe en partie haute une ouverture d''évacuation de fumée
     et de chaleur donnant sur l''extérieur, de 5 % de la section de la gaine, soit toujours ouverte, soit ouvrable depuis
     un lieu sûr ; si la gaine est remplie sans vide de matériaux RF1 (dans les bâtiments de faible et moyenne hauteur sans
     installations particulières, des matériaux RF2 non fusibles suffisent) ; ou si elle ne contient que des conduites en
-    matériaux RF1. Pas encore vérifiable : fermetures, remplissages de gaines et matériaux des conduites ne sont pas représentés
-    dans le modèle.'
+    matériaux RF1.'
   it: 'Nei cavedi impiantistici chiusi in alto, i vani per le condutture sono chiusi con materiali RF1 a ogni piano. Si
     può rinunciare alla suddivisione se in alto c''è un''apertura per l''evacuazione di fumo e calore verso l''esterno pari
     al 5 % della sezione del cavedio, sempre aperta o apribile da un luogo sicuro; se il cavedio è riempito senza vuoti
     con materiali RF1 (negli edifici di altezza ridotta e media senza impianti particolari bastano materiali RF2 non fusibili);
-    oppure se sono presenti solo condutture in materiali RF1. Non ancora verificabile: chiusure, riempimenti dei cavedi
-    e materiali delle condutture non sono rappresentati nel modello.'
+    oppure se sono presenti solo condutture in materiali RF1.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

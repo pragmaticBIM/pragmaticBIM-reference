@@ -11,27 +11,22 @@ description:
     stationäre Aggregate, brauchen ausreichend Verbrennungsluft und stehen ohne direkte Abgasführung nur in offenen Hallen,
     Rohbauten oder gut belüfteten Räumen, nicht offen in Räumen mit grosser Personenbelegung. Kleingeräte für Koch-, Dekorations-
     und Beleuchtungszwecke mit flüssigen Brennstoffen halten genügend Abstand zu Brennbarem; ab 0.3 l/h oder 2 kW ist eine
-    Abgasanlage nötig, und ohne Anschluss dürfen sie Räume nicht dauernd beheizen. Noch nicht prüfbar: das Modell weist Oberflächentemperatur,
-    Brennbarkeit der Umgebung und Sicherheitsabstände nicht aus.'
+    Abgasanlage nötig, und ohne Anschluss dürfen sie Räume nicht dauernd beheizen.'
   en: 'Mobile firing units such as building dryers or air heaters keep as much distance from combustibles as comparable stationary
     units, need sufficient combustion air and, without direct flue routing, stand only in open halls, shells or well-ventilated
     rooms, not openly in rooms with large occupancy. Small appliances for cooking, decoration and lighting with liquid fuels
     keep sufficient distance from combustibles; from 0.3 l/h or 2 kW a flue system is needed, and without connection they
-    must not heat rooms permanently. Not yet checkable: the model does not show surface temperature, combustibility of surroundings
-    and clearances.'
+    must not heat rooms permanently.'
   fr: 'Les appareils mobiles comme les déshumidificateurs de chantier ou aérothermes gardent avec les combustibles la même
     distance que les appareils fixes comparables, exigent assez d''air de combustion et, sans évacuation directe, ne s''emploient
     que dans des halles ouvertes, gros œuvre ou locaux bien ventilés, pas à découvert dans des locaux à forte occupation.
     Les petits appareils de cuisson, décoration et éclairage à combustibles liquides gardent une distance suffisante ; dès
-    0.3 l/h ou 2 kW, un conduit de fumée est nécessaire et sans raccordement ils ne chauffent pas durablement les locaux.
-    Pas encore vérifiable : le modèle n''indique ni la température de surface, ni la combustibilité de l''environnement, ni
-    les distances de sécurité.'
+    0.3 l/h ou 2 kW, un conduit de fumée est nécessaire et sans raccordement ils ne chauffent pas durablement les locaux.'
   it: 'Gli apparecchi mobili come essiccatori da cantiere o generatori d''aria calda mantengono dai combustibili la stessa
     distanza di apparecchi fissi comparabili, richiedono aria di combustione sufficiente e, senza scarico diretto, stanno
     solo in capannoni aperti, rustici o locali ben ventilati, non a vista in locali con grande occupazione. I piccoli apparecchi
     per cucina, decorazione e illuminazione a combustibili liquidi mantengono una distanza sufficiente; da 0.3 l/h o 2 kW
-    serve una canna fumaria e senza allacciamento non riscaldano i locali in modo continuo. Non ancora verificabile: il modello
-    non indica temperatura superficiale, combustibilità dell''ambiente né distanze di sicurezza.'
+    serve una canna fumaria e senza allacciamento non riscaldano i locali in modo continuo.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

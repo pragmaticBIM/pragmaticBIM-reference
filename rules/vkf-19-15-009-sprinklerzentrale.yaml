@@ -10,23 +10,19 @@ description:
   de: 'Sprinklerzentralen liegen in separaten Brandabschnitten mit dem Feuerwiderstand der nutzungsbezogenen Brandabschnittsbildung,
     mindestens EI 30, mit Türen EI 30. Sie haben einen sicheren, geschützten Zugang, etwa vom Freien oder von einem vertikalen
     Fluchtweg, und befinden sich im 1. Obergeschoss, Erdgeschoss oder 1. Untergeschoss. Zugänge und Wege sind gekennzeichnet;
-    für die Feuerwehr ist ein geeignetes Zugangssystem vorzusehen. Noch nicht prüfbar: das Modell weist Brandabschnitte, Raumarten,
-    Brandbelastung und Feuerwiderstand der Sprinklerzentrale nicht aus.'
+    für die Feuerwehr ist ein geeignetes Zugangssystem vorzusehen.'
   en: 'Sprinkler control rooms are located in separate fire compartments with the fire resistance of the use-related compartmentation,
     at least EI 30, with EI 30 doors. They have a safe, protected access, for example from outdoors or from a vertical escape
     route, and are located on the 1st upper floor, ground floor or 1st basement. Access and routes are marked; a suitable
-    access system for the fire brigade is provided. Not yet checkable: the model does not show fire compartments, room types,
-    fire load and fire resistance of the sprinkler control room.'
+    access system for the fire brigade is provided.'
   fr: 'Les centrales sprinkler sont situées dans des compartiments séparés avec la résistance au feu de la compartimentation
     liée à l''affectation, au moins EI 30, avec portes EI 30. Elles ont un accès sûr et protégé, par exemple depuis l''extérieur
     ou une voie d''évacuation verticale, et se trouvent au 1er étage, au rez-de-chaussée ou au 1er sous-sol. Accès et chemins
-    sont signalés ; un système d''accès approprié pour les sapeurs-pompiers est prévu. Pas encore vérifiable : le modèle n''indique
-    pas les compartiments, types de locaux, charges calorifiques ni résistance au feu du local de la centrale sprinkler.'
+    sont signalés ; un système d''accès approprié pour les sapeurs-pompiers est prévu.'
   it: 'Le centrali sprinkler si trovano in compartimenti separati con la resistenza al fuoco della compartimentazione legata
     all''utilizzo, almeno EI 30, con porte EI 30. Hanno un accesso sicuro e protetto, ad esempio dall''esterno o da una via
     di fuga verticale, e si trovano al 1° piano, al piano terra o al 1° interrato. Accessi e percorsi sono segnalati; è previsto
-    un sistema di accesso idoneo per i pompieri. Non ancora verificabile: il modello non indica compartimenti, tipi di locale,
-    carico d''incendio né resistenza al fuoco del locale centrale sprinkler.'
+    un sistema di accesso idoneo per i pompieri.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

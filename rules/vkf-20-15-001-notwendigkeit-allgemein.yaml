@@ -10,24 +10,20 @@ description:
   de: 'Je nach Personenbelegung und Nutzung werden Bauten, Anlagen oder Brandabschnitte mit einer ausreichend bemessenen Brandmeldeanlage
     ausgerüstet. Verlangt werden kann sie für frühzeitige Alarmierung der Rettungskräfte, für die frühe Ansteuerung von Brandschutz-
     und Haustechnikanlagen sowie in grossen und komplexen Bauten. Besondere Bauten wie Hochhäuser, Atrien, Doppelfassaden
-    und Verkehrsanlagen überwacht die Anlage auf Verlangen der Brandschutzbehörde. Noch nicht prüfbar: das Modell weist Nutzung,
-    Personenbelegung, Geschosszahl und Brandabschnittsgrösse je Brandabschnitt nicht aus.'
+    und Verkehrsanlagen überwacht die Anlage auf Verlangen der Brandschutzbehörde.'
   en: 'Depending on occupancy and use, buildings, installations or fire compartments are equipped with an adequately sized
     fire alarm system. It can be required for early alerting of rescue forces, for early activation of fire protection and
     building services systems, and in large and complex buildings. Special buildings such as high-rises, atria, double façades
-    and transport facilities are monitored by the system on request of the fire protection authority. Not yet checkable: the
-    model does not show use, occupancy, number of storeys and compartment size per fire compartment.'
+    and transport facilities are monitored by the system on request of the fire protection authority.'
   fr: 'Selon l''occupation et l''affectation, les bâtiments, installations ou compartiments sont équipés d''une installation
     de détection incendie suffisamment dimensionnée. Elle peut être exigée pour l''alerte précoce des secours, la commande
     précoce d''installations de protection incendie et techniques ainsi que dans les grands bâtiments complexes. Les bâtiments
     particuliers tels que tours, atriums, doubles façades et ouvrages de transport sont surveillés sur demande de l''autorité
-    de protection incendie. Pas encore vérifiable : le modèle n''indique pas l''affectation, la charge d''occupation, le nombre
-    d''étages ni la taille du compartiment.'
+    de protection incendie.'
   it: 'In funzione di occupazione e utilizzo, edifici, impianti o compartimenti sono dotati di un impianto di rivelazione
     incendio adeguatamente dimensionato. Può essere richiesto per l''allarme precoce dei soccorsi, per l''attivazione precoce
     di impianti antincendio e tecnici e negli edifici grandi e complessi. Gli edifici particolari come edifici alti, atri,
-    doppie facciate e impianti di trasporto sono sorvegliati su richiesta dell''autorità di protezione antincendio. Non ancora
-    verificabile: il modello non indica utilizzo, occupazione, numero di piani e dimensione del compartimento.'
+    doppie facciate e impianti di trasporto sono sorvegliati su richiesta dell''autorità di protezione antincendio.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -10,23 +10,19 @@ description:
   de: 'Die Aussparung zwischen Lüftungsleitung und brandabschnittsbildendem Bauteil wird unter Berücksichtigung der Wärmedehnung
     entweder dicht mit RF1-Baustoffen (z. B. Mörtel, Gips) gefüllt oder mit einem Abschottungssystem verschlossen, das bei
     brandabschnittsbildenden Wänden und Decken EI 30 erreicht. Bei Räumen oder Brandabschnitten mit grosser Brandbelastung
-    oder Brandgefahr hat das Abschottungssystem denselben Feuerwiderstand wie die umgebenden Wände und Decken. Noch nicht
-    prüfbar: das Modell verknüpft Leitungen und Abschottungen nicht durchgehend mit den durchdrungenen Bauteilen.'
+    oder Brandgefahr hat das Abschottungssystem denselben Feuerwiderstand wie die umgebenden Wände und Decken.'
   en: 'The recess between the ventilation duct and the compartment-forming component is, allowing for thermal expansion, either
     filled tightly with RF1 materials (e.g. mortar, plaster) or closed with a firestop system that reaches EI 30 in compartment-forming
     walls and floors. For rooms or compartments with a high fire load or fire hazard, the firestop system has the same fire
-    resistance as the surrounding walls and floors. Not yet checkable: the model does not consistently link ducts and firestops
-    to the components they pass through.'
+    resistance as the surrounding walls and floors.'
   fr: 'L''évidement entre le conduit de ventilation et l''élément de compartimentage est, compte tenu de la dilatation thermique,
     soit comblé de manière étanche avec des matériaux RF1 (p. ex. mortier, plâtre), soit fermé par un système d''obturation
     atteignant EI 30 dans les murs et planchers de compartimentage. Pour les locaux ou compartiments à forte charge ou danger
-    d''incendie, le système d''obturation a la même résistance au feu que les murs et planchers environnants. Pas encore vérifiable
-    : le modèle ne relie pas systématiquement conduits et obturations aux éléments traversés.'
+    d''incendie, le système d''obturation a la même résistance au feu que les murs et planchers environnants.'
   it: 'Il vano tra il condotto di ventilazione e l''elemento di compartimentazione è, tenendo conto della dilatazione termica,
     riempito a tenuta con materiali RF1 (p. es. malta, gesso) oppure chiuso con un sistema di sigillatura che raggiunge EI
     30 in pareti e solai di compartimentazione. Per locali o compartimenti con elevato carico o pericolo d''incendio il sistema
-    di sigillatura ha la stessa resistenza al fuoco delle pareti e dei solai circostanti. Non ancora verificabile: il modello
-    non collega in modo uniforme condotti e sigillature agli elementi attraversati.'
+    di sigillatura ha la stessa resistenza al fuoco delle pareti e dei solai circostanti.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

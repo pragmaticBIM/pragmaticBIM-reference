@@ -11,27 +11,21 @@ description:
     ungünstige Nebenwirkungen zählen mit. Unterschieden werden die Brandklassen A, B, C, D und F. Handfeuerlöscher stehen
     bei den Wasserlöschposten oder Raumzugängen, wo Wasser nicht überall passt, anstelle von Wasserlöschposten, wo Wasser
     nie geeignet ist, in Betrieben ohne genügenden Wasseranschluss und in kleinen Gewerbebauten sowie bei Einrichtungen mit
-    besonderer Brandgefahr. Noch nicht prüfbar: das Modell weist Löschgeräte und Wasserlöschposten nur als Gerät mit Lage
-    aus, ohne Löschmittel, Löschvermögen und Gehweglinie.'
+    besonderer Brandgefahr.'
   en: 'The suitability of extinguishers and extinguishing systems depends on handling, properties and quantity of the agent;
     adverse side effects count. Fire classes A, B, C, D and F are distinguished. Portable extinguishers are placed at the
     hose reels or room entrances where water is not suitable everywhere, instead of hose reels where water is never suitable,
-    in premises without sufficient water supply and in small commercial buildings, and at equipment with particular fire hazard.
-    Not yet checkable: the model shows extinguishers and hose reels only as a device with location, without extinguishing
-    agent, rating or walking distance.'
+    in premises without sufficient water supply and in small commercial buildings, and at equipment with particular fire hazard.'
   fr: 'L''aptitude des extincteurs et installations d''extinction dépend de la manipulation, des propriétés et de la quantité
     de l''agent ; les effets secondaires défavorables comptent. On distingue les classes de feu A, B, C, D et F. Les extincteurs
     portatifs sont placés près des postes d''eau ou des accès aux locaux là où l''eau ne convient pas partout, à la place
     des postes d''eau là où elle ne convient jamais, dans les exploitations sans raccordement d''eau suffisant et les petits
-    bâtiments artisanaux, ainsi que près des équipements à danger d''incendie particulier. Pas encore vérifiable : le modèle
-    ne montre les extincteurs et postes d''eau d''extinction que comme appareil avec position, sans agent extincteur, pouvoir
-    extincteur ni distance de cheminement.'
+    bâtiments artisanaux, ainsi que près des équipements à danger d''incendie particulier.'
   it: 'L''idoneità di estintori e impianti di estinzione dipende da maneggio, proprietà e quantità dell''agente; contano gli
     effetti collaterali sfavorevoli. Si distinguono le classi di fuoco A, B, C, D e F. Gli estintori portatili sono collocati
     presso i posti d''acqua o gli accessi ai locali dove l''acqua non è ovunque idonea, al posto dei posti d''acqua dove non
     è mai idonea, in aziende senza sufficiente allacciamento idrico e piccoli edifici artigianali, nonché presso attrezzature
-    con pericolo d''incendio particolare. Non ancora verificabile: il modello mostra estintori e posti d''acqua antincendio
-    solo come apparecchio con posizione, senza agente estinguente, potere estinguente né percorso di marcia.'
+    con pericolo d''incendio particolare.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

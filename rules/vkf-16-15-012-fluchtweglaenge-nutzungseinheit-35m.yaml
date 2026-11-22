@@ -10,21 +10,19 @@ description:
   de: 'Innerhalb einer Nutzungseinheit darf der Fluchtweg höchstens 35 m messen. Führen die Ausgänge nicht innerhalb dieser
     35 m direkt ins Freie oder in einen vertikalen Fluchtweg, braucht es dazwischen einen horizontalen Fluchtweg (z. B. einen
     Korridor mit Feuerwiderstand oder einen Laubengang). Bei überhohen Räumen kann die Brandschutzbehörde bis 50 m zulassen,
-    wenn mehrere Fluchtrichtungen bestehen. Noch nicht prüfbar: Nutzungseinheiten sind im Modell nicht eindeutig ausgewiesen.'
+    wenn mehrere Fluchtrichtungen bestehen.'
   en: 'Within a use unit the escape route may measure at most 35 m. If the exits do not lead directly outside or into a vertical
     escape route within these 35 m, a horizontal escape route is needed in between (e.g. a corridor with fire resistance or
     an access balcony). For very high rooms the fire protection authority may allow up to 50 m if several escape directions
-    are available. Not yet checkable: use units are not clearly identified in the model.'
+    are available.'
   fr: 'Dans une unité d''utilisation, la voie d''évacuation mesure 35 m au plus. Si les sorties ne mènent pas, dans ces 35
     m, directement à l''extérieur ou dans une voie d''évacuation verticale, une voie horizontale est nécessaire entre les
     deux (p. ex. un couloir résistant au feu ou une coursive). Pour les locaux très hauts, l''autorité de protection incendie
-    peut admettre jusqu''à 50 m si plusieurs directions de fuite existent. Pas encore vérifiable : les unités d''utilisation
-    ne sont pas clairement identifiées dans le modèle.'
+    peut admettre jusqu''à 50 m si plusieurs directions de fuite existent.'
   it: 'All''interno di un''unità d''utilizzo la via di fuga misura al massimo 35 m. Se le uscite non conducono, entro questi
     35 m, direttamente all''esterno o in una via di fuga verticale, è necessaria nel mezzo una via di fuga orizzontale (p.
     es. un corridoio con resistenza al fuoco o un ballatoio). Per locali molto alti l''autorità di protezione antincendio
-    può ammettere fino a 50 m se esistono più direzioni di fuga. Non ancora verificabile: le unità d''utilizzo non sono identificate
-    chiaramente nel modello.'
+    può ammettere fino a 50 m se esistono più direzioni di fuga.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

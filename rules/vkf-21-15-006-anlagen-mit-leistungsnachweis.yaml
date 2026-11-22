@@ -10,23 +10,19 @@ description:
   de: 'Eine Rauch- und Wärmeabzugsanlage mit Leistungsnachweis ist nötig bei offen verbundenen mehrgeschossigen Büro-Brandabschnitten
     über 3''600 m², bei Räumen mit über 2''000 Personen, bei Verkaufsgeschäften mit Löschanlage ab 7''200 m² (eingeschossig)
     bzw. 3''600 m² (mehrgeschossig) und bei Atrien mit Fluchtweg oder über 2''400 m² Grundfläche. Der Nachweis selbst folgt
-    der Richtlinie Nachweisverfahren. Noch nicht prüfbar: das Modell enthält keine Rauch- und Wärmeabzugsanlage als System
-    und keine Zuordnung zu Brandabschnitten.'
+    der Richtlinie Nachweisverfahren.'
   en: 'A smoke and heat exhaust system with performance proof is needed for open-connected multi-storey office compartments
     above 3,600 m², rooms with over 2,000 people, shops with extinguishing system from 7,200 m² (single-storey) or 3,600 m²
     (multi-storey), and atria with an escape route or over 2,400 m² floor area. The proof itself follows the directive on
-    verification procedures. Not yet checkable: the model holds no smoke and heat exhaust system and no assignment of one
-    to fire compartments.'
+    verification procedures.'
   fr: 'Une installation d''évacuation de fumée et de chaleur avec preuve de performance est requise pour les compartiments
     de bureaux sur plusieurs étages en liaison ouverte de plus de 3''600 m², les locaux de plus de 2''000 personnes, les commerces
     avec installation d''extinction dès 7''200 m² (un niveau) ou 3''600 m² (plusieurs niveaux) et les atriums avec voie d''évacuation
-    ou de plus de 2''400 m² de surface. La preuve elle-même suit la directive sur les procédures de preuve. Pas encore vérifiable
-    : le modèle ne contient aucune installation d''évacuation de fumée et de chaleur ni affectation à des compartiments.'
+    ou de plus de 2''400 m² de surface. La preuve elle-même suit la directive sur les procédures de preuve.'
   it: 'È richiesto un impianto di evacuazione di fumo e calore con prova di prestazione per compartimenti di uffici su più
     piani in collegamento aperto oltre 3''600 m², locali con oltre 2''000 persone, negozi con impianto di estinzione da 7''200
     m² (un piano) o 3''600 m² (più piani) e atri con via di fuga o oltre 2''400 m² di superficie. La prova stessa segue la
-    direttiva sulle procedure di verifica. Non ancora verificabile: il modello non contiene alcun impianto di evacuazione
-    di fumo e calore né l''assegnazione a compartimenti.'
+    direttiva sulle procedure di verifica.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:

@@ -10,23 +10,20 @@ description:
   de: 'Bei Verkaufsgeschäften und Räumen mit grosser Personenbelegung richtet sich die Gesamtbreite von Treppenläufen und
     Podesten nach der grössten Ausgangsbreite der angeschlossenen Geschosse. Treppen mit mehr als 2.4 m Breite werden durch
     Handläufe unterteilt. In horizontalen Fluchtwegen sind einzelne Stufen nicht zulässig; eine Folge von mindestens drei
-    Stufen ist erlaubt, wenn sie deutlich gekennzeichnet ist. Rampen in Fluchtwegen haben höchstens 6 % Gefälle. Noch nicht
-    prüfbar: Treppenbreite, Ausgangsbreiten und Rampengefälle sind im Modell nicht durchgängig typisiert.'
+    Stufen ist erlaubt, wenn sie deutlich gekennzeichnet ist. Rampen in Fluchtwegen haben höchstens 6 % Gefälle.'
   en: 'For shops and rooms with large occupancy, the total width of stair flights and landings follows the widest exit of
     the connected storeys. Stairs wider than 2.4 m are divided by handrails. On horizontal escape routes single steps are
     not allowed; a sequence of at least three steps is permitted if clearly marked. Ramps on escape routes have a gradient
-    of at most 6 %. Not yet checkable: stair width, exit widths and ramp gradient are not consistently typed in the model.'
+    of at most 6 %.'
   fr: 'Pour les commerces et les locaux à grande occupation, la largeur totale des volées et paliers d''escalier se règle
     sur la plus grande largeur de sortie des étages reliés. Les escaliers de plus de 2,4 m de large sont subdivisés par des
     mains courantes. Sur les voies d''évacuation horizontales, les marches isolées ne sont pas admises ; une suite d''au moins
     trois marches est permise si elle est clairement signalée. Les rampes sur les voies d''évacuation ont une pente de 6 %
-    au plus. Pas encore vérifiable : la largeur d''escalier, les largeurs de sortie et la pente des rampes ne sont pas typées
-    de façon suivie dans le modèle.'
+    au plus.'
   it: 'Per i negozi e i locali con grande occupazione la larghezza complessiva di rampe e pianerottoli delle scale si orienta
     alla maggiore larghezza di uscita dei piani collegati. Le scale più larghe di 2,4 m sono suddivise da corrimano. Sulle
     vie di fuga orizzontali i gradini singoli non sono ammessi; una sequenza di almeno tre gradini è permessa se chiaramente
-    segnalata. Le rampe sulle vie di fuga hanno una pendenza massima del 6 %. Non ancora verificabile: larghezza delle scale,
-    larghezze delle uscite e pendenza delle rampe non sono tipizzate in modo continuo nel modello.'
+    segnalata. Le rampe sulle vie di fuga hanno una pendenza massima del 6 %.'
 rule_status: reviewed
 severity: violation
 applies_to_elements:
