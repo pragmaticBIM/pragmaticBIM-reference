@@ -60,7 +60,6 @@ connections:
 representation:
   body: box
   plan_symbol: wall_board
-comment: 'Freifläche als Lehrerzone: Planungswert; vor Freigabe fachlich bestätigen.'
 picture_link: wandtafel-plan.svg
 attachment_link: wandtafel.ifc
 status: active

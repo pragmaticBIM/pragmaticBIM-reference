@@ -73,7 +73,7 @@ connections:
 representation:
   body: box
   plan_symbol: meeting_table
-comment: 'Rund 0.70 m Tischlänge pro Platz. Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+comment: 'Rund 0.70 m Tischlänge pro Platz.'
 picture_link: besprechungstisch-plan.svg
 attachment_link: besprechungstisch.ifc
 status: active

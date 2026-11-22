@@ -51,7 +51,7 @@ connections:
 representation:
   body: box
   plan_symbol: shower
-comment: Ablauf und Gefälle bestimmen die Distanz zum Schacht; Planungswert; vor Freigabe fachlich bestätigen.
+comment: Ablauf und Gefälle bestimmen die Distanz zum Schacht.
 picture_link: dusche-bodeneben-plan.svg
 attachment_link: dusche-bodeneben.ifc
 status: active

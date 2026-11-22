@@ -63,7 +63,6 @@ connections:
 representation:
   body: box
   plan_symbol: wc_accessible
-comment: Mass nach SIA 500 vor Freigabe fachlich bestätigen.
 picture_link: wc-rollstuhlgerecht-plan.svg
 attachment_link: wc-rollstuhlgerecht.ifc
 status: active

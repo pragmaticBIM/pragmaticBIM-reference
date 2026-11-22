@@ -48,7 +48,6 @@ connections:
 representation:
   body: box
   plan_symbol: power_outlet
-comment: 'Montagehöhe: Planungswert; vor Freigabe fachlich bestätigen.'
 picture_link: steckdose-plan.svg
 attachment_link: steckdose.ifc
 status: active

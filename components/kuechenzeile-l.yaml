@@ -86,8 +86,7 @@ parts:
 representation:
   body: parts
   plan_symbol: kitchen_l
-comment: 'width = Schenkel an der ersten Wand, width_2 = Schenkel an der zweiten Wand. Freifläche: Planungswert;
-  vor Freigabe fachlich bestätigen.'
+comment: 'width = Schenkel an der ersten Wand, width_2 = Schenkel an der zweiten Wand.'
 picture_link: kuechenzeile-l-plan.svg
 attachment_link: kuechenzeile-l.ifc
 status: active

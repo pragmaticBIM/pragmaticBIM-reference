@@ -58,8 +58,7 @@ connections:
 representation:
   body: box
   plan_symbol: washing_machine
-comment: 'Geräteplatz als Blackbox; das Gerät selbst wird nicht modelliert. Freifläche: Planungswert;
-  vor Freigabe fachlich bestätigen.'
+comment: 'Geräteplatz als Blackbox; das Gerät selbst wird nicht modelliert.'
 picture_link: geraeteplatz-waschmaschine-plan.svg
 attachment_link: geraeteplatz-waschmaschine.ifc
 status: active

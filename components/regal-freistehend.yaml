@@ -52,7 +52,7 @@ clearances:
 representation:
   body: box
   plan_symbol: shelf_double
-comment: Gangbreite 1.20 m; für Rollstuhlnutzende breiter. Planungswert; vor Freigabe fachlich bestätigen.
+comment: Gangbreite 1.20 m; für Rollstuhlnutzende breiter.
 picture_link: regal-freistehend-plan.svg
 attachment_link: regal-freistehend.ifc
 status: active

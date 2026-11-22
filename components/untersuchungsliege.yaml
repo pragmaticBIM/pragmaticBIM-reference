@@ -54,7 +54,6 @@ connections:
 representation:
   body: box
   plan_symbol: examination_couch
-comment: 'Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
 picture_link: untersuchungsliege-plan.svg
 attachment_link: untersuchungsliege.ifc
 status: active

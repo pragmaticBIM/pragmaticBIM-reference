@@ -41,7 +41,6 @@ levels:
   status: active
   activated_workflows:
   - pragmaticbim:workflow/qas-accessibility-sia500-verification
-  comment: ''
 - id: pragmaticbim:project-goal-level/accessibility-adaptable
   code: HIN-02
   sort_order: 2
@@ -59,7 +58,6 @@ levels:
   activated_workflows:
   - pragmaticbim:workflow/qas-accessibility-sia500-verification
   - pragmaticbim:workflow/des-door-planning
-  comment: ''
 - id: pragmaticbim:project-goal-level/accessibility-wheelchair
   code: HIN-03
   sort_order: 3
@@ -84,4 +82,3 @@ levels:
     name: HandicapAccessible
     pset: Pset_SpaceCommon
     value: true
-  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
