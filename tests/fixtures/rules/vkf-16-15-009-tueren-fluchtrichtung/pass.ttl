@@ -1,0 +1,15 @@
+@prefix pbs: <https://schema.pragmaticbim.ch/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc: <https://w3id.org/ifc/IFC4_ADD2#> .
+@prefix ex: <https://schema.pragmaticbim.ch/ex/> .
+
+ex:space a pbs:Space ;
+  pbs:escape_route_next ex:focus ;
+  pbs:performance_properties [
+    pbs:property_key pbs:indoor_environment_peak_occupancy ;
+    pbs:property_value_number 40
+  ] .
+ex:next a pbs:Space .
+ex:focus pbs:connection_physical_type ifc:IfcDoor ;
+  pbs:escape_route_next ex:next ;
+  pbs:opens_in_escape_direction true .

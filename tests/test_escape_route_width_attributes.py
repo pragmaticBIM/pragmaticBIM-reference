@@ -1,4 +1,4 @@
-"""Guard the width attributes the VKF 16-15 rules 005 and 006 need (issue #125)."""
+"""Guard the width attributes the VKF 16-15 rules 005 and 006 need (issue #130)."""
 
 from __future__ import annotations
 
@@ -11,18 +11,31 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 LANGS = ("de", "fr", "it", "en")
 
-# element -> {attribute name: pset}
+# element -> {attribute name: (pset, quantity_type)}
 EXPECTED = {
     "architecture-stair": {
-        "ClearWidth": "ePset_StairFlight",
-        "TreadLengthAtInnerSide": "Pset_StairFlightCommon",
+        "ClearWidth": ("ePset_StairFlight", "pbs:quantity_type_clear_width"),
+        "TreadLengthAtInnerSide": (
+            "Pset_StairFlightCommon",
+            "pbs:quantity_type_tread_length_at_inner_side",
+        ),
     },
     "structural-stair": {
-        "ClearWidth": "ePset_Stair",
-        "TreadLengthAtInnerSide": "ePset_Stair",
+        "ClearWidth": ("ePset_Stair", "pbs:quantity_type_clear_width"),
+        "TreadLengthAtInnerSide": (
+            "ePset_Stair",
+            "pbs:quantity_type_tread_length_at_inner_side",
+        ),
     },
-    "spaces-interior": {"EscapeRouteClearWidth": "ePset_Space"},
+    "spaces-interior": {
+        "EscapeRouteClearWidth": (
+            "ePset_Space",
+            "pbs:quantity_type_escape_route_clear_width",
+        ),
+    },
 }
+
+SHACL_RULES = ("005", "006", "007", "008", "009")
 
 
 def _load(relative_path: str) -> dict[str, Any]:
@@ -36,10 +49,16 @@ def _attributes(element: str) -> list[dict[str, Any]]:
 
 
 @pytest.mark.parametrize(
-    ("element", "name", "pset"),
-    [(e, n, p) for e, attrs in EXPECTED.items() for n, p in attrs.items()],
+    ("element", "name", "pset", "quantity_type"),
+    [
+        (e, n, pset, qty)
+        for e, attrs in EXPECTED.items()
+        for n, (pset, qty) in attrs.items()
+    ],
 )
-def test_width_attribute_is_complete(element: str, name: str, pset: str) -> None:
+def test_width_attribute_is_complete(
+    element: str, name: str, pset: str, quantity_type: str
+) -> None:
     attributes = _attributes(element)
     matches = [a for a in attributes if a["name"] == name]
     assert len(matches) == 1
@@ -50,9 +69,8 @@ def test_width_attribute_is_complete(element: str, name: str, pset: str) -> None
     assert attribute["datatype"] in {"IfcPositiveLengthMeasure", "IfcLengthMeasure"}
     assert attribute["status"] == "active"
     assert all(str(attribute["definition"].get(lang) or "").strip() for lang in LANGS)
-    # No contract key is invented here; that waits for the data contract (#125).
+    assert attribute["quantity_type"] == quantity_type
     assert "performance_property_key" not in attribute
-    assert "quantity_type" not in attribute
 
 
 @pytest.mark.parametrize("element", sorted(EXPECTED))
@@ -61,7 +79,9 @@ def test_sort_orders_stay_unique(element: str) -> None:
     assert len(orders) == len(set(orders))
 
 
-def test_stair_rules_stay_text_only_until_the_contract_carries_the_facts() -> None:
-    for code in ("005", "006", "007", "008", "009"):
-        path = next((ROOT / "rules").glob(f"vkf-16-15-{code}-*.yaml"))
-        assert _load(str(path.relative_to(ROOT)))["rule_status"] != "shacl_defined"
+@pytest.mark.parametrize("code", SHACL_RULES)
+def test_width_rules_are_shacl_defined(code: str) -> None:
+    path = next((ROOT / "rules").glob(f"vkf-16-15-{code}-*.yaml"))
+    doc = _load(str(path.relative_to(ROOT)))
+    assert doc["rule_status"] == "shacl_defined"
+    assert "shacl" in doc and doc["shacl"].strip()

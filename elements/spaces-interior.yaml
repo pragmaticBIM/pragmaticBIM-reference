@@ -1652,7 +1652,7 @@ attributes:
     is_applicability: false
     status: active
     sort_order: 55
-  # IFC mapping and quantity_type for this value await the data contract (#125); planning attribute only, no contract key. Differs from MinClearWidth, the briefed requirement.
+  # Mapped in pragmatic-bim-data-contract#13 / #14 to pbs:quantity_type_escape_route_clear_width. Differs from MinClearWidth, the briefed requirement.
   - name: EscapeRouteClearWidth
     pset: ePset_Space
     definition:
@@ -1662,6 +1662,7 @@ attributes:
       en: Planned clear width of the horizontal escape route in the space, at its narrowest point; give it only for spaces on an escape route (e.g. corridor).
     datatype: IfcLengthMeasure
     unit: m
+    quantity_type: pbs:quantity_type_escape_route_clear_width
     needed_in_phases: ['31', '32', '33', '41']
     ifc_versions: [ifc2x3, ifc4, ifc4x3]
     needed_for_workflows:
