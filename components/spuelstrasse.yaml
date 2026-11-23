@@ -63,7 +63,6 @@ connections:
 representation:
   body: box
   plan_symbol: dishwashing_line
-comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
 picture_link: spuelstrasse-plan.svg
 attachment_link: spuelstrasse.ifc
 status: active

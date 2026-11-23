@@ -46,7 +46,7 @@ connections:
 representation:
   body: box
   plan_symbol: desk
-comment: Freifläche als Stuhl- und Bewegungszone; Planungswert; vor Freigabe fachlich bestätigen.
+comment: Freifläche als Stuhl- und Bewegungszone.
 picture_link: arbeitsplatz-buero-plan.svg
 attachment_link: arbeitsplatz-buero.ifc
 status: active

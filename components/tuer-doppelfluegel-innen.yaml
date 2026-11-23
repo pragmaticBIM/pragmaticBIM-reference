@@ -49,7 +49,7 @@ clearances:
 representation:
   body: opening
   plan_symbol: door_double
-comment: Für Bettentransport lichte Breite nach Spitalstandard; Planungswert; vor Freigabe fachlich bestätigen.
+comment: Für Bettentransport lichte Breite nach Spitalstandard.
 picture_link: tuer-doppelfluegel-innen-plan.svg
 attachment_link: tuer-doppelfluegel-innen.ifc
 status: active

@@ -137,7 +137,7 @@ configurations:
       per:
         quantity: net_floor_area
         divisor: 10
-    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    comment: Anzahl aus der Raumfläche.
     status: active
     placement_rules:
     - id: pragmaticbim:placement-rule/esszimmer-default-steckdose-hoehe
@@ -148,7 +148,6 @@ configurations:
       severity: preferred
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     - id: pragmaticbim:placement-rule/esszimmer-default-steckdose-tuer-frei
       relation: not_in_clearance_of
       target:
@@ -156,7 +155,6 @@ configurations:
       severity: required
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
   - id: pragmaticbim:room-type-equipment/esszimmer-default-lichtschalter
     sort_order: 3
     function: light_switch
@@ -175,7 +173,6 @@ configurations:
       severity: required
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
       variants:
       - relation: next_to
         target:

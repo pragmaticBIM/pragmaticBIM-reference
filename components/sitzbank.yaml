@@ -53,7 +53,6 @@ clearances:
 representation:
   body: box
   plan_symbol: bench
-comment: 'Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
 picture_link: sitzbank-plan.svg
 attachment_link: sitzbank.ifc
 status: active

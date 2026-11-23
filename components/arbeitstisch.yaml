@@ -54,7 +54,6 @@ connections:
 representation:
   body: box
   plan_symbol: work_table
-comment: 'Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
 picture_link: arbeitstisch-plan.svg
 attachment_link: arbeitstisch.ifc
 status: active

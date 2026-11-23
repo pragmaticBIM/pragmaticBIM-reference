@@ -57,7 +57,7 @@ connections:
 representation:
   body: box
   plan_symbol: generator
-comment: Masse nach Fachplanung ersetzen; Planungswert; vor Freigabe fachlich bestätigen.
+comment: Masse nach Fachplanung ersetzen.
 picture_link: notstromaggregat-plan.svg
 attachment_link: notstromaggregat.ifc
 status: active

@@ -81,7 +81,7 @@ configurations:
       per:
         quantity: net_floor_area
         divisor: 10
-    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    comment: Anzahl aus der Raumfläche.
     status: active
     placement_rules:
     - id: pragmaticbim:placement-rule/balkon-default-steckdose-aussen-hoehe
@@ -92,7 +92,6 @@ configurations:
       severity: preferred
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
   - id: pragmaticbim:room-type-equipment/balkon-default-lichtschalter
     sort_order: 2
     function: light_switch
@@ -188,7 +187,7 @@ configurations:
       per:
         quantity: net_floor_area
         divisor: 10
-    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    comment: Anzahl aus der Raumfläche.
     status: active
     placement_rules:
     - id: pragmaticbim:placement-rule/balkon-medium-steckdose-aussen-hoehe
@@ -199,7 +198,6 @@ configurations:
       severity: preferred
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
   - id: pragmaticbim:room-type-equipment/balkon-medium-lichtschalter
     sort_order: 2
     function: light_switch
@@ -295,7 +293,7 @@ configurations:
       per:
         quantity: net_floor_area
         divisor: 10
-    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    comment: Anzahl aus der Raumfläche.
     status: active
     placement_rules:
     - id: pragmaticbim:placement-rule/balkon-large-steckdose-aussen-hoehe
@@ -306,7 +304,6 @@ configurations:
       severity: preferred
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
   - id: pragmaticbim:room-type-equipment/balkon-large-lichtschalter
     sort_order: 2
     function: light_switch

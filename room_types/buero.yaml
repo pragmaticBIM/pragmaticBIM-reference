@@ -134,7 +134,6 @@ configurations:
       severity: preferred
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     - id: pragmaticbim:placement-rule/buero-default-arbeitsplatz-tuer-frei
       relation: not_in_clearance_of
       target:
@@ -142,8 +141,7 @@ configurations:
       severity: required
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
-    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    comment: Anzahl aus der Raumfläche.
     status: active
   - id: pragmaticbim:room-type-equipment/buero-default-aktenschrank
     sort_order: 2
@@ -162,7 +160,6 @@ configurations:
       severity: preferred
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     status: active
   - id: pragmaticbim:room-type-equipment/buero-default-steckdose
     sort_order: 3
@@ -183,7 +180,6 @@ configurations:
       severity: preferred
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     - id: pragmaticbim:placement-rule/buero-default-steckdose-tuer-frei
       relation: not_in_clearance_of
       target:
@@ -191,7 +187,6 @@ configurations:
       severity: required
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     - id: pragmaticbim:placement-rule/buero-default-steckdose-arbeitsplatz
       relation: next_to
       target:
@@ -202,8 +197,7 @@ configurations:
       severity: preferred
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
-    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    comment: Anzahl aus der Raumfläche.
     status: active
   - id: pragmaticbim:room-type-equipment/buero-default-lichtschalter
     sort_order: 4
@@ -222,7 +216,6 @@ configurations:
       severity: required
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
       variants:
       - relation: next_to
         target:
@@ -264,7 +257,6 @@ configurations:
       severity: required
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     status: active
   - id: pragmaticbim:room-type-opening/buero-default-fenster
     sort_order: 2
@@ -285,7 +277,6 @@ configurations:
       severity: required
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     comment: Mindestanteil Glasfläche nach kantonalem Recht und Arbeitsgesetz; projektbezogen prüfen.
     status: active
   status: active

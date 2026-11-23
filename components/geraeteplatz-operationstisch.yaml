@@ -50,7 +50,7 @@ connections:
 representation:
   body: volume
   plan_symbol: device_operating_table
-comment: Teamzone ist im Volumen enthalten. Planungswert; vor Freigabe fachlich bestätigen.
+comment: Teamzone ist im Volumen enthalten.
 picture_link: geraeteplatz-operationstisch-plan.svg
 attachment_link: geraeteplatz-operationstisch.ifc
 status: active

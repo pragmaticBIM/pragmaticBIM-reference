@@ -56,8 +56,7 @@ clearances:
 representation:
   body: opening
   plan_symbol: door_swing
-comment: Brand- und Schallschutz über FireRating und AcousticRating am Element. Mass nach SIA 500 vor
-  Freigabe fachlich bestätigen.
+comment: Brand- und Schallschutz über FireRating und AcousticRating am Element.
 picture_link: wohnungseingangstuer-plan.svg
 attachment_link: wohnungseingangstuer.ifc
 status: active

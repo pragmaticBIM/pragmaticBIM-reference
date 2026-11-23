@@ -55,7 +55,6 @@ connections:
 representation:
   body: box
   plan_symbol: washbasin_accessible
-comment: Mass nach SIA 500 vor Freigabe fachlich bestätigen.
 picture_link: waschtisch-unterfahrbar-plan.svg
 attachment_link: waschtisch-unterfahrbar.ifc
 status: active

@@ -59,7 +59,6 @@ connections:
 representation:
   body: box
   plan_symbol: checkout
-comment: 'Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
 picture_link: kassentheke-plan.svg
 attachment_link: kassentheke.ifc
 status: active

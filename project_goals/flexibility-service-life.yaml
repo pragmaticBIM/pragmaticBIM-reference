@@ -40,7 +40,6 @@ levels:
     en: Service life based on usual values, without special requirements for separating structure, fit-out, and building services.
   status: active
   activated_workflows: []
-  comment: ''
 - id: pragmaticbim:project-goal-level/flexibility-system-separation
   code: FLX-02
   sort_order: 2
@@ -81,4 +80,3 @@ levels:
     value: 3.0
   comment: >-
     Keine Anwendungsfälle. Einbringwege gehören zur Terminkoordination.
-    Sollwert DesignAreaLoad vor Freigabe fachlich bestätigen.

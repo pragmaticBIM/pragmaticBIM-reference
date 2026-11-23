@@ -59,8 +59,7 @@ connections:
 representation:
   body: box
   plan_symbol: washer_dryer
-comment: 'Geräteplatz als Blackbox; die Geräte selbst werden nicht modelliert. Freifläche: Planungswert;
-  vor Freigabe fachlich bestätigen.'
+comment: 'Geräteplatz als Blackbox; die Geräte selbst werden nicht modelliert.'
 picture_link: waschturm-plan.svg
 attachment_link: waschturm.ifc
 status: active

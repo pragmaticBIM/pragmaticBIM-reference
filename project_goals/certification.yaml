@@ -24,7 +24,7 @@ description:
 status: active
 is_boundary_condition: true
 allows_multiple: true
-comment: 'Keine eigenen Anwendungsfälle; wirkt über implied_levels auf PG-34, PG-35 und PG-38. Kein Einfluss auf Anwendungsfälle der Nutzung oder Raumtypen. Mindeststufen je Label vor Freigabe fachlich bestätigen.'
+comment: 'Keine eigenen Anwendungsfälle; wirkt über implied_levels auf PG-34, PG-35 und PG-38. Kein Einfluss auf Anwendungsfälle der Nutzung oder Raumtypen.'
 levels:
 - id: pragmaticbim:project-goal-level/certification-none
   code: ZER-01
@@ -42,7 +42,6 @@ levels:
   status: active
   exclusive: true
   activated_workflows: []
-  comment: ''
 - id: pragmaticbim:project-goal-level/certification-minergie-eco
   code: ZER-02
   sort_order: 2
@@ -62,7 +61,6 @@ levels:
   - pragmaticbim:project-goal-level/energy-standard-minergie
   - pragmaticbim:project-goal-level/ghg-target-sia-390-1
   - pragmaticbim:project-goal-level/sound-insulation-increased
-  comment: ''
 - id: pragmaticbim:project-goal-level/certification-snbs
   code: ZER-03
   sort_order: 3
@@ -80,7 +78,6 @@ levels:
   activated_workflows: []
   implied_levels:
   - pragmaticbim:project-goal-level/ghg-target-sia-390-1
-  comment: ''
 - id: pragmaticbim:project-goal-level/certification-dgnb-sgni
   code: ZER-04
   sort_order: 4
@@ -98,4 +95,3 @@ levels:
   activated_workflows: []
   implied_levels:
   - pragmaticbim:project-goal-level/ghg-target-sia-390-1
-  comment: ''

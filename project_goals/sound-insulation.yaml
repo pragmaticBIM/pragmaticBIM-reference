@@ -60,7 +60,6 @@ levels:
     name: ImpactSoundLevelMax
     pset: ePset_SlabRequirement
     value: 53
-  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
 - id: pragmaticbim:project-goal-level/sound-insulation-increased
   code: SLS-02
   sort_order: 2
@@ -98,7 +97,6 @@ levels:
     name: ImpactSoundLevelMax
     pset: ePset_SlabRequirement
     value: 50
-  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
 - id: pragmaticbim:project-goal-level/sound-insulation-special
   code: SLS-03
   sort_order: 3
@@ -132,4 +130,3 @@ levels:
   - element: pragmaticbim:element/architecture-slab-floor
     name: ImpactSoundLevelMax
     pset: ePset_SlabRequirement
-  comment: ''
