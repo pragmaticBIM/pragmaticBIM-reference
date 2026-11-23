@@ -69,12 +69,18 @@ shacl: |-
                   }
               }"""
       ] ;
-      sh:property [
-          sh:path pbs:quantity_values ;
-          sh:or (
-              [ sh:not [ sh:property [ sh:path pbs:quantity_type ; sh:hasValue pbs:quantity_type_escape_route_length ] ] ]
-              [ sh:property [ sh:path pbs:quantity_value ; sh:maxInclusive 50.0 ] ]
-          ) ;
+      sh:sparql [
+          a sh:SPARQLConstraint ;
+          sh:prefixes rule:vkf-16-15-001-fluchtweglaenge-50m-prefixes ;
           sh:message "Fluchtweg länger als 50 m bis zum Ausgang oder zur Treppe."@de ,
-              "Escape route longer than 50 m to the exit or stair."@en
+              "Escape route longer than 50 m to the exit or stair."@en ;
+          sh:select """
+              SELECT $this WHERE {
+                  ?m a pbs:DerivedMeasurement ;
+                     pbs:applies_to_entities $this ;
+                     pbs:quantity_values ?qv .
+                  ?qv pbs:quantity_type pbs:quantity_type_escape_route_length ;
+                      pbs:quantity_value ?value .
+                  FILTER (?value > 50.0)
+              }"""
       ] .

@@ -47,6 +47,9 @@ Every rule with `rule_status: shacl_defined` needs two fixture graphs under `tes
 
 `tests/test_rule_shacl.py` runs pySHACL on both. A new SHACL rule without fixtures fails CI.
 
+Element identity in SHACL targets Reference classification URIs (`/mep-light-fixture`, …),
+not IFC class IRIs. See [docs/element-identity-mapping.md](docs/element-identity-mapping.md).
+
 ## Writing style
 
 Descriptions are maintained in German, English, French, and Italian. The rules under [`.cursor/rules/`](.cursor/rules/) describe the structure of element, attribute, workflow, document, and usage scenario descriptions and the style per language.
