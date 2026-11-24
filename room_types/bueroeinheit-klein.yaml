@@ -1,0 +1,49 @@
+id: pragmaticbim:room-type/bueroeinheit-klein
+code: UT-WR-02
+sort_order: 17
+name:
+  de: Kleine Büroeinheit
+  fr: Petite suite de bureaux
+  it: Piccola suite di uffici
+  en: Small office suite
+definition:
+  de: Bruttovolumen einer kleinen Büroeinheit, etwa für ein Team bis zehn Arbeitsplätze.
+  fr: Volume brut d'une petite suite de bureaux, par exemple pour une équipe jusqu'à dix postes de travail.
+  it: Volume lordo di una piccola suite di uffici, ad esempio per un team fino a dieci postazioni.
+  en: Gross volume of a small office suite, for example for a team of up to ten workstations.
+room_type_kind: container
+uses:
+- pragmaticbim:use/arbeit
+extends: pragmaticbim:room-type/bueroeinheit
+contains:
+- room_type: pragmaticbim:room-type/buero
+- room_type: pragmaticbim:room-type/besprechungsraum
+- room_type: pragmaticbim:room-type/pausenraum
+- room_type: pragmaticbim:room-type/allgemeines-wc
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/bueroeinheit-klein-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Kleine Büroeinheit
+      fr: Petite suite de bureaux
+      it: Piccola suite di uffici
+      en: Small office suite
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: GrossPlannedArea
+    pset: ePset_SpaceRequirement
+    value: 150
+  status: active

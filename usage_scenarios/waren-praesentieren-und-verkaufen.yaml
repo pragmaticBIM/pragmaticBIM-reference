@@ -31,6 +31,7 @@ options:
     fr: Local de vente avec service
     it: Locale di vendita servito
     en: Served retail room
+  target: pragmaticbim:room-type/ladenlokal
   adds:
   - pragmaticbim:room-type/verkaufsraum
 - id: pragmaticbim:scenario-option/waren-praesentieren-und-verkaufen-self-service
@@ -40,6 +41,7 @@ options:
     fr: Surface de vente ouverte
     it: Superficie di vendita aperta
     en: Open sales floor
+  target: pragmaticbim:room-type/ladenlokal
   adds:
   - pragmaticbim:room-type/verkaufsflaeche
 - id: pragmaticbim:scenario-option/waren-praesentieren-und-verkaufen-kiosk
@@ -49,5 +51,6 @@ options:
     fr: Kiosque
     it: Chiosco
     en: Kiosk
+  target: pragmaticbim:room-type/ladenlokal
   adds:
   - pragmaticbim:room-type/kiosk

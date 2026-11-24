@@ -31,6 +31,7 @@ options:
     fr: Réception
     it: Ricezione
     en: Reception
+  target: pragmaticbim:room-type/bueroeinheit
   adds:
   - pragmaticbim:room-type/empfang
 - id: pragmaticbim:scenario-option/besuch-empfangen-direct
@@ -40,5 +41,6 @@ options:
     fr: Accueil direct au bureau
     it: Accoglienza diretta in ufficio
     en: Direct reception in the office
+  target: pragmaticbim:room-type/bueroeinheit
   adds:
   - pragmaticbim:room-type/buero

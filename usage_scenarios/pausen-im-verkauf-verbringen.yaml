@@ -34,5 +34,6 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/verkaufsraum
     to_room_type: pragmaticbim:room-type/pausenraum
+  target: pragmaticbim:room-type/ladenlokal
   adds:
   - pragmaticbim:room-type/pausenraum

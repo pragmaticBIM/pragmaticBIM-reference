@@ -40,5 +40,6 @@ options:
     fr: Enregistrement autonome direct
     it: Check-in autonomo diretto
     en: Direct self check-in
+  target: pragmaticbim:room-type/hoteleinheit
   adds:
   - pragmaticbim:room-type/hotelzimmer

@@ -1,0 +1,51 @@
+id: pragmaticbim:room-type/bueroeinheit-gross
+code: UT-WR-04
+sort_order: 19
+name:
+  de: Grosse Büroeinheit
+  fr: Grande suite de bureaux
+  it: Grande suite di uffici
+  en: Large office suite
+definition:
+  de: Bruttovolumen einer grossen Büroeinheit, etwa ein ganzes Geschoss für eine Mietpartei.
+  fr: Volume brut d'une grande suite de bureaux, par exemple un étage entier pour un seul locataire.
+  it: Volume lordo di una grande suite di uffici, ad esempio un intero piano per un solo conduttore.
+  en: Gross volume of a large office suite, for example a whole storey for a single tenant.
+room_type_kind: container
+uses:
+- pragmaticbim:use/arbeit
+extends: pragmaticbim:room-type/bueroeinheit
+contains:
+- room_type: pragmaticbim:room-type/empfang
+- room_type: pragmaticbim:room-type/buero
+- room_type: pragmaticbim:room-type/grossraumbuero
+- room_type: pragmaticbim:room-type/besprechungsraum
+- room_type: pragmaticbim:room-type/pausenraum
+- room_type: pragmaticbim:room-type/allgemeines-wc
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/bueroeinheit-gross-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Grosse Büroeinheit
+      fr: Grande suite de bureaux
+      it: Grande suite di uffici
+      en: Large office suite
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: GrossPlannedArea
+    pset: ePset_SpaceRequirement
+    value: 1000
+  status: active

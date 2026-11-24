@@ -1,0 +1,51 @@
+id: pragmaticbim:room-type/bueroeinheit-mittel
+code: UT-WR-03
+sort_order: 18
+name:
+  de: Mittlere Büroeinheit
+  fr: Suite de bureaux moyenne
+  it: Suite di uffici media
+  en: Medium office suite
+definition:
+  de: Bruttovolumen einer mittleren Büroeinheit, etwa für eine Abteilung bis dreissig Arbeitsplätze.
+  fr: Volume brut d'une suite de bureaux moyenne, par exemple pour un service jusqu'à trente postes de travail.
+  it: Volume lordo di una suite di uffici media, ad esempio per un reparto fino a trenta postazioni.
+  en: Gross volume of a medium office suite, for example for a department of up to thirty workstations.
+room_type_kind: container
+uses:
+- pragmaticbim:use/arbeit
+extends: pragmaticbim:room-type/bueroeinheit
+contains:
+- room_type: pragmaticbim:room-type/empfang
+- room_type: pragmaticbim:room-type/buero
+- room_type: pragmaticbim:room-type/grossraumbuero
+- room_type: pragmaticbim:room-type/besprechungsraum
+- room_type: pragmaticbim:room-type/pausenraum
+- room_type: pragmaticbim:room-type/allgemeines-wc
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/bueroeinheit-mittel-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Mittlere Büroeinheit
+      fr: Suite de bureaux moyenne
+      it: Suite di uffici media
+      en: Medium office suite
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: GrossPlannedArea
+    pset: ePset_SpaceRequirement
+    value: 400
+  status: active

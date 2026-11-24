@@ -31,6 +31,7 @@ options:
     fr: Sur la surface de vente
     it: Sulla superficie di vendita
     en: On the sales floor
+  target: pragmaticbim:room-type/ladenlokal
   adds:
   - pragmaticbim:room-type/verkaufsflaeche
 - id: pragmaticbim:scenario-option/kundschaft-beraten-service-area
@@ -40,6 +41,7 @@ options:
     fr: Espace service clientèle
     it: Area assistenza clienti
     en: Customer service area
+  target: pragmaticbim:room-type/ladenlokal
   adds:
   - pragmaticbim:room-type/kundenbetreuungsbereich
 - id: pragmaticbim:scenario-option/kundschaft-beraten-meeting-room
@@ -49,5 +51,6 @@ options:
     fr: Conseil en salle de réunion
     it: Consulenza in sala riunioni
     en: Advice in a meeting room
+  target: pragmaticbim:room-type/ladenlokal
   adds:
   - pragmaticbim:room-type/besprechungsraum

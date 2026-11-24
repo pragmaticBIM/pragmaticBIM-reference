@@ -31,6 +31,7 @@ options:
     fr: Dans la zone de travail
     it: Nell'area di lavoro
     en: In the work area
+  target: pragmaticbim:room-type/bueroeinheit
   adds:
   - pragmaticbim:room-type/grossraumbuero
 - id: pragmaticbim:scenario-option/zusammenarbeiten-team-room
@@ -40,5 +41,6 @@ options:
     fr: Salle d'équipe
     it: Sala di gruppo
     en: Team room
+  target: pragmaticbim:room-type/bueroeinheit
   adds:
   - pragmaticbim:room-type/besprechungsraum

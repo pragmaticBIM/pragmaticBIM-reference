@@ -36,6 +36,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/wohnzimmer
     to_room_type: pragmaticbim:room-type/balkon
+  target: pragmaticbim:room-type/wohnung
   adds:
   - pragmaticbim:room-type/wohnzimmer
   - pragmaticbim:room-type/balkon
@@ -51,6 +52,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/wohnzimmer
     to_room_type: pragmaticbim:room-type/loggia
+  target: pragmaticbim:room-type/wohnung
   adds:
   - pragmaticbim:room-type/wohnzimmer
   - pragmaticbim:room-type/loggia
@@ -64,6 +66,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/wohnzimmer
     to_room_type: pragmaticbim:room-type/terrasse
+  target: pragmaticbim:room-type/wohnung
   adds:
   - pragmaticbim:room-type/wohnzimmer
   - pragmaticbim:room-type/terrasse
@@ -77,6 +80,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/wohnzimmer
     to_room_type: pragmaticbim:room-type/innenhof
+  target: pragmaticbim:room-type/wohnung
   adds:
   - pragmaticbim:room-type/wohnzimmer
   - pragmaticbim:room-type/innenhof
@@ -92,6 +96,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/wohnzimmer
     to_room_type: pragmaticbim:room-type/dachterrasse
+  target: pragmaticbim:room-type/wohnung
   adds:
   - pragmaticbim:room-type/wohnzimmer
   - pragmaticbim:room-type/dachterrasse
@@ -107,6 +112,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/wohnzimmer
     to_room_type: pragmaticbim:room-type/wintergarten
+  target: pragmaticbim:room-type/wohnung
   adds:
   - pragmaticbim:room-type/wohnzimmer
   - pragmaticbim:room-type/wintergarten

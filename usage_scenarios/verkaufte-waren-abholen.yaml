@@ -43,6 +43,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/allgemeiner-lagerraum
     to_room_type: pragmaticbim:room-type/abholstation
+  target: pragmaticbim:room-type/ladenlokal
   adds:
   - pragmaticbim:room-type/allgemeiner-lagerraum
   - pragmaticbim:room-type/abholstation

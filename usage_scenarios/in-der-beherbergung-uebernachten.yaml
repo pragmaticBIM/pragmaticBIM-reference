@@ -31,6 +31,7 @@ options:
     fr: Chambre d'hôtel
     it: Camera d'albergo
     en: Hotel room
+  target: pragmaticbim:room-type/hoteleinheit
   adds:
   - pragmaticbim:room-type/hotelzimmer
 - id: pragmaticbim:scenario-option/in-der-beherbergung-uebernachten-living
@@ -43,6 +44,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/hotelzimmer
     to_room_type: pragmaticbim:room-type/wohnzimmer
+  target: pragmaticbim:room-type/hoteleinheit
   adds:
   - pragmaticbim:room-type/hotelzimmer
   - pragmaticbim:room-type/wohnzimmer

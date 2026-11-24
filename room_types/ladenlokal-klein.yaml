@@ -1,0 +1,47 @@
+id: pragmaticbim:room-type/ladenlokal-klein
+code: UT-CO-02
+sort_order: 20
+name:
+  de: Kleines Ladenlokal
+  fr: Petit local commercial
+  it: Piccolo locale di vendita
+  en: Small shop
+definition:
+  de: Bruttovolumen eines kleinen Ladenlokals, etwa für eine Boutique oder einen Kiosk.
+  fr: Volume brut d'un petit local commercial, par exemple pour une boutique ou un kiosque.
+  it: Volume lordo di un piccolo locale di vendita, ad esempio per una boutique o un chiosco.
+  en: Gross volume of a small shop, for example for a boutique or a kiosk.
+room_type_kind: container
+uses:
+- pragmaticbim:use/verkauf
+extends: pragmaticbim:room-type/ladenlokal
+contains:
+- room_type: pragmaticbim:room-type/verkaufsraum
+- room_type: pragmaticbim:room-type/allgemeiner-lagerraum
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/ladenlokal-klein-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Kleines Ladenlokal
+      fr: Petit local commercial
+      it: Piccolo locale di vendita
+      en: Small shop
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: GrossPlannedArea
+    pset: ePset_SpaceRequirement
+    value: 80
+  status: active

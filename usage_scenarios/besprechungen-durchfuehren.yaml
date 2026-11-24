@@ -30,6 +30,7 @@ options:
     fr: Salle de réunion
     it: Sala riunioni
     en: Meeting room
+  target: pragmaticbim:room-type/bueroeinheit
   adds:
   - pragmaticbim:room-type/besprechungsraum
 - id: pragmaticbim:scenario-option/besprechungen-durchfuehren-conference-room
@@ -48,5 +49,6 @@ options:
     fr: Cabine téléphonique pour réunions en ligne
     it: Cabina telefonica per riunioni online
     en: Phone booth for online meetings
+  target: pragmaticbim:room-type/bueroeinheit
   adds:
   - pragmaticbim:room-type/telefonkabine

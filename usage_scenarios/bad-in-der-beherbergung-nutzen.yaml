@@ -31,6 +31,7 @@ options:
     fr: Salle de bain privée
     it: Bagno privato
     en: Private bathroom
+  target: pragmaticbim:room-type/hoteleinheit
   adds:
   - pragmaticbim:room-type/badezimmer
 - id: pragmaticbim:scenario-option/bad-in-der-beherbergung-nutzen-shared

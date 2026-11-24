@@ -16,6 +16,7 @@ definition:
 room_type_kind: container
 uses:
 - pragmaticbim:use/beherbergung
+extends: pragmaticbim:room-type/hoteleinheit
 contains:
 - room_type: pragmaticbim:room-type/hotelzimmer
 - room_type: pragmaticbim:room-type/wohnzimmer
