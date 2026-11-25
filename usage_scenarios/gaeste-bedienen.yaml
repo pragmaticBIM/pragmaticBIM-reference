@@ -31,6 +31,7 @@ options:
     fr: Restaurant avec service
     it: Ristorante servito
     en: Table service
+  target: pragmaticbim:room-type/gastronomiebetrieb
   adds:
   - pragmaticbim:room-type/restaurant
 - id: pragmaticbim:scenario-option/gaeste-bedienen-self-service
@@ -40,6 +41,7 @@ options:
     fr: Libre-service
     it: Self-service
     en: Self-service
+  target: pragmaticbim:room-type/gastronomiebetrieb
   adds:
   - pragmaticbim:room-type/cafeteria
 - id: pragmaticbim:scenario-option/gaeste-bedienen-counter
@@ -49,5 +51,6 @@ options:
     fr: Vente au comptoir
     it: Vendita al banco
     en: Counter service
+  target: pragmaticbim:room-type/gastronomiebetrieb
   adds:
   - pragmaticbim:room-type/verkaufsraum

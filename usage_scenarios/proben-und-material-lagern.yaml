@@ -31,6 +31,7 @@ options:
     fr: Stock de laboratoire
     it: Deposito di laboratorio
     en: Laboratory store
+  target: pragmaticbim:room-type/laboreinheit
   adds:
   - pragmaticbim:room-type/laborlager
 - id: pragmaticbim:scenario-option/proben-und-material-lagern-sample-cold
@@ -43,6 +44,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/probenlager
     to_room_type: pragmaticbim:room-type/kuehlraum
+  target: pragmaticbim:room-type/laboreinheit
   adds:
   - pragmaticbim:room-type/probenlager
   - pragmaticbim:room-type/kuehlraum

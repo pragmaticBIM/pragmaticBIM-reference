@@ -31,6 +31,7 @@ options:
     fr: Laboratoire de chimie ou de physique
     it: Laboratorio di chimica o fisica
     en: Chemistry or physics lab
+  target: pragmaticbim:room-type/laboreinheit
   adds:
   - pragmaticbim:room-type/naturwissenschaftslabor
 - id: pragmaticbim:scenario-option/experimente-durchfuehren-medical
@@ -40,6 +41,7 @@ options:
     fr: Laboratoire médical
     it: Laboratorio medico
     en: Medical laboratory
+  target: pragmaticbim:room-type/laboreinheit
   adds:
   - pragmaticbim:room-type/medizinisches-labor
 - id: pragmaticbim:scenario-option/experimente-durchfuehren-clean-room
@@ -52,6 +54,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/schleuse
     to_room_type: pragmaticbim:room-type/reinraum
+  target: pragmaticbim:room-type/laboreinheit
   adds:
   - pragmaticbim:room-type/schleuse
   - pragmaticbim:room-type/reinraum

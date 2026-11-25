@@ -51,6 +51,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/umkleideraum
     to_room_type: pragmaticbim:room-type/naturwissenschaftslabor
+  target: pragmaticbim:room-type/laboreinheit
   adds:
   - pragmaticbim:room-type/umkleideraum
   - pragmaticbim:room-type/naturwissenschaftslabor
@@ -66,6 +67,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/umkleideraum
     to_room_type: pragmaticbim:room-type/schleuse
+  target: pragmaticbim:room-type/laboreinheit
   adds:
   - pragmaticbim:room-type/umkleideraum
   - pragmaticbim:room-type/schleuse

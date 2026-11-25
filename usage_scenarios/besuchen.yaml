@@ -31,6 +31,7 @@ options:
     fr: Visite en chambre
     it: Visita in camera
     en: Visit in the patient room
+  target: pragmaticbim:room-type/gesundheitseinheit
   adds:
   - pragmaticbim:room-type/patientenzimmer
 - id: pragmaticbim:scenario-option/besuchen-cafeteria

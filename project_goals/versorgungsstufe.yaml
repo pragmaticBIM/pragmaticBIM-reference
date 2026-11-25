@@ -42,6 +42,8 @@ levels:
     en: Acute hospital with emergency, surgery, and intensive care.
   status: active
   comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/gesundheitseinheit
 - id: pragmaticbim:project-goal-level/versorgungsstufe-reha
   code: VST-02
   sort_order: 2
@@ -57,6 +59,8 @@ levels:
     en: Clinic with therapy and training rooms.
   status: active
   comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/gesundheitseinheit
 - id: pragmaticbim:project-goal-level/versorgungsstufe-pflege
   code: VST-03
   sort_order: 3
@@ -72,6 +76,8 @@ levels:
     en: Care home for longer stays.
   status: active
   comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/gesundheitseinheit
 quantities:
 - id: pragmaticbim:quantity/versorgungsstufe-behandlungsplaetze
   code: VST-Q02

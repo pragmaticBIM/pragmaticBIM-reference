@@ -30,6 +30,7 @@ options:
     fr: Cuisine professionnelle
     it: Cucina professionale
     en: Commercial kitchen
+  target: pragmaticbim:room-type/gastronomiebetrieb
   adds:
   - pragmaticbim:room-type/gewerbekueche
 - id: pragmaticbim:scenario-option/speisen-zubereiten-external

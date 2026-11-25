@@ -1,0 +1,45 @@
+id: pragmaticbim:room-type/gesundheitseinheit
+code: UT-HE-01
+sort_order: 24
+name:
+  de: Gesundheitseinheit
+  fr: Unité de soins
+  it: Unità sanitaria
+  en: Healthcare unit
+definition:
+  de: Bruttovolumen einer Einheit für Untersuchung, Behandlung und Pflege, etwa einer Praxis oder Station.
+  fr: Volume brut d'une unité d'examen, de traitement et de soins, par exemple un cabinet ou une unité d'hospitalisation.
+  it: Volume lordo di un'unità per visita, trattamento e cura, ad esempio uno studio o un reparto.
+  en: Gross volume of a unit for examination, treatment, and care, for example a practice or a ward.
+room_type_kind: container
+uses:
+- pragmaticbim:use/gesundheit
+contains:
+- room_type: pragmaticbim:room-type/wartezimmer
+- room_type: pragmaticbim:room-type/untersuchungsraum
+- room_type: pragmaticbim:room-type/behandlungsraum
+- room_type: pragmaticbim:room-type/patientenzimmer
+- room_type: pragmaticbim:room-type/materialraum
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/gesundheitseinheit-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Gesundheitseinheit
+      fr: Unité de soins
+      it: Unità sanitaria
+      en: Healthcare unit
+  status: active

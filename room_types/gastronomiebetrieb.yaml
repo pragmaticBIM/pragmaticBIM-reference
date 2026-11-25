@@ -1,0 +1,44 @@
+id: pragmaticbim:room-type/gastronomiebetrieb
+code: UT-GA-01
+sort_order: 23
+name:
+  de: Gastronomiebetrieb
+  fr: Établissement de restauration
+  it: Esercizio di ristorazione
+  en: Food service unit
+definition:
+  de: Bruttovolumen eines Gastronomiebetriebs mit Gastraum, Küche und Lager.
+  fr: Volume brut d'un établissement de restauration avec salle, cuisine et stockage.
+  it: Volume lordo di un esercizio di ristorazione con sala, cucina e deposito.
+  en: Gross volume of a food service unit with dining area, kitchen, and storage.
+room_type_kind: container
+uses:
+- pragmaticbim:use/gastronomie
+contains:
+- room_type: pragmaticbim:room-type/restaurant
+- room_type: pragmaticbim:room-type/gewerbekueche
+- room_type: pragmaticbim:room-type/spuelkueche
+- room_type: pragmaticbim:room-type/kuehlraum
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/gastronomiebetrieb-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Gastronomiebetrieb
+      fr: Établissement de restauration
+      it: Esercizio di ristorazione
+      en: Food service unit
+  status: active

@@ -47,6 +47,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/annahmelager
     to_room_type: pragmaticbim:room-type/kuehlraum
+  target: pragmaticbim:room-type/gastronomiebetrieb
   adds:
   - pragmaticbim:room-type/annahmelager
   - pragmaticbim:room-type/kuehlraum

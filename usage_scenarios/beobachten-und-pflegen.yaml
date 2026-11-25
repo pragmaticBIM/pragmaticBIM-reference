@@ -31,6 +31,7 @@ options:
     fr: Salle de réveil
     it: Sala risveglio
     en: Recovery room
+  target: pragmaticbim:room-type/gesundheitseinheit
   adds:
   - pragmaticbim:room-type/aufwachraum
 - id: pragmaticbim:scenario-option/beobachten-und-pflegen-patient-room
@@ -40,6 +41,7 @@ options:
     fr: Chambre de patient
     it: Camera paziente
     en: Patient room
+  target: pragmaticbim:room-type/gesundheitseinheit
   adds:
   - pragmaticbim:room-type/patientenzimmer
 - id: pragmaticbim:scenario-option/beobachten-und-pflegen-patient-bath
@@ -52,6 +54,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/patientenzimmer
     to_room_type: pragmaticbim:room-type/badezimmer
+  target: pragmaticbim:room-type/gesundheitseinheit
   adds:
   - pragmaticbim:room-type/patientenzimmer
   - pragmaticbim:room-type/badezimmer

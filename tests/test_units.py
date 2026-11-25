@@ -48,17 +48,25 @@ VARIANTS_BY_PARENT = {
     },
 }
 SIZED_IDS = {room_id for sizes in SIZES_BY_PARENT.values() for room_id in sizes}
+# One unit per use, without sizes or variants.
+SINGLE_UNIT_IDS = {
+    "pragmaticbim:room-type/gastronomiebetrieb",
+    "pragmaticbim:room-type/gesundheitseinheit",
+    "pragmaticbim:room-type/laboreinheit",
+}
 # Containers added after the unit-type migration carry no legacy unit-type id.
 NEW_CONTAINER_IDS = {
     "pragmaticbim:room-type/hoteleinheit",
     *OFFICE_SIZES,
     *SHOP_SIZES,
+    *SINGLE_UNIT_IDS,
 }
 CONTAINER_IDS = {
     *SIZES_BY_PARENT,
     *SIZED_IDS,
     *VARIANTS_BY_PARENT,
     *(room_id for variants in VARIANTS_BY_PARENT.values() for room_id in variants),
+    *SINGLE_UNIT_IDS,
     "pragmaticbim:room-type/keller",
     "pragmaticbim:room-type/vertikale-erschliessung",
     "pragmaticbim:room-type/horizontale-erschliessung",
