@@ -195,11 +195,11 @@ The 30 mixed classes are replaced by 68 new classes. `FaCP-RETROFIT-OVERCLADDING
 | `pragmaticbim:product/ssp-oth` | Other / unknown slab separator | single |  |  |
 | `pragmaticbim:product/ssp-prefab-conc` | Prefabricated concrete slab | single |  | Hollow-core, double-tee, and flat elements are element types of one precast slab system; attribute. |
 | `pragmaticbim:product/ssp-steel-composite` | Steel deck / composite slab | mixed | Composite slab on steel decking; Composite beam slab | Family: Steel-concrete composite slab (Stahl-Beton-Verbunddecke). Deprecate `SSP-STEEL-COMPOSITE`, replaced by `SSP-COMPOSITE-DECK`, `SSP-COMPOSITE-BEAM`. Composite slabs on profiled steel decking and solid slabs acting compositely with steel beams differ in formwork, production, and price logic. |
-| `pragmaticbim:product/ssp-timber` | Timber slab / deck | single |  | Joist and rib decks are one timber-frame floor system. Overlap with SSP-CLT for wood-based panels is noted for the maintainer; the text is not narrowed because that would change the meaning of an existing class. |
+| `pragmaticbim:product/ssp-timber` | Timber slab / deck | single |  | Joist and rib decks are one timber-frame floor system. Tender text narrowed to joists and ribs; solid CLT plates belong to `SSP-CLT`, as the contract definition already states. |
 | `pragmaticbim:product/swp-blt` | Lightweight concrete panel (BLT) wall | mixed | Lightweight concrete panel wall; covered by existing `SWP-MASONRY` | Family: Lightweight concrete wall (Leichtbetonwand). Deprecate `SWP-BLT`, replaced by `SWP-BLT-PANEL`, `SWP-MASONRY`. Lightweight concrete blocks are laid as masonry (already SWP-MASONRY); storey-height panels are set by crane. Different trades and price logic. |
 | `pragmaticbim:product/swp-curtain-wall` | Curtain wall / facade system | mixed | Stick curtain wall; Unitised curtain wall | Family: Curtain wall (Vorhangfassade). Deprecate `SWP-CURTAIN-WALL`, replaced by `SWP-CURTAIN-WALL-STICK`, `SWP-CURTAIN-WALL-UNITISED`. Stick systems assembled on site and unitised systems prefabricated as storey-high elements differ in production, erection, and price logic. |
 | `pragmaticbim:product/swp-element-wall` | Drywall / element partition wall | mixed | Stud drywall partition; Demountable system partition | Family: Lightweight partition (Leichte Trennwand). Deprecate `SWP-ELEMENT-WALL`, replaced by `SWP-DRYWALL`, `SWP-SYSTEM-PARTITION`. Site-built stud drywall partitions and demountable system partitions are different trades with different price logic and reuse. |
-| `pragmaticbim:product/swp-leichtbau` | Lightweight construction wall | single |  | One framed lightweight wall system. Overlap with SWP-DRYWALL is noted for the maintainer; the text is not narrowed because that would change the meaning of an existing class. |
+| `pragmaticbim:product/swp-leichtbau` | Lightweight construction wall | single |  | One framed lightweight wall system. Tender text narrowed to walls beyond a standard drywall partition; those belong to `SWP-DRYWALL`, which the contract definition already excludes. |
 | `pragmaticbim:product/swp-masonry` | Masonry wall | single |  | Insulating blocks are a material grade of laid masonry; attribute. |
 | `pragmaticbim:product/swp-ortbeton` | In-situ concrete wall | single |  |  |
 | `pragmaticbim:product/swp-oth` | Other / unknown wall separator | single |  |  |
@@ -302,7 +302,6 @@ The 30 mixed classes are replaced by 68 new classes. `FaCP-RETROFIT-OVERCLADDING
 
 ## Open points for the maintainer
 
-- `SWP-LEICHTBAU` overlaps with the new `SWP-DRYWALL`, and `SSP-TIMBER` overlaps with `SSP-CLT` for wood-based panels. Their texts are not narrowed here because that would change the meaning of existing classes.
 - The retrofit situation of `FaCP-RETROFIT-OVERCLADDING` (new or existing substrate) has no attribute yet.
 - Laying, fixing and mounting variants marked as attributes above have no attributes yet.
 
