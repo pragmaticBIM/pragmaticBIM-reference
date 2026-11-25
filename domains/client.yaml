@@ -1,0 +1,19 @@
+id: pragmaticbim:domain/client
+code: BHR
+sort_order: 1
+name:
+  de: Bauherrschaft
+  fr: Maître d'ouvrage
+  it: Committente
+  en: Client
+definition:
+  de: Liefergegenstände der Bauherrschaft. Das Bestellmodell hält Bauherrschaft, Rechnungsadresse, Kostenziel, Termine und Raumprogramm als Sollwerte fest, an denen alle Fachmodelle gemessen werden.
+  fr: Livrables du maître d'ouvrage. La maquette de commande fixe le maître d'ouvrage, l'adresse de facturation, l'objectif de coûts, les échéances et le programme des locaux comme valeurs prescrites, auxquelles toutes les maquettes métiers sont comparées.
+  it: Consegne del committente. Il modello di commessa fissa committente, indirizzo di fatturazione, obiettivo di costo, scadenze e programma dei locali come valori prescritti, con cui si confrontano tutti i modelli disciplinari.
+  en: Client deliverables. The order model records the client, invoice address, cost target, milestones, and room programme as target values that all discipline models are measured against.
+file_name:
+  de: '{Projekt}_{Phase}_BHR_{Freitext}'
+  fr: '{Projet}_{Phase}_BHR_{Libre}'
+  it: '{Progetto}_{Fase}_BHR_{Libero}'
+  en: '{Project}_{Phase}_BHR_{FreeText}'
+status: active

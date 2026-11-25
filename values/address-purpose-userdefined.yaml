@@ -1,0 +1,24 @@
+id: pragmaticbim:value/address-purpose-userdefined
+code: ADDRESS-USERDEFINED
+name:
+  de: Purpose benutzerdefinierte Adresse
+  fr: Purpose adresse définie par l'utilisateur
+  it: Purpose indirizzo definito dall'utente
+  en: Purpose user-defined address
+description:
+  de: IfcPostalAddress Purpose für benutzerdefinierte Adressarten (UserDefinedPurpose präzisiert).
+  fr: IfcPostalAddress Purpose pour types d'adresse définis par l'utilisateur (UserDefinedPurpose précise).
+  it: IfcPostalAddress Purpose per tipi di indirizzo definiti dall'utente (UserDefinedPurpose precisa).
+  en: IfcPostalAddress Purpose for user-defined address kinds (UserDefinedPurpose specifies).
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - USERDEFINED
+  fr:
+    - USERDEFINED
+  it:
+    - USERDEFINED
+  en:
+    - USERDEFINED

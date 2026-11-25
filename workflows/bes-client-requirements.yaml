@@ -1,0 +1,100 @@
+id: pragmaticbim:workflow/bes-client-requirements
+code: BES-CLIENT-REQUIREMENTS
+sort_order: 9
+name:
+  de: Bestellung der Bauherrschaft in einem gemeinsamen Datenmodell führen
+  fr: Gérer la commande du maître d'ouvrage dans un modèle de données commun
+  it: Gestire la commessa del committente in un modello di dati comune
+  en: Manage the client's requirements in a shared data model
+description:
+  de: |-
+    Bauherrschaft, Rechnungsadresse, Kostenziel, Termine und Raumprogramm als Bestellmodell führen, damit alle Planenden dieselben Sollwerte verwenden und Abweichungen prüfbar werden.
+
+    **Ausgangslage**
+    - Die Vorgaben der Bauherrschaft stehen verteilt in Verträgen, Tabellen und Protokollen. Planende übertragen Rechnungsadresse, Kostenziel und Termine von Hand und arbeiten nach kurzer Zeit mit unterschiedlichen Ständen.
+    - Ändert die Bauherrschaft eine Vorgabe, erfahren es nicht alle Fachplanenden gleichzeitig. Abweichungen zwischen Bestellung und Planung fallen oft erst bei der Kostenkontrolle oder der Abnahme auf.
+
+    **Ziel & Nutzen**
+    - Eine einzige, versionierte Quelle für die Vorgaben der Bauherrschaft.
+    - Jede Fachplanung übernimmt die Sollwerte direkt aus dem Bestellmodell statt aus Dokumenten.
+    - Prüfungen vergleichen die Planung laufend mit der Bestellung und zeigen Abweichungen früh.
+
+    **Ablauf**
+    1. Bauherrschaft mit Rechnungsadresse sowie Kostenziel und Meilensteine des Projekts erfassen.
+    2. Raumprogramm mit den Raumanforderungen ergänzen (siehe Anwendungsfall «Raumprogramm für Planerbeschaffung und Wettbewerb formulieren»).
+    3. Bestellmodell mit jeder Änderung neu bereitstellen und als Referenz für den Soll-Ist-Abgleich der Fachmodelle verwenden.
+
+    **Lieferergebnis**
+    - Bestellmodell mit Bauherrschaft, Rechnungsadresse, Kostenziel und Meilensteinen.
+    - Raumprogramm mit den bestellten Raumanforderungen im selben Modell.
+    - Nachvollziehbarer Änderungsstand der Bestellung je Ausgabe.
+  fr: |-
+    Gérer le maître d'ouvrage, l'adresse de facturation, l'objectif de coûts, les échéances et le programme des locaux dans une maquette de commande, afin que tous les mandataires utilisent les mêmes valeurs prescrites et que les écarts puissent être contrôlés.
+
+    **Situation de départ**
+    - Les exigences du maître d'ouvrage sont dispersées dans des contrats, des tableaux et des procès-verbaux. Les mandataires reportent à la main l'adresse de facturation, l'objectif de coûts et les échéances et travaillent rapidement sur des versions différentes.
+    - Lorsque le maître d'ouvrage modifie une exigence, tous les mandataires spécialisés ne l'apprennent pas en même temps. Les écarts entre commande et projet n'apparaissent souvent qu'au contrôle des coûts ou à la réception.
+
+    **Objectif et bénéfice**
+    - Une seule source versionnée pour les exigences du maître d'ouvrage.
+    - Chaque discipline reprend les valeurs prescrites directement de la maquette de commande plutôt que de documents.
+    - Les contrôles comparent en continu le projet avec la commande et révèlent tôt les écarts.
+
+    **Déroulement**
+    1. Saisir le maître d'ouvrage avec son adresse de facturation, ainsi que l'objectif de coûts et les jalons du projet.
+    2. Compléter le programme des locaux avec les exigences des locaux (voir le cas d'application « Formuler le programme des locaux pour l'acquisition de mandataires et le concours »).
+    3. Remettre la maquette de commande à chaque modification et l'utiliser comme référence pour la comparaison prescrit/réalisé des maquettes métiers.
+
+    **Livrable**
+    - Maquette de commande avec maître d'ouvrage, adresse de facturation, objectif de coûts et jalons.
+    - Programme des locaux avec les exigences commandées dans la même maquette.
+    - État des modifications de la commande traçable pour chaque remise.
+  it: |-
+    Gestire committente, indirizzo di fatturazione, obiettivo di costo, scadenze e programma dei locali in un modello di commessa, affinché tutti i progettisti utilizzino gli stessi valori prescritti e gli scostamenti diventino verificabili.
+
+    **Situazione di partenza**
+    - I requisiti del committente sono sparsi in contratti, tabelle e verbali. I progettisti riportano a mano indirizzo di fatturazione, obiettivo di costo e scadenze e dopo poco lavorano con versioni diverse.
+    - Quando il committente modifica un requisito, non tutti i progettisti specialisti lo vengono a sapere nello stesso momento. Gli scostamenti tra commessa e progetto emergono spesso solo al controllo dei costi o al collaudo.
+
+    **Obiettivo e beneficio**
+    - Un'unica fonte versionata per i requisiti del committente.
+    - Ogni disciplina riprende i valori prescritti direttamente dal modello di commessa invece che da documenti.
+    - I controlli confrontano costantemente il progetto con la commessa e mostrano presto gli scostamenti.
+
+    **Svolgimento**
+    1. Registrare il committente con l'indirizzo di fatturazione, nonché obiettivo di costo e tappe del progetto.
+    2. Completare il programma dei locali con i requisiti dei locali (vedi il caso d'uso «Formulare il programma dei locali per l'acquisizione dei progettisti e il concorso»).
+    3. Consegnare il modello di commessa a ogni modifica e utilizzarlo come riferimento per il confronto prescritto/realizzato dei modelli disciplinari.
+
+    **Risultato della fornitura**
+    - Modello di commessa con committente, indirizzo di fatturazione, obiettivo di costo e tappe.
+    - Programma dei locali con i requisiti ordinati nello stesso modello.
+    - Stato delle modifiche della commessa tracciabile per ogni consegna.
+  en: |-
+    Manage the client, invoice address, cost target, milestones, and room programme as an order model so that all designers use the same target values and deviations can be checked.
+
+    **Starting point**
+    - The client's requirements are spread across contracts, spreadsheets, and minutes. Designers copy the invoice address, cost target, and milestones by hand and soon work from different versions.
+    - When the client changes a requirement, not every specialist designer hears about it at the same time. Deviations between the order and the design often only show up in cost control or at handover.
+
+    **Goal & benefit**
+    - One versioned source for the client's requirements.
+    - Each discipline takes the target values directly from the order model instead of from documents.
+    - Checks compare the design with the order continuously and show deviations early.
+
+    **Process**
+    1. Record the client with the invoice address, and the cost target and milestones of the project.
+    2. Add the room programme with the room requirements (see the use case "Formulate the room programme for designer procurement and competition").
+    3. Issue the order model again with every change and use it as the reference for the required-versus-actual check of the discipline models.
+
+    **Deliverable**
+    - Order model with client, invoice address, cost target, and milestones.
+    - Room programme with the ordered room requirements in the same model.
+    - Traceable change status of the order for each issue.
+workflow_group: grundlagen-bestand
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+needed_in_domain:
+  - pragmaticbim:domain/client
+comment: The client is an IfcActor (element CLIENT) assigned to the IfcProject through IfcRelAssignsToActor with an IfcActorRole of Role CLIENT. TheActor is an IfcOrganization (or IfcPerson) whose Addresses hold the invoice address as an IfcPostalAddress with Purpose USERDEFINED and a localized UserDefinedPurpose (element CLIENT-INVOICE-ADDRESS). This is not IfcSite.SiteAddress or IfcBuilding.BuildingAddress. The cost target and milestone dates have no simple native IFC attribute and stay in ePset_ProjectRequirement. Room requirements reuse ePset_SpaceRequirement from BES-ROOM-PROGRAM.

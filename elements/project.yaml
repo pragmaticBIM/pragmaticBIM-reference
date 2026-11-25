@@ -49,6 +49,7 @@ definition:
     - Exactly one project per IFC file.
     - Populate Name according to the project designation.
 needed_in_domain:
+  - pragmaticbim:domain/client
   - pragmaticbim:domain/architecture
   - pragmaticbim:domain/mep
   - pragmaticbim:domain/structural
@@ -77,6 +78,7 @@ attributes:
       - pragmaticbim:workflow/des-sound-insulation-sia181
       - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
       - pragmaticbim:workflow/qas-award-interface-visualization
+      - pragmaticbim:workflow/bes-client-requirements
       - pragmaticbim:workflow/bes-concrete-tender-from-model
       - pragmaticbim:workflow/qas-cost-interface-tenant-fitout
       - pragmaticbim:workflow/bes-design-build-procurement
@@ -288,6 +290,7 @@ attributes:
       - pragmaticbim:workflow/des-sound-insulation-sia181
       - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
       - pragmaticbim:workflow/qas-award-interface-visualization
+      - pragmaticbim:workflow/bes-client-requirements
       - pragmaticbim:workflow/bes-concrete-tender-from-model
       - pragmaticbim:workflow/qas-cost-interface-tenant-fitout
       - pragmaticbim:workflow/bes-design-build-procurement
@@ -424,3 +427,79 @@ attributes:
     is_applicability: false
     status: active
     sort_order: 2
+  - name: TargetCost
+    pset: ePset_ProjectRequirement
+    definition:
+      de: Kostenziel der Bauherrschaft für das Projekt. Den Kostenumfang (z. B. Anlagekosten oder Erstellungskosten, mit oder ohne MWST) hält die Bestellung fest.
+      fr: Objectif de coûts du maître d'ouvrage pour le projet. La commande fixe l'étendue des coûts (p. ex. coûts d'investissement ou coûts de construction, avec ou sans TVA).
+      it: Obiettivo di costo del committente per il progetto. La commessa stabilisce l'ambito dei costi (p. es. costi d'investimento o costi di costruzione, con o senza IVA).
+      en: The client's cost target for the project. The order states the cost scope (e.g. investment costs or construction costs, with or without VAT).
+    datatype: IfcMonetaryMeasure
+    unit: CHF
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-client-requirements
+    is_applicability: false
+    status: active
+    sort_order: 3
+  - name: DesignStartDate
+    pset: ePset_ProjectRequirement
+    definition:
+      de: Von der Bauherrschaft vorgegebener Termin für den Planungsbeginn.
+      fr: Date de début des études fixée par le maître d'ouvrage.
+      it: Data d'inizio della progettazione stabilita dal committente.
+      en: Design start date set by the client.
+    datatype: IfcDate
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-client-requirements
+    is_applicability: false
+    status: active
+    sort_order: 4
+  - name: PermitSubmissionDate
+    pset: ePset_ProjectRequirement
+    definition:
+      de: Von der Bauherrschaft vorgegebener Termin für die Baueingabe.
+      fr: Date de dépôt de la demande de permis de construire fixée par le maître d'ouvrage.
+      it: Data di inoltro della domanda di costruzione stabilita dal committente.
+      en: Building permit submission date set by the client.
+    datatype: IfcDate
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-client-requirements
+    is_applicability: false
+    status: active
+    sort_order: 5
+  - name: ConstructionStartDate
+    pset: ePset_ProjectRequirement
+    definition:
+      de: Von der Bauherrschaft vorgegebener Termin für den Baubeginn.
+      fr: Date de début des travaux fixée par le maître d'ouvrage.
+      it: Data d'inizio dei lavori stabilita dal committente.
+      en: Construction start date set by the client.
+    datatype: IfcDate
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-client-requirements
+    is_applicability: false
+    status: active
+    sort_order: 6
+  - name: HandoverDate
+    pset: ePset_ProjectRequirement
+    definition:
+      de: Von der Bauherrschaft vorgegebener Termin für die Übergabe des Bauwerks.
+      fr: Date de remise de l'ouvrage fixée par le maître d'ouvrage.
+      it: Data di consegna dell'opera stabilita dal committente.
+      en: Handover date of the built asset set by the client.
+    datatype: IfcDate
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-client-requirements
+    is_applicability: false
+    status: active
+    sort_order: 7

@@ -1,0 +1,78 @@
+id: pragmaticbim:element/client
+code: CLIENT
+sort_order: 6
+status: active
+name:
+  de: Bauherrschaft
+  fr: Maître d'ouvrage
+  it: Committente
+  en: Client
+definition:
+  de: |-
+    Hält fest, wer das Projekt bestellt und bezahlt, damit alle Modelle dieselbe Bauherrschaft und dieselbe Rechnungsadresse verwenden.
+
+    **Beschreibung**
+    - Organisation oder Person, die das Projekt bestellt.
+    - Dem Projekt in der Rolle Bauherrschaft zugeordnet.
+
+    **Modellierungshinweis**
+    - Genau eine Bauherrschaft pro Projekt.
+    - Name der Organisation oder Person gemäss Vertrag.
+    - Rechnungsadresse als Postadresse der Organisation oder Person führen.
+  fr: |-
+    Établit qui commande et paie le projet, afin que toutes les maquettes utilisent le même maître d'ouvrage et la même adresse de facturation.
+
+    **Description**
+    - Organisation ou personne qui commande le projet.
+    - Rattaché au projet dans le rôle de maître d'ouvrage.
+
+    **Directives de modélisation**
+    - Exactement un maître d'ouvrage par projet.
+    - Nom de l'organisation ou de la personne selon le contrat.
+    - Saisir l'adresse de facturation comme adresse postale de l'organisation ou de la personne.
+  it: |-
+    Stabilisce chi ordina e paga il progetto, affinché tutti i modelli utilizzino lo stesso committente e lo stesso indirizzo di fatturazione.
+
+    **Descrizione**
+    - Organizzazione o persona che ordina il progetto.
+    - Collegato al progetto nel ruolo di committente.
+
+    **Direttive di modellazione**
+    - Esattamente un committente per progetto.
+    - Nome dell'organizzazione o della persona secondo il contratto.
+    - Gestire l'indirizzo di fatturazione come indirizzo postale dell'organizzazione o della persona.
+  en: |-
+    Records who orders and pays for the project so that all models use the same client and the same invoice address.
+
+    **Description**
+    - Organization or person that orders the project.
+    - Assigned to the project in the client role.
+
+    **Modelling guidelines**
+    - Exactly one client per project.
+    - Name of the organization or person according to the contract.
+    - Keep the invoice address as the postal address of the organization or person.
+needed_in_domain:
+  - pragmaticbim:domain/client
+entity_ifc2x3: IfcActor
+entity_ifc4: IfcActor
+entity_ifc4_3: IfcActor
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcActor OR entity_ifc2x3=IfcActor
+attributes:
+  - name: Name
+    pset: null
+    definition:
+      de: Name der Bauherrschaft gemäss Vertrag.
+      fr: Nom du maître d'ouvrage selon le contrat.
+      it: Nome del committente secondo il contratto.
+      en: Name of the client according to the contract.
+    datatype: IfcLabel
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-client-requirements
+    is_applicability: false
+    status: active
+    sort_order: 1

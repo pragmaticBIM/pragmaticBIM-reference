@@ -45,6 +45,7 @@ definition:
     **Modelling guidelines**
     - Multiple buildings may be represented as separate buildings in one file; however, splitting them into separate model files is often recommended.
 needed_in_domain:
+  - pragmaticbim:domain/client
   - pragmaticbim:domain/architecture
   - pragmaticbim:domain/mep
   - pragmaticbim:domain/structural
@@ -73,6 +74,7 @@ attributes:
       - pragmaticbim:workflow/des-sound-insulation-sia181
       - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
       - pragmaticbim:workflow/qas-award-interface-visualization
+      - pragmaticbim:workflow/bes-client-requirements
       - pragmaticbim:workflow/bes-concrete-tender-from-model
       - pragmaticbim:workflow/qas-cost-interface-tenant-fitout
       - pragmaticbim:workflow/bes-design-build-procurement

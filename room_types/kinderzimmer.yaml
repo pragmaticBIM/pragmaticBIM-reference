@@ -1,0 +1,255 @@
+id: pragmaticbim:room-type/kinderzimmer
+code: RT-WH-46
+sort_order: 10
+name:
+  de: Kinderzimmer
+  fr: Chambre d'enfant
+  it: Camera dei bambini
+  en: Children's room
+definition:
+  de: Raum zum Schlafen, Spielen und Lernen für Kinder.
+  fr: Local où les enfants dorment, jouent et apprennent.
+  it: Locale in cui i bambini dormono, giocano e studiano.
+  en: Room where children sleep, play and study.
+room_type_kind: room
+room_name: RN-01-10-07
+activity: M-RES
+default_scope: dwelling
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/kinderzimmer-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-interior
+    name: PredefinedType
+    value: SPACE
+  - element: pragmaticbim:element/spaces-interior
+    name: IsExternal
+    pset: Pset_SpaceCommon
+    value: false
+  - element: pragmaticbim:element/spaces-interior
+    name: LongName
+    value:
+      de: Kinderzimmer
+      fr: Chambre d'enfant
+      it: Camera dei bambini
+      en: Children's room
+  - element: pragmaticbim:element/spaces-interior
+    name: Reference
+    pset: Pset_SpaceCommon
+    value: HNF
+  - element: pragmaticbim:element/spaces-interior
+    name: NetPlannedArea
+    pset: ePset_SpaceRequirement
+    value: 12
+  - element: pragmaticbim:element/spaces-interior
+    name: FloorCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Parkett
+  - element: pragmaticbim:element/spaces-interior
+    name: WallCovering
+    pset: Pset_SpaceCoveringRequirements
+    value: Anstrich
+  - element: pragmaticbim:element/spaces-interior
+    name: CeilingCovering
+    pset: Pset_SpaceCoveringRequirements
+    value:
+      de: Gipskarton-Decke
+      fr: Gypsum board ceiling
+      it: Gypsum board ceiling
+      en: Gypsum board ceiling
+  - element: pragmaticbim:element/spaces-interior
+    name: VibrationRequirements
+    pset: ePset_SpaceRequirement
+    value: ISO Residential (Night)
+  - element: pragmaticbim:element/spaces-interior
+    name: InteriorOrExteriorSpace
+    value: INTERNAL
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignAreaLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-interior
+    name: DesignPointLoad
+    pset: ePset_SpaceRequirement
+    value: 2.0
+  - element: pragmaticbim:element/spaces-interior
+    name: SecurityLevel
+    pset: ePset_Space
+    value:
+      de: Intern
+      fr: Interne
+      it: Interno
+      en: Internal
+  - element: pragmaticbim:element/spaces-interior
+    name: WinterTemperatureMin
+    pset: ePset_SpaceRequirement
+    value: 20
+  - element: pragmaticbim:element/spaces-interior
+    name: WinterTemperatureMax
+    pset: ePset_SpaceRequirement
+    value: 24
+  - element: pragmaticbim:element/spaces-interior
+    name: SummerTemperatureMin
+    pset: ePset_SpaceRequirement
+    value: 22
+  - element: pragmaticbim:element/spaces-interior
+    name: SummerTemperatureMax
+    pset: ePset_SpaceRequirement
+    value: 26
+  - element: pragmaticbim:element/spaces-interior
+    name: RequiredIlluminance
+    pset: ePset_SpaceRequirement
+    value: 200
+  - element: pragmaticbim:element/spaces-interior
+    name: PeakOccupancy
+    pset: ePset_SpaceRequirement
+    value: 1
+  - element: pragmaticbim:element/spaces-interior
+    name: DailyOperatingHours
+    pset: ePset_SpaceRequirement
+    value: 8
+  - element: pragmaticbim:element/spaces-interior
+    name: OutdoorAirFlowRate
+    pset: ePset_SpaceRequirement
+    value: 60
+  equipment:
+  - id: pragmaticbim:room-type-equipment/kinderzimmer-default-bett
+    sort_order: 1
+    function: sleeping
+    components:
+    - pragmaticbim:component/bett-einzel
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/kinderzimmer-default-einbauschrank
+    sort_order: 2
+    function: wardrobe
+    components:
+    - pragmaticbim:component/einbauschrank
+    quantity: 1
+    params:
+      width:
+        default: 1.2
+    status: active
+  - id: pragmaticbim:room-type-equipment/kinderzimmer-default-schreibtisch
+    sort_order: 3
+    function: working
+    components:
+    - pragmaticbim:component/schreibtisch
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-equipment/kinderzimmer-default-wendeflaeche
+    sort_order: 4
+    function: turning
+    components:
+    - pragmaticbim:component/wendeflaeche
+    quantity: 1
+    when:
+      project_goal_levels:
+      - pragmaticbim:project-goal-level/accessibility-wheelchair
+    status: active
+  - id: pragmaticbim:room-type-equipment/kinderzimmer-default-steckdose
+    sort_order: 5
+    function: power_outlet
+    components:
+    - pragmaticbim:component/steckdose
+    quantity:
+      min: 1
+      per:
+        quantity: net_floor_area
+        divisor: 10
+    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/kinderzimmer-default-steckdose-hoehe
+      relation: elevation
+      value:
+        min: 0.3
+        max: 0.3
+      severity: preferred
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
+    - id: pragmaticbim:placement-rule/kinderzimmer-default-steckdose-tuer-frei
+      relation: not_in_clearance_of
+      target:
+        opening_function: access
+      severity: required
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
+    - id: pragmaticbim:placement-rule/kinderzimmer-default-steckdose-sleeping
+      relation: next_to
+      target:
+        equipment_function: sleeping
+      distance:
+        max: 0.3
+      scope: each_target
+      severity: preferred
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
+  - id: pragmaticbim:room-type-equipment/kinderzimmer-default-lichtschalter
+    sort_order: 6
+    function: light_switch
+    components:
+    - pragmaticbim:component/lichtschalter
+    quantity: 1
+    status: active
+    placement_rules:
+    - id: pragmaticbim:placement-rule/kinderzimmer-default-lichtschalter-tuer
+      relation: next_to
+      target:
+        opening_function: access
+      side: latch_side
+      distance:
+        max: 0.3
+      severity: required
+      source:
+        kind: default
+        note: Planungswert; vor Freigabe fachlich bestätigen
+      variants:
+      - relation: next_to
+        target:
+          opening_function: access
+        side: latch_side
+        distance:
+          max: 0.3
+        room_side: outside
+        comment: Schalter ausserhalb des Raums neben der Tür.
+    - id: pragmaticbim:placement-rule/kinderzimmer-default-lichtschalter-hoehe
+      relation: elevation
+      value:
+        min: 0.9
+        max: 1.1
+      severity: required
+      source:
+        kind: norm
+        reference: SIA 500:2009, 7.4
+        note: Höhe Bedienelemente
+  openings:
+  - id: pragmaticbim:room-type-opening/kinderzimmer-default-zugang
+    sort_order: 1
+    function: access
+    components:
+    - pragmaticbim:component/tuer-dreh-innen
+    - pragmaticbim:component/tuer-schiebe-innen
+    connects_to:
+      relationships: incoming
+    quantity: 1
+    status: active
+  - id: pragmaticbim:room-type-opening/kinderzimmer-default-fenster
+    sort_order: 2
+    function: daylight
+    components:
+    - pragmaticbim:component/fenster
+    connects_to:
+      exterior: true
+    quantity:
+      min: 1
+      default: 1
+    glazing_to_floor_ratio_min: 0.1
+    comment: Mindestanteil Glasfläche nach kantonalem Recht, häufig 1/10 der Bodenfläche;
+      projektbezogen prüfen.
+    status: active
+  status: active

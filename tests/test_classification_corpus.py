@@ -47,7 +47,7 @@ def test_ifc4_attribute_filter_is_the_default() -> None:
 
 def test_corpus_has_one_specimen_per_element(corpora) -> None:
     slugs = [slug for slug, _element in iter_elements()]
-    assert len(slugs) == 110
+    assert len(slugs) == 112
     for schema, (_ifc, specimens) in corpora.items():
         assert set(specimens) == set(slugs), schema
 
@@ -64,6 +64,23 @@ def test_specimens_satisfy_german_applicability(corpora, ifc_schema: str) -> Non
         if not _matches(product, expression):
             failures.append(f"{slug}: {expression} [{_snapshot(product)}]")
     assert not failures, "\n".join(failures)
+
+
+@pytest.mark.parametrize("ifc_schema", ["ifc4", "ifc2x3"])
+def test_client_carries_the_invoice_address_natively(corpora, ifc_schema: str) -> None:
+    ifc, specimens = corpora[ifc_schema]
+    actor = specimens["client"]
+    address = specimens["client-invoice-address"]
+
+    assert actor.is_a("IfcActor")
+    assert address in actor.TheActor.Addresses
+    assert address.Purpose == "USERDEFINED"
+    assert address.UserDefinedPurpose == "Rechnungsadresse"
+    assert address.AddressLines == ("Musterstrasse 1",)
+    (assignment,) = ifc.by_type("IfcRelAssignsToActor")
+    assert assignment.RelatingActor == actor
+    assert assignment.RelatedObjects == (specimens["project"],)
+    assert assignment.ActingRole.Role == "CLIENT"
 
 
 def test_specimens_reuse_example_geometry(corpora) -> None:
