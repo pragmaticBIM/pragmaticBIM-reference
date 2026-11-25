@@ -1,0 +1,43 @@
+id: pragmaticbim:room-type/laboreinheit
+code: UT-LA-01
+sort_order: 25
+name:
+  de: Laboreinheit
+  fr: Unité de laboratoire
+  it: Unità di laboratorio
+  en: Laboratory unit
+definition:
+  de: Bruttovolumen einer Laboreinheit mit Labors, Laborlager und Auswertung.
+  fr: Volume brut d'une unité de laboratoire avec laboratoires, stockage de laboratoire et évaluation.
+  it: Volume lordo di un'unità di laboratorio con laboratori, deposito di laboratorio e valutazione.
+  en: Gross volume of a laboratory unit with laboratories, laboratory store, and analysis.
+room_type_kind: container
+uses:
+- pragmaticbim:use/labor
+contains:
+- room_type: pragmaticbim:room-type/naturwissenschaftslabor
+- room_type: pragmaticbim:room-type/laborlager
+- room_type: pragmaticbim:room-type/buero
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/laboreinheit-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Laboreinheit
+      fr: Unité de laboratoire
+      it: Unità di laboratorio
+      en: Laboratory unit
+  status: active

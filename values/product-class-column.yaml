@@ -18,19 +18,27 @@ values:
   - Stahlstütze
   - Holzstütze
   - Stahlbetonstütze
+  - Ortbetonstütze
+  - Fertigteilstütze
   - Andere oder unbekannte Stütze
   fr:
   - Colonne en acier
   - Colonne en bois
   - Colonne en béton armé
+  - Poteau en béton coulé en place
+  - Poteau préfabriqué en béton
   - Colonne autre ou inconnue
   it:
   - Pilastro in acciaio
   - Pilastro in legno
   - Pilastro in calcestruzzo armato
+  - Pilastro in calcestruzzo gettato in opera
+  - Pilastro prefabbricato in calcestruzzo
   - Pilastro altro o sconosciuto
   en:
   - Steel column
   - Timber column
   - Reinforced concrete column
+  - In-situ concrete column
+  - Precast concrete column
   - Other or unknown column

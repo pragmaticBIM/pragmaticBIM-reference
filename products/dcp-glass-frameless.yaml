@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-glass-frameless
+sort_order: 17
+status: active
+name:
+  de: Ganzglastür
+  fr: Porte tout verre
+  it: Porta tutto vetro
+  en: Frameless glass door
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-GLASS-FRAMELESS
+tender_text:
+  de: 'Türanlage mit einem Blatt aus Einscheibensicherheits- oder Verbundsicherheitsglas ohne Rahmen, gehalten durch Klemmbeschläge, Bodentürschliesser oder Laufschiene. Die Scheiben werden werkseitig bearbeitet, Bodentürschliesser oder Schiene vor Ort gesetzt und das Blatt ausgerichtet und eingestellt. Geeignet für Eingangshallen, Büros und Läden mit Anforderungen an Durchsicht; das Glas muss gekennzeichnet und gegen Anprall gesichert sein. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Montage in der vorbereiteten Öffnung mit Befestigung und Anschlussfuge, luft- und schlagregendichter Anschluss an der Gebäudehülle, Beschläge, Dichtungen, Schwellen- und Bodenanschluss, Einstellen und Funktionsprüfung sowie Übergabe mit Schlüsseln, Kennzeichnung und Wartungsunterlagen.'
+  en: 'Door assembly with a frameless leaf of toughened or laminated safety glass held by clamp fittings, floor spring, or top track. Panes are processed in the factory, floor spring or track set on site, and the leaf aligned and adjusted. Suitable for entrance halls, offices, and shops requiring transparency; the glass must be marked and protected against impact. Included are all works required to meet the specified requirements. Included in particular: installation in the prepared opening with fixing and connection joint, airtight and rainproof connection in the building envelope, hardware, seals, threshold and floor connection, adjustment and function test, and handover with keys, marking, and maintenance documents.'

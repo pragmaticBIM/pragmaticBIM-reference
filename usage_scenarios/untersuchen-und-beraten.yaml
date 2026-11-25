@@ -30,6 +30,7 @@ options:
     fr: Salle d'examen
     it: Locale visite
     en: Examination room
+  target: pragmaticbim:room-type/gesundheitseinheit
   adds:
   - pragmaticbim:room-type/untersuchungsraum
 - id: pragmaticbim:scenario-option/untersuchen-und-beraten-universal
@@ -39,5 +40,6 @@ options:
     fr: Salle de traitement universelle
     it: Locale di trattamento universale
     en: Universal treatment room
+  target: pragmaticbim:room-type/gesundheitseinheit
   adds:
   - pragmaticbim:room-type/behandlungsraum

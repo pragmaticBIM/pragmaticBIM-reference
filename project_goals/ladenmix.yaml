@@ -1,0 +1,83 @@
+id: pragmaticbim:project-goal/ladenmix
+sort_order: 1042
+group: rahmenbedingungen
+code: PG-44
+name:
+  de: Ladenmix
+  fr: Répartition des locaux commerciaux
+  it: Composizione dei locali di vendita
+  en: Shop mix
+tag:
+  de: Mix
+  fr: Mix
+  it: Mix
+  en: Mix
+description:
+  de: |-
+    Die Grösse der Ladenlokale entscheidet, welche Geschäfte das Gebäude aufnehmen kann. Die Anzahl je Ladentyp folgt im Raumprogramm. Aus dem Ladenmix folgen die Schaufensterfront, die Anlieferung und die Lagerflächen.
+  fr: |-
+    La taille des locaux commerciaux décide quels commerces le bâtiment peut accueillir. Le nombre par type de local suit dans le programme des locaux. La vitrine, la livraison et les surfaces de stockage découlent de la répartition des locaux commerciaux.
+  it: |-
+    La grandezza dei locali di vendita decide quali negozi l'edificio può accogliere. Il numero per tipo di locale segue nel programma dei locali. Dalla composizione dei locali di vendita derivano il fronte vetrine, la fornitura e le superfici di deposito.
+  en: |-
+    The size of the shops decides which businesses the building can house. The number per shop type follows in the room programme. The shopfront, deliveries, and storage areas follow from the shop mix.
+status: active
+uses:
+- pragmaticbim:use/verkauf
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/ladenmix-klein
+  code: LMX-01
+  sort_order: 1
+  name:
+    de: Kleine Läden
+    fr: Petits commerces
+    it: Piccoli negozi
+    en: Small shops
+  description:
+    de: Mehrere kleine Geschäfte im Erdgeschoss.
+    fr: Plusieurs petits commerces au rez-de-chaussée.
+    it: Diversi piccoli negozi al pianterreno.
+    en: Several small shops on the ground floor.
+  status: active
+  comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/ladenlokal-klein
+  - pragmaticbim:room-type/ladenlokal-mittel
+- id: pragmaticbim:project-goal-level/ladenmix-gemischt
+  code: LMX-02
+  sort_order: 2
+  name:
+    de: Gemischt
+    fr: Mixte
+    it: Misto
+    en: Mixed
+  description:
+    de: Kleine, mittlere und grosse Ladenlokale.
+    fr: Mélange de petits, moyens et grands locaux commerciaux.
+    it: Combinazione di locali di vendita piccoli, medi e grandi.
+    en: A mix of small, medium, and large shops.
+  status: active
+  comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/ladenlokal-klein
+  - pragmaticbim:room-type/ladenlokal-mittel
+  - pragmaticbim:room-type/ladenlokal-gross
+- id: pragmaticbim:project-goal-level/ladenmix-gross
+  code: LMX-03
+  sort_order: 3
+  name:
+    de: Grossverteiler
+    fr: Grande surface
+    it: Grande distributore
+    en: Large retailer
+  description:
+    de: Ein grosses Ladenlokal mit Selbstbedienung, etwa für einen Detailhändler.
+    fr: Un grand local commercial en libre-service, par exemple pour un détaillant.
+    it: Un grande locale di vendita a libero servizio, ad esempio per un dettagliante.
+    en: One large self-service shop, for example for a retailer.
+  status: active
+  comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/ladenlokal-gross

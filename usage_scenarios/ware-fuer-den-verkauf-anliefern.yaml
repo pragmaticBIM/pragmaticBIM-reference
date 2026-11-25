@@ -44,6 +44,7 @@ options:
     fr: Réserve derrière la vente
     it: Magazzino retrostante
     en: Back-of-house store
+  target: pragmaticbim:room-type/ladenlokal
   adds:
   - pragmaticbim:room-type/allgemeiner-lagerraum
 - id: pragmaticbim:scenario-option/ware-fuer-den-verkauf-anliefern-cold

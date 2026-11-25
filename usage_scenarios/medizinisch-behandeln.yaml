@@ -31,6 +31,7 @@ options:
     fr: Salle de traitement
     it: Locale di trattamento
     en: Treatment room
+  target: pragmaticbim:room-type/gesundheitseinheit
   adds:
   - pragmaticbim:room-type/behandlungsraum
 - id: pragmaticbim:scenario-option/medizinisch-behandeln-procedure
@@ -40,6 +41,7 @@ options:
     fr: Salle d'intervention
     it: Sala interventi
     en: Procedure room
+  target: pragmaticbim:room-type/gesundheitseinheit
   adds:
   - pragmaticbim:room-type/eingriffsraum
 - id: pragmaticbim:scenario-option/medizinisch-behandeln-operating
@@ -49,5 +51,6 @@ options:
     fr: Salle d'opération
     it: Sala operatoria
     en: Operating theatre
+  target: pragmaticbim:room-type/gesundheitseinheit
   adds:
   - pragmaticbim:room-type/operationssaal

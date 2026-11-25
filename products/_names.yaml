@@ -2,7 +2,7 @@
 # The contract identifies the product classes; products/<code>.yaml describes them.
 contract:
   repository: https://github.com/pragmaticBIM/pragmatic-bim-data-contract
-  commit: 4d80069cc349099b1d9558715992ce413e2f90cf
+  commit: fa26c8b53b2cb18473bcf1929d71ba658b6785f6
 schemes:
 - scheme: AbstractWallSeparatorProduct
   path: abstract-separator-product-classification/wall-separator-products.skos.ttl
@@ -53,6 +53,20 @@ schemes:
       de: Wand aus vorgefertigten Leichtbeton-Block- oder -Tafelsystemen, einschliesslich geschosshoher Wandtafeln aus Werk oder Vorfertigung.
       en: Wall from prefabricated lightweight-concrete block or panel (Tafel) systems, including storey-height wall panels assembled off site or in a factory.
     ifc_class: IfcWall
+    deprecated: true
+    replaced_by:
+    - SWP-BLT-PANEL
+    - SWP-MASONRY
+  - code: SWP-BLT-PANEL
+    iri: https://example.org/abstract/wall-separator-product/SWP-BLT-PANEL
+    top: true
+    label:
+      de: Leichtbeton-Elementwand
+      en: Lightweight concrete panel wall
+    definition:
+      de: Wand aus geschosshohen Leichtbetonelementen, im Werk hergestellt.
+      en: Wall of storey-height lightweight concrete panels produced in the factory.
+    ifc_class: IfcWall
   - code: SWP-PREFAB-CONC
     iri: https://example.org/abstract/wall-separator-product/SWP-PREFAB-CONC
     top: true
@@ -83,6 +97,30 @@ schemes:
       de: Wand mit primaerer Holz- oder Holzwerkstoff-Konstruktion.
       en: Wall with primary timber frame, panel, or engineered-wood structure.
     ifc_class: IfcWall
+    deprecated: true
+    replaced_by:
+    - SWP-TIMBER-FRAME
+    - SWP-TIMBER-SOLID
+  - code: SWP-TIMBER-FRAME
+    iri: https://example.org/abstract/wall-separator-product/SWP-TIMBER-FRAME
+    top: true
+    label:
+      de: Holzrahmenbauwand
+      en: Timber stud frame wall
+    definition:
+      de: Wand aus Holzständern und Beplankung mit Dämmung im Gefach.
+      en: Wall of timber studs and sheathing with insulation between the studs.
+    ifc_class: IfcWall
+  - code: SWP-TIMBER-SOLID
+    iri: https://example.org/abstract/wall-separator-product/SWP-TIMBER-SOLID
+    top: true
+    label:
+      de: Holzmassivwand
+      en: Solid timber wall
+    definition:
+      de: Wand aus flächigen Massivholzelementen wie Brettsperrholz oder Brettstapel.
+      en: Wall of solid timber panels such as cross-laminated or dowel-laminated timber.
+    ifc_class: IfcWall
   - code: SWP-LEICHTBAU
     iri: https://example.org/abstract/wall-separator-product/SWP-LEICHTBAU
     top: true
@@ -103,6 +141,30 @@ schemes:
       de: Nichttragende Fassade oder Vorhangfassade mit Pfosten-Riegel- oder Elementfassaden-System und Verglasung oder Bekleidungspanelen.
       en: Non-load-bearing facade or curtain wall system with mullion-transom or unitised glazing and cladding panels.
     ifc_class: IfcCurtainWall
+    deprecated: true
+    replaced_by:
+    - SWP-CURTAIN-WALL-STICK
+    - SWP-CURTAIN-WALL-UNITISED
+  - code: SWP-CURTAIN-WALL-STICK
+    iri: https://example.org/abstract/wall-separator-product/SWP-CURTAIN-WALL-STICK
+    top: true
+    label:
+      de: Pfosten-Riegel-Fassade
+      en: Stick curtain wall
+    definition:
+      de: Vorhangfassade aus vor Ort montierten Pfosten und Riegeln mit Füllungen.
+      en: Curtain wall of mullions and transoms assembled on site with infills.
+    ifc_class: IfcCurtainWall
+  - code: SWP-CURTAIN-WALL-UNITISED
+    iri: https://example.org/abstract/wall-separator-product/SWP-CURTAIN-WALL-UNITISED
+    top: true
+    label:
+      de: Elementfassade
+      en: Unitised curtain wall
+    definition:
+      de: Vorhangfassade aus geschosshohen, im Werk vorgefertigten Elementen.
+      en: Curtain wall of storey-high elements prefabricated in the factory.
+    ifc_class: IfcCurtainWall
   - code: SWP-ELEMENT-WALL
     iri: https://example.org/abstract/wall-separator-product/SWP-ELEMENT-WALL
     top: true
@@ -112,6 +174,30 @@ schemes:
     definition:
       de: Innere Trenn- oder Schachtwand aus Trockenbau-, Staender- oder modularen Elementsystemen.
       en: Interior partition or shaft wall from drywall, stud-framed, or modular element systems.
+    ifc_class: IfcWall
+    deprecated: true
+    replaced_by:
+    - SWP-DRYWALL
+    - SWP-SYSTEM-PARTITION
+  - code: SWP-DRYWALL
+    iri: https://example.org/abstract/wall-separator-product/SWP-DRYWALL
+    top: true
+    label:
+      de: Ständerwand in Trockenbau
+      en: Stud drywall partition
+    definition:
+      de: Nichttragende Innenwand aus Metall- oder Holzständern mit Plattenbeplankung, vor Ort erstellt.
+      en: Non-load-bearing interior wall of metal or timber studs with board sheathing, built on site.
+    ifc_class: IfcWall
+  - code: SWP-SYSTEM-PARTITION
+    iri: https://example.org/abstract/wall-separator-product/SWP-SYSTEM-PARTITION
+    top: true
+    label:
+      de: Systemtrennwand
+      en: Demountable system partition
+    definition:
+      de: Nichttragende Innenwand aus vorgefertigten, demontierbaren Elementen.
+      en: Non-load-bearing interior wall of prefabricated, demountable elements.
     ifc_class: IfcWall
   - code: SWP-OTH
     iri: https://example.org/abstract/wall-separator-product/SWP-OTH
@@ -161,6 +247,30 @@ schemes:
     definition:
       de: Decke mit primaerer Stahltrapezprofil-, Traeger- oder Stahl-Beton-Verbundkonstruktion.
       en: Slab with primary steel deck, beams, or composite steel-concrete system.
+    ifc_class: IfcSlab
+    deprecated: true
+    replaced_by:
+    - SSP-COMPOSITE-BEAM
+    - SSP-COMPOSITE-DECK
+  - code: SSP-COMPOSITE-DECK
+    iri: https://example.org/abstract/slab-separator-product/SSP-COMPOSITE-DECK
+    top: true
+    label:
+      de: Profilblech-Verbunddecke
+      en: Composite slab on steel decking
+    definition:
+      de: Decke aus Profilblech als verlorene Schalung und Ortbeton, die im Verbund wirken.
+      en: Slab of profiled steel decking as permanent formwork and in-situ concrete acting compositely.
+    ifc_class: IfcSlab
+  - code: SSP-COMPOSITE-BEAM
+    iri: https://example.org/abstract/slab-separator-product/SSP-COMPOSITE-BEAM
+    top: true
+    label:
+      de: Verbundträgerdecke
+      en: Composite beam slab
+    definition:
+      de: Betondecke, die über Kopfbolzen mit Stahlträgern im Verbund wirkt.
+      en: Concrete slab acting compositely with steel beams through shear studs.
     ifc_class: IfcSlab
   - code: SSP-STEEL-COMPOSITE-STL
     iri: https://example.org/abstract/slab-separator-product/SSP-STEEL-COMPOSITE-STL
@@ -213,6 +323,30 @@ schemes:
     definition:
       de: Hybride Decke mit Holztragwerk (z. B. Blockholzplatte, Brettsperrholz oder Rippendecke) und schubfest verbundener Ortbeton- oder Fertigbetonauflage.
       en: Hybrid slab with timber base (for example block timber, CLT, or rib deck) and a shear-connected concrete topping cast on site or prefabricated as a composite element.
+    ifc_class: IfcSlab
+    deprecated: true
+    replaced_by:
+    - SSP-HBV-INSITU
+    - SSP-HBV-PRECAST
+  - code: SSP-HBV-INSITU
+    iri: https://example.org/abstract/slab-separator-product/SSP-HBV-INSITU
+    top: true
+    label:
+      de: Holz-Beton-Verbunddecke mit Ortbeton
+      en: In-situ timber-concrete composite slab
+    definition:
+      de: Holztragwerk, auf das die Betonschicht vor Ort schubfest aufbetoniert wird.
+      en: Timber structure onto which the concrete layer is cast in place with shear connection.
+    ifc_class: IfcSlab
+  - code: SSP-HBV-PRECAST
+    iri: https://example.org/abstract/slab-separator-product/SSP-HBV-PRECAST
+    top: true
+    label:
+      de: Holz-Beton-Verbundelement
+      en: Precast timber-concrete composite element
+    definition:
+      de: Im Werk hergestelltes Deckenelement aus Holz und Beton im Verbund.
+      en: Floor element of timber and concrete in composite action, produced in the factory.
     ifc_class: IfcSlab
   - code: SSP-HBV-WOD
     iri: https://example.org/abstract/slab-separator-product/SSP-HBV-WOD
@@ -307,6 +441,41 @@ schemes:
       de: Tuer mit primaerem Holzrahmen und -blatt, einschliesslich Massivholz- und Holzwerkstoff-Tuersystemen.
       en: Door with primary wood frame and leaf, including solid wood and engineered-wood door systems.
     ifc_class: IfcDoor
+    deprecated: true
+    replaced_by:
+    - DCP-WOOD-ENTRANCE
+    - DCP-WOOD-INTERIOR
+    - DCP-WOOD-RATED
+  - code: DCP-WOOD-INTERIOR
+    iri: https://example.org/abstract/door-connector-product/DCP-WOOD-INTERIOR
+    top: true
+    label:
+      de: Holz-Innentür
+      en: Interior wood door
+    definition:
+      de: Innentür mit Blatt aus Holz oder Holzwerkstoff in Zarge, ohne Brand-, Rauch- oder erhöhte Schallschutzanforderung.
+      en: Interior door with timber or wood-based leaf in a frame, without fire, smoke, or increased acoustic duty.
+    ifc_class: IfcDoor
+  - code: DCP-WOOD-RATED
+    iri: https://example.org/abstract/door-connector-product/DCP-WOOD-RATED
+    top: true
+    label:
+      de: Holztür mit Brand-, Rauch- oder Schallschutz
+      en: Fire, smoke or acoustic rated wood door
+    definition:
+      de: Geprüftes Türelement aus Holz mit nachgewiesenem Brand-, Rauch- oder Schallschutz.
+      en: Tested timber door assembly with certified fire, smoke, or acoustic performance.
+    ifc_class: IfcDoor
+  - code: DCP-WOOD-ENTRANCE
+    iri: https://example.org/abstract/door-connector-product/DCP-WOOD-ENTRANCE
+    top: true
+    label:
+      de: Holz-Eingangstür
+      en: Wood entrance door
+    definition:
+      de: Eingangstür aus Holz an der Gebäudehülle oder zu Wohnungen, mit Anforderungen an Klima, Einbruch- und Wärmeschutz.
+      en: Timber entrance door in the building envelope or to dwellings, with climate, burglary, and thermal requirements.
+    ifc_class: IfcDoor
   - code: DCP-METAL
     iri: https://example.org/abstract/door-connector-product/DCP-METAL
     top: true
@@ -347,6 +516,41 @@ schemes:
       de: Ueberwiegend verglaste Tuer mit minimalem Rahmen, einschliesslich automatischer Schiebetueren und ganzverglaster Eingaenge.
       en: Door predominantly glazed with minimal frame, including automatic sliding glass doors and full-height glazed entrances.
     ifc_class: IfcDoor
+    deprecated: true
+    replaced_by:
+    - DCP-GLASS-AUTOMATIC
+    - DCP-GLASS-FRAMED
+    - DCP-GLASS-FRAMELESS
+  - code: DCP-GLASS-FRAMELESS
+    iri: https://example.org/abstract/door-connector-product/DCP-GLASS-FRAMELESS
+    top: true
+    label:
+      de: Ganzglastür
+      en: Frameless glass door
+    definition:
+      de: Türblatt aus Sicherheitsglas ohne Rahmen, mit Klemmbeschlägen.
+      en: Door leaf of safety glass without frame, with clamp fittings.
+    ifc_class: IfcDoor
+  - code: DCP-GLASS-FRAMED
+    iri: https://example.org/abstract/door-connector-product/DCP-GLASS-FRAMED
+    top: true
+    label:
+      de: Glasrahmentür
+      en: Framed glazed door
+    definition:
+      de: Türblatt mit überwiegender Verglasung in schmalem Metallrahmen.
+      en: Door leaf mostly glazed, in a narrow metal frame.
+    ifc_class: IfcDoor
+  - code: DCP-GLASS-AUTOMATIC
+    iri: https://example.org/abstract/door-connector-product/DCP-GLASS-AUTOMATIC
+    top: true
+    label:
+      de: Automatische Glastüranlage
+      en: Automatic glazed door system
+    definition:
+      de: Motorisch betriebene Schiebe-, Dreh- oder Karusselltür mit Glasflügeln.
+      en: Motor-operated sliding, swing, or revolving door with glazed leaves.
+    ifc_class: IfcDoor
   - code: DCP-GATE
     iri: https://example.org/abstract/door-connector-product/DCP-GATE
     top: true
@@ -356,6 +560,63 @@ schemes:
     definition:
       de: Grossformat-Tor, Sektionaltor, Rolltor oder Industrietuer-System.
       en: Large-format gate, sectional door, rolling shutter, or industrial door system.
+    ifc_class: IfcDoor
+    deprecated: true
+    replaced_by:
+    - DCP-GATE-FOLDING
+    - DCP-GATE-ROLLING
+    - DCP-GATE-SECTIONAL
+    - DCP-GATE-SLIDING
+    - DCP-GATE-UP-OVER
+  - code: DCP-GATE-SECTIONAL
+    iri: https://example.org/abstract/door-connector-product/DCP-GATE-SECTIONAL
+    top: true
+    label:
+      de: Sektionaltor
+      en: Sectional gate
+    definition:
+      de: Tor aus gelenkig verbundenen Paneelen, die unter die Decke laufen.
+      en: Gate of hinged panels that run up under the ceiling.
+    ifc_class: IfcDoor
+  - code: DCP-GATE-ROLLING
+    iri: https://example.org/abstract/door-connector-product/DCP-GATE-ROLLING
+    top: true
+    label:
+      de: Rolltor
+      en: Rolling gate
+    definition:
+      de: Tor aus Lamellen oder Behang, der über dem Sturz aufgewickelt wird.
+      en: Gate of slats or curtain that coils above the lintel.
+    ifc_class: IfcDoor
+  - code: DCP-GATE-SLIDING
+    iri: https://example.org/abstract/door-connector-product/DCP-GATE-SLIDING
+    top: true
+    label:
+      de: Schiebetor
+      en: Sliding gate
+    definition:
+      de: Tor mit einem oder mehreren Flügeln, die seitlich vor der Wand verschoben werden.
+      en: Gate with one or more leaves that slide sideways along the wall.
+    ifc_class: IfcDoor
+  - code: DCP-GATE-FOLDING
+    iri: https://example.org/abstract/door-connector-product/DCP-GATE-FOLDING
+    top: true
+    label:
+      de: Falttor
+      en: Folding gate
+    definition:
+      de: Tor aus gelenkig verbundenen Flügeln, die seitlich zusammengefaltet werden.
+      en: Gate of hinged leaves that fold to the side.
+    ifc_class: IfcDoor
+  - code: DCP-GATE-UP-OVER
+    iri: https://example.org/abstract/door-connector-product/DCP-GATE-UP-OVER
+    top: true
+    label:
+      de: Schwingtor
+      en: Up-and-over gate
+    definition:
+      de: Tor mit einem starren Flügel, der nach aussen und oben ausschwingt.
+      en: Gate with a single rigid leaf that swings out and up.
     ifc_class: IfcDoor
   - code: DCP-SPECIAL
     iri: https://example.org/abstract/door-connector-product/DCP-SPECIAL
@@ -566,6 +827,41 @@ schemes:
       de: Dachmontiertes Fenster, Oberlicht oder Dachflaechenfenster-Produkt.
       en: Roof-mounted window, skylight, or rooflight product.
     ifc_class: IfcWindow
+    deprecated: true
+    replaced_by:
+    - WICP-ROOF-DOME
+    - WICP-ROOF-WINDOW
+    - WICP-ROOFLIGHT-BAND
+  - code: WICP-ROOF-WINDOW
+    iri: https://example.org/abstract/window-connector-product/WICP-ROOF-WINDOW
+    top: true
+    label:
+      de: Dachflächenfenster
+      en: Pitched roof window
+    definition:
+      de: Fenster in der Dachfläche eines Steildachs, mit Eindeckrahmen.
+      en: Window in the surface of a pitched roof, with flashing kit.
+    ifc_class: IfcWindow
+  - code: WICP-ROOF-DOME
+    iri: https://example.org/abstract/window-connector-product/WICP-ROOF-DOME
+    top: true
+    label:
+      de: Lichtkuppel
+      en: Flat-roof dome
+    definition:
+      de: Einzelnes Oberlicht im Flachdach auf einem Aufsetzkranz.
+      en: Single rooflight in a flat roof on an upstand kerb.
+    ifc_class: IfcWindow
+  - code: WICP-ROOFLIGHT-BAND
+    iri: https://example.org/abstract/window-connector-product/WICP-ROOFLIGHT-BAND
+    top: true
+    label:
+      de: Lichtband
+      en: Continuous rooflight
+    definition:
+      de: Durchgehendes Oberlichtband im Flachdach oder flach geneigten Dach.
+      en: Continuous rooflight band in a flat or low-pitch roof.
+    ifc_class: IfcWindow
   - code: WICP-FACADE-UNIT
     iri: https://example.org/abstract/window-connector-product/WICP-FACADE-UNIT
     top: true
@@ -604,6 +900,41 @@ schemes:
     definition:
       de: Unterlagsvorbereitung oder Ausgleichsestrich unter dem sichtbaren Bodenbelag.
       en: Subfloor preparation or leveling screed layer beneath the visible floor finish.
+    ifc_class: IfcCovering
+    deprecated: true
+    replaced_by:
+    - FCP-SCREED-BONDED
+    - FCP-SCREED-FLOATING
+    - FCP-SCREED-HEATED
+  - code: FCP-SCREED-BONDED
+    iri: https://example.org/abstract/floor-covering-product/FCP-SCREED-BONDED
+    top: true
+    label:
+      de: Verbundener Unterlagsboden
+      en: Bonded screed
+    definition:
+      de: Unterlagsboden, der vollflächig mit der Rohdecke verbunden ist.
+      en: Screed bonded over its full area to the structural slab.
+    ifc_class: IfcCovering
+  - code: FCP-SCREED-FLOATING
+    iri: https://example.org/abstract/floor-covering-product/FCP-SCREED-FLOATING
+    top: true
+    label:
+      de: Schwimmender Unterlagsboden
+      en: Floating screed
+    definition:
+      de: Unterlagsboden auf Trittschall- und Wärmedämmschicht, ohne Verbindung zur Rohdecke und zu den Wänden.
+      en: Screed on impact-sound and thermal insulation, separated from the slab and the walls.
+    ifc_class: IfcCovering
+  - code: FCP-SCREED-HEATED
+    iri: https://example.org/abstract/floor-covering-product/FCP-SCREED-HEATED
+    top: true
+    label:
+      de: Heizunterlagsboden
+      en: Heated screed
+    definition:
+      de: Schwimmender Unterlagsboden mit eingebetteten Heiz- oder Kühlrohren.
+      en: Floating screed with embedded heating or cooling pipes.
     ifc_class: IfcCovering
   - code: FCP-SEAMLESS-RESIN
     iri: https://example.org/abstract/floor-covering-product/FCP-SEAMLESS-RESIN
@@ -705,6 +1036,30 @@ schemes:
       de: Hohlraumboden- oder Doppelbodensystem mit Stuetzen und abnehmbaren Paneelen.
       en: Raised access floor system with pedestals and removable panels.
     ifc_class: IfcCovering
+    deprecated: true
+    replaced_by:
+    - FCP-ACCESS-FLOOR
+    - FCP-CAVITY-FLOOR
+  - code: FCP-ACCESS-FLOOR
+    iri: https://example.org/abstract/floor-covering-product/FCP-ACCESS-FLOOR
+    top: true
+    label:
+      de: Doppelboden
+      en: Access floor
+    definition:
+      de: Systemboden aus herausnehmbaren Platten auf höhenverstellbaren Stützen.
+      en: Raised floor of removable panels on height-adjustable pedestals.
+    ifc_class: IfcCovering
+  - code: FCP-CAVITY-FLOOR
+    iri: https://example.org/abstract/floor-covering-product/FCP-CAVITY-FLOOR
+    top: true
+    label:
+      de: Hohlboden
+      en: Cavity floor
+    definition:
+      de: Systemboden mit fugenloser Tragschicht über einem Hohlraum, nur über Revisionsöffnungen zugänglich.
+      en: Raised floor with a jointless load-bearing layer over a cavity, accessible only through access openings.
+    ifc_class: IfcCovering
   - code: FCP-OTH
     iri: https://example.org/abstract/floor-covering-product/FCP-OTH
     top: true
@@ -754,6 +1109,30 @@ schemes:
       de: Eingebaute Natursteinplatten- oder -fliesen-Wandverkleidung.
       en: Installed natural stone slab or tile wall cladding.
     ifc_class: IfcCovering
+    deprecated: true
+    replaced_by:
+    - WCP-NATURAL-STONE-ANCHORED
+    - WCP-NATURAL-STONE-BONDED
+  - code: WCP-NATURAL-STONE-BONDED
+    iri: https://example.org/abstract/wall-covering-product/WCP-NATURAL-STONE-BONDED
+    top: true
+    label:
+      de: Geklebte Natursteinwandbekleidung
+      en: Bonded natural stone wall cladding
+    definition:
+      de: Dünnformatige Natursteinplatten, im Kleber oder Mörtel an der Wand angesetzt.
+      en: Thin natural stone slabs set in adhesive or mortar on the wall.
+    ifc_class: IfcCovering
+  - code: WCP-NATURAL-STONE-ANCHORED
+    iri: https://example.org/abstract/wall-covering-product/WCP-NATURAL-STONE-ANCHORED
+    top: true
+    label:
+      de: Verankerte Natursteinwandbekleidung
+      en: Anchored natural stone wall cladding
+    definition:
+      de: Grossformatige Natursteinplatten, mechanisch mit Hinterlüftung oder Hohlraum verankert.
+      en: Large natural stone slabs mechanically anchored in front of a cavity.
+    ifc_class: IfcCovering
   - code: WCP-ARTIFICIAL-STONE
     iri: https://example.org/abstract/wall-covering-product/WCP-ARTIFICIAL-STONE
     top: true
@@ -763,6 +1142,30 @@ schemes:
     definition:
       de: Eingebaute Kunst- oder Agglomeratstein-Wandverkleidung.
       en: Installed artificial or agglomerate stone wall cladding.
+    ifc_class: IfcCovering
+    deprecated: true
+    replaced_by:
+    - WCP-ARTIFICIAL-STONE-ANCHORED
+    - WCP-ARTIFICIAL-STONE-BONDED
+  - code: WCP-ARTIFICIAL-STONE-BONDED
+    iri: https://example.org/abstract/wall-covering-product/WCP-ARTIFICIAL-STONE-BONDED
+    top: true
+    label:
+      de: Geklebte Kunststeinwandbekleidung
+      en: Bonded artificial stone wall cladding
+    definition:
+      de: Kunst- oder Agglomeratsteinplatten, auf einen ebenen Untergrund geklebt.
+      en: Engineered or agglomerate stone slabs bonded to a level substrate.
+    ifc_class: IfcCovering
+  - code: WCP-ARTIFICIAL-STONE-ANCHORED
+    iri: https://example.org/abstract/wall-covering-product/WCP-ARTIFICIAL-STONE-ANCHORED
+    top: true
+    label:
+      de: Verankerte Kunststeinwandbekleidung
+      en: Anchored artificial stone wall cladding
+    definition:
+      de: Grossformatige Kunststeinplatten, mechanisch auf Unterkonstruktion befestigt.
+      en: Large artificial stone slabs mechanically fixed on a substructure.
     ifc_class: IfcCovering
   - code: WCP-CERAMIC-TILE
     iri: https://example.org/abstract/wall-covering-product/WCP-CERAMIC-TILE
@@ -793,6 +1196,30 @@ schemes:
     definition:
       de: Eingebautes textiles oder Stoff-Wandbekleidungssystem.
       en: Installed textile or fabric wall covering system.
+    ifc_class: IfcCovering
+    deprecated: true
+    replaced_by:
+    - WCP-FABRIC-STRETCHED
+    - WCP-TEXTILE-BONDED
+  - code: WCP-TEXTILE-BONDED
+    iri: https://example.org/abstract/wall-covering-product/WCP-TEXTILE-BONDED
+    top: true
+    label:
+      de: Geklebter Textilwandbelag
+      en: Bonded textile wall covering
+    definition:
+      de: Textiler Wandbelag, vollflächig auf den Untergrund geklebt.
+      en: Textile wall covering fully bonded to the substrate.
+    ifc_class: IfcCovering
+  - code: WCP-FABRIC-STRETCHED
+    iri: https://example.org/abstract/wall-covering-product/WCP-FABRIC-STRETCHED
+    top: true
+    label:
+      de: Gespannte Stoffwandbekleidung
+      en: Stretched fabric wall system
+    definition:
+      de: Stoff, in Randprofile gespannt, meist mit schallabsorbierender Hinterlage.
+      en: Fabric tensioned into edge profiles, usually with a sound-absorbing backing.
     ifc_class: IfcCovering
   - code: WCP-SYNTHETIC-PANEL
     iri: https://example.org/abstract/wall-covering-product/WCP-SYNTHETIC-PANEL
@@ -853,6 +1280,30 @@ schemes:
       de: Gipskarton-Deckenbekleidung oder abgehaengte GK-Decke.
       en: Gypsum board or plasterboard ceiling lining or suspended ceiling.
     ifc_class: IfcCovering
+    deprecated: true
+    replaced_by:
+    - CCP-GYPSUM-DIRECT
+    - CCP-GYPSUM-SUSPENDED
+  - code: CCP-GYPSUM-DIRECT
+    iri: https://example.org/abstract/ceiling-covering-product/CCP-GYPSUM-DIRECT
+    top: true
+    label:
+      de: Direkt befestigte Gipsplattendecke
+      en: Direct-fixed gypsum board ceiling
+    definition:
+      de: Gipsplattenbekleidung, direkt oder auf Lattung an der Rohdecke befestigt.
+      en: Gypsum board lining fixed directly or on battens to the slab.
+    ifc_class: IfcCovering
+  - code: CCP-GYPSUM-SUSPENDED
+    iri: https://example.org/abstract/ceiling-covering-product/CCP-GYPSUM-SUSPENDED
+    top: true
+    label:
+      de: Abgehängte Gipsplattendecke
+      en: Suspended gypsum board ceiling
+    definition:
+      de: Gipsplattendecke auf abgehängter Unterkonstruktion mit Deckenhohlraum.
+      en: Gypsum board ceiling on a suspended substructure with a ceiling void.
+    ifc_class: IfcCovering
   - code: CCP-MINERAL-FIBRE
     iri: https://example.org/abstract/ceiling-covering-product/CCP-MINERAL-FIBRE
     top: true
@@ -882,6 +1333,30 @@ schemes:
     definition:
       de: Kunststoff-, Textil- oder synthetische Deckenbekleidung oder Membran.
       en: Plastic, textile, or synthetic ceiling lining or membrane.
+    ifc_class: IfcCovering
+    deprecated: true
+    replaced_by:
+    - CCP-STRETCH-MEMBRANE
+    - CCP-SYNTHETIC-PANEL
+  - code: CCP-SYNTHETIC-PANEL
+    iri: https://example.org/abstract/ceiling-covering-product/CCP-SYNTHETIC-PANEL
+    top: true
+    label:
+      de: Kunststoffpaneeldecke
+      en: Synthetic panel ceiling
+    definition:
+      de: Deckenbekleidung aus Kunststoffpaneelen auf leichter Unterkonstruktion.
+      en: Ceiling lining of synthetic panels on a light substructure.
+    ifc_class: IfcCovering
+  - code: CCP-STRETCH-MEMBRANE
+    iri: https://example.org/abstract/ceiling-covering-product/CCP-STRETCH-MEMBRANE
+    top: true
+    label:
+      de: Spanndecke
+      en: Stretch membrane ceiling
+    definition:
+      de: Decke aus Folie oder Gewebe, in Randprofile gespannt.
+      en: Ceiling of foil or fabric tensioned into perimeter profiles.
     ifc_class: IfcCovering
   - code: CCP-METAL-PANEL
     iri: https://example.org/abstract/ceiling-covering-product/CCP-METAL-PANEL
@@ -1074,6 +1549,12 @@ schemes:
       de: 'Nicht-tragende Fassadenüberlagerung oder Umhüllung über bestehende Fassade bei Sanierungs-/Renovierungsprojekten. Kombiniert Verkleidungsschicht (typischerweise ETICS, Lüftungspaneel oder Fertigmodul) mit mechanischen Befestigungen und/oder Klebstoff auf bestehendem Untergrund. Primäre Anwendung: EU Fit-for-55-Tiefensanierungen im Wohn-/Gewerbebebestand.'
       en: 'Non-structural facade overlay or wrapper applied over existing facade on retrofit/renovation projects. Combines cladding layer (typically ETICS, ventilated panel, or prefab module) anchored to existing substrate with mechanical fixings and/or adhesive. Primary application: EU Fit-for-55 deep energy retrofits on residential/commercial stock.'
     ifc_class: IfcCovering
+    deprecated: true
+    replaced_by:
+    - FaCP-FIBER-CEMENT-BOARD
+    - FaCP-METAL-COMPOSITE-PANEL
+    - FaCP-RENDER-ETICS-WDVS
+    - FaCP-TIMBER-VENTILATED
   - code: FaCP-HPL-PANEL
     iri: https://example.org/abstract/facade-covering-product/FaCP-HPL-PANEL
     top: true
@@ -1093,6 +1574,30 @@ schemes:
     definition:
       de: Dünne Ziegelriemchen-, Fliesen- oder Mauersteinbekleidung als vorgehängte hinterlüftete Fassade auf Unterkonstruktion, einschliesslich Sanierungs-Klinkerfassaden über Daemmung.
       en: Thin brick slip, tile, or masonry-unit ventilated rainscreen cladding on subframe, including retrofit tile-hung systems over insulation.
+    ifc_class: IfcCovering
+    deprecated: true
+    replaced_by:
+    - FaCP-BRICK-SLIP-BONDED
+    - FaCP-BRICK-SLIP-VENTILATED
+  - code: FaCP-BRICK-SLIP-VENTILATED
+    iri: https://example.org/abstract/facade-covering-product/FaCP-BRICK-SLIP-VENTILATED
+    top: true
+    label:
+      de: Hinterlüftete Riemchenfassade
+      en: Ventilated brick slip facade
+    definition:
+      de: Riemchen oder Kleinformatfliesen auf Trägerschienen oder -platten vor einer Hinterlüftung.
+      en: Brick slips or small tiles on carrier rails or boards in front of a ventilated cavity.
+    ifc_class: IfcCovering
+  - code: FaCP-BRICK-SLIP-BONDED
+    iri: https://example.org/abstract/facade-covering-product/FaCP-BRICK-SLIP-BONDED
+    top: true
+    label:
+      de: Verklebte Riemchenfassade auf Wärmedämmverbundsystem
+      en: Brick slips bonded on ETICS
+    definition:
+      de: Riemchen, die auf den Armierungsputz eines Wärmedämmverbundsystems geklebt werden.
+      en: Brick slips bonded onto the base coat of an ETICS.
     ifc_class: IfcCovering
   - code: FaCP-OTHER
     iri: https://example.org/abstract/facade-covering-product/FaCP-OTHER
@@ -1266,6 +1771,30 @@ schemes:
     definition:
       de: Photovoltaik-Modulanordnung auf oder integriert in das Dachbekleidungssystem.
       en: Photovoltaic module array mounted on or integrated with the roof covering system.
+    ifc_class: IfcCovering
+    deprecated: true
+    replaced_by:
+    - RCP-PV-INTEGRATED
+    - RCP-PV-MOUNTED
+  - code: RCP-PV-MOUNTED
+    iri: https://example.org/abstract/roof-covering-product/RCP-PV-MOUNTED
+    top: true
+    label:
+      de: Aufdach-Photovoltaikanlage
+      en: Rack-mounted roof photovoltaic system
+    definition:
+      de: Photovoltaikmodule auf einer Unterkonstruktion über der bestehenden Dacheindeckung oder Abdichtung.
+      en: Photovoltaic modules on a mounting frame above the existing roof covering or membrane.
+    ifc_class: IfcCovering
+  - code: RCP-PV-INTEGRATED
+    iri: https://example.org/abstract/roof-covering-product/RCP-PV-INTEGRATED
+    top: true
+    label:
+      de: Indach-Photovoltaikanlage
+      en: Roof-integrated photovoltaic system
+    definition:
+      de: Photovoltaikmodule, die als wasserführende Dachhaut die Eindeckung ersetzen.
+      en: Photovoltaic modules that replace the roof covering as the weatherproof layer.
     ifc_class: IfcCovering
   - code: RCP-OTH
     iri: https://example.org/abstract/roof-covering-product/RCP-OTH
@@ -1441,6 +1970,30 @@ schemes:
       de: Tiefgruendung mit rammbaren, gebohrten oder ortbetonierten Pfaehlen und Pfahlkopf- oder Gründungsbalkenanschluss.
       en: Deep foundation system using driven, drilled, or cast-in-place piles with pile cap or ground beam connection.
     ifc_class: IfcPile
+    deprecated: true
+    replaced_by:
+    - FDP-PILE-BORED
+    - FDP-PILE-DRIVEN
+  - code: FDP-PILE-DRIVEN
+    iri: https://example.org/abstract/foundation-product/FDP-PILE-DRIVEN
+    top: true
+    label:
+      de: Rammpfahl
+      en: Driven pile
+    definition:
+      de: Vorgefertigter Pfahl, der in den Baugrund gerammt oder gerüttelt wird.
+      en: Prefabricated pile driven or vibrated into the ground.
+    ifc_class: IfcPile
+  - code: FDP-PILE-BORED
+    iri: https://example.org/abstract/foundation-product/FDP-PILE-BORED
+    top: true
+    label:
+      de: Bohrpfahl
+      en: Bored pile
+    definition:
+      de: Im Baugrund gebohrter und vor Ort betonierter Pfahl.
+      en: Pile bored into the ground and cast in place.
+    ifc_class: IfcPile
   - code: FDP-MICRO-PILE
     iri: https://example.org/abstract/foundation-product/FDP-MICRO-PILE
     top: true
@@ -1451,6 +2004,41 @@ schemes:
       de: Kleindurchmesser-Mikropfahl-, Injektions- oder Bodenverbesserungssystem fuer beengte Lagen oder Unterfangungen.
       en: Small-diameter micropile, injection, or ground-improvement foundation system for constrained sites or underpinning.
     ifc_class: IfcPile
+    deprecated: true
+    replaced_by:
+    - FDP-GROUND-INJECTION
+    - FDP-MICRO-PILE-GROUTED
+    - FDP-SOIL-REPLACEMENT
+  - code: FDP-MICRO-PILE-GROUTED
+    iri: https://example.org/abstract/foundation-product/FDP-MICRO-PILE-GROUTED
+    top: true
+    label:
+      de: Mikropfahl
+      en: Micropile
+    definition:
+      de: Pfahl kleinen Durchmessers mit verpresstem Stahltragglied.
+      en: Small-diameter pile with a grouted steel tendon.
+    ifc_class: IfcPile
+  - code: FDP-GROUND-INJECTION
+    iri: https://example.org/abstract/foundation-product/FDP-GROUND-INJECTION
+    top: true
+    label:
+      de: Baugrundinjektion
+      en: Ground injection
+    definition:
+      de: Verbesserung des Baugrunds durch Injektion von Bindemitteln.
+      en: Improvement of the ground by injecting binders.
+    ifc_class: IfcPile
+  - code: FDP-SOIL-REPLACEMENT
+    iri: https://example.org/abstract/foundation-product/FDP-SOIL-REPLACEMENT
+    top: true
+    label:
+      de: Bodenersatz
+      en: Soil replacement
+    definition:
+      de: Ersatz nicht tragfähigen Bodens durch verdichtetes, geeignetes Material.
+      en: Replacement of unsuitable soil with compacted suitable material.
+    ifc_class: IfcPile
   - code: FDP-RETAINING
     iri: https://example.org/abstract/foundation-product/FDP-RETAINING
     top: true
@@ -1460,6 +2048,41 @@ schemes:
     definition:
       de: Fundamentwand, Kellerschacht oder Stuetzkonstruktion als Teil des Unterbaus, einschliesslich eingebetteter Kellerumfassungswaende.
       en: Foundation wall, basement box, or retaining structure integrated with the substructure, including embedded perimeter walls below grade.
+    ifc_class: IfcWall
+    deprecated: true
+    replaced_by:
+    - FDP-RETAINING-INSITU
+    - FDP-RETAINING-PRECAST
+    - FDP-RETAINING-SHORING
+  - code: FDP-RETAINING-INSITU
+    iri: https://example.org/abstract/foundation-product/FDP-RETAINING-INSITU
+    top: true
+    label:
+      de: Ortbeton-Untergeschosswand
+      en: In-situ basement wall
+    definition:
+      de: Vor Ort betonierte erdberührte Wand, die Erd- und Wasserdruck aufnimmt.
+      en: Below-grade wall cast in place, resisting earth and water pressure.
+    ifc_class: IfcWall
+  - code: FDP-RETAINING-PRECAST
+    iri: https://example.org/abstract/foundation-product/FDP-RETAINING-PRECAST
+    top: true
+    label:
+      de: Fertigteil-Untergeschosswand
+      en: Precast basement wall
+    definition:
+      de: Erdberührte Wand aus Betonfertigteilen oder Doppelwandelementen.
+      en: Below-grade wall of precast concrete or double-wall elements.
+    ifc_class: IfcWall
+  - code: FDP-RETAINING-SHORING
+    iri: https://example.org/abstract/foundation-product/FDP-RETAINING-SHORING
+    top: true
+    label:
+      de: Definitiver Baugrubenabschluss
+      en: Permanent excavation support wall
+    definition:
+      de: Baugrubenabschluss wie Bohrpfahl- oder Schlitzwand, der als definitive Wand im Bauwerk verbleibt.
+      en: Excavation support such as a bored-pile or diaphragm wall that remains as a permanent wall.
     ifc_class: IfcWall
   - code: FDP-RETAINING-INS
     iri: https://example.org/abstract/foundation-product/FDP-RETAINING-INS
@@ -1481,6 +2104,30 @@ schemes:
     definition:
       de: Unterirdische Abdichtung, Weisswanne oder Tankingsystem auf Fundamentplatten und Kellerwaenden.
       en: Below-grade waterproofing, tanking, or white-tank system on foundation slabs and basement walls.
+    ifc_class: IfcCovering
+    deprecated: true
+    replaced_by:
+    - FDP-WATERPROOF-CONCRETE
+    - FDP-WATERPROOF-MEMBRANE
+  - code: FDP-WATERPROOF-MEMBRANE
+    iri: https://example.org/abstract/foundation-product/FDP-WATERPROOF-MEMBRANE
+    top: true
+    label:
+      de: Abdichtung mit Bahnen
+      en: Membrane tanking
+    definition:
+      de: Abdichtung erdberührter Bauteile mit verklebten oder lose verlegten Bahnen.
+      en: Sealing of buried components with bonded or loose-laid membranes.
+    ifc_class: IfcCovering
+  - code: FDP-WATERPROOF-CONCRETE
+    iri: https://example.org/abstract/foundation-product/FDP-WATERPROOF-CONCRETE
+    top: true
+    label:
+      de: Wasserdichte Betonkonstruktion
+      en: Watertight concrete construction
+    definition:
+      de: Erdberührte Konstruktion, bei der der Beton selbst die Abdichtung übernimmt.
+      en: Buried construction in which the concrete itself provides the sealing.
     ifc_class: IfcCovering
   - code: FDP-DRAINAGE
     iri: https://example.org/abstract/foundation-product/FDP-DRAINAGE
@@ -1538,6 +2185,28 @@ schemes:
     definition:
       de: Ortbeton- oder Fertigteil-Stahlbetonstütze inklusive Schalung und Bewehrung. Preis pro m3 Bruttovolumen.
       en: Cast-in-situ or precast reinforced concrete column including formwork and reinforcement. Priced per m3 of gross member volume.
+    deprecated: true
+    replaced_by:
+    - CLP-RC-INSITU
+    - CLP-RC-PRECAST
+  - code: CLP-RC-INSITU
+    iri: https://example.org/abstract/column-product/CLP-RC-INSITU
+    top: true
+    label:
+      de: Ortbetonstütze
+      en: In-situ concrete column
+    definition:
+      de: Vor Ort geschalte, bewehrte und betonierte Stahlbetonstütze. Preis pro m3 Bruttovolumen.
+      en: Reinforced concrete column formed, reinforced, and cast on site. Priced per m3 of gross member volume.
+  - code: CLP-RC-PRECAST
+    iri: https://example.org/abstract/column-product/CLP-RC-PRECAST
+    top: true
+    label:
+      de: Fertigteilstütze
+      en: Precast concrete column
+    definition:
+      de: Im Werk hergestellte Stahlbetonstütze, die versetzt und vergossen wird. Preis pro m3 Bruttovolumen.
+      en: Reinforced concrete column produced in the factory, set, and grouted on site. Priced per m3 of gross member volume.
   - code: CLP-OTH
     iri: https://example.org/abstract/column-product/CLP-OTH
     top: true
@@ -1583,6 +2252,28 @@ schemes:
     definition:
       de: Ortbeton- oder Fertigteil-Stahlbetonträger als Unterzug oder Überzug inklusive Schalung und Bewehrung. Preis pro Laufmeter bei Nennquerschnitt 300 x 600 mm.
       en: Cast-in-situ or precast reinforced concrete downstand or upstand beam including formwork and reinforcement. Priced per running metre on a nominal 300 x 600 mm section.
+    deprecated: true
+    replaced_by:
+    - BMP-RC-INSITU
+    - BMP-RC-PRECAST
+  - code: BMP-RC-INSITU
+    iri: https://example.org/abstract/beam-product/BMP-RC-INSITU
+    top: true
+    label:
+      de: Ortbeton-Unterzug
+      en: In-situ concrete beam
+    definition:
+      de: Vor Ort geschalter, bewehrter und betonierter Stahlbetonträger. Preis pro Laufmeter bei Nennquerschnitt 300 x 600 mm.
+      en: Reinforced concrete beam formed, reinforced, and cast on site. Priced per running metre on a nominal 300 x 600 mm section.
+  - code: BMP-RC-PRECAST
+    iri: https://example.org/abstract/beam-product/BMP-RC-PRECAST
+    top: true
+    label:
+      de: Fertigteil-Unterzug
+      en: Precast concrete beam
+    definition:
+      de: Im Werk hergestellter Stahlbetonträger, der versetzt und angeschlossen wird. Preis pro Laufmeter bei Nennquerschnitt 300 x 600 mm.
+      en: Reinforced concrete beam produced in the factory, set, and connected on site. Priced per running metre on a nominal 300 x 600 mm section.
   - code: BMP-OTH
     iri: https://example.org/abstract/beam-product/BMP-OTH
     top: true
@@ -1628,6 +2319,28 @@ schemes:
     definition:
       de: Ortbeton- oder Fertigteil-Stahlbetontreppenlauf inklusive Schalung, Bewehrung und Schallschutzlager. Preis pro m3 Bruttovolumen des Laufs.
       en: Cast-in-situ or precast reinforced concrete stair flight including formwork, reinforcement, and acoustic bearings. Priced per m3 of gross flight volume.
+    deprecated: true
+    replaced_by:
+    - SRP-RC-INSITU
+    - SRP-RC-PRECAST
+  - code: SRP-RC-INSITU
+    iri: https://example.org/abstract/stair-product/SRP-RC-INSITU
+    top: true
+    label:
+      de: Ortbetontreppe
+      en: In-situ concrete stair
+    definition:
+      de: Vor Ort geschalter, bewehrter und betonierter Treppenlauf aus Stahlbeton. Preis pro m3 Bruttovolumen des Laufs.
+      en: Reinforced concrete stair flight formed, reinforced, and cast on site. Priced per m3 of gross flight volume.
+  - code: SRP-RC-PRECAST
+    iri: https://example.org/abstract/stair-product/SRP-RC-PRECAST
+    top: true
+    label:
+      de: Fertigteiltreppe
+      en: Precast concrete stair
+    definition:
+      de: Im Werk hergestellter Treppenlauf aus Stahlbeton, auf Schalldämmlager versetzt. Preis pro m3 Bruttovolumen des Laufs.
+      en: Reinforced concrete stair flight produced in the factory and set on acoustic bearings. Priced per m3 of gross flight volume.
   - code: SRP-OTH
     iri: https://example.org/abstract/stair-product/SRP-OTH
     top: true
@@ -1709,6 +2422,38 @@ schemes:
     definition:
       de: Absturzsicherung als massive Beton- oder Mauerwerksbrüstung mit Abdeckung, die die Schutzfunktion übernimmt. Preis pro m Brüstungslänge.
       en: Fall protection formed by a solid concrete or masonry parapet with coping, acting as the guarding element. Priced per m of parapet length.
+    deprecated: true
+    replaced_by:
+    - RAP-PARAPET-INSITU
+    - RAP-PARAPET-MASONRY
+    - RAP-PARAPET-PRECAST
+  - code: RAP-PARAPET-INSITU
+    iri: https://example.org/abstract/railing-product/RAP-PARAPET-INSITU
+    top: true
+    label:
+      de: Ortbetonbrüstung
+      en: In-situ concrete parapet
+    definition:
+      de: Absturzsicherung als vor Ort betonierte Brüstung. Preis pro m Brüstungslänge.
+      en: Fall protection as a parapet cast in place. Priced per m of parapet length.
+  - code: RAP-PARAPET-PRECAST
+    iri: https://example.org/abstract/railing-product/RAP-PARAPET-PRECAST
+    top: true
+    label:
+      de: Fertigteilbrüstung
+      en: Precast parapet
+    definition:
+      de: Absturzsicherung aus im Werk hergestellten Betonelementen. Preis pro m Brüstungslänge.
+      en: Fall protection of factory-made concrete elements. Priced per m of parapet length.
+  - code: RAP-PARAPET-MASONRY
+    iri: https://example.org/abstract/railing-product/RAP-PARAPET-MASONRY
+    top: true
+    label:
+      de: Gemauerte Brüstung
+      en: Masonry parapet
+    definition:
+      de: Absturzsicherung als gemauerte Brüstung mit Abdeckung. Preis pro m Brüstungslänge.
+      en: Fall protection as a masonry parapet with coping. Priced per m of parapet length.
   - code: RAP-HANDRAIL
     iri: https://example.org/abstract/railing-product/RAP-HANDRAIL
     top: true
@@ -1733,6 +2478,7 @@ schemes:
   title:
     de: Abstrakte TGA-Endgeraeteprodukte
     en: Abstract MEP terminal products
+  value_set: product-class-mep-terminal
   sheets: true
   concepts:
   - code: MTP-ELEC-SOCKET
@@ -1865,6 +2611,30 @@ schemes:
       de: Passive oder aktive Kuehldecke oder Kuehlbalken-Endgeraet.
       en: Passive or active chilled ceiling panel or chilled beam terminal.
     ifc_class: IfcCooledBeam
+    deprecated: true
+    replaced_by:
+    - MTP-COOL-CEILING-PANEL
+    - MTP-COOL-CHILLED-BEAM
+  - code: MTP-COOL-CEILING-PANEL
+    iri: https://example.org/abstract/mep-terminal-product/MTP-COOL-CEILING-PANEL
+    top: true
+    label:
+      de: Kühldecke
+      en: Chilled ceiling
+    definition:
+      de: Deckenfläche mit wasserdurchflossenen Registern, die Wärme vorwiegend durch Strahlung aufnimmt.
+      en: Ceiling surface with water-carrying registers that absorbs heat mainly by radiation.
+    ifc_class: IfcCooledBeam
+  - code: MTP-COOL-CHILLED-BEAM
+    iri: https://example.org/abstract/mep-terminal-product/MTP-COOL-CHILLED-BEAM
+    top: true
+    label:
+      de: Kühlbalken
+      en: Chilled beam
+    definition:
+      de: Konvektives Kühlelement an der Decke, passiv oder mit Primärluft.
+      en: Convective cooling unit at ceiling level, passive or with primary air.
+    ifc_class: IfcCooledBeam
   - code: MTP-FW-TAP
     iri: https://example.org/abstract/mep-terminal-product/MTP-FW-TAP
     top: true
@@ -1991,6 +2761,7 @@ schemes:
   title:
     de: Abstrakte TGA-Erzeuger-/Wandlerprodukte
     en: Abstract MEP unit products
+  value_set: product-class-mep-unit
   sheets: true
   concepts:
   - code: MUP-ELEC-TRANSFORMER
@@ -2113,6 +2884,41 @@ schemes:
       de: Waermepumpenanlage fuer Heizbetrieb (optional auch Kuehlbetrieb).
       en: Heat pump unit for heating (and optionally cooling) operation.
     ifc_class: IfcUnitaryEquipment
+    deprecated: true
+    replaced_by:
+    - MUP-HEAT-HP-AIR
+    - MUP-HEAT-HP-GROUND
+    - MUP-HEAT-HP-WATER
+  - code: MUP-HEAT-HP-AIR
+    iri: https://example.org/abstract/mep-unit-product/MUP-HEAT-HP-AIR
+    top: true
+    label:
+      de: Luft-Wasser-Wärmepumpe
+      en: Air-source heat pump
+    definition:
+      de: Wärmepumpe, die der Aussenluft Wärme entzieht.
+      en: Heat pump that extracts heat from the outdoor air.
+    ifc_class: IfcUnitaryEquipment
+  - code: MUP-HEAT-HP-GROUND
+    iri: https://example.org/abstract/mep-unit-product/MUP-HEAT-HP-GROUND
+    top: true
+    label:
+      de: Sole-Wasser-Wärmepumpe
+      en: Ground-source heat pump
+    definition:
+      de: Wärmepumpe mit Erdwärmesonden oder Erdregister als Quelle.
+      en: Heat pump with borehole heat exchangers or ground collectors as source.
+    ifc_class: IfcUnitaryEquipment
+  - code: MUP-HEAT-HP-WATER
+    iri: https://example.org/abstract/mep-unit-product/MUP-HEAT-HP-WATER
+    top: true
+    label:
+      de: Wasser-Wasser-Wärmepumpe
+      en: Water-source heat pump
+    definition:
+      de: Wärmepumpe mit Grund-, Oberflächen- oder Abwasser oder Abwärme als Quelle.
+      en: Heat pump with ground, surface, or waste water or waste heat as source.
+    ifc_class: IfcUnitaryEquipment
   - code: MUP-HEAT-DISTRICT-HEAT-SUBSTATION
     iri: https://example.org/abstract/mep-unit-product/MUP-HEAT-DISTRICT-HEAT-SUBSTATION
     top: true
@@ -2219,6 +3025,7 @@ schemes:
   title:
     de: Abstrakte Baustelleneinrichtungsprodukte
     en: Abstract site facility products
+  value_set: product-class-site-facility
   sheets: true
   concepts:
   - code: SFP-CRANE

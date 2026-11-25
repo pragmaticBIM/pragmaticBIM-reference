@@ -1,6 +1,6 @@
 id: pragmaticbim:product/dcp-wood
 sort_order: 1
-status: active
+status: deprecated
 name:
   de: Holztuer
   fr: Porte en bois

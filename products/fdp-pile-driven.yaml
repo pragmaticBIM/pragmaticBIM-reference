@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fdp-pile-driven
+sort_order: 10
+status: active
+name:
+  de: Rammpfahl
+  fr: Pieu battu
+  it: Palo battuto
+  en: Driven pile
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-PILE-DRIVEN
+tender_text:
+  de: Tiefgründung aus vorgefertigten Pfählen aus Beton, Stahl oder Holz, die Lasten über Mantelreibung und Spitzendruck in tragfähige Schichten ableiten. Die Pfähle werden mit Ramm- oder Rüttelgerät auf Endtiefe eingebracht, gekappt und über Pfahlkopfplatten oder Riegel mit dem Bauwerk verbunden. Geeignet für weiche und aufgefüllte Böden, wo Erschütterungen und Lärm für die Umgebung zulässig sind. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Deep foundation of prefabricated concrete, steel, or timber piles that transfer loads by skin friction and end bearing into load-bearing strata. Piles are driven or vibrated to final depth, cut off, and connected to the structure by pile caps or ground beams. Suitable for soft and filled ground where vibration and noise are acceptable for the surroundings. Included are all works required to meet the specified requirements.

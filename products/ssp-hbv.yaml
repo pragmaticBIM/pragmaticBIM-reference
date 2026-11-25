@@ -1,6 +1,6 @@
 id: pragmaticbim:product/ssp-hbv
 sort_order: 6
-status: active
+status: deprecated
 name:
   de: Holz-Beton-Verbunddecke (HBV)
   fr: Dalle mixte bois-béton

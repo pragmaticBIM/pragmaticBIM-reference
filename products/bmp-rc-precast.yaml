@@ -1,0 +1,14 @@
+id: pragmaticbim:product/bmp-rc-precast
+sort_order: 6
+status: active
+name:
+  de: Fertigteil-Unterzug
+  fr: Poutre préfabriquée en béton
+  it: Trave prefabbricata in calcestruzzo
+  en: Precast concrete beam
+product_classification:
+  classification_scheme: BeamProduct
+  classification_code: BMP-RC-PRECAST
+tender_text:
+  de: Horizontales Tragglied aus Stahl- oder Spannbeton, das im Werk hergestellt und auf der Baustelle versetzt wird. Mit dem Kran auf Auflager oder Konsolen gesetzt und über Vergussfugen, Anschlussbewehrung oder Aufbeton mit dem Tragwerk verbunden. Geeignet für grosse Spannweiten, kurze Bauzeiten und wiederkehrende Querschnitte, wobei Transport und Kranlasten die Abmessungen begrenzen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Horizontal load-bearing member of reinforced or prestressed concrete produced in the factory and set on site. Lifted by crane onto bearings or corbels and connected to the structure through grouted joints, starter bars, or a structural topping. Suitable for long spans, short construction times, and repeated sections, with dimensions limited by transport and crane loads. Included are all works required to meet the specified requirements.

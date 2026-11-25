@@ -1,0 +1,14 @@
+id: pragmaticbim:product/swp-blt-panel
+sort_order: 14
+status: active
+name:
+  de: Leichtbeton-Elementwand
+  fr: Mur en éléments de béton léger
+  it: Parete in elementi di calcestruzzo leggero
+  en: Lightweight concrete panel wall
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-BLT-PANEL
+tender_text:
+  de: Tragende oder nichttragende Wand aus geschosshohen Leichtbetonelementen, die Tragwerk und Wärmedämmung in einem Bauteil vereinen. Im Werk mit Öffnungen hergestellt, mit dem Kran versetzt und über Mörtelfugen und Anschlussbewehrung verbunden. Geeignet für Aussen- und Innenwände mit geringerem Eigengewicht als Normalbeton und kurzer Bauzeit. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Load-bearing or non-load-bearing wall of storey-height lightweight concrete panels combining structure and thermal insulation in one component. Produced with openings in the factory, lifted by crane, and connected by mortar joints and starter bars. Suitable for exterior and interior walls with lower dead load than normal-weight concrete and short construction time. Included are all works required to meet the specified requirements.

@@ -18,19 +18,27 @@ values:
   - Stahltreppe
   - Holztreppe
   - Stahlbetontreppe
+  - Ortbetontreppe
+  - Fertigteiltreppe
   - Andere oder unbekannte Treppe
   fr:
   - Escalier en acier
   - Escalier en bois
   - Escalier en béton armé
+  - Escalier en béton coulé en place
+  - Escalier préfabriqué en béton
   - Escalier autre ou inconnu
   it:
   - Scala in acciaio
   - Scala in legno
   - Scala in calcestruzzo armato
+  - Scala in calcestruzzo gettato in opera
+  - Scala prefabbricata in calcestruzzo
   - Scala altra o sconosciuta
   en:
   - Steel stair
   - Timber stair
   - Reinforced concrete stair
+  - In-situ concrete stair
+  - Precast concrete stair
   - Other or unknown stair

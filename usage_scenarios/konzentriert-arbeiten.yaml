@@ -31,6 +31,7 @@ options:
     fr: Bureau individuel ou collectif
     it: Ufficio individuale o condiviso
     en: Cellular office
+  target: pragmaticbim:room-type/bueroeinheit
   adds:
   - pragmaticbim:room-type/buero
 - id: pragmaticbim:scenario-option/konzentriert-arbeiten-open-plan
@@ -40,5 +41,6 @@ options:
     fr: Bureau paysager
     it: Ufficio open space
     en: Open-plan office
+  target: pragmaticbim:room-type/bueroeinheit
   adds:
   - pragmaticbim:room-type/grossraumbuero

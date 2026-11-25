@@ -10,5 +10,5 @@ product_classification:
   classification_scheme: SiteFacilityProduct
   classification_code: SFP-CONTAINER
 tender_text:
-  de: 'Standard-Baustellencontainer fuer temporaere Nutzung. Bei bekannter Funktion das genauere Konzept verwenden: Baubuero, Aufenthaltsraum, Sanitaeranlage oder Magazin.'
-  en: 'Standard site container placed for temporary use. Use a more specific concept when the function is known: office, break room, sanitary facility, or lockable store.'
+  de: 'Standard-Baustellencontainer fuer temporaere Nutzung. Bei bekannter Funktion das genauere Konzept verwenden: Baubuero, Aufenthaltsraum, Sanitaeranlage oder Magazin. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.'
+  en: 'Standard site container placed for temporary use. Use a more specific concept when the function is known: office, break room, sanitary facility, or lockable store. Included are all works required to meet the specified requirements.'

@@ -23,14 +23,50 @@ DWELLING_SIZES = {
     "pragmaticbim:room-type/wohnung-4-5": 115,
     "pragmaticbim:room-type/wohnung-5-5": 135,
 }
+OFFICE_SIZES = {
+    "pragmaticbim:room-type/bueroeinheit-klein": 150,
+    "pragmaticbim:room-type/bueroeinheit-mittel": 400,
+    "pragmaticbim:room-type/bueroeinheit-gross": 1000,
+}
+SHOP_SIZES = {
+    "pragmaticbim:room-type/ladenlokal-klein": 80,
+    "pragmaticbim:room-type/ladenlokal-mittel": 250,
+    "pragmaticbim:room-type/ladenlokal-gross": 800,
+}
+# Size variants with a planned area, keyed by the base container they extend.
+SIZES_BY_PARENT = {
+    "pragmaticbim:room-type/wohnung": DWELLING_SIZES,
+    "pragmaticbim:room-type/bueroeinheit": OFFICE_SIZES,
+    "pragmaticbim:room-type/ladenlokal": SHOP_SIZES,
+}
+# Variants without a planned area, keyed by the base container they extend.
+VARIANTS_BY_PARENT = {
+    "pragmaticbim:room-type/hoteleinheit": {
+        "pragmaticbim:room-type/hotel-einzelzimmer",
+        "pragmaticbim:room-type/hotel-doppelzimmer",
+        "pragmaticbim:room-type/hotel-suite",
+    },
+}
+SIZED_IDS = {room_id for sizes in SIZES_BY_PARENT.values() for room_id in sizes}
+# One unit per use, without sizes or variants.
+SINGLE_UNIT_IDS = {
+    "pragmaticbim:room-type/gastronomiebetrieb",
+    "pragmaticbim:room-type/gesundheitseinheit",
+    "pragmaticbim:room-type/laboreinheit",
+}
+# Containers added after the unit-type migration carry no legacy unit-type id.
+NEW_CONTAINER_IDS = {
+    "pragmaticbim:room-type/hoteleinheit",
+    *OFFICE_SIZES,
+    *SHOP_SIZES,
+    *SINGLE_UNIT_IDS,
+}
 CONTAINER_IDS = {
-    "pragmaticbim:room-type/wohnung",
-    *DWELLING_SIZES,
-    "pragmaticbim:room-type/bueroeinheit",
-    "pragmaticbim:room-type/hotel-einzelzimmer",
-    "pragmaticbim:room-type/hotel-doppelzimmer",
-    "pragmaticbim:room-type/hotel-suite",
-    "pragmaticbim:room-type/ladenlokal",
+    *SIZES_BY_PARENT,
+    *SIZED_IDS,
+    *VARIANTS_BY_PARENT,
+    *(room_id for variants in VARIANTS_BY_PARENT.values() for room_id in variants),
+    *SINGLE_UNIT_IDS,
     "pragmaticbim:room-type/keller",
     "pragmaticbim:room-type/vertikale-erschliessung",
     "pragmaticbim:room-type/horizontale-erschliessung",
@@ -76,7 +112,10 @@ def test_container_room_types() -> None:
         _localized(container, "name")
         _localized(container, "definition")
         aliases = container.get("legacy_ids") or []
-        assert len(aliases) == 1 and aliases[0].startswith("pragmaticbim:unit-type/")
+        if container["id"] in NEW_CONTAINER_IDS:
+            assert not aliases, container["id"]
+        else:
+            assert len(aliases) == 1 and aliases[0].startswith("pragmaticbim:unit-type/"), container["id"]
         components = container.get("contains") or []
         assert components, f"{container['id']}: missing contains"
         component_ids = [item["room_type"] for item in components]
@@ -84,7 +123,7 @@ def test_container_room_types() -> None:
         assert not (set(component_ids) - set(by_id)), container["id"]
         presets = _presets(container)
         expected = {"PredefinedType", "ObjectType", "LongName"}
-        if container["id"] in DWELLING_SIZES:
+        if container["id"] in SIZED_IDS:
             expected.add("GrossPlannedArea")
         assert set(presets) == expected, container["id"]
         assert "restrictions" not in container["configurations"][0], container["id"]
@@ -92,9 +131,16 @@ def test_container_room_types() -> None:
         assert presets["ObjectType"] == OBJECT_TYPE, container["id"]
         assert presets["LongName"] == container["name"], container["id"]
 
-    parent = by_id["pragmaticbim:room-type/wohnung"]
-    assert "extends" not in parent
-    for room_id, area in DWELLING_SIZES.items():
-        container = by_id[room_id]
-        assert container["extends"] == parent["id"], room_id
-        assert _presets(container)["GrossPlannedArea"] == area, room_id
+    for parent_id, sizes in SIZES_BY_PARENT.items():
+        assert "extends" not in by_id[parent_id], parent_id
+        for room_id, area in sizes.items():
+            container = by_id[room_id]
+            assert container["extends"] == parent_id, room_id
+            assert container["uses"] == by_id[parent_id]["uses"], room_id
+            assert _presets(container)["GrossPlannedArea"] == area, room_id
+
+    for parent_id, variants in VARIANTS_BY_PARENT.items():
+        assert "extends" not in by_id[parent_id], parent_id
+        for room_id in variants:
+            assert by_id[room_id]["extends"] == parent_id, room_id
+            assert by_id[room_id]["uses"] == by_id[parent_id]["uses"], room_id

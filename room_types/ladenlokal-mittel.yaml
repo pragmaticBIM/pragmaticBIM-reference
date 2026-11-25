@@ -1,0 +1,48 @@
+id: pragmaticbim:room-type/ladenlokal-mittel
+code: UT-CO-03
+sort_order: 21
+name:
+  de: Mittleres Ladenlokal
+  fr: Local commercial moyen
+  it: Locale di vendita medio
+  en: Medium shop
+definition:
+  de: Bruttovolumen eines mittleren Ladenlokals, etwa für ein Fachgeschäft mit Personalraum.
+  fr: Volume brut d'un local commercial moyen, par exemple pour un commerce spécialisé avec local du personnel.
+  it: Volume lordo di un locale di vendita medio, ad esempio per un negozio specializzato con locale per il personale.
+  en: Gross volume of a medium shop, for example for a specialist shop with a staff room.
+room_type_kind: container
+uses:
+- pragmaticbim:use/verkauf
+extends: pragmaticbim:room-type/ladenlokal
+contains:
+- room_type: pragmaticbim:room-type/verkaufsraum
+- room_type: pragmaticbim:room-type/allgemeiner-lagerraum
+- room_type: pragmaticbim:room-type/pausenraum
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/ladenlokal-mittel-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Mittleres Ladenlokal
+      fr: Local commercial moyen
+      it: Locale di vendita medio
+      en: Medium shop
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: GrossPlannedArea
+    pset: ePset_SpaceRequirement
+    value: 250
+  status: active

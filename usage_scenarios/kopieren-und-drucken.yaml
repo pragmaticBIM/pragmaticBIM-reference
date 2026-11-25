@@ -31,6 +31,7 @@ options:
     fr: Local de reprographie
     it: Locale fotocopie
     en: Copy room
+  target: pragmaticbim:room-type/bueroeinheit
   adds:
   - pragmaticbim:room-type/kopierraum
 - id: pragmaticbim:scenario-option/kopieren-und-drucken-open-zone

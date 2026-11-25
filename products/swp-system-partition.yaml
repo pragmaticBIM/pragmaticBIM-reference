@@ -1,0 +1,14 @@
+id: pragmaticbim:product/swp-system-partition
+sort_order: 16
+status: active
+name:
+  de: Systemtrennwand
+  fr: Cloison amovible
+  it: Parete divisoria mobile
+  en: Demountable system partition
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-SYSTEM-PARTITION
+tender_text:
+  de: 'Nichttragende Innenwand aus vorgefertigten Voll-, Glas- oder Schrankelementen eines Systems, die ohne Zerstörung umgestellt werden kann. Elemente werden zwischen Boden und Decke eingespannt, mit Türen, Verglasungen und Anschlussprofilen ergänzt. Geeignet für Büros und Verwaltungsbauten, in denen spätere Umnutzungen und Wiederverwendung erwartet werden. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Anschlüsse an Boden, Decke und Wände mit Trenn- und Dämmstreifen, Verstärkungen und Traversen für Wandlasten wie Sanitärapparate, Hängeschränke und Handläufe, Öffnungen mit Laibungsausbildung und Zargenanschluss, Aussparungen für Installationen sowie brand- und schallschutztechnische Abschottungen von Durchdringungen.'
+  en: 'Non-load-bearing interior wall of prefabricated solid, glazed, or storage elements of a system that can be relocated without damage. Elements are clamped between floor and ceiling and completed with doors, glazing, and connection profiles. Suitable for offices and administrative buildings where later reconfiguration and reuse are expected. Included are all works required to meet the specified requirements. Included in particular: connections to floor, ceiling, and walls with separation and insulation strips, reinforcements and cross members for wall loads such as sanitary fixtures, wall cabinets, and handrails, openings with reveals and frame connections, cut-outs for services, and fire and acoustic sealing of penetrations.'

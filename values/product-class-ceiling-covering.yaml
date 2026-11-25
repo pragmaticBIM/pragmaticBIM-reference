@@ -17,36 +17,52 @@ values:
   de:
   - Metallblech-Deckenbekleidung
   - Gipskarton-Decke
+  - Direkt befestigte Gipsplattendecke
+  - Abgehängte Gipsplattendecke
   - Mineralfaser-Akustikdecke
   - Holz-Deckenbekleidung
   - Kunststoff-Deckenbekleidung
+  - Kunststoffpaneeldecke
+  - Spanndecke
   - Metallpaneel-Decke
   - Metallraster-Decke
   - Sonstige / unbekannte Deckenbekleidung
   fr:
   - Revêtement de plafond en tôle
   - Plafond en plaques de plâtre
+  - Plafond en plaques de plâtre fixé directement
+  - Plafond suspendu en plaques de plâtre
   - Plafond acoustique en fibres minérales
   - Revêtement de plafond en bois
   - Revêtement de plafond synthétique
+  - Plafond en panneaux synthétiques
+  - Plafond tendu
   - Plafond en panneaux métalliques
   - Plafond à grille métallique
   - Revêtement de plafond autre ou inconnu
   it:
   - Rivestimento di soffitto in lamiera
   - Controsoffitto in cartongesso
+  - Controsoffitto in cartongesso a fissaggio diretto
+  - Controsoffitto sospeso in cartongesso
   - Controsoffitto acustico in fibra minerale
   - Rivestimento di soffitto in legno
   - Rivestimento di soffitto in materiale sintetico
+  - Controsoffitto in pannelli sintetici
+  - Controsoffitto teso
   - Controsoffitto a pannelli metallici
   - Controsoffitto a griglia metallica
   - Rivestimento di soffitto altro o sconosciuto
   en:
   - Metal sheet ceiling
   - Gypsum board ceiling
+  - Direct-fixed gypsum board ceiling
+  - Suspended gypsum board ceiling
   - Mineral-fibre acoustic ceiling
   - Wood ceiling lining
   - Synthetic ceiling lining
+  - Synthetic panel ceiling
+  - Stretch membrane ceiling
   - Metal panel ceiling
   - Metal grid ceiling
   - Other / unknown ceiling covering

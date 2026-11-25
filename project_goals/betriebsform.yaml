@@ -42,6 +42,8 @@ levels:
     en: Guests are served at the table; the kitchen cooks à la carte.
   status: active
   comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/gastronomiebetrieb
 - id: pragmaticbim:project-goal-level/betriebsform-selbstbedienung
   code: BTF-02
   sort_order: 2
@@ -57,6 +59,8 @@ levels:
     en: Guests collect food at a counter, such as in a canteen.
   status: active
   comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/gastronomiebetrieb
 - id: pragmaticbim:project-goal-level/betriebsform-produktionskueche
   code: BTF-03
   sort_order: 3
@@ -72,6 +76,8 @@ levels:
     en: The kitchen produces for other sites and delivers.
   status: active
   comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/gastronomiebetrieb
 quantities:
 - id: pragmaticbim:quantity/betriebsform-mahlzeiten
   code: BTF-Q02

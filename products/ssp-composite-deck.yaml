@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ssp-composite-deck
+sort_order: 10
+status: active
+name:
+  de: Profilblech-Verbunddecke
+  fr: Dalle mixte sur tôle profilée
+  it: Solaio misto su lamiera grecata
+  en: Composite slab on steel decking
+product_classification:
+  classification_scheme: AbstractSlabSeparatorProduct
+  classification_code: SSP-COMPOSITE-DECK
+tender_text:
+  de: Tragendes horizontales Bauteil, bei dem profiliertes Stahlblech als verlorene Schalung und Zugbewehrung mit dem Ortbeton zusammenwirkt. Das Blech wird auf dem Stahltragwerk verlegt, mit Kopfbolzen verbunden, bewehrt und betoniert. Geeignet für Geschossdecken im Stahlbau mit grossen Spannweiten, geringer Bauhöhe und schneller Montage ohne Schalung. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Load-bearing horizontal element in which profiled steel decking acts as permanent formwork and tension reinforcement together with in-situ concrete. The decking is laid on the steel frame, connected with shear studs, reinforced, and cast. Suitable for floors in steel frames with long spans, low structural depth, and fast erection without formwork. Included are all works required to meet the specified requirements.

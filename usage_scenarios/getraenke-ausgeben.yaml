@@ -31,6 +31,7 @@ options:
     fr: Bar
     it: Bar
     en: Bar
+  target: pragmaticbim:room-type/gastronomiebetrieb
   adds:
   - pragmaticbim:room-type/bar
 - id: pragmaticbim:scenario-option/getraenke-ausgeben-dining-room
@@ -40,5 +41,6 @@ options:
     fr: Service dans la salle
     it: Servizio nella sala
     en: Service in the dining area
+  target: pragmaticbim:room-type/gastronomiebetrieb
   adds:
   - pragmaticbim:room-type/restaurant

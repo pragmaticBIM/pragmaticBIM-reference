@@ -1,6 +1,6 @@
 id: pragmaticbim:product/swp-blt
 sort_order: 4
-status: active
+status: deprecated
 name:
   de: Leichtbeton-Tafel-Wand (BLT)
   fr: Mur en panneaux de béton léger (BLT)

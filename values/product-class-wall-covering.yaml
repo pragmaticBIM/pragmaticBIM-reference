@@ -18,10 +18,16 @@ values:
   - Fugenlose Wandbeschichtung
   - Tapete
   - Naturstein-Wandverkleidung
+  - Geklebte Natursteinwandbekleidung
+  - Verankerte Natursteinwandbekleidung
   - Kunststein-Wandverkleidung
+  - Geklebte Kunststeinwandbekleidung
+  - Verankerte Kunststeinwandbekleidung
   - Keramik- / Feinsteinzeug-Wandfliese
   - Holz-Wandverkleidung
   - Textile Wandbekleidung
+  - Geklebter Textilwandbelag
+  - Gespannte Stoffwandbekleidung
   - Kunststoff-Wandverkleidung
   - Innenanstrich
   - Sonstiger / unbekannter Wandbelag
@@ -29,10 +35,16 @@ values:
   - Revêtement mural sans joints
   - Papier peint
   - Revêtement mural en pierre naturelle
+  - Revêtement mural en pierre naturelle collé
+  - Revêtement mural en pierre naturelle agrafé
   - Revêtement mural en pierre artificielle
+  - Revêtement mural en pierre reconstituée collé
+  - Revêtement mural en pierre reconstituée fixé mécaniquement
   - Carrelage mural en céramique / grès cérame
   - Revêtement mural en bois
   - Revêtement mural textile
+  - Revêtement mural textile collé
+  - Revêtement mural en tissu tendu
   - Revêtement mural synthétique
   - Peinture intérieure
   - Revêtement mural autre ou inconnu
@@ -40,10 +52,16 @@ values:
   - Rivestimento murale senza giunti
   - Carta da parati
   - Rivestimento murale in pietra naturale
+  - Rivestimento murale in pietra naturale incollato
+  - Rivestimento murale in pietra naturale ancorato
   - Rivestimento murale in pietra artificiale
+  - Rivestimento murale in pietra ricostruita incollato
+  - Rivestimento murale in pietra ricostruita a fissaggio meccanico
   - Piastrelle murali in ceramica / gres porcellanato
   - Rivestimento murale in legno
   - Rivestimento murale tessile
+  - Rivestimento murale tessile incollato
+  - Rivestimento murale in tessuto teso
   - Rivestimento murale in materiale sintetico
   - Pittura interna
   - Rivestimento murale altro o sconosciuto
@@ -51,10 +69,16 @@ values:
   - Seamless wall coating
   - Wallpaper
   - Natural stone wall cladding
+  - Bonded natural stone wall cladding
+  - Anchored natural stone wall cladding
   - Artificial stone wall cladding
+  - Bonded artificial stone wall cladding
+  - Anchored artificial stone wall cladding
   - Ceramic / porcelain wall tile
   - Wood wall panel
   - Textile wall covering
+  - Bonded textile wall covering
+  - Stretched fabric wall system
   - Synthetic wall panel
   - Interior paint finish
   - Other / unknown wall covering

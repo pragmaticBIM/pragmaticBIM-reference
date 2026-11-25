@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-wood-rated
+sort_order: 10
+status: active
+name:
+  de: Holztür mit Brand-, Rauch- oder Schallschutz
+  fr: Porte en bois coupe-feu, pare-fumée ou acoustique
+  it: Porta in legno tagliafuoco, tagliafumo o acustica
+  en: Fire, smoke or acoustic rated wood door
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-WOOD-RATED
+tender_text:
+  de: 'Geprüftes Türelement aus Holz oder Holzwerkstoff, das als Ganzes einen nachgewiesenen Brand-, Rauch- oder Schallschutz erreicht. Blatt, Zarge, Dichtungen, Bänder und Schliesser werden als zugelassenes System geliefert, gemäss Zulassung eingebaut und mit Kennzeichnung und Einbaunachweis übergeben. Geeignet für Türen in Brandabschnitten, Fluchtwegen und zwischen Räumen mit Schallschutzanforderungen; Abweichungen vom geprüften Aufbau sind nicht zulässig. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Montage in der vorbereiteten Öffnung mit Befestigung und Anschlussfuge, luft- und schlagregendichter Anschluss an der Gebäudehülle, Beschläge, Dichtungen, Schwellen- und Bodenanschluss, Einstellen und Funktionsprüfung sowie Übergabe mit Schlüsseln, Kennzeichnung und Wartungsunterlagen.'
+  en: 'Tested door assembly of timber or wood-based board that achieves certified fire, smoke, or acoustic performance as a whole. Leaf, frame, seals, hinges, and closer are supplied as an approved system, installed according to the approval, and handed over with marking and installation record. Suitable for doors in fire compartment boundaries, escape routes, and between rooms with acoustic requirements; deviations from the tested build-up are not permitted. Included are all works required to meet the specified requirements. Included in particular: installation in the prepared opening with fixing and connection joint, airtight and rainproof connection in the building envelope, hardware, seals, threshold and floor connection, adjustment and function test, and handover with keys, marking, and maintenance documents.'

@@ -20,10 +20,20 @@ values:
   - Streifenfundament
   - Einzelfundament / Fundamentplatte
   - Pfahlgruendung
+  - Rammpfahl
+  - Bohrpfahl
   - Mikropfahl / Bodenverbesserung
+  - Mikropfahl
+  - Baugrundinjektion
+  - Bodenersatz
   - Keller- / Stuetzwandfundament
+  - Ortbeton-Untergeschosswand
+  - Fertigteil-Untergeschosswand
+  - Definitiver Baugrubenabschluss
   - Keller- / Stuetzwand Daemmschicht
   - Fundament- / Kellerabdichtung
+  - Abdichtung mit Bahnen
+  - Wasserdichte Betonkonstruktion
   - Fundamententwaesserung und -schutz
   - Sonstiges / unbekanntes Fundament
   fr:
@@ -32,10 +42,20 @@ values:
   - Semelle filante
   - Fondation isolée / semelle isolée
   - Fondation sur pieux
+  - Pieu battu
+  - Pieu foré
   - Micropieu / amélioration du sol
+  - Micropieu
+  - Injection du sol
+  - Substitution de sol
   - Mur de sous-sol / mur de soutènement
+  - Mur enterré en béton coulé en place
+  - Mur enterré préfabriqué
+  - Paroi de fouille définitive
   - Basement / retaining wall insulation layer
   - Étanchéité des fondations / du sous-sol
+  - Étanchéité par lés
+  - Construction étanche en béton
   - Drainage et protection des fondations
   - Fondation autre ou inconnue
   it:
@@ -44,10 +64,20 @@ values:
   - Fondazione continua
   - Plinto di fondazione
   - Fondazione su pali
+  - Palo battuto
+  - Palo trivellato
   - Micropalo / consolidamento del terreno
+  - Micropalo
+  - Iniezione del terreno
+  - Sostituzione del terreno
   - Muro di cantina / muro di sostegno
+  - Muro interrato in calcestruzzo gettato in opera
+  - Muro interrato prefabbricato
+  - Paratia di scavo definitiva
   - Basement / retaining wall insulation layer
   - Impermeabilizzazione delle fondazioni / della cantina
+  - Impermeabilizzazione con membrane
+  - Costruzione impermeabile in calcestruzzo
   - Drenaggio e protezione delle fondazioni
   - Fondazione altra o sconosciuta
   en:
@@ -56,9 +86,19 @@ values:
   - Strip footing foundation
   - Pad / isolated footing
   - Driven / bored pile foundation
+  - Driven pile
+  - Bored pile
   - Micropile / ground improvement
+  - Micropile
+  - Ground injection
+  - Soil replacement
   - Basement / retaining foundation wall
+  - In-situ basement wall
+  - Precast basement wall
+  - Permanent excavation support wall
   - Basement / retaining wall insulation layer
   - Foundation waterproofing / tanking
+  - Membrane tanking
+  - Watertight concrete construction
   - Foundation drainage and protection
   - Other / unknown foundation

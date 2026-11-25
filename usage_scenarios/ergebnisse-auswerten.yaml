@@ -31,6 +31,7 @@ options:
     fr: Bureau
     it: Ufficio
     en: Office
+  target: pragmaticbim:room-type/laboreinheit
   adds:
   - pragmaticbim:room-type/buero
 - id: pragmaticbim:scenario-option/ergebnisse-auswerten-shared
@@ -40,5 +41,6 @@ options:
     fr: Bureau partagé
     it: Ufficio condiviso
     en: Shared office
+  target: pragmaticbim:room-type/laboreinheit
   adds:
   - pragmaticbim:room-type/gemeinschaftsbuero

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/swp-timber-solid
+sort_order: 13
+status: active
+name:
+  de: Holzmassivwand
+  fr: Mur en bois massif
+  it: Parete in legno massiccio
+  en: Solid timber wall
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-TIMBER-SOLID
+tender_text:
+  de: Tragende oder aussteifende Wand aus flächigen Massivholzelementen wie Brettsperrholz, Brettstapel oder Blockbau. Elemente im Werk mit Öffnungen zugeschnitten, versetzt und mit Schrauben und Stahlverbindern verbunden, bei Bedarf mit Dämmung und Bekleidung ergänzt. Geeignet für Aussen- und Innenwände mit hoher Tragfähigkeit, sichtbaren Holzoberflächen und kurzer Montagezeit. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Load-bearing or bracing wall of solid timber panels such as cross-laminated, dowel-laminated, or log timber. Panels cut with openings in the factory, set, and connected with screws and steel fasteners, completed with insulation and lining where required. Suitable for exterior and interior walls with high load capacity, visible timber surfaces, and short erection time. Included are all works required to meet the specified requirements.

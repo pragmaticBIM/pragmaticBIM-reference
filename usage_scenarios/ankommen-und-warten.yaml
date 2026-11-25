@@ -31,6 +31,7 @@ options:
     fr: Salle d'attente
     it: Sala d'attesa
     en: Waiting room
+  target: pragmaticbim:room-type/gesundheitseinheit
   adds:
   - pragmaticbim:room-type/wartezimmer
 - id: pragmaticbim:scenario-option/ankommen-und-warten-direct
@@ -40,5 +41,6 @@ options:
     fr: Appel direct en salle de traitement
     it: Chiamata diretta nel locale di trattamento
     en: Direct rooming
+  target: pragmaticbim:room-type/gesundheitseinheit
   adds:
   - pragmaticbim:room-type/behandlungsraum

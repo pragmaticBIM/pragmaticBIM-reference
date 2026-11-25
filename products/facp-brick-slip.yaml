@@ -1,6 +1,6 @@
 id: pragmaticbim:product/facp-brick-slip
 sort_order: 15
-status: active
+status: deprecated
 name:
   de: Ziegelriemchen- / Klinker-Vorhangfassade
   fr: Façade ventilée en plaquettes de brique / clinker

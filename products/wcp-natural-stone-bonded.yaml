@@ -1,0 +1,14 @@
+id: pragmaticbim:product/wcp-natural-stone-bonded
+sort_order: 11
+status: active
+name:
+  de: Geklebte Natursteinwandbekleidung
+  fr: Revêtement mural en pierre naturelle collé
+  it: Rivestimento murale in pietra naturale incollato
+  en: Bonded natural stone wall cladding
+product_classification:
+  classification_scheme: AbstractWallCoveringProduct
+  classification_code: WCP-NATURAL-STONE-BONDED
+tender_text:
+  de: 'Strapazierfähige Innenwandbekleidung aus dünnformatigen Natursteinplatten oder -fliesen auf einer tragfähigen Wand oder Vorsatzschale. Im Kleber oder Mörtelbett angesetzt und verfugt, in Nassbereichen auf einer Verbundabdichtung. Geeignet für Sanitärräume, Eingangsbereiche und stark genutzte Wände mit Anforderungen an Dauerhaftigkeit und Reinigbarkeit. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Prüfung und Vorbereitung des Untergrunds, Grundierung, Kanten-, Eck- und Abschlussprofile, elastische Anschlussfugen, Ausschnitte für Schalter, Steckdosen und Installationen sowie in Nassbereichen die Verbundabdichtung, wo der Aufbau sie verlangt.'
+  en: 'Hard-wearing interior wall cladding of thin natural stone slabs or tiles on a load-bearing wall or lining. Set in adhesive or a mortar bed and jointed, in wet areas on a bonded waterproofing layer. Suitable for sanitary rooms, entrances, and heavily used walls with durability and cleanability requirements. Included are all works required to meet the specified requirements. Included in particular: checking and preparing the substrate, priming, edge, corner, and end profiles, elastic connection joints, cut-outs for switches, sockets, and services, and in wet areas the bonded waterproofing where the build-up requires it.'

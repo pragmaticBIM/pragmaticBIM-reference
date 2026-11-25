@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fdp-retaining-insitu
+sort_order: 12
+status: active
+name:
+  de: Ortbeton-Untergeschosswand
+  fr: Mur enterré en béton coulé en place
+  it: Muro interrato in calcestruzzo gettato in opera
+  en: In-situ basement wall
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-RETAINING-INSITU
+tender_text:
+  de: Erdberührte Wand aus Stahlbeton, die Gebäudelasten trägt und zugleich Erd- und Wasserdruck aufnimmt, vor Ort hergestellt. Geschalt, bewehrt und betoniert, erdseitig mit Abdichtung, Dämmung, Schutz- und Drainageschicht ergänzt. Geeignet für Untergeschosse, Stützbauwerke an Geländesprüngen und erdberührte Teile der Gebäudehülle. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Below-grade wall of reinforced concrete that carries building loads and resists earth and water pressure, produced on site. Formed, reinforced, and cast, then completed on the earth side with sealing, insulation, protection, and drainage layers. Suitable for basements, retaining structures at level changes, and buried parts of the building envelope. Included are all works required to meet the specified requirements.

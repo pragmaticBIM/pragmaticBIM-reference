@@ -1,0 +1,14 @@
+id: pragmaticbim:product/clp-rc-precast
+sort_order: 6
+status: active
+name:
+  de: Fertigteilstütze
+  fr: Poteau préfabriqué en béton
+  it: Pilastro prefabbricato in calcestruzzo
+  en: Precast concrete column
+product_classification:
+  classification_scheme: ColumnProduct
+  classification_code: CLP-RC-PRECAST
+tender_text:
+  de: Vertikales Tragglied aus Stahl- oder Schleuderbeton, das im Werk hergestellt und auf der Baustelle versetzt wird. Mit dem Kran gestellt, ausgerichtet und in Köcher, Hülsen oder auf Anschlussbewehrung vergossen. Geeignet für schlanke Stützen mit hoher Oberflächenqualität, kurze Bauzeiten und wiederkehrende Querschnitte. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Vertical load-bearing member of reinforced or spun concrete produced in the factory and set on site. Lifted by crane, aligned, and grouted into sockets, sleeves, or onto starter bars. Suitable for slender columns with a high surface quality, short construction times, and repeated sections. Included are all works required to meet the specified requirements.

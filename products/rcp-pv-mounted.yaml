@@ -1,0 +1,14 @@
+id: pragmaticbim:product/rcp-pv-mounted
+sort_order: 13
+status: active
+name:
+  de: Aufdach-Photovoltaikanlage
+  fr: Installation photovoltaïque en surimposition
+  it: Impianto fotovoltaico sovrapposto
+  en: Rack-mounted roof photovoltaic system
+product_classification:
+  classification_scheme: AbstractRoofCoveringProduct
+  classification_code: RCP-PV-MOUNTED
+tender_text:
+  de: Stromerzeugendes Modulfeld auf einer Unterkonstruktion über der Dacheindeckung oder Flachdachabdichtung, die weiterhin die Wasserführung übernimmt. Module werden ballastiert oder auf Schienen und Dachhaken befestigt, Durchdringungen der Abdichtung dicht ausgeführt und die Verkabelung zu den Wechselrichtern geführt. Geeignet für Steil- und Flachdächer mit ausreichender Lastreserve und Besonnung. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Electricity-generating module array on a mounting frame above the roof covering or flat-roof membrane, which keeps its weatherproofing function. Modules are ballasted or fixed to rails and roof hooks, penetrations of the waterproofing sealed, and cabling routed to the inverters. Suitable for pitched and flat roofs with sufficient load reserve and solar exposure. Included are all works required to meet the specified requirements.

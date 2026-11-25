@@ -1,6 +1,6 @@
 id: pragmaticbim:product/srp-rc
 sort_order: 3
-status: active
+status: deprecated
 name:
   de: Stahlbetontreppe
   fr: Escalier en béton armé

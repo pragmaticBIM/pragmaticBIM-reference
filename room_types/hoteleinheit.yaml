@@ -1,0 +1,46 @@
+id: pragmaticbim:room-type/hoteleinheit
+code: UT-BH-04
+sort_order: 11
+name:
+  de: Hoteleinheit
+  fr: Unité hôtelière
+  it: Unità alberghiera
+  en: Hotel unit
+definition:
+  de: Bruttovolumen einer Gästeeinheit in der Beherbergung. Die Zimmertypen sind eigene
+    Einheiten.
+  fr: Volume brut d'une unité pour les hôtes dans l'hébergement. Les types de chambre
+    sont des unités propres.
+  it: Volume lordo di un'unità per gli ospiti nell'alloggio turistico. I tipi di camera
+    sono unità proprie.
+  en: Gross volume of a guest unit in accommodation. The room types are units of their
+    own.
+room_type_kind: container
+uses:
+- pragmaticbim:use/beherbergung
+contains:
+- room_type: pragmaticbim:room-type/hotelzimmer
+- room_type: pragmaticbim:room-type/badezimmer
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/hoteleinheit-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Hoteleinheit
+      fr: Unité hôtelière
+      it: Unità alberghiera
+      en: Hotel unit
+  status: active

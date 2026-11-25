@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-glass-automatic
+sort_order: 19
+status: active
+name:
+  de: Automatische Glastüranlage
+  fr: Porte vitrée automatique
+  it: Porta vetrata automatica
+  en: Automatic glazed door system
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-GLASS-AUTOMATIC
+tender_text:
+  de: 'Motorisch betriebene Türanlage mit Glasflügeln als Schiebe-, Dreh- oder Teleskoptür, mit Antrieb, Steuerung und Sensorik. Antrieb, Flügel und Seitenteile werden als System montiert, an Zutrittskontrolle, Brandmeldeanlage und Notstrom angeschlossen und mit Abnahme der Sicherheitsfunktionen in Betrieb genommen. Geeignet für stark frequentierte und hindernisfreie Eingänge sowie Fluchtwege mit Anforderungen an Notöffnung. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Montage in der vorbereiteten Öffnung mit Befestigung und Anschlussfuge, luft- und schlagregendichter Anschluss an der Gebäudehülle, Beschläge, Dichtungen, Schwellen- und Bodenanschluss, Einstellen und Funktionsprüfung sowie Übergabe mit Schlüsseln, Kennzeichnung und Wartungsunterlagen.'
+  en: 'Motor-operated door system with glazed leaves as sliding, swing, or telescopic door, with drive, control, and sensors. Drive, leaves, and side panels are installed as a system, connected to access control, fire alarm, and emergency power, and commissioned with acceptance of the safety functions. Suitable for busy and barrier-free entrances and escape routes requiring emergency opening. Included are all works required to meet the specified requirements. Included in particular: installation in the prepared opening with fixing and connection joint, airtight and rainproof connection in the building envelope, hardware, seals, threshold and floor connection, adjustment and function test, and handover with keys, marking, and maintenance documents.'

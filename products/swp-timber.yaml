@@ -1,6 +1,6 @@
 id: pragmaticbim:product/swp-timber
 sort_order: 7
-status: active
+status: deprecated
 name:
   de: Holz-Wand
   fr: Mur à ossature bois

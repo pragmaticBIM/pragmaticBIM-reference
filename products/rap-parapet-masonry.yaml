@@ -1,0 +1,14 @@
+id: pragmaticbim:product/rap-parapet-masonry
+sort_order: 12
+status: active
+name:
+  de: Gemauerte Brüstung
+  fr: Garde-corps plein en maçonnerie
+  it: Parapetto pieno in muratura
+  en: Masonry parapet
+product_classification:
+  classification_scheme: RailingProduct
+  classification_code: RAP-PARAPET-MASONRY
+tender_text:
+  de: Absturzsicherung als massive Brüstung aus Mauerwerk, die auf der Decke oder Balkonplatte aufgemauert wird. Mit Steinen im Mörtel aufgemauert, bei Bedarf bewehrt oder mit Stahlbetonkern ausgesteift und oben mit einer Abdeckung abgeschlossen. Geeignet für Terrassen, Dachränder und Gärten im Zusammenhang mit Mauerwerksbauten. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Fall protection as a solid masonry parapet built up on the slab or balcony slab. Laid in mortar, reinforced or stiffened with a concrete core where required, and closed on top with a coping. Suitable for terraces, roof edges, and gardens in connection with masonry buildings. Included are all works required to meet the specified requirements.

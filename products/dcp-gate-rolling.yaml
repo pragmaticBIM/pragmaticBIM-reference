@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-gate-rolling
+sort_order: 13
+status: active
+name:
+  de: Rolltor
+  fr: Porte enroulable
+  it: Portone avvolgibile
+  en: Rolling gate
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-GATE-ROLLING
+tender_text:
+  de: 'Grossformatiger Abschluss einer Fahrzeug- oder Warenöffnung aus Stahl- oder Aluminiumlamellen oder einem flexiblen Behang, der auf eine Welle über dem Sturz aufgewickelt wird. Welle, Führungsschienen und Antrieb werden montiert, an Laibung und Sturz verankert und mit Steuerung und Sicherheitseinrichtungen in Betrieb genommen. Geeignet für Lager, Anlieferungen und Hallen mit wenig Platz unter der Decke und häufigen Öffnungszyklen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Montage in der vorbereiteten Öffnung mit Befestigung und Anschlussfuge, luft- und schlagregendichter Anschluss an der Gebäudehülle, Beschläge, Dichtungen, Schwellen- und Bodenanschluss, Einstellen und Funktionsprüfung sowie Übergabe mit Schlüsseln, Kennzeichnung und Wartungsunterlagen.'
+  en: 'Large-format closure of a vehicle or goods opening of steel or aluminium slats or a flexible curtain that coils onto a shaft above the lintel. Shaft, guide tracks, and drive are installed, anchored to reveal and lintel, and commissioned with control and safety devices. Suitable for storage, loading bays, and halls with little headroom and frequent operating cycles. Included are all works required to meet the specified requirements. Included in particular: installation in the prepared opening with fixing and connection joint, airtight and rainproof connection in the building envelope, hardware, seals, threshold and floor connection, adjustment and function test, and handover with keys, marking, and maintenance documents.'

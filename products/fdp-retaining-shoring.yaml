@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fdp-retaining-shoring
+sort_order: 14
+status: active
+name:
+  de: Definitiver Baugrubenabschluss
+  fr: Paroi de fouille définitive
+  it: Paratia di scavo definitiva
+  en: Permanent excavation support wall
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-RETAINING-SHORING
+tender_text:
+  de: Baugrubenabschluss aus Bohrpfählen, Schlitzwand oder Spundwand, der nach dem Aushub als definitive erdberührte Wand im Bauwerk verbleibt. Vor dem Aushub vom Gelände aus hergestellt, bei Bedarf verankert oder ausgesteift und nach dem Aushub mit Vorsatzschale, Abdichtung oder Verkleidung ergänzt. Geeignet für enge innerstädtische Verhältnisse, tiefe Baugruben und hohes Grundwasser, wo kein Arbeitsraum zur Verfügung steht. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Excavation support of bored piles, diaphragm wall, or sheet piling that remains in the structure as a permanent below-grade wall after excavation. Built from ground level before excavation, anchored or propped where required, and completed after excavation with a facing wall, sealing, or lining. Suitable for tight urban sites, deep excavations, and high groundwater where no working space is available. Included are all works required to meet the specified requirements.

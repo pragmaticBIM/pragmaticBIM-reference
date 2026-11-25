@@ -1,0 +1,14 @@
+id: pragmaticbim:product/swp-curtain-wall-stick
+sort_order: 17
+status: active
+name:
+  de: Pfosten-Riegel-Fassade
+  fr: Façade montants-traverses
+  it: Facciata a montanti e traversi
+  en: Stick curtain wall
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-CURTAIN-WALL-STICK
+tender_text:
+  de: Nichttragende Aussenwand als selbsttragendes System aus Pfosten und Riegeln, das vor dem Tragwerk montiert und mit Glas- oder Paneelfüllungen geschlossen wird. Pfosten werden an Konsolen verankert, Riegel eingesetzt, die Füllungen eingeglast und mit Deckleisten und Dichtungen abgedichtet. Geeignet für Eingangs-, Sockel- und Fassadenbereiche mit individuellen Rastern und mittleren Flächen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Non-load-bearing exterior wall as a self-supporting system of mullions and transoms assembled in front of the structure and closed with glass or panel infills. Mullions are anchored to brackets, transoms inserted, infills glazed, and sealed with pressure plates and gaskets. Suitable for entrance, base, and facade areas with individual grids and medium areas. Included are all works required to meet the specified requirements.

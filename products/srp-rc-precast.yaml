@@ -1,0 +1,14 @@
+id: pragmaticbim:product/srp-rc-precast
+sort_order: 6
+status: active
+name:
+  de: Fertigteiltreppe
+  fr: Escalier préfabriqué en béton
+  it: Scala prefabbricata in calcestruzzo
+  en: Precast concrete stair
+product_classification:
+  classification_scheme: StairProduct
+  classification_code: SRP-RC-PRECAST
+tender_text:
+  de: Treppenlauf aus Stahlbeton, der im Werk mit fertiger Oberfläche hergestellt und auf der Baustelle versetzt wird. Mit dem Kran auf Trittschalldämmlager an Podesten und Wänden gesetzt und die Fugen elastisch geschlossen. Geeignet für wiederkehrende Treppenläufe in Treppenhäusern mit Anforderungen an Brandwiderstand, Schallschutz und kurze Bauzeit. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Stair flight of reinforced concrete produced in the factory with a finished surface and set on site. Lifted by crane onto impact-sound bearings at landings and walls, with the joints closed elastically. Suitable for repeated flights in stairwells with fire-resistance, acoustic, and short construction time requirements. Included are all works required to meet the specified requirements.

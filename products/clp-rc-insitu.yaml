@@ -1,0 +1,14 @@
+id: pragmaticbim:product/clp-rc-insitu
+sort_order: 5
+status: active
+name:
+  de: Ortbetonstütze
+  fr: Poteau en béton coulé en place
+  it: Pilastro in calcestruzzo gettato in opera
+  en: In-situ concrete column
+product_classification:
+  classification_scheme: ColumnProduct
+  classification_code: CLP-RC-INSITU
+tender_text:
+  de: Vertikales Tragglied aus Stahlbeton, das Decken- und Dachlasten in das Fundament ableitet und vor Ort hergestellt wird. Geschalt, bewehrt und geschossweise betoniert, mit Anschlussbewehrung zu Decke und Fundament. Geeignet für hohe Lasten, monolithische Anschlüsse und eine hohe Brandbeständigkeit ohne Zusatzschutz. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Vertical load-bearing member of reinforced concrete transferring floor and roof loads to the foundation, produced on site. Formed, reinforced, and cast storey by storey, with starter bars to slab and foundation. Suitable for high loads, monolithic connections, and inherent fire resistance without added protection. Included are all works required to meet the specified requirements.

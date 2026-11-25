@@ -1,0 +1,14 @@
+id: pragmaticbim:product/wcp-artificial-stone-bonded
+sort_order: 15
+status: active
+name:
+  de: Geklebte Kunststeinwandbekleidung
+  fr: Revêtement mural en pierre reconstituée collé
+  it: Rivestimento murale in pietra ricostruita incollato
+  en: Bonded artificial stone wall cladding
+product_classification:
+  classification_scheme: AbstractWallCoveringProduct
+  classification_code: WCP-ARTIFICIAL-STONE-BONDED
+tender_text:
+  de: 'Innenwandbekleidung aus Kunst- oder Agglomeratsteinplatten mit gleichmässigem Erscheinungsbild, auf einen ebenen Untergrund geklebt. Platten im Werk zugeschnitten, im Kleber angesetzt und mit schmalen Fugen verfugt oder versiegelt. Geeignet für Sanitärräume, Küchen und Rückwände, in denen eine porenarme, leicht zu reinigende Oberfläche gefragt ist. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Prüfung und Vorbereitung des Untergrunds, Grundierung, Kanten-, Eck- und Abschlussprofile, elastische Anschlussfugen, Ausschnitte für Schalter, Steckdosen und Installationen sowie in Nassbereichen die Verbundabdichtung, wo der Aufbau sie verlangt.'
+  en: 'Interior wall cladding of engineered or agglomerate stone slabs with a uniform appearance, bonded to a level substrate. Slabs cut in the factory, set in adhesive, and jointed or sealed with narrow joints. Suitable for sanitary rooms, kitchens, and splashbacks where a low-porosity, easily cleaned surface is required. Included are all works required to meet the specified requirements. Included in particular: checking and preparing the substrate, priming, edge, corner, and end profiles, elastic connection joints, cut-outs for switches, sockets, and services, and in wet areas the bonded waterproofing where the build-up requires it.'

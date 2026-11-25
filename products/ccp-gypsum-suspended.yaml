@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ccp-gypsum-suspended
+sort_order: 10
+status: active
+name:
+  de: Abgehängte Gipsplattendecke
+  fr: Plafond suspendu en plaques de plâtre
+  it: Controsoffitto sospeso in cartongesso
+  en: Suspended gypsum board ceiling
+product_classification:
+  classification_scheme: AbstractCeilingCoveringProduct
+  classification_code: CCP-GYPSUM-SUSPENDED
+tender_text:
+  de: 'Geschlossene, fugenlos wirkende Decke aus Gipsplatten auf einer abgehängten Metallunterkonstruktion, die einen Hohlraum für Installationen bildet. Abhänger und Tragprofile werden an der Rohdecke befestigt, die Platten verschraubt, Fugen bewehrt und gespachtelt, mit Revisionsöffnungen, wo Installationen zugänglich bleiben müssen. Geeignet für Büros, Wohnungen und Räume mit Brand- oder Schallschutzanforderungen, in denen der Deckenhohlraum Installationen aufnimmt. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Unterkonstruktion, Abhänger und Befestigungen nach Aufbau, Rand- und Anschlussprofile, Schattenfugen, Ausschnitte und Auswechslungen für Leuchten, Luftauslässe, Sprinkler und Melder, Revisionsöffnungen, Einlagen und Dämmung nach Aufbau sowie Abschottungen im Deckenhohlraum nach Brandschutzkonzept.'
+  en: 'Closed, jointless-looking ceiling of gypsum boards on a suspended metal substructure that forms a void for services. Hangers and carrier profiles are fixed to the slab, boards screwed, joints taped and filled, with access panels where services must remain reachable. Suitable for offices, dwellings, and rooms with fire or acoustic requirements where the ceiling void carries services. Included are all works required to meet the specified requirements. Included in particular: substructure, hangers, and fixings according to the build-up, edge and connection profiles, shadow gaps, cut-outs and trimmers for luminaires, air outlets, sprinklers, and detectors, access panels, inlays and insulation according to the build-up, and fire barriers in the ceiling void according to the fire safety concept.'

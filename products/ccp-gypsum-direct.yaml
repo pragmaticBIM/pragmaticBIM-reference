@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ccp-gypsum-direct
+sort_order: 9
+status: active
+name:
+  de: Direkt befestigte Gipsplattendecke
+  fr: Plafond en plaques de plâtre fixé directement
+  it: Controsoffitto in cartongesso a fissaggio diretto
+  en: Direct-fixed gypsum board ceiling
+product_classification:
+  classification_scheme: AbstractCeilingCoveringProduct
+  classification_code: CCP-GYPSUM-DIRECT
+tender_text:
+  de: 'Geschlossene, fugenlos wirkende Deckenbekleidung aus Gipsplatten, die direkt oder auf einer flachen Lattung an der Rohdecke befestigt wird. Platten verschraubt, Fugen bewehrt und gespachtelt, bereit für den Anstrich. Geeignet für Wohn- und Büroräume ohne Installationen im Deckenbereich, in denen eine geringe Aufbauhöhe gefragt ist. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Unterkonstruktion, Abhänger und Befestigungen nach Aufbau, Rand- und Anschlussprofile, Schattenfugen, Ausschnitte und Auswechslungen für Leuchten, Luftauslässe, Sprinkler und Melder, Revisionsöffnungen, Einlagen und Dämmung nach Aufbau sowie Abschottungen im Deckenhohlraum nach Brandschutzkonzept.'
+  en: 'Closed, jointless-looking ceiling lining of gypsum boards fixed directly or on shallow battens to the slab. Boards screwed, joints taped and filled, ready for painting. Suitable for residential and office rooms without services in the ceiling zone where a low build-up height is needed. Included are all works required to meet the specified requirements. Included in particular: substructure, hangers, and fixings according to the build-up, edge and connection profiles, shadow gaps, cut-outs and trimmers for luminaires, air outlets, sprinklers, and detectors, access panels, inlays and insulation according to the build-up, and fire barriers in the ceiling void according to the fire safety concept.'

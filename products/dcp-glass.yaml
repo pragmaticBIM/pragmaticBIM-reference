@@ -1,6 +1,6 @@
 id: pragmaticbim:product/dcp-glass
 sort_order: 5
-status: active
+status: deprecated
 name:
   de: Glas- / Verglasungstuer
   fr: Porte vitrée

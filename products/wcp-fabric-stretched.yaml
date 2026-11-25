@@ -1,0 +1,14 @@
+id: pragmaticbim:product/wcp-fabric-stretched
+sort_order: 14
+status: active
+name:
+  de: Gespannte Stoffwandbekleidung
+  fr: Revêtement mural en tissu tendu
+  it: Rivestimento murale in tessuto teso
+  en: Stretched fabric wall system
+product_classification:
+  classification_scheme: AbstractWallCoveringProduct
+  classification_code: WCP-FABRIC-STRETCHED
+tender_text:
+  de: 'Wandbekleidung aus Stoff, der in Randprofile auf einer Unterkonstruktion gespannt wird, meist mit schallabsorbierender Hinterlage. Profile und Hinterlage werden auf der Wand befestigt, der Stoff eingespannt und Ausschnitte für Installationen eingefasst. Geeignet für Auditorien, Besprechungsräume und Büros mit Anforderungen an die Raumakustik. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Prüfung und Vorbereitung des Untergrunds, Grundierung, Kanten-, Eck- und Abschlussprofile, elastische Anschlussfugen, Ausschnitte für Schalter, Steckdosen und Installationen sowie in Nassbereichen die Verbundabdichtung, wo der Aufbau sie verlangt.'
+  en: 'Wall cladding of fabric tensioned into edge profiles on a substructure, usually with a sound-absorbing backing. Profiles and backing are fixed to the wall, the fabric tensioned, and cut-outs for services trimmed. Suitable for auditoriums, meeting rooms, and offices with room acoustic requirements. Included are all works required to meet the specified requirements. Included in particular: checking and preparing the substrate, priming, edge, corner, and end profiles, elastic connection joints, cut-outs for switches, sockets, and services, and in wet areas the bonded waterproofing where the build-up requires it.'

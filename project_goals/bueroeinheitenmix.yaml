@@ -1,0 +1,84 @@
+id: pragmaticbim:project-goal/bueroeinheitenmix
+sort_order: 1022
+group: rahmenbedingungen
+code: PG-43
+name:
+  de: Büroeinheitenmix
+  fr: Répartition des suites de bureaux
+  it: Composizione delle suite di uffici
+  en: Office suite mix
+tag:
+  de: Mix
+  fr: Mix
+  it: Mix
+  en: Mix
+description:
+  de: |-
+    Die Grösse der Büroeinheiten entscheidet, welche Mietparteien das Gebäude aufnehmen kann. Die Anzahl je Einheitstyp folgt im Raumprogramm. Aus dem Büroeinheitenmix folgen die Teilung der Geschosse und die gemeinsam genutzten Räume.
+  fr: |-
+    La taille des suites de bureaux décide quels locataires le bâtiment peut accueillir. Le nombre par type d'unité suit dans le programme des locaux. La division des étages et les locaux communs découlent de la répartition des suites de bureaux.
+  it: |-
+    La grandezza delle suite di uffici decide quali conduttori l'edificio può accogliere. Il numero per tipo di unità segue nel programma dei locali. Dalla composizione delle suite di uffici derivano la suddivisione dei piani e i locali in comune.
+  en: |-
+    The size of the office suites decides which tenants the building can house. The number per unit type follows in the room programme. The division of the storeys and the shared rooms follow from the office suite mix.
+status: active
+uses:
+- pragmaticbim:use/arbeit
+is_boundary_condition: true
+comment: ''
+levels:
+- id: pragmaticbim:project-goal-level/bueroeinheitenmix-klein
+  code: BMX-01
+  sort_order: 1
+  name:
+    de: Kleine Einheiten
+    fr: Petites unités
+    it: Piccole unità
+    en: Small units
+  description:
+    de: Viele kleine Mietparteien, etwa Start-ups und Praxen.
+    fr: De nombreux petits locataires, par exemple des start-up et des cabinets.
+    it: Molti piccoli conduttori, ad esempio start-up e studi.
+    en: Many small tenants, for example start-ups and practices.
+  status: active
+  comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/bueroeinheit-klein
+  - pragmaticbim:room-type/bueroeinheit-mittel
+- id: pragmaticbim:project-goal-level/bueroeinheitenmix-gemischt
+  code: BMX-02
+  sort_order: 2
+  name:
+    de: Gemischt
+    fr: Mixte
+    it: Misto
+    en: Mixed
+  description:
+    de: Kleine, mittlere und grosse Büroeinheiten.
+    fr: Mélange de petites, moyennes et grandes suites de bureaux.
+    it: Combinazione di suite di uffici piccole, medie e grandi.
+    en: A mix of small, medium, and large office suites.
+  status: active
+  comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/bueroeinheit-klein
+  - pragmaticbim:room-type/bueroeinheit-mittel
+  - pragmaticbim:room-type/bueroeinheit-gross
+- id: pragmaticbim:project-goal-level/bueroeinheitenmix-gross
+  code: BMX-03
+  sort_order: 3
+  name:
+    de: Grosse Einheiten
+    fr: Grandes unités
+    it: Grandi unità
+    en: Large units
+  description:
+    de: Wenige grosse Mietparteien, die ganze Geschosse belegen.
+    fr: Quelques grands locataires qui occupent des étages entiers.
+    it: Pochi grandi conduttori che occupano piani interi.
+    en: A few large tenants who occupy whole storeys.
+  status: active
+  comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/bueroeinheit-mittel
+  - pragmaticbim:room-type/bueroeinheit-gross

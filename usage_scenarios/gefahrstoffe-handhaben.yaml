@@ -31,6 +31,7 @@ options:
     fr: Stock de produits chimiques
     it: Deposito prodotti chimici
     en: Chemical store
+  target: pragmaticbim:room-type/laboreinheit
   adds:
   - pragmaticbim:room-type/chemikalienlager
 - id: pragmaticbim:scenario-option/gefahrstoffe-handhaben-hazardous

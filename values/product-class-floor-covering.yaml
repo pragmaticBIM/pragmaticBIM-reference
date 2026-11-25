@@ -16,6 +16,9 @@ status: active
 values:
   de:
   - Unterlagsboden / Ausgleichsschicht
+  - Verbundener Unterlagsboden
+  - Schwimmender Unterlagsboden
+  - Heizunterlagsboden
   - Fugenloser Kunstharzboden
   - Textiler Teppichbelag
   - Vinyl- / LVT-Bodenbelag
@@ -26,9 +29,14 @@ values:
   - Parkett / Mehrschicht-Holzboden
   - Laminatboden
   - Doppelboden / Hohlraumboden
+  - Doppelboden
+  - Hohlboden
   - Sonstiger / unbekannter Bodenbelag
   fr:
   - Chape / couche de ragréage
+  - Chape adhérente
+  - Chape flottante
+  - Chape chauffante
   - Sol en résine sans joints
   - Moquette textile
   - Revêtement de sol vinyle / LVT
@@ -39,9 +47,14 @@ values:
   - Parquet / parquet multicouche
   - Sol stratifié
   - Faux plancher / plancher creux
+  - Faux plancher technique
+  - Plancher creux
   - Revêtement de sol autre ou inconnu
   it:
   - Sottofondo / strato di livellamento
+  - Sottofondo aderente
+  - Sottofondo galleggiante
+  - Sottofondo riscaldato
   - Pavimento in resina senza giunti
   - Moquette tessile
   - Pavimento in vinile / LVT
@@ -52,9 +65,14 @@ values:
   - Parquet / parquet multistrato
   - Pavimento in laminato
   - Pavimento sopraelevato / pavimento cavo
+  - Pavimento sopraelevato
+  - Pavimento a intercapedine
   - Pavimentazione altra o sconosciuta
   en:
   - Subfloor / leveling layer
+  - Bonded screed
+  - Floating screed
+  - Heated screed
   - Seamless resin floor
   - Textile carpet
   - Vinyl / LVT floor
@@ -65,4 +83,6 @@ values:
   - Parquet / engineered wood floor
   - Laminate flooring
   - Raised / access floor
+  - Access floor
+  - Cavity floor
   - Other / unknown floor covering

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ssp-composite-beam
+sort_order: 11
+status: active
+name:
+  de: Verbundträgerdecke
+  fr: Dalle sur poutres mixtes
+  it: Solaio su travi composte
+  en: Composite beam slab
+product_classification:
+  classification_scheme: AbstractSlabSeparatorProduct
+  classification_code: SSP-COMPOSITE-BEAM
+tender_text:
+  de: Tragendes horizontales Bauteil, bei dem eine Ortbeton- oder Fertigteildecke über Kopfbolzen schubfest mit Stahlträgern verbunden ist und mit ihnen zusammenwirkt. Stahlträger werden montiert, die Decke geschalt oder als Element verlegt, an die Kopfbolzen angeschlossen und betoniert. Geeignet für weitgespannte Decken in Industrie-, Büro- und Parkbauten mit hohen Nutzlasten. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Load-bearing horizontal element in which an in-situ or precast concrete slab is connected to steel beams by shear studs and acts together with them. Steel beams are erected, the slab formed or laid as elements, tied to the studs, and cast. Suitable for long-span floors in industrial, office, and car park buildings with high imposed loads. Included are all works required to meet the specified requirements.

@@ -3,7 +3,7 @@
 # Bump `commit` and run `python scripts/sync_products.py --contract PATH` to refresh
 # products/_names.yaml and values/product-class-*.yaml.
 repository: https://github.com/pragmaticBIM/pragmatic-bim-data-contract
-commit: 4d80069cc349099b1d9558715992ce413e2f90cf
+commit: fa26c8b53b2cb18473bcf1929d71ba658b6785f6
 
 # One entry per product scheme. `value_set` names the generated allowed-value list;
 # schemes without `value_set` are named in _names.yaml but have no value list yet.
@@ -40,5 +40,8 @@ schemes:
   - path: abstract-member-product-classification/railing-products.skos.ttl
     value_set: product-class-railing
   - path: abstract-mep-product-classification/mep-terminal-products.skos.ttl
+    value_set: product-class-mep-terminal
   - path: abstract-mep-product-classification/mep-unit-products.skos.ttl
+    value_set: product-class-mep-unit
   - path: abstract-site-setup-classification/site-setup-products.skos.ttl
+    value_set: product-class-site-facility

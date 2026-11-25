@@ -1,0 +1,14 @@
+id: pragmaticbim:product/wcp-textile-bonded
+sort_order: 13
+status: active
+name:
+  de: Geklebter Textilwandbelag
+  fr: Revêtement mural textile collé
+  it: Rivestimento murale tessile incollato
+  en: Bonded textile wall covering
+product_classification:
+  classification_scheme: AbstractWallCoveringProduct
+  classification_code: WCP-TEXTILE-BONDED
+tender_text:
+  de: 'Weiche Innenwandbekleidung aus Textil- oder Gewebebahnen, die vollflächig auf den vorbereiteten Untergrund geklebt werden. In Bahnen mit Stoss oder Überlappung verklebt, einschliesslich Untergrundvorbereitung. Geeignet für Büros, Hotels und Besprechungsräume mit Anforderungen an Haptik und eine reflexionsarme Oberfläche. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Prüfung und Vorbereitung des Untergrunds, Grundierung, Kanten-, Eck- und Abschlussprofile, elastische Anschlussfugen, Ausschnitte für Schalter, Steckdosen und Installationen sowie in Nassbereichen die Verbundabdichtung, wo der Aufbau sie verlangt.'
+  en: 'Soft interior wall covering of textile or fabric rolls fully bonded to the prepared substrate. Hung in strips with butt or overlapping joints, including substrate preparation. Suitable for offices, hotels, and meeting rooms with requirements on feel and a low-reflection surface. Included are all works required to meet the specified requirements. Included in particular: checking and preparing the substrate, priming, edge, corner, and end profiles, elastic connection joints, cut-outs for switches, sockets, and services, and in wet areas the bonded waterproofing where the build-up requires it.'

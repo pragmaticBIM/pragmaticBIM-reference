@@ -1,0 +1,14 @@
+id: pragmaticbim:product/wicp-rooflight-band
+sort_order: 12
+status: active
+name:
+  de: Lichtband
+  fr: Bande lumineuse
+  it: Lucernario continuo
+  en: Continuous rooflight
+product_classification:
+  classification_scheme: AbstractWindowConnectorProduct
+  classification_code: WICP-ROOFLIGHT-BAND
+tender_text:
+  de: 'Durchgehendes Oberlichtband aus Kunststoff- oder Glasfeldern auf einer Tragkonstruktion, die über die Dachfläche gespannt wird. Tragprofile, Füllungen und Öffnungsflügel werden als System auf einem durchgehenden Aufsetzkranz montiert und in die Dachabdichtung eingebunden. Geeignet für Hallen, Sporthallen und Werkstätten mit grossflächigem Tageslichtbedarf und Rauch- und Wärmeabzug. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Montage in der vorbereiteten Öffnung mit Befestigung, luft- und schlagregendichter Anschluss an Wand oder Dach, Anschlüsse an Fensterbänke, Bleche und Sonnenschutz, Beschläge und Dichtungen, Einstellen und Funktionsprüfung sowie Übergabe mit Wartungsunterlagen.'
+  en: 'Continuous rooflight band of plastic or glass panels on a supporting structure spanning across the roof. Support profiles, infills, and opening vents are installed as a system on a continuous upstand kerb and tied into the roof waterproofing. Suitable for halls, sports halls, and workshops requiring daylight over large areas and smoke and heat venting. Included are all works required to meet the specified requirements. Included in particular: installation in the prepared opening with fixing, airtight and rainproof connection to wall or roof, connections to sills, flashings, and sun shading, hardware and seals, adjustment and function test, and handover with maintenance documents.'

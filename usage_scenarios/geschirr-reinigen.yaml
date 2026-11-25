@@ -31,6 +31,7 @@ options:
     fr: Laverie
     it: Lavaggio stoviglie
     en: Dishwashing area
+  target: pragmaticbim:room-type/gastronomiebetrieb
   adds:
   - pragmaticbim:room-type/spuelkueche
 - id: pragmaticbim:scenario-option/geschirr-reinigen-external

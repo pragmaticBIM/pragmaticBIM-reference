@@ -1,6 +1,6 @@
 id: pragmaticbim:product/ssp-steel-composite
 sort_order: 3
-status: active
+status: deprecated
 name:
   de: Stahlverbunddecke
   fr: Dalle mixte acier-béton

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fdp-ground-injection
+sort_order: 18
+status: active
+name:
+  de: Baugrundinjektion
+  fr: Injection du sol
+  it: Iniezione del terreno
+  en: Ground injection
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-GROUND-INJECTION
+tender_text:
+  de: Verbesserung des Baugrunds, bei der Zement-, Silikat- oder Kunstharzsuspensionen in den Boden injiziert werden, um Tragfähigkeit oder Dichtigkeit zu erhöhen. Über Bohrungen und Manschettenrohre nach Injektionsplan eingebracht, mit Kontrolle von Druck, Menge und Hebungen. Geeignet für Unterfangungen, Abdichtungssohlen und die Stabilisierung locker gelagerter Böden. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Ground improvement in which cement, silicate, or resin grouts are injected into the soil to raise bearing capacity or watertightness. Placed through boreholes and sleeve pipes according to an injection plan, with monitoring of pressure, volume, and heave. Suitable for underpinning, sealing bases, and stabilizing loose soils. Included are all works required to meet the specified requirements.

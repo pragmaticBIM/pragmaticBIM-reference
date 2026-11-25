@@ -1,0 +1,14 @@
+id: pragmaticbim:product/swp-curtain-wall-unitised
+sort_order: 18
+status: active
+name:
+  de: Elementfassade
+  fr: Façade à éléments
+  it: Facciata a cellule
+  en: Unitised curtain wall
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-CURTAIN-WALL-UNITISED
+tender_text:
+  de: Nichttragende Aussenwand aus geschosshohen Elementen, die im Werk mit Rahmen, Verglasung, Paneelen und Dichtungen vollständig vorgefertigt werden. Die Elemente werden mit dem Kran versetzt, an Konsolen eingehängt und über Steckstösse dicht miteinander verbunden. Geeignet für Hochhäuser und grosse Fassadenflächen mit wiederkehrendem Raster und kurzer Montagezeit. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Non-load-bearing exterior wall of storey-high elements fully prefabricated in the factory with frame, glazing, panels, and seals. Elements are lifted by crane, hung onto brackets, and joined watertight through interlocking joints. Suitable for high-rise buildings and large facade areas with a repeated grid and short erection time. Included are all works required to meet the specified requirements.

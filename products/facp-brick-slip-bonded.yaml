@@ -1,0 +1,14 @@
+id: pragmaticbim:product/facp-brick-slip-bonded
+sort_order: 18
+status: active
+name:
+  de: Verklebte Riemchenfassade auf Wärmedämmverbundsystem
+  fr: Plaquettes de parement collées sur isolation extérieure
+  it: Listelli di laterizio incollati su cappotto
+  en: Brick slips bonded on ETICS
+product_classification:
+  classification_scheme: EuropeanFacadeCoveringProduct
+  classification_code: FaCP-BRICK-SLIP-BONDED
+tender_text:
+  de: 'Nichttragende Bekleidung mit Mauerwerksoptik aus dünnen Klinkerriemchen, die ohne Hinterlüftung auf ein Wärmedämmverbundsystem geklebt werden. Dämmplatten werden verklebt und verdübelt, mit Armierungsputz überzogen, danach werden die Riemchen im Kleber angesetzt und verfugt. Geeignet für Neubau und energetische Sanierung massiver Wände mit Mauerwerksoptik; Systemzulassung, Dübelbild und Brandschutz sind einzuhalten. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Unterkonstruktion, Verankerungen und Dämmung nach Aufbau, Anschlüsse an Fenster, Türen, Laibungen, Stürze und Brüstungen, Ecken, Sockel- und Dachrandabschlüsse, Lüftungsöffnungen mit Insektenschutz, Brandsperren nach Brandschutzkonzept sowie Durchdringungen und Befestigungspunkte für Leuchten, Storen und Beschriftungen.'
+  en: 'Non-load-bearing cladding with a masonry appearance from thin brick slips bonded onto an ETICS without a ventilated cavity. Insulation boards are bonded and anchored, covered with a reinforced base coat, then the slips are set in adhesive and pointed. Suitable for new build and energy retrofit of solid walls with a masonry appearance; system approval, anchor pattern, and fire protection must be observed. Included are all works required to meet the specified requirements. Included in particular: substructure, anchors, and insulation according to the build-up, connections to windows, doors, reveals, lintels, and sills, corners, base and roof-edge terminations, ventilation openings with insect mesh, fire barriers according to the fire safety concept, and penetrations and fixing points for luminaires, blinds, and signage.'

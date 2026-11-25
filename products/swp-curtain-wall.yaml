@@ -1,6 +1,6 @@
 id: pragmaticbim:product/swp-curtain-wall
 sort_order: 9
-status: active
+status: deprecated
 name:
   de: Vorhangfassade
   fr: Façade-rideau

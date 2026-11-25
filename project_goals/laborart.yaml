@@ -42,6 +42,8 @@ levels:
     en: Work with liquids and chemicals at sinks and fume hoods.
   status: active
   comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/laboreinheit
 - id: pragmaticbim:project-goal-level/laborart-trockenlabor
   code: LBA-02
   sort_order: 2
@@ -57,3 +59,5 @@ levels:
     en: Work at instruments, measuring stations, and computers.
   status: active
   comment: ''
+  activated_room_types:
+  - pragmaticbim:room-type/laboreinheit

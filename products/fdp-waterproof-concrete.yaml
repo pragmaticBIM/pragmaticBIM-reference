@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fdp-waterproof-concrete
+sort_order: 16
+status: active
+name:
+  de: Wasserdichte Betonkonstruktion
+  fr: Construction étanche en béton
+  it: Costruzione impermeabile in calcestruzzo
+  en: Watertight concrete construction
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-WATERPROOF-CONCRETE
+tender_text:
+  de: Erdberührte Konstruktion aus Beton mit hohem Wassereindringwiderstand, bei der Bodenplatte und Wände ohne zusätzliche Abdichtungsschicht dicht sind. Bemessen auf beschränkte Rissbreiten, mit Fugenbändern, Injektionsschläuchen und abgedichteten Durchdringungen ausgeführt und nach Betonierplan hergestellt. Geeignet für Untergeschosse und Tiefgaragen; die Dichtigkeitsklasse und der Umgang mit Rissen sind vor Ausführung festzulegen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Buried construction of concrete with high resistance to water penetration, in which base slab and walls are watertight without an additional sealing layer. Designed for limited crack widths and built with waterstops, injection hoses, and sealed penetrations according to a pour plan. Suitable for basements and underground garages; the tightness class and the handling of cracks are set before execution. Included are all works required to meet the specified requirements.

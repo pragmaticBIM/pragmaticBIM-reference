@@ -10,5 +10,5 @@ product_classification:
   classification_scheme: SiteFacilityProduct
   classification_code: SFP-OTH
 tender_text:
-  de: Platzhalter fuer Baustelleneinrichtung, deren Art noch nicht festgelegt oder von keinem spezifischen Konzept abgedeckt ist. Die Funktion ist gesondert zu beschreiben. Nur in fruehen Phasen oder bei unvollstaendiger Datenlage verwenden.
-  en: Placeholder for site facilities whose type is not yet fixed or not covered by a specific concept. State the function separately. Use only in early stages or where data is incomplete.
+  de: Platzhalter fuer Baustelleneinrichtung, deren Art noch nicht festgelegt oder von keinem spezifischen Konzept abgedeckt ist. Die Funktion ist gesondert zu beschreiben. Nur in fruehen Phasen oder bei unvollstaendiger Datenlage verwenden. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Placeholder for site facilities whose type is not yet fixed or not covered by a specific concept. State the function separately. Use only in early stages or where data is incomplete. Included are all works required to meet the specified requirements.

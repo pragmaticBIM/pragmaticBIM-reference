@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fdp-waterproof-membrane
+sort_order: 15
+status: active
+name:
+  de: Abdichtung mit Bahnen
+  fr: Étanchéité par lés
+  it: Impermeabilizzazione con membrane
+  en: Membrane tanking
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-WATERPROOF-MEMBRANE
+tender_text:
+  de: Abdichtungssystem aus Bitumen-, Kunststoff- oder Bentonitbahnen, das Bodenfeuchte, Sickerwasser und drückendes Wasser von erdberührten Bauteilen fernhält. Die Bahnen werden vollflächig verklebt oder lose verlegt, an Stössen, Anschlüssen und Durchdringungen dicht verbunden und mit Schutzlagen abgedeckt. Geeignet für Untergeschosse und Tiefgaragen mit hohen Anforderungen an einen trockenen Innenraum. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Sealing system of bitumen, synthetic, or bentonite membranes that keeps ground moisture, seeping water, and pressing water away from buried components. Membranes are fully bonded or loose-laid, sealed at laps, connections, and penetrations, and covered with protection layers. Suitable for basements and underground garages with high requirements on a dry interior. Included are all works required to meet the specified requirements.

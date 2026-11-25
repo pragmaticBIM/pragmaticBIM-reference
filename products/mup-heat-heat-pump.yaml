@@ -1,6 +1,6 @@
 id: pragmaticbim:product/mup-heat-heat-pump
 sort_order: 12
-status: active
+status: deprecated
 name:
   de: Waermepumpe
   fr: Pompe à chaleur

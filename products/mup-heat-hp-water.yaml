@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mup-heat-hp-water
+sort_order: 25
+status: active
+name:
+  de: Wasser-Wasser-Wärmepumpe
+  fr: Pompe à chaleur eau-eau
+  it: Pompa di calore acqua-acqua
+  en: Water-source heat pump
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-HEAT-HP-WATER
+tender_text:
+  de: Hebt Wärme aus Grund-, See- oder Abwasser oder aus Abwärme eines Prozesses auf eine nutzbare Temperatur für den Heizkreis. Als Innengerät im Technikraum aufgestellt, über Zwischenkreis und Wärmetauscher an die Quelle sowie an Heizkreis, Strom und Gebäudeautomation angeschlossen. Geeignet für Standorte mit verfügbarer und bewilligter Wasser- oder Abwärmequelle und für Anschlüsse an Anergienetze. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Raises heat from groundwater, lake or waste water, or process waste heat to a usable temperature for the heating circuit. Installed as indoor unit in the plant room, connected through an intermediate circuit and heat exchanger to the source and to heating circuit, power, and building automation. Suitable for sites with an available and approved water or waste-heat source and for connection to low-temperature district networks. Included are all works required to meet the specified requirements.

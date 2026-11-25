@@ -31,6 +31,7 @@ options:
     fr: Imagerie
     it: Diagnostica per immagini
     en: Imaging
+  target: pragmaticbim:room-type/gesundheitseinheit
   adds:
   - pragmaticbim:room-type/bildgebungsraum
 - id: pragmaticbim:scenario-option/diagnostik-durchfuehren-laboratory
@@ -40,6 +41,7 @@ options:
     fr: Laboratoire médical
     it: Laboratorio medico
     en: Medical laboratory
+  target: pragmaticbim:room-type/gesundheitseinheit
   adds:
   - pragmaticbim:room-type/medizinisches-labor
 - id: pragmaticbim:scenario-option/diagnostik-durchfuehren-external

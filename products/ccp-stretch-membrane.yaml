@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ccp-stretch-membrane
+sort_order: 12
+status: active
+name:
+  de: Spanndecke
+  fr: Plafond tendu
+  it: Controsoffitto teso
+  en: Stretch membrane ceiling
+product_classification:
+  classification_scheme: AbstractCeilingCoveringProduct
+  classification_code: CCP-STRETCH-MEMBRANE
+tender_text:
+  de: 'Fugenlose Decke aus einer Kunststofffolie oder einem Gewebe, das in umlaufende Randprofile gespannt wird. Randprofile werden an Wänden oder Unterkonstruktion befestigt, die Membran erwärmt oder mechanisch eingespannt und Ausschnitte für Leuchten und Luftauslässe verstärkt. Geeignet für grosse fugenlose Flächen, Akustik- und Lichtdecken sowie Sanierungen mit unebener Rohdecke. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Unterkonstruktion, Abhänger und Befestigungen nach Aufbau, Rand- und Anschlussprofile, Schattenfugen, Ausschnitte und Auswechslungen für Leuchten, Luftauslässe, Sprinkler und Melder, Revisionsöffnungen, Einlagen und Dämmung nach Aufbau sowie Abschottungen im Deckenhohlraum nach Brandschutzkonzept.'
+  en: 'Jointless ceiling of a plastic foil or fabric tensioned into continuous perimeter profiles. Profiles are fixed to walls or a substructure, the membrane heated or mechanically tensioned, and cut-outs for luminaires and air outlets reinforced. Suitable for large jointless areas, acoustic and light ceilings, and refurbishments with an uneven slab soffit. Included are all works required to meet the specified requirements. Included in particular: substructure, hangers, and fixings according to the build-up, edge and connection profiles, shadow gaps, cut-outs and trimmers for luminaires, air outlets, sprinklers, and detectors, access panels, inlays and insulation according to the build-up, and fire barriers in the ceiling void according to the fire safety concept.'

@@ -1,0 +1,48 @@
+id: pragmaticbim:room-type/ladenlokal-gross
+code: UT-CO-04
+sort_order: 22
+name:
+  de: Grosses Ladenlokal
+  fr: Grand local commercial
+  it: Grande locale di vendita
+  en: Large shop
+definition:
+  de: Bruttovolumen eines grossen Ladenlokals mit Selbstbedienung, etwa für einen Quartierladen.
+  fr: Volume brut d'un grand local commercial en libre-service, par exemple pour un magasin de quartier.
+  it: Volume lordo di un grande locale di vendita a libero servizio, ad esempio per un negozio di quartiere.
+  en: Gross volume of a large self-service shop, for example for a neighbourhood store.
+room_type_kind: container
+uses:
+- pragmaticbim:use/verkauf
+extends: pragmaticbim:room-type/ladenlokal
+contains:
+- room_type: pragmaticbim:room-type/verkaufsflaeche
+- room_type: pragmaticbim:room-type/allgemeiner-lagerraum
+- room_type: pragmaticbim:room-type/pausenraum
+status: active
+configurations:
+- id: pragmaticbim:room-type-configuration/ladenlokal-gross-default
+  sort_order: 1
+  attribute_presets:
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: PredefinedType
+    value: GFA
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: ObjectType
+    value:
+      de: Bruttovolumen
+      fr: Volume brut
+      it: Volume lordo
+      en: Gross volume
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: LongName
+    value:
+      de: Grosses Ladenlokal
+      fr: Grand local commercial
+      it: Grande locale di vendita
+      en: Large shop
+  - element: pragmaticbim:element/spaces-gross-volume
+    name: GrossPlannedArea
+    pset: ePset_SpaceRequirement
+    value: 800
+  status: active

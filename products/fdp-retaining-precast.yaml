@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fdp-retaining-precast
+sort_order: 13
+status: active
+name:
+  de: Fertigteil-Untergeschosswand
+  fr: Mur enterré préfabriqué
+  it: Muro interrato prefabbricato
+  en: Precast basement wall
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-RETAINING-PRECAST
+tender_text:
+  de: Erdberührte Wand aus im Werk hergestellten Betonelementen, als Vollwand oder als Doppelwand mit Ortbetonkern. Die Elemente werden versetzt, ausgerichtet und über Fugenverguss oder Kernbeton kraftschlüssig verbunden, erdseitig mit Abdichtung, Dämmung und Drainage ergänzt. Geeignet für Untergeschosse mit wiederkehrenden Wandabschnitten und kurzer Bauzeit, wobei Fugen und Anschlüsse dicht auszubilden sind. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Below-grade wall of factory-made concrete elements, as solid wall or double wall with an in-situ core. Elements are set, aligned, and connected by grouted joints or core concrete, then completed on the earth side with sealing, insulation, and drainage. Suitable for basements with repeated wall sections and short construction time; joints and connections must be made watertight. Included are all works required to meet the specified requirements.

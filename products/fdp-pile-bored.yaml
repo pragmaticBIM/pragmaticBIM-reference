@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fdp-pile-bored
+sort_order: 11
+status: active
+name:
+  de: Bohrpfahl
+  fr: Pieu foré
+  it: Palo trivellato
+  en: Bored pile
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-PILE-BORED
+tender_text:
+  de: Tiefgründung aus Pfählen, die im Baugrund gebohrt und vor Ort bewehrt und betoniert werden. Das Bohrloch wird verrohrt oder gestützt abgeteuft, der Bewehrungskorb eingestellt und der Beton im Kontraktorverfahren eingebracht, danach wird der Pfahlkopf freigelegt und angeschlossen. Geeignet für hohe Lasten, grosse Durchmesser und Lagen, in denen Erschütterungen vermieden werden müssen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Deep foundation of piles bored into the ground and reinforced and cast in place. The borehole is sunk with casing or support fluid, the reinforcement cage set, and concrete placed by tremie, then the pile head is exposed and connected. Suitable for high loads, large diameters, and locations where vibration must be avoided. Included are all works required to meet the specified requirements.

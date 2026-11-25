@@ -34,6 +34,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/buero
     to_room_type: pragmaticbim:room-type/pausenraum
+  target: pragmaticbim:room-type/bueroeinheit
   adds:
   - pragmaticbim:room-type/pausenraum
 - id: pragmaticbim:scenario-option/pausen-verbringen-cafeteria

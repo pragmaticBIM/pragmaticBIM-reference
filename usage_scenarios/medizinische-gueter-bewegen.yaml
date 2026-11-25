@@ -31,6 +31,7 @@ options:
     fr: Local à matériel
     it: Locale materiali
     en: Supply room
+  target: pragmaticbim:room-type/gesundheitseinheit
   adds:
   - pragmaticbim:room-type/materialraum
 - id: pragmaticbim:scenario-option/medizinische-gueter-bewegen-sample-store
@@ -43,6 +44,7 @@ options:
   room_relationships:
   - from_room_type: pragmaticbim:room-type/schleuse
     to_room_type: pragmaticbim:room-type/probenlager
+  target: pragmaticbim:room-type/gesundheitseinheit
   adds:
   - pragmaticbim:room-type/schleuse
   - pragmaticbim:room-type/probenlager
