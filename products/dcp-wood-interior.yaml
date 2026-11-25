@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-wood-interior
+sort_order: 9
+status: active
+name:
+  de: Holz-Innentür
+  fr: Porte intérieure en bois
+  it: Porta interna in legno
+  en: Interior wood door
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-WOOD-INTERIOR
+tender_text:
+  de: 'Innentür mit einem Blatt aus Vollholz oder Holzwerkstoffplatte in passender Zarge, die eine Zugangsöffnung in einer Innenwand verschliesst. Blatt und Zarge werden werkseitig gefertigt und oberflächenbehandelt, die Zarge wird in der Öffnung befestigt und vermörtelt oder ausgeschäumt, danach wird das Blatt eingehängt und eingestellt. Geeignet für Wohn-, Büro- und Nebenräume ohne Anforderungen an Brand- oder Rauchschutz; Blattoberfläche und Beschläge müssen der erwarteten Beanspruchung genügen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Montage in der vorbereiteten Öffnung mit Befestigung und Anschlussfuge, luft- und schlagregendichter Anschluss an der Gebäudehülle, Beschläge, Dichtungen, Schwellen- und Bodenanschluss, Einstellen und Funktionsprüfung sowie Übergabe mit Schlüsseln, Kennzeichnung und Wartungsunterlagen.'
+  en: 'Interior door with a leaf of solid timber or wood-based board in a matching frame, closing an access opening in an interior wall. Leaf and frame are produced and finished in the factory, the frame is fixed into the opening and grouted or foamed, then the leaf is hung and adjusted. Suitable for residential, office, and ancillary rooms without fire or smoke requirements; leaf surface and hardware have to withstand the expected traffic. Included are all works required to meet the specified requirements. Included in particular: installation in the prepared opening with fixing and connection joint, airtight and rainproof connection in the building envelope, hardware, seals, threshold and floor connection, adjustment and function test, and handover with keys, marking, and maintenance documents.'

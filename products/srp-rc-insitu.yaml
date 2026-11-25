@@ -1,0 +1,14 @@
+id: pragmaticbim:product/srp-rc-insitu
+sort_order: 5
+status: active
+name:
+  de: Ortbetontreppe
+  fr: Escalier en béton coulé en place
+  it: Scala in calcestruzzo gettato in opera
+  en: In-situ concrete stair
+product_classification:
+  classification_scheme: StairProduct
+  classification_code: SRP-RC-INSITU
+tender_text:
+  de: Treppenlauf aus Stahlbeton für die vertikale Erschliessung, der vor Ort hergestellt wird. Geschalt, bewehrt und betoniert, bei Bedarf mit Trittschalldämmlagern zur Trennung von Wänden und Podesten. Geeignet für frei geformte Treppen und Treppenhäuser mit Anforderungen an Brandwiderstand und Schallschutz. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Stair flight of reinforced concrete for vertical circulation, produced on site. Formed, reinforced, and cast, with impact-sound bearings separating it from walls and landings where required. Suitable for free-form stairs and stairwells with fire-resistance and acoustic requirements. Included are all works required to meet the specified requirements.

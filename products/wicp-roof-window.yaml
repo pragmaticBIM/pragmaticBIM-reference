@@ -1,0 +1,14 @@
+id: pragmaticbim:product/wicp-roof-window
+sort_order: 10
+status: active
+name:
+  de: Dachflächenfenster
+  fr: Fenêtre de toit
+  it: Finestra per tetti
+  en: Pitched roof window
+product_classification:
+  classification_scheme: AbstractWindowConnectorProduct
+  classification_code: WICP-ROOF-WINDOW
+tender_text:
+  de: 'Verglastes Öffnungselement, das in die Fläche eines Steildachs eingebaut wird, als Klapp-, Schwing- oder Festfenster. Werkseitig verglast geliefert, im Sparrenfeld befestigt und mit Eindeckrahmen, Unterdachkragen und Dampfbremsanschluss in die Dachhaut eingebunden. Geeignet für die Belichtung und Lüftung von Dachräumen; Schlagregen- und Schneelastsicherheit sowie die Reinigung sind sicherzustellen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Montage in der vorbereiteten Öffnung mit Befestigung, luft- und schlagregendichter Anschluss an Wand oder Dach, Anschlüsse an Fensterbänke, Bleche und Sonnenschutz, Beschläge und Dichtungen, Einstellen und Funktionsprüfung sowie Übergabe mit Wartungsunterlagen.'
+  en: 'Glazed opening element set into the surface of a pitched roof, as top-hung, centre-pivot, or fixed window. Delivered factory-glazed, fixed in the rafter field, and tied into the roof with flashing kit, underlay collar, and vapour barrier connection. Suitable for daylighting and ventilating rooms under the roof; driving-rain and snow-load resistance and cleaning access must be ensured. Included are all works required to meet the specified requirements. Included in particular: installation in the prepared opening with fixing, airtight and rainproof connection to wall or roof, connections to sills, flashings, and sun shading, hardware and seals, adjustment and function test, and handover with maintenance documents.'

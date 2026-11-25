@@ -1,0 +1,14 @@
+id: pragmaticbim:product/rap-parapet-precast
+sort_order: 11
+status: active
+name:
+  de: Fertigteilbrüstung
+  fr: Garde-corps plein préfabriqué
+  it: Parapetto pieno prefabbricato
+  en: Precast parapet
+product_classification:
+  classification_scheme: RailingProduct
+  classification_code: RAP-PARAPET-PRECAST
+tender_text:
+  de: Absturzsicherung als massive Brüstung aus im Werk hergestellten Betonelementen. Elemente mit dem Kran versetzt, an Deckenrand oder Balkonplatte verankert und die Fugen geschlossen, oben mit einer Abdeckung, die Wasser ableitet. Geeignet für wiederkehrende Brüstungen an Balkonen und Laubengängen mit hoher Oberflächenqualität. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Fall protection as a solid parapet of factory-made concrete elements. Elements lifted by crane, anchored to slab edge or balcony slab, and joints closed, with a coping on top that sheds water. Suitable for repeated parapets at balconies and access galleries with a high surface quality. Included are all works required to meet the specified requirements.

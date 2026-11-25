@@ -96,6 +96,7 @@ def read_scheme(contract: Path, entry: dict[str, Any], slugs: dict[str, str]) ->
 
     skos = Namespace("http://www.w3.org/2004/02/skos/core#")
     dcterms = Namespace("http://purl.org/dc/terms/")
+    owl = Namespace("http://www.w3.org/2002/07/owl#")
     path = contract / "classification" / entry["path"]
     text = path.read_text(encoding="utf-8")
     graph = Graph().parse(data=text, format="turtle")
@@ -121,6 +122,11 @@ def read_scheme(contract: Path, entry: dict[str, Any], slugs: dict[str, str]) ->
             del record["broader"]
         if record["ifc_class"] is None:
             del record["ifc_class"]
+        if str(graph.value(concept, owl.deprecated) or "").lower() == "true":
+            record["deprecated"] = True
+            record["replaced_by"] = sorted(
+                str(graph.value(successor, skos.notation)) for successor in graph.objects(concept, dcterms.isReplacedBy)
+            )
         concepts.append(record)
         tender = {lang: _literal(graph, concept, dcterms.description, lang) for lang in ("de", "en")}
         if concept in tops and tender["de"]:
@@ -170,7 +176,8 @@ def build_value_set(scheme: dict[str, Any], sheets: dict[str, dict]) -> dict[str
     """Allowed-value list for one scheme: every concept, labels per language.
 
     German and English come from the contract. French and Italian come from the
-    sheet name where one exists, otherwise they fall back to English.
+    sheet name where one exists, otherwise they fall back to English. Deprecated
+    concepts stay in the list so that existing project data keeps validating.
     """
     docs = scheme["docs"]
     title_de, title_en = scheme["title"]["de"], scheme["title"]["en"]

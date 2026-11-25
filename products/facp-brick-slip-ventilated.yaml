@@ -1,0 +1,14 @@
+id: pragmaticbim:product/facp-brick-slip-ventilated
+sort_order: 17
+status: active
+name:
+  de: Hinterlüftete Riemchenfassade
+  fr: Façade ventilée en plaquettes de parement
+  it: Facciata ventilata in listelli di laterizio
+  en: Ventilated brick slip facade
+product_classification:
+  classification_scheme: EuropeanFacadeCoveringProduct
+  classification_code: FaCP-BRICK-SLIP-VENTILATED
+tender_text:
+  de: 'Nichttragende Bekleidung mit Mauerwerksoptik aus dünnen Klinkerriemchen oder Kleinformatfliesen vor der gedämmten Aussenwand, mit Hinterlüftung. Die Riemchen werden in Trägerschienen eingehängt oder auf Trägerplatten geklebt, die auf einer hinterlüfteten Unterkonstruktion befestigt sind, und verfugt oder mit offener Fuge ausgeführt. Geeignet für Neubau und Sanierung, wenn die Erscheinung eines Sichtmauerwerks bei geringem Eigengewicht gefragt ist. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Unterkonstruktion, Verankerungen und Dämmung nach Aufbau, Anschlüsse an Fenster, Türen, Laibungen, Stürze und Brüstungen, Ecken, Sockel- und Dachrandabschlüsse, Lüftungsöffnungen mit Insektenschutz, Brandsperren nach Brandschutzkonzept sowie Durchdringungen und Befestigungspunkte für Leuchten, Storen und Beschriftungen.'
+  en: 'Non-load-bearing cladding with a masonry appearance from thin brick slips or small tiles in front of the insulated exterior wall, with a ventilated cavity. Slips are hung in carrier rails or bonded onto carrier boards fixed to a ventilated sub-frame, and pointed or left with open joints. Suitable for new build and retrofit where the appearance of facing masonry is required at low dead load. Included are all works required to meet the specified requirements. Included in particular: substructure, anchors, and insulation according to the build-up, connections to windows, doors, reveals, lintels, and sills, corners, base and roof-edge terminations, ventilation openings with insect mesh, fire barriers according to the fire safety concept, and penetrations and fixing points for luminaires, blinds, and signage.'

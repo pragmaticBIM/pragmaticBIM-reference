@@ -1,0 +1,14 @@
+id: pragmaticbim:product/swp-drywall
+sort_order: 15
+status: active
+name:
+  de: Ständerwand in Trockenbau
+  fr: Cloison à ossature en plaques de plâtre
+  it: Parete divisoria in cartongesso
+  en: Stud drywall partition
+product_classification:
+  classification_scheme: AbstractWallSeparatorProduct
+  classification_code: SWP-DRYWALL
+tender_text:
+  de: 'Nichttragende Innenwand aus Metall- oder Holzständern mit ein- oder mehrlagiger Beplankung aus Gips- oder Gipsfaserplatten und Dämmung im Hohlraum. Vor Ort aus Profilen, Platten und Dämmung erstellt, Fugen gespachtelt, mit Installationen im Hohlraum. Geeignet für Trennwände, Schachtwände und Vorsatzschalen mit Anforderungen an Schall- und Brandschutz. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Anschlüsse an Boden, Decke und Wände mit Trenn- und Dämmstreifen, Verstärkungen und Traversen für Wandlasten wie Sanitärapparate, Hängeschränke und Handläufe, Öffnungen mit Laibungsausbildung und Zargenanschluss, Aussparungen für Installationen sowie brand- und schallschutztechnische Abschottungen von Durchdringungen.'
+  en: 'Non-load-bearing interior wall of metal or timber studs with single or multiple layers of gypsum or gypsum-fibre boards and cavity insulation. Built on site from profiles, boards, and insulation, joints filled, with services in the cavity. Suitable for partitions, shaft walls, and linings with acoustic and fire requirements. Included are all works required to meet the specified requirements. Included in particular: connections to floor, ceiling, and walls with separation and insulation strips, reinforcements and cross members for wall loads such as sanitary fixtures, wall cabinets, and handrails, openings with reveals and frame connections, cut-outs for services, and fire and acoustic sealing of penetrations.'

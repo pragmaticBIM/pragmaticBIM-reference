@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fcp-cavity-floor
+sort_order: 17
+status: active
+name:
+  de: Hohlboden
+  fr: Plancher creux
+  it: Pavimento a intercapedine
+  en: Cavity floor
+product_classification:
+  classification_scheme: AbstractFloorCoveringProduct
+  classification_code: FCP-CAVITY-FLOOR
+tender_text:
+  de: 'Aufgeständerter Boden mit fugenloser Tragschicht aus Fliessestrich oder Platten über einem Hohlraum für Installationen. Stützen oder verlorene Schalung werden auf der Rohdecke gesetzt, die Tragschicht eingebracht und Revisionsöffnungen und Bodentanks an festgelegten Stellen ausgebildet. Geeignet für Büro- und Schulflächen mit Installationen im Boden, die nur punktuell zugänglich sein müssen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Rand- und Anschlussprofile, Aussparungen, Revisionsöffnungen und Bodendosen nach Plan, Abschottungen im Hohlraum nach Brandschutzkonzept, Potenzialausgleich der Unterkonstruktion, Rampen und Stufen an Übergängen sowie Schutz bis zur Übergabe.'
+  en: 'Raised floor with a jointless load-bearing layer of flowing screed or boards over a cavity for services. Pedestals or lost formwork are set on the slab, the load-bearing layer placed, and access openings and floor boxes formed at fixed positions. Suitable for office and school areas with services in the floor that need only local access. Included are all works required to meet the specified requirements. Included in particular: edge and connection profiles, cut-outs, access openings, and floor boxes according to plan, fire barriers in the cavity according to the fire safety concept, equipotential bonding of the substructure, ramps and steps at transitions, and protection until handover.'

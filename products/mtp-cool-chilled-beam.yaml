@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mtp-cool-chilled-beam
+sort_order: 27
+status: active
+name:
+  de: Kühlbalken
+  fr: Poutre froide
+  it: Trave fredda
+  en: Chilled beam
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-COOL-CHILLED-BEAM
+tender_text:
+  de: Kühlt den Raum über ein deckennahes Element mit Wärmetauscher, durch Konvektion oder durch Induktion mit Primärluft. Abgehängt oder in die Decke integriert und an Kaltwasser, bei aktiven Balken zusätzlich an die Zuluft angeschlossen. Geeignet für Räume mit höheren Kühllasten und gleichzeitigem Lüftungsbedarf; Luftführung und Taupunktüberwachung sind sicherzustellen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Cools the room through a ceiling-level unit with heat exchanger, by convection or by induction with primary air. Suspended or integrated in the ceiling and connected to chilled water, active beams also to supply air. Suitable for rooms with higher cooling loads and simultaneous ventilation needs; air distribution and dew-point monitoring must be ensured. Included are all works required to meet the specified requirements.

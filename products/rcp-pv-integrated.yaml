@@ -1,0 +1,14 @@
+id: pragmaticbim:product/rcp-pv-integrated
+sort_order: 14
+status: active
+name:
+  de: Indach-Photovoltaikanlage
+  fr: Installation photovoltaïque intégrée en toiture
+  it: Impianto fotovoltaico integrato nel tetto
+  en: Roof-integrated photovoltaic system
+product_classification:
+  classification_scheme: AbstractRoofCoveringProduct
+  classification_code: RCP-PV-INTEGRATED
+tender_text:
+  de: Stromerzeugendes Modulfeld, das die Dacheindeckung ersetzt und selbst die wasserführende Schicht des Steildachs bildet. Module und Systemprofile werden auf Lattung über einem Unterdach verlegt, mit Anschlussblechen an First, Traufe, Ort und Durchdringungen eingebunden und die Verkabelung zu den Wechselrichtern geführt. Geeignet für Neubau und Dachsanierung von Steildächern; Regensicherheit und Windsogsicherung muss das System selbst erbringen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Electricity-generating module array that replaces the roof covering and itself forms the weatherproof layer of the pitched roof. Modules and system profiles are laid on battens over a secondary roof membrane, tied in with flashings at ridge, eaves, verge, and penetrations, and cabling routed to the inverters. Suitable for new and refurbished pitched roofs; rain-tightness and wind uplift resistance must be delivered by the system itself. Included are all works required to meet the specified requirements.

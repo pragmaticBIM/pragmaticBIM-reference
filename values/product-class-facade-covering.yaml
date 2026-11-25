@@ -32,6 +32,8 @@ values:
   - Sanierungsüberkleidungssystem (Verbund)
   - HPL- / Kompaktplatten-Fassade
   - Ziegelriemchen- / Klinker-Vorhangfassade
+  - Hinterlüftete Riemchenfassade
+  - Verklebte Riemchenfassade auf Wärmedämmverbundsystem
   - Sonstige / unbekannte Fassadenbekleidung
   fr:
   - Façade ventilée en carreaux céramiques
@@ -51,6 +53,8 @@ values:
   - Système de surrevêtement pour rénovation (composite)
   - Façade en panneaux HPL / compacts
   - Façade ventilée en plaquettes de brique / clinker
+  - Façade ventilée en plaquettes de parement
+  - Plaquettes de parement collées sur isolation extérieure
   - Revêtement de façade autre ou inconnu
   it:
   - Facciata ventilata in piastrelle ceramiche
@@ -70,6 +74,8 @@ values:
   - Sistema di sovrarivestimento per risanamento (composito)
   - Facciata in pannelli HPL / compatti
   - Facciata ventilata in listelli di laterizio / clinker
+  - Facciata ventilata in listelli di laterizio
+  - Listelli di laterizio incollati su cappotto
   - Rivestimento di facciata altro o sconosciuto
   en:
   - Ventilated ceramic tile system
@@ -89,4 +95,6 @@ values:
   - Retrofit overcladding system (composite)
   - HPL / compact laminate facade panel
   - Brick slip / tile-hung ventilated facade
+  - Ventilated brick slip facade
+  - Brick slips bonded on ETICS
   - Other / unknown facade covering

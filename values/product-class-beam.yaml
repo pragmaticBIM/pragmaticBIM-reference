@@ -18,19 +18,27 @@ values:
   - Stahlträger
   - Holzträger
   - Stahlbetonträger
+  - Ortbeton-Unterzug
+  - Fertigteil-Unterzug
   - Anderer oder unbekannter Träger
   fr:
   - Poutre en acier
   - Poutre en bois
   - Poutre en béton armé
+  - Poutre en béton coulé en place
+  - Poutre préfabriquée en béton
   - Poutre autre ou inconnue
   it:
   - Trave in acciaio
   - Trave in legno
   - Trave in calcestruzzo armato
+  - Trave in calcestruzzo gettato in opera
+  - Trave prefabbricata in calcestruzzo
   - Trave altra o sconosciuta
   en:
   - Steel beam
   - Timber beam
   - Reinforced concrete beam
+  - In-situ concrete beam
+  - Precast concrete beam
   - Other or unknown beam

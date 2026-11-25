@@ -1,6 +1,6 @@
 id: pragmaticbim:product/clp-rc
 sort_order: 3
-status: active
+status: deprecated
 name:
   de: Stahlbetonstütze
   fr: Colonne en béton armé

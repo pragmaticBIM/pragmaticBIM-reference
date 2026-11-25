@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mup-heat-hp-air
+sort_order: 23
+status: active
+name:
+  de: Luft-Wasser-Wärmepumpe
+  fr: Pompe à chaleur air-eau
+  it: Pompa di calore aria-acqua
+  en: Air-source heat pump
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-HEAT-HP-AIR
+tender_text:
+  de: Hebt der Aussenluft entzogene Wärme auf eine nutzbare Temperatur für den Heizkreis und liefert im reversiblen Betrieb auch Kälte. Als Innen-, Aussen- oder Split-Gerät auf schwingungsgedämpftem Sockel aufgestellt, mit Luftführung, Kondensatablauf und Anschluss an Heizkreis, Strom und Gebäudeautomation. Geeignet für Neubau und Sanierung ohne Erdwärmenutzung; Schallemissionen, Aufstellort und Abtauung sind zu beachten. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Raises heat taken from the outdoor air to a usable temperature for the heating circuit and, in reversible operation, also supplies cooling. Installed as indoor, outdoor, or split unit on a vibration-isolated base, with air paths, condensate drain, and connections to heating circuit, power, and building automation. Suitable for new and existing buildings without ground source; noise emission, location, and defrosting must be considered. Included are all works required to meet the specified requirements.

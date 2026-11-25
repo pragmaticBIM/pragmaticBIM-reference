@@ -62,6 +62,37 @@ def test_sheet_matches_contract(code):
     assert sheet["tender_text"].get("de"), f"{code}: tender_text.de is required"
 
 
+@pytest.mark.parametrize("code", sorted(SHEETS))
+def test_sheet_status_follows_contract_deprecation(code):
+    _, concept = CONCEPTS[code]
+    expected = "deprecated" if concept.get("deprecated") else "active"
+    assert SHEETS[code]["status"] == expected, f"{code}: status must be {expected!r} as in the contract"
+    for successor in concept.get("replaced_by", []):
+        assert successor in CONCEPTS, f"{code}: successor {successor} is not in the pinned contract"
+
+
+def test_read_scheme_reads_deprecation(tmp_path):
+    pytest.importorskip("rdflib")
+    path = tmp_path / "classification" / "x" / "demo.skos.ttl"
+    path.parent.mkdir(parents=True)
+    path.write_text(
+        """@prefix : <https://example.org/demo/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+:scheme a skos:ConceptScheme ; dcterms:identifier "Demo" ; skos:hasTopConcept :OLD, :NEW .
+:OLD a skos:Concept ; skos:notation "OLD" ; owl:deprecated true ; dcterms:isReplacedBy :NEW .
+:NEW a skos:Concept ; skos:notation "NEW" .
+""",
+        encoding="utf-8",
+    )
+    scheme, _ = sp.read_scheme(tmp_path, {"path": "x/demo.skos.ttl"}, {})
+    concepts = {concept["code"]: concept for concept in scheme["concepts"]}
+    assert concepts["OLD"]["deprecated"] is True
+    assert concepts["OLD"]["replaced_by"] == ["NEW"]
+    assert "deprecated" not in concepts["NEW"]
+
+
 def test_every_top_concept_has_a_sheet():
     missing = [
         concept["code"]

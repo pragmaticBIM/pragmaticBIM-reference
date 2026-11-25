@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-glass-framed
+sort_order: 18
+status: active
+name:
+  de: Glasrahmentür
+  fr: Porte vitrée à cadre
+  it: Porta vetrata con telaio
+  en: Framed glazed door
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-GLASS-FRAMED
+tender_text:
+  de: 'Türanlage mit einem überwiegend verglasten Blatt in schmalem Metall- oder Holzrahmen, als Dreh- oder Schiebetür in einer Verglasung oder Wand. Rahmen und Blatt werden werkseitig gefertigt und verglast, vor Ort in der Öffnung verankert, abgedichtet und mit Beschlägen eingestellt. Geeignet für Eingänge und Innenöffnungen mit Durchsicht, die zusätzlich Wärme-, Brand- oder Einbruchschutz erfüllen müssen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Montage in der vorbereiteten Öffnung mit Befestigung und Anschlussfuge, luft- und schlagregendichter Anschluss an der Gebäudehülle, Beschläge, Dichtungen, Schwellen- und Bodenanschluss, Einstellen und Funktionsprüfung sowie Übergabe mit Schlüsseln, Kennzeichnung und Wartungsunterlagen.'
+  en: 'Door assembly with a mostly glazed leaf in a narrow metal or timber frame, as hinged or sliding door within a screen or wall. Frame and leaf are produced and glazed in the factory, anchored and sealed in the opening on site, and adjusted with hardware. Suitable for entrances and interior openings requiring transparency that must also meet thermal, fire, or burglary requirements. Included are all works required to meet the specified requirements. Included in particular: installation in the prepared opening with fixing and connection joint, airtight and rainproof connection in the building envelope, hardware, seals, threshold and floor connection, adjustment and function test, and handover with keys, marking, and maintenance documents.'

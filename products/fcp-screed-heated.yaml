@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fcp-screed-heated
+sort_order: 15
+status: active
+name:
+  de: Heizunterlagsboden
+  fr: Chape chauffante
+  it: Sottofondo riscaldato
+  en: Heated screed
+product_classification:
+  classification_scheme: AbstractFloorCoveringProduct
+  classification_code: FCP-SCREED-HEATED
+tender_text:
+  de: 'Schwimmender Unterlagsboden, in den die Rohre einer Fussbodenheizung oder -kühlung eingebettet sind und der die Wärme an den Bodenbelag abgibt. Auf Dämm- und Trägerlage werden die Rohre verlegt und abgedrückt, danach wird der Unterlagsboden eingebracht und nach Aufheizprotokoll bis zur Belegreife getrocknet. Geeignet für Räume mit Flächenheizung oder -kühlung, wobei Fugenplan, Überdeckung der Rohre und Aufheizen mit der Haustechnik abzustimmen sind. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Reinigung der Rohdecke, Dämm- und Trägerlagen sowie Randdämmstreifen, Fugen nach Fugenplan mit Fugenprofilen, Abstimmung der Rohrführung an Fugen, Höhenkontrolle, Aufheizen nach Protokoll, Restfeuchtemessung bis zur Belegreife sowie Schutz bis zur Übergabe an den Bodenbelag.'
+  en: 'Floating screed with embedded underfloor heating or cooling pipes that passes heat to the floor covering. Pipes are laid on the insulation and carrier layer and pressure-tested, then the screed is placed and dried to a heating protocol until ready to receive the covering. Suitable for rooms with surface heating or cooling; joint layout, pipe cover, and heat-up have to be coordinated with the building services. Included are all works required to meet the specified requirements. Included in particular: cleaning the structural slab, insulation and carrier layers and edge insulation strips, joints according to the joint plan with joint profiles, coordination of pipe runs at joints, level control, heat-up according to protocol, residual moisture measurement until ready for covering, and protection until handover to the floor covering.'

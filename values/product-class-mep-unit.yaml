@@ -27,6 +27,9 @@ values:
   - Ventilator
   - Heizkessel
   - Waermepumpe
+  - Luft-Wasser-Wärmepumpe
+  - Sole-Wasser-Wärmepumpe
+  - Wasser-Wasser-Wärmepumpe
   - Waermeuebergabestation
   - Kaelteanlage / Kaeltemaschine
   - Freecooler
@@ -50,6 +53,9 @@ values:
   - Ventilateur
   - Chaudière
   - Pompe à chaleur
+  - Pompe à chaleur air-eau
+  - Pompe à chaleur sol-eau
+  - Pompe à chaleur eau-eau
   - Sous-station de chauffage à distance
   - Machine frigorifique
   - Refroidisseur à air libre
@@ -73,6 +79,9 @@ values:
   - Ventilatore
   - Caldaia
   - Pompa di calore
+  - Pompa di calore aria-acqua
+  - Pompa di calore salamoia-acqua
+  - Pompa di calore acqua-acqua
   - Sottostazione di teleriscaldamento
   - Gruppo frigorifero
   - Free cooler
@@ -96,6 +105,9 @@ values:
   - Fan
   - Boiler
   - Heat pump
+  - Air-source heat pump
+  - Ground-source heat pump
+  - Water-source heat pump
   - District heat substation
   - Chiller
   - Free cooler

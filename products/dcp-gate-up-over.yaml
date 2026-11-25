@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-gate-up-over
+sort_order: 16
+status: active
+name:
+  de: Schwingtor
+  fr: Porte basculante
+  it: Portone basculante
+  en: Up-and-over gate
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-GATE-UP-OVER
+tender_text:
+  de: 'Abschluss einer Fahrzeugöffnung mit einem starren Flügel, der beim Öffnen nach aussen ausschwingt und unter die Decke gleitet. Zarge, Flügel, Federn und gegebenenfalls Antrieb werden in der Öffnung montiert, verankert und eingestellt. Geeignet für Einzelgaragen mit geringen Anforderungen an Wärmeschutz und Öffnungszyklen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Montage in der vorbereiteten Öffnung mit Befestigung und Anschlussfuge, luft- und schlagregendichter Anschluss an der Gebäudehülle, Beschläge, Dichtungen, Schwellen- und Bodenanschluss, Einstellen und Funktionsprüfung sowie Übergabe mit Schlüsseln, Kennzeichnung und Wartungsunterlagen.'
+  en: 'Closure of a vehicle opening with a single rigid leaf that swings outwards and slides up under the ceiling. Frame, leaf, springs, and drive where present are installed in the opening, anchored, and adjusted. Suitable for single garages with low requirements on thermal performance and operating cycles. Included are all works required to meet the specified requirements. Included in particular: installation in the prepared opening with fixing and connection joint, airtight and rainproof connection in the building envelope, hardware, seals, threshold and floor connection, adjustment and function test, and handover with keys, marking, and maintenance documents.'

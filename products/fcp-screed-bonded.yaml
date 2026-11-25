@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fcp-screed-bonded
+sort_order: 13
+status: active
+name:
+  de: Verbundener Unterlagsboden
+  fr: Chape adhérente
+  it: Sottofondo aderente
+  en: Bonded screed
+product_classification:
+  classification_scheme: AbstractFloorCoveringProduct
+  classification_code: FCP-SCREED-BONDED
+tender_text:
+  de: 'Lastverteilende und ausgleichende Schicht, die vollflächig mit der Rohdecke verbunden ist und ohne Trenn- oder Dämmschicht auf ihr liegt. Auf die vorbereitete und mit Haftbrücke versehene Rohdecke eingebracht, abgezogen und bis zur Belegreife ausgehärtet. Geeignet für Nebenräume, Lager und Bereiche ohne Anforderungen an den Trittschallschutz, in denen eine geringe Aufbauhöhe gefragt ist. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Reinigung der Rohdecke, Trenn- und Dämmschichten sowie Randdämmstreifen nach Aufbau, Fugen nach Fugenplan mit Fugenprofilen, Anschlüsse an Abläufe und Bodendosen, Höhenkontrolle, Restfeuchtemessung bis zur Belegreife sowie Schutz bis zur Übergabe an den Bodenbelag.'
+  en: 'Load-distributing and levelling layer bonded over its full area to the structural slab, without separation or insulation layer. Placed on the prepared slab with a bonding agent, levelled, and cured until ready to receive the covering. Suitable for ancillary rooms, storage, and areas without impact-sound requirements where a low build-up height is needed. Included are all works required to meet the specified requirements. Included in particular: cleaning the structural slab, separation and insulation layers and edge insulation strips according to the build-up, joints according to the joint plan with joint profiles, connections to drains and floor boxes, level control, residual moisture measurement until ready for covering, and protection until handover to the floor covering.'

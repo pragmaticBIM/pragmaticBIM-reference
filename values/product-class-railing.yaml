@@ -22,6 +22,9 @@ values:
   - Drahtseil- oder Netzgeländer
   - Holzgeländer
   - Massive Brüstung
+  - Ortbetonbrüstung
+  - Fertigteilbrüstung
+  - Gemauerte Brüstung
   - Handlauf
   - Anderes oder unbekanntes Geländer
   fr:
@@ -32,6 +35,9 @@ values:
   - Garde-corps à câbles ou à treillis
   - Garde-corps en bois
   - Allège pleine
+  - Garde-corps plein en béton coulé en place
+  - Garde-corps plein préfabriqué
+  - Garde-corps plein en maçonnerie
   - Main courante
   - Garde-corps autre ou inconnu
   it:
@@ -42,6 +48,9 @@ values:
   - Parapetto a funi o a rete
   - Parapetto in legno
   - Parapetto pieno
+  - Parapetto pieno in calcestruzzo gettato in opera
+  - Parapetto pieno prefabbricato
+  - Parapetto pieno in muratura
   - Corrimano
   - Parapetto altro o sconosciuto
   en:
@@ -52,5 +61,8 @@ values:
   - Cable or mesh infill railing
   - Timber railing
   - Solid parapet
+  - In-situ concrete parapet
+  - Precast parapet
+  - Masonry parapet
   - Handrail only
   - Other or unknown railing

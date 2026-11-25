@@ -1,0 +1,14 @@
+id: pragmaticbim:product/bmp-rc-insitu
+sort_order: 5
+status: active
+name:
+  de: Ortbeton-Unterzug
+  fr: Poutre en béton coulé en place
+  it: Trave in calcestruzzo gettato in opera
+  en: In-situ concrete beam
+product_classification:
+  classification_scheme: BeamProduct
+  classification_code: BMP-RC-INSITU
+tender_text:
+  de: Horizontales Tragglied aus Stahlbeton, das als Unter- oder Überzug in einer Betondecke wirkt und vor Ort hergestellt wird. Geschalt, bewehrt und meist zusammen mit der Decke monolithisch betoniert. Geeignet für hohe Lasten, monolithischen Anschluss an Decken und Stützen sowie eine hohe Brandbeständigkeit ohne Zusatzschutz. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Horizontal load-bearing member of reinforced concrete acting as downstand or upstand beam in a concrete floor, produced on site. Formed, reinforced, and usually cast monolithically with the slab. Suitable for high loads, monolithic connection to slabs and columns, and inherent fire resistance without added protection. Included are all works required to meet the specified requirements.

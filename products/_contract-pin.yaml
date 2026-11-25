@@ -3,7 +3,7 @@
 # Bump `commit` and run `python scripts/sync_products.py --contract PATH` to refresh
 # products/_names.yaml and values/product-class-*.yaml.
 repository: https://github.com/pragmaticBIM/pragmatic-bim-data-contract
-commit: 4d80069cc349099b1d9558715992ce413e2f90cf
+commit: b1573b11666fe9e5c1317aa9cada26a2ac67bb1a
 
 # One entry per product scheme. `value_set` names the generated allowed-value list;
 # schemes without `value_set` are named in _names.yaml but have no value list yet.

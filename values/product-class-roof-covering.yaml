@@ -30,6 +30,8 @@ values:
   - Extensives Gruendach
   - Intensives Gruendach
   - Aufgestaendigtes Photovoltaik-Dach
+  - Aufdach-Photovoltaikanlage
+  - Indach-Photovoltaikanlage
   - Sonstige / unbekannte Dachbekleidung
   fr:
   - Toiture plate bicouche / bitumineuse
@@ -47,6 +49,8 @@ values:
   - Toiture végétalisée extensive
   - Toiture végétalisée intensive
   - Toiture photovoltaïque sur supports
+  - Installation photovoltaïque en surimposition
+  - Installation photovoltaïque intégrée en toiture
   - Couverture de toiture autre ou inconnue
   it:
   - Tetto piano multistrato / bituminoso
@@ -64,6 +68,8 @@ values:
   - Tetto verde estensivo
   - Tetto verde intensivo
   - Tetto fotovoltaico su supporti
+  - Impianto fotovoltaico sovrapposto
+  - Impianto fotovoltaico integrato nel tetto
   - Copertura del tetto altra o sconosciuta
   en:
   - Built-up / bitumen flat roof
@@ -81,4 +87,6 @@ values:
   - Extensive green roof
   - Intensive green roof
   - Roof-mounted photovoltaic system
+  - Rack-mounted roof photovoltaic system
+  - Roof-integrated photovoltaic system
   - Other / unknown roof covering

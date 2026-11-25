@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-gate-sectional
+sort_order: 12
+status: active
+name:
+  de: Sektionaltor
+  fr: Porte sectionnelle
+  it: Portone sezionale
+  en: Sectional gate
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-GATE-SECTIONAL
+tender_text:
+  de: 'Grossformatiger Abschluss einer Fahrzeug- oder Warenöffnung aus gelenkig verbundenen, gedämmten Paneelen, die in seitlichen Schienen unter die Decke laufen. Paneele, Schienen, Federn und Antrieb werden in der Öffnung montiert, an Laibung und Sturz verankert und mit Steuerung und Sicherheitseinrichtungen in Betrieb genommen. Geeignet für Garagen, Werkstätten und beheizte Hallen, in denen Wärmeschutz gefragt ist und Platz unter der Decke zur Verfügung steht. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Montage in der vorbereiteten Öffnung mit Befestigung und Anschlussfuge, luft- und schlagregendichter Anschluss an der Gebäudehülle, Beschläge, Dichtungen, Schwellen- und Bodenanschluss, Einstellen und Funktionsprüfung sowie Übergabe mit Schlüsseln, Kennzeichnung und Wartungsunterlagen.'
+  en: 'Large-format closure of a vehicle or goods opening of hinged, insulated panels that run up under the ceiling in side tracks. Panels, tracks, springs, and drive are assembled in the opening, anchored to reveal and lintel, and commissioned with control and safety devices. Suitable for garages, workshops, and heated halls where thermal performance is required and headroom under the ceiling is available. Included are all works required to meet the specified requirements. Included in particular: installation in the prepared opening with fixing and connection joint, airtight and rainproof connection in the building envelope, hardware, seals, threshold and floor connection, adjustment and function test, and handover with keys, marking, and maintenance documents.'

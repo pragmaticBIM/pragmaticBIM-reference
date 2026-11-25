@@ -19,46 +19,74 @@ values:
   - Mauerwerk-Wand
   - Lehmstampf-Wand
   - Leichtbeton-Tafel-Wand (BLT)
+  - Leichtbeton-Elementwand
   - Element-Wand Beton
   - Stahl-Wand
   - Holz-Wand
+  - Holzrahmenbauwand
+  - Holzmassivwand
   - Leichtbauwand
   - Vorhangfassade
+  - Pfosten-Riegel-Fassade
+  - Elementfassade
   - Trockenbau- / Elementtrennwand
+  - Ständerwand in Trockenbau
+  - Systemtrennwand
   - Sonstige / unbekannte Wand
   fr:
   - Mur en béton coulé sur place
   - Mur en maçonnerie
   - Mur en pisé
   - Mur en panneaux de béton léger (BLT)
+  - Mur en éléments de béton léger
   - Mur préfabriqué en béton
   - Mur à ossature métallique
   - Mur à ossature bois
+  - Mur à ossature bois
+  - Mur en bois massif
   - Mur en construction légère
   - Façade-rideau
+  - Façade montants-traverses
+  - Façade à éléments
   - Cloison sèche / cloison modulaire
+  - Cloison à ossature en plaques de plâtre
+  - Cloison amovible
   - Mur autre ou inconnu
   it:
   - Parete in calcestruzzo gettato in opera
   - Parete in muratura
   - Parete in terra cruda battuta
   - Parete in pannelli di calcestruzzo leggero (BLT)
+  - Parete in elementi di calcestruzzo leggero
   - Parete prefabbricata in calcestruzzo
   - Parete con struttura in acciaio
   - Parete con struttura in legno
+  - Parete a telaio in legno
+  - Parete in legno massiccio
   - Parete in costruzione leggera
   - Facciata continua
+  - Facciata a montanti e traversi
+  - Facciata a cellule
   - Parete a secco / parete divisoria modulare
+  - Parete divisoria in cartongesso
+  - Parete divisoria mobile
   - Parete altra o sconosciuta
   en:
   - In-situ concrete wall
   - Masonry wall
   - Rammed earth wall
   - Lightweight concrete panel (BLT) wall
+  - Lightweight concrete panel wall
   - Prefabricated concrete wall
   - Steel frame wall
   - Timber frame wall
+  - Timber stud frame wall
+  - Solid timber wall
   - Lightweight construction wall
   - Curtain wall / facade system
+  - Stick curtain wall
+  - Unitised curtain wall
   - Drywall / element partition wall
+  - Stud drywall partition
+  - Demountable system partition
   - Other / unknown wall separator

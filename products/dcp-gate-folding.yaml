@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-gate-folding
+sort_order: 15
+status: active
+name:
+  de: Falttor
+  fr: Porte accordéon
+  it: Portone a libro
+  en: Folding gate
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-GATE-FOLDING
+tender_text:
+  de: 'Grossformatiger Abschluss einer Fahrzeug- oder Warenöffnung aus gelenkig verbundenen Flügeln, die beim Öffnen seitlich zusammengefaltet werden. Flügel, Lauf- und Führungsschienen werden in der Öffnung montiert und mit Verriegelung und gegebenenfalls Antrieb in Betrieb genommen. Geeignet für Feuerwehrgaragen, Werkhöfe und Öffnungen, in denen weder Platz unter der Decke noch neben der Öffnung zur Verfügung steht. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Montage in der vorbereiteten Öffnung mit Befestigung und Anschlussfuge, luft- und schlagregendichter Anschluss an der Gebäudehülle, Beschläge, Dichtungen, Schwellen- und Bodenanschluss, Einstellen und Funktionsprüfung sowie Übergabe mit Schlüsseln, Kennzeichnung und Wartungsunterlagen.'
+  en: 'Large-format closure of a vehicle or goods opening of hinged leaves that fold to the side when opened. Leaves, running and guide tracks are installed in the opening and commissioned with locking and drive where present. Suitable for fire stations, service yards, and openings with neither headroom nor side space available. Included are all works required to meet the specified requirements. Included in particular: installation in the prepared opening with fixing and connection joint, airtight and rainproof connection in the building envelope, hardware, seals, threshold and floor connection, adjustment and function test, and handover with keys, marking, and maintenance documents.'

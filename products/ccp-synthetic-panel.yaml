@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ccp-synthetic-panel
+sort_order: 11
+status: active
+name:
+  de: Kunststoffpaneeldecke
+  fr: Plafond en panneaux synthétiques
+  it: Controsoffitto in pannelli sintetici
+  en: Synthetic panel ceiling
+product_classification:
+  classification_scheme: AbstractCeilingCoveringProduct
+  classification_code: CCP-SYNTHETIC-PANEL
+tender_text:
+  de: 'Leichte Deckenbekleidung aus Kunststoff- oder Verbundpaneelen unter der tragenden Decke. Auf einer leichten abgehängten Unterkonstruktion befestigt, mit dichten Stössen und abgedichteten Durchdringungen für Leuchten und Luftauslässe. Geeignet für Nassräume, Labor- und Lebensmittelbereiche mit Anforderungen an eine abwaschbare, feuchtebeständige Oberfläche. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Unterkonstruktion, Abhänger und Befestigungen nach Aufbau, Rand- und Anschlussprofile, Schattenfugen, Ausschnitte und Auswechslungen für Leuchten, Luftauslässe, Sprinkler und Melder, Revisionsöffnungen, Einlagen und Dämmung nach Aufbau sowie Abschottungen im Deckenhohlraum nach Brandschutzkonzept.'
+  en: 'Lightweight ceiling lining of plastic or composite panels below the load-bearing slab. Fixed to a light suspended substructure, with tight joints and sealed penetrations for luminaires and air outlets. Suitable for wet rooms, laboratories, and food areas requiring a wipeable, moisture-resistant surface. Included are all works required to meet the specified requirements. Included in particular: substructure, hangers, and fixings according to the build-up, edge and connection profiles, shadow gaps, cut-outs and trimmers for luminaires, air outlets, sprinklers, and detectors, access panels, inlays and insulation according to the build-up, and fire barriers in the ceiling void according to the fire safety concept.'

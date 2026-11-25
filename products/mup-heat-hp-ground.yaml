@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mup-heat-hp-ground
+sort_order: 24
+status: active
+name:
+  de: Sole-Wasser-Wärmepumpe
+  fr: Pompe à chaleur sol-eau
+  it: Pompa di calore salamoia-acqua
+  en: Ground-source heat pump
+product_classification:
+  classification_scheme: AbstractMepUnitProduct
+  classification_code: MUP-HEAT-HP-GROUND
+tender_text:
+  de: Hebt dem Erdreich über Erdwärmesonden oder Erdregister entzogene Wärme auf eine nutzbare Temperatur für den Heizkreis und ermöglicht passive Kühlung. Als Innengerät im Technikraum aufgestellt und an Solekreis, Heizkreis, Strom und Gebäudeautomation angeschlossen. Geeignet für Gebäude mit bewilligter Erdwärmenutzung und gleichmässigem Wärmebedarf; Sondenfeld und Regeneration sind zu planen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Raises heat taken from the ground through borehole heat exchangers or ground collectors to a usable temperature for the heating circuit and allows passive cooling. Installed as indoor unit in the plant room and connected to brine circuit, heating circuit, power, and building automation. Suitable for buildings with approved ground-source use and steady heat demand; borehole field and regeneration must be planned. Included are all works required to meet the specified requirements.

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/dcp-wood-entrance
+sort_order: 11
+status: active
+name:
+  de: Holz-Eingangstür
+  fr: Porte d'entrée en bois
+  it: Porta d'ingresso in legno
+  en: Wood entrance door
+product_classification:
+  classification_scheme: AbstractDoorConnectorProduct
+  classification_code: DCP-WOOD-ENTRANCE
+tender_text:
+  de: 'Eingangstür mit Blatt und Rahmen aus Holz, die eine Eingangsöffnung in der Gebäudehülle oder zu einer Wohnung verschliesst und Klima-, Wärme- und Einbruchschutz übernimmt. Blatt und Rahmen werden werkseitig gefertigt, mit Mehrfachverriegelung, umlaufenden Dichtungen und Bodenabschluss versehen und in der Laibung luft- und schlagregendicht eingebaut. Geeignet für geschützte Hauseingänge und Wohnungseingangstüren; Wetterschutz, Wärmedurchgang und Widerstandsklasse sind je Lage festzulegen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Montage in der vorbereiteten Öffnung mit Befestigung und Anschlussfuge, luft- und schlagregendichter Anschluss an der Gebäudehülle, Beschläge, Dichtungen, Schwellen- und Bodenanschluss, Einstellen und Funktionsprüfung sowie Übergabe mit Schlüsseln, Kennzeichnung und Wartungsunterlagen.'
+  en: 'Entrance door with timber leaf and frame, closing an entrance opening in the building envelope or to a dwelling and providing climate, thermal, and burglary protection. Leaf and frame are produced in the factory, fitted with multi-point locking, continuous seals, and threshold, and installed airtight and rainproof in the reveal. Suitable for sheltered building entrances and apartment entrance doors; weather protection, thermal transmittance, and resistance class are set per location. Included are all works required to meet the specified requirements. Included in particular: installation in the prepared opening with fixing and connection joint, airtight and rainproof connection in the building envelope, hardware, seals, threshold and floor connection, adjustment and function test, and handover with keys, marking, and maintenance documents.'

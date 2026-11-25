@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ssp-hbv-insitu
+sort_order: 12
+status: active
+name:
+  de: Holz-Beton-Verbunddecke mit Ortbeton
+  fr: Dalle mixte bois-béton coulée en place
+  it: Solaio misto legno-calcestruzzo gettato in opera
+  en: In-situ timber-concrete composite slab
+product_classification:
+  classification_scheme: AbstractSlabSeparatorProduct
+  classification_code: SSP-HBV-INSITU
+tender_text:
+  de: Tragendes horizontales Bauteil aus Holzbalken oder Holzplatten, auf die eine Betonschicht vor Ort schubfest aufbetoniert wird. Das Holztragwerk wird verlegt, mit Kerven, Schrauben oder Verbindern versehen, bewehrt und betoniert, mit Abstützung bis zum Erhärten. Geeignet für Neubau und Sanierung von Holzbalkendecken mit Anforderungen an Steifigkeit, Schallschutz und Brandwiderstand. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Load-bearing horizontal element of timber beams or panels onto which a concrete layer is cast on site with shear connection. The timber structure is laid, fitted with notches, screws, or connectors, reinforced, and cast, with propping until the concrete has hardened. Suitable for new and refurbished timber floors with stiffness, acoustic, and fire-resistance requirements. Included are all works required to meet the specified requirements.

@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fdp-soil-replacement
+sort_order: 19
+status: active
+name:
+  de: Bodenersatz
+  fr: Substitution de sol
+  it: Sostituzione del terreno
+  en: Soil replacement
+product_classification:
+  classification_scheme: AbstractFoundationProduct
+  classification_code: FDP-SOIL-REPLACEMENT
+tender_text:
+  de: Verbesserung des Baugrunds, bei der nicht tragfähiger Boden unter der Fundation ausgehoben und durch geeignetes Material ersetzt wird. Lagenweise eingebaut und verdichtet, mit Nachweis der Verdichtung durch Plattendruckversuche. Geeignet für oberflächennahe weiche oder organische Schichten unter Flach- und Plattenfundationen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Ground improvement in which unsuitable soil below the foundation is excavated and replaced with suitable material. Placed and compacted in layers, with compaction verified by plate load tests. Suitable for shallow soft or organic layers beneath strip, pad, and raft foundations. Included are all works required to meet the specified requirements.

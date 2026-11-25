@@ -1,0 +1,14 @@
+id: pragmaticbim:product/fcp-access-floor
+sort_order: 16
+status: active
+name:
+  de: Doppelboden
+  fr: Faux plancher technique
+  it: Pavimento sopraelevato
+  en: Access floor
+product_classification:
+  classification_scheme: AbstractFloorCoveringProduct
+  classification_code: FCP-ACCESS-FLOOR
+tender_text:
+  de: 'Aufgeständerter Boden, der einen durchgehend zugänglichen Hohlraum zwischen Rohdecke und Gehebene bildet. Herausnehmbare Platten liegen auf höhenverstellbaren Stützen, die auf der Rohdecke verklebt und bei Bedarf mit Rastern verbunden werden. Geeignet für Rechenzentren, Technik- und Büroflächen mit hoher Installationsdichte und häufigen Änderungen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind. Inbegriffen sind insbesondere: Rand- und Anschlussprofile, Aussparungen, Revisionsöffnungen und Bodendosen nach Plan, Abschottungen im Hohlraum nach Brandschutzkonzept, Potenzialausgleich der Unterkonstruktion, Rampen und Stufen an Übergängen sowie Schutz bis zur Übergabe.'
+  en: 'Raised floor forming a continuously accessible cavity between the structural slab and the walking level. Removable panels rest on height-adjustable pedestals bonded to the slab and connected by stringers where required. Suitable for data centres, technical and office areas with dense services and frequent changes. Included are all works required to meet the specified requirements. Included in particular: edge and connection profiles, cut-outs, access openings, and floor boxes according to plan, fire barriers in the cavity according to the fire safety concept, equipotential bonding of the substructure, ramps and steps at transitions, and protection until handover.'

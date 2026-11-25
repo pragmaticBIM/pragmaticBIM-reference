@@ -28,6 +28,8 @@ values:
   - Geblaesekonvektor (Heizbetrieb)
   - Geblaesekonvektor (Kuehlbetrieb)
   - Kuehldecke / Kuehlbalken
+  - Kühldecke
+  - Kühlbalken
   - Wasserhahn
   - Dusche
   - WC-Spuelung
@@ -54,6 +56,8 @@ values:
   - Ventilo-convecteur (mode chauffage)
   - Ventilo-convecteur (mode refroidissement)
   - Plafond rafraîchissant / poutre froide
+  - Plafond rafraîchissant
+  - Poutre froide
   - Robinet
   - Douche
   - Chasse d'eau WC
@@ -80,6 +84,8 @@ values:
   - Ventilconvettore (modalità riscaldamento)
   - Ventilconvettore (modalità raffrescamento)
   - Soffitto raffrescante / trave fredda
+  - Soffitto raffrescante
+  - Trave fredda
   - Rubinetto
   - Doccia
   - Cassetta di risciacquo WC
@@ -106,6 +112,8 @@ values:
   - Fan coil (heating mode)
   - Fan coil (cooling mode)
   - Chilled ceiling / beam
+  - Chilled ceiling
+  - Chilled beam
   - Tap / faucet
   - Shower
   - WC flush valve

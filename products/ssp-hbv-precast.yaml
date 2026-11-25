@@ -1,0 +1,14 @@
+id: pragmaticbim:product/ssp-hbv-precast
+sort_order: 13
+status: active
+name:
+  de: Holz-Beton-Verbundelement
+  fr: Élément mixte bois-béton préfabriqué
+  it: Elemento misto legno-calcestruzzo prefabbricato
+  en: Precast timber-concrete composite element
+product_classification:
+  classification_scheme: AbstractSlabSeparatorProduct
+  classification_code: SSP-HBV-PRECAST
+tender_text:
+  de: Tragendes horizontales Bauteil aus im Werk hergestellten Elementen, bei denen Holz und Beton bereits schubfest verbunden sind. Die Elemente werden trocken angeliefert, mit dem Kran verlegt und über Fugenverguss oder Verbinder zu einer Scheibe verbunden. Geeignet für Geschossdecken im Holz- und Hybridbau mit kurzer Bauzeit ohne Nassprozess auf der Decke. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Load-bearing horizontal element of factory-made units in which timber and concrete are already connected in shear. Elements are delivered dry, laid by crane, and connected into a diaphragm by grouted joints or connectors. Suitable for floors in timber and hybrid buildings with short construction time and no wet process on the deck. Included are all works required to meet the specified requirements.

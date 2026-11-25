@@ -1,6 +1,6 @@
 id: pragmaticbim:product/rcp-pv-roof
 sort_order: 11
-status: active
+status: deprecated
 name:
   de: Aufgestaendigtes Photovoltaik-Dach
   fr: Toiture photovoltaïque sur supports

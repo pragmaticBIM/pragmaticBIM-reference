@@ -1,0 +1,14 @@
+id: pragmaticbim:product/rap-parapet-insitu
+sort_order: 10
+status: active
+name:
+  de: Ortbetonbrüstung
+  fr: Garde-corps plein en béton coulé en place
+  it: Parapetto pieno in calcestruzzo gettato in opera
+  en: In-situ concrete parapet
+product_classification:
+  classification_scheme: RailingProduct
+  classification_code: RAP-PARAPET-INSITU
+tender_text:
+  de: Absturzsicherung als massive Stahlbetonbrüstung, die mit dem angrenzenden Tragwerk vor Ort betoniert wird. Geschalt, bewehrt und betoniert, oben mit einer Abdeckung, die Wasser ableitet. Geeignet für Balkone, Terrassen und Dachränder, an denen eine geschlossene, robuste Brüstung gefragt ist. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Fall protection as a solid reinforced concrete parapet cast in place with the adjoining structure. Formed, reinforced, and cast, closed on top by a coping that sheds water. Suitable for balconies, terraces, and roof edges where a closed, robust parapet is required. Included are all works required to meet the specified requirements.

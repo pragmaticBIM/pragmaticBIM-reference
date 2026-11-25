@@ -32,6 +32,9 @@ values:
   - Aluminiumfenster 2-fach Verglasung-Schicht
   - Spezielles lichtdurchlaessiges Bauteil
   - Dachfenster / Oberlicht
+  - Dachflächenfenster
+  - Lichtkuppel
+  - Lichtband
   - Fassaden-Verglasungselement
   - Sonstiges / unbekanntes Fenster
   fr:
@@ -52,6 +55,9 @@ values:
   - Aluminium window 2-pane glazing layer
   - Élément translucide spécial
   - Fenêtre de toit / lanterneau
+  - Fenêtre de toit
+  - Coupole d'éclairage
+  - Bande lumineuse
   - Élément vitré de façade
   - Fenêtre autre ou inconnue
   it:
@@ -72,6 +78,9 @@ values:
   - Aluminium window 2-pane glazing layer
   - Elemento traslucido speciale
   - Finestra per tetti / lucernario
+  - Finestra per tetti
+  - Cupola per lucernario
+  - Lucernario continuo
   - Elemento vetrato di facciata
   - Finestra altra o sconosciuta
   en:
@@ -92,5 +101,8 @@ values:
   - Aluminium window 2-pane glazing layer
   - Special transparent opening
   - Roof window / skylight
+  - Pitched roof window
+  - Flat-roof dome
+  - Continuous rooflight
   - Facade glazing unit
   - Other / unknown window

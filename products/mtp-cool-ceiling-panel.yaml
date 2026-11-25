@@ -1,0 +1,14 @@
+id: pragmaticbim:product/mtp-cool-ceiling-panel
+sort_order: 26
+status: active
+name:
+  de: Kühldecke
+  fr: Plafond rafraîchissant
+  it: Soffitto raffrescante
+  en: Chilled ceiling
+product_classification:
+  classification_scheme: AbstractMepTerminalProduct
+  classification_code: MTP-COOL-CEILING-PANEL
+tender_text:
+  de: Kühlt den Raum über gekühlte Deckenflächen weitgehend geräusch- und zugfrei, vorwiegend durch Strahlung. Register werden in die Deckenbekleidung integriert oder auf die Rohdecke montiert und an Kaltwasservor- und -rücklauf mit Regelventilen angeschlossen. Geeignet für Büro- und Besprechungsräume mit mittleren Kühllasten und hohen Komfortanforderungen; die Taupunktüberwachung ist sicherzustellen. Inbegriffen sind alle Leistungen, die für das Erreichen der Vorgaben erforderlich sind.
+  en: Cools the room through chilled ceiling surfaces largely without noise and draught, mainly by radiation. Registers are integrated into the ceiling lining or mounted on the slab and connected to chilled water flow and return with control valves. Suitable for office and meeting rooms with moderate cooling loads and high comfort requirements; dew-point monitoring must be provided. Included are all works required to meet the specified requirements.

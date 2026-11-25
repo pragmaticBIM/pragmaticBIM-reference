@@ -1,6 +1,6 @@
 id: pragmaticbim:product/fcp-subfloor
 sort_order: 1
-status: active
+status: deprecated
 name:
   de: Unterlagsboden / Ausgleichsschicht
   fr: Chape / couche de ragréage
