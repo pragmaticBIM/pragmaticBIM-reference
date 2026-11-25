@@ -1,0 +1,108 @@
+id: pragmaticbim:value/product-class-mep-unit
+code: PRODUCT-MUP
+name:
+  de: Abstrakte TGA-Erzeuger-/Wandlerprodukte
+  fr: Abstract MEP unit products
+  it: Abstract MEP unit products
+  en: Abstract MEP unit products
+description:
+  de: 'Produktklassen gemäss Abstrakte TGA-Erzeuger-/Wandlerprodukte. Quelle: https://schema.pragmaticbim.ch/classification/mep-unit-product.html'
+  fr: 'Classes de produits selon Abstract MEP unit products. Source : https://schema.pragmaticbim.ch/classification/mep-unit-product.html'
+  it: 'Classi di prodotto secondo Abstract MEP unit products. Fonte: https://schema.pragmaticbim.ch/classification/mep-unit-product.html'
+  en: 'Product classes according to Abstract MEP unit products. Source: https://schema.pragmaticbim.ch/classification/mep-unit-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Transformator
+  - Hauptverteilung
+  - Unterverteilung
+  - USV-Anlage
+  - Notstromaggregat
+  - Patchpanel
+  - Netzwerk-Switch / Rack
+  - Server
+  - Lueftungsgeraet / Monoblock
+  - Ventilator
+  - Heizkessel
+  - Waermepumpe
+  - Waermeuebergabestation
+  - Kaelteanlage / Kaeltemaschine
+  - Freecooler
+  - Druckerhoehungsanlage
+  - Warmwasserbereiter
+  - Hebeanlage
+  - Fettabscheider
+  - Druckluftkompressor
+  - Gasdruckregler
+  - Sprinklerpumpe / Loeschwasserpumpe
+  fr:
+  - Transformateur
+  - Tableau de distribution principal
+  - Tableau de distribution secondaire
+  - Alimentation sans interruption (ASI)
+  - Groupe électrogène de secours
+  - Panneau de brassage
+  - Commutateur réseau / baie
+  - Serveur
+  - Monobloc de ventilation
+  - Ventilateur
+  - Chaudière
+  - Pompe à chaleur
+  - Sous-station de chauffage à distance
+  - Machine frigorifique
+  - Refroidisseur à air libre
+  - Surpresseur
+  - Chauffe-eau
+  - Station de relevage
+  - Séparateur de graisses
+  - Compresseur d'air comprimé
+  - Détendeur de gaz
+  - Pompe sprinkler / pompe d'eau d'extinction
+  it:
+  - Trasformatore
+  - Quadro di distribuzione principale
+  - Quadro di distribuzione secondario
+  - Gruppo di continuità (UPS)
+  - Gruppo elettrogeno di emergenza
+  - Pannello di permutazione
+  - Switch di rete / rack
+  - Server
+  - Unità di trattamento aria / monoblocco
+  - Ventilatore
+  - Caldaia
+  - Pompa di calore
+  - Sottostazione di teleriscaldamento
+  - Gruppo frigorifero
+  - Free cooler
+  - Impianto di sopraelevazione della pressione
+  - Scaldacqua
+  - Impianto di sollevamento
+  - Separatore di grassi
+  - Compressore d'aria compressa
+  - Regolatore di pressione del gas
+  - Pompa sprinkler / pompa antincendio
+  en:
+  - Transformer
+  - Main distribution board
+  - Sub-distribution board
+  - Uninterruptible power supply
+  - Backup generator
+  - Patch panel
+  - Network switch / rack
+  - Server
+  - Air handling unit / monoblock
+  - Fan
+  - Boiler
+  - Heat pump
+  - District heat substation
+  - Chiller
+  - Free cooler
+  - Pressure booster
+  - Water heater / DHW boiler
+  - Lifting station
+  - Grease separator
+  - Compressed air compressor
+  - Gas pressure regulator
+  - Fire pump

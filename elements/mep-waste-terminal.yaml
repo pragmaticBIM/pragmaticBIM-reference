@@ -438,3 +438,41 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 13
+- name: ProductClass
+  pset: ePset_Cost
+  definition:
+    de: |-
+      Produktklasse als gemeinsamer Schlüssel für Kosten, Ausschreibung und Ökobilanz. Sie wird abgeleitet, wo Material und Bauteileigenschaften sie eindeutig bestimmen, sonst gesetzt. In frühen Phasen ist eine begründete Annahme zulässig.
+
+      **Zulässige Werte**
+      - Siehe Werteliste [Produktklasse](https://schema.pragmaticbim.ch/classification/mep-terminal-product.html).
+    fr: |-
+      Classe de produit servant de clé commune aux coûts, à l'appel d'offres et à l'écobilan. Elle est déduite là où le matériau et les propriétés de l'élément la déterminent sans ambiguïté, sinon elle est saisie. En phase initiale, une hypothèse fondée est admise.
+
+      **Valeurs admises**
+      - Voir la liste de valeurs [Classe de produit](https://schema.pragmaticbim.ch/classification/mep-terminal-product.html).
+    it: |-
+      Classe di prodotto come chiave comune per costi, gara ed ecobilancio. Viene ricavata dove il materiale e le proprietà del componente la determinano in modo univoco, altrimenti viene impostata. Nella fase iniziale è ammessa un'ipotesi motivata.
+
+      **Valori ammessi**
+      - Vedere l'elenco valori [Classe di prodotto](https://schema.pragmaticbim.ch/classification/mep-terminal-product.html).
+    en: |-
+      Product class as the shared key for costs, tendering, and life-cycle assessment. It is derived where material and component properties determine it unambiguously, otherwise set. In early phases, a reasoned assumption is acceptable.
+
+      **Allowed values**
+      - See the [Product class](https://schema.pragmaticbim.ch/classification/mep-terminal-product.html) value list.
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/product-class-mep-terminal
+  needed_in_phases: ['31', '32', '33', '41', '51']
+  ifc_versions: [ifc2x3, ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  - pragmaticbim:workflow/des-element-based-cost-early
+  - pragmaticbim:workflow/des-element-based-cost-late
+  - pragmaticbim:workflow/bes-element-based-tendering
+  - pragmaticbim:workflow/qas-element-cost-post-calculation
+  is_applicability: false
+  status: active
+  sort_order: 14

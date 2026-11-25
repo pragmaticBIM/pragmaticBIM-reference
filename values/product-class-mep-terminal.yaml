@@ -1,0 +1,120 @@
+id: pragmaticbim:value/product-class-mep-terminal
+code: PRODUCT-MTP
+name:
+  de: Abstrakte TGA-Endgeraeteprodukte
+  fr: Abstract MEP terminal products
+  it: Abstract MEP terminal products
+  en: Abstract MEP terminal products
+description:
+  de: 'Produktklassen gemäss Abstrakte TGA-Endgeraeteprodukte. Quelle: https://schema.pragmaticbim.ch/classification/mep-terminal-product.html'
+  fr: 'Classes de produits selon Abstract MEP terminal products. Source : https://schema.pragmaticbim.ch/classification/mep-terminal-product.html'
+  it: 'Classi di prodotto secondo Abstract MEP terminal products. Fonte: https://schema.pragmaticbim.ch/classification/mep-terminal-product.html'
+  en: 'Product classes according to Abstract MEP terminal products. Source: https://schema.pragmaticbim.ch/classification/mep-terminal-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Steckdose
+  - Leuchte
+  - Schalter
+  - Datendose
+  - WLAN-Access-Point
+  - Sensor / Aktuator (KNX / BACnet)
+  - Zuluft- / Abluftventil oder Diffusor
+  - Gitter / Luftgitter
+  - Radiator / Heizkoerper
+  - Heizkreisverteiler (FBH)
+  - Geblaesekonvektor (Heizbetrieb)
+  - Geblaesekonvektor (Kuehlbetrieb)
+  - Kuehldecke / Kuehlbalken
+  - Wasserhahn
+  - Dusche
+  - WC-Spuelung
+  - Bodenablauf
+  - WC-Ablauf
+  - Spuelbeckenablauf
+  - Gasentnahmestelle
+  - Sprinklerkopf
+  - Schlauchhaspel / Wandhydrant
+  - Brandschutzklappe
+  - Brandschutzklappen-Antrieb
+  - Rauchmelder
+  fr:
+  - Prise de courant
+  - Luminaire
+  - Interrupteur
+  - Prise de données
+  - Point d'accès WLAN
+  - Capteur / actionneur (KNX / BACnet)
+  - Bouche de soufflage / d'extraction ou diffuseur
+  - Grille d'aération
+  - Radiateur
+  - Distributeur de chauffage au sol
+  - Ventilo-convecteur (mode chauffage)
+  - Ventilo-convecteur (mode refroidissement)
+  - Plafond rafraîchissant / poutre froide
+  - Robinet
+  - Douche
+  - Chasse d'eau WC
+  - Siphon de sol
+  - Écoulement WC
+  - Écoulement d'évier
+  - Prise de gaz
+  - Tête de sprinkler
+  - Dévidoir / poste incendie mural
+  - Clapet coupe-feu
+  - Servomoteur de clapet coupe-feu
+  - Détecteur de fumée
+  it:
+  - Presa elettrica
+  - Apparecchio illuminante
+  - Interruttore
+  - Presa dati
+  - Access point WLAN
+  - Sensore / attuatore (KNX / BACnet)
+  - Valvola di immissione / estrazione o diffusore
+  - Griglia di ventilazione
+  - Radiatore
+  - Collettore del riscaldamento a pavimento
+  - Ventilconvettore (modalità riscaldamento)
+  - Ventilconvettore (modalità raffrescamento)
+  - Soffitto raffrescante / trave fredda
+  - Rubinetto
+  - Doccia
+  - Cassetta di risciacquo WC
+  - Pilettone a pavimento
+  - Scarico WC
+  - Scarico del lavello
+  - Presa gas
+  - Testina sprinkler
+  - Naspo / idrante a muro
+  - Serranda tagliafuoco
+  - Attuatore della serranda tagliafuoco
+  - Rilevatore di fumo
+  en:
+  - Socket outlet
+  - Light fixture
+  - Switch
+  - Data outlet
+  - WiFi access point
+  - Sensor / actuator (KNX / BACnet)
+  - Supply / extract air valve or diffuser
+  - Grille
+  - Radiator
+  - Underfloor heating manifold
+  - Fan coil (heating mode)
+  - Fan coil (cooling mode)
+  - Chilled ceiling / beam
+  - Tap / faucet
+  - Shower
+  - WC flush valve
+  - Floor drain
+  - WC outlet
+  - Sink drain
+  - Gas outlet valve
+  - Sprinkler head
+  - Hose reel
+  - Fire damper
+  - Fire damper actuator
+  - Smoke detector

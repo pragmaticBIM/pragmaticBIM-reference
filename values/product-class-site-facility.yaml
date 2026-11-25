@@ -1,0 +1,136 @@
+id: pragmaticbim:value/product-class-site-facility
+code: PRODUCT-SFP
+name:
+  de: Abstrakte Baustelleneinrichtungsprodukte
+  fr: Abstract site facility products
+  it: Abstract site facility products
+  en: Abstract site facility products
+description:
+  de: 'Produktklassen gemäss Abstrakte Baustelleneinrichtungsprodukte. Quelle: https://schema.pragmaticbim.ch/classification/site-facility-product.html'
+  fr: 'Classes de produits selon Abstract site facility products. Source : https://schema.pragmaticbim.ch/classification/site-facility-product.html'
+  it: 'Classi di prodotto secondo Abstract site facility products. Fonte: https://schema.pragmaticbim.ch/classification/site-facility-product.html'
+  en: 'Product classes according to Abstract site facility products. Source: https://schema.pragmaticbim.ch/classification/site-facility-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Kran
+  - Schwenkbereich
+  - Kranstellfläche
+  - Kranfundament
+  - Container
+  - Reifenwaschanlage
+  - Zaun
+  - Tor
+  - Schutzdach
+  - Lagerfläche
+  - Magazin
+  - Umschlagplatz
+  - Zwischenlager
+  - Baubüro
+  - Aufenthaltsraum
+  - Sanitäranlage
+  - Baustraße
+  - Rampe
+  - Wendefläche
+  - Parkplatz
+  - Muldenplatz
+  - Silo
+  - Betonmischanlage
+  - Betonpumpe
+  - Bauaufzug
+  - Gerüst
+  - Baustromverteiler
+  - Bauwasseranschluss
+  - Sonstige / unbekannte Baustelleneinrichtung
+  fr:
+  - Grue
+  - Zone de giration
+  - Aire de stationnement de grue
+  - Fondation de grue
+  - Conteneur
+  - Installation de lavage des roues
+  - Clôture
+  - Portail
+  - Auvent de protection
+  - Aire de stockage
+  - Magasin
+  - Aire de transbordement
+  - Dépôt intermédiaire
+  - Bureau de chantier
+  - Local de séjour
+  - Installation sanitaire
+  - Piste de chantier
+  - Rampe
+  - Aire de retournement
+  - Place de stationnement
+  - Emplacement des bennes
+  - Silo
+  - Centrale à béton
+  - Pompe à béton
+  - Monte-charge de chantier
+  - Échafaudage
+  - Tableau électrique de chantier
+  - Raccordement d'eau de chantier
+  - Installation de chantier autre ou inconnue
+  it:
+  - Gru
+  - Area di rotazione
+  - Area di stazionamento della gru
+  - Fondazione della gru
+  - Container
+  - Impianto di lavaggio ruote
+  - Recinzione
+  - Portone
+  - Tettoia di protezione
+  - Area di deposito
+  - Magazzino
+  - Area di trasbordo
+  - Deposito intermedio
+  - Ufficio di cantiere
+  - Locale di soggiorno
+  - Impianto sanitario
+  - Pista di cantiere
+  - Rampa
+  - Area di inversione
+  - Parcheggio
+  - Area per benne
+  - Silo
+  - Impianto di betonaggio
+  - Pompa per calcestruzzo
+  - Montacarichi da cantiere
+  - Ponteggio
+  - Quadro elettrico di cantiere
+  - Allacciamento idrico di cantiere
+  - Installazione di cantiere altra o sconosciuta
+  en:
+  - Crane
+  - Crane swing envelope
+  - Crane set-up pad
+  - Crane foundation
+  - Site container
+  - Wheel wash
+  - Site fence
+  - Gate
+  - Protective canopy
+  - Storage area
+  - Site store
+  - Transfer area
+  - Intermediate storage
+  - Site office
+  - Break room
+  - Sanitary facility
+  - Haul road
+  - Ramp
+  - Turning area
+  - Parking area
+  - Skip bay
+  - Silo
+  - Concrete batching plant
+  - Concrete pump
+  - Construction hoist
+  - Scaffold
+  - Site power distribution board
+  - Site water connection
+  - Other / unknown site facility

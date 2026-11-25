@@ -1733,6 +1733,7 @@ schemes:
   title:
     de: Abstrakte TGA-Endgeraeteprodukte
     en: Abstract MEP terminal products
+  value_set: product-class-mep-terminal
   sheets: true
   concepts:
   - code: MTP-ELEC-SOCKET
@@ -1991,6 +1992,7 @@ schemes:
   title:
     de: Abstrakte TGA-Erzeuger-/Wandlerprodukte
     en: Abstract MEP unit products
+  value_set: product-class-mep-unit
   sheets: true
   concepts:
   - code: MUP-ELEC-TRANSFORMER
@@ -2219,6 +2221,7 @@ schemes:
   title:
     de: Abstrakte Baustelleneinrichtungsprodukte
     en: Abstract site facility products
+  value_set: product-class-site-facility
   sheets: true
   concepts:
   - code: SFP-CRANE

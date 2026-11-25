@@ -40,5 +40,8 @@ schemes:
   - path: abstract-member-product-classification/railing-products.skos.ttl
     value_set: product-class-railing
   - path: abstract-mep-product-classification/mep-terminal-products.skos.ttl
+    value_set: product-class-mep-terminal
   - path: abstract-mep-product-classification/mep-unit-products.skos.ttl
+    value_set: product-class-mep-unit
   - path: abstract-site-setup-classification/site-setup-products.skos.ttl
+    value_set: product-class-site-facility
