@@ -1,10 +1,10 @@
 # Use cases
 
-All 136 use cases from `workflows/`, grouped by the 6 top-level categories of the [abstract use case classification](https://schema.pragmaticbim.ch/classification/usecase.html) and by `workflow_group`.
+All 137 use cases from `workflows/`, grouped by the 6 top-level categories of the [abstract use case classification](https://schema.pragmaticbim.ch/classification/usecase.html) and by `workflow_group`.
 
 | Category | Code | Use cases |
 | --- | --- | --- |
-| Ordering (Bestellung) | BES | 31 |
+| Ordering (Bestellung) | BES | 32 |
 | Quality assurance (Qualitätssicherung) | QAS | 40 |
 | Design (Planung) | DES | 45 |
 | Construction (Ausführung) | CON | 9 |
@@ -44,6 +44,7 @@ All 136 use cases from `workflows/`, grouped by the 6 top-level categories of th
 | BES-EXISTING-STRUCTURE | Model the building and structural shell for the chosen concept | Gebäudekörper und Rohbau konzeptbezogen nachmodellieren | [`bes-existing-structure-model-procurement.yaml`](workflows/bes-existing-structure-model-procurement.yaml) |
 | BES-EXISTING-BUILDING-MEP | Procure the existing structural shell, fit-out, and MEP model | Bestandsmodell von Rohbau, Ausbau und TGA beschaffen | [`bes-existing-building-mep-model-procurement.yaml`](workflows/bes-existing-building-mep-model-procurement.yaml) |
 | BES-EXISTING-CIRCULARITY | Procure existing-condition information for circularity | Kreislaufwirtschaftliche Bestandsinformationen beschaffen | [`bes-existing-circularity-procurement.yaml`](workflows/bes-existing-circularity-procurement.yaml) |
+| BES-CLIENT-REQUIREMENTS | Manage the client's requirements in a shared data model | Bestellung der Bauherrschaft in einem gemeinsamen Datenmodell führen | [`bes-client-requirements.yaml`](workflows/bes-client-requirements.yaml) |
 | BES-ROOM-PROGRAM | Formulate the room programme for designer procurement and competition | Raumprogramm für Planerbeschaffung und Wettbewerb formulieren | [`bes-room-program-brief.yaml`](workflows/bes-room-program-brief.yaml) |
 | BES-FUNCTIONAL-BRIEF | Clarify operational and functional foundations through test planning | Betriebs- und Funktionsgrundlagen mit Testplanung klären | [`bes-functional-brief-test-planning.yaml`](workflows/bes-functional-brief-test-planning.yaml) |
 | QAS-HAZMAT-CHECK | Plan measures for hazardous-material findings | Massnahmen für Schadstoffbefunde planen | [`qas-hazmat-check.yaml`](workflows/qas-hazmat-check.yaml) |

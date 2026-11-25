@@ -1,0 +1,191 @@
+id: pragmaticbim:element/client-invoice-address
+code: CLIENT-INVOICE-ADDRESS
+sort_order: 7
+status: active
+name:
+  de: Rechnungsadresse Bauherrschaft
+  fr: Adresse de facturation du maître d'ouvrage
+  it: Indirizzo di fatturazione del committente
+  en: Client invoice address
+definition:
+  de: |-
+    Hält die Adresse fest, an die Rechnungen für das Projekt gehen, damit Planende und Unternehmen sie nicht aus Verträgen abschreiben müssen.
+
+    **Beschreibung**
+    - Postadresse der Bauherrschaft für Rechnungen.
+    - Nicht die Adresse des Grundstücks oder des Gebäudes.
+
+    **Modellierungshinweis**
+    - Genau eine Rechnungsadresse je Bauherrschaft.
+    - Als Postadresse der Organisation oder Person der Bauherrschaft führen.
+    - Adressart als benutzerdefiniert mit der Bezeichnung Rechnungsadresse setzen.
+  fr: |-
+    Établit l'adresse à laquelle sont envoyées les factures du projet, afin que mandataires et entreprises n'aient pas à la recopier des contrats.
+
+    **Description**
+    - Adresse postale du maître d'ouvrage pour les factures.
+    - Pas l'adresse du terrain ni celle du bâtiment.
+
+    **Directives de modélisation**
+    - Exactement une adresse de facturation par maître d'ouvrage.
+    - Saisir comme adresse postale de l'organisation ou de la personne du maître d'ouvrage.
+    - Définir le type d'adresse comme défini par l'utilisateur avec la désignation Adresse de facturation.
+  it: |-
+    Stabilisce l'indirizzo a cui vanno le fatture del progetto, affinché progettisti e imprese non debbano ricopiarlo dai contratti.
+
+    **Descrizione**
+    - Indirizzo postale del committente per le fatture.
+    - Non l'indirizzo del fondo né quello dell'edificio.
+
+    **Direttive di modellazione**
+    - Esattamente un indirizzo di fatturazione per committente.
+    - Gestire come indirizzo postale dell'organizzazione o della persona del committente.
+    - Impostare il tipo di indirizzo come definito dall'utente con la designazione Indirizzo di fatturazione.
+  en: |-
+    Records the address that project invoices go to so that designers and contractors do not have to copy it from contracts.
+
+    **Description**
+    - Postal address of the client for invoices.
+    - Not the address of the site or the building.
+
+    **Modelling guidelines**
+    - Exactly one invoice address per client.
+    - Keep it as the postal address of the client's organization or person.
+    - Set the address type to user-defined with the designation Invoice address.
+needed_in_domain:
+  - pragmaticbim:domain/client
+entity_ifc2x3: IfcPostalAddress
+entity_ifc4: IfcPostalAddress
+entity_ifc4_3: IfcPostalAddress
+picture_link: null
+model_link: null
+applicability:
+  de: (entity_ifc4=IfcPostalAddress AND Purpose=USERDEFINED AND UserDefinedPurpose=Rechnungsadresse) OR (entity_ifc2x3=IfcPostalAddress AND Purpose=USERDEFINED AND UserDefinedPurpose=Rechnungsadresse)
+  fr: (entity_ifc4=IfcPostalAddress AND Purpose=USERDEFINED AND UserDefinedPurpose="Adresse de facturation") OR (entity_ifc2x3=IfcPostalAddress AND Purpose=USERDEFINED AND UserDefinedPurpose="Adresse de facturation")
+  it: (entity_ifc4=IfcPostalAddress AND Purpose=USERDEFINED AND UserDefinedPurpose="Indirizzo di fatturazione") OR (entity_ifc2x3=IfcPostalAddress AND Purpose=USERDEFINED AND UserDefinedPurpose="Indirizzo di fatturazione")
+  en: (entity_ifc4=IfcPostalAddress AND Purpose=USERDEFINED AND UserDefinedPurpose="Invoice address") OR (entity_ifc2x3=IfcPostalAddress AND Purpose=USERDEFINED AND UserDefinedPurpose="Invoice address")
+attributes:
+  - name: Purpose
+    pset: null
+    definition:
+      de: |-
+        Art der Adresse.
+
+        **Zulässige Werte**
+        - `USERDEFINED` — benutzerdefiniert; UserDefinedPurpose präzisiert die Art
+      fr: |-
+        Type d'adresse.
+
+        **Valeurs admises**
+        - `USERDEFINED` — défini par l'utilisateur ; UserDefinedPurpose précise le type
+      it: |-
+        Tipo di indirizzo.
+
+        **Valori ammessi**
+        - `USERDEFINED` — definito dall'utente; UserDefinedPurpose precisa il tipo
+      en: |-
+        Kind of address.
+
+        **Allowed values**
+        - `USERDEFINED` — user-defined; UserDefinedPurpose specifies the kind
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/address-purpose-userdefined
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-client-requirements
+    is_applicability: true
+    status: active
+    sort_order: 1
+  - name: UserDefinedPurpose
+    pset: null
+    definition:
+      de: |-
+        Bezeichnung der Adressart.
+
+        **Zulässige Werte**
+        - `Rechnungsadresse`
+      fr: |-
+        Désignation du type d'adresse.
+
+        **Valeurs admises**
+        - `Adresse de facturation`
+      it: |-
+        Designazione del tipo di indirizzo.
+
+        **Valori ammessi**
+        - `Indirizzo di fatturazione`
+      en: |-
+        Designation of the address kind.
+
+        **Allowed values**
+        - `Invoice address`
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/userdefinedpurpose-invoice-address
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-client-requirements
+    is_applicability: true
+    status: active
+    sort_order: 2
+  - name: AddressLines
+    pset: null
+    definition:
+      de: Strasse und Hausnummer, Postfach oder Zusatz; eine Angabe je Zeile.
+      fr: Rue et numéro, case postale ou complément ; une indication par ligne.
+      it: Via e numero civico, casella postale o complemento; un'indicazione per riga.
+      en: Street and house number, PO box, or addition; one entry per line.
+    datatype: IfcLabel
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-client-requirements
+    is_applicability: false
+    status: active
+    sort_order: 3
+  - name: PostalCode
+    pset: null
+    definition:
+      de: Postleitzahl.
+      fr: Numéro postal.
+      it: Numero postale d'avviamento.
+      en: Postcode.
+    datatype: IfcLabel
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-client-requirements
+    is_applicability: false
+    status: active
+    sort_order: 4
+  - name: Town
+    pset: null
+    definition:
+      de: Ort.
+      fr: Localité.
+      it: Località.
+      en: Town.
+    datatype: IfcLabel
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-client-requirements
+    is_applicability: false
+    status: active
+    sort_order: 5
+  - name: Country
+    pset: null
+    definition:
+      de: Land als zweistelliger Ländercode nach ISO 3166-1, z. B. `CH`.
+      fr: Pays sous forme de code pays à deux lettres selon ISO 3166-1, p. ex. `CH`.
+      it: Paese come codice paese a due lettere secondo ISO 3166-1, p. es. `CH`.
+      en: Country as a two-letter country code under ISO 3166-1, e.g. `CH`.
+    datatype: IfcLabel
+    needed_in_phases: ['11', '21', '22', '31', '32', '33', '41', '51', '52', '53', '61', '62']
+    ifc_versions: [ifc2x3, ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/bes-client-requirements
+    is_applicability: false
+    status: active
+    sort_order: 6

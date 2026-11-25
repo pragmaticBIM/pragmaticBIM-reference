@@ -21,6 +21,7 @@ values:
   - Arbeitszimmer
   - Gästezimmer
   - Wintergarten
+  - Kinderzimmer
   - Küche
   - Badezimmer
   - Waschküche
@@ -155,6 +156,7 @@ values:
   - Bureau à domicile
   - Chambre d'amis
   - Jardin d'hiver
+  - Chambre d'enfant
   - Cuisine
   - Salle de bain
   - Buanderie
@@ -289,6 +291,7 @@ values:
   - Studio
   - Camera ospiti
   - Giardino d'inverno
+  - Camera dei bambini
   - Cucina
   - Bagno
   - Lavanderia
@@ -423,6 +426,7 @@ values:
   - Home Study
   - Guest Room
   - Winter Garden
+  - Children's Room
   - Kitchen
   - Bathroom
   - Laundry Room

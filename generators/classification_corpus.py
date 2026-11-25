@@ -23,6 +23,7 @@ from typing import Any
 import numpy as np
 
 import ifcopenshell
+import ifcopenshell.api.owner
 import ifcopenshell.geom
 import ifcopenshell.util.placement
 from ifcopenshell.api.aggregate import assign_object
@@ -195,6 +196,14 @@ _REFERENCE_POINT_DEFAULTS: dict[str, Any] = {
     "Name": "BP-01",
 }
 
+_CLIENT_SLUGS = ("client", "client-invoice-address")
+_CLIENT_INVOICE_ADDRESS_DEFAULTS: dict[str, Any] = {
+    "AddressLines": "Musterstrasse 1",
+    "PostalCode": "8000",
+    "Town": "Zürich",
+    "Country": "CH",
+}
+
 # Same curated defaults the catalog mappers pass into the picture generators.
 _SLUG_DEFAULTS: dict[str, dict[str, Any]] = {
     SPACE_ELEMENT_SLUG: _SPACE_DEFAULTS,
@@ -211,6 +220,8 @@ _SLUG_DEFAULTS: dict[str, dict[str, Any]] = {
     SITE_ELEMENT_SLUG: SITE_DEFAULTS,
     BUILDING_ELEMENT_SLUG: BUILDING_DEFAULTS,
     STOREY_ELEMENT_SLUG: {"Name": "EG"},
+    "client": {"Name": "Bauherrschaft"},
+    "client-invoice-address": _CLIENT_INVOICE_ADDRESS_DEFAULTS,
     SLAB_BASE_ELEMENT_SLUG: SLAB_BASE_DEFAULTS,
     SLAB_FLOOR_ELEMENT_SLUG: SLAB_FLOOR_DEFAULTS,
     SLAB_ROOF_ELEMENT_SLUG: SLAB_ROOF_DEFAULTS,
@@ -345,11 +356,18 @@ def generate_classification_corpus(
         STOREY_ELEMENT_SLUG: storey,
     }
     specimens: dict[str, ifcopenshell.entity_instance] = {}
+    client: dict[str, ifcopenshell.entity_instance] = {}
     cursor_x = 0.0
     cursor_y = 0.0
     row_depth = 0.0
     for slug, element in iter_elements():
         try:
+            if slug in _CLIENT_SLUGS:
+                if not client:
+                    client = _add_client(ifc_file, project)
+                _apply_attributes(ifc_file, client[slug], slug, schema)
+                specimens[slug] = client[slug]
+                continue
             sources, mins, maxs = _example_group(slug, element)
             if slug in shell:
                 product = shell[slug]
@@ -580,6 +598,27 @@ def _reserve(
     origin_x = cursor_x
     origin_y = cursor_y
     return origin_x, origin_y, cursor_x + width + _GAP, cursor_y, max(row_depth, depth)
+
+
+def _add_client(
+    ifc_file: ifcopenshell.file, project: ifcopenshell.entity_instance
+) -> dict[str, ifcopenshell.entity_instance]:
+    """Client actor and its invoice address. Neither is a placed product."""
+    organization = ifcopenshell.api.owner.add_organisation(
+        ifc_file, identification="BHR", name="Bauherrschaft"
+    )
+    address = ifcopenshell.api.owner.add_address(
+        ifc_file, assigned_object=organization, ifc_class="IfcPostalAddress"
+    )
+    role = ifcopenshell.api.owner.add_role(
+        ifc_file, assigned_object=organization, role="CLIENT"
+    )
+    actor = ifcopenshell.api.owner.add_actor(ifc_file, actor=organization)
+    assignment = ifcopenshell.api.owner.assign_actor(
+        ifc_file, relating_actor=actor, related_object=project
+    )
+    assignment.ActingRole = role
+    return {"client": actor, "client-invoice-address": address}
 
 
 def _add_product(
@@ -865,14 +904,25 @@ def _declared_names(product: ifcopenshell.entity_instance) -> set[str]:
     return {attribute.name() for attribute in declaration.all_attributes()}
 
 
+def _is_list_attribute(product: ifcopenshell.entity_instance, key: str) -> bool:
+    schema = ifcopenshell.ifcopenshell_wrapper.schema_by_name(product.file.schema)
+    for attribute in schema.declaration_by_name(product.is_a()).all_attributes():
+        if attribute.name() == key:
+            return attribute.type_of_attribute().as_aggregation_type() is not None
+    return False
+
+
 def _set_attr(
     product: ifcopenshell.entity_instance, key: str, value: Any, slug: str
 ) -> None:
     """Set an entity field. An IFC4X3-only predefined type becomes USERDEFINED.
 
     IFC4 ``IfcGeographicElement`` has no ``VEGETATION`` token. The tree rule
-    classifies that case as ``USERDEFINED`` plus ``ObjectType``.
+    classifies that case as ``USERDEFINED`` plus ``ObjectType``. A list field
+    such as ``IfcPostalAddress.AddressLines`` takes the label as its one entry.
     """
+    if isinstance(value, str) and _is_list_attribute(product, key):
+        value = [value]
     try:
         setattr(product, key, value)
         return

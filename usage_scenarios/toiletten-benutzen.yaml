@@ -60,6 +60,13 @@ options:
     fr: WC femmes, hommes et WC sans obstacles
     it: WC donne, uomini e WC senza barriere
     en: Women's, men's, and accessible toilets
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/flur
+    to_room_type: pragmaticbim:room-type/damen-wc
+  - from_room_type: pragmaticbim:room-type/flur
+    to_room_type: pragmaticbim:room-type/herren-wc
+  - from_room_type: pragmaticbim:room-type/flur
+    to_room_type: pragmaticbim:room-type/barrierefreies-wc
   adds:
   - pragmaticbim:room-type/damen-wc
   - pragmaticbim:room-type/herren-wc
@@ -80,6 +87,11 @@ options:
     fr: WC non genrés avec WC sans obstacles
     it: WC neutri con WC senza barriere
     en: All-gender toilets with accessible toilet
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/flur
+    to_room_type: pragmaticbim:room-type/allgemeines-wc
+  - from_room_type: pragmaticbim:room-type/flur
+    to_room_type: pragmaticbim:room-type/barrierefreies-wc
   adds:
   - pragmaticbim:room-type/allgemeines-wc
   - pragmaticbim:room-type/barrierefreies-wc
@@ -92,6 +104,13 @@ options:
     en: Teachers', students', and accessible toilets
   uses:
   - pragmaticbim:use/bildung
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/flur
+    to_room_type: pragmaticbim:room-type/lehrpersonen-wc
+  - from_room_type: pragmaticbim:room-type/flur
+    to_room_type: pragmaticbim:room-type/lernenden-wc
+  - from_room_type: pragmaticbim:room-type/flur
+    to_room_type: pragmaticbim:room-type/barrierefreies-wc
   adds:
   - pragmaticbim:room-type/lehrpersonen-wc
   - pragmaticbim:room-type/lernenden-wc
@@ -105,6 +124,13 @@ options:
     en: Visitor, staff, and accessible toilets
   uses:
   - pragmaticbim:use/verkauf
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/flur
+    to_room_type: pragmaticbim:room-type/besucher-wc
+  - from_room_type: pragmaticbim:room-type/flur
+    to_room_type: pragmaticbim:room-type/mitarbeiter-wc
+  - from_room_type: pragmaticbim:room-type/flur
+    to_room_type: pragmaticbim:room-type/barrierefreies-wc
   adds:
   - pragmaticbim:room-type/besucher-wc
   - pragmaticbim:room-type/mitarbeiter-wc

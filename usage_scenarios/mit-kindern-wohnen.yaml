@@ -1,0 +1,76 @@
+id: pragmaticbim:usage-scenario/mit-kindern-wohnen
+code: US-WH-23
+sort_order: 8
+name:
+  de: Mit Kindern wohnen
+  fr: Vivre avec des enfants
+  it: Vivere con bambini
+  en: Living with children
+description:
+  de: Kinder leben im Haushalt und brauchen Platz zum Schlafen, Spielen und Lernen.
+    Ein eigener Rückzugsort entscheidet über Zimmerzahl, Fläche und wie ungestört
+    Kinder und Erwachsene voneinander sind.
+  fr: Des enfants vivent dans le ménage et ont besoin de place pour dormir, jouer et
+    apprendre. Un espace à eux décide du nombre de pièces, de la surface et de la tranquillité
+    entre enfants et adultes.
+  it: Nel nucleo domestico vivono bambini che hanno bisogno di spazio per dormire, giocare
+    e studiare. Un luogo proprio decide numero di locali, superficie e quanto bambini
+    e adulti restano indisturbati gli uni dagli altri.
+  en: Children live in the household and need space to sleep, play and study. A place
+    of their own decides the room count, the area, and how undisturbed children and
+    adults are by each other.
+scope: unit
+uses:
+- pragmaticbim:use/wohnen
+tags:
+- wohnalltag
+status: active
+jurisdiction:
+- general
+options:
+- id: pragmaticbim:scenario-option/mit-kindern-wohnen-childrens-room
+  project_goal_levels:
+  - pragmaticbim:project-goal-level/fit-out-standard
+  - pragmaticbim:project-goal-level/fit-out-elevated
+  - pragmaticbim:project-goal-level/fit-out-premium
+  sort_order: 1
+  name:
+    de: Eigenes Kinderzimmer
+    fr: Chambre d'enfant séparée
+    it: Camera dei bambini separata
+    en: Separate children's room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gang
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/kinderzimmer
+  target: pragmaticbim:room-type/wohnung
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/kinderzimmer
+- id: pragmaticbim:scenario-option/mit-kindern-wohnen-living-room
+  sort_order: 2
+  name:
+    de: Spielbereich im Wohnzimmer
+    fr: Coin jeu dans le séjour
+    it: Zona gioco nel soggiorno
+    en: Play area in the living room
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/wohnungseingang
+    to_room_type: pragmaticbim:room-type/gang
+  - from_room_type: pragmaticbim:room-type/gang
+    to_room_type: pragmaticbim:room-type/wohnzimmer
+  target: pragmaticbim:room-type/wohnung
+  adds:
+  - pragmaticbim:room-type/wohnungseingang
+  - pragmaticbim:room-type/gang
+  - pragmaticbim:room-type/wohnzimmer
+- id: pragmaticbim:scenario-option/mit-kindern-wohnen-none
+  sort_order: 3
+  name:
+    de: Kein besonderes Angebot
+    fr: Aucune offre particulière
+    it: Nessuna offerta specifica
+    en: No dedicated provision
+  exclusive: true

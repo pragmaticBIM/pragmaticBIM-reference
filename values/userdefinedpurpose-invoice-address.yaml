@@ -1,0 +1,24 @@
+id: pragmaticbim:value/userdefinedpurpose-invoice-address
+code: ADDRESS-INVOICE
+name:
+  de: UserDefinedPurpose Rechnungsadresse
+  fr: UserDefinedPurpose adresse de facturation
+  it: UserDefinedPurpose indirizzo di fatturazione
+  en: UserDefinedPurpose invoice address
+description:
+  de: UserDefinedPurpose für IfcPostalAddress als Rechnungsadresse der Bauherrschaft.
+  fr: UserDefinedPurpose pour IfcPostalAddress comme adresse de facturation du maître d'ouvrage.
+  it: UserDefinedPurpose per IfcPostalAddress come indirizzo di fatturazione del committente.
+  en: UserDefinedPurpose for IfcPostalAddress as the client's invoice address.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - Rechnungsadresse
+  fr:
+    - Adresse de facturation
+  it:
+    - Indirizzo di fatturazione
+  en:
+    - Invoice address

@@ -108,5 +108,6 @@ parent_workflow: pragmaticbim:workflow/bes
 picture_link: null
 status: active
 needed_in_domain:
+  - pragmaticbim:domain/client
   - pragmaticbim:domain/architecture
 comment: Room instances use Name as their stable technical room number and LongName as their standardized room use. UsageUnitReference carries a usage-unit assignment. The project-specific room-type assignment and detailed type requirements remain in the structured room program and the continuously maintained room book; no additional IFC type-reference attribute is required.

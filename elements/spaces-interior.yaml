@@ -73,6 +73,7 @@ definition:
     **Discussion point**
     - For discipline planning, defining the space volume from the top of the structural floor slab to the underside of the structural slab above would be beneficial. This would allow installations within the floor build-up to be assigned unambiguously to the space. However, many authoring tools do not support this approach reliably, so it is not generally recommended here. `FinishFloorHeight` or `FloorCoveringThickness` could additionally document the level difference.
 needed_in_domain:
+  - pragmaticbim:domain/client
   - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcSpace
 entity_ifc4: IfcSpace
@@ -120,6 +121,7 @@ attributes:
     needed_for_workflows:
       - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
       - pragmaticbim:workflow/bes-room-program-brief
+      - pragmaticbim:workflow/bes-client-requirements
       - pragmaticbim:workflow/des-apartment-schedule
       - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
       - pragmaticbim:workflow/bes-design-build-procurement
@@ -197,6 +199,7 @@ attributes:
     needed_for_workflows:
       - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
       - pragmaticbim:workflow/bes-room-program-brief
+      - pragmaticbim:workflow/bes-client-requirements
       - pragmaticbim:workflow/des-apartment-schedule
       - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
       - pragmaticbim:workflow/bes-design-build-procurement
@@ -264,6 +267,7 @@ attributes:
     needed_for_workflows:
       - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
       - pragmaticbim:workflow/bes-room-program-brief
+      - pragmaticbim:workflow/bes-client-requirements
       - pragmaticbim:workflow/des-apartment-schedule
       - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
       - pragmaticbim:workflow/bes-design-build-procurement
@@ -319,6 +323,7 @@ attributes:
     needed_for_workflows:
       - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
       - pragmaticbim:workflow/bes-room-program-brief
+      - pragmaticbim:workflow/bes-client-requirements
       - pragmaticbim:workflow/des-apartment-schedule
       - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
       - pragmaticbim:workflow/bes-design-build-procurement
@@ -436,6 +441,7 @@ attributes:
     ifc_versions: [ifc2x3, ifc4, ifc4x3]
     needed_for_workflows:
     - pragmaticbim:workflow/bes-room-program-brief
+    - pragmaticbim:workflow/bes-client-requirements
     - pragmaticbim:workflow/qas-room-program-verification
     - pragmaticbim:workflow/bes-design-build-procurement
     - pragmaticbim:workflow/bes-ipd-procurement
@@ -455,6 +461,7 @@ attributes:
     ifc_versions: [ifc2x3, ifc4, ifc4x3]
     needed_for_workflows:
     - pragmaticbim:workflow/bes-room-program-brief
+    - pragmaticbim:workflow/bes-client-requirements
     - pragmaticbim:workflow/qas-room-program-verification
     - pragmaticbim:workflow/bes-design-build-procurement
     - pragmaticbim:workflow/bes-ipd-procurement
@@ -474,6 +481,7 @@ attributes:
     ifc_versions: [ifc2x3, ifc4, ifc4x3]
     needed_for_workflows:
     - pragmaticbim:workflow/bes-room-program-brief
+    - pragmaticbim:workflow/bes-client-requirements
     - pragmaticbim:workflow/qas-room-program-verification
     - pragmaticbim:workflow/bes-design-build-procurement
     - pragmaticbim:workflow/bes-ipd-procurement
@@ -493,6 +501,7 @@ attributes:
     ifc_versions: [ifc2x3, ifc4, ifc4x3]
     needed_for_workflows:
     - pragmaticbim:workflow/bes-room-program-brief
+    - pragmaticbim:workflow/bes-client-requirements
     - pragmaticbim:workflow/qas-room-program-verification
     - pragmaticbim:workflow/bes-design-build-procurement
     - pragmaticbim:workflow/bes-ipd-procurement
@@ -1233,6 +1242,7 @@ attributes:
     ifc_versions: [ifc2x3, ifc4, ifc4x3]
     needed_for_workflows:
     - pragmaticbim:workflow/bes-room-program-brief
+    - pragmaticbim:workflow/bes-client-requirements
     - pragmaticbim:workflow/des-apartment-schedule
     - pragmaticbim:workflow/des-wall-requirements-from-space-use
     - pragmaticbim:workflow/des-sound-insulation-sia181

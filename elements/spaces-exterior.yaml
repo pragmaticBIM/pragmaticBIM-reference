@@ -57,6 +57,7 @@ definition:
     - Best practice: model exterior spaces only 1 m high to visually distinguish them from interior spaces quickly.
     - If these room-naming and height conventions are followed consistently, assigning `TRUE` to IsExternal can be automated easily. This further reduces the potential for errors and the effort required.
 needed_in_domain:
+- pragmaticbim:domain/client
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcSpace
 entity_ifc4: IfcSpace
@@ -104,6 +105,7 @@ attributes:
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-client-requirements
   - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
   - pragmaticbim:workflow/bes-design-build-procurement
   - pragmaticbim:workflow/bes-ipd-procurement
@@ -158,6 +160,7 @@ attributes:
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-client-requirements
   - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
   - pragmaticbim:workflow/bes-design-build-procurement
   - pragmaticbim:workflow/bes-ipd-procurement
@@ -214,6 +217,7 @@ attributes:
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-client-requirements
   - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
   - pragmaticbim:workflow/bes-design-build-procurement
   - pragmaticbim:workflow/bes-ipd-procurement
@@ -257,6 +261,7 @@ attributes:
   needed_for_workflows:
   - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-client-requirements
   - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
   - pragmaticbim:workflow/bes-design-build-procurement
   - pragmaticbim:workflow/bes-ipd-procurement
@@ -351,6 +356,7 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-client-requirements
   - pragmaticbim:workflow/bes-design-build-procurement
   - pragmaticbim:workflow/bes-ipd-procurement
   is_applicability: false
@@ -369,6 +375,7 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-client-requirements
   - pragmaticbim:workflow/bes-design-build-procurement
   - pragmaticbim:workflow/bes-ipd-procurement
   is_applicability: false
@@ -387,6 +394,7 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-client-requirements
   - pragmaticbim:workflow/bes-design-build-procurement
   - pragmaticbim:workflow/bes-ipd-procurement
   is_applicability: false
@@ -405,6 +413,7 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-client-requirements
   - pragmaticbim:workflow/bes-design-build-procurement
   - pragmaticbim:workflow/bes-ipd-procurement
   is_applicability: false
@@ -655,6 +664,7 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-client-requirements
   - pragmaticbim:workflow/bes-design-build-procurement
   - pragmaticbim:workflow/bes-ipd-procurement
   is_applicability: false
@@ -698,6 +708,7 @@ attributes:
   ifc_versions: [ifc2x3, ifc4, ifc4x3]
   needed_for_workflows:
   - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-client-requirements
   - pragmaticbim:workflow/qas-sponge-city
   is_applicability: false
   status: active
