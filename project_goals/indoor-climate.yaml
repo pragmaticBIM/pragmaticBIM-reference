@@ -46,7 +46,6 @@ levels:
     name: SummerTemperatureMax
     pset: ePset_SpaceRequirement
     value: 26.5
-  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
 - id: pragmaticbim:project-goal-level/indoor-climate-cooling
   code: KLI-02
   sort_order: 2
@@ -70,7 +69,6 @@ levels:
     name: SummerTemperatureMax
     pset: ePset_SpaceRequirement
     value: 26
-  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
 - id: pragmaticbim:project-goal-level/indoor-climate-humidity
   code: KLI-03
   sort_order: 3
@@ -102,4 +100,3 @@ levels:
     name: RelativeHumidityMax
     pset: ePset_SpaceRequirement
     value: 60
-  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'

@@ -45,7 +45,6 @@ levels:
     name: SeismicStructureClassRequired
     pset: ePset_BuildingRequirement
     value: 'I'
-  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
 - id: pragmaticbim:project-goal-level/seismic-bwk-2
   code: ERD-02
   sort_order: 2
@@ -69,7 +68,6 @@ levels:
     name: SeismicStructureClassRequired
     pset: ePset_BuildingRequirement
     value: 'II'
-  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
 - id: pragmaticbim:project-goal-level/seismic-bwk-3
   code: ERD-03
   sort_order: 3
@@ -93,4 +91,3 @@ levels:
     name: SeismicStructureClassRequired
     pset: ePset_BuildingRequirement
     value: 'III'
-  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'

@@ -69,7 +69,7 @@ clearances:
 representation:
   body: box
   plan_symbol: bistro_table
-comment: 'Zwei bis vier Plätze je Tisch. Freiflächen: Planungswert; vor Freigabe fachlich bestätigen.'
+comment: 'Zwei bis vier Plätze je Tisch.'
 picture_link: bistrotisch-plan.svg
 attachment_link: bistrotisch.ifc
 status: active

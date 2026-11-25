@@ -56,7 +56,7 @@ connections:
 representation:
   body: volume
   plan_symbol: device_machine
-comment: Fundament, Lasten und Medien nach Maschinenplanung. Planungswert; vor Freigabe fachlich bestätigen.
+comment: Fundament, Lasten und Medien nach Maschinenplanung.
 picture_link: geraeteplatz-maschine-plan.svg
 attachment_link: geraeteplatz-maschine.ifc
 status: active

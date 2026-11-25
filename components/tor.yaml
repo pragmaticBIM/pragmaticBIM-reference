@@ -44,7 +44,7 @@ connections:
 representation:
   body: opening
   plan_symbol: gate
-comment: Freifläche als Rangierzone innen; Planungswert; vor Freigabe fachlich bestätigen.
+comment: Freifläche als Rangierzone innen.
 picture_link: tor-plan.svg
 attachment_link: tor.ifc
 status: active

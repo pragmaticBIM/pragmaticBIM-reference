@@ -47,7 +47,7 @@ connections:
 representation:
   body: box
   plan_symbol: chiller
-comment: Masse nach Fachplanung ersetzen; Planungswert; vor Freigabe fachlich bestätigen.
+comment: Masse nach Fachplanung ersetzen.
 picture_link: kaeltemaschine-plan.svg
 attachment_link: kaeltemaschine.ifc
 status: active

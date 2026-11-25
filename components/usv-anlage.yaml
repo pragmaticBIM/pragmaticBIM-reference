@@ -46,7 +46,7 @@ connections:
 representation:
   body: box
   plan_symbol: ups
-comment: Masse nach Fachplanung ersetzen; Planungswert; vor Freigabe fachlich bestätigen.
+comment: Masse nach Fachplanung ersetzen.
 picture_link: usv-anlage-plan.svg
 attachment_link: usv-anlage.ifc
 status: active

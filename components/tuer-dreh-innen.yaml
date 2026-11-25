@@ -45,8 +45,7 @@ clearances:
 representation:
   body: opening
   plan_symbol: door_swing
-comment: Lichte Breite 0.80 m als Mindestmass für anpassbaren Wohnungsbau. Mass nach SIA 500 vor Freigabe
-  fachlich bestätigen.
+comment: Lichte Breite 0.80 m als Mindestmass für anpassbaren Wohnungsbau.
 picture_link: tuer-dreh-innen-plan.svg
 attachment_link: tuer-dreh-innen.ifc
 status: active

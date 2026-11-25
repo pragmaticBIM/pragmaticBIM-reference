@@ -142,7 +142,7 @@ configurations:
       per:
         quantity: net_floor_area
         divisor: 10
-    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    comment: Anzahl aus der Raumfläche.
     status: active
   - id: pragmaticbim:room-type-equipment/besucher-wc-default-lichtschalter
     sort_order: 4

@@ -59,7 +59,6 @@ connections:
 representation:
   body: box
   plan_symbol: fume_cupboard
-comment: 'Abstand zu Türen und Verkehrswegen: Planungswert; vor Freigabe fachlich bestätigen.'
 picture_link: laborabzug-plan.svg
 attachment_link: laborabzug.ifc
 status: active

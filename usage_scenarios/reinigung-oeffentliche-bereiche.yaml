@@ -38,8 +38,22 @@ options:
   adds:
   - pragmaticbim:room-type/hauswarteschrank
   - pragmaticbim:room-type/eingangshalle
-- id: pragmaticbim:scenario-option/reinigung-oeffentliche-bereiche-external
+- id: pragmaticbim:scenario-option/reinigung-oeffentliche-bereiche-room
   sort_order: 2
+  name:
+    de: Hauswartsraum
+    fr: Local de conciergerie
+    it: Locale del custode
+    en: "Caretaker's room"
+  room_relationships:
+  - from_room_type: pragmaticbim:room-type/hauswartsraum
+    to_room_type: pragmaticbim:room-type/eingangshalle
+    max_distance: 15
+  adds:
+  - pragmaticbim:room-type/hauswartsraum
+  - pragmaticbim:room-type/eingangshalle
+- id: pragmaticbim:scenario-option/reinigung-oeffentliche-bereiche-external
+  sort_order: 3
   name:
     de: Externe Reinigung
     fr: Nettoyage externe

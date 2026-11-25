@@ -67,8 +67,7 @@ connections:
 representation:
   body: box
   plan_symbol: reception_desk
-comment: Manövrierfläche vor einem abgesenkten Thekenteil für Rollstuhlnutzende. Planungswert; vor Freigabe
-  fachlich bestätigen.
+comment: Manövrierfläche vor einem abgesenkten Thekenteil für Rollstuhlnutzende.
 picture_link: empfangstheke-plan.svg
 attachment_link: empfangstheke.ifc
 status: active

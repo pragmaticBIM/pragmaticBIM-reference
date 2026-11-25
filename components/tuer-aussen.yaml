@@ -50,7 +50,7 @@ clearances:
 representation:
   body: opening
   plan_symbol: door_swing
-comment: Schwelle hindernisfrei ausbilden; Planungswert; vor Freigabe fachlich bestätigen.
+comment: Schwelle hindernisfrei ausbilden.
 picture_link: tuer-aussen-plan.svg
 attachment_link: tuer-aussen.ifc
 status: active

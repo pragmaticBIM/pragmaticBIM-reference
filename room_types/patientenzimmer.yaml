@@ -160,7 +160,7 @@ configurations:
       per:
         quantity: net_floor_area
         divisor: 10
-    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    comment: Anzahl aus der Raumfläche.
     status: active
     placement_rules:
     - id: pragmaticbim:placement-rule/patientenzimmer-default-steckdose-hoehe
@@ -171,7 +171,6 @@ configurations:
       severity: preferred
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     - id: pragmaticbim:placement-rule/patientenzimmer-default-steckdose-tuer-frei
       relation: not_in_clearance_of
       target:
@@ -179,7 +178,6 @@ configurations:
       severity: required
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
     - id: pragmaticbim:placement-rule/patientenzimmer-default-steckdose-patient-care
       relation: next_to
       target:
@@ -190,7 +188,6 @@ configurations:
       severity: preferred
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
   - id: pragmaticbim:room-type-equipment/patientenzimmer-default-lichtschalter
     sort_order: 5
     function: light_switch
@@ -209,7 +206,6 @@ configurations:
       severity: required
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
       variants:
       - relation: next_to
         target:
@@ -244,7 +240,7 @@ configurations:
     params:
       clear_width:
         min: 1.4
-    comment: Lichte Breite für Bettentransport; Planungswert; vor Freigabe fachlich bestätigen.
+    comment: Lichte Breite für Bettentransport.
     status: active
   - id: pragmaticbim:room-type-opening/patientenzimmer-default-fenster
     sort_order: 2

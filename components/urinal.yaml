@@ -53,7 +53,6 @@ connections:
 representation:
   body: box
   plan_symbol: urinal
-comment: 'Achsabstand und Freifläche: Planungswert; vor Freigabe fachlich bestätigen.'
 picture_link: urinal-plan.svg
 attachment_link: urinal.ifc
 status: active

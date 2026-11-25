@@ -54,7 +54,6 @@ levels:
     name: ThermalTransmittanceMax
     pset: ePset_SlabRequirement
     value: 0.25
-  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
 - id: pragmaticbim:project-goal-level/energy-standard-minergie
   code: ENE-02
   sort_order: 2
@@ -86,7 +85,6 @@ levels:
     name: ThermalTransmittanceMax
     pset: ePset_SlabRequirement
     value: 0.15
-  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
 - id: pragmaticbim:project-goal-level/energy-standard-minergie-p
   code: ENE-03
   sort_order: 3
@@ -118,7 +116,6 @@ levels:
     name: ThermalTransmittanceMax
     pset: ePset_SlabRequirement
     value: 0.12
-  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'
 - id: pragmaticbim:project-goal-level/energy-standard-minergie-a
   code: ENE-04
   sort_order: 4
@@ -151,4 +148,3 @@ levels:
     name: ThermalTransmittanceMax
     pset: ePset_SlabRequirement
     value: 0.12
-  comment: 'Sollwerte vor Freigabe fachlich bestätigen.'

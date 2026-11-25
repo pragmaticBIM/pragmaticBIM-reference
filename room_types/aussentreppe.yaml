@@ -76,7 +76,7 @@ configurations:
       per:
         quantity: net_floor_area
         divisor: 10
-    comment: Anzahl aus der Raumfläche; Dichte als Planungswert vor Freigabe fachlich bestätigen.
+    comment: Anzahl aus der Raumfläche.
     status: active
     placement_rules:
     - id: pragmaticbim:placement-rule/aussentreppe-default-steckdose-aussen-hoehe
@@ -87,7 +87,6 @@ configurations:
       severity: preferred
       source:
         kind: default
-        note: Planungswert; vor Freigabe fachlich bestätigen
   - id: pragmaticbim:room-type-equipment/aussentreppe-default-lichtschalter
     sort_order: 2
     function: light_switch

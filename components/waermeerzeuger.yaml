@@ -48,8 +48,7 @@ connections:
 representation:
   body: box
   plan_symbol: boiler
-comment: Wärmepumpe je nach Energiekonzept als anderes Element. Masse nach Fachplanung ersetzen; Planungswert;
-  vor Freigabe fachlich bestätigen.
+comment: Wärmepumpe je nach Energiekonzept als anderes Element. Masse nach Fachplanung ersetzen.
 picture_link: waermeerzeuger-plan.svg
 attachment_link: waermeerzeuger.ifc
 status: active

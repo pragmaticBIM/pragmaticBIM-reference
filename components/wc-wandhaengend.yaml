@@ -52,7 +52,6 @@ connections:
 representation:
   body: box
   plan_symbol: wc
-comment: 'Freifläche und Abstand zum Schacht: Planungswert; vor Freigabe fachlich bestätigen.'
 picture_link: wc-wandhaengend-plan.svg
 attachment_link: wc-wandhaengend.ifc
 status: active
